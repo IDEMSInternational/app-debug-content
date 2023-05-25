@@ -1,0 +1,29 @@
+{
+  "flow_type": "global",
+  "flow_name": "example_lang_global",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "language_global_1",
+      "value": "This is a global variable set in a global"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "language_global_2",
+      "value": "@global.language_global_1"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "language_field_1",
+      "value": "This is a field set by default"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "language_field_2",
+      "value": "@data.example_lang.example_lang_3.text"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_languages.xlsx"
+}
