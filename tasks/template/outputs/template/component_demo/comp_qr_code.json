@@ -6,7 +6,11 @@
   "rows": [
     {
       "name": "input_string",
+<<<<<<< HEAD
+      "value": "Example text for generating a QR code: 12345",
+=======
       "value": "Example text for generating a QR code, 12345",
+>>>>>>> main
       "type": "set_variable",
       "_nested_name": "input_string"
     },
