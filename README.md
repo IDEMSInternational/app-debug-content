@@ -1,2 +1,2 @@
-# App-Debug-Content
+# app-debug-content
 IDEMS Apps debug content
