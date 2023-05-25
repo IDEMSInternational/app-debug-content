@@ -6,7 +6,7 @@
   "rows": [
     {
       "name": "input_string",
-      "value": "Example text for generating a QR code: 12345",
+      "value": "Example text for generating a QR code, 12345",
       "_translations": {
         "value": {}
       },
