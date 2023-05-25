@@ -1,0 +1,20 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "efm_chapter_list",
+  "data_list_name": "efm_chapt",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "efm_chapt_1",
+      "number": 1,
+      "title": "Chapter 1",
+      "_translatedFields": {
+        "title": {
+          "eng": "Chapter 1"
+        }
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
+}

@@ -1,0 +1,1 @@
+{"flow_type":"template","flow_name":"example_text","status":"released","flow_subtype":"debug","rows":[{"type":"text","name":"text","value":"This is the example text template 2","exclude_from_translation":true,"_nested_name":"text"}],"_xlsxPath":"example_sheets/to_be_sorted/example_actions.xlsx"}
