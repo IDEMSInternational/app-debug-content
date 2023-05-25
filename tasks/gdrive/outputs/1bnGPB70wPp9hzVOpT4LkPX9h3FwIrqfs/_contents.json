@@ -1,0 +1,74 @@
+[
+  {
+    "fileExtension": "png",
+    "md5Checksum": "a86e175e00b77a34a936cc08214359ca",
+    "mimeType": "image/png",
+    "size": "22459",
+    "id": "1YVqZfiX8SteGMWCKooZWnvi9ImOkeuzS",
+    "name": "debug_theme_language.png",
+    "modifiedTime": "2023-02-17T16:29:12.722Z",
+    "fullFileExtension": "png",
+    "folderPath": "",
+    "relativePath": "debug_theme_language.png"
+  },
+  {
+    "fileExtension": "pdf",
+    "md5Checksum": "2942bfabb3d05332b66eb128e0842cff",
+    "mimeType": "application/pdf",
+    "size": "13264",
+    "id": "1uMOUxjmYpjBXIuzfpXHDnXHTnsLKRRtT",
+    "name": "dummy.pdf",
+    "modifiedTime": "2023-05-09T05:32:20.000Z",
+    "fullFileExtension": "pdf",
+    "folderPath": "",
+    "relativePath": "dummy.pdf"
+  },
+  {
+    "fileExtension": "pdf",
+    "md5Checksum": "5afaf79789a776d81ec91ccbdc9fdaba",
+    "mimeType": "application/pdf",
+    "size": "142786",
+    "id": "14INz6c0AVPgApAsVh1ZLPHP3s-XWKIOM",
+    "name": "example_pdf.pdf",
+    "modifiedTime": "2023-05-10T11:10:43.000Z",
+    "fullFileExtension": "pdf",
+    "folderPath": "",
+    "relativePath": "example_pdf.pdf"
+  },
+  {
+    "fileExtension": "mp3",
+    "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
+    "mimeType": "audio/mpeg",
+    "size": "44397",
+    "id": "1W_pljKsQZlxtAjwJmymCHtHT9hFvvve4",
+    "name": "test_audio.mp3",
+    "modifiedTime": "2021-11-12T20:21:50.470Z",
+    "fullFileExtension": "mp3",
+    "folderPath": "",
+    "relativePath": "test_audio.mp3"
+  },
+  {
+    "fileExtension": "png",
+    "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
+    "mimeType": "image/png",
+    "size": "2032",
+    "id": "1ptdv4zfbky8Ae4Jnp7SMUhLeumtL7i1Q",
+    "name": "test_image.png",
+    "modifiedTime": "2021-11-12T20:05:08.000Z",
+    "fullFileExtension": "png",
+    "folderPath": "",
+    "relativePath": "test_image.png"
+  },
+  {
+    "fileExtension": "png",
+    "md5Checksum": "f759667d7abedfa5aea2ac742e831ce3",
+    "mimeType": "image/png",
+    "size": "2902",
+    "id": "10ZVMHElteF5KAcyhskJgX1TBbuEASZKa",
+    "name": "test_image_no_translations.png",
+    "modifiedTime": "2021-11-12T22:13:14.000Z",
+    "fullFileExtension": "png",
+    "folderPath": "",
+    "relativePath": "test_image_no_translations.png"
+  }
+]

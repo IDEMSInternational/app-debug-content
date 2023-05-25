@@ -1,0 +1,19 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "example_generator",
+  "flow_name": "example_generator_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "title": "Workshop 1",
+      "text_condition": "@fields.show_image_1"
+    },
+    {
+      "id": "id_2",
+      "title": "Workshop 2",
+      "text_condition": true
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_generator.xlsx"
+}
