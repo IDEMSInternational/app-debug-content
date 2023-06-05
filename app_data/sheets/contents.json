@@ -310,6 +310,11 @@
     }
   },
   "template": {
+    "app_menu": {
+      "flow_type": "template",
+      "flow_name": "app_menu",
+      "_xlsxPath": "navigation.xlsx"
+    },
     "app_update_complete": {
       "flow_type": "template",
       "flow_name": "app_update_complete",
@@ -2223,6 +2228,11 @@
       "flow_name": "feature_feedback_text_select",
       "comments": "Default text-select feedback form",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_feedback.xlsx"
+    },
+    "home_screen": {
+      "flow_type": "template",
+      "flow_name": "home_screen",
+      "_xlsxPath": "navigation.xlsx"
     }
   },
   "tour": {

@@ -1,0 +1,141 @@
+{
+  "flow_type": "template",
+  "flow_name": "app_menu",
+  "status": "released",
+  "rows": [
+    {
+      "type": "debug_toggle",
+      "name": "debug_toggle",
+      "_nested_name": "debug_toggle"
+    },
+    {
+      "type": "button",
+      "name": "button_open_feedback",
+      "value": "Open feedback",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "feedback",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | feedback:open",
+          "_cleaned": "click | feedback:open"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": "!@fields._feedback_sidebar_open",
+      "_nested_name": "button_open_feedback",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@fields._feedback_sidebar_open",
+            "matchedExpression": "!@fields._feedback_sidebar_open",
+            "type": "fields",
+            "fieldName": "_feedback_sidebar_open"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@fields._feedback_sidebar_open": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_close_feedback",
+      "value": "Close feedback",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "feedback",
+          "args": [
+            "close"
+          ],
+          "_raw": "click | feedback:close",
+          "_cleaned": "click | feedback:close"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": "@fields._feedback_sidebar_open",
+      "_nested_name": "button_close_feedback",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields._feedback_sidebar_open",
+            "matchedExpression": "@fields._feedback_sidebar_open",
+            "type": "fields",
+            "fieldName": "_feedback_sidebar_open"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._feedback_sidebar_open": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_templates",
+      "value": "Templates",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "/template"
+          ],
+          "_raw": "click | go_to:/template",
+          "_cleaned": "click | go_to:/template"
+        }
+      ],
+      "_nested_name": "button_templates"
+    },
+    {
+      "type": "button",
+      "name": "button_reset",
+      "value": "Reset app",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "reset_app",
+          "args": [],
+          "_raw": "click | reset_app",
+          "_cleaned": "click | reset_app"
+        }
+      ],
+      "_nested_name": "button_reset"
+    }
+  ],
+  "_xlsxPath": "navigation.xlsx"
+}
