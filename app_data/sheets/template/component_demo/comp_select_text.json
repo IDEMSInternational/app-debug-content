@@ -6,7 +6,7 @@
   "rows": [
     {
       "name": "user_id",
-      "value": "@calc(this.app_user_id)",
+      "value": "@calc(this.app_user_id | \"Hello world!\")",
       "_translations": {
         "value": {}
       },
@@ -16,15 +16,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(this.app_user_id)",
-            "matchedExpression": "@calc(this.app_user_id)",
+            "fullExpression": "@calc(this.app_user_id | \"Hello world!\")",
+            "matchedExpression": "@calc(this.app_user_id | \"Hello world!\")",
             "type": "calc",
-            "fieldName": "this.app_user_id"
+            "fieldName": "this.app_user_id | \"Hello world!\""
           }
         ]
       },
       "_dynamicDependencies": {
-        "@calc(this.app_user_id)": [
+        "@calc(this.app_user_id | \"Hello world!\")": [
           "value"
         ]
       }
@@ -247,7 +247,7 @@
     },
     {
       "type": "select_text",
-      "name": "select_text_4_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "name": "select_text_4",
       "value": "@local.user_id",
       "_translations": {
         "value": {}
@@ -256,7 +256,7 @@
         "copy_icon": "@local.copy_icon_2",
         "copied_icon": "@local.copied_icon_2"
       },
-      "_nested_name": "select_text_4_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "_nested_name": "select_text_4",
       "_dynamicFields": {
         "value": [
           {
