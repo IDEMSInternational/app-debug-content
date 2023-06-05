@@ -159,11 +159,7 @@
   },
   "git": {
     "content_repo": "https://github.com/IDEMSInternational/App-Debug-Content.git",
-<<<<<<< HEAD
-    "content_tag_latest": "1.1.1"
-=======
-    "content_tag_latest": "1.1.0"
->>>>>>> main
+    "content_tag_latest": "1.1.2"
   },
   "_validated": true,
   "_parent_config": null,
