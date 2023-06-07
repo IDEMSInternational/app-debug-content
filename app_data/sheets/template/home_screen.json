@@ -5,12 +5,12 @@
   "rows": [
     {
       "type": "title",
-      "name": "title",
+      "name": "title_home",
       "value": "Home",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title"
+      "_nested_name": "title_home"
     }
   ],
   "_xlsxPath": "navigation.xlsx"

@@ -6,7 +6,8 @@
     {
       "id": "id_2",
       "value": 2,
-      "sort_order": 8,
+      "sort_order": 11,
+      "sort_alpha": "basis",
       "completed": false,
       "Text": "Hello id_2",
       "Label": "Another column",
@@ -16,6 +17,7 @@
       "id": "id_4",
       "value": 4,
       "sort_order": 5,
+      "sort_alpha": "world",
       "Text": "Hello id_4",
       "Label": "Another column",
       "Field": "example_id_4_field"
@@ -24,6 +26,7 @@
       "id": "id_8",
       "value": 8,
       "sort_order": 3,
+      "sort_alpha": "skill",
       "completed": false,
       "Text": "Hello id_8",
       "Label": "Another column",

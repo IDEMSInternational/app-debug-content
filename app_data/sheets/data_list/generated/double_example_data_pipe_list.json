@@ -7,46 +7,54 @@
       "id": "id_1",
       "value": 1,
       "sort_order": 7,
+      "sort_alpha": "bonus",
       "completed": true
     },
     {
       "id": "id_2",
       "value": 2,
-      "sort_order": 8,
+      "sort_order": 11,
+      "sort_alpha": "basis",
       "completed": false
     },
     {
       "id": "id_3",
       "value": 3,
-      "sort_order": 6
+      "sort_order": 6,
+      "sort_alpha": "topic"
     },
     {
       "id": "id_4",
       "value": 4,
-      "sort_order": 5
+      "sort_order": 5,
+      "sort_alpha": "world"
     },
     {
       "id": "id_5",
       "value": 5,
       "sort_order": 4,
+      "sort_alpha": "event",
       "completed": true
     },
     {
       "id": "id_6",
       "value": 6,
       "sort_order": 1,
+      "sort_alpha": "photo",
       "completed": true
     },
     {
       "id": "id_7",
       "value": 7,
       "sort_order": 2,
+      "sort_alpha": "guest",
       "completed": false
     },
     {
       "id": "id_8",
       "value": 8,
       "sort_order": 3,
+      "sort_alpha": "skill",
       "completed": false
     },
     {

@@ -238,6 +238,21 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
+    "example_pipe_sort_alpha": {
+      "flow_name": "example_pipe_sort_alpha",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    "example_pipe_sort_desc": {
+      "flow_name": "example_pipe_sort_desc",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    "example_pipe_sort_order": {
+      "flow_name": "example_pipe_sort_order",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
     "example_pipe_uncompleted": {
       "flow_name": "example_pipe_uncompleted",
       "flow_subtype": "generated",
@@ -2290,6 +2305,12 @@
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_map",
+      "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+    },
+    "example_data_pipe_sort": {
+      "flow_type": "data_pipe",
+      "flow_subtype": "example_pipe",
+      "flow_name": "example_data_pipe_sort",
       "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
     }
   }
