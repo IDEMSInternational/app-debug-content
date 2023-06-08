@@ -1,0 +1,27 @@
+{
+  "flow_type": "generator",
+  "flow_subtype": "example_generator",
+  "flow_name": "example_generator_data",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "example_generator_list",
+    "output_flow_name": "example_{@gen.id}_data",
+    "output_flow_type": "data_list",
+    "output_flow_subtype": "example_generator"
+  },
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "@gen.title item 1"
+    },
+    {
+      "id": "id_2",
+      "text": "@gen.title item 2"
+    },
+    {
+      "id": "id_3",
+      "text": "@gen.title item 3"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_generator.xlsx"
+}

@@ -1,0 +1,19 @@
+{
+  "flow_name": "example_w_2_data",
+  "flow_subtype": "example_generator",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "Workshop 2 item 1"
+    },
+    {
+      "id": "id_2",
+      "text": "Workshop 2 item 2"
+    },
+    {
+      "id": "id_3",
+      "text": "Workshop 2 item 3"
+    }
+  ]
+}

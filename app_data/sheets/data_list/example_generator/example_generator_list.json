@@ -5,14 +5,16 @@
   "status": "released",
   "rows": [
     {
-      "id": "id_1",
+      "id": "w_1",
       "title": "Workshop 1",
-      "text_condition": "@fields.show_image_1"
+      "text_condition": "@fields.show_image_1",
+      "data": "example_w_1_data"
     },
     {
-      "id": "id_2",
+      "id": "w_2",
       "title": "Workshop 2",
-      "text_condition": true
+      "text_condition": true,
+      "data": "example_w_2_data"
     }
   ],
   "_xlsxPath": "example_sheets/example_generator.xlsx"
