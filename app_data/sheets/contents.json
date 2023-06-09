@@ -2329,6 +2329,11 @@
       "comments": "Default text-select feedback form",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_feedback.xlsx"
     },
+    "feature_share": {
+      "flow_type": "template",
+      "flow_name": "feature_share",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_share.xlsx"
+    },
     "home_screen": {
       "flow_type": "template",
       "flow_name": "home_screen",
