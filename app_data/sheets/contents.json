@@ -1,5 +1,11 @@
 {
   "data_list": {
+    "article_data": {
+      "flow_type": "data_list",
+      "flow_name": "article_data",
+      "data_list_name": "article",
+      "_xlsxPath": "demo_sheets/article_data.xlsx"
+    },
     "debug_campaign_rows": {
       "flow_type": "data_list",
       "flow_subtype": "campaign_rows_debug",
@@ -272,6 +278,12 @@
       "flow_name": "prefix_example_data_pipe_list",
       "flow_subtype": "generated",
       "flow_type": "data_list"
+    },
+    "goal_data": {
+      "flow_type": "data_list",
+      "flow_name": "goal_data",
+      "data_list_name": "goal",
+      "_xlsxPath": "demo_sheets/article_data.xlsx"
     }
   },
   "data_pipe": {
@@ -409,6 +421,26 @@
       "flow_type": "template",
       "flow_name": "app_update_complete",
       "_xlsxPath": "debug_sheets/debug_app_update.xlsx"
+    },
+    "article": {
+      "flow_type": "template",
+      "flow_name": "article",
+      "_xlsxPath": "demo_sheets/articles.xlsx"
+    },
+    "article_box": {
+      "flow_type": "template",
+      "flow_name": "article_box",
+      "_xlsxPath": "demo_sheets/articles.xlsx"
+    },
+    "articles": {
+      "flow_type": "template",
+      "flow_name": "articles",
+      "_xlsxPath": "demo_sheets/articles.xlsx"
+    },
+    "comp_odk_form": {
+      "flow_type": "template",
+      "flow_name": "comp_odk_form",
+      "_xlsxPath": "component_sheets/component_odk.xlsx"
     },
     "comp_button": {
       "flow_type": "template",
@@ -2328,6 +2360,11 @@
       "flow_name": "feature_feedback_text_select",
       "comments": "Default text-select feedback form",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_feedback.xlsx"
+    },
+    "feature_share": {
+      "flow_type": "template",
+      "flow_name": "feature_share",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_share.xlsx"
     },
     "home_screen": {
       "flow_type": "template",

@@ -11,6 +11,26 @@
     "md5Checksum": "5afaf79789a776d81ec91ccbdc9fdaba",
     "size_kb": 139.4
   },
+  "images/icons/globe_blue.svg": {
+    "md5Checksum": "17709dbf6ff432c362ac51477203d44a",
+    "size_kb": 3.9
+  },
+  "images/icons/heart_blue.svg": {
+    "md5Checksum": "88d5bd5d99c20bd6ecfe5790f285fc0c",
+    "size_kb": 1.4
+  },
+  "images/icons/leaf_blue.svg": {
+    "md5Checksum": "21c6e54960599fdda6e4d58c3337b541",
+    "size_kb": 1.7
+  },
+  "images/icons/school_blue.svg": {
+    "md5Checksum": "bc87b2ae05c7c762ca7673657c0efb56",
+    "size_kb": 1.6
+  },
+  "odk_form.json": {
+    "md5Checksum": "8b89a6b050f58c0fa0de2d0ff0bd2f32",
+    "size_kb": 8
+  },
   "test_audio.mp3": {
     "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
     "size_kb": 43.4
