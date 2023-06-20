@@ -1,0 +1,147 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_odk_form",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "ODK Form",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "subtitle",
+      "name": "parameters",
+      "value": "Parameters",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "parameters"
+    },
+    {
+      "type": "display_group",
+      "name": "form_parameters",
+      "rows": [
+        {
+          "type": "text",
+          "name": "form_asset_name",
+          "value": "form_asset",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 120px"
+          ],
+          "_nested_name": "form_parameters.form_asset_name"
+        },
+        {
+          "type": "text_box",
+          "name": "form_asset_input",
+          "value": "odk_form.json",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 200px"
+          ],
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "emit",
+              "args": [
+                "force_reprocess"
+              ],
+              "_raw": "changed | emit:force_reprocess",
+              "_cleaned": "changed | emit:force_reprocess"
+            }
+          ],
+          "_nested_name": "form_parameters.form_asset_input"
+        },
+        {
+          "type": "text",
+          "name": "form_asset_description",
+          "value": "Path to form asset data. This must be pre-processed using the xlsform converter workspace.",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 300px"
+          ],
+          "_nested_name": "form_parameters.form_asset_description"
+        }
+      ],
+      "_nested_name": "form_parameters"
+    },
+    {
+      "type": "subtitle",
+      "value": "Example 1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "subtitle",
+      "_nested_name": "subtitle"
+    },
+    {
+      "type": "odk_form",
+      "name": "form_1",
+      "parameter_list": {
+        "form_asset": "@local.form_asset_input"
+      },
+      "_nested_name": "form_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "form_asset": [
+            {
+              "fullExpression": "@local.form_asset_input",
+              "matchedExpression": "@local.form_asset_input",
+              "type": "local",
+              "fieldName": "form_asset_input"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.form_asset_input": [
+          "parameter_list.form_asset"
+        ]
+      }
+    },
+    {
+      "type": "subtitle",
+      "name": "subtitle",
+      "value": "XML Form Value",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "subtitle"
+    },
+    {
+      "type": "text",
+      "name": "form_1_values",
+      "value": "@local.form_1",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "form_1_values",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.form_1",
+            "matchedExpression": "@local.form_1",
+            "type": "local",
+            "fieldName": "form_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.form_1": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_odk.xlsx"
+}

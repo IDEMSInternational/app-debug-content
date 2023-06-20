@@ -1,0 +1,33 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "goal_data",
+  "status": "released",
+  "data_list_name": "goal",
+  "rows": [
+    {
+      "id": "education",
+      "title": "Education",
+      "icon_asset": "images/icons/school_blue.svg",
+      "text": "Education",
+      "name": "education",
+      "image": "images/icons/school_blue.svg"
+    },
+    {
+      "id": "child_dev",
+      "title": "Child development",
+      "icon_asset": "images/icons/leaf_blue.svg",
+      "text": "Child development",
+      "name": "child_dev",
+      "image": "images/icons/leaf_blue.svg"
+    },
+    {
+      "id": "relations",
+      "title": "Relationships",
+      "icon_asset": "images/icons/heart_blue.svg",
+      "text": "Relationships",
+      "name": "relations",
+      "image": "images/icons/heart_blue.svg"
+    }
+  ],
+  "_xlsxPath": "demo_sheets/article_data.xlsx"
+}

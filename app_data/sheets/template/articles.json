@@ -1,0 +1,287 @@
+{
+  "flow_type": "template",
+  "flow_name": "articles",
+  "status": "released",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": [
+        "name: all | image: images/icons/globe_blue.svg",
+        "name: education | image: images/icons/school_blue.svg",
+        "name: child_dev | image: images/icons/leaf_blue.svg",
+        "name: relations | image: images/icons/heart_blue.svg"
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "selected_goal",
+      "value": "all",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@local.answer_list",
+        "item_width": "50px"
+      },
+      "_nested_name": "selected_goal",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "selected_text",
+      "value": "All articles",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.selected_goal == \"all\"",
+      "_nested_name": "selected_text",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.selected_goal == \"all\"",
+            "matchedExpression": "@local.selected_goal",
+            "type": "local",
+            "fieldName": "selected_goal"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.selected_goal": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_selected_text",
+      "condition": "@local.selected_goal != \"all\"",
+      "rows": [
+        {
+          "name": "goal_selected_goal",
+          "value": "goal.@local.selected_goal",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_selected_text.goal_selected_goal",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "goal.@local.selected_goal",
+                "matchedExpression": "@local.selected_goal",
+                "type": "local",
+                "fieldName": "selected_goal"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.selected_goal": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "goal_data",
+          "value": "@data.@local.goal_selected_goal",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg_selected_text.goal_data",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.@local.goal_selected_goal",
+                "matchedExpression": "@local.goal_selected_goal",
+                "type": "local",
+                "fieldName": "goal_selected_goal"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.goal_selected_goal": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "title",
+          "name": "selected_text",
+          "value": "@local.goal_data.title",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_selected_text.selected_text",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.goal_data.title",
+                "matchedExpression": "@local.goal_data.title",
+                "type": "local",
+                "fieldName": "goal_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.goal_data.title": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_selected_text",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.selected_goal != \"all\"",
+            "matchedExpression": "@local.selected_goal",
+            "type": "local",
+            "fieldName": "selected_goal"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.selected_goal": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "items",
+      "value": "@data.article",
+      "rows": [
+        {
+          "type": "template",
+          "name": "box_@item.id",
+          "value": "article_box",
+          "condition": "@local.selected_goal == @item.goal || @local.selected_goal == \"all\"",
+          "rows": [
+            {
+              "name": "id",
+              "value": "@item.id",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "items.box_@item.id.id",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "items.box_@item.id.id",
+                    "matchedExpression": "@item.id.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ],
+                "@item.id.id": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "items.box_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "box_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "@local.selected_goal == @item.goal || @local.selected_goal == \"all\"",
+                "matchedExpression": "@local.selected_goal",
+                "type": "local",
+                "fieldName": "selected_goal"
+              },
+              {
+                "fullExpression": "@local.selected_goal == @item.goal || @local.selected_goal == \"all\"",
+                "matchedExpression": "@item.goal",
+                "type": "item",
+                "fieldName": "goal"
+              },
+              {
+                "fullExpression": "@local.selected_goal == @item.goal || @local.selected_goal == \"all\"",
+                "matchedExpression": "@local.selected_goal",
+                "type": "local",
+                "fieldName": "selected_goal"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "items.box_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@local.selected_goal": [
+              "condition",
+              "condition"
+            ],
+            "@item.goal": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "name": "items",
+      "_nested_name": "items",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.article",
+            "matchedExpression": "@data.article",
+            "type": "data",
+            "fieldName": "article"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.article": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "demo_sheets/articles.xlsx"
+}
