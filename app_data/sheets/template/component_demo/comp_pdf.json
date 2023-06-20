@@ -14,17 +14,43 @@
       "_nested_name": "title"
     },
     {
+      "name": "error_message",
+      "value": "This feature is not supported in this browser, please use an up-to-date version of Google Chrome to view",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "error_message"
+    },
+    {
       "type": "pdf",
       "name": "pdf_viewer",
-      "value": "quality_assurance/example_pdf.pdf",
+      "value": "example_pdf.pdf",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "starting_page": "3",
-        "error_message": "Embedded PDFs are not supported in this browser, please use an up-to-date version of Google Chrome to view"
+        "error_message": "@local.error_message"
       },
-      "_nested_name": "pdf_viewer"
+      "_nested_name": "pdf_viewer",
+      "_dynamicFields": {
+        "parameter_list": {
+          "error_message": [
+            {
+              "fullExpression": "@local.error_message",
+              "matchedExpression": "@local.error_message",
+              "type": "local",
+              "fieldName": "error_message"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.error_message": [
+          "parameter_list.error_message"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_pdf.xlsx"

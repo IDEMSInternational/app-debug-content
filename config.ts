@@ -8,7 +8,7 @@ config.google_drive = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.1.8",
+  content_tag_latest: "1.1.11",
 };
 
 config.app_data.output_path = "./app_data";
