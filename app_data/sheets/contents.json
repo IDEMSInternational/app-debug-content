@@ -1313,6 +1313,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_small_issues.xlsx"
     },
+    "debug_skin_select": {
+      "flow_type": "template",
+      "flow_name": "debug_skin_select",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/debug_skin_select.xlsx"
+    },
     "debug_slider_dynamic": {
       "flow_type": "template",
       "flow_name": "debug_slider_dynamic",
