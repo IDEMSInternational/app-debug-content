@@ -1637,6 +1637,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_analytics.xlsx"
     },
+    "example_answer_data": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_answer_data",
+      "_xlsxPath": "example_sheets/example_items.xlsx"
+    },
     "example_asset_sync": {
       "flow_type": "template",
       "flow_name": "example_asset_sync",
@@ -1815,12 +1821,6 @@
       "flow_type": "template",
       "flow_subtype": "debug",
       "flow_name": "example_items_pipe_2",
-      "_xlsxPath": "example_sheets/example_items.xlsx"
-    },
-    "example_items_radio": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_items_radio",
       "_xlsxPath": "example_sheets/example_items.xlsx"
     },
     "example_items_unlock": {

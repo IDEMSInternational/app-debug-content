@@ -44,7 +44,7 @@
     },
     {
       "type": "image",
-      "value": "quality_assurance/test_image.png",
+      "value": "debug_asset_pack/test_image.png",
       "_translations": {
         "value": {}
       },
