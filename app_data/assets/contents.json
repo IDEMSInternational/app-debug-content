@@ -1,4 +1,8 @@
 {
+  "debug_asset_pack/test_image.png": {
+    "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
+    "size_kb": 2
+  },
   "debug_theme_language.png": {
     "md5Checksum": "a86e175e00b77a34a936cc08214359ca",
     "size_kb": 21.9
@@ -19,6 +23,10 @@
     "md5Checksum": "88d5bd5d99c20bd6ecfe5790f285fc0c",
     "size_kb": 1.4
   },
+  "images/icons/in_progress.svg": {
+    "md5Checksum": "6105962bc0edd981675d874dc8a51035",
+    "size_kb": 1.1
+  },
   "images/icons/leaf_blue.svg": {
     "md5Checksum": "21c6e54960599fdda6e4d58c3337b541",
     "size_kb": 1.7
@@ -27,6 +35,14 @@
     "md5Checksum": "bc87b2ae05c7c762ca7673657c0efb56",
     "size_kb": 1.6
   },
+  "images/icons/tick_white.svg": {
+    "md5Checksum": "81136e04436759812dc3f6e90c61de11",
+    "size_kb": 0.3
+  },
+  "images/test_image.png": {
+    "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
+    "size_kb": 2
+  },
   "odk_form.json": {
     "md5Checksum": "8b89a6b050f58c0fa0de2d0ff0bd2f32",
     "size_kb": 8
@@ -34,10 +50,6 @@
   "test_audio.mp3": {
     "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
     "size_kb": 43.4
-  },
-  "test_image.png": {
-    "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
-    "size_kb": 2
   },
   "test_image_no_translations.png": {
     "md5Checksum": "f759667d7abedfa5aea2ac742e831ce3",

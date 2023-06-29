@@ -1,0 +1,437 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_answer_data",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Use data list to create an answer list",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_1",
+      "parameter_list": {
+        "answer_list": "@data.example_items_radio"
+      },
+      "_nested_name": "radio_group_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.example_items_radio",
+              "matchedExpression": "@data.example_items_radio",
+              "type": "data",
+              "fieldName": "example_items_radio"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.example_items_radio": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid_1",
+      "parameter_list": {
+        "answer_list": "@data.example_items_radio"
+      },
+      "_nested_name": "radio_button_grid_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.example_items_radio",
+              "matchedExpression": "@data.example_items_radio",
+              "type": "data",
+              "fieldName": "example_items_radio"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.example_items_radio": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_1",
+      "value": "@fields.debug_combo_box_1_value",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@data.example_items_radio",
+        "placeholder": "prompt"
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "debug_combo_box_1_value",
+            "this.value"
+          ],
+          "_raw": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1",
+          "_cleaned": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1"
+        }
+      ],
+      "_nested_name": "combo_box_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.debug_combo_box_1_value",
+            "matchedExpression": "@fields.debug_combo_box_1_value",
+            "type": "fields",
+            "fieldName": "debug_combo_box_1_value"
+          }
+        ],
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.example_items_radio",
+              "matchedExpression": "@data.example_items_radio",
+              "type": "data",
+              "fieldName": "example_items_radio"
+            }
+          ]
+        },
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1",
+                "matchedExpression": "@local.combo_box_1",
+                "type": "local",
+                "fieldName": "combo_box_1"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1",
+                "matchedExpression": "@local.combo_box_1",
+                "type": "local",
+                "fieldName": "combo_box_1"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields.debug_combo_box_1_value": [
+          "value"
+        ],
+        "@data.example_items_radio": [
+          "parameter_list.answer_list"
+        ],
+        "@local.combo_box_1": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Use data list through local variable",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "answer_list_data",
+      "value": [
+        "example_items_radio"
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list_data"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_2",
+      "parameter_list": {
+        "answer_list": "@data.@local.answer_list_data",
+        "placeholder": "prompt"
+      },
+      "_nested_name": "radio_group_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.@local.answer_list_data",
+              "matchedExpression": "@local.answer_list_data",
+              "type": "local",
+              "fieldName": "answer_list_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_data": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid_2",
+      "parameter_list": {
+        "answer_list": "@data.@local.answer_list_data",
+        "placeholder": "prompt"
+      },
+      "_nested_name": "radio_button_grid_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.@local.answer_list_data",
+              "matchedExpression": "@local.answer_list_data",
+              "type": "local",
+              "fieldName": "answer_list_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_data": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_2",
+      "value": "@fields.debug_combo_box_2_value",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@data.@local.answer_list_data",
+        "placeholder": "prompt"
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "debug_combo_box_2_value",
+            "this.value"
+          ],
+          "_raw": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2",
+          "_cleaned": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2"
+        }
+      ],
+      "_nested_name": "combo_box_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.debug_combo_box_2_value",
+            "matchedExpression": "@fields.debug_combo_box_2_value",
+            "type": "fields",
+            "fieldName": "debug_combo_box_2_value"
+          }
+        ],
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.@local.answer_list_data",
+              "matchedExpression": "@local.answer_list_data",
+              "type": "local",
+              "fieldName": "answer_list_data"
+            }
+          ]
+        },
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2",
+                "matchedExpression": "@local.combo_box_2",
+                "type": "local",
+                "fieldName": "combo_box_2"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2",
+                "matchedExpression": "@local.combo_box_2",
+                "type": "local",
+                "fieldName": "combo_box_2"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields.debug_combo_box_2_value": [
+          "value"
+        ],
+        "@local.answer_list_data": [
+          "parameter_list.answer_list"
+        ],
+        "@local.combo_box_2": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Answer list directly in spreadsheet",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_3"
+    },
+    {
+      "name": "answer_list",
+      "value": [
+        "name: item_1 | text: first",
+        "name: item_2 | text: second",
+        "name: item_3 | text: third"
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_3",
+      "parameter_list": {
+        "answer_list": "@local.answer_list"
+      },
+      "_nested_name": "radio_group_3",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid_3",
+      "parameter_list": {
+        "answer_list": "@local.answer_list"
+      },
+      "_nested_name": "radio_button_grid_3",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_3",
+      "value": "@fields.debug_combo_box_3_value",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@local.answer_list",
+        "placeholder": "prompt"
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "debug_combo_box_3_value",
+            "this.value"
+          ],
+          "_raw": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3",
+          "_cleaned": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3"
+        }
+      ],
+      "_nested_name": "combo_box_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.debug_combo_box_3_value",
+            "matchedExpression": "@fields.debug_combo_box_3_value",
+            "type": "fields",
+            "fieldName": "debug_combo_box_3_value"
+          }
+        ],
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        },
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3",
+                "matchedExpression": "@local.combo_box_3",
+                "type": "local",
+                "fieldName": "combo_box_3"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3",
+                "matchedExpression": "@local.combo_box_3",
+                "type": "local",
+                "fieldName": "combo_box_3"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields.debug_combo_box_3_value": [
+          "value"
+        ],
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ],
+        "@local.combo_box_3": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_items.xlsx"
+}
