@@ -548,7 +548,7 @@
     },
     {
       "type": "task_card",
-      "name": "card_params_2_portrait",
+      "name": "card_params_2_portrait_secondary",
       "action_list": [
         {
           "trigger": "click",
@@ -580,7 +580,7 @@
         "in_progress_icon": "images/icons/in_progress.svg",
         "completed_icon": "images/icons/tick_white.svg"
       },
-      "_nested_name": "card_params_2_portrait",
+      "_nested_name": "card_params_2_portrait_secondary",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -712,7 +712,7 @@
     },
     {
       "type": "title",
-      "value": "Card for a task group/module – variant_list: portrait, background-primary",
+      "value": "Card for a task group/module – variant: portrait, background-primary",
       "_translations": {
         "value": {}
       },
@@ -721,7 +721,7 @@
     },
     {
       "type": "task_card",
-      "name": "card_params_2_portrait",
+      "name": "card_params_2_portrait_primary",
       "action_list": [
         {
           "trigger": "click",
@@ -749,11 +749,11 @@
         "title": "@local.card_title",
         "subtitle": "@local.card_subtitle",
         "image": "@local.card_image",
-        "variant_list": "portrait, background-primary",
+        "variant": "portrait, background-primary",
         "in_progress_icon": "images/icons/in_progress.svg",
         "completed_icon": "images/icons/tick_white.svg"
       },
-      "_nested_name": "card_params_2_portrait",
+      "_nested_name": "card_params_2_portrait_primary",
       "_dynamicFields": {
         "action_list": {
           "0": {
