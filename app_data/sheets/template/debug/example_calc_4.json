@@ -1,0 +1,165 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_calc_4",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "example_5",
+      "value": "Convert string case",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "example_5"
+    },
+    {
+      "name": "some_string",
+      "value": "Some string",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "some_string"
+    },
+    {
+      "name": "some_string_lc",
+      "value": "@calc(@local.some_string.toLowerCase())",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "some_string_lc",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.some_string.toLowerCase())",
+            "matchedExpression": "@local.some_string.toLowerCase",
+            "type": "local",
+            "fieldName": "some_string"
+          },
+          {
+            "fullExpression": "@calc(@local.some_string.toLowerCase())",
+            "matchedExpression": "@calc(@local.some_string.toLowerCase())",
+            "type": "calc",
+            "fieldName": "@local.some_string.toLowerCase()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.some_string.toLowerCase": [
+          "value"
+        ],
+        "@calc(@local.some_string.toLowerCase())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "some_string_uc",
+      "value": "@calc(@local.some_string.toUpperCase())",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "some_string_uc",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.some_string.toUpperCase())",
+            "matchedExpression": "@local.some_string.toUpperCase",
+            "type": "local",
+            "fieldName": "some_string"
+          },
+          {
+            "fullExpression": "@calc(@local.some_string.toUpperCase())",
+            "matchedExpression": "@calc(@local.some_string.toUpperCase())",
+            "type": "calc",
+            "fieldName": "@local.some_string.toUpperCase()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.some_string.toUpperCase": [
+          "value"
+        ],
+        "@calc(@local.some_string.toUpperCase())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_5.1",
+      "value": "Original string: @local.some_string",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_5.1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Original string: @local.some_string",
+            "matchedExpression": "@local.some_string",
+            "type": "local",
+            "fieldName": "some_string"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.some_string": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_5.2",
+      "value": "In upper case: @local.some_string_uc",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_5.2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "In upper case: @local.some_string_uc",
+            "matchedExpression": "@local.some_string_uc",
+            "type": "local",
+            "fieldName": "some_string_uc"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.some_string_uc": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_5.3",
+      "value": "In lower case: @local.some_string_lc",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_5.3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "In lower case: @local.some_string_lc",
+            "matchedExpression": "@local.some_string_lc",
+            "type": "local",
+            "fieldName": "some_string_lc"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.some_string_lc": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+}
