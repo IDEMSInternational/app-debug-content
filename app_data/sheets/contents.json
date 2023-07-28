@@ -188,6 +188,11 @@
       "flow_name": "debug_launch_actions",
       "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx"
     },
+    "debug_nav_bar_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_nav_bar_data",
+      "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
+    },
     "example_generator_list": {
       "flow_type": "data_list",
       "flow_subtype": "example_generator",
@@ -1679,6 +1684,12 @@
       "flow_name": "example_calc_3",
       "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
     },
+    "example_calc_4": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_4",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
     "example_calc_date": {
       "flow_type": "template",
       "flow_subtype": "debug",
@@ -2325,6 +2336,16 @@
       "flow_type": "template",
       "flow_name": "debug_error_logging",
       "_xlsxPath": "debug_sheets/debug_errors.xlsx"
+    },
+    "debug_example": {
+      "flow_type": "template",
+      "flow_name": "debug_example",
+      "_xlsxPath": "debug_sheets/debug_example.xlsx"
+    },
+    "debug_nav_bar": {
+      "flow_type": "template",
+      "flow_name": "debug_nav_bar",
+      "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
     },
     "example_generator_output_w_1": {
       "flow_name": "example_generator_output_w_1",
