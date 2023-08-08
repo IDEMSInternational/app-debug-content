@@ -96,6 +96,17 @@
     {
       "type": "button",
       "value": "With icon toggle",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | pop_up: example_text",
+          "_cleaned": "click | pop_up: example_text"
+        }
+      ],
       "parameter_list": {
         "variant": "card-portrait",
         "image_asset": "images/example/circular.png"
@@ -104,12 +115,67 @@
         {
           "type": "toggle_bar",
           "name": "toggle_bar_3",
+          "value": "@fields.heart_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "heart_toggle",
+                "this.value"
+              ],
+              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+              "_cleaned": "changed | set_field: heart_toggle: @local.toggle_bar_3"
+            }
+          ],
           "parameter_list": {
             "variant": "icon",
             "icon_true_asset": "images/icons/heart_blue.svg",
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
-          "_nested_name": "button.toggle_bar_3"
+          "_nested_name": "button.toggle_bar_3",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.heart_toggle",
+                "matchedExpression": "@fields.heart_toggle",
+                "type": "fields",
+                "fieldName": "heart_toggle"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+                    "matchedExpression": "@local.toggle_bar_3",
+                    "type": "local",
+                    "fieldName": "toggle_bar_3"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+                    "matchedExpression": "@local.toggle_bar_3",
+                    "type": "local",
+                    "fieldName": "toggle_bar_3"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@fields.heart_toggle": [
+              "value"
+            ],
+            "@local.toggle_bar_3": [
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
         }
       ],
       "name": "button",

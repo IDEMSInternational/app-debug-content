@@ -1,4 +1,12 @@
 {
+  "audio/timer/ping_1.wav": {
+    "md5Checksum": "000bdadc5c44489368e4320d987892a7",
+    "size_kb": 196.4
+  },
+  "audio/timer/ping_2.wav": {
+    "md5Checksum": "a9cad2b710e4c0efc104be4eed375d80",
+    "size_kb": 829.6
+  },
   "debug_asset_pack/test_image.png": {
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
     "size_kb": 2
