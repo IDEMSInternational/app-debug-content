@@ -25,10 +25,11 @@
           "trigger": "click",
           "action_id": "asset_pack",
           "args": [
-            "download"
+            "download",
+            "debug_asset_pack_1"
           ],
-          "_raw": "click | asset_pack: download",
-          "_cleaned": "click | asset_pack: download"
+          "_raw": "click | asset_pack: download: debug_asset_pack_1",
+          "_cleaned": "click | asset_pack: download: debug_asset_pack_1"
         },
         {
           "trigger": "click",
@@ -43,8 +44,35 @@
       "_nested_name": "button_1"
     },
     {
+      "type": "title",
+      "value": "Remote asset with core equivalent/fallback",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
       "type": "image",
-      "value": "debug_asset_pack/test_image.png",
+      "value": "debug_asset_pack_1/test_image.png",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image",
+      "_nested_name": "image"
+    },
+    {
+      "type": "title",
+      "value": "Remote asset without core equivalent/fallback",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "image",
+      "value": "debug_asset_pack_1/test_remote_only.png",
       "_translations": {
         "value": {}
       },
@@ -70,6 +98,35 @@
         }
       ],
       "_nested_name": "button_2"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Clear remote assets cache",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "clear_cache"
+          ],
+          "_raw": "click | asset_pack: clear_cache",
+          "_cleaned": "click | asset_pack: clear_cache"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload",
+          "_cleaned": "click | emit: force_reload"
+        }
+      ],
+      "_nested_name": "button_3"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_remote_assets.xlsx"

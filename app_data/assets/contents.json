@@ -7,11 +7,11 @@
     "md5Checksum": "a9cad2b710e4c0efc104be4eed375d80",
     "size_kb": 829.6
   },
-  "debug_asset_pack/test_image.png": {
+  "debug_asset_pack_1/test_image.png": {
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
     "size_kb": 2
   },
-  "debug_asset_pack/test_image_2.png": {
+  "debug_asset_pack_1/test_image_2.png": {
     "md5Checksum": "52ec3256ba473e6a19987b4d766bc5f9",
     "size_kb": 6.5
   },

@@ -1,4 +1,15 @@
 {
+  "debug_asset_pack/test_image.png": {
+    "overrides": {
+      "theme_default": {
+        "tz_sw": {
+          "filePath": "tz_sw/debug_asset_pack/test_image.png",
+          "md5Checksum": "d851eef52c8d12fdbf0497210961a407",
+          "size_kb": 21.6
+        }
+      }
+    }
+  },
   "quality_assurance/test_audio.mp3": {
     "overrides": {
       "theme_default": {
@@ -10,17 +21,6 @@
       }
     }
   },
-  "quality_assurance/test_image.png": {
-    "overrides": {
-      "theme_default": {
-        "es_sp": {
-          "filePath": "es_sp/quality_assurance/test_image.png",
-          "md5Checksum": "f44069fc2c1d641dae929631c17fdbec",
-          "size_kb": 1.8
-        }
-      }
-    }
-  },
   "quality_assurance/test_image_untracked.png": {
     "overrides": {
       "theme_default": {
@@ -28,6 +28,17 @@
           "filePath": "es_sp/quality_assurance/test_image_untracked.png",
           "md5Checksum": "72f88e0cd59ffd07a8cefdee51713ea6",
           "size_kb": 12.8
+        }
+      }
+    }
+  },
+  "test_image.png": {
+    "overrides": {
+      "theme_default": {
+        "es_sp": {
+          "filePath": "es_sp/test_image.png",
+          "md5Checksum": "f44069fc2c1d641dae929631c17fdbec",
+          "size_kb": 1.8
         }
       }
     }

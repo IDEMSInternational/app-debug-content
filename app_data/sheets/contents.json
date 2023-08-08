@@ -820,6 +820,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_conditional_messages.xlsx"
     },
+    "debug_dashed_box": {
+      "flow_type": "template",
+      "flow_name": "debug_dashed_box",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_dashed_box.xlsx"
+    },
     "debug_dashed_box_paragraphs": {
       "flow_type": "template",
       "flow_name": "debug_dashed_box_paragraphs",
@@ -2396,6 +2402,11 @@
     "home_screen": {
       "flow_type": "template",
       "flow_name": "home_screen",
+      "_xlsxPath": "navigation.xlsx"
+    },
+    "nav_buttons": {
+      "flow_type": "template",
+      "flow_name": "nav_buttons",
       "_xlsxPath": "navigation.xlsx"
     }
   },

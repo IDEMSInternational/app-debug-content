@@ -27,8 +27,9 @@
         }
       ],
       "parameter_list": {
-        "skip_text": "Click here to skip",
-        "style": "light"
+        "skip_text": "Click here to skip!",
+        "style": "light",
+        "animation": "none"
       },
       "rows": [
         {
