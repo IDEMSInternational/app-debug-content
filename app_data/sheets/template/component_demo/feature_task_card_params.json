@@ -80,7 +80,9 @@
       "name": "highlighted_text",
       "value": "Featured",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "type": "set_variable",
       "_nested_name": "highlighted_text"
@@ -89,7 +91,9 @@
       "name": "subtasks_text",
       "value": "activities",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "type": "set_variable",
       "_nested_name": "subtasks_text"

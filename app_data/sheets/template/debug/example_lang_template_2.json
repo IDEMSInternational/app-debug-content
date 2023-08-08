@@ -13,7 +13,9 @@
           "name": "text_1",
           "value": "This is a modified text that needs to be translated.\n\nThis is a nested text.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "type": "set_variable",
           "_nested_name": "example_lang_template_1.text_1"
@@ -22,7 +24,9 @@
           "name": "reply_happy",
           "value": "This is the modified reply if the feeling response is happy, the first option.\n\nThis is a nested text.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "type": "set_variable",
           "_nested_name": "example_lang_template_1.reply_happy"
@@ -31,7 +35,9 @@
           "name": "reply_ok",
           "value": "This is the modified reply if the feeling response is ok, the second option.\n\nThis is a nested text.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "type": "set_variable",
           "_nested_name": "example_lang_template_1.reply_ok"
@@ -40,7 +46,9 @@
           "name": "reply_sad",
           "value": "This is the modified reply if the feeling response is sad, the third option.\n\nThis is a nested text.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "type": "set_variable",
           "_nested_name": "example_lang_template_1.reply_sad"
@@ -49,7 +57,9 @@
           "name": "subtitle_2",
           "value": "Which of the following do you like the most (this is modified)?",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "type": "set_variable",
           "_nested_name": "example_lang_template_1.subtitle_2"

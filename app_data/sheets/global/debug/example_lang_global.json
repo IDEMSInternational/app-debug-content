@@ -9,7 +9,9 @@
       "name": "language_global_1",
       "value": "This is a global variable set in a global",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       }
     },
     {
@@ -25,7 +27,9 @@
       "name": "language_field_1",
       "value": "This is a field set by default",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       }
     },
     {

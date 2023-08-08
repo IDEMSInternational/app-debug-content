@@ -40,7 +40,9 @@
       "name": "text_2",
       "value": "Text and @global.language_global_1",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "_nested_name": "text_2",
       "_dynamicFields": {
