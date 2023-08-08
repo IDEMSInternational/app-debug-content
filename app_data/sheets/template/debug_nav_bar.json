@@ -1,0 +1,118 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_bar",
+  "status": "released",
+  "rows": [
+    {
+      "name": "button_list",
+      "value": [
+        "image: images/icons/globe_blue.svg | target_template: home_screen",
+        "image: images/icons/heart_blue.svg | target_template: example_dg",
+        "image: images/icons/school_blue.svg | target_template: example_calc"
+      ],
+      "type": "set_variable",
+      "_nested_name": "button_list"
+    },
+    {
+      "type": "navigation_bar",
+      "name": "navigation_bar_local",
+      "parameter_list": {
+        "button_list": "@local.button_list"
+      },
+      "_nested_name": "navigation_bar_local",
+      "_dynamicFields": {
+        "parameter_list": {
+          "button_list": [
+            {
+              "fullExpression": "@local.button_list",
+              "matchedExpression": "@local.button_list",
+              "type": "local",
+              "fieldName": "button_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.button_list": [
+          "parameter_list.button_list"
+        ]
+      }
+    },
+    {
+      "name": "button_list_data",
+      "value": [
+        "@data.debug_nav_bar_data"
+      ],
+      "type": "set_variable",
+      "_nested_name": "button_list_data",
+      "_dynamicFields": {
+        "value": {
+          "0": [
+            {
+              "fullExpression": "@data.debug_nav_bar_data",
+              "matchedExpression": "@data.debug_nav_bar_data",
+              "type": "data",
+              "fieldName": "debug_nav_bar_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.debug_nav_bar_data": [
+          "value.0"
+        ]
+      }
+    },
+    {
+      "type": "navigation_bar",
+      "name": "navigation_bar_data_local",
+      "parameter_list": {
+        "button_list": "@local.button_list_data"
+      },
+      "_nested_name": "navigation_bar_data_local",
+      "_dynamicFields": {
+        "parameter_list": {
+          "button_list": [
+            {
+              "fullExpression": "@local.button_list_data",
+              "matchedExpression": "@local.button_list_data",
+              "type": "local",
+              "fieldName": "button_list_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.button_list_data": [
+          "parameter_list.button_list"
+        ]
+      }
+    },
+    {
+      "type": "navigation_bar",
+      "name": "navigation_bar_data_direct",
+      "parameter_list": {
+        "button_list": "@data.debug_nav_bar_data"
+      },
+      "_nested_name": "navigation_bar_data_direct",
+      "_dynamicFields": {
+        "parameter_list": {
+          "button_list": [
+            {
+              "fullExpression": "@data.debug_nav_bar_data",
+              "matchedExpression": "@data.debug_nav_bar_data",
+              "type": "data",
+              "fieldName": "debug_nav_bar_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.debug_nav_bar_data": [
+          "parameter_list.button_list"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
+}

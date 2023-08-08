@@ -3,6 +3,10 @@
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
     "size_kb": 2
   },
+  "debug_asset_pack/test_image_2.png": {
+    "md5Checksum": "52ec3256ba473e6a19987b4d766bc5f9",
+    "size_kb": 6.5
+  },
   "debug_theme_language.png": {
     "md5Checksum": "a86e175e00b77a34a936cc08214359ca",
     "size_kb": 21.9
@@ -15,6 +19,10 @@
     "md5Checksum": "5afaf79789a776d81ec91ccbdc9fdaba",
     "size_kb": 139.4
   },
+  "images/example/circular.png": {
+    "md5Checksum": "94a65895113710ba8b4581b14e879dee",
+    "size_kb": 15.7
+  },
   "images/icons/globe_blue.svg": {
     "md5Checksum": "17709dbf6ff432c362ac51477203d44a",
     "size_kb": 3.9
@@ -22,6 +30,10 @@
   "images/icons/heart_blue.svg": {
     "md5Checksum": "88d5bd5d99c20bd6ecfe5790f285fc0c",
     "size_kb": 1.4
+  },
+  "images/icons/heart_outline.svg": {
+    "md5Checksum": "3837dbad3c5c5b8158a5370064283c20",
+    "size_kb": 0.6
   },
   "images/icons/in_progress.svg": {
     "md5Checksum": "6105962bc0edd981675d874dc8a51035",

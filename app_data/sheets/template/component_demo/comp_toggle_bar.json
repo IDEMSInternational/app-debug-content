@@ -14,7 +14,7 @@
       "_nested_name": "title_1"
     },
     {
-      "type": "toggle-bar",
+      "type": "toggle_bar",
       "name": "toggle_1",
       "value": false,
       "action_list": [
@@ -87,7 +87,7 @@
       }
     },
     {
-      "type": "toggle-bar",
+      "type": "toggle_bar",
       "name": "toggle_2",
       "parameter_list": {
         "true_text": "true text"
@@ -104,7 +104,7 @@
       "_nested_name": "title_ 3"
     },
     {
-      "type": "toggle-bar",
+      "type": "toggle_bar",
       "name": "toggle_3",
       "parameter_list": {
         "position": "left",
@@ -113,7 +113,7 @@
       "_nested_name": "toggle_3"
     },
     {
-      "type": "toggle-bar",
+      "type": "toggle_bar",
       "name": "toggle_4",
       "parameter_list": {
         "position": "right",
@@ -122,7 +122,7 @@
       "_nested_name": "toggle_4"
     },
     {
-      "type": "toggle-bar",
+      "type": "toggle_bar",
       "name": "toggle_5",
       "parameter_list": {
         "position": "center",
@@ -140,7 +140,7 @@
       "_nested_name": "title_ 4"
     },
     {
-      "type": "toggle-bar",
+      "type": "toggle_bar",
       "name": "toggle_6",
       "parameter_list": {
         "show_tick_and_cross": "true"
@@ -148,12 +148,31 @@
       "_nested_name": "toggle_6"
     },
     {
-      "type": "toggle-bar",
+      "type": "toggle_bar",
       "name": "toggle_7",
       "parameter_list": {
         "show_tick_and_cross": "false"
       },
       "_nested_name": "toggle_7"
+    },
+    {
+      "type": "title",
+      "name": "title_ 5",
+      "value": "Variant: icon",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_ 5"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_8",
+      "parameter_list": {
+        "variant": "icon",
+        "icon_true_asset": "images/icons/heart_blue.svg",
+        "icon_false_asset": "images/icons/heart_outline.svg"
+      },
+      "_nested_name": "toggle_8"
     }
   ],
   "_xlsxPath": "component_sheets/component_toggle_bar.xlsx"
