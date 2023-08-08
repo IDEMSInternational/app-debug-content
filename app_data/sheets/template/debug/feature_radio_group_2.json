@@ -298,7 +298,9 @@
       "name": "radio_group_image_1",
       "value": "happy",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "exclude_from_translation": true,
       "parameter_list": {
@@ -378,7 +380,9 @@
       "name": "happy",
       "value": "happy",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "type": "set_variable",
       "_nested_name": "happy"

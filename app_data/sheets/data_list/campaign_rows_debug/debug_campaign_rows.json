@@ -58,7 +58,9 @@
       ],
       "text": "How are you feeling today?",
       "_translations": {
-        "text": {},
+        "text": {
+          "es_sp": true
+        },
         "title": {}
       },
       "_translatedFields": {
@@ -91,7 +93,9 @@
       ],
       "text": "Text: @global.debug_variable_1",
       "_translations": {
-        "text": {},
+        "text": {
+          "es_sp": true
+        },
         "title": {}
       },
       "_translatedFields": {

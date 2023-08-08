@@ -83,7 +83,9 @@
       "name": "translated_text",
       "value": "How are you feeling today?",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "_nested_name": "translated_text"
     },

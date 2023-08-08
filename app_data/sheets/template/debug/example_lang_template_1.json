@@ -16,7 +16,9 @@
       "name": "title",
       "value": "Example Language Template",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "_nested_name": "title"
     },
@@ -25,7 +27,9 @@
       "name": "text_1",
       "value": "This is a default text that needs to be translated",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "_nested_name": "text_1"
     },
@@ -34,7 +38,9 @@
       "name": "subtitle_1",
       "value": "How are you feeling today?",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "parameter_list": {
         "style": "large"
@@ -180,7 +186,9 @@
           "name": "reply_happy",
           "value": "This is the default reply if the feeling response is happy, the first option.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "_nested_name": "reply_happy_dg.reply_happy"
         }
@@ -215,7 +223,9 @@
           "name": "reply_ok",
           "value": "This is the default reply if the feeling response is ok, the second option.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "_nested_name": "reply_ok_dg.reply_ok"
         }
@@ -250,7 +260,9 @@
           "name": "reply_sad",
           "value": "This is the default reply if the feeling response is sad, the third option.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "_nested_name": "reply_sad_dg.reply_sad"
         }
@@ -277,7 +289,9 @@
       "name": "text_2",
       "value": "The field set through the radio group is @local.radio_group_field_name and its value is @fields.@local.radio_group_field_name.",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "hidden": "!@local.radio_group",
       "_nested_name": "text_2",
@@ -367,7 +381,9 @@
       "name": "subtitle_2",
       "value": "Select one of the following options:",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "parameter_list": {
         "style": "large"
@@ -601,7 +617,9 @@
           "name": "reply_combo_box",
           "value": "The option selected was @local.combo_box.",
           "_translations": {
-            "value": {}
+            "value": {
+              "es_sp": true
+            }
           },
           "_nested_name": "reply_dg.reply_combo_box",
           "_dynamicFields": {
@@ -643,7 +661,9 @@
       "name": "text_3",
       "value": "The field set through the combo box is @local.combo_box_field_name and its value is @fields.@local.combo_box_field_name.",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "hidden": "!@local.combo_box",
       "_nested_name": "text_3",
