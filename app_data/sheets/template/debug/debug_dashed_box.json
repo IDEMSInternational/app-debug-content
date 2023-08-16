@@ -14,6 +14,15 @@
       "_nested_name": "example_markdown"
     },
     {
+      "name": "example_plain_text",
+      "value": "Example of multiple paragraphs of plain text.\nHere is a second paragraph after a single line-break.\n\nHere is a third paragraph after a double line-break.",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "example_plain_text"
+    },
+    {
       "type": "dashed_box",
       "value": "@local.example_markdown",
       "_translations": {
@@ -60,6 +69,68 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "dashed_box",
+      "value": "@local.example_plain_text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "dashed_box",
+      "_nested_name": "dashed_box",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.example_plain_text",
+            "matchedExpression": "@local.example_plain_text",
+            "type": "local",
+            "fieldName": "example_plain_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.example_plain_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@local.example_plain_text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.example_plain_text",
+            "matchedExpression": "@local.example_plain_text",
+            "type": "local",
+            "fieldName": "example_plain_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.example_plain_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Dashed box with no value:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box",
+      "_nested_name": "dashed_box"
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_dashed_box.xlsx"

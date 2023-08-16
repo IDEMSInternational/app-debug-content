@@ -1,4 +1,8 @@
 {
+  "audio/test_audio.mp3": {
+    "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
+    "size_kb": 43.4
+  },
   "audio/timer/ping_1.wav": {
     "md5Checksum": "000bdadc5c44489368e4320d987892a7",
     "size_kb": 196.4
@@ -31,6 +35,22 @@
     "md5Checksum": "94a65895113710ba8b4581b14e879dee",
     "size_kb": 15.7
   },
+  "images/icons/audio/pause-sharp.svg": {
+    "md5Checksum": "d8254b68a74026926ccff7e6a7437409",
+    "size_kb": 0.1
+  },
+  "images/icons/audio/play-back-sharp.svg": {
+    "md5Checksum": "8e0e087a30a521b28d409a21e6f35260",
+    "size_kb": 0.1
+  },
+  "images/icons/audio/play-forward-sharp.svg": {
+    "md5Checksum": "d2f08150586284a986d5fec28b9e06ea",
+    "size_kb": 0.1
+  },
+  "images/icons/audio/play-sharp.svg": {
+    "md5Checksum": "b3ed52ec26505b93fd559e711fa92863",
+    "size_kb": 0.1
+  },
   "images/icons/globe_blue.svg": {
     "md5Checksum": "17709dbf6ff432c362ac51477203d44a",
     "size_kb": 3.9
@@ -61,15 +81,20 @@
   },
   "images/test_image.png": {
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
+    "overrides": {
+      "theme_default": {
+        "tz_sw": {
+          "filePath": "tz_sw/images/test_image.png",
+          "md5Checksum": "d851eef52c8d12fdbf0497210961a407",
+          "size_kb": 21.6
+        }
+      }
+    },
     "size_kb": 2
   },
   "odk_form.json": {
     "md5Checksum": "8b89a6b050f58c0fa0de2d0ff0bd2f32",
     "size_kb": 8
-  },
-  "test_audio.mp3": {
-    "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
-    "size_kb": 43.4
   },
   "test_image_no_translations.png": {
     "md5Checksum": "f759667d7abedfa5aea2ac742e831ce3",
