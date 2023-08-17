@@ -1,15 +1,4 @@
 {
-  "debug_asset_pack/test_image.png": {
-    "overrides": {
-      "theme_default": {
-        "tz_sw": {
-          "filePath": "tz_sw/debug_asset_pack/test_image.png",
-          "md5Checksum": "d851eef52c8d12fdbf0497210961a407",
-          "size_kb": 21.6
-        }
-      }
-    }
-  },
   "quality_assurance/test_audio.mp3": {
     "overrides": {
       "theme_default": {

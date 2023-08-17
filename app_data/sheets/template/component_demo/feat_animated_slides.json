@@ -28,8 +28,7 @@
       ],
       "parameter_list": {
         "skip_text": "Click here to skip!",
-        "style": "light",
-        "animation": "none"
+        "style": "light"
       },
       "rows": [
         {
@@ -76,7 +75,8 @@
         {
           "type": "animated_section",
           "parameter_list": {
-            "duration": "4"
+            "duration": "4",
+            "animation": "none"
           },
           "rows": [
             {

@@ -447,6 +447,12 @@
       "flow_name": "comp_odk_form",
       "_xlsxPath": "component_sheets/component_odk.xlsx"
     },
+    "comp_audio": {
+      "flow_type": "template",
+      "flow_name": "comp_audio",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_audio.xlsx"
+    },
     "comp_button": {
       "flow_type": "template",
       "flow_name": "comp_button",
@@ -2091,12 +2097,6 @@
       "flow_name": "example_workshops_accordion",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_accordion.xlsx"
-    },
-    "feature_audio": {
-      "flow_type": "template",
-      "flow_name": "feature_audio",
-      "flow_subtype": "debug",
-      "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
     },
     "feature_checkbox": {
       "flow_type": "template",

@@ -1,13 +1,13 @@
 {
   "flow_type": "template",
-  "flow_name": "feature_audio",
+  "flow_name": "comp_audio",
   "status": "released",
-  "flow_subtype": "debug",
+  "flow_subtype": "component_demo",
   "rows": [
     {
       "type": "audio",
       "name": "audio_1",
-      "value": "quality_assurance/test_audio.mp3",
+      "value": "audio/test_audio.mp3",
       "_translations": {
         "value": {}
       },
@@ -17,15 +17,12 @@
         "time_to_rewind": "5",
         "title": "Audio player #1"
       },
-      "style_list": [
-        "margin-top: 15px"
-      ],
       "_nested_name": "audio_1"
     },
     {
       "type": "audio",
       "name": "audio_2",
-      "value": "quality_assurance/test_audio.mp3",
+      "value": "audio/test_audio.mp3",
       "_translations": {
         "value": {}
       },
@@ -34,13 +31,13 @@
         "range_bar_disabled": "false",
         "time_to_rewind": "3",
         "title": "Audio player #2",
-        "help": "Example"
+        "help": "Example",
+        "play_icon_asset": "images/icons/audio/play-sharp.svg",
+        "pause_icon_asset": "images/icons/audio/pause-sharp.svg",
+        "forward_icon_asset": "images/icons/audio/play-forward-sharp.svg"
       },
-      "style_list": [
-        "margin-top: 15px"
-      ],
       "_nested_name": "audio_2"
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+  "_xlsxPath": "component_sheets/component_audio.xlsx"
 }
