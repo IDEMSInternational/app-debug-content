@@ -22,7 +22,10 @@
       "type": "timer",
       "name": "timer_par_1_1",
       "parameter_list": {
-        "title": "any text as title"
+        "title": "Custom icons",
+        "play_icon_asset": "images/icons/globe_blue.svg",
+        "pause_icon_asset": "images/icons/heart_blue.svg",
+        "reset_icon_asset": "images/icons/leaf_blue.svg"
       },
       "_nested_name": "timer_par_1_1"
     },

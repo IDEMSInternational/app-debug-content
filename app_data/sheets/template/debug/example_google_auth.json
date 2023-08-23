@@ -1,0 +1,45 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_google_auth",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Google Auth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Use the button below to sign in with google auth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
+      "type": "button",
+      "name": "sign_in",
+      "value": "Sign in with Google",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "google_auth",
+          "args": [],
+          "_raw": "click | google_auth",
+          "_cleaned": "click | google_auth"
+        }
+      ],
+      "_nested_name": "sign_in"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_google_auth.xlsx"
+}

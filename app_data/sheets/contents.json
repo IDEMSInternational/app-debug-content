@@ -209,6 +209,20 @@
       "flow_subtype": "example_generator",
       "flow_type": "data_list"
     },
+    "example_list_override_data": {
+      "flow_type": "data_list",
+      "flow_name": "example_list_override_data",
+      "flow_subtype": "example_list_override",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+    },
+    "example_list_override_data_1": {
+      "flow_type": "data_list",
+      "flow_name": "example_list_override_data_1",
+      "flow_subtype": "example_list_override",
+      "override_target": "example_list_override_data",
+      "override_condition": "@fields.example_list_override_field == 1",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+    },
     "example_data_pipe_list": {
       "flow_type": "data_list",
       "flow_subtype": "example_pipe",
@@ -1810,6 +1824,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"
     },
+    "example_google_auth": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_google_auth",
+      "_xlsxPath": "example_sheets/example_google_auth.xlsx"
+    },
     "example_items": {
       "flow_type": "template",
       "flow_subtype": "debug",
@@ -2338,6 +2358,11 @@
       "flow_name": "w_example_welcome_together",
       "_xlsxPath": "example_sheets/to_be_sorted/example_workshop.xlsx"
     },
+    "debug_app_update": {
+      "flow_type": "template",
+      "flow_name": "debug_app_update",
+      "_xlsxPath": "debug_sheets/debug_app_update.xlsx"
+    },
     "debug_error_logging": {
       "flow_type": "template",
       "flow_name": "debug_error_logging",
@@ -2369,6 +2394,12 @@
       "flow_name": "example_hardcoded_fields",
       "comments": "List of fields automatically populated by app",
       "_xlsxPath": "example_sheets/to_be_sorted/hardcoded_variables.xlsx"
+    },
+    "example_list_override": {
+      "flow_type": "template",
+      "flow_name": "example_list_override",
+      "flow_subtype": "example_list_override",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
     },
     "example_sheet_defaults": {
       "flow_type": "template",

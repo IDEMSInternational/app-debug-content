@@ -34,7 +34,8 @@
         {
           "type": "animated_section",
           "parameter_list": {
-            "duration": "3.5"
+            "duration": "3.5",
+            "animation": "fade"
           },
           "rows": [
             {
@@ -46,7 +47,7 @@
                 {
                   "type": "image",
                   "name": "image_1",
-                  "value": "plh_images/first_app_launch/frustrated_shadow.svg",
+                  "value": "images/example/jasper_1.jpg",
                   "_translations": {
                     "value": {}
                   },
@@ -88,7 +89,7 @@
                 {
                   "type": "image",
                   "name": "image_2",
-                  "value": "plh_images/first_app_launch/loving_parent_shadow.svg",
+                  "value": "images/example/408-536x354.jpg",
                   "_translations": {
                     "value": {}
                   },
@@ -117,7 +118,8 @@
         {
           "type": "animated_section",
           "parameter_list": {
-            "duration": "5"
+            "duration": "5",
+            "animation": "none"
           },
           "rows": [
             {
@@ -141,7 +143,7 @@
                 {
                   "type": "image",
                   "name": "partner_1",
-                  "value": "plh_images/logos/partners/plh.png",
+                  "value": "images/example/423-536x354.jpg",
                   "_translations": {
                     "value": {}
                   },
@@ -150,29 +152,11 @@
                 {
                   "type": "image",
                   "name": "partner_2",
-                  "value": "plh_images/logos/partners/unicef.png",
+                  "value": "images/example/110-536x354.jpg",
                   "_translations": {
                     "value": {}
                   },
                   "_nested_name": "animated_slides.animated_section.display_group.partner_2"
-                },
-                {
-                  "type": "image",
-                  "name": "partner_3",
-                  "value": "plh_images/logos/partners/who.png",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "_nested_name": "animated_slides.animated_section.display_group.partner_3"
-                },
-                {
-                  "type": "image",
-                  "name": "partner_4",
-                  "value": "plh_images/logos/partners/cwb.png",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "_nested_name": "animated_slides.animated_section.display_group.partner_4"
                 }
               ],
               "name": "display_group",
@@ -187,7 +171,7 @@
                 {
                   "type": "image",
                   "name": "partner_5",
-                  "value": "plh_images/logos/partners/idems.png",
+                  "value": "images/example/344-536x354.jpg",
                   "_translations": {
                     "value": {}
                   },

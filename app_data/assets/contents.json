@@ -31,9 +31,29 @@
     "md5Checksum": "5afaf79789a776d81ec91ccbdc9fdaba",
     "size_kb": 139.4
   },
+  "images/example/110-536x354.jpg": {
+    "md5Checksum": "bf471a3ecb792c6b8bdc9d8c82aeebc1",
+    "size_kb": 39.1
+  },
+  "images/example/344-536x354.jpg": {
+    "md5Checksum": "a125c32cf1c5e7a981ec259e315b7467",
+    "size_kb": 13.9
+  },
+  "images/example/408-536x354.jpg": {
+    "md5Checksum": "5c387bf9cf5ea53e7a0221df3c69b18f",
+    "size_kb": 23.2
+  },
+  "images/example/423-536x354.jpg": {
+    "md5Checksum": "499ac00b4db82ee03e735eee595ca053",
+    "size_kb": 30.3
+  },
   "images/example/circular.png": {
     "md5Checksum": "94a65895113710ba8b4581b14e879dee",
     "size_kb": 15.7
+  },
+  "images/example/jasper_1.jpg": {
+    "md5Checksum": "8ed1f2802b37a7a11382ebabcdd9dfd0",
+    "size_kb": 527.3
   },
   "images/icons/audio/pause-sharp.svg": {
     "md5Checksum": "d8254b68a74026926ccff7e6a7437409",

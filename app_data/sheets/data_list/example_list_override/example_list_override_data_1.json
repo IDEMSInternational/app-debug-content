@@ -1,0 +1,19 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "example_list_override_data_1",
+  "status": "released",
+  "flow_subtype": "example_list_override",
+  "override_target": "example_list_override_data",
+  "override_condition": "@fields.example_list_override_field == 1",
+  "rows": [
+    {
+      "id": 1,
+      "text": "override text 1"
+    },
+    {
+      "id": 2,
+      "text": "override text 2"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+}

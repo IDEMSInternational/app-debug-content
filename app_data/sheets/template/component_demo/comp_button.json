@@ -35,6 +35,18 @@
     },
     {
       "type": "button",
+      "value": "FAQ: A parent/spouse may have difficulty asking for help in sharing household or childcare responsibilities.",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "card"
+      },
+      "name": "button",
+      "_nested_name": "button"
+    },
+    {
+      "type": "button",
       "value": "With icon",
       "_translations": {
         "value": {}
