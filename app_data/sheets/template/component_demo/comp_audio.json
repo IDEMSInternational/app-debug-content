@@ -5,6 +5,15 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "title",
+      "value": "Audio player with default icons:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
       "type": "audio",
       "name": "audio_1",
       "value": "audio/test_audio.mp3",
@@ -20,14 +29,20 @@
       "_nested_name": "audio_1"
     },
     {
-      "type": "audio",
-      "name": "audio_2",
-      "value": "audio/test_audio.mp3",
+      "type": "title",
+      "value": "Audio player with custom icons:",
       "_translations": {
         "value": {}
       },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "audio",
+      "name": "audio_2",
       "exclude_from_translation": true,
       "parameter_list": {
+        "src": "audio/test_audio.mp3",
         "range_bar_disabled": "false",
         "time_to_rewind": "3",
         "title": "Audio player #2",

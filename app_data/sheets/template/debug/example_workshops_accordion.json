@@ -156,7 +156,7 @@
     },
     {
       "name": "title_4",
-      "value": "Fourth title",
+      "value": "Custom icons",
       "_translations": {
         "value": {}
       },
@@ -415,7 +415,10 @@
           "type": "accordion_section",
           "name": "fourth",
           "parameter_list": {
-            "title": "@local.title_4"
+            "title": "@local.title_4",
+            "completed_icon_asset": "images/icons/globe_blue.svg",
+            "in_progress_icon_asset": "images/icons/heart_blue.svg",
+            "disabled_icon_asset": "images/icons/leaf_blue.svg"
           },
           "rows": [
             {

@@ -11,7 +11,7 @@ config.google_drive = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.1.22",
+  content_tag_latest: "1.1.23",
 };
 
 config.app_data.output_path = "./app_data";
@@ -33,10 +33,16 @@ try {
   });
 }
 
+config.error_logging = {
+  dsn: "https://69ccfba168f04b848cdd96ac066d01b5@app.glitchtip.com/2438",
+};
+
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
 config.app_config.APP_SIDEMENU_DEFAULTS.title = "Debug App";
 config.app_config.APP_SKINS.defaultSkinName = SKINS.defaultSkin.name
 config.app_config.APP_SKINS.available = [SKINS.defaultSkin, SKINS.debug]
+config.app_config.APP_UPDATES.enabled = true
+config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete"
 
 export default config;
