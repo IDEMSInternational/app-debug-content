@@ -34,8 +34,7 @@
         {
           "type": "animated_section",
           "parameter_list": {
-            "duration": "3.5",
-            "animation": "fade"
+            "duration": "3"
           },
           "rows": [
             {
@@ -59,7 +58,7 @@
             },
             {
               "type": "text",
-              "value": "Slide 1 text",
+              "value": "Slide 1 - fades in and out (default)",
               "_translations": {
                 "value": {}
               },
@@ -101,7 +100,7 @@
             },
             {
               "type": "text",
-              "value": "Slide 2 text",
+              "value": "Slide 2 - no animation",
               "_translations": {
                 "value": {}
               },
@@ -124,7 +123,7 @@
           "rows": [
             {
               "type": "text",
-              "value": "Slide 3 text, with two_columns_images display group",
+              "value": "Slide 3 - no animation, with two_columns_images display group",
               "_translations": {
                 "value": {}
               },
@@ -142,21 +141,21 @@
               "rows": [
                 {
                   "type": "image",
-                  "name": "partner_1",
+                  "name": "image_3",
                   "value": "images/example/423-536x354.jpg",
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.partner_1"
+                  "_nested_name": "animated_slides.animated_section.display_group.image_3"
                 },
                 {
                   "type": "image",
-                  "name": "partner_2",
+                  "name": "image_4",
                   "value": "images/example/110-536x354.jpg",
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.partner_2"
+                  "_nested_name": "animated_slides.animated_section.display_group.image_4"
                 }
               ],
               "name": "display_group",
@@ -170,16 +169,55 @@
               "rows": [
                 {
                   "type": "image",
-                  "name": "partner_5",
+                  "name": "image_5",
                   "value": "images/example/344-536x354.jpg",
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.partner_5"
+                  "_nested_name": "animated_slides.animated_section.display_group.image_5"
                 }
               ],
               "name": "display_group",
               "_nested_name": "animated_slides.animated_section.display_group"
+            }
+          ],
+          "name": "animated_section",
+          "_nested_name": "animated_slides.animated_section"
+        },
+        {
+          "type": "animated_section",
+          "parameter_list": {
+            "duration": "3.5",
+            "animation": "fade"
+          },
+          "rows": [
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "centre_image"
+              },
+              "rows": [
+                {
+                  "type": "image",
+                  "name": "image_6",
+                  "value": "images/example/jasper_1.jpg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "animated_slides.animated_section.display_group.image_6"
+                }
+              ],
+              "name": "display_group",
+              "_nested_name": "animated_slides.animated_section.display_group"
+            },
+            {
+              "type": "text",
+              "value": "Slide 4 - fades in and out",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text",
+              "_nested_name": "animated_slides.animated_section.text"
             }
           ],
           "name": "animated_section",

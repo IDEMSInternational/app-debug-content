@@ -46,7 +46,7 @@
         "range_bar_disabled": "false",
         "time_to_rewind": "3",
         "title": "Audio player #2",
-        "help": "Example",
+        "help_text": "Example",
         "play_icon_asset": "images/icons/audio/play-sharp.svg",
         "pause_icon_asset": "images/icons/audio/pause-sharp.svg",
         "forward_icon_asset": "images/icons/audio/play-forward-sharp.svg"
