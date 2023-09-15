@@ -1,7 +1,7 @@
 {
   "flow_type": "template",
   "flow_subtype": "debug",
-  "flow_name": "example_calc_4",
+  "flow_name": "example_calc_case",
   "status": "released",
   "rows": [
     {

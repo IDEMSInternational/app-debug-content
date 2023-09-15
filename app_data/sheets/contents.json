@@ -87,6 +87,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_title_test.xlsx"
     },
+    "debug_accordion_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_accordion_data",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_accordion.xlsx"
+    },
     "debug_data_list": {
       "flow_type": "data_list",
       "flow_name": "debug_data_list",
@@ -701,6 +707,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
     },
+    "debug_accordion_variables": {
+      "flow_type": "template",
+      "flow_name": "debug_accordion_variables",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_accordion.xlsx"
+    },
     "debug_actions_bottom": {
       "flow_type": "template",
       "flow_name": "debug_actions_bottom",
@@ -1169,6 +1181,30 @@
       "flow_name": "debug_nesting_variables_global",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx"
+    },
+    "debug_nesting_warning_child_1": {
+      "flow_type": "template",
+      "flow_name": "debug_nesting_warning_child_1",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx"
+    },
+    "debug_nesting_warning_child_2": {
+      "flow_type": "template",
+      "flow_name": "debug_nesting_warning_child_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx"
+    },
+    "debug_nesting_warning_parent_1": {
+      "flow_type": "template",
+      "flow_name": "debug_nesting_warning_parent_1",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx"
+    },
+    "debug_nesting_warning_parent_2": {
+      "flow_type": "template",
+      "flow_name": "debug_nesting_warning_parent_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx"
     },
     "debug_ordered_list": {
       "flow_type": "template",
@@ -1698,28 +1734,22 @@
       "flow_name": "example_calc",
       "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
     },
-    "example_calc_2": {
+    "example_calc_case": {
       "flow_type": "template",
       "flow_subtype": "debug",
-      "flow_name": "example_calc_2",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
-    "example_calc_3": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc_3",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
-    "example_calc_4": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc_4",
+      "flow_name": "example_calc_case",
       "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
     },
     "example_calc_date": {
       "flow_type": "template",
       "flow_subtype": "debug",
       "flow_name": "example_calc_date",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
+    "example_calc_substring": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_substring",
       "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
     },
     "example_call_global_constants": {

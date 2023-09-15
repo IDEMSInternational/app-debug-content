@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_warning_child_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "image",
+      "name": "image",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "image"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Title",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "_nested_name": "text_1"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx"
+}
