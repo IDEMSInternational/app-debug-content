@@ -386,6 +386,66 @@
         }
       },
       "title": "Debug Fixed New Years Day"
+    },
+    {
+      "id": "debug_2058_7",
+      "campaign_list": [
+        "debug_2058_7"
+      ],
+      "text": "3.12pm",
+      "_translations": {
+        "text": {},
+        "title": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "3.12pm"
+        },
+        "title": {
+          "eng": "debug_2058_7"
+        }
+      },
+      "title": "debug_2058_7"
+    },
+    {
+      "id": "debug_2058_8",
+      "campaign_list": [
+        "debug_2058_8"
+      ],
+      "text": "3.14pm",
+      "_translations": {
+        "text": {},
+        "title": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "3.14pm"
+        },
+        "title": {
+          "eng": "debug_2058_8"
+        }
+      },
+      "title": "debug_2058_8"
+    },
+    {
+      "id": "debug_2058_9",
+      "campaign_list": [
+        "debug_2058_9"
+      ],
+      "text": "3.17pm",
+      "_translations": {
+        "text": {},
+        "title": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "3.17pm"
+        },
+        "title": {
+          "eng": "debug_2058_9"
+        }
+      },
+      "title": "debug_2058_9"
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"

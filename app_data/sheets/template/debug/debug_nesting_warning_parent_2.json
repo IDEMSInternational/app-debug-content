@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_warning_parent_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "template",
+      "name": "debug_nesting_warning_child_2",
+      "value": "debug_nesting_warning_child_2",
+      "rows": [
+        {
+          "name": "title_1",
+          "value": "New title",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_nesting_warning_child_2.title_1"
+        },
+        {
+          "name": "text_1",
+          "value": "Add text (previously blank)",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_nesting_warning_child_2.text_1"
+        }
+      ],
+      "_nested_name": "debug_nesting_warning_child_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx"
+}

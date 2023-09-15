@@ -232,6 +232,57 @@
           "_raw": "@fields.debug_campaigns_enabled"
         }
       ]
+    },
+    {
+      "id": "debug_2058_7",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.debug_campaigns_enabled"
+          },
+          "_raw": "@fields.debug_campaigns_enabled"
+        }
+      ],
+      "time": {
+        "hour": 15,
+        "minute": 12
+      }
+    },
+    {
+      "id": "debug_2058_8",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.debug_campaigns_enabled"
+          },
+          "_raw": "@fields.debug_campaigns_enabled"
+        }
+      ],
+      "time": {
+        "hour": 15,
+        "minute": 14
+      }
+    },
+    {
+      "id": "debug_2058_9",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.debug_campaigns_enabled"
+          },
+          "_raw": "@fields.debug_campaigns_enabled"
+        }
+      ],
+      "schedule": {
+        "day_of_week": 3
+      },
+      "time": {
+        "hour": 15,
+        "minute": 17
+      }
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
