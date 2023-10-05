@@ -5,6 +5,24 @@
   "status": "released",
   "rows": [
     {
+      "name": "val_1",
+      "value": "ananas",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "val_1"
+    },
+    {
+      "name": "val_2",
+      "value": "bananas",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "val_2"
+    },
+    {
       "type": "title",
       "name": "example_string",
       "value": "Determine whether a string contains a substring",
@@ -23,26 +41,8 @@
       "_nested_name": "some_string"
     },
     {
-      "name": "substring_1",
-      "value": "ananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "substring_1"
-    },
-    {
-      "name": "substring_2",
-      "value": "bananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "substring_2"
-    },
-    {
       "name": "substring_check_1",
-      "value": "@calc(@local.some_string.includes(@local.substring_1))",
+      "value": "@calc(@local.some_string.includes(@local.val_1))",
       "_translations": {
         "value": {}
       },
@@ -51,22 +51,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_string.includes(@local.substring_1))",
+            "fullExpression": "@calc(@local.some_string.includes(@local.val_1))",
             "matchedExpression": "@local.some_string.includes",
             "type": "local",
             "fieldName": "some_string"
           },
           {
-            "fullExpression": "@calc(@local.some_string.includes(@local.substring_1))",
-            "matchedExpression": "@local.substring_1",
+            "fullExpression": "@calc(@local.some_string.includes(@local.val_1))",
+            "matchedExpression": "@local.val_1",
             "type": "local",
-            "fieldName": "substring_1"
+            "fieldName": "val_1"
           },
           {
-            "fullExpression": "@calc(@local.some_string.includes(@local.substring_1))",
-            "matchedExpression": "@calc(@local.some_string.includes(@local.substring_1))",
+            "fullExpression": "@calc(@local.some_string.includes(@local.val_1))",
+            "matchedExpression": "@calc(@local.some_string.includes(@local.val_1))",
             "type": "calc",
-            "fieldName": "@local.some_string.includes(@local.substring_1)"
+            "fieldName": "@local.some_string.includes(@local.val_1)"
           }
         ]
       },
@@ -74,17 +74,17 @@
         "@local.some_string.includes": [
           "value"
         ],
-        "@local.substring_1": [
+        "@local.val_1": [
           "value"
         ],
-        "@calc(@local.some_string.includes(@local.substring_1))": [
+        "@calc(@local.some_string.includes(@local.val_1))": [
           "value"
         ]
       }
     },
     {
       "name": "substring_check_2",
-      "value": "@calc(@local.some_string.includes(@local.substring_2))",
+      "value": "@calc(@local.some_string.includes(@local.val_2))",
       "_translations": {
         "value": {}
       },
@@ -93,22 +93,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_string.includes(@local.substring_2))",
+            "fullExpression": "@calc(@local.some_string.includes(@local.val_2))",
             "matchedExpression": "@local.some_string.includes",
             "type": "local",
             "fieldName": "some_string"
           },
           {
-            "fullExpression": "@calc(@local.some_string.includes(@local.substring_2))",
-            "matchedExpression": "@local.substring_2",
+            "fullExpression": "@calc(@local.some_string.includes(@local.val_2))",
+            "matchedExpression": "@local.val_2",
             "type": "local",
-            "fieldName": "substring_2"
+            "fieldName": "val_2"
           },
           {
-            "fullExpression": "@calc(@local.some_string.includes(@local.substring_2))",
-            "matchedExpression": "@calc(@local.some_string.includes(@local.substring_2))",
+            "fullExpression": "@calc(@local.some_string.includes(@local.val_2))",
+            "matchedExpression": "@calc(@local.some_string.includes(@local.val_2))",
             "type": "calc",
-            "fieldName": "@local.some_string.includes(@local.substring_2)"
+            "fieldName": "@local.some_string.includes(@local.val_2)"
           }
         ]
       },
@@ -116,10 +116,10 @@
         "@local.some_string.includes": [
           "value"
         ],
-        "@local.substring_2": [
+        "@local.val_2": [
           "value"
         ],
-        "@calc(@local.some_string.includes(@local.substring_2))": [
+        "@calc(@local.some_string.includes(@local.val_2))": [
           "value"
         ]
       }
@@ -151,7 +151,7 @@
     {
       "type": "text",
       "name": "text_sub_1",
-      "value": "Contains @local.substring_1: @local.substring_check_1",
+      "value": "Contains @local.val_1: @local.substring_check_1",
       "_translations": {
         "value": {}
       },
@@ -159,13 +159,13 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "Contains @local.substring_1: @local.substring_check_1",
-            "matchedExpression": "@local.substring_1",
+            "fullExpression": "Contains @local.val_1: @local.substring_check_1",
+            "matchedExpression": "@local.val_1",
             "type": "local",
-            "fieldName": "substring_1"
+            "fieldName": "val_1"
           },
           {
-            "fullExpression": "Contains @local.substring_1: @local.substring_check_1",
+            "fullExpression": "Contains @local.val_1: @local.substring_check_1",
             "matchedExpression": "@local.substring_check_1",
             "type": "local",
             "fieldName": "substring_check_1"
@@ -173,7 +173,7 @@
         ]
       },
       "_dynamicDependencies": {
-        "@local.substring_1": [
+        "@local.val_1": [
           "value"
         ],
         "@local.substring_check_1": [
@@ -184,7 +184,7 @@
     {
       "type": "text",
       "name": "text_sub_2",
-      "value": "Contains @local.substring_2: @local.substring_check_2",
+      "value": "Contains @local.val_2: @local.substring_check_2",
       "_translations": {
         "value": {}
       },
@@ -192,13 +192,13 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "Contains @local.substring_2: @local.substring_check_2",
-            "matchedExpression": "@local.substring_2",
+            "fullExpression": "Contains @local.val_2: @local.substring_check_2",
+            "matchedExpression": "@local.val_2",
             "type": "local",
-            "fieldName": "substring_2"
+            "fieldName": "val_2"
           },
           {
-            "fullExpression": "Contains @local.substring_2: @local.substring_check_2",
+            "fullExpression": "Contains @local.val_2: @local.substring_check_2",
             "matchedExpression": "@local.substring_check_2",
             "type": "local",
             "fieldName": "substring_check_2"
@@ -206,7 +206,7 @@
         ]
       },
       "_dynamicDependencies": {
-        "@local.substring_2": [
+        "@local.val_2": [
           "value"
         ],
         "@local.substring_check_2": [
@@ -256,24 +256,6 @@
           "value"
         ]
       }
-    },
-    {
-      "name": "val_1",
-      "value": "ananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_1"
-    },
-    {
-      "name": "val_2",
-      "value": "bananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_2"
     },
     {
       "name": "val_check_1",
@@ -435,34 +417,45 @@
       "_nested_name": "example_array"
     },
     {
-      "name": "some_list_data",
-      "value": [
-        "@data.example_calc.example_2.value_list"
-      ],
+      "type": "text",
+      "name": "text",
+      "value": "_list in column name AND no _list in local var",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text"
+    },
+    {
+      "name": "some_data",
+      "value": "@data.example_calc.example_2.value_list",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
-      "_nested_name": "some_list_data",
+      "_nested_name": "some_data",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@data.example_calc.example_2.value_list",
-              "matchedExpression": "@data.example_calc.example_2.value_list",
-              "type": "data",
-              "fieldName": "example_calc"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@data.example_calc.example_2.value_list",
+            "matchedExpression": "@data.example_calc.example_2.value_list",
+            "type": "data",
+            "fieldName": "example_calc"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.example_calc.example_2.value_list": [
-          "value.0"
+          "value"
         ]
       }
     },
     {
       "type": "text",
       "name": "text_org_data",
-      "value": "Original list: @local.some_list_data",
+      "value": "Original list: @local.some_data",
       "_translations": {
         "value": {}
       },
@@ -470,40 +463,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "Original list: @local.some_list_data",
-            "matchedExpression": "@local.some_list_data",
+            "fullExpression": "Original list: @local.some_data",
+            "matchedExpression": "@local.some_data",
             "type": "local",
-            "fieldName": "some_list_data"
+            "fieldName": "some_data"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.some_list_data": [
+        "@local.some_data": [
           "value"
         ]
       }
     },
     {
-      "name": "val_1_data",
-      "value": "ananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_1_data"
-    },
-    {
-      "name": "val_2_data",
-      "value": "bananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_2_data"
-    },
-    {
       "name": "val_check_1_data",
-      "value": "@calc(@local.some_list_data.includes(@local.val_1_data))",
+      "value": "@calc(@local.some_data.includes(@local.val_1))",
       "_translations": {
         "value": {}
       },
@@ -512,40 +487,40 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
-            "matchedExpression": "@local.some_list_data.includes",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_1))",
+            "matchedExpression": "@local.some_data.includes",
             "type": "local",
-            "fieldName": "some_list_data"
+            "fieldName": "some_data"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
-            "matchedExpression": "@local.val_1_data",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_1))",
+            "matchedExpression": "@local.val_1",
             "type": "local",
-            "fieldName": "val_1_data"
+            "fieldName": "val_1"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
-            "matchedExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_1))",
+            "matchedExpression": "@calc(@local.some_data.includes(@local.val_1))",
             "type": "calc",
-            "fieldName": "@local.some_list_data.includes(@local.val_1_data)"
+            "fieldName": "@local.some_data.includes(@local.val_1)"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.some_list_data.includes": [
+        "@local.some_data.includes": [
           "value"
         ],
-        "@local.val_1_data": [
+        "@local.val_1": [
           "value"
         ],
-        "@calc(@local.some_list_data.includes(@local.val_1_data))": [
+        "@calc(@local.some_data.includes(@local.val_1))": [
           "value"
         ]
       }
     },
     {
       "name": "val_check_2_data",
-      "value": "@calc(@local.some_list_data.includes(@local.val_2_data))",
+      "value": "@calc(@local.some_data.includes(@local.val_2))",
       "_translations": {
         "value": {}
       },
@@ -554,33 +529,33 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
-            "matchedExpression": "@local.some_list_data.includes",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_2))",
+            "matchedExpression": "@local.some_data.includes",
             "type": "local",
-            "fieldName": "some_list_data"
+            "fieldName": "some_data"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
-            "matchedExpression": "@local.val_2_data",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_2))",
+            "matchedExpression": "@local.val_2",
             "type": "local",
-            "fieldName": "val_2_data"
+            "fieldName": "val_2"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
-            "matchedExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_2))",
+            "matchedExpression": "@calc(@local.some_data.includes(@local.val_2))",
             "type": "calc",
-            "fieldName": "@local.some_list_data.includes(@local.val_2_data)"
+            "fieldName": "@local.some_data.includes(@local.val_2)"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.some_list_data.includes": [
+        "@local.some_data.includes": [
           "value"
         ],
-        "@local.val_2_data": [
+        "@local.val_2": [
           "value"
         ],
-        "@calc(@local.some_list_data.includes(@local.val_2_data))": [
+        "@calc(@local.some_data.includes(@local.val_2))": [
           "value"
         ]
       }
@@ -652,13 +627,16 @@
       }
     },
     {
-      "type": "title",
-      "name": "example_array",
-      "value": "Determine whether a list (coming from a data list entry) contains a value",
+      "type": "text",
+      "name": "text",
+      "value": "_list in column name AND _list in local var",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "example_array"
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text"
     },
     {
       "name": "some_data_list",
@@ -710,26 +688,8 @@
       }
     },
     {
-      "name": "val_1_data",
-      "value": "ananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_1_data"
-    },
-    {
-      "name": "val_2_data",
-      "value": "bananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_2_data"
-    },
-    {
       "name": "val_check_1_data",
-      "value": "@calc(@local.some_data_list.includes(@local.val_1_data))",
+      "value": "@calc(@local.some_data_list.includes(@local.val_1))",
       "_translations": {
         "value": {}
       },
@@ -738,22 +698,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
             "matchedExpression": "@local.some_data_list.includes",
             "type": "local",
             "fieldName": "some_data_list"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
-            "matchedExpression": "@local.val_1_data",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
+            "matchedExpression": "@local.val_1",
             "type": "local",
-            "fieldName": "val_1_data"
+            "fieldName": "val_1"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
-            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
+            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
             "type": "calc",
-            "fieldName": "@local.some_data_list.includes(@local.val_1_data)"
+            "fieldName": "@local.some_data_list.includes(@local.val_1)"
           }
         ]
       },
@@ -761,17 +721,17 @@
         "@local.some_data_list.includes": [
           "value"
         ],
-        "@local.val_1_data": [
+        "@local.val_1": [
           "value"
         ],
-        "@calc(@local.some_data_list.includes(@local.val_1_data))": [
+        "@calc(@local.some_data_list.includes(@local.val_1))": [
           "value"
         ]
       }
     },
     {
       "name": "val_check_2_data",
-      "value": "@calc(@local.some_data_list.includes(@local.val_2_data))",
+      "value": "@calc(@local.some_data_list.includes(@local.val_2))",
       "_translations": {
         "value": {}
       },
@@ -780,22 +740,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
             "matchedExpression": "@local.some_data_list.includes",
             "type": "local",
             "fieldName": "some_data_list"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
-            "matchedExpression": "@local.val_2_data",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
+            "matchedExpression": "@local.val_2",
             "type": "local",
-            "fieldName": "val_2_data"
+            "fieldName": "val_2"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
-            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
+            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
             "type": "calc",
-            "fieldName": "@local.some_data_list.includes(@local.val_2_data)"
+            "fieldName": "@local.some_data_list.includes(@local.val_2)"
           }
         ]
       },
@@ -803,10 +763,10 @@
         "@local.some_data_list.includes": [
           "value"
         ],
-        "@local.val_2_data": [
+        "@local.val_2": [
           "value"
         ],
-        "@calc(@local.some_data_list.includes(@local.val_2_data))": [
+        "@calc(@local.some_data_list.includes(@local.val_2))": [
           "value"
         ]
       }
@@ -878,43 +838,45 @@
       }
     },
     {
-      "type": "title",
-      "name": "example_array",
-      "value": "Determine whether a list (coming from a data list entry) contains a value",
+      "type": "text",
+      "name": "text",
+      "value": "no _list in column name AND no _list in local var",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "example_array"
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text"
     },
     {
-      "name": "some_list_data",
-      "value": [
-        "@data.example_calc.example_2.value"
-      ],
+      "name": "some_data",
+      "value": "@data.example_calc.example_2.value",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
-      "_nested_name": "some_list_data",
+      "_nested_name": "some_data",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@data.example_calc.example_2.value",
-              "matchedExpression": "@data.example_calc.example_2.value",
-              "type": "data",
-              "fieldName": "example_calc"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@data.example_calc.example_2.value",
+            "matchedExpression": "@data.example_calc.example_2.value",
+            "type": "data",
+            "fieldName": "example_calc"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.example_calc.example_2.value": [
-          "value.0"
+          "value"
         ]
       }
     },
     {
       "type": "text",
       "name": "text_org_data",
-      "value": "Original list: @local.some_list_data",
+      "value": "Original list: @local.some_data",
       "_translations": {
         "value": {}
       },
@@ -922,40 +884,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "Original list: @local.some_list_data",
-            "matchedExpression": "@local.some_list_data",
+            "fullExpression": "Original list: @local.some_data",
+            "matchedExpression": "@local.some_data",
             "type": "local",
-            "fieldName": "some_list_data"
+            "fieldName": "some_data"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.some_list_data": [
+        "@local.some_data": [
           "value"
         ]
       }
     },
     {
-      "name": "val_1_data",
-      "value": "ananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_1_data"
-    },
-    {
-      "name": "val_2_data",
-      "value": "bananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_2_data"
-    },
-    {
       "name": "val_check_1_data",
-      "value": "@calc(@local.some_list_data.includes(@local.val_1_data))",
+      "value": "@calc(@local.some_data.includes(@local.val_1))",
       "_translations": {
         "value": {}
       },
@@ -964,40 +908,40 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
-            "matchedExpression": "@local.some_list_data.includes",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_1))",
+            "matchedExpression": "@local.some_data.includes",
             "type": "local",
-            "fieldName": "some_list_data"
+            "fieldName": "some_data"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
-            "matchedExpression": "@local.val_1_data",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_1))",
+            "matchedExpression": "@local.val_1",
             "type": "local",
-            "fieldName": "val_1_data"
+            "fieldName": "val_1"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
-            "matchedExpression": "@calc(@local.some_list_data.includes(@local.val_1_data))",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_1))",
+            "matchedExpression": "@calc(@local.some_data.includes(@local.val_1))",
             "type": "calc",
-            "fieldName": "@local.some_list_data.includes(@local.val_1_data)"
+            "fieldName": "@local.some_data.includes(@local.val_1)"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.some_list_data.includes": [
+        "@local.some_data.includes": [
           "value"
         ],
-        "@local.val_1_data": [
+        "@local.val_1": [
           "value"
         ],
-        "@calc(@local.some_list_data.includes(@local.val_1_data))": [
+        "@calc(@local.some_data.includes(@local.val_1))": [
           "value"
         ]
       }
     },
     {
       "name": "val_check_2_data",
-      "value": "@calc(@local.some_list_data.includes(@local.val_2_data))",
+      "value": "@calc(@local.some_data.includes(@local.val_2))",
       "_translations": {
         "value": {}
       },
@@ -1006,33 +950,33 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
-            "matchedExpression": "@local.some_list_data.includes",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_2))",
+            "matchedExpression": "@local.some_data.includes",
             "type": "local",
-            "fieldName": "some_list_data"
+            "fieldName": "some_data"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
-            "matchedExpression": "@local.val_2_data",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_2))",
+            "matchedExpression": "@local.val_2",
             "type": "local",
-            "fieldName": "val_2_data"
+            "fieldName": "val_2"
           },
           {
-            "fullExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
-            "matchedExpression": "@calc(@local.some_list_data.includes(@local.val_2_data))",
+            "fullExpression": "@calc(@local.some_data.includes(@local.val_2))",
+            "matchedExpression": "@calc(@local.some_data.includes(@local.val_2))",
             "type": "calc",
-            "fieldName": "@local.some_list_data.includes(@local.val_2_data)"
+            "fieldName": "@local.some_data.includes(@local.val_2)"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.some_list_data.includes": [
+        "@local.some_data.includes": [
           "value"
         ],
-        "@local.val_2_data": [
+        "@local.val_2": [
           "value"
         ],
-        "@calc(@local.some_list_data.includes(@local.val_2_data))": [
+        "@calc(@local.some_data.includes(@local.val_2))": [
           "value"
         ]
       }
@@ -1104,13 +1048,16 @@
       }
     },
     {
-      "type": "title",
-      "name": "example_array",
-      "value": "Determine whether a list (coming from a data list entry) contains a value",
+      "type": "text",
+      "name": "text",
+      "value": "no _list in column name AND _list in local var",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "example_array"
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text"
     },
     {
       "name": "some_data_list",
@@ -1162,26 +1109,8 @@
       }
     },
     {
-      "name": "val_1_data",
-      "value": "ananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_1_data"
-    },
-    {
-      "name": "val_2_data",
-      "value": "bananas",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "val_2_data"
-    },
-    {
       "name": "val_check_1_data",
-      "value": "@calc(@local.some_data_list.includes(@local.val_1_data))",
+      "value": "@calc(@local.some_data_list.includes(@local.val_1))",
       "_translations": {
         "value": {}
       },
@@ -1190,22 +1119,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
             "matchedExpression": "@local.some_data_list.includes",
             "type": "local",
             "fieldName": "some_data_list"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
-            "matchedExpression": "@local.val_1_data",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
+            "matchedExpression": "@local.val_1",
             "type": "local",
-            "fieldName": "val_1_data"
+            "fieldName": "val_1"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
-            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_1_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
+            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_1))",
             "type": "calc",
-            "fieldName": "@local.some_data_list.includes(@local.val_1_data)"
+            "fieldName": "@local.some_data_list.includes(@local.val_1)"
           }
         ]
       },
@@ -1213,17 +1142,17 @@
         "@local.some_data_list.includes": [
           "value"
         ],
-        "@local.val_1_data": [
+        "@local.val_1": [
           "value"
         ],
-        "@calc(@local.some_data_list.includes(@local.val_1_data))": [
+        "@calc(@local.some_data_list.includes(@local.val_1))": [
           "value"
         ]
       }
     },
     {
       "name": "val_check_2_data",
-      "value": "@calc(@local.some_data_list.includes(@local.val_2_data))",
+      "value": "@calc(@local.some_data_list.includes(@local.val_2))",
       "_translations": {
         "value": {}
       },
@@ -1232,22 +1161,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
             "matchedExpression": "@local.some_data_list.includes",
             "type": "local",
             "fieldName": "some_data_list"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
-            "matchedExpression": "@local.val_2_data",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
+            "matchedExpression": "@local.val_2",
             "type": "local",
-            "fieldName": "val_2_data"
+            "fieldName": "val_2"
           },
           {
-            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
-            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_2_data))",
+            "fullExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
+            "matchedExpression": "@calc(@local.some_data_list.includes(@local.val_2))",
             "type": "calc",
-            "fieldName": "@local.some_data_list.includes(@local.val_2_data)"
+            "fieldName": "@local.some_data_list.includes(@local.val_2)"
           }
         ]
       },
@@ -1255,10 +1184,10 @@
         "@local.some_data_list.includes": [
           "value"
         ],
-        "@local.val_2_data": [
+        "@local.val_2": [
           "value"
         ],
-        "@calc(@local.some_data_list.includes(@local.val_2_data))": [
+        "@calc(@local.some_data_list.includes(@local.val_2))": [
           "value"
         ]
       }
