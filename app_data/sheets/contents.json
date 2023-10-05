@@ -219,7 +219,10 @@
       "flow_type": "data_list",
       "flow_name": "example_list_override_data",
       "flow_subtype": "example_list_override",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+      "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx",
+      "_overrides": {
+        "example_list_override_data_1": "@fields.example_list_override_field == 1"
+      }
     },
     "example_list_override_data_1": {
       "flow_type": "data_list",
@@ -467,6 +470,12 @@
       "flow_name": "comp_odk_form",
       "_xlsxPath": "component_sheets/component_odk.xlsx"
     },
+    "comp_accordion": {
+      "flow_type": "template",
+      "flow_name": "comp_accordion",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_accordion.xlsx"
+    },
     "comp_audio": {
       "flow_type": "template",
       "flow_name": "comp_audio",
@@ -700,6 +709,24 @@
       "flow_name": "feature_task_card_params",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_task_card.xlsx"
+    },
+    "parameters": {
+      "flow_type": "template",
+      "flow_name": "parameters",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_accordion.xlsx"
+    },
+    "parameters_2": {
+      "flow_type": "template",
+      "flow_name": "parameters_2",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_accordion.xlsx"
+    },
+    "parameters_3": {
+      "flow_type": "template",
+      "flow_name": "parameters_3",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_accordion.xlsx"
     },
     "bug_dashed_box": {
       "flow_type": "template",
@@ -2006,15 +2033,15 @@
     },
     "example_radio_group_fb_con": {
       "flow_type": "template",
-      "flow_subtype": "debug",
       "flow_name": "example_radio_group_fb_con",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_options_feedback.xlsx"
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_radio_group.xlsx"
     },
     "example_radio_group_fb_hid": {
       "flow_type": "template",
-      "flow_subtype": "debug",
       "flow_name": "example_radio_group_fb_hid",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_options_feedback.xlsx"
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_radio_group.xlsx"
     },
     "example_set_fields_in_action": {
       "flow_type": "template",
