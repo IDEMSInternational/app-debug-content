@@ -13,5 +13,8 @@
       "text": "default text 2"
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx",
+  "_overrides": {
+    "example_list_override_data_1": "@fields.example_list_override_field == 1"
+  }
 }

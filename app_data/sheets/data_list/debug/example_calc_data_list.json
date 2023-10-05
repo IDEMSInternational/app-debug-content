@@ -13,6 +13,15 @@
         "name:name_var_3 | text: Option 3"
       ],
       "exclude_from_translation": true
+    },
+    {
+      "id": "example_2",
+      "value": "apples; bananas; pears",
+      "value_list": [
+        "apples",
+        "bananas",
+        "pears"
+      ]
     }
   ],
   "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"

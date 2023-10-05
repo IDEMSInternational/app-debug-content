@@ -102,7 +102,7 @@
     {
       "type": "button",
       "name": "button_3",
-      "value": "Clear remote assets cache",
+      "value": "Reset remote assets (return to core asset pack before any downloads)",
       "_translations": {
         "value": {}
       },
@@ -111,10 +111,10 @@
           "trigger": "click",
           "action_id": "asset_pack",
           "args": [
-            "clear_cache"
+            "reset"
           ],
-          "_raw": "click | asset_pack: clear_cache",
-          "_cleaned": "click | asset_pack: clear_cache"
+          "_raw": "click | asset_pack: reset",
+          "_cleaned": "click | asset_pack: reset"
         },
         {
           "trigger": "click",

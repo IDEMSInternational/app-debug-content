@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "parameters_3",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "answer_list",
+      "required": true,
+      "description": "List of options presented as radio items",
+      "type": "set_variable",
+      "name": "set_variable",
+      "_nested_name": "set_variable"
+    },
+    {
+      "id": "item_width",
+      "required": false,
+      "description": "Minimum item width, will increase to fit grid;",
+      "default_value": "200px",
+      "type": "set_variable",
+      "name": "set_variable",
+      "_nested_name": "set_variable"
+    },
+    {
+      "id": "grid_width",
+      "required": false,
+      "description": "Maximum grid width, if specified will center items in available space.\nUse fixed or relative units, such as '75%' or '500px'",
+      "default_value": "100%",
+      "type": "set_variable",
+      "name": "set_variable",
+      "_nested_name": "set_variable"
+    },
+    {
+      "id": "grid_gap",
+      "required": false,
+      "description": "Spacing between grid items",
+      "default_value": "16px",
+      "type": "set_variable",
+      "name": "set_variable",
+      "_nested_name": "set_variable"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_accordion.xlsx"
+}
