@@ -4,6 +4,10 @@ import { SKINS } from "./skins";
 
 const config = generateDeploymentConfig("debug");
 
+config.api = {
+  db_name:'debug',
+};
+
 config.google_drive = {
   sheets_folder_id: "1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
   assets_folder_id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs",
