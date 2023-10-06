@@ -2435,6 +2435,11 @@
       "flow_name": "debug_nav_bar",
       "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
     },
+    "debug_sync_id": {
+      "flow_type": "template",
+      "flow_name": "debug_sync_id",
+      "_xlsxPath": "debug_sheets/debug_sync.xlsx"
+    },
     "example_generator_output_w_1": {
       "flow_name": "example_generator_output_w_1",
       "flow_subtype": "example_generator",
