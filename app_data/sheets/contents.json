@@ -1125,6 +1125,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_markdown.xlsx"
     },
+    "debug_markdown_links": {
+      "flow_type": "template",
+      "flow_name": "debug_markdown_links",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_text.xlsx"
+    },
     "debug_negation": {
       "flow_type": "template",
       "flow_name": "debug_negation",
@@ -2433,6 +2439,16 @@
     "debug_hyperlinks": {
       "flow_type": "template",
       "flow_name": "debug_hyperlinks",
+      "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
+    },
+    "debug_long_link_dashed_box": {
+      "flow_type": "template",
+      "flow_name": "debug_long_link_dashed_box",
+      "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
+    },
+    "debug_long_link_text": {
+      "flow_type": "template",
+      "flow_name": "debug_long_link_text",
       "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
     },
     "debug_nav_bar": {

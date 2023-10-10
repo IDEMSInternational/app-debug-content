@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_markdown_links",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "The following link should open in a new tab: [IDEMS Website](https://www.idems.international/)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_text.xlsx"
+}

@@ -15,7 +15,7 @@
     {
       "type": "text",
       "name": "text_same_1",
-      "value": "Check out [freeCodeCamp](https://www.freecodecamp.org/).",
+      "value": "Direct link https://www.freecodecamp.org/.",
       "_translations": {
         "value": {}
       },
@@ -24,11 +24,20 @@
     {
       "type": "text",
       "name": "text_same_2",
-      "value": "Check out <a href=\"https://www.freecodecamp.org/\">freeCodeCamp</a>.",
+      "value": "Markdown link [freeCodeCamp](https://www.freecodecamp.org/).",
       "_translations": {
         "value": {}
       },
       "_nested_name": "text_same_2"
+    },
+    {
+      "type": "text",
+      "name": "text_same_3",
+      "value": "HTML link <a href=\"https://www.freecodecamp.org/\">freeCodeCamp</a>.",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_same_3"
     },
     {
       "type": "title",
