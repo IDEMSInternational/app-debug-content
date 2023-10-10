@@ -2430,6 +2430,11 @@
       "flow_name": "debug_example",
       "_xlsxPath": "debug_sheets/debug_example.xlsx"
     },
+    "debug_hyperlinks": {
+      "flow_type": "template",
+      "flow_name": "debug_hyperlinks",
+      "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
+    },
     "debug_nav_bar": {
       "flow_type": "template",
       "flow_name": "debug_nav_bar",
