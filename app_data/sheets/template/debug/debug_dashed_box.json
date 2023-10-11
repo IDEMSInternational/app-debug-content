@@ -15,7 +15,7 @@
     },
     {
       "name": "example_plain_text",
-      "value": "Example of multiple paragraphs of plain text.\nHere is a second paragraph after a single line-break.\n\nHere is a third paragraph after a double line-break.",
+      "value": "Example of multiple paragraphs of plain text.\nHere is a second paragraph after a single line-break.\n\nHere is a third paragraph after a double line-break.\n\nHere is a link: [IDEMS Website](https://www.idems.international/)",
       "_translations": {
         "value": {}
       },
