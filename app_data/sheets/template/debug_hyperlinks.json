@@ -14,30 +14,21 @@
     },
     {
       "type": "text",
-      "name": "text_same_1",
+      "name": "text_direct",
       "value": "Direct link https://www.freecodecamp.org/.",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "text_same_1"
+      "_nested_name": "text_direct"
     },
     {
       "type": "text",
-      "name": "text_same_2",
-      "value": "Markdown link [freeCodeCamp](https://www.freecodecamp.org/).",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "text_same_2"
-    },
-    {
-      "type": "text",
-      "name": "text_same_3",
+      "name": "text_html",
       "value": "HTML link <a href=\"https://www.freecodecamp.org/\">freeCodeCamp</a>.",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "text_same_3"
+      "_nested_name": "text_html"
     },
     {
       "type": "title",
@@ -47,6 +38,15 @@
         "value": {}
       },
       "_nested_name": "title_new"
+    },
+    {
+      "type": "text",
+      "name": "text_markdown",
+      "value": "Markdown link [freeCodeCamp](https://www.freecodecamp.org/).",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_markdown"
     },
     {
       "type": "html",
