@@ -2456,6 +2456,21 @@
       "flow_name": "debug_nav_bar",
       "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
     },
+    "debug_override_default": {
+      "flow_type": "template",
+      "flow_name": "debug_override_default",
+      "_xlsxPath": "debug_sheets/debug_override.xlsx",
+      "_overrides": {
+        "debug_override_override": "@fields.debug_boolean"
+      }
+    },
+    "debug_override_override": {
+      "flow_type": "template",
+      "flow_name": "debug_override_override",
+      "override_target": "debug_override_default",
+      "override_condition": "@fields.debug_boolean",
+      "_xlsxPath": "debug_sheets/debug_override.xlsx"
+    },
     "debug_sync_id": {
       "flow_type": "template",
       "flow_name": "debug_sync_id",
