@@ -1779,6 +1779,12 @@
       "flow_name": "example_calc_date",
       "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
     },
+    "example_calc_split": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_split",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
     "example_calc_substring": {
       "flow_type": "template",
       "flow_subtype": "debug",
