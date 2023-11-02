@@ -1,0 +1,67 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_up_dismiss",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "The pop-up launched by the following button should dismiss when \"completed\" or \"uncompleted\" is emitted",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_1"
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_1",
+      "value": "Launch pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_emit"
+          ],
+          "_raw": "click | pop_up: example_emit",
+          "_cleaned": "click | pop_up: example_emit"
+        }
+      ],
+      "_nested_name": "button_pop_up_1"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "When returning (e.g. because the next template emits completed) to a pop-up that has been dismissed, instead one should return to the underlying template:",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_2",
+      "value": "Pop-up to test returning",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_pop_up_return"
+          ],
+          "_raw": "click | pop_up: debug_pop_up_return",
+          "_cleaned": "click | pop_up: debug_pop_up_return"
+        }
+      ],
+      "_nested_name": "button_pop_up_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_up_completed.xlsx"
+}

@@ -113,6 +113,12 @@
       "data_list_name": "debug_language",
       "_xlsxPath": "debug_sheets/debug_theme_language_assets.xlsx"
     },
+    "debug_nav_list": {
+      "flow_type": "data_list",
+      "flow_name": "debug_nav_list",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_nav.xlsx"
+    },
     "debug_variable_data": {
       "flow_type": "data_list",
       "flow_name": "debug_variable_data",
@@ -1131,6 +1137,18 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_text.xlsx"
     },
+    "debug_nav": {
+      "flow_type": "template",
+      "flow_name": "debug_nav",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_nav.xlsx"
+    },
+    "debug_nav_2": {
+      "flow_type": "template",
+      "flow_name": "debug_nav_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_nav.xlsx"
+    },
     "debug_negation": {
       "flow_type": "template",
       "flow_name": "debug_negation",
@@ -1250,6 +1268,18 @@
       "flow_name": "debug_overriding_value",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_overriding_value.xlsx"
+    },
+    "debug_pop_up_dismiss": {
+      "flow_type": "template",
+      "flow_name": "debug_pop_up_dismiss",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_up_completed.xlsx"
+    },
+    "debug_pop_up_return": {
+      "flow_type": "template",
+      "flow_name": "debug_pop_up_return",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_up_completed.xlsx"
     },
     "debug_pop_ups_1": {
       "flow_type": "template",
