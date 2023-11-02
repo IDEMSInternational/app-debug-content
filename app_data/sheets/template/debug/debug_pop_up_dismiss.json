@@ -7,7 +7,7 @@
     {
       "type": "text",
       "name": "text_1",
-      "value": "The pop-up launched by the following button should dismiss when \"completed\" or \"uncompleted\" is emitted",
+      "value": "The pop-up launched by the following button should dismiss when \"completed\" or \"uncompleted\" is emitted:",
       "_translations": {
         "value": {}
       },
