@@ -1,4 +1,5 @@
 {
+  "asset_pack": {},
   "data_list": {
     "article_data": {
       "flow_type": "data_list",
@@ -105,6 +106,13 @@
       "flow_name": "debug_delimiters_list",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_delimiters.xlsx"
+    },
+    "debug_functions_data_list": {
+      "flow_type": "data_list",
+      "flow_name": "debug_functions_data_list",
+      "data_list_name": "debug_functions",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_calc_functions.xlsx"
     },
     "debug_language_data_list": {
       "flow_type": "data_list",
@@ -421,7 +429,7 @@
       "flow_name": "example_glob_override_es_sp",
       "flow_subtype": "debug",
       "override_target": "example_glob_override_default",
-      "override_condition": "@fields._app_language.startsWith(\"es\")",
+      "override_condition": "\"@fields._app_language\".startsWith(\"es\")",
       "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
     },
     "example_glob_override_modular": {
@@ -793,6 +801,12 @@
       "flow_name": "debug_audio_player_hide",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_audio_player.xlsx"
+    },
+    "debug_calc_functions": {
+      "flow_type": "template",
+      "flow_name": "debug_calc_functions",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_calc_functions.xlsx"
     },
     "debug_campaign_tester": {
       "flow_type": "template",
@@ -2121,7 +2135,7 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx",
       "_overrides": {
-        "example_temp_override_es_sp": "@fields._app_language.startsWith(\"es\")"
+        "example_temp_override_es_sp": "\"@fields._app_language\".startsWith(\"es\")"
       }
     },
     "example_temp_override_es_sp": {
@@ -2129,7 +2143,7 @@
       "flow_name": "example_temp_override_es_sp",
       "flow_subtype": "debug",
       "override_target": "example_temp_override_default",
-      "override_condition": "@fields._app_language.startsWith(\"es\")",
+      "override_condition": "\"@fields._app_language\".startsWith(\"es\")",
       "comments": "condition used to apply override to all es users (e.g. es_sp)",
       "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
     },
@@ -2462,6 +2476,26 @@
       "flow_name": "debug_app_update",
       "_xlsxPath": "debug_sheets/debug_app_update.xlsx"
     },
+    "debug_circ_override_1": {
+      "flow_type": "template",
+      "flow_name": "debug_circ_override_1",
+      "override_target": "debug_circ_override_2",
+      "override_condition": true,
+      "_xlsxPath": "debug_sheets/debug_override.xlsx",
+      "_overrides": {
+        "debug_circ_override_2": true
+      }
+    },
+    "debug_circ_override_2": {
+      "flow_type": "template",
+      "flow_name": "debug_circ_override_2",
+      "override_target": "debug_circ_override_1",
+      "override_condition": true,
+      "_xlsxPath": "debug_sheets/debug_override.xlsx",
+      "_overrides": {
+        "debug_circ_override_1": true
+      }
+    },
     "debug_error_logging": {
       "flow_type": "template",
       "flow_name": "debug_error_logging",
@@ -2563,6 +2597,11 @@
       "flow_type": "template",
       "flow_name": "feature_share",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_share.xlsx"
+    },
+    "feature_share_files": {
+      "flow_type": "template",
+      "flow_name": "feature_share_files",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_share_files.xlsx"
     },
     "home_screen": {
       "flow_type": "template",

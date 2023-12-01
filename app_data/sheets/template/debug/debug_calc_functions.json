@@ -1,0 +1,460 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_calc_functions",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "field_family_data",
+      "value": "[[\"Cecilie\", \"Lone\"], [\"Emil\", \"Tobias\", \"Linus\"], [\"Robin\"]]",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "field_family_data"
+    },
+    {
+      "name": "family_data",
+      "value": "@fields.field_family_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "family_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.field_family_data",
+            "matchedExpression": "@fields.field_family_data",
+            "type": "fields",
+            "fieldName": "field_family_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.field_family_data": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "parent_1",
+      "value": "Linus",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_1"
+    },
+    {
+      "name": "parent_2",
+      "value": "Robin",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_2"
+    },
+    {
+      "type": "text",
+      "name": "text_broken",
+      "value": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "_nested_name": "text_broken",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@data.debug_functions.families.merge",
+            "type": "data",
+            "fieldName": "debug_functions"
+          },
+          {
+            "fullExpression": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@local.family_data",
+            "type": "local",
+            "fieldName": "family_data"
+          },
+          {
+            "fullExpression": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@local.parent_1",
+            "type": "local",
+            "fieldName": "parent_1"
+          },
+          {
+            "fullExpression": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@local.parent_2",
+            "type": "local",
+            "fieldName": "parent_2"
+          },
+          {
+            "fullExpression": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "type": "calc",
+            "fieldName": "@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_functions.families.merge": [
+          "value"
+        ],
+        "@local.family_data": [
+          "value"
+        ],
+        "@local.parent_1": [
+          "value"
+        ],
+        "@local.parent_2": [
+          "value"
+        ],
+        "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Original family_data",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "@local.family_data",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.family_data",
+            "matchedExpression": "@local.family_data",
+            "type": "local",
+            "fieldName": "family_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.family_data": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "plh_add_family",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "Function: plh_add_family(family_data, \"Ada\", \"Blaise\")",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "Result:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "name": "plh_add_family_result",
+      "value": "@calc(plh_add_family(@local.family_data, \"Ada\", \"Blaise\"))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "plh_add_family_result",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(plh_add_family(@local.family_data, \"Ada\", \"Blaise\"))",
+            "matchedExpression": "@local.family_data",
+            "type": "local",
+            "fieldName": "family_data"
+          },
+          {
+            "fullExpression": "@calc(plh_add_family(@local.family_data, \"Ada\", \"Blaise\"))",
+            "matchedExpression": "@calc(plh_add_family(@local.family_data, \"Ada\", \"Blaise\"))",
+            "type": "calc",
+            "fieldName": "plh_add_family(@local.family_data, \"Ada\", \"Blaise\")"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.family_data": [
+          "value"
+        ],
+        "@calc(plh_add_family(@local.family_data, \"Ada\", \"Blaise\"))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.plh_add_family_result))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.plh_add_family_result))",
+            "matchedExpression": "@local.plh_add_family_result",
+            "type": "local",
+            "fieldName": "plh_add_family_result"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.plh_add_family_result))",
+            "matchedExpression": "@calc(JSON.stringify(@local.plh_add_family_result))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.plh_add_family_result)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.plh_add_family_result": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.plh_add_family_result))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "plh_merge_families",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "Function: plh_merge_families(family_data, \"Linus\", \"Robin\")",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "Result:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "name": "plh_merge_families_result",
+      "value": "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "plh_merge_families_result",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@local.family_data",
+            "type": "local",
+            "fieldName": "family_data"
+          },
+          {
+            "fullExpression": "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@local.parent_1",
+            "type": "local",
+            "fieldName": "parent_1"
+          },
+          {
+            "fullExpression": "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@local.parent_2",
+            "type": "local",
+            "fieldName": "parent_2"
+          },
+          {
+            "fullExpression": "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "matchedExpression": "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+            "type": "calc",
+            "fieldName": "plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.family_data": [
+          "value"
+        ],
+        "@local.parent_1": [
+          "value"
+        ],
+        "@local.parent_2": [
+          "value"
+        ],
+        "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.plh_merge_families_result))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.plh_merge_families_result))",
+            "matchedExpression": "@local.plh_merge_families_result",
+            "type": "local",
+            "fieldName": "plh_merge_families_result"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.plh_merge_families_result))",
+            "matchedExpression": "@calc(JSON.stringify(@local.plh_merge_families_result))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.plh_merge_families_result)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.plh_merge_families_result": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.plh_merge_families_result))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "plh_remove_family_member",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "Function: plh_remove_family_member(family_data, \"Robin\")",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "Result:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "name": "plh_remove_family_member_result",
+      "value": "@calc(plh_remove_family_member(@local.family_data, @local.parent_2))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "plh_remove_family_member_result",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(plh_remove_family_member(@local.family_data, @local.parent_2))",
+            "matchedExpression": "@local.family_data",
+            "type": "local",
+            "fieldName": "family_data"
+          },
+          {
+            "fullExpression": "@calc(plh_remove_family_member(@local.family_data, @local.parent_2))",
+            "matchedExpression": "@local.parent_2",
+            "type": "local",
+            "fieldName": "parent_2"
+          },
+          {
+            "fullExpression": "@calc(plh_remove_family_member(@local.family_data, @local.parent_2))",
+            "matchedExpression": "@calc(plh_remove_family_member(@local.family_data, @local.parent_2))",
+            "type": "calc",
+            "fieldName": "plh_remove_family_member(@local.family_data, @local.parent_2)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.family_data": [
+          "value"
+        ],
+        "@local.parent_2": [
+          "value"
+        ],
+        "@calc(plh_remove_family_member(@local.family_data, @local.parent_2))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.plh_remove_family_member_result))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.plh_remove_family_member_result))",
+            "matchedExpression": "@local.plh_remove_family_member_result",
+            "type": "local",
+            "fieldName": "plh_remove_family_member_result"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.plh_remove_family_member_result))",
+            "matchedExpression": "@calc(JSON.stringify(@local.plh_remove_family_member_result))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.plh_remove_family_member_result)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.plh_remove_family_member_result": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.plh_remove_family_member_result))": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_calc_functions.xlsx"
+}
