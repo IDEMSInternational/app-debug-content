@@ -12,9 +12,8 @@ config.google_drive = {
 };
 
 config.git = {
-  content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",,
-  // content_tag_latest: "1.1.37",
- content_tag_latest: "1.0.1"
+  content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
+  content_tag_latest: "1.1.38"
 };
 
 config.app_data.output_path = "./app_data";
@@ -39,8 +38,6 @@ try {
 config.error_logging = {
   dsn: "https://69ccfba168f04b848cdd96ac066d01b5@app.glitchtip.com/2438",
 };
-
-config.android.icon_asset_path = 
 
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
