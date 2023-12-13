@@ -479,6 +479,11 @@
       "flow_name": "articles",
       "_xlsxPath": "demo_sheets/articles.xlsx"
     },
+    "assets_demo": {
+      "flow_type": "template",
+      "flow_name": "assets_demo",
+      "_xlsxPath": "doc_sheets/assets_demo.xlsx"
+    },
     "comp_odk_form": {
       "flow_type": "template",
       "flow_name": "comp_odk_form",
@@ -1919,6 +1924,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/example_footer.xlsx"
     },
+    "example_global": {
+      "flow_type": "template",
+      "flow_name": "example_global",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_global.xlsx"
+    },
     "example_go_to_1": {
       "flow_type": "template",
       "flow_name": "example_go_to_1",
@@ -2593,15 +2604,20 @@
       "comments": "Default text-select feedback form",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_feedback.xlsx"
     },
+    "feature_save_open_file": {
+      "flow_type": "template",
+      "flow_name": "feature_save_open_file",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_save_open_file.xlsx"
+    },
     "feature_share": {
       "flow_type": "template",
       "flow_name": "feature_share",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_share.xlsx"
     },
-    "feature_share_files": {
+    "feature_share_file": {
       "flow_type": "template",
-      "flow_name": "feature_share_files",
-      "_xlsxPath": "feature_sheets/to_be_sorted/feature_share_files.xlsx"
+      "flow_name": "feature_share_file",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_share.xlsx"
     },
     "home_screen": {
       "flow_type": "template",

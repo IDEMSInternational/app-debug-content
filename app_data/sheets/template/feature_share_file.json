@@ -1,0 +1,245 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_share_file",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Share Files",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "subtitle",
+      "value": "Image",
+      "_translations": {
+        "value": {}
+      },
+      "name": "subtitle",
+      "_nested_name": "subtitle"
+    },
+    {
+      "name": "image_path",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "image_path"
+    },
+    {
+      "type": "text",
+      "value": "@local.image_path",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.image_path",
+            "matchedExpression": "@local.image_path",
+            "type": "local",
+            "fieldName": "image_path"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "value": "@local.image_path",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image",
+      "_nested_name": "image",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.image_path",
+            "matchedExpression": "@local.image_path",
+            "type": "local",
+            "fieldName": "image_path"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share Image",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [
+            "file",
+            "@local.image_path"
+          ],
+          "_raw": "click | share: file: @local.image_path",
+          "_cleaned": "click | share: file: @local.image_path"
+        }
+      ],
+      "_nested_name": "share_button_1",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | share: file: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share: file: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "subtitle",
+      "value": "PDF",
+      "_translations": {
+        "value": {}
+      },
+      "name": "subtitle",
+      "_nested_name": "subtitle"
+    },
+    {
+      "name": "pdf_path",
+      "value": "example_pdf.pdf",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "pdf_path"
+    },
+    {
+      "type": "pdf",
+      "name": "pdf_viewer",
+      "value": "@local.pdf_path",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "pdf_viewer",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.pdf_path",
+            "matchedExpression": "@local.pdf_path",
+            "type": "local",
+            "fieldName": "pdf_path"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.pdf_path": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share PDF",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [
+            "file",
+            "@local.pdf_path"
+          ],
+          "_raw": "click | share: file: @local.pdf_path",
+          "_cleaned": "click | share: file: @local.pdf_path"
+        }
+      ],
+      "_nested_name": "share_button_1",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.pdf_path",
+                  "matchedExpression": "@local.pdf_path",
+                  "type": "local",
+                  "fieldName": "pdf_path"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | share: file: @local.pdf_path",
+                "matchedExpression": "@local.pdf_path",
+                "type": "local",
+                "fieldName": "pdf_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share: file: @local.pdf_path",
+                "matchedExpression": "@local.pdf_path",
+                "type": "local",
+                "fieldName": "pdf_path"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.pdf_path": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_share.xlsx"
+}
