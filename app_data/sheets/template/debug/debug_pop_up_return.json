@@ -90,6 +90,28 @@
         }
       ],
       "_nested_name": "button_go_to_3"
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_4",
+      "value": "Go to another template and dismiss this pop-up on return",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "example_emit",
+            "dismiss_pop_up",
+            true
+          ],
+          "_raw": "click | go_to: example_emit: dismiss_pop_up: true",
+          "_cleaned": "click | go_to: example_emit: dismiss_pop_up: true"
+        }
+      ],
+      "_nested_name": "button_go_to_4"
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_up_completed.xlsx"
