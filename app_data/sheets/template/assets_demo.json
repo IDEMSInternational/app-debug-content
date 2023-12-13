@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "assets_demo",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Assets demo",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "image",
+      "value": "images/examples/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image",
+      "_nested_name": "image"
+    },
+    {
+      "type": "image",
+      "value": "tz_sw/images/tanzania",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image",
+      "_nested_name": "image"
+    }
+  ],
+  "_xlsxPath": "doc_sheets/assets_demo.xlsx"
+}
