@@ -1,0 +1,112 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_set_theme",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Set Theme",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "name": "theme_list",
+      "value": [
+        "name: default | text: default",
+        "name: professional | text: professional"
+      ],
+      "type": "set_variable",
+      "_nested_name": "theme_list"
+    },
+    {
+      "type": "radio_group",
+      "name": "theme_select",
+      "value": "@fields._app_theme",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "set_theme",
+            "this.value"
+          ],
+          "_raw": "changed | emit: set_theme:@local.theme_select",
+          "_cleaned": "changed | emit: set_theme:@local.theme_select"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "changed | emit: force_reload",
+          "_cleaned": "changed | emit: force_reload"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.theme_list",
+        "options_per_row": "2"
+      },
+      "_nested_name": "theme_select",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_theme",
+            "matchedExpression": "@fields._app_theme",
+            "type": "fields",
+            "fieldName": "_app_theme"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | emit: set_theme:@local.theme_select",
+                "matchedExpression": "@local.theme_select",
+                "type": "local",
+                "fieldName": "theme_select"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | emit: set_theme:@local.theme_select",
+                "matchedExpression": "@local.theme_select",
+                "type": "local",
+                "fieldName": "theme_select"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.theme_list",
+              "matchedExpression": "@local.theme_list",
+              "type": "local",
+              "fieldName": "theme_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields._app_theme": [
+          "value"
+        ],
+        "@local.theme_select": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.theme_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_set_theme.xlsx"
+}

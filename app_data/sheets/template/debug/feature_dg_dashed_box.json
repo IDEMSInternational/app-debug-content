@@ -46,6 +46,41 @@
         }
       ],
       "_nested_name": "dg_example_dashed_box"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_example_dashed_box_2",
+      "value": "dg_example_dashed_box",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "dashed_box"
+      },
+      "rows": [
+        {
+          "type": "image",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "image",
+          "_nested_name": "dg_example_dashed_box_2.image"
+        },
+        {
+          "type": "text",
+          "name": "caption",
+          "value": "Caption goes here",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "variant": "caption"
+          },
+          "_nested_name": "dg_example_dashed_box_2.caption"
+        }
+      ],
+      "_nested_name": "dg_example_dashed_box_2"
     }
   ],
   "_xlsxPath": "feature_sheets/to_be_sorted/feature_dg_styles.xlsx"

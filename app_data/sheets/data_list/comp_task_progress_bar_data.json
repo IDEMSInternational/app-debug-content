@@ -1,0 +1,28 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_task_progress_bar_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": 1,
+      "completed_field": "comp_task_progress_bar_task_1_completed"
+    },
+    {
+      "id": 2,
+      "completed_field": "comp_task_progress_bar_task_2_completed"
+    },
+    {
+      "id": 3,
+      "completed_field": "comp_task_progress_bar_task_3_completed"
+    },
+    {
+      "id": 4,
+      "completed_field": "comp_task_progress_bar_task_4_completed"
+    },
+    {
+      "id": 5,
+      "completed_field": "comp_task_progress_bar_task_5_completed"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx"
+}
