@@ -116,6 +116,27 @@
       "_nested_name": "text_formatting_4"
     },
     {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image",
+      "_nested_name": "image"
+    },
+    {
+      "type": "text",
+      "value": "Caption goes here. Additional text to pad out the length.",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "caption"
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
       "type": "title",
       "name": "title_3",
       "value": "To be removed",
