@@ -286,6 +286,30 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_task_group_1_data": {
+      "flow_type": "data_list",
+      "flow_name": "feat_task_group_1_data",
+      "data_list_name": "feat_task_group_1",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+    },
+    "feat_task_group_2_data": {
+      "flow_type": "data_list",
+      "flow_name": "feat_task_group_2_data",
+      "data_list_name": "feat_task_group_2",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+    },
+    "feat_task_group_3_data": {
+      "flow_type": "data_list",
+      "flow_name": "feat_task_group_3_data",
+      "data_list_name": "feat_task_group_3",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+    },
+    "feat_task_groups_data": {
+      "flow_type": "data_list",
+      "flow_name": "feat_task_groups_data",
+      "data_list_name": "feat_task_groups",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+    },
     "debug_filtered": {
       "flow_name": "debug_filtered",
       "flow_subtype": "generated",
@@ -1538,18 +1562,6 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_stepper.xlsx"
     },
-    "debug_task_card": {
-      "flow_type": "template",
-      "flow_name": "debug_task_card",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_task_card.xlsx"
-    },
-    "debug_task_card_set_progress": {
-      "flow_type": "template",
-      "flow_name": "debug_task_card_set_progress",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_task_card.xlsx"
-    },
     "debug_teen_ages": {
       "flow_type": "template",
       "flow_name": "debug_teen_ages",
@@ -2608,6 +2620,11 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_task_group_subtask_toggle": {
+      "flow_type": "template",
+      "flow_name": "feat_task_group_subtask_toggle",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+    },
     "feature_feedback_debug": {
       "flow_type": "template",
       "flow_name": "feature_feedback_debug",
@@ -2645,6 +2662,11 @@
       "flow_type": "template",
       "flow_name": "feature_share_file",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_share.xlsx"
+    },
+    "feature_task_group": {
+      "flow_type": "template",
+      "flow_name": "feature_task_group",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
     },
     "home_screen": {
       "flow_type": "template",
