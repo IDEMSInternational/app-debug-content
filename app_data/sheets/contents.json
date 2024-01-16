@@ -2591,6 +2591,21 @@
       "flow_name": "debug_sync_id",
       "_xlsxPath": "debug_sheets/debug_sync.xlsx"
     },
+    "doc_override_default": {
+      "flow_type": "template",
+      "flow_name": "doc_override_default",
+      "_xlsxPath": "doc_sheets/doc_override.xlsx",
+      "_overrides": {
+        "doc_override_override": "@fields.doc_override_condition"
+      }
+    },
+    "doc_override_override": {
+      "flow_type": "template",
+      "flow_name": "doc_override_override",
+      "override_target": "doc_override_default",
+      "override_condition": "@fields.doc_override_condition",
+      "_xlsxPath": "doc_sheets/doc_override.xlsx"
+    },
     "example_generator_output_w_1": {
       "flow_name": "example_generator_output_w_1",
       "flow_subtype": "example_generator",
