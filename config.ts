@@ -13,7 +13,7 @@ config.google_drive = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.2.2",
+  content_tag_latest: "1.2.4",
 };
 
 config.app_data.output_path = "./app_data";
@@ -46,6 +46,7 @@ config.app_config.APP_SKINS.defaultSkinName = SKINS.defaultSkin.name
 config.app_config.APP_SKINS.available = [SKINS.defaultSkin, SKINS.debug]
 config.app_config.APP_THEMES.available = ["default", "professional"]
 config.app_config.APP_THEMES.defaultThemeName = "default"
+config.app_config.TASKS.taskGroupsListName = "feat_task_groups"
 config.app_config.APP_UPDATES.enabled = true
 config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete"
 config.app_config.APP_AUTHENTICATION_DEFAULTS.enforceLogin = false

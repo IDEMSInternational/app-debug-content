@@ -1,0 +1,17 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "feat_task_group_3_data",
+  "status": "released",
+  "data_list_name": "feat_task_group_3",
+  "rows": [
+    {
+      "id": "subtask_1",
+      "completed_field": "task_group_3_subtask_1_completed"
+    },
+    {
+      "id": "subtask_2",
+      "completed_field": "task_group_3_subtask_2_completed"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+}

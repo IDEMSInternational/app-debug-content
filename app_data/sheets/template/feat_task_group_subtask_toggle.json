@@ -1,60 +1,20 @@
 {
   "flow_type": "template",
-  "flow_name": "comp_task_progress_bar",
+  "flow_name": "feat_task_group_subtask_toggle",
   "status": "released",
-  "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "title",
-      "value": "Task Progress Bar",
-      "_translations": {
-        "value": {}
-      },
-      "name": "title",
-      "_nested_name": "title"
-    },
-    {
-      "name": "task_group",
-      "value": "comp_task_progress_bar_data",
-      "_translations": {
-        "value": {}
-      },
+      "name": "task_group_data",
       "type": "set_variable",
-      "_nested_name": "task_group"
-    },
-    {
-      "type": "task_progress_bar",
-      "parameter_list": {
-        "task_group_data": "@local.task_group",
-        "completed_field": "comp_task_progress_bar_completed"
-      },
-      "name": "task_progress_bar",
-      "_nested_name": "task_progress_bar",
-      "_dynamicFields": {
-        "parameter_list": {
-          "task_group_data": [
-            {
-              "fullExpression": "@local.task_group",
-              "matchedExpression": "@local.task_group",
-              "type": "local",
-              "fieldName": "task_group"
-            }
-          ]
-        }
-      },
-      "_dynamicDependencies": {
-        "@local.task_group": [
-          "parameter_list.task_group_data"
-        ]
-      }
+      "_nested_name": "task_group_data"
     },
     {
       "type": "items",
-      "value": "@data.comp_task_progress_bar_data",
+      "value": "@data.@local.task_group_data",
       "rows": [
         {
           "type": "text",
-          "value": "Task @item.id",
+          "value": "@item.id",
           "_translations": {
             "value": {}
           },
@@ -63,7 +23,7 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "Task @item.id",
+                "fullExpression": "@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -103,10 +63,6 @@
               "_cleaned": "changed | emit: force_reload"
             }
           ],
-          "parameter_list": {
-            "true_text": "Completed",
-            "false_text": "Not completed"
-          },
           "_nested_name": "items.toggle_bar_@item.id",
           "_dynamicFields": {
             "name": [
@@ -183,19 +139,19 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.comp_task_progress_bar_data",
-            "matchedExpression": "@data.comp_task_progress_bar_data",
-            "type": "data",
-            "fieldName": "comp_task_progress_bar_data"
+            "fullExpression": "@data.@local.task_group_data",
+            "matchedExpression": "@local.task_group_data",
+            "type": "local",
+            "fieldName": "task_group_data"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@data.comp_task_progress_bar_data": [
+        "@local.task_group_data": [
           "value"
         ]
       }
     }
   ],
-  "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx"
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
 }
