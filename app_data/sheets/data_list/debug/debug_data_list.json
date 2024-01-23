@@ -8,7 +8,7 @@
     {
       "id": "item_1",
       "text": "Item 1 text",
-      "image_asset": "plh_images/habits/habit_relax.svg",
+      "image_asset": "images/example/jasper_1.jpg",
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}
@@ -22,7 +22,7 @@
     {
       "id": "item_2",
       "text": "Item 2 text",
-      "image_asset": "plh_images/icons/play_white.svg",
+      "image_asset": "images/example/circular.png",
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}
@@ -47,5 +47,5 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_data_lists.xlsx"
+  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
 }

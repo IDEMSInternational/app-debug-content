@@ -109,7 +109,7 @@
       "flow_name": "debug_data_list",
       "data_list_name": "debug",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
     },
     "debug_delimiters_list": {
       "flow_type": "data_list",
@@ -367,7 +367,7 @@
       "flow_type": "data_pipe",
       "flow_name": "debug_data_pipe_translate",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
     },
     "example_data_pipe": {
       "flow_type": "data_pipe",
@@ -966,25 +966,25 @@
       "flow_type": "template",
       "flow_name": "debug_data_bottom",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
     },
     "debug_data_image": {
       "flow_type": "template",
       "flow_name": "debug_data_image",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
     },
     "debug_data_middle": {
       "flow_type": "template",
       "flow_name": "debug_data_middle",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
     },
     "debug_data_top": {
       "flow_type": "template",
       "flow_name": "debug_data_top",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
     },
     "debug_delimiters": {
       "flow_type": "template",

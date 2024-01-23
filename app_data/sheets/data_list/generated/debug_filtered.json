@@ -6,7 +6,7 @@
     {
       "id": "item_1",
       "text": "Item 1 text",
-      "image_asset": "plh_images/habits/habit_relax.svg",
+      "image_asset": "images/example/jasper_1.jpg",
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}
