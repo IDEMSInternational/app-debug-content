@@ -53,6 +53,9 @@ config.app_config.TASKS = {
   taskGroupsListName: "feat_task_groups",
   highlightedTaskField: "_task_highlighted_group_id"
 }
+// config.app_config.TASKS.enabled = true
+// config.app_config.TASKS.taskGroupsListName = "feat_task_groups"
+
 config.app_config.APP_UPDATES.enabled = true
 config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete"
 config.app_config.APP_AUTHENTICATION_DEFAULTS.enforceLogin = false
