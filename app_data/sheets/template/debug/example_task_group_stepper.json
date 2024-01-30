@@ -1,0 +1,131 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_task_group_stepper",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "task_group",
+      "value": "feat_task_group_1_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "task_group"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": {
+        "task_group_data": "@local.task_group",
+        "completed_field": "comp_task_progress_bar_completed"
+      },
+      "name": "task_progress_bar",
+      "_nested_name": "task_progress_bar",
+      "_dynamicFields": {
+        "parameter_list": {
+          "task_group_data": [
+            {
+              "fullExpression": "@local.task_group",
+              "matchedExpression": "@local.task_group",
+              "type": "local",
+              "fieldName": "task_group"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.task_group": [
+          "parameter_list.task_group_data"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "value": "@local.task_group",
+      "rows": [
+        {
+          "name": "template_name",
+          "value": "tg_1_@item.id",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "data_items.template_name",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "tg_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "template",
+          "value": "@local.template_name",
+          "rows": [],
+          "name": "@local.template_name",
+          "_nested_name": "data_items.@local.template_name",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.template_name",
+                "matchedExpression": "@local.template_name",
+                "type": "local",
+                "fieldName": "template_name"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "@local.template_name",
+                "matchedExpression": "@local.template_name",
+                "type": "local",
+                "fieldName": "template_name"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.@local.template_name",
+                "matchedExpression": "@local.template_name",
+                "type": "local",
+                "fieldName": "template_name"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.template_name": [
+              "value",
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items",
+      "_nested_name": "data_items",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.task_group",
+            "matchedExpression": "@local.task_group",
+            "type": "local",
+            "fieldName": "task_group"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.task_group": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+}

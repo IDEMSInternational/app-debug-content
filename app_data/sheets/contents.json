@@ -104,13 +104,6 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_accordion.xlsx"
     },
-    "debug_data_list": {
-      "flow_type": "data_list",
-      "flow_name": "debug_data_list",
-      "data_list_name": "debug",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
-    },
     "debug_delimiters_list": {
       "flow_type": "data_list",
       "flow_name": "debug_delimiters_list",
@@ -310,11 +303,6 @@
       "data_list_name": "feat_task_groups",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
     },
-    "debug_filtered": {
-      "flow_name": "debug_filtered",
-      "flow_subtype": "generated",
-      "flow_type": "data_list"
-    },
     "double_example_data_pipe_list": {
       "flow_name": "double_example_data_pipe_list",
       "flow_subtype": "generated",
@@ -363,12 +351,6 @@
     }
   },
   "data_pipe": {
-    "debug_data_pipe_translate": {
-      "flow_type": "data_pipe",
-      "flow_name": "debug_data_pipe_translate",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
-    },
     "example_data_pipe": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
@@ -2174,6 +2156,18 @@
       "flow_name": "example_startup_trigger",
       "_xlsxPath": "example_sheets/to_be_sorted/example_startup.xlsx"
     },
+    "example_task_group_content": {
+      "flow_type": "template",
+      "flow_name": "example_task_group_content",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+    },
+    "example_task_group_stepper": {
+      "flow_type": "template",
+      "flow_name": "example_task_group_stepper",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+    },
     "example_temp_override_default": {
       "flow_type": "template",
       "flow_name": "example_temp_override_default",
@@ -2461,6 +2455,18 @@
       "flow_name": "navigation_bar_display_group",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/example_footer.xlsx"
+    },
+    "tg_1_subtask_1": {
+      "flow_type": "template",
+      "flow_name": "tg_1_subtask_1",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+    },
+    "tg_1_subtask_2": {
+      "flow_type": "template",
+      "flow_name": "tg_1_subtask_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
     },
     "w_example_ending": {
       "flow_type": "template",

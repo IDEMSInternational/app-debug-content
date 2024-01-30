@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "tg_1_subtask_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Task Group 1, Subtask 1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "Custom content for Task Group 1, Subtask 1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+}
