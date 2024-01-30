@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "tg_1_subtask_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Task Group 1, Subtask 2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image",
+      "_nested_name": "image"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+}

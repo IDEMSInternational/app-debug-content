@@ -6,11 +6,15 @@
   "rows": [
     {
       "id": "subtask_1",
-      "completed_field": "task_group_1_subtask_1_completed"
+      "completed_field": "task_group_1_subtask_1_completed",
+      "title": "Subtask 1 Title",
+      "description": "Subtask 1 in Task Group 1"
     },
     {
       "id": "subtask_2",
-      "completed_field": "task_group_1_subtask_2_completed"
+      "completed_field": "task_group_1_subtask_2_completed",
+      "title": "Subtask 2 Title",
+      "description": "Subtask 2 in Task Group 1"
     }
   ],
   "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"

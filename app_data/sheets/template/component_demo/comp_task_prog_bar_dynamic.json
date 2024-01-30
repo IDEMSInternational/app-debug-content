@@ -26,8 +26,7 @@
       "type": "task_progress_bar",
       "parameter_list": {
         "task_group_data": "@local.task_group",
-        "completed_field": "comp_task_progress_bar_completed",
-        "dynamic": "true"
+        "completed_field": "comp_task_progress_bar_completed"
       },
       "name": "task_progress_bar",
       "_nested_name": "task_progress_bar",
