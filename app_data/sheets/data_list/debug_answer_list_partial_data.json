@@ -1,0 +1,25 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_answer_list_partial_data",
+  "status": "released",
+  "data_list_name": "debug_answer_list_partial",
+  "rows": [
+    {
+      "id": "option_1",
+      "text": "Option 1 text",
+      "image_asset": "images/example/jasper_1.jpg"
+    },
+    {
+      "id": "option_2"
+    },
+    {
+      "id": "option_3",
+      "image_asset": "images/example/jasper_1.jpg"
+    },
+    {
+      "id": "option_4",
+      "text": "Option 4 text"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_answer_list_partial.xlsx"
+}
