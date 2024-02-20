@@ -11,9 +11,11 @@ config.google_drive = {
   assets_folder_ids: ["1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs"],
 };
 
+config.favicon_asset = "images/icons/favicon.svg"
+
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.2.8",
+  content_tag_latest: "1.2.9",
 };
 
 config.app_data.output_path = "./app_data";

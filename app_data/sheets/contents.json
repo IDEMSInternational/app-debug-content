@@ -205,6 +205,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_items.xlsx"
     },
+    "debug_answer_list_partial_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_answer_list_partial_data",
+      "data_list_name": "debug_answer_list_partial",
+      "_xlsxPath": "debug_sheets/debug_answer_list_partial.xlsx"
+    },
     "debug_launch_actions": {
       "flow_type": "data_list",
       "flow_subtype": "debug_lifecycle_actions",
@@ -2324,12 +2330,6 @@
       "flow_subtype": "debug",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
     },
-    "feature_highlighted_task": {
-      "flow_type": "template",
-      "flow_name": "feature_highlighted_task",
-      "flow_subtype": "debug",
-      "_xlsxPath": "feature_sheets/to_be_sorted/feature_tasks.xlsx"
-    },
     "feature_home": {
       "flow_type": "template",
       "flow_name": "feature_home",
@@ -2521,6 +2521,11 @@
       "flow_subtype": "debug",
       "flow_name": "w_example_welcome_together",
       "_xlsxPath": "example_sheets/to_be_sorted/example_workshop.xlsx"
+    },
+    "debug_answer_list_partial": {
+      "flow_type": "template",
+      "flow_name": "debug_answer_list_partial",
+      "_xlsxPath": "debug_sheets/debug_answer_list_partial.xlsx"
     },
     "debug_app_update": {
       "flow_type": "template",
