@@ -1,15 +1,12 @@
 ##################################################################################
 #         Calls workflow from code repo
 ##################################################################################
-name: Deploy - Firebase
+name: Android - Release to Google Play
 
 on:
-  push:
-    branches:
-      - "main"
+  workflow_dispatch:
 
 jobs:
-  web_preview:
-    uses: IDEMSInternational/parenting-app-ui/.github/workflows/reusable-deploy-web-preview.yml@master
+  android_release:
+    uses: IDEMSInternational/parenting-app-ui/.github/workflows/reusable-android-release.yml@master
     secrets: inherit
-
