@@ -103,6 +103,10 @@
     "md5Checksum": "bc87b2ae05c7c762ca7673657c0efb56",
     "size_kb": 1.6
   },
+  "images/icons/tick.svg": {
+    "md5Checksum": "b4e6f1e9ba6e5bcdd2e404bc432ba745",
+    "size_kb": 0.3
+  },
   "images/icons/tick_white.svg": {
     "md5Checksum": "81136e04436759812dc3f6e90c61de11",
     "size_kb": 0.3
