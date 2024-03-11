@@ -1,0 +1,17 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_r_template",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Nested template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+}

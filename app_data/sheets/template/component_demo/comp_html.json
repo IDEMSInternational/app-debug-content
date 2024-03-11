@@ -12,6 +12,39 @@
         "value": {}
       },
       "_nested_name": "html_card"
+    },
+    {
+      "name": "red",
+      "value": "Red text",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "red"
+    },
+    {
+      "type": "html",
+      "name": "html_text",
+      "value": "<p style=\"color: red;\"> @local.red </p>",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "html_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "<p style=\"color: red;\"> @local.red </p>",
+            "matchedExpression": "@local.red",
+            "type": "local",
+            "fieldName": "red"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.red": [
+          "value"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_html.xlsx"

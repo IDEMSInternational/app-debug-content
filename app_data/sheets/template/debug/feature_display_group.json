@@ -6,6 +6,69 @@
   "rows": [
     {
       "type": "display_group",
+      "name": "dg_variant_gray",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "box_gray"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Variant: gray",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title",
+          "_nested_name": "dg_variant_gray.title"
+        }
+      ],
+      "_nested_name": "dg_variant_gray"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_variant_primary",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "box_primary"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Variant: primary",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title",
+          "_nested_name": "dg_variant_primary.title"
+        }
+      ],
+      "_nested_name": "dg_variant_primary"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_variant_secondary",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "box_secondary"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Variant: secondary",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title",
+          "_nested_name": "dg_variant_secondary.title"
+        }
+      ],
+      "_nested_name": "dg_variant_secondary"
+    },
+    {
+      "type": "display_group",
       "name": "example_dp_gr",
       "exclude_from_translation": true,
       "parameter_list": {

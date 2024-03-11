@@ -13,6 +13,11 @@
       "id": "id_2",
       "label": "Task 2",
       "completed": true
+    },
+    {
+      "id": "id_3",
+      "label": "Task 3",
+      "completed": true
     }
   ],
   "_xlsxPath": "component_sheets/component_data_items.xlsx"

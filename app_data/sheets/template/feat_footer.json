@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_footer",
+  "status": "released",
+  "rows": [
+    {
+      "name": "button_list",
+      "value": [
+        "image: images/icons/house_white.svg | target_template: home_screen",
+        "image: images/icons/star_white.svg | target_template: comp_button",
+        "image: images/icons/book_white.svg | target_template: comp_button"
+      ],
+      "type": "set_variable",
+      "_nested_name": "button_list"
+    },
+    {
+      "type": "navigation_bar",
+      "parameter_list": {
+        "button_list": "@local.button_list"
+      },
+      "name": "navigation_bar",
+      "_nested_name": "navigation_bar",
+      "_dynamicFields": {
+        "parameter_list": {
+          "button_list": [
+            {
+              "fullExpression": "@local.button_list",
+              "matchedExpression": "@local.button_list",
+              "type": "local",
+              "fieldName": "button_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.button_list": [
+          "parameter_list.button_list"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_footer.xlsx"
+}

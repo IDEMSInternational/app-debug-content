@@ -6,47 +6,12 @@
   "rows": [
     {
       "name": "task_group",
-      "value": "feat_task_group_1_data",
+      "value": "example_tg_stepper_data",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
       "_nested_name": "task_group"
-    },
-    {
-      "name": "task_group_active_task_field",
-      "value": "feat_task_group_1_data_active_task",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "task_group_active_task_field"
-    },
-    {
-      "type": "task_progress_bar",
-      "parameter_list": {
-        "task_group_data": "@local.task_group",
-        "completed_field": "comp_task_progress_bar_completed"
-      },
-      "name": "task_progress_bar",
-      "_nested_name": "task_progress_bar",
-      "_dynamicFields": {
-        "parameter_list": {
-          "task_group_data": [
-            {
-              "fullExpression": "@local.task_group",
-              "matchedExpression": "@local.task_group",
-              "type": "local",
-              "fieldName": "task_group"
-            }
-          ]
-        }
-      },
-      "_dynamicDependencies": {
-        "@local.task_group": [
-          "parameter_list.task_group_data"
-        ]
-      }
     },
     {
       "type": "data_items",
@@ -78,12 +43,20 @@
         },
         {
           "type": "template",
+          "name": "@local.template_name",
           "value": "@local.template_name",
           "condition": "@item.active",
           "rows": [],
-          "name": "@local.template_name",
           "_nested_name": "data_items.@local.template_name",
           "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "@local.template_name",
+                "matchedExpression": "@local.template_name",
+                "type": "local",
+                "fieldName": "template_name"
+              }
+            ],
             "value": [
               {
                 "fullExpression": "@local.template_name",
@@ -100,14 +73,6 @@
                 "fieldName": "active"
               }
             ],
-            "name": [
-              {
-                "fullExpression": "@local.template_name",
-                "matchedExpression": "@local.template_name",
-                "type": "local",
-                "fieldName": "template_name"
-              }
-            ],
             "_nested_name": [
               {
                 "fullExpression": "data_items.@local.template_name",
@@ -119,8 +84,8 @@
           },
           "_dynamicDependencies": {
             "@local.template_name": [
-              "value",
               "name",
+              "value",
               "_nested_name"
             ],
             "@item.active": [
@@ -129,18 +94,13 @@
           }
         },
         {
-          "name": "nav_forwards",
+          "type": "button",
+          "name": "nav_forwards_@item.id",
+          "value": "Next",
+          "_translations": {
+            "value": {}
+          },
           "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "click | set_item | completed:true",
-              "_cleaned": "click | set_item | completed:true",
-              "params": {
-                "completed": true
-              }
-            },
             {
               "trigger": "click",
               "action_id": "set_item",
@@ -153,181 +113,207 @@
             },
             {
               "trigger": "click",
-              "action_id": "set_next_item",
+              "action_id": "set_item",
               "args": [],
-              "_raw": "click | set_next_item | active:true",
-              "_cleaned": "click | set_next_item | active:true",
+              "_raw": "click | set_item | _index: @item._index + 1, active:true",
+              "_cleaned": "click | set_item | _index: @item._index + 1, active:true",
               "params": {
+                "_index": "@item._index + 1",
                 "active": true
               }
             }
           ],
-          "type": "set_variable",
-          "_nested_name": "data_items.nav_forwards"
-        },
-        {
-          "name": "nav_forwards",
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "click | set_item | completed:true",
-              "_cleaned": "click | set_item | completed:true",
-              "params": {
-                "completed": true
-              }
-            },
-            {
-              "trigger": "click",
-              "action_id": "set_active_item",
-              "args": [],
-              "_raw": "click | set_active_item | @item.index + 1",
-              "_cleaned": "click | set_active_item | @item.index + 1",
-              "params": {
-                "@item": {}
-              }
-            }
-          ],
-          "type": "set_variable",
-          "_nested_name": "data_items.nav_forwards",
+          "condition": "@item.active && !@item._last",
+          "_nested_name": "data_items.nav_forwards_@item.id",
           "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "nav_forwards_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
             "action_list": {
               "1": {
                 "_raw": [
                   {
-                    "fullExpression": "click | set_active_item | @item.index + 1",
-                    "matchedExpression": "@item.index",
+                    "fullExpression": "click | set_item | _index: @item._index + 1, active:true",
+                    "matchedExpression": "@item._index",
                     "type": "item",
-                    "fieldName": "index"
+                    "fieldName": "_index"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_active_item | @item.index + 1",
-                    "matchedExpression": "@item.index",
+                    "fullExpression": "click | set_item | _index: @item._index + 1, active:true",
+                    "matchedExpression": "@item._index",
                     "type": "item",
-                    "fieldName": "index"
-                  }
-                ]
-              }
-            }
-          },
-          "_dynamicDependencies": {
-            "@item.index": [
-              "action_list.1._raw",
-              "action_list.1._cleaned"
-            ]
-          }
-        },
-        {
-          "name": "nav_forwards",
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "click | set_item | completed:true",
-              "_cleaned": "click | set_item | completed:true",
-              "params": {
-                "completed": true
-              }
-            },
-            {
-              "trigger": "click",
-              "action_id": "set_item_radio",
-              "args": [],
-              "_raw": "click | set_item_radio | active: @item.index + 1",
-              "_cleaned": "click | set_item_radio | active: @item.index + 1",
-              "params": {
-                "active": "@item.index + 1"
-              }
-            }
-          ],
-          "type": "set_variable",
-          "_nested_name": "data_items.nav_forwards",
-          "_dynamicFields": {
-            "action_list": {
-              "1": {
-                "_raw": [
-                  {
-                    "fullExpression": "click | set_item_radio | active: @item.index + 1",
-                    "matchedExpression": "@item.index",
-                    "type": "item",
-                    "fieldName": "index"
-                  }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_item_radio | active: @item.index + 1",
-                    "matchedExpression": "@item.index",
-                    "type": "item",
-                    "fieldName": "index"
+                    "fieldName": "_index"
                   }
                 ],
                 "params": {
-                  "active": [
+                  "_index": [
                     {
-                      "fullExpression": "@item.index + 1",
-                      "matchedExpression": "@item.index",
+                      "fullExpression": "@item._index + 1",
+                      "matchedExpression": "@item._index",
                       "type": "item",
-                      "fieldName": "index"
+                      "fieldName": "_index"
                     }
                   ]
                 }
               }
-            }
+            },
+            "condition": [
+              {
+                "fullExpression": "@item.active && !@item._last",
+                "matchedExpression": "@item.active",
+                "type": "item",
+                "fieldName": "active"
+              },
+              {
+                "fullExpression": "@item.active && !@item._last",
+                "matchedExpression": "!@item._last",
+                "type": "item",
+                "fieldName": "_last"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.nav_forwards_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
           },
           "_dynamicDependencies": {
-            "@item.index": [
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item._index": [
               "action_list.1._raw",
               "action_list.1._cleaned",
-              "action_list.1.params.active"
+              "action_list.1.params._index"
+            ],
+            "@item.active": [
+              "condition"
+            ],
+            "!@item._last": [
+              "condition"
             ]
           }
         },
         {
-          "name": "nav_backwards",
+          "type": "button",
+          "name": "nav_backwards_@item.id",
+          "value": "Back",
+          "_translations": {
+            "value": {}
+          },
           "action_list": [
             {
               "trigger": "click",
-              "action_id": "set_active_item",
+              "action_id": "set_item",
               "args": [],
-              "_raw": "click | set_active_item | @item.index - 1",
-              "_cleaned": "click | set_active_item | @item.index - 1",
+              "_raw": "click | set_item | active:false",
+              "_cleaned": "click | set_item | active:false",
               "params": {
-                "@item": {}
+                "active": false
+              }
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "click | set_item | _index: @item._index - 1, active:true",
+              "_cleaned": "click | set_item | _index: @item._index - 1, active:true",
+              "params": {
+                "_index": "@item._index - 1",
+                "active": true
               }
             }
           ],
-          "type": "set_variable",
-          "_nested_name": "data_items.nav_backwards",
+          "condition": "@item.active && !@item._first",
+          "_nested_name": "data_items.nav_backwards_@item.id",
           "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "nav_backwards_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
             "action_list": {
-              "0": {
+              "1": {
                 "_raw": [
                   {
-                    "fullExpression": "click | set_active_item | @item.index - 1",
-                    "matchedExpression": "@item.index",
+                    "fullExpression": "click | set_item | _index: @item._index - 1, active:true",
+                    "matchedExpression": "@item._index",
                     "type": "item",
-                    "fieldName": "index"
+                    "fieldName": "_index"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "click | set_active_item | @item.index - 1",
-                    "matchedExpression": "@item.index",
+                    "fullExpression": "click | set_item | _index: @item._index - 1, active:true",
+                    "matchedExpression": "@item._index",
                     "type": "item",
-                    "fieldName": "index"
+                    "fieldName": "_index"
                   }
-                ]
+                ],
+                "params": {
+                  "_index": [
+                    {
+                      "fullExpression": "@item._index - 1",
+                      "matchedExpression": "@item._index",
+                      "type": "item",
+                      "fieldName": "_index"
+                    }
+                  ]
+                }
               }
-            }
+            },
+            "condition": [
+              {
+                "fullExpression": "@item.active && !@item._first",
+                "matchedExpression": "@item.active",
+                "type": "item",
+                "fieldName": "active"
+              },
+              {
+                "fullExpression": "@item.active && !@item._first",
+                "matchedExpression": "!@item._first",
+                "type": "item",
+                "fieldName": "_first"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.nav_backwards_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
           },
           "_dynamicDependencies": {
-            "@item.index": [
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item._index": [
+              "action_list.1._raw",
+              "action_list.1._cleaned",
+              "action_list.1.params._index"
+            ],
+            "@item.active": [
+              "condition"
+            ],
+            "!@item._first": [
+              "condition"
             ]
           }
         }
@@ -347,6 +333,280 @@
       "_dynamicDependencies": {
         "@local.task_group": [
           "value"
+        ]
+      }
+    },
+    {
+      "name": "nav_forwards",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_item",
+          "args": [],
+          "_raw": "click | set_item | completed:true",
+          "_cleaned": "click | set_item | completed:true",
+          "params": {
+            "completed": true
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_active_item",
+          "args": [],
+          "_raw": "click | set_active_item | @item.index + 1",
+          "_cleaned": "click | set_active_item | @item.index + 1",
+          "params": {
+            "@item": {}
+          }
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "nav_forwards",
+      "_dynamicFields": {
+        "action_list": {
+          "1": {
+            "_raw": [
+              {
+                "fullExpression": "click | set_active_item | @item.index + 1",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_active_item | @item.index + 1",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.index": [
+          "action_list.1._raw",
+          "action_list.1._cleaned"
+        ]
+      }
+    },
+    {
+      "name": "nav_backwards",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_active_item",
+          "args": [],
+          "_raw": "click | set_active_item | @item.index - 1",
+          "_cleaned": "click | set_active_item | @item.index - 1",
+          "params": {
+            "@item": {}
+          }
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "nav_backwards",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | set_active_item | @item.index - 1",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_active_item | @item.index - 1",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.index": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "name": "nav_forwards",
+      "value": "Next",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_item",
+          "args": [],
+          "_raw": "click | set_item | completed:true",
+          "_cleaned": "click | set_item | completed:true",
+          "params": {
+            "completed": true
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_item",
+          "args": [],
+          "_raw": "click | set_item | active:false",
+          "_cleaned": "click | set_item | active:false",
+          "params": {
+            "active": false
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_item_at_index",
+          "args": [],
+          "_raw": "click | set_item_at_index | @item.index + 1 | active:true",
+          "_cleaned": "click | set_item_at_index | @item.index + 1 | active:true",
+          "params": {
+            "@item": {}
+          }
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "nav_forwards",
+      "_dynamicFields": {
+        "action_list": {
+          "2": {
+            "_raw": [
+              {
+                "fullExpression": "click | set_item_at_index | @item.index + 1 | active:true",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_item_at_index | @item.index + 1 | active:true",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.index": [
+          "action_list.2._raw",
+          "action_list.2._cleaned"
+        ]
+      }
+    },
+    {
+      "name": "nav_forwards",
+      "value": "Next",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_item",
+          "args": [],
+          "_raw": "click | set_item | completed:true, active:false",
+          "_cleaned": "click | set_item | completed:true, active:false",
+          "params": {
+            "completed": true,
+            "active": false
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "set_item_at_index",
+          "args": [],
+          "_raw": "click | set_item_at_index | @item.index + 1 | active:true",
+          "_cleaned": "click | set_item_at_index | @item.index + 1 | active:true",
+          "params": {
+            "@item": {}
+          }
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "nav_forwards",
+      "_dynamicFields": {
+        "action_list": {
+          "1": {
+            "_raw": [
+              {
+                "fullExpression": "click | set_item_at_index | @item.index + 1 | active:true",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_item_at_index | @item.index + 1 | active:true",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.index": [
+          "action_list.1._raw",
+          "action_list.1._cleaned"
+        ]
+      }
+    },
+    {
+      "name": "nav_backwards",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_active_item",
+          "args": [],
+          "_raw": "click | set_active_item | @item.index - 1",
+          "_cleaned": "click | set_active_item | @item.index - 1",
+          "params": {
+            "@item": {}
+          }
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "nav_backwards",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | set_active_item | @item.index - 1",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_active_item | @item.index - 1",
+                "matchedExpression": "@item.index",
+                "type": "item",
+                "fieldName": "index"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.index": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
         ]
       }
     }

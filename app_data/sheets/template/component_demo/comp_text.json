@@ -208,7 +208,7 @@
     {
       "type": "text",
       "name": "text_position_3",
-      "value": "Right aligned text",
+      "value": "Right aligned text. Debug",
       "_translations": {
         "value": {}
       },

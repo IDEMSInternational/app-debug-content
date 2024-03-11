@@ -1,0 +1,21 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "example_tg_stepper_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "subtask_1",
+      "active": true
+    },
+    {
+      "id": "subtask_2",
+      "active": false
+    },
+    {
+      "id": "subtask_3",
+      "active": false
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+}
