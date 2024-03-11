@@ -1,0 +1,13 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_data_items_rendering_data",
+  "status": "released",
+  "data_list_name": "debug_data_items_rendering",
+  "rows": [
+    {
+      "id": "row_1",
+      "name": "Row 1"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+}

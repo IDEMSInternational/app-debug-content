@@ -199,6 +199,12 @@
       "flow_name": "example_templating_list",
       "_xlsxPath": "example_sheets/example_advanced_templating.xlsx"
     },
+    "example_tg_stepper_data": {
+      "flow_type": "data_list",
+      "flow_name": "example_tg_stepper_data",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+    },
     "feature_items_data": {
       "flow_type": "data_list",
       "flow_name": "feature_items_data",
@@ -210,6 +216,12 @@
       "flow_name": "debug_answer_list_partial_data",
       "data_list_name": "debug_answer_list_partial",
       "_xlsxPath": "debug_sheets/debug_answer_list_partial.xlsx"
+    },
+    "debug_data_items_rendering_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_data_items_rendering_data",
+      "data_list_name": "debug_data_items_rendering",
+      "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
     },
     "debug_launch_actions": {
       "flow_type": "data_list",
@@ -2462,6 +2474,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
     },
+    "tg_1_subtask_3": {
+      "flow_type": "template",
+      "flow_name": "tg_1_subtask_3",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+    },
     "w_example_ending": {
       "flow_type": "template",
       "flow_subtype": "debug",
@@ -2545,6 +2563,16 @@
       "_overrides": {
         "debug_circ_override_1": true
       }
+    },
+    "debug_data_items_r_template": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_r_template",
+      "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+    },
+    "debug_data_items_rendering": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_rendering",
+      "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
     },
     "debug_error_logging": {
       "flow_type": "template",
@@ -2640,6 +2668,11 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_footer": {
+      "flow_type": "template",
+      "flow_name": "feat_footer",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_footer.xlsx"
+    },
     "feat_task_group_subtask_toggle": {
       "flow_type": "template",
       "flow_name": "feat_task_group_subtask_toggle",
@@ -2697,6 +2730,11 @@
       "flow_type": "template",
       "flow_name": "nav_buttons",
       "_xlsxPath": "navigation.xlsx"
+    },
+    "temp_data_items": {
+      "flow_type": "template",
+      "flow_name": "temp_data_items",
+      "_xlsxPath": "component_sheets/component_data_items.xlsx"
     }
   },
   "tour": {

@@ -43,23 +43,26 @@ config.error_logging = {
 
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
+config.app_config.APP_HEADER_DEFAULTS.collapse = true;
+config.app_config.APP_HEADER_DEFAULTS.colour = "primary";
+config.app_config.APP_HEADER_DEFAULTS.variant = "default";
+
+config.app_config.APP_FOOTER_DEFAULTS.templateName = "feat_footer"
+
 config.app_config.APP_SIDEMENU_DEFAULTS.title = "Debug App";
+
 config.app_config.APP_SKINS.defaultSkinName = SKINS.defaultSkin.name
 config.app_config.APP_SKINS.available = [SKINS.defaultSkin, SKINS.debug]
+
 config.app_config.APP_THEMES.available = ["default", "professional"]
 config.app_config.APP_THEMES.defaultThemeName = "default"
 
-// TODO: replace with property assignment syntax after merge of #2176 on code repo
-config.app_config.TASKS = {
-  enabled: true,
-  taskGroupsListName: "feat_task_groups",
-  highlightedTaskField: "_task_highlighted_group_id"
-}
-// config.app_config.TASKS.enabled = true
-// config.app_config.TASKS.taskGroupsListName = "feat_task_groups"
+config.app_config.TASKS.enabled = true
+config.app_config.TASKS.taskGroupsListName = "feat_task_groups"
 
 config.app_config.APP_UPDATES.enabled = true
 config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete"
+
 config.app_config.APP_AUTHENTICATION_DEFAULTS.enforceLogin = false
 config.app_config.APP_AUTHENTICATION_DEFAULTS.signInTemplate = "example_google_auth"
 

@@ -55,6 +55,10 @@
     "md5Checksum": "8ed1f2802b37a7a11382ebabcdd9dfd0",
     "size_kb": 527.3
   },
+  "images/icons/ask_question_white.svg": {
+    "md5Checksum": "d52f43b75aacee5da8c3e33a76ecf3b7",
+    "size_kb": 1.4
+  },
   "images/icons/audio/pause-sharp.svg": {
     "md5Checksum": "d8254b68a74026926ccff7e6a7437409",
     "size_kb": 0.1
@@ -70,6 +74,10 @@
   "images/icons/audio/play-sharp.svg": {
     "md5Checksum": "b3ed52ec26505b93fd559e711fa92863",
     "size_kb": 0.1
+  },
+  "images/icons/book_white.svg": {
+    "md5Checksum": "12c477faa57812b7a16bc6a0d0424c06",
+    "size_kb": 0.7
   },
   "images/icons/favicon.svg": {
     "md5Checksum": "25a750c5524bd7c519b2b53a3abe5036",
@@ -87,6 +95,10 @@
     "md5Checksum": "3837dbad3c5c5b8158a5370064283c20",
     "size_kb": 0.6
   },
+  "images/icons/house_white.svg": {
+    "md5Checksum": "f65ea96d7ff53e9bed8613e7f2fe3302",
+    "size_kb": 0.6
+  },
   "images/icons/in_progress.svg": {
     "md5Checksum": "6105962bc0edd981675d874dc8a51035",
     "size_kb": 1.1
@@ -102,6 +114,10 @@
   "images/icons/school_blue.svg": {
     "md5Checksum": "bc87b2ae05c7c762ca7673657c0efb56",
     "size_kb": 1.6
+  },
+  "images/icons/star_white.svg": {
+    "md5Checksum": "0f9f695561b9bd2c21944bb6dd47d704",
+    "size_kb": 1
   },
   "images/icons/tick.svg": {
     "md5Checksum": "b4e6f1e9ba6e5bcdd2e404bc432ba745",

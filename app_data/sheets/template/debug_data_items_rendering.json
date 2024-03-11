@@ -1,0 +1,47 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_rendering",
+  "status": "released",
+  "rows": [
+    {
+      "name": "iterator",
+      "value": "debug_data_items_rendering_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "iterator"
+    },
+    {
+      "type": "data_items",
+      "value": "@local.iterator",
+      "rows": [
+        {
+          "type": "template",
+          "name": "debug_data_items_r_template",
+          "value": "debug_data_items_r_template",
+          "rows": [],
+          "_nested_name": "data_items.debug_data_items_r_template"
+        }
+      ],
+      "name": "data_items",
+      "_nested_name": "data_items",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.iterator",
+            "matchedExpression": "@local.iterator",
+            "type": "local",
+            "fieldName": "iterator"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.iterator": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+}

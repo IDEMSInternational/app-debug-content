@@ -5,6 +5,87 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "title",
+      "value": "Drawer component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title",
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "text",
+      "value": "This template includes additional rows so that the content is scrollable, in order to test the drawer's functionality",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
       "type": "drawer",
       "value": "Things to do",
       "parameter_list": {
