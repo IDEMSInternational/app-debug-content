@@ -215,7 +215,7 @@
       "flow_type": "data_list",
       "flow_name": "debug_answer_list_partial_data",
       "data_list_name": "debug_answer_list_partial",
-      "_xlsxPath": "debug_sheets/debug_answer_list_partial.xlsx"
+      "_xlsxPath": "debug_sheets/debug_answer_list.xlsx"
     },
     "debug_data_items_rendering_data": {
       "flow_type": "data_list",
@@ -428,6 +428,11 @@
     }
   },
   "global": {
+    "app_globals": {
+      "flow_type": "global",
+      "flow_name": "app_globals",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_dev_mode.xlsx"
+    },
     "debug_full_stop_globals": {
       "flow_type": "global",
       "flow_name": "debug_full_stop_globals",
@@ -485,6 +490,12 @@
       "flow_name": "example_lang_global",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_languages.xlsx"
+    },
+    "doc_global": {
+      "flow_type": "global",
+      "flow_name": "doc_global",
+      "override_target": "debug",
+      "_xlsxPath": "doc_sheets/doc_global.xlsx"
     }
   },
   "template": {
@@ -2537,7 +2548,7 @@
     "debug_answer_list_partial": {
       "flow_type": "template",
       "flow_name": "debug_answer_list_partial",
-      "_xlsxPath": "debug_sheets/debug_answer_list_partial.xlsx"
+      "_xlsxPath": "debug_sheets/debug_answer_list.xlsx"
     },
     "debug_app_update": {
       "flow_type": "template",
@@ -2589,6 +2600,11 @@
       "flow_name": "debug_hyperlinks",
       "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
     },
+    "debug_list_parsing": {
+      "flow_type": "template",
+      "flow_name": "debug_list_parsing",
+      "_xlsxPath": "debug_sheets/debug_answer_list.xlsx"
+    },
     "debug_long_link_dashed_box": {
       "flow_type": "template",
       "flow_name": "debug_long_link_dashed_box",
@@ -2624,6 +2640,11 @@
       "flow_name": "debug_sync_id",
       "_xlsxPath": "debug_sheets/debug_sync.xlsx"
     },
+    "doc_field": {
+      "flow_type": "template",
+      "flow_name": "doc_field",
+      "_xlsxPath": "doc_sheets/doc_field.xlsx"
+    },
     "doc_override_default": {
       "flow_type": "template",
       "flow_name": "doc_override_default",
@@ -2638,6 +2659,11 @@
       "override_target": "doc_override_default",
       "override_condition": "@fields.doc_override_condition",
       "_xlsxPath": "doc_sheets/doc_override.xlsx"
+    },
+    "enter_dev_mode": {
+      "flow_type": "template",
+      "flow_name": "enter_dev_mode",
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_dev_mode.xlsx"
     },
     "example_generator_output_w_1": {
       "flow_name": "example_generator_output_w_1",
@@ -2730,11 +2756,6 @@
       "flow_type": "template",
       "flow_name": "nav_buttons",
       "_xlsxPath": "navigation.xlsx"
-    },
-    "temp_data_items": {
-      "flow_type": "template",
-      "flow_name": "temp_data_items",
-      "_xlsxPath": "component_sheets/component_data_items.xlsx"
     }
   },
   "tour": {
