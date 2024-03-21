@@ -1,4 +1,16 @@
 {
+  "android/icon-background.png": {
+    "md5Checksum": "8711f369969c25216e0013c4010e0907",
+    "size_kb": 21.4
+  },
+  "android/icon-foreground.png": {
+    "md5Checksum": "8fa0416dee7554964c6c543c87c800c3",
+    "size_kb": 58.3
+  },
+  "android/icon.png": {
+    "md5Checksum": "8b06ee4d3e19163f9fc78e7d076611ef",
+    "size_kb": 67.4
+  },
   "audio/test_audio.mp3": {
     "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
     "size_kb": 43.4

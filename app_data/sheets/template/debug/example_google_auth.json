@@ -32,13 +32,35 @@
       "action_list": [
         {
           "trigger": "click",
-          "action_id": "google_auth",
-          "args": [],
-          "_raw": "click | google_auth",
-          "_cleaned": "click | google_auth"
+          "action_id": "auth",
+          "args": [
+            "sign_in_google"
+          ],
+          "_raw": "click | auth: sign_in_google",
+          "_cleaned": "click | auth: sign_in_google"
         }
       ],
       "_nested_name": "sign_in"
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_out"
+          ],
+          "_raw": "click | auth: sign_out",
+          "_cleaned": "click | auth: sign_out"
+        }
+      ],
+      "_nested_name": "sign_out"
     }
   ],
   "_xlsxPath": "example_sheets/example_google_auth.xlsx"

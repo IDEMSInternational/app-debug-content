@@ -19,8 +19,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title",
-          "_nested_name": "dg_variant_gray.title"
+          "name": "title_1",
+          "_nested_name": "dg_variant_gray.title_1"
         }
       ],
       "_nested_name": "dg_variant_gray"
@@ -40,8 +40,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title",
-          "_nested_name": "dg_variant_primary.title"
+          "name": "title_1",
+          "_nested_name": "dg_variant_primary.title_1"
         }
       ],
       "_nested_name": "dg_variant_primary"
@@ -61,8 +61,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title",
-          "_nested_name": "dg_variant_secondary.title"
+          "name": "title_1",
+          "_nested_name": "dg_variant_secondary.title_1"
         }
       ],
       "_nested_name": "dg_variant_secondary"
@@ -570,8 +570,8 @@
           "parameter_list": {
             "style": "right"
           },
-          "name": "subtitle",
-          "_nested_name": "dg_example_dashed_box.subtitle"
+          "name": "subtitle_1",
+          "_nested_name": "dg_example_dashed_box.subtitle_1"
         },
         {
           "type": "parent_point_box",
@@ -604,8 +604,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_36",
+      "_nested_name": "title_36"
     },
     {
       "type": "display_group",
@@ -705,8 +705,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title",
-          "_nested_name": "dg_example_form.title"
+          "name": "title_5",
+          "_nested_name": "dg_example_form.title_5"
         },
         {
           "type": "text_area",
@@ -727,8 +727,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_39",
+      "_nested_name": "title_39"
     },
     {
       "type": "display_group",
@@ -828,8 +828,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title",
-          "_nested_name": "dg_example_form.title"
+          "name": "title_5",
+          "_nested_name": "dg_example_form.title_5"
         },
         {
           "type": "text_area",
