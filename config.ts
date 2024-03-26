@@ -15,7 +15,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.2.12",
+  content_tag_latest: "1.2.13",
 };
 
 config.app_data.output_path = "./app_data";
@@ -54,7 +54,7 @@ config.app_config.APP_SIDEMENU_DEFAULTS.title = "Debug App";
 config.app_config.APP_SKINS.defaultSkinName = SKINS.defaultSkin.name
 config.app_config.APP_SKINS.available = [SKINS.defaultSkin, SKINS.debug]
 
-config.app_config.APP_THEMES.available = ["default", "professional"]
+config.app_config.APP_THEMES.available = ["default", "professional","pfr"]
 config.app_config.APP_THEMES.defaultThemeName = "default"
 
 config.app_config.TASKS.enabled = true

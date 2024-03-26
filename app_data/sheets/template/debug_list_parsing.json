@@ -4,28 +4,77 @@
   "status": "released",
   "rows": [
     {
-      "text": "answer_list_1",
-      "image_asset": "name:option_1 | text: option_1_text; \nname:option_2 | text: option_2_text;\nname:option_3 | text: option_3_text;\nname:option_4 | text: option_4_text;\nname:option_5 | text: option_5_text;\nname:option_6 | text: option_6_text",
+      "name": "answer_list_1",
+      "value": [
+        {
+          "name": "option_1",
+          "text": "option_1_text"
+        },
+        {
+          "name": "option_2",
+          "text": "option_2_text"
+        },
+        {
+          "name": "option_3",
+          "text": "option_3_text"
+        },
+        {
+          "name": "option_4",
+          "text": "option_4_text"
+        },
+        {
+          "name": "option_5",
+          "text": "option_5_text"
+        },
+        {
+          "name": "option_6",
+          "text": "option_6_text"
+        }
+      ],
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "_nested_name": "answer_list_1"
     },
     {
-      "text": "answer_1_list",
-      "image_asset": "name:option_1 | text: option_1_text; \nname:option_2 | text: option_2_text;\nname:option_3 | text: option_3_text;\nname:option_4 | text: option_4_text;\nname:option_5 | text: option_5_text;\nname:option_6 | text: option_6_text",
+      "name": "answer_1_list",
+      "value": [
+        {
+          "name": "option_1",
+          "text": "option_1_text"
+        },
+        {
+          "name": "option_2",
+          "text": "option_2_text"
+        },
+        {
+          "name": "option_3",
+          "text": "option_3_text"
+        },
+        {
+          "name": "option_4",
+          "text": "option_4_text"
+        },
+        {
+          "name": "option_5",
+          "text": "option_5_text"
+        },
+        {
+          "name": "option_6",
+          "text": "option_6_text"
+        }
+      ],
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "_nested_name": "answer_1_list"
     },
     {
-      "id": "text",
-      "text": "show_answer_list_1",
-      "image_asset": "answer_list_1: @local.answer_list_1",
-      "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable",
+      "type": "text",
+      "name": "show_answer_list_1",
+      "value": "answer_list_1: @local.answer_list_1",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_answer_list_1",
       "_dynamicFields": {
-        "image_asset": [
+        "value": [
           {
             "fullExpression": "answer_list_1: @local.answer_list_1",
             "matchedExpression": "@local.answer_list_1",
@@ -36,19 +85,20 @@
       },
       "_dynamicDependencies": {
         "@local.answer_list_1": [
-          "image_asset"
+          "value"
         ]
       }
     },
     {
-      "id": "text",
-      "text": "show_answer_1_list",
-      "image_asset": "answer_1_list: @local.answer_1_list",
-      "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable",
+      "type": "text",
+      "name": "show_answer_1_list",
+      "value": "answer_1_list: @local.answer_1_list",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_answer_1_list",
       "_dynamicFields": {
-        "image_asset": [
+        "value": [
           {
             "fullExpression": "answer_1_list: @local.answer_1_list",
             "matchedExpression": "@local.answer_1_list",
@@ -59,7 +109,7 @@
       },
       "_dynamicDependencies": {
         "@local.answer_1_list": [
-          "image_asset"
+          "value"
         ]
       }
     }
