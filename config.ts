@@ -15,7 +15,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.2.14",
+  content_tag_latest: "1.2.16",
 };
 
 config.app_data.output_path = "./app_data";
@@ -44,6 +44,10 @@ config.error_logging = {
 config.android={
   app_id:'international.idems.debug_app',
   app_name:'Debug App',
+  splash_asset_path: "./app_data/assets/android/splash.png",
+  icon_asset_path: "./app_data/assets/android/icon.png",
+  icon_asset_foreground_path: "./app_data/assets/android/icon-foreground.png",
+  icon_asset_background_path: "./app_data/assets/android/icon-background.png",
 }
 
 // Override any app constants here
