@@ -1,5 +1,4 @@
-import { generateDeploymentConfig } from "scripts";
-import { logWarning } from "scripts/src/utils";
+import { generateDeploymentConfig, loadEncryptedConfig} from "scripts";
 import { SKINS } from "./skins";
 
 const config = generateDeploymentConfig("debug");
@@ -27,14 +26,15 @@ config.app_config.ASSET_PACKS = {
 };
 
 // set supabase config if decrypted values available
-try {
-  const supabaseConfig = require("./encrypted/supabaseConfig.json");
-  config.supabase = { ...supabaseConfig, enabled: true };
-} catch {
-  logWarning({
-    msg1: "Deployment config requires encrypted data",
-    msg2: "Decrypt config in order to access supabase functionality",
-  });
+// TODO - should supabase match general config and additional settings
+
+const supabaseConfig = loadEncryptedConfig("supabaseConfig.json");
+config.supabase = { ...supabaseConfig, enabled: supabaseConfig ? true : false  };
+
+config.firebase = {
+  config: loadEncryptedConfig('firebase.json'),
+  auth:{enabled:true},
+  crashlytics:{enabled:true}
 }
 
 config.error_logging = {
