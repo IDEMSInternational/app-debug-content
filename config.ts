@@ -15,7 +15,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.2.16",
+  content_tag_latest: "1.2.17",
 };
 
 config.app_data.output_path = "./app_data";
@@ -41,14 +41,17 @@ config.error_logging = {
   dsn: "https://69ccfba168f04b848cdd96ac066d01b5@app.glitchtip.com/2438",
 };
 
-config.android={
-  app_id:'international.idems.debug_app',
-  app_name:'Debug App',
+config.android = {
+  app_id: 'international.idems.debug_app',
+  app_name: 'Debug App',
   splash_asset_path: "./app_data/assets/android/splash.png",
   icon_asset_path: "./app_data/assets/android/icon.png",
   icon_asset_foreground_path: "./app_data/assets/android/icon-foreground.png",
   icon_asset_background_path: "./app_data/assets/android/icon-background.png",
 }
+
+config.ios.app_id = "international.idems.debug-app"
+config.ios.app_name = "Debug App"
 
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
@@ -63,7 +66,7 @@ config.app_config.APP_SIDEMENU_DEFAULTS.title = "Debug App";
 config.app_config.APP_SKINS.defaultSkinName = SKINS.defaultSkin.name
 config.app_config.APP_SKINS.available = [SKINS.defaultSkin, SKINS.debug]
 
-config.app_config.APP_THEMES.available = ["default", "professional","pfr"]
+config.app_config.APP_THEMES.available = ["default", "professional", "pfr"]
 config.app_config.APP_THEMES.defaultThemeName = "default"
 
 config.app_config.TASKS.enabled = true
