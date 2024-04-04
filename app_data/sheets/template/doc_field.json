@@ -5,20 +5,20 @@
   "rows": [
     {
       "type": "title",
+      "name": "title",
       "value": "Setting a field",
       "_translations": {
         "value": {}
       },
-      "name": "title",
       "_nested_name": "title"
     },
     {
       "type": "text",
+      "name": "text",
       "value": "Value of doc_example_field: @field.doc_example_field",
       "_translations": {
         "value": {}
       },
-      "name": "text",
       "_nested_name": "text",
       "_dynamicFields": {
         "value": [
@@ -38,6 +38,7 @@
     },
     {
       "type": "button",
+      "name": "button",
       "value": "Set field to true",
       "_translations": {
         "value": {}
@@ -54,11 +55,11 @@
           "_cleaned": "click | set_field: doc_example_field: true"
         }
       ],
-      "name": "button",
       "_nested_name": "button"
     },
     {
       "type": "button",
+      "name": "button",
       "value": "Set field to false",
       "_translations": {
         "value": {}
@@ -75,7 +76,6 @@
           "_cleaned": "click | set_field: doc_example_field: false"
         }
       ],
-      "name": "button",
       "_nested_name": "button"
     }
   ],

@@ -1,0 +1,19 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_text_long",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Sed id semper risus in hendrerit gravida rutrum quisque non. Facilisis volutpat est velit egestas dui. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Fringilla ut morbi tincidunt augue interdum velit euismod. Ultricies lacus sed turpis tincidunt id aliquet. Et tortor at risus viverra adipiscing at in. Eget felis eget nunc lobortis mattis. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor.\n\nAt consectetur lorem donec massa. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Nec sagittis aliquam malesuada bibendum arcu vitae. Quisque id diam vel quam elementum pulvinar etiam non quam. Vel risus commodo viverra maecenas. Ante in nibh mauris cursus. Id ornare arcu odio ut sem nulla pharetra diam. Cursus risus at ultrices mi tempus imperdiet nulla malesuada. Ut tortor pretium viverra suspendisse. Nulla at volutpat diam ut venenatis tellus in. Mauris in aliquam sem fringilla ut morbi tincidunt augue.\n\nViverra mauris in aliquam sem. Eu augue ut lectus arcu bibendum at. Egestas purus viverra accumsan in. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Fermentum posuere urna nec tincidunt. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Lorem sed risus ultricies tristique nulla aliquet enim. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Lacus viverra vitae congue eu consequat ac felis. Nec ultrices dui sapien eget mi proin sed libero enim. Neque ornare aenean euismod elementum. Malesuada bibendum arcu vitae elementum curabitur. Fusce id velit ut tortor. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla.\n\nLacus sed viverra tellus in hac habitasse platea dictumst. Cum sociis natoque penatibus et magnis. Metus aliquam eleifend mi in nulla. Natoque penatibus et magnis dis. Ullamcorper sit amet risus nullam. Eu scelerisque felis imperdiet proin fermentum leo. Ut tristique et egestas quis ipsum suspendisse. Sed turpis tincidunt id aliquet risus feugiat in ante metus. In est ante in nibh mauris cursus mattis molestie. Volutpat consequat mauris nunc congue nisi vitae suscipit. Viverra vitae congue eu consequat ac felis. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Duis at consectetur lorem donec massa sapien faucibus et molestie.\n\nEt netus et malesuada fames ac turpis egestas sed. Est ultricies integer quis auctor elit sed. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis. Magna ac placerat vestibulum lectus mauris ultrices eros in. Amet consectetur adipiscing elit ut aliquam purus. Sit amet aliquam id diam maecenas. In vitae turpis massa sed elementum tempus egestas. Nibh nisl condimentum id venenatis. Leo urna molestie at elementum eu facilisis sed odio. Nec tincidunt praesent semper feugiat nibh. Non nisi est sit amet facilisis magna etiam tempor orci. Blandit massa enim nec dui nunc. Sed id semper risus in hendrerit gravida rutrum. Ultricies mi quis hendrerit dolor magna eget est lorem. Enim ut tellus elementum sagittis vitae et leo duis. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit.",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"
+}
