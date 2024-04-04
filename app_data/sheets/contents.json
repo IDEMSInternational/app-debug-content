@@ -2227,6 +2227,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_ups.xlsx"
     },
+    "example_text_long": {
+      "flow_type": "template",
+      "flow_name": "example_text_long",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"
+    },
     "example_text_option_1": {
       "flow_type": "template",
       "flow_name": "example_text_option_1",
@@ -2490,6 +2496,12 @@
       "flow_name": "tg_1_subtask_3",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+    },
+    "user_actions": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "user_actions",
+      "_xlsxPath": "debug_sheets/debug_user_actions.xlsx"
     },
     "w_example_ending": {
       "flow_type": "template",

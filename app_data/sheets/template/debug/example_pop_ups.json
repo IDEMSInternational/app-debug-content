@@ -79,7 +79,7 @@
     {
       "type": "text",
       "name": "text_4",
-      "value": "Button 3 (example_go_to_3) dismisses on completed:",
+      "value": "Button 3 simple pop-up containing long, scrollable content:",
       "_translations": {
         "value": {}
       },
@@ -90,6 +90,37 @@
       "type": "button",
       "name": "button_pop_up_3",
       "value": "Button 3",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text_long"
+          ],
+          "_raw": "click | pop_up:example_text_long",
+          "_cleaned": "click | pop_up:example_text_long"
+        }
+      ],
+      "exclude_from_translation": true,
+      "_nested_name": "button_pop_up_3"
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Button 4 (example_go_to_3) dismisses on completed:",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_4",
+      "value": "Button 4",
       "_translations": {
         "value": {}
       },
@@ -114,7 +145,7 @@
         }
       ],
       "exclude_from_translation": true,
-      "_nested_name": "button_pop_up_3"
+      "_nested_name": "button_pop_up_4"
     },
     {
       "type": "title",
@@ -128,18 +159,18 @@
     },
     {
       "type": "text",
-      "name": "text_4",
-      "value": "Button 4 pops up the simple text pop-up in fullscreen",
+      "name": "text_6",
+      "value": "Button 5 pops up the simple text pop-up in fullscreen",
       "_translations": {
         "value": {}
       },
       "exclude_from_translation": true,
-      "_nested_name": "text_4"
+      "_nested_name": "text_6"
     },
     {
       "type": "button",
-      "name": "button_pop_up_4",
-      "value": "Button 4",
+      "name": "button_pop_up_5",
+      "value": "Button 5",
       "_translations": {
         "value": {}
       },
@@ -158,22 +189,22 @@
         }
       ],
       "exclude_from_translation": true,
-      "_nested_name": "button_pop_up_4"
+      "_nested_name": "button_pop_up_5"
     },
     {
       "type": "text",
-      "name": "text_5",
-      "value": "Button 5 pops up the simple text pop-up in fullscreen without a close button (closes on emit)",
+      "name": "text_7",
+      "value": "Button 6 pops up the simple text pop-up in fullscreen without a close button (closes on emit)",
       "_translations": {
         "value": {}
       },
       "exclude_from_translation": true,
-      "_nested_name": "text_5"
+      "_nested_name": "text_7"
     },
     {
       "type": "button",
-      "name": "button_pop_up_5",
-      "value": "Button 5",
+      "name": "button_pop_up_6",
+      "value": "Button 6",
       "_translations": {
         "value": {}
       },
@@ -193,7 +224,7 @@
         }
       ],
       "exclude_from_translation": true,
-      "_nested_name": "button_pop_up_5"
+      "_nested_name": "button_pop_up_6"
     }
   ],
   "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"

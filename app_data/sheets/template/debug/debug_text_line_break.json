@@ -41,14 +41,14 @@
       "type": "text",
       "name": "text_list",
       "value": [
-        "- First bullet point\nSentence following a single line break.\n- Second bullet point.\n\nSentence following a double line break.\n- Third bullet point with text set through variable. @local.my_text"
+        "- First bullet point\nSentence following a single line break.\n- Second bullet point.\n\nSentence following a double line break...\n- Third bullet point with text set through variable. @local.my_text"
       ],
       "_nested_name": "text_list",
       "_dynamicFields": {
         "value": {
           "0": [
             {
-              "fullExpression": "- First bullet point\nSentence following a single line break.\n- Second bullet point.\n\nSentence following a double line break.\n- Third bullet point with text set through variable. @local.my_text",
+              "fullExpression": "- First bullet point\nSentence following a single line break.\n- Second bullet point.\n\nSentence following a double line break...\n- Third bullet point with text set through variable. @local.my_text",
               "matchedExpression": "@local.my_text",
               "type": "local",
               "fieldName": "my_text"
