@@ -17,6 +17,8 @@ config.git = {
   content_tag_latest: "1.2.19",
 };
 
+config.app_data.output_path = "./app_data";
+
 config.app_config.ASSET_PACKS = {
   enabled: true,
   bucketName: "debug",
