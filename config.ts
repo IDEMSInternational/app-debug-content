@@ -14,10 +14,8 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.2.18",
+  content_tag_latest: "1.2.19",
 };
-
-config.app_data.output_path = "./app_data";
 
 config.app_config.ASSET_PACKS = {
   enabled: true,
