@@ -116,106 +116,40 @@
       "_nested_name": "text_formatting_4"
     },
     {
-      "type": "image",
-      "value": "images/example/jasper_1.jpg",
+      "type": "text",
+      "name": "text_css_1",
+      "value": "Text with custom CSS added via style_list",
       "_translations": {
         "value": {}
       },
-      "name": "image",
-      "_nested_name": "image"
+      "style_list": [
+        "color: red"
+      ],
+      "_nested_name": "text_css_1"
     },
     {
       "type": "text",
-      "value": "Caption goes here. Additional text to pad out the length.",
+      "name": "text_css_2",
+      "value": "Text with custom CSS added via style_list",
       "_translations": {
         "value": {}
       },
-      "parameter_list": {
-        "variant": "caption"
-      },
-      "name": "text",
-      "_nested_name": "text"
-    },
-    {
-      "type": "title",
-      "name": "title_3",
-      "value": "To be removed",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "title_3"
+      "style_list": [
+        "color: #A020F0"
+      ],
+      "_nested_name": "text_css_2"
     },
     {
       "type": "text",
-      "name": "text_size_1",
-      "value": "Small text",
+      "name": "text_css_3",
+      "value": "Text with custom CSS added via style_list",
       "_translations": {
         "value": {}
       },
-      "parameter_list": {
-        "style": "small"
-      },
-      "_nested_name": "text_size_1"
-    },
-    {
-      "type": "text",
-      "name": "text_size_2",
-      "value": "Medium text",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "medium"
-      },
-      "_nested_name": "text_size_2"
-    },
-    {
-      "type": "text",
-      "name": "text_size_3",
-      "value": "Large text",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "large"
-      },
-      "_nested_name": "text_size_3"
-    },
-    {
-      "type": "text",
-      "name": "text_position_1",
-      "value": "Left aligned text",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "left"
-      },
-      "_nested_name": "text_position_1"
-    },
-    {
-      "type": "text",
-      "name": "text_position_2",
-      "value": "Centered text",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "center"
-      },
-      "_nested_name": "text_position_2"
-    },
-    {
-      "type": "text",
-      "name": "text_position_3",
-      "value": "Right aligned text. Debug",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "right"
-      },
-      "_nested_name": "text_position_3"
+      "style_list": [
+        "text-transform: uppercase"
+      ],
+      "_nested_name": "text_css_3"
     }
   ],
   "_xlsxPath": "component_sheets/component_text.xlsx"

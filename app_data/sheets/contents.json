@@ -1609,6 +1609,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_paragraphs.xlsx"
     },
+    "debug_text_style_list": {
+      "flow_type": "template",
+      "flow_name": "debug_text_style_list",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_text.xlsx"
+    },
     "debug_text_wrapping": {
       "flow_type": "template",
       "flow_name": "debug_text_wrapping",

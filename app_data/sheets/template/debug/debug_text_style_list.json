@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_style_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Text with custom CSS applied from style_list",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "color: red"
+      ],
+      "name": "text",
+      "_nested_name": "text"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Text 1",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text",
+          "_nested_name": "display_group.text"
+        },
+        {
+          "type": "text",
+          "value": "Text 2",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text",
+          "_nested_name": "display_group.text"
+        },
+        {
+          "type": "text",
+          "value": "Text 3",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex: 2"
+          ],
+          "name": "text",
+          "_nested_name": "display_group.text"
+        }
+      ],
+      "name": "display_group",
+      "_nested_name": "display_group"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_text.xlsx"
+}
