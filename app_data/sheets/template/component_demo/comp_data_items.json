@@ -804,8 +804,8 @@
         },
         {
           "type": "button",
-          "name": "index_1_button_@item.id",
-          "value": "Set item at index 1 to completed: true",
+          "name": "this_button_@item.id",
+          "value": "Set this item to completed: false",
           "_translations": {
             "value": {}
           },
@@ -814,10 +814,100 @@
               "trigger": "click",
               "action_id": "set_item",
               "args": [],
-              "_raw": "click | set_item | _index: 1, completed:true",
-              "_cleaned": "click | set_item | _index: 1, completed:true",
+              "_raw": "click | set_item | completed:false",
+              "_cleaned": "click | set_item | completed:false",
               "params": {
-                "_index": "1",
+                "completed": false
+              }
+            }
+          ],
+          "_nested_name": "data_items.this_button_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "this_button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.this_button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "this_button_@item.id",
+          "value": "Set this item to completed: true",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "click | set_item | completed:true",
+              "_cleaned": "click | set_item | completed:true",
+              "params": {
+                "completed": true
+              }
+            }
+          ],
+          "_nested_name": "data_items.this_button_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "this_button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.this_button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "index_1_button_@item.id",
+          "value": "Set item at index 0 to completed: true",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "click | set_item | _index: 0, completed:true",
+              "_cleaned": "click | set_item | _index: 0, completed:true",
+              "params": {
+                "_index": "0",
                 "completed": true
               }
             }
@@ -835,6 +925,52 @@
             "_nested_name": [
               {
                 "fullExpression": "data_items.index_1_button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "id_button_@item.id",
+          "value": "Set item with id \"id_1\" to completed: true",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "click | set_item | _id: id_1, completed:true",
+              "_cleaned": "click | set_item | _id: id_1, completed:true",
+              "params": {
+                "_id": "id_1",
+                "completed": true
+              }
+            }
+          ],
+          "_nested_name": "data_items.id_button_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "id_button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.id_button_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -926,98 +1062,6 @@
               "action_list.0._raw",
               "action_list.0._cleaned",
               "action_list.0.params._index"
-            ]
-          }
-        },
-        {
-          "type": "button",
-          "name": "id_button_@item.id",
-          "value": "Set item with id \"id_1\" to completed: true",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "click | set_item | _id: id_1, completed:true",
-              "_cleaned": "click | set_item | _id: id_1, completed:true",
-              "params": {
-                "_id": "id_1",
-                "completed": true
-              }
-            }
-          ],
-          "_nested_name": "data_items.id_button_@item.id",
-          "_dynamicFields": {
-            "name": [
-              {
-                "fullExpression": "id_button_@item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ],
-            "_nested_name": [
-              {
-                "fullExpression": "data_items.id_button_@item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item.id": [
-              "name",
-              "_nested_name"
-            ]
-          }
-        },
-        {
-          "type": "button",
-          "name": "id_button_@item.id",
-          "value": "Set item with id \"id_1\" to completed: false",
-          "_translations": {
-            "value": {}
-          },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "click | set_item | _id: id_1, completed:false",
-              "_cleaned": "click | set_item | _id: id_1, completed:false",
-              "params": {
-                "_id": "id_1",
-                "completed": false
-              }
-            }
-          ],
-          "_nested_name": "data_items.id_button_@item.id",
-          "_dynamicFields": {
-            "name": [
-              {
-                "fullExpression": "id_button_@item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ],
-            "_nested_name": [
-              {
-                "fullExpression": "data_items.id_button_@item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item.id": [
-              "name",
-              "_nested_name"
             ]
           }
         }
