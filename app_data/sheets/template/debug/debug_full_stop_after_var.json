@@ -195,8 +195,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_10",
+      "_nested_name": "title_10"
     },
     {
       "name": "dynamic_lookup",
@@ -338,8 +338,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_17",
+      "_nested_name": "title_17"
     },
     {
       "type": "text",

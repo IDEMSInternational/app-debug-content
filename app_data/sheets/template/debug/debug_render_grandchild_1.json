@@ -17,8 +17,14 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name: yes | text: Yes",
-        "name: no | text: No"
+        {
+          "name": "yes",
+          "text": "Yes"
+        },
+        {
+          "name": "no",
+          "text": "No"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

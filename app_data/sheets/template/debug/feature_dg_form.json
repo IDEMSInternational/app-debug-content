@@ -102,8 +102,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title",
-          "_nested_name": "dg_example_form.title"
+          "name": "title_5",
+          "_nested_name": "dg_example_form.title_5"
         },
         {
           "type": "text_area",

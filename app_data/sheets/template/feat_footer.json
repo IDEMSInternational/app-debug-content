@@ -6,9 +6,18 @@
     {
       "name": "button_list",
       "value": [
-        "image: images/icons/house_white.svg | target_template: home_screen",
-        "image: images/icons/star_white.svg | target_template: comp_button",
-        "image: images/icons/book_white.svg | target_template: comp_button"
+        {
+          "image": "images/icons/house_white.svg",
+          "target_template": "home_screen"
+        },
+        {
+          "image": "images/icons/star_white.svg",
+          "target_template": "comp_button"
+        },
+        {
+          "image": "images/icons/book_white.svg",
+          "target_template": "comp_button"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "button_list"
@@ -18,8 +27,8 @@
       "parameter_list": {
         "button_list": "@local.button_list"
       },
-      "name": "navigation_bar",
-      "_nested_name": "navigation_bar",
+      "name": "navigation_bar_3",
+      "_nested_name": "navigation_bar_3",
       "_dynamicFields": {
         "parameter_list": {
           "button_list": [

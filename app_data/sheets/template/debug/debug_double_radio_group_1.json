@@ -48,9 +48,18 @@
         {
           "name": "answer_list",
           "value": [
-            "name:name_var_1 | text:First",
-            "name:name_var_2 | text:Second",
-            "name:name_var_3 | text:Third"
+            {
+              "name": "name_var_1",
+              "text": "First"
+            },
+            {
+              "name": "name_var_2",
+              "text": "Second"
+            },
+            {
+              "name": "name_var_3",
+              "text": "Third"
+            }
           ],
           "exclude_from_translation": true,
           "type": "set_variable",
@@ -78,9 +87,18 @@
         {
           "name": "answer_list",
           "value": [
-            "name:name_var_4 | text:1",
-            "name:name_var_5 | text:2",
-            "name:name_var_6 | text:3"
+            {
+              "name": "name_var_4",
+              "text": "1"
+            },
+            {
+              "name": "name_var_5",
+              "text": "2"
+            },
+            {
+              "name": "name_var_6",
+              "text": "3"
+            }
           ],
           "exclude_from_translation": true,
           "type": "set_variable",

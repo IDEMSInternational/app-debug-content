@@ -9,8 +9,8 @@
       "required": true,
       "description": "List of options presented as radio items",
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_2",
+      "_nested_name": "set_variable_2"
     },
     {
       "id": "item_width",
@@ -18,8 +18,8 @@
       "description": "Minimum item width, will increase to fit grid;",
       "default_value": "200px",
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_3",
+      "_nested_name": "set_variable_3"
     },
     {
       "id": "grid_width",
@@ -27,8 +27,8 @@
       "description": "Maximum grid width, if specified will center items in available space.\nUse fixed or relative units, such as '75%' or '500px'",
       "default_value": "100%",
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_4",
+      "_nested_name": "set_variable_4"
     },
     {
       "id": "grid_gap",
@@ -36,8 +36,8 @@
       "description": "Spacing between grid items",
       "default_value": "16px",
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_5",
+      "_nested_name": "set_variable_5"
     }
   ],
   "_xlsxPath": "component_sheets/component_accordion.xlsx"

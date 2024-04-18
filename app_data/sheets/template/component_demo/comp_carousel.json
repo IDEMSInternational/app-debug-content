@@ -10,8 +10,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "type": "text",
@@ -19,8 +19,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_3",
+      "_nested_name": "text_3"
     },
     {
       "type": "carousel",
@@ -45,8 +45,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_1.title"
+              "name": "title_1",
+              "_nested_name": "carousel_4.slide_1.title_1"
             },
             {
               "type": "text",
@@ -54,11 +54,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_1.text"
+              "name": "text_2",
+              "_nested_name": "carousel_4.slide_1.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_1"
+          "_nested_name": "carousel_4.slide_1"
         },
         {
           "type": "display_group",
@@ -76,8 +76,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_2.title"
+              "name": "title_1",
+              "_nested_name": "carousel_4.slide_2.title_1"
             },
             {
               "type": "text",
@@ -85,11 +85,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_2.text"
+              "name": "text_2",
+              "_nested_name": "carousel_4.slide_2.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_2"
+          "_nested_name": "carousel_4.slide_2"
         },
         {
           "type": "display_group",
@@ -107,8 +107,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_3.title"
+              "name": "title_1",
+              "_nested_name": "carousel_4.slide_3.title_1"
             },
             {
               "type": "text",
@@ -116,11 +116,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_3.text"
+              "name": "text_2",
+              "_nested_name": "carousel_4.slide_3.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_3"
+          "_nested_name": "carousel_4.slide_3"
         },
         {
           "type": "display_group",
@@ -138,8 +138,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_4.title"
+              "name": "title_1",
+              "_nested_name": "carousel_4.slide_4.title_1"
             },
             {
               "type": "text",
@@ -147,11 +147,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_4.text"
+              "name": "text_2",
+              "_nested_name": "carousel_4.slide_4.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_4"
+          "_nested_name": "carousel_4.slide_4"
         },
         {
           "type": "display_group",
@@ -169,8 +169,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_5.title"
+              "name": "title_1",
+              "_nested_name": "carousel_4.slide_5.title_1"
             },
             {
               "type": "text",
@@ -178,15 +178,15 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_5.text"
+              "name": "text_2",
+              "_nested_name": "carousel_4.slide_5.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_5"
+          "_nested_name": "carousel_4.slide_5"
         }
       ],
-      "name": "carousel",
-      "_nested_name": "carousel"
+      "name": "carousel_4",
+      "_nested_name": "carousel_4"
     },
     {
       "type": "text",
@@ -194,8 +194,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_6",
+      "_nested_name": "text_6"
     },
     {
       "type": "carousel",
@@ -220,8 +220,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_1.title"
+              "name": "title_1",
+              "_nested_name": "carousel_7.slide_1.title_1"
             },
             {
               "type": "text",
@@ -229,11 +229,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_1.text"
+              "name": "text_2",
+              "_nested_name": "carousel_7.slide_1.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_1"
+          "_nested_name": "carousel_7.slide_1"
         },
         {
           "type": "display_group",
@@ -251,8 +251,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_2.title"
+              "name": "title_1",
+              "_nested_name": "carousel_7.slide_2.title_1"
             },
             {
               "type": "text",
@@ -260,11 +260,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_2.text"
+              "name": "text_2",
+              "_nested_name": "carousel_7.slide_2.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_2"
+          "_nested_name": "carousel_7.slide_2"
         },
         {
           "type": "display_group",
@@ -282,8 +282,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_3.title"
+              "name": "title_1",
+              "_nested_name": "carousel_7.slide_3.title_1"
             },
             {
               "type": "text",
@@ -291,11 +291,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_3.text"
+              "name": "text_2",
+              "_nested_name": "carousel_7.slide_3.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_3"
+          "_nested_name": "carousel_7.slide_3"
         },
         {
           "type": "display_group",
@@ -313,8 +313,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_4.title"
+              "name": "title_1",
+              "_nested_name": "carousel_7.slide_4.title_1"
             },
             {
               "type": "text",
@@ -322,11 +322,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_4.text"
+              "name": "text_2",
+              "_nested_name": "carousel_7.slide_4.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_4"
+          "_nested_name": "carousel_7.slide_4"
         },
         {
           "type": "display_group",
@@ -344,8 +344,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_5.title"
+              "name": "title_1",
+              "_nested_name": "carousel_7.slide_5.title_1"
             },
             {
               "type": "text",
@@ -353,15 +353,15 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_5.text"
+              "name": "text_2",
+              "_nested_name": "carousel_7.slide_5.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_5"
+          "_nested_name": "carousel_7.slide_5"
         }
       ],
-      "name": "carousel",
-      "_nested_name": "carousel"
+      "name": "carousel_7",
+      "_nested_name": "carousel_7"
     },
     {
       "type": "text",
@@ -369,8 +369,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_9",
+      "_nested_name": "text_9"
     },
     {
       "type": "carousel",
@@ -394,8 +394,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_1.title"
+              "name": "title_1",
+              "_nested_name": "carousel_10.slide_1.title_1"
             },
             {
               "type": "text",
@@ -403,11 +403,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_1.text"
+              "name": "text_2",
+              "_nested_name": "carousel_10.slide_1.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_1"
+          "_nested_name": "carousel_10.slide_1"
         },
         {
           "type": "display_group",
@@ -425,8 +425,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_2.title"
+              "name": "title_1",
+              "_nested_name": "carousel_10.slide_2.title_1"
             },
             {
               "type": "text",
@@ -434,11 +434,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_2.text"
+              "name": "text_2",
+              "_nested_name": "carousel_10.slide_2.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_2"
+          "_nested_name": "carousel_10.slide_2"
         },
         {
           "type": "display_group",
@@ -456,8 +456,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_3.title"
+              "name": "title_1",
+              "_nested_name": "carousel_10.slide_3.title_1"
             },
             {
               "type": "text",
@@ -465,11 +465,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_3.text"
+              "name": "text_2",
+              "_nested_name": "carousel_10.slide_3.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_3"
+          "_nested_name": "carousel_10.slide_3"
         },
         {
           "type": "display_group",
@@ -487,8 +487,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_4.title"
+              "name": "title_1",
+              "_nested_name": "carousel_10.slide_4.title_1"
             },
             {
               "type": "text",
@@ -496,11 +496,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_4.text"
+              "name": "text_2",
+              "_nested_name": "carousel_10.slide_4.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_4"
+          "_nested_name": "carousel_10.slide_4"
         },
         {
           "type": "display_group",
@@ -518,8 +518,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_5.title"
+              "name": "title_1",
+              "_nested_name": "carousel_10.slide_5.title_1"
             },
             {
               "type": "text",
@@ -527,15 +527,15 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_5.text"
+              "name": "text_2",
+              "_nested_name": "carousel_10.slide_5.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_5"
+          "_nested_name": "carousel_10.slide_5"
         }
       ],
-      "name": "carousel",
-      "_nested_name": "carousel"
+      "name": "carousel_10",
+      "_nested_name": "carousel_10"
     },
     {
       "type": "text",
@@ -543,8 +543,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_12",
+      "_nested_name": "text_12"
     },
     {
       "type": "carousel",
@@ -568,8 +568,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_1.title"
+              "name": "title_1",
+              "_nested_name": "carousel_13.slide_1.title_1"
             },
             {
               "type": "text",
@@ -577,11 +577,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_1.text"
+              "name": "text_2",
+              "_nested_name": "carousel_13.slide_1.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_1"
+          "_nested_name": "carousel_13.slide_1"
         },
         {
           "type": "display_group",
@@ -599,8 +599,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_2.title"
+              "name": "title_1",
+              "_nested_name": "carousel_13.slide_2.title_1"
             },
             {
               "type": "text",
@@ -608,11 +608,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_2.text"
+              "name": "text_2",
+              "_nested_name": "carousel_13.slide_2.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_2"
+          "_nested_name": "carousel_13.slide_2"
         },
         {
           "type": "display_group",
@@ -630,8 +630,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_3.title"
+              "name": "title_1",
+              "_nested_name": "carousel_13.slide_3.title_1"
             },
             {
               "type": "text",
@@ -639,11 +639,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_3.text"
+              "name": "text_2",
+              "_nested_name": "carousel_13.slide_3.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_3"
+          "_nested_name": "carousel_13.slide_3"
         },
         {
           "type": "display_group",
@@ -661,8 +661,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_4.title"
+              "name": "title_1",
+              "_nested_name": "carousel_13.slide_4.title_1"
             },
             {
               "type": "text",
@@ -670,11 +670,11 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_4.text"
+              "name": "text_2",
+              "_nested_name": "carousel_13.slide_4.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_4"
+          "_nested_name": "carousel_13.slide_4"
         },
         {
           "type": "display_group",
@@ -692,8 +692,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "carousel.slide_5.title"
+              "name": "title_1",
+              "_nested_name": "carousel_13.slide_5.title_1"
             },
             {
               "type": "text",
@@ -701,15 +701,15 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "carousel.slide_5.text"
+              "name": "text_2",
+              "_nested_name": "carousel_13.slide_5.text_2"
             }
           ],
-          "_nested_name": "carousel.slide_5"
+          "_nested_name": "carousel_13.slide_5"
         }
       ],
-      "name": "carousel",
-      "_nested_name": "carousel"
+      "name": "carousel_13",
+      "_nested_name": "carousel_13"
     },
     {
       "type": "title",
@@ -717,8 +717,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_15",
+      "_nested_name": "title_15"
     },
     {
       "type": "text",
@@ -726,8 +726,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_16",
+      "_nested_name": "text_16"
     },
     {
       "type": "carousel",
@@ -742,7 +742,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.task_group_id"
+          "_nested_name": "carousel_17.task_group_id"
         },
         {
           "name": "task_id",
@@ -751,7 +751,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.task_id"
+          "_nested_name": "carousel_17.task_id"
         },
         {
           "name": "stepper",
@@ -760,7 +760,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.stepper"
+          "_nested_name": "carousel_17.stepper"
         },
         {
           "name": "completed",
@@ -769,7 +769,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.completed"
+          "_nested_name": "carousel_17.completed"
         },
         {
           "name": "join",
@@ -778,7 +778,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.join"
+          "_nested_name": "carousel_17.join"
         },
         {
           "name": "card_title",
@@ -787,7 +787,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.card_title"
+          "_nested_name": "carousel_17.card_title"
         },
         {
           "name": "card_subtitle",
@@ -796,7 +796,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.card_subtitle"
+          "_nested_name": "carousel_17.card_subtitle"
         },
         {
           "name": "card_image",
@@ -805,7 +805,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "carousel.card_image"
+          "_nested_name": "carousel_17.card_image"
         },
         {
           "type": "task_card",
@@ -839,7 +839,7 @@
             "in_progress_icon": "plh_images/icons/in_progress.svg",
             "completed_icon": "plh_images/icons/tick_white.svg"
           },
-          "_nested_name": "carousel.task_card_1",
+          "_nested_name": "carousel_17.task_card_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -979,7 +979,7 @@
             "in_progress_icon": "plh_images/icons/in_progress.svg",
             "completed_icon": "plh_images/icons/tick_white.svg"
           },
-          "_nested_name": "carousel.task_card_2",
+          "_nested_name": "carousel_17.task_card_2",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -1119,7 +1119,7 @@
             "in_progress_icon": "plh_images/icons/in_progress.svg",
             "completed_icon": "plh_images/icons/tick_white.svg"
           },
-          "_nested_name": "carousel.task_card_3",
+          "_nested_name": "carousel_17.task_card_3",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -1259,7 +1259,7 @@
             "in_progress_icon": "plh_images/icons/in_progress.svg",
             "completed_icon": "plh_images/icons/tick_white.svg"
           },
-          "_nested_name": "carousel.task_card_4",
+          "_nested_name": "carousel_17.task_card_4",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -1399,7 +1399,7 @@
             "in_progress_icon": "plh_images/icons/in_progress.svg",
             "completed_icon": "plh_images/icons/tick_white.svg"
           },
-          "_nested_name": "carousel.task_card_5",
+          "_nested_name": "carousel_17.task_card_5",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -1508,8 +1508,8 @@
           }
         }
       ],
-      "name": "carousel",
-      "_nested_name": "carousel"
+      "name": "carousel_17",
+      "_nested_name": "carousel_17"
     }
   ],
   "_xlsxPath": "component_sheets/component_carousel.xlsx"

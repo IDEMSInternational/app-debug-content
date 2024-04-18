@@ -11,14 +11,20 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "name": "language_list",
       "value": [
-        "name: za_en | text: English",
-        "name: es_sp | text: Español"
+        {
+          "name": "za_en",
+          "text": "English"
+        },
+        {
+          "name": "es_sp",
+          "text": "Español"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

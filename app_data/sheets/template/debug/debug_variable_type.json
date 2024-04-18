@@ -206,52 +206,50 @@
     {
       "type": "set_variable",
       "name": "var_list_1",
-      "value": [
-        "@data.debug_vars.list_1.value_list"
-      ],
+      "value": "@data.debug_vars.list_1.value_list",
+      "_translations": {
+        "value": {}
+      },
       "exclude_from_translation": true,
       "_nested_name": "var_list_1",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@data.debug_vars.list_1.value_list",
-              "matchedExpression": "@data.debug_vars.list_1.value_list",
-              "type": "data",
-              "fieldName": "debug_vars"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@data.debug_vars.list_1.value_list",
+            "matchedExpression": "@data.debug_vars.list_1.value_list",
+            "type": "data",
+            "fieldName": "debug_vars"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.debug_vars.list_1.value_list": [
-          "value.0"
+          "value"
         ]
       }
     },
     {
       "type": "set_variable",
       "name": "var_list_1_length",
-      "value": [
-        "@local.var_list_1.length"
-      ],
+      "value": "@local.var_list_1.length",
+      "_translations": {
+        "value": {}
+      },
       "exclude_from_translation": true,
       "_nested_name": "var_list_1_length",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@local.var_list_1.length",
-              "matchedExpression": "@local.var_list_1.length",
-              "type": "local",
-              "fieldName": "var_list_1"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@local.var_list_1.length",
+            "matchedExpression": "@local.var_list_1.length",
+            "type": "local",
+            "fieldName": "var_list_1"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@local.var_list_1.length": [
-          "value.0"
+          "value"
         ]
       }
     },

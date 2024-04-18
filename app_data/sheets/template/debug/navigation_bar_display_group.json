@@ -22,8 +22,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "image",
-              "_nested_name": "display_group.display_group.image"
+              "name": "image_1",
+              "_nested_name": "display_group_2.display_group_1.image_1"
             },
             {
               "type": "text",
@@ -35,8 +35,8 @@
                 "text_align": "center",
                 "style": "alternative"
               },
-              "name": "text",
-              "_nested_name": "display_group.display_group.text",
+              "name": "text_2",
+              "_nested_name": "display_group_2.display_group_1.text_2",
               "_dynamicFields": {
                 "value": [
                   {
@@ -54,8 +54,8 @@
               }
             }
           ],
-          "name": "display_group",
-          "_nested_name": "display_group.display_group"
+          "name": "display_group_1",
+          "_nested_name": "display_group_2.display_group_1"
         },
         {
           "type": "display_group",
@@ -69,8 +69,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "image",
-              "_nested_name": "display_group.display_group.image"
+              "name": "image_1",
+              "_nested_name": "display_group_2.display_group_2.image_1"
             },
             {
               "type": "text",
@@ -82,8 +82,8 @@
                 "text_align": "center",
                 "style": "alternative"
               },
-              "name": "text",
-              "_nested_name": "display_group.display_group.text",
+              "name": "text_2",
+              "_nested_name": "display_group_2.display_group_2.text_2",
               "_dynamicFields": {
                 "value": [
                   {
@@ -101,8 +101,8 @@
               }
             }
           ],
-          "name": "display_group",
-          "_nested_name": "display_group.display_group"
+          "name": "display_group_2",
+          "_nested_name": "display_group_2.display_group_2"
         },
         {
           "type": "display_group",
@@ -116,8 +116,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "image",
-              "_nested_name": "display_group.display_group.image"
+              "name": "image_1",
+              "_nested_name": "display_group_2.display_group_3.image_1"
             },
             {
               "type": "text",
@@ -129,8 +129,8 @@
                 "text_align": "center",
                 "style": "alternative"
               },
-              "name": "text",
-              "_nested_name": "display_group.display_group.text",
+              "name": "text_2",
+              "_nested_name": "display_group_2.display_group_3.text_2",
               "_dynamicFields": {
                 "value": [
                   {
@@ -148,12 +148,12 @@
               }
             }
           ],
-          "name": "display_group",
-          "_nested_name": "display_group.display_group"
+          "name": "display_group_3",
+          "_nested_name": "display_group_2.display_group_3"
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group"
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
     }
   ],
   "_xlsxPath": "example_sheets/example_footer.xlsx"

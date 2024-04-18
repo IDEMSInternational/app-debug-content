@@ -10,8 +10,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "lottie_animation",
-      "_nested_name": "lottie_animation"
+      "name": "lottie_animation_2",
+      "_nested_name": "lottie_animation_2"
     },
     {
       "type": "title",
@@ -19,8 +19,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_3",
+      "_nested_name": "title_3"
     },
     {
       "type": "text",
@@ -28,8 +28,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_4",
+      "_nested_name": "text_4"
     }
   ],
   "_xlsxPath": "example_sheets/to_be_sorted/example_parent_point_box.xlsx"

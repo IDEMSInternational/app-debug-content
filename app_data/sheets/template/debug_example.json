@@ -18,8 +18,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_3",
+      "_nested_name": "text_3"
     },
     {
       "type": "text",
@@ -27,8 +27,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_4",
+      "_nested_name": "text_4"
     },
     {
       "type": "toggle_bar",

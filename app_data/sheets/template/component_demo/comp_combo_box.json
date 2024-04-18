@@ -24,9 +24,18 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name: name_1 | text: This is text 1",
-        "name: name_2 | text: This is text 2",
-        "name: name_3 | text: This is text 3"
+        {
+          "name": "name_1",
+          "text": "This is text 1"
+        },
+        {
+          "name": "name_2",
+          "text": "This is text 2"
+        },
+        {
+          "name": "name_3",
+          "text": "This is text 3"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_1"

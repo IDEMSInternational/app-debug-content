@@ -10,8 +10,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "type": "title",
@@ -19,8 +19,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_3",
+      "_nested_name": "title_3"
     },
     {
       "type": "text",
@@ -28,8 +28,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_4",
+      "_nested_name": "text_4"
     },
     {
       "type": "text_box",
@@ -58,8 +58,8 @@
           "_cleaned": "changed | emit : force_reprocess"
         }
       ],
-      "name": "text_box",
-      "_nested_name": "text_box",
+      "name": "text_box_5",
+      "_nested_name": "text_box_5",
       "_dynamicFields": {
         "value": [
           {
@@ -82,8 +82,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_6",
+      "_nested_name": "text_6",
       "_dynamicFields": {
         "value": [
           {
@@ -106,8 +106,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_7",
+      "_nested_name": "text_7",
       "_dynamicFields": {
         "value": [
           {
@@ -130,8 +130,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_8",
+      "_nested_name": "text_8",
       "_dynamicFields": {
         "value": [
           {
@@ -174,8 +174,8 @@
           "_cleaned": "click | emit : force_reprocess"
         }
       ],
-      "name": "button",
-      "_nested_name": "button"
+      "name": "button_9",
+      "_nested_name": "button_9"
     },
     {
       "type": "title",
@@ -183,8 +183,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_10",
+      "_nested_name": "title_10"
     },
     {
       "type": "text",
@@ -192,8 +192,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_11",
+      "_nested_name": "text_11"
     },
     {
       "type": "text_box",
@@ -227,8 +227,8 @@
           "_cleaned": "click | emit : force_reprocess"
         }
       ],
-      "name": "button",
-      "_nested_name": "button",
+      "name": "button_13",
+      "_nested_name": "button_13",
       "_dynamicFields": {
         "action_list": {
           "0": {

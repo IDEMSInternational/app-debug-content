@@ -197,8 +197,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_15",
+      "_nested_name": "title_15"
     },
     {
       "type": "task_card",
@@ -370,8 +370,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_17",
+      "_nested_name": "title_17"
     },
     {
       "type": "task_card",
@@ -543,8 +543,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_19",
+      "_nested_name": "title_19"
     },
     {
       "type": "task_card",
@@ -716,8 +716,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_21",
+      "_nested_name": "title_21"
     },
     {
       "type": "task_card",
@@ -889,8 +889,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_23",
+      "_nested_name": "title_23"
     },
     {
       "type": "task_card",
@@ -1050,8 +1050,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_25",
+      "_nested_name": "title_25"
     },
     {
       "type": "task_card",
@@ -2048,8 +2048,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_33",
+      "_nested_name": "title_33"
     },
     {
       "type": "task_card",
@@ -2067,8 +2067,8 @@
               "_translations": {
                 "value": {}
               },
-              "name": "title",
-              "_nested_name": "card_1.display_group.title"
+              "name": "title_1",
+              "_nested_name": "card_1.display_group_1.title_1"
             },
             {
               "type": "subtitle",
@@ -2076,20 +2076,20 @@
               "_translations": {
                 "value": {}
               },
-              "name": "subtitle",
-              "_nested_name": "card_1.display_group.subtitle"
+              "name": "subtitle_2",
+              "_nested_name": "card_1.display_group_1.subtitle_2"
             },
             {
               "type": "progress_bar",
               "parameter_list": {
                 "task_group": "w_1on1"
               },
-              "name": "progress_bar",
-              "_nested_name": "card_1.display_group.progress_bar"
+              "name": "progress_bar_3",
+              "_nested_name": "card_1.display_group_1.progress_bar_3"
             }
           ],
-          "name": "display_group",
-          "_nested_name": "card_1.display_group"
+          "name": "display_group_1",
+          "_nested_name": "card_1.display_group_1"
         },
         {
           "type": "image",
@@ -2097,8 +2097,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "image",
-          "_nested_name": "card_1.image"
+          "name": "image_2",
+          "_nested_name": "card_1.image_2"
         }
       ],
       "_nested_name": "card_1"

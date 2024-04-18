@@ -24,8 +24,14 @@
     {
       "name": "answer_list_2",
       "value": [
-        "name:name_var_1 | text:First",
-        "name:name_var_2 | text:Second"
+        {
+          "name": "name_var_1",
+          "text": "First"
+        },
+        {
+          "name": "name_var_2",
+          "text": "Second"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

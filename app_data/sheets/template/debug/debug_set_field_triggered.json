@@ -72,8 +72,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_3",
+      "_nested_name": "text_3",
       "_dynamicFields": {
         "value": [
           {

@@ -37,8 +37,14 @@
     {
       "name": "answer_1_list",
       "value": [
-        "name:name_1 | text:Text 1",
-        "name:name_2 | text: Text 2"
+        {
+          "name": "name_1",
+          "text": "Text 1"
+        },
+        {
+          "name": "name_2",
+          "text": "Text 2"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
@@ -47,76 +53,96 @@
     {
       "name": "answer_2_list",
       "value": [
-        "name:name_1 | text:@local.option_1",
-        "name:name_2 | text:@local.option_2"
+        {
+          "name": "name_1",
+          "text": "@local.option_1"
+        },
+        {
+          "name": "name_2",
+          "text": "@local.option_2"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "answer_2_list",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name:name_1 | text:@local.option_1",
-              "matchedExpression": "@local.option_1",
-              "type": "local",
-              "fieldName": "option_1"
-            }
-          ],
-          "1": [
-            {
-              "fullExpression": "name:name_2 | text:@local.option_2",
-              "matchedExpression": "@local.option_2",
-              "type": "local",
-              "fieldName": "option_2"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@local.option_1",
+                "matchedExpression": "@local.option_1",
+                "type": "local",
+                "fieldName": "option_1"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@local.option_2",
+                "matchedExpression": "@local.option_2",
+                "type": "local",
+                "fieldName": "option_2"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@local.option_1": [
-          "value.0"
+          "value.0.text"
         ],
         "@local.option_2": [
-          "value.1"
+          "value.1.text"
         ]
       }
     },
     {
       "name": "answer_3_list",
       "value": [
-        "name:name_1 | text:@global.example_global_constant_text",
-        "name:name_2 | text:@global.example_global_constant_title"
+        {
+          "name": "name_1",
+          "text": "@global.example_global_constant_text"
+        },
+        {
+          "name": "name_2",
+          "text": "@global.example_global_constant_title"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "answer_3_list",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name:name_1 | text:@global.example_global_constant_text",
-              "matchedExpression": "@global.example_global_constant_text",
-              "type": "global",
-              "fieldName": "example_global_constant_text"
-            }
-          ],
-          "1": [
-            {
-              "fullExpression": "name:name_2 | text:@global.example_global_constant_title",
-              "matchedExpression": "@global.example_global_constant_title",
-              "type": "global",
-              "fieldName": "example_global_constant_title"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@global.example_global_constant_text",
+                "matchedExpression": "@global.example_global_constant_text",
+                "type": "global",
+                "fieldName": "example_global_constant_text"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@global.example_global_constant_title",
+                "matchedExpression": "@global.example_global_constant_title",
+                "type": "global",
+                "fieldName": "example_global_constant_title"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@global.example_global_constant_text": [
-          "value.0"
+          "value.0.text"
         ],
         "@global.example_global_constant_title": [
-          "value.1"
+          "value.1.text"
         ]
       }
     },

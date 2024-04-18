@@ -11,8 +11,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_2",
+      "_nested_name": "text_2"
     },
     {
       "type": "set_variable",
@@ -84,8 +84,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_6",
+      "_nested_name": "text_6"
     },
     {
       "type": "set_variable",
@@ -158,8 +158,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_11",
+      "_nested_name": "text_11"
     },
     {
       "type": "template",

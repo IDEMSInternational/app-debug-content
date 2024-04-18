@@ -97,8 +97,8 @@
         "style": "alert"
       },
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_13",
+      "_nested_name": "set_variable_13"
     }
   ],
   "_xlsxPath": "component_sheets/component_dashed_box.xlsx"

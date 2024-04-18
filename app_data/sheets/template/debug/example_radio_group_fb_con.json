@@ -7,9 +7,24 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name:name_var_1 | text:First | image:/plh_images/icons/heart.svg | image_checked: /plh_images/icons/tick.svg",
-        "name:name_var_2 | text:Second | image:/plh_images/icons/heart.svg | image_checked: /plh_images/icons/tick.svg",
-        "name:name_var_3 | text: Third | image:/plh_images/icons/heart.svg | image_checked: /plh_images/icons/tick.svg"
+        {
+          "name": "name_var_1",
+          "text": "First",
+          "image": "/plh_images/icons/heart.svg",
+          "image_checked": "/plh_images/icons/tick.svg"
+        },
+        {
+          "name": "name_var_2",
+          "text": "Second",
+          "image": "/plh_images/icons/heart.svg",
+          "image_checked": "/plh_images/icons/tick.svg"
+        },
+        {
+          "name": "name_var_3",
+          "text": "Third",
+          "image": "/plh_images/icons/heart.svg",
+          "image_checked": "/plh_images/icons/tick.svg"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

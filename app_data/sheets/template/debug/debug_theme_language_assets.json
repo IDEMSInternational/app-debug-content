@@ -10,8 +10,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "subtitle",
-      "_nested_name": "subtitle"
+      "name": "subtitle_2",
+      "_nested_name": "subtitle_2"
     },
     {
       "type": "image",
@@ -19,8 +19,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "image",
-      "_nested_name": "image"
+      "name": "image_3",
+      "_nested_name": "image_3"
     },
     {
       "type": "subtitle",
@@ -28,14 +28,20 @@
       "_translations": {
         "value": {}
       },
-      "name": "subtitle",
-      "_nested_name": "subtitle"
+      "name": "subtitle_4",
+      "_nested_name": "subtitle_4"
     },
     {
       "name": "theme_list",
       "value": [
-        "name: default | text: default",
-        "name: professional | text: professional"
+        {
+          "name": "default",
+          "text": "default"
+        },
+        {
+          "name": "professional",
+          "text": "professional"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "theme_list"
@@ -132,8 +138,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "subtitle",
-      "_nested_name": "subtitle"
+      "name": "subtitle_7",
+      "_nested_name": "subtitle_7"
     },
     {
       "name": "language_select_options",
