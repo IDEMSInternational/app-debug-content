@@ -9,8 +9,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "type": "subtitle",
@@ -18,8 +18,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "subtitle",
-      "_nested_name": "subtitle"
+      "name": "subtitle_3",
+      "_nested_name": "subtitle_3"
     },
     {
       "name": "image_path",
@@ -36,8 +36,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_5",
+      "_nested_name": "text_5",
       "_dynamicFields": {
         "value": [
           {
@@ -60,8 +60,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "image",
-      "_nested_name": "image",
+      "name": "image_6",
+      "_nested_name": "image_6",
       "_dynamicFields": {
         "value": [
           {
@@ -202,8 +202,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "subtitle",
-      "_nested_name": "subtitle"
+      "name": "subtitle_9",
+      "_nested_name": "subtitle_9"
     },
     {
       "name": "pdf_path",
@@ -220,8 +220,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_11",
+      "_nested_name": "text_11",
       "_dynamicFields": {
         "value": [
           {

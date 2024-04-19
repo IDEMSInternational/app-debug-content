@@ -20,8 +20,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "subtitle",
-          "_nested_name": "dg_example_dashed_box.subtitle"
+          "name": "subtitle_1",
+          "_nested_name": "dg_example_dashed_box.subtitle_1"
         },
         {
           "type": "parent_point_box",
@@ -63,8 +63,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "image",
-          "_nested_name": "dg_example_dashed_box_2.image"
+          "name": "image_1",
+          "_nested_name": "dg_example_dashed_box_2.image_1"
         },
         {
           "type": "text",

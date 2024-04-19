@@ -9,8 +9,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "name": "shareable_text",
@@ -36,8 +36,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_5",
+      "_nested_name": "text_5",
       "_dynamicFields": {
         "value": [
           {
@@ -120,8 +120,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_7",
+      "_nested_name": "title_7"
     },
     {
       "type": "text",
@@ -129,8 +129,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_8",
+      "_nested_name": "text_8"
     },
     {
       "type": "button",
@@ -198,8 +198,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_10",
+      "_nested_name": "title_10"
     },
     {
       "type": "select_text",
@@ -280,8 +280,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_12",
+      "_nested_name": "title_12"
     },
     {
       "type": "button",

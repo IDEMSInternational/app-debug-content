@@ -16,8 +16,14 @@
     {
       "name": "answer_list",
       "value": [
-        "name:option_1 |  text: Option 1",
-        "name: option_2 | text: Option 2"
+        {
+          "name": "option_1",
+          "text": "Option 1"
+        },
+        {
+          "name": "option_2",
+          "text": "Option 2"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list"

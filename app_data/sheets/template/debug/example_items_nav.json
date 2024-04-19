@@ -27,7 +27,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "items.this_entry",
+          "_nested_name": "items_3.this_entry",
           "_dynamicFields": {
             "value": [
               {
@@ -52,7 +52,7 @@
           ],
           "condition": "@local.my_list",
           "type": "set_variable",
-          "_nested_name": "items.my_list",
+          "_nested_name": "items_3.my_list",
           "_dynamicFields": {
             "value": {
               "0": [
@@ -93,23 +93,22 @@
         },
         {
           "name": "my_list",
-          "value": [
-            "@local.this_entry"
-          ],
+          "value": "@local.this_entry",
+          "_translations": {
+            "value": {}
+          },
           "condition": "!@local.my_list",
           "type": "set_variable",
-          "_nested_name": "items.my_list",
+          "_nested_name": "items_3.my_list",
           "_dynamicFields": {
-            "value": {
-              "0": [
-                {
-                  "fullExpression": "@local.this_entry",
-                  "matchedExpression": "@local.this_entry",
-                  "type": "local",
-                  "fieldName": "this_entry"
-                }
-              ]
-            },
+            "value": [
+              {
+                "fullExpression": "@local.this_entry",
+                "matchedExpression": "@local.this_entry",
+                "type": "local",
+                "fieldName": "this_entry"
+              }
+            ],
             "condition": [
               {
                 "fullExpression": "!@local.my_list",
@@ -121,7 +120,7 @@
           },
           "_dynamicDependencies": {
             "@local.this_entry": [
-              "value.0"
+              "value"
             ],
             "!@local.my_list": [
               "condition"
@@ -131,31 +130,30 @@
         {
           "type": "text",
           "name": "print_list",
-          "value": [
-            "@local.my_list"
-          ],
-          "_nested_name": "items.print_list",
+          "value": "@local.my_list",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "items_3.print_list",
           "_dynamicFields": {
-            "value": {
-              "0": [
-                {
-                  "fullExpression": "@local.my_list",
-                  "matchedExpression": "@local.my_list",
-                  "type": "local",
-                  "fieldName": "my_list"
-                }
-              ]
-            }
+            "value": [
+              {
+                "fullExpression": "@local.my_list",
+                "matchedExpression": "@local.my_list",
+                "type": "local",
+                "fieldName": "my_list"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "@local.my_list": [
-              "value.0"
+              "value"
             ]
           }
         }
       ],
-      "name": "items",
-      "_nested_name": "items",
+      "name": "items_3",
+      "_nested_name": "items_3",
       "_dynamicFields": {
         "value": [
           {
@@ -274,26 +272,25 @@
     },
     {
       "name": "template_list_3",
-      "value": [
-        "@data.example_items_nav.id_concat.template"
-      ],
+      "value": "@data.example_items_nav.id_concat.template",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
       "_nested_name": "template_list_3",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@data.example_items_nav.id_concat.template",
-              "matchedExpression": "@data.example_items_nav.id_concat.template",
-              "type": "data",
-              "fieldName": "example_items_nav"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@data.example_items_nav.id_concat.template",
+            "matchedExpression": "@data.example_items_nav.id_concat.template",
+            "type": "data",
+            "fieldName": "example_items_nav"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.example_items_nav.id_concat.template": [
-          "value.0"
+          "value"
         ]
       }
     },
@@ -389,26 +386,25 @@
     },
     {
       "name": "template_list_5",
-      "value": [
-        "@data.example_items_nav"
-      ],
+      "value": "@data.example_items_nav",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
       "_nested_name": "template_list_5",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@data.example_items_nav",
-              "matchedExpression": "@data.example_items_nav",
-              "type": "data",
-              "fieldName": "example_items_nav"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@data.example_items_nav",
+            "matchedExpression": "@data.example_items_nav",
+            "type": "data",
+            "fieldName": "example_items_nav"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.example_items_nav": [
-          "value.0"
+          "value"
         ]
       }
     },

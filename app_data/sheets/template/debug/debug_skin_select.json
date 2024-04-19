@@ -11,14 +11,20 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "name": "skins_list",
       "value": [
-        "name: default | text: Default",
-        "name: debug | text: Debug"
+        {
+          "name": "default",
+          "text": "Default"
+        },
+        {
+          "name": "debug",
+          "text": "Debug"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

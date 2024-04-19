@@ -107,8 +107,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "qr_code",
-          "_nested_name": "has_ever_been_synced.qr_code",
+          "name": "qr_code_1",
+          "_nested_name": "has_ever_been_synced.qr_code_1",
           "_dynamicFields": {
             "value": [
               {

@@ -24,9 +24,18 @@
         {
           "name": "answer_list_challenge_1",
           "value": [
-            "name:choice_1_a | text: choice_1_a",
-            "name:choice_1_b | text: choice_1_b",
-            "name:choice_1_c | text: choice_1_c"
+            {
+              "name": "choice_1_a",
+              "text": "choice_1_a"
+            },
+            {
+              "name": "choice_1_b",
+              "text": "choice_1_b"
+            },
+            {
+              "name": "choice_1_c",
+              "text": "choice_1_c"
+            }
           ],
           "exclude_from_translation": true,
           "type": "set_variable",
@@ -170,9 +179,18 @@
         {
           "name": "answer_list_challenge_2",
           "value": [
-            "name:choice_2_a | text: choice_2_a",
-            "name:choice_2_b | text: choice_2_b",
-            "name:choice_2_c | text: choice_2_c"
+            {
+              "name": "choice_2_a",
+              "text": "choice_2_a"
+            },
+            {
+              "name": "choice_2_b",
+              "text": "choice_2_b"
+            },
+            {
+              "name": "choice_2_c",
+              "text": "choice_2_c"
+            }
           ],
           "exclude_from_translation": true,
           "type": "set_variable",

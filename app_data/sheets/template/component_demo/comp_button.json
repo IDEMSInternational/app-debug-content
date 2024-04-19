@@ -42,8 +42,8 @@
       "parameter_list": {
         "style": "card"
       },
-      "name": "button",
-      "_nested_name": "button"
+      "name": "button_4",
+      "_nested_name": "button_4"
     },
     {
       "type": "button",
@@ -55,8 +55,8 @@
         "style": "card",
         "icon": "images/icons/leaf_blue.svg"
       },
-      "name": "button",
-      "_nested_name": "button"
+      "name": "button_5",
+      "_nested_name": "button_5"
     },
     {
       "type": "button",
@@ -73,11 +73,11 @@
             "position": "right",
             "style": "in_button"
           },
-          "_nested_name": "button.toggle_bar_1"
+          "_nested_name": "button_6.toggle_bar_1"
         }
       ],
-      "name": "button",
-      "_nested_name": "button"
+      "name": "button_6",
+      "_nested_name": "button_6"
     },
     {
       "type": "title",
@@ -85,8 +85,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_8",
+      "_nested_name": "title_8"
     },
     {
       "type": "button",
@@ -99,11 +99,11 @@
         {
           "type": "toggle_bar",
           "name": "toggle_bar_2",
-          "_nested_name": "button.toggle_bar_2"
+          "_nested_name": "button_9.toggle_bar_2"
         }
       ],
-      "name": "button",
-      "_nested_name": "button"
+      "name": "button_9",
+      "_nested_name": "button_9"
     },
     {
       "type": "button",
@@ -148,7 +148,7 @@
             "icon_true_asset": "images/icons/heart_blue.svg",
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
-          "_nested_name": "button.toggle_bar_3",
+          "_nested_name": "button_11.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -190,8 +190,8 @@
           }
         }
       ],
-      "name": "button",
-      "_nested_name": "button"
+      "name": "button_11",
+      "_nested_name": "button_11"
     },
     {
       "type": "title",

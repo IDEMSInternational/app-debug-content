@@ -151,9 +151,10 @@
     },
     {
       "name": "answer_list_data",
-      "value": [
-        "example_items_radio"
-      ],
+      "value": "example_items_radio",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
       "_nested_name": "answer_list_data"
     },
@@ -298,9 +299,18 @@
     {
       "name": "answer_list",
       "value": [
-        "name: item_1 | text: first",
-        "name: item_2 | text: second",
-        "name: item_3 | text: third"
+        {
+          "name": "item_1",
+          "text": "first"
+        },
+        {
+          "name": "item_2",
+          "text": "second"
+        },
+        {
+          "name": "item_3",
+          "text": "third"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list"

@@ -19,8 +19,8 @@
             "style": "emphasised center"
           },
           "exclude_from_translation": true,
-          "name": "subtitle",
-          "_nested_name": "dashed_box_test.subtitle"
+          "name": "subtitle_1",
+          "_nested_name": "dashed_box_test.subtitle_1"
         },
         {
           "type": "display_group",
@@ -34,8 +34,8 @@
                 "value": {}
               },
               "exclude_from_translation": true,
-              "name": "button",
-              "_nested_name": "dashed_box_test.display_group.button"
+              "name": "button_1",
+              "_nested_name": "dashed_box_test.display_group.button_1"
             }
           ],
           "_nested_name": "dashed_box_test.display_group"
@@ -46,14 +46,14 @@
     {
       "exclude_from_translation": true,
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_4",
+      "_nested_name": "set_variable_4"
     },
     {
       "exclude_from_translation": true,
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_5",
+      "_nested_name": "set_variable_5"
     },
     {
       "type": "display_group",
@@ -74,8 +74,8 @@
             "text_align": "center"
           },
           "exclude_from_translation": true,
-          "name": "subtitle",
-          "_nested_name": "display_group.subtitle"
+          "name": "subtitle_1",
+          "_nested_name": "display_group.subtitle_1"
         },
         {
           "type": "parent_point_box",
@@ -94,8 +94,8 @@
     {
       "exclude_from_translation": true,
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_8",
+      "_nested_name": "set_variable_8"
     },
     {
       "type": "display_group",
@@ -115,8 +115,8 @@
             "style": "emphasised center"
           },
           "exclude_from_translation": true,
-          "name": "subtitle",
-          "_nested_name": "display_group.subtitle"
+          "name": "subtitle_1",
+          "_nested_name": "display_group.subtitle_1"
         },
         {
           "type": "parent_point_box",
@@ -148,8 +148,8 @@
             "text_align": "center"
           },
           "exclude_from_translation": true,
-          "name": "subtitle",
-          "_nested_name": "display_group.subtitle"
+          "name": "subtitle_1",
+          "_nested_name": "display_group.subtitle_1"
         },
         {
           "type": "parent_point_box",

@@ -7,49 +7,70 @@
     {
       "name": "button_list",
       "value": [
-        "name: home_screen_button | text: @global.home_screen | image: plh_images/icons/house_white.svg | target_template: home_screen",
-        "name: parent_points_button | text: @global.parent_points | image: plh_images/icons/parent_child_white.svg | target_template: parent_points",
-        "name: parent_library_button | text: @global.parent_centre | image: plh_images/icons/book_white.svg | target_template: parent_centre"
+        {
+          "name": "home_screen_button",
+          "text": "@global.home_screen",
+          "image": "plh_images/icons/house_white.svg",
+          "target_template": "home_screen"
+        },
+        {
+          "name": "parent_points_button",
+          "text": "@global.parent_points",
+          "image": "plh_images/icons/parent_child_white.svg",
+          "target_template": "parent_points"
+        },
+        {
+          "name": "parent_library_button",
+          "text": "@global.parent_centre",
+          "image": "plh_images/icons/book_white.svg",
+          "target_template": "parent_centre"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "button_list",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name: home_screen_button | text: @global.home_screen | image: plh_images/icons/house_white.svg | target_template: home_screen",
-              "matchedExpression": "@global.home_screen",
-              "type": "global",
-              "fieldName": "home_screen"
-            }
-          ],
-          "1": [
-            {
-              "fullExpression": "name: parent_points_button | text: @global.parent_points | image: plh_images/icons/parent_child_white.svg | target_template: parent_points",
-              "matchedExpression": "@global.parent_points",
-              "type": "global",
-              "fieldName": "parent_points"
-            }
-          ],
-          "2": [
-            {
-              "fullExpression": "name: parent_library_button | text: @global.parent_centre | image: plh_images/icons/book_white.svg | target_template: parent_centre",
-              "matchedExpression": "@global.parent_centre",
-              "type": "global",
-              "fieldName": "parent_centre"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@global.home_screen",
+                "matchedExpression": "@global.home_screen",
+                "type": "global",
+                "fieldName": "home_screen"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@global.parent_points",
+                "matchedExpression": "@global.parent_points",
+                "type": "global",
+                "fieldName": "parent_points"
+              }
+            ]
+          },
+          "2": {
+            "text": [
+              {
+                "fullExpression": "@global.parent_centre",
+                "matchedExpression": "@global.parent_centre",
+                "type": "global",
+                "fieldName": "parent_centre"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@global.home_screen": [
-          "value.0"
+          "value.0.text"
         ],
         "@global.parent_points": [
-          "value.1"
+          "value.1.text"
         ],
         "@global.parent_centre": [
-          "value.2"
+          "value.2.text"
         ]
       }
     },
@@ -58,8 +79,8 @@
       "parameter_list": {
         "button_list": "@local.button_list"
       },
-      "name": "navigation_bar",
-      "_nested_name": "navigation_bar",
+      "name": "navigation_bar_3",
+      "_nested_name": "navigation_bar_3",
       "_dynamicFields": {
         "parameter_list": {
           "button_list": [

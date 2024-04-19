@@ -90,8 +90,8 @@
         "style": "emphasised"
       },
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_12",
+      "_nested_name": "set_variable_12"
     }
   ],
   "_xlsxPath": "component_sheets/component_subtitle.xlsx"

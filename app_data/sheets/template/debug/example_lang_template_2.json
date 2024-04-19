@@ -67,9 +67,18 @@
         {
           "name": "answer_list_2",
           "value": [
-            "name: option_1 | text:Cats (modified text in answer list)",
-            "name: option_2 | text:Dogs (modified text in answer list)",
-            "name: option_3 | text:Chinchillas (modified text in answer list)"
+            {
+              "name": "option_1",
+              "text": "Cats (modified text in answer list)"
+            },
+            {
+              "name": "option_2",
+              "text": "Dogs (modified text in answer list)"
+            },
+            {
+              "name": "option_3",
+              "text": "Chinchillas (modified text in answer list)"
+            }
           ],
           "type": "set_variable",
           "_nested_name": "example_lang_template_1.answer_list_2"

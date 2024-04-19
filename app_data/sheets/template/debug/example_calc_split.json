@@ -555,9 +555,18 @@
     {
       "name": "answer_list",
       "value": [
-        "name: person_1 | text: person_1",
-        "name: person_2 | text: person_2",
-        "name: person_3 | text: person_3"
+        {
+          "name": "person_1",
+          "text": "person_1"
+        },
+        {
+          "name": "person_2",
+          "text": "person_2"
+        },
+        {
+          "name": "person_3",
+          "text": "person_3"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list"

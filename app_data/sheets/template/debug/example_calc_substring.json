@@ -640,26 +640,25 @@
     },
     {
       "name": "some_data_list",
-      "value": [
-        "@data.example_calc.example_2.value_list"
-      ],
+      "value": "@data.example_calc.example_2.value_list",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
       "_nested_name": "some_data_list",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@data.example_calc.example_2.value_list",
-              "matchedExpression": "@data.example_calc.example_2.value_list",
-              "type": "data",
-              "fieldName": "example_calc"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@data.example_calc.example_2.value_list",
+            "matchedExpression": "@data.example_calc.example_2.value_list",
+            "type": "data",
+            "fieldName": "example_calc"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.example_calc.example_2.value_list": [
-          "value.0"
+          "value"
         ]
       }
     },
@@ -1061,26 +1060,25 @@
     },
     {
       "name": "some_data_list",
-      "value": [
-        "@data.example_calc.example_2.value"
-      ],
+      "value": "@data.example_calc.example_2.value",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
       "_nested_name": "some_data_list",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "@data.example_calc.example_2.value",
-              "matchedExpression": "@data.example_calc.example_2.value",
-              "type": "data",
-              "fieldName": "example_calc"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "@data.example_calc.example_2.value",
+            "matchedExpression": "@data.example_calc.example_2.value",
+            "type": "data",
+            "fieldName": "example_calc"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.example_calc.example_2.value": [
-          "value.0"
+          "value"
         ]
       }
     },

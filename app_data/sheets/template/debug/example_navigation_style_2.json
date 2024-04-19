@@ -50,7 +50,7 @@
             }
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group.button_1"
+          "_nested_name": "display_group_4.button_1"
         },
         {
           "type": "button",
@@ -71,11 +71,11 @@
             }
           ],
           "exclude_from_translation": true,
-          "_nested_name": "display_group.button_2"
+          "_nested_name": "display_group_4.button_2"
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group"
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
     },
     {
       "type": "text",

@@ -22,7 +22,7 @@
           "style_list": [
             "flex:1"
           ],
-          "_nested_name": "display_group.left"
+          "_nested_name": "display_group_2.left"
         },
         {
           "type": "text",
@@ -35,7 +35,7 @@
           "style_list": [
             "flex:4"
           ],
-          "_nested_name": "display_group.blank_text"
+          "_nested_name": "display_group_2.blank_text"
         },
         {
           "type": "text",
@@ -48,11 +48,11 @@
           "style_list": [
             "flex:1"
           ],
-          "_nested_name": "display_group.right"
+          "_nested_name": "display_group_2.right"
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group"
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
     }
   ],
   "_xlsxPath": "example_sheets/to_be_sorted/example_new_nav_buttons.xlsx"

@@ -21,11 +21,11 @@
           "name": "debug_data_items_r_template",
           "value": "debug_data_items_r_template",
           "rows": [],
-          "_nested_name": "data_items.debug_data_items_r_template"
+          "_nested_name": "data_items_3.debug_data_items_r_template"
         }
       ],
-      "name": "data_items",
-      "_nested_name": "data_items",
+      "name": "data_items_3",
+      "_nested_name": "data_items_3",
       "_dynamicFields": {
         "value": [
           {

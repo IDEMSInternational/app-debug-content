@@ -19,9 +19,18 @@
             {
               "name": "answer_list",
               "value": [
-                "name:name_var_1 | text:Option a",
-                "name:name_var_2 | text: Option b",
-                "name:name_var_3 | text: Option c"
+                {
+                  "name": "name_var_1",
+                  "text": "Option a"
+                },
+                {
+                  "name": "name_var_2",
+                  "text": "Option b"
+                },
+                {
+                  "name": "name_var_3",
+                  "text": "Option c"
+                }
               ],
               "exclude_from_translation": true,
               "type": "set_variable",

@@ -28,7 +28,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "accordion.items.variable",
+              "_nested_name": "accordion.items_2.variable",
               "_dynamicFields": {
                 "value": [
                   {
@@ -57,7 +57,7 @@
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "accordion.items.accordion_section_@item.id.text",
+                  "_nested_name": "accordion.items_2.accordion_section_@item.id.text",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -69,7 +69,7 @@
                     ],
                     "_nested_name": [
                       {
-                        "fullExpression": "accordion.items.accordion_section_@item.id.text",
+                        "fullExpression": "accordion.items_2.accordion_section_@item.id.text",
                         "matchedExpression": "@item.id.text",
                         "type": "item",
                         "fieldName": "id"
@@ -86,7 +86,7 @@
                   }
                 }
               ],
-              "_nested_name": "accordion.items.accordion_section_@item.id",
+              "_nested_name": "accordion.items_2.accordion_section_@item.id",
               "_dynamicFields": {
                 "name": [
                   {
@@ -106,7 +106,7 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "accordion.items.accordion_section_@item.id",
+                    "fullExpression": "accordion.items_2.accordion_section_@item.id",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
@@ -124,8 +124,8 @@
               }
             }
           ],
-          "name": "items",
-          "_nested_name": "accordion.items",
+          "name": "items_2",
+          "_nested_name": "accordion.items_2",
           "_dynamicFields": {
             "value": [
               {
