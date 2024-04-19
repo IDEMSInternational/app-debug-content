@@ -49,8 +49,8 @@
             "style": "navigation"
           },
           "type": "set_variable",
-          "name": "set_variable",
-          "_nested_name": "page_1.set_variable"
+          "name": "set_variable_3",
+          "_nested_name": "page_1.set_variable_3"
         },
         {
           "type": "template",

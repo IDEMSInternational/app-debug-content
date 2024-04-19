@@ -115,9 +115,10 @@
       "rows": [
         {
           "name": "nav_template_list",
-          "value": [
-            "w_example_listen"
-          ],
+          "value": "w_example_listen",
+          "_translations": {
+            "value": {}
+          },
           "exclude_from_translation": true,
           "type": "set_variable",
           "_nested_name": "workshop_stepper_individual.nav_template_list"

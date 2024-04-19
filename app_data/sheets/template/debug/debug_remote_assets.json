@@ -49,8 +49,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_4",
+      "_nested_name": "title_4"
     },
     {
       "type": "image",
@@ -58,8 +58,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "image",
-      "_nested_name": "image"
+      "name": "image_5",
+      "_nested_name": "image_5"
     },
     {
       "type": "title",
@@ -67,8 +67,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_6",
+      "_nested_name": "title_6"
     },
     {
       "type": "image",
@@ -76,8 +76,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "image",
-      "_nested_name": "image"
+      "name": "image_7",
+      "_nested_name": "image_7"
     },
     {
       "type": "button",

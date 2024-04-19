@@ -9,14 +9,20 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "name": "theme_list",
       "value": [
-        "name: default | text: default",
-        "name: professional | text: professional"
+        {
+          "name": "default",
+          "text": "default"
+        },
+        {
+          "name": "professional",
+          "text": "professional"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "theme_list"

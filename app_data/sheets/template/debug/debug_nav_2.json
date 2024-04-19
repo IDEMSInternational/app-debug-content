@@ -30,8 +30,8 @@
           "_cleaned": "click | go_to: debug_nav"
         }
       ],
-      "name": "button",
-      "_nested_name": "button"
+      "name": "button_3",
+      "_nested_name": "button_3"
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_nav.xlsx"

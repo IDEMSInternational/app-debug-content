@@ -146,8 +146,8 @@
       },
       "exclude_from_translation": true,
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_8",
+      "_nested_name": "set_variable_8"
     },
     {
       "type": "tile_component",
@@ -196,8 +196,8 @@
       },
       "exclude_from_translation": true,
       "type": "set_variable",
-      "name": "set_variable",
-      "_nested_name": "set_variable"
+      "name": "set_variable_10",
+      "_nested_name": "set_variable_10"
     },
     {
       "type": "tile_component",

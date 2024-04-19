@@ -50,11 +50,11 @@
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.image_1"
+                  "_nested_name": "animated_slides_2.animated_section_1.display_group_1.image_1"
                 }
               ],
-              "name": "display_group",
-              "_nested_name": "animated_slides.animated_section.display_group"
+              "name": "display_group_1",
+              "_nested_name": "animated_slides_2.animated_section_1.display_group_1"
             },
             {
               "type": "text",
@@ -65,12 +65,12 @@
               "parameter_list": {
                 "style": "large center"
               },
-              "name": "text",
-              "_nested_name": "animated_slides.animated_section.text"
+              "name": "text_2",
+              "_nested_name": "animated_slides_2.animated_section_1.text_2"
             }
           ],
-          "name": "animated_section",
-          "_nested_name": "animated_slides.animated_section"
+          "name": "animated_section_1",
+          "_nested_name": "animated_slides_2.animated_section_1"
         },
         {
           "type": "animated_section",
@@ -92,11 +92,11 @@
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.image_2"
+                  "_nested_name": "animated_slides_2.animated_section_2.display_group_1.image_2"
                 }
               ],
-              "name": "display_group",
-              "_nested_name": "animated_slides.animated_section.display_group"
+              "name": "display_group_1",
+              "_nested_name": "animated_slides_2.animated_section_2.display_group_1"
             },
             {
               "type": "text",
@@ -107,12 +107,12 @@
               "parameter_list": {
                 "style": "large center"
               },
-              "name": "text",
-              "_nested_name": "animated_slides.animated_section.text"
+              "name": "text_2",
+              "_nested_name": "animated_slides_2.animated_section_2.text_2"
             }
           ],
-          "name": "animated_section",
-          "_nested_name": "animated_slides.animated_section"
+          "name": "animated_section_2",
+          "_nested_name": "animated_slides_2.animated_section_2"
         },
         {
           "type": "animated_section",
@@ -130,8 +130,8 @@
               "parameter_list": {
                 "style": "large center"
               },
-              "name": "text",
-              "_nested_name": "animated_slides.animated_section.text"
+              "name": "text_1",
+              "_nested_name": "animated_slides_2.animated_section_3.text_1"
             },
             {
               "type": "display_group",
@@ -146,7 +146,7 @@
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.image_3"
+                  "_nested_name": "animated_slides_2.animated_section_3.display_group_2.image_3"
                 },
                 {
                   "type": "image",
@@ -155,11 +155,11 @@
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.image_4"
+                  "_nested_name": "animated_slides_2.animated_section_3.display_group_2.image_4"
                 }
               ],
-              "name": "display_group",
-              "_nested_name": "animated_slides.animated_section.display_group"
+              "name": "display_group_2",
+              "_nested_name": "animated_slides_2.animated_section_3.display_group_2"
             },
             {
               "type": "display_group",
@@ -174,15 +174,15 @@
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.image_5"
+                  "_nested_name": "animated_slides_2.animated_section_3.display_group_3.image_5"
                 }
               ],
-              "name": "display_group",
-              "_nested_name": "animated_slides.animated_section.display_group"
+              "name": "display_group_3",
+              "_nested_name": "animated_slides_2.animated_section_3.display_group_3"
             }
           ],
-          "name": "animated_section",
-          "_nested_name": "animated_slides.animated_section"
+          "name": "animated_section_3",
+          "_nested_name": "animated_slides_2.animated_section_3"
         },
         {
           "type": "animated_section",
@@ -204,11 +204,11 @@
                   "_translations": {
                     "value": {}
                   },
-                  "_nested_name": "animated_slides.animated_section.display_group.image_6"
+                  "_nested_name": "animated_slides_2.animated_section_4.display_group_1.image_6"
                 }
               ],
-              "name": "display_group",
-              "_nested_name": "animated_slides.animated_section.display_group"
+              "name": "display_group_1",
+              "_nested_name": "animated_slides_2.animated_section_4.display_group_1"
             },
             {
               "type": "text",
@@ -216,16 +216,16 @@
               "_translations": {
                 "value": {}
               },
-              "name": "text",
-              "_nested_name": "animated_slides.animated_section.text"
+              "name": "text_2",
+              "_nested_name": "animated_slides_2.animated_section_4.text_2"
             }
           ],
-          "name": "animated_section",
-          "_nested_name": "animated_slides.animated_section"
+          "name": "animated_section_4",
+          "_nested_name": "animated_slides_2.animated_section_4"
         }
       ],
-      "name": "animated_slides",
-      "_nested_name": "animated_slides"
+      "name": "animated_slides_2",
+      "_nested_name": "animated_slides_2"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_animated_slides.xlsx"

@@ -13,8 +13,8 @@
       "style_list": [
         "color: red"
       ],
-      "name": "text",
-      "_nested_name": "text"
+      "name": "text_2",
+      "_nested_name": "text_2"
     },
     {
       "type": "display_group",
@@ -25,8 +25,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "text",
-          "_nested_name": "display_group.text"
+          "name": "text_1",
+          "_nested_name": "display_group_3.text_1"
         },
         {
           "type": "text",
@@ -34,8 +34,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "text",
-          "_nested_name": "display_group.text"
+          "name": "text_2",
+          "_nested_name": "display_group_3.text_2"
         },
         {
           "type": "text",
@@ -46,12 +46,12 @@
           "style_list": [
             "flex: 2"
           ],
-          "name": "text",
-          "_nested_name": "display_group.text"
+          "name": "text_3",
+          "_nested_name": "display_group_3.text_3"
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group"
+      "name": "display_group_3",
+      "_nested_name": "display_group_3"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_text.xlsx"

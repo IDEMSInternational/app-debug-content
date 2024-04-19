@@ -7,9 +7,18 @@
     {
       "name": "answer_list",
       "value": [
-        "name:name_var_1 | text:happy",
-        "name:name_var_2 | text: ok",
-        "name:name_var_3 | text: sad"
+        {
+          "name": "name_var_1",
+          "text": "happy"
+        },
+        {
+          "name": "name_var_2",
+          "text": "ok"
+        },
+        {
+          "name": "name_var_3",
+          "text": "sad"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

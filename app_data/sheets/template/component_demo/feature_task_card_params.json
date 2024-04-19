@@ -73,8 +73,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_9",
+      "_nested_name": "title_9"
     },
     {
       "name": "highlighted_text",
@@ -104,8 +104,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_12",
+      "_nested_name": "text_12",
       "_dynamicFields": {
         "value": [
           {
@@ -128,8 +128,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_13",
+      "_nested_name": "text_13",
       "_dynamicFields": {
         "value": [
           {
@@ -319,8 +319,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_15",
+      "_nested_name": "title_15"
     },
     {
       "type": "task_card",

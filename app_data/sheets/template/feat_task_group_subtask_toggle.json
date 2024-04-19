@@ -18,8 +18,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "text",
-          "_nested_name": "items.text",
+          "name": "text_1",
+          "_nested_name": "items_3.text_1",
           "_dynamicFields": {
             "value": [
               {
@@ -63,7 +63,7 @@
               "_cleaned": "changed | emit: force_reload"
             }
           ],
-          "_nested_name": "items.toggle_bar_@item.id",
+          "_nested_name": "items_3.toggle_bar_@item.id",
           "_dynamicFields": {
             "name": [
               {
@@ -113,7 +113,7 @@
             },
             "_nested_name": [
               {
-                "fullExpression": "items.toggle_bar_@item.id",
+                "fullExpression": "items_3.toggle_bar_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -134,8 +134,8 @@
           }
         }
       ],
-      "name": "items",
-      "_nested_name": "items",
+      "name": "items_3",
+      "_nested_name": "items_3",
       "_dynamicFields": {
         "value": [
           {

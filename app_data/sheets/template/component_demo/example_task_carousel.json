@@ -10,8 +10,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "name": "task_groups_data",
@@ -28,8 +28,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_4",
+      "_nested_name": "text_4",
       "_dynamicFields": {
         "value": [
           {
@@ -68,7 +68,7 @@
                     "value": {}
                   },
                   "type": "set_variable",
-                  "_nested_name": "carousel.items.module_card.workshop_id",
+                  "_nested_name": "carousel_5.items_1.module_card.workshop_id",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -87,11 +87,11 @@
                 }
               ],
               "name": "module_card",
-              "_nested_name": "carousel.items.module_card"
+              "_nested_name": "carousel_5.items_1.module_card"
             }
           ],
-          "name": "items",
-          "_nested_name": "carousel.items",
+          "name": "items_1",
+          "_nested_name": "carousel_5.items_1",
           "_dynamicFields": {
             "value": [
               {
@@ -109,8 +109,8 @@
           }
         }
       ],
-      "name": "carousel",
-      "_nested_name": "carousel",
+      "name": "carousel_5",
+      "_nested_name": "carousel_5",
       "_dynamicFields": {
         "parameter_list": {
           "task_groups_data": [

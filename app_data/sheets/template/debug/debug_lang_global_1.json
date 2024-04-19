@@ -64,9 +64,18 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name:happy | text:happy",
-        "name:ok | text:ok",
-        "name:sad | text:sad"
+        {
+          "name": "happy",
+          "text": "happy"
+        },
+        {
+          "name": "ok",
+          "text": "ok"
+        },
+        {
+          "name": "sad",
+          "text": "sad"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_1"
@@ -74,81 +83,114 @@
     {
       "name": "answer_list_2",
       "value": [
-        "name:happy | text:@global.language_global_1",
-        "name:ok | text:ok",
-        "name:sad | text:sad"
+        {
+          "name": "happy",
+          "text": "@global.language_global_1"
+        },
+        {
+          "name": "ok",
+          "text": "ok"
+        },
+        {
+          "name": "sad",
+          "text": "sad"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_2",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name:happy | text:@global.language_global_1",
-              "matchedExpression": "@global.language_global_1",
-              "type": "global",
-              "fieldName": "language_global_1"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@global.language_global_1",
+                "matchedExpression": "@global.language_global_1",
+                "type": "global",
+                "fieldName": "language_global_1"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@global.language_global_1": [
-          "value.0"
+          "value.0.text"
         ]
       }
     },
     {
       "name": "answer_list_3",
       "value": [
-        "name:happy | text: Text and @global.language_global_1",
-        "name:ok | text:ok",
-        "name:sad | text:sad"
+        {
+          "name": "happy",
+          "text": "Text and @global.language_global_1"
+        },
+        {
+          "name": "ok",
+          "text": "ok"
+        },
+        {
+          "name": "sad",
+          "text": "sad"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_3",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name:happy | text: Text and @global.language_global_1",
-              "matchedExpression": "@global.language_global_1",
-              "type": "global",
-              "fieldName": "language_global_1"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "Text and @global.language_global_1",
+                "matchedExpression": "@global.language_global_1",
+                "type": "global",
+                "fieldName": "language_global_1"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@global.language_global_1": [
-          "value.0"
+          "value.0.text"
         ]
       }
     },
     {
       "name": "answer_list_4",
       "value": [
-        "name:happy | text: @local.text_2",
-        "name:ok | text:ok",
-        "name:sad | text:sad"
+        {
+          "name": "happy",
+          "text": "@local.text_2"
+        },
+        {
+          "name": "ok",
+          "text": "ok"
+        },
+        {
+          "name": "sad",
+          "text": "sad"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_4",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name:happy | text: @local.text_2",
-              "matchedExpression": "@local.text_2",
-              "type": "local",
-              "fieldName": "text_2"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@local.text_2",
+                "matchedExpression": "@local.text_2",
+                "type": "local",
+                "fieldName": "text_2"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@local.text_2": [
-          "value.0"
+          "value.0.text"
         ]
       }
     },

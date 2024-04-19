@@ -152,9 +152,10 @@
         },
         {
           "name": "icon_button_action_list",
-          "value": [
-            "click | set_field : something : dsfsd"
-          ],
+          "value": "click | set_field : something : dsfsd",
+          "_translations": {
+            "value": {}
+          },
           "type": "set_variable",
           "_nested_name": "dg.icon_button_action_list"
         },
@@ -540,8 +541,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_7",
+      "_nested_name": "title_7"
     },
     {
       "type": "display_group",

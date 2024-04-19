@@ -70,38 +70,48 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name: individual | text: @global.individual",
-        "name: together | text: @global.together"
+        {
+          "name": "individual",
+          "text": "@global.individual"
+        },
+        {
+          "name": "together",
+          "text": "@global.together"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "answer_list_1",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name: individual | text: @global.individual",
-              "matchedExpression": "@global.individual",
-              "type": "global",
-              "fieldName": "individual"
-            }
-          ],
-          "1": [
-            {
-              "fullExpression": "name: together | text: @global.together",
-              "matchedExpression": "@global.together",
-              "type": "global",
-              "fieldName": "together"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@global.individual",
+                "matchedExpression": "@global.individual",
+                "type": "global",
+                "fieldName": "individual"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@global.together",
+                "matchedExpression": "@global.together",
+                "type": "global",
+                "fieldName": "together"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@global.individual": [
-          "value.0"
+          "value.0.text"
         ],
         "@global.together": [
-          "value.1"
+          "value.1.text"
         ]
       }
     },
@@ -195,38 +205,48 @@
     {
       "name": "answer_list_2",
       "value": [
-        "name: individual | text: @local.individual",
-        "name: together | text: @local.together"
+        {
+          "name": "individual",
+          "text": "@local.individual"
+        },
+        {
+          "name": "together",
+          "text": "@local.together"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "answer_list_2",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name: individual | text: @local.individual",
-              "matchedExpression": "@local.individual",
-              "type": "local",
-              "fieldName": "individual"
-            }
-          ],
-          "1": [
-            {
-              "fullExpression": "name: together | text: @local.together",
-              "matchedExpression": "@local.together",
-              "type": "local",
-              "fieldName": "together"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@local.individual",
+                "matchedExpression": "@local.individual",
+                "type": "local",
+                "fieldName": "individual"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@local.together",
+                "matchedExpression": "@local.together",
+                "type": "local",
+                "fieldName": "together"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@local.individual": [
-          "value.0"
+          "value.0.text"
         ],
         "@local.together": [
-          "value.1"
+          "value.1.text"
         ]
       }
     },

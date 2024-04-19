@@ -74,9 +74,18 @@
     {
       "name": "answer_list",
       "value": [
-        "name: debug_daily | text: debug_daily",
-        "name: debug_actions | text: debug_actions",
-        "name: debug_calc | text: debug_calc"
+        {
+          "name": "debug_daily",
+          "text": "debug_daily"
+        },
+        {
+          "name": "debug_actions",
+          "text": "debug_actions"
+        },
+        {
+          "name": "debug_calc",
+          "text": "debug_calc"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list"
@@ -171,7 +180,7 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "display_group.campaign_id",
+          "_nested_name": "display_group_8.campaign_id",
           "_dynamicFields": {
             "value": [
               {
@@ -211,7 +220,7 @@
           "style_list": [
             "padding: 0"
           ],
-          "_nested_name": "display_group.campaign_quickstart",
+          "_nested_name": "display_group_8.campaign_quickstart",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -277,8 +286,8 @@
           }
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group",
+      "name": "display_group_8",
+      "_nested_name": "display_group_8",
       "_dynamicFields": {
         "condition": [
           {

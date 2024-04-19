@@ -10,8 +10,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "type": "image",
@@ -19,8 +19,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "image",
-      "_nested_name": "image"
+      "name": "image_3",
+      "_nested_name": "image_3"
     }
   ],
   "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"

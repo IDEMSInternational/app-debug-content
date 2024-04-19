@@ -58,9 +58,10 @@
     {
       "type": "button",
       "name": "set_list_1",
-      "value": [
-        "Set List 1"
-      ],
+      "value": "Set List 1",
+      "_translations": {
+        "value": {}
+      },
       "action_list": [
         {
           "trigger": "click",
@@ -88,26 +89,25 @@
     {
       "type": "text",
       "name": "selected_list",
-      "value": [
-        "Selected List: @fields.example_list_override_field"
-      ],
+      "value": "Selected List: @fields.example_list_override_field",
+      "_translations": {
+        "value": {}
+      },
       "exclude_from_translation": true,
       "_nested_name": "selected_list",
       "_dynamicFields": {
-        "value": {
-          "0": [
-            {
-              "fullExpression": "Selected List: @fields.example_list_override_field",
-              "matchedExpression": "@fields.example_list_override_field",
-              "type": "fields",
-              "fieldName": "example_list_override_field"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "Selected List: @fields.example_list_override_field",
+            "matchedExpression": "@fields.example_list_override_field",
+            "type": "fields",
+            "fieldName": "example_list_override_field"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@fields.example_list_override_field": [
-          "value.0"
+          "value"
         ]
       }
     },
@@ -130,7 +130,7 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "items.result_text_@item.id",
+          "_nested_name": "items_8.result_text_@item.id",
           "_dynamicFields": {
             "name": [
               {
@@ -150,7 +150,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "items.result_text_@item.id",
+                "fullExpression": "items_8.result_text_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -168,8 +168,8 @@
           }
         }
       ],
-      "name": "items",
-      "_nested_name": "items",
+      "name": "items_8",
+      "_nested_name": "items_8",
       "_dynamicFields": {
         "value": [
           {

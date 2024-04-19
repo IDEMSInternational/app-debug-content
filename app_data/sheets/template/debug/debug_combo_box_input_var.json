@@ -7,9 +7,18 @@
     {
       "name": "answer_list",
       "value": [
-        "name: name_1 | text: This is text 1",
-        "name: name_2 | text: This is text 2",
-        "name: name_3 | text: This is text 3"
+        {
+          "name": "name_1",
+          "text": "This is text 1"
+        },
+        {
+          "name": "name_2",
+          "text": "This is text 2"
+        },
+        {
+          "name": "name_3",
+          "text": "This is text 3"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

@@ -28,8 +28,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "dashed_box",
-      "_nested_name": "dashed_box",
+      "name": "dashed_box_4",
+      "_nested_name": "dashed_box_4",
       "_dynamicFields": {
         "value": [
           {
@@ -52,8 +52,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_5",
+      "_nested_name": "text_5",
       "_dynamicFields": {
         "value": [
           {
@@ -76,8 +76,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "dashed_box",
-      "_nested_name": "dashed_box",
+      "name": "dashed_box_6",
+      "_nested_name": "dashed_box_6",
       "_dynamicFields": {
         "value": [
           {
@@ -100,8 +100,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text",
-      "_nested_name": "text",
+      "name": "text_7",
+      "_nested_name": "text_7",
       "_dynamicFields": {
         "value": [
           {
@@ -124,13 +124,13 @@
       "_translations": {
         "value": {}
       },
-      "name": "title",
-      "_nested_name": "title"
+      "name": "title_8",
+      "_nested_name": "title_8"
     },
     {
       "type": "dashed_box",
-      "name": "dashed_box",
-      "_nested_name": "dashed_box"
+      "name": "dashed_box_9",
+      "_nested_name": "dashed_box_9"
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_dashed_box.xlsx"

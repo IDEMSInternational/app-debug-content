@@ -7,8 +7,14 @@
     {
       "name": "answer0_list",
       "value": [
-        "name:name_var_1 | text:Single",
-        "name:name_var_2 | text:Pair"
+        {
+          "name": "name_var_1",
+          "text": "Single"
+        },
+        {
+          "name": "name_var_2",
+          "text": "Pair"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
@@ -127,9 +133,21 @@
     {
       "name": "answer2_list",
       "value": [
-        "name:name_var_1 | text:Black| image:/plh_images/icons/heart.svg",
-        "name:name_var_2| image:/plh_images/icons/heart.svg | text:White",
-        "name:name_var_3| image:/plh_images/icons/heart.svg | text:Blue"
+        {
+          "name": "name_var_1",
+          "text": "Black",
+          "image": "/plh_images/icons/heart.svg"
+        },
+        {
+          "name": "name_var_2",
+          "image": "/plh_images/icons/heart.svg",
+          "text": "White"
+        },
+        {
+          "name": "name_var_3",
+          "image": "/plh_images/icons/heart.svg",
+          "text": "Blue"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
@@ -138,9 +156,18 @@
     {
       "name": "answer3_list",
       "value": [
-        "name:name_var_1 | image:/plh_images/icons/heart.svg",
-        "name:name_var_2| image:/plh_images/icons/heart.svg",
-        "name:name_var_3| image:/plh_images/icons/heart.svg"
+        {
+          "name": "name_var_1",
+          "image": "/plh_images/icons/heart.svg"
+        },
+        {
+          "name": "name_var_2",
+          "image": "/plh_images/icons/heart.svg"
+        },
+        {
+          "name": "name_var_3",
+          "image": "/plh_images/icons/heart.svg"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",

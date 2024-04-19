@@ -7,8 +7,14 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name:name_var_1 | text:First",
-        "name:name_var_2 | text:Second"
+        {
+          "name": "name_var_1",
+          "text": "First"
+        },
+        {
+          "name": "name_var_2",
+          "text": "Second"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
@@ -99,26 +105,34 @@
     {
       "name": "answer_list_2",
       "value": [
-        "name:name_var_1 | text:@local.long_text",
-        "name:name_var_2 | text:Second"
+        {
+          "name": "name_var_1",
+          "text": "@local.long_text"
+        },
+        {
+          "name": "name_var_2",
+          "text": "Second"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_2",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name:name_var_1 | text:@local.long_text",
-              "matchedExpression": "@local.long_text",
-              "type": "local",
-              "fieldName": "long_text"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@local.long_text",
+                "matchedExpression": "@local.long_text",
+                "type": "local",
+                "fieldName": "long_text"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@local.long_text": [
-          "value.0"
+          "value.0.text"
         ]
       }
     },

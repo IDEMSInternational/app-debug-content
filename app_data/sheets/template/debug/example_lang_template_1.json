@@ -50,9 +50,21 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name:happy | image:plh_images/stickers/faces/happier.svg | image_checked:plh_images/stickers/faces/happier.svg",
-        "name:ok | image:plh_images/stickers/faces/neutral.svg | image_checked:plh_images/stickers/faces/neutral.svg",
-        "name:sad | image:plh_images/stickers/faces/sadder.svg |  image_checked:plh_images/stickers/faces/sadder.svg"
+        {
+          "name": "happy",
+          "image": "plh_images/stickers/faces/happier.svg",
+          "image_checked": "plh_images/stickers/faces/happier.svg"
+        },
+        {
+          "name": "ok",
+          "image": "plh_images/stickers/faces/neutral.svg",
+          "image_checked": "plh_images/stickers/faces/neutral.svg"
+        },
+        {
+          "name": "sad",
+          "image": "plh_images/stickers/faces/sadder.svg",
+          "image_checked": "plh_images/stickers/faces/sadder.svg"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_1"
@@ -332,9 +344,18 @@
     {
       "name": "answer_list_2",
       "value": [
-        "name:happy | text:happy",
-        "name:ok | text:ok",
-        "name:sad | text:sad"
+        {
+          "name": "happy",
+          "text": "happy"
+        },
+        {
+          "name": "ok",
+          "text": "ok"
+        },
+        {
+          "name": "sad",
+          "text": "sad"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_2"
@@ -399,9 +420,18 @@
     {
       "name": "answer_list_2",
       "value": [
-        "name: option_1 | text:This is the first default option for the combo box",
-        "name: option_2 | text:This is the second default option for the combo box",
-        "name: option_3 | text:This is the third default option for the combo box"
+        {
+          "name": "option_1",
+          "text": "This is the first default option for the combo box"
+        },
+        {
+          "name": "option_2",
+          "text": "This is the second default option for the combo box"
+        },
+        {
+          "name": "option_3",
+          "text": "This is the third default option for the combo box"
+        }
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_2"
@@ -801,7 +831,7 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "display_group.text_6"
+          "_nested_name": "display_group_35.text_6"
         },
         {
           "type": "text",
@@ -810,7 +840,7 @@
           "_translations": {
             "value": {}
           },
-          "_nested_name": "display_group.text_7",
+          "_nested_name": "display_group_35.text_7",
           "_dynamicFields": {
             "value": [
               {
@@ -828,8 +858,8 @@
           }
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group"
+      "name": "display_group_35",
+      "_nested_name": "display_group_35"
     },
     {
       "type": "display_group",
@@ -845,7 +875,7 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "display_group.text_8"
+          "_nested_name": "display_group_37.text_8"
         },
         {
           "type": "text",
@@ -854,7 +884,7 @@
           "_translations": {
             "value": {}
           },
-          "_nested_name": "display_group.text_9",
+          "_nested_name": "display_group_37.text_9",
           "_dynamicFields": {
             "value": [
               {
@@ -872,8 +902,8 @@
           }
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group"
+      "name": "display_group_37",
+      "_nested_name": "display_group_37"
     },
     {
       "type": "display_group",

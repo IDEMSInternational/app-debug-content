@@ -95,7 +95,7 @@
             "style": "workshop_page",
             "icon_src": "@local.individual_image"
           },
-          "_nested_name": "display_group.individual_workshop",
+          "_nested_name": "display_group_7.individual_workshop",
           "_dynamicFields": {
             "parameter_list": {
               "first_line_text": [
@@ -134,7 +134,7 @@
             "style": "workshop_page",
             "icon_src": "@local.together_image"
           },
-          "_nested_name": "display_group.group_workshop",
+          "_nested_name": "display_group_7.group_workshop",
           "_dynamicFields": {
             "parameter_list": {
               "first_line_text": [
@@ -165,8 +165,8 @@
           }
         }
       ],
-      "name": "display_group",
-      "_nested_name": "display_group"
+      "name": "display_group_7",
+      "_nested_name": "display_group_7"
     },
     {
       "type": "title",
@@ -180,56 +180,72 @@
     {
       "name": "answer_list_1",
       "value": [
-        "name: individual | text: @local.individual_text | image: @local.individual_image",
-        "name: together | text: @local.together_text | image: @local.together_image"
+        {
+          "name": "individual",
+          "text": "@local.individual_text",
+          "image": "@local.individual_image"
+        },
+        {
+          "name": "together",
+          "text": "@local.together_text",
+          "image": "@local.together_image"
+        }
       ],
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "answer_list_1",
       "_dynamicFields": {
         "value": {
-          "0": [
-            {
-              "fullExpression": "name: individual | text: @local.individual_text | image: @local.individual_image",
-              "matchedExpression": "@local.individual_text",
-              "type": "local",
-              "fieldName": "individual_text"
-            },
-            {
-              "fullExpression": "name: individual | text: @local.individual_text | image: @local.individual_image",
-              "matchedExpression": "@local.individual_image",
-              "type": "local",
-              "fieldName": "individual_image"
-            }
-          ],
-          "1": [
-            {
-              "fullExpression": "name: together | text: @local.together_text | image: @local.together_image",
-              "matchedExpression": "@local.together_text",
-              "type": "local",
-              "fieldName": "together_text"
-            },
-            {
-              "fullExpression": "name: together | text: @local.together_text | image: @local.together_image",
-              "matchedExpression": "@local.together_image",
-              "type": "local",
-              "fieldName": "together_image"
-            }
-          ]
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@local.individual_text",
+                "matchedExpression": "@local.individual_text",
+                "type": "local",
+                "fieldName": "individual_text"
+              }
+            ],
+            "image": [
+              {
+                "fullExpression": "@local.individual_image",
+                "matchedExpression": "@local.individual_image",
+                "type": "local",
+                "fieldName": "individual_image"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@local.together_text",
+                "matchedExpression": "@local.together_text",
+                "type": "local",
+                "fieldName": "together_text"
+              }
+            ],
+            "image": [
+              {
+                "fullExpression": "@local.together_image",
+                "matchedExpression": "@local.together_image",
+                "type": "local",
+                "fieldName": "together_image"
+              }
+            ]
+          }
         }
       },
       "_dynamicDependencies": {
         "@local.individual_text": [
-          "value.0"
+          "value.0.text"
         ],
         "@local.individual_image": [
-          "value.0"
+          "value.0.image"
         ],
         "@local.together_text": [
-          "value.1"
+          "value.1.text"
         ],
         "@local.together_image": [
-          "value.1"
+          "value.1.image"
         ]
       }
     },
