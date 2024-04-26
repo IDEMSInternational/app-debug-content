@@ -117,6 +117,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_calc_functions.xlsx"
     },
+    "debug_item_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_item_data",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_template_variables.xlsx"
+    },
     "debug_language_data_list": {
       "flow_type": "data_list",
       "flow_name": "debug_language_data_list",
@@ -877,6 +883,12 @@
       "comments": "test56",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
     },
+    "debug_card_styles": {
+      "flow_type": "template",
+      "flow_name": "debug_card_styles",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_card_styles.xlsx"
+    },
     "debug_changed_radio_group_1": {
       "flow_type": "template",
       "flow_name": "debug_changed_radio_group_1",
@@ -1188,6 +1200,12 @@
       "flow_name": "debug_hp_review_specific_2",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_hp_review_2.xlsx"
+    },
+    "debug_item_variable": {
+      "flow_type": "template",
+      "flow_name": "debug_item_variable",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_template_variables.xlsx"
     },
     "debug_items": {
       "flow_type": "template",
@@ -1578,6 +1596,12 @@
       "flow_name": "debug_teen_ages",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_items_fields.xlsx"
+    },
+    "debug_template_variables": {
+      "flow_type": "template",
+      "flow_name": "debug_template_variables",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_template_variables.xlsx"
     },
     "debug_text": {
       "flow_type": "template",
@@ -2592,6 +2616,11 @@
       "_overrides": {
         "debug_circ_override_1": true
       }
+    },
+    "debug_data_items_local": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_local",
+      "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
     },
     "debug_data_items_r_template": {
       "flow_type": "template",

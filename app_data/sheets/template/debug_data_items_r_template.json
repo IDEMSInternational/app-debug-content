@@ -5,12 +5,12 @@
   "rows": [
     {
       "type": "title",
+      "name": "title",
       "value": "Nested template",
       "_translations": {
         "value": {}
       },
-      "name": "title_2",
-      "_nested_name": "title_2"
+      "_nested_name": "title"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
