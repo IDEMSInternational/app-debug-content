@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_fullscreen_pop_up_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Popup text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_fullscreen_pop_up.xlsx"
+}

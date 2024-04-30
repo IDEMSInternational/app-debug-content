@@ -1,0 +1,196 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_nesting",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Data items with nested template",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "data_items",
+      "name": "data_items",
+      "value": "@data.comp_data_items_list",
+      "rows": [
+        {
+          "type": "text",
+          "name": "id_@item.id",
+          "value": "Item ID: @item.id",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "data_items.id_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item ID: @item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "value",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "completed_@item.id",
+          "value": "Item completed: @item.completed",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "data_items.completed_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "completed_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item completed: @item.completed",
+                "matchedExpression": "@item.completed",
+                "type": "item",
+                "fieldName": "completed"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.completed_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.completed": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "template",
+          "name": "example_emit",
+          "value": "example_emit",
+          "action_list": [
+            {
+              "trigger": "completed",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "completed | set_item | completed: true",
+              "_cleaned": "completed | set_item | completed: true",
+              "params": {
+                "completed": true
+              }
+            },
+            {
+              "trigger": "uncompleted",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "uncompleted | set_item | _index: @item._index - 1, completed: false",
+              "_cleaned": "uncompleted | set_item | _index: @item._index - 1, completed: false",
+              "params": {
+                "_index": "@item._index - 1",
+                "completed": false
+              }
+            }
+          ],
+          "rows": [],
+          "_nested_name": "data_items.example_emit",
+          "_dynamicFields": {
+            "action_list": {
+              "1": {
+                "_raw": [
+                  {
+                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, completed: false",
+                    "matchedExpression": "@item._index",
+                    "type": "item",
+                    "fieldName": "_index"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, completed: false",
+                    "matchedExpression": "@item._index",
+                    "type": "item",
+                    "fieldName": "_index"
+                  }
+                ],
+                "params": {
+                  "_index": [
+                    {
+                      "fullExpression": "@item._index - 1",
+                      "matchedExpression": "@item._index",
+                      "type": "item",
+                      "fieldName": "_index"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@item._index": [
+              "action_list.1._raw",
+              "action_list.1._cleaned",
+              "action_list.1.params._index"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "data_items",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.comp_data_items_list",
+            "matchedExpression": "@data.comp_data_items_list",
+            "type": "data",
+            "fieldName": "comp_data_items_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.comp_data_items_list": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_items.xlsx"
+}
