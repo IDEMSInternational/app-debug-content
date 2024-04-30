@@ -1,0 +1,29 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_fullscreen_pop_up_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Launch popup",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_fullscreen_pop_up_3"
+          ],
+          "_raw": "click | pop_up: debug_fullscreen_pop_up_3",
+          "_cleaned": "click | pop_up: debug_fullscreen_pop_up_3"
+        }
+      ],
+      "name": "button_2",
+      "_nested_name": "button_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_fullscreen_pop_up.xlsx"
+}
