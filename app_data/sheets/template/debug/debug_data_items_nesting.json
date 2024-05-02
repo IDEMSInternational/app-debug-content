@@ -346,5 +346,5 @@
       "_nested_name": "data_items"
     }
   ],
-  "_xlsxPath": "component_sheets/component_data_items.xlsx"
+  "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
 }
