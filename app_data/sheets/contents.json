@@ -104,6 +104,19 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_accordion.xlsx"
     },
+    "debug_data_list": {
+      "flow_type": "data_list",
+      "flow_name": "debug_data_list",
+      "data_list_name": "debug",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
+    },
+    "debug_data_list_order": {
+      "flow_type": "data_list",
+      "flow_name": "debug_data_list_order",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
     "debug_delimiters_list": {
       "flow_type": "data_list",
       "flow_name": "debug_delimiters_list",
@@ -327,6 +340,11 @@
       "data_list_name": "feat_task_groups",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
     },
+    "debug_filtered": {
+      "flow_name": "debug_filtered",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
     "double_example_data_pipe_list": {
       "flow_name": "double_example_data_pipe_list",
       "flow_subtype": "generated",
@@ -380,6 +398,12 @@
     }
   },
   "data_pipe": {
+    "debug_data_pipe": {
+      "flow_type": "data_pipe",
+      "flow_name": "debug_data_pipe",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
+    },
     "example_data_pipe": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
@@ -1012,25 +1036,43 @@
       "flow_type": "template",
       "flow_name": "debug_data_items",
       "flow_subtype": "debug",
-      "_xlsxPath": "component_sheets/component_data_items.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
+    "debug_data_items_actions": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_actions",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
     "debug_data_items_condition": {
       "flow_type": "template",
       "flow_name": "debug_data_items_condition",
       "flow_subtype": "debug",
-      "_xlsxPath": "component_sheets/component_data_items.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
     "debug_data_items_find_first": {
       "flow_type": "template",
       "flow_name": "debug_data_items_find_first",
       "flow_subtype": "debug",
-      "_xlsxPath": "component_sheets/component_data_items.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
     "debug_data_items_nesting": {
       "flow_type": "template",
       "flow_name": "debug_data_items_nesting",
       "flow_subtype": "debug",
-      "_xlsxPath": "component_sheets/component_data_items.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
+    "debug_data_items_order": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_order",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
+    "debug_data_items_translate": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_translate",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
     "debug_data_middle": {
       "flow_type": "template",
