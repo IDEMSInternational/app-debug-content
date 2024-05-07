@@ -1,0 +1,624 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_kids",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Find first item in data list with a certain property",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "name": "type",
+      "value": "type_b",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "type"
+    },
+    {
+      "type": "text",
+      "name": "text_templating",
+      "value": "Data items approach",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text_templating"
+    },
+    {
+      "type": "data_items",
+      "name": "find_first_item_of_this_type",
+      "value": "@data.comp_data_items_list",
+      "rows": [
+        {
+          "type": "display_group",
+          "name": "stop_when_found_first_match_@item.id",
+          "condition": "@item.type == @local.type",
+          "rows": [
+            {
+              "type": "text",
+              "name": "debug_loc_type_@item.id",
+              "value": "Local: @local.type",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_loc_type_@item.id",
+              "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "debug_loc_type_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "value": [
+                  {
+                    "fullExpression": "Local: @local.type",
+                    "matchedExpression": "@local.type",
+                    "type": "local",
+                    "fieldName": "type"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_loc_type_@item.id",
+                    "matchedExpression": "@item.id.debug_loc_type_",
+                    "type": "item",
+                    "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_loc_type_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ],
+                "@local.type": [
+                  "value"
+                ],
+                "@item.id.debug_loc_type_": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "debug_item_type_@item.id",
+              "value": "Item: @item.type",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_item_type_@item.id",
+              "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "debug_item_type_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "value": [
+                  {
+                    "fullExpression": "Item: @item.type",
+                    "matchedExpression": "@item.type",
+                    "type": "item",
+                    "fieldName": "type"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_item_type_@item.id",
+                    "matchedExpression": "@item.id.debug_item_type_",
+                    "type": "item",
+                    "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_item_type_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ],
+                "@item.type": [
+                  "value"
+                ],
+                "@item.id.debug_item_type_": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "debug_failed",
+              "value": "Condition failed",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@item.type !== @local.type",
+              "_nested_name": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_failed",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@item.type !== @local.type",
+                    "matchedExpression": "@item.type",
+                    "type": "item",
+                    "fieldName": "type"
+                  },
+                  {
+                    "fullExpression": "@item.type !== @local.type",
+                    "matchedExpression": "@local.type",
+                    "type": "local",
+                    "fieldName": "type"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_failed",
+                    "matchedExpression": "@item.id.debug_failed",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.type": [
+                  "condition"
+                ],
+                "@local.type": [
+                  "condition"
+                ],
+                "@item.id.debug_failed": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "debug_passed",
+              "value": "Condition passed",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@item.type == @local.type",
+              "_nested_name": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_passed",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@item.type == @local.type",
+                    "matchedExpression": "@item.type",
+                    "type": "item",
+                    "fieldName": "type"
+                  },
+                  {
+                    "fullExpression": "@item.type == @local.type",
+                    "matchedExpression": "@local.type",
+                    "type": "local",
+                    "fieldName": "type"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.debug_passed",
+                    "matchedExpression": "@item.id.debug_passed",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.type": [
+                  "condition"
+                ],
+                "@local.type": [
+                  "condition"
+                ],
+                "@item.id.debug_passed": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "name": "id",
+              "value": "@item.id",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.id",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.id",
+                    "matchedExpression": "@item.id.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ],
+                "@item.id.id": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "name": "stop_loop",
+              "value": true,
+              "type": "set_variable",
+              "_nested_name": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.stop_loop",
+              "_dynamicFields": {
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id.stop_loop",
+                    "matchedExpression": "@item.id.stop_loop",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id.stop_loop": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "find_first_item_of_this_type.stop_when_found_first_match_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "stop_when_found_first_match_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "@item.type == @local.type",
+                "matchedExpression": "@item.type",
+                "type": "item",
+                "fieldName": "type"
+              },
+              {
+                "fullExpression": "@item.type == @local.type",
+                "matchedExpression": "@local.type",
+                "type": "local",
+                "fieldName": "type"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "find_first_item_of_this_type.stop_when_found_first_match_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.type": [
+              "condition"
+            ],
+            "@local.type": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "find_first_item_of_this_type",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.comp_data_items_list",
+            "matchedExpression": "@data.comp_data_items_list",
+            "type": "data",
+            "fieldName": "comp_data_items_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.comp_data_items_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_result",
+      "value": "The first item of type @local.type is @local.id",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_result",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "The first item of type @local.type is @local.id",
+            "matchedExpression": "@local.type",
+            "type": "local",
+            "fieldName": "type"
+          },
+          {
+            "fullExpression": "The first item of type @local.type is @local.id",
+            "matchedExpression": "@local.id",
+            "type": "local",
+            "fieldName": "id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.type": [
+          "value"
+        ],
+        "@local.id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_js",
+      "value": "Javascript workaround",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text_js"
+    },
+    {
+      "name": "data_json",
+      "value": "@data.comp_data_items_list",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "data_json",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.comp_data_items_list",
+            "matchedExpression": "@data.comp_data_items_list",
+            "type": "data",
+            "fieldName": "comp_data_items_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.comp_data_items_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "stringify_data",
+      "value": "@calc(JSON.stringify(@local.data_json))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "stringify_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.data_json))",
+            "matchedExpression": "@local.data_json",
+            "type": "local",
+            "fieldName": "data_json"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.data_json))",
+            "matchedExpression": "@calc(JSON.stringify(@local.data_json))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.data_json)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.data_json": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.data_json))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "debug_data",
+      "value": "Data: @local.stringify_data",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debug_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Data: @local.stringify_data",
+            "matchedExpression": "@local.stringify_data",
+            "type": "local",
+            "fieldName": "stringify_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.stringify_data": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "data_array",
+      "value": "@calc(Object.values(@local.data_json))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "data_array",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(Object.values(@local.data_json))",
+            "matchedExpression": "@local.data_json",
+            "type": "local",
+            "fieldName": "data_json"
+          },
+          {
+            "fullExpression": "@calc(Object.values(@local.data_json))",
+            "matchedExpression": "@calc(Object.values(@local.data_json))",
+            "type": "calc",
+            "fieldName": "Object.values(@local.data_json)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.data_json": [
+          "value"
+        ],
+        "@calc(Object.values(@local.data_json))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "match_json",
+      "value": "@calc(@local.data_array.find((row) => row.type === @local.type))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "match_json",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.data_array.find((row) => row.type === @local.type))",
+            "matchedExpression": "@local.data_array.find",
+            "type": "local",
+            "fieldName": "data_array"
+          },
+          {
+            "fullExpression": "@calc(@local.data_array.find((row) => row.type === @local.type))",
+            "matchedExpression": "@local.type",
+            "type": "local",
+            "fieldName": "type"
+          },
+          {
+            "fullExpression": "@calc(@local.data_array.find((row) => row.type === @local.type))",
+            "matchedExpression": "@calc(@local.data_array.find((row) => row.type === @local.type))",
+            "type": "calc",
+            "fieldName": "@local.data_array.find((row) => row.type === @local.type)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.data_array.find": [
+          "value"
+        ],
+        "@local.type": [
+          "value"
+        ],
+        "@calc(@local.data_array.find((row) => row.type === @local.type))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "id_js",
+      "value": "@local.match_json.id",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "id_js",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.match_json.id",
+            "matchedExpression": "@local.match_json.id",
+            "type": "local",
+            "fieldName": "match_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.match_json.id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_result_js",
+      "value": "The first item of type @local.type is @local.id_js",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_result_js",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "The first item of type @local.type is @local.id_js",
+            "matchedExpression": "@local.type",
+            "type": "local",
+            "fieldName": "type"
+          },
+          {
+            "fullExpression": "The first item of type @local.type is @local.id_js",
+            "matchedExpression": "@local.id_js",
+            "type": "local",
+            "fieldName": "id_js"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.type": [
+          "value"
+        ],
+        "@local.id_js": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+}
