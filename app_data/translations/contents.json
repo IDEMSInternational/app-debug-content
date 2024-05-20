@@ -1,4 +1,7 @@
 {
+  "en_rtl": {
+    "filename": "en_rtl/strings.json"
+  },
   "es_sp": {
     "filename": "es_sp/strings.json"
   }

@@ -14,9 +14,11 @@
     },
     {
       "type": "text",
-      "value": "Some text",
+      "value": "Some text in English",
       "_translations": {
-        "value": {}
+        "value": {
+          "en_rtl": true
+        }
       },
       "name": "text_3",
       "_nested_name": "text_3"
@@ -26,11 +28,11 @@
       "value": [
         {
           "name": "gb_en",
-          "text": "English"
+          "text": "1. English"
         },
         {
           "name": "en_rtl",
-          "text": "English RTL"
+          "text": "2. English RTL"
         }
       ],
       "exclude_from_translation": true,
@@ -52,8 +54,8 @@
             "set_language",
             "this.value"
           ],
-          "_raw": "changed | emit: set_language:@local.language_select",
-          "_cleaned": "changed | emit: set_language:@local.language_select"
+          "_raw": "changed | emit: set_language: @local.language_select",
+          "_cleaned": "changed | emit: set_language: @local.language_select"
         },
         {
           "trigger": "changed",
@@ -83,7 +85,7 @@
           "0": {
             "_raw": [
               {
-                "fullExpression": "changed | emit: set_language:@local.language_select",
+                "fullExpression": "changed | emit: set_language: @local.language_select",
                 "matchedExpression": "@local.language_select",
                 "type": "local",
                 "fieldName": "language_select"
@@ -91,7 +93,7 @@
             ],
             "_cleaned": [
               {
-                "fullExpression": "changed | emit: set_language:@local.language_select",
+                "fullExpression": "changed | emit: set_language: @local.language_select",
                 "matchedExpression": "@local.language_select",
                 "type": "local",
                 "fieldName": "language_select"

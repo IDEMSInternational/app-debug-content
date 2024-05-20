@@ -1056,6 +1056,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
+    "debug_data_items_list": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_list",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
     "debug_data_items_nesting": {
       "flow_type": "template",
       "flow_name": "debug_data_items_nesting",
