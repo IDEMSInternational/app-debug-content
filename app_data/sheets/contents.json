@@ -1056,6 +1056,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
+    "debug_data_items_list": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_list",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
     "debug_data_items_nesting": {
       "flow_type": "template",
       "flow_name": "debug_data_items_nesting",
@@ -1307,6 +1313,12 @@
       "flow_name": "debug_items",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_items.xlsx"
+    },
+    "debug_kids": {
+      "flow_type": "template",
+      "flow_name": "debug_kids",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
     "debug_lang_global_1": {
       "flow_type": "template",
@@ -2863,6 +2875,11 @@
       "flow_name": "feature_feedback_text_select",
       "comments": "Default text-select feedback form",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_feedback.xlsx"
+    },
+    "feature_rtl_language": {
+      "flow_type": "template",
+      "flow_name": "feature_rtl_language",
+      "_xlsxPath": "feature_sheets/feature_rtl_language.xlsx"
     },
     "feature_save_open_file": {
       "flow_type": "template",

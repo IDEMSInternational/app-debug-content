@@ -11,7 +11,8 @@
       "id": "item_2"
     },
     {
-      "id": "item_10"
+      "id": "item_10",
+      "property": "A value"
     },
     {
       "id": "item_a"

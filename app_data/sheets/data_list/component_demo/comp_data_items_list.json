@@ -7,17 +7,20 @@
     {
       "id": "id_1",
       "label": "Task 1",
-      "completed": false
+      "completed": false,
+      "type": "type_a"
     },
     {
       "id": "id_2",
       "label": "Task 2",
-      "completed": true
+      "completed": true,
+      "type": "type_b"
     },
     {
       "id": "id_3",
       "label": "Task 3",
-      "completed": true
+      "completed": true,
+      "type": "type_b"
     }
   ],
   "_xlsxPath": "component_sheets/component_data_items.xlsx"
