@@ -8,7 +8,9 @@
       "operation": "append_columns",
       "args_list": [
         "Text: Hello {@row.id}",
-        "Boolean: FALSE"
+        "Boolean: FALSE",
+        "number: -5.25",
+        "number_text: \"-5.25\""
       ],
       "input_source": "example_data_pipe_list",
       "output_target": "example_pipe_appended"
