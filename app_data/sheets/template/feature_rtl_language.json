@@ -16,7 +16,9 @@
       "type": "text",
       "value": "Some text in English",
       "_translations": {
-        "value": {}
+        "value": {
+          "en_rtl": true
+        }
       },
       "name": "text_3",
       "_nested_name": "text_3"
@@ -122,6 +124,15 @@
           "parameter_list.answer_list"
         ]
       }
+    },
+    {
+      "type": "text",
+      "value": "Some text in English which includes Markdown. It also ends in a ends in a full stop.\n1. First **item**\n2. Second item\n- First _bullet_\n- Second bullet",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_rtl_language.xlsx"
