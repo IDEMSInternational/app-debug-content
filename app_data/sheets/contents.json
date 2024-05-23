@@ -2064,6 +2064,12 @@
       "flow_name": "example_data_from_id",
       "_xlsxPath": "example_sheets/to_be_sorted/example_data_lists.xlsx"
     },
+    "example_data_items_pipe_2": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_data_items_pipe_2",
+      "_xlsxPath": "example_sheets/example_items.xlsx"
+    },
     "example_data_template": {
       "flow_type": "template",
       "flow_subtype": "debug",
