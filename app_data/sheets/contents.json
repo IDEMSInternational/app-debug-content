@@ -573,7 +573,7 @@
     "check_field_value": {
       "flow_type": "template",
       "flow_name": "check_field_value",
-      "_xlsxPath": "library_sheets/library_field_values.xlsx"
+      "_xlsxPath": "library_sheets/library_field_values/library_field_values.xlsx"
     },
     "comp_odk_form": {
       "flow_type": "template",
