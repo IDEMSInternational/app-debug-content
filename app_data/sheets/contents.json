@@ -570,6 +570,11 @@
       "flow_name": "assets_demo",
       "_xlsxPath": "doc_sheets/assets_demo.xlsx"
     },
+    "check_field_value": {
+      "flow_type": "template",
+      "flow_name": "check_field_value",
+      "_xlsxPath": "library_sheets/library_field_values.xlsx"
+    },
     "comp_odk_form": {
       "flow_type": "template",
       "flow_name": "comp_odk_form",
@@ -2799,6 +2804,11 @@
       "flow_type": "template",
       "flow_name": "debug_sync_id",
       "_xlsxPath": "debug_sheets/debug_sync.xlsx"
+    },
+    "debug_task_group_completion": {
+      "flow_type": "template",
+      "flow_name": "debug_task_group_completion",
+      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
     },
     "doc_field": {
       "flow_type": "template",

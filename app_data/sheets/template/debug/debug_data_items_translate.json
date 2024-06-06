@@ -112,6 +112,51 @@
               "value"
             ]
           }
+        },
+        {
+          "type": "button",
+          "name": "button_@item.id",
+          "value": "Add \"updated\" property",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "click | set_item | updated: true",
+              "_cleaned": "click | set_item | updated: true",
+              "params": {
+                "updated": true
+              }
+            }
+          ],
+          "_nested_name": "data_items.button_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
         }
       ],
       "_nested_name": "data_items",

@@ -1,0 +1,107 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_task_group_completion",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Debug task group completion feature",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Evaluate task group completion 1",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "task",
+          "args": [
+            "evaluate_group_completion",
+            "data_list_c, data_list_b, data_list_a"
+          ],
+          "_raw": "click | task: evaluate_group_completion: data_list_c, data_list_b, data_list_a",
+          "_cleaned": "click | task: evaluate_group_completion: data_list_c, data_list_b, data_list_a"
+        }
+      ],
+      "_nested_name": "button"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Evaluate task group completion 2",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "task",
+          "args": [
+            "evaluate_group_completion"
+          ],
+          "_raw": "click | task: evaluate_group_completion | data_lists: data_list_c, data_list_b, data_list_a",
+          "_cleaned": "click | task: evaluate_group_completion | data_lists: data_list_c, data_list_b, data_list_a",
+          "params": {
+            "data_lists": "data_list_c"
+          }
+        }
+      ],
+      "_nested_name": "button"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Evaluate task group completion 3",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "task",
+          "args": [
+            "evaluate_group_completion"
+          ],
+          "_raw": "click | task: evaluate_group_completion | data_lists: data_list_c data_list_b data_list_a",
+          "_cleaned": "click | task: evaluate_group_completion | data_lists: data_list_c data_list_b data_list_a",
+          "params": {
+            "data_lists": "data_list_c data_list_b data_list_a"
+          }
+        }
+      ],
+      "_nested_name": "button"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Evaluate task group completion 4",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "task",
+          "args": [
+            "evaluate_group_completion"
+          ],
+          "_raw": "click | task: evaluate_group_completion | task_groups: data_list_c data_list_b.row_3 data_list_a.row_5",
+          "_cleaned": "click | task: evaluate_group_completion | task_groups: data_list_c data_list_b.row_3 data_list_a.row_5",
+          "params": {
+            "task_groups": "data_list_c data_list_b.row_3 data_list_a.row_5"
+          }
+        }
+      ],
+      "_nested_name": "button"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+}
