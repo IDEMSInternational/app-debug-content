@@ -2,7 +2,7 @@
 
 This content is designed to be integrated with the IDEMS App ecosystem, available at:
 
-https://github.com/IDEMSInternational/parenting-app-ui
+https://github.com/IDEMSInternational/open-app-builder
 
 The content can be imported into the parent app via the script
 
@@ -11,5 +11,5 @@ yarn workflow deployment import https://github.com/IDEMSInternational/app-debug-
 ```
 
 For more information on app repo integration see documentation at:
-https://idemsinternational.github.io/parenting-app-ui/developers/deployments/#github-management
+https://idemsinternational.github.io/open-app-builder/developers/deployments/#github-management
 
