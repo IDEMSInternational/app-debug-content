@@ -1,0 +1,21 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_task_group_a",
+  "status": "released",
+  "rows": [
+    {
+      "id": "a_1",
+      "task_child": "debug_task_group_b",
+      "completed": false
+    },
+    {
+      "id": "a_2",
+      "completed": false
+    },
+    {
+      "id": "a_3",
+      "completed": false
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+}
