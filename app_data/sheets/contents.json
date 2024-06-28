@@ -253,6 +253,21 @@
       "flow_name": "debug_nav_bar_data",
       "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
     },
+    "debug_task_group_a": {
+      "flow_type": "data_list",
+      "flow_name": "debug_task_group_a",
+      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+    },
+    "debug_task_group_b": {
+      "flow_type": "data_list",
+      "flow_name": "debug_task_group_b",
+      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+    },
+    "debug_task_group_c": {
+      "flow_type": "data_list",
+      "flow_name": "debug_task_group_c",
+      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+    },
     "example_generator_list": {
       "flow_type": "data_list",
       "flow_subtype": "example_generator",
@@ -310,6 +325,12 @@
       "flow_name": "example_data_pipe_list_3",
       "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
     },
+    "example_data_pipe_nested_list": {
+      "flow_type": "data_list",
+      "flow_subtype": "example_pipe",
+      "flow_name": "example_data_pipe_nested_list",
+      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+    },
     "example_sheet_defaults_list": {
       "flow_type": "data_list",
       "flow_name": "example_sheet_defaults_list",
@@ -352,6 +373,11 @@
     },
     "example_data_pipe_concat_1_3": {
       "flow_name": "example_data_pipe_concat_1_3",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    "example_data_pipe_nested_merged": {
+      "flow_name": "example_data_pipe_nested_merged",
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
@@ -433,6 +459,12 @@
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_map",
       "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+    },
+    "example_data_pipe_merge_nested": {
+      "flow_type": "data_pipe",
+      "flow_subtype": "example_pipe",
+      "flow_name": "example_data_pipe_merge_nested",
+      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
     },
     "example_data_pipe_sort": {
       "flow_type": "data_pipe",

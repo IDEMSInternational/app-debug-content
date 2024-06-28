@@ -1,0 +1,33 @@
+{
+  "flow_name": "example_data_pipe_nested_merged",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "id_3",
+      "text": "Goodbye",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Goodbye"
+        }
+      },
+      "column_b": 2,
+      "column_c": 2
+    },
+    {
+      "id": "id_4",
+      "text": "Hello",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Hello"
+        }
+      }
+    }
+  ]
+}
