@@ -4,19 +4,19 @@
   "flow_type": "data_list",
   "rows": [
     {
-      "id": "id_1",
-      "column_a": 1,
-      "column_b": 1
-    },
-    {
-      "id": "id_2",
-      "column_a": 1,
-      "column_b": 1
-    },
-    {
       "id": "id_3",
       "column_b": 2,
       "column_c": 2
+    },
+    {
+      "id": "id_1",
+      "column_b": 1,
+      "column_a": 1
+    },
+    {
+      "id": "id_2",
+      "column_b": 1,
+      "column_a": 1
     }
   ]
 }

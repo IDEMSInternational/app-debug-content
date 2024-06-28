@@ -376,8 +376,8 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "example_data_pipe_nested_merged": {
-      "flow_name": "example_data_pipe_nested_merged",
+    "example_data_pipe_concat_1_nested": {
+      "flow_name": "example_data_pipe_concat_1_nested",
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
@@ -459,12 +459,6 @@
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_map",
       "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
-    },
-    "example_data_pipe_merge_nested": {
-      "flow_type": "data_pipe",
-      "flow_subtype": "example_pipe",
-      "flow_name": "example_data_pipe_merge_nested",
-      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
     },
     "example_data_pipe_sort": {
       "flow_type": "data_pipe",

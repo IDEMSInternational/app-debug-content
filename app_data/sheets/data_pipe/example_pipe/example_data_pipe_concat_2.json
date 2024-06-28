@@ -7,11 +7,19 @@
     {
       "operation": "concat",
       "args_list": [
-        "example_data_pipe_list_1",
-        "example_data_pipe_list_3"
+        "example_data_pipe_list_1"
+      ],
+      "input_source": "example_data_pipe_list_3",
+      "output_target": "example_data_pipe_concat_1_3"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "example_data_pipe_nested_list",
+        "example_data_pipe_list_1"
       ],
       "input_source": false,
-      "output_target": "example_data_pipe_concat_1_3"
+      "output_target": "example_data_pipe_concat_1_nested"
     }
   ],
   "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
