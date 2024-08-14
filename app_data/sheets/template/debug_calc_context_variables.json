@@ -1,0 +1,104 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_calc_context_variables",
+  "status": "released",
+  "rows": [
+    {
+      "name": "user_id_from_calc",
+      "value": "@calc(this.app_user_id)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "user_id_from_calc",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(this.app_user_id)",
+            "matchedExpression": "@calc(this.app_user_id)",
+            "type": "calc",
+            "fieldName": "this.app_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(this.app_user_id)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "user_id_from_field",
+      "value": "@fields._app_user_id",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "user_id_from_field",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_user_id",
+            "matchedExpression": "@fields._app_user_id",
+            "type": "fields",
+            "fieldName": "_app_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_user_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "User ID from calc context: @local.user_id_from_calc",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "User ID from calc context: @local.user_id_from_calc",
+            "matchedExpression": "@local.user_id_from_calc",
+            "type": "local",
+            "fieldName": "user_id_from_calc"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.user_id_from_calc": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "User ID from field: @local.user_id_from_field",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "User ID from field: @local.user_id_from_field",
+            "matchedExpression": "@local.user_id_from_field",
+            "type": "local",
+            "fieldName": "user_id_from_field"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.user_id_from_field": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_calc_context_variables.xlsx"
+}

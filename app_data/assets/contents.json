@@ -47,6 +47,10 @@
     "md5Checksum": "5afaf79789a776d81ec91ccbdc9fdaba",
     "size_kb": 139.4
   },
+  "images/avatar_1.png": {
+    "md5Checksum": "c5c1acec2fc92d6a19b972563d860798",
+    "size_kb": 60.5
+  },
   "images/example/110-536x354.jpg": {
     "md5Checksum": "bf471a3ecb792c6b8bdc9d8c82aeebc1",
     "size_kb": 39.1
@@ -159,6 +163,18 @@
   "lottie/blob_play_ball.json": {
     "md5Checksum": "5361d4828cb2d1041e263bf107bfff50",
     "size_kb": 69.4
+  },
+  "map_data/centroids.json": {
+    "md5Checksum": "f041bee2c57b7f4c92b88546a05116f8",
+    "size_kb": 13.4
+  },
+  "map_data/ke.json": {
+    "md5Checksum": "9a887a75373ec2e4bef94070ca0597f1",
+    "size_kb": 10219.4
+  },
+  "map_data/population_and_boundaries.json": {
+    "md5Checksum": "e82525f3f8057054ff7879d156ddd322",
+    "size_kb": 4513.3
   },
   "odk_form.json": {
     "md5Checksum": "8b89a6b050f58c0fa0de2d0ff0bd2f32",

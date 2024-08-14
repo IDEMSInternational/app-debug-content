@@ -1,0 +1,80 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_newline",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "text",
+      "value": "value with spaces",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text",
+      "value": "value with line breaks",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "text",
+      "value": "",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "text",
+      "value": "",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "text",
+      "value": "",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "text",
+      "value": "",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "text",
+      "value": "value with carriage returns",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_newline.xlsx"
+}

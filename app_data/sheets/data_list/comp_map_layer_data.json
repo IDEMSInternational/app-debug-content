@@ -1,0 +1,42 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_map_layer_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "layer_1",
+      "name": "Total Population",
+      "description": "Total population by county",
+      "source_asset": "map_data/population_and_boundaries.json",
+      "type": "vector",
+      "property": "sum_Z",
+      "scale_max": 2000000,
+      "scale_min": 0,
+      "opacity": 0.5,
+      "visible_default": true
+    },
+    {
+      "id": "layer_2",
+      "name": "Population Density",
+      "description": "Average population density by county",
+      "source_asset": "map_data/population_and_boundaries.json",
+      "type": "vector",
+      "property": "mean_Z",
+      "scale_max": 400,
+      "scale_min": 0,
+      "scale_fill": "#380645, #298680, yellow",
+      "visible_default": true
+    },
+    {
+      "id": "layer_3",
+      "name": "County Boundaries",
+      "source_asset": "map_data/ke.json",
+      "type": "vector",
+      "fill": "none",
+      "stroke": "red",
+      "opacity": 1,
+      "visible_default": false
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_map.xlsx"
+}

@@ -1,0 +1,115 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_text_bubble",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "text_bubble",
+      "value": "When the content is wide enough, the text bubble takes up the maximum screen width. Otherwise, the text bubble's width fits the content within it.",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/avatar_1.png"
+      },
+      "name": "text_bubble_2",
+      "_nested_name": "text_bubble_2"
+    },
+    {
+      "type": "text_bubble",
+      "value": "speaker_position: right;\nvariant: primary;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/avatar_1.png",
+        "speaker_position": "right",
+        "variant": "primary"
+      },
+      "name": "text_bubble_3",
+      "_nested_name": "text_bubble_3"
+    },
+    {
+      "type": "text_bubble",
+      "parameter_list": {
+        "speaker_image_asset": "images/avatar_1.png",
+        "variant": "gray"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Text bubble with multiple content rows",
+          "_translations": {
+            "value": {}
+          },
+          "name": "title_1",
+          "_nested_name": "text_bubble_4.title_1"
+        },
+        {
+          "type": "text",
+          "value": "variant: gray;",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "text_bubble_4.text_2"
+        },
+        {
+          "type": "image",
+          "value": "images/example/circular.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 64px"
+          ],
+          "name": "image_3",
+          "_nested_name": "text_bubble_4.image_3"
+        }
+      ],
+      "name": "text_bubble_4",
+      "_nested_name": "text_bubble_4"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: secondary;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/avatar_1.png",
+        "variant": "secondary"
+      },
+      "name": "text_bubble_6",
+      "_nested_name": "text_bubble_6"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: no_border;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/avatar_1.png",
+        "variant": "no_border"
+      },
+      "name": "text_bubble_7",
+      "_nested_name": "text_bubble_7"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: primary, no_border;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/avatar_1.png",
+        "variant": "primary, no_border"
+      },
+      "name": "text_bubble_8",
+      "_nested_name": "text_bubble_8"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_text_bubble.xlsx"
+}

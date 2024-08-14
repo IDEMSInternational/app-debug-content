@@ -6,144 +6,170 @@
   "rows": [
     {
       "type": "title",
-      "name": "title_1",
-      "value": "False Text",
+      "value": "variant parameters",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title_1"
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Variant: ios",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_1",
-      "value": false,
-      "action_list": [
-        {
-          "trigger": "changed",
-          "action_id": "set_field",
-          "args": [
-            "changed_field_toggle",
-            "this.value"
-          ],
-          "_raw": "changed | set_field:changed_field_toggle:@local.toggle_1",
-          "_cleaned": "changed | set_field:changed_field_toggle:@local.toggle_1"
-        }
-      ],
       "parameter_list": {
-        "false_text": "false text"
+        "variant": "ios"
       },
-      "_nested_name": "toggle_1",
-      "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "_raw": [
-              {
-                "fullExpression": "changed | set_field:changed_field_toggle:@local.toggle_1",
-                "matchedExpression": "@local.toggle_1",
-                "type": "local",
-                "fieldName": "toggle_1"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field:changed_field_toggle:@local.toggle_1",
-                "matchedExpression": "@local.toggle_1",
-                "type": "local",
-                "fieldName": "toggle_1"
-              }
-            ]
-          }
-        }
-      },
-      "_dynamicDependencies": {
-        "@local.toggle_1": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
-        ]
-      }
+      "_nested_name": "toggle_1"
     },
     {
-      "type": "title",
-      "name": "title_2",
-      "value": "toggle local: @local.toggle_1",
+      "type": "text",
+      "value": "Variant: android",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title_2",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "toggle local: @local.toggle_1",
-            "matchedExpression": "@local.toggle_1",
-            "type": "local",
-            "fieldName": "toggle_1"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.toggle_1": [
-          "value"
-        ]
-      }
+      "name": "text_5",
+      "_nested_name": "text_5"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_2",
       "parameter_list": {
-        "true_text": "true text"
+        "variant": "android"
       },
       "_nested_name": "toggle_2"
     },
     {
-      "type": "title",
-      "name": "title_ 3",
-      "value": "Position",
+      "type": "text",
+      "value": "Variant: icon",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title_ 3"
+      "name": "text_7",
+      "_nested_name": "text_7"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_3",
       "parameter_list": {
-        "position": "left",
-        "true_text": "some text for true value"
+        "variant": "icon",
+        "icon_true_asset": "images/icons/heart_blue.svg",
+        "icon_false_asset": "images/icons/heart_outline.svg"
       },
       "_nested_name": "toggle_3"
     },
     {
-      "type": "toggle_bar",
-      "name": "toggle_4",
-      "parameter_list": {
-        "position": "right",
-        "true_text": "some text for true value"
+      "type": "text",
+      "value": "Variant: in_button",
+      "_translations": {
+        "value": {}
       },
-      "_nested_name": "toggle_4"
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "button",
+      "value": "Icon and toggle",
+      "parameter_list": {
+        "style": "card",
+        "icon": "images/icons/school_blue.svg"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_1",
+          "parameter_list": {
+            "position": "right",
+            "style": "in_button"
+          },
+          "_nested_name": "button_10.toggle_bar_1"
+        }
+      ],
+      "name": "button_10",
+      "_nested_name": "button_10"
+    },
+    {
+      "type": "title",
+      "value": "Button card-portrait",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_12",
+      "_nested_name": "title_12"
+    },
+    {
+      "type": "button",
+      "value": "Portrait card",
+      "parameter_list": {
+        "variant": "card-portrait",
+        "image_asset": "images/example/circular.png"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_2",
+          "parameter_list": {
+            "variant": "icon",
+            "icon_true_asset": "images/icons/heart_blue.svg",
+            "icon_false_asset": "images/icons/heart_outline.svg"
+          },
+          "_nested_name": "button_13.toggle_bar_2"
+        }
+      ],
+      "name": "button_13",
+      "_nested_name": "button_13"
+    },
+    {
+      "type": "title",
+      "value": "false_text/true_text parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_5",
       "parameter_list": {
-        "position": "center",
-        "true_text": "some text for true value"
+        "false_text": "The toggle value is false",
+        "true_text": "The toggle value is true"
       },
       "_nested_name": "toggle_5"
     },
     {
       "type": "title",
-      "name": "title_ 4",
-      "value": "Show tick and cross",
+      "value": "Show Icons parameters",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title_ 4"
+      "name": "title_17",
+      "_nested_name": "title_17"
+    },
+    {
+      "type": "text",
+      "value": "Variant: android",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_18",
+      "_nested_name": "text_18"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_6",
       "parameter_list": {
-        "show_tick_and_cross": "true"
+        "show_tick_and_cross": "true",
+        "show_icons": "true",
+        "variant": "android"
       },
       "_nested_name": "toggle_6"
     },
@@ -151,28 +177,79 @@
       "type": "toggle_bar",
       "name": "toggle_7",
       "parameter_list": {
-        "show_tick_and_cross": "false"
+        "show_tick_and_cross": "false",
+        "show_icons": "false",
+        "variant": "android"
       },
       "_nested_name": "toggle_7"
     },
     {
-      "type": "title",
-      "name": "title_ 5",
-      "value": "Variant: icon",
+      "type": "text",
+      "value": "Variant: ios",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title_ 5"
+      "name": "text_21",
+      "_nested_name": "text_21"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_8",
       "parameter_list": {
-        "variant": "icon",
-        "icon_true_asset": "images/icons/heart_blue.svg",
-        "icon_false_asset": "images/icons/heart_outline.svg"
+        "show_tick_and_cross": "true",
+        "show_icons": "true",
+        "variant": "ios"
       },
       "_nested_name": "toggle_8"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_9",
+      "parameter_list": {
+        "show_tick_and_cross": "false",
+        "show_icons": "false",
+        "variant": "ios"
+      },
+      "_nested_name": "toggle_9"
+    },
+    {
+      "type": "title",
+      "value": "Position",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_24",
+      "_nested_name": "title_24"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_10",
+      "parameter_list": {
+        "position": "left",
+        "true_text": "some text for true value",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_10"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_11",
+      "parameter_list": {
+        "position": "right",
+        "true_text": "some text for true value",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_11"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_12",
+      "parameter_list": {
+        "position": "center",
+        "true_text": "some text for true value",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_12"
     }
   ],
   "_xlsxPath": "component_sheets/component_toggle_bar.xlsx"
