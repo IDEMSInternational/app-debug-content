@@ -150,6 +150,33 @@
         "text-transform: uppercase"
       ],
       "_nested_name": "text_css_3"
+    },
+    {
+      "type": "title",
+      "value": "Text with typographic punctuation",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
+    },
+    {
+      "type": "text",
+      "value": "She said, -- \"A 'simple' sentence...\" --- unknown",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "text",
+      "value": "She said, -\\- \\\"A \\'simple\\' sentence\\...\\\" \\-\\-- unknown",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_17",
+      "_nested_name": "text_17"
     }
   ],
   "_xlsxPath": "component_sheets/component_text.xlsx"

@@ -1,0 +1,47 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_lang_sort",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "lang_select",
+      "value": "example_lang_select",
+      "rows": [],
+      "_nested_name": "lang_select"
+    },
+    {
+      "type": "data_items",
+      "value": "debug_lang_sort_data_list",
+      "rows": [
+        {
+          "type": "text",
+          "value": "@item.text",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "data_items_4.text_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.text",
+                "matchedExpression": "@item.text",
+                "type": "item",
+                "fieldName": "text"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_4",
+      "_nested_name": "data_items_4"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_translation_sort.xlsx"
+}

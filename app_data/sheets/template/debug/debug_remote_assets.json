@@ -80,6 +80,24 @@
       "_nested_name": "image_7"
     },
     {
+      "type": "title",
+      "value": "Remote asset with override",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "image",
+      "value": "debug_asset_pack_1/spanish_flag.png",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image_9",
+      "_nested_name": "image_9"
+    },
+    {
       "type": "button",
       "name": "button_2",
       "value": "Reload page",

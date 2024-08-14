@@ -1,0 +1,16 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_lang_sort_data_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "Example Language Template"
+    },
+    {
+      "id": "id_2",
+      "text": "This is a default text that needs to be translated"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_translation_sort.xlsx"
+}

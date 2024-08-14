@@ -52,6 +52,11 @@
       "comments": "This contains schedules for notifications",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
     },
+    "comp_map_layer_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_map_layer_data",
+      "_xlsxPath": "component_sheets/component_map.xlsx"
+    },
     "comp_task_prog_bar_dyn_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_prog_bar_dyn_data",
@@ -170,13 +175,6 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
     },
-    "example_calc_data_list": {
-      "flow_type": "data_list",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc_data_list",
-      "data_list_name": "example_calc",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
     "example_data_list": {
       "flow_type": "data_list",
       "flow_subtype": "debug",
@@ -241,6 +239,11 @@
       "flow_name": "debug_data_items_rendering_data",
       "data_list_name": "debug_data_items_rendering",
       "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+    },
+    "debug_lang_sort_data_list": {
+      "flow_type": "data_list",
+      "flow_name": "debug_lang_sort_data_list",
+      "_xlsxPath": "debug_sheets/debug_translation_sort.xlsx"
     },
     "debug_launch_actions": {
       "flow_type": "data_list",
@@ -606,6 +609,11 @@
       "flow_name": "comp_odk_form",
       "_xlsxPath": "component_sheets/component_odk.xlsx"
     },
+    "comp_toggle_bar_legacy": {
+      "flow_type": "template",
+      "flow_name": "comp_toggle_bar_legacy",
+      "_xlsxPath": "component_sheets/component_toggle_bar.xlsx"
+    },
     "comp_accordion": {
       "flow_type": "template",
       "flow_name": "comp_accordion",
@@ -695,6 +703,12 @@
       "flow_name": "comp_latex",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_latex.xlsx"
+    },
+    "comp_map": {
+      "flow_type": "template",
+      "flow_name": "comp_map",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_map.xlsx"
     },
     "comp_navigation_bar": {
       "flow_type": "template",
@@ -815,6 +829,12 @@
       "flow_name": "comp_text_box",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_text_box.xlsx"
+    },
+    "comp_text_bubble": {
+      "flow_type": "template",
+      "flow_name": "comp_text_bubble",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_text_bubble.xlsx"
     },
     "comp_timer": {
       "flow_type": "template",
@@ -2023,36 +2043,6 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_buttons.xlsx"
     },
-    "example_calc": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
-    "example_calc_case": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc_case",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
-    "example_calc_date": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc_date",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
-    "example_calc_split": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc_split",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
-    "example_calc_substring": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_calc_substring",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
-    },
     "example_call_global_constants": {
       "flow_type": "template",
       "flow_name": "example_call_global_constants",
@@ -2741,6 +2731,11 @@
       "flow_name": "debug_app_update",
       "_xlsxPath": "debug_sheets/debug_app_update.xlsx"
     },
+    "debug_calc_context_variables": {
+      "flow_type": "template",
+      "flow_name": "debug_calc_context_variables",
+      "_xlsxPath": "debug_sheets/debug_calc_context_variables.xlsx"
+    },
     "debug_circ_override_1": {
       "flow_type": "template",
       "flow_name": "debug_circ_override_1",
@@ -2791,6 +2786,11 @@
       "flow_name": "debug_hyperlinks",
       "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
     },
+    "debug_lang_sort": {
+      "flow_type": "template",
+      "flow_name": "debug_lang_sort",
+      "_xlsxPath": "debug_sheets/debug_translation_sort.xlsx"
+    },
     "debug_list_parsing": {
       "flow_type": "template",
       "flow_name": "debug_list_parsing",
@@ -2810,6 +2810,11 @@
       "flow_type": "template",
       "flow_name": "debug_nav_bar",
       "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
+    },
+    "debug_newline": {
+      "flow_type": "template",
+      "flow_name": "debug_newline",
+      "_xlsxPath": "debug_sheets/debug_newline.xlsx"
     },
     "debug_override_default": {
       "flow_type": "template",
