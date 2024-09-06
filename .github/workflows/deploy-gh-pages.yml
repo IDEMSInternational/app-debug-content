@@ -1,0 +1,17 @@
+##################################################################################
+#         Calls workflow from code repo
+##################################################################################
+name: Deploy - Firebase
+
+on:
+  push:
+    branches:
+      - "main"
+    # TODO - remove after testing
+      - "feat/gh-pages-deploy"
+
+jobs:
+  web_preview:
+    # TODO - use master branch once merged
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-deploy-web-gh-pages.yml@feat/gh-pages-deploy-action
+    secrets: inherit
