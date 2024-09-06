@@ -9,6 +9,7 @@ on:
       - "main"
     # TODO - remove after testing
       - "feat/gh-pages-deploy"
+  workflow_dispatch:
 
 jobs:
   web_preview:
