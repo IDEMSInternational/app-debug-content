@@ -11,11 +11,6 @@ on:
       - "feat/gh-pages-deploy"
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   web_preview:
     # TODO - use master branch once merged
