@@ -175,6 +175,13 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
     },
+    "example_calc_data_list": {
+      "flow_type": "data_list",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_data_list",
+      "data_list_name": "example_calc",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
     "example_data_list": {
       "flow_type": "data_list",
       "flow_subtype": "debug",
@@ -424,6 +431,31 @@
       "flow_name": "goal_data",
       "data_list_name": "goal",
       "_xlsxPath": "demo_sheets/article_data.xlsx"
+    },
+    "task_cards_data": {
+      "flow_type": "data_list",
+      "flow_name": "task_cards_data",
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+    },
+    "task_group_1": {
+      "flow_type": "data_list",
+      "flow_name": "task_group_1",
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+    },
+    "task_group_2": {
+      "flow_type": "data_list",
+      "flow_name": "task_group_2",
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+    },
+    "task_group_3": {
+      "flow_type": "data_list",
+      "flow_name": "task_group_3",
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+    },
+    "task_group_4": {
+      "flow_type": "data_list",
+      "flow_name": "task_group_4",
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
     }
   },
   "data_pipe": {
@@ -739,6 +771,12 @@
       "flow_name": "comp_pdf",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_pdf.xlsx"
+    },
+    "comp_progress_path": {
+      "flow_type": "template",
+      "flow_name": "comp_progress_path",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
     },
     "comp_qr_code": {
       "flow_type": "template",
@@ -2042,6 +2080,36 @@
       "flow_name": "example_buttons_padding",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_buttons.xlsx"
+    },
+    "example_calc": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
+    "example_calc_case": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_case",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
+    "example_calc_date": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_date",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
+    "example_calc_split": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_split",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+    },
+    "example_calc_substring": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_calc_substring",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
     },
     "example_call_global_constants": {
       "flow_type": "template",

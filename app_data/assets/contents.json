@@ -7,7 +7,7 @@
     "md5Checksum": "8e58c60553af35bc2e63f944189376ed",
     "size_kb": 59.4
   },
-  "android/icon.png": {
+  "android/icon-only.png": {
     "md5Checksum": "9208cfd52115c72b7ce0046d1ae8adbb",
     "size_kb": 128.1
   },
@@ -26,6 +26,10 @@
   "audio/timer/ping_2.wav": {
     "md5Checksum": "a9cad2b710e4c0efc104be4eed375d80",
     "size_kb": 829.6
+  },
+  "component_assets/progress_path/progress_path_segment_grey_100.svg": {
+    "md5Checksum": "8021d29430ad2f9831e6a745ece25041",
+    "size_kb": 0.8
   },
   "debug_asset_pack_1/test_image.png": {
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
@@ -147,6 +151,22 @@
     "md5Checksum": "81136e04436759812dc3f6e90c61de11",
     "size_kb": 0.3
   },
+  "images/square_1.svg": {
+    "md5Checksum": "6e31011e97989999dcc561fd205fed78",
+    "size_kb": 0.7
+  },
+  "images/square_2.svg": {
+    "md5Checksum": "799e8bc7d252ad7768d53a3e50a46343",
+    "size_kb": 1
+  },
+  "images/square_3.svg": {
+    "md5Checksum": "7907abd7af9968173b530fadaf4a2534",
+    "size_kb": 1
+  },
+  "images/square_4.svg": {
+    "md5Checksum": "294f42d0a9c68065d27a565a12e48154",
+    "size_kb": 1
+  },
   "images/test_image.png": {
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
     "overrides": {
@@ -159,6 +179,22 @@
       }
     },
     "size_kb": 2
+  },
+  "ios/icon-background.png": {
+    "md5Checksum": "eb62fccb250452852f36a12e0c54c7ac",
+    "size_kb": 3.9
+  },
+  "ios/icon-foreground.png": {
+    "md5Checksum": "8e58c60553af35bc2e63f944189376ed",
+    "size_kb": 59.4
+  },
+  "ios/icon-only.png": {
+    "md5Checksum": "9208cfd52115c72b7ce0046d1ae8adbb",
+    "size_kb": 128.1
+  },
+  "ios/splash.png": {
+    "md5Checksum": "0f058cece06f7ce312f85d5ea3fc2a8b",
+    "size_kb": 147.4
   },
   "lottie/blob_play_ball.json": {
     "md5Checksum": "5361d4828cb2d1041e263bf107bfff50",

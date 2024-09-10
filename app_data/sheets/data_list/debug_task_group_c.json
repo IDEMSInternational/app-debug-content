@@ -5,14 +5,12 @@
   "rows": [
     {
       "id": "c_1",
+      "text": "Task C1",
       "completed": false
     },
     {
       "id": "c_2",
-      "completed": false
-    },
-    {
-      "id": "c_3",
+      "text": "Task C2",
       "completed": false
     }
   ],

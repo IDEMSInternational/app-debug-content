@@ -55,6 +55,26 @@
     {
       "type": "button",
       "name": "button_2",
+      "value": "URL authored directly in action list, without https://",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to_url",
+          "args": [
+            "github.com/IDEMSInternational/parenting-app-ui"
+          ],
+          "_raw": "click | go_to_url: github.com/IDEMSInternational/parenting-app-ui",
+          "_cleaned": "click | go_to_url: github.com/IDEMSInternational/parenting-app-ui"
+        }
+      ],
+      "_nested_name": "button_2"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
       "value": "URL authored through local variable, incl https://",
       "_translations": {
         "value": {}
@@ -70,7 +90,7 @@
           "_cleaned": "click | go_to_url: @local.url_with_https"
         }
       ],
-      "_nested_name": "button_2",
+      "_nested_name": "button_3",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -113,7 +133,7 @@
     },
     {
       "type": "button",
-      "name": "button_3",
+      "name": "button_4",
       "value": "URL authored through local variable, without https://",
       "_translations": {
         "value": {}
@@ -129,7 +149,7 @@
           "_cleaned": "click | go_to_url: @local.url_without_https"
         }
       ],
-      "_nested_name": "button_3",
+      "_nested_name": "button_4",
       "_dynamicFields": {
         "action_list": {
           "0": {
