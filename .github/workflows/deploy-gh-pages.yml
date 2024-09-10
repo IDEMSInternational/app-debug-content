@@ -1,0 +1,15 @@
+##################################################################################
+#         Calls workflow from code repo
+##################################################################################
+name: Deploy - GH Pages
+
+on:
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  web_preview:
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-deploy-web-gh-pages.yml@master
+    secrets: inherit
