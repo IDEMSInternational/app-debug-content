@@ -11,6 +11,10 @@
     "md5Checksum": "9208cfd52115c72b7ce0046d1ae8adbb",
     "size_kb": 128.1
   },
+  "android/icon.png": {
+    "md5Checksum": "9208cfd52115c72b7ce0046d1ae8adbb",
+    "size_kb": 128.1
+  },
   "android/splash.png": {
     "md5Checksum": "0f058cece06f7ce312f85d5ea3fc2a8b",
     "size_kb": 147.4
@@ -26,10 +30,6 @@
   "audio/timer/ping_2.wav": {
     "md5Checksum": "a9cad2b710e4c0efc104be4eed375d80",
     "size_kb": 829.6
-  },
-  "component_assets/progress_path/progress_path_segment_grey_100.svg": {
-    "md5Checksum": "8021d29430ad2f9831e6a745ece25041",
-    "size_kb": 0.8
   },
   "debug_asset_pack_1/test_image.png": {
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
@@ -189,6 +189,10 @@
     "size_kb": 59.4
   },
   "ios/icon-only.png": {
+    "md5Checksum": "9208cfd52115c72b7ce0046d1ae8adbb",
+    "size_kb": 128.1
+  },
+  "ios/icon.png": {
     "md5Checksum": "9208cfd52115c72b7ce0046d1ae8adbb",
     "size_kb": 128.1
   },
