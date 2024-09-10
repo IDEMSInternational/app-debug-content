@@ -88,7 +88,7 @@
           "name": "toggle_bar_1",
           "parameter_list": {
             "position": "right",
-            "style": "in_button"
+            "variant": "in_button"
           },
           "_nested_name": "button_10.toggle_bar_1"
         }
@@ -97,13 +97,34 @@
       "_nested_name": "button_10"
     },
     {
+      "type": "button",
+      "value": "Icon and toggle",
+      "parameter_list": {
+        "style": "card",
+        "icon": "images/icons/school_blue.svg"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_1",
+          "parameter_list": {
+            "position": "right",
+            "variant": "in_button ios"
+          },
+          "_nested_name": "button_12.toggle_bar_1"
+        }
+      ],
+      "name": "button_12",
+      "_nested_name": "button_12"
+    },
+    {
       "type": "title",
       "value": "Button card-portrait",
       "_translations": {
         "value": {}
       },
-      "name": "title_12",
-      "_nested_name": "title_12"
+      "name": "title_14",
+      "_nested_name": "title_14"
     },
     {
       "type": "button",
@@ -121,11 +142,11 @@
             "icon_true_asset": "images/icons/heart_blue.svg",
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
-          "_nested_name": "button_13.toggle_bar_2"
+          "_nested_name": "button_15.toggle_bar_2"
         }
       ],
-      "name": "button_13",
-      "_nested_name": "button_13"
+      "name": "button_15",
+      "_nested_name": "button_15"
     },
     {
       "type": "title",
@@ -133,8 +154,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_15",
-      "_nested_name": "title_15"
+      "name": "title_17",
+      "_nested_name": "title_17"
     },
     {
       "type": "toggle_bar",
@@ -151,8 +172,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_17",
-      "_nested_name": "title_17"
+      "name": "title_19",
+      "_nested_name": "title_19"
     },
     {
       "type": "text",
@@ -160,14 +181,13 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_18",
-      "_nested_name": "text_18"
+      "name": "text_20",
+      "_nested_name": "text_20"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_6",
       "parameter_list": {
-        "show_tick_and_cross": "true",
         "show_icons": "true",
         "variant": "android"
       },
@@ -177,7 +197,6 @@
       "type": "toggle_bar",
       "name": "toggle_7",
       "parameter_list": {
-        "show_tick_and_cross": "false",
         "show_icons": "false",
         "variant": "android"
       },
@@ -189,14 +208,13 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_21",
-      "_nested_name": "text_21"
+      "name": "text_23",
+      "_nested_name": "text_23"
     },
     {
       "type": "toggle_bar",
       "name": "toggle_8",
       "parameter_list": {
-        "show_tick_and_cross": "true",
         "show_icons": "true",
         "variant": "ios"
       },
@@ -206,7 +224,6 @@
       "type": "toggle_bar",
       "name": "toggle_9",
       "parameter_list": {
-        "show_tick_and_cross": "false",
         "show_icons": "false",
         "variant": "ios"
       },
@@ -218,8 +235,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_24",
-      "_nested_name": "title_24"
+      "name": "title_26",
+      "_nested_name": "title_26"
     },
     {
       "type": "toggle_bar",

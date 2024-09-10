@@ -12,7 +12,9 @@
       "property": "sum_Z",
       "scale_max": 2000000,
       "scale_min": 0,
-      "opacity": 0.5,
+      "scale_fill": "#e7e1ef, #c994c7, #dd1c77",
+      "scale_title": "Total Population",
+      "opacity": 0.8,
       "visible_default": true
     },
     {
@@ -25,6 +27,7 @@
       "scale_max": 400,
       "scale_min": 0,
       "scale_fill": "#380645, #298680, yellow",
+      "scale_title": "Population Density (units)",
       "visible_default": true
     },
     {

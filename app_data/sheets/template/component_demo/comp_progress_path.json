@@ -1,0 +1,381 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_progress_path",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "in_progress_icon",
+      "value": "images/icons/in_progress.svg",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "in_progress_icon"
+    },
+    {
+      "name": "completed_icon",
+      "value": "images/icons/tick_white.svg",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "completed_icon"
+    },
+    {
+      "name": "highlighted_text",
+      "value": "Active",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "highlighted_text"
+    },
+    {
+      "name": "progress_units_name",
+      "value": "sections",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "progress_units_name"
+    },
+    {
+      "type": "title",
+      "value": "Variant: \"wavy\" (default)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "progress_path",
+      "rows": [
+        {
+          "type": "items",
+          "value": "@data.task_cards_data",
+          "rows": [
+            {
+              "type": "task_card",
+              "parameter_list": {
+                "variant": "circle",
+                "task_group_id": "@item.id",
+                "task_group_data": "@item.task_group_data",
+                "completed_field": "@item.completed_field",
+                "title": "@item.title",
+                "image": "@item.image",
+                "in_progress_icon": "@local.in_progress_icon",
+                "completed_icon": "@local.completed_icon",
+                "highlighted_text": "@local.highlighted_text",
+                "progress_units_name": "@local.progress_units_name"
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "go_to",
+                  "args": [
+                    "home_screen"
+                  ],
+                  "_raw": "click | go_to: home_screen",
+                  "_cleaned": "click | go_to: home_screen"
+                }
+              ],
+              "name": "task_card_1",
+              "_nested_name": "progress_path_7.items_1.task_card_1",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "task_group_id": [
+                    {
+                      "fullExpression": "@item.id",
+                      "matchedExpression": "@item.id",
+                      "type": "item",
+                      "fieldName": "id"
+                    }
+                  ],
+                  "task_group_data": [
+                    {
+                      "fullExpression": "@item.task_group_data",
+                      "matchedExpression": "@item.task_group_data",
+                      "type": "item",
+                      "fieldName": "task_group_data"
+                    }
+                  ],
+                  "completed_field": [
+                    {
+                      "fullExpression": "@item.completed_field",
+                      "matchedExpression": "@item.completed_field",
+                      "type": "item",
+                      "fieldName": "completed_field"
+                    }
+                  ],
+                  "title": [
+                    {
+                      "fullExpression": "@item.title",
+                      "matchedExpression": "@item.title",
+                      "type": "item",
+                      "fieldName": "title"
+                    }
+                  ],
+                  "image": [
+                    {
+                      "fullExpression": "@item.image",
+                      "matchedExpression": "@item.image",
+                      "type": "item",
+                      "fieldName": "image"
+                    }
+                  ],
+                  "in_progress_icon": [
+                    {
+                      "fullExpression": "@local.in_progress_icon",
+                      "matchedExpression": "@local.in_progress_icon",
+                      "type": "local",
+                      "fieldName": "in_progress_icon"
+                    }
+                  ],
+                  "completed_icon": [
+                    {
+                      "fullExpression": "@local.completed_icon",
+                      "matchedExpression": "@local.completed_icon",
+                      "type": "local",
+                      "fieldName": "completed_icon"
+                    }
+                  ],
+                  "highlighted_text": [
+                    {
+                      "fullExpression": "@local.highlighted_text",
+                      "matchedExpression": "@local.highlighted_text",
+                      "type": "local",
+                      "fieldName": "highlighted_text"
+                    }
+                  ],
+                  "progress_units_name": [
+                    {
+                      "fullExpression": "@local.progress_units_name",
+                      "matchedExpression": "@local.progress_units_name",
+                      "type": "local",
+                      "fieldName": "progress_units_name"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "parameter_list.task_group_id"
+                ],
+                "@item.task_group_data": [
+                  "parameter_list.task_group_data"
+                ],
+                "@item.completed_field": [
+                  "parameter_list.completed_field"
+                ],
+                "@item.title": [
+                  "parameter_list.title"
+                ],
+                "@item.image": [
+                  "parameter_list.image"
+                ],
+                "@local.in_progress_icon": [
+                  "parameter_list.in_progress_icon"
+                ],
+                "@local.completed_icon": [
+                  "parameter_list.completed_icon"
+                ],
+                "@local.highlighted_text": [
+                  "parameter_list.highlighted_text"
+                ],
+                "@local.progress_units_name": [
+                  "parameter_list.progress_units_name"
+                ]
+              }
+            }
+          ],
+          "name": "items_1",
+          "_nested_name": "progress_path_7.items_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.task_cards_data",
+                "matchedExpression": "@data.task_cards_data",
+                "type": "data",
+                "fieldName": "task_cards_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.task_cards_data": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "progress_path_7",
+      "_nested_name": "progress_path_7"
+    },
+    {
+      "type": "title",
+      "value": "Variant: \"basic\"",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_9",
+      "_nested_name": "title_9"
+    },
+    {
+      "type": "progress_path",
+      "parameter_list": {
+        "variant": "basic"
+      },
+      "rows": [
+        {
+          "type": "items",
+          "value": "@data.task_cards_data",
+          "rows": [
+            {
+              "type": "task_card",
+              "parameter_list": {
+                "variant": "circle",
+                "task_group_id": "@item.id",
+                "task_group_data": "@item.task_group_data",
+                "completed_field": "@item.completed_field",
+                "title": "@item.title",
+                "image": "@item.image",
+                "in_progress_icon": "@local.in_progress_icon",
+                "completed_icon": "@local.completed_icon",
+                "highlighted_text": "@local.highlighted_text",
+                "progress_units_name": "@local.progress_units_name"
+              },
+              "name": "task_card_1",
+              "_nested_name": "progress_path_10.items_1.task_card_1",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "task_group_id": [
+                    {
+                      "fullExpression": "@item.id",
+                      "matchedExpression": "@item.id",
+                      "type": "item",
+                      "fieldName": "id"
+                    }
+                  ],
+                  "task_group_data": [
+                    {
+                      "fullExpression": "@item.task_group_data",
+                      "matchedExpression": "@item.task_group_data",
+                      "type": "item",
+                      "fieldName": "task_group_data"
+                    }
+                  ],
+                  "completed_field": [
+                    {
+                      "fullExpression": "@item.completed_field",
+                      "matchedExpression": "@item.completed_field",
+                      "type": "item",
+                      "fieldName": "completed_field"
+                    }
+                  ],
+                  "title": [
+                    {
+                      "fullExpression": "@item.title",
+                      "matchedExpression": "@item.title",
+                      "type": "item",
+                      "fieldName": "title"
+                    }
+                  ],
+                  "image": [
+                    {
+                      "fullExpression": "@item.image",
+                      "matchedExpression": "@item.image",
+                      "type": "item",
+                      "fieldName": "image"
+                    }
+                  ],
+                  "in_progress_icon": [
+                    {
+                      "fullExpression": "@local.in_progress_icon",
+                      "matchedExpression": "@local.in_progress_icon",
+                      "type": "local",
+                      "fieldName": "in_progress_icon"
+                    }
+                  ],
+                  "completed_icon": [
+                    {
+                      "fullExpression": "@local.completed_icon",
+                      "matchedExpression": "@local.completed_icon",
+                      "type": "local",
+                      "fieldName": "completed_icon"
+                    }
+                  ],
+                  "highlighted_text": [
+                    {
+                      "fullExpression": "@local.highlighted_text",
+                      "matchedExpression": "@local.highlighted_text",
+                      "type": "local",
+                      "fieldName": "highlighted_text"
+                    }
+                  ],
+                  "progress_units_name": [
+                    {
+                      "fullExpression": "@local.progress_units_name",
+                      "matchedExpression": "@local.progress_units_name",
+                      "type": "local",
+                      "fieldName": "progress_units_name"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "parameter_list.task_group_id"
+                ],
+                "@item.task_group_data": [
+                  "parameter_list.task_group_data"
+                ],
+                "@item.completed_field": [
+                  "parameter_list.completed_field"
+                ],
+                "@item.title": [
+                  "parameter_list.title"
+                ],
+                "@item.image": [
+                  "parameter_list.image"
+                ],
+                "@local.in_progress_icon": [
+                  "parameter_list.in_progress_icon"
+                ],
+                "@local.completed_icon": [
+                  "parameter_list.completed_icon"
+                ],
+                "@local.highlighted_text": [
+                  "parameter_list.highlighted_text"
+                ],
+                "@local.progress_units_name": [
+                  "parameter_list.progress_units_name"
+                ]
+              }
+            }
+          ],
+          "name": "items_1",
+          "_nested_name": "progress_path_10.items_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.task_cards_data",
+                "matchedExpression": "@data.task_cards_data",
+                "type": "data",
+                "fieldName": "task_cards_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.task_cards_data": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "progress_path_10",
+      "_nested_name": "progress_path_10"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+}
