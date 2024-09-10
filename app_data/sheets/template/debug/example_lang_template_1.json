@@ -52,18 +52,18 @@
       "value": [
         {
           "name": "happy",
-          "image": "plh_images/stickers/faces/happier.svg",
-          "image_checked": "plh_images/stickers/faces/happier.svg"
+          "image": "images/faces/happy.svg",
+          "image_checked": "images/faces/happy.svg"
         },
         {
           "name": "ok",
-          "image": "plh_images/stickers/faces/neutral.svg",
-          "image_checked": "plh_images/stickers/faces/neutral.svg"
+          "image": "images/faces/neutral.svg",
+          "image_checked": "images/faces/neutral.svg"
         },
         {
           "name": "sad",
-          "image": "plh_images/stickers/faces/sadder.svg",
-          "image_checked": "plh_images/stickers/faces/sadder.svg"
+          "image": "images/faces/sad.svg",
+          "image_checked": "images/faces/sad.svg"
         }
       ],
       "type": "set_variable",
@@ -972,7 +972,7 @@
     {
       "type": "image",
       "name": "image_translated",
-      "value": "quality_assurance/test_image.png",
+      "value": "images/test_image.png",
       "_translations": {
         "value": {}
       },
@@ -995,7 +995,7 @@
     {
       "type": "image",
       "name": "image_translation_missing",
-      "value": "quality_assurance/test_image_no_translations.png",
+      "value": "images/test_image_no_translations.png",
       "_translations": {
         "value": {}
       },
@@ -1017,7 +1017,7 @@
     },
     {
       "name": "audio_src",
-      "value": "quality_assurance/test_audio.mp3",
+      "value": "audio/test_audio.mp3",
       "_translations": {
         "value": {}
       },

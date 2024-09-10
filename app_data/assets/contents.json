@@ -21,6 +21,15 @@
   },
   "audio/test_audio.mp3": {
     "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
+    "overrides": {
+      "theme_default": {
+        "es_sp": {
+          "filePath": "es_sp/audio/test_audio.mp3",
+          "md5Checksum": "a53e8b35c7985e051a7b9b9742879b03",
+          "size_kb": 33.6
+        }
+      }
+    },
     "size_kb": 43.4
   },
   "audio/timer/ping_1.wav": {
@@ -78,6 +87,18 @@
   "images/example/jasper_1.jpg": {
     "md5Checksum": "8ed1f2802b37a7a11382ebabcdd9dfd0",
     "size_kb": 527.3
+  },
+  "images/faces/happy.svg": {
+    "md5Checksum": "0950af49455cc3a0f45fdb58a7729f69",
+    "size_kb": 0.6
+  },
+  "images/faces/neutral.svg": {
+    "md5Checksum": "8f4bc93561fb7114ea8802a04a220fb8",
+    "size_kb": 0.5
+  },
+  "images/faces/sad.svg": {
+    "md5Checksum": "44f0f4aee98a30f31d445b169922f940",
+    "size_kb": 1.1
   },
   "images/icons/ask_question_white.svg": {
     "md5Checksum": "d52f43b75aacee5da8c3e33a76ecf3b7",
@@ -171,6 +192,11 @@
     "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
     "overrides": {
       "theme_default": {
+        "es_sp": {
+          "filePath": "es_sp/images/test_image.png",
+          "md5Checksum": "f44069fc2c1d641dae929631c17fdbec",
+          "size_kb": 1.8
+        },
         "tz_sw": {
           "filePath": "tz_sw/images/test_image.png",
           "md5Checksum": "d851eef52c8d12fdbf0497210961a407",
@@ -179,6 +205,10 @@
       }
     },
     "size_kb": 2
+  },
+  "images/test_image_no_translations.png": {
+    "md5Checksum": "f759667d7abedfa5aea2ac742e831ce3",
+    "size_kb": 2.8
   },
   "ios/icon-background.png": {
     "md5Checksum": "eb62fccb250452852f36a12e0c54c7ac",
@@ -219,9 +249,5 @@
   "odk_form.json": {
     "md5Checksum": "8b89a6b050f58c0fa0de2d0ff0bd2f32",
     "size_kb": 8
-  },
-  "test_image_no_translations.png": {
-    "md5Checksum": "f759667d7abedfa5aea2ac742e831ce3",
-    "size_kb": 2.8
   }
 }
