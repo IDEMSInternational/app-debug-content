@@ -91,7 +91,6 @@
       "_translations": {
         "value": {}
       },
-      "style_list": true,
       "type": "set_variable",
       "_nested_name": "task_groups"
     },
@@ -101,7 +100,6 @@
       "_translations": {
         "value": {}
       },
-      "style_list": true,
       "type": "set_variable",
       "_nested_name": "task_group_data"
     },
@@ -111,7 +109,6 @@
       "_translations": {
         "value": {}
       },
-      "style_list": true,
       "type": "set_variable",
       "_nested_name": "task_group_completed_field",
       "_dynamicFields": {
@@ -145,7 +142,6 @@
       "_translations": {
         "value": {}
       },
-      "style_list": true,
       "type": "set_variable",
       "_nested_name": "task_completed_field",
       "_dynamicFields": {
