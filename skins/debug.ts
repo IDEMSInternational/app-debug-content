@@ -8,11 +8,21 @@ const debug: IAppSkin = {
     },
     APP_HEADER_DEFAULTS:
     {
-      title: "Debug Skin"
+      title: "Debug Skin",
+      collapse:true,
+      colour:'secondary',
+      variant:'compact'
+    },
+    APP_FOOTER_DEFAULTS:{
+      templateName:''
     },
     APP_ROUTE_DEFAULTS: {
       home_route: "/template/test"
+    },
+    APP_THEMES:{
+      defaultThemeName:'professional'
     }
+    
   },
 };
 export default debug;

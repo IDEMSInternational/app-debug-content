@@ -53,7 +53,6 @@ config.ios.app_name = "Debug App"
 
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
-config.app_config.APP_HEADER_DEFAULTS.collapse = true;
 config.app_config.APP_HEADER_DEFAULTS.colour = "primary";
 config.app_config.APP_HEADER_DEFAULTS.variant = "default";
 
