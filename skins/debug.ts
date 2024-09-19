@@ -9,7 +9,7 @@ const debug: IAppSkin = {
     APP_HEADER_DEFAULTS:
     {
       title: "Debug Skin",
-      collapse:true,
+      collapse: false,
       colour:'secondary',
       variant:'compact'
     },
