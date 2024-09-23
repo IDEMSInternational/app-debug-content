@@ -48,6 +48,13 @@ config.android = {
   icon_asset_background_path: "./app_data/assets/android/icon-background.png",
 }
 
+config.analytics={
+  enabled:true,
+  provider:'matomo',
+  siteId: 2,
+  endpoint: "https://apps-server.idems.international/analytics"
+}
+
 config.ios.app_id = "international.idems.debug-app"
 config.ios.app_name = "Debug App"
 
