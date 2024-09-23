@@ -1,0 +1,15 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "task_lists",
+  "status": "released",
+  "data_list_name": "task_lists",
+  "rows": [
+    {
+      "id": "task_list_1"
+    },
+    {
+      "id": "task_list_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx"
+}

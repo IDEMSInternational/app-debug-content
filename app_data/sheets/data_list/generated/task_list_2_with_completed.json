@@ -1,0 +1,27 @@
+{
+  "flow_name": "task_list_2_with_completed",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "task_1",
+      "colour": "blue",
+      "completed": false
+    },
+    {
+      "id": "task_2",
+      "colour": "green",
+      "completed": false
+    },
+    {
+      "id": "task_3",
+      "colour": "green",
+      "completed": false
+    },
+    {
+      "id": "task_4",
+      "colour": "green",
+      "completed": false
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "template_actions": [
+    {
+      "type": "app_update",
+      "count": 3
+    },
+    {
+      "type": "asset_pack",
+      "count": 2
+    },
+    {
+      "type": "auth",
+      "count": 2
+    },
+    {
+      "type": "download_assets",
+      "count": 1
+    },
+    {
+      "type": "emit: @local.child_local_variable",
+      "count": 1
+    },
+    {
+      "type": "emit: completed",
+      "count": 36
+    },
+    {
+      "type": "emit: force_reload",
+      "count": 22
+    },
+    {
+      "type": "emit: force_reprocess",
+      "count": 20
+    },
+    {
+      "type": "emit: force_restart",
+      "count": 2
+    },
+    {
+      "type": "emit: server_sync",
+      "count": 6
+    },
+    {
+      "type": "emit: set_language",
+      "count": 3
+    },
+    {
+      "type": "emit: set_skin",
+      "count": 1
+    },
+    {
+      "type": "emit: set_theme",
+      "count": 2
+    },
+    {
+      "type": "emit: translator_mode_toggle",
+      "count": 1
+    },
+    {
+      "type": "emit: uncompleted",
+      "count": 12
+    },
+    {
+      "type": "feedback",
+      "count": 9
+    },
+    {
+      "type": "go_to",
+      "count": 49
+    },
+    {
+      "type": "go_to_url",
+      "count": 4
+    },
+    {
+      "type": "invalid_action",
+      "count": 1
+    },
+    {
+      "type": "open_external",
+      "count": 2
+    },
+    {
+      "type": "pop_up",
+      "count": 32
+    },
+    {
+      "type": "process_template",
+      "count": 2
+    },
+    {
+      "type": "reset_app",
+      "count": 1
+    },
+    {
+      "type": "save_to_device",
+      "count": 2
+    },
+    {
+      "type": "set_field",
+      "count": 97
+    },
+    {
+      "type": "set_items",
+      "count": 2
+    },
+    {
+      "type": "set_local",
+      "count": 17
+    },
+    {
+      "type": "share",
+      "count": 6
+    },
+    {
+      "type": "start_tour",
+      "count": 2
+    },
+    {
+      "type": "task",
+      "count": 2
+    },
+    {
+      "type": "track_event",
+      "count": 2
+    },
+    {
+      "type": "user",
+      "count": 1
+    }
+  ],
+  "template_components": [
+    {
+      "type": "accordion",
+      "count": 4
+    },
+    {
+      "type": "advanced_dashed_box",
+      "count": 2
+    },
+    {
+      "type": "animated_section",
+      "count": 5
+    },
+    {
+      "type": "animated_slides",
+      "count": 1
+    },
+    {
+      "type": "audio",
+      "count": 11
+    },
+    {
+      "type": "button",
+      "count": 181
+    },
+    {
+      "type": "calendar",
+      "count": 1
+    },
+    {
+      "type": "carousel",
+      "count": 7
+    },
+    {
+      "type": "colour_palette",
+      "count": 1
+    },
+    {
+      "type": "combo_box",
+      "count": 45
+    },
+    {
+      "type": "dashed_box",
+      "count": 23
+    },
+    {
+      "type": "data_items",
+      "count": 36
+    },
+    {
+      "type": "debug_toggle",
+      "count": 1
+    },
+    {
+      "type": "declare_field_default",
+      "count": 1
+    },
+    {
+      "type": "declare_global_constant",
+      "count": 1
+    },
+    {
+      "type": "display_grid",
+      "count": 3
+    },
+    {
+      "type": "display_group",
+      "count": 107
+    },
+    {
+      "type": "drawer",
+      "count": 1
+    },
+    {
+      "type": "form",
+      "count": 8
+    },
+    {
+      "type": "html",
+      "count": 4
+    },
+    {
+      "type": "image",
+      "count": 25
+    },
+    {
+      "type": "items",
+      "count": 45
+    },
+    {
+      "type": "latex",
+      "count": 1
+    },
+    {
+      "type": "lottie_animation",
+      "count": 11
+    },
+    {
+      "type": "map",
+      "count": 1
+    },
+    {
+      "type": "nav_group",
+      "count": 6
+    },
+    {
+      "type": "navigation_bar",
+      "count": 6
+    },
+    {
+      "type": "number_selector",
+      "count": 9
+    },
+    {
+      "type": "odk_form",
+      "count": 1
+    },
+    {
+      "type": "parent_point_box",
+      "count": 12
+    },
+    {
+      "type": "parent_point_counter",
+      "count": 4
+    },
+    {
+      "type": "pdf",
+      "count": 3
+    },
+    {
+      "type": "progress_path",
+      "count": 2
+    },
+    {
+      "type": "qr_code",
+      "count": 1
+    },
+    {
+      "type": "radio_button_grid",
+      "count": 9
+    },
+    {
+      "type": "radio_group",
+      "count": 73
+    },
+    {
+      "type": "radio_group_grid",
+      "count": 5
+    },
+    {
+      "type": "round_button",
+      "count": 15
+    },
+    {
+      "type": "select_text",
+      "count": 5
+    },
+    {
+      "type": "set_default",
+      "count": 1
+    },
+    {
+      "type": "set_field",
+      "count": 26
+    },
+    {
+      "type": "set_variable",
+      "count": 557
+    },
+    {
+      "type": "simple_checkbox",
+      "count": 26
+    },
+    {
+      "type": "slider",
+      "count": 32
+    },
+    {
+      "type": "square_button",
+      "count": 8
+    },
+    {
+      "type": "subtitle",
+      "count": 45
+    },
+    {
+      "type": "task_card",
+      "count": 15
+    },
+    {
+      "type": "task_progress_bar",
+      "count": 2
+    },
+    {
+      "type": "template",
+      "count": 116
+    },
+    {
+      "type": "text",
+      "count": 651
+    },
+    {
+      "type": "text_area",
+      "count": 5
+    },
+    {
+      "type": "text_box",
+      "count": 30
+    },
+    {
+      "type": "text_bubble",
+      "count": 6
+    },
+    {
+      "type": "tile_component",
+      "count": 22
+    },
+    {
+      "type": "timer",
+      "count": 21
+    },
+    {
+      "type": "title",
+      "count": 357
+    },
+    {
+      "type": "toggle_bar",
+      "count": 35
+    },
+    {
+      "type": "update_action_list",
+      "count": 2
+    },
+    {
+      "type": "video",
+      "count": 3
+    },
+    {
+      "type": "workshops_accordion",
+      "count": 2
+    }
+  ],
+  "flows_by_type": [
+    {
+      "type": "data_list",
+      "subtype": null,
+      "total": 25
+    },
+    {
+      "type": "data_list",
+      "subtype": "campaign_rows_debug",
+      "total": 6
+    },
+    {
+      "type": "data_list",
+      "subtype": "campaign_schedule",
+      "total": 1
+    },
+    {
+      "type": "data_list",
+      "subtype": "component_demo",
+      "total": 6
+    },
+    {
+      "type": "data_list",
+      "subtype": "debug",
+      "total": 20
+    },
+    {
+      "type": "data_list",
+      "subtype": "debug_lifecycle_actions",
+      "total": 1
+    },
+    {
+      "type": "data_list",
+      "subtype": "example_generator",
+      "total": 3
+    },
+    {
+      "type": "data_list",
+      "subtype": "example_list_override",
+      "total": 2
+    },
+    {
+      "type": "data_list",
+      "subtype": "example_pipe",
+      "total": 5
+    },
+    {
+      "type": "data_list",
+      "subtype": "example_sheet_defaults",
+      "total": 1
+    },
+    {
+      "type": "data_list",
+      "subtype": "generated",
+      "total": 21
+    },
+    {
+      "type": "data_pipe",
+      "subtype": "debug",
+      "total": 1
+    },
+    {
+      "type": "data_pipe",
+      "subtype": "example_pipe",
+      "total": 6
+    },
+    {
+      "type": "data_pipe",
+      "subtype": "generated",
+      "total": 6
+    },
+    {
+      "type": "generator",
+      "subtype": null,
+      "total": 2
+    },
+    {
+      "type": "generator",
+      "subtype": "example_generator",
+      "total": 2
+    },
+    {
+      "type": "global",
+      "subtype": null,
+      "total": 2
+    },
+    {
+      "type": "global",
+      "subtype": "debug",
+      "total": 9
+    },
+    {
+      "type": "template",
+      "subtype": null,
+      "total": 46
+    },
+    {
+      "type": "template",
+      "subtype": "component_demo",
+      "total": 48
+    },
+    {
+      "type": "template",
+      "subtype": "debug",
+      "total": 307
+    },
+    {
+      "type": "template",
+      "subtype": "example_generator",
+      "total": 2
+    },
+    {
+      "type": "template",
+      "subtype": "example_hardcoded",
+      "total": 1
+    },
+    {
+      "type": "template",
+      "subtype": "example_list_override",
+      "total": 1
+    },
+    {
+      "type": "template",
+      "subtype": "example_sheet_defaults",
+      "total": 1
+    },
+    {
+      "type": "tour",
+      "subtype": "debug",
+      "total": 4
+    }
+  ]
+}

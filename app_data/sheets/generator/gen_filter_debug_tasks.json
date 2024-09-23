@@ -1,0 +1,30 @@
+{
+  "flow_type": "generator",
+  "flow_name": "gen_filter_debug_tasks",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "colours",
+    "output_flow_name": "filter_{@gen.id}_tasks",
+    "output_flow_type": "data_pipe",
+    "output_flow_subtype": "generated"
+  },
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "colour == \"@gen.id\""
+      ],
+      "input_source": "task_list_1",
+      "output_target": "task_list_1_{@gen.id}"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "colour == \"@gen.id\""
+      ],
+      "input_source": "task_list_2",
+      "output_target": "task_list_2_{@gen.id}"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx"
+}
