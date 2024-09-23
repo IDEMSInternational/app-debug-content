@@ -1,0 +1,23 @@
+{
+  "flow_name": "filter_blue_tasks",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "colour == \"blue\""
+      ],
+      "input_source": "task_list_1",
+      "output_target": "task_list_1_blue"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "colour == \"blue\""
+      ],
+      "input_source": "task_list_2",
+      "output_target": "task_list_2_blue"
+    }
+  ]
+}

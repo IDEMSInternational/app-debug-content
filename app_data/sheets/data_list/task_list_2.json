@@ -1,0 +1,25 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "task_list_2",
+  "status": "released",
+  "data_list_name": "task_list_2",
+  "rows": [
+    {
+      "id": "task_1",
+      "colour": "blue"
+    },
+    {
+      "id": "task_2",
+      "colour": "green"
+    },
+    {
+      "id": "task_3",
+      "colour": "green"
+    },
+    {
+      "id": "task_4",
+      "colour": "green"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx"
+}

@@ -1,0 +1,15 @@
+{
+  "flow_name": "task_list_2_add_completed",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ],
+      "input_source": "task_list_2",
+      "output_target": "task_list_2_with_completed"
+    }
+  ]
+}
