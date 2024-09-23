@@ -9,11 +9,11 @@
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 36 |
-| emit: force_reload | 22 |
+| emit: force_reload | 23 |
 | emit: force_reprocess | 20 |
 | emit: force_restart | 2 |
 | emit: server_sync | 6 |
-| emit: set_language | 3 |
+| emit: set_language | 4 |
 | emit: set_skin | 1 |
 | emit: set_theme | 2 |
 | emit: translator_mode_toggle | 1 |
@@ -55,11 +55,11 @@
 | declare_field_default | 1 |
 | declare_global_constant | 1 |
 | display_grid | 3 |
-| display_group | 107 |
+| display_group | 111 |
 | drawer | 1 |
 | form | 8 |
 | html | 4 |
-| image | 25 |
+| image | 22 |
 | items | 45 |
 | latex | 1 |
 | lottie_animation | 11 |
@@ -74,13 +74,13 @@
 | progress_path | 2 |
 | qr_code | 1 |
 | radio_button_grid | 9 |
-| radio_group | 73 |
+| radio_group | 74 |
 | radio_group_grid | 5 |
 | round_button | 15 |
 | select_text | 5 |
 | set_default | 1 |
 | set_field | 26 |
-| set_variable | 557 |
+| set_variable | 558 |
 | simple_checkbox | 26 |
 | slider | 32 |
 | square_button | 8 |
@@ -91,10 +91,10 @@
 | text | 651 |
 | text_area | 5 |
 | text_box | 30 |
-| text_bubble | 6 |
+| text_bubble | 7 |
 | tile_component | 22 |
 | timer | 21 |
-| title | 357 |
+| title | 355 |
 | toggle_bar | 35 |
 | update_action_list | 2 |
 | video | 3 |
@@ -113,11 +113,11 @@
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
 | data_list | example_sheet_defaults | 1 |
-| data_list | generated | 21 |
+| data_list | generated | 13 |
 | data_pipe | debug | 1 |
 | data_pipe | example_pipe | 6 |
-| data_pipe | generated | 6 |
-| generator |  | 2 |
+| data_pipe | generated | 2 |
+| generator |  | 1 |
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
