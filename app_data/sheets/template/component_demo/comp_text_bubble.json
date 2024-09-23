@@ -109,6 +109,20 @@
       },
       "name": "text_bubble_8",
       "_nested_name": "text_bubble_8"
+    },
+    {
+      "type": "text_bubble",
+      "value": "Text bubble containing some Markdown **bold** and *italics* text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/avatar_1.png",
+        "speaker_position": "right",
+        "variant": "primary"
+      },
+      "name": "text_bubble_9",
+      "_nested_name": "text_bubble_9"
     }
   ],
   "_xlsxPath": "component_sheets/component_text_bubble.xlsx"

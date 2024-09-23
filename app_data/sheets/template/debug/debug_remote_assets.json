@@ -44,58 +44,213 @@
       "_nested_name": "button_1"
     },
     {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset replaces core equivalent:",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_4.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/test_image.png",
+          "_translations": {
+            "value": {}
+          },
+          "name": "image_2",
+          "_nested_name": "display_group_4.image_2"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset has no core equivalent:",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_6.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/test_remote_only.png",
+          "_translations": {
+            "value": {}
+          },
+          "name": "image_2",
+          "_nested_name": "display_group_6.image_2"
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset adds an override:",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_8.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/country_flag.png",
+          "_translations": {
+            "value": {}
+          },
+          "name": "image_2",
+          "_nested_name": "display_group_8.image_2"
+        }
+      ],
+      "name": "display_group_8",
+      "_nested_name": "display_group_8"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset replaces core and override:",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_10.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/country_flag_bw.png",
+          "_translations": {
+            "value": {}
+          },
+          "name": "image_2",
+          "_nested_name": "display_group_10.image_2"
+        }
+      ],
+      "name": "display_group_10",
+      "_nested_name": "display_group_10"
+    },
+    {
       "type": "title",
-      "value": "Remote asset with core equivalent/fallback",
+      "value": "Select language:",
       "_translations": {
         "value": {}
       },
-      "name": "title_4",
-      "_nested_name": "title_4"
+      "name": "title_12",
+      "_nested_name": "title_12"
     },
     {
-      "type": "image",
-      "value": "debug_asset_pack_1/test_image.png",
-      "_translations": {
-        "value": {}
-      },
-      "name": "image_5",
-      "_nested_name": "image_5"
+      "name": "language_list",
+      "value": [
+        {
+          "name": "gb_en",
+          "text": "English"
+        },
+        {
+          "name": "es_sp",
+          "text": "Español"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "language_list"
     },
     {
-      "type": "title",
-      "value": "Remote asset without core equivalent/fallback",
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
       "_translations": {
         "value": {}
       },
-      "name": "title_6",
-      "_nested_name": "title_6"
-    },
-    {
-      "type": "image",
-      "value": "debug_asset_pack_1/test_remote_only.png",
-      "_translations": {
-        "value": {}
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "set_language",
+            "this.value"
+          ],
+          "_raw": "changed | emit: set_language: @local.language_select",
+          "_cleaned": "changed | emit: set_language: @local.language_select"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "changed | emit: force_reload",
+          "_cleaned": "changed | emit: force_reload"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.language_list"
       },
-      "name": "image_7",
-      "_nested_name": "image_7"
-    },
-    {
-      "type": "title",
-      "value": "Remote asset with override",
-      "_translations": {
-        "value": {}
+      "_nested_name": "language_select",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_language",
+            "matchedExpression": "@fields._app_language",
+            "type": "fields",
+            "fieldName": "_app_language"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.language_list",
+              "matchedExpression": "@local.language_list",
+              "type": "local",
+              "fieldName": "language_list"
+            }
+          ]
+        }
       },
-      "name": "title_8",
-      "_nested_name": "title_8"
-    },
-    {
-      "type": "image",
-      "value": "debug_asset_pack_1/spanish_flag.png",
-      "_translations": {
-        "value": {}
-      },
-      "name": "image_9",
-      "_nested_name": "image_9"
+      "_dynamicDependencies": {
+        "@fields._app_language": [
+          "value"
+        ],
+        "@local.language_select": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.language_list": [
+          "parameter_list.answer_list"
+        ]
+      }
     },
     {
       "type": "button",
