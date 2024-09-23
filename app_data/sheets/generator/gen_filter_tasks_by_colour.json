@@ -1,6 +1,6 @@
 {
   "flow_type": "generator",
-  "flow_name": "gen_filter_debug_tasks",
+  "flow_name": "gen_filter_tasks_by_colour",
   "status": "released",
   "parameter_list": {
     "input_data_list": "colours",
