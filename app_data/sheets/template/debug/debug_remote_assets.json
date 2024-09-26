@@ -52,15 +52,21 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "width:140px"
+          ],
           "name": "text_1",
           "_nested_name": "display_group_4.text_1"
         },
         {
           "type": "image",
-          "value": "debug_asset_pack_1/test_image.png",
+          "value": "debug_asset_pack_1/image_1.png",
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "max-width:140px"
+          ],
           "name": "image_2",
           "_nested_name": "display_group_4.image_2"
         }
@@ -77,15 +83,21 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "width:140px"
+          ],
           "name": "text_1",
           "_nested_name": "display_group_6.text_1"
         },
         {
           "type": "image",
-          "value": "debug_asset_pack_1/test_remote_only.png",
+          "value": "debug_asset_pack_1/image_2.png",
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "max-width:140px"
+          ],
           "name": "image_2",
           "_nested_name": "display_group_6.image_2"
         }
@@ -102,15 +114,21 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "width:140px"
+          ],
           "name": "text_1",
           "_nested_name": "display_group_8.text_1"
         },
         {
           "type": "image",
-          "value": "debug_asset_pack_1/country_flag.png",
+          "value": "debug_asset_pack_1/image_3.png",
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "max-width:140px"
+          ],
           "name": "image_2",
           "_nested_name": "display_group_8.image_2"
         }
@@ -127,15 +145,21 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "width:140px"
+          ],
           "name": "text_1",
           "_nested_name": "display_group_10.text_1"
         },
         {
           "type": "image",
-          "value": "debug_asset_pack_1/country_flag_bw.png",
+          "value": "debug_asset_pack_1/image_4.png",
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "max-width:140px"
+          ],
           "name": "image_2",
           "_nested_name": "display_group_10.image_2"
         }

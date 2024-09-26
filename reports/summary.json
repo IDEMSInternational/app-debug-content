@@ -1,134 +1,4 @@
 {
-  "template_actions": [
-    {
-      "type": "app_update",
-      "count": 3
-    },
-    {
-      "type": "asset_pack",
-      "count": 2
-    },
-    {
-      "type": "auth",
-      "count": 2
-    },
-    {
-      "type": "download_assets",
-      "count": 1
-    },
-    {
-      "type": "emit: @local.child_local_variable",
-      "count": 1
-    },
-    {
-      "type": "emit: completed",
-      "count": 36
-    },
-    {
-      "type": "emit: force_reload",
-      "count": 23
-    },
-    {
-      "type": "emit: force_reprocess",
-      "count": 20
-    },
-    {
-      "type": "emit: force_restart",
-      "count": 2
-    },
-    {
-      "type": "emit: server_sync",
-      "count": 6
-    },
-    {
-      "type": "emit: set_language",
-      "count": 4
-    },
-    {
-      "type": "emit: set_skin",
-      "count": 1
-    },
-    {
-      "type": "emit: set_theme",
-      "count": 2
-    },
-    {
-      "type": "emit: translator_mode_toggle",
-      "count": 1
-    },
-    {
-      "type": "emit: uncompleted",
-      "count": 12
-    },
-    {
-      "type": "feedback",
-      "count": 9
-    },
-    {
-      "type": "go_to",
-      "count": 49
-    },
-    {
-      "type": "go_to_url",
-      "count": 4
-    },
-    {
-      "type": "invalid_action",
-      "count": 1
-    },
-    {
-      "type": "open_external",
-      "count": 2
-    },
-    {
-      "type": "pop_up",
-      "count": 32
-    },
-    {
-      "type": "process_template",
-      "count": 2
-    },
-    {
-      "type": "reset_app",
-      "count": 1
-    },
-    {
-      "type": "save_to_device",
-      "count": 2
-    },
-    {
-      "type": "set_field",
-      "count": 97
-    },
-    {
-      "type": "set_items",
-      "count": 2
-    },
-    {
-      "type": "set_local",
-      "count": 17
-    },
-    {
-      "type": "share",
-      "count": 6
-    },
-    {
-      "type": "start_tour",
-      "count": 2
-    },
-    {
-      "type": "task",
-      "count": 2
-    },
-    {
-      "type": "track_event",
-      "count": 2
-    },
-    {
-      "type": "user",
-      "count": 1
-    }
-  ],
   "template_components": [
     {
       "type": "accordion",
@@ -369,6 +239,866 @@
     {
       "type": "workshops_accordion",
       "count": 2
+    }
+  ],
+  "template_actions": [
+    {
+      "type": "app_update",
+      "count": 3
+    },
+    {
+      "type": "asset_pack",
+      "count": 2
+    },
+    {
+      "type": "auth",
+      "count": 2
+    },
+    {
+      "type": "download_assets",
+      "count": 1
+    },
+    {
+      "type": "emit: @local.child_local_variable",
+      "count": 1
+    },
+    {
+      "type": "emit: completed",
+      "count": 36
+    },
+    {
+      "type": "emit: force_reload",
+      "count": 23
+    },
+    {
+      "type": "emit: force_reprocess",
+      "count": 20
+    },
+    {
+      "type": "emit: force_restart",
+      "count": 2
+    },
+    {
+      "type": "emit: server_sync",
+      "count": 6
+    },
+    {
+      "type": "emit: set_language",
+      "count": 4
+    },
+    {
+      "type": "emit: set_skin",
+      "count": 1
+    },
+    {
+      "type": "emit: set_theme",
+      "count": 2
+    },
+    {
+      "type": "emit: translator_mode_toggle",
+      "count": 1
+    },
+    {
+      "type": "emit: uncompleted",
+      "count": 12
+    },
+    {
+      "type": "feedback",
+      "count": 9
+    },
+    {
+      "type": "go_to",
+      "count": 49
+    },
+    {
+      "type": "go_to_url",
+      "count": 4
+    },
+    {
+      "type": "invalid_action",
+      "count": 1
+    },
+    {
+      "type": "open_external",
+      "count": 2
+    },
+    {
+      "type": "pop_up",
+      "count": 32
+    },
+    {
+      "type": "process_template",
+      "count": 2
+    },
+    {
+      "type": "reset_app",
+      "count": 1
+    },
+    {
+      "type": "save_to_device",
+      "count": 2
+    },
+    {
+      "type": "set_field",
+      "count": 97
+    },
+    {
+      "type": "set_items",
+      "count": 2
+    },
+    {
+      "type": "set_local",
+      "count": 17
+    },
+    {
+      "type": "share",
+      "count": 6
+    },
+    {
+      "type": "start_tour",
+      "count": 2
+    },
+    {
+      "type": "task",
+      "count": 2
+    },
+    {
+      "type": "track_event",
+      "count": 2
+    },
+    {
+      "type": "user",
+      "count": 1
+    }
+  ],
+  "assets_size": [
+    {
+      "assets": "total",
+      "KB": "15759 KB",
+      "MB": "15.8 MB"
+    },
+    {
+      "assets": "unused",
+      "KB": "2012 KB",
+      "MB": "2 MB"
+    }
+  ],
+  "assets_unused": [
+    {
+      "path": "android/icon-background.png",
+      "size_kb": 3.9
+    },
+    {
+      "path": "android/icon-foreground.png",
+      "size_kb": 59.4
+    },
+    {
+      "path": "android/icon-only.png",
+      "size_kb": 128.1
+    },
+    {
+      "path": "android/icon.png",
+      "size_kb": 128.1
+    },
+    {
+      "path": "android/splash.png",
+      "size_kb": 147.4
+    },
+    {
+      "path": "audio/timer/ping_1.wav",
+      "size_kb": 196.4
+    },
+    {
+      "path": "audio/timer/ping_2.wav",
+      "size_kb": 829.6
+    },
+    {
+      "path": "debug_theme_language.png",
+      "size_kb": 21.9
+    },
+    {
+      "path": "dummy.pdf",
+      "size_kb": 13
+    },
+    {
+      "path": "images/icons/ask_question_white.svg",
+      "size_kb": 1.4
+    },
+    {
+      "path": "images/icons/audio/play-back-sharp.svg",
+      "size_kb": 0.1
+    },
+    {
+      "path": "images/icons/favicon.svg",
+      "size_kb": 2.1
+    },
+    {
+      "path": "ios/icon-background.png",
+      "size_kb": 3.9
+    },
+    {
+      "path": "ios/icon-foreground.png",
+      "size_kb": 59.4
+    },
+    {
+      "path": "ios/icon-only.png",
+      "size_kb": 128.1
+    },
+    {
+      "path": "ios/icon.png",
+      "size_kb": 128.1
+    },
+    {
+      "path": "ios/splash.png",
+      "size_kb": 147.4
+    },
+    {
+      "path": "map_data/centroids.json",
+      "size_kb": 13.4
+    }
+  ],
+  "assets_missing": [
+    {
+      "path": "/plh_images/icons/heart.svg",
+      "count": 33,
+      "missing": true
+    },
+    {
+      "path": "/plh_images/icons/tick.svg",
+      "count": 20,
+      "missing": true
+    },
+    {
+      "path": "debug_asset_pack_1/image_2.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "i18n/flags/gb.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "i18n/flags/tz.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "images/examples/jasper_1.jpg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "images/workshops/w_1on1/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_audio/sample.mp3",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_audio/timer/bell_1.mp3",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_audio/timer/ping_1.wav",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_audio/timer/ping_2.wav",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/characters/group/talk_together.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/habits/habit_relax.svg",
+      "count": 3,
+      "missing": true
+    },
+    {
+      "path": "plh_images/habits/habit_treat_yourself.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/home_page/home_page_parent_points.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/home_page/home_page_workshops.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/bell_white.svg",
+      "count": 3,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/book_white.svg",
+      "count": 3,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/house_white.svg",
+      "count": 3,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/in_progress.svg",
+      "count": 7,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/letter_outline.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/parent_child_white.svg",
+      "count": 3,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/play.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/play_outline_white.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/play_white.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/question_mark.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/star.svg",
+      "count": 18,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/star_circle.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/tick.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/icons/tick_white.svg",
+      "count": 7,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/end_violence_against_children.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/erc.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/gcrf.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/generali_human_safety_net.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/lego_foundation.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/newton_fund.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/oak_foundation.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/ukri.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/unicef.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/funders/university_of_oxford.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/partners/cwb.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/partners/idems.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/partners/plh.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/partners/unicef.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/logos/partners/who.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/modules/mod_instruct/thought_experiment/te_1.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/modules/mod_instruct/thought_experiment/te_2.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/modules/mod_instruct/thought_experiment/te_3.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/stickers/faces/happier.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/stickers/faces/happiest.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/stickers/faces/happy.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/stickers/faces_yellow/happier.svg",
+      "count": 4,
+      "missing": true
+    },
+    {
+      "path": "plh_images/stickers/faces_yellow/happiest.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/stickers/faces_yellow/happy.svg",
+      "count": 4,
+      "missing": true
+    },
+    {
+      "path": "plh_images/survey/workshop_setup/teens.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshop_modes/group/relax.svg",
+      "count": 3,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshop_modes/individual/relax.svg",
+      "count": 4,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshop_modes/individual/wave.svg",
+      "count": 11,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/options/individual.svg",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/options/together.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/solve/read_1/slide_1.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_1on1/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_celebrate/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_consequence/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_crisis/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_instruct/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_money/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_praise/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_rules/read_1/slide_4.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_rules/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_safe/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_self_care/tools.svg",
+      "count": 5,
+      "missing": true
+    },
+    {
+      "path": "plh_images/workshops/w_stress/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_breathe.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_consequence.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_money.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_praise_teen.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_praise_yourself.json",
+      "count": 3,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_relax.json",
+      "count": 2,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_safe.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_spend_time.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/habits/habit_treat_yourself.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/parent_centre.json",
+      "count": 6,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/parent_points.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/relax1.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_lottie/weekly_workshops.json",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "quality_assurance/debug_theme_language.png",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "quality_assurance/test_audio.mp3",
+      "count": 6,
+      "missing": true
+    }
+  ],
+  "asset_summary": [
+    {
+      "path": "audio/test_audio.mp3",
+      "count": 4,
+      "size_kb": 43.4
+    },
+    {
+      "path": "debug_asset_pack_1/image_1.png",
+      "count": 1,
+      "size_kb": 8.8
+    },
+    {
+      "path": "debug_asset_pack_1/image_3.png",
+      "count": 1,
+      "size_kb": 9.6
+    },
+    {
+      "path": "debug_asset_pack_1/image_4.png",
+      "count": 1,
+      "size_kb": 11.9
+    },
+    {
+      "path": "example_pdf.pdf",
+      "count": 3,
+      "size_kb": 139.4
+    },
+    {
+      "path": "images/avatar_1.png",
+      "count": 7,
+      "size_kb": 60.5
+    },
+    {
+      "path": "images/example/110-536x354.jpg",
+      "count": 1,
+      "size_kb": 39.1
+    },
+    {
+      "path": "images/example/344-536x354.jpg",
+      "count": 1,
+      "size_kb": 13.9
+    },
+    {
+      "path": "images/example/408-536x354.jpg",
+      "count": 1,
+      "size_kb": 23.2
+    },
+    {
+      "path": "images/example/423-536x354.jpg",
+      "count": 1,
+      "size_kb": 30.3
+    },
+    {
+      "path": "images/example/circular.png",
+      "count": 5,
+      "size_kb": 15.7
+    },
+    {
+      "path": "images/example/jasper_1.jpg",
+      "count": 22,
+      "size_kb": 527.3
+    },
+    {
+      "path": "images/faces/happy.svg",
+      "count": 2,
+      "size_kb": 0.6
+    },
+    {
+      "path": "images/faces/neutral.svg",
+      "count": 2,
+      "size_kb": 0.5
+    },
+    {
+      "path": "images/faces/sad.svg",
+      "count": 2,
+      "size_kb": 1.1
+    },
+    {
+      "path": "images/icons/audio/pause-sharp.svg",
+      "count": 1,
+      "size_kb": 0.1
+    },
+    {
+      "path": "images/icons/audio/play-forward-sharp.svg",
+      "count": 1,
+      "size_kb": 0.1
+    },
+    {
+      "path": "images/icons/audio/play-sharp.svg",
+      "count": 1,
+      "size_kb": 0.1
+    },
+    {
+      "path": "images/icons/book_white.svg",
+      "count": 9,
+      "size_kb": 0.7
+    },
+    {
+      "path": "images/icons/globe_blue.svg",
+      "count": 10,
+      "size_kb": 3.9
+    },
+    {
+      "path": "images/icons/heart_blue.svg",
+      "count": 21,
+      "size_kb": 1.4
+    },
+    {
+      "path": "images/icons/heart_outline.svg",
+      "count": 4,
+      "size_kb": 0.6
+    },
+    {
+      "path": "images/icons/house_white.svg",
+      "count": 1,
+      "size_kb": 0.6
+    },
+    {
+      "path": "images/icons/in_progress.svg",
+      "count": 8,
+      "size_kb": 1.1
+    },
+    {
+      "path": "images/icons/leaf_blue.svg",
+      "count": 8,
+      "size_kb": 1.7
+    },
+    {
+      "path": "images/icons/reader_blue.svg",
+      "count": 6,
+      "size_kb": 1.4
+    },
+    {
+      "path": "images/icons/school_blue.svg",
+      "count": 8,
+      "size_kb": 1.6
+    },
+    {
+      "path": "images/icons/star_white.svg",
+      "count": 1,
+      "size_kb": 1
+    },
+    {
+      "path": "images/icons/tick.svg",
+      "count": 5,
+      "size_kb": 0.3
+    },
+    {
+      "path": "images/icons/tick_white.svg",
+      "count": 14,
+      "size_kb": 0.3
+    },
+    {
+      "path": "images/square_1.svg",
+      "count": 1,
+      "size_kb": 0.7
+    },
+    {
+      "path": "images/square_2.svg",
+      "count": 1,
+      "size_kb": 1
+    },
+    {
+      "path": "images/square_3.svg",
+      "count": 1,
+      "size_kb": 1
+    },
+    {
+      "path": "images/square_4.svg",
+      "count": 1,
+      "size_kb": 1
+    },
+    {
+      "path": "images/test_image.png",
+      "count": 2,
+      "size_kb": 2
+    },
+    {
+      "path": "images/test_image_no_translations.png",
+      "count": 1,
+      "size_kb": 2.8
+    },
+    {
+      "path": "lottie/blob_play_ball.json",
+      "count": 3,
+      "size_kb": 69.4
+    },
+    {
+      "path": "map_data/ke.json",
+      "count": 1,
+      "size_kb": 10219.4
+    },
+    {
+      "path": "map_data/population_and_boundaries.json",
+      "count": 2,
+      "size_kb": 4513.3
+    },
+    {
+      "path": "odk_form.json",
+      "count": 1,
+      "size_kb": 8
     }
   ],
   "flows_by_type": [
