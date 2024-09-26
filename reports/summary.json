@@ -1158,31 +1158,6 @@
       "total": 13
     },
     {
-      "type": "data_pipe",
-      "subtype": "debug",
-      "total": 1
-    },
-    {
-      "type": "data_pipe",
-      "subtype": "example_pipe",
-      "total": 6
-    },
-    {
-      "type": "data_pipe",
-      "subtype": "generated",
-      "total": 2
-    },
-    {
-      "type": "generator",
-      "subtype": null,
-      "total": 1
-    },
-    {
-      "type": "generator",
-      "subtype": "example_generator",
-      "total": 2
-    },
-    {
       "type": "global",
       "subtype": null,
       "total": 2

@@ -302,11 +302,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | example_pipe | 5 |
 | data_list | example_sheet_defaults | 1 |
 | data_list | generated | 13 |
-| data_pipe | debug | 1 |
-| data_pipe | example_pipe | 6 |
-| data_pipe | generated | 2 |
-| generator |  | 1 |
-| generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
 | template |  | 46 |
