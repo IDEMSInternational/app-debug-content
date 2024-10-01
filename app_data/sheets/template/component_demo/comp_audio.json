@@ -5,15 +5,6 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "title",
-      "value": "Audio player with default icons:",
-      "_translations": {
-        "value": {}
-      },
-      "name": "title_2",
-      "_nested_name": "title_2"
-    },
-    {
       "type": "audio",
       "name": "audio_1",
       "value": "audio/test_audio.mp3",
@@ -21,16 +12,37 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "parameter_list": {
-        "range_bar_disabled": "true",
-        "time_to_rewind": "5",
-        "title": "Audio player #1"
-      },
       "_nested_name": "audio_1"
     },
     {
+      "type": "audio",
+      "name": "audio_2",
+      "value": "audio/test_audio.mp3",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "info_click",
+          "action_id": "pop_up",
+          "args": [
+            "example_transcript"
+          ],
+          "_raw": "info_click | pop_up: example_transcript",
+          "_cleaned": "info_click | pop_up: example_transcript"
+        }
+      ],
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "compact",
+        "title": "Audio player compact 2",
+        "show_info_button": "true"
+      },
+      "_nested_name": "audio_2"
+    },
+    {
       "type": "title",
-      "value": "Audio player with custom icons:",
+      "value": "variant: large",
       "_translations": {
         "value": {}
       },
@@ -38,20 +50,55 @@
       "_nested_name": "title_4"
     },
     {
+      "type": "title",
+      "value": "Audio player with default icons:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
       "type": "audio",
-      "name": "audio_2",
+      "name": "audio_3",
+      "value": "audio/test_audio.mp3",
+      "_translations": {
+        "value": {}
+      },
       "exclude_from_translation": true,
       "parameter_list": {
+        "variant": "large",
+        "range_bar_disabled": "true",
+        "time_to_skip": "0.5",
+        "title": "Audio player #1"
+      },
+      "_nested_name": "audio_3"
+    },
+    {
+      "type": "title",
+      "value": "Audio player with custom icons:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "audio",
+      "name": "audio_4",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "large",
         "src": "audio/test_audio.mp3",
         "range_bar_disabled": "false",
-        "time_to_rewind": "3",
+        "time_to_skip": "0.2",
         "title": "Audio player #2",
-        "help_text": "Example",
-        "play_icon_asset": "images/icons/audio/play-sharp.svg",
+        "show_info_button": "true",
+        "info_icon_asset": "images/icons/globe_blue.svg\nplay_icon_asset",
         "pause_icon_asset": "images/icons/audio/pause-sharp.svg",
         "forward_icon_asset": "images/icons/audio/play-forward-sharp.svg"
       },
-      "_nested_name": "audio_2"
+      "_nested_name": "audio_4"
     }
   ],
   "_xlsxPath": "component_sheets/component_audio.xlsx"
