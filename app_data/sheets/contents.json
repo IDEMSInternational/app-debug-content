@@ -954,6 +954,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_carousel.xlsx"
     },
+    "example_transcript": {
+      "flow_type": "template",
+      "flow_name": "example_transcript",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_audio.xlsx"
+    },
     "feat_animated_slides": {
       "flow_type": "template",
       "flow_name": "feat_animated_slides",
