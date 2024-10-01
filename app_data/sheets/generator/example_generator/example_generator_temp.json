@@ -34,5 +34,17 @@
       ]
     }
   ],
-  "_xlsxPath": "example_sheets/example_generator.xlsx"
+  "_xlsxPath": "example_sheets/example_generator.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_generator_output_w_1",
+      "flow_subtype": "example_generator",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "example_generator_output_w_2",
+      "flow_subtype": "example_generator",
+      "flow_type": "template"
+    }
+  ]
 }

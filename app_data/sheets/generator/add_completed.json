@@ -18,5 +18,17 @@
       "output_target": "{@gen.id}_with_completed"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx"
+  "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "task_list_1_add_completed",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    },
+    {
+      "flow_name": "task_list_2_add_completed",
+      "flow_subtype": "generated",
+      "flow_type": "data_pipe"
+    }
+  ]
 }

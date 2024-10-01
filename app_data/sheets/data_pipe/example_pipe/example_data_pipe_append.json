@@ -16,5 +16,12 @@
       "output_target": "example_pipe_appended"
     }
   ],
-  "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+  "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_pipe_appended",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
 }

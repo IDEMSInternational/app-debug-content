@@ -22,5 +22,17 @@
       "output_target": "example_data_pipe_concat_1_nested"
     }
   ],
-  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_data_pipe_concat_1_3",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    {
+      "flow_name": "example_data_pipe_concat_1_nested",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
 }

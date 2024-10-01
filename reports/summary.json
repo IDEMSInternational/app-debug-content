@@ -18,7 +18,7 @@
     },
     {
       "type": "audio",
-      "count": 13
+      "count": 14
     },
     {
       "type": "button",
@@ -198,7 +198,7 @@
     },
     {
       "type": "text",
-      "count": 652
+      "count": 656
     },
     {
       "type": "text_area",
@@ -312,7 +312,7 @@
     },
     {
       "type": "go_to_url",
-      "count": 4
+      "count": 5
     },
     {
       "type": "invalid_action",
@@ -426,10 +426,6 @@
     },
     {
       "path": "images/icons/audio/play-back-sharp.svg",
-      "size_kb": 0.1
-    },
-    {
-      "path": "images/icons/audio/play-sharp.svg",
       "size_kb": 0.1
     },
     {
@@ -990,13 +986,18 @@
       "size_kb": 0.1
     },
     {
+      "path": "images/icons/audio/play-sharp.svg",
+      "count": 2,
+      "size_kb": 0.1
+    },
+    {
       "path": "images/icons/book_white.svg",
       "count": 9,
       "size_kb": 0.7
     },
     {
       "path": "images/icons/globe_blue.svg",
-      "count": 10,
+      "count": 11,
       "size_kb": 3.9
     },
     {

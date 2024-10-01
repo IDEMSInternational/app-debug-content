@@ -11,5 +11,12 @@
       "input_source": "task_list_2",
       "output_target": "task_list_2_with_completed"
     }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "task_list_2_with_completed",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
   ]
 }

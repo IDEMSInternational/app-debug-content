@@ -23,5 +23,17 @@
       "text": "@gen.title item 3"
     }
   ],
-  "_xlsxPath": "example_sheets/example_generator.xlsx"
+  "_xlsxPath": "example_sheets/example_generator.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_w_1_data",
+      "flow_subtype": "example_generator",
+      "flow_type": "data_list"
+    },
+    {
+      "flow_name": "example_w_2_data",
+      "flow_subtype": "example_generator",
+      "flow_type": "data_list"
+    }
+  ]
 }

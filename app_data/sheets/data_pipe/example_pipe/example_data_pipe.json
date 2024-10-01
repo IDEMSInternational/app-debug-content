@@ -44,5 +44,17 @@
       "output_target": "example_pipe_uncompleted"
     }
   ],
-  "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+  "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_pipe_completed",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    {
+      "flow_name": "example_pipe_uncompleted",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
 }

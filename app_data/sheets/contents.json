@@ -497,53 +497,136 @@
       "flow_type": "data_pipe",
       "flow_name": "debug_data_pipe",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "debug_filtered",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "example_data_pipe": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe",
-      "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "example_pipe_completed",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        },
+        {
+          "flow_name": "example_pipe_uncompleted",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "example_data_pipe_append": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_append",
-      "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "example_pipe_appended",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "example_data_pipe_concat": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_concat",
-      "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "double_example_data_pipe_list",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "example_data_pipe_concat_2": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_concat_2",
-      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "example_data_pipe_concat_1_3",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        },
+        {
+          "flow_name": "example_data_pipe_concat_1_nested",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "example_data_pipe_map": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_map",
-      "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "prefix_example_data_pipe_list",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "example_data_pipe_sort": {
       "flow_type": "data_pipe",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_sort",
-      "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "example_pipe_sort_order",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        },
+        {
+          "flow_name": "example_pipe_sort_desc",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        },
+        {
+          "flow_name": "example_pipe_sort_alpha",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "task_list_1_add_completed": {
       "flow_name": "task_list_1_add_completed",
       "flow_subtype": "generated",
-      "flow_type": "data_pipe"
+      "flow_type": "data_pipe",
+      "_output_flows": [
+        {
+          "flow_name": "task_list_1_with_completed",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "task_list_2_add_completed": {
       "flow_name": "task_list_2_add_completed",
       "flow_subtype": "generated",
-      "flow_type": "data_pipe"
+      "flow_type": "data_pipe",
+      "_output_flows": [
+        {
+          "flow_name": "task_list_2_with_completed",
+          "flow_subtype": "generated",
+          "flow_type": "data_list"
+        }
+      ]
     }
   },
   "generator": {
@@ -556,7 +639,19 @@
         "output_flow_type": "data_pipe",
         "output_flow_subtype": "generated"
       },
-      "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx"
+      "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "task_list_1_add_completed",
+          "flow_subtype": "generated",
+          "flow_type": "data_pipe"
+        },
+        {
+          "flow_name": "task_list_2_add_completed",
+          "flow_subtype": "generated",
+          "flow_type": "data_pipe"
+        }
+      ]
     },
     "example_generator_data": {
       "flow_type": "generator",
@@ -568,7 +663,19 @@
         "output_flow_type": "data_list",
         "output_flow_subtype": "example_generator"
       },
-      "_xlsxPath": "example_sheets/example_generator.xlsx"
+      "_xlsxPath": "example_sheets/example_generator.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "example_w_1_data",
+          "flow_subtype": "example_generator",
+          "flow_type": "data_list"
+        },
+        {
+          "flow_name": "example_w_2_data",
+          "flow_subtype": "example_generator",
+          "flow_type": "data_list"
+        }
+      ]
     },
     "example_generator_temp": {
       "flow_type": "generator",
@@ -581,7 +688,19 @@
         "output_flow_subtype": "example_generator"
       },
       "comments": "The only required parameter is input_data_list\nAll others will override default values",
-      "_xlsxPath": "example_sheets/example_generator.xlsx"
+      "_xlsxPath": "example_sheets/example_generator.xlsx",
+      "_output_flows": [
+        {
+          "flow_name": "example_generator_output_w_1",
+          "flow_subtype": "example_generator",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "example_generator_output_w_2",
+          "flow_subtype": "example_generator",
+          "flow_type": "template"
+        }
+      ]
     }
   },
   "global": {
