@@ -7,7 +7,7 @@
 | advanced_dashed_box | 2 |
 | animated_section | 5 |
 | animated_slides | 1 |
-| audio | 13 |
+| audio | 14 |
 | button | 181 |
 | calendar | 1 |
 | carousel | 7 |
@@ -52,7 +52,7 @@
 | task_card | 15 |
 | task_progress_bar | 2 |
 | template | 116 |
-| text | 652 |
+| text | 656 |
 | text_area | 5 |
 | text_box | 30 |
 | text_bubble | 7 |
@@ -87,7 +87,7 @@
 | emit: uncompleted | 12 |
 | feedback | 9 |
 | go_to | 49 |
-| go_to_url | 4 |
+| go_to_url | 5 |
 | invalid_action | 1 |
 | open_external | 2 |
 | pop_up | 33 |
@@ -131,7 +131,6 @@ Assets that appear in app-data but do not have references within sheets
 | dummy.pdf | 13 |
 | images/icons/ask_question_white.svg | 1.4 |
 | images/icons/audio/play-back-sharp.svg | 0.1 |
-| images/icons/audio/play-sharp.svg | 0.1 |
 | images/icons/favicon.svg | 2.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
@@ -262,8 +261,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/sad.svg | 1.1 | 2 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
+| images/icons/audio/play-sharp.svg | 0.1 | 2 |
 | images/icons/book_white.svg | 0.7 | 9 |
-| images/icons/globe_blue.svg | 3.9 | 10 |
+| images/icons/globe_blue.svg | 3.9 | 11 |
 | images/icons/heart_blue.svg | 1.4 | 21 |
 | images/icons/heart_outline.svg | 0.6 | 4 |
 | images/icons/house_white.svg | 0.6 | 1 |
@@ -302,11 +302,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | example_pipe | 5 |
 | data_list | example_sheet_defaults | 1 |
 | data_list | generated | 13 |
-| data_pipe | debug | 1 |
-| data_pipe | example_pipe | 6 |
-| data_pipe | generated | 2 |
-| generator |  | 1 |
-| generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
 | template |  | 46 |
