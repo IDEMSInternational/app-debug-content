@@ -1,3 +1,265 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a54de085aadad433208e23c4cf2f3b304fe00cd2dc759b02408c4ee65ed63543
-size 7390
+{
+  "flow_type": "template",
+  "flow_name": "debug_answer_list_partial",
+  "status": "released",
+  "rows": [
+    {
+      "name": "answer_data",
+      "value": "@data.debug_answer_list_partial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "answer_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_answer_list_partial",
+            "matchedExpression": "@data.debug_answer_list_partial",
+            "type": "data",
+            "fieldName": "debug_answer_list_partial"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_answer_list_partial": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "answer_list",
+      "value": [
+        {
+          "name": "option_1",
+          "text": "@local.answer_data.option_1.text",
+          "image": "@local.answer_data.option_1.image_asset"
+        },
+        {
+          "name": "option_2",
+          "text": "@local.answer_data.option_2.text",
+          "image": "@local.answer_data.option_2.image_asset"
+        },
+        {
+          "name": "option_3",
+          "text": "@local.answer_data.option_3.text",
+          "image": "@local.answer_data.option_3.image_asset"
+        },
+        {
+          "name": "option_4",
+          "text": "@local.answer_data.option_4.text",
+          "image": "@local.answer_data.option_4.image_asset"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list",
+      "_dynamicFields": {
+        "value": {
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@local.answer_data.option_1.text",
+                "matchedExpression": "@local.answer_data.option_1.text",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ],
+            "image": [
+              {
+                "fullExpression": "@local.answer_data.option_1.image_asset",
+                "matchedExpression": "@local.answer_data.option_1.image_asset",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@local.answer_data.option_2.text",
+                "matchedExpression": "@local.answer_data.option_2.text",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ],
+            "image": [
+              {
+                "fullExpression": "@local.answer_data.option_2.image_asset",
+                "matchedExpression": "@local.answer_data.option_2.image_asset",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ]
+          },
+          "2": {
+            "text": [
+              {
+                "fullExpression": "@local.answer_data.option_3.text",
+                "matchedExpression": "@local.answer_data.option_3.text",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ],
+            "image": [
+              {
+                "fullExpression": "@local.answer_data.option_3.image_asset",
+                "matchedExpression": "@local.answer_data.option_3.image_asset",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ]
+          },
+          "3": {
+            "text": [
+              {
+                "fullExpression": "@local.answer_data.option_4.text",
+                "matchedExpression": "@local.answer_data.option_4.text",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ],
+            "image": [
+              {
+                "fullExpression": "@local.answer_data.option_4.image_asset",
+                "matchedExpression": "@local.answer_data.option_4.image_asset",
+                "type": "local",
+                "fieldName": "answer_data"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_data.option_1.text": [
+          "value.0.text"
+        ],
+        "@local.answer_data.option_1.image_asset": [
+          "value.0.image"
+        ],
+        "@local.answer_data.option_2.text": [
+          "value.1.text"
+        ],
+        "@local.answer_data.option_2.image_asset": [
+          "value.1.image"
+        ],
+        "@local.answer_data.option_3.text": [
+          "value.2.text"
+        ],
+        "@local.answer_data.option_3.image_asset": [
+          "value.2.image"
+        ],
+        "@local.answer_data.option_4.text": [
+          "value.3.text"
+        ],
+        "@local.answer_data.option_4.image_asset": [
+          "value.3.image"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "combo_box",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "input_allowed": "false",
+        "answer_list": "@local.answer_list",
+        "placeholder": "Tap and choose"
+      },
+      "name": "combo_box_5",
+      "_nested_name": "combo_box_5",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "radio_button_grid",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "radio_button_grid",
+      "parameter_list": {
+        "answer_list": "@local.answer_list"
+      },
+      "name": "radio_button_grid_7",
+      "_nested_name": "radio_button_grid_7",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "radio_group",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "radio_group",
+      "parameter_list": {
+        "answer_list": "@local.answer_list"
+      },
+      "name": "radio_group_9",
+      "_nested_name": "radio_group_9",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_answer_list.xlsx"
+}

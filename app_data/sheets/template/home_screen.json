@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:220f6da29241af8cad4cc10473cfdd50528f55005be0db4ea857b12df585a698
-size 309
+{
+  "flow_type": "template",
+  "flow_name": "home_screen",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_home",
+      "value": "Home",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_home"
+    }
+  ],
+  "_xlsxPath": "navigation.xlsx"
+}

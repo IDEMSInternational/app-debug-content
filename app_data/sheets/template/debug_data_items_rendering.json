@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53a6ddddd7f7fc28cfb3f839112f67d750067d7320d0e3eda77f9ddbde7152dc
-size 1148
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_rendering",
+  "status": "released",
+  "rows": [
+    {
+      "name": "iterator",
+      "value": "debug_data_items_rendering_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "iterator"
+    },
+    {
+      "type": "data_items",
+      "value": "@local.iterator",
+      "rows": [
+        {
+          "type": "template",
+          "name": "debug_data_items_r_template",
+          "value": "debug_data_items_r_template",
+          "rows": [],
+          "_nested_name": "data_items_3.debug_data_items_r_template"
+        }
+      ],
+      "name": "data_items_3",
+      "_nested_name": "data_items_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.iterator",
+            "matchedExpression": "@local.iterator",
+            "type": "local",
+            "fieldName": "iterator"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.iterator": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+}

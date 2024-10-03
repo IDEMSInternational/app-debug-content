@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5511bf8d865ac21396155c19991d68380a0868204ce2f894ae543269c9b050b9
-size 768
+{
+  "flow_type": "template",
+  "flow_name": "debug_example",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Thats dangerous",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "text",
+      "value": "Example text.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text",
+      "value": "More text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "ok",
+      "_nested_name": "ok"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_example.xlsx"
+}

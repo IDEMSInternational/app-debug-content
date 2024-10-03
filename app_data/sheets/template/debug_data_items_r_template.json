@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c98bfe34ce21f01268bed0ebdb3df5173b3fab1555d3053cffc7c392e18ee5e
-size 361
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_r_template",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Nested template",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+}

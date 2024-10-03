@@ -1,3 +1,83 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4843cdebcef1538e82556faeb78e5a4052266f4461d98575ab46001ff64b7181
-size 1977
+{
+  "flow_type": "template",
+  "flow_name": "doc_field",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Setting a field",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Value of doc_example_field: @field.doc_example_field",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of doc_example_field: @field.doc_example_field",
+            "matchedExpression": "@field.doc_example_field",
+            "type": "field",
+            "fieldName": "doc_example_field"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@field.doc_example_field": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Set field to true",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "doc_example_field",
+            true
+          ],
+          "_raw": "click | set_field: doc_example_field: true",
+          "_cleaned": "click | set_field: doc_example_field: true"
+        }
+      ],
+      "_nested_name": "button"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Set field to false",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "doc_example_field",
+            false
+          ],
+          "_raw": "click | set_field: doc_example_field: false",
+          "_cleaned": "click | set_field: doc_example_field: false"
+        }
+      ],
+      "_nested_name": "button"
+    }
+  ],
+  "_xlsxPath": "doc_sheets/doc_field.xlsx"
+}

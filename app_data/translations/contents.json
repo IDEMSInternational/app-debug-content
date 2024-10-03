@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f88c43b65b47c89b8941dccf353374cd4476e72122afb803837e7e4d0911f92
-size 114
+{
+  "en_rtl": {
+    "filename": "en_rtl/strings.json"
+  },
+  "es_sp": {
+    "filename": "es_sp/strings.json"
+  }
+}

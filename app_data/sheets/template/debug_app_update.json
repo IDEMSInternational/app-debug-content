@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01a4f1e5d7b72a88b7528612eb88c0ed197b334570e15d4e1efa7672c110dcb5
-size 1236
+{
+  "flow_type": "template",
+  "flow_name": "debug_app_update",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Debug app update feature",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Prompt update",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "app_update",
+          "args": [
+            "prompt"
+          ],
+          "_raw": "click | app_update: prompt",
+          "_cleaned": "click | app_update: prompt"
+        }
+      ],
+      "_nested_name": "button"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Force update",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "app_update",
+          "args": [
+            "force"
+          ],
+          "_raw": "click | app_update: force",
+          "_cleaned": "click | app_update: force"
+        }
+      ],
+      "_nested_name": "button"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_app_update.xlsx"
+}

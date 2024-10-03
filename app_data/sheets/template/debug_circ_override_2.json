@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b354865474454065937ce1ea4c9b54e0bb2332c51eb5c760f3c1aec6b2cd616a
-size 474
+{
+  "flow_type": "template",
+  "flow_name": "debug_circ_override_2",
+  "status": "released",
+  "override_target": "debug_circ_override_1",
+  "override_condition": true,
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Circular override 2",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_override.xlsx",
+  "_overrides": {
+    "debug_circ_override_1": true
+  }
+}

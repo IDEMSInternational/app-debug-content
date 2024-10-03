@@ -1,3 +1,191 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2bd0691f7559bb03346e7fcfebd69111fbf6ad6230bc12a27021021aad28ffdb
-size 5127
+{
+  "flow_type": "template",
+  "flow_name": "example_list_override",
+  "status": "released",
+  "flow_subtype": "example_list_override",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example List Override",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Use the toggle below to dynamically change the data_list",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text"
+    },
+    {
+      "type": "button",
+      "name": "set_default",
+      "value": "Set Default List",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "example_list_override_field",
+            "undefined"
+          ],
+          "_raw": "click | set_field : example_list_override_field : undefined",
+          "_cleaned": "click | set_field : example_list_override_field : undefined"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit : force_reload",
+          "_cleaned": "click | emit : force_reload"
+        }
+      ],
+      "exclude_from_translation": true,
+      "_nested_name": "set_default"
+    },
+    {
+      "type": "button",
+      "name": "set_list_1",
+      "value": "Set List 1",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "example_list_override_field",
+            "1"
+          ],
+          "_raw": "click | set_field : example_list_override_field : 1",
+          "_cleaned": "click | set_field : example_list_override_field : 1"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit : force_reload",
+          "_cleaned": "click | emit : force_reload"
+        }
+      ],
+      "exclude_from_translation": true,
+      "_nested_name": "set_list_1"
+    },
+    {
+      "type": "text",
+      "name": "selected_list",
+      "value": "Selected List: @fields.example_list_override_field",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "selected_list",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected List: @fields.example_list_override_field",
+            "matchedExpression": "@fields.example_list_override_field",
+            "type": "fields",
+            "fieldName": "example_list_override_field"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.example_list_override_field": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "Result",
+      "exclude_from_translation": true,
+      "_nested_name": "Result"
+    },
+    {
+      "type": "items",
+      "value": "@data.example_list_override_data",
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "type": "text",
+          "name": "result_text_@item.id",
+          "value": "@item.text",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "items_8.result_text_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "result_text_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "@item.text",
+                "matchedExpression": "@item.text",
+                "type": "item",
+                "fieldName": "text"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "items_8.result_text_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "items_8",
+      "_nested_name": "items_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.example_list_override_data",
+            "matchedExpression": "@data.example_list_override_data",
+            "type": "data",
+            "fieldName": "example_list_override_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.example_list_override_data": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+}

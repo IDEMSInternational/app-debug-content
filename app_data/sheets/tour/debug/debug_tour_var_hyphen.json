@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4301d851fcbac187ebda330353f554326e3b14fa158341c2e45ed9744b2a522a
-size 729
+{
+  "flow_type": "tour",
+  "flow_name": "debug_tour_var_hyphen",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "step",
+      "title": "@global.parent_app-based learning",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "<p>Does not work in gb_en</p>",
+      "route": "template/debug_var_hyphen"
+    },
+    {
+      "type": "step",
+      "title": "Your @global.parent_app Code",
+      "_translations": {
+        "title": {},
+        "message_text": {}
+      },
+      "message_text": "<p>Works in gb_en, not in za_af</p>",
+      "route": "template/debug_var_hyphen"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_global.xlsx"
+}

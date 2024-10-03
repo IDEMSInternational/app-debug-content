@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30a8c4b865765fc2e8bb22a10591f1a3908e867df14cb9dd8402f84f00413422
-size 653
+{
+  "flow_type": "template",
+  "flow_name": "debug_override_override",
+  "status": "released",
+  "override_target": "debug_override_default",
+  "override_condition": "@fields.debug_boolean",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Override title",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "template",
+      "name": "debug_override_default",
+      "value": "debug_override_default",
+      "is_override_target": true,
+      "rows": [],
+      "_nested_name": "debug_override_default"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_override.xlsx"
+}

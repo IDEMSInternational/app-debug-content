@@ -1,3 +1,129 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75e0edbba4442ec146a5923d8393fecdfef4384cf68361adfe5e82bc188abdb3
-size 3413
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_local",
+  "status": "released",
+  "rows": [
+    {
+      "name": "iterator",
+      "value": "debug_data_items_rendering_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "iterator"
+    },
+    {
+      "name": "local_var",
+      "value": "Some local variable",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "local_var"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Value of local_var: @local.local_var",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of local_var: @local.local_var",
+            "matchedExpression": "@local.local_var",
+            "type": "local",
+            "fieldName": "local_var"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.local_var": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "data_items",
+      "value": "@local.iterator",
+      "rows": [
+        {
+          "type": "text",
+          "name": "text_2",
+          "value": "Value of local_var: @local.local_var",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "data_items.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Value of local_var: @local.local_var",
+                "matchedExpression": "@local.local_var",
+                "type": "local",
+                "fieldName": "local_var"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.local_var": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "template",
+          "name": "debug_data_items_r_template",
+          "value": "debug_data_items_r_template",
+          "rows": [
+            {
+              "name": "title",
+              "value": "Value of local_var: @local.local_var",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "data_items.debug_data_items_r_template.title",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Value of local_var: @local.local_var",
+                    "matchedExpression": "@local.local_var",
+                    "type": "local",
+                    "fieldName": "local_var"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.local_var": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "data_items.debug_data_items_r_template"
+        }
+      ],
+      "_nested_name": "data_items",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.iterator",
+            "matchedExpression": "@local.iterator",
+            "type": "local",
+            "fieldName": "iterator"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.iterator": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
+}

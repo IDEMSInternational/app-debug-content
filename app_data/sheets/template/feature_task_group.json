@@ -1,3 +1,277 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61dfd2aa2d0e4ef6d00ef8674901271f1511dd900d3f0d66b150b1d29825bc1c
-size 9002
+{
+  "flow_type": "template",
+  "flow_name": "feature_task_group",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Feature: task group",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "task_groups_data",
+      "value": "feat_task_groups_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "task_groups_data"
+    },
+    {
+      "type": "carousel",
+      "parameter_list": {
+        "space_between": "6",
+        "task_group_data": "@local.task_groups_data"
+      },
+      "rows": [
+        {
+          "type": "items",
+          "value": "@data.@local.task_groups_data",
+          "rows": [
+            {
+              "type": "task_card",
+              "action_list": [
+                {
+                  "trigger": "completed",
+                  "action_id": "emit",
+                  "args": [
+                    "force_reload"
+                  ],
+                  "_raw": "completed | emit: force_reload",
+                  "_cleaned": "completed | emit: force_reload"
+                }
+              ],
+              "parameter_list": {
+                "task_group_id": "@item.id",
+                "task_group_data": "feat_task_group_@item.number",
+                "completed_field": "@item.completed_field",
+                "title": "@item.title",
+                "subtitle": "@item.description",
+                "image": "@item.image_asset",
+                "style": "portrait",
+                "in_progress_icon": "images/icons/in_progress.svg",
+                "completed_icon": "images/icons/tick_white.svg"
+              },
+              "name": "task_card_1",
+              "_nested_name": "carousel_4.items_1.task_card_1",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "task_group_id": [
+                    {
+                      "fullExpression": "@item.id",
+                      "matchedExpression": "@item.id",
+                      "type": "item",
+                      "fieldName": "id"
+                    }
+                  ],
+                  "task_group_data": [
+                    {
+                      "fullExpression": "feat_task_group_@item.number",
+                      "matchedExpression": "@item.number",
+                      "type": "item",
+                      "fieldName": "number"
+                    }
+                  ],
+                  "completed_field": [
+                    {
+                      "fullExpression": "@item.completed_field",
+                      "matchedExpression": "@item.completed_field",
+                      "type": "item",
+                      "fieldName": "completed_field"
+                    }
+                  ],
+                  "title": [
+                    {
+                      "fullExpression": "@item.title",
+                      "matchedExpression": "@item.title",
+                      "type": "item",
+                      "fieldName": "title"
+                    }
+                  ],
+                  "subtitle": [
+                    {
+                      "fullExpression": "@item.description",
+                      "matchedExpression": "@item.description",
+                      "type": "item",
+                      "fieldName": "description"
+                    }
+                  ],
+                  "image": [
+                    {
+                      "fullExpression": "@item.image_asset",
+                      "matchedExpression": "@item.image_asset",
+                      "type": "item",
+                      "fieldName": "image_asset"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "parameter_list.task_group_id"
+                ],
+                "@item.number": [
+                  "parameter_list.task_group_data"
+                ],
+                "@item.completed_field": [
+                  "parameter_list.completed_field"
+                ],
+                "@item.title": [
+                  "parameter_list.title"
+                ],
+                "@item.description": [
+                  "parameter_list.subtitle"
+                ],
+                "@item.image_asset": [
+                  "parameter_list.image"
+                ]
+              }
+            }
+          ],
+          "name": "items_1",
+          "_nested_name": "carousel_4.items_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.@local.task_groups_data",
+                "matchedExpression": "@local.task_groups_data",
+                "type": "local",
+                "fieldName": "task_groups_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.task_groups_data": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "carousel_4",
+      "_nested_name": "carousel_4",
+      "_dynamicFields": {
+        "parameter_list": {
+          "task_group_data": [
+            {
+              "fullExpression": "@local.task_groups_data",
+              "matchedExpression": "@local.task_groups_data",
+              "type": "local",
+              "fieldName": "task_groups_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.task_groups_data": [
+          "parameter_list.task_group_data"
+        ]
+      }
+    },
+    {
+      "type": "display_grid",
+      "name": "grid_1",
+      "parameter_list": {
+        "item_width": "100px",
+        "item_border": "solid",
+        "grid_gap": "2px"
+      },
+      "rows": [
+        {
+          "type": "items",
+          "value": "@data.@local.task_groups_data",
+          "rows": [
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "column"
+              },
+              "rows": [
+                {
+                  "type": "text",
+                  "value": "@item.title",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "name": "text_1",
+                  "_nested_name": "grid_1.items_1.display_group_1.text_1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.title",
+                        "matchedExpression": "@item.title",
+                        "type": "item",
+                        "fieldName": "title"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.title": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "type": "template",
+                  "value": "feat_task_group_subtask_toggle",
+                  "rows": [
+                    {
+                      "name": "task_group_data",
+                      "value": "feat_task_group_@item.number",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "type": "set_variable",
+                      "_nested_name": "grid_1.items_1.display_group_1.feat_task_group_subtask_toggle.task_group_data",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "feat_task_group_@item.number",
+                            "matchedExpression": "@item.number",
+                            "type": "item",
+                            "fieldName": "number"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@item.number": [
+                          "value"
+                        ]
+                      }
+                    }
+                  ],
+                  "name": "feat_task_group_subtask_toggle",
+                  "_nested_name": "grid_1.items_1.display_group_1.feat_task_group_subtask_toggle"
+                }
+              ],
+              "name": "display_group_1",
+              "_nested_name": "grid_1.items_1.display_group_1"
+            }
+          ],
+          "name": "items_1",
+          "_nested_name": "grid_1.items_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.@local.task_groups_data",
+                "matchedExpression": "@local.task_groups_data",
+                "type": "local",
+                "fieldName": "task_groups_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.task_groups_data": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "grid_1"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+}

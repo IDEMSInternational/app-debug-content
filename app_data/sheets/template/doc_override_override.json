@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c216ce69f02e87559aaad392fee806ca1813f53180dd06aa7b84694652d3646
-size 1544
+{
+  "flow_type": "template",
+  "flow_name": "doc_override_override",
+  "status": "released",
+  "override_target": "doc_override_default",
+  "override_condition": "@fields.doc_override_condition",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Override title",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_1",
+      "value": "@field.doc_override_condition",
+      "_translations": {
+        "value": {}
+      },
+      "is_override_target": "changed | set_field:doc_override_condition:@local.toggle_1;\nchanged | emit: force_reload",
+      "_nested_name": "toggle_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@field.doc_override_condition",
+            "matchedExpression": "@field.doc_override_condition",
+            "type": "field",
+            "fieldName": "doc_override_condition"
+          }
+        ],
+        "is_override_target": [
+          {
+            "fullExpression": "changed | set_field:doc_override_condition:@local.toggle_1;\nchanged | emit: force_reload",
+            "matchedExpression": "@local.toggle_1",
+            "type": "local",
+            "fieldName": "toggle_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@field.doc_override_condition": [
+          "value"
+        ],
+        "@local.toggle_1": [
+          "is_override_target"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "doc_sheets/doc_override.xlsx"
+}

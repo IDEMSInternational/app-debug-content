@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:102bab6d5d33d66ff35c9a14afa045bfe87c54897c3477816b3b7a20fcd9c99b
-size 442
+{
+  "flow_type": "template",
+  "flow_name": "debug_long_link_text",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_same_1",
+      "value": "Direct long link https://www.kpwkm.gov.my/kpwkm/index.php?r=portal/about&id=b0J5ZFBERFhsalo2U05TWk1nSzVDQT09",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_same_1"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
+}

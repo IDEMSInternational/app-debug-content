@@ -1,3 +1,208 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54bb2b562a17de622c841f2992ddf0189be21d23bc3dcddfcff12f0d40e044ea
-size 6240
+{
+  "flow_type": "template",
+  "flow_name": "nav_buttons",
+  "status": "released",
+  "rows": [
+    {
+      "name": "use_completed_chevron",
+      "value": false,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "use_completed_chevron"
+    },
+    {
+      "name": "use_uncompleted_chevron",
+      "value": false,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "use_uncompleted_chevron"
+    },
+    {
+      "name": "display_back",
+      "value": false,
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "display_back"
+    },
+    {
+      "type": "display_group",
+      "name": "buttons",
+      "parameter_list": {
+        "style": "navigation"
+      },
+      "rows": [
+        {
+          "type": "round_button",
+          "name": "button_uncompleted_chevron",
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "uncompleted"
+              ],
+              "_raw": "click | emit:uncompleted",
+              "_cleaned": "click | emit:uncompleted"
+            }
+          ],
+          "hidden": "(!@local.use_uncompleted_chevron) || (!@local.display_back)",
+          "parameter_list": {
+            "icon_src": "chevron-back",
+            "style": "navigation"
+          },
+          "_nested_name": "buttons.button_uncompleted_chevron",
+          "_dynamicFields": {
+            "hidden": [
+              {
+                "fullExpression": "(!@local.use_uncompleted_chevron) || (!@local.display_back)",
+                "matchedExpression": "!@local.use_uncompleted_chevron",
+                "type": "local",
+                "fieldName": "use_uncompleted_chevron"
+              },
+              {
+                "fullExpression": "(!@local.use_uncompleted_chevron) || (!@local.display_back)",
+                "matchedExpression": "!@local.display_back",
+                "type": "local",
+                "fieldName": "display_back"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@local.use_uncompleted_chevron": [
+              "hidden"
+            ],
+            "!@local.display_back": [
+              "hidden"
+            ]
+          }
+        },
+        {
+          "type": "round_button",
+          "name": "button_uncompleted",
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "uncompleted"
+              ],
+              "_raw": "click | emit:uncompleted",
+              "_cleaned": "click | emit:uncompleted"
+            }
+          ],
+          "hidden": "@local.use_uncompleted_chevron || (!@local.display_back)",
+          "parameter_list": {
+            "icon_src": "caret-back",
+            "style": "navigation"
+          },
+          "_nested_name": "buttons.button_uncompleted",
+          "_dynamicFields": {
+            "hidden": [
+              {
+                "fullExpression": "@local.use_uncompleted_chevron || (!@local.display_back)",
+                "matchedExpression": "@local.use_uncompleted_chevron",
+                "type": "local",
+                "fieldName": "use_uncompleted_chevron"
+              },
+              {
+                "fullExpression": "@local.use_uncompleted_chevron || (!@local.display_back)",
+                "matchedExpression": "!@local.display_back",
+                "type": "local",
+                "fieldName": "display_back"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.use_uncompleted_chevron": [
+              "hidden"
+            ],
+            "!@local.display_back": [
+              "hidden"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_completed",
+          "value": "Save",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "click | emit:completed",
+              "_cleaned": "click | emit:completed"
+            }
+          ],
+          "hidden": "@local.use_completed_chevron",
+          "parameter_list": {
+            "style": "navigation",
+            "text_align": "center"
+          },
+          "style_list": [
+            "flex:1"
+          ],
+          "_nested_name": "buttons.button_completed",
+          "_dynamicFields": {
+            "hidden": [
+              {
+                "fullExpression": "@local.use_completed_chevron",
+                "matchedExpression": "@local.use_completed_chevron",
+                "type": "local",
+                "fieldName": "use_completed_chevron"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.use_completed_chevron": [
+              "hidden"
+            ]
+          }
+        },
+        {
+          "type": "round_button",
+          "name": "button_completed_chevron",
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "completed"
+              ],
+              "_raw": "click | emit:completed",
+              "_cleaned": "click | emit:completed"
+            }
+          ],
+          "hidden": "!@local.use_completed_chevron",
+          "parameter_list": {
+            "icon_src": "chevron-forward",
+            "style": "navigation"
+          },
+          "_nested_name": "buttons.button_completed_chevron",
+          "_dynamicFields": {
+            "hidden": [
+              {
+                "fullExpression": "!@local.use_completed_chevron",
+                "matchedExpression": "!@local.use_completed_chevron",
+                "type": "local",
+                "fieldName": "use_completed_chevron"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@local.use_completed_chevron": [
+              "hidden"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "buttons"
+    }
+  ],
+  "_xlsxPath": "navigation.xlsx"
+}

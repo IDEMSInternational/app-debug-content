@@ -1,3 +1,93 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5119e3e457aa90ec94fa3e1ffb09a8aee56cb089267f78b795063fd40623f6a
-size 2281
+{
+  "flow_name": "example_generator_output_w_2",
+  "flow_subtype": "example_generator",
+  "flow_type": "template",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Welcome to Workshop 2",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This text will populate based on condition",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "true",
+      "_nested_name": "text"
+    },
+    {
+      "type": "items",
+      "value": "@data.example_w_2_data",
+      "rows": [
+        {
+          "type": "text",
+          "name": "text_@item.id",
+          "value": "@item.text",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "items_4.text_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "text_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "@item.text",
+                "matchedExpression": "@item.text",
+                "type": "item",
+                "fieldName": "text"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "items_4.text_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "items_4",
+      "_nested_name": "items_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.example_w_2_data",
+            "matchedExpression": "@data.example_w_2_data",
+            "type": "data",
+            "fieldName": "example_w_2_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.example_w_2_data": [
+          "value"
+        ]
+      }
+    }
+  ]
+}
