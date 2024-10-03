@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:573aa6b19d1e932ca075b214fda0750984b680f8c88a0f01bea6bb52e5d5137a
-size 658
+{
+  "flow_type": "data_pipe",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_concat_2",
+  "status": "released",
+  "rows": [
+    {
+      "operation": "concat",
+      "args_list": [
+        "example_data_pipe_list_1"
+      ],
+      "input_source": "example_data_pipe_list_3",
+      "output_target": "example_data_pipe_concat_1_3"
+    },
+    {
+      "operation": "concat",
+      "args_list": [
+        "example_data_pipe_nested_list",
+        "example_data_pipe_list_1"
+      ],
+      "input_source": false,
+      "output_target": "example_data_pipe_concat_1_nested"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_data_pipe_concat_1_3",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    {
+      "flow_name": "example_data_pipe_concat_1_nested",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

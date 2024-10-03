@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ae8c3f9903f24e3cc18ecdff590442ffa3a10cfd711cd417a87da5e8bdc779d
-size 839
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_warning_child_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "display_group",
+      "rows": [
+        {
+          "type": "image",
+          "name": "image",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "display_group.image"
+        }
+      ],
+      "_nested_name": "display_group"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Title",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "_nested_name": "text_1"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx"
+}

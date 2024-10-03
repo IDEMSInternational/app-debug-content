@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0908090edfe2234e4926685e0d757f710c815e281394a6f2475889daa81c7ee4
-size 386
+{
+  "flow_type": "template",
+  "flow_name": "example_text_option_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "You selected option 1",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_update_sibling.xlsx"
+}

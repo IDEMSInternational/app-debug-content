@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d1d981938030b8b6e510644985f37024084e3a7c295a1f475ead0e214575b1d
-size 679
+{
+  "flow_name": "example_data_pipe_concat_1_nested",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "id_3",
+      "text": "Goodbye",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Goodbye"
+        }
+      }
+    },
+    {
+      "id": "id_4",
+      "text": "Hello",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Hello"
+        }
+      }
+    },
+    {
+      "id": "id_1",
+      "column_a": 1,
+      "column_b": 1
+    },
+    {
+      "id": "id_2",
+      "column_a": 1,
+      "column_b": 1
+    }
+  ]
+}

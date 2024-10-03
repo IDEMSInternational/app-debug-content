@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3264dea4e176f3a7d3381676dd45a1fd48527db43826d5fcbe217682a4441ffc
-size 606
+{
+  "flow_type": "template",
+  "flow_name": "debug_workshop_activity_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "intro_title",
+      "value": "Intro",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "intro_title"
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "_nested_name": "intro_text"
+    },
+    {
+      "type": "template",
+      "name": "content_box",
+      "rows": [],
+      "_nested_name": "content_box"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_hp_review_2.xlsx"
+}

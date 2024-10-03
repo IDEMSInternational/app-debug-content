@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27ac0aa3e9759a37b9e68b2e264b719af9305e2f171abac609edd2c70c2acf5f
-size 525
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_data_items_list",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "id_1",
+      "label": "Task 1",
+      "completed": false,
+      "type": "type_a"
+    },
+    {
+      "id": "id_2",
+      "label": "Task 2",
+      "completed": true,
+      "type": "type_b"
+    },
+    {
+      "id": "id_3",
+      "label": "Task 3",
+      "completed": true,
+      "type": "type_b"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_items.xlsx"
+}

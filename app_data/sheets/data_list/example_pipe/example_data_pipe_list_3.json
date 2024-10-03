@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80507e2d0160ec77cfea3dd8a1a3a47db04b692068f289626cc025c55e6737c3
-size 283
+{
+  "flow_type": "data_list",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_list_3",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_3",
+      "column_b": 2,
+      "column_c": 2
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+}

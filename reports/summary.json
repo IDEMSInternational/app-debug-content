@@ -18,7 +18,7 @@
     },
     {
       "type": "audio",
-      "count": 13
+      "count": 15
     },
     {
       "type": "button",
@@ -82,7 +82,7 @@
     },
     {
       "type": "image",
-      "count": 22
+      "count": 23
     },
     {
       "type": "items",
@@ -198,7 +198,7 @@
     },
     {
       "type": "text",
-      "count": 652
+      "count": 656
     },
     {
       "type": "text_area",
@@ -234,7 +234,7 @@
     },
     {
       "type": "video",
-      "count": 3
+      "count": 4
     },
     {
       "type": "workshops_accordion",
@@ -312,7 +312,7 @@
     },
     {
       "type": "go_to_url",
-      "count": 4
+      "count": 5
     },
     {
       "type": "invalid_action",
@@ -429,10 +429,6 @@
       "size_kb": 0.1
     },
     {
-      "path": "images/icons/audio/play-sharp.svg",
-      "size_kb": 0.1
-    },
-    {
       "path": "images/icons/favicon.svg",
       "size_kb": 2.1
     },
@@ -462,16 +458,6 @@
     }
   ],
   "assets_missing": [
-    {
-      "path": "/plh_images/icons/heart.svg",
-      "count": 33,
-      "missing": true
-    },
-    {
-      "path": "/plh_images/icons/tick.svg",
-      "count": 20,
-      "missing": true
-    },
     {
       "path": "debug_asset_pack_1/image_2.png",
       "count": 1,
@@ -553,6 +539,11 @@
       "missing": true
     },
     {
+      "path": "plh_images/icons/heart.svg",
+      "count": 33,
+      "missing": true
+    },
+    {
       "path": "plh_images/icons/house_white.svg",
       "count": 3,
       "missing": true
@@ -604,7 +595,7 @@
     },
     {
       "path": "plh_images/icons/tick.svg",
-      "count": 1,
+      "count": 21,
       "missing": true
     },
     {
@@ -990,13 +981,18 @@
       "size_kb": 0.1
     },
     {
+      "path": "images/icons/audio/play-sharp.svg",
+      "count": 2,
+      "size_kb": 0.1
+    },
+    {
       "path": "images/icons/book_white.svg",
       "count": 9,
       "size_kb": 0.7
     },
     {
       "path": "images/icons/globe_blue.svg",
-      "count": 10,
+      "count": 11,
       "size_kb": 3.9
     },
     {
@@ -1194,7 +1190,7 @@
     {
       "type": "template",
       "subtype": null,
-      "total": 46
+      "total": 47
     },
     {
       "type": "template",

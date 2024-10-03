@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26d8274b0746c691bc444038ba586cb971e2632330dbe81713ec3151f4ee4878
-size 685
+{
+  "flow_type": "template",
+  "flow_name": "debug_actions_bottom",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Button",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "click | emit:completed",
+          "_cleaned": "click | emit:completed"
+        }
+      ],
+      "exclude_from_translation": true,
+      "_nested_name": "button"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_overriding_action_list.xlsx"
+}

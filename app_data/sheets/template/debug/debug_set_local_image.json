@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39cd7a9b28a722f9b219e0c32d1e3d69cb4cd1752386898e29aa932992695dcd
-size 1258
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_local_image",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "debug_variable",
+      "value": "plh_images/workshop_modes/individual/wave.svg",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "debug_variable"
+    },
+    {
+      "type": "image",
+      "name": "direct_image",
+      "value": "plh_images/workshop_modes/individual/wave.svg",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "direct_image"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Text below the direct image and above the variable image.",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text"
+    },
+    {
+      "type": "image",
+      "name": "variable_image",
+      "value": "plh_images/workshop_modes/individual/wave.svg",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "variable_image"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_small_issues.xlsx"
+}

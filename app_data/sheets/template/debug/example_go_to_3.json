@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c23480885baf5f5abd0601286927d6180ce49b3bf149beb2a4473377473cf361
-size 1175
+{
+  "flow_type": "template",
+  "flow_name": "example_go_to_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Button 1: Go to example_emit and emit completed",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_1"
+    },
+    {
+      "type": "button",
+      "name": "button_go_to",
+      "value": "Button 1",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "example_emit"
+          ],
+          "_raw": "click | go_to:example_emit",
+          "_cleaned": "click | go_to:example_emit"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "click | emit:completed",
+          "_cleaned": "click | emit:completed"
+        }
+      ],
+      "exclude_from_translation": true,
+      "_nested_name": "button_go_to"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"
+}

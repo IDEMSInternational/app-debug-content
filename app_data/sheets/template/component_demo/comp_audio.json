@@ -1,3 +1,155 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a89bda13cfdb6aeea7436896c69678d7b4c5a792e154c19208f2afa81467c2fc
-size 2656
+{
+  "flow_type": "template",
+  "flow_name": "comp_audio",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Audio component demo",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "title",
+      "value": "Variant: compact (default)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "text",
+      "value": "Default:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "audio",
+      "name": "audio_1",
+      "value": "audio/test_audio.mp3",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "audio_1"
+    },
+    {
+      "type": "text",
+      "value": "With title and transcript pop-up:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "audio",
+      "name": "audio_2",
+      "action_list": [
+        {
+          "trigger": "info_click",
+          "action_id": "pop_up",
+          "args": [
+            "example_transcript"
+          ],
+          "_raw": "info_click | pop_up: example_transcript",
+          "_cleaned": "info_click | pop_up: example_transcript"
+        }
+      ],
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "compact",
+        "title": "Audio player compact 2",
+        "src": "audio/test_audio.mp3",
+        "show_info_button": "true",
+        "play_icon_asset": "images/icons/audio/play-sharp.svg"
+      },
+      "_nested_name": "audio_2"
+    },
+    {
+      "type": "text",
+      "value": "Disabled (no asset path provided):",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "audio",
+      "name": "audio_3",
+      "exclude_from_translation": true,
+      "_nested_name": "audio_3"
+    },
+    {
+      "type": "title",
+      "value": "variant: large",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_10",
+      "_nested_name": "title_10"
+    },
+    {
+      "type": "text",
+      "value": "Range bar disabled:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "audio",
+      "name": "audio_4",
+      "value": "audio/test_audio.mp3",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "large",
+        "range_bar_disabled": "true",
+        "time_to_skip": "0.5"
+      },
+      "_nested_name": "audio_4"
+    },
+    {
+      "type": "audio",
+      "name": "audio_5",
+      "action_list": [
+        {
+          "trigger": "info_click",
+          "action_id": "go_to_url",
+          "args": [
+            "idems.international"
+          ],
+          "_raw": "info_click | go_to_url: idems.international",
+          "_cleaned": "info_click | go_to_url: idems.international"
+        }
+      ],
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "title": "Large variant, custom icons",
+        "variant": "large",
+        "src": "audio/test_audio.mp3",
+        "time_to_skip": "0.2",
+        "show_info_button": "true",
+        "info_icon_asset": "images/icons/globe_blue.svg",
+        "play_icon_asset": "images/icons/audio/play-sharp.svg",
+        "pause_icon_asset": "images/icons/audio/pause-sharp.svg",
+        "forward_icon_asset": "images/icons/audio/play-forward-sharp.svg"
+      },
+      "_nested_name": "audio_5"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_audio.xlsx"
+}

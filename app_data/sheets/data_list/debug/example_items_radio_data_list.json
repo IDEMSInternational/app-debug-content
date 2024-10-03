@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf0c53944ee0517d0c8727a372f4458733360dd1d203e3e05479c38a2f8ae0d7
-size 915
+{
+  "flow_type": "data_list",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_radio_data_list",
+  "status": "released",
+  "data_list_name": "example_items_radio",
+  "rows": [
+    {
+      "id": "item_1",
+      "name": "first",
+      "text": "first",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "first"
+        }
+      }
+    },
+    {
+      "id": "item_2",
+      "name": "second",
+      "text": "second",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "second"
+        }
+      }
+    },
+    {
+      "id": "item_3",
+      "name": "third",
+      "text": "third",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "third"
+        }
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_items.xlsx"
+}

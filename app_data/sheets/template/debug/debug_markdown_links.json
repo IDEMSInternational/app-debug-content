@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63154177d93513d225b65a170acdaeab22db0be1512a3795b187b1d9105be5cf
-size 439
+{
+  "flow_type": "template",
+  "flow_name": "debug_markdown_links",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "The following link should open in a new tab: [IDEMS Website](https://www.idems.international/)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_text.xlsx"
+}

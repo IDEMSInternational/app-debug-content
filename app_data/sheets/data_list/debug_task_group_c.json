@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f59f63166eb6973543ae0fe8e7df71260e1336c5e215ac81e3cf16c6a5136d4f
-size 335
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_task_group_c",
+  "status": "released",
+  "rows": [
+    {
+      "id": "c_1",
+      "text": "Task C1",
+      "completed": false
+    },
+    {
+      "id": "c_2",
+      "text": "Task C2",
+      "completed": false
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+}

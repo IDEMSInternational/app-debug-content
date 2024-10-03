@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7aebdbc2d67f2641d456fb7601f9a3dff0111ade6d8df578b72daca8786fc56
-size 773
+{
+  "flow_name": "example_pipe_uncompleted",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "id_2",
+      "value": 2,
+      "sort_order": 11,
+      "sort_alpha": "basis",
+      "completed": false,
+      "Text": "Hello id_2",
+      "Label": "Another column",
+      "Field": "example_id_2_field"
+    },
+    {
+      "id": "id_4",
+      "value": 4,
+      "sort_order": 5,
+      "sort_alpha": "world",
+      "Text": "Hello id_4",
+      "Label": "Another column",
+      "Field": "example_id_4_field"
+    },
+    {
+      "id": "id_8",
+      "value": 8,
+      "sort_order": 3,
+      "sort_alpha": "skill",
+      "completed": false,
+      "Text": "Hello id_8",
+      "Label": "Another column",
+      "Field": "example_id_8_field"
+    }
+  ]
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29d5ef9fd6931990a01208c4b62ec59747dc2b22f4bc6ca6ad2ef81a70b36cfe
-size 503
+{
+  "flow_type": "template",
+  "flow_name": "debug_audio_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "audio",
+      "name": "audio_src",
+      "value": "quality_assurance/test_audio.mp3",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "title": "Test title"
+      },
+      "_nested_name": "audio_src"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_small_issues.xlsx"
+}

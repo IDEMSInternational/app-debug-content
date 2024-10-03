@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:928bec954123f8a5d7d637403fd6494953f20530434558b0e456c5d3a94598e3
-size 461
+{
+  "flow_type": "global",
+  "flow_name": "doc_global",
+  "status": "released",
+  "override_target": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "doc_example_global",
+      "value": "Example global value",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_field_default",
+      "name": "doc_example_field",
+      "value": false
+    }
+  ],
+  "_xlsxPath": "doc_sheets/doc_global.xlsx"
+}

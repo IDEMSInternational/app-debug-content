@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0343f3933e56fc6208ede1d987a542879ce4fe4d99f2f12f716f5d2a043ed98
-size 861
+{
+  "flow_type": "template",
+  "flow_name": "example_title_text",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Title",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "title"
+    },
+    {
+      "type": "subtitle",
+      "name": "subtitle",
+      "value": "Example Subtitle",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "subtitle"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Example text",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_render_grandchild_2.xlsx"
+}

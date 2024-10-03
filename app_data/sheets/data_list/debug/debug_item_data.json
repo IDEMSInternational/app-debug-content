@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ce4bf11837868b9338e3bd7675187b2c590bac513336215896c5fdb79c5857d
-size 391
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_item_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id1",
+      "number": 1,
+      "string": "hello",
+      "boolean": true
+    },
+    {
+      "id": "id2",
+      "number": 2,
+      "string": "goodbye",
+      "boolean": false
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_template_variables.xlsx"
+}

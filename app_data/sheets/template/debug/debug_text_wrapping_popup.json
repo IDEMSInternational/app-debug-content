@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04c2d7ff86c9f889ad05b32f31c98c554c84625318d954578a3f1d4ed50f9247
-size 776
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_wrapping_popup",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "thisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimes",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "overflow-wrap: anywhere"
+      ],
+      "_nested_name": "text"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_text.xlsx"
+}

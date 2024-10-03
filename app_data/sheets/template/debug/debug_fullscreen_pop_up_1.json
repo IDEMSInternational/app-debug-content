@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17ea183c25f96f0c3289107dfe5e1d4ef20f1a916b9d2b16d4e65877f70b46fa
-size 1555
+{
+  "flow_type": "template",
+  "flow_name": "debug_fullscreen_pop_up_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Launch fullscreen popup (new style)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_fullscreen_pop_up_2"
+          ],
+          "_raw": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen_alt: true",
+          "_cleaned": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen_alt: true",
+          "params": {
+            "fullscreen_alt": true
+          }
+        }
+      ],
+      "exclude_from_translation": true,
+      "name": "button_2",
+      "_nested_name": "button_2"
+    },
+    {
+      "type": "button",
+      "value": "Launch fullscreen popup (old style)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_fullscreen_pop_up_2"
+          ],
+          "_raw": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen: true",
+          "_cleaned": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen: true",
+          "params": {
+            "fullscreen": true
+          }
+        }
+      ],
+      "exclude_from_translation": true,
+      "name": "button_3",
+      "_nested_name": "button_3"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_fullscreen_pop_up.xlsx"
+}

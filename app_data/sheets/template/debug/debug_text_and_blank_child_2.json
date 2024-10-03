@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7d7602d24686cfb4d41284b9e2b054b5d658c7cd63fc4e11119fe7c75445989
-size 512
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_and_blank_child_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Initial text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
+      "type": "template",
+      "name": "subtemplate_2",
+      "rows": [],
+      "_nested_name": "subtemplate_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nested_same_name.xlsx"
+}

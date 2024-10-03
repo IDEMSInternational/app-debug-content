@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a34757aeef259e79e149fec0c3c330879000eb747a3e965af883a7bdc52c138
-size 480
+{
+  "flow_type": "template",
+  "flow_name": "comp_calendar",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Example Calendar",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "calendar",
+      "name": "calendar_3",
+      "_nested_name": "calendar_3"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_calendar.xlsx"
+}

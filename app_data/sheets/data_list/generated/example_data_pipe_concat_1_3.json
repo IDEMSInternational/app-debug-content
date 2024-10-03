@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1afea1a55d415ce03aed4a0a2367c243f77d4dce90312488921193c20455dd0
-size 346
+{
+  "flow_name": "example_data_pipe_concat_1_3",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "id_3",
+      "column_b": 2,
+      "column_c": 2
+    },
+    {
+      "id": "id_1",
+      "column_b": 1,
+      "column_a": 1
+    },
+    {
+      "id": "id_2",
+      "column_b": 1,
+      "column_a": 1
+    }
+  ]
+}

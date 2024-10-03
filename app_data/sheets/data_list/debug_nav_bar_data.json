@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62affe5766b23516187c37c0c8b90b11cda17c44550eaee710498220155e8624
-size 452
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_nav_bar_data",
+  "status": "released",
+  "rows": [
+    {
+      "image": "images/icons/globe_blue.svg",
+      "target_template": "home_screen"
+    },
+    {
+      "image": "images/icons/heart_blue.svg",
+      "target_template": "example_dg"
+    },
+    {
+      "image": "images/icons/school_blue.svg",
+      "target_template": "example_calc"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
+}

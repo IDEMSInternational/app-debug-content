@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6b779725b2d2282f7e1b821c27b616f25421b14cacda04997a3af259cb576a3
-size 1481
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_google_auth",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Google Auth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Use the button below to sign in with google auth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
+      "type": "button",
+      "name": "sign_in",
+      "value": "Sign in with Google",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_in_google"
+          ],
+          "_raw": "click | auth: sign_in_google",
+          "_cleaned": "click | auth: sign_in_google"
+        }
+      ],
+      "_nested_name": "sign_in"
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_out"
+          ],
+          "_raw": "click | auth: sign_out",
+          "_cleaned": "click | auth: sign_out"
+        }
+      ],
+      "_nested_name": "sign_out"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_google_auth.xlsx"
+}

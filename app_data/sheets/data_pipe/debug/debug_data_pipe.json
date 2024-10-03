@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fda522f9a4cf71c5dc06083beb9373c4ff3cd0c91166e1ad0f2109221a15f6fa
-size 364
+{
+  "flow_type": "data_pipe",
+  "flow_name": "debug_data_pipe",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"item_1\""
+      ],
+      "input_source": "debug_data_list",
+      "output_target": "debug_filtered"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "debug_filtered",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

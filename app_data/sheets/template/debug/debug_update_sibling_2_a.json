@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7726c07b263d12024d538614e5abca826191e5d742197fc51d3a35aa2f7f4062
-size 731
+{
+  "flow_type": "template",
+  "flow_name": "debug_update_sibling_2_a",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "template",
+      "name": "pair",
+      "value": "pair",
+      "rows": [
+        {
+          "type": "nested_properties",
+          "name": "box_1",
+          "value": "debug_radio_group_2",
+          "rows": [],
+          "_nested_name": "pair.box_1"
+        },
+        {
+          "type": "nested_properties",
+          "name": "box_2",
+          "value": "debug_update_sibling_2_b",
+          "rows": [],
+          "_nested_name": "pair.box_2"
+        }
+      ],
+      "_nested_name": "pair"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_update_sibling.xlsx"
+}

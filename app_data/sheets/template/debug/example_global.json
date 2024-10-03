@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db4be4b2967f7eafe3a4e0c8ef8102381ce4b62f95fb565a194ea04c161ecb50
-size 571
+{
+  "flow_type": "template",
+  "flow_name": "example_global",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "app_name",
+      "value": "My App",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "app_name"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "app_language",
+      "value": "gb_en",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "app_language"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_global.xlsx"
+}

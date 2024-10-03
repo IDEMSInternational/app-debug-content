@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:550e904b9c8e52702995c0f227b1a07dea0a0daf08e56fb9b63bce0072b5ad71
-size 826
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_language_data_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "data_list_name": "debug_language",
+  "rows": [
+    {
+      "id": "gb_en",
+      "country_code": "gb",
+      "country_label": "United Kingdom",
+      "country_icon": "i18n/flags/gb.svg",
+      "language_code": "en",
+      "language_label": "English",
+      "name": "gb_en",
+      "text": "English",
+      "image": "i18n/flags/gb.svg"
+    },
+    {
+      "id": "tz_sw",
+      "country_code": "tz",
+      "country_label": "Tanzania",
+      "country_icon": "i18n/flags/tz.svg",
+      "language_code": "sw",
+      "language_label": "Kiswahili",
+      "name": "tz_sw",
+      "text": "Kiswahili",
+      "image": "i18n/flags/tz.svg"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_theme_language_assets.xlsx"
+}

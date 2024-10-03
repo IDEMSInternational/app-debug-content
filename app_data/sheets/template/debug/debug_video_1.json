@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d08b1d983ffe6695ebfd892723940afb85048de3ca12793884541ea2f7c2415b
-size 906
+{
+  "flow_type": "template",
+  "flow_name": "debug_video_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "video",
+      "name": "video_src",
+      "value": "plh_video/lets_slow_down.mp4",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "video_src"
+    },
+    {
+      "type": "video",
+      "name": "video_src",
+      "value": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "video_src"
+    },
+    {
+      "type": "text",
+      "name": "my_text",
+      "value": "This is My Text",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "my_text"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_small_issues.xlsx"
+}

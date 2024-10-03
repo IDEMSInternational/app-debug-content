@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a51c0fe7106edcf8413d94eb024bc8b4a4124fdc1cda35d2b34b589eec6851d
-size 397
+{
+  "flow_type": "template",
+  "flow_name": "example_transcript",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "text",
+      "value": "This is an audio message in English.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_audio.xlsx"
+}

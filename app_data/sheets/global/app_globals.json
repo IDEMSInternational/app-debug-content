@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dac4090de60e72b642dd6ae555039bf08e96ca529765a75998054c66ddd34518
-size 369
+{
+  "flow_type": "global",
+  "flow_name": "app_globals",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "dev_mode_code",
+      "value": "app_dev",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_dev_mode.xlsx"
+}

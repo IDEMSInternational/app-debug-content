@@ -7,7 +7,7 @@
 | advanced_dashed_box | 2 |
 | animated_section | 5 |
 | animated_slides | 1 |
-| audio | 13 |
+| audio | 15 |
 | button | 181 |
 | calendar | 1 |
 | carousel | 7 |
@@ -23,7 +23,7 @@
 | drawer | 1 |
 | form | 8 |
 | html | 4 |
-| image | 22 |
+| image | 23 |
 | items | 45 |
 | latex | 1 |
 | lottie_animation | 11 |
@@ -52,7 +52,7 @@
 | task_card | 15 |
 | task_progress_bar | 2 |
 | template | 116 |
-| text | 652 |
+| text | 656 |
 | text_area | 5 |
 | text_box | 30 |
 | text_bubble | 7 |
@@ -61,7 +61,7 @@
 | title | 356 |
 | toggle_bar | 35 |
 | update_action_list | 2 |
-| video | 3 |
+| video | 4 |
 | workshops_accordion | 2 |
 </details>
 
@@ -87,7 +87,7 @@
 | emit: uncompleted | 12 |
 | feedback | 9 |
 | go_to | 49 |
-| go_to_url | 4 |
+| go_to_url | 5 |
 | invalid_action | 1 |
 | open_external | 2 |
 | pop_up | 33 |
@@ -131,7 +131,6 @@ Assets that appear in app-data but do not have references within sheets
 | dummy.pdf | 13 |
 | images/icons/ask_question_white.svg | 1.4 |
 | images/icons/audio/play-back-sharp.svg | 0.1 |
-| images/icons/audio/play-sharp.svg | 0.1 |
 | images/icons/favicon.svg | 2.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
@@ -148,8 +147,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| /plh_images/icons/heart.svg | 33 |
-| /plh_images/icons/tick.svg | 20 |
 | debug_asset_pack_1/image_2.png | 1 |
 | i18n/flags/gb.svg | 2 |
 | i18n/flags/tz.svg | 2 |
@@ -166,6 +163,7 @@ Assets that have references within sheets but do not appear in app-data
 | plh_images/home_page/home_page_workshops.svg | 1 |
 | plh_images/icons/bell_white.svg | 3 |
 | plh_images/icons/book_white.svg | 3 |
+| plh_images/icons/heart.svg | 33 |
 | plh_images/icons/house_white.svg | 3 |
 | plh_images/icons/in_progress.svg | 7 |
 | plh_images/icons/letter_outline.svg | 1 |
@@ -176,7 +174,7 @@ Assets that have references within sheets but do not appear in app-data
 | plh_images/icons/question_mark.svg | 2 |
 | plh_images/icons/star.svg | 18 |
 | plh_images/icons/star_circle.svg | 2 |
-| plh_images/icons/tick.svg | 1 |
+| plh_images/icons/tick.svg | 21 |
 | plh_images/icons/tick_white.svg | 7 |
 | plh_images/logos/funders/end_violence_against_children.png | 1 |
 | plh_images/logos/funders/erc.png | 1 |
@@ -262,8 +260,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/sad.svg | 1.1 | 2 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
+| images/icons/audio/play-sharp.svg | 0.1 | 2 |
 | images/icons/book_white.svg | 0.7 | 9 |
-| images/icons/globe_blue.svg | 3.9 | 10 |
+| images/icons/globe_blue.svg | 3.9 | 11 |
 | images/icons/heart_blue.svg | 1.4 | 21 |
 | images/icons/heart_outline.svg | 0.6 | 4 |
 | images/icons/house_white.svg | 0.6 | 1 |
@@ -309,7 +308,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
-| template |  | 46 |
+| template |  | 47 |
 | template | component_demo | 49 |
 | template | debug | 307 |
 | template | example_generator | 2 |

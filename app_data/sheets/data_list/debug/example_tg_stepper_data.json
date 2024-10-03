@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1aa9770744ef1b1065e99d0b1ee1f028f28a98bfd5637165be559cc69d36b0f
-size 383
+{
+  "flow_type": "data_list",
+  "flow_name": "example_tg_stepper_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "subtask_1",
+      "active": true
+    },
+    {
+      "id": "subtask_2",
+      "active": false
+    },
+    {
+      "id": "subtask_3",
+      "active": false
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+}

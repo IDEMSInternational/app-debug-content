@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d9bf1bbfbe4548c27e2113adf30eef40bef3e5a729e39dea08fede69215c32f
-size 416
+{
+  "flow_name": "debug_filtered",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "item_1",
+      "text": "Item 1 text",
+      "image_asset": "images/example/jasper_1.jpg",
+      "to_translate": "Hello",
+      "_translations": {
+        "to_translate": {}
+      },
+      "_translatedFields": {
+        "to_translate": {
+          "eng": "Hello"
+        }
+      }
+    }
+  ]
+}

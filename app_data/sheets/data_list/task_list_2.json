@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0c661412e9aa73438071a41da2bcffa1e0ffbe04570615c2af1b938751b9b98
-size 426
+{
+  "flow_type": "data_list",
+  "flow_name": "task_list_2",
+  "status": "released",
+  "data_list_name": "task_list_2",
+  "rows": [
+    {
+      "id": "task_1",
+      "colour": "blue"
+    },
+    {
+      "id": "task_2",
+      "colour": "green"
+    },
+    {
+      "id": "task_3",
+      "colour": "green"
+    },
+    {
+      "id": "task_4",
+      "colour": "green"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx"
+}

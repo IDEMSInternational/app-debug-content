@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd91bb9983c8d67c012ba5c33111f095aab983345739711a1539e885991f4834
-size 560
+{
+  "flow_type": "global",
+  "flow_name": "example_glob_override_modular",
+  "status": "released",
+  "flow_subtype": "debug",
+  "override_target": "example_glob_override_default",
+  "override_condition": "@fields._app_skin == \"modular\"",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "example_glob_override",
+      "value": "Overridden value, modular skin",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+}

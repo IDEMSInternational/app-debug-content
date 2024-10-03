@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ffc3f461e8b31371fc3e98baf16dbc8608327b55ece3914d4a36b03d9402415
-size 334
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_override_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "template",
+      "name": "template_wrapper",
+      "rows": [],
+      "_nested_name": "template_wrapper"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting.xlsx"
+}

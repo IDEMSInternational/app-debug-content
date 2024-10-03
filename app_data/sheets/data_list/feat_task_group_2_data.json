@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9421d7dcda8c0ae78e829fad66de1a432fdf4c666094a6679ddc94464de3d3f4
-size 586
+{
+  "flow_type": "data_list",
+  "flow_name": "feat_task_group_2_data",
+  "status": "released",
+  "data_list_name": "feat_task_group_2",
+  "rows": [
+    {
+      "id": "subtask_1",
+      "completed_field": "task_group_2_subtask_1_completed",
+      "title": "Subtask 1 Title",
+      "description": "Subtask 1 in Task Group 2"
+    },
+    {
+      "id": "subtask_2",
+      "completed_field": "task_group_2_subtask_2_completed",
+      "title": "Subtask 2 Title",
+      "description": "Subtask 2 in Task Group 2"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:daaa5962b529791a1d6e84b0654512dc88cfc2936075b9adb3823cda1e525bff
-size 576
+{
+  "flow_type": "template",
+  "flow_name": "tg_1_subtask_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Task Group 1, Subtask 2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image_3",
+      "_nested_name": "image_3"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+}

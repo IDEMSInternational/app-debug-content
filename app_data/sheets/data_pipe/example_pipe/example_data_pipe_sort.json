@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fde2e5ad9d0be1d740dd9ffac05535ff1bd06cca05969a79566e5ff4caf783ed
-size 781
+{
+  "flow_type": "data_pipe",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_sort",
+  "status": "released",
+  "rows": [
+    {
+      "operation": "sort",
+      "args_list": [
+        "sort_order"
+      ],
+      "input_source": "example_data_pipe_list",
+      "output_target": "example_pipe_sort_order"
+    },
+    {
+      "operation": "sort",
+      "args_list": [
+        "sort_order",
+        "desc"
+      ],
+      "input_source": "example_data_pipe_list",
+      "output_target": "example_pipe_sort_desc"
+    },
+    {
+      "operation": "sort",
+      "args_list": [
+        "sort_alpha"
+      ],
+      "input_source": "example_data_pipe_list",
+      "output_target": "example_pipe_sort_alpha"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_pipe_sort_order",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    {
+      "flow_name": "example_pipe_sort_desc",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
+    {
+      "flow_name": "example_pipe_sort_alpha",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

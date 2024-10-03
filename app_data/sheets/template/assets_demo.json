@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad176d4ba677c1541fee1caade147859079c3f5aee1cd040b85d58c0dcad42ec
-size 703
+{
+  "flow_type": "template",
+  "flow_name": "assets_demo",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Assets demo",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "image",
+      "value": "images/examples/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image_3",
+      "_nested_name": "image_3"
+    },
+    {
+      "type": "image",
+      "value": "tz_sw/images/tanzania",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image_4",
+      "_nested_name": "image_4"
+    }
+  ],
+  "_xlsxPath": "doc_sheets/assets_demo.xlsx"
+}

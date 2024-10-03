@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1afddecc297e9c3eeee7af7f020fe952ba9019f8f7cff17cd91e1a53f3f43dc7
-size 1412
+{
+  "flow_type": "template",
+  "flow_name": "comp_pdf",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "PDF Viewer Component",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "name": "error_message",
+      "value": "This feature is not supported in this browser, please use an up-to-date version of Google Chrome to view",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "error_message"
+    },
+    {
+      "type": "pdf",
+      "name": "pdf_viewer",
+      "value": "example_pdf.pdf",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "starting_page": "3",
+        "error_message": "@local.error_message"
+      },
+      "_nested_name": "pdf_viewer",
+      "_dynamicFields": {
+        "parameter_list": {
+          "error_message": [
+            {
+              "fullExpression": "@local.error_message",
+              "matchedExpression": "@local.error_message",
+              "type": "local",
+              "fieldName": "error_message"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.error_message": [
+          "parameter_list.error_message"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_pdf.xlsx"
+}

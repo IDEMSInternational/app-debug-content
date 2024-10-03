@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83f7269d34f6b5ce6a8ae3383af8a755c56bed413899d102929e6afa8db3caea
-size 857
+{
+  "flow_type": "template",
+  "flow_name": "example_parent_point_box_info",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "lottie_animation",
+      "value": "plh_lottie/habits/habit_praise_yourself.json",
+      "_translations": {
+        "value": {}
+      },
+      "name": "lottie_animation_2",
+      "_nested_name": "lottie_animation_2"
+    },
+    {
+      "type": "title",
+      "value": "Example Parent Point",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "text",
+      "value": "Info here about this particular parent point.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_parent_point_box.xlsx"
+}

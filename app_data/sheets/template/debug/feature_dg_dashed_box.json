@@ -1,3 +1,87 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2125f991d9cb2c6066e4a228ef7399ac84d5c77f18fbcd870c7226d3be5b5a9a
-size 2397
+{
+  "flow_type": "template",
+  "flow_name": "feature_dg_dashed_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "display_group",
+      "name": "dg_example_dashed_box",
+      "value": "dg_example_dashed_box",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "dashed_box"
+      },
+      "rows": [
+        {
+          "type": "subtitle",
+          "value": "Subtitle",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "subtitle_1",
+          "_nested_name": "dg_example_dashed_box.subtitle_1"
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example_1",
+          "value": 3,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "lottie_src": "plh_lottie/parent_centre.json",
+            "text": "text two"
+          },
+          "_nested_name": "dg_example_dashed_box.points_example_1"
+        },
+        {
+          "type": "button",
+          "name": "btn_example",
+          "value": "Continue",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "dg_example_dashed_box.btn_example"
+        }
+      ],
+      "_nested_name": "dg_example_dashed_box"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_example_dashed_box_2",
+      "value": "dg_example_dashed_box",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "dashed_box"
+      },
+      "rows": [
+        {
+          "type": "image",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "image_1",
+          "_nested_name": "dg_example_dashed_box_2.image_1"
+        },
+        {
+          "type": "text",
+          "name": "caption",
+          "value": "Caption goes here",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "variant": "caption"
+          },
+          "_nested_name": "dg_example_dashed_box_2.caption"
+        }
+      ],
+      "_nested_name": "dg_example_dashed_box_2"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_dg_styles.xlsx"
+}

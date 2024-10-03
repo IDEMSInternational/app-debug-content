@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:494abc39688290f3c4780097586188a8b13c3c84a8cb375b7579b71e7068bf48
-size 403
+{
+  "flow_type": "data_list",
+  "flow_name": "colours",
+  "status": "released",
+  "data_list_name": "colours",
+  "rows": [
+    {
+      "id": "blue",
+      "name": "Blue"
+    },
+    {
+      "id": "red",
+      "name": "Red"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow"
+    },
+    {
+      "id": "green",
+      "name": "Green"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_gen_data_pipe.xlsx"
+}

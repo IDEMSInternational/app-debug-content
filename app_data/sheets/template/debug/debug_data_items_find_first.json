@@ -1,3 +1,627 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33d0790d081177b92c7212794a534d0583a49a7fa580161bbd801f5a4c30113a
-size 21845
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_find_first",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Find first completed item",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "data_items",
+      "name": "find_first_completed",
+      "value": "@data.comp_data_items_list",
+      "rows": [
+        {
+          "type": "text",
+          "name": "id_@item.id",
+          "value": "Item ID: @item.id",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "find_first_completed.id_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item ID: @item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "find_first_completed.id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "value",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "completed_@item.id",
+          "value": "Item completed: @item.completed",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "find_first_completed.completed_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "completed_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item completed: @item.completed",
+                "matchedExpression": "@item.completed",
+                "type": "item",
+                "fieldName": "completed"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "find_first_completed.completed_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.completed": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "display_group",
+          "name": "continue_loop_@item.id",
+          "parameter_list": {
+            "style": "column"
+          },
+          "condition": "!!!@local.stop_loop_completed",
+          "rows": [
+            {
+              "type": "display_group",
+              "name": "for_first_completed_@item.id",
+              "parameter_list": {
+                "style": "column"
+              },
+              "condition": "@item.completed",
+              "rows": [
+                {
+                  "name": "stop_loop_completed",
+                  "value": true,
+                  "type": "set_variable",
+                  "_nested_name": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id.stop_loop_completed",
+                  "_dynamicFields": {
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id.stop_loop_completed",
+                        "matchedExpression": "@item.id.for_first_completed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id.stop_loop_completed",
+                        "matchedExpression": "@item.id.stop_loop_completed",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id.for_first_completed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.stop_loop_completed": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "condition_text_@item.id",
+                  "value": "**The first completed item is @item.id**",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id.condition_text_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "condition_text_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "**The first completed item is @item.id**",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id.condition_text_@item.id",
+                        "matchedExpression": "@item.id.for_first_completed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id.condition_text_@item.id",
+                        "matchedExpression": "@item.id.condition_text_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id.condition_text_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "value",
+                      "_nested_name"
+                    ],
+                    "@item.id.for_first_completed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.condition_text_": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id",
+              "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "for_first_completed_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@item.completed",
+                    "matchedExpression": "@item.completed",
+                    "type": "item",
+                    "fieldName": "completed"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id",
+                    "matchedExpression": "@item.id.for_first_completed_",
+                    "type": "item",
+                    "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "find_first_completed.continue_loop_@item.id.for_first_completed_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ],
+                "@item.completed": [
+                  "condition"
+                ],
+                "@item.id.for_first_completed_": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "find_first_completed.continue_loop_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "continue_loop_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!!@local.stop_loop_completed",
+                "matchedExpression": "!@local.stop_loop_completed",
+                "type": "local",
+                "fieldName": "stop_loop_completed"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "find_first_completed.continue_loop_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "!@local.stop_loop_completed": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "find_first_completed",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.comp_data_items_list",
+            "matchedExpression": "@data.comp_data_items_list",
+            "type": "data",
+            "fieldName": "comp_data_items_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.comp_data_items_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Find first not completed item",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "data_items",
+      "name": "find_first_not_completed",
+      "value": "@data.comp_data_items_list",
+      "rows": [
+        {
+          "type": "text",
+          "name": "id_@item.id",
+          "value": "Item ID: @item.id",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "find_first_not_completed.id_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item ID: @item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "find_first_not_completed.id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "value",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "completed_@item.id",
+          "value": "Item completed: @item.completed",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "find_first_not_completed.completed_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "completed_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item completed: @item.completed",
+                "matchedExpression": "@item.completed",
+                "type": "item",
+                "fieldName": "completed"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "find_first_not_completed.completed_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.completed": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "display_group",
+          "name": "continue_loop_@item.id",
+          "parameter_list": {
+            "style": "column"
+          },
+          "condition": "!!!@local.stop_loop_not_completed",
+          "rows": [
+            {
+              "type": "display_group",
+              "name": "for_first_not_completed_@item.id",
+              "parameter_list": {
+                "style": "column"
+              },
+              "condition": "!@item.completed",
+              "rows": [
+                {
+                  "name": "stop_loop_not_completed",
+                  "value": true,
+                  "type": "set_variable",
+                  "_nested_name": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id.stop_loop_not_completed",
+                  "_dynamicFields": {
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id.stop_loop_not_completed",
+                        "matchedExpression": "@item.id.for_first_not_completed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id.stop_loop_not_completed",
+                        "matchedExpression": "@item.id.stop_loop_not_completed",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id.for_first_not_completed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.stop_loop_not_completed": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "condition_text_@item.id",
+                  "value": "**The first not completed item is @item.id**",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id.condition_text_@item.id",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "condition_text_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "**The first not completed item is @item.id**",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id.condition_text_@item.id",
+                        "matchedExpression": "@item.id.for_first_not_completed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id.condition_text_@item.id",
+                        "matchedExpression": "@item.id.condition_text_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id.condition_text_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "name",
+                      "value",
+                      "_nested_name"
+                    ],
+                    "@item.id.for_first_not_completed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.condition_text_": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id",
+              "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "for_first_not_completed_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!@item.completed",
+                    "matchedExpression": "!@item.completed",
+                    "type": "item",
+                    "fieldName": "completed"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id",
+                    "matchedExpression": "@item.id.for_first_not_completed_",
+                    "type": "item",
+                    "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "find_first_not_completed.continue_loop_@item.id.for_first_not_completed_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ],
+                "!@item.completed": [
+                  "condition"
+                ],
+                "@item.id.for_first_not_completed_": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "find_first_not_completed.continue_loop_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "continue_loop_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!!@local.stop_loop_not_completed",
+                "matchedExpression": "!@local.stop_loop_not_completed",
+                "type": "local",
+                "fieldName": "stop_loop_not_completed"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "find_first_not_completed.continue_loop_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "!@local.stop_loop_not_completed": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "find_first_not_completed",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.comp_data_items_list",
+            "matchedExpression": "@data.comp_data_items_list",
+            "type": "data",
+            "fieldName": "comp_data_items_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.comp_data_items_list": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+}

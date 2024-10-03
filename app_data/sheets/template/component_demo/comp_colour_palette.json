@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbf2f5aad6f642e1b9cd915ece00b9e3fe46e974f2b2da3827e9a1e7342a27bd
-size 324
+{
+  "flow_type": "template",
+  "flow_name": "comp_colour_palette",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "colour_palette",
+      "name": "colour_palette",
+      "_nested_name": "colour_palette"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_colour_palette.xlsx"
+}

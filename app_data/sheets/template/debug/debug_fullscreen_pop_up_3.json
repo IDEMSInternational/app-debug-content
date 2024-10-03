@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb44f1b3d63a38e8cbb2b43da47db576faea8f710649425cc980ad80edd73294
-size 386
+{
+  "flow_type": "template",
+  "flow_name": "debug_fullscreen_pop_up_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Popup text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_fullscreen_pop_up.xlsx"
+}
