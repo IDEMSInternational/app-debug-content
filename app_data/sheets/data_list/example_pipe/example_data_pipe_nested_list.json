@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33fc67adf74d2a4a3cf89aedc998e1a925d74bfdeb04e00965e9ad653238a995
-size 616
+{
+  "flow_type": "data_list",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_nested_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_3",
+      "text": "Goodbye",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Goodbye"
+        }
+      }
+    },
+    {
+      "id": "id_4",
+      "text": "Hello",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Hello"
+        }
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+}

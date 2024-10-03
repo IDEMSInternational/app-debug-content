@@ -1,3 +1,84 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:091ebcd8d75e59fbe8d6e9f9c9786723fe6d5ec077307c3a9e0994c85b7587b0
-size 2517
+{
+  "flow_type": "template",
+  "flow_name": "feature_dashed_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_passive",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success.",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "alert",
+        "icon_src": "plh_images/icons/star.svg",
+        "icon_position": "top-right"
+      },
+      "_nested_name": "dashed_box_passive"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_active",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success.",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "default",
+        "icon_src": "plh_images/icons/star.svg",
+        "icon_position": "top-left"
+      },
+      "_nested_name": "dashed_box_active"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_passive",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success.",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "alert",
+        "icon_src": "plh_images/icons/star.svg",
+        "icon_position": "bottom-left"
+      },
+      "_nested_name": "dashed_box_passive"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_active",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success.",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "default",
+        "icon_src": "plh_images/icons/star.svg",
+        "icon_position": "bottom-right"
+      },
+      "_nested_name": "dashed_box_active"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_active",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success.",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "alert",
+        "icon_src": "plh_images/icons/star.svg",
+        "icon_position": "bottom-right"
+      },
+      "_nested_name": "dashed_box_active"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+}

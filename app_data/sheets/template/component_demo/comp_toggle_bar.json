@@ -1,3 +1,273 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f946897a8bb70d3f09d1fdc97e815f7576baace8e485b6022dcbb9f21a91fa7d
-size 6191
+{
+  "flow_type": "template",
+  "flow_name": "comp_toggle_bar",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "variant parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Variant: ios",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_1",
+      "parameter_list": {
+        "variant": "ios"
+      },
+      "_nested_name": "toggle_1"
+    },
+    {
+      "type": "text",
+      "value": "Variant: android",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_2",
+      "parameter_list": {
+        "variant": "android"
+      },
+      "_nested_name": "toggle_2"
+    },
+    {
+      "type": "text",
+      "value": "Variant: icon",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_3",
+      "parameter_list": {
+        "variant": "icon",
+        "icon_true_asset": "images/icons/heart_blue.svg",
+        "icon_false_asset": "images/icons/heart_outline.svg"
+      },
+      "_nested_name": "toggle_3"
+    },
+    {
+      "type": "text",
+      "value": "Variant: in_button",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "button",
+      "value": "Icon and toggle",
+      "parameter_list": {
+        "style": "card",
+        "icon": "images/icons/school_blue.svg"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_1",
+          "parameter_list": {
+            "position": "right",
+            "variant": "in_button"
+          },
+          "_nested_name": "button_10.toggle_bar_1"
+        }
+      ],
+      "name": "button_10",
+      "_nested_name": "button_10"
+    },
+    {
+      "type": "button",
+      "value": "Icon and toggle",
+      "parameter_list": {
+        "style": "card",
+        "icon": "images/icons/school_blue.svg"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_1",
+          "parameter_list": {
+            "position": "right",
+            "variant": "in_button ios"
+          },
+          "_nested_name": "button_12.toggle_bar_1"
+        }
+      ],
+      "name": "button_12",
+      "_nested_name": "button_12"
+    },
+    {
+      "type": "title",
+      "value": "Button card-portrait",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_14",
+      "_nested_name": "title_14"
+    },
+    {
+      "type": "button",
+      "value": "Portrait card",
+      "parameter_list": {
+        "variant": "card-portrait",
+        "image_asset": "images/example/circular.png"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_2",
+          "parameter_list": {
+            "variant": "icon",
+            "icon_true_asset": "images/icons/heart_blue.svg",
+            "icon_false_asset": "images/icons/heart_outline.svg"
+          },
+          "_nested_name": "button_15.toggle_bar_2"
+        }
+      ],
+      "name": "button_15",
+      "_nested_name": "button_15"
+    },
+    {
+      "type": "title",
+      "value": "false_text/true_text parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_17",
+      "_nested_name": "title_17"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_5",
+      "parameter_list": {
+        "false_text": "The toggle value is false",
+        "true_text": "The toggle value is true"
+      },
+      "_nested_name": "toggle_5"
+    },
+    {
+      "type": "title",
+      "value": "Show Icons parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_19",
+      "_nested_name": "title_19"
+    },
+    {
+      "type": "text",
+      "value": "Variant: android",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_20",
+      "_nested_name": "text_20"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_6",
+      "parameter_list": {
+        "show_icons": "true",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_6"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_7",
+      "parameter_list": {
+        "show_icons": "false",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_7"
+    },
+    {
+      "type": "text",
+      "value": "Variant: ios",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_23",
+      "_nested_name": "text_23"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_8",
+      "parameter_list": {
+        "show_icons": "true",
+        "variant": "ios"
+      },
+      "_nested_name": "toggle_8"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_9",
+      "parameter_list": {
+        "show_icons": "false",
+        "variant": "ios"
+      },
+      "_nested_name": "toggle_9"
+    },
+    {
+      "type": "title",
+      "value": "Position",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_26",
+      "_nested_name": "title_26"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_10",
+      "parameter_list": {
+        "position": "left",
+        "true_text": "some text for true value",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_10"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_11",
+      "parameter_list": {
+        "position": "right",
+        "true_text": "some text for true value",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_11"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_12",
+      "parameter_list": {
+        "position": "center",
+        "true_text": "some text for true value",
+        "variant": "android"
+      },
+      "_nested_name": "toggle_12"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_toggle_bar.xlsx"
+}

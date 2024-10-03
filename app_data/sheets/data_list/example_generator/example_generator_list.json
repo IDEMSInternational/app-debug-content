@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29ba7426efa8493a83fab3225c46421bf025a6d3e13cfa65f165d3f749485bd0
-size 472
+{
+  "flow_type": "data_list",
+  "flow_subtype": "example_generator",
+  "flow_name": "example_generator_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "w_1",
+      "title": "Workshop 1",
+      "text_condition": "@fields.show_image_1",
+      "data": "example_w_1_data"
+    },
+    {
+      "id": "w_2",
+      "title": "Workshop 2",
+      "text_condition": true,
+      "data": "example_w_2_data"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_generator.xlsx"
+}

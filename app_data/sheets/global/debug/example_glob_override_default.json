@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6ba1a5c68fd1b4b76b477d0d602242eb82344df63086d8549fc784f65e35c00
-size 429
+{
+  "flow_type": "global",
+  "flow_name": "example_glob_override_default",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "example_glob_override",
+      "value": "Initial value",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+}

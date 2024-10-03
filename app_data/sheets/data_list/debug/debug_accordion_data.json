@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8ad9f52d59f59d1f24f2eada12df16befa9822f515ca9f27343e50e50209c7c
-size 409
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_accordion_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "section_1",
+      "title": "First section"
+    },
+    {
+      "id": "section_2",
+      "title": "Second section"
+    },
+    {
+      "id": "section_3",
+      "title": "Third section"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_accordion.xlsx"
+}

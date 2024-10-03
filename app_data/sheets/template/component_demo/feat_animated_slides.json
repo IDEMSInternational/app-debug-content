@@ -1,3 +1,232 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80da9e8ea24ef6b3eb3cbb2086a1de572487f843f70c8a2cb7d3612b17bf5d7f
-size 7441
+{
+  "flow_type": "template",
+  "flow_name": "feat_animated_slides",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "animated_slides",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit:completed",
+          "_cleaned": "completed | emit:completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit:uncompleted",
+          "_cleaned": "uncompleted | emit:uncompleted"
+        }
+      ],
+      "parameter_list": {
+        "skip_text": "Click here to skip!",
+        "style": "light"
+      },
+      "rows": [
+        {
+          "type": "animated_section",
+          "parameter_list": {
+            "duration": "3"
+          },
+          "rows": [
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "centre_image"
+              },
+              "rows": [
+                {
+                  "type": "image",
+                  "name": "image_1",
+                  "value": "images/example/jasper_1.jpg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "animated_slides_2.animated_section_1.display_group_1.image_1"
+                }
+              ],
+              "name": "display_group_1",
+              "_nested_name": "animated_slides_2.animated_section_1.display_group_1"
+            },
+            {
+              "type": "text",
+              "value": "Slide 1 - fades in and out (default)",
+              "_translations": {
+                "value": {}
+              },
+              "parameter_list": {
+                "style": "large center"
+              },
+              "name": "text_2",
+              "_nested_name": "animated_slides_2.animated_section_1.text_2"
+            }
+          ],
+          "name": "animated_section_1",
+          "_nested_name": "animated_slides_2.animated_section_1"
+        },
+        {
+          "type": "animated_section",
+          "parameter_list": {
+            "duration": "4",
+            "animation": "none"
+          },
+          "rows": [
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "centre_image"
+              },
+              "rows": [
+                {
+                  "type": "image",
+                  "name": "image_2",
+                  "value": "images/example/408-536x354.jpg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "animated_slides_2.animated_section_2.display_group_1.image_2"
+                }
+              ],
+              "name": "display_group_1",
+              "_nested_name": "animated_slides_2.animated_section_2.display_group_1"
+            },
+            {
+              "type": "text",
+              "value": "Slide 2 - no animation",
+              "_translations": {
+                "value": {}
+              },
+              "parameter_list": {
+                "style": "large center"
+              },
+              "name": "text_2",
+              "_nested_name": "animated_slides_2.animated_section_2.text_2"
+            }
+          ],
+          "name": "animated_section_2",
+          "_nested_name": "animated_slides_2.animated_section_2"
+        },
+        {
+          "type": "animated_section",
+          "parameter_list": {
+            "duration": "5",
+            "animation": "none"
+          },
+          "rows": [
+            {
+              "type": "text",
+              "value": "Slide 3 - no animation, with two_columns_images display group",
+              "_translations": {
+                "value": {}
+              },
+              "parameter_list": {
+                "style": "large center"
+              },
+              "name": "text_1",
+              "_nested_name": "animated_slides_2.animated_section_3.text_1"
+            },
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "two_columns_images"
+              },
+              "rows": [
+                {
+                  "type": "image",
+                  "name": "image_3",
+                  "value": "images/example/423-536x354.jpg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "animated_slides_2.animated_section_3.display_group_2.image_3"
+                },
+                {
+                  "type": "image",
+                  "name": "image_4",
+                  "value": "images/example/110-536x354.jpg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "animated_slides_2.animated_section_3.display_group_2.image_4"
+                }
+              ],
+              "name": "display_group_2",
+              "_nested_name": "animated_slides_2.animated_section_3.display_group_2"
+            },
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "two_columns_images_overflow"
+              },
+              "rows": [
+                {
+                  "type": "image",
+                  "name": "image_5",
+                  "value": "images/example/344-536x354.jpg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "animated_slides_2.animated_section_3.display_group_3.image_5"
+                }
+              ],
+              "name": "display_group_3",
+              "_nested_name": "animated_slides_2.animated_section_3.display_group_3"
+            }
+          ],
+          "name": "animated_section_3",
+          "_nested_name": "animated_slides_2.animated_section_3"
+        },
+        {
+          "type": "animated_section",
+          "parameter_list": {
+            "duration": "3.5",
+            "animation": "fade"
+          },
+          "rows": [
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "centre_image"
+              },
+              "rows": [
+                {
+                  "type": "image",
+                  "name": "image_6",
+                  "value": "images/example/jasper_1.jpg",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "animated_slides_2.animated_section_4.display_group_1.image_6"
+                }
+              ],
+              "name": "display_group_1",
+              "_nested_name": "animated_slides_2.animated_section_4.display_group_1"
+            },
+            {
+              "type": "text",
+              "value": "Slide 4 - fades in and out",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "animated_slides_2.animated_section_4.text_2"
+            }
+          ],
+          "name": "animated_section_4",
+          "_nested_name": "animated_slides_2.animated_section_4"
+        }
+      ],
+      "name": "animated_slides_2",
+      "_nested_name": "animated_slides_2"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_animated_slides.xlsx"
+}

@@ -1,3 +1,274 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c27f6c8ecb33fc01857355a4fbfaebb71c8e53af03973c3903400fc24746bf1
-size 6784
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "user_actions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "User Actions",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "title",
+      "value": "Current Profile",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "text",
+      "value": "Change the example field below to store value to user profile",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "text_box",
+      "value": "@fields.example_1",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "example_1",
+            "this.value"
+          ],
+          "_raw": "changed | set_field : example_1 : this.value",
+          "_cleaned": "changed | set_field : example_1 : this.value"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "changed | emit : force_reprocess",
+          "_cleaned": "changed | emit : force_reprocess"
+        }
+      ],
+      "name": "text_box_5",
+      "_nested_name": "text_box_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.example_1",
+            "matchedExpression": "@fields.example_1",
+            "type": "fields",
+            "fieldName": "example_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.example_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Example field: @fields.example_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Example field: @fields.example_1",
+            "matchedExpression": "@fields.example_1",
+            "type": "fields",
+            "fieldName": "example_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.example_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "id: @fields._app_user_id",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "id: @fields._app_user_id",
+            "matchedExpression": "@fields._app_user_id",
+            "type": "fields",
+            "fieldName": "_app_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_user_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Last Sync: @fields._server_sync_latest",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Last Sync: @fields._server_sync_latest",
+            "matchedExpression": "@fields._server_sync_latest",
+            "type": "fields",
+            "fieldName": "_server_sync_latest"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._server_sync_latest": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Sync Now",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "server_sync"
+          ],
+          "_raw": "click | emit : server_sync",
+          "_cleaned": "click | emit : server_sync"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit : force_reprocess",
+          "_cleaned": "click | emit : force_reprocess"
+        }
+      ],
+      "name": "button_9",
+      "_nested_name": "button_9"
+    },
+    {
+      "type": "title",
+      "value": "Import",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_10",
+      "_nested_name": "title_10"
+    },
+    {
+      "type": "text",
+      "value": "Input the ID of a user to import",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "text_box",
+      "name": "user_id_input",
+      "_nested_name": "user_id_input"
+    },
+    {
+      "type": "button",
+      "value": "Import User",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "user",
+          "args": [
+            "import",
+            "@local.user_id_input"
+          ],
+          "_raw": "click | user: import: @local.user_id_input",
+          "_cleaned": "click | user: import: @local.user_id_input"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit : force_reprocess",
+          "_cleaned": "click | emit : force_reprocess"
+        }
+      ],
+      "name": "button_13",
+      "_nested_name": "button_13",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.user_id_input",
+                  "matchedExpression": "@local.user_id_input",
+                  "type": "local",
+                  "fieldName": "user_id_input"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | user: import: @local.user_id_input",
+                "matchedExpression": "@local.user_id_input",
+                "type": "local",
+                "fieldName": "user_id_input"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | user: import: @local.user_id_input",
+                "matchedExpression": "@local.user_id_input",
+                "type": "local",
+                "fieldName": "user_id_input"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.user_id_input": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_user_actions.xlsx"
+}

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67cbcfca427183bdcb25fad77f05e838326d84d1880c3cffcb39bd251c7c0a48
-size 625
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_title_params",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "help",
+      "required": false,
+      "description": "Any string for help tooltip"
+    },
+    {
+      "id": "tooltip_position",
+      "required": false,
+      "description": "Tooltip positioning"
+    },
+    {
+      "id": "text_align",
+      "required": false,
+      "description": "Text alignment"
+    },
+    {
+      "id": "style",
+      "required": false,
+      "description": "Text formatting"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_title_test.xlsx"
+}

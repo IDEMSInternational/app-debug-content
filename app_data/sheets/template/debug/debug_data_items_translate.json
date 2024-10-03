@@ -1,3 +1,299 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cf2a51781906a59c5ad01b384b522f2dffe8c5a2617d27d41c4e31b6eaec6dc
-size 8036
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_translate",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Looping over list with translatable column",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text_data_items",
+      "value": "**Data items**",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_data_items"
+    },
+    {
+      "type": "data_items",
+      "name": "data_items",
+      "value": "@data.debug_data_list",
+      "rows": [
+        {
+          "type": "text",
+          "name": "id_@item.id",
+          "value": "Item ID: @item.id",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "data_items.id_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item ID: @item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "value",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "index_@item.id",
+          "value": "Translatable column: @item.to_translate",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "data_items.index_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "index_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Translatable column: @item.to_translate",
+                "matchedExpression": "@item.to_translate",
+                "type": "item",
+                "fieldName": "to_translate"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.index_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.to_translate": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_@item.id",
+          "value": "Add \"updated\" property",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_item",
+              "args": [],
+              "_raw": "click | set_item | updated: true",
+              "_cleaned": "click | set_item | updated: true",
+              "params": {
+                "updated": true
+              }
+            }
+          ],
+          "_nested_name": "data_items.button_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items.button_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "data_items",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_data_list",
+            "matchedExpression": "@data.debug_data_list",
+            "type": "data",
+            "fieldName": "debug_data_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_data_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_items",
+      "value": "**Items**",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_items"
+    },
+    {
+      "type": "items",
+      "name": "items",
+      "value": "@data.debug_data_list",
+      "rows": [
+        {
+          "type": "text",
+          "name": "id_@item.id",
+          "value": "Item ID: @item.id",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "items.id_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Item ID: @item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "items.id_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "value",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "index_@item.id",
+          "value": "Translatable column: @item.to_translate",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "items.index_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "index_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "Translatable column: @item.to_translate",
+                "matchedExpression": "@item.to_translate",
+                "type": "item",
+                "fieldName": "to_translate"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "items.index_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.to_translate": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "items",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_data_list",
+            "matchedExpression": "@data.debug_data_list",
+            "type": "data",
+            "fieldName": "debug_data_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_data_list": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+}

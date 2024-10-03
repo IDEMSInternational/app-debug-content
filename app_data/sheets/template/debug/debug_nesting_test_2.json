@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee97e4f4c928a267495da13db8d68f09a3a10ae66fb7d489af9e63326b0e0ea2
-size 951
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_test_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "template",
+      "name": "other_name",
+      "value": "debug_test_1",
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "type": "nested_properties",
+          "name": "name_1",
+          "exclude_from_translation": true,
+          "rows": [
+            {
+              "name": "title",
+              "value": "title for sheet 1 was overwritten twice",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "type": "set_variable",
+              "_nested_name": "other_name.name_1.title"
+            }
+          ],
+          "_nested_name": "other_name.name_1"
+        }
+      ],
+      "_nested_name": "other_name"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting.xlsx"
+}

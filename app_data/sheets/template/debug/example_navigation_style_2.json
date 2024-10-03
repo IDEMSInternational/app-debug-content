@@ -1,3 +1,92 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c522457434cc5cb1a2fe7c92992fec722bc1399720181b0c72572c299bbe35e
-size 2311
+{
+  "flow_type": "template",
+  "flow_name": "example_navigation_style_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "page_1_title",
+      "value": "This Page",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "page_1_title"
+    },
+    {
+      "type": "text",
+      "name": "page_1_text",
+      "value": "This is the text for this page",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "page_1_text"
+    },
+    {
+      "type": "display_group",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "navigation"
+      },
+      "rows": [
+        {
+          "type": "button",
+          "name": "button_1",
+          "value": "return",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "home_screen"
+              ],
+              "_raw": "click | go_to:home_screen",
+              "_cleaned": "click | go_to:home_screen"
+            }
+          ],
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_4.button_1"
+        },
+        {
+          "type": "button",
+          "name": "button_2",
+          "value": "go back",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "home_screen"
+              ],
+              "_raw": "click | go_to:home_screen",
+              "_cleaned": "click | go_to:home_screen"
+            }
+          ],
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_4.button_2"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    },
+    {
+      "type": "text",
+      "name": "hidden",
+      "value": "hideme",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "hidden"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_navigation_style.xlsx"
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b10b5dd0b9d38994b9baba9400aa9ca071e7ec271b13c3ea359fbb5772c504ba
-size 559
+{
+  "flow_type": "data_list",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_nav_data_list",
+  "status": "released",
+  "data_list_name": "example_items_nav",
+  "rows": [
+    {
+      "id": "id_1",
+      "template": "example_text_button"
+    },
+    {
+      "id": "id_2",
+      "template": "example_text_image"
+    },
+    {
+      "id": "id_3",
+      "template": "example_text"
+    },
+    {
+      "id": "id_concat",
+      "template": "example_text_button; example_text_image; example_text"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_items.xlsx"
+}

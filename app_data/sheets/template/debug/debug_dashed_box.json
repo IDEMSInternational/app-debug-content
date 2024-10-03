@@ -1,3 +1,137 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:946b948d62f2514766fd5ac07b2919b43a8e55eb3496f46debff3686c8b4080e
-size 3481
+{
+  "flow_type": "template",
+  "flow_name": "debug_dashed_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "example_markdown",
+      "value": "Some text including markdown: **bold**",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "example_markdown"
+    },
+    {
+      "name": "example_plain_text",
+      "value": "Example of multiple paragraphs of plain text.\nHere is a second paragraph after a single line-break.\n\nHere is a third paragraph after a double line-break.\n\nHere is a link: [IDEMS Website](https://www.idems.international/)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "example_plain_text"
+    },
+    {
+      "type": "dashed_box",
+      "value": "@local.example_markdown",
+      "_translations": {
+        "value": {}
+      },
+      "name": "dashed_box_4",
+      "_nested_name": "dashed_box_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.example_markdown",
+            "matchedExpression": "@local.example_markdown",
+            "type": "local",
+            "fieldName": "example_markdown"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.example_markdown": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@local.example_markdown",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.example_markdown",
+            "matchedExpression": "@local.example_markdown",
+            "type": "local",
+            "fieldName": "example_markdown"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.example_markdown": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "dashed_box",
+      "value": "@local.example_plain_text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "dashed_box_6",
+      "_nested_name": "dashed_box_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.example_plain_text",
+            "matchedExpression": "@local.example_plain_text",
+            "type": "local",
+            "fieldName": "example_plain_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.example_plain_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@local.example_plain_text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.example_plain_text",
+            "matchedExpression": "@local.example_plain_text",
+            "type": "local",
+            "fieldName": "example_plain_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.example_plain_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Dashed box with no value:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_9",
+      "_nested_name": "dashed_box_9"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_dashed_box.xlsx"
+}

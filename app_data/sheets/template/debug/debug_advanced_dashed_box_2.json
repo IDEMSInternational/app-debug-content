@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be7070693a9e63fc968534187a3c5983cfab0f04679f60384ff0441822fc1e62
-size 388
+{
+  "flow_type": "template",
+  "flow_name": "debug_advanced_dashed_box_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "advanced_dashed_box",
+      "name": "dashed_box",
+      "exclude_from_translation": true,
+      "rows": [],
+      "_nested_name": "dashed_box"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_advanced_dashed_box.xlsx"
+}

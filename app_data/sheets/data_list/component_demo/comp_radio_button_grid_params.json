@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc305af7dbd8e6470e5cb877fc58b9fe8e8f652ded34dcbf438b23ecb6e770ed
-size 903
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_radio_button_grid_params",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "answer_list",
+      "required": true,
+      "description": "List of options presented as radio items"
+    },
+    {
+      "id": "item_width",
+      "required": false,
+      "description": "Minimum item width, will increase to fit grid;",
+      "default_value": "200px"
+    },
+    {
+      "id": "grid_width",
+      "required": false,
+      "description": "Maximum grid width, if specified will center items in available space.\nUse fixed or relative units, such as '75%' or '500px'",
+      "default_value": "100%"
+    },
+    {
+      "id": "grid_gap",
+      "required": false,
+      "description": "Spacing between grid items",
+      "default_value": "16px"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
+}

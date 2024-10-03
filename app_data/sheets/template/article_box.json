@@ -1,3 +1,283 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ed99f018278301c1ee59f8e29834562f1616dc6961e7cd4a12d3fb70f3fcf4e
-size 7451
+{
+  "flow_type": "template",
+  "flow_name": "article_box",
+  "status": "released",
+  "rows": [
+    {
+      "name": "id",
+      "value": "article_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "id"
+    },
+    {
+      "name": "article_id",
+      "value": "article.@local.id",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "article_id",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "article.@local.id",
+            "matchedExpression": "@local.id",
+            "type": "local",
+            "fieldName": "id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "article_data",
+      "value": "@data.@local.article_id",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "article_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.@local.article_id",
+            "matchedExpression": "@local.article_id",
+            "type": "local",
+            "fieldName": "article_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.article_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "article_goal",
+      "value": "@local.article_data.goal",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "article_goal",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.article_data.goal",
+            "matchedExpression": "@local.article_data.goal",
+            "type": "local",
+            "fieldName": "article_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.article_data.goal": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "goal_article_goal",
+      "value": "goal.@local.article_goal",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "goal_article_goal",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "goal.@local.article_goal",
+            "matchedExpression": "@local.article_goal",
+            "type": "local",
+            "fieldName": "article_goal"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.article_goal": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "goal_data",
+      "value": "@data.@local.goal_article_goal",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "goal_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.@local.goal_article_goal",
+            "matchedExpression": "@local.goal_article_goal",
+            "type": "local",
+            "fieldName": "goal_article_goal"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.goal_article_goal": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_header",
+      "parameter_list": {
+        "style": "dashed_box",
+        "icon_src": "@local.goal_data.icon_asset",
+        "icon_position": "top-right"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "name": "title",
+          "value": "@local.article_data.title",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_header.title",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.article_data.title",
+                "matchedExpression": "@local.article_data.title",
+                "type": "local",
+                "fieldName": "article_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.article_data.title": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "abstract",
+          "value": "@local.article_data.abstract",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_header.abstract",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.article_data.abstract",
+                "matchedExpression": "@local.article_data.abstract",
+                "type": "local",
+                "fieldName": "article_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.article_data.abstract": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button",
+          "value": "Read more",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_field",
+              "args": [
+                "current_article",
+                "@local.id"
+              ],
+              "_raw": "click | set_field: current_article: @local.id",
+              "_cleaned": "click | set_field: current_article: @local.id"
+            },
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "article"
+              ],
+              "_raw": "click | go_to: article",
+              "_cleaned": "click | go_to: article"
+            }
+          ],
+          "_nested_name": "dg_header.button",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.id",
+                      "matchedExpression": "@local.id",
+                      "type": "local",
+                      "fieldName": "id"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_field: current_article: @local.id",
+                    "matchedExpression": "@local.id",
+                    "type": "local",
+                    "fieldName": "id"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_field: current_article: @local.id",
+                    "matchedExpression": "@local.id",
+                    "type": "local",
+                    "fieldName": "id"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.id": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_header",
+      "_dynamicFields": {
+        "parameter_list": {
+          "icon_src": [
+            {
+              "fullExpression": "@local.goal_data.icon_asset",
+              "matchedExpression": "@local.goal_data.icon_asset",
+              "type": "local",
+              "fieldName": "goal_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.goal_data.icon_asset": [
+          "parameter_list.icon_src"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "demo_sheets/articles.xlsx"
+}

@@ -1,3 +1,183 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce60611f45deafe4c69b2558aee6212e0c466749a4f593244752d0b7784a42c7
-size 4012
+{
+  "flow_type": "template",
+  "flow_name": "comp_text",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_default",
+      "value": "Default",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_default"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Text alignment",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "text",
+      "name": "text_align_1",
+      "value": "Left aligned text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "text_align": "left"
+      },
+      "_nested_name": "text_align_1"
+    },
+    {
+      "type": "text",
+      "name": "text_align_2",
+      "value": "Centered text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "text_align": "center"
+      },
+      "_nested_name": "text_align_2"
+    },
+    {
+      "type": "text",
+      "name": "text_align_3",
+      "value": "Right aligned text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "text_align": "right"
+      },
+      "_nested_name": "text_align_3"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Formatting",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_1",
+      "value": "Standard text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "standard"
+      },
+      "_nested_name": "text_formatting_1"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_2",
+      "value": "Contextual text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "contextual"
+      },
+      "_nested_name": "text_formatting_2"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_3",
+      "value": "Emphasised text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text_formatting_3"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_4",
+      "value": "Alternative text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "alternative"
+      },
+      "_nested_name": "text_formatting_4"
+    },
+    {
+      "type": "text",
+      "name": "text_css_1",
+      "value": "Text with custom CSS added via style_list",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "color: red"
+      ],
+      "_nested_name": "text_css_1"
+    },
+    {
+      "type": "text",
+      "name": "text_css_2",
+      "value": "Text with custom CSS added via style_list",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "color: #A020F0"
+      ],
+      "_nested_name": "text_css_2"
+    },
+    {
+      "type": "text",
+      "name": "text_css_3",
+      "value": "Text with custom CSS added via style_list",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "text-transform: uppercase"
+      ],
+      "_nested_name": "text_css_3"
+    },
+    {
+      "type": "title",
+      "value": "Text with typographic punctuation",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
+    },
+    {
+      "type": "text",
+      "value": "She said, -- \"A 'simple' sentence...\" --- unknown",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "text",
+      "value": "She said, -\\- \\\"A \\'simple\\' sentence\\...\\\" \\-\\-- unknown",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_17",
+      "_nested_name": "text_17"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_text.xlsx"
+}

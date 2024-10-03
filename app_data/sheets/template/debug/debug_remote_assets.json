@@ -1,3 +1,330 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36e49c8dadc07d7fc637716ecfce8b30d7c7721728efafa23433989faccb1380
-size 8354
+{
+  "flow_type": "template",
+  "flow_name": "debug_remote_assets",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Remote assets",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Download required assets",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "download",
+            "debug_asset_pack_1"
+          ],
+          "_raw": "click | asset_pack: download: debug_asset_pack_1",
+          "_cleaned": "click | asset_pack: download: debug_asset_pack_1"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload",
+          "_cleaned": "click | emit: force_reload"
+        }
+      ],
+      "_nested_name": "button_1"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset replaces core equivalent:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_4.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/image_1.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_4.image_2"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset has no core equivalent:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_6.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/image_2.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_6.image_2"
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset adds an override:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_8.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/image_3.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_8.image_2"
+        }
+      ],
+      "name": "display_group_8",
+      "_nested_name": "display_group_8"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Remote asset replaces core and override:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_10.text_1"
+        },
+        {
+          "type": "image",
+          "value": "debug_asset_pack_1/image_4.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_10.image_2"
+        }
+      ],
+      "name": "display_group_10",
+      "_nested_name": "display_group_10"
+    },
+    {
+      "type": "title",
+      "value": "Select language:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_12",
+      "_nested_name": "title_12"
+    },
+    {
+      "name": "language_list",
+      "value": [
+        {
+          "name": "gb_en",
+          "text": "English"
+        },
+        {
+          "name": "es_sp",
+          "text": "Español"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "language_list"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "set_language",
+            "this.value"
+          ],
+          "_raw": "changed | emit: set_language: @local.language_select",
+          "_cleaned": "changed | emit: set_language: @local.language_select"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "changed | emit: force_reload",
+          "_cleaned": "changed | emit: force_reload"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.language_list"
+      },
+      "_nested_name": "language_select",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_language",
+            "matchedExpression": "@fields._app_language",
+            "type": "fields",
+            "fieldName": "_app_language"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.language_list",
+              "matchedExpression": "@local.language_list",
+              "type": "local",
+              "fieldName": "language_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language": [
+          "value"
+        ],
+        "@local.language_select": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.language_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Reload page",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload",
+          "_cleaned": "click | emit: force_reload"
+        }
+      ],
+      "_nested_name": "button_2"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Reset remote assets (return to core asset pack before any downloads)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "reset"
+          ],
+          "_raw": "click | asset_pack: reset",
+          "_cleaned": "click | asset_pack: reset"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload",
+          "_cleaned": "click | emit: force_reload"
+        }
+      ],
+      "_nested_name": "button_3"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_remote_assets.xlsx"
+}

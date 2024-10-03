@@ -1,3 +1,150 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4730d7d6c928641ec0aaf74c00ff6ba5fa4db8347865bbaa36dee96c9a0434ed
-size 4753
+{
+  "flow_type": "template",
+  "flow_name": "debug_accordion_variables",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "accordion",
+      "name": "accordion",
+      "rows": [
+        {
+          "name": "variable_invisible",
+          "value": "This variable does not show as an accordion header",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "accordion.variable_invisible"
+        },
+        {
+          "type": "items",
+          "value": "@data.debug_accordion_data",
+          "rows": [
+            {
+              "name": "variable",
+              "value": "Value for @item.id",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "accordion.items_2.variable",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Value for @item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "accordion_section",
+              "name": "accordion_section_@item.id",
+              "value": "@item.title",
+              "rows": [
+                {
+                  "type": "text",
+                  "name": "text",
+                  "value": "@local.variable",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "accordion.items_2.accordion_section_@item.id.text",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.variable",
+                        "matchedExpression": "@local.variable",
+                        "type": "local",
+                        "fieldName": "variable"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "accordion.items_2.accordion_section_@item.id.text",
+                        "matchedExpression": "@item.id.text",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.variable": [
+                      "value"
+                    ],
+                    "@item.id.text": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "accordion.items_2.accordion_section_@item.id",
+              "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "accordion_section_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "value": [
+                  {
+                    "fullExpression": "@item.title",
+                    "matchedExpression": "@item.title",
+                    "type": "item",
+                    "fieldName": "title"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "accordion.items_2.accordion_section_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ],
+                "@item.title": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "name": "items_2",
+          "_nested_name": "accordion.items_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.debug_accordion_data",
+                "matchedExpression": "@data.debug_accordion_data",
+                "type": "data",
+                "fieldName": "debug_accordion_data"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.debug_accordion_data": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "accordion"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_accordion.xlsx"
+}

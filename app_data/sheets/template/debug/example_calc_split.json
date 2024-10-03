@@ -1,3 +1,784 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:743ddb6ce8c72de580258ba0a29be956ebd6e87e5ac03c8b150ef31fe3adf376
-size 22210
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_calc_split",
+  "status": "released",
+  "rows": [
+    {
+      "name": "val_1",
+      "value": "ananas",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "val_1"
+    },
+    {
+      "name": "val_2",
+      "value": "bananas",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "val_2"
+    },
+    {
+      "type": "title",
+      "name": "example_string",
+      "value": "Split a string to substrings",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "example_string"
+    },
+    {
+      "name": "original_string",
+      "value": "fruit_1: apples; fruit_2: bananas; fruit_3: pears",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "original_string"
+    },
+    {
+      "type": "text",
+      "name": "show_original_string",
+      "value": "@local.original_string",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_original_string",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.original_string",
+            "matchedExpression": "@local.original_string",
+            "type": "local",
+            "fieldName": "original_string"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.original_string": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "array",
+      "value": "@calc(@local.original_string.split(\";\"))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "array",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.original_string.split(\";\"))",
+            "matchedExpression": "@local.original_string.split",
+            "type": "local",
+            "fieldName": "original_string"
+          },
+          {
+            "fullExpression": "@calc(@local.original_string.split(\";\"))",
+            "matchedExpression": "@calc(@local.original_string.split(\";\"))",
+            "type": "calc",
+            "fieldName": "@local.original_string.split(\";\")"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.original_string.split": [
+          "value"
+        ],
+        "@calc(@local.original_string.split(\";\"))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "show_array",
+      "value": "@local.array",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_array",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.array",
+            "matchedExpression": "@local.array",
+            "type": "local",
+            "fieldName": "array"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.array": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "example_json",
+      "value": "Start with a json string",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "example_json"
+    },
+    {
+      "name": "original_json_string",
+      "value": "{\"name\":\"John\", \"birth\":\"1986-12-14\", \"city\":\"New York\"}",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "original_json_string"
+    },
+    {
+      "name": "parse_json",
+      "value": "@calc(JSON.parse(@local.original_json_string))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parse_json",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.parse(@local.original_json_string))",
+            "matchedExpression": "@local.original_json_string",
+            "type": "local",
+            "fieldName": "original_json_string"
+          },
+          {
+            "fullExpression": "@calc(JSON.parse(@local.original_json_string))",
+            "matchedExpression": "@calc(JSON.parse(@local.original_json_string))",
+            "type": "calc",
+            "fieldName": "JSON.parse(@local.original_json_string)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.original_json_string": [
+          "value"
+        ],
+        "@calc(JSON.parse(@local.original_json_string))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "undo_json",
+      "value": "@calc(JSON.stringify(@local.parse_json))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "undo_json",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.parse_json))",
+            "matchedExpression": "@local.parse_json",
+            "type": "local",
+            "fieldName": "parse_json"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.parse_json))",
+            "matchedExpression": "@calc(JSON.stringify(@local.parse_json))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.parse_json)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_json": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.parse_json))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "show_parsed",
+      "value": "@local.parse_json",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_parsed",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.parse_json",
+            "matchedExpression": "@local.parse_json",
+            "type": "local",
+            "fieldName": "parse_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_json": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "show_city",
+      "value": "@local.parse_json.city",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_city",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.parse_json.city",
+            "matchedExpression": "@local.parse_json.city",
+            "type": "local",
+            "fieldName": "parse_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_json.city": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "example_json",
+      "value": "Start with a nested json string",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "example_json"
+    },
+    {
+      "name": "people",
+      "value": "{\"person_1\":{\"name\":\"John\", \"birth\":\"1986-12-14\", \"city\":\"New York\"}, \"person_2\":{\"name\":\"Emma\", \"birth\":\"1982-10-20\", \"city\":\"London\"}}",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "people"
+    },
+    {
+      "name": "parse_people",
+      "value": "@calc(JSON.parse(@local.people))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parse_people",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.parse(@local.people))",
+            "matchedExpression": "@local.people",
+            "type": "local",
+            "fieldName": "people"
+          },
+          {
+            "fullExpression": "@calc(JSON.parse(@local.people))",
+            "matchedExpression": "@calc(JSON.parse(@local.people))",
+            "type": "calc",
+            "fieldName": "JSON.parse(@local.people)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.people": [
+          "value"
+        ],
+        "@calc(JSON.parse(@local.people))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "show_2_city",
+      "value": "@local.parse_people.person_2.city",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_2_city",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.parse_people.person_2.city",
+            "matchedExpression": "@local.parse_people.person_2.city",
+            "type": "local",
+            "fieldName": "parse_people"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people.person_2.city": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "change_city",
+      "value": "@calc(@local.parse_people.person_2[\"city\"] = \"Cape Town\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "change_city",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.parse_people.person_2[\"city\"] = \"Cape Town\")",
+            "matchedExpression": "@local.parse_people.person_2",
+            "type": "local",
+            "fieldName": "parse_people"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people.person_2[\"city\"] = \"Cape Town\")",
+            "matchedExpression": "@calc(@local.parse_people.person_2[\"city\"] = \"Cape Town\")",
+            "type": "calc",
+            "fieldName": "@local.parse_people.person_2[\"city\"] = \"Cape Town\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people.person_2": [
+          "value"
+        ],
+        "@calc(@local.parse_people.person_2[\"city\"] = \"Cape Town\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "show_2_city_changed",
+      "value": "@local.parse_people.person_2.city",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "show_2_city_changed",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.parse_people.person_2.city",
+            "matchedExpression": "@local.parse_people.person_2.city",
+            "type": "local",
+            "fieldName": "parse_people"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people.person_2.city": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "new_person",
+      "value": "person_3",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "new_person"
+    },
+    {
+      "name": "add_person_3",
+      "value": "@calc(@local.parse_people[@local.new_person] = {})",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "add_person_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person] = {})",
+            "matchedExpression": "@local.parse_people",
+            "type": "local",
+            "fieldName": "parse_people"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person] = {})",
+            "matchedExpression": "@local.new_person",
+            "type": "local",
+            "fieldName": "new_person"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person] = {})",
+            "matchedExpression": "@calc(@local.parse_people[@local.new_person] = {})",
+            "type": "calc",
+            "fieldName": "@local.parse_people[@local.new_person] = {}"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people": [
+          "value"
+        ],
+        "@local.new_person": [
+          "value"
+        ],
+        "@calc(@local.parse_people[@local.new_person] = {})": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_add_person_3",
+      "value": "Type a city for person_3",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_add_person_3"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_1",
+      "_nested_name": "text_box_1"
+    },
+    {
+      "name": "person_3_name",
+      "value": "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "person_3_name",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)",
+            "matchedExpression": "@local.parse_people",
+            "type": "local",
+            "fieldName": "parse_people"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)",
+            "matchedExpression": "@local.new_person",
+            "type": "local",
+            "fieldName": "new_person"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)",
+            "matchedExpression": "@local.text_box_1",
+            "type": "local",
+            "fieldName": "text_box_1"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)",
+            "matchedExpression": "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)",
+            "type": "calc",
+            "fieldName": "@local.parse_people[@local.new_person].city = @local.text_box_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people": [
+          "value"
+        ],
+        "@local.new_person": [
+          "value"
+        ],
+        "@local.text_box_1": [
+          "value"
+        ],
+        "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "person_3_city",
+      "value": "@calc(@local.parse_people[@local.new_person].name = \"Adam\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "person_3_city",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person].name = \"Adam\")",
+            "matchedExpression": "@local.parse_people",
+            "type": "local",
+            "fieldName": "parse_people"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person].name = \"Adam\")",
+            "matchedExpression": "@local.new_person",
+            "type": "local",
+            "fieldName": "new_person"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.new_person].name = \"Adam\")",
+            "matchedExpression": "@calc(@local.parse_people[@local.new_person].name = \"Adam\")",
+            "type": "calc",
+            "fieldName": "@local.parse_people[@local.new_person].name = \"Adam\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people": [
+          "value"
+        ],
+        "@local.new_person": [
+          "value"
+        ],
+        "@calc(@local.parse_people[@local.new_person].name = \"Adam\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_add_person_3",
+      "value": "Select who you want to rename",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_add_person_3"
+    },
+    {
+      "name": "answer_list",
+      "value": [
+        {
+          "name": "person_1",
+          "text": "person_1"
+        },
+        {
+          "name": "person_2",
+          "text": "person_2"
+        },
+        {
+          "name": "person_3",
+          "text": "person_3"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid",
+      "parameter_list": {
+        "answer_list": "@local.answer_list"
+      },
+      "_nested_name": "radio_button_grid",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list",
+              "matchedExpression": "@local.answer_list",
+              "type": "local",
+              "fieldName": "answer_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_add_person_3",
+      "value": "Type a new name for @local.radio_button_grid",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_add_person_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Type a new name for @local.radio_button_grid",
+            "matchedExpression": "@local.radio_button_grid",
+            "type": "local",
+            "fieldName": "radio_button_grid"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_button_grid": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_2",
+      "_nested_name": "text_box_2"
+    },
+    {
+      "name": "new_name",
+      "value": "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.radio_button_grid",
+      "type": "set_variable",
+      "_nested_name": "new_name",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)",
+            "matchedExpression": "@local.parse_people",
+            "type": "local",
+            "fieldName": "parse_people"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)",
+            "matchedExpression": "@local.radio_button_grid",
+            "type": "local",
+            "fieldName": "radio_button_grid"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)",
+            "matchedExpression": "@local.text_box_2",
+            "type": "local",
+            "fieldName": "text_box_2"
+          },
+          {
+            "fullExpression": "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)",
+            "matchedExpression": "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)",
+            "type": "calc",
+            "fieldName": "@local.parse_people[@local.radio_button_grid].name = @local.text_box_2"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@local.radio_button_grid",
+            "matchedExpression": "@local.radio_button_grid",
+            "type": "local",
+            "fieldName": "radio_button_grid"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people": [
+          "value"
+        ],
+        "@local.radio_button_grid": [
+          "value",
+          "condition"
+        ],
+        "@local.text_box_2": [
+          "value"
+        ],
+        "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "people_string",
+      "value": "@calc(JSON.stringify(@local.parse_people))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "people_string",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.parse_people))",
+            "matchedExpression": "@local.parse_people",
+            "type": "local",
+            "fieldName": "parse_people"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.parse_people))",
+            "matchedExpression": "@calc(JSON.stringify(@local.parse_people))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.parse_people)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parse_people": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.parse_people))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "save to field",
+      "value": "Save to field",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "people",
+            "@local.people_string"
+          ],
+          "_raw": "click | set_field: people: @local.people_string",
+          "_cleaned": "click | set_field: people: @local.people_string"
+        }
+      ],
+      "_nested_name": "save to field",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.people_string",
+                  "matchedExpression": "@local.people_string",
+                  "type": "local",
+                  "fieldName": "people_string"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_field: people: @local.people_string",
+                "matchedExpression": "@local.people_string",
+                "type": "local",
+                "fieldName": "people_string"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_field: people: @local.people_string",
+                "matchedExpression": "@local.people_string",
+                "type": "local",
+                "fieldName": "people_string"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.people_string": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+}

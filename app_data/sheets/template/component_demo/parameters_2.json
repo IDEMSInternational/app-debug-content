@@ -1,3 +1,82 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c053f9873c333b2e8a7db3a306c20679ffe1aa17b567888ce8ee23116c26ed8f
-size 1993
+{
+  "flow_type": "template",
+  "flow_name": "parameters_2",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "option_1",
+      "name": "option_1",
+      "text": "Text with square image",
+      "image": "https://placekitten.com/200/200",
+      "type": "set_variable",
+      "_nested_name": "option_1"
+    },
+    {
+      "id": "option_2",
+      "name": "option_2",
+      "text": "Short text only",
+      "type": "set_variable",
+      "_nested_name": "option_2"
+    },
+    {
+      "id": "option_3",
+      "name": "option_3",
+      "text": "Text with 6:9 image",
+      "image": "https://placekitten.com/120/180",
+      "type": "set_variable",
+      "_nested_name": "option_3"
+    },
+    {
+      "id": "option_4",
+      "name": "option_4",
+      "text": "Text with 9:6 image",
+      "image": "https://placekitten.com/180/120",
+      "type": "set_variable",
+      "_nested_name": "option_4"
+    },
+    {
+      "id": "option_5",
+      "name": "option_5",
+      "text": "Short text only",
+      "type": "set_variable",
+      "_nested_name": "option_5"
+    },
+    {
+      "id": "option_6",
+      "name": "option_6",
+      "text": "longer text entry for text 2. longer text entry for text 2. longer text entry for text 2.",
+      "type": "set_variable",
+      "_nested_name": "option_6"
+    },
+    {
+      "id": "option_7",
+      "name": "option_7",
+      "text": "text_7",
+      "type": "set_variable",
+      "_nested_name": "option_7"
+    },
+    {
+      "id": "option_8",
+      "name": "option_8",
+      "text": "text_8",
+      "type": "set_variable",
+      "_nested_name": "option_8"
+    },
+    {
+      "id": "option_9",
+      "name": "option_9",
+      "text": "text_9",
+      "type": "set_variable",
+      "_nested_name": "option_9"
+    },
+    {
+      "id": "option_10",
+      "name": "option_10",
+      "text": "text_10",
+      "type": "set_variable",
+      "_nested_name": "option_10"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_accordion.xlsx"
+}

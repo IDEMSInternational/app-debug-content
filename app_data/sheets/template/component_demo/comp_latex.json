@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc9d337d04b444c38545ff2f6f8a31041298ae5e7aed91d775d1f141abd6ecfd
-size 732
+{
+  "flow_type": "template",
+  "flow_name": "comp_latex",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "latex",
+      "name": "latex",
+      "value": "You can write text that contains expressions inline like this: $\\sum_{i=1}^n(x_i^2 - \\overline{x}^2)$, by using the format \\$expression\\$.\nYou also can write expressions in display mode as follows: $$\\sum_{i=1}^n(x_i^2 - \\overline{x}^2)$$\nThis is achieved by using a double \\$ symbol, like \\$\\$expression\\$\\$.\nYou can escape the \\$ by using \\\\$ in the text input.",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "latex"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_latex.xlsx"
+}

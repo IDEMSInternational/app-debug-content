@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4bfb40a0d84351de30c20963de5a4ea1b334069a447f1362cd42416aebfc2d2
-size 1303
+{
+  "flow_type": "template",
+  "flow_name": "debug_hidden_buttons",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Placeholder Text to create separation",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_1"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "exclude_from_translation": true,
+      "_nested_name": "button_1"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Placeholder Text to create separation..",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "text",
+      "name": "button_2",
+      "value": "Hidden Button",
+      "_translations": {
+        "value": {}
+      },
+      "hidden": true,
+      "exclude_from_translation": true,
+      "_nested_name": "button_2"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Placeholder Text to create separation",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_3"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_small_issues.xlsx"
+}

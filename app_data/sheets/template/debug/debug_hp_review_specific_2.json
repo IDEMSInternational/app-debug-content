@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a4469d6899ae94695c1537edb3e6b10023621c9e76d62f79e3e7d669b6a73b36
-size 1637
+{
+  "flow_type": "template",
+  "flow_name": "debug_hp_review_specific_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "template",
+      "name": "home_practice_review",
+      "value": "debug_hp_review_2",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "completed | emit:completed",
+          "_cleaned": "completed | emit:completed"
+        },
+        {
+          "trigger": "uncompleted",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "uncompleted | emit:uncompleted",
+          "_cleaned": "uncompleted | emit:uncompleted"
+        }
+      ],
+      "rows": [
+        {
+          "name": "workshop_data",
+          "value": "@data.workshop.w_consequence",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "home_practice_review.workshop_data",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.workshop.w_consequence",
+                "matchedExpression": "@data.workshop.w_consequence",
+                "type": "data",
+                "fieldName": "workshop"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.workshop.w_consequence": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "home_practice_review"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_hp_review_2.xlsx"
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d9b68be3d81640c3cc8bb23e8810b53d571bba130a10ca9f1f56378fd4afc4f
-size 376
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "w_example_ending",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "ending",
+      "value": "ending",
+      "exclude_from_translation": true,
+      "rows": [],
+      "_nested_name": "ending"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_workshop.xlsx"
+}

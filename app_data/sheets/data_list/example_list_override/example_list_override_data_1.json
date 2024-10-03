@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b5f82abb12e0842f0e84322e44be0584c188f3611729f4ccefbd28b5c9e65cc
-size 468
+{
+  "flow_type": "data_list",
+  "flow_name": "example_list_override_data_1",
+  "status": "released",
+  "flow_subtype": "example_list_override",
+  "override_target": "example_list_override_data",
+  "override_condition": "@fields.example_list_override_field == 1",
+  "rows": [
+    {
+      "id": 1,
+      "text": "override text 1"
+    },
+    {
+      "id": 2,
+      "text": "override text 2"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f45629f0a2c67ce8e6728f541a84c4aa7e6791f64e4e37ecb8ea5dc045b81d45
-size 321
+{
+  "flow_name": "example_w_2_data",
+  "flow_subtype": "example_generator",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "Workshop 2 item 1"
+    },
+    {
+      "id": "id_2",
+      "text": "Workshop 2 item 2"
+    },
+    {
+      "id": "id_3",
+      "text": "Workshop 2 item 3"
+    }
+  ]
+}

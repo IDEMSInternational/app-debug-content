@@ -1,3 +1,112 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bb164bb7a34e3ea9348ecc36648f257e84653aa593edc8e0ef956448747bcdd
-size 2823
+{
+  "flow_type": "template",
+  "flow_name": "example_temp_override_default",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "a_or_b",
+      "value": "a",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "a_or_b"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Override Template Default",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "text",
+      "name": "text_a",
+      "value": "Change language below to apply override",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.a_or_b === \"a\"",
+      "_nested_name": "text_a",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.a_or_b === \"a\"",
+            "matchedExpression": "@local.a_or_b",
+            "type": "local",
+            "fieldName": "a_or_b"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.a_or_b": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_b",
+      "value": "Content has been overridden",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.a_or_b === \"b\"",
+      "_nested_name": "text_b",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.a_or_b === \"b\"",
+            "matchedExpression": "@local.a_or_b",
+            "type": "local",
+            "fieldName": "a_or_b"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.a_or_b": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_c",
+      "value": "The value of the global variable example_glob_override is: @global.example_glob_override",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_c",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "The value of the global variable example_glob_override is: @global.example_glob_override",
+            "matchedExpression": "@global.example_glob_override",
+            "type": "global",
+            "fieldName": "example_glob_override"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.example_glob_override": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "example_lang_select",
+      "value": "example_lang_select",
+      "rows": [],
+      "_nested_name": "example_lang_select"
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx",
+  "_overrides": {
+    "example_temp_override_es_sp": "\"@fields._app_language\".startsWith(\"es\")"
+  }
+}

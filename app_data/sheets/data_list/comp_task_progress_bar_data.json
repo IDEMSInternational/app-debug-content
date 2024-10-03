@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:120d34957c8c1bb8e4997166a5ec560135410a0b166a60e70fd437e7c64d5a93
-size 659
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_task_progress_bar_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": 1,
+      "completed_field": "comp_task_progress_bar_task_1_completed"
+    },
+    {
+      "id": 2,
+      "completed_field": "comp_task_progress_bar_task_2_completed"
+    },
+    {
+      "id": 3,
+      "completed_field": "comp_task_progress_bar_task_3_completed"
+    },
+    {
+      "id": 4,
+      "completed_field": "comp_task_progress_bar_task_4_completed"
+    },
+    {
+      "id": 5,
+      "completed_field": "comp_task_progress_bar_task_5_completed"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx"
+}

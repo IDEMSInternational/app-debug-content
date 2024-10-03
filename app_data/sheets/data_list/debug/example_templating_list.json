@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4212bd20bd670f762c41d4dfbba68c60a373ce874e83b08085ac71ed26778b86
-size 916
+{
+  "flow_type": "data_list",
+  "flow_subtype": "debug",
+  "flow_name": "example_templating_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "example_1",
+      "text": "Hello example_1"
+    },
+    {
+      "id": "example_2",
+      "text_2": "example_2_completed"
+    },
+    {
+      "id": "example_3",
+      "text": "Hello example_3",
+      "text_2": "Hello example_3 - with additional message"
+    },
+    {
+      "id": "example_4",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "example_templating_example_4_completed",
+            true
+          ],
+          "_raw": "click | set_field : example_templating_example_4_completed: true",
+          "_cleaned": "click | set_field : example_templating_example_4_completed: true"
+        }
+      ]
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_advanced_templating.xlsx"
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c0f11849a3c191fa08d745eea3e5b00e5b1de9529a58f213439dfafea31957d
-size 653
+{
+  "flow_type": "global",
+  "flow_name": "debug_full_stop_globals",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "global_full_stop",
+      "value": "Global with a full stop",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_full_stop",
+      "value": "Field with a full stop",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_full_stop_after_var.xlsx"
+}

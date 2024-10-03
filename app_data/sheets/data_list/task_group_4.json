@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94a1396f2cf0ca191702d3c89b3efece0da3a0aaafde24bfc31d1cbf6b5f3056
-size 285
+{
+  "flow_type": "data_list",
+  "flow_name": "task_group_4",
+  "status": "released",
+  "rows": [
+    {
+      "id": "task_1",
+      "completed": false
+    },
+    {
+      "id": "task_2",
+      "completed": false
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+}

@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a59d1d9dbd9b470b565e0995d49dbd158b8e79ecbb583c0ba8508fd1ea023e3
-size 1101
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_display_grid_params",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "item_border",
+      "required": false,
+      "description": "Item border style. Supports any css border style, e.g. \"solid\" \"dashed\" or \"none\"",
+      "default_value": "solid",
+      "input_type": "text_box"
+    },
+    {
+      "id": "item_width",
+      "required": false,
+      "description": "Minimum item width, will increase to fit grid;",
+      "default_value": "200px",
+      "input_type": "text_box"
+    },
+    {
+      "id": "grid_width",
+      "required": false,
+      "description": "Maximum grid width, if specified will center items in available space.\nUse fixed or relative units, such as '75%' or '500px'",
+      "default_value": "100%",
+      "input_type": "text_box"
+    },
+    {
+      "id": "grid_gap",
+      "required": false,
+      "description": "Spacing between grid items",
+      "default_value": "16px",
+      "input_type": "text_box"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_display_grid.xlsx"
+}

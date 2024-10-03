@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2254f9f4c6420843b333ce552ed16660a20012b1e66e38b5b8bcf98c54b77a13
-size 1476
+{
+  "flow_type": "template",
+  "flow_name": "comp_html",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "html",
+      "name": "html_card",
+      "value": "<ion-card>\n  <ion-card-header>\n    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>\n    <ion-card-title>Card Title</ion-card-title>\n  </ion-card-header>\n  <ion-card-content>\n    Keep close to Nature's heart... and break clear away, once in awhile,\n    and climb a mountain or spend a week in the woods. Wash your spirit clean.\n  </ion-card-content>\n</ion-card>",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "html_card"
+    },
+    {
+      "name": "red",
+      "value": "Red text",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "red"
+    },
+    {
+      "type": "html",
+      "name": "html_text",
+      "value": "<p style=\"color: red;\"> @local.red </p>",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "html_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "<p style=\"color: red;\"> @local.red </p>",
+            "matchedExpression": "@local.red",
+            "type": "local",
+            "fieldName": "red"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.red": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_html.xlsx"
+}

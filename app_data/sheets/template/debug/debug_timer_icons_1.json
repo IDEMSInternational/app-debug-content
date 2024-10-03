@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a12f570fe5b019b856d00a13c8914159a65fe6b3ada81714fffcfe7d08962a36
-size 426
+{
+  "flow_type": "template",
+  "flow_name": "debug_timer_icons_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "timer",
+      "name": "timer",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "duration_extension": "1",
+        "duration": "10"
+      },
+      "_nested_name": "timer"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_small_issues.xlsx"
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b47967340e0ce00d676868a63b43987f1465e8631d15454bdb5d2122fe8b55a6
-size 524
+{
+  "flow_type": "template",
+  "flow_name": "debug_rounded_corners",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "image",
+      "name": "image",
+      "value": "plh_images/workshops/solve/read_1/slide_1.svg",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "rounded_corners"
+      },
+      "_nested_name": "image"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_rounded_corners.xlsx"
+}

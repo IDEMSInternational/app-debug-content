@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d03ccf64f82f0f27a4e20477cd01086a02492f74971082b1c88daf41e8df9b1d
-size 994
+{
+  "flow_type": "generator",
+  "flow_subtype": "example_generator",
+  "flow_name": "example_generator_temp",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "example_generator_list",
+    "output_flow_name": "example_generator_output_@gen.id",
+    "output_flow_type": "template",
+    "output_flow_subtype": "example_generator"
+  },
+  "comments": "The only required parameter is input_data_list\nAll others will override default values",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Welcome to @gen.title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This text will populate based on condition",
+      "condition": "@gen.text_condition"
+    },
+    {
+      "type": "items",
+      "value": "@data.@gen.data",
+      "rows": [
+        {
+          "type": "text",
+          "name": "text_@item.id",
+          "value": "@item.text"
+        }
+      ]
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_generator.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_generator_output_w_1",
+      "flow_subtype": "example_generator",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "example_generator_output_w_2",
+      "flow_subtype": "example_generator",
+      "flow_type": "template"
+    }
+  ]
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8fcb621077fc236049443ad5b51d9852d463154c8f71cb452ce4c1c38e64261
-size 496
+{
+  "flow_type": "data_pipe",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_append",
+  "status": "released",
+  "rows": [
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "Text: Hello {@row.id}",
+        "Boolean: FALSE",
+        "number: -5.25",
+        "number_text: \"-5.25\""
+      ],
+      "input_source": "example_data_pipe_list",
+      "output_target": "example_pipe_appended"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+  "_output_flows": [
+    {
+      "flow_name": "example_pipe_appended",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

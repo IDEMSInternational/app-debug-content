@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57ffc559c7c12ff6c1ac2f66362fce37564597ac057cf67264a81091d8f0aa30
-size 993
+{
+  "flow_type": "template",
+  "flow_name": "debug_item_variable",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "data_items",
+      "value": "debug_item_data",
+      "rows": [
+        {
+          "type": "text",
+          "value": "@item._index + 1",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "data_items_2.text_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item._index + 1",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item._index": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_2",
+      "_nested_name": "data_items_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_template_variables.xlsx"
+}

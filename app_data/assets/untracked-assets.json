@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a080615144138aa56339f24e0c013765b27a4c35e49ac012d06e4ef98d691f24
-size 283
+{
+  "images/test_image_untracked.png": {
+    "overrides": {
+      "theme_default": {
+        "es_sp": {
+          "filePath": "es_sp/images/test_image_untracked.png",
+          "md5Checksum": "72f88e0cd59ffd07a8cefdee51713ea6",
+          "size_kb": 12.8
+        }
+      }
+    }
+  }
+}

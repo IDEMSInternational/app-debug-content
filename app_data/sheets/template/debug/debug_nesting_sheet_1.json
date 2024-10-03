@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4714e3cbef7c01a07bbd0588234f006f975e1959aae3d36ce2b99a162f507ef8
-size 431
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_sheet_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Title of debug_nesting_sheet_1",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "title"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting.xlsx"
+}

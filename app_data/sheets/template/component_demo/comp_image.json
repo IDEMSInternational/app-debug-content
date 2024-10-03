@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc7dd92f5d2f3ab521d2cb9fcc389d28e0cd7292a086bd14d4a8bec01ae193e2
-size 712
+{
+  "flow_type": "template",
+  "flow_name": "comp_image",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Style",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "image",
+      "name": "image_par_1_1",
+      "parameter_list": {
+        "style": "null - (default)"
+      },
+      "_nested_name": "image_par_1_1"
+    },
+    {
+      "type": "image",
+      "name": "image_par_1_2",
+      "parameter_list": {
+        "style": "rounded_corners"
+      },
+      "_nested_name": "image_par_1_2"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_image.xlsx"
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e620c9c19f40eeeda1810ef122618cb11762958f8c3c5120ebeaecfa71b0cb8
-size 317
+{
+  "flow_name": "task_list_2_add_completed",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "completed: FALSE"
+      ],
+      "input_source": "task_list_2",
+      "output_target": "task_list_2_with_completed"
+    }
+  ],
+  "_output_flows": [
+    {
+      "flow_name": "task_list_2_with_completed",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

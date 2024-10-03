@@ -1,3 +1,84 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:374fc5c6c4bb3d64ce6db54426486f4e37f041f09a6df9c036ffef3defa290e6
-size 1890
+{
+  "flow_type": "template",
+  "flow_name": "comp_qr_code",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "input_string",
+      "value": "Example text for generating a QR code: 12345",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "input_string"
+    },
+    {
+      "type": "title",
+      "value": "Source Text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "text",
+      "value": "@local.input_string",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.input_string",
+            "matchedExpression": "@local.input_string",
+            "type": "local",
+            "fieldName": "input_string"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.input_string": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Generated QR Code",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "qr_code",
+      "value": "@local.input_string",
+      "_translations": {
+        "value": {}
+      },
+      "name": "qr_code_6",
+      "_nested_name": "qr_code_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.input_string",
+            "matchedExpression": "@local.input_string",
+            "type": "local",
+            "fieldName": "input_string"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.input_string": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_qr_code.xlsx"
+}

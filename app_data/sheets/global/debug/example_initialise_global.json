@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cbb3cc875dc14d5c8e3e546356e0890e776a939e9f741f38abafac75c3448058
-size 1619
+{
+  "flow_type": "global",
+  "flow_name": "example_initialise_global",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "example_global_constant_text",
+      "value": "Example Global Constant Text",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "example_global_constant_title",
+      "value": "Example Global Constant Title",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "example_global_constant_image",
+      "value": "plh_images/habits/habit_relax.svg",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_1",
+      "value": "Value of Field 1",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_0",
+      "value": "Value of field 0",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_4",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_5",
+      "value": 5,
+      "exclude_from_translation": true
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/example_global_field.xlsx"
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57a86c27b6a8e2fef4ed52ba20367182aebb55ea33a8f6ddc95bbac49cf63e3c
-size 588
+{
+  "flow_type": "template",
+  "flow_name": "tg_1_subtask_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Task Group 1, Subtask 1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Custom content for Task Group 1, Subtask 1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+}

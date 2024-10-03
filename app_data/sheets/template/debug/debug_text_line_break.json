@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96b26ebdffcf44473ffec4d2ad6b8d660a6825f57167ea6265a3e29329a50fe9
-size 1951
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_line_break",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "my_text",
+      "value": "This is the first line of text. \nThis sentence follows a single line break, and is followed by a double line break. \n\nThis is the last line.",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "my_text"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Variable text: @local.my_text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Variable text: @local.my_text",
+            "matchedExpression": "@local.my_text",
+            "type": "local",
+            "fieldName": "my_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.my_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_list",
+      "value": "- First bullet point\nSentence following a single line break.\n- Second bullet point.\n\nSentence following a double line break...\n- Third bullet point with text set through variable. @local.my_text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_list",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "- First bullet point\nSentence following a single line break.\n- Second bullet point.\n\nSentence following a double line break...\n- Third bullet point with text set through variable. @local.my_text",
+            "matchedExpression": "@local.my_text",
+            "type": "local",
+            "fieldName": "my_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.my_text": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_text.xlsx"
+}

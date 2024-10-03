@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e0764acf65da629240d1ba3acd2c22fc1d7c7906c9e0865bcc5b269a25c9411
-size 409
+{
+  "flow_type": "template",
+  "flow_name": "debug_theme_assets",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "image",
+      "name": "image_1",
+      "value": "plh_images/workshops/w_self_care/tools.svg",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "image_1"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_theme_assets.xlsx"
+}

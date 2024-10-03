@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c352516025dbcb037d9158d544148bb55605bfd3bfec72af19297aa983248e36
-size 1256
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_wrapping",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "thisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimes",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "overflow-wrap: anywhere"
+      ],
+      "_nested_name": "text"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_text_wrapping_popup"
+          ],
+          "_raw": "click | pop_up:debug_text_wrapping_popup",
+          "_cleaned": "click | pop_up:debug_text_wrapping_popup"
+        }
+      ],
+      "_nested_name": "button"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_text.xlsx"
+}

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74982c9af18ed2e54a6c80522f5f738cff1db2816b380cdc25def5cd2db45b3b
-size 827
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_functions_data_list",
+  "status": "released",
+  "data_list_name": "debug_functions",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "merge_families",
+      "function": "function merge_families(familyData: any[], parent1Id: string, parent2Id: string) => {\n    try {\n      const mergedArray = familyData.filter(arr => arr.includes(parent1Id) || arr.includes(parent2Id)).flat();\n      const familyDataUpdated = familyData.filter(arr => !arr.includes(parent1Id) && !arr.includes(parent2Id));\n      familyDataUpdated.push(mergedArray)\n      return familyDataUpdated\n    } catch (error) {\n      console.error(\"[merge_families] error\", { familyData, parent1Id, parent2Id, error });\n    }\n  }"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_calc_functions.xlsx"
+}

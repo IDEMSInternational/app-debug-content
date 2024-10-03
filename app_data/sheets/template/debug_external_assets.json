@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_external_assets",
+  "status": "released",
+  "rows": [
+    {
+      "type": "video",
+      "value": "https://lzheiqzxigrkkxloksef.supabase.co/storage/v1/object/public/debug/files_to_stream/file_example_MP4_1920_18MG.mp4?t=2024-10-02T13%3A46%3A15.046Z",
+      "_translations": {
+        "value": {}
+      },
+      "name": "video_2",
+      "_nested_name": "video_2"
+    },
+    {
+      "type": "image",
+      "value": "https://lzheiqzxigrkkxloksef.supabase.co/storage/v1/object/public/debug/files_to_stream/jasper_1.jpg?t=2024-10-02T13%3A58%3A22.953Z",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image_3",
+      "_nested_name": "image_3"
+    },
+    {
+      "type": "audio",
+      "value": "https://lzheiqzxigrkkxloksef.supabase.co/storage/v1/object/public/debug/files_to_stream/test_audio.mp3?t=2024-10-02T13%3A58%3A46.442Z",
+      "_translations": {
+        "value": {}
+      },
+      "name": "audio_4",
+      "_nested_name": "audio_4"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_external_assets.xlsx"
+}

@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e70a50d257647625223be1c5f8e2190475fee267f6a137009aff7581ef967bc9
-size 1285
+{
+  "flow_type": "data_list",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_data_list",
+  "status": "released",
+  "data_list_name": "example_items",
+  "rows": [
+    {
+      "id": "item_1",
+      "name": "first",
+      "field_value": 7,
+      "unlock_fieldname": "example_unlocked_item_1",
+      "unlock_week": 1,
+      "unlocked": "@fields.example_unlocked_item_1"
+    },
+    {
+      "id": "item_2",
+      "name": "second",
+      "field_value": 1,
+      "unlock_fieldname": "example_unlocked_item_2",
+      "unlock_week": 2,
+      "unlocked": "@fields.example_unlocked_item_2"
+    },
+    {
+      "id": "item_3",
+      "name": "third",
+      "field_value": 3,
+      "unlock_fieldname": "example_unlocked_item_3",
+      "unlock_week": 3,
+      "unlocked": "@fields.example_unlocked_item_3"
+    },
+    {
+      "id": "item_4",
+      "name": "fourth",
+      "field_value": 2,
+      "unlock_fieldname": "example_unlocked_item_4",
+      "unlock_week": 4,
+      "unlocked": "@fields.example_unlocked_item_4"
+    },
+    {
+      "id": "item_5",
+      "name": "fifth",
+      "field_value": 8,
+      "unlock_fieldname": "example_unlocked_item_5",
+      "unlock_week": 5,
+      "unlocked": "@fields.example_unlocked_item_5"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_items.xlsx"
+}
