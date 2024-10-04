@@ -34,7 +34,7 @@
       ],
       "text": "Set a global",
       "title": "Debug Actions 1",
-      "icon": "plh_images/icons/bell_white.svg"
+      "icon": "images/icons/heart_blue.svg"
     },
     {
       "id": "debug_actions_2",
@@ -65,7 +65,7 @@
       ],
       "text": "Pop up a template",
       "title": "Debug Actions 2",
-      "icon": "plh_images/icons/bell_white.svg"
+      "icon": "images/icons/heart_blue.svg"
     },
     {
       "id": "debug_actions_3",
@@ -106,7 +106,7 @@
       ],
       "text": "Go to a template",
       "title": "Debug Actions 3",
-      "icon": "plh_images/icons/bell_white.svg"
+      "icon": "images/icons/heart_blue.svg"
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"

@@ -8,7 +8,7 @@
 | animated_section | 5 |
 | animated_slides | 1 |
 | audio | 11 |
-| button | 181 |
+| button | 176 |
 | calendar | 1 |
 | carousel | 7 |
 | colour_palette | 1 |
@@ -19,12 +19,12 @@
 | declare_field_default | 1 |
 | declare_global_constant | 1 |
 | display_grid | 3 |
-| display_group | 114 |
+| display_group | 113 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
 | image | 23 |
-| items | 45 |
+| items | 38 |
 | latex | 1 |
 | lottie_animation | 3 |
 | map | 1 |
@@ -44,21 +44,21 @@
 | select_text | 5 |
 | set_default | 1 |
 | set_field | 26 |
-| set_variable | 534 |
-| simple_checkbox | 26 |
+| set_variable | 507 |
+| simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 45 |
 | task_card | 15 |
 | task_progress_bar | 2 |
 | template | 105 |
-| text | 648 |
+| text | 638 |
 | text_area | 5 |
 | text_box | 30 |
 | text_bubble | 7 |
 | tile_component | 20 |
 | timer | 21 |
-| title | 350 |
+| title | 344 |
 | toggle_bar | 35 |
 | update_action_list | 2 |
 | video | 4 |
@@ -86,7 +86,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 12 |
 | feedback | 9 |
-| go_to | 49 |
+| go_to | 44 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | open_external | 2 |
@@ -94,7 +94,7 @@
 | process_template | 2 |
 | reset_app | 1 |
 | save_to_device | 2 |
-| set_field | 97 |
+| set_field | 89 |
 | set_items | 2 |
 | set_local | 17 |
 | share | 6 |
@@ -109,8 +109,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 17196 KB | 17.2 MB |
-| unused | 1453 KB | 1.5 MB |
+| total | 17648 KB | 17.6 MB |
+| unused | 1001 KB | 1 MB |
 </details>
 
 <details open>
@@ -125,8 +125,6 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon-only.png | 128.1 |
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
-| audio/baby_elephant_walk.wav | 430.7 |
-| debug_theme_language.png | 21.9 |
 | dummy.pdf | 13 |
 | images/icons/ask_question_white.svg | 1.4 |
 | images/icons/favicon.svg | 2.1 |
@@ -146,19 +144,16 @@ Assets that have references within sheets but do not appear in app-data
 | path | count |
 | --- | --- |
 | debug_asset_pack_1/image_2.png | 1 |
-| images/examples/jasper_1.jpg | 1 |
-| images/workshops/w_1on1/tools.svg | 1 |
-| plh_images/habits/habit_relax.svg | 2 |
-| plh_images/icons/bell_white.svg | 3 |
+| plh_images/habits/habit_relax.svg | 1 |
 | plh_images/icons/book_white.svg | 3 |
 | plh_images/icons/heart.svg | 19 |
 | plh_images/icons/house_white.svg | 3 |
-| plh_images/icons/in_progress.svg | 7 |
+| plh_images/icons/in_progress.svg | 5 |
 | plh_images/icons/parent_child_white.svg | 3 |
 | plh_images/icons/play.svg | 1 |
 | plh_images/icons/play_white.svg | 1 |
 | plh_images/icons/tick.svg | 15 |
-| plh_images/icons/tick_white.svg | 7 |
+| plh_images/icons/tick_white.svg | 5 |
 | plh_images/survey/workshop_setup/teens.svg | 1 |
 | plh_images/workshop_modes/individual/relax.svg | 3 |
 | plh_images/workshop_modes/individual/wave.svg | 8 |
@@ -166,9 +161,7 @@ Assets that have references within sheets but do not appear in app-data
 | plh_images/workshops/options/together.svg | 1 |
 | plh_images/workshops/solve/read_1/slide_1.svg | 1 |
 | plh_images/workshops/w_rules/read_1/slide_4.svg | 1 |
-| plh_images/workshops/w_self_care/tools.svg | 3 |
-| quality_assurance/debug_theme_language.png | 1 |
-| quality_assurance/test_audio.mp3 | 3 |
+| plh_images/workshops/w_self_care/tools.svg | 2 |
 </details>
 
 <details >
@@ -178,6 +171,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
+| audio/baby_elephant_walk.wav | 430.7 | 3 |
 | audio/test_audio.mp3 | 43.4 | 6 |
 | audio/timer/bell_1.mp3 | 121.6 | 1 |
 | audio/timer/ping_1.wav | 196.4 | 1 |
@@ -185,6 +179,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | debug_asset_pack_1/image_1.png | 8.8 | 1 |
 | debug_asset_pack_1/image_3.png | 9.6 | 1 |
 | debug_asset_pack_1/image_4.png | 11.9 | 1 |
+| debug_theme_language.png | 21.9 | 1 |
 | example_pdf.pdf | 139.4 | 3 |
 | i18n/flags/gb.svg | 0.5 | 2 |
 | i18n/flags/tz.svg | 0.5 | 2 |
@@ -194,7 +189,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 5 |
-| images/example/jasper_1.jpg | 527.3 | 45 |
+| images/example/jasper_1.jpg | 527.3 | 46 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
@@ -204,22 +199,22 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/audio/play-sharp.svg | 0.1 | 2 |
 | images/icons/book_white.svg | 0.7 | 9 |
 | images/icons/globe_blue.svg | 3.9 | 13 |
-| images/icons/heart_blue.svg | 1.4 | 21 |
+| images/icons/heart_blue.svg | 1.4 | 25 |
 | images/icons/heart_outline.svg | 0.6 | 10 |
 | images/icons/house_white.svg | 0.6 | 2 |
-| images/icons/in_progress.svg | 1.1 | 8 |
+| images/icons/in_progress.svg | 1.1 | 10 |
 | images/icons/leaf_blue.svg | 1.7 | 11 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 6 |
 | images/icons/school_blue.svg | 1.6 | 9 |
 | images/icons/star_white.svg | 1 | 18 |
 | images/icons/tick.svg | 0.3 | 5 |
-| images/icons/tick_white.svg | 0.3 | 14 |
+| images/icons/tick_white.svg | 0.3 | 16 |
 | images/square_1.svg | 0.7 | 1 |
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
 | images/square_4.svg | 1 | 1 |
-| images/test_image.png | 2 | 2 |
+| images/test_image.png | 2 | 3 |
 | images/test_image_no_translations.png | 2.8 | 1 |
 | lottie/blob_play_ball.json | 69.4 | 16 |
 | lottie/cascading_stars.json | 140.5 | 1 |
@@ -239,7 +234,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 6 |
-| data_list | debug | 20 |
+| data_list | debug | 18 |
 | data_list | debug_lifecycle_actions | 1 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
@@ -255,7 +250,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 9 |
 | template |  | 70 |
 | template | component_demo | 49 |
-| template | debug | 270 |
+| template | debug | 263 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

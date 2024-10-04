@@ -372,14 +372,14 @@
       "campaign_list": [
         "debug_fixed_new_years_day"
       ],
-      "text": "Happy new year from PLH",
+      "text": "Happy new year",
       "_translations": {
         "text": {},
         "title": {}
       },
       "_translatedFields": {
         "text": {
-          "eng": "Happy new year from PLH"
+          "eng": "Happy new year"
         },
         "title": {
           "eng": "Debug Fixed New Years Day"

@@ -25,7 +25,7 @@
     {
       "type": "declare_global_constant",
       "name": "example_global_constant_image",
-      "value": "plh_images/habits/habit_relax.svg",
+      "value": "images/icons/heart_blue.svg",
       "_translations": {
         "value": {}
       },

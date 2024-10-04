@@ -17,7 +17,7 @@
     {
       "type": "audio",
       "name": "audio_1",
-      "value": "quality_assurance/test_audio.mp3",
+      "value": "audio/baby_elephant_walk.wav",
       "_translations": {
         "value": {}
       },
