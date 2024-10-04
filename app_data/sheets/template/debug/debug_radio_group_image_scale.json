@@ -31,7 +31,7 @@
     },
     {
       "name": "individual_image",
-      "value": "plh_images/workshops/options/individual.svg",
+      "value": "images/avatar_1.png",
       "_translations": {
         "value": {}
       },
@@ -66,7 +66,7 @@
     },
     {
       "name": "together_image",
-      "value": "plh_images/workshops/options/together.svg",
+      "value": "images/avatar_1.png",
       "_translations": {
         "value": {}
       },

@@ -374,12 +374,12 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "17650 KB",
-      "MB": "17.6 MB"
+      "KB": "31132 KB",
+      "MB": "31.1 MB"
     },
     {
       "assets": "unused",
-      "KB": "999 KB",
+      "KB": "1003 KB",
       "MB": "1 MB"
     }
   ],
@@ -435,6 +435,14 @@
     {
       "path": "map_data/forecast_data.json",
       "size_kb": 50.2
+    },
+    {
+      "path": "video/lets_slow_down.srt",
+      "size_kb": 1.7
+    },
+    {
+      "path": "video/lets_slow_down.vtt",
+      "size_kb": 1.8
     }
   ],
   "assets_missing": [
@@ -444,7 +452,7 @@
       "missing": true
     },
     {
-      "path": "plh_images/habits/habit_relax.svg",
+      "path": "https://www.w3schools.com/html/mov_bbb.mp4",
       "count": 1,
       "missing": true
     },
@@ -464,33 +472,13 @@
       "missing": true
     },
     {
-      "path": "plh_images/icons/in_progress.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
       "path": "plh_images/icons/parent_child_white.svg",
       "count": 2,
       "missing": true
     },
     {
-      "path": "plh_images/icons/play.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/play_white.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
       "path": "plh_images/icons/tick.svg",
-      "count": 14,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/tick_white.svg",
-      "count": 1,
+      "count": 10,
       "missing": true
     },
     {
@@ -499,28 +487,8 @@
       "missing": true
     },
     {
-      "path": "plh_images/workshop_modes/individual/relax.svg",
-      "count": 3,
-      "missing": true
-    },
-    {
       "path": "plh_images/workshop_modes/individual/wave.svg",
-      "count": 8,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/options/individual.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/options/together.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/solve/read_1/slide_1.svg",
-      "count": 1,
+      "count": 3,
       "missing": true
     },
     {
@@ -530,6 +498,16 @@
     },
     {
       "path": "plh_images/workshops/w_self_care/tools.svg",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_video/lets_slow_down.mp4",
+      "count": 1,
+      "missing": true
+    },
+    {
+      "path": "plh_video/lets_slow_down.vtt",
       "count": 1,
       "missing": true
     }
@@ -597,7 +575,7 @@
     },
     {
       "path": "images/avatar_1.png",
-      "count": 8,
+      "count": 17,
       "size_kb": 60.5
     },
     {
@@ -627,7 +605,7 @@
     },
     {
       "path": "images/example/jasper_1.jpg",
-      "count": 46,
+      "count": 50,
       "size_kb": 527.3
     },
     {
@@ -647,7 +625,7 @@
     },
     {
       "path": "images/icons/ask_question_white.svg",
-      "count": 1,
+      "count": 2,
       "size_kb": 1.4
     },
     {
@@ -667,7 +645,7 @@
     },
     {
       "path": "images/icons/audio/play-sharp.svg",
-      "count": 2,
+      "count": 3,
       "size_kb": 0.1
     },
     {
@@ -697,7 +675,7 @@
     },
     {
       "path": "images/icons/in_progress.svg",
-      "count": 14,
+      "count": 15,
       "size_kb": 1.1
     },
     {
@@ -727,12 +705,12 @@
     },
     {
       "path": "images/icons/tick.svg",
-      "count": 6,
+      "count": 10,
       "size_kb": 0.3
     },
     {
       "path": "images/icons/tick_white.svg",
-      "count": 20,
+      "count": 21,
       "size_kb": 0.3
     },
     {
@@ -799,6 +777,11 @@
       "path": "odk_form.json",
       "count": 1,
       "size_kb": 8
+    },
+    {
+      "path": "video/lets_slow_down.mp4",
+      "count": 1,
+      "size_kb": 13482.2
     }
   ],
   "flows_by_type": [

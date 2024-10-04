@@ -52,14 +52,10 @@
     {
       "type": "image",
       "name": "image_1",
-      "value": "plh_images/workshop_modes/individual/relax.svg",
+      "value": "images/avatar_1.png",
       "_translations": {
         "value": {}
       },
-      "style_list": [
-        "width:100px",
-        "margin:auto"
-      ],
       "_nested_name": "image_1"
     },
     {
@@ -72,13 +68,10 @@
         {
           "type": "image",
           "name": "image_2",
-          "value": "plh_images/workshop_modes/individual/relax.svg",
+          "value": "images/avatar_1.png",
           "_translations": {
             "value": {}
           },
-          "style_list": [
-            "max-width:100px"
-          ],
           "_nested_name": "dg_1.image_2"
         }
       ],
@@ -94,13 +87,10 @@
         {
           "type": "image",
           "name": "image_3",
-          "value": "plh_images/workshop_modes/individual/relax.svg",
+          "value": "images/avatar_1.png",
           "_translations": {
             "value": {}
           },
-          "style_list": [
-            "width:100px"
-          ],
           "_nested_name": "dg_2.image_3"
         }
       ],

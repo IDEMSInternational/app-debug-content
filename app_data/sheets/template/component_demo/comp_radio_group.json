@@ -28,25 +28,25 @@
           "name": "name_var_1",
           "text": "First",
           "image": "images/icons/heart_blue.svg",
-          "image_checked": "/plh_images/icons/tick.svg"
+          "image_checked": "images/icons/tick.svg"
         },
         {
           "name": "name_var_2",
           "text": "Second",
           "image": "images/icons/heart_blue.svg",
-          "image_checked": "/plh_images/icons/tick.svg"
+          "image_checked": "images/icons/tick.svg"
         },
         {
           "name": "name_var_3",
           "text": "Third",
           "image": "images/icons/heart_blue.svg",
-          "image_checked": "/plh_images/icons/tick.svg"
+          "image_checked": "images/icons/tick.svg"
         },
         {
           "name": "name_var_4",
           "text": "Fourth",
           "image": "images/icons/heart_blue.svg",
-          "image_checked": "/plh_images/icons/tick.svg"
+          "image_checked": "images/icons/tick.svg"
         }
       ],
       "type": "set_variable",

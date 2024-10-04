@@ -109,12 +109,12 @@
         {
           "name": "individual",
           "text": "First",
-          "image": "plh_images/workshop_modes/individual/wave.svg"
+          "image": "images/avatar_1.png"
         },
         {
           "name": "together",
           "text": "Second",
-          "image": "plh_images/workshop_modes/individual/wave.svg"
+          "image": "images/avatar_1.png"
         }
       ],
       "type": "set_variable",

@@ -836,8 +836,8 @@
             "subtitle": "@local.card_subtitle",
             "image": "@local.card_image",
             "style": "portrait",
-            "in_progress_icon": "plh_images/icons/in_progress.svg",
-            "completed_icon": "plh_images/icons/tick_white.svg"
+            "in_progress_icon": "images/icons/in_progress.svg",
+            "completed_icon": "images/icons/tick_white.svg"
           },
           "_nested_name": "carousel_17.task_card_1",
           "_dynamicFields": {

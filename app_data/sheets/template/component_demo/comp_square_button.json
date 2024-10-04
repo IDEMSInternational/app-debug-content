@@ -41,7 +41,7 @@
       "type": "square_button",
       "name": "square_button_par_2_2",
       "parameter_list": {
-        "icon_src": "plh_images/icons/play.svg"
+        "icon_src": "images/icons/audio/play-sharp.svg"
       },
       "_nested_name": "square_button_par_2_2"
     },

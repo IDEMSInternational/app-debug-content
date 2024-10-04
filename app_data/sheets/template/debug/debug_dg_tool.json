@@ -101,7 +101,7 @@
         {
           "type": "image",
           "name": "image_src",
-          "value": "plh_images/workshops/options/individual.svg",
+          "value": "images/avatar_1.png",
           "_translations": {
             "value": {}
           },
