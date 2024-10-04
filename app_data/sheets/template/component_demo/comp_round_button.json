@@ -41,7 +41,7 @@
       "type": "round_button",
       "name": "round_button_par_2_2",
       "parameter_list": {
-        "icon_src": "plh_images/icons/play.svg"
+        "icon_src": "images/icons/audio/play-back-sharp.svg"
       },
       "_nested_name": "round_button_par_2_2"
     },
@@ -143,39 +143,6 @@
         "text": "any string as a button text"
       },
       "_nested_name": "round_button_par_5_2"
-    },
-    {
-      "type": "title",
-      "name": "title_6",
-      "value": "To be removed",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "title_6"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_6_1",
-      "parameter_list": {
-        "starting_seconds": "0"
-      },
-      "_nested_name": "round_button_par_6_1"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_6_2",
-      "parameter_list": {
-        "starting_seconds": "5"
-      },
-      "_nested_name": "round_button_par_6_2"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_6_3",
-      "parameter_list": {
-        "ping": "plh_audio/timer/bell_1.mp3"
-      },
-      "_nested_name": "round_button_par_6_3"
     }
   ],
   "_xlsxPath": "component_sheets/component_round_button .xlsx"

@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_lottie",
+  "status": "released",
+  "rows": [
+    {
+      "type": "lottie_animation",
+      "name": "relax_anim",
+      "value": "lottie/blob_play_ball.json",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "relax_anim"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+}

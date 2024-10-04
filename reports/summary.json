@@ -6,7 +6,7 @@
     },
     {
       "type": "advanced_dashed_box",
-      "count": 2
+      "count": 4
     },
     {
       "type": "animated_section",
@@ -18,7 +18,7 @@
     },
     {
       "type": "audio",
-      "count": 15
+      "count": 11
     },
     {
       "type": "button",
@@ -38,11 +38,11 @@
     },
     {
       "type": "combo_box",
-      "count": 45
+      "count": 44
     },
     {
       "type": "dashed_box",
-      "count": 23
+      "count": 19
     },
     {
       "type": "data_items",
@@ -66,7 +66,7 @@
     },
     {
       "type": "display_group",
-      "count": 111
+      "count": 114
     },
     {
       "type": "drawer",
@@ -74,7 +74,7 @@
     },
     {
       "type": "form",
-      "count": 8
+      "count": 9
     },
     {
       "type": "html",
@@ -94,7 +94,7 @@
     },
     {
       "type": "lottie_animation",
-      "count": 11
+      "count": 3
     },
     {
       "type": "map",
@@ -142,7 +142,7 @@
     },
     {
       "type": "radio_group",
-      "count": 74
+      "count": 59
     },
     {
       "type": "radio_group_grid",
@@ -150,7 +150,7 @@
     },
     {
       "type": "round_button",
-      "count": 15
+      "count": 12
     },
     {
       "type": "select_text",
@@ -166,7 +166,7 @@
     },
     {
       "type": "set_variable",
-      "count": 558
+      "count": 534
     },
     {
       "type": "simple_checkbox",
@@ -194,11 +194,11 @@
     },
     {
       "type": "template",
-      "count": 116
+      "count": 105
     },
     {
       "type": "text",
-      "count": 656
+      "count": 648
     },
     {
       "type": "text_area",
@@ -214,7 +214,7 @@
     },
     {
       "type": "tile_component",
-      "count": 22
+      "count": 20
     },
     {
       "type": "timer",
@@ -222,7 +222,7 @@
     },
     {
       "type": "title",
-      "count": 356
+      "count": 350
     },
     {
       "type": "toggle_bar",
@@ -264,7 +264,7 @@
     },
     {
       "type": "emit: completed",
-      "count": 36
+      "count": 27
     },
     {
       "type": "emit: force_reload",
@@ -374,13 +374,13 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "15759 KB",
-      "MB": "15.8 MB"
+      "KB": "17196 KB",
+      "MB": "17.2 MB"
     },
     {
       "assets": "unused",
-      "KB": "2012 KB",
-      "MB": "2 MB"
+      "KB": "1453 KB",
+      "MB": "1.5 MB"
     }
   ],
   "assets_unused": [
@@ -405,12 +405,8 @@
       "size_kb": 147.4
     },
     {
-      "path": "audio/timer/ping_1.wav",
-      "size_kb": 196.4
-    },
-    {
-      "path": "audio/timer/ping_2.wav",
-      "size_kb": 829.6
+      "path": "audio/baby_elephant_walk.wav",
+      "size_kb": 430.7
     },
     {
       "path": "debug_theme_language.png",
@@ -423,10 +419,6 @@
     {
       "path": "images/icons/ask_question_white.svg",
       "size_kb": 1.4
-    },
-    {
-      "path": "images/icons/audio/play-back-sharp.svg",
-      "size_kb": 0.1
     },
     {
       "path": "images/icons/favicon.svg",
@@ -453,24 +445,14 @@
       "size_kb": 147.4
     },
     {
-      "path": "map_data/centroids.json",
-      "size_kb": 13.4
+      "path": "map_data/forecast_data.json",
+      "size_kb": 50.2
     }
   ],
   "assets_missing": [
     {
       "path": "debug_asset_pack_1/image_2.png",
       "count": 1,
-      "missing": true
-    },
-    {
-      "path": "i18n/flags/gb.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "i18n/flags/tz.svg",
-      "count": 2,
       "missing": true
     },
     {
@@ -484,48 +466,8 @@
       "missing": true
     },
     {
-      "path": "plh_audio/sample.mp3",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_audio/timer/bell_1.mp3",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_audio/timer/ping_1.wav",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_audio/timer/ping_2.wav",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/characters/group/talk_together.png",
-      "count": 1,
-      "missing": true
-    },
-    {
       "path": "plh_images/habits/habit_relax.svg",
-      "count": 3,
-      "missing": true
-    },
-    {
-      "path": "plh_images/habits/habit_treat_yourself.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/home_page/home_page_parent_points.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/home_page/home_page_workshops.svg",
-      "count": 1,
+      "count": 2,
       "missing": true
     },
     {
@@ -540,7 +482,7 @@
     },
     {
       "path": "plh_images/icons/heart.svg",
-      "count": 33,
+      "count": 19,
       "missing": true
     },
     {
@@ -554,23 +496,13 @@
       "missing": true
     },
     {
-      "path": "plh_images/icons/letter_outline.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
       "path": "plh_images/icons/parent_child_white.svg",
       "count": 3,
       "missing": true
     },
     {
       "path": "plh_images/icons/play.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/play_outline_white.svg",
-      "count": 2,
+      "count": 1,
       "missing": true
     },
     {
@@ -579,23 +511,8 @@
       "missing": true
     },
     {
-      "path": "plh_images/icons/question_mark.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/star.svg",
-      "count": 18,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/star_circle.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
       "path": "plh_images/icons/tick.svg",
-      "count": 21,
+      "count": 15,
       "missing": true
     },
     {
@@ -604,143 +521,18 @@
       "missing": true
     },
     {
-      "path": "plh_images/logos/funders/end_violence_against_children.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/erc.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/gcrf.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/generali_human_safety_net.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/lego_foundation.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/newton_fund.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/oak_foundation.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/ukri.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/unicef.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/funders/university_of_oxford.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/partners/cwb.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/partners/idems.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/partners/plh.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/partners/unicef.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/logos/partners/who.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/modules/mod_instruct/thought_experiment/te_1.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/modules/mod_instruct/thought_experiment/te_2.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/modules/mod_instruct/thought_experiment/te_3.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/stickers/faces/happier.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/stickers/faces/happiest.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/stickers/faces/happy.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/stickers/faces_yellow/happier.svg",
-      "count": 4,
-      "missing": true
-    },
-    {
-      "path": "plh_images/stickers/faces_yellow/happiest.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/stickers/faces_yellow/happy.svg",
-      "count": 4,
-      "missing": true
-    },
-    {
       "path": "plh_images/survey/workshop_setup/teens.svg",
       "count": 1,
       "missing": true
     },
     {
-      "path": "plh_images/workshop_modes/group/relax.svg",
+      "path": "plh_images/workshop_modes/individual/relax.svg",
       "count": 3,
       "missing": true
     },
     {
-      "path": "plh_images/workshop_modes/individual/relax.svg",
-      "count": 4,
-      "missing": true
-    },
-    {
       "path": "plh_images/workshop_modes/individual/wave.svg",
-      "count": 11,
+      "count": 8,
       "missing": true
     },
     {
@@ -759,128 +551,13 @@
       "missing": true
     },
     {
-      "path": "plh_images/workshops/w_1on1/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_celebrate/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_consequence/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_crisis/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_instruct/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_money/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_praise/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
       "path": "plh_images/workshops/w_rules/read_1/slide_4.svg",
       "count": 1,
       "missing": true
     },
     {
-      "path": "plh_images/workshops/w_rules/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_safe/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
       "path": "plh_images/workshops/w_self_care/tools.svg",
-      "count": 5,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_stress/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_breathe.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_consequence.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_money.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_praise_teen.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_praise_yourself.json",
       "count": 3,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_relax.json",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_safe.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_spend_time.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/habits/habit_treat_yourself.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/parent_centre.json",
-      "count": 6,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/parent_points.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/relax1.json",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_lottie/weekly_workshops.json",
-      "count": 1,
       "missing": true
     },
     {
@@ -890,7 +567,7 @@
     },
     {
       "path": "quality_assurance/test_audio.mp3",
-      "count": 6,
+      "count": 3,
       "missing": true
     }
   ],
@@ -899,6 +576,21 @@
       "path": "audio/test_audio.mp3",
       "count": 6,
       "size_kb": 43.4
+    },
+    {
+      "path": "audio/timer/bell_1.mp3",
+      "count": 1,
+      "size_kb": 121.6
+    },
+    {
+      "path": "audio/timer/ping_1.wav",
+      "count": 1,
+      "size_kb": 196.4
+    },
+    {
+      "path": "audio/timer/ping_2.wav",
+      "count": 1,
+      "size_kb": 829.6
     },
     {
       "path": "debug_asset_pack_1/image_1.png",
@@ -919,6 +611,16 @@
       "path": "example_pdf.pdf",
       "count": 3,
       "size_kb": 139.4
+    },
+    {
+      "path": "i18n/flags/gb.svg",
+      "count": 2,
+      "size_kb": 0.5
+    },
+    {
+      "path": "i18n/flags/tz.svg",
+      "count": 2,
+      "size_kb": 0.5
     },
     {
       "path": "images/avatar_1.png",
@@ -952,12 +654,12 @@
     },
     {
       "path": "images/example/jasper_1.jpg",
-      "count": 22,
+      "count": 45,
       "size_kb": 527.3
     },
     {
       "path": "images/faces/happy.svg",
-      "count": 2,
+      "count": 7,
       "size_kb": 0.6
     },
     {
@@ -972,6 +674,11 @@
     },
     {
       "path": "images/icons/audio/pause-sharp.svg",
+      "count": 1,
+      "size_kb": 0.1
+    },
+    {
+      "path": "images/icons/audio/play-back-sharp.svg",
       "count": 1,
       "size_kb": 0.1
     },
@@ -992,7 +699,7 @@
     },
     {
       "path": "images/icons/globe_blue.svg",
-      "count": 11,
+      "count": 13,
       "size_kb": 3.9
     },
     {
@@ -1002,12 +709,12 @@
     },
     {
       "path": "images/icons/heart_outline.svg",
-      "count": 4,
+      "count": 10,
       "size_kb": 0.6
     },
     {
       "path": "images/icons/house_white.svg",
-      "count": 1,
+      "count": 2,
       "size_kb": 0.6
     },
     {
@@ -1017,8 +724,13 @@
     },
     {
       "path": "images/icons/leaf_blue.svg",
-      "count": 8,
+      "count": 11,
       "size_kb": 1.7
+    },
+    {
+      "path": "images/icons/question_mark.svg",
+      "count": 2,
+      "size_kb": 0.8
     },
     {
       "path": "images/icons/reader_blue.svg",
@@ -1027,12 +739,12 @@
     },
     {
       "path": "images/icons/school_blue.svg",
-      "count": 8,
+      "count": 9,
       "size_kb": 1.6
     },
     {
       "path": "images/icons/star_white.svg",
-      "count": 1,
+      "count": 18,
       "size_kb": 1
     },
     {
@@ -1077,8 +789,23 @@
     },
     {
       "path": "lottie/blob_play_ball.json",
-      "count": 3,
+      "count": 16,
       "size_kb": 69.4
+    },
+    {
+      "path": "lottie/cascading_stars.json",
+      "count": 1,
+      "size_kb": 140.5
+    },
+    {
+      "path": "map_data/centroids.json",
+      "count": 1,
+      "size_kb": 13.4
+    },
+    {
+      "path": "map_data/forecast_data_geojson.json",
+      "count": 2,
+      "size_kb": 133.5
     },
     {
       "path": "map_data/ke.json",
@@ -1190,7 +917,7 @@
     {
       "type": "template",
       "subtype": null,
-      "total": 47
+      "total": 70
     },
     {
       "type": "template",
@@ -1200,7 +927,7 @@
     {
       "type": "template",
       "subtype": "debug",
-      "total": 307
+      "total": 270
     },
     {
       "type": "template",

@@ -29,7 +29,7 @@
           "value": 3,
           "exclude_from_translation": true,
           "parameter_list": {
-            "lottie_src": "plh_lottie/parent_centre.json",
+            "lottie_src": "lottie/blob_play_ball.json",
             "text": "text two"
           },
           "_nested_name": "dg_example_dashed_box.points_example_1"

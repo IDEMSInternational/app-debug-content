@@ -41,7 +41,34 @@
       "visible_default": false
     },
     {
-      "point_size_property": "centroid_size_sum"
+      "id": "layer_4",
+      "name": "County Centroids",
+      "description": "Centroids for each county",
+      "source_asset": "map_data/centroids.json",
+      "type": "vector",
+      "fill": "red",
+      "stroke": "none",
+      "scale_title": "County Centroids",
+      "opacity": 1,
+      "visible_default": true
+    },
+    {
+      "id": "layer_5",
+      "name": "Conflict – Incidence",
+      "source_asset": "map_data/forecast_data_geojson.json",
+      "type": "vector",
+      "fill": "blue",
+      "stroke": "none",
+      "opacity": 1
+    },
+    {
+      "id": "layer_6",
+      "name": "Conflict – Forecast",
+      "source_asset": "map_data/forecast_data_geojson.json",
+      "type": "vector",
+      "fill": "orange",
+      "stroke": "none",
+      "opacity": 1
     }
   ],
   "_xlsxPath": "component_sheets/component_map.xlsx"

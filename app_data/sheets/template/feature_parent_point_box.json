@@ -1,0 +1,651 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_parent_point_box",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "value 1 is @fields.demo_changed_field_parent_point",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value 1 is @fields.demo_changed_field_parent_point",
+            "matchedExpression": "@fields.demo_changed_field_parent_point",
+            "type": "fields",
+            "fieldName": "demo_changed_field_parent_point"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.demo_changed_field_parent_point": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "value 2 is @fields.demo_changed_field_parent_point_1",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value 2 is @fields.demo_changed_field_parent_point_1",
+            "matchedExpression": "@fields.demo_changed_field_parent_point_1",
+            "type": "fields",
+            "fieldName": "demo_changed_field_parent_point_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.demo_changed_field_parent_point_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "value 3 is @fields.demo_changed_field_parent_point_2",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "text_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value 3 is @fields.demo_changed_field_parent_point_2",
+            "matchedExpression": "@fields.demo_changed_field_parent_point_2",
+            "type": "fields",
+            "fieldName": "demo_changed_field_parent_point_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.demo_changed_field_parent_point_2": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "parent_point"
+      },
+      "style_list": [
+        "flex-wrap: wrap"
+      ],
+      "rows": [
+        {
+          "name": "init_value_1",
+          "value": 2,
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "dg.init_value_1"
+        },
+        {
+          "name": "icon_src_jpg",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "dg.icon_src_jpg"
+        },
+        {
+          "name": "icon_src_svg",
+          "value": "images/icons/reader_blue.svg",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg.icon_src_svg"
+        },
+        {
+          "name": "icon_src_data",
+          "value": "@data.article.article_1.icon_asset",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg.icon_src_data",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.article.article_1.icon_asset",
+                "matchedExpression": "@data.article.article_1.icon_asset",
+                "type": "data",
+                "fieldName": "article"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.article.article_1.icon_asset": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "text1",
+          "value": "Good money choice 1",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "dg.text1"
+        },
+        {
+          "name": "icon_button_action_list",
+          "value": "click | set_field : something : dsfsd",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "dg.icon_button_action_list"
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example_1",
+          "value": "@local.init_value_1",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_parent_point",
+                "@local.points_example"
+              ],
+              "_raw": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+              "_cleaned": "changed | set_field: demo_changed_field_parent_point: @local.points_example"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "icon_src": "@local.icon_src_jpg",
+            "info_button_action_list": "@local.icon_button_action_list\ntext"
+          },
+          "_nested_name": "dg.points_example_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.init_value_1",
+                "matchedExpression": "@local.init_value_1",
+                "type": "local",
+                "fieldName": "init_value_1"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.points_example",
+                      "matchedExpression": "@local.points_example",
+                      "type": "local",
+                      "fieldName": "points_example"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+                    "matchedExpression": "@local.points_example",
+                    "type": "local",
+                    "fieldName": "points_example"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+                    "matchedExpression": "@local.points_example",
+                    "type": "local",
+                    "fieldName": "points_example"
+                  }
+                ]
+              }
+            },
+            "parameter_list": {
+              "icon_src": [
+                {
+                  "fullExpression": "@local.icon_src_jpg",
+                  "matchedExpression": "@local.icon_src_jpg",
+                  "type": "local",
+                  "fieldName": "icon_src_jpg"
+                }
+              ],
+              "info_button_action_list": [
+                {
+                  "fullExpression": "@local.icon_button_action_list\ntext",
+                  "matchedExpression": "@local.icon_button_action_list",
+                  "type": "local",
+                  "fieldName": "icon_button_action_list"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.init_value_1": [
+              "value"
+            ],
+            "@local.points_example": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "@local.icon_src_jpg": [
+              "parameter_list.icon_src"
+            ],
+            "@local.icon_button_action_list": [
+              "parameter_list.info_button_action_list"
+            ]
+          }
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example_2",
+          "value": "@local.init_value_1",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_parent_point",
+                "@local.points_example"
+              ],
+              "_raw": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+              "_cleaned": "changed | set_field: demo_changed_field_parent_point: @local.points_example"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "icon_src": "@local.icon_src_svg",
+            "info_button_action_list": "@local.icon_button_action_list\ntext"
+          },
+          "_nested_name": "dg.points_example_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.init_value_1",
+                "matchedExpression": "@local.init_value_1",
+                "type": "local",
+                "fieldName": "init_value_1"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.points_example",
+                      "matchedExpression": "@local.points_example",
+                      "type": "local",
+                      "fieldName": "points_example"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+                    "matchedExpression": "@local.points_example",
+                    "type": "local",
+                    "fieldName": "points_example"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+                    "matchedExpression": "@local.points_example",
+                    "type": "local",
+                    "fieldName": "points_example"
+                  }
+                ]
+              }
+            },
+            "parameter_list": {
+              "icon_src": [
+                {
+                  "fullExpression": "@local.icon_src_svg",
+                  "matchedExpression": "@local.icon_src_svg",
+                  "type": "local",
+                  "fieldName": "icon_src_svg"
+                }
+              ],
+              "info_button_action_list": [
+                {
+                  "fullExpression": "@local.icon_button_action_list\ntext",
+                  "matchedExpression": "@local.icon_button_action_list",
+                  "type": "local",
+                  "fieldName": "icon_button_action_list"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.init_value_1": [
+              "value"
+            ],
+            "@local.points_example": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "@local.icon_src_svg": [
+              "parameter_list.icon_src"
+            ],
+            "@local.icon_button_action_list": [
+              "parameter_list.info_button_action_list"
+            ]
+          }
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example_3",
+          "value": 3,
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_parent_point_1",
+                "@local.points_example_1"
+              ],
+              "_raw": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1",
+              "_cleaned": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "icon_src": "@local.icon_src_data",
+            "text": "@local.text1"
+          },
+          "_nested_name": "dg.points_example_3",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.points_example_1",
+                      "matchedExpression": "@local.points_example_1",
+                      "type": "local",
+                      "fieldName": "points_example_1"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1",
+                    "matchedExpression": "@local.points_example_1",
+                    "type": "local",
+                    "fieldName": "points_example_1"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1",
+                    "matchedExpression": "@local.points_example_1",
+                    "type": "local",
+                    "fieldName": "points_example_1"
+                  }
+                ]
+              }
+            },
+            "parameter_list": {
+              "icon_src": [
+                {
+                  "fullExpression": "@local.icon_src_data",
+                  "matchedExpression": "@local.icon_src_data",
+                  "type": "local",
+                  "fieldName": "icon_src_data"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@local.text1",
+                  "matchedExpression": "@local.text1",
+                  "type": "local",
+                  "fieldName": "text1"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.points_example_1": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "@local.icon_src_data": [
+              "parameter_list.icon_src"
+            ],
+            "@local.text1": [
+              "parameter_list.text"
+            ]
+          }
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example_4",
+          "value": 3,
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_parent_point_2",
+                "@local.points_example_2"
+              ],
+              "_raw": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2",
+              "_cleaned": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "icon_src": "@data.article.article_1.icon_asset",
+            "text": "@local.text1"
+          },
+          "_nested_name": "dg.points_example_4",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@local.points_example_2",
+                      "matchedExpression": "@local.points_example_2",
+                      "type": "local",
+                      "fieldName": "points_example_2"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2",
+                    "matchedExpression": "@local.points_example_2",
+                    "type": "local",
+                    "fieldName": "points_example_2"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2",
+                    "matchedExpression": "@local.points_example_2",
+                    "type": "local",
+                    "fieldName": "points_example_2"
+                  }
+                ]
+              }
+            },
+            "parameter_list": {
+              "icon_src": [
+                {
+                  "fullExpression": "@data.article.article_1.icon_asset",
+                  "matchedExpression": "@data.article.article_1.icon_asset",
+                  "type": "data",
+                  "fieldName": "article"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@local.text1",
+                  "matchedExpression": "@local.text1",
+                  "type": "local",
+                  "fieldName": "text1"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.points_example_2": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "@data.article.article_1.icon_asset": [
+              "parameter_list.icon_src"
+            ],
+            "@local.text1": [
+              "parameter_list.text"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg"
+    },
+    {
+      "type": "title",
+      "value": "lottie",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "display_group",
+      "name": "dg",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "parent_point"
+      },
+      "style_list": [
+        "flex-wrap: wrap"
+      ],
+      "rows": [
+        {
+          "name": "init_value_1",
+          "value": 2,
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "dg.init_value_1"
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example",
+          "value": "@local.init_value_1",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "lottie_src": "lottie/blob_play_ball.json",
+            "text": "no celebration",
+            "play_celebration": "false"
+          },
+          "_nested_name": "dg.points_example",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.init_value_1",
+                "matchedExpression": "@local.init_value_1",
+                "type": "local",
+                "fieldName": "init_value_1"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.init_value_1": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "text4",
+          "value": "text one",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "dg.text4"
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example_1",
+          "value": 3,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "lottie_src": "lottie/blob_play_ball.json",
+            "text": "text two"
+          },
+          "_nested_name": "dg.points_example_1"
+        },
+        {
+          "name": "text5",
+          "value": "text two",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "dg.text5"
+        },
+        {
+          "type": "parent_point_box",
+          "name": "points_example_2",
+          "value": 3,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "lottie_src": "lottie/blob_play_ball.json",
+            "text": "text three"
+          },
+          "_nested_name": "dg.points_example_2"
+        },
+        {
+          "name": "text6",
+          "value": "text three",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "type": "set_variable",
+          "_nested_name": "dg.text6"
+        }
+      ],
+      "_nested_name": "dg"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+}
