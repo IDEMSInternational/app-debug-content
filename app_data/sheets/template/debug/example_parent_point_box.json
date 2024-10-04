@@ -40,8 +40,8 @@
       ],
       "parameter_list": {
         "text": "Example Parent Point",
-        "lottie_src": "plh_lottie/habits/habit_praise_yourself.json",
-        "info_icon_src": "plh_images/icons/question_mark.svg"
+        "lottie_src": "lottie/blob_play_ball.json",
+        "info_icon_src": "images/icons/question_mark.svg"
       },
       "_nested_name": "parent_point_box",
       "_dynamicFields": {
@@ -136,7 +136,7 @@
         }
       ],
       "parameter_list": {
-        "info_icon_src": "plh_images/icons/question_mark.svg"
+        "info_icon_src": "images/icons/question_mark.svg"
       },
       "_nested_name": "parent_point_box_set_field",
       "_dynamicFields": {

@@ -1,0 +1,497 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_form",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "form with 'go to'",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "form",
+        "get_device_info": "true",
+        "button_text": "Send",
+        "button_go_to": "feature_audio"
+      },
+      "rows": [
+        {
+          "type": "text_box",
+          "name": "user_name",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your name"
+          },
+          "_nested_name": "dg_example_form.user_name"
+        },
+        {
+          "type": "text_box",
+          "name": "user_phone",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your phone number"
+          },
+          "_nested_name": "dg_example_form.user_phone"
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_1",
+          "value": false,
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_checkbox",
+                "this.value"
+              ],
+              "_raw": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+              "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_1",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.checkbox_1": [
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_2",
+          "value": true,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_2"
+        },
+        {
+          "type": "title",
+          "value": "Some text here",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title_5",
+          "_nested_name": "dg_example_form.title_5"
+        },
+        {
+          "type": "text_area",
+          "name": "text_area",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "placeholder": "example placeholder"
+          },
+          "_nested_name": "dg_example_form.text_area"
+        }
+      ],
+      "_nested_name": "dg_example_form"
+    },
+    {
+      "type": "title",
+      "value": "pop up form",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "form",
+        "get_device_info": "true",
+        "button_text": "Send",
+        "button_pop_up": "feature_audio"
+      },
+      "rows": [
+        {
+          "type": "text_box",
+          "name": "user_name",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your name"
+          },
+          "_nested_name": "dg_example_form.user_name"
+        },
+        {
+          "type": "text_box",
+          "name": "user_phone",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your phone number"
+          },
+          "_nested_name": "dg_example_form.user_phone"
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_1",
+          "value": false,
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_checkbox",
+                "this.value"
+              ],
+              "_raw": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+              "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_1",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.checkbox_1": [
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_2",
+          "value": true,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_2"
+        },
+        {
+          "type": "title",
+          "value": "Some text here",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title_5",
+          "_nested_name": "dg_example_form.title_5"
+        },
+        {
+          "type": "text_area",
+          "name": "text_area",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "placeholder": "example placeholder"
+          },
+          "_nested_name": "dg_example_form.text_area"
+        }
+      ],
+      "_nested_name": "dg_example_form"
+    },
+    {
+      "type": "title",
+      "value": "with both params",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "style": "form",
+        "get_device_info": "true",
+        "button_text": "Send",
+        "button_pop_up": "feature_audio",
+        "button_go_to": "feature_audio"
+      },
+      "rows": [
+        {
+          "type": "text_box",
+          "name": "user_name",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your name"
+          },
+          "_nested_name": "dg_example_form.user_name"
+        },
+        {
+          "type": "text_box",
+          "name": "user_phone",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your phone number"
+          },
+          "_nested_name": "dg_example_form.user_phone"
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_1",
+          "value": false,
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_checkbox",
+                "this.value"
+              ],
+              "_raw": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+              "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_1",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.checkbox_1": [
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_2",
+          "value": true,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_2"
+        },
+        {
+          "type": "title",
+          "value": "Some text here",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title_5",
+          "_nested_name": "dg_example_form.title_5"
+        },
+        {
+          "type": "text_area",
+          "name": "text_area",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "placeholder": "example placeholder"
+          },
+          "_nested_name": "dg_example_form.text_area"
+        }
+      ],
+      "_nested_name": "dg_example_form"
+    },
+    {
+      "type": "title",
+      "value": "outside display group",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_11",
+      "_nested_name": "title_11"
+    },
+    {
+      "type": "form",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "get_device_info": "true",
+        "button_text": "Send",
+        "button_pop_up": "feature_audio",
+        "button_go_to": "feature_audio"
+      },
+      "rows": [
+        {
+          "type": "text_box",
+          "name": "user_name",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your name"
+          },
+          "_nested_name": "dg_example_form.user_name"
+        },
+        {
+          "type": "text_box",
+          "name": "user_phone",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "help": "some help text",
+            "placeholder": "Add your phone number"
+          },
+          "_nested_name": "dg_example_form.user_phone"
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_1",
+          "value": false,
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "demo_changed_field_checkbox",
+                "this.value"
+              ],
+              "_raw": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+              "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
+            }
+          ],
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_1",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "matchedExpression": "@local.checkbox_1",
+                    "type": "local",
+                    "fieldName": "checkbox_1"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.checkbox_1": [
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
+        },
+        {
+          "type": "simple_checkbox",
+          "name": "checkbox_2",
+          "value": true,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
+          "_nested_name": "dg_example_form.checkbox_2"
+        },
+        {
+          "type": "title",
+          "value": "Some text here",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title_5",
+          "_nested_name": "dg_example_form.title_5"
+        },
+        {
+          "type": "text_area",
+          "name": "text_area",
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "placeholder": "example placeholder"
+          },
+          "_nested_name": "dg_example_form.text_area"
+        }
+      ],
+      "_nested_name": "dg_example_form"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+}

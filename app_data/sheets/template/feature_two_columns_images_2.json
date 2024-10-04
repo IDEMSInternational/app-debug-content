@@ -1,0 +1,131 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_two_columns_images_2",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "ParentApp funded by",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "center",
+        "text_align": "center"
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "two_columns_images"
+      },
+      "rows": [
+        {
+          "type": "image",
+          "name": "funder_1",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_1"
+        },
+        {
+          "type": "image",
+          "name": "funder_2",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_2"
+        },
+        {
+          "type": "image",
+          "name": "funder_3",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_3"
+        },
+        {
+          "type": "image",
+          "name": "funder_4",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_4"
+        },
+        {
+          "type": "image",
+          "name": "funder_5",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_5"
+        },
+        {
+          "type": "image",
+          "name": "funder_6",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_6"
+        },
+        {
+          "type": "image",
+          "name": "funder_7",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_7"
+        },
+        {
+          "type": "image",
+          "name": "funder_8",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_8"
+        },
+        {
+          "type": "image",
+          "name": "funder_9",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_9"
+        },
+        {
+          "type": "image",
+          "name": "funder_10",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_3.funder_10"
+        }
+      ],
+      "name": "display_group_3",
+      "_nested_name": "display_group_3"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+}

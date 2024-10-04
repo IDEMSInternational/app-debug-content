@@ -19,6 +19,10 @@
     "md5Checksum": "0f058cece06f7ce312f85d5ea3fc2a8b",
     "size_kb": 147.4
   },
+  "audio/baby_elephant_walk.wav": {
+    "md5Checksum": "0d498c7be8e63b4f32a99e370e2de304",
+    "size_kb": 430.7
+  },
   "audio/test_audio.mp3": {
     "md5Checksum": "5ddddf934d2187d084c75b7e27797fae",
     "overrides": {
@@ -31,6 +35,10 @@
       }
     },
     "size_kb": 43.4
+  },
+  "audio/timer/bell_1.mp3": {
+    "md5Checksum": "19700b739837b47ca934707f1c16e7b7",
+    "size_kb": 121.6
   },
   "audio/timer/ping_1.wav": {
     "md5Checksum": "000bdadc5c44489368e4320d987892a7",
@@ -72,6 +80,14 @@
   "example_pdf.pdf": {
     "md5Checksum": "5afaf79789a776d81ec91ccbdc9fdaba",
     "size_kb": 139.4
+  },
+  "i18n/flags/gb.svg": {
+    "md5Checksum": "d3ddd6025a06a78535b0d432d14905bf",
+    "size_kb": 0.5
+  },
+  "i18n/flags/tz.svg": {
+    "md5Checksum": "4cba6f3545595d585cf1c89394955c71",
+    "size_kb": 0.5
   },
   "images/avatar_1.png": {
     "md5Checksum": "c5c1acec2fc92d6a19b972563d860798",
@@ -165,6 +181,10 @@
     "md5Checksum": "21c6e54960599fdda6e4d58c3337b541",
     "size_kb": 1.7
   },
+  "images/icons/question_mark.svg": {
+    "md5Checksum": "49e1d1e478068a24949d87d09c9ba07b",
+    "size_kb": 0.8
+  },
   "images/icons/reader_blue.svg": {
     "md5Checksum": "841a27e6e013d797d2bcf20391632cee",
     "size_kb": 1.4
@@ -247,9 +267,21 @@
     "md5Checksum": "5361d4828cb2d1041e263bf107bfff50",
     "size_kb": 69.4
   },
+  "lottie/cascading_stars.json": {
+    "md5Checksum": "131145b165cd19613a9e277a514eec2f",
+    "size_kb": 140.5
+  },
   "map_data/centroids.json": {
     "md5Checksum": "f041bee2c57b7f4c92b88546a05116f8",
     "size_kb": 13.4
+  },
+  "map_data/forecast_data.json": {
+    "md5Checksum": "725139140245b6898251278673b553e4",
+    "size_kb": 50.2
+  },
+  "map_data/forecast_data_geojson.json": {
+    "md5Checksum": "9c8109ef8e302cad49ecd2bb184908b3",
+    "size_kb": 133.5
   },
   "map_data/ke.json": {
     "md5Checksum": "9a887a75373ec2e4bef94070ca0597f1",

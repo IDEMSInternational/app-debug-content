@@ -82,7 +82,7 @@
           "name": "points_example_1",
           "value": 3,
           "parameter_list": {
-            "lottie_src": "plh_lottie/parent_centre.json",
+            "lottie_src": "lottie/blob_play_ball.json",
             "text": "text two"
           },
           "exclude_from_translation": true,
@@ -123,7 +123,7 @@
           "name": "points_example_1",
           "value": 3,
           "parameter_list": {
-            "lottie_src": "plh_lottie/parent_centre.json",
+            "lottie_src": "lottie/blob_play_ball.json",
             "text": "text two"
           },
           "exclude_from_translation": true,
@@ -156,7 +156,7 @@
           "name": "points_example_1",
           "value": 3,
           "parameter_list": {
-            "lottie_src": "plh_lottie/parent_centre.json",
+            "lottie_src": "lottie/blob_play_ball.json",
             "text": "text two"
           },
           "exclude_from_translation": true,
