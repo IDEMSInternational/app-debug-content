@@ -81,7 +81,7 @@
     },
     {
       "name": "copied_icon_2",
-      "value": "plh_images/icons/tick.svg",
+      "value": "images/icons/tick.svg",
       "_translations": {
         "value": {}
       },
