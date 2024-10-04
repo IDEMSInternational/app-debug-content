@@ -374,12 +374,12 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "17648 KB",
+      "KB": "17650 KB",
       "MB": "17.6 MB"
     },
     {
       "assets": "unused",
-      "KB": "1001 KB",
+      "KB": "999 KB",
       "MB": "1 MB"
     }
   ],
@@ -407,10 +407,6 @@
     {
       "path": "dummy.pdf",
       "size_kb": 13
-    },
-    {
-      "path": "images/icons/ask_question_white.svg",
-      "size_kb": 1.4
     },
     {
       "path": "images/icons/favicon.svg",
@@ -454,27 +450,27 @@
     },
     {
       "path": "plh_images/icons/book_white.svg",
-      "count": 3,
+      "count": 2,
       "missing": true
     },
     {
       "path": "plh_images/icons/heart.svg",
-      "count": 19,
+      "count": 10,
       "missing": true
     },
     {
       "path": "plh_images/icons/house_white.svg",
-      "count": 3,
+      "count": 2,
       "missing": true
     },
     {
       "path": "plh_images/icons/in_progress.svg",
-      "count": 5,
+      "count": 1,
       "missing": true
     },
     {
       "path": "plh_images/icons/parent_child_white.svg",
-      "count": 3,
+      "count": 2,
       "missing": true
     },
     {
@@ -489,12 +485,12 @@
     },
     {
       "path": "plh_images/icons/tick.svg",
-      "count": 15,
+      "count": 14,
       "missing": true
     },
     {
       "path": "plh_images/icons/tick_white.svg",
-      "count": 5,
+      "count": 1,
       "missing": true
     },
     {
@@ -534,7 +530,7 @@
     },
     {
       "path": "plh_images/workshops/w_self_care/tools.svg",
-      "count": 2,
+      "count": 1,
       "missing": true
     }
   ],
@@ -601,7 +597,7 @@
     },
     {
       "path": "images/avatar_1.png",
-      "count": 7,
+      "count": 8,
       "size_kb": 60.5
     },
     {
@@ -650,6 +646,11 @@
       "size_kb": 1.1
     },
     {
+      "path": "images/icons/ask_question_white.svg",
+      "count": 1,
+      "size_kb": 1.4
+    },
+    {
       "path": "images/icons/audio/pause-sharp.svg",
       "count": 1,
       "size_kb": 0.1
@@ -681,7 +682,7 @@
     },
     {
       "path": "images/icons/heart_blue.svg",
-      "count": 25,
+      "count": 34,
       "size_kb": 1.4
     },
     {
@@ -691,12 +692,12 @@
     },
     {
       "path": "images/icons/house_white.svg",
-      "count": 2,
+      "count": 3,
       "size_kb": 0.6
     },
     {
       "path": "images/icons/in_progress.svg",
-      "count": 10,
+      "count": 14,
       "size_kb": 1.1
     },
     {
@@ -721,17 +722,17 @@
     },
     {
       "path": "images/icons/star_white.svg",
-      "count": 18,
+      "count": 19,
       "size_kb": 1
     },
     {
       "path": "images/icons/tick.svg",
-      "count": 5,
+      "count": 6,
       "size_kb": 0.3
     },
     {
       "path": "images/icons/tick_white.svg",
-      "count": 16,
+      "count": 20,
       "size_kb": 0.3
     },
     {

@@ -800,7 +800,7 @@
         },
         {
           "name": "card_image",
-          "value": "plh_images/workshops/w_self_care/tools.svg",
+          "value": "images/avatar_1.png",
           "_translations": {
             "value": {}
           },
@@ -976,8 +976,8 @@
             "subtitle": "@local.card_subtitle",
             "image": "@local.card_image",
             "style": "portrait",
-            "in_progress_icon": "plh_images/icons/in_progress.svg",
-            "completed_icon": "plh_images/icons/tick_white.svg"
+            "in_progress_icon": "images/icons/in_progress.svg",
+            "completed_icon": "images/icons/tick_white.svg"
           },
           "_nested_name": "carousel_17.task_card_2",
           "_dynamicFields": {
@@ -1116,8 +1116,8 @@
             "subtitle": "@local.card_subtitle",
             "image": "@local.card_image",
             "style": "portrait",
-            "in_progress_icon": "plh_images/icons/in_progress.svg",
-            "completed_icon": "plh_images/icons/tick_white.svg"
+            "in_progress_icon": "images/icons/in_progress.svg",
+            "completed_icon": "images/icons/tick_white.svg"
           },
           "_nested_name": "carousel_17.task_card_3",
           "_dynamicFields": {
@@ -1256,8 +1256,8 @@
             "subtitle": "@local.card_subtitle",
             "image": "@local.card_image",
             "style": "portrait",
-            "in_progress_icon": "plh_images/icons/in_progress.svg",
-            "completed_icon": "plh_images/icons/tick_white.svg"
+            "in_progress_icon": "images/icons/in_progress.svg",
+            "completed_icon": "images/icons/tick_white.svg"
           },
           "_nested_name": "carousel_17.task_card_4",
           "_dynamicFields": {
@@ -1396,8 +1396,8 @@
             "subtitle": "@local.card_subtitle",
             "image": "@local.card_image",
             "style": "portrait",
-            "in_progress_icon": "plh_images/icons/in_progress.svg",
-            "completed_icon": "plh_images/icons/tick_white.svg"
+            "in_progress_icon": "images/icons/in_progress.svg",
+            "completed_icon": "images/icons/tick_white.svg"
           },
           "_nested_name": "carousel_17.task_card_5",
           "_dynamicFields": {

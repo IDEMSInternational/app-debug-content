@@ -109,8 +109,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 17648 KB | 17.6 MB |
-| unused | 1001 KB | 1 MB |
+| total | 17650 KB | 17.6 MB |
+| unused | 999 KB | 1 MB |
 </details>
 
 <details open>
@@ -126,7 +126,6 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
 | dummy.pdf | 13 |
-| images/icons/ask_question_white.svg | 1.4 |
 | images/icons/favicon.svg | 2.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
@@ -145,15 +144,15 @@ Assets that have references within sheets but do not appear in app-data
 | --- | --- |
 | debug_asset_pack_1/image_2.png | 1 |
 | plh_images/habits/habit_relax.svg | 1 |
-| plh_images/icons/book_white.svg | 3 |
-| plh_images/icons/heart.svg | 19 |
-| plh_images/icons/house_white.svg | 3 |
-| plh_images/icons/in_progress.svg | 5 |
-| plh_images/icons/parent_child_white.svg | 3 |
+| plh_images/icons/book_white.svg | 2 |
+| plh_images/icons/heart.svg | 10 |
+| plh_images/icons/house_white.svg | 2 |
+| plh_images/icons/in_progress.svg | 1 |
+| plh_images/icons/parent_child_white.svg | 2 |
 | plh_images/icons/play.svg | 1 |
 | plh_images/icons/play_white.svg | 1 |
-| plh_images/icons/tick.svg | 15 |
-| plh_images/icons/tick_white.svg | 5 |
+| plh_images/icons/tick.svg | 14 |
+| plh_images/icons/tick_white.svg | 1 |
 | plh_images/survey/workshop_setup/teens.svg | 1 |
 | plh_images/workshop_modes/individual/relax.svg | 3 |
 | plh_images/workshop_modes/individual/wave.svg | 8 |
@@ -161,7 +160,7 @@ Assets that have references within sheets but do not appear in app-data
 | plh_images/workshops/options/together.svg | 1 |
 | plh_images/workshops/solve/read_1/slide_1.svg | 1 |
 | plh_images/workshops/w_rules/read_1/slide_4.svg | 1 |
-| plh_images/workshops/w_self_care/tools.svg | 2 |
+| plh_images/workshops/w_self_care/tools.svg | 1 |
 </details>
 
 <details >
@@ -183,7 +182,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | example_pdf.pdf | 139.4 | 3 |
 | i18n/flags/gb.svg | 0.5 | 2 |
 | i18n/flags/tz.svg | 0.5 | 2 |
-| images/avatar_1.png | 60.5 | 7 |
+| images/avatar_1.png | 60.5 | 8 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
 | images/example/408-536x354.jpg | 23.2 | 1 |
@@ -193,23 +192,24 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
+| images/icons/ask_question_white.svg | 1.4 | 1 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-back-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 2 |
 | images/icons/book_white.svg | 0.7 | 9 |
 | images/icons/globe_blue.svg | 3.9 | 13 |
-| images/icons/heart_blue.svg | 1.4 | 25 |
+| images/icons/heart_blue.svg | 1.4 | 34 |
 | images/icons/heart_outline.svg | 0.6 | 10 |
-| images/icons/house_white.svg | 0.6 | 2 |
-| images/icons/in_progress.svg | 1.1 | 10 |
+| images/icons/house_white.svg | 0.6 | 3 |
+| images/icons/in_progress.svg | 1.1 | 14 |
 | images/icons/leaf_blue.svg | 1.7 | 11 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 6 |
 | images/icons/school_blue.svg | 1.6 | 9 |
-| images/icons/star_white.svg | 1 | 18 |
-| images/icons/tick.svg | 0.3 | 5 |
-| images/icons/tick_white.svg | 0.3 | 16 |
+| images/icons/star_white.svg | 1 | 19 |
+| images/icons/tick.svg | 0.3 | 6 |
+| images/icons/tick_white.svg | 0.3 | 20 |
 | images/square_1.svg | 0.7 | 1 |
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
