@@ -118,7 +118,7 @@
       "exclude_from_translation": true,
       "parameter_list": {
         "text": "@data.debug.item_1.text",
-        "icon_src": "plh_images/habits/habit_relax.svg"
+        "icon_src": "images/avatar_1.png"
       },
       "_nested_name": "parent_point_box_2",
       "_dynamicFields": {
@@ -207,7 +207,7 @@
         "style": "quick_start_dark",
         "first_line_text": "@data.debug.item_2.text",
         "second_line_text": "image loaded directly",
-        "icon_src": "plh_images/icons/play_white.svg"
+        "icon_src": "images/icons/ask_question_white.svg"
       },
       "_nested_name": "quick_start_tile_2",
       "_dynamicFields": {

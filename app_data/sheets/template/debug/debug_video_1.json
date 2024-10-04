@@ -7,7 +7,7 @@
     {
       "type": "video",
       "name": "video_src",
-      "value": "plh_video/lets_slow_down.mp4",
+      "value": "video/lets_slow_down.mp4",
       "_translations": {
         "value": {}
       },
