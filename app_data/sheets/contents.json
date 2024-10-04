@@ -167,20 +167,6 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx"
     },
-    "efm_act_list": {
-      "flow_type": "data_list",
-      "flow_name": "efm_act_list",
-      "data_list_name": "efm_act",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_list": {
-      "flow_type": "data_list",
-      "flow_name": "efm_chapter_list",
-      "data_list_name": "efm_chapt",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
     "example_calc_data_list": {
       "flow_type": "data_list",
       "flow_subtype": "debug",
@@ -2171,48 +2157,6 @@
       "flow_name": "debug_wrapper",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx"
-    },
-    "efm_activity_template": {
-      "flow_type": "template",
-      "flow_name": "efm_activity_template",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_acts_1": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_acts_1",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_acts_2": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_acts_2",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_acts_3": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_acts_3",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_acts_4": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_acts_4",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapter_acts_5": {
-      "flow_type": "template",
-      "flow_name": "efm_chapter_acts_5",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
-    },
-    "efm_chapters": {
-      "flow_type": "template",
-      "flow_name": "efm_chapters",
-      "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/Debugging copy of EFM_activity_high_level_sheets.xlsx"
     },
     "example_accordion": {
       "flow_type": "template",

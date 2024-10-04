@@ -22,7 +22,7 @@
     },
     {
       "type": "button",
-      "count": 181
+      "count": 176
     },
     {
       "type": "calendar",
@@ -66,7 +66,7 @@
     },
     {
       "type": "display_group",
-      "count": 114
+      "count": 113
     },
     {
       "type": "drawer",
@@ -86,7 +86,7 @@
     },
     {
       "type": "items",
-      "count": 45
+      "count": 38
     },
     {
       "type": "latex",
@@ -166,11 +166,11 @@
     },
     {
       "type": "set_variable",
-      "count": 534
+      "count": 507
     },
     {
       "type": "simple_checkbox",
-      "count": 26
+      "count": 23
     },
     {
       "type": "slider",
@@ -198,7 +198,7 @@
     },
     {
       "type": "text",
-      "count": 648
+      "count": 638
     },
     {
       "type": "text_area",
@@ -222,7 +222,7 @@
     },
     {
       "type": "title",
-      "count": 350
+      "count": 344
     },
     {
       "type": "toggle_bar",
@@ -308,7 +308,7 @@
     },
     {
       "type": "go_to",
-      "count": 49
+      "count": 44
     },
     {
       "type": "go_to_url",
@@ -340,7 +340,7 @@
     },
     {
       "type": "set_field",
-      "count": 97
+      "count": 89
     },
     {
       "type": "set_items",
@@ -374,13 +374,13 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "17196 KB",
-      "MB": "17.2 MB"
+      "KB": "17648 KB",
+      "MB": "17.6 MB"
     },
     {
       "assets": "unused",
-      "KB": "1453 KB",
-      "MB": "1.5 MB"
+      "KB": "1001 KB",
+      "MB": "1 MB"
     }
   ],
   "assets_unused": [
@@ -403,14 +403,6 @@
     {
       "path": "android/splash.png",
       "size_kb": 147.4
-    },
-    {
-      "path": "audio/baby_elephant_walk.wav",
-      "size_kb": 430.7
-    },
-    {
-      "path": "debug_theme_language.png",
-      "size_kb": 21.9
     },
     {
       "path": "dummy.pdf",
@@ -456,23 +448,8 @@
       "missing": true
     },
     {
-      "path": "images/examples/jasper_1.jpg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "images/workshops/w_1on1/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
       "path": "plh_images/habits/habit_relax.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/bell_white.svg",
-      "count": 3,
+      "count": 1,
       "missing": true
     },
     {
@@ -492,7 +469,7 @@
     },
     {
       "path": "plh_images/icons/in_progress.svg",
-      "count": 7,
+      "count": 5,
       "missing": true
     },
     {
@@ -517,7 +494,7 @@
     },
     {
       "path": "plh_images/icons/tick_white.svg",
-      "count": 7,
+      "count": 5,
       "missing": true
     },
     {
@@ -557,21 +534,16 @@
     },
     {
       "path": "plh_images/workshops/w_self_care/tools.svg",
-      "count": 3,
-      "missing": true
-    },
-    {
-      "path": "quality_assurance/debug_theme_language.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "quality_assurance/test_audio.mp3",
-      "count": 3,
+      "count": 2,
       "missing": true
     }
   ],
   "asset_summary": [
+    {
+      "path": "audio/baby_elephant_walk.wav",
+      "count": 3,
+      "size_kb": 430.7
+    },
     {
       "path": "audio/test_audio.mp3",
       "count": 6,
@@ -606,6 +578,11 @@
       "path": "debug_asset_pack_1/image_4.png",
       "count": 1,
       "size_kb": 11.9
+    },
+    {
+      "path": "debug_theme_language.png",
+      "count": 1,
+      "size_kb": 21.9
     },
     {
       "path": "example_pdf.pdf",
@@ -654,7 +631,7 @@
     },
     {
       "path": "images/example/jasper_1.jpg",
-      "count": 45,
+      "count": 46,
       "size_kb": 527.3
     },
     {
@@ -704,7 +681,7 @@
     },
     {
       "path": "images/icons/heart_blue.svg",
-      "count": 21,
+      "count": 25,
       "size_kb": 1.4
     },
     {
@@ -719,7 +696,7 @@
     },
     {
       "path": "images/icons/in_progress.svg",
-      "count": 8,
+      "count": 10,
       "size_kb": 1.1
     },
     {
@@ -754,7 +731,7 @@
     },
     {
       "path": "images/icons/tick_white.svg",
-      "count": 14,
+      "count": 16,
       "size_kb": 0.3
     },
     {
@@ -779,7 +756,7 @@
     },
     {
       "path": "images/test_image.png",
-      "count": 2,
+      "count": 3,
       "size_kb": 2
     },
     {
@@ -847,7 +824,7 @@
     {
       "type": "data_list",
       "subtype": "debug",
-      "total": 20
+      "total": 18
     },
     {
       "type": "data_list",
@@ -927,7 +904,7 @@
     {
       "type": "template",
       "subtype": "debug",
-      "total": 270
+      "total": 263
     },
     {
       "type": "template",
