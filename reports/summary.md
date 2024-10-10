@@ -7,7 +7,7 @@
 | advanced_dashed_box | 4 |
 | animated_section | 5 |
 | animated_slides | 1 |
-| audio | 11 |
+| audio | 12 |
 | button | 176 |
 | calendar | 1 |
 | carousel | 7 |
@@ -44,7 +44,7 @@
 | select_text | 5 |
 | set_default | 1 |
 | set_field | 26 |
-| set_variable | 507 |
+| set_variable | 508 |
 | simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
@@ -52,7 +52,7 @@
 | task_card | 15 |
 | task_progress_bar | 2 |
 | template | 105 |
-| text | 638 |
+| text | 639 |
 | text_area | 5 |
 | text_box | 30 |
 | text_bubble | 7 |
@@ -167,7 +167,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | path | size_kb | count |
 | --- | --- | --- |
 | audio/baby_elephant_walk.wav | 430.7 | 3 |
-| audio/test_audio.mp3 | 43.4 | 6 |
+| audio/test_audio.mp3 | 43.4 | 7 |
 | audio/timer/bell_1.mp3 | 121.6 | 1 |
 | audio/timer/ping_1.wav | 196.4 | 1 |
 | audio/timer/ping_2.wav | 829.6 | 1 |
@@ -192,7 +192,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-back-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
-| images/icons/audio/play-sharp.svg | 0.1 | 3 |
+| images/icons/audio/play-sharp.svg | 0.1 | 4 |
 | images/icons/book_white.svg | 0.7 | 9 |
 | images/icons/globe_blue.svg | 3.9 | 13 |
 | images/icons/heart_blue.svg | 1.4 | 34 |

@@ -12,10 +12,10 @@
       "property": "sum_Z",
       "scale_max": 2000000,
       "scale_min": 0,
-      "scale_fill": "#e7e1ef, #c994c7, #dd1c77",
+      "gradient_palette": "#e7e1ef, #c994c7, #dd1c77",
       "scale_title": "Total Population",
       "opacity": 0.8,
-      "visible_default": true
+      "visible_default": false
     },
     {
       "id": "layer_2",
@@ -26,7 +26,7 @@
       "property": "mean_Z",
       "scale_max": 400,
       "scale_min": 0,
-      "scale_fill": "#380645, #298680, yellow",
+      "gradient_palette": "#380645, #298680, yellow",
       "scale_title": "Population Density (units)",
       "visible_default": true
     },
@@ -48,6 +48,9 @@
       "type": "vector",
       "fill": "red",
       "stroke": "none",
+      "point_radius_max": 6,
+      "point_radius_property_max": 50,
+      "point_radius_property": "centroid_size_sum",
       "scale_title": "County Centroids",
       "opacity": 1,
       "visible_default": true
@@ -59,15 +62,26 @@
       "type": "vector",
       "fill": "blue",
       "stroke": "none",
-      "opacity": 1
+      "point_radius_max": 10,
+      "point_radius_property_max": 1,
+      "point_radius_property": "any_riot_4w",
+      "opacity": 0.5,
+      "visible_default": false
     },
     {
       "id": "layer_6",
       "name": "Conflict – Forecast",
+      "description": "Probability of conflict occuring in the next 4 weeks",
       "source_asset": "map_data/forecast_data_geojson.json",
-      "type": "vector",
-      "fill": "orange",
-      "stroke": "none",
+      "type": "heatmap",
+      "property": "pred_prob_any_riot_4w",
+      "point_radius_max": 14,
+      "blur": 8,
+      "scale_max": 1,
+      "scale_min": 0,
+      "scale_bins": "0, 0.15, 0.3, 0.4, 0.6, 0.7, 0.8, 1",
+      "gradient_palette": "#c4c4c4, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740035",
+      "scale_title": "Conflict probability (next 4 weeks)",
       "opacity": 1
     }
   ],

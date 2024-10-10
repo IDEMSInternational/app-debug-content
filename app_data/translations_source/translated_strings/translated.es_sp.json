@@ -253,5 +253,10 @@
     "SourceText": "Featured",
     "text": "Destacado",
     "type": "template"
+  },
+  {
+    "SourceText": "This is an audio message in English.",
+    "text": "Este es un mensaje de audio en inglés.",
+    "type": "template"
   }
 ]

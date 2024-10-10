@@ -8,7 +8,9 @@
       "type": "text",
       "value": "This is an audio message in English.",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "name": "text_2",
       "_nested_name": "text_2"
