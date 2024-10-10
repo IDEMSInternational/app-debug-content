@@ -18,7 +18,7 @@
     },
     {
       "type": "audio",
-      "count": 11
+      "count": 12
     },
     {
       "type": "button",
@@ -166,7 +166,7 @@
     },
     {
       "type": "set_variable",
-      "count": 507
+      "count": 508
     },
     {
       "type": "simple_checkbox",
@@ -198,7 +198,7 @@
     },
     {
       "type": "text",
-      "count": 638
+      "count": 639
     },
     {
       "type": "text_area",
@@ -520,7 +520,7 @@
     },
     {
       "path": "audio/test_audio.mp3",
-      "count": 6,
+      "count": 7,
       "size_kb": 43.4
     },
     {
@@ -645,7 +645,7 @@
     },
     {
       "path": "images/icons/audio/play-sharp.svg",
-      "count": 3,
+      "count": 4,
       "size_kb": 0.1
     },
     {

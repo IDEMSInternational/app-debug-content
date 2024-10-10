@@ -40,7 +40,7 @@
         "value": {}
       },
       "parameter_list": {
-        "style": "card"
+        "variant": "card"
       },
       "name": "button_4",
       "_nested_name": "button_4"
@@ -52,7 +52,7 @@
         "value": {}
       },
       "parameter_list": {
-        "style": "card",
+        "variant": "card",
         "icon": "images/icons/leaf_blue.svg"
       },
       "name": "button_5",
@@ -62,7 +62,7 @@
       "type": "button",
       "value": "Icon and toggle",
       "parameter_list": {
-        "style": "card",
+        "variant": "card",
         "icon": "images/icons/school_blue.svg"
       },
       "rows": [
