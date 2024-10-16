@@ -7,12 +7,12 @@
     {
       "type": "video",
       "name": "video_src",
-      "value": "plh_video/lets_slow_down.mp4",
+      "value": "video/lets_slow_down.mp4",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
-        "subtitles_src": "plh_video/lets_slow_down.vtt"
+        "subtitles_src": "video/lets_slow_down.vtt"
       },
       "_nested_name": "video_src"
     }
