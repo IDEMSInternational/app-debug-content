@@ -374,12 +374,12 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "31132 KB",
+      "KB": "31134 KB",
       "MB": "31.1 MB"
     },
     {
       "assets": "unused",
-      "KB": "1003 KB",
+      "KB": "1001 KB",
       "MB": "1 MB"
     }
   ],
@@ -439,10 +439,6 @@
     {
       "path": "video/lets_slow_down.srt",
       "size_kb": 1.7
-    },
-    {
-      "path": "video/lets_slow_down.vtt",
-      "size_kb": 1.8
     }
   ],
   "assets_missing": [
@@ -498,16 +494,6 @@
     },
     {
       "path": "plh_images/workshops/w_self_care/tools.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_video/lets_slow_down.mp4",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_video/lets_slow_down.vtt",
       "count": 1,
       "missing": true
     }
@@ -780,8 +766,13 @@
     },
     {
       "path": "video/lets_slow_down.mp4",
-      "count": 1,
+      "count": 2,
       "size_kb": 13482.2
+    },
+    {
+      "path": "video/lets_slow_down.vtt",
+      "count": 1,
+      "size_kb": 1.8
     }
   ],
   "flows_by_type": [
