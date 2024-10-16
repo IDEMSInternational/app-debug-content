@@ -109,8 +109,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31132 KB | 31.1 MB |
-| unused | 1003 KB | 1 MB |
+| total | 31134 KB | 31.1 MB |
+| unused | 1001 KB | 1 MB |
 </details>
 
 <details open>
@@ -134,7 +134,6 @@ Assets that appear in app-data but do not have references within sheets
 | ios/splash.png | 147.4 |
 | map_data/forecast_data.json | 50.2 |
 | video/lets_slow_down.srt | 1.7 |
-| video/lets_slow_down.vtt | 1.8 |
 </details>
 
 <details open>
@@ -155,8 +154,6 @@ Assets that have references within sheets but do not appear in app-data
 | plh_images/workshop_modes/individual/wave.svg | 3 |
 | plh_images/workshops/w_rules/read_1/slide_4.svg | 1 |
 | plh_images/workshops/w_self_care/tools.svg | 1 |
-| plh_video/lets_slow_down.mp4 | 1 |
-| plh_video/lets_slow_down.vtt | 1 |
 </details>
 
 <details >
@@ -219,7 +216,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | map_data/ke.json | 10219.4 | 1 |
 | map_data/population_and_boundaries.json | 4513.3 | 2 |
 | odk_form.json | 8 | 1 |
-| video/lets_slow_down.mp4 | 13482.2 | 1 |
+| video/lets_slow_down.mp4 | 13482.2 | 2 |
+| video/lets_slow_down.vtt | 1.8 | 1 |
 </details>
 
 <details >
