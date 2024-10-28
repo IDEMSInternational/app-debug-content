@@ -61,6 +61,10 @@
       "count": 1
     },
     {
+      "type": "demo_basic",
+      "count": 3
+    },
+    {
       "type": "display_grid",
       "count": 3
     },
@@ -122,11 +126,15 @@
     },
     {
       "type": "parent_point_counter",
-      "count": 4
+      "count": 2
     },
     {
       "type": "pdf",
       "count": 3
+    },
+    {
+      "type": "plh_bottom_nav",
+      "count": 1
     },
     {
       "type": "progress_path",
@@ -166,7 +174,7 @@
     },
     {
       "type": "set_variable",
-      "count": 508
+      "count": 509
     },
     {
       "type": "simple_checkbox",
@@ -222,7 +230,7 @@
     },
     {
       "type": "title",
-      "count": 344
+      "count": 342
     },
     {
       "type": "toggle_bar",
@@ -238,6 +246,10 @@
     },
     {
       "type": "workshops_accordion",
+      "count": 2
+    },
+    {
+      "type": "youtube",
       "count": 2
     }
   ],
@@ -374,7 +386,7 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "31134 KB",
+      "KB": "31136 KB",
       "MB": "31.1 MB"
     },
     {
@@ -611,7 +623,7 @@
     },
     {
       "path": "images/icons/ask_question_white.svg",
-      "count": 2,
+      "count": 3,
       "size_kb": 1.4
     },
     {
@@ -633,6 +645,11 @@
       "path": "images/icons/audio/play-sharp.svg",
       "count": 4,
       "size_kb": 0.1
+    },
+    {
+      "path": "images/icons/book_outline_white.svg",
+      "count": 1,
+      "size_kb": 0.7
     },
     {
       "path": "images/icons/book_white.svg",
@@ -685,9 +702,19 @@
       "size_kb": 1.6
     },
     {
+      "path": "images/icons/star_blue.svg",
+      "count": 1,
+      "size_kb": 1.3
+    },
+    {
       "path": "images/icons/star_white.svg",
-      "count": 19,
+      "count": 20,
       "size_kb": 1
+    },
+    {
+      "path": "images/icons/star_yellow.svg",
+      "count": 1,
+      "size_kb": 0.6
     },
     {
       "path": "images/icons/tick.svg",
@@ -874,7 +901,7 @@
     {
       "type": "template",
       "subtype": "component_demo",
-      "total": 49
+      "total": 52
     },
     {
       "type": "template",

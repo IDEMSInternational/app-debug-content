@@ -18,6 +18,7 @@
 | debug_toggle | 1 |
 | declare_field_default | 1 |
 | declare_global_constant | 1 |
+| demo_basic | 3 |
 | display_grid | 3 |
 | display_group | 113 |
 | drawer | 1 |
@@ -33,8 +34,9 @@
 | number_selector | 9 |
 | odk_form | 1 |
 | parent_point_box | 12 |
-| parent_point_counter | 4 |
+| parent_point_counter | 2 |
 | pdf | 3 |
+| plh_bottom_nav | 1 |
 | progress_path | 2 |
 | qr_code | 1 |
 | radio_button_grid | 9 |
@@ -44,7 +46,7 @@
 | select_text | 5 |
 | set_default | 1 |
 | set_field | 26 |
-| set_variable | 508 |
+| set_variable | 509 |
 | simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
@@ -58,11 +60,12 @@
 | text_bubble | 7 |
 | tile_component | 20 |
 | timer | 21 |
-| title | 344 |
+| title | 342 |
 | toggle_bar | 35 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
+| youtube | 2 |
 </details>
 
 <details >
@@ -109,7 +112,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31134 KB | 31.1 MB |
+| total | 31136 KB | 31.1 MB |
 | unused | 1001 KB | 1 MB |
 </details>
 
@@ -185,11 +188,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
-| images/icons/ask_question_white.svg | 1.4 | 2 |
+| images/icons/ask_question_white.svg | 1.4 | 3 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-back-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
+| images/icons/book_outline_white.svg | 0.7 | 1 |
 | images/icons/book_white.svg | 0.7 | 9 |
 | images/icons/globe_blue.svg | 3.9 | 13 |
 | images/icons/heart_blue.svg | 1.4 | 34 |
@@ -200,7 +204,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 6 |
 | images/icons/school_blue.svg | 1.6 | 9 |
-| images/icons/star_white.svg | 1 | 19 |
+| images/icons/star_blue.svg | 1.3 | 1 |
+| images/icons/star_white.svg | 1 | 20 |
+| images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 10 |
 | images/icons/tick_white.svg | 0.3 | 21 |
 | images/square_1.svg | 0.7 | 1 |
@@ -244,7 +250,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 9 |
 | template |  | 70 |
-| template | component_demo | 49 |
+| template | component_demo | 52 |
 | template | debug | 263 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
