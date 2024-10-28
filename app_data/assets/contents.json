@@ -149,6 +149,10 @@
     "md5Checksum": "b3ed52ec26505b93fd559e711fa92863",
     "size_kb": 0.1
   },
+  "images/icons/book_outline_white.svg": {
+    "md5Checksum": "12c477faa57812b7a16bc6a0d0424c06",
+    "size_kb": 0.7
+  },
   "images/icons/book_white.svg": {
     "md5Checksum": "12c477faa57812b7a16bc6a0d0424c06",
     "size_kb": 0.7
@@ -193,9 +197,17 @@
     "md5Checksum": "bc87b2ae05c7c762ca7673657c0efb56",
     "size_kb": 1.6
   },
+  "images/icons/star_blue.svg": {
+    "md5Checksum": "7567cb259945a7f431d1e4ff45b4f0e4",
+    "size_kb": 1.3
+  },
   "images/icons/star_white.svg": {
     "md5Checksum": "0f9f695561b9bd2c21944bb6dd47d704",
     "size_kb": 1
+  },
+  "images/icons/star_yellow.svg": {
+    "md5Checksum": "ca68c49869450cef325b928036acd559",
+    "size_kb": 0.6
   },
   "images/icons/tick.svg": {
     "md5Checksum": "b4e6f1e9ba6e5bcdd2e404bc432ba745",

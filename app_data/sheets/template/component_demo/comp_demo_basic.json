@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_demo_basic",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "demo_basic",
+      "value": "Demo basic component",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "my_string_param": "Hello world"
+      },
+      "name": "demo_basic_2",
+      "_nested_name": "demo_basic_2"
+    },
+    {
+      "type": "demo_basic",
+      "parameter_list": {
+        "my_string_param": "Hello world",
+        "variant": "circle_secondary"
+      },
+      "name": "demo_basic_3",
+      "_nested_name": "demo_basic_3"
+    },
+    {
+      "type": "demo_basic",
+      "value": "Demo basic component",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "square_primary",
+        "my_boolean_param": "false"
+      },
+      "name": "demo_basic_4",
+      "_nested_name": "demo_basic_4"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_demo_basic.xlsx"
+}

@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_youtube",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "youtube",
+      "value": "0oOAGrStVGI",
+      "_translations": {
+        "value": {}
+      },
+      "name": "youtube_2",
+      "_nested_name": "youtube_2"
+    },
+    {
+      "type": "youtube",
+      "parameter_list": {
+        "video_id": "0oOAGrStVGI",
+        "allow_fullscreen": "false"
+      },
+      "name": "youtube_3",
+      "_nested_name": "youtube_3"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_youtube.xlsx"
+}

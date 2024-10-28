@@ -5,54 +5,21 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "title",
-      "name": "title_1",
-      "value": "Icon Source",
-      "_translations": {
-        "value": {}
+      "type": "parent_point_counter",
+      "parameter_list": {
+        "icon_src": "images/icons/star_blue.svg"
       },
-      "_nested_name": "title_1"
+      "name": "parent_point_counter_2",
+      "_nested_name": "parent_point_counter_2"
     },
     {
       "type": "parent_point_counter",
-      "name": "parent_point_counter_par_1_1",
       "parameter_list": {
-        "icon_src": "null - (default)"
+        "icon_src": "images/icons/star_yellow.svg",
+        "count": "5"
       },
-      "_nested_name": "parent_point_counter_par_1_1"
-    },
-    {
-      "type": "parent_point_counter",
-      "name": "parent_point_counter_par_1_2",
-      "parameter_list": {
-        "icon_src": "string"
-      },
-      "_nested_name": "parent_point_counter_par_1_2"
-    },
-    {
-      "type": "title",
-      "name": "title_2",
-      "value": "Count",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "title_2"
-    },
-    {
-      "type": "parent_point_counter",
-      "name": "parent_point_counter_par_2_1",
-      "parameter_list": {
-        "count": "null - (default)"
-      },
-      "_nested_name": "parent_point_counter_par_2_1"
-    },
-    {
-      "type": "parent_point_counter",
-      "name": "parent_point_counter_par_2_2",
-      "parameter_list": {
-        "count": "rounded_corners"
-      },
-      "_nested_name": "parent_point_counter_par_2_2"
+      "name": "parent_point_counter_3",
+      "_nested_name": "parent_point_counter_3"
     }
   ],
   "_xlsxPath": "component_sheets/component_parent_point_counter.xlsx"

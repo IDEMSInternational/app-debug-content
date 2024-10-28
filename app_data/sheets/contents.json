@@ -855,6 +855,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_data_items.xlsx"
     },
+    "comp_demo_basic": {
+      "flow_type": "template",
+      "flow_name": "comp_demo_basic",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_demo_basic.xlsx"
+    },
     "comp_display_grid": {
       "flow_type": "template",
       "flow_name": "comp_display_grid",
@@ -926,6 +932,12 @@
       "flow_name": "comp_pdf",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_pdf.xlsx"
+    },
+    "comp_plh_bottom_nav": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_bottom_nav",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx"
     },
     "comp_progress_path": {
       "flow_type": "template",
@@ -1052,6 +1064,12 @@
       "flow_name": "comp_video",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_video.xlsx"
+    },
+    "comp_youtube": {
+      "flow_type": "template",
+      "flow_name": "comp_youtube",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_youtube.xlsx"
     },
     "example_task_carousel": {
       "flow_type": "template",

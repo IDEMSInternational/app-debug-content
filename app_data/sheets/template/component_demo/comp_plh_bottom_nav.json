@@ -1,0 +1,59 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_bottom_nav",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "button_list",
+      "value": [
+        {
+          "name": "home_screen_button",
+          "label": "Home",
+          "icon": "images/icons/book_outline_white.svg",
+          "target_template": "home_screen"
+        },
+        {
+          "name": "star_button",
+          "label": "Star",
+          "icon": "images/icons/star_white.svg",
+          "target_template": "comp_plh_bottom_nav"
+        },
+        {
+          "name": "question_button",
+          "label": "Question",
+          "icon": "images/icons/ask_question_white.svg",
+          "target_template": "comp_plh_bottom_nav"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "button_list"
+    },
+    {
+      "type": "plh_bottom_nav",
+      "parameter_list": {
+        "button_list": "@local.button_list"
+      },
+      "name": "plh_bottom_nav_3",
+      "_nested_name": "plh_bottom_nav_3",
+      "_dynamicFields": {
+        "parameter_list": {
+          "button_list": [
+            {
+              "fullExpression": "@local.button_list",
+              "matchedExpression": "@local.button_list",
+              "type": "local",
+              "fieldName": "button_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.button_list": [
+          "parameter_list.button_list"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx"
+}
