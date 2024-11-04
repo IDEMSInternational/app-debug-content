@@ -46,6 +46,7 @@ config.android = {
   icon_asset_path: "./app_data/assets/android/icon.png",
   icon_asset_foreground_path: "./app_data/assets/android/icon-foreground.png",
   icon_asset_background_path: "./app_data/assets/android/icon-background.png",
+  zoom_enabled: true
 }
 
 config.analytics={
@@ -55,8 +56,11 @@ config.analytics={
   endpoint: "https://apps-server.idems.international/analytics"
 }
 
-config.ios.app_id = "international.idems.debug-app"
-config.ios.app_name = "Debug App"
+config.ios = {
+  app_id : "international.idems.debug-app",
+  app_name: "Debug App",
+  zoom_enabled: true
+}
 
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
