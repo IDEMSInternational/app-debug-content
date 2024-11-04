@@ -20,7 +20,7 @@
 | declare_global_constant | 1 |
 | demo_basic | 3 |
 | display_grid | 3 |
-| display_group | 113 |
+| display_group | 114 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
