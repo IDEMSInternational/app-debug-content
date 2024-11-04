@@ -6,7 +6,7 @@
   "rows": [
     {
       "type": "youtube",
-      "value": "0oOAGrStVGI",
+      "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
       "_translations": {
         "value": {}
       },
@@ -15,12 +15,24 @@
     },
     {
       "type": "youtube",
+      "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
+      "_translations": {
+        "value": {}
+      },
       "parameter_list": {
-        "video_id": "0oOAGrStVGI",
         "allow_fullscreen": "false"
       },
       "name": "youtube_3",
       "_nested_name": "youtube_3"
+    },
+    {
+      "type": "youtube",
+      "value": "0oOAGrStVGI",
+      "_translations": {
+        "value": {}
+      },
+      "name": "youtube_4",
+      "_nested_name": "youtube_4"
     }
   ],
   "_xlsxPath": "component_sheets/component_youtube.xlsx"

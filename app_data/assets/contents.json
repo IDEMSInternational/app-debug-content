@@ -295,6 +295,10 @@
     "md5Checksum": "9c8109ef8e302cad49ecd2bb184908b3",
     "size_kb": 133.5
   },
+  "map_data/forecast_riots.json": {
+    "md5Checksum": "4ced38fc0e746d7279859f1e4341b55d",
+    "size_kb": 48.6
+  },
   "map_data/ke.json": {
     "md5Checksum": "9a887a75373ec2e4bef94070ca0597f1",
     "size_kb": 10219.4

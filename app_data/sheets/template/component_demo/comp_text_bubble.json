@@ -112,14 +112,12 @@
     },
     {
       "type": "text_bubble",
-      "value": "Text bubble containing some Markdown **bold** and *italics* text",
+      "value": "Text bubble containing some Markdown **bold** and *italics* text. And a numbered list:\n1. Item one\n2. Item two\n3. Item three",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
-        "speaker_image_asset": "images/avatar_1.png",
-        "speaker_position": "right",
-        "variant": "primary"
+        "speaker_image_asset": "images/avatar_1.png"
       },
       "name": "text_bubble_9",
       "_nested_name": "text_bubble_9"

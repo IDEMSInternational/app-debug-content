@@ -2956,6 +2956,19 @@
       "flow_name": "feature_home",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
     },
+    "feature_landscape_mode_false": {
+      "flow_type": "template",
+      "flow_name": "feature_landscape_mode_false",
+      "_xlsxPath": "feature_sheets/feature_landscape_mode.xlsx"
+    },
+    "feature_landscape_mode_true": {
+      "flow_type": "template",
+      "flow_name": "feature_landscape_mode_true",
+      "parameter_list": {
+        "landscape": true
+      },
+      "_xlsxPath": "feature_sheets/feature_landscape_mode.xlsx"
+    },
     "feature_lottie": {
       "flow_type": "template",
       "flow_name": "feature_lottie",
@@ -2990,6 +3003,11 @@
       "flow_type": "template",
       "flow_name": "feature_save_open_file",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_save_open_file.xlsx"
+    },
+    "feature_screen_orientation": {
+      "flow_type": "template",
+      "flow_name": "feature_screen_orientation",
+      "_xlsxPath": "feature_sheets/feature_screen_orientation.xlsx"
     },
     "feature_set_theme": {
       "flow_type": "template",
