@@ -6,15 +6,16 @@
   "rows": [
     {
       "type": "youtube",
+      "name": "youtube_1",
       "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
       "_translations": {
         "value": {}
       },
-      "name": "youtube_2",
-      "_nested_name": "youtube_2"
+      "_nested_name": "youtube_1"
     },
     {
       "type": "youtube",
+      "name": "youtube_2",
       "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
       "_translations": {
         "value": {}
@@ -22,17 +23,17 @@
       "parameter_list": {
         "allow_fullscreen": "false"
       },
-      "name": "youtube_3",
-      "_nested_name": "youtube_3"
+      "_nested_name": "youtube_2"
     },
     {
       "type": "youtube",
+      "name": "youtube_3",
       "value": "0oOAGrStVGI",
       "_translations": {
         "value": {}
       },
-      "name": "youtube_4",
-      "_nested_name": "youtube_4"
+      "condition": false,
+      "_nested_name": "youtube_3"
     }
   ],
   "_xlsxPath": "component_sheets/component_youtube.xlsx"

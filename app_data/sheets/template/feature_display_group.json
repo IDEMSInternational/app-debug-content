@@ -13,7 +13,7 @@
       "rows": [
         {
           "type": "title",
-          "value": "Variant: gray",
+          "value": "Variant: box_gray",
           "_translations": {
             "value": {}
           },
@@ -34,7 +34,7 @@
       "rows": [
         {
           "type": "title",
-          "value": "Variant: primary",
+          "value": "Variant: box_primary",
           "_translations": {
             "value": {}
           },
@@ -55,7 +55,7 @@
       "rows": [
         {
           "type": "title",
-          "value": "Variant: secondary",
+          "value": "Variant: box_secondary",
           "_translations": {
             "value": {}
           },
@@ -65,6 +65,27 @@
         }
       ],
       "_nested_name": "dg_variant_secondary"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_variant_white",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "box_white"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Variant: box_white",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title_1",
+          "_nested_name": "dg_variant_white.title_1"
+        }
+      ],
+      "_nested_name": "dg_variant_white"
     },
     {
       "type": "display_group",
@@ -603,8 +624,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title_36",
-      "_nested_name": "title_36"
+      "name": "title_38",
+      "_nested_name": "title_38"
     },
     {
       "type": "display_group",
@@ -726,8 +747,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title_39",
-      "_nested_name": "title_39"
+      "name": "title_41",
+      "_nested_name": "title_41"
     },
     {
       "type": "display_group",
