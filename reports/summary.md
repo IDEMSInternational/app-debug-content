@@ -8,7 +8,7 @@
 | animated_section | 5 |
 | animated_slides | 1 |
 | audio | 12 |
-| button | 176 |
+| button | 180 |
 | calendar | 1 |
 | carousel | 7 |
 | colour_palette | 1 |
@@ -60,12 +60,12 @@
 | text_bubble | 7 |
 | tile_component | 20 |
 | timer | 21 |
-| title | 342 |
+| title | 344 |
 | toggle_bar | 35 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
-| youtube | 2 |
+| youtube | 3 |
 </details>
 
 <details >
@@ -89,7 +89,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 12 |
 | feedback | 9 |
-| go_to | 44 |
+| go_to | 46 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | open_external | 2 |
@@ -97,6 +97,7 @@
 | process_template | 2 |
 | reset_app | 1 |
 | save_to_device | 2 |
+| screen_orientation | 2 |
 | set_field | 89 |
 | set_items | 2 |
 | set_local | 17 |
@@ -112,7 +113,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31136 KB | 31.1 MB |
+| total | 31185 KB | 31.2 MB |
 | unused | 1001 KB | 1 MB |
 </details>
 
@@ -219,6 +220,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | lottie/cascading_stars.json | 140.5 | 1 |
 | map_data/centroids.json | 13.4 | 1 |
 | map_data/forecast_data_geojson.json | 133.5 | 2 |
+| map_data/forecast_riots.json | 48.6 | 1 |
 | map_data/ke.json | 10219.4 | 1 |
 | map_data/population_and_boundaries.json | 4513.3 | 2 |
 | odk_form.json | 8 | 1 |
@@ -249,7 +251,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
-| template |  | 70 |
+| template |  | 73 |
 | template | component_demo | 52 |
 | template | debug | 263 |
 | template | example_generator | 2 |

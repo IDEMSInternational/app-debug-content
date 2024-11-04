@@ -12,8 +12,8 @@
       "property": "sum_Z",
       "scale_max": 2000000,
       "scale_min": 0,
-      "gradient_palette": "#e7e1ef, #c994c7, #dd1c77",
       "scale_title": "Total Population",
+      "gradient_palette": "#e7e1ef, #c994c7, #dd1c77",
       "opacity": 0.8,
       "visible_default": false
     },
@@ -26,8 +26,8 @@
       "property": "mean_Z",
       "scale_max": 400,
       "scale_min": 0,
-      "gradient_palette": "#380645, #298680, yellow",
       "scale_title": "Population Density (units)",
+      "gradient_palette": "#380645, #298680, yellow",
       "visible_default": true
     },
     {
@@ -80,9 +80,25 @@
       "scale_max": 1,
       "scale_min": 0,
       "scale_bins": "0, 0.15, 0.3, 0.4, 0.6, 0.7, 0.8, 1",
-      "gradient_palette": "#c4c4c4, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740035",
       "scale_title": "Conflict probability (next 4 weeks)",
-      "opacity": 1
+      "gradient_palette": "#c4c4c4, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740035",
+      "opacity": 1,
+      "visible_default": false
+    },
+    {
+      "id": "layer_7",
+      "name": "Riots Forecast",
+      "description": "Next 4 weeks",
+      "source_asset": "map_data/forecast_riots.json",
+      "type": "vector",
+      "stroke": "none",
+      "property": "prob_bin",
+      "scale_max": 8,
+      "scale_min": 1,
+      "scale_title": "Riots risks level",
+      "scale_slider": true,
+      "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740036",
+      "visible_default": true
     }
   ],
   "_xlsxPath": "component_sheets/component_map.xlsx"

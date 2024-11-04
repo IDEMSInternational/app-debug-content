@@ -22,7 +22,7 @@
     },
     {
       "type": "button",
-      "count": 176
+      "count": 180
     },
     {
       "type": "calendar",
@@ -230,7 +230,7 @@
     },
     {
       "type": "title",
-      "count": 342
+      "count": 344
     },
     {
       "type": "toggle_bar",
@@ -250,7 +250,7 @@
     },
     {
       "type": "youtube",
-      "count": 2
+      "count": 3
     }
   ],
   "template_actions": [
@@ -320,7 +320,7 @@
     },
     {
       "type": "go_to",
-      "count": 44
+      "count": 46
     },
     {
       "type": "go_to_url",
@@ -348,6 +348,10 @@
     },
     {
       "type": "save_to_device",
+      "count": 2
+    },
+    {
+      "type": "screen_orientation",
       "count": 2
     },
     {
@@ -386,8 +390,8 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "31136 KB",
-      "MB": "31.1 MB"
+      "KB": "31185 KB",
+      "MB": "31.2 MB"
     },
     {
       "assets": "unused",
@@ -777,6 +781,11 @@
       "size_kb": 133.5
     },
     {
+      "path": "map_data/forecast_riots.json",
+      "count": 1,
+      "size_kb": 48.6
+    },
+    {
       "path": "map_data/ke.json",
       "count": 1,
       "size_kb": 10219.4
@@ -896,7 +905,7 @@
     {
       "type": "template",
       "subtype": null,
-      "total": 70
+      "total": 73
     },
     {
       "type": "template",

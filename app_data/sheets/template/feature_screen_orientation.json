@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_screen_orientation",
+  "status": "released",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Portrait",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "screen_orientation",
+          "args": [
+            "portrait"
+          ],
+          "_raw": "click | screen_orientation: portrait",
+          "_cleaned": "click | screen_orientation: portrait"
+        }
+      ],
+      "name": "button_2",
+      "_nested_name": "button_2"
+    },
+    {
+      "type": "button",
+      "value": "Landscape",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "screen_orientation",
+          "args": [
+            "landscape"
+          ],
+          "_raw": "click | screen_orientation: landscape",
+          "_cleaned": "click | screen_orientation: landscape"
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_screen_orientation.xlsx"
+}
