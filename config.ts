@@ -57,7 +57,7 @@ config.analytics={
 }
 
 config.ios = {
-  app_id : "international.idems.debug-app",
+  app_id: "international.idems.debug-app",
   app_name: "Debug App",
   zoom_enabled: true
 }
