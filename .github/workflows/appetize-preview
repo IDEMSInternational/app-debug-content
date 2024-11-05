@@ -1,0 +1,13 @@
+##################################################################################
+#         Calls workflow from code repo
+##################################################################################
+name: Appetize Preview
+
+on:
+  pull_request:
+    types: [labeled, synchronize]
+
+jobs:
+  pr_preview:
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-appetize.yml@master
+    secrets: inherit
