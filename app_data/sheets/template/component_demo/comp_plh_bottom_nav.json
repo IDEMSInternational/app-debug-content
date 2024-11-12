@@ -8,21 +8,24 @@
       "name": "button_list",
       "value": [
         {
-          "name": "home_screen_button",
+          "name": "home_button",
           "label": "Home",
-          "icon": "images/icons/book_outline_white.svg",
+          "icon": "images/icons/home.svg",
+          "active_icon": "images/icons/home_active.svg",
           "target_template": "home_screen"
         },
         {
-          "name": "star_button",
-          "label": "Star",
-          "icon": "images/icons/star_white.svg",
+          "name": "library_button",
+          "label": "Library",
+          "icon": "images/icons/local_library.svg",
+          "active_icon": "images/icons/local_library_active.svg",
           "target_template": "comp_plh_bottom_nav"
         },
         {
-          "name": "question_button",
-          "label": "Question",
-          "icon": "images/icons/ask_question_white.svg",
+          "name": "settings_button",
+          "label": "Settings",
+          "icon": "images/icons/settings.svg",
+          "active_icon": "images/icons/settings_active.svg",
           "target_template": "comp_plh_bottom_nav"
         }
       ],

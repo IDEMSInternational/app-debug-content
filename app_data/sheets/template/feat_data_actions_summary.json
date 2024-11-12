@@ -1,0 +1,136 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_data_actions_summary",
+  "status": "released",
+  "rows": [
+    {
+      "type": "data_items",
+      "value": "@data.feat_data_actions_list",
+      "rows": [
+        {
+          "type": "display_group",
+          "rows": [
+            {
+              "type": "text",
+              "value": "✅",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@item.completed",
+              "name": "text_1",
+              "_nested_name": "data_items_2.display_group_1.text_1",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@item.completed",
+                    "matchedExpression": "@item.completed",
+                    "type": "item",
+                    "fieldName": "completed"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.completed": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "❌",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "!@item.completed",
+              "name": "text_2",
+              "_nested_name": "data_items_2.display_group_1.text_2",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "!@item.completed",
+                    "matchedExpression": "!@item.completed",
+                    "type": "item",
+                    "fieldName": "completed"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "!@item.completed": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "@item.id",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_3",
+              "_nested_name": "data_items_2.display_group_1.text_3",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "@item.number",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_4",
+              "_nested_name": "data_items_2.display_group_1.text_4",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.number",
+                    "matchedExpression": "@item.number",
+                    "type": "item",
+                    "fieldName": "number"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.number": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "name": "display_group_1",
+          "_nested_name": "data_items_2.display_group_1"
+        }
+      ],
+      "name": "data_items_2",
+      "_nested_name": "data_items_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.feat_data_actions_list",
+            "matchedExpression": "@data.feat_data_actions_list",
+            "type": "data",
+            "fieldName": "feat_data_actions_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.feat_data_actions_list": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
+}

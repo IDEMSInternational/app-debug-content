@@ -1,0 +1,69 @@
+{
+  "flow_type": "template",
+  "flow_name": "template_orientation_landscape",
+  "status": "released",
+  "parameter_list": {
+    "orientation": "landscape"
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Landscape Template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "This template will lock orientation to landscape mode when displayed",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "Emit completed",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "click | emit:completed",
+          "_cleaned": "click | emit:completed"
+        }
+      ],
+      "_nested_name": "button_completed"
+    },
+    {
+      "type": "button",
+      "name": "button_uncompleted",
+      "value": "Emit uncompleted",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "uncompleted"
+          ],
+          "_raw": "click | emit:uncompleted",
+          "_cleaned": "click | emit:uncompleted"
+        }
+      ],
+      "_nested_name": "button_uncompleted"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_screen_orientation.xlsx"
+}

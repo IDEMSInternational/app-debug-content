@@ -36,7 +36,23 @@
         ],
         "action_list": {
           "0": {
+            "args": {
+              "0": [
+                {
+                  "fullExpression": "debug_tracker_@row.type",
+                  "matchedExpression": "@row.type",
+                  "type": "row",
+                  "fieldName": "type"
+                }
+              ]
+            },
             "_raw": [
+              {
+                "fullExpression": "changed | set_field:debug_tracker_@row.type:@local.text_box",
+                "matchedExpression": "@row.type",
+                "type": "row",
+                "fieldName": "type"
+              },
               {
                 "fullExpression": "changed | set_field:debug_tracker_@row.type:@local.text_box",
                 "matchedExpression": "@local.text_box",
@@ -45,6 +61,12 @@
               }
             ],
             "_cleaned": [
+              {
+                "fullExpression": "changed | set_field:debug_tracker_@row.type:@local.text_box",
+                "matchedExpression": "@row.type",
+                "type": "row",
+                "fieldName": "type"
+              },
               {
                 "fullExpression": "changed | set_field:debug_tracker_@row.type:@local.text_box",
                 "matchedExpression": "@local.text_box",
@@ -58,6 +80,11 @@
       "_dynamicDependencies": {
         "@fields.debug_tracker_text_box": [
           "value"
+        ],
+        "@row.type": [
+          "action_list.0.args.0",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
         ],
         "@local.text_box": [
           "action_list.0._raw",

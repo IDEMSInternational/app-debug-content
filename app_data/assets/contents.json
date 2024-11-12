@@ -89,9 +89,21 @@
     "md5Checksum": "4cba6f3545595d585cf1c89394955c71",
     "size_kb": 0.5
   },
+  "images/Dalal.png": {
+    "md5Checksum": "63a9c8ac873873ba14ed9e985dc33bef",
+    "size_kb": 4.2
+  },
+  "images/Faisal.png": {
+    "md5Checksum": "f2753b6306c8d4045426ce2ee3457f5f",
+    "size_kb": 3.5
+  },
+  "images/Noura.png": {
+    "md5Checksum": "b3f286e41f079f7db3ca679ce6e83f60",
+    "size_kb": 4.2
+  },
   "images/avatar_1.png": {
-    "md5Checksum": "c5c1acec2fc92d6a19b972563d860798",
-    "size_kb": 60.5
+    "md5Checksum": "d2d29806c1c430e574a50ddd19319f52",
+    "size_kb": 67.7
   },
   "images/example/110-536x354.jpg": {
     "md5Checksum": "bf471a3ecb792c6b8bdc9d8c82aeebc1",
@@ -173,6 +185,14 @@
     "md5Checksum": "3837dbad3c5c5b8158a5370064283c20",
     "size_kb": 0.6
   },
+  "images/icons/home.svg": {
+    "md5Checksum": "9c992c891ce900160c3738088c497f8b",
+    "size_kb": 0.4
+  },
+  "images/icons/home_active.svg": {
+    "md5Checksum": "8704993d38482b0eb3ab261e9f18f8cf",
+    "size_kb": 0.4
+  },
   "images/icons/house_white.svg": {
     "md5Checksum": "f65ea96d7ff53e9bed8613e7f2fe3302",
     "size_kb": 0.6
@@ -185,6 +205,14 @@
     "md5Checksum": "21c6e54960599fdda6e4d58c3337b541",
     "size_kb": 1.7
   },
+  "images/icons/local_library.svg": {
+    "md5Checksum": "47c32e1a451ce2e6d55661977724cb1d",
+    "size_kb": 1.6
+  },
+  "images/icons/local_library_active.svg": {
+    "md5Checksum": "32cacaa501602e12c42cbf6f9a908efd",
+    "size_kb": 1.6
+  },
   "images/icons/question_mark.svg": {
     "md5Checksum": "49e1d1e478068a24949d87d09c9ba07b",
     "size_kb": 0.8
@@ -196,6 +224,14 @@
   "images/icons/school_blue.svg": {
     "md5Checksum": "bc87b2ae05c7c762ca7673657c0efb56",
     "size_kb": 1.6
+  },
+  "images/icons/settings.svg": {
+    "md5Checksum": "e4c57dd6bcaab75533160616f4ca1d39",
+    "size_kb": 2.4
+  },
+  "images/icons/settings_active.svg": {
+    "md5Checksum": "bf8d2472083667e3d651224f283da233",
+    "size_kb": 2.4
   },
   "images/icons/star_blue.svg": {
     "md5Checksum": "7567cb259945a7f431d1e4ff45b4f0e4",

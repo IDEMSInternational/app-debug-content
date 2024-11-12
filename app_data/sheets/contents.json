@@ -339,6 +339,11 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_data_actions_list": {
+      "flow_type": "data_list",
+      "flow_name": "feat_data_actions_list",
+      "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
+    },
     "feat_task_group_1_data": {
       "flow_type": "data_list",
       "flow_name": "feat_task_group_1_data",
@@ -2883,6 +2888,16 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_data_actions": {
+      "flow_type": "template",
+      "flow_name": "feat_data_actions",
+      "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
+    },
+    "feat_data_actions_summary": {
+      "flow_type": "template",
+      "flow_name": "feat_data_actions_summary",
+      "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
+    },
     "feat_footer": {
       "flow_type": "template",
       "flow_name": "feat_footer",
@@ -2955,19 +2970,6 @@
       "flow_type": "template",
       "flow_name": "feature_home",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
-    },
-    "feature_landscape_mode_false": {
-      "flow_type": "template",
-      "flow_name": "feature_landscape_mode_false",
-      "_xlsxPath": "feature_sheets/feature_landscape_mode.xlsx"
-    },
-    "feature_landscape_mode_true": {
-      "flow_type": "template",
-      "flow_name": "feature_landscape_mode_true",
-      "parameter_list": {
-        "landscape": true
-      },
-      "_xlsxPath": "feature_sheets/feature_landscape_mode.xlsx"
     },
     "feature_lottie": {
       "flow_type": "template",
@@ -3083,6 +3085,14 @@
       "flow_type": "template",
       "flow_name": "nav_buttons",
       "_xlsxPath": "navigation.xlsx"
+    },
+    "template_orientation_landscape": {
+      "flow_type": "template",
+      "flow_name": "template_orientation_landscape",
+      "parameter_list": {
+        "orientation": "landscape"
+      },
+      "_xlsxPath": "feature_sheets/feature_screen_orientation.xlsx"
     }
   },
   "tour": {

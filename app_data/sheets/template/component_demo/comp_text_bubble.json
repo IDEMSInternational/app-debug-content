@@ -121,6 +121,49 @@
       },
       "name": "text_bubble_9",
       "_nested_name": "text_bubble_9"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: primary;\nFor kw facilitator",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/Noura.png",
+        "variant": "primary",
+        "speaker_name": "Sayiddah Noura"
+      },
+      "name": "text_bubble_10",
+      "_nested_name": "text_bubble_10"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: orange;\nFor kw comics",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/Faisal.png",
+        "variant": "orange",
+        "speaker_position": "right",
+        "speaker_name": "Dalal"
+      },
+      "name": "text_bubble_11",
+      "_nested_name": "text_bubble_11"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: yellow;\nFor kw comics",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "speaker_image_asset": "images/Faisal.png",
+        "variant": "yellow",
+        "speaker_name": "Faisal"
+      },
+      "name": "text_bubble_12",
+      "_nested_name": "text_bubble_12"
     }
   ],
   "_xlsxPath": "component_sheets/component_text_bubble.xlsx"
