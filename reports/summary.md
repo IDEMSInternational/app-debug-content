@@ -3,18 +3,18 @@
 
 | type | count |
 | --- | --- |
-| accordion | 4 |
+| accordion | 5 |
 | advanced_dashed_box | 4 |
 | animated_section | 5 |
 | animated_slides | 1 |
 | audio | 12 |
-| button | 180 |
+| button | 195 |
 | calendar | 1 |
 | carousel | 7 |
 | colour_palette | 1 |
 | combo_box | 44 |
 | dashed_box | 19 |
-| data_items | 36 |
+| data_items | 37 |
 | debug_toggle | 1 |
 | declare_field_default | 1 |
 | declare_global_constant | 1 |
@@ -31,7 +31,7 @@
 | map | 1 |
 | nav_group | 6 |
 | navigation_bar | 6 |
-| number_selector | 9 |
+| number_selector | 10 |
 | odk_form | 1 |
 | parent_point_box | 12 |
 | parent_point_counter | 2 |
@@ -46,21 +46,22 @@
 | select_text | 5 |
 | set_default | 1 |
 | set_field | 26 |
+| set_local | 2 |
 | set_variable | 509 |
 | simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 45 |
+| subtitle | 46 |
 | task_card | 15 |
 | task_progress_bar | 2 |
-| template | 105 |
-| text | 639 |
+| template | 108 |
+| text | 645 |
 | text_area | 5 |
 | text_box | 30 |
-| text_bubble | 7 |
+| text_bubble | 10 |
 | tile_component | 20 |
 | timer | 21 |
-| title | 344 |
+| title | 352 |
 | toggle_bar | 35 |
 | update_action_list | 2 |
 | video | 4 |
@@ -78,7 +79,7 @@
 | auth | 2 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
-| emit: completed | 27 |
+| emit: completed | 28 |
 | emit: force_reload | 23 |
 | emit: force_reprocess | 20 |
 | emit: force_restart | 2 |
@@ -87,20 +88,22 @@
 | emit: set_skin | 1 |
 | emit: set_theme | 2 |
 | emit: translator_mode_toggle | 1 |
-| emit: uncompleted | 12 |
+| emit: uncompleted | 13 |
 | feedback | 9 |
 | go_to | 46 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | open_external | 2 |
-| pop_up | 33 |
+| pop_up | 34 |
 | process_template | 2 |
 | reset_app | 1 |
+| reset_data | 2 |
 | save_to_device | 2 |
-| screen_orientation | 2 |
+| screen_orientation | 3 |
+| set_data | 9 |
 | set_field | 89 |
 | set_items | 2 |
-| set_local | 17 |
+| set_local | 18 |
 | share | 6 |
 | start_tour | 2 |
 | task | 2 |
@@ -113,8 +116,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31185 KB | 31.2 MB |
-| unused | 1001 KB | 1 MB |
+| total | 31208 KB | 31.2 MB |
+| unused | 1006 KB | 1 MB |
 </details>
 
 <details open>
@@ -130,6 +133,8 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
 | dummy.pdf | 13 |
+| images/Dalal.png | 4.2 |
+| images/icons/book_outline_white.svg | 0.7 |
 | images/icons/favicon.svg | 2.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
@@ -179,7 +184,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | example_pdf.pdf | 139.4 | 3 |
 | i18n/flags/gb.svg | 0.5 | 2 |
 | i18n/flags/tz.svg | 0.5 | 2 |
-| images/avatar_1.png | 60.5 | 17 |
+| images/Faisal.png | 3.5 | 2 |
+| images/Noura.png | 4.2 | 1 |
+| images/avatar_1.png | 67.7 | 17 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
 | images/example/408-536x354.jpg | 23.2 | 1 |
@@ -189,24 +196,29 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
-| images/icons/ask_question_white.svg | 1.4 | 3 |
+| images/icons/ask_question_white.svg | 1.4 | 2 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-back-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
-| images/icons/book_outline_white.svg | 0.7 | 1 |
 | images/icons/book_white.svg | 0.7 | 9 |
 | images/icons/globe_blue.svg | 3.9 | 13 |
 | images/icons/heart_blue.svg | 1.4 | 34 |
 | images/icons/heart_outline.svg | 0.6 | 10 |
+| images/icons/home.svg | 0.4 | 1 |
+| images/icons/home_active.svg | 0.4 | 1 |
 | images/icons/house_white.svg | 0.6 | 3 |
 | images/icons/in_progress.svg | 1.1 | 15 |
 | images/icons/leaf_blue.svg | 1.7 | 11 |
+| images/icons/local_library.svg | 1.6 | 1 |
+| images/icons/local_library_active.svg | 1.6 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 6 |
 | images/icons/school_blue.svg | 1.6 | 9 |
+| images/icons/settings.svg | 2.4 | 1 |
+| images/icons/settings_active.svg | 2.4 | 1 |
 | images/icons/star_blue.svg | 1.3 | 1 |
-| images/icons/star_white.svg | 1 | 20 |
+| images/icons/star_white.svg | 1 | 19 |
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 10 |
 | images/icons/tick_white.svg | 0.3 | 21 |
@@ -233,7 +245,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 25 |
+| data_list |  | 26 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 6 |
@@ -251,7 +263,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
-| template |  | 73 |
+| template |  | 74 |
 | template | component_demo | 52 |
 | template | debug | 263 |
 | template | example_generator | 2 |
