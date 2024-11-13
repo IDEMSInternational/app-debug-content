@@ -10,19 +10,19 @@
         {
           "name": "home_screen_button",
           "text": "@global.home_screen",
-          "image": "plh_images/icons/house_white.svg",
+          "image": "images/icons/house_white.svg",
           "target_template": "home_screen"
         },
         {
           "name": "parent_points_button",
           "text": "@global.parent_points",
-          "image": "plh_images/icons/parent_child_white.svg",
+          "image": "images/icons/star_white.svg",
           "target_template": "parent_points"
         },
         {
           "name": "parent_library_button",
           "text": "@global.parent_centre",
-          "image": "plh_images/icons/book_white.svg",
+          "image": "images/icons/book_white.svg",
           "target_template": "parent_centre"
         }
       ],
