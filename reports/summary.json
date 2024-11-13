@@ -182,7 +182,7 @@
     },
     {
       "type": "set_variable",
-      "count": 508
+      "count": 507
     },
     {
       "type": "simple_checkbox",
@@ -411,7 +411,7 @@
     },
     {
       "assets": "unused",
-      "KB": "988 KB",
+      "KB": "986 KB",
       "MB": "1 MB"
     }
   ],
@@ -463,10 +463,6 @@
     {
       "path": "map_data/forecast_data.json",
       "size_kb": 50.2
-    },
-    {
-      "path": "video/lets_slow_down.srt",
-      "size_kb": 1.7
     }
   ],
   "assets_missing": [

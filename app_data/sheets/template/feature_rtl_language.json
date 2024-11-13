@@ -133,30 +133,6 @@
       },
       "name": "text_6",
       "_nested_name": "text_6"
-    },
-    {
-      "value": "@field.activity_famous_party_favourite",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "name": "set_variable_7",
-      "_nested_name": "set_variable_7",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@field.activity_famous_party_favourite",
-            "matchedExpression": "@field.activity_famous_party_favourite",
-            "type": "field",
-            "fieldName": "activity_famous_party_favourite"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@field.activity_famous_party_favourite": [
-          "value"
-        ]
-      }
     }
   ],
   "_xlsxPath": "feature_sheets/feature_rtl_language.xlsx"
