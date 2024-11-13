@@ -37,6 +37,7 @@
 | parent_point_counter | 2 |
 | pdf | 3 |
 | plh_bottom_nav | 1 |
+| plh_module_list_item | 4 |
 | progress_path | 2 |
 | qr_code | 1 |
 | radio_button_grid | 9 |
@@ -47,7 +48,7 @@
 | set_default | 1 |
 | set_field | 26 |
 | set_local | 2 |
-| set_variable | 509 |
+| set_variable | 510 |
 | simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
@@ -116,7 +117,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31208 KB | 31.2 MB |
+| total | 31238 KB | 31.2 MB |
 | unused | 1006 KB | 1 MB |
 </details>
 
@@ -202,6 +203,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
 | images/icons/book_white.svg | 0.7 | 9 |
+| images/icons/expand_circle_right.png | 0.9 | 2 |
 | images/icons/globe_blue.svg | 3.9 | 13 |
 | images/icons/heart_blue.svg | 1.4 | 34 |
 | images/icons/heart_outline.svg | 0.6 | 10 |
@@ -212,6 +214,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 11 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
+| images/icons/locked.png | 0.9 | 2 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 6 |
 | images/icons/school_blue.svg | 1.6 | 9 |
@@ -222,6 +225,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 10 |
 | images/icons/tick_white.svg | 0.3 | 21 |
+| images/module-1.png | 28.2 | 4 |
 | images/square_1.svg | 0.7 | 1 |
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
@@ -264,7 +268,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 9 |
 | template |  | 74 |
-| template | component_demo | 52 |
+| template | component_demo | 53 |
 | template | debug | 263 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

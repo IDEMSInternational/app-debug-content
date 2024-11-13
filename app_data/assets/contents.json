@@ -169,6 +169,10 @@
     "md5Checksum": "12c477faa57812b7a16bc6a0d0424c06",
     "size_kb": 0.7
   },
+  "images/icons/expand_circle_right.png": {
+    "md5Checksum": "668d46c68a50b5862ae016cc05b8fa42",
+    "size_kb": 0.9
+  },
   "images/icons/favicon.svg": {
     "md5Checksum": "25a750c5524bd7c519b2b53a3abe5036",
     "size_kb": 2.1
@@ -213,6 +217,10 @@
     "md5Checksum": "32cacaa501602e12c42cbf6f9a908efd",
     "size_kb": 1.6
   },
+  "images/icons/locked.png": {
+    "md5Checksum": "a7a4916f4effb1fa574cbfcecd6e7590",
+    "size_kb": 0.9
+  },
   "images/icons/question_mark.svg": {
     "md5Checksum": "49e1d1e478068a24949d87d09c9ba07b",
     "size_kb": 0.8
@@ -252,6 +260,10 @@
   "images/icons/tick_white.svg": {
     "md5Checksum": "81136e04436759812dc3f6e90c61de11",
     "size_kb": 0.3
+  },
+  "images/module-1.png": {
+    "md5Checksum": "840e6c66b936d36e7c485c1f96972573",
+    "size_kb": 28.2
   },
   "images/square_1.svg": {
     "md5Checksum": "6e31011e97989999dcc561fd205fed78",

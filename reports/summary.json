@@ -137,6 +137,10 @@
       "count": 1
     },
     {
+      "type": "plh_module_list_item",
+      "count": 4
+    },
+    {
       "type": "progress_path",
       "count": 2
     },
@@ -178,7 +182,7 @@
     },
     {
       "type": "set_variable",
-      "count": 509
+      "count": 510
     },
     {
       "type": "simple_checkbox",
@@ -402,7 +406,7 @@
   "assets_size": [
     {
       "assets": "total",
-      "KB": "31208 KB",
+      "KB": "31238 KB",
       "MB": "31.2 MB"
     },
     {
@@ -686,6 +690,11 @@
       "size_kb": 0.7
     },
     {
+      "path": "images/icons/expand_circle_right.png",
+      "count": 2,
+      "size_kb": 0.9
+    },
+    {
       "path": "images/icons/globe_blue.svg",
       "count": 13,
       "size_kb": 3.9
@@ -736,6 +745,11 @@
       "size_kb": 1.6
     },
     {
+      "path": "images/icons/locked.png",
+      "count": 2,
+      "size_kb": 0.9
+    },
+    {
       "path": "images/icons/question_mark.svg",
       "count": 2,
       "size_kb": 0.8
@@ -784,6 +798,11 @@
       "path": "images/icons/tick_white.svg",
       "count": 21,
       "size_kb": 0.3
+    },
+    {
+      "path": "images/module-1.png",
+      "count": 4,
+      "size_kb": 28.2
     },
     {
       "path": "images/square_1.svg",
@@ -965,7 +984,7 @@
     {
       "type": "template",
       "subtype": "component_demo",
-      "total": 52
+      "total": 53
     },
     {
       "type": "template",

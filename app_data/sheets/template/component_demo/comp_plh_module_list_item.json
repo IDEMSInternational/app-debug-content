@@ -1,0 +1,76 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_module_list_item",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "plh_module_list_item",
+      "name": "item_1",
+      "value": "Align-left, capitalise text, target-template",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "module_image_asset": "images/module-1.png",
+        "module_alignment": "left",
+        "text_transform": "capitalise",
+        "target_template": "comp_plh_bottom_nav",
+        "nav_image_asset": "images/icons/expand_circle_right.png"
+      },
+      "_nested_name": "item_1"
+    },
+    {
+      "type": "plh_module_list_item",
+      "name": "item_2",
+      "value": "Align-left, locked module",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "module_image_asset": "images/module-1.png",
+        "module_alignment": "left",
+        "is_locked": "true",
+        "locked_image_asset": "images/icons/locked.png"
+      },
+      "_nested_name": "item_2"
+    },
+    {
+      "type": "plh_module_list_item",
+      "name": "item_3",
+      "value": "Align-right, default text, locked module",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "module_image_asset": "images/module-1.png",
+        "module_alignment": "right",
+        "is_locked": "true",
+        "locked_image_asset": "images/icons/locked.png"
+      },
+      "_nested_name": "item_3"
+    },
+    {
+      "type": "plh_module_list_item",
+      "name": "item_4",
+      "value": "Align-right, uppercase text, no target-template",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "module_image_asset": "images/module-1.png",
+        "module_alignment": "right",
+        "text_transform": "uppercase",
+        "nav_image_asset": "images/icons/expand_circle_right.png"
+      },
+      "_nested_name": "item_4"
+    },
+    {
+      "parameter_list": {},
+      "type": "set_variable",
+      "name": "set_variable_7",
+      "_nested_name": "set_variable_7"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx"
+}

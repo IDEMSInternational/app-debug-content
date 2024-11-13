@@ -3,6 +3,9 @@
   "flow_name": "comp_text_bubble",
   "status": "released",
   "flow_subtype": "component_demo",
+  "parameter_list": {
+    "show_footer": false
+  },
   "rows": [
     {
       "type": "text_bubble",
@@ -138,13 +141,13 @@
     },
     {
       "type": "text_bubble",
-      "value": "variant: orange;\nFor kw comics",
+      "value": "variant: accent-1;\nFor kw comics",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "speaker_image_asset": "images/Faisal.png",
-        "variant": "orange",
+        "variant": "accent-1",
         "speaker_position": "right",
         "speaker_name": "Dalal"
       },
@@ -153,13 +156,13 @@
     },
     {
       "type": "text_bubble",
-      "value": "variant: yellow;\nFor kw comics",
+      "value": "variant: accent-2;\nFor kw comics",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "speaker_image_asset": "images/Faisal.png",
-        "variant": "yellow",
+        "variant": "accent-2",
         "speaker_name": "Faisal"
       },
       "name": "text_bubble_12",

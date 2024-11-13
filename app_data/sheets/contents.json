@@ -944,6 +944,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx"
     },
+    "comp_plh_module_list_item": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_module_list_item",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx"
+    },
     "comp_progress_path": {
       "flow_type": "template",
       "flow_name": "comp_progress_path",
@@ -1044,6 +1050,9 @@
       "flow_type": "template",
       "flow_name": "comp_text_bubble",
       "flow_subtype": "component_demo",
+      "parameter_list": {
+        "show_footer": false
+      },
       "_xlsxPath": "component_sheets/component_text_bubble.xlsx"
     },
     "comp_timer": {
