@@ -411,8 +411,8 @@
     },
     {
       "assets": "unused",
-      "KB": "986 KB",
-      "MB": "1 MB"
+      "KB": "936 KB",
+      "MB": "0.9 MB"
     }
   ],
   "assets_unused": [
@@ -459,10 +459,6 @@
     {
       "path": "ios/splash.png",
       "size_kb": 147.4
-    },
-    {
-      "path": "map_data/forecast_data.json",
-      "size_kb": 50.2
     }
   ],
   "assets_missing": [

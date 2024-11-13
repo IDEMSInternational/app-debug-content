@@ -323,10 +323,6 @@
     "md5Checksum": "f041bee2c57b7f4c92b88546a05116f8",
     "size_kb": 13.4
   },
-  "map_data/forecast_data.json": {
-    "md5Checksum": "725139140245b6898251278673b553e4",
-    "size_kb": 50.2
-  },
   "map_data/forecast_data_geojson.json": {
     "md5Checksum": "9c8109ef8e302cad49ecd2bb184908b3",
     "size_kb": 133.5

@@ -118,7 +118,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 31238 KB | 31.2 MB |
-| unused | 986 KB | 1 MB |
+| unused | 936 KB | 0.9 MB |
 </details>
 
 <details open>
@@ -139,7 +139,6 @@ Assets that appear in app-data but do not have references within sheets
 | ios/icon-only.png | 128.1 |
 | ios/icon.png | 128.1 |
 | ios/splash.png | 147.4 |
-| map_data/forecast_data.json | 50.2 |
 </details>
 
 <details open>
