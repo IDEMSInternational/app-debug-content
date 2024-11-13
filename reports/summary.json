@@ -182,7 +182,7 @@
     },
     {
       "type": "set_variable",
-      "count": 508
+      "count": 507
     },
     {
       "type": "simple_checkbox",
@@ -411,8 +411,8 @@
     },
     {
       "assets": "unused",
-      "KB": "988 KB",
-      "MB": "1 MB"
+      "KB": "936 KB",
+      "MB": "0.9 MB"
     }
   ],
   "assets_unused": [
@@ -459,14 +459,6 @@
     {
       "path": "ios/splash.png",
       "size_kb": 147.4
-    },
-    {
-      "path": "map_data/forecast_data.json",
-      "size_kb": 50.2
-    },
-    {
-      "path": "video/lets_slow_down.srt",
-      "size_kb": 1.7
     }
   ],
   "assets_missing": [

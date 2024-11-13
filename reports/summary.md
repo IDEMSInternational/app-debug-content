@@ -48,7 +48,7 @@
 | set_default | 1 |
 | set_field | 26 |
 | set_local | 2 |
-| set_variable | 508 |
+| set_variable | 507 |
 | simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
@@ -118,7 +118,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 31238 KB | 31.2 MB |
-| unused | 988 KB | 1 MB |
+| unused | 936 KB | 0.9 MB |
 </details>
 
 <details open>
@@ -139,8 +139,6 @@ Assets that appear in app-data but do not have references within sheets
 | ios/icon-only.png | 128.1 |
 | ios/icon.png | 128.1 |
 | ios/splash.png | 147.4 |
-| map_data/forecast_data.json | 50.2 |
-| video/lets_slow_down.srt | 1.7 |
 </details>
 
 <details open>
