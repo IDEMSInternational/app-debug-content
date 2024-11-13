@@ -174,7 +174,7 @@
         {
           "type": "image",
           "name": "image_teens",
-          "value": "plh_images/survey/workshop_setup/teens.svg",
+          "value": "images/example/jasper_1.jpg",
           "_translations": {
             "value": {}
           },

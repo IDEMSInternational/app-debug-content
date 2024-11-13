@@ -18,7 +18,7 @@
           "rows": [
             {
               "type": "image",
-              "value": "plh_images/icons/house_white.svg",
+              "value": "images/icons/house_white.svg",
               "_translations": {
                 "value": {}
               },
@@ -65,7 +65,7 @@
           "rows": [
             {
               "type": "image",
-              "value": "plh_images/icons/parent_child_white.svg",
+              "value": "images/icons/star_white.svg",
               "_translations": {
                 "value": {}
               },
@@ -112,7 +112,7 @@
           "rows": [
             {
               "type": "image",
-              "value": "plh_images/icons/book_white.svg",
+              "value": "images/icons/book_white.svg",
               "_translations": {
                 "value": {}
               },

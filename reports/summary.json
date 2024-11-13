@@ -86,7 +86,7 @@
     },
     {
       "type": "image",
-      "count": 23
+      "count": 22
     },
     {
       "type": "items",
@@ -154,7 +154,7 @@
     },
     {
       "type": "radio_group",
-      "count": 59
+      "count": 56
     },
     {
       "type": "radio_group_grid",
@@ -182,7 +182,7 @@
     },
     {
       "type": "set_variable",
-      "count": 510
+      "count": 508
     },
     {
       "type": "simple_checkbox",
@@ -214,7 +214,7 @@
     },
     {
       "type": "text",
-      "count": 645
+      "count": 637
     },
     {
       "type": "text_area",
@@ -411,7 +411,7 @@
     },
     {
       "assets": "unused",
-      "KB": "1006 KB",
+      "KB": "988 KB",
       "MB": "1 MB"
     }
   ],
@@ -435,18 +435,6 @@
     {
       "path": "android/splash.png",
       "size_kb": 147.4
-    },
-    {
-      "path": "dummy.pdf",
-      "size_kb": 13
-    },
-    {
-      "path": "images/Dalal.png",
-      "size_kb": 4.2
-    },
-    {
-      "path": "images/icons/book_outline_white.svg",
-      "size_kb": 0.7
     },
     {
       "path": "images/icons/favicon.svg",
@@ -489,51 +477,6 @@
     },
     {
       "path": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/book_white.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/heart.svg",
-      "count": 10,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/house_white.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/parent_child_white.svg",
-      "count": 2,
-      "missing": true
-    },
-    {
-      "path": "plh_images/icons/tick.svg",
-      "count": 10,
-      "missing": true
-    },
-    {
-      "path": "plh_images/survey/workshop_setup/teens.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshop_modes/individual/wave.svg",
-      "count": 3,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_rules/read_1/slide_4.svg",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "plh_images/workshops/w_self_care/tools.svg",
       "count": 1,
       "missing": true
     }
@@ -641,7 +584,7 @@
     },
     {
       "path": "images/example/jasper_1.jpg",
-      "count": 50,
+      "count": 55,
       "size_kb": 527.3
     },
     {
@@ -686,7 +629,7 @@
     },
     {
       "path": "images/icons/book_white.svg",
-      "count": 9,
+      "count": 11,
       "size_kb": 0.7
     },
     {
@@ -721,7 +664,7 @@
     },
     {
       "path": "images/icons/house_white.svg",
-      "count": 3,
+      "count": 5,
       "size_kb": 0.6
     },
     {
@@ -781,7 +724,7 @@
     },
     {
       "path": "images/icons/star_white.svg",
-      "count": 19,
+      "count": 21,
       "size_kb": 1
     },
     {
@@ -989,7 +932,7 @@
     {
       "type": "template",
       "subtype": "debug",
-      "total": 263
+      "total": 259
     },
     {
       "type": "template",

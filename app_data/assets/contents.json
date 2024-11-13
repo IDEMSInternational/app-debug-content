@@ -73,10 +73,6 @@
     "md5Checksum": "a86e175e00b77a34a936cc08214359ca",
     "size_kb": 21.9
   },
-  "dummy.pdf": {
-    "md5Checksum": "2942bfabb3d05332b66eb128e0842cff",
-    "size_kb": 13
-  },
   "example_pdf.pdf": {
     "md5Checksum": "5afaf79789a776d81ec91ccbdc9fdaba",
     "size_kb": 139.4
@@ -88,10 +84,6 @@
   "i18n/flags/tz.svg": {
     "md5Checksum": "4cba6f3545595d585cf1c89394955c71",
     "size_kb": 0.5
-  },
-  "images/Dalal.png": {
-    "md5Checksum": "63a9c8ac873873ba14ed9e985dc33bef",
-    "size_kb": 4.2
   },
   "images/Faisal.png": {
     "md5Checksum": "f2753b6306c8d4045426ce2ee3457f5f",
@@ -160,10 +152,6 @@
   "images/icons/audio/play-sharp.svg": {
     "md5Checksum": "b3ed52ec26505b93fd559e711fa92863",
     "size_kb": 0.1
-  },
-  "images/icons/book_outline_white.svg": {
-    "md5Checksum": "12c477faa57812b7a16bc6a0d0424c06",
-    "size_kb": 0.7
   },
   "images/icons/book_white.svg": {
     "md5Checksum": "12c477faa57812b7a16bc6a0d0424c06",

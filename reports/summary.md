@@ -24,7 +24,7 @@
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
-| image | 23 |
+| image | 22 |
 | items | 38 |
 | latex | 1 |
 | lottie_animation | 3 |
@@ -41,14 +41,14 @@
 | progress_path | 2 |
 | qr_code | 1 |
 | radio_button_grid | 9 |
-| radio_group | 59 |
+| radio_group | 56 |
 | radio_group_grid | 5 |
 | round_button | 12 |
 | select_text | 5 |
 | set_default | 1 |
 | set_field | 26 |
 | set_local | 2 |
-| set_variable | 510 |
+| set_variable | 508 |
 | simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
@@ -56,7 +56,7 @@
 | task_card | 15 |
 | task_progress_bar | 2 |
 | template | 108 |
-| text | 645 |
+| text | 637 |
 | text_area | 5 |
 | text_box | 30 |
 | text_bubble | 10 |
@@ -118,7 +118,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 31238 KB | 31.2 MB |
-| unused | 1006 KB | 1 MB |
+| unused | 988 KB | 1 MB |
 </details>
 
 <details open>
@@ -133,9 +133,6 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon-only.png | 128.1 |
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
-| dummy.pdf | 13 |
-| images/Dalal.png | 4.2 |
-| images/icons/book_outline_white.svg | 0.7 |
 | images/icons/favicon.svg | 2.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
@@ -155,15 +152,6 @@ Assets that have references within sheets but do not appear in app-data
 | --- | --- |
 | debug_asset_pack_1/image_2.png | 1 |
 | https://www.w3schools.com/html/mov_bbb.mp4 | 1 |
-| plh_images/icons/book_white.svg | 2 |
-| plh_images/icons/heart.svg | 10 |
-| plh_images/icons/house_white.svg | 2 |
-| plh_images/icons/parent_child_white.svg | 2 |
-| plh_images/icons/tick.svg | 10 |
-| plh_images/survey/workshop_setup/teens.svg | 1 |
-| plh_images/workshop_modes/individual/wave.svg | 3 |
-| plh_images/workshops/w_rules/read_1/slide_4.svg | 1 |
-| plh_images/workshops/w_self_care/tools.svg | 1 |
 </details>
 
 <details >
@@ -193,7 +181,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 5 |
-| images/example/jasper_1.jpg | 527.3 | 50 |
+| images/example/jasper_1.jpg | 527.3 | 55 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
@@ -202,14 +190,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/audio/play-back-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
-| images/icons/book_white.svg | 0.7 | 9 |
+| images/icons/book_white.svg | 0.7 | 11 |
 | images/icons/expand_circle_right.png | 0.9 | 2 |
 | images/icons/globe_blue.svg | 3.9 | 13 |
 | images/icons/heart_blue.svg | 1.4 | 34 |
 | images/icons/heart_outline.svg | 0.6 | 10 |
 | images/icons/home.svg | 0.4 | 1 |
 | images/icons/home_active.svg | 0.4 | 1 |
-| images/icons/house_white.svg | 0.6 | 3 |
+| images/icons/house_white.svg | 0.6 | 5 |
 | images/icons/in_progress.svg | 1.1 | 15 |
 | images/icons/leaf_blue.svg | 1.7 | 11 |
 | images/icons/local_library.svg | 1.6 | 1 |
@@ -221,7 +209,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/settings.svg | 2.4 | 1 |
 | images/icons/settings_active.svg | 2.4 | 1 |
 | images/icons/star_blue.svg | 1.3 | 1 |
-| images/icons/star_white.svg | 1 | 19 |
+| images/icons/star_white.svg | 1 | 21 |
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 10 |
 | images/icons/tick_white.svg | 0.3 | 21 |
@@ -269,7 +257,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 9 |
 | template |  | 74 |
 | template | component_demo | 53 |
-| template | debug | 263 |
+| template | debug | 259 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
