@@ -5,8 +5,17 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "name": "task_group_data",
+      "value": "comp_task_card_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "task_group_data"
+    },
+    {
       "name": "task_group_id",
-      "value": "w_self_care",
+      "value": "id_of_task_group_within_highlightable_tasks",
       "_translations": {
         "value": {}
       },
@@ -15,7 +24,7 @@
     },
     {
       "name": "task_id",
-      "value": "home_practice",
+      "value": "id_of_an_individual_task",
       "_translations": {
         "value": {}
       },
@@ -23,35 +32,8 @@
       "_nested_name": "task_id"
     },
     {
-      "name": "stepper",
-      "value": "_stepper",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "stepper"
-    },
-    {
-      "name": "completed",
-      "value": "_completed",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "completed"
-    },
-    {
-      "name": "join",
-      "value": "_",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "join"
-    },
-    {
       "name": "card_title",
-      "value": "Self Care",
+      "value": "Card Title",
       "_translations": {
         "value": {}
       },
@@ -60,7 +42,7 @@
     },
     {
       "name": "card_subtitle",
-      "value": "This module is about YOU. Looking after yourself is essential for parenting.",
+      "value": "Longer text or description goes here. Multiple lines of conent display as a paragraph.",
       "_translations": {
         "value": {}
       },
@@ -78,7 +60,7 @@
     },
     {
       "name": "task_title",
-      "value": "Home Practice",
+      "value": "Individual Task",
       "_translations": {
         "value": {}
       },
@@ -86,139 +68,35 @@
       "_nested_name": "task_title"
     },
     {
-      "name": "task_groups",
-      "value": "_task_gs",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "task_groups"
-    },
-    {
-      "name": "task_group_data",
-      "value": "w_self_care_ind_task_gs",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "task_group_data"
-    },
-    {
       "name": "task_group_completed_field",
-      "value": "task_@local.task_group_id@local.completed",
+      "value": "task_group_id_completed",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "task_group_completed_field",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "task_@local.task_group_id@local.completed",
-            "matchedExpression": "@local.task_group_id",
-            "type": "local",
-            "fieldName": "task_group_id"
-          },
-          {
-            "fullExpression": "task_@local.task_group_id@local.completed",
-            "matchedExpression": "@local.completed",
-            "type": "local",
-            "fieldName": "completed"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.task_group_id": [
-          "value"
-        ],
-        "@local.completed": [
-          "value"
-        ]
-      }
+      "_nested_name": "task_group_completed_field"
     },
     {
       "name": "task_completed_field",
-      "value": "task_gp_@local.task_group_id@local.join@local.task_id@local.completed",
+      "value": "task_id_completed",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "task_completed_field",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "task_gp_@local.task_group_id@local.join@local.task_id@local.completed",
-            "matchedExpression": "@local.task_group_id",
-            "type": "local",
-            "fieldName": "task_group_id"
-          },
-          {
-            "fullExpression": "task_gp_@local.task_group_id@local.join@local.task_id@local.completed",
-            "matchedExpression": "@local.join",
-            "type": "local",
-            "fieldName": "join"
-          },
-          {
-            "fullExpression": "task_gp_@local.task_group_id@local.join@local.task_id@local.completed",
-            "matchedExpression": "@local.task_id",
-            "type": "local",
-            "fieldName": "task_id"
-          },
-          {
-            "fullExpression": "task_gp_@local.task_group_id@local.join@local.task_id@local.completed",
-            "matchedExpression": "@local.completed",
-            "type": "local",
-            "fieldName": "completed"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.task_group_id": [
-          "value"
-        ],
-        "@local.join": [
-          "value"
-        ],
-        "@local.task_id": [
-          "value"
-        ],
-        "@local.completed": [
-          "value"
-        ]
-      }
+      "_nested_name": "task_completed_field"
     },
     {
       "type": "title",
-      "value": "Card for a task group/module – style: landscape",
+      "value": "Card for a task group/module – variant: landscape (default)",
       "_translations": {
         "value": {}
       },
-      "name": "title_15",
-      "_nested_name": "title_15"
+      "name": "title_11",
+      "_nested_name": "title_11"
     },
     {
       "type": "task_card",
       "name": "card_params_2",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "@local.task_group_id@local.stepper"
-          ],
-          "_raw": "click | go_to:@local.task_group_id@local.stepper",
-          "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
-        },
-        {
-          "trigger": "completed",
-          "action_id": "emit",
-          "args": [
-            "server_sync"
-          ],
-          "_raw": "completed | emit: server_sync",
-          "_cleaned": "completed | emit: server_sync"
-        }
-      ],
       "parameter_list": {
         "task_group_id": "@local.task_group_id",
         "task_group_data": "@local.task_group_data",
@@ -226,60 +104,11 @@
         "title": "@local.card_title",
         "subtitle": "@local.card_subtitle",
         "image": "@local.card_image",
-        "style": "landscape",
         "in_progress_icon": "images/icons/in_progress.svg",
         "completed_icon": "images/icons/tick_white.svg"
       },
       "_nested_name": "card_params_2",
       "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.task_group_id",
-                  "type": "local",
-                  "fieldName": "task_group_id"
-                },
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.stepper",
-                  "type": "local",
-                  "fieldName": "stepper"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ]
-          }
-        },
         "parameter_list": {
           "task_group_id": [
             {
@@ -333,15 +162,338 @@
       },
       "_dynamicDependencies": {
         "@local.task_group_id": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
           "parameter_list.task_group_id"
         ],
-        "@local.stepper": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+        "@local.task_group_data": [
+          "parameter_list.task_group_data"
+        ],
+        "@local.task_group_completed_field": [
+          "parameter_list.completed_field"
+        ],
+        "@local.card_title": [
+          "parameter_list.title"
+        ],
+        "@local.card_subtitle": [
+          "parameter_list.subtitle"
+        ],
+        "@local.card_image": [
+          "parameter_list.image"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Filter applied to subtasks",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_13",
+      "_nested_name": "text_13"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": {
+        "task_group_id": "@local.task_group_id",
+        "task_group_data": "@local.task_group_data",
+        "filter": "@item.number !== 2",
+        "completed_field": "@local.task_group_completed_field",
+        "title": "@local.card_title",
+        "subtitle": "@local.card_subtitle",
+        "image": "@local.card_image",
+        "in_progress_icon": "images/icons/in_progress.svg",
+        "completed_icon": "images/icons/tick_white.svg"
+      },
+      "name": "task_card_14",
+      "_nested_name": "task_card_14",
+      "_dynamicFields": {
+        "parameter_list": {
+          "task_group_id": [
+            {
+              "fullExpression": "@local.task_group_id",
+              "matchedExpression": "@local.task_group_id",
+              "type": "local",
+              "fieldName": "task_group_id"
+            }
+          ],
+          "task_group_data": [
+            {
+              "fullExpression": "@local.task_group_data",
+              "matchedExpression": "@local.task_group_data",
+              "type": "local",
+              "fieldName": "task_group_data"
+            }
+          ],
+          "filter": [
+            {
+              "fullExpression": "@item.number !== 2",
+              "matchedExpression": "@item.number",
+              "type": "item",
+              "fieldName": "number"
+            }
+          ],
+          "completed_field": [
+            {
+              "fullExpression": "@local.task_group_completed_field",
+              "matchedExpression": "@local.task_group_completed_field",
+              "type": "local",
+              "fieldName": "task_group_completed_field"
+            }
+          ],
+          "title": [
+            {
+              "fullExpression": "@local.card_title",
+              "matchedExpression": "@local.card_title",
+              "type": "local",
+              "fieldName": "card_title"
+            }
+          ],
+          "subtitle": [
+            {
+              "fullExpression": "@local.card_subtitle",
+              "matchedExpression": "@local.card_subtitle",
+              "type": "local",
+              "fieldName": "card_subtitle"
+            }
+          ],
+          "image": [
+            {
+              "fullExpression": "@local.card_image",
+              "matchedExpression": "@local.card_image",
+              "type": "local",
+              "fieldName": "card_image"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.task_group_id": [
+          "parameter_list.task_group_id"
+        ],
+        "@local.task_group_data": [
+          "parameter_list.task_group_data"
+        ],
+        "@item.number": [
+          "parameter_list.filter"
+        ],
+        "@local.task_group_completed_field": [
+          "parameter_list.completed_field"
+        ],
+        "@local.card_title": [
+          "parameter_list.title"
+        ],
+        "@local.card_subtitle": [
+          "parameter_list.subtitle"
+        ],
+        "@local.card_image": [
+          "parameter_list.image"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Filter applied to subtasks using local var",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_15",
+      "_nested_name": "text_15"
+    },
+    {
+      "name": "filter_task_id",
+      "value": "task_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "filter_task_id"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": {
+        "task_group_id": "@local.task_group_id",
+        "task_group_data": "@local.task_group_data",
+        "filter": "@item.id === @local.filter_task_id",
+        "completed_field": "@local.task_group_completed_field",
+        "title": "@local.card_title",
+        "subtitle": "@local.card_subtitle",
+        "image": "@local.card_image",
+        "in_progress_icon": "images/icons/in_progress.svg",
+        "completed_icon": "images/icons/tick_white.svg"
+      },
+      "name": "task_card_17",
+      "_nested_name": "task_card_17",
+      "_dynamicFields": {
+        "parameter_list": {
+          "task_group_id": [
+            {
+              "fullExpression": "@local.task_group_id",
+              "matchedExpression": "@local.task_group_id",
+              "type": "local",
+              "fieldName": "task_group_id"
+            }
+          ],
+          "task_group_data": [
+            {
+              "fullExpression": "@local.task_group_data",
+              "matchedExpression": "@local.task_group_data",
+              "type": "local",
+              "fieldName": "task_group_data"
+            }
+          ],
+          "filter": [
+            {
+              "fullExpression": "@item.id === @local.filter_task_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id === @local.filter_task_id",
+              "matchedExpression": "@local.filter_task_id",
+              "type": "local",
+              "fieldName": "filter_task_id"
+            }
+          ],
+          "completed_field": [
+            {
+              "fullExpression": "@local.task_group_completed_field",
+              "matchedExpression": "@local.task_group_completed_field",
+              "type": "local",
+              "fieldName": "task_group_completed_field"
+            }
+          ],
+          "title": [
+            {
+              "fullExpression": "@local.card_title",
+              "matchedExpression": "@local.card_title",
+              "type": "local",
+              "fieldName": "card_title"
+            }
+          ],
+          "subtitle": [
+            {
+              "fullExpression": "@local.card_subtitle",
+              "matchedExpression": "@local.card_subtitle",
+              "type": "local",
+              "fieldName": "card_subtitle"
+            }
+          ],
+          "image": [
+            {
+              "fullExpression": "@local.card_image",
+              "matchedExpression": "@local.card_image",
+              "type": "local",
+              "fieldName": "card_image"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.task_group_id": [
+          "parameter_list.task_group_id"
+        ],
+        "@local.task_group_data": [
+          "parameter_list.task_group_data"
+        ],
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.filter_task_id": [
+          "parameter_list.filter"
+        ],
+        "@local.task_group_completed_field": [
+          "parameter_list.completed_field"
+        ],
+        "@local.card_title": [
+          "parameter_list.title"
+        ],
+        "@local.card_subtitle": [
+          "parameter_list.subtitle"
+        ],
+        "@local.card_image": [
+          "parameter_list.image"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Using custom completed column name for subtasks",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_18",
+      "_nested_name": "text_18"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": {
+        "task_group_id": "@local.task_group_id",
+        "task_group_data": "@local.task_group_data",
+        "completed_column_name": "is_done",
+        "completed_field": "@local.task_group_completed_field",
+        "title": "@local.card_title",
+        "subtitle": "@local.card_subtitle",
+        "image": "@local.card_image",
+        "in_progress_icon": "images/icons/in_progress.svg",
+        "completed_icon": "images/icons/tick_white.svg"
+      },
+      "name": "task_card_19",
+      "_nested_name": "task_card_19",
+      "_dynamicFields": {
+        "parameter_list": {
+          "task_group_id": [
+            {
+              "fullExpression": "@local.task_group_id",
+              "matchedExpression": "@local.task_group_id",
+              "type": "local",
+              "fieldName": "task_group_id"
+            }
+          ],
+          "task_group_data": [
+            {
+              "fullExpression": "@local.task_group_data",
+              "matchedExpression": "@local.task_group_data",
+              "type": "local",
+              "fieldName": "task_group_data"
+            }
+          ],
+          "completed_field": [
+            {
+              "fullExpression": "@local.task_group_completed_field",
+              "matchedExpression": "@local.task_group_completed_field",
+              "type": "local",
+              "fieldName": "task_group_completed_field"
+            }
+          ],
+          "title": [
+            {
+              "fullExpression": "@local.card_title",
+              "matchedExpression": "@local.card_title",
+              "type": "local",
+              "fieldName": "card_title"
+            }
+          ],
+          "subtitle": [
+            {
+              "fullExpression": "@local.card_subtitle",
+              "matchedExpression": "@local.card_subtitle",
+              "type": "local",
+              "fieldName": "card_subtitle"
+            }
+          ],
+          "image": [
+            {
+              "fullExpression": "@local.card_image",
+              "matchedExpression": "@local.card_image",
+              "type": "local",
+              "fieldName": "card_image"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.task_group_id": [
+          "parameter_list.task_group_id"
         ],
         "@local.task_group_data": [
           "parameter_list.task_group_data"
@@ -366,32 +518,12 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_17",
-      "_nested_name": "title_17"
+      "name": "title_20",
+      "_nested_name": "title_20"
     },
     {
       "type": "task_card",
       "name": "card_params_2_portrait",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "@local.task_group_id@local.stepper"
-          ],
-          "_raw": "click | go_to:@local.task_group_id@local.stepper",
-          "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
-        },
-        {
-          "trigger": "completed",
-          "action_id": "emit",
-          "args": [
-            "server_sync"
-          ],
-          "_raw": "completed | emit: server_sync",
-          "_cleaned": "completed | emit: server_sync"
-        }
-      ],
       "parameter_list": {
         "task_group_id": "@local.task_group_id",
         "task_group_data": "@local.task_group_data",
@@ -399,60 +531,12 @@
         "title": "@local.card_title",
         "subtitle": "@local.card_subtitle",
         "image": "@local.card_image",
-        "style": "portrait",
+        "variant": "portrait",
         "in_progress_icon": "images/icons/in_progress.svg",
         "completed_icon": "images/icons/tick_white.svg"
       },
       "_nested_name": "card_params_2_portrait",
       "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.task_group_id",
-                  "type": "local",
-                  "fieldName": "task_group_id"
-                },
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.stepper",
-                  "type": "local",
-                  "fieldName": "stepper"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ]
-          }
-        },
         "parameter_list": {
           "task_group_id": [
             {
@@ -506,15 +590,7 @@
       },
       "_dynamicDependencies": {
         "@local.task_group_id": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
           "parameter_list.task_group_id"
-        ],
-        "@local.stepper": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
         ],
         "@local.task_group_data": [
           "parameter_list.task_group_data"
@@ -539,32 +615,12 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_19",
-      "_nested_name": "title_19"
+      "name": "title_22",
+      "_nested_name": "title_22"
     },
     {
       "type": "task_card",
       "name": "card_params_2_portrait_secondary",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "@local.task_group_id@local.stepper"
-          ],
-          "_raw": "click | go_to:@local.task_group_id@local.stepper",
-          "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
-        },
-        {
-          "trigger": "completed",
-          "action_id": "emit",
-          "args": [
-            "server_sync"
-          ],
-          "_raw": "completed | emit: server_sync",
-          "_cleaned": "completed | emit: server_sync"
-        }
-      ],
       "parameter_list": {
         "task_group_id": "@local.task_group_id",
         "task_group_data": "@local.task_group_data",
@@ -574,58 +630,11 @@
         "image": "@local.card_image",
         "variant": "portrait background-secondary",
         "in_progress_icon": "images/icons/in_progress.svg",
-        "completed_icon": "images/icons/tick_white.svg"
+        "completed_icon": "images/icons/tick_white.svg",
+        "progress_units_name": "activities"
       },
       "_nested_name": "card_params_2_portrait_secondary",
       "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.task_group_id",
-                  "type": "local",
-                  "fieldName": "task_group_id"
-                },
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.stepper",
-                  "type": "local",
-                  "fieldName": "stepper"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ]
-          }
-        },
         "parameter_list": {
           "task_group_id": [
             {
@@ -679,15 +688,7 @@
       },
       "_dynamicDependencies": {
         "@local.task_group_id": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
           "parameter_list.task_group_id"
-        ],
-        "@local.stepper": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
         ],
         "@local.task_group_data": [
           "parameter_list.task_group_data"
@@ -712,32 +713,12 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_21",
-      "_nested_name": "title_21"
+      "name": "title_24",
+      "_nested_name": "title_24"
     },
     {
       "type": "task_card",
       "name": "card_params_2_portrait_primary",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "@local.task_group_id@local.stepper"
-          ],
-          "_raw": "click | go_to:@local.task_group_id@local.stepper",
-          "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
-        },
-        {
-          "trigger": "completed",
-          "action_id": "emit",
-          "args": [
-            "server_sync"
-          ],
-          "_raw": "completed | emit: server_sync",
-          "_cleaned": "completed | emit: server_sync"
-        }
-      ],
       "parameter_list": {
         "task_group_id": "@local.task_group_id",
         "task_group_data": "@local.task_group_data",
@@ -751,54 +732,6 @@
       },
       "_nested_name": "card_params_2_portrait_primary",
       "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.task_group_id",
-                  "type": "local",
-                  "fieldName": "task_group_id"
-                },
-                {
-                  "fullExpression": "@local.task_group_id@local.stepper",
-                  "matchedExpression": "@local.stepper",
-                  "type": "local",
-                  "fieldName": "stepper"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                "matchedExpression": "@local.stepper",
-                "type": "local",
-                "fieldName": "stepper"
-              }
-            ]
-          }
-        },
         "parameter_list": {
           "task_group_id": [
             {
@@ -852,15 +785,7 @@
       },
       "_dynamicDependencies": {
         "@local.task_group_id": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
           "parameter_list.task_group_id"
-        ],
-        "@local.stepper": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
         ],
         "@local.task_group_data": [
           "parameter_list.task_group_data"
@@ -885,160 +810,16 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_23",
-      "_nested_name": "title_23"
+      "name": "title_26",
+      "_nested_name": "title_26"
     },
     {
       "type": "task_card",
       "name": "card_params_1",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "@local.task_group_id@local.join@local.task_id"
-          ],
-          "_raw": "click | go_to:@local.task_group_id@local.join@local.task_id",
-          "_cleaned": "click | go_to:@local.task_group_id@local.join@local.task_id"
-        }
-      ],
       "parameter_list": {
-        "task_group_id": "@local.task_group_id",
-        "task_id": "@local.task_id",
-        "completed_field": "@local.task_completed_field",
-        "title": "@local.task_title",
-        "style": "landscape",
-        "in_progress_icon": "images/icons/in_progress.svg",
-        "completed_icon": "images/icons/tick_white.svg"
+        "id_of_task_group": "true"
       },
-      "_nested_name": "card_params_1",
-      "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "args": {
-              "0": [
-                {
-                  "fullExpression": "@local.task_group_id@local.join@local.task_id",
-                  "matchedExpression": "@local.task_group_id",
-                  "type": "local",
-                  "fieldName": "task_group_id"
-                },
-                {
-                  "fullExpression": "@local.task_group_id@local.join@local.task_id",
-                  "matchedExpression": "@local.join",
-                  "type": "local",
-                  "fieldName": "join"
-                },
-                {
-                  "fullExpression": "@local.task_group_id@local.join@local.task_id",
-                  "matchedExpression": "@local.task_id",
-                  "type": "local",
-                  "fieldName": "task_id"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.join@local.task_id",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.join@local.task_id",
-                "matchedExpression": "@local.join",
-                "type": "local",
-                "fieldName": "join"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.join@local.task_id",
-                "matchedExpression": "@local.task_id",
-                "type": "local",
-                "fieldName": "task_id"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.join@local.task_id",
-                "matchedExpression": "@local.task_group_id",
-                "type": "local",
-                "fieldName": "task_group_id"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.join@local.task_id",
-                "matchedExpression": "@local.join",
-                "type": "local",
-                "fieldName": "join"
-              },
-              {
-                "fullExpression": "click | go_to:@local.task_group_id@local.join@local.task_id",
-                "matchedExpression": "@local.task_id",
-                "type": "local",
-                "fieldName": "task_id"
-              }
-            ]
-          }
-        },
-        "parameter_list": {
-          "task_group_id": [
-            {
-              "fullExpression": "@local.task_group_id",
-              "matchedExpression": "@local.task_group_id",
-              "type": "local",
-              "fieldName": "task_group_id"
-            }
-          ],
-          "task_id": [
-            {
-              "fullExpression": "@local.task_id",
-              "matchedExpression": "@local.task_id",
-              "type": "local",
-              "fieldName": "task_id"
-            }
-          ],
-          "completed_field": [
-            {
-              "fullExpression": "@local.task_completed_field",
-              "matchedExpression": "@local.task_completed_field",
-              "type": "local",
-              "fieldName": "task_completed_field"
-            }
-          ],
-          "title": [
-            {
-              "fullExpression": "@local.task_title",
-              "matchedExpression": "@local.task_title",
-              "type": "local",
-              "fieldName": "task_title"
-            }
-          ]
-        }
-      },
-      "_dynamicDependencies": {
-        "@local.task_group_id": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "parameter_list.task_group_id"
-        ],
-        "@local.join": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
-        ],
-        "@local.task_id": [
-          "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "parameter_list.task_id"
-        ],
-        "@local.task_completed_field": [
-          "parameter_list.completed_field"
-        ],
-        "@local.task_title": [
-          "parameter_list.title"
-        ]
-      }
+      "_nested_name": "card_params_1"
     },
     {
       "type": "title",
@@ -1046,8 +827,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_25",
-      "_nested_name": "title_25"
+      "name": "title_28",
+      "_nested_name": "title_28"
     },
     {
       "type": "task_card",
@@ -2044,8 +1825,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_33",
-      "_nested_name": "title_33"
+      "name": "title_36",
+      "_nested_name": "title_36"
     },
     {
       "type": "task_card",

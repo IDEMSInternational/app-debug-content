@@ -63,10 +63,15 @@
       "flow_name": "comp_map_layer_data",
       "_xlsxPath": "component_sheets/component_map.xlsx"
     },
-    "comp_task_prog_bar_dyn_data": {
+    "comp_task_bar_legacy_data": {
       "flow_type": "data_list",
-      "flow_name": "comp_task_prog_bar_dyn_data",
+      "flow_name": "comp_task_bar_legacy_data",
       "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx"
+    },
+    "comp_task_card_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_task_card_data",
+      "_xlsxPath": "component_sheets/component_task_card.xlsx"
     },
     "comp_task_progress_bar_data": {
       "flow_type": "data_list",
@@ -1016,10 +1021,11 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_task_card.xlsx"
     },
-    "comp_task_prog_bar_dynamic": {
+    "comp_task_prog_bar_legacy": {
       "flow_type": "template",
-      "flow_name": "comp_task_prog_bar_dynamic",
+      "flow_name": "comp_task_prog_bar_legacy",
       "flow_subtype": "component_demo",
+      "comments_1": "This implementation is valid, but uses the legacy system of tracking task completion using fields. Task completion should be tracked using dynamic data instead",
       "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx"
     },
     "comp_task_progress_bar": {
@@ -1102,12 +1108,6 @@
       "flow_name": "feat_animated_slides",
       "flow_subtype": "component_demo",
       "_xlsxPath": "feature_sheets/feature_animated_slides.xlsx"
-    },
-    "feature_task_card_params": {
-      "flow_type": "template",
-      "flow_name": "feature_task_card_params",
-      "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_task_card.xlsx"
     },
     "parameters": {
       "flow_type": "template",
@@ -1613,6 +1613,12 @@
       "flow_name": "debug_markdown_links",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_text.xlsx"
+    },
+    "debug_metadata": {
+      "flow_type": "template",
+      "flow_name": "debug_metadata",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
     },
     "debug_nav": {
       "flow_type": "template",
@@ -2873,6 +2879,38 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_app_layout_footer": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_footer",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "feat_custom_footer"
+          }
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
+    "feat_app_layout_header_compact": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_header_compact",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "variant": "compact"
+          },
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "false"
+          }
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
+    "feat_custom_footer": {
+      "flow_type": "template",
+      "flow_name": "feat_custom_footer",
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
     "feat_data_actions": {
       "flow_type": "template",
       "flow_name": "feat_data_actions",
@@ -2960,6 +2998,16 @@
       "flow_type": "template",
       "flow_name": "feature_lottie",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+    },
+    "feature_nav_stack": {
+      "flow_type": "template",
+      "flow_name": "feature_nav_stack",
+      "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
+    },
+    "feature_nav_stack_child": {
+      "flow_type": "template",
+      "flow_name": "feature_nav_stack_child",
+      "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
     },
     "feature_number_selector": {
       "flow_type": "template",

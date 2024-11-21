@@ -1,0 +1,17 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_nav_stack_child",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Nav stack child",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
+}

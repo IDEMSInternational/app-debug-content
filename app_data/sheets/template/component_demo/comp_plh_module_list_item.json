@@ -7,15 +7,24 @@
     {
       "type": "plh_module_list_item",
       "name": "item_1",
-      "value": "Align-left, capitalise text, target-template",
+      "value": "capitalise text, target-template",
       "_translations": {
         "value": {}
       },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "comp_button"
+          ],
+          "_raw": "click | go_to: comp_button",
+          "_cleaned": "click | go_to: comp_button"
+        }
+      ],
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
-        "module_alignment": "left",
         "text_transform": "capitalise",
-        "target_template": "comp_plh_bottom_nav",
         "nav_image_asset": "images/icons/expand_circle_right.png"
       },
       "_nested_name": "item_1"
@@ -23,13 +32,23 @@
     {
       "type": "plh_module_list_item",
       "name": "item_2",
-      "value": "Align-left, locked module",
+      "value": "default locked module",
       "_translations": {
         "value": {}
       },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "comp_button"
+          ],
+          "_raw": "click | go_to: comp_button",
+          "_cleaned": "click | go_to: comp_button"
+        }
+      ],
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
-        "module_alignment": "left",
         "is_locked": "true",
         "locked_image_asset": "images/icons/locked.png"
       },
@@ -38,14 +57,14 @@
     {
       "type": "plh_module_list_item",
       "name": "item_3",
-      "value": "Align-right, default text, locked module",
+      "value": "capitalise text, locked module",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
-        "module_alignment": "right",
         "is_locked": "true",
+        "text_transform": "capitalise",
         "locked_image_asset": "images/icons/locked.png"
       },
       "_nested_name": "item_3"
@@ -53,23 +72,38 @@
     {
       "type": "plh_module_list_item",
       "name": "item_4",
-      "value": "Align-right, uppercase text, no target-template",
+      "value": "uppercase text, no nav action",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
-        "module_image_asset": "images/module-1.png",
-        "module_alignment": "right",
-        "text_transform": "uppercase",
-        "nav_image_asset": "images/icons/expand_circle_right.png"
+        "module_image_asset": "images/Noura.png",
+        "text_transform": "uppercase"
       },
       "_nested_name": "item_4"
     },
     {
-      "parameter_list": {},
-      "type": "set_variable",
-      "name": "set_variable_7",
-      "_nested_name": "set_variable_7"
+      "type": "plh_module_list_item",
+      "name": "item_4",
+      "value": "target-template, no module image asset",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "comp_audio"
+          ],
+          "_raw": "click | go_to: comp_audio",
+          "_cleaned": "click | go_to: comp_audio"
+        }
+      ],
+      "parameter_list": {
+        "nav_image_asset": "images/icons/expand_circle_right.png"
+      },
+      "_nested_name": "item_4"
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx"
