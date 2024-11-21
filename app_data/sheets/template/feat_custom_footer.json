@@ -1,0 +1,20 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_custom_footer",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "A custom footer",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "alternative"
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+}

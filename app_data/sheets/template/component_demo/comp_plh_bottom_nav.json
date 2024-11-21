@@ -12,21 +12,21 @@
           "label": "Home",
           "icon": "images/icons/home.svg",
           "active_icon": "images/icons/home_active.svg",
-          "target_template": "home_screen"
+          "target_template": "comp_button"
         },
         {
           "name": "library_button",
           "label": "Library",
           "icon": "images/icons/local_library.svg",
           "active_icon": "images/icons/local_library_active.svg",
-          "target_template": "comp_plh_bottom_nav"
+          "target_template": "comp_text_bubble"
         },
         {
           "name": "settings_button",
           "label": "Settings",
           "icon": "images/icons/settings.svg",
           "active_icon": "images/icons/settings_active.svg",
-          "target_template": "comp_plh_bottom_nav"
+          "target_template": "comp_audio"
         }
       ],
       "type": "set_variable",

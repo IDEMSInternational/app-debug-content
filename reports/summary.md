@@ -8,7 +8,7 @@
 | animated_section | 5 |
 | animated_slides | 1 |
 | audio | 12 |
-| button | 195 |
+| button | 200 |
 | calendar | 1 |
 | carousel | 7 |
 | colour_palette | 1 |
@@ -25,7 +25,7 @@
 | form | 9 |
 | html | 4 |
 | image | 22 |
-| items | 38 |
+| items | 39 |
 | latex | 1 |
 | lottie_animation | 3 |
 | map | 1 |
@@ -37,7 +37,7 @@
 | parent_point_counter | 2 |
 | pdf | 3 |
 | plh_bottom_nav | 1 |
-| plh_module_list_item | 4 |
+| plh_module_list_item | 5 |
 | progress_path | 2 |
 | qr_code | 1 |
 | radio_button_grid | 9 |
@@ -48,21 +48,21 @@
 | set_default | 1 |
 | set_field | 26 |
 | set_local | 2 |
-| set_variable | 507 |
+| set_variable | 496 |
 | simple_checkbox | 23 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 46 |
-| task_card | 15 |
-| task_progress_bar | 2 |
+| task_card | 16 |
+| task_progress_bar | 3 |
 | template | 108 |
-| text | 637 |
+| text | 643 |
 | text_area | 5 |
 | text_box | 30 |
 | text_bubble | 10 |
 | tile_component | 20 |
 | timer | 21 |
-| title | 352 |
+| title | 353 |
 | toggle_bar | 35 |
 | update_action_list | 2 |
 | video | 4 |
@@ -84,7 +84,7 @@
 | emit: force_reload | 23 |
 | emit: force_reprocess | 20 |
 | emit: force_restart | 2 |
-| emit: server_sync | 6 |
+| emit: server_sync | 2 |
 | emit: set_language | 4 |
 | emit: set_skin | 1 |
 | emit: set_theme | 2 |
@@ -94,6 +94,7 @@
 | go_to | 46 |
 | go_to_url | 5 |
 | invalid_action | 1 |
+| nav_stack | 1 |
 | open_external | 2 |
 | pop_up | 34 |
 | process_template | 2 |
@@ -172,7 +173,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | i18n/flags/gb.svg | 0.5 | 2 |
 | i18n/flags/tz.svg | 0.5 | 2 |
 | images/Faisal.png | 3.5 | 2 |
-| images/Noura.png | 4.2 | 1 |
+| images/Noura.png | 4.2 | 2 |
 | images/avatar_1.png | 67.7 | 17 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
@@ -211,12 +212,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 10 |
 | images/icons/tick_white.svg | 0.3 | 21 |
-| images/module-1.png | 28.2 | 4 |
+| images/module-1.png | 28.2 | 3 |
 | images/square_1.svg | 0.7 | 1 |
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
 | images/square_4.svg | 1 | 1 |
-| images/test_image.png | 2 | 3 |
+| images/test_image.png | 2 | 2 |
 | images/test_image_no_translations.png | 2.8 | 1 |
 | lottie/blob_play_ball.json | 69.4 | 16 |
 | lottie/cascading_stars.json | 140.5 | 1 |
@@ -235,7 +236,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 26 |
+| data_list |  | 27 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 6 |
@@ -253,9 +254,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
-| template |  | 74 |
-| template | component_demo | 53 |
-| template | debug | 259 |
+| template |  | 79 |
+| template | component_demo | 52 |
+| template | debug | 260 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

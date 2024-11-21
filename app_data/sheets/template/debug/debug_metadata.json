@@ -1,0 +1,83 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_metadata",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "items",
+      "name": "loop",
+      "value": "@data.debug",
+      "rows": [
+        {
+          "type": "text",
+          "name": "text_@item._index",
+          "value": "@item.id at index @item._index",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "loop.text_@item._index",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "text_@item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "@item.id at index @item._index",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              },
+              {
+                "fullExpression": "@item.id at index @item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "loop.text_@item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item._index": [
+              "name",
+              "value",
+              "_nested_name"
+            ],
+            "@item.id": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "loop",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug",
+            "matchedExpression": "@data.debug",
+            "type": "data",
+            "fieldName": "debug"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
+}

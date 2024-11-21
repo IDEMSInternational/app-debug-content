@@ -1,0 +1,29 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_task_card_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "task_1",
+      "name": "Task 1",
+      "number": 1,
+      "completed": true,
+      "is_done": true
+    },
+    {
+      "id": "task_2",
+      "name": "Task 2",
+      "number": 2,
+      "completed": false,
+      "is_done": true
+    },
+    {
+      "id": "task_3",
+      "name": "Task 3",
+      "number": 3,
+      "completed": false,
+      "is_done": true
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_task_card.xlsx"
+}

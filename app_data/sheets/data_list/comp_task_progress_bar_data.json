@@ -4,24 +4,24 @@
   "status": "released",
   "rows": [
     {
-      "id": 1,
-      "completed_field": "comp_task_progress_bar_task_1_completed"
+      "id": "id_1",
+      "completed": false
     },
     {
-      "id": 2,
-      "completed_field": "comp_task_progress_bar_task_2_completed"
+      "id": "id_2",
+      "completed": false
     },
     {
-      "id": 3,
-      "completed_field": "comp_task_progress_bar_task_3_completed"
+      "id": "id_3",
+      "completed": false
     },
     {
-      "id": 4,
-      "completed_field": "comp_task_progress_bar_task_4_completed"
+      "id": "id_4",
+      "completed": false
     },
     {
-      "id": 5,
-      "completed_field": "comp_task_progress_bar_task_5_completed"
+      "id": "id_5",
+      "completed": false
     }
   ],
   "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx"

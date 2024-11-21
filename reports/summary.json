@@ -22,7 +22,7 @@
     },
     {
       "type": "button",
-      "count": 195
+      "count": 200
     },
     {
       "type": "calendar",
@@ -90,7 +90,7 @@
     },
     {
       "type": "items",
-      "count": 38
+      "count": 39
     },
     {
       "type": "latex",
@@ -138,7 +138,7 @@
     },
     {
       "type": "plh_module_list_item",
-      "count": 4
+      "count": 5
     },
     {
       "type": "progress_path",
@@ -182,7 +182,7 @@
     },
     {
       "type": "set_variable",
-      "count": 507
+      "count": 496
     },
     {
       "type": "simple_checkbox",
@@ -202,11 +202,11 @@
     },
     {
       "type": "task_card",
-      "count": 15
+      "count": 16
     },
     {
       "type": "task_progress_bar",
-      "count": 2
+      "count": 3
     },
     {
       "type": "template",
@@ -214,7 +214,7 @@
     },
     {
       "type": "text",
-      "count": 637
+      "count": 643
     },
     {
       "type": "text_area",
@@ -238,7 +238,7 @@
     },
     {
       "type": "title",
-      "count": 352
+      "count": 353
     },
     {
       "type": "toggle_bar",
@@ -300,7 +300,7 @@
     },
     {
       "type": "emit: server_sync",
-      "count": 6
+      "count": 2
     },
     {
       "type": "emit: set_language",
@@ -336,6 +336,10 @@
     },
     {
       "type": "invalid_action",
+      "count": 1
+    },
+    {
+      "type": "nav_stack",
       "count": 1
     },
     {
@@ -541,7 +545,7 @@
     },
     {
       "path": "images/Noura.png",
-      "count": 1,
+      "count": 2,
       "size_kb": 4.2
     },
     {
@@ -736,7 +740,7 @@
     },
     {
       "path": "images/module-1.png",
-      "count": 4,
+      "count": 3,
       "size_kb": 28.2
     },
     {
@@ -761,7 +765,7 @@
     },
     {
       "path": "images/test_image.png",
-      "count": 3,
+      "count": 2,
       "size_kb": 2
     },
     {
@@ -824,7 +828,7 @@
     {
       "type": "data_list",
       "subtype": null,
-      "total": 26
+      "total": 27
     },
     {
       "type": "data_list",
@@ -914,17 +918,17 @@
     {
       "type": "template",
       "subtype": null,
-      "total": 74
+      "total": 79
     },
     {
       "type": "template",
       "subtype": "component_demo",
-      "total": 53
+      "total": 52
     },
     {
       "type": "template",
       "subtype": "debug",
-      "total": 259
+      "total": 260
     },
     {
       "type": "template",
