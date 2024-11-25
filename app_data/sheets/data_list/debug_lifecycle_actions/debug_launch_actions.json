@@ -260,5 +260,10 @@
       ]
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx"
+  "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx",
+  "_metadata": {
+    "priority": {
+      "type": "number"
+    }
+  }
 }

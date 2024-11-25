@@ -16,5 +16,10 @@
       "completed": false
     }
   ],
-  "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+  "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    }
+  }
 }

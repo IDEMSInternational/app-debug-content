@@ -41,5 +41,13 @@
       "value": 8,
       "completed": false
     }
-  ]
+  ],
+  "_metadata": {
+    "value": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    }
+  }
 }

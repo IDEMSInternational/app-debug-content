@@ -97,6 +97,10 @@
     "md5Checksum": "d2d29806c1c430e574a50ddd19319f52",
     "size_kb": 67.7
   },
+  "images/bg_illustration.png": {
+    "md5Checksum": "91bd746e278b1939a8eb7ad1ef6cc59d",
+    "size_kb": 255.4
+  },
   "images/example/110-536x354.jpg": {
     "md5Checksum": "bf471a3ecb792c6b8bdc9d8c82aeebc1",
     "size_kb": 39.1
@@ -206,7 +210,7 @@
     "size_kb": 1.6
   },
   "images/icons/locked.png": {
-    "md5Checksum": "a7a4916f4effb1fa574cbfcecd6e7590",
+    "md5Checksum": "6ca7d189a83dfb8bc324844899755518",
     "size_kb": 0.9
   },
   "images/icons/question_mark.svg": {

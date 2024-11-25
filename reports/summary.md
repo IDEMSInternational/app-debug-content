@@ -3,67 +3,73 @@
 
 | type | count |
 | --- | --- |
+| @item.input_type | 1 |
 | accordion | 5 |
+| accordion_section | 17 |
 | advanced_dashed_box | 4 |
-| animated_section | 5 |
+| animated_section | 9 |
 | animated_slides | 1 |
 | audio | 12 |
-| button | 200 |
+| button | 278 |
 | calendar | 1 |
 | carousel | 7 |
 | colour_palette | 1 |
-| combo_box | 44 |
+| combo_box | 47 |
 | dashed_box | 19 |
-| data_items | 37 |
+| data_items | 38 |
 | debug_toggle | 1 |
 | declare_field_default | 1 |
 | declare_global_constant | 1 |
 | demo_basic | 3 |
 | display_grid | 3 |
-| display_group | 114 |
+| display_group | 177 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
-| image | 22 |
-| items | 39 |
+| image | 74 |
+| items | 49 |
 | latex | 1 |
-| lottie_animation | 3 |
+| lottie_animation | 6 |
 | map | 1 |
 | nav_group | 6 |
 | navigation_bar | 6 |
-| number_selector | 10 |
+| nested_properties | 32 |
+| number_selector | 19 |
 | odk_form | 1 |
-| parent_point_box | 12 |
+| parent_point_box | 25 |
 | parent_point_counter | 2 |
 | pdf | 3 |
 | plh_bottom_nav | 1 |
+| plh_module_details_header | 3 |
 | plh_module_list_item | 5 |
+| plh_progress_wheel | 1 |
+| progress_bar | 1 |
 | progress_path | 2 |
-| qr_code | 1 |
+| qr_code | 2 |
 | radio_button_grid | 9 |
 | radio_group | 56 |
 | radio_group_grid | 5 |
-| round_button | 12 |
-| select_text | 5 |
+| round_button | 21 |
+| select_text | 6 |
 | set_default | 1 |
-| set_field | 26 |
+| set_field | 28 |
 | set_local | 2 |
-| set_variable | 496 |
-| simple_checkbox | 23 |
+| set_variable | 722 |
+| simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 46 |
-| task_card | 16 |
+| subtitle | 62 |
+| task_card | 24 |
 | task_progress_bar | 3 |
-| template | 108 |
-| text | 643 |
-| text_area | 5 |
-| text_box | 30 |
+| template | 127 |
+| text | 916 |
+| text_area | 12 |
+| text_box | 51 |
 | text_bubble | 10 |
-| tile_component | 20 |
+| tile_component | 57 |
 | timer | 21 |
-| title | 353 |
-| toggle_bar | 35 |
+| title | 417 |
+| toggle_bar | 46 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -75,41 +81,46 @@
 
 | type | count |
 | --- | --- |
+| !@item.default_value | 1 |
 | app_update | 3 |
 | asset_pack | 2 |
 | auth | 2 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
-| emit: completed | 28 |
-| emit: force_reload | 23 |
-| emit: force_reprocess | 20 |
+| emit: completed | 34 |
+| emit: force_reload | 28 |
+| emit: force_reprocess | 27 |
 | emit: force_restart | 2 |
-| emit: server_sync | 2 |
+| emit: server_sync | 7 |
 | emit: set_language | 4 |
 | emit: set_skin | 1 |
 | emit: set_theme | 2 |
 | emit: translator_mode_toggle | 1 |
-| emit: uncompleted | 13 |
-| feedback | 9 |
-| go_to | 46 |
+| emit: uncompleted | 18 |
+| feedback | 13 |
+| go_to | 60 |
 | go_to_url | 5 |
 | invalid_action | 1 |
-| nav_stack | 1 |
+| nav_stack | 7 |
 | open_external | 2 |
-| pop_up | 34 |
+| pop_up | 38 |
 | process_template | 2 |
 | reset_app | 1 |
 | reset_data | 2 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
 | set_data | 9 |
-| set_field | 89 |
-| set_items | 2 |
-| set_local | 18 |
+| set_field | 111 |
+| set_item | 23 |
+| set_items | 5 |
+| set_local | 28 |
 | share | 6 |
 | start_tour | 2 |
 | task | 2 |
+| toggle_field | 4 |
 | track_event | 2 |
+| trigger_actions | 1 |
+| undefined | 36 |
 | user | 1 |
 </details>
 
@@ -118,7 +129,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31238 KB | 31.2 MB |
+| total | 31493 KB | 31.5 MB |
 | unused | 936 KB | 0.9 MB |
 </details>
 
@@ -173,8 +184,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | i18n/flags/gb.svg | 0.5 | 2 |
 | i18n/flags/tz.svg | 0.5 | 2 |
 | images/Faisal.png | 3.5 | 2 |
-| images/Noura.png | 4.2 | 2 |
+| images/Noura.png | 4.2 | 3 |
 | images/avatar_1.png | 67.7 | 17 |
+| images/bg_illustration.png | 255.4 | 3 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
 | images/example/408-536x354.jpg | 23.2 | 1 |
@@ -212,7 +224,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 10 |
 | images/icons/tick_white.svg | 0.3 | 21 |
-| images/module-1.png | 28.2 | 3 |
+| images/module-1.png | 28.2 | 5 |
 | images/square_1.svg | 0.7 | 1 |
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
@@ -236,7 +248,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 27 |
+| data_list |  | 28 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 6 |
@@ -255,7 +267,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 9 |
 | template |  | 79 |
-| template | component_demo | 52 |
+| template | component_demo | 54 |
 | template | debug | 260 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

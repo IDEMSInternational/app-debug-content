@@ -1,0 +1,98 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_nav_stack_child",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Nav stack with title and scrollable content",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack open",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: feat_nav_stack",
+          "_cleaned": "click | nav_stack: open | template: feat_nav_stack",
+          "params": {
+            "template": "feat_nav_stack"
+          }
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack close top",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "click | nav_stack: close_top",
+          "_cleaned": "click | nav_stack: close_top"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack close all",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "close_all"
+          ],
+          "_raw": "click | nav_stack: close_all",
+          "_cleaned": "click | nav_stack: close_all"
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    },
+    {
+      "type": "title",
+      "value": "Additional text to make the content long enough to be scrollable:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
+}

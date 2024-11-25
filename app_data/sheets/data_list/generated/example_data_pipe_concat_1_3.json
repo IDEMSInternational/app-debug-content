@@ -18,5 +18,16 @@
       "column_b": 1,
       "column_a": 1
     }
-  ]
+  ],
+  "_metadata": {
+    "column_b": {
+      "type": "number"
+    },
+    "column_c": {
+      "type": "number"
+    },
+    "column_a": {
+      "type": "number"
+    }
+  }
 }

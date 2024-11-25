@@ -1,959 +1,1022 @@
 {
-  "template_components": [
-    {
-      "type": "accordion",
-      "count": 5
-    },
-    {
-      "type": "advanced_dashed_box",
-      "count": 4
-    },
-    {
-      "type": "animated_section",
-      "count": 5
-    },
-    {
-      "type": "animated_slides",
-      "count": 1
-    },
-    {
-      "type": "audio",
-      "count": 12
-    },
-    {
-      "type": "button",
-      "count": 200
-    },
-    {
-      "type": "calendar",
-      "count": 1
-    },
-    {
-      "type": "carousel",
-      "count": 7
-    },
-    {
-      "type": "colour_palette",
-      "count": 1
-    },
-    {
-      "type": "combo_box",
-      "count": 44
-    },
-    {
-      "type": "dashed_box",
-      "count": 19
-    },
-    {
-      "type": "data_items",
-      "count": 37
-    },
-    {
-      "type": "debug_toggle",
-      "count": 1
-    },
-    {
-      "type": "declare_field_default",
-      "count": 1
-    },
-    {
-      "type": "declare_global_constant",
-      "count": 1
-    },
-    {
-      "type": "demo_basic",
-      "count": 3
-    },
-    {
-      "type": "display_grid",
-      "count": 3
-    },
-    {
-      "type": "display_group",
-      "count": 114
-    },
-    {
-      "type": "drawer",
-      "count": 1
-    },
-    {
-      "type": "form",
-      "count": 9
-    },
-    {
-      "type": "html",
-      "count": 4
-    },
-    {
-      "type": "image",
-      "count": 22
-    },
-    {
-      "type": "items",
-      "count": 39
-    },
-    {
-      "type": "latex",
-      "count": 1
-    },
-    {
-      "type": "lottie_animation",
-      "count": 3
-    },
-    {
-      "type": "map",
-      "count": 1
-    },
-    {
-      "type": "nav_group",
-      "count": 6
-    },
-    {
-      "type": "navigation_bar",
-      "count": 6
-    },
-    {
-      "type": "number_selector",
-      "count": 10
-    },
-    {
-      "type": "odk_form",
-      "count": 1
-    },
-    {
-      "type": "parent_point_box",
-      "count": 12
-    },
-    {
-      "type": "parent_point_counter",
-      "count": 2
-    },
-    {
-      "type": "pdf",
-      "count": 3
-    },
-    {
-      "type": "plh_bottom_nav",
-      "count": 1
-    },
-    {
-      "type": "plh_module_list_item",
-      "count": 5
-    },
-    {
-      "type": "progress_path",
-      "count": 2
-    },
-    {
-      "type": "qr_code",
-      "count": 1
-    },
-    {
-      "type": "radio_button_grid",
-      "count": 9
-    },
-    {
-      "type": "radio_group",
-      "count": 56
-    },
-    {
-      "type": "radio_group_grid",
-      "count": 5
-    },
-    {
-      "type": "round_button",
-      "count": 12
-    },
-    {
-      "type": "select_text",
-      "count": 5
-    },
-    {
-      "type": "set_default",
-      "count": 1
-    },
-    {
-      "type": "set_field",
-      "count": 26
-    },
-    {
-      "type": "set_local",
-      "count": 2
-    },
-    {
-      "type": "set_variable",
-      "count": 496
-    },
-    {
-      "type": "simple_checkbox",
-      "count": 23
-    },
-    {
-      "type": "slider",
-      "count": 32
-    },
-    {
-      "type": "square_button",
-      "count": 8
-    },
-    {
-      "type": "subtitle",
-      "count": 46
-    },
-    {
-      "type": "task_card",
-      "count": 16
-    },
-    {
-      "type": "task_progress_bar",
-      "count": 3
-    },
-    {
-      "type": "template",
-      "count": 108
-    },
-    {
-      "type": "text",
-      "count": 643
-    },
-    {
-      "type": "text_area",
-      "count": 5
-    },
-    {
-      "type": "text_box",
-      "count": 30
-    },
-    {
-      "type": "text_bubble",
-      "count": 10
-    },
-    {
-      "type": "tile_component",
-      "count": 20
-    },
-    {
-      "type": "timer",
-      "count": 21
-    },
-    {
-      "type": "title",
-      "count": 353
-    },
-    {
-      "type": "toggle_bar",
-      "count": 35
-    },
-    {
-      "type": "update_action_list",
-      "count": 2
-    },
-    {
-      "type": "video",
-      "count": 4
-    },
-    {
-      "type": "workshops_accordion",
-      "count": 2
-    },
-    {
-      "type": "youtube",
-      "count": 3
-    }
-  ],
-  "template_actions": [
-    {
-      "type": "app_update",
-      "count": 3
-    },
-    {
-      "type": "asset_pack",
-      "count": 2
-    },
-    {
-      "type": "auth",
-      "count": 2
-    },
-    {
-      "type": "download_assets",
-      "count": 1
-    },
-    {
-      "type": "emit: @local.child_local_variable",
-      "count": 1
-    },
-    {
-      "type": "emit: completed",
-      "count": 28
-    },
-    {
-      "type": "emit: force_reload",
-      "count": 23
-    },
-    {
-      "type": "emit: force_reprocess",
-      "count": 20
-    },
-    {
-      "type": "emit: force_restart",
-      "count": 2
-    },
-    {
-      "type": "emit: server_sync",
-      "count": 2
-    },
-    {
-      "type": "emit: set_language",
-      "count": 4
-    },
-    {
-      "type": "emit: set_skin",
-      "count": 1
-    },
-    {
-      "type": "emit: set_theme",
-      "count": 2
-    },
-    {
-      "type": "emit: translator_mode_toggle",
-      "count": 1
-    },
-    {
-      "type": "emit: uncompleted",
-      "count": 13
-    },
-    {
-      "type": "feedback",
-      "count": 9
-    },
-    {
-      "type": "go_to",
-      "count": 46
-    },
-    {
-      "type": "go_to_url",
-      "count": 5
-    },
-    {
-      "type": "invalid_action",
-      "count": 1
-    },
-    {
-      "type": "nav_stack",
-      "count": 1
-    },
-    {
-      "type": "open_external",
-      "count": 2
-    },
-    {
-      "type": "pop_up",
-      "count": 34
-    },
-    {
-      "type": "process_template",
-      "count": 2
-    },
-    {
-      "type": "reset_app",
-      "count": 1
-    },
-    {
-      "type": "reset_data",
-      "count": 2
-    },
-    {
-      "type": "save_to_device",
-      "count": 2
-    },
-    {
-      "type": "screen_orientation",
-      "count": 3
-    },
-    {
-      "type": "set_data",
-      "count": 9
-    },
-    {
-      "type": "set_field",
-      "count": 89
-    },
-    {
-      "type": "set_items",
-      "count": 2
-    },
-    {
-      "type": "set_local",
-      "count": 18
-    },
-    {
-      "type": "share",
-      "count": 6
-    },
-    {
-      "type": "start_tour",
-      "count": 2
-    },
-    {
-      "type": "task",
-      "count": 2
-    },
-    {
-      "type": "track_event",
-      "count": 2
-    },
-    {
-      "type": "user",
-      "count": 1
-    }
-  ],
-  "assets_size": [
-    {
-      "assets": "total",
-      "KB": "31238 KB",
-      "MB": "31.2 MB"
-    },
-    {
-      "assets": "unused",
-      "KB": "936 KB",
-      "MB": "0.9 MB"
-    }
-  ],
-  "assets_unused": [
-    {
-      "path": "android/icon-background.png",
-      "size_kb": 3.9
-    },
-    {
-      "path": "android/icon-foreground.png",
-      "size_kb": 59.4
-    },
-    {
-      "path": "android/icon-only.png",
-      "size_kb": 128.1
-    },
-    {
-      "path": "android/icon.png",
-      "size_kb": 128.1
-    },
-    {
-      "path": "android/splash.png",
-      "size_kb": 147.4
-    },
-    {
-      "path": "images/icons/favicon.svg",
-      "size_kb": 2.1
-    },
-    {
-      "path": "ios/icon-background.png",
-      "size_kb": 3.9
-    },
-    {
-      "path": "ios/icon-foreground.png",
-      "size_kb": 59.4
-    },
-    {
-      "path": "ios/icon-only.png",
-      "size_kb": 128.1
-    },
-    {
-      "path": "ios/icon.png",
-      "size_kb": 128.1
-    },
-    {
-      "path": "ios/splash.png",
-      "size_kb": 147.4
-    }
-  ],
-  "assets_missing": [
-    {
-      "path": "debug_asset_pack_1/image_2.png",
-      "count": 1,
-      "missing": true
-    },
-    {
-      "path": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "count": 1,
-      "missing": true
-    }
-  ],
-  "asset_summary": [
-    {
-      "path": "audio/baby_elephant_walk.wav",
-      "count": 3,
-      "size_kb": 430.7
-    },
-    {
-      "path": "audio/test_audio.mp3",
-      "count": 7,
-      "size_kb": 43.4
-    },
-    {
-      "path": "audio/timer/bell_1.mp3",
-      "count": 1,
-      "size_kb": 121.6
-    },
-    {
-      "path": "audio/timer/ping_1.wav",
-      "count": 1,
-      "size_kb": 196.4
-    },
-    {
-      "path": "audio/timer/ping_2.wav",
-      "count": 1,
-      "size_kb": 829.6
-    },
-    {
-      "path": "debug_asset_pack_1/image_1.png",
-      "count": 1,
-      "size_kb": 8.8
-    },
-    {
-      "path": "debug_asset_pack_1/image_3.png",
-      "count": 1,
-      "size_kb": 9.6
-    },
-    {
-      "path": "debug_asset_pack_1/image_4.png",
-      "count": 1,
-      "size_kb": 11.9
-    },
-    {
-      "path": "debug_theme_language.png",
-      "count": 1,
-      "size_kb": 21.9
-    },
-    {
-      "path": "example_pdf.pdf",
-      "count": 3,
-      "size_kb": 139.4
-    },
-    {
-      "path": "i18n/flags/gb.svg",
-      "count": 2,
-      "size_kb": 0.5
-    },
-    {
-      "path": "i18n/flags/tz.svg",
-      "count": 2,
-      "size_kb": 0.5
-    },
-    {
-      "path": "images/Faisal.png",
-      "count": 2,
-      "size_kb": 3.5
-    },
-    {
-      "path": "images/Noura.png",
-      "count": 2,
-      "size_kb": 4.2
-    },
-    {
-      "path": "images/avatar_1.png",
-      "count": 17,
-      "size_kb": 67.7
-    },
-    {
-      "path": "images/example/110-536x354.jpg",
-      "count": 1,
-      "size_kb": 39.1
-    },
-    {
-      "path": "images/example/344-536x354.jpg",
-      "count": 1,
-      "size_kb": 13.9
-    },
-    {
-      "path": "images/example/408-536x354.jpg",
-      "count": 1,
-      "size_kb": 23.2
-    },
-    {
-      "path": "images/example/423-536x354.jpg",
-      "count": 1,
-      "size_kb": 30.3
-    },
-    {
-      "path": "images/example/circular.png",
-      "count": 5,
-      "size_kb": 15.7
-    },
-    {
-      "path": "images/example/jasper_1.jpg",
-      "count": 55,
-      "size_kb": 527.3
-    },
-    {
-      "path": "images/faces/happy.svg",
-      "count": 7,
-      "size_kb": 0.6
-    },
-    {
-      "path": "images/faces/neutral.svg",
-      "count": 2,
-      "size_kb": 0.5
-    },
-    {
-      "path": "images/faces/sad.svg",
-      "count": 2,
-      "size_kb": 1.1
-    },
-    {
-      "path": "images/icons/ask_question_white.svg",
-      "count": 2,
-      "size_kb": 1.4
-    },
-    {
-      "path": "images/icons/audio/pause-sharp.svg",
-      "count": 1,
-      "size_kb": 0.1
-    },
-    {
-      "path": "images/icons/audio/play-back-sharp.svg",
-      "count": 1,
-      "size_kb": 0.1
-    },
-    {
-      "path": "images/icons/audio/play-forward-sharp.svg",
-      "count": 1,
-      "size_kb": 0.1
-    },
-    {
-      "path": "images/icons/audio/play-sharp.svg",
-      "count": 4,
-      "size_kb": 0.1
-    },
-    {
-      "path": "images/icons/book_white.svg",
-      "count": 11,
-      "size_kb": 0.7
-    },
-    {
-      "path": "images/icons/expand_circle_right.png",
-      "count": 2,
-      "size_kb": 0.9
-    },
-    {
-      "path": "images/icons/globe_blue.svg",
-      "count": 13,
-      "size_kb": 3.9
-    },
-    {
-      "path": "images/icons/heart_blue.svg",
-      "count": 34,
-      "size_kb": 1.4
-    },
-    {
-      "path": "images/icons/heart_outline.svg",
-      "count": 10,
-      "size_kb": 0.6
-    },
-    {
-      "path": "images/icons/home.svg",
-      "count": 1,
-      "size_kb": 0.4
-    },
-    {
-      "path": "images/icons/home_active.svg",
-      "count": 1,
-      "size_kb": 0.4
-    },
-    {
-      "path": "images/icons/house_white.svg",
-      "count": 5,
-      "size_kb": 0.6
-    },
-    {
-      "path": "images/icons/in_progress.svg",
-      "count": 15,
-      "size_kb": 1.1
-    },
-    {
-      "path": "images/icons/leaf_blue.svg",
-      "count": 11,
-      "size_kb": 1.7
-    },
-    {
-      "path": "images/icons/local_library.svg",
-      "count": 1,
-      "size_kb": 1.6
-    },
-    {
-      "path": "images/icons/local_library_active.svg",
-      "count": 1,
-      "size_kb": 1.6
-    },
-    {
-      "path": "images/icons/locked.png",
-      "count": 2,
-      "size_kb": 0.9
-    },
-    {
-      "path": "images/icons/question_mark.svg",
-      "count": 2,
-      "size_kb": 0.8
-    },
-    {
-      "path": "images/icons/reader_blue.svg",
-      "count": 6,
-      "size_kb": 1.4
-    },
-    {
-      "path": "images/icons/school_blue.svg",
-      "count": 9,
-      "size_kb": 1.6
-    },
-    {
-      "path": "images/icons/settings.svg",
-      "count": 1,
-      "size_kb": 2.4
-    },
-    {
-      "path": "images/icons/settings_active.svg",
-      "count": 1,
-      "size_kb": 2.4
-    },
-    {
-      "path": "images/icons/star_blue.svg",
-      "count": 1,
-      "size_kb": 1.3
-    },
-    {
-      "path": "images/icons/star_white.svg",
-      "count": 21,
-      "size_kb": 1
-    },
-    {
-      "path": "images/icons/star_yellow.svg",
-      "count": 1,
-      "size_kb": 0.6
-    },
-    {
-      "path": "images/icons/tick.svg",
-      "count": 10,
-      "size_kb": 0.3
-    },
-    {
-      "path": "images/icons/tick_white.svg",
-      "count": 21,
-      "size_kb": 0.3
-    },
-    {
-      "path": "images/module-1.png",
-      "count": 3,
-      "size_kb": 28.2
-    },
-    {
-      "path": "images/square_1.svg",
-      "count": 1,
-      "size_kb": 0.7
-    },
-    {
-      "path": "images/square_2.svg",
-      "count": 1,
-      "size_kb": 1
-    },
-    {
-      "path": "images/square_3.svg",
-      "count": 1,
-      "size_kb": 1
-    },
-    {
-      "path": "images/square_4.svg",
-      "count": 1,
-      "size_kb": 1
-    },
-    {
-      "path": "images/test_image.png",
-      "count": 2,
-      "size_kb": 2
-    },
-    {
-      "path": "images/test_image_no_translations.png",
-      "count": 1,
-      "size_kb": 2.8
-    },
-    {
-      "path": "lottie/blob_play_ball.json",
-      "count": 16,
-      "size_kb": 69.4
-    },
-    {
-      "path": "lottie/cascading_stars.json",
-      "count": 1,
-      "size_kb": 140.5
-    },
-    {
-      "path": "map_data/centroids.json",
-      "count": 1,
-      "size_kb": 13.4
-    },
-    {
-      "path": "map_data/forecast_data_geojson.json",
-      "count": 2,
-      "size_kb": 133.5
-    },
-    {
-      "path": "map_data/forecast_riots.json",
-      "count": 1,
-      "size_kb": 48.6
-    },
-    {
-      "path": "map_data/ke.json",
-      "count": 1,
-      "size_kb": 10219.4
-    },
-    {
-      "path": "map_data/population_and_boundaries.json",
-      "count": 2,
-      "size_kb": 4513.3
-    },
-    {
-      "path": "odk_form.json",
-      "count": 1,
-      "size_kb": 8
-    },
-    {
-      "path": "video/lets_slow_down.mp4",
-      "count": 2,
-      "size_kb": 13482.2
-    },
-    {
-      "path": "video/lets_slow_down.vtt",
-      "count": 1,
-      "size_kb": 1.8
-    }
-  ],
-  "flows_by_type": [
-    {
-      "type": "data_list",
-      "subtype": null,
-      "total": 27
-    },
-    {
-      "type": "data_list",
-      "subtype": "campaign_rows_debug",
-      "total": 6
-    },
-    {
-      "type": "data_list",
-      "subtype": "campaign_schedule",
-      "total": 1
-    },
-    {
-      "type": "data_list",
-      "subtype": "component_demo",
-      "total": 6
-    },
-    {
-      "type": "data_list",
-      "subtype": "debug",
-      "total": 18
-    },
-    {
-      "type": "data_list",
-      "subtype": "debug_lifecycle_actions",
-      "total": 1
-    },
-    {
-      "type": "data_list",
-      "subtype": "example_generator",
-      "total": 3
-    },
-    {
-      "type": "data_list",
-      "subtype": "example_list_override",
-      "total": 2
-    },
-    {
-      "type": "data_list",
-      "subtype": "example_pipe",
-      "total": 5
-    },
-    {
-      "type": "data_list",
-      "subtype": "example_sheet_defaults",
-      "total": 1
-    },
-    {
-      "type": "data_list",
-      "subtype": "generated",
-      "total": 13
-    },
-    {
-      "type": "data_pipe",
-      "subtype": "debug",
-      "total": 1
-    },
-    {
-      "type": "data_pipe",
-      "subtype": "example_pipe",
-      "total": 6
-    },
-    {
-      "type": "data_pipe",
-      "subtype": "generated",
-      "total": 2
-    },
-    {
-      "type": "generator",
-      "subtype": null,
-      "total": 1
-    },
-    {
-      "type": "generator",
-      "subtype": "example_generator",
-      "total": 2
-    },
-    {
-      "type": "global",
-      "subtype": null,
-      "total": 2
-    },
-    {
-      "type": "global",
-      "subtype": "debug",
-      "total": 9
-    },
-    {
-      "type": "template",
-      "subtype": null,
-      "total": 79
-    },
-    {
-      "type": "template",
-      "subtype": "component_demo",
-      "total": 52
-    },
-    {
-      "type": "template",
-      "subtype": "debug",
-      "total": 260
-    },
-    {
-      "type": "template",
-      "subtype": "example_generator",
-      "total": 2
-    },
-    {
-      "type": "template",
-      "subtype": "example_hardcoded",
-      "total": 1
-    },
-    {
-      "type": "template",
-      "subtype": "example_list_override",
-      "total": 1
-    },
-    {
-      "type": "template",
-      "subtype": "example_sheet_defaults",
-      "total": 1
-    },
-    {
-      "type": "tour",
-      "subtype": "debug",
-      "total": 4
-    }
-  ]
+  "template_components": {
+    "data": [
+      {
+        "type": "@item.input_type",
+        "count": 1
+      },
+      {
+        "type": "accordion",
+        "count": 5
+      },
+      {
+        "type": "accordion_section",
+        "count": 17
+      },
+      {
+        "type": "advanced_dashed_box",
+        "count": 4
+      },
+      {
+        "type": "animated_section",
+        "count": 9
+      },
+      {
+        "type": "animated_slides",
+        "count": 1
+      },
+      {
+        "type": "audio",
+        "count": 12
+      },
+      {
+        "type": "button",
+        "count": 278
+      },
+      {
+        "type": "calendar",
+        "count": 1
+      },
+      {
+        "type": "carousel",
+        "count": 7
+      },
+      {
+        "type": "colour_palette",
+        "count": 1
+      },
+      {
+        "type": "combo_box",
+        "count": 47
+      },
+      {
+        "type": "dashed_box",
+        "count": 19
+      },
+      {
+        "type": "data_items",
+        "count": 38
+      },
+      {
+        "type": "debug_toggle",
+        "count": 1
+      },
+      {
+        "type": "declare_field_default",
+        "count": 1
+      },
+      {
+        "type": "declare_global_constant",
+        "count": 1
+      },
+      {
+        "type": "demo_basic",
+        "count": 3
+      },
+      {
+        "type": "display_grid",
+        "count": 3
+      },
+      {
+        "type": "display_group",
+        "count": 177
+      },
+      {
+        "type": "drawer",
+        "count": 1
+      },
+      {
+        "type": "form",
+        "count": 9
+      },
+      {
+        "type": "html",
+        "count": 4
+      },
+      {
+        "type": "image",
+        "count": 74
+      },
+      {
+        "type": "items",
+        "count": 49
+      },
+      {
+        "type": "latex",
+        "count": 1
+      },
+      {
+        "type": "lottie_animation",
+        "count": 6
+      },
+      {
+        "type": "map",
+        "count": 1
+      },
+      {
+        "type": "nav_group",
+        "count": 6
+      },
+      {
+        "type": "navigation_bar",
+        "count": 6
+      },
+      {
+        "type": "nested_properties",
+        "count": 32
+      },
+      {
+        "type": "number_selector",
+        "count": 19
+      },
+      {
+        "type": "odk_form",
+        "count": 1
+      },
+      {
+        "type": "parent_point_box",
+        "count": 25
+      },
+      {
+        "type": "parent_point_counter",
+        "count": 2
+      },
+      {
+        "type": "pdf",
+        "count": 3
+      },
+      {
+        "type": "plh_bottom_nav",
+        "count": 1
+      },
+      {
+        "type": "plh_module_details_header",
+        "count": 3
+      },
+      {
+        "type": "plh_module_list_item",
+        "count": 5
+      },
+      {
+        "type": "plh_progress_wheel",
+        "count": 1
+      },
+      {
+        "type": "progress_bar",
+        "count": 1
+      },
+      {
+        "type": "progress_path",
+        "count": 2
+      },
+      {
+        "type": "qr_code",
+        "count": 2
+      },
+      {
+        "type": "radio_button_grid",
+        "count": 9
+      },
+      {
+        "type": "radio_group",
+        "count": 56
+      },
+      {
+        "type": "radio_group_grid",
+        "count": 5
+      },
+      {
+        "type": "round_button",
+        "count": 21
+      },
+      {
+        "type": "select_text",
+        "count": 6
+      },
+      {
+        "type": "set_default",
+        "count": 1
+      },
+      {
+        "type": "set_field",
+        "count": 28
+      },
+      {
+        "type": "set_local",
+        "count": 2
+      },
+      {
+        "type": "set_variable",
+        "count": 722
+      },
+      {
+        "type": "simple_checkbox",
+        "count": 41
+      },
+      {
+        "type": "slider",
+        "count": 32
+      },
+      {
+        "type": "square_button",
+        "count": 8
+      },
+      {
+        "type": "subtitle",
+        "count": 62
+      },
+      {
+        "type": "task_card",
+        "count": 24
+      },
+      {
+        "type": "task_progress_bar",
+        "count": 3
+      },
+      {
+        "type": "template",
+        "count": 127
+      },
+      {
+        "type": "text",
+        "count": 916
+      },
+      {
+        "type": "text_area",
+        "count": 12
+      },
+      {
+        "type": "text_box",
+        "count": 51
+      },
+      {
+        "type": "text_bubble",
+        "count": 10
+      },
+      {
+        "type": "tile_component",
+        "count": 57
+      },
+      {
+        "type": "timer",
+        "count": 21
+      },
+      {
+        "type": "title",
+        "count": 417
+      },
+      {
+        "type": "toggle_bar",
+        "count": 46
+      },
+      {
+        "type": "update_action_list",
+        "count": 2
+      },
+      {
+        "type": "video",
+        "count": 4
+      },
+      {
+        "type": "workshops_accordion",
+        "count": 2
+      },
+      {
+        "type": "youtube",
+        "count": 3
+      }
+    ]
+  },
+  "template_actions": {
+    "data": [
+      {
+        "type": "!@item.default_value",
+        "count": 1
+      },
+      {
+        "type": "app_update",
+        "count": 3
+      },
+      {
+        "type": "asset_pack",
+        "count": 2
+      },
+      {
+        "type": "auth",
+        "count": 2
+      },
+      {
+        "type": "download_assets",
+        "count": 1
+      },
+      {
+        "type": "emit: @local.child_local_variable",
+        "count": 1
+      },
+      {
+        "type": "emit: completed",
+        "count": 34
+      },
+      {
+        "type": "emit: force_reload",
+        "count": 28
+      },
+      {
+        "type": "emit: force_reprocess",
+        "count": 27
+      },
+      {
+        "type": "emit: force_restart",
+        "count": 2
+      },
+      {
+        "type": "emit: server_sync",
+        "count": 7
+      },
+      {
+        "type": "emit: set_language",
+        "count": 4
+      },
+      {
+        "type": "emit: set_skin",
+        "count": 1
+      },
+      {
+        "type": "emit: set_theme",
+        "count": 2
+      },
+      {
+        "type": "emit: translator_mode_toggle",
+        "count": 1
+      },
+      {
+        "type": "emit: uncompleted",
+        "count": 18
+      },
+      {
+        "type": "feedback",
+        "count": 13
+      },
+      {
+        "type": "go_to",
+        "count": 60
+      },
+      {
+        "type": "go_to_url",
+        "count": 5
+      },
+      {
+        "type": "invalid_action",
+        "count": 1
+      },
+      {
+        "type": "nav_stack",
+        "count": 7
+      },
+      {
+        "type": "open_external",
+        "count": 2
+      },
+      {
+        "type": "pop_up",
+        "count": 38
+      },
+      {
+        "type": "process_template",
+        "count": 2
+      },
+      {
+        "type": "reset_app",
+        "count": 1
+      },
+      {
+        "type": "reset_data",
+        "count": 2
+      },
+      {
+        "type": "save_to_device",
+        "count": 2
+      },
+      {
+        "type": "screen_orientation",
+        "count": 3
+      },
+      {
+        "type": "set_data",
+        "count": 9
+      },
+      {
+        "type": "set_field",
+        "count": 111
+      },
+      {
+        "type": "set_item",
+        "count": 23
+      },
+      {
+        "type": "set_items",
+        "count": 5
+      },
+      {
+        "type": "set_local",
+        "count": 28
+      },
+      {
+        "type": "share",
+        "count": 6
+      },
+      {
+        "type": "start_tour",
+        "count": 2
+      },
+      {
+        "type": "task",
+        "count": 2
+      },
+      {
+        "type": "toggle_field",
+        "count": 4
+      },
+      {
+        "type": "track_event",
+        "count": 2
+      },
+      {
+        "type": "trigger_actions",
+        "count": 1
+      },
+      {
+        "type": "undefined",
+        "count": 36
+      },
+      {
+        "type": "user",
+        "count": 1
+      }
+    ]
+  },
+  "assets_size": {
+    "data": [
+      {
+        "assets": "total",
+        "KB": "31493 KB",
+        "MB": "31.5 MB"
+      },
+      {
+        "assets": "unused",
+        "KB": "936 KB",
+        "MB": "0.9 MB"
+      }
+    ]
+  },
+  "assets_unused": {
+    "data": [
+      {
+        "path": "android/icon-background.png",
+        "size_kb": 3.9
+      },
+      {
+        "path": "android/icon-foreground.png",
+        "size_kb": 59.4
+      },
+      {
+        "path": "android/icon-only.png",
+        "size_kb": 128.1
+      },
+      {
+        "path": "android/icon.png",
+        "size_kb": 128.1
+      },
+      {
+        "path": "android/splash.png",
+        "size_kb": 147.4
+      },
+      {
+        "path": "images/icons/favicon.svg",
+        "size_kb": 2.1
+      },
+      {
+        "path": "ios/icon-background.png",
+        "size_kb": 3.9
+      },
+      {
+        "path": "ios/icon-foreground.png",
+        "size_kb": 59.4
+      },
+      {
+        "path": "ios/icon-only.png",
+        "size_kb": 128.1
+      },
+      {
+        "path": "ios/icon.png",
+        "size_kb": 128.1
+      },
+      {
+        "path": "ios/splash.png",
+        "size_kb": 147.4
+      }
+    ]
+  },
+  "assets_missing": {
+    "data": [
+      {
+        "path": "debug_asset_pack_1/image_2.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "count": 1,
+        "missing": true
+      }
+    ]
+  },
+  "asset_summary": {
+    "data": [
+      {
+        "path": "audio/baby_elephant_walk.wav",
+        "count": 3,
+        "size_kb": 430.7
+      },
+      {
+        "path": "audio/test_audio.mp3",
+        "count": 7,
+        "size_kb": 43.4
+      },
+      {
+        "path": "audio/timer/bell_1.mp3",
+        "count": 1,
+        "size_kb": 121.6
+      },
+      {
+        "path": "audio/timer/ping_1.wav",
+        "count": 1,
+        "size_kb": 196.4
+      },
+      {
+        "path": "audio/timer/ping_2.wav",
+        "count": 1,
+        "size_kb": 829.6
+      },
+      {
+        "path": "debug_asset_pack_1/image_1.png",
+        "count": 1,
+        "size_kb": 8.8
+      },
+      {
+        "path": "debug_asset_pack_1/image_3.png",
+        "count": 1,
+        "size_kb": 9.6
+      },
+      {
+        "path": "debug_asset_pack_1/image_4.png",
+        "count": 1,
+        "size_kb": 11.9
+      },
+      {
+        "path": "debug_theme_language.png",
+        "count": 1,
+        "size_kb": 21.9
+      },
+      {
+        "path": "example_pdf.pdf",
+        "count": 3,
+        "size_kb": 139.4
+      },
+      {
+        "path": "i18n/flags/gb.svg",
+        "count": 2,
+        "size_kb": 0.5
+      },
+      {
+        "path": "i18n/flags/tz.svg",
+        "count": 2,
+        "size_kb": 0.5
+      },
+      {
+        "path": "images/Faisal.png",
+        "count": 2,
+        "size_kb": 3.5
+      },
+      {
+        "path": "images/Noura.png",
+        "count": 3,
+        "size_kb": 4.2
+      },
+      {
+        "path": "images/avatar_1.png",
+        "count": 17,
+        "size_kb": 67.7
+      },
+      {
+        "path": "images/bg_illustration.png",
+        "count": 3,
+        "size_kb": 255.4
+      },
+      {
+        "path": "images/example/110-536x354.jpg",
+        "count": 1,
+        "size_kb": 39.1
+      },
+      {
+        "path": "images/example/344-536x354.jpg",
+        "count": 1,
+        "size_kb": 13.9
+      },
+      {
+        "path": "images/example/408-536x354.jpg",
+        "count": 1,
+        "size_kb": 23.2
+      },
+      {
+        "path": "images/example/423-536x354.jpg",
+        "count": 1,
+        "size_kb": 30.3
+      },
+      {
+        "path": "images/example/circular.png",
+        "count": 5,
+        "size_kb": 15.7
+      },
+      {
+        "path": "images/example/jasper_1.jpg",
+        "count": 55,
+        "size_kb": 527.3
+      },
+      {
+        "path": "images/faces/happy.svg",
+        "count": 7,
+        "size_kb": 0.6
+      },
+      {
+        "path": "images/faces/neutral.svg",
+        "count": 2,
+        "size_kb": 0.5
+      },
+      {
+        "path": "images/faces/sad.svg",
+        "count": 2,
+        "size_kb": 1.1
+      },
+      {
+        "path": "images/icons/ask_question_white.svg",
+        "count": 2,
+        "size_kb": 1.4
+      },
+      {
+        "path": "images/icons/audio/pause-sharp.svg",
+        "count": 1,
+        "size_kb": 0.1
+      },
+      {
+        "path": "images/icons/audio/play-back-sharp.svg",
+        "count": 1,
+        "size_kb": 0.1
+      },
+      {
+        "path": "images/icons/audio/play-forward-sharp.svg",
+        "count": 1,
+        "size_kb": 0.1
+      },
+      {
+        "path": "images/icons/audio/play-sharp.svg",
+        "count": 4,
+        "size_kb": 0.1
+      },
+      {
+        "path": "images/icons/book_white.svg",
+        "count": 11,
+        "size_kb": 0.7
+      },
+      {
+        "path": "images/icons/expand_circle_right.png",
+        "count": 2,
+        "size_kb": 0.9
+      },
+      {
+        "path": "images/icons/globe_blue.svg",
+        "count": 13,
+        "size_kb": 3.9
+      },
+      {
+        "path": "images/icons/heart_blue.svg",
+        "count": 34,
+        "size_kb": 1.4
+      },
+      {
+        "path": "images/icons/heart_outline.svg",
+        "count": 10,
+        "size_kb": 0.6
+      },
+      {
+        "path": "images/icons/home.svg",
+        "count": 1,
+        "size_kb": 0.4
+      },
+      {
+        "path": "images/icons/home_active.svg",
+        "count": 1,
+        "size_kb": 0.4
+      },
+      {
+        "path": "images/icons/house_white.svg",
+        "count": 5,
+        "size_kb": 0.6
+      },
+      {
+        "path": "images/icons/in_progress.svg",
+        "count": 15,
+        "size_kb": 1.1
+      },
+      {
+        "path": "images/icons/leaf_blue.svg",
+        "count": 11,
+        "size_kb": 1.7
+      },
+      {
+        "path": "images/icons/local_library.svg",
+        "count": 1,
+        "size_kb": 1.6
+      },
+      {
+        "path": "images/icons/local_library_active.svg",
+        "count": 1,
+        "size_kb": 1.6
+      },
+      {
+        "path": "images/icons/locked.png",
+        "count": 2,
+        "size_kb": 0.9
+      },
+      {
+        "path": "images/icons/question_mark.svg",
+        "count": 2,
+        "size_kb": 0.8
+      },
+      {
+        "path": "images/icons/reader_blue.svg",
+        "count": 6,
+        "size_kb": 1.4
+      },
+      {
+        "path": "images/icons/school_blue.svg",
+        "count": 9,
+        "size_kb": 1.6
+      },
+      {
+        "path": "images/icons/settings.svg",
+        "count": 1,
+        "size_kb": 2.4
+      },
+      {
+        "path": "images/icons/settings_active.svg",
+        "count": 1,
+        "size_kb": 2.4
+      },
+      {
+        "path": "images/icons/star_blue.svg",
+        "count": 1,
+        "size_kb": 1.3
+      },
+      {
+        "path": "images/icons/star_white.svg",
+        "count": 21,
+        "size_kb": 1
+      },
+      {
+        "path": "images/icons/star_yellow.svg",
+        "count": 1,
+        "size_kb": 0.6
+      },
+      {
+        "path": "images/icons/tick.svg",
+        "count": 10,
+        "size_kb": 0.3
+      },
+      {
+        "path": "images/icons/tick_white.svg",
+        "count": 21,
+        "size_kb": 0.3
+      },
+      {
+        "path": "images/module-1.png",
+        "count": 5,
+        "size_kb": 28.2
+      },
+      {
+        "path": "images/square_1.svg",
+        "count": 1,
+        "size_kb": 0.7
+      },
+      {
+        "path": "images/square_2.svg",
+        "count": 1,
+        "size_kb": 1
+      },
+      {
+        "path": "images/square_3.svg",
+        "count": 1,
+        "size_kb": 1
+      },
+      {
+        "path": "images/square_4.svg",
+        "count": 1,
+        "size_kb": 1
+      },
+      {
+        "path": "images/test_image.png",
+        "count": 2,
+        "size_kb": 2
+      },
+      {
+        "path": "images/test_image_no_translations.png",
+        "count": 1,
+        "size_kb": 2.8
+      },
+      {
+        "path": "lottie/blob_play_ball.json",
+        "count": 16,
+        "size_kb": 69.4
+      },
+      {
+        "path": "lottie/cascading_stars.json",
+        "count": 1,
+        "size_kb": 140.5
+      },
+      {
+        "path": "map_data/centroids.json",
+        "count": 1,
+        "size_kb": 13.4
+      },
+      {
+        "path": "map_data/forecast_data_geojson.json",
+        "count": 2,
+        "size_kb": 133.5
+      },
+      {
+        "path": "map_data/forecast_riots.json",
+        "count": 1,
+        "size_kb": 48.6
+      },
+      {
+        "path": "map_data/ke.json",
+        "count": 1,
+        "size_kb": 10219.4
+      },
+      {
+        "path": "map_data/population_and_boundaries.json",
+        "count": 2,
+        "size_kb": 4513.3
+      },
+      {
+        "path": "odk_form.json",
+        "count": 1,
+        "size_kb": 8
+      },
+      {
+        "path": "video/lets_slow_down.mp4",
+        "count": 2,
+        "size_kb": 13482.2
+      },
+      {
+        "path": "video/lets_slow_down.vtt",
+        "count": 1,
+        "size_kb": 1.8
+      }
+    ]
+  },
+  "flows_by_type": {
+    "data": [
+      {
+        "type": "data_list",
+        "subtype": null,
+        "total": 28
+      },
+      {
+        "type": "data_list",
+        "subtype": "campaign_rows_debug",
+        "total": 6
+      },
+      {
+        "type": "data_list",
+        "subtype": "campaign_schedule",
+        "total": 1
+      },
+      {
+        "type": "data_list",
+        "subtype": "component_demo",
+        "total": 6
+      },
+      {
+        "type": "data_list",
+        "subtype": "debug",
+        "total": 18
+      },
+      {
+        "type": "data_list",
+        "subtype": "debug_lifecycle_actions",
+        "total": 1
+      },
+      {
+        "type": "data_list",
+        "subtype": "example_generator",
+        "total": 3
+      },
+      {
+        "type": "data_list",
+        "subtype": "example_list_override",
+        "total": 2
+      },
+      {
+        "type": "data_list",
+        "subtype": "example_pipe",
+        "total": 5
+      },
+      {
+        "type": "data_list",
+        "subtype": "example_sheet_defaults",
+        "total": 1
+      },
+      {
+        "type": "data_list",
+        "subtype": "generated",
+        "total": 13
+      },
+      {
+        "type": "data_pipe",
+        "subtype": "debug",
+        "total": 1
+      },
+      {
+        "type": "data_pipe",
+        "subtype": "example_pipe",
+        "total": 6
+      },
+      {
+        "type": "data_pipe",
+        "subtype": "generated",
+        "total": 2
+      },
+      {
+        "type": "generator",
+        "subtype": null,
+        "total": 1
+      },
+      {
+        "type": "generator",
+        "subtype": "example_generator",
+        "total": 2
+      },
+      {
+        "type": "global",
+        "subtype": null,
+        "total": 2
+      },
+      {
+        "type": "global",
+        "subtype": "debug",
+        "total": 9
+      },
+      {
+        "type": "template",
+        "subtype": null,
+        "total": 79
+      },
+      {
+        "type": "template",
+        "subtype": "component_demo",
+        "total": 54
+      },
+      {
+        "type": "template",
+        "subtype": "debug",
+        "total": 260
+      },
+      {
+        "type": "template",
+        "subtype": "example_generator",
+        "total": 2
+      },
+      {
+        "type": "template",
+        "subtype": "example_hardcoded",
+        "total": 1
+      },
+      {
+        "type": "template",
+        "subtype": "example_list_override",
+        "total": 1
+      },
+      {
+        "type": "template",
+        "subtype": "example_sheet_defaults",
+        "total": 1
+      },
+      {
+        "type": "tour",
+        "subtype": "debug",
+        "total": 4
+      }
+    ]
+  }
 }

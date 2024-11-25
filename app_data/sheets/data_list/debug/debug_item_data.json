@@ -17,5 +17,13 @@
       "boolean": false
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_template_variables.xlsx"
+  "_xlsxPath": "debug_sheets/debug_template_variables.xlsx",
+  "_metadata": {
+    "number": {
+      "type": "number"
+    },
+    "boolean": {
+      "type": "boolean"
+    }
+  }
 }

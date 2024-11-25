@@ -23,5 +23,10 @@
       "type": "type_b"
     }
   ],
-  "_xlsxPath": "component_sheets/component_data_items.xlsx"
+  "_xlsxPath": "component_sheets/component_data_items.xlsx",
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    }
+  }
 }

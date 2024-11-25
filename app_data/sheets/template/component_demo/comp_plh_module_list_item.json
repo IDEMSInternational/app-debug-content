@@ -5,6 +5,12 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "name": "item_1_is_locked",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "item_1_is_locked"
+    },
+    {
       "type": "plh_module_list_item",
       "name": "item_1",
       "value": "capitalise text, target-template",
@@ -25,9 +31,33 @@
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
         "text_transform": "capitalise",
+        "is_locked": "@local.item_1_is_locked",
         "nav_image_asset": "images/icons/expand_circle_right.png"
       },
-      "_nested_name": "item_1"
+      "_nested_name": "item_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "is_locked": [
+            {
+              "fullExpression": "@local.item_1_is_locked",
+              "matchedExpression": "@local.item_1_is_locked",
+              "type": "local",
+              "fieldName": "item_1_is_locked"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.item_1_is_locked": [
+          "parameter_list.is_locked"
+        ]
+      }
+    },
+    {
+      "name": "item_2_is_locked",
+      "value": true,
+      "type": "set_variable",
+      "_nested_name": "item_2_is_locked"
     },
     {
       "type": "plh_module_list_item",
@@ -49,10 +79,27 @@
       ],
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
-        "is_locked": "true",
+        "is_locked": "@local.item_2_is_locked",
         "locked_image_asset": "images/icons/locked.png"
       },
-      "_nested_name": "item_2"
+      "_nested_name": "item_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "is_locked": [
+            {
+              "fullExpression": "@local.item_2_is_locked",
+              "matchedExpression": "@local.item_2_is_locked",
+              "type": "local",
+              "fieldName": "item_2_is_locked"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.item_2_is_locked": [
+          "parameter_list.is_locked"
+        ]
+      }
     },
     {
       "type": "plh_module_list_item",
