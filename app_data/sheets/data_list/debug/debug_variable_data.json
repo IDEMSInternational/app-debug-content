@@ -41,5 +41,13 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx"
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx",
+  "_metadata": {
+    "value": {
+      "type": "number"
+    },
+    "value_collection": {
+      "type": "object"
+    }
+  }
 }

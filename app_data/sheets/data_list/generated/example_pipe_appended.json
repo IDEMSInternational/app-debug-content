@@ -89,5 +89,22 @@
       "number": -5.25,
       "number_text": "-5.25"
     }
-  ]
+  ],
+  "_metadata": {
+    "value": {
+      "type": "number"
+    },
+    "sort_order": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "Boolean": {
+      "type": "boolean"
+    },
+    "number": {
+      "type": "number"
+    }
+  }
 }

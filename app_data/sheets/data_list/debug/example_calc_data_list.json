@@ -24,5 +24,10 @@
       ]
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+  "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx",
+  "_metadata": {
+    "exclude_from_translation": {
+      "type": "boolean"
+    }
+  }
 }

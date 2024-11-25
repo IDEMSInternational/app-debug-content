@@ -46,5 +46,13 @@
       "unlocked": "@fields.example_unlocked_item_5"
     }
   ],
-  "_xlsxPath": "example_sheets/example_items.xlsx"
+  "_xlsxPath": "example_sheets/example_items.xlsx",
+  "_metadata": {
+    "field_value": {
+      "type": "number"
+    },
+    "unlock_week": {
+      "type": "number"
+    }
+  }
 }

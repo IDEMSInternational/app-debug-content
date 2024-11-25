@@ -29,5 +29,10 @@
       "completed_field": "task_group_3_completed"
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx",
+  "_metadata": {
+    "number": {
+      "type": "number"
+    }
+  }
 }

@@ -17,5 +17,10 @@
       "active": false
     }
   ],
-  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx",
+  "_metadata": {
+    "active": {
+      "type": "boolean"
+    }
+  }
 }

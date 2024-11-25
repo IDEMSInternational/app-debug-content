@@ -15,5 +15,13 @@
       "column_b": 1
     }
   ],
-  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
+  "_metadata": {
+    "column_a": {
+      "type": "number"
+    },
+    "column_b": {
+      "type": "number"
+    }
+  }
 }
