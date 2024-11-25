@@ -25,5 +25,16 @@
       "is_done": true
     }
   ],
-  "_xlsxPath": "component_sheets/component_task_card.xlsx"
+  "_xlsxPath": "component_sheets/component_task_card.xlsx",
+  "_metadata": {
+    "number": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "is_done": {
+      "type": "boolean"
+    }
+  }
 }

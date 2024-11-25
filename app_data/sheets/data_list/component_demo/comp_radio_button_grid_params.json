@@ -28,5 +28,10 @@
       "default_value": "16px"
     }
   ],
-  "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
+  "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx",
+  "_metadata": {
+    "required": {
+      "type": "boolean"
+    }
+  }
 }

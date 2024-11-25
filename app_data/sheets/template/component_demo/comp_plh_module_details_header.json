@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_module_details_header",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "plh_module_details_header",
+      "value": "Module Title: Taking Care of Yourself",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "background_illustration": "images/bg_illustration.png",
+        "module_image_asset": "images/module-1.png"
+      },
+      "name": "plh_module_details_header_2",
+      "_nested_name": "plh_module_details_header_2"
+    },
+    {
+      "type": "plh_module_details_header",
+      "value": "Short Module Title",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "background_illustration": "images/bg_illustration.png",
+        "module_image_asset": "images/module-1.png"
+      },
+      "name": "plh_module_details_header_3",
+      "_nested_name": "plh_module_details_header_3"
+    },
+    {
+      "type": "plh_module_details_header",
+      "value": "Module Title: This is a really long module title that has more than 30 characters",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "background_illustration": "images/bg_illustration.png",
+        "module_image_asset": "images/Noura.png"
+      },
+      "name": "plh_module_details_header_4",
+      "_nested_name": "plh_module_details_header_4"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_module_details_header.xlsx"
+}

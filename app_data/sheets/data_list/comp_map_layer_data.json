@@ -101,5 +101,31 @@
       "visible_default": true
     }
   ],
-  "_xlsxPath": "component_sheets/component_map.xlsx"
+  "_xlsxPath": "component_sheets/component_map.xlsx",
+  "_metadata": {
+    "scale_max": {
+      "type": "number"
+    },
+    "scale_min": {
+      "type": "number"
+    },
+    "opacity": {
+      "type": "number"
+    },
+    "visible_default": {
+      "type": "boolean"
+    },
+    "point_radius_max": {
+      "type": "number"
+    },
+    "point_radius_property_max": {
+      "type": "number"
+    },
+    "blur": {
+      "type": "number"
+    },
+    "scale_slider": {
+      "type": "boolean"
+    }
+  }
 }

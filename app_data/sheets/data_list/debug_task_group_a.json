@@ -21,5 +21,10 @@
       "completed": false
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+  "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx",
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    }
+  }
 }

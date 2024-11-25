@@ -25,5 +25,10 @@
       "description": "Text formatting"
     }
   ],
-  "_xlsxPath": "component_sheets/component_title_test.xlsx"
+  "_xlsxPath": "component_sheets/component_title_test.xlsx",
+  "_metadata": {
+    "required": {
+      "type": "boolean"
+    }
+  }
 }

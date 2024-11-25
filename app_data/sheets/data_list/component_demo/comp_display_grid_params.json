@@ -33,5 +33,10 @@
       "input_type": "text_box"
     }
   ],
-  "_xlsxPath": "component_sheets/component_display_grid.xlsx"
+  "_xlsxPath": "component_sheets/component_display_grid.xlsx",
+  "_metadata": {
+    "required": {
+      "type": "boolean"
+    }
+  }
 }

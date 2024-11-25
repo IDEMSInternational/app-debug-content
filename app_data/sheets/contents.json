@@ -12,45 +12,83 @@
       "flow_subtype": "campaign_rows_debug",
       "flow_name": "debug_campaign_rows",
       "comments": "This contains content for schedules",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "debug_campaign_rows_actions": {
       "flow_type": "data_list",
       "flow_subtype": "campaign_rows_debug",
       "flow_name": "debug_campaign_rows_actions",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "debug_campaign_rows_actions_2": {
       "flow_type": "data_list",
       "flow_subtype": "campaign_rows_debug",
       "flow_name": "debug_campaign_rows_actions_2",
       "comments": "Can be merged into main actions once PR merged to support dismissed/sent actions",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "debug_campaign_rows_calc": {
       "flow_type": "data_list",
       "flow_subtype": "campaign_rows_debug",
       "flow_name": "debug_campaign_rows_calc",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "debug_campaign_rows_cond": {
       "flow_type": "data_list",
       "flow_subtype": "campaign_rows_debug",
       "flow_name": "debug_campaign_rows_cond",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "debug_campaign_rows_html": {
       "flow_type": "data_list",
       "flow_subtype": "campaign_rows_debug",
       "flow_name": "debug_campaign_rows_html",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "debug_campaign_schedules": {
       "flow_type": "data_list",
       "flow_subtype": "campaign_schedule",
       "flow_name": "debug_campaign_schedules",
       "comments": "This contains schedules for notifications",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+      "_metadata": {
+        "schedule": {
+          "type": "object"
+        },
+        "time": {
+          "type": "object"
+        }
+      }
     },
     "colours": {
       "flow_type": "data_list",
@@ -61,7 +99,43 @@
     "comp_map_layer_data": {
       "flow_type": "data_list",
       "flow_name": "comp_map_layer_data",
-      "_xlsxPath": "component_sheets/component_map.xlsx"
+      "_xlsxPath": "component_sheets/component_map.xlsx",
+      "_metadata": {
+        "scale_max": {
+          "type": "number"
+        },
+        "scale_min": {
+          "type": "number"
+        },
+        "opacity": {
+          "type": "number"
+        },
+        "visible_default": {
+          "type": "boolean"
+        },
+        "point_radius_max": {
+          "type": "number"
+        },
+        "point_radius_property_max": {
+          "type": "number"
+        },
+        "blur": {
+          "type": "number"
+        },
+        "scale_slider": {
+          "type": "boolean"
+        }
+      }
+    },
+    "comp_plh_progress_wheel_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_plh_progress_wheel_data",
+      "_xlsxPath": "component_sheets/component_plh_progress_wheel.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "comp_task_bar_legacy_data": {
       "flow_type": "data_list",
@@ -71,18 +145,39 @@
     "comp_task_card_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_card_data",
-      "_xlsxPath": "component_sheets/component_task_card.xlsx"
+      "_xlsxPath": "component_sheets/component_task_card.xlsx",
+      "_metadata": {
+        "number": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        },
+        "is_done": {
+          "type": "boolean"
+        }
+      }
     },
     "comp_task_progress_bar_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_progress_bar_data",
-      "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx"
+      "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "comp_data_items_list": {
       "flow_type": "data_list",
       "flow_name": "comp_data_items_list",
       "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_data_items.xlsx"
+      "_xlsxPath": "component_sheets/component_data_items.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "comp_display_grid_data": {
       "flow_type": "data_list",
@@ -94,7 +189,12 @@
       "flow_type": "data_list",
       "flow_name": "comp_display_grid_params",
       "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_display_grid.xlsx"
+      "_xlsxPath": "component_sheets/component_display_grid.xlsx",
+      "_metadata": {
+        "required": {
+          "type": "boolean"
+        }
+      }
     },
     "comp_radio_button_grid_data": {
       "flow_type": "data_list",
@@ -106,13 +206,23 @@
       "flow_type": "data_list",
       "flow_name": "comp_radio_button_grid_params",
       "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
+      "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx",
+      "_metadata": {
+        "required": {
+          "type": "boolean"
+        }
+      }
     },
     "comp_title_params": {
       "flow_type": "data_list",
       "flow_name": "comp_title_params",
       "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_title_test.xlsx"
+      "_xlsxPath": "component_sheets/component_title_test.xlsx",
+      "_metadata": {
+        "required": {
+          "type": "boolean"
+        }
+      }
     },
     "debug_accordion_data": {
       "flow_type": "data_list",
@@ -125,7 +235,12 @@
       "flow_name": "debug_data_list",
       "data_list_name": "debug",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+      "_metadata": {
+        "no": {
+          "type": "number"
+        }
+      }
     },
     "debug_data_list_order": {
       "flow_type": "data_list",
@@ -150,7 +265,15 @@
       "flow_type": "data_list",
       "flow_name": "debug_item_data",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/debug_template_variables.xlsx"
+      "_xlsxPath": "debug_sheets/debug_template_variables.xlsx",
+      "_metadata": {
+        "number": {
+          "type": "number"
+        },
+        "boolean": {
+          "type": "boolean"
+        }
+      }
     },
     "debug_language_data_list": {
       "flow_type": "data_list",
@@ -170,14 +293,27 @@
       "flow_name": "debug_variable_data",
       "data_list_name": "debug_vars",
       "flow_subtype": "debug",
-      "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx"
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "value_collection": {
+          "type": "object"
+        }
+      }
     },
     "example_calc_data_list": {
       "flow_type": "data_list",
       "flow_subtype": "debug",
       "flow_name": "example_calc_data_list",
       "data_list_name": "example_calc",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx"
+      "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx",
+      "_metadata": {
+        "exclude_from_translation": {
+          "type": "boolean"
+        }
+      }
     },
     "example_data_list": {
       "flow_type": "data_list",
@@ -191,7 +327,15 @@
       "flow_subtype": "debug",
       "flow_name": "example_items_data_list",
       "data_list_name": "example_items",
-      "_xlsxPath": "example_sheets/example_items.xlsx"
+      "_xlsxPath": "example_sheets/example_items.xlsx",
+      "_metadata": {
+        "field_value": {
+          "type": "number"
+        },
+        "unlock_week": {
+          "type": "number"
+        }
+      }
     },
     "example_items_nav_data_list": {
       "flow_type": "data_list",
@@ -224,7 +368,12 @@
       "flow_type": "data_list",
       "flow_name": "example_tg_stepper_data",
       "flow_subtype": "debug",
-      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx"
+      "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx",
+      "_metadata": {
+        "active": {
+          "type": "boolean"
+        }
+      }
     },
     "feature_items_data": {
       "flow_type": "data_list",
@@ -253,7 +402,12 @@
       "flow_type": "data_list",
       "flow_subtype": "debug_lifecycle_actions",
       "flow_name": "debug_launch_actions",
-      "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx"
+      "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "debug_nav_bar_data": {
       "flow_type": "data_list",
@@ -263,17 +417,32 @@
     "debug_task_group_a": {
       "flow_type": "data_list",
       "flow_name": "debug_task_group_a",
-      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "debug_task_group_b": {
       "flow_type": "data_list",
       "flow_name": "debug_task_group_b",
-      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "debug_task_group_c": {
       "flow_type": "data_list",
       "flow_name": "debug_task_group_c",
-      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+      "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "example_generator_list": {
       "flow_type": "data_list",
@@ -312,25 +481,60 @@
       "flow_type": "data_list",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_list",
-      "_xlsxPath": "example_sheets/example_data_pipes.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "example_data_pipe_list_1": {
       "flow_type": "data_list",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_list_1",
-      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
+      "_metadata": {
+        "column_a": {
+          "type": "number"
+        },
+        "column_b": {
+          "type": "number"
+        }
+      }
     },
     "example_data_pipe_list_2": {
       "flow_type": "data_list",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_list_2",
-      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
+      "_metadata": {
+        "column_b": {
+          "type": "number"
+        },
+        "column_c": {
+          "type": "number"
+        }
+      }
     },
     "example_data_pipe_list_3": {
       "flow_type": "data_list",
       "flow_subtype": "example_pipe",
       "flow_name": "example_data_pipe_list_3",
-      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx"
+      "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
+      "_metadata": {
+        "column_b": {
+          "type": "number"
+        },
+        "column_c": {
+          "type": "number"
+        }
+      }
     },
     "example_data_pipe_nested_list": {
       "flow_type": "data_list",
@@ -342,18 +546,39 @@
       "flow_type": "data_list",
       "flow_name": "example_sheet_defaults_list",
       "flow_subtype": "example_sheet_defaults",
-      "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
+      "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx",
+      "_metadata": {
+        "exclude_from_translation": {
+          "type": "boolean"
+        }
+      }
     },
     "feat_data_actions_list": {
       "flow_type": "data_list",
       "flow_name": "feat_data_actions_list",
-      "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
+      "_xlsxPath": "feature_sheets/feature_data_actions.xlsx",
+      "_metadata": {
+        "number": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "feat_task_group_1_data": {
       "flow_type": "data_list",
       "flow_name": "feat_task_group_1_data",
       "data_list_name": "feat_task_group_1",
-      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        },
+        "active": {
+          "type": "boolean"
+        }
+      }
     },
     "feat_task_group_2_data": {
       "flow_type": "data_list",
@@ -371,7 +596,12 @@
       "flow_type": "data_list",
       "flow_name": "feat_task_groups_data",
       "data_list_name": "feat_task_groups",
-      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+      "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx",
+      "_metadata": {
+        "number": {
+          "type": "number"
+        }
+      }
     },
     "debug_filtered": {
       "flow_name": "debug_filtered",
@@ -381,62 +611,182 @@
     "double_example_data_pipe_list": {
       "flow_name": "double_example_data_pipe_list",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "example_data_pipe_concat_1_3": {
       "flow_name": "example_data_pipe_concat_1_3",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "column_b": {
+          "type": "number"
+        },
+        "column_c": {
+          "type": "number"
+        },
+        "column_a": {
+          "type": "number"
+        }
+      }
     },
     "example_data_pipe_concat_1_nested": {
       "flow_name": "example_data_pipe_concat_1_nested",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "column_a": {
+          "type": "number"
+        },
+        "column_b": {
+          "type": "number"
+        }
+      }
     },
     "example_pipe_appended": {
       "flow_name": "example_pipe_appended",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        },
+        "Boolean": {
+          "type": "boolean"
+        },
+        "number": {
+          "type": "number"
+        }
+      }
     },
     "example_pipe_completed": {
       "flow_name": "example_pipe_completed",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "example_pipe_sort_alpha": {
       "flow_name": "example_pipe_sort_alpha",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "example_pipe_sort_desc": {
       "flow_name": "example_pipe_sort_desc",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "example_pipe_sort_order": {
       "flow_name": "example_pipe_sort_order",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "example_pipe_uncompleted": {
       "flow_name": "example_pipe_uncompleted",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "sort_order": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "prefix_example_data_pipe_list": {
       "flow_name": "prefix_example_data_pipe_list",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "task_list_1_with_completed": {
       "flow_name": "task_list_1_with_completed",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "task_list_2_with_completed": {
       "flow_name": "task_list_2_with_completed",
       "flow_subtype": "generated",
-      "flow_type": "data_list"
+      "flow_type": "data_list",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "goal_data": {
       "flow_type": "data_list",
@@ -452,22 +802,42 @@
     "task_group_1": {
       "flow_type": "data_list",
       "flow_name": "task_group_1",
-      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "task_group_2": {
       "flow_type": "data_list",
       "flow_name": "task_group_2",
-      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "task_group_3": {
       "flow_type": "data_list",
       "flow_name": "task_group_3",
-      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "task_group_4": {
       "flow_type": "data_list",
       "flow_name": "task_group_4",
-      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "task_list_1": {
       "flow_type": "data_list",
@@ -949,11 +1319,23 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx"
     },
+    "comp_plh_module_details_header": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_module_details_header",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_plh_module_details_header.xlsx"
+    },
     "comp_plh_module_list_item": {
       "flow_type": "template",
       "flow_name": "comp_plh_module_list_item",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx"
+    },
+    "comp_plh_progress_wheel": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_progress_wheel",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_plh_progress_wheel.xlsx"
     },
     "comp_progress_path": {
       "flow_type": "template",
@@ -2926,6 +3308,16 @@
       "flow_name": "feat_footer",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_footer.xlsx"
     },
+    "feat_nav_stack": {
+      "flow_type": "template",
+      "flow_name": "feat_nav_stack",
+      "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
+    },
+    "feat_nav_stack_child": {
+      "flow_type": "template",
+      "flow_name": "feat_nav_stack_child",
+      "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
+    },
     "feat_task_group_subtask_toggle": {
       "flow_type": "template",
       "flow_name": "feat_task_group_subtask_toggle",
@@ -2998,16 +3390,6 @@
       "flow_type": "template",
       "flow_name": "feature_lottie",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
-    },
-    "feature_nav_stack": {
-      "flow_type": "template",
-      "flow_name": "feature_nav_stack",
-      "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
-    },
-    "feature_nav_stack_child": {
-      "flow_type": "template",
-      "flow_name": "feature_nav_stack_child",
-      "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
     },
     "feature_number_selector": {
       "flow_type": "template",

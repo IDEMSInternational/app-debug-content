@@ -22,5 +22,13 @@
       "completed": true
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
+  "_xlsxPath": "feature_sheets/feature_data_actions.xlsx",
+  "_metadata": {
+    "number": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "flow_type": "data_list",
-  "flow_name": "comp_task_progress_bar_data",
+  "flow_name": "comp_plh_progress_wheel_data",
   "status": "released",
   "rows": [
     {
@@ -24,7 +24,7 @@
       "completed": false
     }
   ],
-  "_xlsxPath": "component_sheets/component_task_progress_bar.xlsx",
+  "_xlsxPath": "component_sheets/component_plh_progress_wheel.xlsx",
   "_metadata": {
     "completed": {
       "type": "boolean"

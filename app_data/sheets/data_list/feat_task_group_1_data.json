@@ -21,5 +21,13 @@
       "active": false
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx"
+  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx",
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
 }

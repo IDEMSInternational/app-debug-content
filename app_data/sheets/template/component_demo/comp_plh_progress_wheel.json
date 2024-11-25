@@ -1,0 +1,23 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_wheel",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Progress Wheel – Dynamic Data",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "plh_progress_wheel",
+      "name": "wheel_1",
+      "_nested_name": "wheel_1"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_progress_wheel.xlsx"
+}

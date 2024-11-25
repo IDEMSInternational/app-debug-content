@@ -6,10 +6,6 @@
   "flow_subtype": "debug",
   "rows": [
     {
-      "id": "@metadata",
-      "no": "type: number"
-    },
-    {
       "id": "item_1",
       "text": "Item 1 text",
       "image_asset": "images/example/jasper_1.jpg",
@@ -51,5 +47,10 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx"
+  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+  "_metadata": {
+    "no": {
+      "type": "number"
+    }
+  }
 }
