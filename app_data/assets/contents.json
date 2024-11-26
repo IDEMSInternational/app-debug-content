@@ -101,6 +101,10 @@
     "md5Checksum": "91bd746e278b1939a8eb7ad1ef6cc59d",
     "size_kb": 255.4
   },
+  "images/diamond.png": {
+    "md5Checksum": "4e88aed59658d5d1305c1c63b45171ba",
+    "size_kb": 4.3
+  },
   "images/example/110-536x354.jpg": {
     "md5Checksum": "bf471a3ecb792c6b8bdc9d8c82aeebc1",
     "size_kb": 39.1
@@ -213,6 +217,10 @@
     "md5Checksum": "6ca7d189a83dfb8bc324844899755518",
     "size_kb": 0.9
   },
+  "images/icons/notification_bell.png": {
+    "md5Checksum": "fbf9c1facc6a1a99fe5140433b163903",
+    "size_kb": 0.9
+  },
   "images/icons/question_mark.svg": {
     "md5Checksum": "49e1d1e478068a24949d87d09c9ba07b",
     "size_kb": 0.8
@@ -256,6 +264,10 @@
   "images/module-1.png": {
     "md5Checksum": "840e6c66b936d36e7c485c1f96972573",
     "size_kb": 28.2
+  },
+  "images/shining_diamond.png": {
+    "md5Checksum": "fb49318e1789c7b70ac407bec6ec25c2",
+    "size_kb": 17.7
   },
   "images/square_1.svg": {
     "md5Checksum": "6e31011e97989999dcc561fd205fed78",

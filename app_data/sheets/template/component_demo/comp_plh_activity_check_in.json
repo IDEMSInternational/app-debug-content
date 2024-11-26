@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_activity_check_in",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "page_title",
+      "value": "Activity Check in",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "page_title"
+    },
+    {
+      "type": "plh_activity_check_in",
+      "value": true,
+      "parameter_list": {
+        "id": "id_1",
+        "title": "Check-in",
+        "locked_icon_asset": "images/icons/locked.png",
+        "locked_image_asset": "images/diamond.png",
+        "unlocked_icon_asset": "images/icons/notification_bell.png",
+        "unlocked_image_asset": "images/shining_diamond.png"
+      },
+      "name": "plh_activity_check_in_3",
+      "_nested_name": "plh_activity_check_in_3"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_activity_check_in.xlsx"
+}

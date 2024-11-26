@@ -6,11 +6,98 @@
     {
       "type": "title",
       "name": "title_home",
-      "value": "Home",
+      "value": "Welcome to Debug",
       "_translations": {
         "value": {}
       },
       "_nested_name": "title_home"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Access Templates",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_1"
+    },
+    {
+      "type": "button",
+      "name": "button_templates",
+      "value": "Templates",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "/template"
+          ],
+          "_raw": "click | go_to:/template",
+          "_cleaned": "click | go_to:/template"
+        }
+      ],
+      "_nested_name": "button_templates"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Switch Themes",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "button",
+      "name": "button_themes",
+      "value": "Themes",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "/theme"
+          ],
+          "_raw": "click | go_to:/theme",
+          "_cleaned": "click | go_to:/theme"
+        }
+      ],
+      "_nested_name": "button_themes"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "View Components",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "button",
+      "name": "button_components",
+      "value": "Components",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "/component"
+          ],
+          "_raw": "click | go_to:/component",
+          "_cleaned": "click | go_to:/component"
+        }
+      ],
+      "_nested_name": "button_components"
     }
   ],
   "_xlsxPath": "navigation.xlsx"

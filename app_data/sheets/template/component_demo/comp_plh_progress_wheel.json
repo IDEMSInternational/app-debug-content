@@ -6,7 +6,7 @@
   "rows": [
     {
       "type": "title",
-      "value": "Progress Wheel – Dynamic Data",
+      "value": "Progress Wheel",
       "_translations": {
         "value": {}
       },
@@ -16,7 +16,30 @@
     {
       "type": "plh_progress_wheel",
       "name": "wheel_1",
+      "parameter_list": {
+        "title": "Completed",
+        "task_total": "100",
+        "task_progress": "82"
+      },
       "_nested_name": "wheel_1"
+    },
+    {
+      "type": "title",
+      "value": "Progress Wheel without Title",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "plh_progress_wheel",
+      "name": "wheel_2",
+      "parameter_list": {
+        "task_total": "5",
+        "task_progress": "3"
+      },
+      "_nested_name": "wheel_2"
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_progress_wheel.xlsx"

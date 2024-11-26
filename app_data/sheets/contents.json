@@ -127,16 +127,6 @@
         }
       }
     },
-    "comp_plh_progress_wheel_data": {
-      "flow_type": "data_list",
-      "flow_name": "comp_plh_progress_wheel_data",
-      "_xlsxPath": "component_sheets/component_plh_progress_wheel.xlsx",
-      "_metadata": {
-        "completed": {
-          "type": "boolean"
-        }
-      }
-    },
     "comp_task_bar_legacy_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_bar_legacy_data",
@@ -1312,6 +1302,12 @@
       "flow_name": "comp_pdf",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_pdf.xlsx"
+    },
+    "comp_plh_activity_check_in": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_activity_check_in",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_plh_activity_check_in.xlsx"
     },
     "comp_plh_bottom_nav": {
       "flow_type": "template",
