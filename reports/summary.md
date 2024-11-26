@@ -10,7 +10,7 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 12 |
-| button | 278 |
+| button | 281 |
 | calendar | 1 |
 | carousel | 7 |
 | colour_palette | 1 |
@@ -39,10 +39,11 @@
 | parent_point_box | 25 |
 | parent_point_counter | 2 |
 | pdf | 3 |
+| plh_activity_check_in | 1 |
 | plh_bottom_nav | 1 |
 | plh_module_details_header | 3 |
 | plh_module_list_item | 5 |
-| plh_progress_wheel | 1 |
+| plh_progress_wheel | 2 |
 | progress_bar | 1 |
 | progress_path | 2 |
 | qr_code | 2 |
@@ -62,13 +63,13 @@
 | task_card | 24 |
 | task_progress_bar | 3 |
 | template | 127 |
-| text | 916 |
+| text | 919 |
 | text_area | 12 |
 | text_box | 51 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 417 |
+| title | 419 |
 | toggle_bar | 46 |
 | update_action_list | 2 |
 | video | 4 |
@@ -98,7 +99,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 60 |
+| go_to | 63 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav_stack | 7 |
@@ -129,7 +130,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31493 KB | 31.5 MB |
+| total | 31516 KB | 31.5 MB |
 | unused | 936 KB | 0.9 MB |
 </details>
 
@@ -187,6 +188,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/Noura.png | 4.2 | 3 |
 | images/avatar_1.png | 67.7 | 17 |
 | images/bg_illustration.png | 255.4 | 3 |
+| images/diamond.png | 4.3 | 1 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
 | images/example/408-536x354.jpg | 23.2 | 1 |
@@ -213,7 +215,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 11 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 2 |
+| images/icons/locked.png | 0.9 | 3 |
+| images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 6 |
 | images/icons/school_blue.svg | 1.6 | 9 |
@@ -225,6 +228,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick.svg | 0.3 | 10 |
 | images/icons/tick_white.svg | 0.3 | 21 |
 | images/module-1.png | 28.2 | 5 |
+| images/shining_diamond.png | 17.7 | 1 |
 | images/square_1.svg | 0.7 | 1 |
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
@@ -248,7 +252,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 28 |
+| data_list |  | 27 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 6 |
@@ -267,7 +271,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 9 |
 | template |  | 79 |
-| template | component_demo | 54 |
+| template | component_demo | 55 |
 | template | debug | 260 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

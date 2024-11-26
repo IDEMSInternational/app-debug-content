@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 278
+        "count": 281
       },
       {
         "type": "calendar",
@@ -146,6 +146,10 @@
         "count": 3
       },
       {
+        "type": "plh_activity_check_in",
+        "count": 1
+      },
+      {
         "type": "plh_bottom_nav",
         "count": 1
       },
@@ -159,7 +163,7 @@
       },
       {
         "type": "plh_progress_wheel",
-        "count": 1
+        "count": 2
       },
       {
         "type": "progress_bar",
@@ -239,7 +243,7 @@
       },
       {
         "type": "text",
-        "count": 916
+        "count": 919
       },
       {
         "type": "text_area",
@@ -263,7 +267,7 @@
       },
       {
         "type": "title",
-        "count": 417
+        "count": 419
       },
       {
         "type": "toggle_bar",
@@ -359,7 +363,7 @@
       },
       {
         "type": "go_to",
-        "count": 60
+        "count": 63
       },
       {
         "type": "go_to_url",
@@ -459,7 +463,7 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31493 KB",
+        "KB": "31516 KB",
         "MB": "31.5 MB"
       },
       {
@@ -614,6 +618,11 @@
         "size_kb": 255.4
       },
       {
+        "path": "images/diamond.png",
+        "count": 1,
+        "size_kb": 4.3
+      },
+      {
         "path": "images/example/110-536x354.jpg",
         "count": 1,
         "size_kb": 39.1
@@ -745,7 +754,12 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 2,
+        "count": 3,
+        "size_kb": 0.9
+      },
+      {
+        "path": "images/icons/notification_bell.png",
+        "count": 1,
         "size_kb": 0.9
       },
       {
@@ -802,6 +816,11 @@
         "path": "images/module-1.png",
         "count": 5,
         "size_kb": 28.2
+      },
+      {
+        "path": "images/shining_diamond.png",
+        "count": 1,
+        "size_kb": 17.7
       },
       {
         "path": "images/square_1.svg",
@@ -890,7 +909,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 28
+        "total": 27
       },
       {
         "type": "data_list",
@@ -985,7 +1004,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 54
+        "total": 55
       },
       {
         "type": "template",

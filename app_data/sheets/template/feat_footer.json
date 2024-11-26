@@ -12,11 +12,11 @@
         },
         {
           "image": "images/icons/star_white.svg",
-          "target_template": "comp_button"
+          "target_template": "feature_rtl_language"
         },
         {
           "image": "images/icons/book_white.svg",
-          "target_template": "comp_button"
+          "target_template": "debug_skin_select"
         }
       ],
       "type": "set_variable",
