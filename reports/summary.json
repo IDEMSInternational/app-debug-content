@@ -6,6 +6,10 @@
         "count": 1
       },
       {
+        "type": "Title",
+        "count": 1
+      },
+      {
         "type": "accordion",
         "count": 5
       },
@@ -31,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 281
+        "count": 283
       },
       {
         "type": "calendar",
@@ -79,7 +83,7 @@
       },
       {
         "type": "display_group",
-        "count": 177
+        "count": 179
       },
       {
         "type": "drawer",
@@ -235,7 +239,7 @@
       },
       {
         "type": "task_progress_bar",
-        "count": 3
+        "count": 4
       },
       {
         "type": "template",
@@ -243,7 +247,7 @@
       },
       {
         "type": "text",
-        "count": 919
+        "count": 920
       },
       {
         "type": "text_area",
@@ -267,7 +271,7 @@
       },
       {
         "type": "title",
-        "count": 419
+        "count": 422
       },
       {
         "type": "toggle_bar",
@@ -375,7 +379,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 7
+        "count": 8
       },
       {
         "type": "open_external",
@@ -999,7 +1003,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 79
+        "total": 80
       },
       {
         "type": "template",
