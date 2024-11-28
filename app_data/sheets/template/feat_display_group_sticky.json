@@ -1,0 +1,100 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_display_group_sticky",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Sticky header",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "header"
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_2.title_1"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "Title",
+      "value": "Main page content",
+      "_translations": {
+        "value": {}
+      },
+      "name": "Title_4",
+      "_nested_name": "Title_4"
+    },
+    {
+      "type": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "button",
+      "value": "Open this template as nav stack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: feat_display_group_sticky, use_template_header: true",
+          "_cleaned": "click | nav_stack: open | template: feat_display_group_sticky, use_template_header: true",
+          "params": {
+            "template": "feat_display_group_sticky",
+            "use_template_header": true
+          }
+        }
+      ],
+      "name": "button_6",
+      "_nested_name": "button_6"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Sticky footer",
+          "_translations": {
+            "value": {}
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_7.title_1"
+        },
+        {
+          "type": "button",
+          "value": "Click here",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_7.button_2"
+        }
+      ],
+      "name": "display_group_7",
+      "_nested_name": "display_group_7"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_display_group_sticky.xlsx"
+}

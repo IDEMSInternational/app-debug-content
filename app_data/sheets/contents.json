@@ -3299,6 +3299,11 @@
       "flow_name": "feat_data_actions_summary",
       "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
     },
+    "feat_display_group_sticky": {
+      "flow_type": "template",
+      "flow_name": "feat_display_group_sticky",
+      "_xlsxPath": "feature_sheets/feature_display_group_sticky.xlsx"
+    },
     "feat_footer": {
       "flow_type": "template",
       "flow_name": "feat_footer",

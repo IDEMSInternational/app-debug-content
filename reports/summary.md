@@ -4,13 +4,14 @@
 | type | count |
 | --- | --- |
 | @item.input_type | 1 |
+| Title | 1 |
 | accordion | 5 |
 | accordion_section | 17 |
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 12 |
-| button | 281 |
+| button | 283 |
 | calendar | 1 |
 | carousel | 7 |
 | colour_palette | 1 |
@@ -22,7 +23,7 @@
 | declare_global_constant | 1 |
 | demo_basic | 3 |
 | display_grid | 3 |
-| display_group | 177 |
+| display_group | 179 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
@@ -61,15 +62,15 @@
 | square_button | 8 |
 | subtitle | 62 |
 | task_card | 24 |
-| task_progress_bar | 3 |
+| task_progress_bar | 4 |
 | template | 127 |
-| text | 919 |
+| text | 920 |
 | text_area | 12 |
 | text_box | 51 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 419 |
+| title | 422 |
 | toggle_bar | 46 |
 | update_action_list | 2 |
 | video | 4 |
@@ -102,7 +103,7 @@
 | go_to | 63 |
 | go_to_url | 5 |
 | invalid_action | 1 |
-| nav_stack | 7 |
+| nav_stack | 8 |
 | open_external | 2 |
 | pop_up | 38 |
 | process_template | 2 |
@@ -270,7 +271,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
-| template |  | 79 |
+| template |  | 80 |
 | template | component_demo | 55 |
 | template | debug | 260 |
 | template | example_generator | 2 |
