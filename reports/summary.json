@@ -43,7 +43,7 @@
       },
       {
         "type": "carousel",
-        "count": 7
+        "count": 9
       },
       {
         "type": "colour_palette",
@@ -59,7 +59,7 @@
       },
       {
         "type": "data_items",
-        "count": 38
+        "count": 39
       },
       {
         "type": "debug_toggle",
@@ -83,7 +83,7 @@
       },
       {
         "type": "display_group",
-        "count": 179
+        "count": 181
       },
       {
         "type": "drawer",
@@ -103,7 +103,7 @@
       },
       {
         "type": "items",
-        "count": 49
+        "count": 50
       },
       {
         "type": "latex",
@@ -247,7 +247,7 @@
       },
       {
         "type": "text",
-        "count": 920
+        "count": 922
       },
       {
         "type": "text_area",
@@ -271,7 +271,7 @@
       },
       {
         "type": "title",
-        "count": 422
+        "count": 426
       },
       {
         "type": "toggle_bar",
@@ -928,7 +928,7 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 6
+        "total": 7
       },
       {
         "type": "data_list",
