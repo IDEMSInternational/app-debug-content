@@ -3284,7 +3284,7 @@
             "variant": "compact"
           },
           "APP_FOOTER_DEFAULTS": {
-            "templateName": "false"
+            "templateName": false
           }
         }
       },
