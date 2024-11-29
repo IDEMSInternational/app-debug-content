@@ -13,22 +13,22 @@
 | audio | 12 |
 | button | 283 |
 | calendar | 1 |
-| carousel | 7 |
+| carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 47 |
 | dashed_box | 19 |
-| data_items | 38 |
+| data_items | 39 |
 | debug_toggle | 1 |
 | declare_field_default | 1 |
 | declare_global_constant | 1 |
 | demo_basic | 3 |
 | display_grid | 3 |
-| display_group | 179 |
+| display_group | 181 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
 | image | 74 |
-| items | 49 |
+| items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 1 |
@@ -64,13 +64,13 @@
 | task_card | 24 |
 | task_progress_bar | 4 |
 | template | 127 |
-| text | 920 |
+| text | 922 |
 | text_area | 12 |
 | text_box | 51 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 422 |
+| title | 426 |
 | toggle_bar | 46 |
 | update_action_list | 2 |
 | video | 4 |
@@ -256,7 +256,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list |  | 27 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
-| data_list | component_demo | 6 |
+| data_list | component_demo | 7 |
 | data_list | debug | 18 |
 | data_list | debug_lifecycle_actions | 1 |
 | data_list | example_generator | 3 |

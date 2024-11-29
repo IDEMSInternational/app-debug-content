@@ -56,11 +56,11 @@
           "args": [
             "open"
           ],
-          "_raw": "click | nav_stack: open | template: feat_display_group_sticky, use_template_header: true",
-          "_cleaned": "click | nav_stack: open | template: feat_display_group_sticky, use_template_header: true",
+          "_raw": "click | nav_stack: open | template: feat_display_group_sticky, header: false",
+          "_cleaned": "click | nav_stack: open | template: feat_display_group_sticky, header: false",
           "params": {
             "template": "feat_display_group_sticky",
-            "use_template_header": true
+            "header": false
           }
         }
       ],

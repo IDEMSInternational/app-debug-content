@@ -158,6 +158,12 @@
         }
       }
     },
+    "comp_carousel_items": {
+      "flow_type": "data_list",
+      "flow_name": "comp_carousel_items",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_carousel.xlsx"
+    },
     "comp_data_items_list": {
       "flow_type": "data_list",
       "flow_name": "comp_data_items_list",
