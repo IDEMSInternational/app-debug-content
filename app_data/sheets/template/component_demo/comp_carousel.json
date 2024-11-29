@@ -1510,6 +1510,206 @@
       ],
       "name": "carousel_17",
       "_nested_name": "carousel_17"
+    },
+    {
+      "type": "title",
+      "value": "Example using items",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_19",
+      "_nested_name": "title_19"
+    },
+    {
+      "type": "carousel",
+      "rows": [
+        {
+          "type": "items",
+          "value": "@data.comp_carousel_items",
+          "rows": [
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "column"
+              },
+              "style_list": [
+                "border-style: solid"
+              ],
+              "rows": [
+                {
+                  "type": "title",
+                  "value": "@item.title",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "name": "title_1",
+                  "_nested_name": "carousel_20.items_1.display_group_1.title_1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.title",
+                        "matchedExpression": "@item.title",
+                        "type": "item",
+                        "fieldName": "title"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.title": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": "@item.text",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "name": "text_2",
+                  "_nested_name": "carousel_20.items_1.display_group_1.text_2",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.text",
+                        "matchedExpression": "@item.text",
+                        "type": "item",
+                        "fieldName": "text"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.text": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "name": "display_group_1",
+              "_nested_name": "carousel_20.items_1.display_group_1"
+            }
+          ],
+          "name": "items_1",
+          "_nested_name": "carousel_20.items_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.comp_carousel_items",
+                "matchedExpression": "@data.comp_carousel_items",
+                "type": "data",
+                "fieldName": "comp_carousel_items"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.comp_carousel_items": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "carousel_20",
+      "_nested_name": "carousel_20"
+    },
+    {
+      "type": "title",
+      "value": "[Not Working] Example using data_items",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_22",
+      "_nested_name": "title_22"
+    },
+    {
+      "type": "carousel",
+      "name": "data_items_carousel",
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "@data.comp_carousel_items",
+          "rows": [
+            {
+              "type": "display_group",
+              "parameter_list": {
+                "style": "column"
+              },
+              "style_list": [
+                "border-style: solid"
+              ],
+              "rows": [
+                {
+                  "type": "title",
+                  "value": "@item.title",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "name": "title_1",
+                  "_nested_name": "data_items_carousel.data_items_1.display_group_1.title_1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.title",
+                        "matchedExpression": "@item.title",
+                        "type": "item",
+                        "fieldName": "title"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.title": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": "@item.text",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "name": "text_2",
+                  "_nested_name": "data_items_carousel.data_items_1.display_group_1.text_2",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.text",
+                        "matchedExpression": "@item.text",
+                        "type": "item",
+                        "fieldName": "text"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.text": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "name": "display_group_1",
+              "_nested_name": "data_items_carousel.data_items_1.display_group_1"
+            }
+          ],
+          "name": "data_items_1",
+          "_nested_name": "data_items_carousel.data_items_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.comp_carousel_items",
+                "matchedExpression": "@data.comp_carousel_items",
+                "type": "data",
+                "fieldName": "comp_carousel_items"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.comp_carousel_items": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "data_items_carousel"
     }
   ],
   "_xlsxPath": "component_sheets/component_carousel.xlsx"
