@@ -6,7 +6,7 @@
   "rows": [
     {
       "type": "title",
-      "value": "Task Progress Bar – Dynamic Data",
+      "value": "Task Progress Bar",
       "_translations": {
         "value": {}
       },
@@ -59,7 +59,7 @@
     },
     {
       "type": "text",
-      "value": "Filtered tasks (id_1 and id_3):",
+      "value": "Filtered tasks (id_a and id_c):",
       "_translations": {
         "value": {}
       },
@@ -68,7 +68,7 @@
     },
     {
       "name": "filtered_id_1",
-      "value": "id_1",
+      "value": "\"id_a\"",
       "_translations": {
         "value": {}
       },
@@ -77,7 +77,7 @@
     },
     {
       "name": "filtered_id_2",
-      "value": "id_3",
+      "value": "\"id_c\"",
       "_translations": {
         "value": {}
       },
@@ -89,7 +89,7 @@
       "parameter_list": {
         "task_group_data": "@local.task_group",
         "completed_field": "comp_task_progress_bar_completed",
-        "filter": "@item.id ===@local.filtered_id_1 || @item.id === @local.filtered_id_2"
+        "filter": "@task_item.id === @local.filtered_id_1 || @task_item.id === @local.filtered_id_2"
       },
       "name": "task_progress_bar_9",
       "_nested_name": "task_progress_bar_9",
@@ -105,25 +105,13 @@
           ],
           "filter": [
             {
-              "fullExpression": "@item.id ===@local.filtered_id_1 || @item.id === @local.filtered_id_2",
-              "matchedExpression": "@item.id",
-              "type": "item",
-              "fieldName": "id"
-            },
-            {
-              "fullExpression": "@item.id ===@local.filtered_id_1 || @item.id === @local.filtered_id_2",
+              "fullExpression": "@task_item.id === @local.filtered_id_1 || @task_item.id === @local.filtered_id_2",
               "matchedExpression": "@local.filtered_id_1",
               "type": "local",
               "fieldName": "filtered_id_1"
             },
             {
-              "fullExpression": "@item.id ===@local.filtered_id_1 || @item.id === @local.filtered_id_2",
-              "matchedExpression": "@item.id",
-              "type": "item",
-              "fieldName": "id"
-            },
-            {
-              "fullExpression": "@item.id ===@local.filtered_id_1 || @item.id === @local.filtered_id_2",
+              "fullExpression": "@task_item.id === @local.filtered_id_1 || @task_item.id === @local.filtered_id_2",
               "matchedExpression": "@local.filtered_id_2",
               "type": "local",
               "fieldName": "filtered_id_2"
@@ -135,10 +123,6 @@
         "@local.task_group": [
           "parameter_list.task_group_data"
         ],
-        "@item.id": [
-          "parameter_list.filter",
-          "parameter_list.filter"
-        ],
         "@local.filtered_id_1": [
           "parameter_list.filter"
         ],
@@ -148,13 +132,88 @@
       }
     },
     {
-      "type": "title",
-      "value": "Task Progress Wheel – Dynamic Data",
+      "type": "text",
+      "value": "Filtered tasks within data-items loop:",
       "_translations": {
         "value": {}
       },
-      "name": "title_10",
-      "_nested_name": "title_10"
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.comp_data_items_list",
+      "parameter_list": {
+        "filter": "@item.id === \"id_1\""
+      },
+      "rows": [
+        {
+          "type": "task_progress_bar",
+          "parameter_list": {
+            "task_group_data": "@local.task_group",
+            "completed_field": "comp_task_progress_bar_completed",
+            "filter": "@task_item.id === \"id_a\" || @task_item.id === \"id_c\""
+          },
+          "name": "task_progress_bar_1",
+          "_nested_name": "data_items_11.task_progress_bar_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "task_group_data": [
+                {
+                  "fullExpression": "@local.task_group",
+                  "matchedExpression": "@local.task_group",
+                  "type": "local",
+                  "fieldName": "task_group"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.task_group": [
+              "parameter_list.task_group_data"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_11",
+      "_nested_name": "data_items_11",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.comp_data_items_list",
+            "matchedExpression": "@data.comp_data_items_list",
+            "type": "data",
+            "fieldName": "comp_data_items_list"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id === \"id_1\"",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.comp_data_items_list": [
+          "value"
+        ],
+        "@item.id": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Task Progress Wheel",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_13",
+      "_nested_name": "title_13"
     },
     {
       "type": "task_progress_bar",
@@ -164,8 +223,8 @@
         "variant": "wheel",
         "wheel_title": "Completed"
       },
-      "name": "task_progress_bar_11",
-      "_nested_name": "task_progress_bar_11",
+      "name": "task_progress_bar_14",
+      "_nested_name": "task_progress_bar_14",
       "_dynamicFields": {
         "parameter_list": {
           "task_group_data": [
@@ -195,7 +254,7 @@
             "value": {}
           },
           "name": "text_1",
-          "_nested_name": "data_items_12.text_1",
+          "_nested_name": "data_items_15.text_1",
           "_dynamicFields": {
             "value": [
               {
@@ -219,7 +278,7 @@
           "_translations": {
             "value": {}
           },
-          "_nested_name": "data_items_12.text_completed_@item.id",
+          "_nested_name": "data_items_15.text_completed_@item.id",
           "_dynamicFields": {
             "name": [
               {
@@ -239,7 +298,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_12.text_completed_@item.id",
+                "fullExpression": "data_items_15.text_completed_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -275,7 +334,7 @@
             }
           ],
           "name": "button_3",
-          "_nested_name": "data_items_12.button_3",
+          "_nested_name": "data_items_15.button_3",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -336,7 +395,7 @@
             }
           ],
           "hidden": true,
-          "_nested_name": "data_items_12.toggle_bar_@item.id",
+          "_nested_name": "data_items_15.toggle_bar_@item.id",
           "_dynamicFields": {
             "name": [
               {
@@ -386,7 +445,7 @@
             },
             "_nested_name": [
               {
-                "fullExpression": "data_items_12.toggle_bar_@item.id",
+                "fullExpression": "data_items_15.toggle_bar_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -409,8 +468,8 @@
           }
         }
       ],
-      "name": "data_items_12",
-      "_nested_name": "data_items_12",
+      "name": "data_items_15",
+      "_nested_name": "data_items_15",
       "_dynamicFields": {
         "value": [
           {

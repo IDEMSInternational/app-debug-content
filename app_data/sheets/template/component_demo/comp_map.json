@@ -2,6 +2,13 @@
   "flow_type": "template",
   "flow_name": "comp_map",
   "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": false
+      }
+    }
+  },
   "flow_subtype": "component_demo",
   "rows": [
     {
@@ -14,17 +21,69 @@
       "_nested_name": "extent_kenya"
     },
     {
+      "name": "show_map_1",
+      "value": true,
+      "type": "set_variable",
+      "_nested_name": "show_map_1"
+    },
+    {
       "type": "map",
+      "name": "map_1",
+      "parameter_list": {
+        "layer_groups": "@data.comp_map_layer_groups",
+        "extent": "@local.extent_kenya"
+      },
+      "condition": "@local.show_map_1",
+      "_nested_name": "map_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "layer_groups": [
+            {
+              "fullExpression": "@data.comp_map_layer_groups",
+              "matchedExpression": "@data.comp_map_layer_groups",
+              "type": "data",
+              "fieldName": "comp_map_layer_groups"
+            }
+          ],
+          "extent": [
+            {
+              "fullExpression": "@local.extent_kenya",
+              "matchedExpression": "@local.extent_kenya",
+              "type": "local",
+              "fieldName": "extent_kenya"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "@local.show_map_1",
+            "matchedExpression": "@local.show_map_1",
+            "type": "local",
+            "fieldName": "show_map_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.comp_map_layer_groups": [
+          "parameter_list.layer_groups"
+        ],
+        "@local.extent_kenya": [
+          "parameter_list.extent"
+        ],
+        "@local.show_map_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "name": "map_2",
       "parameter_list": {
         "layers": "@data.comp_map_layer_data",
         "extent": "@local.extent_kenya"
       },
-      "style_list": [
-        "width: 100%",
-        "height: 100px"
-      ],
-      "name": "map_3",
-      "_nested_name": "map_3",
+      "condition": "!@local.show_map_1",
+      "_nested_name": "map_2",
       "_dynamicFields": {
         "parameter_list": {
           "layers": [
@@ -43,7 +102,15 @@
               "fieldName": "extent_kenya"
             }
           ]
-        }
+        },
+        "condition": [
+          {
+            "fullExpression": "!@local.show_map_1",
+            "matchedExpression": "!@local.show_map_1",
+            "type": "local",
+            "fieldName": "show_map_1"
+          }
+        ]
       },
       "_dynamicDependencies": {
         "@data.comp_map_layer_data": [
@@ -51,6 +118,69 @@
         ],
         "@local.extent_kenya": [
           "parameter_list.extent"
+        ],
+        "!@local.show_map_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Toggle visible map",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "show_map_1",
+            "!@local.show_map_1"
+          ],
+          "_raw": "click | set_local: show_map_1: !@local.show_map_1",
+          "_cleaned": "click | set_local: show_map_1: !@local.show_map_1"
+        }
+      ],
+      "name": "button_6",
+      "_nested_name": "button_6",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "!@local.show_map_1",
+                  "matchedExpression": "!@local.show_map_1",
+                  "type": "local",
+                  "fieldName": "show_map_1"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: show_map_1: !@local.show_map_1",
+                "matchedExpression": "!@local.show_map_1",
+                "type": "local",
+                "fieldName": "show_map_1"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_local: show_map_1: !@local.show_map_1",
+                "matchedExpression": "!@local.show_map_1",
+                "type": "local",
+                "fieldName": "show_map_1"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "!@local.show_map_1": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
         ]
       }
     }

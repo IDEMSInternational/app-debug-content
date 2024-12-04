@@ -11,7 +11,7 @@
         "value": {}
       },
       "parameter_list": {
-        "background_illustration": "images/bg_illustration.png",
+        "background_image_asset": "images/bg_illustration.png",
         "module_image_asset": "images/module-1.png"
       },
       "name": "plh_module_details_header_2",
@@ -24,7 +24,7 @@
         "value": {}
       },
       "parameter_list": {
-        "background_illustration": "images/bg_illustration.png",
+        "background_image_asset": "images/bg_illustration.png",
         "module_image_asset": "images/module-1.png"
       },
       "name": "plh_module_details_header_3",
@@ -37,7 +37,7 @@
         "value": {}
       },
       "parameter_list": {
-        "background_illustration": "images/bg_illustration.png",
+        "background_image_asset": "images/bg_illustration.png",
         "module_image_asset": "images/Noura.png"
       },
       "name": "plh_module_details_header_4",

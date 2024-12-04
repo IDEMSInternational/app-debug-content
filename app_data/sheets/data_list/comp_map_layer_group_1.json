@@ -1,0 +1,80 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_map_layer_group_1",
+  "status": "released",
+  "rows": [
+    {
+      "id": "conflict_forecast",
+      "name": "Conflict – Forecast",
+      "description": "Probability of conflict occuring in the next 4 weeks",
+      "source_asset": "map_data/forecast_data_geojson.json",
+      "type": "heatmap",
+      "property": "pred_prob_any_riot_4w",
+      "point_radius_max": 14,
+      "blur": 8,
+      "scale_max": 1,
+      "scale_min": 0,
+      "scale_bins": "0, 0.15, 0.3, 0.4, 0.6, 0.7, 0.8, 1",
+      "scale_title": "Conflict probability (next 4 weeks)",
+      "excluded_features_colour": "red",
+      "gradient_palette": "#c4c4c4, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740035",
+      "opacity": 1,
+      "visible_default": false
+    },
+    {
+      "id": "riots_forecast",
+      "name": "Riots Forecast",
+      "description": "Next 4 weeks",
+      "source_asset": "map_data/forecast_riots.json",
+      "type": "vector",
+      "stroke": "none",
+      "property": "prob_bin",
+      "scale_max": 8,
+      "scale_min": 1,
+      "scale_title": "Riots risks level",
+      "scale_slider": true,
+      "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740036",
+      "visible_default": true
+    },
+    {
+      "id": "conflict_incidence",
+      "name": "Conflict – Incidence",
+      "source_asset": "map_data/forecast_data_geojson.json",
+      "type": "vector",
+      "fill": "blue",
+      "stroke": "none",
+      "point_radius_max": 10,
+      "point_radius_property_max": 1,
+      "point_radius_property": "any_riot_4w",
+      "opacity": 0.5,
+      "visible_default": false
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_map.xlsx",
+  "_metadata": {
+    "point_radius_max": {
+      "type": "number"
+    },
+    "blur": {
+      "type": "number"
+    },
+    "scale_max": {
+      "type": "number"
+    },
+    "scale_min": {
+      "type": "number"
+    },
+    "opacity": {
+      "type": "number"
+    },
+    "visible_default": {
+      "type": "boolean"
+    },
+    "scale_slider": {
+      "type": "boolean"
+    },
+    "point_radius_property_max": {
+      "type": "number"
+    }
+  }
+}
