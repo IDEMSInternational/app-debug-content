@@ -96,8 +96,8 @@
             "@local.combo_box_2_var",
             "this.value"
           ],
-          "_raw": "changed | set_field:@local.combo_box_2_var:@local.combo_box_2",
-          "_cleaned": "changed | set_field:@local.combo_box_2_var:@local.combo_box_2"
+          "_raw": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
+          "_cleaned": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2"
         }
       ],
       "exclude_from_translation": true,
@@ -120,13 +120,13 @@
             },
             "_raw": [
               {
-                "fullExpression": "changed | set_field:@local.combo_box_2_var:@local.combo_box_2",
+                "fullExpression": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
                 "matchedExpression": "@local.combo_box_2_var",
                 "type": "local",
                 "fieldName": "combo_box_2_var"
               },
               {
-                "fullExpression": "changed | set_field:@local.combo_box_2_var:@local.combo_box_2",
+                "fullExpression": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
                 "matchedExpression": "@local.combo_box_2",
                 "type": "local",
                 "fieldName": "combo_box_2"
@@ -134,13 +134,13 @@
             ],
             "_cleaned": [
               {
-                "fullExpression": "changed | set_field:@local.combo_box_2_var:@local.combo_box_2",
+                "fullExpression": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
                 "matchedExpression": "@local.combo_box_2_var",
                 "type": "local",
                 "fieldName": "combo_box_2_var"
               },
               {
-                "fullExpression": "changed | set_field:@local.combo_box_2_var:@local.combo_box_2",
+                "fullExpression": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
                 "matchedExpression": "@local.combo_box_2",
                 "type": "local",
                 "fieldName": "combo_box_2"

@@ -195,7 +195,7 @@
       "parameter_list": {
         "task_group_id": "@local.task_group_id",
         "task_group_data": "@local.task_group_data",
-        "filter": "@item.number !== 2",
+        "filter": "@task_item.number !== 2",
         "completed_field": "@local.task_group_completed_field",
         "title": "@local.card_title",
         "subtitle": "@local.card_subtitle",
@@ -221,14 +221,6 @@
               "matchedExpression": "@local.task_group_data",
               "type": "local",
               "fieldName": "task_group_data"
-            }
-          ],
-          "filter": [
-            {
-              "fullExpression": "@item.number !== 2",
-              "matchedExpression": "@item.number",
-              "type": "item",
-              "fieldName": "number"
             }
           ],
           "completed_field": [
@@ -272,9 +264,6 @@
         "@local.task_group_data": [
           "parameter_list.task_group_data"
         ],
-        "@item.number": [
-          "parameter_list.filter"
-        ],
         "@local.task_group_completed_field": [
           "parameter_list.completed_field"
         ],
@@ -312,7 +301,7 @@
       "parameter_list": {
         "task_group_id": "@local.task_group_id",
         "task_group_data": "@local.task_group_data",
-        "filter": "@item.id === @local.filter_task_id",
+        "filter": "@task_item.id === @local.filter_task_id",
         "completed_field": "@local.task_group_completed_field",
         "title": "@local.card_title",
         "subtitle": "@local.card_subtitle",
@@ -342,13 +331,7 @@
           ],
           "filter": [
             {
-              "fullExpression": "@item.id === @local.filter_task_id",
-              "matchedExpression": "@item.id",
-              "type": "item",
-              "fieldName": "id"
-            },
-            {
-              "fullExpression": "@item.id === @local.filter_task_id",
+              "fullExpression": "@task_item.id === @local.filter_task_id",
               "matchedExpression": "@local.filter_task_id",
               "type": "local",
               "fieldName": "filter_task_id"
@@ -394,9 +377,6 @@
         ],
         "@local.task_group_data": [
           "parameter_list.task_group_data"
-        ],
-        "@item.id": [
-          "parameter_list.filter"
         ],
         "@local.filter_task_id": [
           "parameter_list.filter"

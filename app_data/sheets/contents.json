@@ -127,6 +127,88 @@
         }
       }
     },
+    "comp_map_layer_group_1": {
+      "flow_type": "data_list",
+      "flow_name": "comp_map_layer_group_1",
+      "_xlsxPath": "component_sheets/component_map.xlsx",
+      "_metadata": {
+        "point_radius_max": {
+          "type": "number"
+        },
+        "blur": {
+          "type": "number"
+        },
+        "scale_max": {
+          "type": "number"
+        },
+        "scale_min": {
+          "type": "number"
+        },
+        "opacity": {
+          "type": "number"
+        },
+        "visible_default": {
+          "type": "boolean"
+        },
+        "scale_slider": {
+          "type": "boolean"
+        },
+        "point_radius_property_max": {
+          "type": "number"
+        }
+      }
+    },
+    "comp_map_layer_group_2": {
+      "flow_type": "data_list",
+      "flow_name": "comp_map_layer_group_2",
+      "_xlsxPath": "component_sheets/component_map.xlsx",
+      "_metadata": {
+        "opacity": {
+          "type": "number"
+        },
+        "visible_default": {
+          "type": "boolean"
+        },
+        "point_radius_max": {
+          "type": "number"
+        },
+        "point_radius_property_max": {
+          "type": "number"
+        }
+      }
+    },
+    "comp_map_layer_group_3": {
+      "flow_type": "data_list",
+      "flow_name": "comp_map_layer_group_3",
+      "_xlsxPath": "component_sheets/component_map.xlsx",
+      "_metadata": {
+        "scale_max": {
+          "type": "number"
+        },
+        "scale_min": {
+          "type": "number"
+        },
+        "opacity": {
+          "type": "number"
+        },
+        "visible_default": {
+          "type": "boolean"
+        }
+      }
+    },
+    "comp_map_layer_groups": {
+      "flow_type": "data_list",
+      "flow_name": "comp_map_layer_groups",
+      "_xlsxPath": "component_sheets/component_map.xlsx",
+      "_metadata": {
+        "single_selection": {
+          "type": "boolean"
+        },
+        "display_order": {
+          "type": "number"
+        }
+      }
+    },
     "comp_task_bar_legacy_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_bar_legacy_data",
@@ -1276,6 +1358,13 @@
     "comp_map": {
       "flow_type": "template",
       "flow_name": "comp_map",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": false
+          }
+        }
+      },
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_map.xlsx"
     },
@@ -1332,12 +1421,6 @@
       "flow_name": "comp_plh_module_list_item",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx"
-    },
-    "comp_plh_progress_wheel": {
-      "flow_type": "template",
-      "flow_name": "comp_plh_progress_wheel",
-      "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_plh_progress_wheel.xlsx"
     },
     "comp_progress_path": {
       "flow_type": "template",
@@ -3208,6 +3291,11 @@
       "flow_type": "template",
       "flow_name": "debug_task_group_completion",
       "_xlsxPath": "debug_sheets/debug_task_group_completion.xlsx"
+    },
+    "debug_task_progress_filter": {
+      "flow_type": "template",
+      "flow_name": "debug_task_progress_filter",
+      "_xlsxPath": "debug_sheets/debug_task_progress_filter.xlsx"
     },
     "doc_field": {
       "flow_type": "template",
