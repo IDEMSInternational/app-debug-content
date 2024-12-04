@@ -27,6 +27,68 @@
       },
       "name": "plh_activity_check_in_3",
       "_nested_name": "plh_activity_check_in_3"
+    },
+    {
+      "name": "countdown_text_list",
+      "value": "in 1 day, in 2 days, in 3 days, in 4 days, in 5 days, in 6 days, in 7 days, over 7 days",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "countdown_text_list"
+    },
+    {
+      "name": "start_date",
+      "value": "2024-12-03T15:34:00.000Z",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "start_date"
+    },
+    {
+      "type": "plh_activity_check_in",
+      "parameter_list": {
+        "activity_id": "id_1",
+        "title": "Check-in",
+        "locked_icon_asset": "images/icons/locked.png",
+        "locked_image_asset": "images/diamond.png",
+        "unlocked_icon_asset": "images/icons/notification_bell.png",
+        "unlocked_image_asset": "images/shining_diamond.png",
+        "days_to_count_down": "7",
+        "start_date": "@local.start_date",
+        "countdown_text_list": "@local.countdown_text_list"
+      },
+      "name": "plh_activity_check_in_6",
+      "_nested_name": "plh_activity_check_in_6",
+      "_dynamicFields": {
+        "parameter_list": {
+          "start_date": [
+            {
+              "fullExpression": "@local.start_date",
+              "matchedExpression": "@local.start_date",
+              "type": "local",
+              "fieldName": "start_date"
+            }
+          ],
+          "countdown_text_list": [
+            {
+              "fullExpression": "@local.countdown_text_list",
+              "matchedExpression": "@local.countdown_text_list",
+              "type": "local",
+              "fieldName": "countdown_text_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.start_date": [
+          "parameter_list.start_date"
+        ],
+        "@local.countdown_text_list": [
+          "parameter_list.countdown_text_list"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_activity_check_in.xlsx"

@@ -843,7 +843,7 @@
               "_raw": "click | set_item | _index: 0, completed:true",
               "_cleaned": "click | set_item | _index: 0, completed:true",
               "params": {
-                "_index": "0",
+                "_index": 0,
                 "completed": true
               }
             }
