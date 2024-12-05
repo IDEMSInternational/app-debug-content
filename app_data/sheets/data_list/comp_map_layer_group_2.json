@@ -1,0 +1,47 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_map_layer_group_2",
+  "status": "released",
+  "rows": [
+    {
+      "id": "county_bouindaries",
+      "name": "County Boundaries",
+      "source_asset": "map_data/ke.json",
+      "type": "vector",
+      "fill": "none",
+      "stroke": "red",
+      "opacity": 1,
+      "visible_default": false
+    },
+    {
+      "id": "county_centroids",
+      "name": "County Centroids",
+      "description": "Centroids for each county",
+      "source_asset": "map_data/centroids.json",
+      "type": "vector",
+      "fill": "red",
+      "stroke": "none",
+      "point_radius_max": 6,
+      "point_radius_property_max": 50,
+      "point_radius_property": "centroid_size_sum",
+      "scale_title": "County Centroids",
+      "opacity": 1,
+      "visible_default": true
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_map.xlsx",
+  "_metadata": {
+    "opacity": {
+      "type": "number"
+    },
+    "visible_default": {
+      "type": "boolean"
+    },
+    "point_radius_max": {
+      "type": "number"
+    },
+    "point_radius_property_max": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_completion_modal",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Completion modal",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "plh_completion_modal",
+      "parameter_list": {
+        "background_image_asset": "images/modal_bg.svg"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Congratulations",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "center"
+          },
+          "style_list": [
+            "text-align:center",
+            "color:white"
+          ],
+          "name": "title_1",
+          "_nested_name": "plh_completion_modal_3.title_1"
+        },
+        {
+          "type": "button",
+          "value": "Unlock your moment of play",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "comp_accordion"
+              ],
+              "_raw": "click | go_to: comp_accordion",
+              "_cleaned": "click | go_to: comp_accordion"
+            }
+          ],
+          "name": "button_2",
+          "_nested_name": "plh_completion_modal_3.button_2"
+        }
+      ],
+      "name": "plh_completion_modal_3",
+      "_nested_name": "plh_completion_modal_3"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_completion_modal.xlsx"
+}

@@ -6,10 +6,6 @@
         "count": 1
       },
       {
-        "type": "Title",
-        "count": 1
-      },
-      {
         "type": "accordion",
         "count": 5
       },
@@ -35,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 283
+        "count": 296
       },
       {
         "type": "calendar",
@@ -59,7 +55,7 @@
       },
       {
         "type": "data_items",
-        "count": 39
+        "count": 42
       },
       {
         "type": "debug_toggle",
@@ -83,7 +79,7 @@
       },
       {
         "type": "display_group",
-        "count": 181
+        "count": 184
       },
       {
         "type": "drawer",
@@ -115,7 +111,7 @@
       },
       {
         "type": "map",
-        "count": 1
+        "count": 2
       },
       {
         "type": "nav_group",
@@ -151,10 +147,14 @@
       },
       {
         "type": "plh_activity_check_in",
-        "count": 1
+        "count": 2
       },
       {
         "type": "plh_bottom_nav",
+        "count": 1
+      },
+      {
+        "type": "plh_completion_modal",
         "count": 1
       },
       {
@@ -164,10 +164,6 @@
       {
         "type": "plh_module_list_item",
         "count": 5
-      },
-      {
-        "type": "plh_progress_wheel",
-        "count": 2
       },
       {
         "type": "progress_bar",
@@ -195,7 +191,7 @@
       },
       {
         "type": "round_button",
-        "count": 21
+        "count": 26
       },
       {
         "type": "select_text",
@@ -215,7 +211,7 @@
       },
       {
         "type": "set_variable",
-        "count": 722
+        "count": 728
       },
       {
         "type": "simple_checkbox",
@@ -239,7 +235,7 @@
       },
       {
         "type": "task_progress_bar",
-        "count": 4
+        "count": 6
       },
       {
         "type": "template",
@@ -247,11 +243,11 @@
       },
       {
         "type": "text",
-        "count": 922
+        "count": 930
       },
       {
         "type": "text_area",
-        "count": 12
+        "count": 13
       },
       {
         "type": "text_box",
@@ -271,11 +267,11 @@
       },
       {
         "type": "title",
-        "count": 426
+        "count": 436
       },
       {
         "type": "toggle_bar",
-        "count": 46
+        "count": 47
       },
       {
         "type": "update_action_list",
@@ -367,7 +363,7 @@
       },
       {
         "type": "go_to",
-        "count": 63
+        "count": 72
       },
       {
         "type": "go_to_url",
@@ -376,6 +372,10 @@
       {
         "type": "invalid_action",
         "count": 1
+      },
+      {
+        "type": "nav",
+        "count": 4
       },
       {
         "type": "nav_stack",
@@ -411,7 +411,7 @@
       },
       {
         "type": "set_data",
-        "count": 9
+        "count": 10
       },
       {
         "type": "set_field",
@@ -419,7 +419,7 @@
       },
       {
         "type": "set_item",
-        "count": 23
+        "count": 24
       },
       {
         "type": "set_items",
@@ -427,7 +427,7 @@
       },
       {
         "type": "set_local",
-        "count": 28
+        "count": 30
       },
       {
         "type": "share",
@@ -467,8 +467,8 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31516 KB",
-        "MB": "31.5 MB"
+        "KB": "31574 KB",
+        "MB": "31.6 MB"
       },
       {
         "assets": "unused",
@@ -612,6 +612,11 @@
         "size_kb": 4.2
       },
       {
+        "path": "images/activity_bg.svg",
+        "count": 1,
+        "size_kb": 13.8
+      },
+      {
         "path": "images/avatar_1.png",
         "count": 17,
         "size_kb": 67.7
@@ -622,8 +627,13 @@
         "size_kb": 255.4
       },
       {
-        "path": "images/diamond.png",
+        "path": "images/bottom_image.svg",
         "count": 1,
+        "size_kb": 6.8
+      },
+      {
+        "path": "images/diamond.png",
+        "count": 2,
         "size_kb": 4.3
       },
       {
@@ -683,7 +693,7 @@
       },
       {
         "path": "images/icons/audio/play-back-sharp.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 0.1
       },
       {
@@ -698,7 +708,7 @@
       },
       {
         "path": "images/icons/book_white.svg",
-        "count": 11,
+        "count": 12,
         "size_kb": 0.7
       },
       {
@@ -708,7 +718,7 @@
       },
       {
         "path": "images/icons/globe_blue.svg",
-        "count": 13,
+        "count": 16,
         "size_kb": 3.9
       },
       {
@@ -743,7 +753,7 @@
       },
       {
         "path": "images/icons/leaf_blue.svg",
-        "count": 11,
+        "count": 12,
         "size_kb": 1.7
       },
       {
@@ -758,12 +768,12 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 3,
+        "count": 4,
         "size_kb": 0.9
       },
       {
         "path": "images/icons/notification_bell.png",
-        "count": 1,
+        "count": 2,
         "size_kb": 0.9
       },
       {
@@ -817,13 +827,18 @@
         "size_kb": 0.3
       },
       {
+        "path": "images/modal_bg.svg",
+        "count": 1,
+        "size_kb": 37.3
+      },
+      {
         "path": "images/module-1.png",
         "count": 5,
         "size_kb": 28.2
       },
       {
         "path": "images/shining_diamond.png",
-        "count": 1,
+        "count": 2,
         "size_kb": 17.7
       },
       {
@@ -868,27 +883,27 @@
       },
       {
         "path": "map_data/centroids.json",
-        "count": 1,
+        "count": 2,
         "size_kb": 13.4
       },
       {
         "path": "map_data/forecast_data_geojson.json",
-        "count": 2,
+        "count": 4,
         "size_kb": 133.5
       },
       {
         "path": "map_data/forecast_riots.json",
-        "count": 1,
+        "count": 2,
         "size_kb": 48.6
       },
       {
         "path": "map_data/ke.json",
-        "count": 1,
+        "count": 2,
         "size_kb": 10219.4
       },
       {
         "path": "map_data/population_and_boundaries.json",
-        "count": 2,
+        "count": 4,
         "size_kb": 4513.3
       },
       {
@@ -913,7 +928,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 27
+        "total": 31
       },
       {
         "type": "data_list",
@@ -1003,7 +1018,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 80
+        "total": 83
       },
       {
         "type": "template",
