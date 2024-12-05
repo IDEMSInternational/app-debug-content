@@ -1,0 +1,97 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_nav_actions_1",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "feat_nav_actions_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "button",
+      "value": "Navigate back",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav",
+          "args": [
+            "back"
+          ],
+          "_raw": "click | nav: back",
+          "_cleaned": "click | nav: back"
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "button",
+      "value": "Navigate forward",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav",
+          "args": [
+            "forward"
+          ],
+          "_raw": "click | nav: forward",
+          "_cleaned": "click | nav: forward"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "button",
+      "value": "Go to feat_nav_actions_1",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "feat_nav_actions_1"
+          ],
+          "_raw": "click | go_to: feat_nav_actions_1",
+          "_cleaned": "click | go_to: feat_nav_actions_1"
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    },
+    {
+      "type": "button",
+      "value": "Go to feat_nav_actions_2",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "feat_nav_actions_2"
+          ],
+          "_raw": "click | go_to: feat_nav_actions_2",
+          "_cleaned": "click | go_to: feat_nav_actions_2"
+        }
+      ],
+      "name": "button_6",
+      "_nested_name": "button_6"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_nav_actions.xlsx"
+}

@@ -93,6 +93,10 @@
     "md5Checksum": "b3f286e41f079f7db3ca679ce6e83f60",
     "size_kb": 4.2
   },
+  "images/activity_bg.svg": {
+    "md5Checksum": "e25c406d3ff6da9275f56ef29fd5d88f",
+    "size_kb": 13.8
+  },
   "images/avatar_1.png": {
     "md5Checksum": "d2d29806c1c430e574a50ddd19319f52",
     "size_kb": 67.7
@@ -100,6 +104,10 @@
   "images/bg_illustration.png": {
     "md5Checksum": "91bd746e278b1939a8eb7ad1ef6cc59d",
     "size_kb": 255.4
+  },
+  "images/bottom_image.svg": {
+    "md5Checksum": "8182ec65385018d265d605af8843e0ab",
+    "size_kb": 6.8
   },
   "images/diamond.png": {
     "md5Checksum": "4e88aed59658d5d1305c1c63b45171ba",
@@ -260,6 +268,10 @@
   "images/icons/tick_white.svg": {
     "md5Checksum": "81136e04436759812dc3f6e90c61de11",
     "size_kb": 0.3
+  },
+  "images/modal_bg.svg": {
+    "md5Checksum": "83fa2d24b91d02b6e8c2b3a95607c572",
+    "size_kb": 37.3
   },
   "images/module-1.png": {
     "md5Checksum": "840e6c66b936d36e7c485c1f96972573",
