@@ -1,0 +1,182 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_modal_interactions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "A template for testing interactions between different components that use modals",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "button",
+      "value": "Open this template as nav-stack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: debug_modal_interactions",
+          "_cleaned": "click | nav_stack: open | template: debug_modal_interactions",
+          "params": {
+            "template": "debug_modal_interactions"
+          }
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "button",
+      "value": "Close top nav-stack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "click | nav_stack: close_top",
+          "_cleaned": "click | nav_stack: close_top"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "name": "answer_list_1",
+      "value": [
+        {
+          "name": "name_1",
+          "text": "This is text 1"
+        },
+        {
+          "name": "name_2",
+          "text": "This is text 2"
+        },
+        {
+          "name": "name_3",
+          "text": "This is text 3"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list_1"
+    },
+    {
+      "type": "text",
+      "value": "Show components with modals:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "show_components",
+      "value": false,
+      "_nested_name": "show_components"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1",
+        "placeholder": "Combo box"
+      },
+      "condition": "!!@local.show_components",
+      "name": "combo_box_8",
+      "_nested_name": "combo_box_8",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@local.show_components",
+            "matchedExpression": "!@local.show_components",
+            "type": "local",
+            "fieldName": "show_components"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ],
+        "!@local.show_components": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "audio_transcript",
+      "value": "This is an audio message in English.",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "type": "set_variable",
+      "_nested_name": "audio_transcript"
+    },
+    {
+      "type": "audio",
+      "name": "audio_2",
+      "parameter_list": {
+        "title": "Audio player",
+        "src": "audio/test_audio.mp3",
+        "transcript_text": "@local.audio_transcript"
+      },
+      "condition": "!!@local.show_components",
+      "_nested_name": "audio_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "transcript_text": [
+            {
+              "fullExpression": "@local.audio_transcript",
+              "matchedExpression": "@local.audio_transcript",
+              "type": "local",
+              "fieldName": "audio_transcript"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "!!@local.show_components",
+            "matchedExpression": "!@local.show_components",
+            "type": "local",
+            "fieldName": "show_components"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.audio_transcript": [
+          "parameter_list.transcript_text"
+        ],
+        "!@local.show_components": [
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_modal_interactions.xlsx"
+}

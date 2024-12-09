@@ -416,6 +416,89 @@
           "parameter_list.grid_gap"
         ]
       }
+    },
+    {
+      "type": "title",
+      "value": "Circle Grid Buttons",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_9",
+      "_nested_name": "title_9"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "grid_2",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "changed | emit:force_reprocess",
+          "_cleaned": "changed | emit:force_reprocess"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@data.comp_radio_button_category_data",
+        "item_width": "@local.item_width_input",
+        "grid_width": "@local.grid_width_input",
+        "grid_gap": "@local.grid_gap_input",
+        "variant": "circle-icon"
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "grid_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.comp_radio_button_category_data",
+              "matchedExpression": "@data.comp_radio_button_category_data",
+              "type": "data",
+              "fieldName": "comp_radio_button_category_data"
+            }
+          ],
+          "item_width": [
+            {
+              "fullExpression": "@local.item_width_input",
+              "matchedExpression": "@local.item_width_input",
+              "type": "local",
+              "fieldName": "item_width_input"
+            }
+          ],
+          "grid_width": [
+            {
+              "fullExpression": "@local.grid_width_input",
+              "matchedExpression": "@local.grid_width_input",
+              "type": "local",
+              "fieldName": "grid_width_input"
+            }
+          ],
+          "grid_gap": [
+            {
+              "fullExpression": "@local.grid_gap_input",
+              "matchedExpression": "@local.grid_gap_input",
+              "type": "local",
+              "fieldName": "grid_gap_input"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.comp_radio_button_category_data": [
+          "parameter_list.answer_list"
+        ],
+        "@local.item_width_input": [
+          "parameter_list.item_width"
+        ],
+        "@local.grid_width_input": [
+          "parameter_list.grid_width"
+        ],
+        "@local.grid_gap_input": [
+          "parameter_list.grid_gap"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"

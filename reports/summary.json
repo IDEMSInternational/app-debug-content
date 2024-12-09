@@ -179,7 +179,7 @@
       },
       {
         "type": "radio_button_grid",
-        "count": 9
+        "count": 10
       },
       {
         "type": "radio_group",
@@ -267,7 +267,7 @@
       },
       {
         "type": "title",
-        "count": 436
+        "count": 437
       },
       {
         "type": "toggle_bar",
@@ -327,7 +327,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 27
+        "count": 28
       },
       {
         "type": "emit: force_restart",
@@ -363,7 +363,7 @@
       },
       {
         "type": "go_to",
-        "count": 72
+        "count": 74
       },
       {
         "type": "go_to_url",
@@ -783,12 +783,12 @@
       },
       {
         "path": "images/icons/reader_blue.svg",
-        "count": 6,
+        "count": 7,
         "size_kb": 1.4
       },
       {
         "path": "images/icons/school_blue.svg",
-        "count": 9,
+        "count": 10,
         "size_kb": 1.6
       },
       {
@@ -803,7 +803,7 @@
       },
       {
         "path": "images/icons/star_blue.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 1.3
       },
       {
@@ -863,7 +863,7 @@
       },
       {
         "path": "images/test_image.png",
-        "count": 2,
+        "count": 3,
         "size_kb": 2
       },
       {
@@ -943,7 +943,7 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 7
+        "total": 8
       },
       {
         "type": "data_list",
