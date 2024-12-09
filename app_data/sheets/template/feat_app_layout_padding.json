@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_padding",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "main_content_padding": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "No padding",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "This template has set the padding around the main app content to 0.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+}

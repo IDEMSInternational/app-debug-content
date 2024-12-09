@@ -8,7 +8,7 @@
       "id": "option_1",
       "name": "option_1",
       "text": "Text with square image",
-      "image": "https://placekitten.com/200/200"
+      "image": "images/test_image.png"
     },
     {
       "id": "option_2",

@@ -21,8 +21,10 @@ const debug: IAppSkin = {
     },
     APP_THEMES:{
       defaultThemeName:'professional'
+    },
+    LAYOUT: {
+      main_content_padding: "32px"
     }
-    
   },
 };
 export default debug;

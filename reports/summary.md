@@ -47,7 +47,7 @@
 | progress_bar | 1 |
 | progress_path | 2 |
 | qr_code | 2 |
-| radio_button_grid | 9 |
+| radio_button_grid | 10 |
 | radio_group | 56 |
 | radio_group_grid | 5 |
 | round_button | 26 |
@@ -69,7 +69,7 @@
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 436 |
+| title | 437 |
 | toggle_bar | 47 |
 | update_action_list | 2 |
 | video | 4 |
@@ -90,7 +90,7 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 28 |
-| emit: force_reprocess | 27 |
+| emit: force_reprocess | 28 |
 | emit: force_restart | 2 |
 | emit: server_sync | 7 |
 | emit: set_language | 4 |
@@ -99,7 +99,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 72 |
+| go_to | 74 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 4 |
@@ -221,11 +221,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/locked.png | 0.9 | 4 |
 | images/icons/notification_bell.png | 0.9 | 2 |
 | images/icons/question_mark.svg | 0.8 | 2 |
-| images/icons/reader_blue.svg | 1.4 | 6 |
-| images/icons/school_blue.svg | 1.6 | 9 |
+| images/icons/reader_blue.svg | 1.4 | 7 |
+| images/icons/school_blue.svg | 1.6 | 10 |
 | images/icons/settings.svg | 2.4 | 1 |
 | images/icons/settings_active.svg | 2.4 | 1 |
-| images/icons/star_blue.svg | 1.3 | 1 |
+| images/icons/star_blue.svg | 1.3 | 2 |
 | images/icons/star_white.svg | 1 | 21 |
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 10 |
@@ -237,7 +237,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
 | images/square_4.svg | 1 | 1 |
-| images/test_image.png | 2 | 2 |
+| images/test_image.png | 2 | 3 |
 | images/test_image_no_translations.png | 2.8 | 1 |
 | lottie/blob_play_ball.json | 69.4 | 16 |
 | lottie/cascading_stars.json | 140.5 | 1 |
@@ -259,7 +259,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list |  | 31 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
-| data_list | component_demo | 7 |
+| data_list | component_demo | 8 |
 | data_list | debug | 18 |
 | data_list | debug_lifecycle_actions | 1 |
 | data_list | example_generator | 3 |
