@@ -1,0 +1,101 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_inline_header_footer",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "display_group",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "sticky": "top",
+        "variant": "inline_padding",
+        "background_image_asset": "images/activity_bg.svg",
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Display Group with Image",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "style_list": [
+            "margin-top: 120px"
+          ],
+          "name": "title_1",
+          "_nested_name": "display_group_2.title_1"
+        },
+        {
+          "type": "text",
+          "name": "text",
+          "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "display_group_2.text"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "title",
+      "value": "Main Page Content",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "display_group",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "sticky": "bottom",
+        "variant": "inline_padding",
+        "background_image_asset": "images/bottom_image.svg",
+        "style": "column",
+        "background_image_position": "bottom",
+        "sticky_background": "transparent"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Display Group with Bottom Image",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title_1",
+          "_nested_name": "display_group_6.title_1"
+        },
+        {
+          "type": "text",
+          "name": "text",
+          "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "margin-bottom: -40px"
+          ],
+          "_nested_name": "display_group_6.text"
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_inline_header_footer.xlsx"
+}

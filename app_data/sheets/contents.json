@@ -274,6 +274,12 @@
         }
       }
     },
+    "comp_radio_button_category_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_radio_button_category_data",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
+    },
     "comp_radio_button_grid_data": {
       "flow_type": "data_list",
       "flow_name": "comp_radio_button_grid_data",
@@ -2849,6 +2855,12 @@
       "flow_name": "example_google_auth",
       "_xlsxPath": "example_sheets/example_google_auth.xlsx"
     },
+    "example_inline_header_footer": {
+      "flow_type": "template",
+      "flow_name": "example_inline_header_footer",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_inline_header_footer.xlsx"
+    },
     "example_items": {
       "flow_type": "template",
       "flow_subtype": "debug",
@@ -3263,6 +3275,11 @@
       "flow_name": "debug_long_link_text",
       "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx"
     },
+    "debug_modal_interactions": {
+      "flow_type": "template",
+      "flow_name": "debug_modal_interactions",
+      "_xlsxPath": "debug_sheets/debug_modal_interactions.xlsx"
+    },
     "debug_nav_bar": {
       "flow_type": "template",
       "flow_name": "debug_nav_bar",
@@ -3379,6 +3396,18 @@
           },
           "APP_FOOTER_DEFAULTS": {
             "templateName": false
+          }
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
+    "feat_app_layout_padding": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_padding",
+      "parameter_list": {
+        "app_config": {
+          "LAYOUT": {
+            "main_content_padding": 0
           }
         }
       },

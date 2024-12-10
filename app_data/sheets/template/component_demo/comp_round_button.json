@@ -196,6 +196,17 @@
     {
       "type": "round_button",
       "name": "round_button_transparent",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home_screen"
+          ],
+          "_raw": "click | go_to: home_screen",
+          "_cleaned": "click | go_to: home_screen"
+        }
+      ],
       "parameter_list": {
         "variant": "no-background",
         "icon_src": "images/icons/globe_blue.svg"
@@ -205,6 +216,17 @@
     {
       "type": "round_button",
       "name": "round_button_category",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "comp_button"
+          ],
+          "_raw": "click | go_to: comp_button",
+          "_cleaned": "click | go_to: comp_button"
+        }
+      ],
       "parameter_list": {
         "variant": "category",
         "icon_src": "images/icons/globe_blue.svg"
