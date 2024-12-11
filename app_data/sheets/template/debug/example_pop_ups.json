@@ -225,6 +225,26 @@
       ],
       "exclude_from_translation": true,
       "_nested_name": "button_pop_up_6"
+    },
+    {
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "my_template"
+          ],
+          "_raw": "click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg",
+          "_cleaned": "click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg",
+          "params": {
+            "variant": "plh_completion",
+            "background_image": "confetti.svg"
+          }
+        }
+      ],
+      "type": "set_variable",
+      "name": "set_variable_16",
+      "_nested_name": "set_variable_16"
     }
   ],
   "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"

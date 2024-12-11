@@ -1,0 +1,224 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_rtl_variables",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "lang_select",
+      "value": "example_lang_select",
+      "rows": [
+        {
+          "name": "language_list",
+          "value": [
+            {
+              "name": "gb_en",
+              "text": "English"
+            },
+            {
+              "name": "kw_ar",
+              "text": "Arabic"
+            }
+          ],
+          "type": "set_variable",
+          "_nested_name": "lang_select.language_list"
+        }
+      ],
+      "_nested_name": "lang_select"
+    },
+    {
+      "type": "title",
+      "value": "Translation contains @ global",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "text",
+      "name": "global_after_at",
+      "value": "Changes to the @global.privacy_policy",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      },
+      "_nested_name": "global_after_at",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Changes to the @global.privacy_policy",
+            "matchedExpression": "@global.privacy_policy",
+            "type": "global",
+            "fieldName": "privacy_policy"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.privacy_policy": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Translation contains global @",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "text",
+      "name": "global_before_at",
+      "value": "You deserve some praise, too. Thank you again for using @global.app_name. It shows you really care!",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      },
+      "_nested_name": "global_before_at",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "You deserve some praise, too. Thank you again for using @global.app_name. It shows you really care!",
+            "matchedExpression": "@global.app_name",
+            "type": "global",
+            "fieldName": "app_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.app_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Translation contains @ data",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "text",
+      "name": "data_after_at",
+      "value": "How did @data.characters.f1_father.name help his daughter learn these skills?",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      },
+      "_nested_name": "data_after_at",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "How did @data.characters.f1_father.name help his daughter learn these skills?",
+            "matchedExpression": "@data.characters.f1_father.name",
+            "type": "data",
+            "fieldName": "characters"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.characters.f1_father.name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Translation contains data @",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_10",
+      "_nested_name": "title_10"
+    },
+    {
+      "type": "text",
+      "name": "data_before_at",
+      "value": "Okay, @data.characters.f3_son_4.name, you can do it yourself.",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      },
+      "_nested_name": "data_before_at",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Okay, @data.characters.f3_son_4.name, you can do it yourself.",
+            "matchedExpression": "@data.characters.f3_son_4.name",
+            "type": "data",
+            "fieldName": "characters"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.characters.f3_son_4.name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Markdown and variables",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_12",
+      "_nested_name": "title_12"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "By providing your consent below you acknowledge reading and accepting the @global.terms_and_conditions and @global.privacy_policy. The most important commitments are:\n1. This is, and will always be, a fully free app.\n2. Your data will never be sold. We are not for profit.\n3. By using the app you are helping to make the app better for you and others.\n4. Your anonymised data may be used for research purposes by our @global.app_name team.",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      },
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "By providing your consent below you acknowledge reading and accepting the @global.terms_and_conditions and @global.privacy_policy. The most important commitments are:\n1. This is, and will always be, a fully free app.\n2. Your data will never be sold. We are not for profit.\n3. By using the app you are helping to make the app better for you and others.\n4. Your anonymised data may be used for research purposes by our @global.app_name team.",
+            "matchedExpression": "@global.terms_and_conditions",
+            "type": "global",
+            "fieldName": "terms_and_conditions"
+          },
+          {
+            "fullExpression": "By providing your consent below you acknowledge reading and accepting the @global.terms_and_conditions and @global.privacy_policy. The most important commitments are:\n1. This is, and will always be, a fully free app.\n2. Your data will never be sold. We are not for profit.\n3. By using the app you are helping to make the app better for you and others.\n4. Your anonymised data may be used for research purposes by our @global.app_name team.",
+            "matchedExpression": "@global.privacy_policy",
+            "type": "global",
+            "fieldName": "privacy_policy"
+          },
+          {
+            "fullExpression": "By providing your consent below you acknowledge reading and accepting the @global.terms_and_conditions and @global.privacy_policy. The most important commitments are:\n1. This is, and will always be, a fully free app.\n2. Your data will never be sold. We are not for profit.\n3. By using the app you are helping to make the app better for you and others.\n4. Your anonymised data may be used for research purposes by our @global.app_name team.",
+            "matchedExpression": "@global.app_name",
+            "type": "global",
+            "fieldName": "app_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@global.terms_and_conditions": [
+          "value"
+        ],
+        "@global.privacy_policy": [
+          "value"
+        ],
+        "@global.app_name": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_translation_rtl.xlsx"
+}

@@ -14,7 +14,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.3.6",
+  content_tag_latest: "1.3.7",
 };
 
 config.app_config.ASSET_PACKS = {
@@ -87,6 +87,9 @@ config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete"
 config.app_config.APP_AUTHENTICATION_DEFAULTS.enforceLogin = false
 config.app_config.APP_AUTHENTICATION_DEFAULTS.signInTemplate = "example_google_auth"
 
-config.app_config.APP_LANGUAGES_META = { en_rtl: { rtl: true } }
+config.app_config.APP_LANGUAGES_META = { 
+  en_rtl: { rtl: true }, 
+  kw_ar: { rtl: true } 
+}
 
 export default config;

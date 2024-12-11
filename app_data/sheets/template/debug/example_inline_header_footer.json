@@ -65,32 +65,25 @@
         "sticky": "bottom",
         "variant": "inline_padding",
         "background_image_asset": "images/bottom_image.svg",
-        "style": "column",
-        "background_image_position": "bottom",
-        "sticky_background": "transparent"
+        "style": "background-transparent",
+        "background_image_position": "bottom"
       },
       "rows": [
         {
-          "type": "title",
-          "value": "Display Group with Bottom Image",
+          "type": "text",
+          "value": "Text",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title_1",
-          "_nested_name": "display_group_6.title_1"
-        },
-        {
-          "type": "text",
-          "name": "text",
-          "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-          "_translations": {
-            "value": {}
+          "parameter_list": {
+            "text_align": "right"
           },
           "style_list": [
-            "margin-bottom: -40px"
+            "margin-bottom: 32px"
           ],
-          "_nested_name": "display_group_6.text"
+          "name": "text_1",
+          "_nested_name": "display_group_6.text_1"
         }
       ],
       "name": "display_group_6",
