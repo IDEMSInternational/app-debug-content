@@ -1,0 +1,36 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "characters",
+  "status": "released",
+  "rows": [
+    {
+      "id": "f1_father",
+      "name": "Abdulaziz",
+      "_translations": {
+        "name": {
+          "kw_ar": true
+        }
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Abdulaziz"
+        }
+      }
+    },
+    {
+      "id": "f3_son_4",
+      "name": "Ahmed",
+      "_translations": {
+        "name": {
+          "kw_ar": true
+        }
+      },
+      "_translatedFields": {
+        "name": {
+          "eng": "Ahmed"
+        }
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_translation_rtl.xlsx"
+}

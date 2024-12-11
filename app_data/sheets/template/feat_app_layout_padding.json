@@ -5,7 +5,7 @@
   "parameter_list": {
     "app_config": {
       "LAYOUT": {
-        "main_content_padding": 0
+        "page_padding": 0
       }
     }
   },

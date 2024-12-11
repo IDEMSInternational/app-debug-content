@@ -1,0 +1,86 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_sticky_style_list",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top"
+      },
+      "style_list": [
+        "justify-content: space-between",
+        "padding: 0 24px"
+      ],
+      "rows": [
+        {
+          "type": "image",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 96px"
+          ],
+          "name": "image_1",
+          "_nested_name": "display_group_2.image_1"
+        },
+        {
+          "type": "toggle_bar",
+          "parameter_list": {
+            "show_icons": "false",
+            "variant": "ios",
+            "position": "right"
+          },
+          "name": "toggle_bar_2",
+          "_nested_name": "display_group_2.toggle_bar_2"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "title",
+      "value": "Non-sticky equivalent:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "display_group",
+      "style_list": [
+        "justify-content: space-between",
+        "padding: 0 24px"
+      ],
+      "rows": [
+        {
+          "type": "image",
+          "value": "images/example/jasper_1.jpg",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 96px"
+          ],
+          "name": "image_1",
+          "_nested_name": "display_group_5.image_1"
+        },
+        {
+          "type": "toggle_bar",
+          "parameter_list": {
+            "show_icons": "false",
+            "variant": "ios",
+            "position": "right"
+          },
+          "name": "toggle_bar_2",
+          "_nested_name": "display_group_5.toggle_bar_2"
+        }
+      ],
+      "name": "display_group_5",
+      "_nested_name": "display_group_5"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_dg_sticky_style_list.xlsx"
+}

@@ -1,0 +1,47 @@
+{
+  "flow_type": "global",
+  "flow_name": "example_global",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "app_name",
+      "value": "My App",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      }
+    },
+    {
+      "type": "declare_field_default",
+      "name": "app_language",
+      "value": "gb_en",
+      "_translations": {
+        "value": {}
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "privacy_policy",
+      "value": "Privacy Policy",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      }
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "terms_and_conditions",
+      "value": "Terms and Conditions",
+      "_translations": {
+        "value": {
+          "kw_ar": true
+        }
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_global.xlsx"
+}

@@ -90,6 +90,11 @@
         }
       }
     },
+    "characters": {
+      "flow_type": "data_list",
+      "flow_name": "characters",
+      "_xlsxPath": "debug_sheets/debug_translation_rtl.xlsx"
+    },
     "colours": {
       "flow_type": "data_list",
       "flow_name": "colours",
@@ -1204,6 +1209,12 @@
       "override_target": "example_glob_override_default",
       "override_condition": "@fields._app_skin == \"modular\"",
       "_xlsxPath": "example_sheets/to_be_sorted/example_overrides.xlsx"
+    },
+    "example_global": {
+      "flow_type": "global",
+      "flow_name": "example_global",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_global.xlsx"
     },
     "example_initialise_global": {
       "flow_type": "global",
@@ -2825,12 +2836,6 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/example_footer.xlsx"
     },
-    "example_global": {
-      "flow_type": "template",
-      "flow_name": "example_global",
-      "flow_subtype": "debug",
-      "_xlsxPath": "example_sheets/example_global.xlsx"
-    },
     "example_go_to_1": {
       "flow_type": "template",
       "flow_name": "example_go_to_1",
@@ -3235,6 +3240,11 @@
       "flow_name": "debug_data_items_rendering",
       "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
     },
+    "debug_dg_sticky_style_list": {
+      "flow_type": "template",
+      "flow_name": "debug_dg_sticky_style_list",
+      "_xlsxPath": "debug_sheets/debug_dg_sticky_style_list.xlsx"
+    },
     "debug_error_logging": {
       "flow_type": "template",
       "flow_name": "debug_error_logging",
@@ -3304,6 +3314,11 @@
       "override_target": "debug_override_default",
       "override_condition": "@fields.debug_boolean",
       "_xlsxPath": "debug_sheets/debug_override.xlsx"
+    },
+    "debug_rtl_variables": {
+      "flow_type": "template",
+      "flow_name": "debug_rtl_variables",
+      "_xlsxPath": "debug_sheets/debug_translation_rtl.xlsx"
     },
     "debug_sync_id": {
       "flow_type": "template",
@@ -3407,7 +3422,7 @@
       "parameter_list": {
         "app_config": {
           "LAYOUT": {
-            "main_content_padding": 0
+            "page_padding": 0
           }
         }
       },

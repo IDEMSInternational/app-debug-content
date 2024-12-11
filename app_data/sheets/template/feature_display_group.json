@@ -5,6 +5,31 @@
   "rows": [
     {
       "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "variant": "inline_padding",
+        "background_image_asset": "images/activity_bg.svg",
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Sticky Display Group with Image",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "margin-top: 120px"
+          ],
+          "name": "title_1",
+          "_nested_name": "display_group_2.title_1"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "display_group",
       "name": "dg_variant_gray",
       "exclude_from_translation": true,
       "rows": [
@@ -651,8 +676,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title_40",
-      "_nested_name": "title_40"
+      "name": "title_42",
+      "_nested_name": "title_42"
     },
     {
       "type": "display_group",
@@ -774,8 +799,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title_43",
-      "_nested_name": "title_43"
+      "name": "title_45",
+      "_nested_name": "title_45"
     },
     {
       "type": "display_group",

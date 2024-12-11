@@ -27,7 +27,7 @@
       },
       {
         "type": "audio",
-        "count": 12
+        "count": 13
       },
       {
         "type": "button",
@@ -47,7 +47,7 @@
       },
       {
         "type": "combo_box",
-        "count": 47
+        "count": 48
       },
       {
         "type": "dashed_box",
@@ -55,7 +55,7 @@
       },
       {
         "type": "data_items",
-        "count": 42
+        "count": 41
       },
       {
         "type": "debug_toggle",
@@ -63,7 +63,7 @@
       },
       {
         "type": "declare_field_default",
-        "count": 1
+        "count": 2
       },
       {
         "type": "declare_global_constant",
@@ -79,7 +79,7 @@
       },
       {
         "type": "display_group",
-        "count": 184
+        "count": 190
       },
       {
         "type": "drawer",
@@ -95,7 +95,7 @@
       },
       {
         "type": "image",
-        "count": 74
+        "count": 76
       },
       {
         "type": "items",
@@ -211,7 +211,7 @@
       },
       {
         "type": "set_variable",
-        "count": 728
+        "count": 734
       },
       {
         "type": "simple_checkbox",
@@ -239,11 +239,11 @@
       },
       {
         "type": "template",
-        "count": 127
+        "count": 128
       },
       {
         "type": "text",
-        "count": 930
+        "count": 944
       },
       {
         "type": "text_area",
@@ -267,11 +267,11 @@
       },
       {
         "type": "title",
-        "count": 437
+        "count": 441
       },
       {
         "type": "toggle_bar",
-        "count": 47
+        "count": 50
       },
       {
         "type": "update_action_list",
@@ -363,7 +363,7 @@
       },
       {
         "type": "go_to",
-        "count": 74
+        "count": 75
       },
       {
         "type": "go_to_url",
@@ -379,7 +379,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 8
+        "count": 10
       },
       {
         "type": "open_external",
@@ -387,7 +387,7 @@
       },
       {
         "type": "pop_up",
-        "count": 38
+        "count": 39
       },
       {
         "type": "process_template",
@@ -423,7 +423,7 @@
       },
       {
         "type": "set_items",
-        "count": 5
+        "count": 2
       },
       {
         "type": "set_local",
@@ -528,6 +528,16 @@
   "assets_missing": {
     "data": [
       {
+        "path": "click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg",
+        "count": 2,
+        "missing": true
+      },
+      {
+        "path": "confetti.svg",
+        "count": 1,
+        "missing": true
+      },
+      {
         "path": "debug_asset_pack_1/image_2.png",
         "count": 1,
         "missing": true
@@ -548,7 +558,7 @@
       },
       {
         "path": "audio/test_audio.mp3",
-        "count": 7,
+        "count": 8,
         "size_kb": 43.4
       },
       {
@@ -613,7 +623,7 @@
       },
       {
         "path": "images/activity_bg.svg",
-        "count": 1,
+        "count": 3,
         "size_kb": 13.8
       },
       {
@@ -628,7 +638,7 @@
       },
       {
         "path": "images/bottom_image.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 6.8
       },
       {
@@ -663,7 +673,7 @@
       },
       {
         "path": "images/example/jasper_1.jpg",
-        "count": 55,
+        "count": 57,
         "size_kb": 527.3
       },
       {
@@ -1018,7 +1028,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 83
+        "total": 88
       },
       {
         "type": "template",
@@ -1028,7 +1038,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 260
+        "total": 261
       },
       {
         "type": "template",

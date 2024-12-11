@@ -9,24 +9,24 @@
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
-| audio | 12 |
+| audio | 13 |
 | button | 296 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 47 |
+| combo_box | 48 |
 | dashed_box | 19 |
-| data_items | 42 |
+| data_items | 41 |
 | debug_toggle | 1 |
-| declare_field_default | 1 |
+| declare_field_default | 2 |
 | declare_global_constant | 1 |
 | demo_basic | 3 |
 | display_grid | 3 |
-| display_group | 184 |
+| display_group | 190 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
-| image | 74 |
+| image | 76 |
 | items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
@@ -55,22 +55,22 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 2 |
-| set_variable | 728 |
+| set_variable | 734 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 62 |
 | task_card | 24 |
 | task_progress_bar | 6 |
-| template | 127 |
-| text | 930 |
+| template | 128 |
+| text | 944 |
 | text_area | 13 |
 | text_box | 51 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 437 |
-| toggle_bar | 47 |
+| title | 441 |
+| toggle_bar | 50 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -99,13 +99,13 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 74 |
+| go_to | 75 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 4 |
-| nav_stack | 8 |
+| nav_stack | 10 |
 | open_external | 2 |
-| pop_up | 38 |
+| pop_up | 39 |
 | process_template | 2 |
 | reset_app | 1 |
 | reset_data | 2 |
@@ -114,7 +114,7 @@
 | set_data | 10 |
 | set_field | 111 |
 | set_item | 24 |
-| set_items | 5 |
+| set_items | 2 |
 | set_local | 30 |
 | share | 6 |
 | start_tour | 2 |
@@ -162,6 +162,8 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg | 2 |
+| confetti.svg | 1 |
 | debug_asset_pack_1/image_2.png | 1 |
 | https://www.w3schools.com/html/mov_bbb.mp4 | 1 |
 </details>
@@ -174,7 +176,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | path | size_kb | count |
 | --- | --- | --- |
 | audio/baby_elephant_walk.wav | 430.7 | 3 |
-| audio/test_audio.mp3 | 43.4 | 7 |
+| audio/test_audio.mp3 | 43.4 | 8 |
 | audio/timer/bell_1.mp3 | 121.6 | 1 |
 | audio/timer/ping_1.wav | 196.4 | 1 |
 | audio/timer/ping_2.wav | 829.6 | 1 |
@@ -187,17 +189,17 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | i18n/flags/tz.svg | 0.5 | 2 |
 | images/Faisal.png | 3.5 | 2 |
 | images/Noura.png | 4.2 | 3 |
-| images/activity_bg.svg | 13.8 | 1 |
+| images/activity_bg.svg | 13.8 | 3 |
 | images/avatar_1.png | 67.7 | 17 |
 | images/bg_illustration.png | 255.4 | 3 |
-| images/bottom_image.svg | 6.8 | 1 |
+| images/bottom_image.svg | 6.8 | 2 |
 | images/diamond.png | 4.3 | 2 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 5 |
-| images/example/jasper_1.jpg | 527.3 | 55 |
+| images/example/jasper_1.jpg | 527.3 | 57 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
@@ -274,9 +276,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 9 |
-| template |  | 83 |
+| template |  | 88 |
 | template | component_demo | 55 |
-| template | debug | 260 |
+| template | debug | 261 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
