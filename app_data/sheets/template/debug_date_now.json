@@ -1,0 +1,234 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_date_now",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Days to add from today:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "number_selector",
+      "name": "days_to_add",
+      "value": 0,
+      "parameter_list": {
+        "min_value": "-100",
+        "max_value": "100"
+      },
+      "_nested_name": "days_to_add"
+    },
+    {
+      "name": "calculated_date",
+      "value": "@calc(new Date(Date.now() + (@local.days_to_add * 24 * 60 * 60 * 1000)))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "calculated_date",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(new Date(Date.now() + (@local.days_to_add * 24 * 60 * 60 * 1000)))",
+            "matchedExpression": "@local.days_to_add",
+            "type": "local",
+            "fieldName": "days_to_add"
+          },
+          {
+            "fullExpression": "@calc(new Date(Date.now() + (@local.days_to_add * 24 * 60 * 60 * 1000)))",
+            "matchedExpression": "@calc(new Date(Date.now() + (@local.days_to_add * 24 * 60 * 60 * 1000)))",
+            "type": "calc",
+            "fieldName": "new Date(Date.now() + (@local.days_to_add * 24 * 60 * 60 * 1000))"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.days_to_add": [
+          "value"
+        ],
+        "@calc(new Date(Date.now() + (@local.days_to_add * 24 * 60 * 60 * 1000)))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Calculated date: @local.calculated_date",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Calculated date: @local.calculated_date",
+            "matchedExpression": "@local.calculated_date",
+            "type": "local",
+            "fieldName": "calculated_date"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.calculated_date": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "output_date",
+      "value": 0,
+      "type": "set_variable",
+      "_nested_name": "output_date"
+    },
+    {
+      "type": "button",
+      "value": "Set output date to calculated date",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "output_date",
+            "@local.calculated_date"
+          ],
+          "_raw": "click | set_local: output_date: @local.calculated_date",
+          "_cleaned": "click | set_local: output_date: @local.calculated_date"
+        }
+      ],
+      "name": "button_7",
+      "_nested_name": "button_7",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.calculated_date",
+                  "matchedExpression": "@local.calculated_date",
+                  "type": "local",
+                  "fieldName": "calculated_date"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: output_date: @local.calculated_date",
+                "matchedExpression": "@local.calculated_date",
+                "type": "local",
+                "fieldName": "calculated_date"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_local: output_date: @local.calculated_date",
+                "matchedExpression": "@local.calculated_date",
+                "type": "local",
+                "fieldName": "calculated_date"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.calculated_date": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Set output date to now",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "output_date",
+            "@calc(now())"
+          ],
+          "_raw": "click | set_local: output_date: @calc(now())",
+          "_cleaned": "click | set_local: output_date: @calc(now())"
+        }
+      ],
+      "name": "button_8",
+      "_nested_name": "button_8",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@calc(now())",
+                  "matchedExpression": "@calc(now())",
+                  "type": "calc",
+                  "fieldName": "now()"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: output_date: @calc(now())",
+                "matchedExpression": "@calc(now())",
+                "type": "calc",
+                "fieldName": "now()"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_local: output_date: @calc(now())",
+                "matchedExpression": "@calc(now())",
+                "type": "calc",
+                "fieldName": "now()"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@calc(now())": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Output date: @local.output_date",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Output date: @local.output_date",
+            "matchedExpression": "@local.output_date",
+            "type": "local",
+            "fieldName": "output_date"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.output_date": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_date_now.xlsx"
+}

@@ -8,7 +8,8 @@
       "id": "option_1",
       "name": "option_1",
       "text": "All Activities",
-      "image": "images/icons/reader_blue.svg"
+      "image": "images/icons/reader_blue.svg",
+      "image_checked": "images/icons/reader_blue.svg"
     },
     {
       "id": "option_2",

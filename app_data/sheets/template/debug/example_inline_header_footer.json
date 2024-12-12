@@ -65,7 +65,6 @@
         "sticky": "bottom",
         "variant": "inline_padding",
         "background_image_asset": "images/bottom_image.svg",
-        "style": "background-transparent",
         "background_image_position": "bottom"
       },
       "rows": [

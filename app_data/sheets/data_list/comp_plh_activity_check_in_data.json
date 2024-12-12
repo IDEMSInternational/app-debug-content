@@ -1,0 +1,18 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_plh_activity_check_in_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "countdown_start_date": "2024-12-01T15:34:00.000Z",
+      "countdown_days": 7
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_activity_check_in.xlsx",
+  "_metadata": {
+    "countdown_days": {
+      "type": "number"
+    }
+  }
+}

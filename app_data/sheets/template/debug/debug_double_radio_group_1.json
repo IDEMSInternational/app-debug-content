@@ -89,15 +89,15 @@
           "value": [
             {
               "name": "name_var_4",
-              "text": "1"
+              "text": 1
             },
             {
               "name": "name_var_5",
-              "text": "2"
+              "text": 2
             },
             {
               "name": "name_var_6",
-              "text": "3"
+              "text": 3
             }
           ],
           "exclude_from_translation": true,

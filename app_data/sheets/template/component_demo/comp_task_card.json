@@ -1850,6 +1850,116 @@
         }
       ],
       "_nested_name": "card_1"
+    },
+    {
+      "type": "title",
+      "value": "Card for a block button",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_39",
+      "_nested_name": "title_39"
+    },
+    {
+      "type": "task_card",
+      "name": "block_button",
+      "value": "Block Button",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "@local.task_completed_field",
+            true
+          ],
+          "_raw": "click | set_field: @local.task_completed_field: true",
+          "_cleaned": "click | set_field: @local.task_completed_field: true"
+        }
+      ],
+      "parameter_list": {
+        "task_id": "@local.task_id",
+        "completed_field": "@local.task_completed_field",
+        "title": "Pellentesque quis lectus pharetra, dictum orci ut, aliquet elit",
+        "style": "button",
+        "variant": "block-button",
+        "image": "@local.card_image"
+      },
+      "_nested_name": "block_button",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "0": [
+                {
+                  "fullExpression": "@local.task_completed_field",
+                  "matchedExpression": "@local.task_completed_field",
+                  "type": "local",
+                  "fieldName": "task_completed_field"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_field: @local.task_completed_field: true",
+                "matchedExpression": "@local.task_completed_field",
+                "type": "local",
+                "fieldName": "task_completed_field"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_field: @local.task_completed_field: true",
+                "matchedExpression": "@local.task_completed_field",
+                "type": "local",
+                "fieldName": "task_completed_field"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "task_id": [
+            {
+              "fullExpression": "@local.task_id",
+              "matchedExpression": "@local.task_id",
+              "type": "local",
+              "fieldName": "task_id"
+            }
+          ],
+          "completed_field": [
+            {
+              "fullExpression": "@local.task_completed_field",
+              "matchedExpression": "@local.task_completed_field",
+              "type": "local",
+              "fieldName": "task_completed_field"
+            }
+          ],
+          "image": [
+            {
+              "fullExpression": "@local.card_image",
+              "matchedExpression": "@local.card_image",
+              "type": "local",
+              "fieldName": "card_image"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.task_completed_field": [
+          "action_list.0.args.0",
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "parameter_list.completed_field"
+        ],
+        "@local.task_id": [
+          "parameter_list.task_id"
+        ],
+        "@local.card_image": [
+          "parameter_list.image"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_task_card.xlsx"
