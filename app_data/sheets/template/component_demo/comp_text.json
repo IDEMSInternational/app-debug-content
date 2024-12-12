@@ -180,30 +180,6 @@
       ],
       "name": "text_17",
       "_nested_name": "text_17"
-    },
-    {
-      "type": "title",
-      "name": "list_title",
-      "value": "List Title",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "list-title"
-      },
-      "_nested_name": "list_title"
-    },
-    {
-      "type": "title",
-      "name": "Page_title",
-      "value": "This a Page title",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "style": "page-title"
-      },
-      "_nested_name": "Page_title"
     }
   ],
   "_xlsxPath": "component_sheets/component_text.xlsx"

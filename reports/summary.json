@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 296
+        "count": 309
       },
       {
         "type": "calendar",
@@ -55,18 +55,10 @@
       },
       {
         "type": "data_items",
-        "count": 41
+        "count": 42
       },
       {
         "type": "debug_toggle",
-        "count": 1
-      },
-      {
-        "type": "declare_field_default",
-        "count": 2
-      },
-      {
-        "type": "declare_global_constant",
         "count": 1
       },
       {
@@ -79,7 +71,7 @@
       },
       {
         "type": "display_group",
-        "count": 190
+        "count": 191
       },
       {
         "type": "drawer",
@@ -127,7 +119,7 @@
       },
       {
         "type": "number_selector",
-        "count": 19
+        "count": 21
       },
       {
         "type": "odk_form",
@@ -147,7 +139,7 @@
       },
       {
         "type": "plh_activity_check_in",
-        "count": 2
+        "count": 1
       },
       {
         "type": "plh_bottom_nav",
@@ -207,11 +199,11 @@
       },
       {
         "type": "set_local",
-        "count": 2
+        "count": 5
       },
       {
         "type": "set_variable",
-        "count": 734
+        "count": 738
       },
       {
         "type": "simple_checkbox",
@@ -231,7 +223,7 @@
       },
       {
         "type": "task_card",
-        "count": 24
+        "count": 25
       },
       {
         "type": "task_progress_bar",
@@ -239,11 +231,11 @@
       },
       {
         "type": "template",
-        "count": 128
+        "count": 131
       },
       {
         "type": "text",
-        "count": 944
+        "count": 950
       },
       {
         "type": "text_area",
@@ -267,7 +259,7 @@
       },
       {
         "type": "title",
-        "count": 441
+        "count": 453
       },
       {
         "type": "toggle_bar",
@@ -298,6 +290,10 @@
         "count": 1
       },
       {
+        "type": "add_data",
+        "count": 1
+      },
+      {
         "type": "app_update",
         "count": 3
       },
@@ -308,6 +304,10 @@
       {
         "type": "auth",
         "count": 2
+      },
+      {
+        "type": "delete_item",
+        "count": 1
       },
       {
         "type": "download_assets",
@@ -399,7 +399,7 @@
       },
       {
         "type": "reset_data",
-        "count": 2
+        "count": 5
       },
       {
         "type": "save_to_device",
@@ -411,11 +411,11 @@
       },
       {
         "type": "set_data",
-        "count": 10
+        "count": 14
       },
       {
         "type": "set_field",
-        "count": 111
+        "count": 112
       },
       {
         "type": "set_item",
@@ -427,7 +427,7 @@
       },
       {
         "type": "set_local",
-        "count": 30
+        "count": 34
       },
       {
         "type": "share",
@@ -643,7 +643,7 @@
       },
       {
         "path": "images/diamond.png",
-        "count": 2,
+        "count": 1,
         "size_kb": 4.3
       },
       {
@@ -778,12 +778,12 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 4,
+        "count": 3,
         "size_kb": 0.9
       },
       {
         "path": "images/icons/notification_bell.png",
-        "count": 2,
+        "count": 1,
         "size_kb": 0.9
       },
       {
@@ -793,7 +793,7 @@
       },
       {
         "path": "images/icons/reader_blue.svg",
-        "count": 7,
+        "count": 8,
         "size_kb": 1.4
       },
       {
@@ -848,7 +848,7 @@
       },
       {
         "path": "images/shining_diamond.png",
-        "count": 2,
+        "count": 1,
         "size_kb": 17.7
       },
       {
@@ -938,7 +938,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 31
+        "total": 33
       },
       {
         "type": "data_list",
@@ -1023,12 +1023,12 @@
       {
         "type": "global",
         "subtype": "debug",
-        "total": 9
+        "total": 10
       },
       {
         "type": "template",
         "subtype": null,
-        "total": 88
+        "total": 89
       },
       {
         "type": "template",
@@ -1038,7 +1038,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 261
+        "total": 260
       },
       {
         "type": "template",

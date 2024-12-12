@@ -4,6 +4,12 @@
   "status": "released",
   "rows": [
     {
+      "type": "set_local",
+      "name": "show_delete",
+      "value": false,
+      "_nested_name": "show_delete"
+    },
+    {
       "type": "data_items",
       "value": "@data.feat_data_actions_list",
       "rows": [
@@ -18,7 +24,7 @@
               },
               "condition": "@item.completed",
               "name": "text_1",
-              "_nested_name": "data_items_2.display_group_1.text_1",
+              "_nested_name": "data_items_3.display_group_1.text_1",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -43,7 +49,7 @@
               },
               "condition": "!@item.completed",
               "name": "text_2",
-              "_nested_name": "data_items_2.display_group_1.text_2",
+              "_nested_name": "data_items_3.display_group_1.text_2",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -67,7 +73,7 @@
                 "value": {}
               },
               "name": "text_3",
-              "_nested_name": "data_items_2.display_group_1.text_3",
+              "_nested_name": "data_items_3.display_group_1.text_3",
               "_dynamicFields": {
                 "value": [
                   {
@@ -91,7 +97,7 @@
                 "value": {}
               },
               "name": "text_4",
-              "_nested_name": "data_items_2.display_group_1.text_4",
+              "_nested_name": "data_items_3.display_group_1.text_4",
               "_dynamicFields": {
                 "value": [
                   {
@@ -107,14 +113,57 @@
                   "value"
                 ]
               }
+            },
+            {
+              "type": "button",
+              "value": "Delete",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "delete_item",
+                  "args": [],
+                  "_raw": "click | delete_item",
+                  "_cleaned": "click | delete_item"
+                }
+              ],
+              "condition": "@local.show_delete && @item._user_generated",
+              "name": "button_5",
+              "_nested_name": "data_items_3.display_group_1.button_5",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@local.show_delete && @item._user_generated",
+                    "matchedExpression": "@local.show_delete",
+                    "type": "local",
+                    "fieldName": "show_delete"
+                  },
+                  {
+                    "fullExpression": "@local.show_delete && @item._user_generated",
+                    "matchedExpression": "@item._user_generated",
+                    "type": "item",
+                    "fieldName": "_user_generated"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.show_delete": [
+                  "condition"
+                ],
+                "@item._user_generated": [
+                  "condition"
+                ]
+              }
             }
           ],
           "name": "display_group_1",
-          "_nested_name": "data_items_2.display_group_1"
+          "_nested_name": "data_items_3.display_group_1"
         }
       ],
-      "name": "data_items_2",
-      "_nested_name": "data_items_2",
+      "name": "data_items_3",
+      "_nested_name": "data_items_3",
       "_dynamicFields": {
         "value": [
           {

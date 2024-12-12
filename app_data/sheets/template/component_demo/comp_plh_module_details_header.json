@@ -6,9 +6,6 @@
   "rows": [
     {
       "type": "display_group",
-      "parameter_list": {
-        "sticky": "top"
-      },
       "rows": [
         {
           "type": "plh_module_details_header",

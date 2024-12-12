@@ -10,19 +10,17 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 296 |
+| button | 309 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 48 |
 | dashed_box | 19 |
-| data_items | 41 |
+| data_items | 42 |
 | debug_toggle | 1 |
-| declare_field_default | 2 |
-| declare_global_constant | 1 |
 | demo_basic | 3 |
 | display_grid | 3 |
-| display_group | 190 |
+| display_group | 191 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
@@ -34,12 +32,12 @@
 | nav_group | 6 |
 | navigation_bar | 6 |
 | nested_properties | 32 |
-| number_selector | 19 |
+| number_selector | 21 |
 | odk_form | 1 |
 | parent_point_box | 25 |
 | parent_point_counter | 2 |
 | pdf | 3 |
-| plh_activity_check_in | 2 |
+| plh_activity_check_in | 1 |
 | plh_bottom_nav | 1 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
@@ -54,22 +52,22 @@
 | select_text | 6 |
 | set_default | 1 |
 | set_field | 28 |
-| set_local | 2 |
-| set_variable | 734 |
+| set_local | 5 |
+| set_variable | 738 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 62 |
-| task_card | 24 |
+| task_card | 25 |
 | task_progress_bar | 6 |
-| template | 128 |
-| text | 944 |
+| template | 131 |
+| text | 950 |
 | text_area | 13 |
 | text_box | 51 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 441 |
+| title | 453 |
 | toggle_bar | 50 |
 | update_action_list | 2 |
 | video | 4 |
@@ -83,9 +81,11 @@
 | type | count |
 | --- | --- |
 | !@item.default_value | 1 |
+| add_data | 1 |
 | app_update | 3 |
 | asset_pack | 2 |
 | auth | 2 |
+| delete_item | 1 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
@@ -108,14 +108,14 @@
 | pop_up | 39 |
 | process_template | 2 |
 | reset_app | 1 |
-| reset_data | 2 |
+| reset_data | 5 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
-| set_data | 10 |
-| set_field | 111 |
+| set_data | 14 |
+| set_field | 112 |
 | set_item | 24 |
 | set_items | 2 |
-| set_local | 30 |
+| set_local | 34 |
 | share | 6 |
 | start_tour | 2 |
 | task | 2 |
@@ -193,7 +193,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/avatar_1.png | 67.7 | 17 |
 | images/bg_illustration.png | 255.4 | 3 |
 | images/bottom_image.svg | 6.8 | 2 |
-| images/diamond.png | 4.3 | 2 |
+| images/diamond.png | 4.3 | 1 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
 | images/example/408-536x354.jpg | 23.2 | 1 |
@@ -220,10 +220,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 12 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 4 |
-| images/icons/notification_bell.png | 0.9 | 2 |
+| images/icons/locked.png | 0.9 | 3 |
+| images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
-| images/icons/reader_blue.svg | 1.4 | 7 |
+| images/icons/reader_blue.svg | 1.4 | 8 |
 | images/icons/school_blue.svg | 1.6 | 10 |
 | images/icons/settings.svg | 2.4 | 1 |
 | images/icons/settings_active.svg | 2.4 | 1 |
@@ -234,7 +234,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick_white.svg | 0.3 | 21 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 5 |
-| images/shining_diamond.png | 17.7 | 2 |
+| images/shining_diamond.png | 17.7 | 1 |
 | images/square_1.svg | 0.7 | 1 |
 | images/square_2.svg | 1 | 1 |
 | images/square_3.svg | 1 | 1 |
@@ -258,7 +258,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 31 |
+| data_list |  | 33 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 8 |
@@ -275,10 +275,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator |  | 1 |
 | generator | example_generator | 2 |
 | global |  | 2 |
-| global | debug | 9 |
-| template |  | 88 |
+| global | debug | 10 |
+| template |  | 89 |
 | template | component_demo | 55 |
-| template | debug | 261 |
+| template | debug | 260 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

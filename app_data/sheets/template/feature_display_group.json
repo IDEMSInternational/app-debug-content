@@ -9,8 +9,12 @@
         "sticky": "top",
         "variant": "inline_padding",
         "background_image_asset": "images/activity_bg.svg",
-        "style": "column"
+        "background_image_position": "right",
+        "style": "background_solid"
       },
+      "style_list": [
+        "min-height: 118px"
+      ],
       "rows": [
         {
           "type": "title",
@@ -19,7 +23,8 @@
             "value": {}
           },
           "style_list": [
-            "margin-top: 120px"
+            "justify-content: center",
+            "max-width: 40vw"
           ],
           "name": "title_1",
           "_nested_name": "display_group_2.title_1"
@@ -714,6 +719,10 @@
           "type": "simple_checkbox",
           "name": "checkbox_1",
           "value": false,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
           "action_list": [
             {
               "trigger": "changed",
@@ -726,10 +735,6 @@
               "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
             }
           ],
-          "exclude_from_translation": true,
-          "parameter_list": {
-            "label_text": "Example answer?"
-          },
           "_nested_name": "dg_example_form.checkbox_1",
           "_dynamicFields": {
             "action_list": {
@@ -837,6 +842,10 @@
           "type": "simple_checkbox",
           "name": "checkbox_1",
           "value": false,
+          "exclude_from_translation": true,
+          "parameter_list": {
+            "label_text": "Example answer?"
+          },
           "action_list": [
             {
               "trigger": "changed",
@@ -849,10 +858,6 @@
               "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
             }
           ],
-          "exclude_from_translation": true,
-          "parameter_list": {
-            "label_text": "Example answer?"
-          },
           "_nested_name": "dg_example_form.checkbox_1",
           "_dynamicFields": {
             "action_list": {
@@ -954,32 +959,28 @@
       "name": "dg_bottom_image",
       "exclude_from_translation": true,
       "parameter_list": {
+        "sticky": "bottom",
+        "variant": "inline_padding",
         "background_image_asset": "images/bottom_image.svg",
-        "style": "column",
-        "background_image_position": "bottom"
+        "background_image_position": "bottom left"
       },
+      "style_list": [
+        "min-height: 88px",
+        "width: 100%"
+      ],
       "rows": [
         {
-          "type": "title",
-          "value": "Display Group with Bottom Image",
+          "type": "text",
+          "value": "Footer text",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
-          "name": "title_1",
-          "_nested_name": "dg_bottom_image.title_1"
-        },
-        {
-          "type": "text",
-          "name": "text",
-          "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-          "_translations": {
-            "value": {}
-          },
           "style_list": [
-            "margin-bottom: -40px"
+            "margin-top: 36px"
           ],
-          "_nested_name": "dg_bottom_image.text"
+          "name": "text_1",
+          "_nested_name": "dg_bottom_image.text_1"
         }
       ],
       "_nested_name": "dg_bottom_image"

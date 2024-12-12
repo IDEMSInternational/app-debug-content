@@ -214,6 +214,16 @@
         }
       }
     },
+    "comp_plh_activity_check_in_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_plh_activity_check_in_data",
+      "_xlsxPath": "component_sheets/component_plh_activity_check_in.xlsx",
+      "_metadata": {
+        "countdown_days": {
+          "type": "number"
+        }
+      }
+    },
     "comp_task_bar_legacy_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_bar_legacy_data",
@@ -3240,6 +3250,11 @@
       "flow_name": "debug_data_items_rendering",
       "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx"
     },
+    "debug_date_now": {
+      "flow_type": "template",
+      "flow_name": "debug_date_now",
+      "_xlsxPath": "debug_sheets/debug_date_now.xlsx"
+    },
     "debug_dg_sticky_style_list": {
       "flow_type": "template",
       "flow_name": "debug_dg_sticky_style_list",
@@ -3436,6 +3451,11 @@
     "feat_data_actions": {
       "flow_type": "template",
       "flow_name": "feat_data_actions",
+      "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
+    },
+    "feat_data_actions_edit": {
+      "flow_type": "template",
+      "flow_name": "feat_data_actions_edit",
       "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"
     },
     "feat_data_actions_summary": {

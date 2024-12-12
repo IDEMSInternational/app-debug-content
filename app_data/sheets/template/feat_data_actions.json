@@ -165,7 +165,7 @@
     },
     {
       "type": "title",
-      "value": "Inidividual Actions",
+      "value": "Individual Actions",
       "_translations": {
         "value": {}
       },
@@ -682,9 +682,7 @@
           "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
           "params": {
             "_list_id": "feat_data_actions_list",
-            "@local": {
-              "number_field": 20
-            }
+            "@local.number_field": 20
           }
         }
       ],
