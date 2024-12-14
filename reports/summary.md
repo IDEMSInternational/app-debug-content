@@ -10,7 +10,7 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 309 |
+| button | 306 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -20,7 +20,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 3 |
-| display_group | 191 |
+| display_group | 193 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
@@ -53,17 +53,17 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 5 |
-| set_variable | 738 |
+| set_variable | 740 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 62 |
 | task_card | 25 |
 | task_progress_bar | 6 |
-| template | 131 |
-| text | 950 |
+| template | 130 |
+| text | 952 |
 | text_area | 13 |
-| text_box | 51 |
+| text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
@@ -85,11 +85,10 @@
 | app_update | 3 |
 | asset_pack | 2 |
 | auth | 2 |
-| delete_item | 1 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
-| emit: force_reload | 28 |
+| emit: force_reload | 29 |
 | emit: force_reprocess | 28 |
 | emit: force_restart | 2 |
 | emit: server_sync | 7 |
@@ -102,16 +101,17 @@
 | go_to | 75 |
 | go_to_url | 5 |
 | invalid_action | 1 |
-| nav | 4 |
+| nav | 5 |
 | nav_stack | 10 |
 | open_external | 2 |
 | pop_up | 39 |
 | process_template | 2 |
+| remove_item | 1 |
 | reset_app | 1 |
-| reset_data | 5 |
+| reset_data | 4 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
-| set_data | 14 |
+| set_data | 11 |
 | set_field | 112 |
 | set_item | 24 |
 | set_items | 2 |
@@ -223,14 +223,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/locked.png | 0.9 | 3 |
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
-| images/icons/reader_blue.svg | 1.4 | 8 |
+| images/icons/reader_blue.svg | 1.4 | 7 |
 | images/icons/school_blue.svg | 1.6 | 10 |
 | images/icons/settings.svg | 2.4 | 1 |
 | images/icons/settings_active.svg | 2.4 | 1 |
 | images/icons/star_blue.svg | 1.3 | 2 |
 | images/icons/star_white.svg | 1 | 21 |
 | images/icons/star_yellow.svg | 0.6 | 1 |
-| images/icons/tick.svg | 0.3 | 10 |
+| images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 21 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 5 |
@@ -276,7 +276,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 89 |
+| template |  | 92 |
 | template | component_demo | 55 |
 | template | debug | 260 |
 | template | example_generator | 2 |

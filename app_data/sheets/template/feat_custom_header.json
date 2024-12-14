@@ -1,0 +1,50 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_custom_header",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "style_list": [
+        "justify-content: center"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "value": "Custom Header",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "style": "alternative"
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_2.text_1"
+        },
+        {
+          "type": "button",
+          "value": "Back",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "nav",
+              "args": [
+                "back"
+              ],
+              "_raw": "click | nav: back",
+              "_cleaned": "click | nav: back"
+            }
+          ],
+          "name": "button_2",
+          "_nested_name": "display_group_2.button_2"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+}

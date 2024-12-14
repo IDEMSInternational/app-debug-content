@@ -3404,13 +3404,27 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_app_layout_custom_header": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_custom_header",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "template": "feat_custom_header",
+            "should_show_back_button": "() => false"
+          }
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
     "feat_app_layout_footer": {
       "flow_type": "template",
       "flow_name": "feat_app_layout_footer",
       "parameter_list": {
         "app_config": {
           "APP_FOOTER_DEFAULTS": {
-            "templateName": "feat_custom_footer"
+            "templateName": "feat_custom_footer",
+            "background": "none"
           }
         }
       },
@@ -3431,6 +3445,16 @@
       },
       "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
     },
+    "feat_app_layout_no_header": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_no_header",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {}
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
     "feat_app_layout_padding": {
       "flow_type": "template",
       "flow_name": "feat_app_layout_padding",
@@ -3446,6 +3470,11 @@
     "feat_custom_footer": {
       "flow_type": "template",
       "flow_name": "feat_custom_footer",
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
+    "feat_custom_header": {
+      "flow_type": "template",
+      "flow_name": "feat_custom_header",
       "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
     },
     "feat_data_actions": {

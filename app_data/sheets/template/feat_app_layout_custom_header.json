@@ -1,0 +1,34 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_custom_header",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "template": "feat_custom_header",
+        "should_show_back_button": "() => false"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Template-level app config overrides",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "header template: feat_custom_header",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+}

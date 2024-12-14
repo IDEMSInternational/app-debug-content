@@ -24,127 +24,93 @@
     {
       "type": "template",
       "value": "feat_data_actions_summary",
-      "rows": [],
+      "rows": [
+        {
+          "name": "show_number",
+          "value": false,
+          "type": "set_variable",
+          "_nested_name": "feat_data_actions_summary.show_number"
+        }
+      ],
       "name": "feat_data_actions_summary",
       "_nested_name": "feat_data_actions_summary"
     },
     {
-      "type": "set_local",
-      "name": "next_item_number",
-      "value": "@calc(Object.keys(@data.feat_data_actions_list).length + 1)",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "next_item_number",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(Object.keys(@data.feat_data_actions_list).length + 1)",
-            "matchedExpression": "@data.feat_data_actions_list",
-            "type": "data",
-            "fieldName": "feat_data_actions_list"
-          },
-          {
-            "fullExpression": "@calc(Object.keys(@data.feat_data_actions_list).length + 1)",
-            "matchedExpression": "@calc(Object.keys(@data.feat_data_actions_list).length + 1)",
-            "type": "calc",
-            "fieldName": "Object.keys(@data.feat_data_actions_list).length + 1"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@data.feat_data_actions_list": [
-          "value"
-        ],
-        "@calc(Object.keys(@data.feat_data_actions_list).length + 1)": [
-          "value"
-        ]
-      }
-    },
-    {
-      "type": "button",
-      "value": "Add Data (row @local.next_item_number)",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
+      "type": "display_group",
+      "rows": [
         {
-          "trigger": "click",
-          "action_id": "add_data",
-          "args": [],
-          "_raw": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nnumber: @local.next_item_number\nlabel: Task {@local.next_item_number}",
-          "_cleaned": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nnumber: @local.next_item_number\nlabel: Task {@local.next_item_number}",
-          "params": {
-            "_list_id": "feat_data_actions_list",
-            "completed": false,
-            "number": "@local.next_item_number\nlabel"
+          "type": "text_box",
+          "name": "input_label",
+          "parameter_list": {
+            "placeholder": "label"
+          },
+          "_nested_name": "display_group_6.input_label"
+        },
+        {
+          "type": "button",
+          "value": "Add Data",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "add_data",
+              "args": [],
+              "_raw": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
+              "_cleaned": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
+              "params": {
+                "_list_id": "feat_data_actions_list",
+                "completed": false,
+                "label": "@local.input_label"
+              }
+            }
+          ],
+          "name": "button_2",
+          "_nested_name": "display_group_6.button_2",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
+                    "matchedExpression": "@local.input_label",
+                    "type": "local",
+                    "fieldName": "input_label"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
+                    "matchedExpression": "@local.input_label",
+                    "type": "local",
+                    "fieldName": "input_label"
+                  }
+                ],
+                "params": {
+                  "label": [
+                    {
+                      "fullExpression": "@local.input_label",
+                      "matchedExpression": "@local.input_label",
+                      "type": "local",
+                      "fieldName": "input_label"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.input_label": [
+              "action_list.0._raw",
+              "action_list.0._cleaned",
+              "action_list.0.params.label"
+            ]
           }
         }
       ],
-      "name": "button_7",
-      "_nested_name": "button_7",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "Add Data (row @local.next_item_number)",
-            "matchedExpression": "@local.next_item_number",
-            "type": "local",
-            "fieldName": "next_item_number"
-          }
-        ],
-        "action_list": {
-          "0": {
-            "_raw": [
-              {
-                "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nnumber: @local.next_item_number\nlabel: Task {@local.next_item_number}",
-                "matchedExpression": "@local.next_item_number",
-                "type": "local",
-                "fieldName": "next_item_number"
-              },
-              {
-                "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nnumber: @local.next_item_number\nlabel: Task {@local.next_item_number}",
-                "matchedExpression": "@local.next_item_number",
-                "type": "local",
-                "fieldName": "next_item_number"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nnumber: @local.next_item_number\nlabel: Task {@local.next_item_number}",
-                "matchedExpression": "@local.next_item_number",
-                "type": "local",
-                "fieldName": "next_item_number"
-              },
-              {
-                "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nnumber: @local.next_item_number\nlabel: Task {@local.next_item_number}",
-                "matchedExpression": "@local.next_item_number",
-                "type": "local",
-                "fieldName": "next_item_number"
-              }
-            ],
-            "params": {
-              "number": [
-                {
-                  "fullExpression": "@local.next_item_number\nlabel",
-                  "matchedExpression": "@local.next_item_number",
-                  "type": "local",
-                  "fieldName": "next_item_number"
-                }
-              ]
-            }
-          }
-        }
-      },
-      "_dynamicDependencies": {
-        "@local.next_item_number": [
-          "value",
-          "action_list.0._raw",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "action_list.0._cleaned",
-          "action_list.0.params.number"
-        ]
-      }
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
     },
     {
       "type": "button",
@@ -181,10 +147,16 @@
       "value": "feat_data_actions_summary",
       "rows": [
         {
-          "type": "set_local",
-          "name": "show_delete",
+          "name": "show_number",
+          "value": false,
+          "type": "set_variable",
+          "_nested_name": "feat_data_actions_summary.show_number"
+        },
+        {
+          "name": "show_remove",
           "value": true,
-          "_nested_name": "feat_data_actions_summary.show_delete"
+          "type": "set_variable",
+          "_nested_name": "feat_data_actions_summary.show_remove"
         }
       ],
       "name": "feat_data_actions_summary",
@@ -233,212 +205,6 @@
       },
       "name": "text_15",
       "_nested_name": "text_15"
-    },
-    {
-      "type": "title",
-      "value": "Quality Assurance",
-      "_translations": {
-        "value": {}
-      },
-      "name": "title_16",
-      "_nested_name": "title_16"
-    },
-    {
-      "type": "template",
-      "value": "feat_data_actions_summary",
-      "rows": [],
-      "name": "feat_data_actions_summary",
-      "_nested_name": "feat_data_actions_summary"
-    },
-    {
-      "type": "text",
-      "value": "Test setting number from string. It should automatically be converted to a number",
-      "_translations": {
-        "value": {}
-      },
-      "name": "text_19",
-      "_nested_name": "text_19"
-    },
-    {
-      "type": "button",
-      "value": "Set number from string",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_data",
-          "args": [],
-          "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: 20",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: 20",
-          "params": {
-            "_list_id": "feat_data_actions_list",
-            "number": 20
-          }
-        }
-      ],
-      "name": "button_20",
-      "_nested_name": "button_20"
-    },
-    {
-      "name": "number_field",
-      "value": "number",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "number_field"
-    },
-    {
-      "type": "button",
-      "value": "Set from variable field",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_data",
-          "args": [],
-          "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
-          "params": {
-            "_list_id": "feat_data_actions_list",
-            "@local.number_field": 20
-          }
-        }
-      ],
-      "name": "button_22",
-      "_nested_name": "button_22",
-      "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
-                "matchedExpression": "@local.number_field",
-                "type": "local",
-                "fieldName": "number_field"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
-                "matchedExpression": "@local.number_field",
-                "type": "local",
-                "fieldName": "number_field"
-              }
-            ]
-          }
-        }
-      },
-      "_dynamicDependencies": {
-        "@local.number_field": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
-        ]
-      }
-    },
-    {
-      "type": "button",
-      "value": "Add 1 to number",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_data",
-          "args": [],
-          "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
-          "params": {
-            "_list_id": "feat_data_actions_list",
-            "number": "@item.number+1"
-          }
-        }
-      ],
-      "name": "button_23",
-      "_nested_name": "button_23",
-      "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
-                "matchedExpression": "@item.number",
-                "type": "item",
-                "fieldName": "number"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
-                "matchedExpression": "@item.number",
-                "type": "item",
-                "fieldName": "number"
-              }
-            ],
-            "params": {
-              "number": [
-                {
-                  "fullExpression": "@item.number+1",
-                  "matchedExpression": "@item.number",
-                  "type": "item",
-                  "fieldName": "number"
-                }
-              ]
-            }
-          }
-        }
-      },
-      "_dynamicDependencies": {
-        "@item.number": [
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "action_list.0.params.number"
-        ]
-      }
-    },
-    {
-      "type": "button",
-      "value": "Reset to original state",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "reset_data",
-          "args": [],
-          "_raw": "click | reset_data | \n\n_list_id: feat_data_actions_list",
-          "_cleaned": "click | reset_data | \n\n_list_id: feat_data_actions_list",
-          "params": {
-            "_list_id": "feat_data_actions_list"
-          }
-        }
-      ],
-      "name": "button_24",
-      "_nested_name": "button_24"
-    },
-    {
-      "type": "title",
-      "value": "Filtered Actions",
-      "_translations": {
-        "value": {}
-      },
-      "name": "title_25",
-      "_nested_name": "title_25"
-    },
-    {
-      "type": "text",
-      "value": "(WiP)",
-      "_translations": {
-        "value": {}
-      },
-      "name": "text_26",
-      "_nested_name": "text_26"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"

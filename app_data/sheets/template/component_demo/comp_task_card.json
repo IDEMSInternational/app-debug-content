@@ -1872,16 +1872,24 @@
           "trigger": "click",
           "action_id": "set_field",
           "args": [
-            "@local.task_completed_field",
-            true
+            "@local.task_completed_field = true"
           ],
-          "_raw": "click | set_field: @local.task_completed_field: true",
-          "_cleaned": "click | set_field: @local.task_completed_field: true"
+          "_raw": "click | set_field: @local.task_completed_field = true",
+          "_cleaned": "click | set_field: @local.task_completed_field = true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload",
+          "_cleaned": "click | emit: force_reload"
         }
       ],
       "parameter_list": {
         "task_id": "@local.task_id",
-        "completed_field": "@local.task_completed_field",
+        "completed_field": "FALSE",
         "title": "Pellentesque quis lectus pharetra, dictum orci ut, aliquet elit",
         "style": "button",
         "variant": "block-button",
@@ -1894,7 +1902,7 @@
             "args": {
               "0": [
                 {
-                  "fullExpression": "@local.task_completed_field",
+                  "fullExpression": "@local.task_completed_field = true",
                   "matchedExpression": "@local.task_completed_field",
                   "type": "local",
                   "fieldName": "task_completed_field"
@@ -1903,7 +1911,7 @@
             },
             "_raw": [
               {
-                "fullExpression": "click | set_field: @local.task_completed_field: true",
+                "fullExpression": "click | set_field: @local.task_completed_field = true",
                 "matchedExpression": "@local.task_completed_field",
                 "type": "local",
                 "fieldName": "task_completed_field"
@@ -1911,7 +1919,7 @@
             ],
             "_cleaned": [
               {
-                "fullExpression": "click | set_field: @local.task_completed_field: true",
+                "fullExpression": "click | set_field: @local.task_completed_field = true",
                 "matchedExpression": "@local.task_completed_field",
                 "type": "local",
                 "fieldName": "task_completed_field"
@@ -1928,14 +1936,6 @@
               "fieldName": "task_id"
             }
           ],
-          "completed_field": [
-            {
-              "fullExpression": "@local.task_completed_field",
-              "matchedExpression": "@local.task_completed_field",
-              "type": "local",
-              "fieldName": "task_completed_field"
-            }
-          ],
           "image": [
             {
               "fullExpression": "@local.card_image",
@@ -1950,8 +1950,7 @@
         "@local.task_completed_field": [
           "action_list.0.args.0",
           "action_list.0._raw",
-          "action_list.0._cleaned",
-          "parameter_list.completed_field"
+          "action_list.0._cleaned"
         ],
         "@local.task_id": [
           "parameter_list.task_id"
