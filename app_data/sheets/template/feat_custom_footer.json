@@ -10,7 +10,7 @@
         "value": {}
       },
       "parameter_list": {
-        "style": "alternative"
+        "text_align": "center"
       },
       "name": "text_2",
       "_nested_name": "text_2"

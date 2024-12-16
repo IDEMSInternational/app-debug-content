@@ -5,7 +5,8 @@
   "parameter_list": {
     "app_config": {
       "APP_FOOTER_DEFAULTS": {
-        "templateName": "feat_custom_footer"
+        "templateName": "feat_custom_footer",
+        "background": "none"
       }
     }
   },

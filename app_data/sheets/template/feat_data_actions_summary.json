@@ -5,9 +5,21 @@
   "rows": [
     {
       "type": "set_local",
-      "name": "show_delete",
+      "name": "show_number",
+      "value": true,
+      "_nested_name": "show_number"
+    },
+    {
+      "type": "set_local",
+      "name": "show_label",
+      "value": true,
+      "_nested_name": "show_label"
+    },
+    {
+      "type": "set_local",
+      "name": "show_remove",
       "value": false,
-      "_nested_name": "show_delete"
+      "_nested_name": "show_remove"
     },
     {
       "type": "data_items",
@@ -24,7 +36,7 @@
               },
               "condition": "@item.completed",
               "name": "text_1",
-              "_nested_name": "data_items_3.display_group_1.text_1",
+              "_nested_name": "data_items_5.display_group_1.text_1",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -49,7 +61,7 @@
               },
               "condition": "!@item.completed",
               "name": "text_2",
-              "_nested_name": "data_items_3.display_group_1.text_2",
+              "_nested_name": "data_items_5.display_group_1.text_2",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -73,7 +85,7 @@
                 "value": {}
               },
               "name": "text_3",
-              "_nested_name": "data_items_3.display_group_1.text_3",
+              "_nested_name": "data_items_5.display_group_1.text_3",
               "_dynamicFields": {
                 "value": [
                   {
@@ -96,8 +108,9 @@
               "_translations": {
                 "value": {}
               },
+              "condition": "@local.show_number",
               "name": "text_4",
-              "_nested_name": "data_items_3.display_group_1.text_4",
+              "_nested_name": "data_items_5.display_group_1.text_4",
               "_dynamicFields": {
                 "value": [
                   {
@@ -106,64 +119,111 @@
                     "type": "item",
                     "fieldName": "number"
                   }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@local.show_number",
+                    "matchedExpression": "@local.show_number",
+                    "type": "local",
+                    "fieldName": "show_number"
+                  }
                 ]
               },
               "_dynamicDependencies": {
                 "@item.number": [
                   "value"
+                ],
+                "@local.show_number": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "@item.label",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@local.show_label",
+              "name": "text_5",
+              "_nested_name": "data_items_5.display_group_1.text_5",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.label",
+                    "matchedExpression": "@item.label",
+                    "type": "item",
+                    "fieldName": "label"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "@local.show_label",
+                    "matchedExpression": "@local.show_label",
+                    "type": "local",
+                    "fieldName": "show_label"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.label": [
+                  "value"
+                ],
+                "@local.show_label": [
+                  "condition"
                 ]
               }
             },
             {
               "type": "button",
-              "value": "Delete",
+              "value": "Remove",
               "_translations": {
                 "value": {}
               },
               "action_list": [
                 {
                   "trigger": "click",
-                  "action_id": "delete_item",
+                  "action_id": "remove_item",
                   "args": [],
-                  "_raw": "click | delete_item",
-                  "_cleaned": "click | delete_item"
+                  "_raw": "click | remove_item",
+                  "_cleaned": "click | remove_item"
                 }
               ],
-              "condition": "@local.show_delete && @item._user_generated",
-              "name": "button_5",
-              "_nested_name": "data_items_3.display_group_1.button_5",
+              "condition": "@local.show_remove && @item._user_created",
+              "name": "button_6",
+              "_nested_name": "data_items_5.display_group_1.button_6",
               "_dynamicFields": {
                 "condition": [
                   {
-                    "fullExpression": "@local.show_delete && @item._user_generated",
-                    "matchedExpression": "@local.show_delete",
+                    "fullExpression": "@local.show_remove && @item._user_created",
+                    "matchedExpression": "@local.show_remove",
                     "type": "local",
-                    "fieldName": "show_delete"
+                    "fieldName": "show_remove"
                   },
                   {
-                    "fullExpression": "@local.show_delete && @item._user_generated",
-                    "matchedExpression": "@item._user_generated",
+                    "fullExpression": "@local.show_remove && @item._user_created",
+                    "matchedExpression": "@item._user_created",
                     "type": "item",
-                    "fieldName": "_user_generated"
+                    "fieldName": "_user_created"
                   }
                 ]
               },
               "_dynamicDependencies": {
-                "@local.show_delete": [
+                "@local.show_remove": [
                   "condition"
                 ],
-                "@item._user_generated": [
+                "@item._user_created": [
                   "condition"
                 ]
               }
             }
           ],
           "name": "display_group_1",
-          "_nested_name": "data_items_3.display_group_1"
+          "_nested_name": "data_items_5.display_group_1"
         }
       ],
-      "name": "data_items_3",
-      "_nested_name": "data_items_3",
+      "name": "data_items_5",
+      "_nested_name": "data_items_5",
       "_dynamicFields": {
         "value": [
           {

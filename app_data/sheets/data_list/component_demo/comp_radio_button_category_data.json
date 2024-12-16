@@ -9,19 +9,21 @@
       "name": "option_1",
       "text": "All Activities",
       "image": "images/icons/reader_blue.svg",
-      "image_checked": "images/icons/reader_blue.svg"
+      "image_checked": "images/icons/tick.svg"
     },
     {
       "id": "option_2",
       "name": "option_2",
       "text": "Played",
-      "image": "images/icons/star_blue.svg"
+      "image": "images/icons/star_blue.svg",
+      "image_checked": "images/icons/tick.svg"
     },
     {
       "id": "option_3",
       "name": "option_3",
       "text": "Not Played",
-      "image": "images/icons/school_blue.svg"
+      "image": "images/icons/school_blue.svg",
+      "image_checked": "images/icons/tick.svg"
     }
   ],
   "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
