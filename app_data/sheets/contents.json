@@ -312,17 +312,6 @@
         }
       }
     },
-    "comp_title_params": {
-      "flow_type": "data_list",
-      "flow_name": "comp_title_params",
-      "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_title_test.xlsx",
-      "_metadata": {
-        "required": {
-          "type": "boolean"
-        }
-      }
-    },
     "debug_accordion_data": {
       "flow_type": "data_list",
       "flow_name": "debug_accordion_data",
@@ -1571,7 +1560,7 @@
       "flow_type": "template",
       "flow_name": "comp_title",
       "flow_subtype": "component_demo",
-      "_xlsxPath": "component_sheets/component_title_test.xlsx"
+      "_xlsxPath": "component_sheets/component_title.xlsx"
     },
     "comp_toggle_bar": {
       "flow_type": "template",
@@ -3404,6 +3393,19 @@
       "flow_subtype": "example_sheet_defaults",
       "_xlsxPath": "example_sheets/to_be_sorted/example_sheet_defaults.xlsx"
     },
+    "feat_app_layout_custom_footer": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_custom_footer",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "feat_custom_footer",
+            "background": "none"
+          }
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
     "feat_app_layout_custom_header": {
       "flow_type": "template",
       "flow_name": "feat_app_layout_custom_header",
@@ -3411,20 +3413,7 @@
         "app_config": {
           "APP_HEADER_DEFAULTS": {
             "template": "feat_custom_header",
-            "should_show_back_button": "() => false"
-          }
-        }
-      },
-      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
-    },
-    "feat_app_layout_footer": {
-      "flow_type": "template",
-      "flow_name": "feat_app_layout_footer",
-      "parameter_list": {
-        "app_config": {
-          "APP_FOOTER_DEFAULTS": {
-            "templateName": "feat_custom_footer",
-            "background": "none"
+            "should_show_back_button": false
           }
         }
       },
@@ -3450,7 +3439,9 @@
       "flow_name": "feat_app_layout_no_header",
       "parameter_list": {
         "app_config": {
-          "APP_HEADER_DEFAULTS": {}
+          "APP_HEADER_DEFAULTS": {
+            "show": false
+          }
         }
       },
       "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"

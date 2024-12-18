@@ -7,7 +7,7 @@
     {
       "type": "text",
       "name": "text",
-      "value": "This is the example text template 2",
+      "value": "This is the example text template used on pop-up components",
       "_translations": {
         "value": {}
       },

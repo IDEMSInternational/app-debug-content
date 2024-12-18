@@ -10,22 +10,22 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 306 |
+| button | 335 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 48 |
+| combo_box | 47 |
 | dashed_box | 19 |
-| data_items | 42 |
+| data_items | 43 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
-| display_grid | 3 |
-| display_group | 193 |
+| display_grid | 4 |
+| display_group | 190 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
 | image | 76 |
-| items | 50 |
+| items | 49 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 2 |
@@ -57,17 +57,17 @@
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 62 |
+| subtitle | 60 |
 | task_card | 25 |
 | task_progress_bar | 6 |
 | template | 130 |
-| text | 952 |
+| text | 944 |
 | text_area | 13 |
-| text_box | 52 |
+| text_box | 50 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 453 |
+| title | 461 |
 | toggle_bar | 50 |
 | update_action_list | 2 |
 | video | 4 |
@@ -89,7 +89,7 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 29 |
-| emit: force_reprocess | 28 |
+| emit: force_reprocess | 26 |
 | emit: force_restart | 2 |
 | emit: server_sync | 7 |
 | emit: set_language | 4 |
@@ -98,13 +98,13 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 75 |
+| go_to | 101 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 10 |
 | open_external | 2 |
-| pop_up | 39 |
+| pop_up | 40 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 1 |
@@ -115,7 +115,7 @@
 | set_field | 112 |
 | set_item | 24 |
 | set_items | 2 |
-| set_local | 34 |
+| set_local | 35 |
 | share | 6 |
 | start_tour | 2 |
 | task | 2 |
@@ -162,7 +162,7 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg | 2 |
+| click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg | 2 |
 | confetti.svg | 1 |
 | debug_asset_pack_1/image_2.png | 1 |
 | https://www.w3schools.com/html/mov_bbb.mp4 | 1 |
@@ -261,7 +261,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list |  | 33 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
-| data_list | component_demo | 8 |
+| data_list | component_demo | 7 |
 | data_list | debug | 18 |
 | data_list | debug_lifecycle_actions | 1 |
 | data_list | example_generator | 3 |

@@ -58,9 +58,71 @@
           ],
           "_raw": "click | auth: sign_out",
           "_cleaned": "click | auth: sign_out"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
         }
       ],
       "_nested_name": "sign_out"
+    },
+    {
+      "type": "text",
+      "value": "Currently signed in user:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "text",
+      "value": "@fields._app_auth_user",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_auth_user",
+            "matchedExpression": "@fields._app_auth_user",
+            "type": "fields",
+            "fieldName": "_app_auth_user"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_auth_user": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Refresh",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "button_8",
+      "_nested_name": "button_8"
     }
   ],
   "_xlsxPath": "example_sheets/example_google_auth.xlsx"
