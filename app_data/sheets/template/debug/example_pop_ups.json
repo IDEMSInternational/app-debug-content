@@ -227,15 +227,47 @@
       "_nested_name": "button_pop_up_6"
     },
     {
+      "type": "title",
+      "value": "Completion Modal",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_16",
+      "_nested_name": "title_16"
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_7",
+      "value": "Complete",
+      "_translations": {
+        "value": {}
+      },
       "action_list": [
         {
           "trigger": "click",
           "action_id": "pop_up",
           "args": [
-            "my_template"
+            "example_text"
           ],
-          "_raw": "click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg",
-          "_cleaned": "click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg",
+          "_raw": "click | pop_up: example_text | variant:plh_completion",
+          "_cleaned": "click | pop_up: example_text | variant:plh_completion",
+          "params": {
+            "variant": "plh_completion"
+          }
+        }
+      ],
+      "_nested_name": "button_pop_up_7"
+    },
+    {
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
+          "_cleaned": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
           "params": {
             "variant": "plh_completion",
             "background_image": "confetti.svg"
@@ -243,8 +275,8 @@
         }
       ],
       "type": "set_variable",
-      "name": "set_variable_16",
-      "_nested_name": "set_variable_16"
+      "name": "set_variable_18",
+      "_nested_name": "set_variable_18"
     }
   ],
   "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"

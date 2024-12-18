@@ -5,24 +5,17 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "display_group",
-      "rows": [
-        {
-          "type": "plh_module_details_header",
-          "value": "Module Title: Taking Care of Yourself",
-          "_translations": {
-            "value": {}
-          },
-          "parameter_list": {
-            "background_image_asset": "images/bg_illustration.png",
-            "module_image_asset": "images/module-1.png"
-          },
-          "name": "plh_module_details_header_1",
-          "_nested_name": "display_group_2.plh_module_details_header_1"
-        }
-      ],
-      "name": "display_group_2",
-      "_nested_name": "display_group_2"
+      "type": "plh_module_details_header",
+      "value": "Module Title: Taking Care of Yourself",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "background_image_asset": "images/bg_illustration.png",
+        "module_image_asset": "images/module-1.png"
+      },
+      "name": "plh_module_details_header_2",
+      "_nested_name": "plh_module_details_header_2"
     },
     {
       "type": "plh_module_details_header",
@@ -32,10 +25,11 @@
       },
       "parameter_list": {
         "background_image_asset": "images/bg_illustration.png",
-        "module_image_asset": "images/module-1.png"
+        "module_image_asset": "images/module-1.png",
+        "hide_back_button": "true"
       },
-      "name": "plh_module_details_header_4",
-      "_nested_name": "plh_module_details_header_4"
+      "name": "plh_module_details_header_3",
+      "_nested_name": "plh_module_details_header_3"
     },
     {
       "type": "plh_module_details_header",
@@ -47,8 +41,8 @@
         "background_image_asset": "images/bg_illustration.png",
         "module_image_asset": "images/Noura.png"
       },
-      "name": "plh_module_details_header_5",
-      "_nested_name": "plh_module_details_header_5"
+      "name": "plh_module_details_header_4",
+      "_nested_name": "plh_module_details_header_4"
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_module_details_header.xlsx"

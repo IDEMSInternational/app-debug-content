@@ -8,7 +8,8 @@
       "id": "id_1",
       "label": "Task 1",
       "completed": false,
-      "type": "type_a"
+      "type": "type_a",
+      "_app_meta_field": "example metadata"
     },
     {
       "id": "id_2",

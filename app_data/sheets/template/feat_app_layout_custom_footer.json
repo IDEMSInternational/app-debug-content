@@ -1,14 +1,12 @@
 {
   "flow_type": "template",
-  "flow_name": "feat_app_layout_header_compact",
+  "flow_name": "feat_app_layout_custom_footer",
   "status": "released",
   "parameter_list": {
     "app_config": {
-      "APP_HEADER_DEFAULTS": {
-        "variant": "compact"
-      },
       "APP_FOOTER_DEFAULTS": {
-        "templateName": false
+        "templateName": "feat_custom_footer",
+        "background": "none"
       }
     }
   },
@@ -24,7 +22,7 @@
     },
     {
       "type": "title",
-      "value": "header variant: compact,\nfooter disabled",
+      "value": "Custom footer",
       "_translations": {
         "value": {}
       },

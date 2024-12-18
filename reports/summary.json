@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 306
+        "count": 335
       },
       {
         "type": "calendar",
@@ -47,7 +47,7 @@
       },
       {
         "type": "combo_box",
-        "count": 48
+        "count": 47
       },
       {
         "type": "dashed_box",
@@ -55,7 +55,7 @@
       },
       {
         "type": "data_items",
-        "count": 42
+        "count": 43
       },
       {
         "type": "debug_toggle",
@@ -67,11 +67,11 @@
       },
       {
         "type": "display_grid",
-        "count": 3
+        "count": 4
       },
       {
         "type": "display_group",
-        "count": 193
+        "count": 190
       },
       {
         "type": "drawer",
@@ -91,7 +91,7 @@
       },
       {
         "type": "items",
-        "count": 50
+        "count": 49
       },
       {
         "type": "latex",
@@ -219,7 +219,7 @@
       },
       {
         "type": "subtitle",
-        "count": 62
+        "count": 60
       },
       {
         "type": "task_card",
@@ -235,7 +235,7 @@
       },
       {
         "type": "text",
-        "count": 952
+        "count": 944
       },
       {
         "type": "text_area",
@@ -243,7 +243,7 @@
       },
       {
         "type": "text_box",
-        "count": 52
+        "count": 50
       },
       {
         "type": "text_bubble",
@@ -259,7 +259,7 @@
       },
       {
         "type": "title",
-        "count": 453
+        "count": 461
       },
       {
         "type": "toggle_bar",
@@ -323,7 +323,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 28
+        "count": 26
       },
       {
         "type": "emit: force_restart",
@@ -359,7 +359,7 @@
       },
       {
         "type": "go_to",
-        "count": 75
+        "count": 101
       },
       {
         "type": "go_to_url",
@@ -383,7 +383,7 @@
       },
       {
         "type": "pop_up",
-        "count": 39
+        "count": 40
       },
       {
         "type": "process_template",
@@ -427,7 +427,7 @@
       },
       {
         "type": "set_local",
-        "count": 34
+        "count": 35
       },
       {
         "type": "share",
@@ -528,7 +528,7 @@
   "assets_missing": {
     "data": [
       {
-        "path": "click | pop_up: my_template | variant: plh_completion, background_image: confetti.svg",
+        "path": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
         "count": 2,
         "missing": true
       },
@@ -953,7 +953,7 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 8
+        "total": 7
       },
       {
         "type": "data_list",
