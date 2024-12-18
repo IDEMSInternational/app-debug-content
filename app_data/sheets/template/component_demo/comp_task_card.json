@@ -1872,10 +1872,11 @@
           "trigger": "click",
           "action_id": "set_field",
           "args": [
-            "@local.task_completed_field = true"
+            "@local.task_completed_field",
+            true
           ],
-          "_raw": "click | set_field: @local.task_completed_field = true",
-          "_cleaned": "click | set_field: @local.task_completed_field = true"
+          "_raw": "click | set_field: @local.task_completed_field: true",
+          "_cleaned": "click | set_field: @local.task_completed_field: true"
         },
         {
           "trigger": "click",
@@ -1902,7 +1903,7 @@
             "args": {
               "0": [
                 {
-                  "fullExpression": "@local.task_completed_field = true",
+                  "fullExpression": "@local.task_completed_field",
                   "matchedExpression": "@local.task_completed_field",
                   "type": "local",
                   "fieldName": "task_completed_field"
@@ -1911,7 +1912,7 @@
             },
             "_raw": [
               {
-                "fullExpression": "click | set_field: @local.task_completed_field = true",
+                "fullExpression": "click | set_field: @local.task_completed_field: true",
                 "matchedExpression": "@local.task_completed_field",
                 "type": "local",
                 "fieldName": "task_completed_field"
@@ -1919,7 +1920,7 @@
             ],
             "_cleaned": [
               {
-                "fullExpression": "click | set_field: @local.task_completed_field = true",
+                "fullExpression": "click | set_field: @local.task_completed_field: true",
                 "matchedExpression": "@local.task_completed_field",
                 "type": "local",
                 "fieldName": "task_completed_field"
