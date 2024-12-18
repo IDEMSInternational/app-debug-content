@@ -1710,6 +1710,49 @@
         }
       ],
       "_nested_name": "data_items_carousel"
+    },
+    {
+      "type": "button",
+      "name": "button_override",
+      "value": "Override text",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | \n\n_list_id: comp_carousel_items,\ntext: Text override",
+          "_cleaned": "click | set_data | \n\n_list_id: comp_carousel_items,\ntext: Text override",
+          "params": {
+            "_list_id": "comp_carousel_items",
+            "text": "Text override"
+          }
+        }
+      ],
+      "_nested_name": "button_override"
+    },
+    {
+      "type": "button",
+      "name": "button_reset",
+      "value": "Reset to original state",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "reset_data",
+          "args": [],
+          "_raw": "click | reset_data | \n\n_list_id: comp_carousel_items",
+          "_cleaned": "click | reset_data | \n\n_list_id: comp_carousel_items",
+          "params": {
+            "_list_id": "comp_carousel_items"
+          }
+        }
+      ],
+      "_nested_name": "button_reset"
     }
   ],
   "_xlsxPath": "component_sheets/component_carousel.xlsx"
