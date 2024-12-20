@@ -83,10 +83,11 @@ config.app_config.TASKS.taskGroupsListName = "feat_task_groups"
 config.app_config.APP_UPDATES.enabled = true
 config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete"
 
-config.app_config.APP_AUTHENTICATION_DEFAULTS.signInTemplate = "example_google_auth"
 config.auth = {
-  enforceLogin:false,
-  provider:'firebase'
+  provider:'firebase',
+  /** uncomment if testing enforce login */
+  // enforceLoginTemplate: "example_google_auth",
+
 }
 
 config.app_config.APP_LANGUAGES_META = { 
