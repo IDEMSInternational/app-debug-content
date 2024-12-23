@@ -261,6 +261,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_carousel.xlsx"
     },
+    "comp_combo_box_items": {
+      "flow_type": "data_list",
+      "flow_name": "comp_combo_box_items",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_combo_box.xlsx"
+    },
     "comp_data_items_list": {
       "flow_type": "data_list",
       "flow_name": "comp_data_items_list",
@@ -485,17 +491,6 @@
       "flow_type": "data_list",
       "flow_name": "debug_lang_sort_data_list",
       "_xlsxPath": "debug_sheets/debug_translation_sort.xlsx"
-    },
-    "debug_launch_actions": {
-      "flow_type": "data_list",
-      "flow_subtype": "debug_lifecycle_actions",
-      "flow_name": "debug_launch_actions",
-      "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx",
-      "_metadata": {
-        "priority": {
-          "type": "number"
-        }
-      }
     },
     "debug_nav_bar_data": {
       "flow_type": "data_list",
@@ -881,6 +876,17 @@
       "flow_name": "goal_data",
       "data_list_name": "goal",
       "_xlsxPath": "demo_sheets/article_data.xlsx"
+    },
+    "debug_launch_actions": {
+      "flow_type": "data_list",
+      "flow_subtype": "lifecycle_actions",
+      "flow_name": "debug_launch_actions",
+      "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx",
+      "_metadata": {
+        "priority": {
+          "type": "number"
+        }
+      }
     },
     "task_cards_data": {
       "flow_type": "data_list",
@@ -1424,6 +1430,13 @@
       "flow_type": "template",
       "flow_name": "comp_plh_bottom_nav",
       "flow_subtype": "component_demo",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "comp_plh_bottom_nav"
+          }
+        }
+      },
       "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx"
     },
     "comp_plh_completion_modal": {
@@ -2757,6 +2770,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_changed_action.xlsx"
     },
+    "example_completion": {
+      "flow_type": "template",
+      "flow_name": "example_completion",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"
+    },
     "example_condition_bottom": {
       "flow_type": "template",
       "flow_name": "example_condition_bottom",
@@ -3413,7 +3432,9 @@
         "app_config": {
           "APP_HEADER_DEFAULTS": {
             "template": "feat_custom_header",
-            "should_show_back_button": false
+            "back_button": {
+              "hidden": true
+            }
           }
         }
       },
@@ -3440,7 +3461,7 @@
       "parameter_list": {
         "app_config": {
           "APP_HEADER_DEFAULTS": {
-            "show": false
+            "hidden": true
           }
         }
       },

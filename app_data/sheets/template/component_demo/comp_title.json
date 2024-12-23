@@ -60,6 +60,30 @@
       },
       "name": "title_6",
       "_nested_name": "title_6"
+    },
+    {
+      "type": "title",
+      "value": "Title as Page Banner",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "page-banner"
+      },
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "title",
+      "value": "Title as Section Banner",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "section-banner"
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
     }
   ],
   "_xlsxPath": "component_sheets/component_title.xlsx"

@@ -5,7 +5,7 @@
   "parameter_list": {
     "app_config": {
       "APP_HEADER_DEFAULTS": {
-        "show": false
+        "hidden": true
       }
     }
   },
