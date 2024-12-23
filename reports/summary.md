@@ -10,7 +10,7 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 335 |
+| button | 337 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -108,10 +108,10 @@
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 1 |
-| reset_data | 4 |
+| reset_data | 5 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
-| set_data | 11 |
+| set_data | 12 |
 | set_field | 112 |
 | set_item | 24 |
 | set_items | 2 |
