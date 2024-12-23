@@ -247,10 +247,10 @@
           "trigger": "click",
           "action_id": "pop_up",
           "args": [
-            "example_text"
+            "example_completion"
           ],
-          "_raw": "click | pop_up: example_text | variant:plh_completion",
-          "_cleaned": "click | pop_up: example_text | variant:plh_completion",
+          "_raw": "click | pop_up: example_completion | variant:plh_completion",
+          "_cleaned": "click | pop_up: example_completion | variant:plh_completion",
           "params": {
             "variant": "plh_completion"
           }

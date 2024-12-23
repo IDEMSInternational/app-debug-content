@@ -6,7 +6,9 @@
     "app_config": {
       "APP_HEADER_DEFAULTS": {
         "template": "feat_custom_header",
-        "should_show_back_button": false
+        "back_button": {
+          "hidden": true
+        }
       }
     }
   },

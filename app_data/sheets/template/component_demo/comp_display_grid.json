@@ -707,6 +707,49 @@
       }
     },
     {
+      "type": "button",
+      "name": "button_override",
+      "value": "Override text",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | \n\n_list_id: comp_display_grid_data,\ntext: Text override",
+          "_cleaned": "click | set_data | \n\n_list_id: comp_display_grid_data,\ntext: Text override",
+          "params": {
+            "_list_id": "comp_display_grid_data",
+            "text": "Text override"
+          }
+        }
+      ],
+      "_nested_name": "button_override"
+    },
+    {
+      "type": "button",
+      "name": "button_reset",
+      "value": "Reset to original state",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "reset_data",
+          "args": [],
+          "_raw": "click | reset_data | \n\n_list_id: comp_display_grid_data",
+          "_cleaned": "click | reset_data | \n\n_list_id: comp_display_grid_data",
+          "params": {
+            "_list_id": "comp_display_grid_data"
+          }
+        }
+      ],
+      "_nested_name": "button_reset"
+    },
+    {
       "type": "subtitle",
       "name": "example_2",
       "value": "Example 2 - Images",

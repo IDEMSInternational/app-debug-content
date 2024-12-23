@@ -15,9 +15,9 @@
           "_translations": {
             "value": {}
           },
-          "parameter_list": {
-            "style": "alternative"
-          },
+          "style_list": [
+            "color: white"
+          ],
           "name": "text_1",
           "_nested_name": "display_group_2.text_1"
         },

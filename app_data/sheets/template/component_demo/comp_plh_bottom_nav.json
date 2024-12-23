@@ -3,6 +3,13 @@
   "flow_name": "comp_plh_bottom_nav",
   "status": "released",
   "flow_subtype": "component_demo",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": "comp_plh_bottom_nav"
+      }
+    }
+  },
   "rows": [
     {
       "name": "button_list",
