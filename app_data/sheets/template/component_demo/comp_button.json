@@ -92,23 +92,16 @@
     {
       "type": "button",
       "value": "Icon and Arrow",
+      "_translations": {
+        "value": {}
+      },
       "parameter_list": {
         "variant": "card",
         "icon": "images/icons/globe_blue.svg",
+        "icon_secondary_asset": "images/icons/leaf_blue.svg",
         "style": "no-background",
         "text_align": "left"
       },
-      "rows": [
-        {
-          "type": "round_button",
-          "name": "full_button",
-          "parameter_list": {
-            "style": "no-background",
-            "icon_src": "images/icons/leaf_blue.svg"
-          },
-          "_nested_name": "button_9.full_button"
-        }
-      ],
       "name": "button_9",
       "_nested_name": "button_9"
     },
