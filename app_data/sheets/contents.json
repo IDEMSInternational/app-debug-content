@@ -1433,7 +1433,8 @@
       "parameter_list": {
         "app_config": {
           "APP_FOOTER_DEFAULTS": {
-            "templateName": "comp_plh_bottom_nav"
+            "templateName": "comp_plh_bottom_nav",
+            "background": "none"
           }
         }
       },

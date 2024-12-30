@@ -67,8 +67,8 @@
       "parameter_list": {
         "variant": "header"
       },
-      "name": "title_6",
-      "_nested_name": "title_6"
+      "name": "title_7",
+      "_nested_name": "title_7"
     },
     {
       "type": "title",
@@ -77,10 +77,10 @@
         "value": {}
       },
       "parameter_list": {
-        "variant": "page-banner"
+        "variant": "page_banner"
       },
-      "name": "title_7",
-      "_nested_name": "title_7"
+      "name": "title_8",
+      "_nested_name": "title_8"
     },
     {
       "type": "title",
@@ -89,10 +89,10 @@
         "value": {}
       },
       "parameter_list": {
-        "variant": "section-banner"
+        "variant": "section_banner"
       },
-      "name": "title_8",
-      "_nested_name": "title_8"
+      "name": "title_9",
+      "_nested_name": "title_9"
     }
   ],
   "_xlsxPath": "component_sheets/component_title.xlsx"
