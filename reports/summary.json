@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 337
+        "count": 342
       },
       {
         "type": "calendar",
@@ -47,7 +47,7 @@
       },
       {
         "type": "combo_box",
-        "count": 47
+        "count": 48
       },
       {
         "type": "dashed_box",
@@ -55,7 +55,7 @@
       },
       {
         "type": "data_items",
-        "count": 43
+        "count": 44
       },
       {
         "type": "debug_toggle",
@@ -183,7 +183,7 @@
       },
       {
         "type": "round_button",
-        "count": 26
+        "count": 27
       },
       {
         "type": "select_text",
@@ -203,7 +203,7 @@
       },
       {
         "type": "set_variable",
-        "count": 740
+        "count": 741
       },
       {
         "type": "simple_checkbox",
@@ -223,7 +223,7 @@
       },
       {
         "type": "task_card",
-        "count": 25
+        "count": 26
       },
       {
         "type": "task_progress_bar",
@@ -235,7 +235,7 @@
       },
       {
         "type": "text",
-        "count": 944
+        "count": 945
       },
       {
         "type": "text_area",
@@ -259,11 +259,11 @@
       },
       {
         "type": "title",
-        "count": 461
+        "count": 465
       },
       {
         "type": "toggle_bar",
-        "count": 50
+        "count": 51
       },
       {
         "type": "update_action_list",
@@ -291,7 +291,7 @@
       },
       {
         "type": "add_data",
-        "count": 1
+        "count": 2
       },
       {
         "type": "app_update",
@@ -319,7 +319,7 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 29
+        "count": 30
       },
       {
         "type": "emit: force_reprocess",
@@ -359,7 +359,7 @@
       },
       {
         "type": "go_to",
-        "count": 101
+        "count": 103
       },
       {
         "type": "go_to_url",
@@ -399,7 +399,7 @@
       },
       {
         "type": "reset_data",
-        "count": 5
+        "count": 6
       },
       {
         "type": "save_to_device",
@@ -411,11 +411,11 @@
       },
       {
         "type": "set_data",
-        "count": 12
+        "count": 13
       },
       {
         "type": "set_field",
-        "count": 112
+        "count": 113
       },
       {
         "type": "set_item",
@@ -427,7 +427,7 @@
       },
       {
         "type": "set_local",
-        "count": 35
+        "count": 36
       },
       {
         "type": "share",
@@ -539,6 +539,11 @@
       },
       {
         "path": "debug_asset_pack_1/image_2.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg",
         "count": 1,
         "missing": true
       },
@@ -728,17 +733,17 @@
       },
       {
         "path": "images/icons/globe_blue.svg",
-        "count": 16,
+        "count": 17,
         "size_kb": 3.9
       },
       {
         "path": "images/icons/heart_blue.svg",
-        "count": 34,
+        "count": 35,
         "size_kb": 1.4
       },
       {
         "path": "images/icons/heart_outline.svg",
-        "count": 10,
+        "count": 11,
         "size_kb": 0.6
       },
       {
@@ -763,7 +768,7 @@
       },
       {
         "path": "images/icons/leaf_blue.svg",
-        "count": 12,
+        "count": 13,
         "size_kb": 1.7
       },
       {
@@ -953,17 +958,12 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 7
+        "total": 8
       },
       {
         "type": "data_list",
         "subtype": "debug",
         "total": 18
-      },
-      {
-        "type": "data_list",
-        "subtype": "debug_lifecycle_actions",
-        "total": 1
       },
       {
         "type": "data_list",
@@ -989,6 +989,11 @@
         "type": "data_list",
         "subtype": "generated",
         "total": 13
+      },
+      {
+        "type": "data_list",
+        "subtype": "lifecycle_actions",
+        "total": 1
       },
       {
         "type": "data_pipe",
@@ -1038,7 +1043,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 260
+        "total": 261
       },
       {
         "type": "template",

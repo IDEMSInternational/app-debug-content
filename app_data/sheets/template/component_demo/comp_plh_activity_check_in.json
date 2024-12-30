@@ -222,13 +222,34 @@
       "_nested_name": "display_group_9"
     },
     {
+      "type": "button",
+      "value": "Unset",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "countdown_start_date",
+            "undefined"
+          ],
+          "_raw": "click | set_local: countdown_start_date: undefined",
+          "_cleaned": "click | set_local: countdown_start_date: undefined"
+        }
+      ],
+      "name": "button_11",
+      "_nested_name": "button_11"
+    },
+    {
       "type": "text",
       "value": "Start date: @local.countdown_start_date",
       "_translations": {
         "value": {}
       },
-      "name": "text_11",
-      "_nested_name": "text_11",
+      "name": "text_12",
+      "_nested_name": "text_12",
       "_dynamicFields": {
         "value": [
           {
@@ -251,8 +272,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_12",
-      "_nested_name": "title_12"
+      "name": "title_13",
+      "_nested_name": "title_13"
     },
     {
       "type": "number_selector",
@@ -287,8 +308,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_14",
-      "_nested_name": "text_14",
+      "name": "text_15",
+      "_nested_name": "text_15",
       "_dynamicFields": {
         "value": [
           {
@@ -311,8 +332,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_15",
-      "_nested_name": "title_15"
+      "name": "title_16",
+      "_nested_name": "title_16"
     },
     {
       "type": "button",
@@ -335,8 +356,8 @@
           }
         }
       ],
-      "name": "button_16",
-      "_nested_name": "button_16",
+      "name": "button_17",
+      "_nested_name": "button_17",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -431,7 +452,7 @@
             "countdown_text_list": "@local.countdown_text_list"
           },
           "name": "plh_activity_check_in_1",
-          "_nested_name": "data_items_17.plh_activity_check_in_1",
+          "_nested_name": "data_items_18.plh_activity_check_in_1",
           "_dynamicFields": {
             "parameter_list": {
               "countdown_days": [
@@ -473,8 +494,8 @@
           }
         }
       ],
-      "name": "data_items_17",
-      "_nested_name": "data_items_17"
+      "name": "data_items_18",
+      "_nested_name": "data_items_18"
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_activity_check_in.xlsx"

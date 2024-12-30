@@ -15,6 +15,15 @@
     },
     {
       "type": "title",
+      "value": "Title with more text to wrap over multiple lines",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "title",
       "value": "Title with a tooltip",
       "_translations": {
         "value": {}
@@ -22,8 +31,8 @@
       "parameter_list": {
         "help": "Hi, I'm a tooltip!"
       },
-      "name": "title_3",
-      "_nested_name": "title_3"
+      "name": "title_4",
+      "_nested_name": "title_4"
     },
     {
       "type": "title",
@@ -34,8 +43,8 @@
       "parameter_list": {
         "text_align": "center"
       },
-      "name": "title_4",
-      "_nested_name": "title_4"
+      "name": "title_5",
+      "_nested_name": "title_5"
     },
     {
       "type": "title",
@@ -46,8 +55,8 @@
       "parameter_list": {
         "text_align": "right"
       },
-      "name": "title_5",
-      "_nested_name": "title_5"
+      "name": "title_6",
+      "_nested_name": "title_6"
     },
     {
       "type": "title",
@@ -58,8 +67,32 @@
       "parameter_list": {
         "variant": "header"
       },
-      "name": "title_6",
-      "_nested_name": "title_6"
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "title",
+      "value": "Title as Page Banner",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "page_banner"
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "title",
+      "value": "Title as Section Banner",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "section_banner"
+      },
+      "name": "title_9",
+      "_nested_name": "title_9"
     }
   ],
   "_xlsxPath": "component_sheets/component_title.xlsx"

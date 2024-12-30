@@ -397,6 +397,55 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "title",
+      "value": "Data_list options",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_22",
+      "_nested_name": "title_22"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "placeholder": "Select from data_list"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_combo_box_items",
+          "rows": [],
+          "name": "data_items_1",
+          "_nested_name": "combo_box_23.data_items_1"
+        }
+      ],
+      "name": "combo_box_23",
+      "_nested_name": "combo_box_23"
+    },
+    {
+      "type": "button",
+      "name": "button_add",
+      "value": "Add data",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "add_data",
+          "args": [],
+          "_raw": "click | add_data | \n\n_list_id: comp_combo_box_items,\nname: added_data_name,\ntext: Added data",
+          "_cleaned": "click | add_data | \n\n_list_id: comp_combo_box_items,\nname: added_data_name,\ntext: Added data",
+          "params": {
+            "_list_id": "comp_combo_box_items",
+            "name": "added_data_name",
+            "text": "Added data"
+          }
+        }
+      ],
+      "_nested_name": "button_add"
     }
   ],
   "_xlsxPath": "component_sheets/component_combo_box.xlsx"
