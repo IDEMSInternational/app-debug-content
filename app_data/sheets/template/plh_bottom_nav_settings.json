@@ -1,0 +1,25 @@
+{
+  "flow_type": "template",
+  "flow_name": "plh_bottom_nav_settings",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": "comp_plh_bottom_nav",
+        "background": "none"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Settings",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx"
+}

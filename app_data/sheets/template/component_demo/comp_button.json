@@ -91,7 +91,7 @@
     },
     {
       "type": "button",
-      "value": "Icon and Arrow",
+      "value": "Two icons",
       "_translations": {
         "value": {}
       },
@@ -106,13 +106,29 @@
       "_nested_name": "button_9"
     },
     {
+      "type": "button",
+      "value": "Icon and Arrow",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "card",
+        "icon": "images/icons/globe_blue.svg",
+        "icon_secondary_asset": "chevron-forward",
+        "style": "no-background",
+        "text_align": "left"
+      },
+      "name": "button_10",
+      "_nested_name": "button_10"
+    },
+    {
       "type": "title",
       "value": "Button card-portrait",
       "_translations": {
         "value": {}
       },
-      "name": "title_10",
-      "_nested_name": "title_10"
+      "name": "title_11",
+      "_nested_name": "title_11"
     },
     {
       "type": "button",
@@ -125,11 +141,11 @@
         {
           "type": "toggle_bar",
           "name": "toggle_bar_2",
-          "_nested_name": "button_11.toggle_bar_2"
+          "_nested_name": "button_12.toggle_bar_2"
         }
       ],
-      "name": "button_11",
-      "_nested_name": "button_11"
+      "name": "button_12",
+      "_nested_name": "button_12"
     },
     {
       "type": "button",
@@ -174,7 +190,7 @@
             "icon_true_asset": "images/icons/heart_blue.svg",
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
-          "_nested_name": "button_13.toggle_bar_3",
+          "_nested_name": "button_14.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -216,8 +232,8 @@
           }
         }
       ],
-      "name": "button_13",
-      "_nested_name": "button_13"
+      "name": "button_14",
+      "_nested_name": "button_14"
     },
     {
       "type": "title",
