@@ -10,13 +10,13 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 342 |
+| button | 343 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 48 |
 | dashed_box | 19 |
-| data_items | 44 |
+| data_items | 46 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
@@ -48,12 +48,12 @@
 | radio_button_grid | 10 |
 | radio_group | 56 |
 | radio_group_grid | 5 |
-| round_button | 27 |
+| round_button | 25 |
 | select_text | 6 |
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 5 |
-| set_variable | 741 |
+| set_variable | 742 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -61,13 +61,13 @@
 | task_card | 26 |
 | task_progress_bar | 6 |
 | template | 130 |
-| text | 945 |
+| text | 947 |
 | text_area | 13 |
 | text_box | 50 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 465 |
+| title | 468 |
 | toggle_bar | 51 |
 | update_action_list | 2 |
 | video | 4 |
@@ -85,6 +85,7 @@
 | app_update | 3 |
 | asset_pack | 2 |
 | auth | 2 |
+| data_changed | 2 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
@@ -218,7 +219,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/home_active.svg | 0.4 | 1 |
 | images/icons/house_white.svg | 0.6 | 5 |
 | images/icons/in_progress.svg | 1.1 | 15 |
-| images/icons/leaf_blue.svg | 1.7 | 13 |
+| images/icons/leaf_blue.svg | 1.7 | 12 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
 | images/icons/locked.png | 0.9 | 3 |
@@ -277,7 +278,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 92 |
+| template |  | 93 |
 | template | component_demo | 55 |
 | template | debug | 261 |
 | template | example_generator | 2 |

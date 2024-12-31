@@ -3718,6 +3718,19 @@
       "flow_name": "nav_buttons",
       "_xlsxPath": "navigation.xlsx"
     },
+    "plh_bottom_nav_settings": {
+      "flow_type": "template",
+      "flow_name": "plh_bottom_nav_settings",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "comp_plh_bottom_nav",
+            "background": "none"
+          }
+        }
+      },
+      "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx"
+    },
     "template_orientation_landscape": {
       "flow_type": "template",
       "flow_name": "template_orientation_landscape",

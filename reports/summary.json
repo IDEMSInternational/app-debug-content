@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 342
+        "count": 343
       },
       {
         "type": "calendar",
@@ -55,7 +55,7 @@
       },
       {
         "type": "data_items",
-        "count": 44
+        "count": 46
       },
       {
         "type": "debug_toggle",
@@ -183,7 +183,7 @@
       },
       {
         "type": "round_button",
-        "count": 27
+        "count": 25
       },
       {
         "type": "select_text",
@@ -203,7 +203,7 @@
       },
       {
         "type": "set_variable",
-        "count": 741
+        "count": 742
       },
       {
         "type": "simple_checkbox",
@@ -235,7 +235,7 @@
       },
       {
         "type": "text",
-        "count": 945
+        "count": 947
       },
       {
         "type": "text_area",
@@ -259,7 +259,7 @@
       },
       {
         "type": "title",
-        "count": 465
+        "count": 468
       },
       {
         "type": "toggle_bar",
@@ -303,6 +303,10 @@
       },
       {
         "type": "auth",
+        "count": 2
+      },
+      {
+        "type": "data_changed",
         "count": 2
       },
       {
@@ -768,7 +772,7 @@
       },
       {
         "path": "images/icons/leaf_blue.svg",
-        "count": 13,
+        "count": 12,
         "size_kb": 1.7
       },
       {
@@ -1033,7 +1037,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 92
+        "total": 93
       },
       {
         "type": "template",
