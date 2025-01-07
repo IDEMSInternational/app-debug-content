@@ -82,7 +82,7 @@
     },
     {
       "type": "text",
-      "value": "@fields._app_auth_user",
+      "value": "@fields._auth_user_id",
       "_translations": {
         "value": {}
       },
@@ -91,15 +91,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@fields._app_auth_user",
-            "matchedExpression": "@fields._app_auth_user",
+            "fullExpression": "@fields._auth_user_id",
+            "matchedExpression": "@fields._auth_user_id",
             "type": "fields",
-            "fieldName": "_app_auth_user"
+            "fieldName": "_auth_user_id"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@fields._app_auth_user": [
+        "@fields._auth_user_id": [
           "value"
         ]
       }

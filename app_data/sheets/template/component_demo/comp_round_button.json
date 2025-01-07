@@ -54,6 +54,24 @@
       "_nested_name": "round_button_par_2_3"
     },
     {
+      "type": "round_button",
+      "parameter_list": {
+        "icon_src": "images/icons/close.svg",
+        "variant": "no-background"
+      },
+      "name": "round_button_7",
+      "_nested_name": "round_button_7"
+    },
+    {
+      "type": "round_button",
+      "parameter_list": {
+        "icon_src": "images/icons/close.png",
+        "variant": "no-background"
+      },
+      "name": "round_button_8",
+      "_nested_name": "round_button_8"
+    },
+    {
       "type": "title",
       "name": "title_3",
       "value": "Round button colour",

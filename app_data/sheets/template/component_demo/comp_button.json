@@ -236,6 +236,322 @@
       "_nested_name": "button_14"
     },
     {
+      "type": "text",
+      "value": "Unlocked:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "name": "is_locked",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "is_locked"
+    },
+    {
+      "type": "button",
+      "value": "With icon toggle",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | pop_up: example_text",
+          "_cleaned": "click | pop_up: example_text"
+        }
+      ],
+      "parameter_list": {
+        "variant": "card-portrait",
+        "image_asset": "images/example/circular.png",
+        "disabled": "@local.is_locked"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_3",
+          "value": "@fields.heart_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "heart_toggle",
+                "this.value"
+              ],
+              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+              "_cleaned": "changed | set_field: heart_toggle: @local.toggle_bar_3"
+            }
+          ],
+          "parameter_list": {
+            "variant": "icon",
+            "icon_true_asset": "images/icons/heart_blue.svg",
+            "icon_false_asset": "images/icons/heart_outline.svg"
+          },
+          "condition": "!@local.is_locked",
+          "_nested_name": "button_18.toggle_bar_3",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.heart_toggle",
+                "matchedExpression": "@fields.heart_toggle",
+                "type": "fields",
+                "fieldName": "heart_toggle"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+                    "matchedExpression": "@local.toggle_bar_3",
+                    "type": "local",
+                    "fieldName": "toggle_bar_3"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+                    "matchedExpression": "@local.toggle_bar_3",
+                    "type": "local",
+                    "fieldName": "toggle_bar_3"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "!@local.is_locked",
+                "matchedExpression": "!@local.is_locked",
+                "type": "local",
+                "fieldName": "is_locked"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.heart_toggle": [
+              "value"
+            ],
+            "@local.toggle_bar_3": [
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "!@local.is_locked": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "value": "images/icons/locked.png",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.is_locked",
+          "name": "image_2",
+          "_nested_name": "button_18.image_2",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.is_locked",
+                "matchedExpression": "@local.is_locked",
+                "type": "local",
+                "fieldName": "is_locked"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.is_locked": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "name": "button_18",
+      "_nested_name": "button_18",
+      "_dynamicFields": {
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "@local.is_locked",
+              "matchedExpression": "@local.is_locked",
+              "type": "local",
+              "fieldName": "is_locked"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.is_locked": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Locked:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_20",
+      "_nested_name": "text_20"
+    },
+    {
+      "name": "is_locked_2",
+      "value": true,
+      "type": "set_variable",
+      "_nested_name": "is_locked_2"
+    },
+    {
+      "type": "button",
+      "value": "Locked",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | pop_up: example_text",
+          "_cleaned": "click | pop_up: example_text"
+        }
+      ],
+      "parameter_list": {
+        "variant": "card-portrait",
+        "image_asset": "images/example/circular.png",
+        "disabled": "@local.is_locked_2"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar_3",
+          "value": "@fields.heart_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "heart_toggle",
+                "this.value"
+              ],
+              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+              "_cleaned": "changed | set_field: heart_toggle: @local.toggle_bar_3"
+            }
+          ],
+          "parameter_list": {
+            "variant": "icon",
+            "icon_true_asset": "images/icons/heart_blue.svg",
+            "icon_false_asset": "images/icons/heart_outline.svg"
+          },
+          "condition": "!@local.is_locked_2",
+          "_nested_name": "button_22.toggle_bar_3",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.heart_toggle",
+                "matchedExpression": "@fields.heart_toggle",
+                "type": "fields",
+                "fieldName": "heart_toggle"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+                    "matchedExpression": "@local.toggle_bar_3",
+                    "type": "local",
+                    "fieldName": "toggle_bar_3"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
+                    "matchedExpression": "@local.toggle_bar_3",
+                    "type": "local",
+                    "fieldName": "toggle_bar_3"
+                  }
+                ]
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "!@local.is_locked_2",
+                "matchedExpression": "!@local.is_locked_2",
+                "type": "local",
+                "fieldName": "is_locked_2"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@fields.heart_toggle": [
+              "value"
+            ],
+            "@local.toggle_bar_3": [
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ],
+            "!@local.is_locked_2": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "value": "images/icons/locked.png",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@local.is_locked_2",
+          "name": "image_2",
+          "_nested_name": "button_22.image_2",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@local.is_locked_2",
+                "matchedExpression": "@local.is_locked_2",
+                "type": "local",
+                "fieldName": "is_locked_2"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.is_locked_2": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "name": "button_22",
+      "_nested_name": "button_22",
+      "_dynamicFields": {
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "@local.is_locked_2",
+              "matchedExpression": "@local.is_locked_2",
+              "type": "local",
+              "fieldName": "is_locked_2"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.is_locked_2": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
       "type": "title",
       "name": "title_1",
       "value": "Disabled parameter",

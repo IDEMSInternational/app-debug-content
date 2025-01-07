@@ -1,6 +1,6 @@
 {
   "flow_type": "template",
-  "flow_name": "feat_display_group_sticky",
+  "flow_name": "debug_nav_stack_header",
   "status": "released",
   "rows": [
     {
@@ -9,18 +9,30 @@
         "sticky": "top",
         "style": "background_solid"
       },
+      "style_list": [
+        "padding: 8px 8px 0 8px"
+      ],
       "rows": [
         {
-          "type": "title",
-          "value": "Sticky header",
+          "type": "image",
+          "name": "icon_asset",
+          "value": "images/icons/globe_blue.svg",
           "_translations": {
             "value": {}
           },
-          "parameter_list": {
-            "variant": "header"
+          "style_list": [
+            "width: 46px"
+          ],
+          "_nested_name": "display_group_2.icon_asset"
+        },
+        {
+          "type": "title",
+          "name": "title",
+          "value": "My Title",
+          "_translations": {
+            "value": {}
           },
-          "name": "title_1",
-          "_nested_name": "display_group_2.title_1"
+          "_nested_name": "display_group_2.title"
         }
       ],
       "name": "display_group_2",
@@ -57,10 +69,10 @@
           "args": [
             "open"
           ],
-          "_raw": "click | nav_stack: open | template: feat_display_group_sticky, header: false",
-          "_cleaned": "click | nav_stack: open | template: feat_display_group_sticky, header: false",
+          "_raw": "click | nav_stack: open | template: debug_nav_stack_header, header: false",
+          "_cleaned": "click | nav_stack: open | template: debug_nav_stack_header, header: false",
           "params": {
-            "template": "feat_display_group_sticky",
+            "template": "debug_nav_stack_header",
             "header": false
           }
         }
@@ -184,5 +196,5 @@
       "_nested_name": "display_group_9"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_display_group_sticky.xlsx"
+  "_xlsxPath": "debug_sheets/debug_nav_stack_header.xlsx"
 }

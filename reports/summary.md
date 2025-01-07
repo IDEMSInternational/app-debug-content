@@ -10,7 +10,7 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 343 |
+| button | 347 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -20,12 +20,12 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 190 |
+| display_group | 192 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
-| image | 76 |
-| items | 49 |
+| image | 79 |
+| items | 51 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 2 |
@@ -42,33 +42,34 @@
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
 | plh_module_list_item | 5 |
+| plh_progress_path | 1 |
 | progress_bar | 1 |
-| progress_path | 2 |
+| progress_path | 3 |
 | qr_code | 2 |
 | radio_button_grid | 10 |
 | radio_group | 56 |
 | radio_group_grid | 5 |
-| round_button | 25 |
+| round_button | 27 |
 | select_text | 6 |
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 5 |
-| set_variable | 742 |
+| set_variable | 745 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 60 |
-| task_card | 26 |
+| task_card | 28 |
 | task_progress_bar | 6 |
 | template | 130 |
-| text | 947 |
+| text | 952 |
 | text_area | 13 |
 | text_box | 50 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 468 |
-| toggle_bar | 51 |
+| title | 473 |
+| toggle_bar | 54 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -85,7 +86,6 @@
 | app_update | 3 |
 | asset_pack | 2 |
 | auth | 2 |
-| data_changed | 2 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
@@ -99,13 +99,13 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 103 |
+| go_to | 104 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
-| nav_stack | 10 |
+| nav_stack | 11 |
 | open_external | 2 |
-| pop_up | 40 |
+| pop_up | 42 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 1 |
@@ -113,10 +113,10 @@
 | save_to_device | 2 |
 | screen_orientation | 3 |
 | set_data | 13 |
-| set_field | 113 |
+| set_field | 116 |
 | set_item | 24 |
 | set_items | 2 |
-| set_local | 36 |
+| set_local | 38 |
 | share | 6 |
 | start_tour | 2 |
 | task | 2 |
@@ -132,7 +132,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31574 KB | 31.6 MB |
+| total | 35209 KB | 35.2 MB |
 | unused | 936 KB | 0.9 MB |
 </details>
 
@@ -200,21 +200,24 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/344-536x354.jpg | 13.9 | 1 |
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
-| images/example/circular.png | 15.7 | 5 |
+| images/example/circular.png | 15.7 | 7 |
 | images/example/jasper_1.jpg | 527.3 | 57 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
+| images/home_bg.svg | 3632 | 1 |
 | images/icons/ask_question_white.svg | 1.4 | 2 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-back-sharp.svg | 0.1 | 2 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
 | images/icons/book_white.svg | 0.7 | 12 |
+| images/icons/close.png | 2.5 | 1 |
+| images/icons/close.svg | 0.2 | 1 |
 | images/icons/expand_circle_right.png | 0.9 | 2 |
-| images/icons/globe_blue.svg | 3.9 | 17 |
-| images/icons/heart_blue.svg | 1.4 | 35 |
-| images/icons/heart_outline.svg | 0.6 | 11 |
+| images/icons/globe_blue.svg | 3.9 | 18 |
+| images/icons/heart_blue.svg | 1.4 | 37 |
+| images/icons/heart_outline.svg | 0.6 | 13 |
 | images/icons/home.svg | 0.4 | 1 |
 | images/icons/home_active.svg | 0.4 | 1 |
 | images/icons/house_white.svg | 0.6 | 5 |
@@ -222,7 +225,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 12 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 3 |
+| images/icons/locked.png | 0.9 | 8 |
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 7 |
@@ -278,8 +281,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 93 |
-| template | component_demo | 55 |
+| template |  | 94 |
+| template | component_demo | 56 |
 | template | debug | 261 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

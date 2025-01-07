@@ -179,10 +179,10 @@
           "trigger": "click",
           "action_id": "pop_up",
           "args": [
-            "example_text"
+            "example_text_long"
           ],
-          "_raw": "click | pop_up:example_text | fullscreen:true",
-          "_cleaned": "click | pop_up:example_text | fullscreen:true",
+          "_raw": "click | pop_up: example_text_long | fullscreen:true",
+          "_cleaned": "click | pop_up: example_text_long | fullscreen:true",
           "params": {
             "fullscreen": true
           }

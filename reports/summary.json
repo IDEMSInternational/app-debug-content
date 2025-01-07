@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 343
+        "count": 347
       },
       {
         "type": "calendar",
@@ -71,7 +71,7 @@
       },
       {
         "type": "display_group",
-        "count": 190
+        "count": 192
       },
       {
         "type": "drawer",
@@ -87,11 +87,11 @@
       },
       {
         "type": "image",
-        "count": 76
+        "count": 79
       },
       {
         "type": "items",
-        "count": 49
+        "count": 51
       },
       {
         "type": "latex",
@@ -158,12 +158,16 @@
         "count": 5
       },
       {
+        "type": "plh_progress_path",
+        "count": 1
+      },
+      {
         "type": "progress_bar",
         "count": 1
       },
       {
         "type": "progress_path",
-        "count": 2
+        "count": 3
       },
       {
         "type": "qr_code",
@@ -183,7 +187,7 @@
       },
       {
         "type": "round_button",
-        "count": 25
+        "count": 27
       },
       {
         "type": "select_text",
@@ -203,7 +207,7 @@
       },
       {
         "type": "set_variable",
-        "count": 742
+        "count": 745
       },
       {
         "type": "simple_checkbox",
@@ -223,7 +227,7 @@
       },
       {
         "type": "task_card",
-        "count": 26
+        "count": 28
       },
       {
         "type": "task_progress_bar",
@@ -235,7 +239,7 @@
       },
       {
         "type": "text",
-        "count": 947
+        "count": 952
       },
       {
         "type": "text_area",
@@ -259,11 +263,11 @@
       },
       {
         "type": "title",
-        "count": 468
+        "count": 473
       },
       {
         "type": "toggle_bar",
-        "count": 51
+        "count": 54
       },
       {
         "type": "update_action_list",
@@ -303,10 +307,6 @@
       },
       {
         "type": "auth",
-        "count": 2
-      },
-      {
-        "type": "data_changed",
         "count": 2
       },
       {
@@ -363,7 +363,7 @@
       },
       {
         "type": "go_to",
-        "count": 103
+        "count": 104
       },
       {
         "type": "go_to_url",
@@ -379,7 +379,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 10
+        "count": 11
       },
       {
         "type": "open_external",
@@ -387,7 +387,7 @@
       },
       {
         "type": "pop_up",
-        "count": 40
+        "count": 42
       },
       {
         "type": "process_template",
@@ -419,7 +419,7 @@
       },
       {
         "type": "set_field",
-        "count": 113
+        "count": 116
       },
       {
         "type": "set_item",
@@ -431,7 +431,7 @@
       },
       {
         "type": "set_local",
-        "count": 36
+        "count": 38
       },
       {
         "type": "share",
@@ -471,8 +471,8 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31574 KB",
-        "MB": "31.6 MB"
+        "KB": "35209 KB",
+        "MB": "35.2 MB"
       },
       {
         "assets": "unused",
@@ -677,7 +677,7 @@
       },
       {
         "path": "images/example/circular.png",
-        "count": 5,
+        "count": 7,
         "size_kb": 15.7
       },
       {
@@ -699,6 +699,11 @@
         "path": "images/faces/sad.svg",
         "count": 2,
         "size_kb": 1.1
+      },
+      {
+        "path": "images/home_bg.svg",
+        "count": 1,
+        "size_kb": 3632
       },
       {
         "path": "images/icons/ask_question_white.svg",
@@ -731,23 +736,33 @@
         "size_kb": 0.7
       },
       {
+        "path": "images/icons/close.png",
+        "count": 1,
+        "size_kb": 2.5
+      },
+      {
+        "path": "images/icons/close.svg",
+        "count": 1,
+        "size_kb": 0.2
+      },
+      {
         "path": "images/icons/expand_circle_right.png",
         "count": 2,
         "size_kb": 0.9
       },
       {
         "path": "images/icons/globe_blue.svg",
-        "count": 17,
+        "count": 18,
         "size_kb": 3.9
       },
       {
         "path": "images/icons/heart_blue.svg",
-        "count": 35,
+        "count": 37,
         "size_kb": 1.4
       },
       {
         "path": "images/icons/heart_outline.svg",
-        "count": 11,
+        "count": 13,
         "size_kb": 0.6
       },
       {
@@ -787,7 +802,7 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 3,
+        "count": 8,
         "size_kb": 0.9
       },
       {
@@ -1037,12 +1052,12 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 93
+        "total": 94
       },
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 55
+        "total": 56
       },
       {
         "type": "template",

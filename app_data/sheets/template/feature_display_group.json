@@ -9,7 +9,7 @@
         "sticky": "top",
         "variant": "inline_padding",
         "background_image_asset": "images/activity_bg.svg",
-        "background_image_position": "right",
+        "background_image_position": "right top",
         "style": "background_solid"
       },
       "style_list": [
@@ -962,7 +962,7 @@
         "sticky": "bottom",
         "variant": "inline_padding",
         "background_image_asset": "images/bottom_image.svg",
-        "background_image_position": "bottom left"
+        "background_image_position": "left bottom"
       },
       "style_list": [
         "min-height: 88px",

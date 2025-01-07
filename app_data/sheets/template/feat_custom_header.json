@@ -11,6 +11,11 @@
       "rows": [
         {
           "type": "text",
+          "name": "text_1",
+          "_nested_name": "display_group_2.text_1"
+        },
+        {
+          "type": "text",
           "value": "Custom Header",
           "_translations": {
             "value": {}
@@ -18,8 +23,8 @@
           "style_list": [
             "color: white"
           ],
-          "name": "text_1",
-          "_nested_name": "display_group_2.text_1"
+          "name": "text_2",
+          "_nested_name": "display_group_2.text_2"
         },
         {
           "type": "button",
@@ -38,8 +43,8 @@
               "_cleaned": "click | nav: back"
             }
           ],
-          "name": "button_2",
-          "_nested_name": "display_group_2.button_2"
+          "name": "button_3",
+          "_nested_name": "display_group_2.button_3"
         }
       ],
       "name": "display_group_2",
