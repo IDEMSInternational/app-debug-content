@@ -105,7 +105,8 @@
         "subtitle": "@local.card_subtitle",
         "image": "@local.card_image",
         "in_progress_icon": "images/icons/in_progress.svg",
-        "completed_icon": "images/icons/tick_white.svg"
+        "completed_icon": "images/icons/tick_white.svg",
+        "locked_image_asset": "images/icons/locked.png"
       },
       "_nested_name": "card_params_2",
       "_dynamicFields": {

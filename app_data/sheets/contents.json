@@ -891,7 +891,22 @@
     "task_cards_data": {
       "flow_type": "data_list",
       "flow_name": "task_cards_data",
-      "_xlsxPath": "component_sheets/component_progress_path.xlsx"
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+      "_metadata": {
+        "locked": {
+          "type": "boolean"
+        }
+      }
+    },
+    "task_cards_data_plh": {
+      "flow_type": "data_list",
+      "flow_name": "task_cards_data_plh",
+      "_xlsxPath": "component_sheets/component_plh_progress_path.xlsx",
+      "_metadata": {
+        "locked": {
+          "type": "boolean"
+        }
+      }
     },
     "task_group_1": {
       "flow_type": "data_list",
@@ -1457,6 +1472,19 @@
       "flow_name": "comp_plh_module_list_item",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx"
+    },
+    "comp_plh_progress_path": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_progress_path",
+      "flow_subtype": "component_demo",
+      "parameter_list": {
+        "app_config": {
+          "LAYOUT": {
+            "page_padding": 0
+          }
+        }
+      },
+      "_xlsxPath": "component_sheets/component_plh_progress_path.xlsx"
     },
     "comp_progress_path": {
       "flow_type": "template",
@@ -3294,6 +3322,11 @@
       "flow_name": "debug_lang_sort",
       "_xlsxPath": "debug_sheets/debug_translation_sort.xlsx"
     },
+    "debug_launch_pop_up": {
+      "flow_type": "template",
+      "flow_name": "debug_launch_pop_up",
+      "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx"
+    },
     "debug_list_parsing": {
       "flow_type": "template",
       "flow_name": "debug_list_parsing",
@@ -3318,6 +3351,11 @@
       "flow_type": "template",
       "flow_name": "debug_nav_bar",
       "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx"
+    },
+    "debug_nav_stack_header": {
+      "flow_type": "template",
+      "flow_name": "debug_nav_stack_header",
+      "_xlsxPath": "debug_sheets/debug_nav_stack_header.xlsx"
     },
     "debug_newline": {
       "flow_type": "template",

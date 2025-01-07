@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_launch_pop_up",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "feature_rtl_language",
+      "value": "feature_rtl_language",
+      "rows": [],
+      "_nested_name": "feature_rtl_language"
+    },
+    {
+      "type": "template",
+      "name": "example_text_long",
+      "value": "example_text_long",
+      "rows": [],
+      "_nested_name": "example_text_long"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx"
+}

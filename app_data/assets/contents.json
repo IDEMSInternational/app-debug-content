@@ -149,6 +149,10 @@
     "md5Checksum": "44f0f4aee98a30f31d445b169922f940",
     "size_kb": 1.1
   },
+  "images/home_bg.svg": {
+    "md5Checksum": "c28a3bfccb3e3aa2e2d53f7263421cdb",
+    "size_kb": 3632
+  },
   "images/icons/ask_question_white.svg": {
     "md5Checksum": "d52f43b75aacee5da8c3e33a76ecf3b7",
     "size_kb": 1.4
@@ -172,6 +176,14 @@
   "images/icons/book_white.svg": {
     "md5Checksum": "12c477faa57812b7a16bc6a0d0424c06",
     "size_kb": 0.7
+  },
+  "images/icons/close.png": {
+    "md5Checksum": "194eb7680628a6de14788a502bd2cf29",
+    "size_kb": 2.5
+  },
+  "images/icons/close.svg": {
+    "md5Checksum": "fe0e3cd9a5e6ea4f636fa693c2f999a1",
+    "size_kb": 0.2
   },
   "images/icons/expand_circle_right.png": {
     "md5Checksum": "668d46c68a50b5862ae016cc05b8fa42",

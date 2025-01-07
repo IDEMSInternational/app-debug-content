@@ -322,14 +322,14 @@
       "value": "comp_data_items_list",
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "data_changed",
-          "args": [],
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "completed_counter",
+            "@items.length"
+          ],
           "_raw": "data_changed | set_local : completed_counter : @items.length",
-          "_cleaned": "click | data_changed | set_local : completed_counter : @items.length",
-          "params": {
-            "set_local ": "completed_counter"
-          }
+          "_cleaned": "data_changed | set_local : completed_counter : @items.length"
         }
       ],
       "parameter_list": {
@@ -388,14 +388,14 @@
       },
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "data_changed",
-          "args": [],
+          "trigger": "data_changed",
+          "action_id": "set_field",
+          "args": [
+            "comp_data_items_all_complete",
+            "@items.length === 0"
+          ],
           "_raw": "data_changed | set_field : comp_data_items_all_complete : @items.length === 0",
-          "_cleaned": "click | data_changed | set_field : comp_data_items_all_complete : @items.length === 0",
-          "params": {
-            "set_field ": "comp_data_items_all_complete"
-          }
+          "_cleaned": "data_changed | set_field : comp_data_items_all_complete : @items.length === 0"
         }
       ],
       "parameter_list": {

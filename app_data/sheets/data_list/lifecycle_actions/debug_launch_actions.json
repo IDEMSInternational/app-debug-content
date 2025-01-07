@@ -35,10 +35,10 @@
           "trigger": "click",
           "action_id": "pop_up",
           "args": [
-            "feature_rtl_language"
+            "debug_launch_pop_up"
           ],
-          "_raw": "pop_up: feature_rtl_language | fullscreen: true, showCloseButton: true",
-          "_cleaned": "click | pop_up: feature_rtl_language | fullscreen: true, showCloseButton: true",
+          "_raw": "pop_up: debug_launch_pop_up | fullscreen: true, showCloseButton: true",
+          "_cleaned": "click | pop_up: debug_launch_pop_up | fullscreen: true, showCloseButton: true",
           "params": {
             "fullscreen": true,
             "showCloseButton": true

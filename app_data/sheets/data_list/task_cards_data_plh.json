@@ -1,6 +1,6 @@
 {
   "flow_type": "data_list",
-  "flow_name": "task_cards_data",
+  "flow_name": "task_cards_data_plh",
   "status": "released",
   "rows": [
     {
@@ -36,7 +36,7 @@
       "locked": true
     }
   ],
-  "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+  "_xlsxPath": "component_sheets/component_plh_progress_path.xlsx",
   "_metadata": {
     "locked": {
       "type": "boolean"
