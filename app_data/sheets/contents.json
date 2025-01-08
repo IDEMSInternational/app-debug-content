@@ -245,6 +245,11 @@
         }
       }
     },
+    "comp_task_card_data_2": {
+      "flow_type": "data_list",
+      "flow_name": "comp_task_card_data_2",
+      "_xlsxPath": "component_sheets/component_task_card.xlsx"
+    },
     "comp_task_progress_bar_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_progress_bar_data",
@@ -3492,6 +3497,24 @@
           }
         }
       },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
+    "feat_app_layout_inline_header": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_inline_header",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "hidden": true
+          }
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+    },
+    "feat_app_layout_menu": {
+      "flow_type": "template",
+      "flow_name": "feat_app_layout_menu",
+      "comments": "Menu shared between templates",
       "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
     },
     "feat_app_layout_no_header": {

@@ -1,0 +1,20 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_task_card_data_2",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "linked_id": "task_1"
+    },
+    {
+      "id": "id_2",
+      "linked_id": "task_2"
+    },
+    {
+      "id": "id_3",
+      "linked_id": "task_3"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_task_card.xlsx"
+}

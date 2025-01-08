@@ -11,30 +11,41 @@
         "sticky": "top",
         "variant": "inline_padding",
         "background_image_asset": "images/activity_bg.svg",
-        "style": "column"
+        "background_image_position": "top right",
+        "style": "background_solid"
       },
       "rows": [
         {
-          "type": "title",
-          "value": "Display Group with Image",
-          "_translations": {
-            "value": {}
+          "type": "display_group",
+          "parameter_list": {
+            "style": "column"
           },
-          "exclude_from_translation": true,
-          "style_list": [
-            "margin-top: 120px"
+          "rows": [
+            {
+              "type": "title",
+              "value": "Display Group with Image",
+              "_translations": {
+                "value": {}
+              },
+              "exclude_from_translation": true,
+              "style_list": [
+                "margin-top: 120px"
+              ],
+              "name": "title_1",
+              "_nested_name": "display_group_2.display_group_1.title_1"
+            },
+            {
+              "type": "text",
+              "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "display_group_2.display_group_1.text_2"
+            }
           ],
-          "name": "title_1",
-          "_nested_name": "display_group_2.title_1"
-        },
-        {
-          "type": "text",
-          "name": "text",
-          "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "display_group_2.text"
+          "name": "display_group_1",
+          "_nested_name": "display_group_2.display_group_1"
         }
       ],
       "name": "display_group_2",
@@ -65,7 +76,7 @@
         "sticky": "bottom",
         "variant": "inline_padding",
         "background_image_asset": "images/bottom_image.svg",
-        "background_image_position": "bottom"
+        "background_image_position": "bottom left"
       },
       "rows": [
         {
@@ -75,11 +86,8 @@
             "value": {}
           },
           "exclude_from_translation": true,
-          "parameter_list": {
-            "text_align": "right"
-          },
           "style_list": [
-            "margin-bottom: 32px"
+            "margin-top: 32px"
           ],
           "name": "text_1",
           "_nested_name": "display_group_6.text_1"

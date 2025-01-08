@@ -10,17 +10,17 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 347 |
+| button | 324 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 48 |
 | dashed_box | 19 |
-| data_items | 46 |
+| data_items | 47 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 192 |
+| display_group | 194 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
@@ -59,16 +59,16 @@
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 60 |
-| task_card | 28 |
+| task_card | 29 |
 | task_progress_bar | 6 |
-| template | 130 |
-| text | 952 |
+| template | 138 |
+| text | 953 |
 | text_area | 13 |
 | text_box | 50 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 473 |
+| title | 476 |
 | toggle_bar | 54 |
 | update_action_list | 2 |
 | video | 4 |
@@ -99,7 +99,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 104 |
+| go_to | 81 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
@@ -221,7 +221,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/home.svg | 0.4 | 1 |
 | images/icons/home_active.svg | 0.4 | 1 |
 | images/icons/house_white.svg | 0.6 | 5 |
-| images/icons/in_progress.svg | 1.1 | 15 |
+| images/icons/in_progress.svg | 1.1 | 16 |
 | images/icons/leaf_blue.svg | 1.7 | 12 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
@@ -236,14 +236,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_white.svg | 1 | 21 |
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 13 |
-| images/icons/tick_white.svg | 0.3 | 21 |
+| images/icons/tick_white.svg | 0.3 | 22 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 5 |
 | images/shining_diamond.png | 17.7 | 1 |
-| images/square_1.svg | 0.7 | 1 |
-| images/square_2.svg | 1 | 1 |
-| images/square_3.svg | 1 | 1 |
-| images/square_4.svg | 1 | 1 |
+| images/square_1.svg | 0.7 | 4 |
+| images/square_2.svg | 1 | 3 |
+| images/square_3.svg | 1 | 3 |
+| images/square_4.svg | 1 | 3 |
 | images/test_image.png | 2 | 3 |
 | images/test_image_no_translations.png | 2.8 | 1 |
 | lottie/blob_play_ball.json | 69.4 | 16 |
@@ -263,7 +263,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 33 |
+| data_list |  | 35 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 8 |
@@ -281,7 +281,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 94 |
+| template |  | 97 |
 | template | component_demo | 56 |
 | template | debug | 261 |
 | template | example_generator | 2 |
