@@ -34,6 +34,46 @@
       "title": "Task Group 4",
       "image": "images/square_4.svg",
       "locked": true
+    },
+    {
+      "id": "task_group_id_5",
+      "task_group_data": "task_group_5",
+      "completed_field": "task_group_5_completed",
+      "title": "Task Group 5",
+      "image": "images/square_1.svg",
+      "locked": true
+    },
+    {
+      "id": "task_group_id_6",
+      "task_group_data": "task_group_6",
+      "completed_field": "task_group_6_completed",
+      "title": "Task Group 6",
+      "image": "images/square_2.svg",
+      "locked": true
+    },
+    {
+      "id": "task_group_id_7",
+      "task_group_data": "task_group_7",
+      "completed_field": "task_group_7_completed",
+      "title": "Task Group 7",
+      "image": "images/square_3.svg",
+      "locked": true
+    },
+    {
+      "id": "task_group_id_8",
+      "task_group_data": "task_group_8",
+      "completed_field": "task_group_8_completed",
+      "title": "Task Group 8",
+      "image": "images/square_4.svg",
+      "locked": true
+    },
+    {
+      "id": "task_group_id_9",
+      "task_group_data": "task_group_9",
+      "completed_field": "task_group_9_completed",
+      "title": "Task Group 9",
+      "image": "images/square_1.svg",
+      "locked": true
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_progress_path.xlsx",

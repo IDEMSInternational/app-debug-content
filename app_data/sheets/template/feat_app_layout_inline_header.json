@@ -1,0 +1,63 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_inline_header",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "style": "background_solid"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Sticky header",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "header"
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_2.title_1"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "title",
+      "value": "Template-level app config layout overrides",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "title",
+      "value": "Header hidden, inline sticky dg",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "template",
+      "name": "feat_app_layout_menu",
+      "value": "feat_app_layout_menu",
+      "rows": [],
+      "_nested_name": "feat_app_layout_menu"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
+}
