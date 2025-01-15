@@ -27,7 +27,7 @@
       },
       "rows": [
         {
-          "type": "items",
+          "type": "data_items",
           "value": "@data.task_cards_data_plh",
           "rows": [
             {
@@ -39,16 +39,12 @@
                 "completed_field": "@item.completed_field",
                 "title": "@item.title",
                 "image": "@item.image",
-                "in_progress_icon": "@local.in_progress_icon",
-                "completed_icon": "@local.completed_icon",
-                "highlighted_text": "@local.highlighted_text",
-                "progress_units_name": "@local.progress_units_name",
                 "locked": "@item.locked",
                 "locked_image_asset": "images/icons/locked.png"
               },
               "exclude_from_translation": "The progress_path component is currently designed to work with a list of task cards with the \"circle\" variant applied. Other child components have not been tested",
               "name": "task_card_1",
-              "_nested_name": "plh_progress_path_3.items_1.task_card_1",
+              "_nested_name": "plh_progress_path_3.data_items_1.task_card_1",
               "_dynamicFields": {
                 "parameter_list": {
                   "task_group_id": [
@@ -91,38 +87,6 @@
                       "fieldName": "image"
                     }
                   ],
-                  "in_progress_icon": [
-                    {
-                      "fullExpression": "@local.in_progress_icon",
-                      "matchedExpression": "@local.in_progress_icon",
-                      "type": "local",
-                      "fieldName": "in_progress_icon"
-                    }
-                  ],
-                  "completed_icon": [
-                    {
-                      "fullExpression": "@local.completed_icon",
-                      "matchedExpression": "@local.completed_icon",
-                      "type": "local",
-                      "fieldName": "completed_icon"
-                    }
-                  ],
-                  "highlighted_text": [
-                    {
-                      "fullExpression": "@local.highlighted_text",
-                      "matchedExpression": "@local.highlighted_text",
-                      "type": "local",
-                      "fieldName": "highlighted_text"
-                    }
-                  ],
-                  "progress_units_name": [
-                    {
-                      "fullExpression": "@local.progress_units_name",
-                      "matchedExpression": "@local.progress_units_name",
-                      "type": "local",
-                      "fieldName": "progress_units_name"
-                    }
-                  ],
                   "locked": [
                     {
                       "fullExpression": "@item.locked",
@@ -149,26 +113,14 @@
                 "@item.image": [
                   "parameter_list.image"
                 ],
-                "@local.in_progress_icon": [
-                  "parameter_list.in_progress_icon"
-                ],
-                "@local.completed_icon": [
-                  "parameter_list.completed_icon"
-                ],
-                "@local.highlighted_text": [
-                  "parameter_list.highlighted_text"
-                ],
-                "@local.progress_units_name": [
-                  "parameter_list.progress_units_name"
-                ],
                 "@item.locked": [
                   "parameter_list.locked"
                 ]
               }
             }
           ],
-          "name": "items_1",
-          "_nested_name": "plh_progress_path_3.items_1",
+          "name": "data_items_1",
+          "_nested_name": "plh_progress_path_3.data_items_1",
           "_dynamicFields": {
             "value": [
               {

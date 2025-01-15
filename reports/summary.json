@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 324
+        "count": 331
       },
       {
         "type": "calendar",
@@ -55,7 +55,7 @@
       },
       {
         "type": "data_items",
-        "count": 47
+        "count": 52
       },
       {
         "type": "debug_toggle",
@@ -71,7 +71,7 @@
       },
       {
         "type": "display_group",
-        "count": 194
+        "count": 199
       },
       {
         "type": "drawer",
@@ -91,7 +91,7 @@
       },
       {
         "type": "items",
-        "count": 51
+        "count": 50
       },
       {
         "type": "latex",
@@ -179,7 +179,7 @@
       },
       {
         "type": "radio_group",
-        "count": 56
+        "count": 57
       },
       {
         "type": "radio_group_grid",
@@ -203,11 +203,11 @@
       },
       {
         "type": "set_local",
-        "count": 5
+        "count": 7
       },
       {
         "type": "set_variable",
-        "count": 745
+        "count": 750
       },
       {
         "type": "simple_checkbox",
@@ -227,7 +227,7 @@
       },
       {
         "type": "task_card",
-        "count": 29
+        "count": 30
       },
       {
         "type": "task_progress_bar",
@@ -239,7 +239,7 @@
       },
       {
         "type": "text",
-        "count": 953
+        "count": 964
       },
       {
         "type": "text_area",
@@ -247,7 +247,7 @@
       },
       {
         "type": "text_box",
-        "count": 50
+        "count": 52
       },
       {
         "type": "text_bubble",
@@ -263,11 +263,11 @@
       },
       {
         "type": "title",
-        "count": 476
+        "count": 484
       },
       {
         "type": "toggle_bar",
-        "count": 54
+        "count": 58
       },
       {
         "type": "update_action_list",
@@ -323,7 +323,7 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 30
+        "count": 31
       },
       {
         "type": "emit: force_reprocess",
@@ -339,7 +339,7 @@
       },
       {
         "type": "emit: set_language",
-        "count": 4
+        "count": 5
       },
       {
         "type": "emit: set_skin",
@@ -423,7 +423,7 @@
       },
       {
         "type": "set_item",
-        "count": 24
+        "count": 27
       },
       {
         "type": "set_items",
@@ -431,7 +431,7 @@
       },
       {
         "type": "set_local",
-        "count": 38
+        "count": 45
       },
       {
         "type": "share",
@@ -548,7 +548,7 @@
       },
       {
         "path": "https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg",
-        "count": 1,
+        "count": 2,
         "missing": true
       },
       {
@@ -682,7 +682,7 @@
       },
       {
         "path": "images/example/jasper_1.jpg",
-        "count": 57,
+        "count": 58,
         "size_kb": 527.3
       },
       {
@@ -757,12 +757,12 @@
       },
       {
         "path": "images/icons/heart_blue.svg",
-        "count": 37,
+        "count": 38,
         "size_kb": 1.4
       },
       {
         "path": "images/icons/heart_outline.svg",
-        "count": 13,
+        "count": 14,
         "size_kb": 0.6
       },
       {
@@ -982,7 +982,7 @@
       {
         "type": "data_list",
         "subtype": "debug",
-        "total": 18
+        "total": 19
       },
       {
         "type": "data_list",
@@ -1052,7 +1052,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 97
+        "total": 98
       },
       {
         "type": "template",
@@ -1062,7 +1062,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 261
+        "total": 263
       },
       {
         "type": "template",

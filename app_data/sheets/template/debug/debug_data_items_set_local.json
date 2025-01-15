@@ -1,0 +1,332 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_set_local",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Top-level",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "local_var_1",
+      "value": true,
+      "type": "set_variable",
+      "_nested_name": "local_var_1"
+    },
+    {
+      "type": "button",
+      "value": "Toggle local_var_1 value",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "local_var_1",
+            "!@local.local_var_1"
+          ],
+          "_raw": "click | set_local: local_var_1: !@local.local_var_1",
+          "_cleaned": "click | set_local: local_var_1: !@local.local_var_1"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "!@local.local_var_1",
+                  "matchedExpression": "!@local.local_var_1",
+                  "type": "local",
+                  "fieldName": "local_var_1"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: local_var_1: !@local.local_var_1",
+                "matchedExpression": "!@local.local_var_1",
+                "type": "local",
+                "fieldName": "local_var_1"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | set_local: local_var_1: !@local.local_var_1",
+                "matchedExpression": "!@local.local_var_1",
+                "type": "local",
+                "fieldName": "local_var_1"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "!@local.local_var_1": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Value of local_var_1: @local.local_var_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of local_var_1: @local.local_var_1",
+            "matchedExpression": "@local.local_var_1",
+            "type": "local",
+            "fieldName": "local_var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.local_var_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Data-items",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "data_items",
+      "value": "debug_toggle_bar_data",
+      "rows": [
+        {
+          "type": "button",
+          "value": "Toggle local_var_1 value",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "local_var_1",
+                "!@local.local_var_1"
+              ],
+              "_raw": "click | set_local: local_var_1: !@local.local_var_1",
+              "_cleaned": "click | set_local: local_var_1: !@local.local_var_1"
+            }
+          ],
+          "name": "button_1",
+          "_nested_name": "data_items_7.button_1",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "!@local.local_var_1",
+                      "matchedExpression": "!@local.local_var_1",
+                      "type": "local",
+                      "fieldName": "local_var_1"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_local: local_var_1: !@local.local_var_1",
+                    "matchedExpression": "!@local.local_var_1",
+                    "type": "local",
+                    "fieldName": "local_var_1"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_local: local_var_1: !@local.local_var_1",
+                    "matchedExpression": "!@local.local_var_1",
+                    "type": "local",
+                    "fieldName": "local_var_1"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "!@local.local_var_1": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "Value of local_var_1: @local.local_var_1",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "data_items_7.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Value of local_var_1: @local.local_var_1",
+                "matchedExpression": "@local.local_var_1",
+                "type": "local",
+                "fieldName": "local_var_1"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.local_var_1": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "local_var_2",
+          "value": true,
+          "type": "set_variable",
+          "_nested_name": "data_items_7.local_var_2"
+        },
+        {
+          "type": "button",
+          "value": "Toggle local_var_2 value",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "local_var_2",
+                "!@local.local_var_2"
+              ],
+              "_raw": "click | set_local: local_var_2: !@local.local_var_2",
+              "_cleaned": "click | set_local: local_var_2: !@local.local_var_2"
+            }
+          ],
+          "name": "button_4",
+          "_nested_name": "data_items_7.button_4",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "!@local.local_var_2",
+                      "matchedExpression": "!@local.local_var_2",
+                      "type": "local",
+                      "fieldName": "local_var_2"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_local: local_var_2: !@local.local_var_2",
+                    "matchedExpression": "!@local.local_var_2",
+                    "type": "local",
+                    "fieldName": "local_var_2"
+                  }
+                ],
+                "_cleaned": [
+                  {
+                    "fullExpression": "click | set_local: local_var_2: !@local.local_var_2",
+                    "matchedExpression": "!@local.local_var_2",
+                    "type": "local",
+                    "fieldName": "local_var_2"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "!@local.local_var_2": [
+              "action_list.0.args.1",
+              "action_list.0._raw",
+              "action_list.0._cleaned"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "Value of local_var_2: @local.local_var_2",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_5",
+          "_nested_name": "data_items_7.text_5",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Value of local_var_2: @local.local_var_2",
+                "matchedExpression": "@local.local_var_2",
+                "type": "local",
+                "fieldName": "local_var_2"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.local_var_2": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_7",
+      "_nested_name": "data_items_7"
+    },
+    {
+      "type": "title",
+      "value": "Top-level",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_9",
+      "_nested_name": "title_9"
+    },
+    {
+      "type": "text",
+      "value": "Value of local_var_2: @local.local_var_2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of local_var_2: @local.local_var_2",
+            "matchedExpression": "@local.local_var_2",
+            "type": "local",
+            "fieldName": "local_var_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.local_var_2": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_set_local.xlsx"
+}

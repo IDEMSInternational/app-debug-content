@@ -31,8 +31,10 @@
       "property": "prob_bin",
       "scale_max": 8,
       "scale_min": 1,
+      "scale_increment": 1,
       "scale_title": "Riots risks level",
       "scale_slider": true,
+      "scale_slider_snap": true,
       "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740036",
       "visible_default": true
     },
@@ -70,7 +72,13 @@
     "visible_default": {
       "type": "boolean"
     },
+    "scale_increment": {
+      "type": "number"
+    },
     "scale_slider": {
+      "type": "boolean"
+    },
+    "scale_slider_snap": {
       "type": "boolean"
     },
     "point_radius_property_max": {

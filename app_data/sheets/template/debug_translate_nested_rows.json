@@ -1,0 +1,234 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translate_nested_rows",
+  "status": "released",
+  "rows": [
+    {
+      "name": "language_list",
+      "value": [
+        {
+          "name": "gb_en",
+          "text": "1. English"
+        },
+        {
+          "name": "en_rtl",
+          "text": "2. English RTL"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "language_list"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "set_language",
+            "this.value"
+          ],
+          "_raw": "changed | emit: set_language: @local.language_select",
+          "_cleaned": "changed | emit: set_language: @local.language_select"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "changed | emit: force_reload",
+          "_cleaned": "changed | emit: force_reload"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.language_list"
+      },
+      "_nested_name": "language_select",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_language",
+            "matchedExpression": "@fields._app_language",
+            "type": "fields",
+            "fieldName": "_app_language"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.language_list",
+              "matchedExpression": "@local.language_list",
+              "type": "local",
+              "fieldName": "language_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language": [
+          "value"
+        ],
+        "@local.language_select": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.language_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Some text in English",
+      "_translations": {
+        "value": {
+          "en_rtl": true
+        }
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Some text in English",
+          "_translations": {
+            "value": {
+              "en_rtl": true
+            }
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_5.text_1"
+        }
+      ],
+      "name": "display_group_5",
+      "_nested_name": "display_group_5"
+    },
+    {
+      "name": "button_text",
+      "value": "Some text in English",
+      "_translations": {
+        "value": {
+          "en_rtl": true
+        }
+      },
+      "type": "set_variable",
+      "_nested_name": "button_text"
+    },
+    {
+      "type": "button",
+      "value": "@local.button_text",
+      "parameter_list": {
+        "variant": "card-portrait",
+        "image_asset": "images/example/jasper_1.jpg"
+      },
+      "rows": [],
+      "name": "button_8",
+      "_nested_name": "button_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.button_text",
+            "matchedExpression": "@local.button_text",
+            "type": "local",
+            "fieldName": "button_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.button_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "kw_img",
+      "value": "https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "kw_img"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": {
+        "title": "@local.button_text",
+        "image": "@local.kw_img",
+        "variant": "portrait"
+      },
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "parameter_list": {
+            "variant": "icon",
+            "position": "right",
+            "icon_true_asset": "images/icons/heart_blue.svg",
+            "icon_false_asset": "images/icons/heart_outline.svg"
+          },
+          "name": "toggle_bar_1",
+          "_nested_name": "task_card_11.toggle_bar_1"
+        }
+      ],
+      "name": "task_card_11",
+      "_nested_name": "task_card_11",
+      "_dynamicFields": {
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "@local.button_text",
+              "matchedExpression": "@local.button_text",
+              "type": "local",
+              "fieldName": "button_text"
+            }
+          ],
+          "image": [
+            {
+              "fullExpression": "@local.kw_img",
+              "matchedExpression": "@local.kw_img",
+              "type": "local",
+              "fieldName": "kw_img"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.button_text": [
+          "parameter_list.title"
+        ],
+        "@local.kw_img": [
+          "parameter_list.image"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_translate_nested_rows.xlsx"
+}

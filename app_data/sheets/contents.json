@@ -155,7 +155,13 @@
         "visible_default": {
           "type": "boolean"
         },
+        "scale_increment": {
+          "type": "number"
+        },
         "scale_slider": {
+          "type": "boolean"
+        },
+        "scale_slider_snap": {
           "type": "boolean"
         },
         "point_radius_property_max": {
@@ -197,6 +203,9 @@
           "type": "number"
         },
         "visible_default": {
+          "type": "boolean"
+        },
+        "scale_slider": {
           "type": "boolean"
         }
       }
@@ -386,6 +395,17 @@
       "flow_name": "debug_nav_list",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_nav.xlsx"
+    },
+    "debug_toggle_bar_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_toggle_bar_data",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_toggle_bar.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
     },
     "debug_variable_data": {
       "flow_type": "data_list",
@@ -1886,6 +1906,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
+    "debug_data_items_set_local": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_set_local",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items_set_local.xlsx"
+    },
     "debug_data_items_translate": {
       "flow_type": "template",
       "flow_name": "debug_data_items_translate",
@@ -2593,6 +2619,12 @@
       "flow_name": "debug_timer_icons_1",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_small_issues.xlsx"
+    },
+    "debug_toggle_bar": {
+      "flow_type": "template",
+      "flow_name": "debug_toggle_bar",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_toggle_bar.xlsx"
     },
     "debug_tour_template": {
       "flow_type": "template",
@@ -3402,6 +3434,11 @@
       "flow_name": "debug_task_progress_filter",
       "_xlsxPath": "debug_sheets/debug_task_progress_filter.xlsx"
     },
+    "debug_translate_nested_rows": {
+      "flow_type": "template",
+      "flow_name": "debug_translate_nested_rows",
+      "_xlsxPath": "debug_sheets/debug_translate_nested_rows.xlsx"
+    },
     "doc_field": {
       "flow_type": "template",
       "flow_name": "doc_field",
@@ -3535,7 +3572,9 @@
       "parameter_list": {
         "app_config": {
           "LAYOUT": {
-            "page_padding": 0
+            "page_padding": {
+              "horizontal": 0
+            }
           }
         }
       },

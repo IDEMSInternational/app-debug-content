@@ -1,0 +1,18 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_toggle_bar_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id_1",
+      "completed": false
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_toggle_bar.xlsx",
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    }
+  }
+}
