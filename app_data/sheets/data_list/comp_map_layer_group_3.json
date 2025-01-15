@@ -27,6 +27,7 @@
       "scale_max": 400,
       "scale_min": 0,
       "scale_title": "Population Density (units)",
+      "scale_slider": true,
       "gradient_palette": "#380645, #298680, yellow",
       "visible_default": true
     }
@@ -43,6 +44,9 @@
       "type": "number"
     },
     "visible_default": {
+      "type": "boolean"
+    },
+    "scale_slider": {
       "type": "boolean"
     }
   }

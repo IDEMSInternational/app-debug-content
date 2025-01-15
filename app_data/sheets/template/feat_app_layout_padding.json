@@ -5,7 +5,9 @@
   "parameter_list": {
     "app_config": {
       "LAYOUT": {
-        "page_padding": 0
+        "page_padding": {
+          "horizontal": 0
+        }
       }
     }
   },
@@ -34,6 +36,75 @@
       "value": "feat_app_layout_menu",
       "rows": [],
       "_nested_name": "feat_app_layout_menu"
+    },
+    {
+      "type": "title",
+      "value": "Applying padding to specific elements",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "column"
+      },
+      "style_list": [
+        "padding-inline: 24px"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "value": "Display group with custom padding",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_7.text_1"
+        },
+        {
+          "type": "button",
+          "value": "A button",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_7.button_2"
+        }
+      ],
+      "name": "display_group_7",
+      "_nested_name": "display_group_7"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "column",
+        "variant": "inline_padding"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "value": "Display group with variant: inline_padding",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_9.text_1"
+        },
+        {
+          "type": "button",
+          "value": "A button",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_9.button_2"
+        }
+      ],
+      "name": "display_group_9",
+      "_nested_name": "display_group_9"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_app_layout.xlsx"
