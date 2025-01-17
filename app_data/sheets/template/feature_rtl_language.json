@@ -14,14 +14,38 @@
     },
     {
       "type": "text",
+      "value": "Language Direction: @fields._app_language_direction",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Language Direction: @fields._app_language_direction",
+            "matchedExpression": "@fields._app_language_direction",
+            "type": "fields",
+            "fieldName": "_app_language_direction"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language_direction": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
       "value": "Some text in English",
       "_translations": {
         "value": {
           "en_rtl": true
         }
       },
-      "name": "text_3",
-      "_nested_name": "text_3"
+      "name": "text_4",
+      "_nested_name": "text_4"
     },
     {
       "name": "language_list",
@@ -131,8 +155,119 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_6",
-      "_nested_name": "text_6"
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "title",
+      "value": "Images",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "text",
+      "value": "Example image that flips horizontally on RTL.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "display_group",
+      "condition": "@fields._app_language_direction == \"ltr\"",
+      "rows": [
+        {
+          "type": "image",
+          "value": "images/avatar_1.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "height: 100px"
+          ],
+          "name": "image_1",
+          "_nested_name": "display_group_10.image_1"
+        },
+        {
+          "type": "text",
+          "value": "Some text in English",
+          "_translations": {
+            "value": {
+              "en_rtl": true
+            }
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_10.text_2"
+        }
+      ],
+      "name": "display_group_10",
+      "_nested_name": "display_group_10",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields._app_language_direction == \"ltr\"",
+            "matchedExpression": "@fields._app_language_direction",
+            "type": "fields",
+            "fieldName": "_app_language_direction"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language_direction": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "condition": "@fields._app_language_direction == \"rtl\"",
+      "rows": [
+        {
+          "type": "image",
+          "value": "images/avatar_1.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "height: 100px",
+            "transform: scaleX(-1)"
+          ],
+          "name": "image_1",
+          "_nested_name": "display_group_12.image_1"
+        },
+        {
+          "type": "text",
+          "value": "Some text in English",
+          "_translations": {
+            "value": {
+              "en_rtl": true
+            }
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_12.text_2"
+        }
+      ],
+      "name": "display_group_12",
+      "_nested_name": "display_group_12",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields._app_language_direction == \"rtl\"",
+            "matchedExpression": "@fields._app_language_direction",
+            "type": "fields",
+            "fieldName": "_app_language_direction"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language_direction": [
+          "condition"
+        ]
+      }
     }
   ],
   "_xlsxPath": "feature_sheets/feature_rtl_language.xlsx"

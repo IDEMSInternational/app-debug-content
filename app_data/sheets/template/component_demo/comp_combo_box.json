@@ -5,23 +5,6 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "title",
-      "name": "title_1",
-      "value": "Answer list",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "title_1"
-    },
-    {
-      "type": "combo_box",
-      "name": "combo_box_par_1_1",
-      "parameter_list": {
-        "answer_list": ""
-      },
-      "_nested_name": "combo_box_par_1_1"
-    },
-    {
       "name": "answer_list_1",
       "value": [
         {
@@ -39,6 +22,119 @@
       ],
       "type": "set_variable",
       "_nested_name": "answer_list_1"
+    },
+    {
+      "type": "title",
+      "value": "Dropdown variant",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown_1",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "var_1",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: var_1: @local.combo_box_dropdown_1",
+          "_cleaned": "changed | set_local: var_1: @local.combo_box_dropdown_1"
+        }
+      ],
+      "parameter_list": {
+        "variant": "dropdown",
+        "answer_list": "@local.answer_list_1",
+        "placeholder": "Select from dropdown"
+      },
+      "_nested_name": "combo_box_dropdown_1",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | set_local: var_1: @local.combo_box_dropdown_1",
+                "matchedExpression": "@local.combo_box_dropdown_1",
+                "type": "local",
+                "fieldName": "combo_box_dropdown_1"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | set_local: var_1: @local.combo_box_dropdown_1",
+                "matchedExpression": "@local.combo_box_dropdown_1",
+                "type": "local",
+                "fieldName": "combo_box_dropdown_1"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.combo_box_dropdown_1": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Dropdown value: @local.combo_box_dropdown_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Dropdown value: @local.combo_box_dropdown_1",
+            "matchedExpression": "@local.combo_box_dropdown_1",
+            "type": "local",
+            "fieldName": "combo_box_dropdown_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.combo_box_dropdown_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Answer list",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_1_1",
+      "parameter_list": {
+        "answer_list": ""
+      },
+      "_nested_name": "combo_box_par_1_1"
     },
     {
       "type": "combo_box",
@@ -404,8 +500,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_22",
-      "_nested_name": "title_22"
+      "name": "title_25",
+      "_nested_name": "title_25"
     },
     {
       "type": "combo_box",
@@ -418,11 +514,11 @@
           "value": "comp_combo_box_items",
           "rows": [],
           "name": "data_items_1",
-          "_nested_name": "combo_box_23.data_items_1"
+          "_nested_name": "combo_box_26.data_items_1"
         }
       ],
-      "name": "combo_box_23",
-      "_nested_name": "combo_box_23"
+      "name": "combo_box_26",
+      "_nested_name": "combo_box_26"
     },
     {
       "type": "button",
