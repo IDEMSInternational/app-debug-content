@@ -31,7 +31,7 @@
       },
       {
         "type": "button",
-        "count": 331
+        "count": 333
       },
       {
         "type": "calendar",
@@ -47,7 +47,7 @@
       },
       {
         "type": "combo_box",
-        "count": 48
+        "count": 49
       },
       {
         "type": "dashed_box",
@@ -71,7 +71,7 @@
       },
       {
         "type": "display_group",
-        "count": 199
+        "count": 201
       },
       {
         "type": "drawer",
@@ -87,7 +87,7 @@
       },
       {
         "type": "image",
-        "count": 79
+        "count": 81
       },
       {
         "type": "items",
@@ -239,7 +239,7 @@
       },
       {
         "type": "text",
-        "count": 964
+        "count": 969
       },
       {
         "type": "text_area",
@@ -263,7 +263,7 @@
       },
       {
         "type": "title",
-        "count": 484
+        "count": 486
       },
       {
         "type": "toggle_bar",
@@ -431,7 +431,7 @@
       },
       {
         "type": "set_local",
-        "count": 45
+        "count": 46
       },
       {
         "type": "share",
@@ -637,7 +637,7 @@
       },
       {
         "path": "images/avatar_1.png",
-        "count": 17,
+        "count": 19,
         "size_kb": 67.7
       },
       {
@@ -752,7 +752,7 @@
       },
       {
         "path": "images/icons/globe_blue.svg",
-        "count": 18,
+        "count": 19,
         "size_kb": 3.9
       },
       {
@@ -787,7 +787,7 @@
       },
       {
         "path": "images/icons/leaf_blue.svg",
-        "count": 12,
+        "count": 13,
         "size_kb": 1.7
       },
       {

@@ -10,21 +10,21 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 331 |
+| button | 333 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 48 |
+| combo_box | 49 |
 | dashed_box | 19 |
 | data_items | 52 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 199 |
+| display_group | 201 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
-| image | 79 |
+| image | 81 |
 | items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
@@ -62,13 +62,13 @@
 | task_card | 30 |
 | task_progress_bar | 6 |
 | template | 138 |
-| text | 964 |
+| text | 969 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 484 |
+| title | 486 |
 | toggle_bar | 58 |
 | update_action_list | 2 |
 | video | 4 |
@@ -116,7 +116,7 @@
 | set_field | 116 |
 | set_item | 27 |
 | set_items | 2 |
-| set_local | 45 |
+| set_local | 46 |
 | share | 6 |
 | start_tour | 2 |
 | task | 2 |
@@ -192,7 +192,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/Faisal.png | 3.5 | 2 |
 | images/Noura.png | 4.2 | 3 |
 | images/activity_bg.svg | 13.8 | 3 |
-| images/avatar_1.png | 67.7 | 17 |
+| images/avatar_1.png | 67.7 | 19 |
 | images/bg_illustration.png | 255.4 | 3 |
 | images/bottom_image.svg | 6.8 | 2 |
 | images/diamond.png | 4.3 | 1 |
@@ -215,14 +215,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/close.png | 2.5 | 1 |
 | images/icons/close.svg | 0.2 | 1 |
 | images/icons/expand_circle_right.png | 0.9 | 2 |
-| images/icons/globe_blue.svg | 3.9 | 18 |
+| images/icons/globe_blue.svg | 3.9 | 19 |
 | images/icons/heart_blue.svg | 1.4 | 38 |
 | images/icons/heart_outline.svg | 0.6 | 14 |
 | images/icons/home.svg | 0.4 | 1 |
 | images/icons/home_active.svg | 0.4 | 1 |
 | images/icons/house_white.svg | 0.6 | 5 |
 | images/icons/in_progress.svg | 1.1 | 16 |
-| images/icons/leaf_blue.svg | 1.7 | 12 |
+| images/icons/leaf_blue.svg | 1.7 | 13 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
 | images/icons/locked.png | 0.9 | 8 |

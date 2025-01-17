@@ -3572,9 +3572,7 @@
       "parameter_list": {
         "app_config": {
           "LAYOUT": {
-            "page_padding": {
-              "horizontal": 0
-            }
+            "page_padding": "32px 0"
           }
         }
       },
