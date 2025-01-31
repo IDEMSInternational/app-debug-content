@@ -2007,11 +2007,12 @@
       ],
       "parameter_list": {
         "task_id": "@local.task_id",
+        "task_group_data": "@local.task_group_data",
         "completed_field": "FALSE",
         "title": "Pellentesque quis lectus pharetra, dictum orci ut, aliquet elit",
         "style": "button",
         "variant": "block-button",
-        "image": "@local.card_image"
+        "image": "images/example/jasper_1.jpg"
       },
       "_nested_name": "block_button",
       "_dynamicFields": {
@@ -2054,12 +2055,12 @@
               "fieldName": "task_id"
             }
           ],
-          "image": [
+          "task_group_data": [
             {
-              "fullExpression": "@local.card_image",
-              "matchedExpression": "@local.card_image",
+              "fullExpression": "@local.task_group_data",
+              "matchedExpression": "@local.task_group_data",
               "type": "local",
-              "fieldName": "card_image"
+              "fieldName": "task_group_data"
             }
           ]
         }
@@ -2073,8 +2074,55 @@
         "@local.task_id": [
           "parameter_list.task_id"
         ],
-        "@local.card_image": [
-          "parameter_list.image"
+        "@local.task_group_data": [
+          "parameter_list.task_group_data"
+        ]
+      }
+    },
+    {
+      "type": "task_card",
+      "name": "block_button",
+      "value": "Block Button",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "task_id": "@local.task_id",
+        "task_group_data": "@local.task_group_data",
+        "completed_column_name": "is_done",
+        "completed_field": "FALSE",
+        "title": "Pellentesque quis lectus pharetra, dictum orci ut, aliquet elit",
+        "style": "button",
+        "variant": "block-button",
+        "image": "images/example/jasper_1.jpg"
+      },
+      "_nested_name": "block_button",
+      "_dynamicFields": {
+        "parameter_list": {
+          "task_id": [
+            {
+              "fullExpression": "@local.task_id",
+              "matchedExpression": "@local.task_id",
+              "type": "local",
+              "fieldName": "task_id"
+            }
+          ],
+          "task_group_data": [
+            {
+              "fullExpression": "@local.task_group_data",
+              "matchedExpression": "@local.task_group_data",
+              "type": "local",
+              "fieldName": "task_group_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.task_id": [
+          "parameter_list.task_id"
+        ],
+        "@local.task_group_data": [
+          "parameter_list.task_group_data"
         ]
       }
     },

@@ -26,6 +26,40 @@
     },
     {
       "type": "title",
+      "value": "Button with icon",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "button",
+      "value": "Button with icon",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "icon": "images/icons/leaf_blue.svg"
+      },
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "button",
+      "value": "Button with right-aligned icon",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "icon": "images/icons/globe_blue.svg",
+        "icon_align": "right"
+      },
+      "name": "button_5",
+      "_nested_name": "button_5"
+    },
+    {
+      "type": "title",
       "name": "title_0",
       "value": "Button card",
       "_translations": {
@@ -42,47 +76,21 @@
       "parameter_list": {
         "variant": "card"
       },
-      "name": "button_4",
-      "_nested_name": "button_4"
+      "name": "button_7",
+      "_nested_name": "button_7"
     },
     {
       "type": "button",
-      "value": "With aligned icon",
+      "value": "Card Variant with icon",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "variant": "card",
-        "icon": "images/icons/leaf_blue.svg",
-        "icon_position": "right"
-      },
-      "name": "button_5",
-      "_nested_name": "button_5"
-    },
-    {
-      "type": "button",
-      "value": "Button with icon",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
         "icon": "images/icons/leaf_blue.svg"
       },
-      "name": "button_6",
-      "_nested_name": "button_6"
-    },
-    {
-      "type": "button",
-      "value": "Button with right icon",
-      "_translations": {
-        "value": {}
-      },
-      "parameter_list": {
-        "icon": "images/icons/globe_blue.svg",
-        "button_align": "right"
-      },
-      "name": "button_7",
-      "_nested_name": "button_7"
+      "name": "button_8",
+      "_nested_name": "button_8"
     },
     {
       "type": "button",
@@ -99,11 +107,11 @@
             "position": "right",
             "style": "in_button"
           },
-          "_nested_name": "button_8.toggle_bar_1"
+          "_nested_name": "button_9.toggle_bar_1"
         }
       ],
-      "name": "button_8",
-      "_nested_name": "button_8"
+      "name": "button_9",
+      "_nested_name": "button_9"
     },
     {
       "type": "title",
@@ -111,8 +119,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_10",
-      "_nested_name": "title_10"
+      "name": "title_11",
+      "_nested_name": "title_11"
     },
     {
       "type": "button",
@@ -127,8 +135,8 @@
         "style": "no-background",
         "text_align": "left"
       },
-      "name": "button_11",
-      "_nested_name": "button_11"
+      "name": "button_12",
+      "_nested_name": "button_12"
     },
     {
       "type": "button",
@@ -143,8 +151,8 @@
         "style": "no-background",
         "text_align": "left"
       },
-      "name": "button_12",
-      "_nested_name": "button_12"
+      "name": "button_13",
+      "_nested_name": "button_13"
     },
     {
       "type": "title",
@@ -152,8 +160,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_13",
-      "_nested_name": "title_13"
+      "name": "title_14",
+      "_nested_name": "title_14"
     },
     {
       "type": "button",
@@ -166,11 +174,11 @@
         {
           "type": "toggle_bar",
           "name": "toggle_bar_2",
-          "_nested_name": "button_14.toggle_bar_2"
+          "_nested_name": "button_15.toggle_bar_2"
         }
       ],
-      "name": "button_14",
-      "_nested_name": "button_14"
+      "name": "button_15",
+      "_nested_name": "button_15"
     },
     {
       "type": "button",
@@ -215,7 +223,7 @@
             "icon_true_asset": "images/icons/heart_blue.svg",
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
-          "_nested_name": "button_16.toggle_bar_3",
+          "_nested_name": "button_17.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -257,8 +265,8 @@
           }
         }
       ],
-      "name": "button_16",
-      "_nested_name": "button_16"
+      "name": "button_17",
+      "_nested_name": "button_17"
     },
     {
       "type": "text",
@@ -266,8 +274,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_18",
-      "_nested_name": "text_18"
+      "name": "text_19",
+      "_nested_name": "text_19"
     },
     {
       "name": "is_locked",
@@ -320,7 +328,7 @@
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
           "condition": "!@local.is_locked",
-          "_nested_name": "button_20.toggle_bar_3",
+          "_nested_name": "button_21.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -380,7 +388,7 @@
           },
           "condition": "@local.is_locked",
           "name": "image_2",
-          "_nested_name": "button_20.image_2",
+          "_nested_name": "button_21.image_2",
           "_dynamicFields": {
             "condition": [
               {
@@ -398,8 +406,8 @@
           }
         }
       ],
-      "name": "button_20",
-      "_nested_name": "button_20",
+      "name": "button_21",
+      "_nested_name": "button_21",
       "_dynamicFields": {
         "parameter_list": {
           "disabled": [
@@ -424,8 +432,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_22",
-      "_nested_name": "text_22"
+      "name": "text_23",
+      "_nested_name": "text_23"
     },
     {
       "name": "is_locked_2",
@@ -478,7 +486,7 @@
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
           "condition": "!@local.is_locked_2",
-          "_nested_name": "button_24.toggle_bar_3",
+          "_nested_name": "button_25.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -538,7 +546,7 @@
           },
           "condition": "@local.is_locked_2",
           "name": "image_2",
-          "_nested_name": "button_24.image_2",
+          "_nested_name": "button_25.image_2",
           "_dynamicFields": {
             "condition": [
               {
@@ -556,8 +564,8 @@
           }
         }
       ],
-      "name": "button_24",
-      "_nested_name": "button_24",
+      "name": "button_25",
+      "_nested_name": "button_25",
       "_dynamicFields": {
         "parameter_list": {
           "disabled": [
@@ -575,6 +583,39 @@
           "parameter_list.disabled"
         ]
       }
+    },
+    {
+      "type": "title",
+      "value": "Variant: faq",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_27",
+      "_nested_name": "title_27"
+    },
+    {
+      "type": "button",
+      "value": "One line",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "faq"
+      },
+      "name": "button_28",
+      "_nested_name": "button_28"
+    },
+    {
+      "type": "button",
+      "value": "A longer text string that wraps over multiple lines for demonstration purposes",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "faq"
+      },
+      "name": "button_29",
+      "_nested_name": "button_29"
     },
     {
       "type": "title",
@@ -630,6 +671,61 @@
         "disabled": "true"
       },
       "_nested_name": "button_par_1_2"
+    },
+    {
+      "type": "text",
+      "value": "Set disabled dynamically:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_33",
+      "_nested_name": "text_33"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_1",
+      "value": false,
+      "_nested_name": "toggle_bar_1"
+    },
+    {
+      "type": "button",
+      "name": "button_disabled_dynamic",
+      "value": "Disable this button via the toggle",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | pop_up: example_text",
+          "_cleaned": "click | pop_up: example_text"
+        }
+      ],
+      "parameter_list": {
+        "disabled": "@local.toggle_bar_1"
+      },
+      "_nested_name": "button_disabled_dynamic",
+      "_dynamicFields": {
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "@local.toggle_bar_1",
+              "matchedExpression": "@local.toggle_bar_1",
+              "type": "local",
+              "fieldName": "toggle_bar_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_bar_1": [
+          "parameter_list.disabled"
+        ]
+      }
     },
     {
       "type": "title",

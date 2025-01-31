@@ -1,0 +1,245 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items_dev",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Dynamic Data",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "title",
+      "name": "example_1",
+      "value": "Example xx: Intermediate Variables",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "example_1"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.comp_data_items_list",
+      "rows": [
+        {
+          "name": "itemNumber",
+          "value": "@item.row_index + 1",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "data_items_4.itemNumber",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.row_index + 1",
+                "matchedExpression": "@item.row_index",
+                "type": "item",
+                "fieldName": "row_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.row_index": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "isEven",
+          "value": "@local.itemNumber % 2 === 0",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "data_items_4.isEven",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.itemNumber % 2 === 0",
+                "matchedExpression": "@local.itemNumber",
+                "type": "local",
+                "fieldName": "itemNumber"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.itemNumber": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "dueDate",
+          "value": "@calc(window.date_fns.addMonths(new Date(),@local.itemNumber).toDateString())",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "data_items_4.dueDate",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@calc(window.date_fns.addMonths(new Date(),@local.itemNumber).toDateString())",
+                "matchedExpression": "@local.itemNumber",
+                "type": "local",
+                "fieldName": "itemNumber"
+              },
+              {
+                "fullExpression": "@calc(window.date_fns.addMonths(new Date(),@local.itemNumber).toDateString())",
+                "matchedExpression": "@calc(window.date_fns.addMonths(new Date(),@local.itemNumber).toDateString())",
+                "type": "calc",
+                "fieldName": "window.date_fns.addMonths(new Date(),@local.itemNumber).toDateString()"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.itemNumber": [
+              "value"
+            ],
+            "@calc(window.date_fns.addMonths(new Date(),@local.itemNumber).toDateString())": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "display_group",
+          "rows": [
+            {
+              "type": "text",
+              "value": "@local.itemNumber",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_1",
+              "_nested_name": "data_items_4.display_group_4.text_1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.itemNumber",
+                    "matchedExpression": "@local.itemNumber",
+                    "type": "local",
+                    "fieldName": "itemNumber"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.itemNumber": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Even",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "@local.isEven",
+              "name": "text_2",
+              "_nested_name": "data_items_4.display_group_4.text_2",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "@local.isEven",
+                    "matchedExpression": "@local.isEven",
+                    "type": "local",
+                    "fieldName": "isEven"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.isEven": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Odd",
+              "_translations": {
+                "value": {}
+              },
+              "condition": "!@local.isEven",
+              "name": "text_3",
+              "_nested_name": "data_items_4.display_group_4.text_3",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "!@local.isEven",
+                    "matchedExpression": "!@local.isEven",
+                    "type": "local",
+                    "fieldName": "isEven"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "!@local.isEven": [
+                  "condition"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Due: @local.dueDate",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_4",
+              "_nested_name": "data_items_4.display_group_4.text_4",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Due: @local.dueDate",
+                    "matchedExpression": "@local.dueDate",
+                    "type": "local",
+                    "fieldName": "dueDate"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.dueDate": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "name": "display_group_4",
+          "_nested_name": "data_items_4.display_group_4"
+        }
+      ],
+      "name": "data_items_4",
+      "_nested_name": "data_items_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.comp_data_items_list",
+            "matchedExpression": "@data.comp_data_items_list",
+            "type": "data",
+            "fieldName": "comp_data_items_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.comp_data_items_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Not Currently Supported",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_items.xlsx"
+}

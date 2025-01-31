@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "1. Input text into box\n2. Click on page to trigger change\n3. Click set to undefined\n4. Repeat",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_1",
+      "_nested_name": "text_box_1"
+    },
+    {
+      "type": "button",
+      "value": "set to undefined",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "text_box_1",
+            ""
+          ],
+          "_raw": "click | set_local: text_box_1:",
+          "_cleaned": "click | set_local: text_box_1:"
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_text_box.xlsx"
+}

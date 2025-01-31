@@ -1,0 +1,138 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translation_data_items",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "template",
+      "name": "example_lang_select",
+      "value": "example_lang_select",
+      "rows": [],
+      "_nested_name": "example_lang_select"
+    },
+    {
+      "type": "data_items",
+      "name": "loop_activities",
+      "value": "@data.debug_translation_data",
+      "rows": [
+        {
+          "type": "text",
+          "name": "debug_title_translation_@item.id",
+          "value": "@item.text",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "loop_activities.debug_title_translation_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "debug_title_translation_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "@item.text",
+                "matchedExpression": "@item.text",
+                "type": "item",
+                "fieldName": "text"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "loop_activities.debug_title_translation_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "loop_activities",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_translation_data",
+            "matchedExpression": "@data.debug_translation_data",
+            "type": "data",
+            "fieldName": "debug_translation_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_translation_data": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "loop_activities",
+      "value": "@data.debug_translation_data",
+      "rows": [
+        {
+          "type": "template",
+          "name": "example_text",
+          "value": "example_text",
+          "rows": [
+            {
+              "name": "text",
+              "value": "@item.text",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "loop_activities.example_text.text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.text",
+                    "matchedExpression": "@item.text",
+                    "type": "item",
+                    "fieldName": "text"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.text": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "loop_activities.example_text"
+        }
+      ],
+      "_nested_name": "loop_activities",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_translation_data",
+            "matchedExpression": "@data.debug_translation_data",
+            "type": "data",
+            "fieldName": "debug_translation_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_translation_data": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_translation.xlsx"
+}

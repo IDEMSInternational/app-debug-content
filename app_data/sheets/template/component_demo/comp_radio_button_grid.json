@@ -499,6 +499,53 @@
           "parameter_list.grid_gap"
         ]
       }
+    },
+    {
+      "type": "title",
+      "value": "Radio Button Flex",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_11",
+      "_nested_name": "title_11"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "flex_1",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "changed | emit:force_reprocess",
+          "_cleaned": "changed | emit:force_reprocess"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@data.comp_radio_button_flex_data",
+        "variant": "flex"
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "flex_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.comp_radio_button_flex_data",
+              "matchedExpression": "@data.comp_radio_button_flex_data",
+              "type": "data",
+              "fieldName": "comp_radio_button_flex_data"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.comp_radio_button_flex_data": [
+          "parameter_list.answer_list"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"

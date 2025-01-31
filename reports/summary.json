@@ -2,16 +2,20 @@
   "template_components": {
     "data": [
       {
+        "type": "@events",
+        "count": 1
+      },
+      {
         "type": "@item.input_type",
         "count": 1
       },
       {
         "type": "accordion",
-        "count": 5
+        "count": 6
       },
       {
         "type": "accordion_section",
-        "count": 17
+        "count": 18
       },
       {
         "type": "advanced_dashed_box",
@@ -31,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 333
+        "count": 337
       },
       {
         "type": "calendar",
@@ -47,7 +51,7 @@
       },
       {
         "type": "combo_box",
-        "count": 49
+        "count": 54
       },
       {
         "type": "dashed_box",
@@ -55,7 +59,7 @@
       },
       {
         "type": "data_items",
-        "count": 52
+        "count": 55
       },
       {
         "type": "debug_toggle",
@@ -207,7 +211,7 @@
       },
       {
         "type": "set_variable",
-        "count": 750
+        "count": 756
       },
       {
         "type": "simple_checkbox",
@@ -223,11 +227,11 @@
       },
       {
         "type": "subtitle",
-        "count": 60
+        "count": 59
       },
       {
         "type": "task_card",
-        "count": 30
+        "count": 31
       },
       {
         "type": "task_progress_bar",
@@ -235,11 +239,11 @@
       },
       {
         "type": "template",
-        "count": 138
+        "count": 140
       },
       {
         "type": "text",
-        "count": 969
+        "count": 981
       },
       {
         "type": "text_area",
@@ -263,11 +267,11 @@
       },
       {
         "type": "title",
-        "count": 486
+        "count": 498
       },
       {
         "type": "toggle_bar",
-        "count": 58
+        "count": 59
       },
       {
         "type": "update_action_list",
@@ -290,10 +294,6 @@
   "template_actions": {
     "data": [
       {
-        "type": "!@item.default_value",
-        "count": 1
-      },
-      {
         "type": "add_data",
         "count": 2
       },
@@ -308,6 +308,14 @@
       {
         "type": "auth",
         "count": 2
+      },
+      {
+        "type": "auth_failure",
+        "count": 1
+      },
+      {
+        "type": "auth_success",
+        "count": 1
       },
       {
         "type": "download_assets",
@@ -327,7 +335,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 26
+        "count": 28
       },
       {
         "type": "emit: force_restart",
@@ -387,7 +395,7 @@
       },
       {
         "type": "pop_up",
-        "count": 42
+        "count": 43
       },
       {
         "type": "process_template",
@@ -415,7 +423,7 @@
       },
       {
         "type": "set_data",
-        "count": 13
+        "count": 17
       },
       {
         "type": "set_field",
@@ -431,7 +439,7 @@
       },
       {
         "type": "set_local",
-        "count": 46
+        "count": 48
       },
       {
         "type": "share",
@@ -459,7 +467,7 @@
       },
       {
         "type": "undefined",
-        "count": 36
+        "count": 17
       },
       {
         "type": "user",
@@ -476,8 +484,8 @@
       },
       {
         "assets": "unused",
-        "KB": "936 KB",
-        "MB": "0.9 MB"
+        "KB": "4568 KB",
+        "MB": "4.6 MB"
       }
     ]
   },
@@ -502,6 +510,10 @@
       {
         "path": "android/splash.png",
         "size_kb": 147.4
+      },
+      {
+        "path": "images/home_bg.svg",
+        "size_kb": 3632
       },
       {
         "path": "images/icons/favicon.svg",
@@ -682,7 +694,7 @@
       },
       {
         "path": "images/example/jasper_1.jpg",
-        "count": 58,
+        "count": 60,
         "size_kb": 527.3
       },
       {
@@ -699,11 +711,6 @@
         "path": "images/faces/sad.svg",
         "count": 2,
         "size_kb": 1.1
-      },
-      {
-        "path": "images/home_bg.svg",
-        "count": 1,
-        "size_kb": 3632
       },
       {
         "path": "images/icons/ask_question_white.svg",
@@ -861,6 +868,11 @@
         "size_kb": 0.3
       },
       {
+        "path": "images/map_bg.svg",
+        "count": 1,
+        "size_kb": 3632.4
+      },
+      {
         "path": "images/modal_bg.svg",
         "count": 1,
         "size_kb": 37.3
@@ -897,7 +909,7 @@
       },
       {
         "path": "images/test_image.png",
-        "count": 3,
+        "count": 4,
         "size_kb": 2
       },
       {
@@ -962,7 +974,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 35
+        "total": 36
       },
       {
         "type": "data_list",
@@ -977,12 +989,12 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 8
+        "total": 9
       },
       {
         "type": "data_list",
         "subtype": "debug",
-        "total": 19
+        "total": 20
       },
       {
         "type": "data_list",
@@ -1052,17 +1064,17 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 98
+        "total": 99
       },
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 56
+        "total": 57
       },
       {
         "type": "template",
         "subtype": "debug",
-        "total": 263
+        "total": 265
       },
       {
         "type": "template",
