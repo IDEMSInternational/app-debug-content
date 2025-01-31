@@ -1,0 +1,408 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_data_changed",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Issue:\nset_data action does not receive lateset value from combobox\n\nFixed via: \nhttps://github.com/IDEMSInternational/open-app-builder/pull/2749\n\nhttps://github.com/IDEMSInternational/open-app-builder/pull/2750",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "name": "answer_list_1",
+      "value": [
+        {
+          "name": "name_1",
+          "text": "This is text 1"
+        },
+        {
+          "name": "name_2",
+          "text": "This is text 2"
+        },
+        {
+          "name": "name_3",
+          "text": "This is text 3"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list_1"
+    },
+    {
+      "type": "title",
+      "value": "Set data list value from combo box (local notation)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_1",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: @local.combo_box_1",
+          "_cleaned": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: @local.combo_box_1",
+          "params": {
+            "_list_id": "debug_set_data_changed_data",
+            "_id": "row_1",
+            "value": "this.value"
+          }
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1",
+        "variant": "dropdown"
+      },
+      "_nested_name": "combo_box_1",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: @local.combo_box_1",
+                "matchedExpression": "@local.combo_box_1",
+                "type": "local",
+                "fieldName": "combo_box_1"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: @local.combo_box_1",
+                "matchedExpression": "@local.combo_box_1",
+                "type": "local",
+                "fieldName": "combo_box_1"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.combo_box_1": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Set data list value from combo box (this notation)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_2",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: this.value",
+          "_cleaned": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: this.value",
+          "params": {
+            "_list_id": "debug_set_data_changed_data",
+            "_id": "row_1",
+            "value": "this.value"
+          }
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1",
+        "variant": "dropdown"
+      },
+      "_nested_name": "combo_box_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Items",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "data_items",
+      "value": "debug_set_data_changed_data",
+      "rows": [
+        {
+          "type": "text",
+          "value": "data row value: @item.value",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "data_items_9.text_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "data row value: @item.value",
+                "matchedExpression": "@item.value",
+                "type": "item",
+                "fieldName": "value"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.value": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_9",
+      "_nested_name": "data_items_9"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Use Case",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_11",
+      "_nested_name": "title_11"
+    },
+    {
+      "type": "text",
+      "value": "Concatenate item with changed value (this notation)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_12",
+      "_nested_name": "text_12"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_4",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{this.value}",
+          "_cleaned": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{this.value}",
+          "params": {
+            "_list_id": "debug_set_data_changed_data",
+            "_id": "row_1",
+            "value": "{@item.id}_{this.value}"
+          }
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1",
+        "variant": "dropdown"
+      },
+      "_nested_name": "combo_box_4",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{this.value}",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{this.value}",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "params": {
+              "value": [
+                {
+                  "fullExpression": "{@item.id}_{this.value}",
+                  "matchedExpression": "@item.id",
+                  "type": "item",
+                  "fieldName": "id"
+                }
+              ]
+            }
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.value"
+        ],
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "TODO - not currently supported",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_14",
+      "_nested_name": "title_14"
+    },
+    {
+      "type": "text",
+      "value": "Concatenate item with changed value (local notation)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_15",
+      "_nested_name": "text_15"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_3",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{@local.combo_box_3}",
+          "_cleaned": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{@local.combo_box_3}",
+          "params": {
+            "_list_id": "debug_set_data_changed_data",
+            "_id": "row_1",
+            "value": "{@item.id}_{@local.combo_box_3}"
+          }
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1",
+        "variant": "dropdown"
+      },
+      "_nested_name": "combo_box_3",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{@local.combo_box_3}",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              },
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{@local.combo_box_3}",
+                "matchedExpression": "@local.combo_box_3",
+                "type": "local",
+                "fieldName": "combo_box_3"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{@local.combo_box_3}",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              },
+              {
+                "fullExpression": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{@local.combo_box_3}",
+                "matchedExpression": "@local.combo_box_3",
+                "type": "local",
+                "fieldName": "combo_box_3"
+              }
+            ],
+            "params": {
+              "value": [
+                {
+                  "fullExpression": "{@item.id}_{@local.combo_box_3}",
+                  "matchedExpression": "@item.id",
+                  "type": "item",
+                  "fieldName": "id"
+                },
+                {
+                  "fullExpression": "{@item.id}_{@local.combo_box_3}",
+                  "matchedExpression": "@local.combo_box_3",
+                  "type": "local",
+                  "fieldName": "combo_box_3"
+                }
+              ]
+            }
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.value"
+        ],
+        "@local.combo_box_3": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.value"
+        ],
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_set_data_changed.xlsx"
+}

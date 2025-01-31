@@ -9,7 +9,8 @@
       "completed_field": "task_group_1_completed",
       "title": "Task Group 1",
       "image": "images/square_1.svg",
-      "locked": false
+      "locked": false,
+      "highlighted": false
     },
     {
       "id": "task_group_id_2",
@@ -17,7 +18,8 @@
       "completed_field": "task_group_2_completed",
       "title": "Task Group 2 (long name)",
       "image": "images/square_2.svg",
-      "locked": false
+      "locked": false,
+      "highlighted": true
     },
     {
       "id": "task_group_id_3",
@@ -25,7 +27,8 @@
       "completed_field": "task_group_3_completed",
       "title": "Task Group 3 (very long name that takes up three lines to test styling)",
       "image": "images/square_3.svg",
-      "locked": true
+      "locked": true,
+      "highlighted": false
     },
     {
       "id": "task_group_id_4",
@@ -33,7 +36,8 @@
       "completed_field": "task_group_4_completed",
       "title": "Task Group 4",
       "image": "images/square_4.svg",
-      "locked": true
+      "locked": true,
+      "highlighted": false
     },
     {
       "id": "task_group_id_5",
@@ -41,7 +45,8 @@
       "completed_field": "task_group_5_completed",
       "title": "Task Group 5",
       "image": "images/square_1.svg",
-      "locked": true
+      "locked": true,
+      "highlighted": false
     },
     {
       "id": "task_group_id_6",
@@ -49,7 +54,8 @@
       "completed_field": "task_group_6_completed",
       "title": "Task Group 6",
       "image": "images/square_2.svg",
-      "locked": true
+      "locked": true,
+      "highlighted": false
     },
     {
       "id": "task_group_id_7",
@@ -57,7 +63,8 @@
       "completed_field": "task_group_7_completed",
       "title": "Task Group 7",
       "image": "images/square_3.svg",
-      "locked": true
+      "locked": true,
+      "highlighted": false
     },
     {
       "id": "task_group_id_8",
@@ -65,7 +72,8 @@
       "completed_field": "task_group_8_completed",
       "title": "Task Group 8",
       "image": "images/square_4.svg",
-      "locked": true
+      "locked": true,
+      "highlighted": false
     },
     {
       "id": "task_group_id_9",
@@ -73,12 +81,16 @@
       "completed_field": "task_group_9_completed",
       "title": "Task Group 9",
       "image": "images/square_1.svg",
-      "locked": true
+      "locked": true,
+      "highlighted": false
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_progress_path.xlsx",
   "_metadata": {
     "locked": {
+      "type": "boolean"
+    },
+    "highlighted": {
       "type": "boolean"
     }
   }

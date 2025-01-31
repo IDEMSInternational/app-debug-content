@@ -3,20 +3,21 @@
 
 | type | count |
 | --- | --- |
+| @events | 1 |
 | @item.input_type | 1 |
-| accordion | 5 |
-| accordion_section | 17 |
+| accordion | 6 |
+| accordion_section | 18 |
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 333 |
+| button | 337 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 49 |
+| combo_box | 54 |
 | dashed_box | 19 |
-| data_items | 52 |
+| data_items | 55 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
@@ -54,22 +55,22 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 750 |
+| set_variable | 756 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 60 |
-| task_card | 30 |
+| subtitle | 59 |
+| task_card | 31 |
 | task_progress_bar | 6 |
-| template | 138 |
-| text | 969 |
+| template | 140 |
+| text | 981 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 486 |
-| toggle_bar | 58 |
+| title | 498 |
+| toggle_bar | 59 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -81,16 +82,17 @@
 
 | type | count |
 | --- | --- |
-| !@item.default_value | 1 |
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
 | auth | 2 |
+| auth_failure | 1 |
+| auth_success | 1 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 31 |
-| emit: force_reprocess | 26 |
+| emit: force_reprocess | 28 |
 | emit: force_restart | 2 |
 | emit: server_sync | 7 |
 | emit: set_language | 5 |
@@ -105,25 +107,25 @@
 | nav | 5 |
 | nav_stack | 11 |
 | open_external | 2 |
-| pop_up | 42 |
+| pop_up | 43 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 1 |
 | reset_data | 6 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
-| set_data | 13 |
+| set_data | 17 |
 | set_field | 116 |
 | set_item | 27 |
 | set_items | 2 |
-| set_local | 46 |
+| set_local | 48 |
 | share | 6 |
 | start_tour | 2 |
 | task | 2 |
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
-| undefined | 36 |
+| undefined | 17 |
 | user | 1 |
 </details>
 
@@ -133,7 +135,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 35209 KB | 35.2 MB |
-| unused | 936 KB | 0.9 MB |
+| unused | 4568 KB | 4.6 MB |
 </details>
 
 <details open>
@@ -148,6 +150,7 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon-only.png | 128.1 |
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
+| images/home_bg.svg | 3632 |
 | images/icons/favicon.svg | 2.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
@@ -201,11 +204,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 7 |
-| images/example/jasper_1.jpg | 527.3 | 58 |
+| images/example/jasper_1.jpg | 527.3 | 60 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
-| images/home_bg.svg | 3632 | 1 |
 | images/icons/ask_question_white.svg | 1.4 | 2 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-back-sharp.svg | 0.1 | 2 |
@@ -237,6 +239,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 22 |
+| images/map_bg.svg | 3632.4 | 1 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 5 |
 | images/shining_diamond.png | 17.7 | 1 |
@@ -244,7 +247,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/square_2.svg | 1 | 3 |
 | images/square_3.svg | 1 | 3 |
 | images/square_4.svg | 1 | 3 |
-| images/test_image.png | 2 | 3 |
+| images/test_image.png | 2 | 4 |
 | images/test_image_no_translations.png | 2.8 | 1 |
 | lottie/blob_play_ball.json | 69.4 | 16 |
 | lottie/cascading_stars.json | 140.5 | 1 |
@@ -263,11 +266,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 35 |
+| data_list |  | 36 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
-| data_list | component_demo | 8 |
-| data_list | debug | 19 |
+| data_list | component_demo | 9 |
+| data_list | debug | 20 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
@@ -281,9 +284,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 98 |
-| template | component_demo | 56 |
-| template | debug | 263 |
+| template |  | 99 |
+| template | component_demo | 57 |
+| template | debug | 265 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

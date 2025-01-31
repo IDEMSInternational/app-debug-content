@@ -1,0 +1,35 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_translation_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "How are you feeling today?",
+      "_translations": {
+        "text": {
+          "es_sp": true
+        }
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "How are you feeling today?"
+        }
+      }
+    },
+    {
+      "id": "id_2",
+      "text": "Untranslated text",
+      "_translations": {
+        "text": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Untranslated text"
+        }
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_translation.xlsx"
+}

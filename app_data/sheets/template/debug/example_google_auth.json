@@ -5,6 +5,34 @@
   "status": "released",
   "rows": [
     {
+      "type": "@events",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth_success",
+          "args": [],
+          "_raw": "auth_success | emit: force_reprocess",
+          "_cleaned": "click | auth_success | emit: force_reprocess",
+          "params": {
+            "emit": "force_reprocess"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "auth_failure",
+          "args": [],
+          "_raw": "auth_failure | emit: force_reprocess",
+          "_cleaned": "click | auth_failure | emit: force_reprocess",
+          "params": {
+            "emit": "force_reprocess"
+          }
+        }
+      ],
+      "condition": false,
+      "name": "@events_2",
+      "_nested_name": "@events_2"
+    },
+    {
       "type": "title",
       "name": "title",
       "value": "Example Google Auth",
@@ -38,6 +66,15 @@
           ],
           "_raw": "click | auth: sign_in_google",
           "_cleaned": "click | auth: sign_in_google"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
         }
       ],
       "_nested_name": "sign_in"
@@ -77,8 +114,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_6",
-      "_nested_name": "text_6"
+      "name": "text_7",
+      "_nested_name": "text_7"
     },
     {
       "type": "text",
@@ -86,8 +123,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_7",
-      "_nested_name": "text_7",
+      "name": "text_8",
+      "_nested_name": "text_8",
       "_dynamicFields": {
         "value": [
           {
@@ -121,8 +158,8 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
-      "name": "button_8",
-      "_nested_name": "button_8"
+      "name": "button_9",
+      "_nested_name": "button_9"
     }
   ],
   "_xlsxPath": "example_sheets/example_google_auth.xlsx"

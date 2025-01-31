@@ -281,6 +281,10 @@
     "md5Checksum": "81136e04436759812dc3f6e90c61de11",
     "size_kb": 0.3
   },
+  "images/map_bg.svg": {
+    "md5Checksum": "6ad149939f5ab0a206cf0de848cfb8d4",
+    "size_kb": 3632.4
+  },
   "images/modal_bg.svg": {
     "md5Checksum": "83fa2d24b91d02b6e8c2b3a95607c572",
     "size_kb": 37.3
