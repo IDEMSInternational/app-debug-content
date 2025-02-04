@@ -50,7 +50,7 @@
     },
     {
       "type": "text",
-      "value": "The share action can be called with the following params: `text`, `url`, `file`, `title` and `dialog_title`. These are interpreted differently depending on the app receiving the share data. `dialog_title` will only have an effect on Android.",
+      "value": "The share action can be called with the following params: `text`, `url`, `file`, `title` and `dialog_title`. These are interpreted differently depending on the app receiving the share data. In general, `text`, `file` and `url` seem to be the most widely supported and predictably handled. \n\n`title` and `dialog_title` are exposed for completeness, the latter will only have an effect on Android and seems to be unsupported on more recent Android versions.",
       "_translations": {
         "value": {}
       },
