@@ -1413,6 +1413,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_display_grid.xlsx"
     },
+    "comp_display_group": {
+      "flow_type": "template",
+      "flow_name": "comp_display_group",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_display_group.xlsx"
+    },
     "comp_drawer": {
       "flow_type": "template",
       "flow_name": "comp_drawer",
@@ -3699,11 +3705,6 @@
     "feature_dashed_box": {
       "flow_type": "template",
       "flow_name": "feature_dashed_box",
-      "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
-    },
-    "feature_display_group": {
-      "flow_type": "template",
-      "flow_name": "feature_display_group",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
     },
     "feature_essential_tools": {

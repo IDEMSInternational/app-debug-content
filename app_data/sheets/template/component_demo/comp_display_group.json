@@ -1,7 +1,8 @@
 {
   "flow_type": "template",
-  "flow_name": "feature_display_group",
+  "flow_name": "comp_display_group",
   "status": "released",
+  "flow_subtype": "component_demo",
   "rows": [
     {
       "type": "display_group",
@@ -143,6 +144,67 @@
         }
       ],
       "_nested_name": "dg_variant_white"
+    },
+    {
+      "type": "display_group",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "box_white"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Variant: box_white",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "name": "title_1",
+          "_nested_name": "display_group_14.title_1"
+        }
+      ],
+      "name": "display_group_14",
+      "_nested_name": "display_group_14"
+    },
+    {
+      "type": "display_group",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "solid_secondary",
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "value": "A TITLE",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "style_list": [
+            "font-size: 0.8rem",
+            "color: white"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_16.text_1"
+        },
+        {
+          "type": "text",
+          "value": "Variant: solid_secondary",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": true,
+          "style_list": [
+            "margin-top: -6px",
+            "color: white"
+          ],
+          "name": "text_2",
+          "_nested_name": "display_group_16.text_2"
+        }
+      ],
+      "name": "display_group_16",
+      "_nested_name": "display_group_16"
     },
     {
       "type": "display_group",
@@ -681,8 +743,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title_42",
-      "_nested_name": "title_42"
+      "name": "title_46",
+      "_nested_name": "title_46"
     },
     {
       "type": "display_group",
@@ -804,8 +866,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "title_45",
-      "_nested_name": "title_45"
+      "name": "title_49",
+      "_nested_name": "title_49"
     },
     {
       "type": "display_group",
@@ -986,5 +1048,5 @@
       "_nested_name": "dg_bottom_image"
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx"
+  "_xlsxPath": "component_sheets/component_display_group.xlsx"
 }
