@@ -11,7 +11,7 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 337 |
+| button | 344 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -25,7 +25,7 @@
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
-| image | 81 |
+| image | 84 |
 | items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
@@ -51,25 +51,25 @@
 | radio_group | 57 |
 | radio_group_grid | 5 |
 | round_button | 27 |
-| select_text | 6 |
+| select_text | 7 |
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 756 |
+| set_variable | 758 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 59 |
+| subtitle | 60 |
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 140 |
-| text | 981 |
+| text | 984 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 498 |
+| title | 507 |
 | toggle_bar | 59 |
 | update_action_list | 2 |
 | video | 4 |
@@ -119,7 +119,7 @@
 | set_item | 27 |
 | set_items | 2 |
 | set_local | 48 |
-| share | 6 |
+| share | 14 |
 | start_tour | 2 |
 | task | 2 |
 | toggle_field | 4 |
@@ -204,7 +204,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 7 |
-| images/example/jasper_1.jpg | 527.3 | 60 |
+| images/example/jasper_1.jpg | 527.3 | 62 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |

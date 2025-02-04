@@ -239,6 +239,15 @@
         "value": {}
       },
       "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "- Condition column (prefer inline JS)\n- Fields, campaigns or other external data (use intermediate locals outside of loop)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
     }
   ],
   "_xlsxPath": "component_sheets/component_data_items.xlsx"
