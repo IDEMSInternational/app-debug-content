@@ -4,15 +4,6 @@
   "status": "released",
   "rows": [
     {
-      "type": "title",
-      "value": "Share Text",
-      "_translations": {
-        "value": {}
-      },
-      "name": "title_2",
-      "_nested_name": "title_2"
-    },
-    {
       "name": "shareable_text",
       "value": "Hi. You can share this text.",
       "_translations": {
@@ -31,13 +22,835 @@
       "_nested_name": "shareable_url"
     },
     {
+      "name": "image_path",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "image_path"
+    },
+    {
+      "name": "shareable_title",
+      "value": "My Title",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "shareable_title"
+    },
+    {
+      "type": "title",
+      "value": "Share action",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "text",
+      "value": "The share action can be called with the following params: `text`, `url`, `file`, `title` and `dialog_title`. These are interpreted differently depending on the app receiving the share data. `dialog_title` will only have an effect on Android.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "title",
+      "value": "Share action with multiple params",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "button",
+      "value": "Share - all params",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [],
+          "_raw": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+          "_cleaned": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+          "params": {
+            "text": "@local.shareable_text",
+            "url": "@local.shareable_url",
+            "file": "@local.image_path",
+            "title": "@local.shareable_title",
+            "dialog_title": "My Dialog Title"
+          }
+        }
+      ],
+      "name": "button_9",
+      "_nested_name": "button_9",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.shareable_url",
+                "type": "local",
+                "fieldName": "shareable_url"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.shareable_title",
+                "type": "local",
+                "fieldName": "shareable_title"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.shareable_url",
+                "type": "local",
+                "fieldName": "shareable_url"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
+                "matchedExpression": "@local.shareable_title",
+                "type": "local",
+                "fieldName": "shareable_title"
+              }
+            ],
+            "params": {
+              "text": [
+                {
+                  "fullExpression": "@local.shareable_text",
+                  "matchedExpression": "@local.shareable_text",
+                  "type": "local",
+                  "fieldName": "shareable_text"
+                }
+              ],
+              "url": [
+                {
+                  "fullExpression": "@local.shareable_url",
+                  "matchedExpression": "@local.shareable_url",
+                  "type": "local",
+                  "fieldName": "shareable_url"
+                }
+              ],
+              "file": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ],
+              "title": [
+                {
+                  "fullExpression": "@local.shareable_title",
+                  "matchedExpression": "@local.shareable_title",
+                  "type": "local",
+                  "fieldName": "shareable_title"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.shareable_text": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
+        ],
+        "@local.shareable_url": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.url"
+        ],
+        "@local.image_path": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.file"
+        ],
+        "@local.shareable_title": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.title"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Share - text and file",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [],
+          "_raw": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
+          "_cleaned": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
+          "params": {
+            "text": "@local.shareable_text",
+            "file": "@local.image_path"
+          }
+        }
+      ],
+      "name": "button_10",
+      "_nested_name": "button_10",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              },
+              {
+                "fullExpression": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "params": {
+              "text": [
+                {
+                  "fullExpression": "@local.shareable_text",
+                  "matchedExpression": "@local.shareable_text",
+                  "type": "local",
+                  "fieldName": "shareable_text"
+                }
+              ],
+              "file": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.shareable_text": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
+        ],
+        "@local.image_path": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.file"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Share - title and file",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [],
+          "_raw": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
+          "_cleaned": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
+          "params": {
+            "title": "@local.shareable_title",
+            "file": "@local.image_path"
+          }
+        }
+      ],
+      "name": "button_11",
+      "_nested_name": "button_11",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
+                "matchedExpression": "@local.shareable_title",
+                "type": "local",
+                "fieldName": "shareable_title"
+              },
+              {
+                "fullExpression": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
+                "matchedExpression": "@local.shareable_title",
+                "type": "local",
+                "fieldName": "shareable_title"
+              },
+              {
+                "fullExpression": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "params": {
+              "title": [
+                {
+                  "fullExpression": "@local.shareable_title",
+                  "matchedExpression": "@local.shareable_title",
+                  "type": "local",
+                  "fieldName": "shareable_title"
+                }
+              ],
+              "file": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.shareable_title": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.title"
+        ],
+        "@local.image_path": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.file"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Share Text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_12",
+      "_nested_name": "title_12"
+    },
+    {
       "type": "text",
       "value": "@local.shareable_text",
       "_translations": {
         "value": {}
       },
-      "name": "text_5",
-      "_nested_name": "text_5",
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.shareable_text",
+            "matchedExpression": "@local.shareable_text",
+            "type": "local",
+            "fieldName": "shareable_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.shareable_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share Text",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [],
+          "_raw": "click | share | text: @local.shareable_text",
+          "_cleaned": "click | share | text: @local.shareable_text",
+          "params": {
+            "text": "@local.shareable_text"
+          }
+        }
+      ],
+      "_nested_name": "share_button_1",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | share | text: @local.shareable_text",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share | text: @local.shareable_text",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              }
+            ],
+            "params": {
+              "text": [
+                {
+                  "fullExpression": "@local.shareable_text",
+                  "matchedExpression": "@local.shareable_text",
+                  "type": "local",
+                  "fieldName": "shareable_text"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.shareable_text": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Share URL",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
+    },
+    {
+      "type": "text",
+      "value": "IDEMS Website",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "button",
+      "name": "share_button_2",
+      "value": "Share URL",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [],
+          "_raw": "click | share | url: @local.shareable_url",
+          "_cleaned": "click | share | url: @local.shareable_url",
+          "params": {
+            "url": "@local.shareable_url"
+          }
+        }
+      ],
+      "_nested_name": "share_button_2",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | share | url: @local.shareable_url",
+                "matchedExpression": "@local.shareable_url",
+                "type": "local",
+                "fieldName": "shareable_url"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share | url: @local.shareable_url",
+                "matchedExpression": "@local.shareable_url",
+                "type": "local",
+                "fieldName": "shareable_url"
+              }
+            ],
+            "params": {
+              "url": [
+                {
+                  "fullExpression": "@local.shareable_url",
+                  "matchedExpression": "@local.shareable_url",
+                  "type": "local",
+                  "fieldName": "shareable_url"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.shareable_url": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.url"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Share from select-text Component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_18",
+      "_nested_name": "title_18"
+    },
+    {
+      "type": "select_text",
+      "name": "select_text_1",
+      "value": "@local.shareable_text",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [],
+          "_raw": "click | share | text: @local.shareable_text",
+          "_cleaned": "click | share | text: @local.shareable_text",
+          "params": {
+            "text": "@local.shareable_text"
+          }
+        }
+      ],
+      "parameter_list": {
+        "copy_text": "Share",
+        "copied_text": "Sharing..."
+      },
+      "_nested_name": "select_text_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.shareable_text",
+            "matchedExpression": "@local.shareable_text",
+            "type": "local",
+            "fieldName": "shareable_text"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | share | text: @local.shareable_text",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share | text: @local.shareable_text",
+                "matchedExpression": "@local.shareable_text",
+                "type": "local",
+                "fieldName": "shareable_text"
+              }
+            ],
+            "params": {
+              "text": [
+                {
+                  "fullExpression": "@local.shareable_text",
+                  "matchedExpression": "@local.shareable_text",
+                  "type": "local",
+                  "fieldName": "shareable_text"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.shareable_text": [
+          "value",
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Share image",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_20",
+      "_nested_name": "title_20"
+    },
+    {
+      "type": "image",
+      "value": "@local.image_path",
+      "_translations": {
+        "value": {}
+      },
+      "name": "image_21",
+      "_nested_name": "image_21",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.image_path",
+            "matchedExpression": "@local.image_path",
+            "type": "local",
+            "fieldName": "image_path"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Share Image",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [],
+          "_raw": "click | share | file: @local.image_path",
+          "_cleaned": "click | share | file: @local.image_path",
+          "params": {
+            "file": "@local.image_path"
+          }
+        }
+      ],
+      "name": "button_22",
+      "_nested_name": "button_22",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | share | file: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share | file: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "params": {
+              "file": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.file"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Share PDF",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_23",
+      "_nested_name": "title_23"
+    },
+    {
+      "name": "pdf_path",
+      "value": "example_pdf.pdf",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "pdf_path"
+    },
+    {
+      "type": "pdf",
+      "name": "pdf_viewer",
+      "value": "@local.pdf_path",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "pdf_viewer",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.pdf_path",
+            "matchedExpression": "@local.pdf_path",
+            "type": "local",
+            "fieldName": "pdf_path"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.pdf_path": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share PDF",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [
+            "file",
+            "@local.pdf_path"
+          ],
+          "_raw": "click | share: file: @local.pdf_path",
+          "_cleaned": "click | share: file: @local.pdf_path"
+        }
+      ],
+      "_nested_name": "share_button_1",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.pdf_path",
+                  "matchedExpression": "@local.pdf_path",
+                  "type": "local",
+                  "fieldName": "pdf_path"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | share: file: @local.pdf_path",
+                "matchedExpression": "@local.pdf_path",
+                "type": "local",
+                "fieldName": "pdf_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share: file: @local.pdf_path",
+                "matchedExpression": "@local.pdf_path",
+                "type": "local",
+                "fieldName": "pdf_path"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.pdf_path": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Legacy syntax",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_27",
+      "_nested_name": "title_27"
+    },
+    {
+      "type": "title",
+      "value": "Share Text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_28",
+      "_nested_name": "title_28"
+    },
+    {
+      "type": "text",
+      "value": "@local.shareable_text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_29",
+      "_nested_name": "text_29",
       "_dynamicFields": {
         "value": [
           {
@@ -120,8 +933,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_7",
-      "_nested_name": "title_7"
+      "name": "title_31",
+      "_nested_name": "title_31"
     },
     {
       "type": "text",
@@ -129,8 +942,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_8",
-      "_nested_name": "text_8"
+      "name": "text_32",
+      "_nested_name": "text_32"
     },
     {
       "type": "button",
@@ -198,8 +1011,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_10",
-      "_nested_name": "title_10"
+      "name": "title_34",
+      "_nested_name": "title_34"
     },
     {
       "type": "select_text",
@@ -280,8 +1093,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_12",
-      "_nested_name": "title_12"
+      "name": "title_36",
+      "_nested_name": "title_36"
     },
     {
       "type": "button",

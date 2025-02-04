@@ -35,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 337
+        "count": 344
       },
       {
         "type": "calendar",
@@ -91,7 +91,7 @@
       },
       {
         "type": "image",
-        "count": 81
+        "count": 84
       },
       {
         "type": "items",
@@ -195,7 +195,7 @@
       },
       {
         "type": "select_text",
-        "count": 6
+        "count": 7
       },
       {
         "type": "set_default",
@@ -211,7 +211,7 @@
       },
       {
         "type": "set_variable",
-        "count": 756
+        "count": 758
       },
       {
         "type": "simple_checkbox",
@@ -227,7 +227,7 @@
       },
       {
         "type": "subtitle",
-        "count": 59
+        "count": 60
       },
       {
         "type": "task_card",
@@ -243,7 +243,7 @@
       },
       {
         "type": "text",
-        "count": 981
+        "count": 984
       },
       {
         "type": "text_area",
@@ -267,7 +267,7 @@
       },
       {
         "type": "title",
-        "count": 498
+        "count": 507
       },
       {
         "type": "toggle_bar",
@@ -443,7 +443,7 @@
       },
       {
         "type": "share",
-        "count": 6
+        "count": 14
       },
       {
         "type": "start_tour",
@@ -694,7 +694,7 @@
       },
       {
         "path": "images/example/jasper_1.jpg",
-        "count": 60,
+        "count": 62,
         "size_kb": 527.3
       },
       {
