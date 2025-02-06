@@ -4,7 +4,7 @@
   "status": "released",
   "rows": [
     {
-      "id": "county_bouindaries",
+      "id": "county_boundaries",
       "name": "County Boundaries",
       "source_asset": "map_data/ke.json",
       "type": "vector",
@@ -25,8 +25,50 @@
       "point_radius_property_max": 50,
       "point_radius_property": "centroid_size_sum",
       "scale_title": "County Centroids",
+      "scale_id": "risk_level",
+      "opacity": 1,
+      "visible_default": false
+    },
+    {
+      "id": "layer_airports_icon",
+      "name": "Airports icon",
+      "description": "Airport at risk (icon)",
+      "source_asset": "map_data/airports.json",
+      "type": "vector",
+      "property": "prob_bin",
+      "point_radius_property": "prob_bin",
+      "point_icon_asset": "images/icons/airplane_blue.png",
+      "point_icon_excluded_asset": "images/icons/airplane_grey.png",
+      "scale_max": 8,
+      "scale_min": 1,
+      "scale_increment": 1,
+      "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740036",
+      "scale_title": "Airports - Risk Level",
+      "scale_id": "risk_level",
+      "scale_slider": true,
+      "scale_slider_snap": true,
       "opacity": 1,
       "visible_default": true
+    },
+    {
+      "id": "layer_branches_icons",
+      "name": "KRCS Branches (icons)",
+      "source_asset": "map_data/KRCS_branches.json",
+      "type": "vector",
+      "property": "prob_bin",
+      "point_radius_max": 3,
+      "point_radius_property_max": 1,
+      "point_radius_property": "prob_bin",
+      "point_icon_asset": "images/icons/red_cross.png",
+      "scale_max": 8,
+      "scale_min": 1,
+      "scale_increment": 1,
+      "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740037",
+      "scale_title": "Branches (icons) - Risk Level",
+      "scale_id": "risk_level",
+      "scale_slider": true,
+      "scale_slider_snap": true,
+      "visible_default": false
     }
   ],
   "_xlsxPath": "component_sheets/component_map.xlsx",
@@ -42,6 +84,21 @@
     },
     "point_radius_property_max": {
       "type": "number"
+    },
+    "scale_max": {
+      "type": "number"
+    },
+    "scale_min": {
+      "type": "number"
+    },
+    "scale_increment": {
+      "type": "number"
+    },
+    "scale_slider": {
+      "type": "boolean"
+    },
+    "scale_slider_snap": {
+      "type": "boolean"
     }
   }
 }

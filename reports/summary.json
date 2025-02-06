@@ -59,7 +59,7 @@
       },
       {
         "type": "data_items",
-        "count": 55
+        "count": 57
       },
       {
         "type": "debug_toggle",
@@ -75,7 +75,7 @@
       },
       {
         "type": "display_group",
-        "count": 201
+        "count": 204
       },
       {
         "type": "drawer",
@@ -91,7 +91,7 @@
       },
       {
         "type": "image",
-        "count": 84
+        "count": 82
       },
       {
         "type": "items",
@@ -139,7 +139,7 @@
       },
       {
         "type": "pdf",
-        "count": 3
+        "count": 4
       },
       {
         "type": "plh_activity_check_in",
@@ -211,7 +211,7 @@
       },
       {
         "type": "set_variable",
-        "count": 758
+        "count": 760
       },
       {
         "type": "simple_checkbox",
@@ -227,7 +227,7 @@
       },
       {
         "type": "subtitle",
-        "count": 60
+        "count": 59
       },
       {
         "type": "task_card",
@@ -243,7 +243,7 @@
       },
       {
         "type": "text",
-        "count": 984
+        "count": 991
       },
       {
         "type": "text_area",
@@ -271,7 +271,7 @@
       },
       {
         "type": "toggle_bar",
-        "count": 59
+        "count": 61
       },
       {
         "type": "update_action_list",
@@ -431,7 +431,7 @@
       },
       {
         "type": "set_item",
-        "count": 27
+        "count": 28
       },
       {
         "type": "set_items",
@@ -439,7 +439,7 @@
       },
       {
         "type": "set_local",
-        "count": 48
+        "count": 49
       },
       {
         "type": "share",
@@ -479,12 +479,12 @@
     "data": [
       {
         "assets": "total",
-        "KB": "35209 KB",
+        "KB": "35249 KB",
         "MB": "35.2 MB"
       },
       {
         "assets": "unused",
-        "KB": "4568 KB",
+        "KB": "4579 KB",
         "MB": "4.6 MB"
       }
     ]
@@ -516,8 +516,16 @@
         "size_kb": 3632
       },
       {
+        "path": "images/icons/airplane_blue.svg",
+        "size_kb": 1.5
+      },
+      {
         "path": "images/icons/favicon.svg",
         "size_kb": 2.1
+      },
+      {
+        "path": "images/icons/red_cross_grey.png",
+        "size_kb": 0.2
       },
       {
         "path": "ios/icon-background.png",
@@ -538,6 +546,10 @@
       {
         "path": "ios/splash.png",
         "size_kb": 147.4
+      },
+      {
+        "path": "map_data/KRCS_branches_2.json",
+        "size_kb": 9.9
       }
     ]
   },
@@ -619,7 +631,7 @@
       },
       {
         "path": "example_pdf.pdf",
-        "count": 3,
+        "count": 4,
         "size_kb": 139.4
       },
       {
@@ -694,7 +706,7 @@
       },
       {
         "path": "images/example/jasper_1.jpg",
-        "count": 62,
+        "count": 61,
         "size_kb": 527.3
       },
       {
@@ -711,6 +723,16 @@
         "path": "images/faces/sad.svg",
         "count": 2,
         "size_kb": 1.1
+      },
+      {
+        "path": "images/icons/airplane_blue.png",
+        "count": 1,
+        "size_kb": 2.1
+      },
+      {
+        "path": "images/icons/airplane_grey.png",
+        "count": 1,
+        "size_kb": 2.1
       },
       {
         "path": "images/icons/ask_question_white.svg",
@@ -828,6 +850,11 @@
         "size_kb": 1.4
       },
       {
+        "path": "images/icons/red_cross.png",
+        "count": 1,
+        "size_kb": 0.2
+      },
+      {
         "path": "images/icons/school_blue.svg",
         "count": 10,
         "size_kb": 1.6
@@ -926,6 +953,16 @@
         "path": "lottie/cascading_stars.json",
         "count": 1,
         "size_kb": 140.5
+      },
+      {
+        "path": "map_data/KRCS_branches.json",
+        "count": 2,
+        "size_kb": 9.9
+      },
+      {
+        "path": "map_data/airports.json",
+        "count": 1,
+        "size_kb": 25.2
       },
       {
         "path": "map_data/centroids.json",
@@ -1064,17 +1101,17 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 99
+        "total": 98
       },
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 57
+        "total": 58
       },
       {
         "type": "template",
         "subtype": "debug",
-        "total": 265
+        "total": 267
       },
       {
         "type": "template",
