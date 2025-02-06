@@ -153,6 +153,18 @@
     "md5Checksum": "c28a3bfccb3e3aa2e2d53f7263421cdb",
     "size_kb": 3632
   },
+  "images/icons/airplane_blue.png": {
+    "md5Checksum": "13171a5a00f8626185911d9ed36fb1c3",
+    "size_kb": 2.1
+  },
+  "images/icons/airplane_blue.svg": {
+    "md5Checksum": "fa2f5327ec7d5d9866c9ab9be92cedfc",
+    "size_kb": 1.5
+  },
+  "images/icons/airplane_grey.png": {
+    "md5Checksum": "93214403ce13244b59f31e91ea9a916a",
+    "size_kb": 2.1
+  },
   "images/icons/ask_question_white.svg": {
     "md5Checksum": "d52f43b75aacee5da8c3e33a76ecf3b7",
     "size_kb": 1.4
@@ -248,6 +260,14 @@
   "images/icons/reader_blue.svg": {
     "md5Checksum": "841a27e6e013d797d2bcf20391632cee",
     "size_kb": 1.4
+  },
+  "images/icons/red_cross.png": {
+    "md5Checksum": "24a1ab134f3b7a6fade43148bda91e02",
+    "size_kb": 0.2
+  },
+  "images/icons/red_cross_grey.png": {
+    "md5Checksum": "e6ce3b54de3839d6f1fe2f5f03a5dada",
+    "size_kb": 0.2
   },
   "images/icons/school_blue.svg": {
     "md5Checksum": "bc87b2ae05c7c762ca7673657c0efb56",
@@ -362,6 +382,18 @@
   "lottie/cascading_stars.json": {
     "md5Checksum": "131145b165cd19613a9e277a514eec2f",
     "size_kb": 140.5
+  },
+  "map_data/KRCS_branches.json": {
+    "md5Checksum": "bb1ebd6c0e99c23ecba3e441192991b6",
+    "size_kb": 9.9
+  },
+  "map_data/KRCS_branches_2.json": {
+    "md5Checksum": "bb1ebd6c0e99c23ecba3e441192991b6",
+    "size_kb": 9.9
+  },
+  "map_data/airports.json": {
+    "md5Checksum": "a1d6b52daca8af69bef18c42d6431ce0",
+    "size_kb": 25.2
   },
   "map_data/centroids.json": {
     "md5Checksum": "f041bee2c57b7f4c92b88546a05116f8",

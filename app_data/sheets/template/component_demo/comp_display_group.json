@@ -170,7 +170,7 @@
       "type": "display_group",
       "exclude_from_translation": true,
       "parameter_list": {
-        "variant": "solid_secondary",
+        "variant": "box_secondary_alt",
         "style": "column"
       },
       "rows": [
@@ -190,7 +190,7 @@
         },
         {
           "type": "text",
-          "value": "Variant: solid_secondary",
+          "value": "Variant: box_secondary_alt",
           "_translations": {
             "value": {}
           },

@@ -185,6 +185,21 @@
         },
         "point_radius_property_max": {
           "type": "number"
+        },
+        "scale_max": {
+          "type": "number"
+        },
+        "scale_min": {
+          "type": "number"
+        },
+        "scale_increment": {
+          "type": "number"
+        },
+        "scale_slider": {
+          "type": "boolean"
+        },
+        "scale_slider_snap": {
+          "type": "boolean"
         }
       }
     },
@@ -1714,6 +1729,18 @@
       "flow_name": "parameters_3",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_accordion.xlsx"
+    },
+    "comp_data_items_debug": {
+      "flow_type": "template",
+      "flow_name": "comp_data_items_debug",
+      "flow_subtype": "debug",
+      "_xlsxPath": "component_sheets/component_data_items.xlsx"
+    },
+    "comp_data_items_debug_2": {
+      "flow_type": "template",
+      "flow_name": "comp_data_items_debug_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "component_sheets/component_data_items.xlsx"
     },
     "debug_accordion_variables": {
       "flow_type": "template",

@@ -7,7 +7,7 @@
       "id": "layer_group_3",
       "name": "Layer Group 3",
       "controls_style": "dropdown",
-      "single_selection": true,
+      "single_selection": false,
       "description": "Layer group 3 description",
       "display_order": 1,
       "layers_data": "comp_map_layer_group_3"

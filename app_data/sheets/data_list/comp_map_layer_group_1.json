@@ -15,9 +15,9 @@
       "scale_max": 1,
       "scale_min": 0,
       "scale_bins": "0, 0.15, 0.3, 0.4, 0.6, 0.7, 0.8, 1",
+      "gradient_palette": "#c4c4c4, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740035",
       "scale_title": "Conflict probability (next 4 weeks)",
       "excluded_features_colour": "red",
-      "gradient_palette": "#c4c4c4, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740035",
       "opacity": 1,
       "visible_default": false
     },
@@ -32,11 +32,11 @@
       "scale_max": 8,
       "scale_min": 1,
       "scale_increment": 1,
+      "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740036",
       "scale_title": "Riots risks level",
       "scale_slider": true,
       "scale_slider_snap": true,
-      "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740036",
-      "visible_default": true
+      "visible_default": false
     },
     {
       "id": "conflict_incidence",
@@ -49,6 +49,27 @@
       "point_radius_property_max": 1,
       "point_radius_property": "any_riot_4w",
       "opacity": 0.5,
+      "visible_default": false
+    },
+    {
+      "id": "layer_branches",
+      "name": "KRCS Branches",
+      "source_asset": "map_data/KRCS_branches.json",
+      "type": "vector",
+      "fill": "blue",
+      "stroke": "none",
+      "property": "prob_bin",
+      "point_radius_max": 3,
+      "point_radius_property_max": 1,
+      "point_radius_property": "prob_bin",
+      "scale_max": 8,
+      "scale_min": 1,
+      "scale_increment": 1,
+      "gradient_palette": "#fcf8f3, #f0e0cc, #e5c9a9, #d29780, #c4665c, #bc3630, #9d222e, #740037",
+      "scale_title": "Branches - Risk Level",
+      "scale_slider": true,
+      "scale_slider_snap": true,
+      "excluded_features_colour": "purple",
       "visible_default": false
     }
   ],

@@ -1,0 +1,50 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items_debug_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "toggle_bar",
+      "name": "filter",
+      "value": true,
+      "_nested_name": "filter"
+    },
+    {
+      "type": "data_items",
+      "name": "loop_activities",
+      "value": "comp_data_items_list",
+      "parameter_list": {
+        "limit": "1"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "value": "Filter: @local.filter",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "loop_activities.text_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Filter: @local.filter",
+                "matchedExpression": "@local.filter",
+                "type": "local",
+                "fieldName": "filter"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.filter": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "loop_activities"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_items.xlsx"
+}
