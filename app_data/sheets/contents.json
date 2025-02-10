@@ -353,6 +353,41 @@
         }
       }
     },
+    "comp_table_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_table_data",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_table.xlsx",
+      "_metadata": {
+        "probability_ward": {
+          "type": "number"
+        },
+        "change_probability_ward": {
+          "type": "number"
+        },
+        "risk_ward": {
+          "type": "number"
+        },
+        "probability_sub_county": {
+          "type": "number"
+        },
+        "change_probability_sub_county": {
+          "type": "number"
+        },
+        "risk_sub_county": {
+          "type": "number"
+        },
+        "probability_county": {
+          "type": "number"
+        },
+        "change_probability_county": {
+          "type": "number"
+        },
+        "risk_county": {
+          "type": "number"
+        }
+      }
+    },
     "debug_accordion_data": {
       "flow_type": "data_list",
       "flow_name": "debug_accordion_data",
@@ -1617,6 +1652,12 @@
       "flow_name": "comp_subtitle",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_subtitle.xlsx"
+    },
+    "comp_table": {
+      "flow_type": "template",
+      "flow_name": "comp_table",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_table.xlsx"
     },
     "comp_task_card": {
       "flow_type": "template",

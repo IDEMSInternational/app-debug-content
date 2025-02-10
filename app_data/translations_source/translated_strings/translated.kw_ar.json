@@ -1,5 +1,11 @@
 [
   {
+    "SourceText": "Sign in with Google (custom text)",
+    "text": "تسجيل الدخول باستخدام حساب Google (نص مخصص)",
+    "type": "template",
+    "note": ""
+  },
+  {
     "SourceText": "Changes to the @global.privacy_policy",
     "text": "التغييرات التي تطرأ على @global.privacy_policy",
     "type": "data_list",

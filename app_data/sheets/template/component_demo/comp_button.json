@@ -586,12 +586,56 @@
     },
     {
       "type": "title",
-      "value": "Variant: faq",
+      "value": "Google Auth Variant",
       "_translations": {
         "value": {}
       },
       "name": "title_27",
       "_nested_name": "title_27"
+    },
+    {
+      "type": "button",
+      "value": "Sign in with Google (custom text)",
+      "_translations": {
+        "value": {
+          "es_sp": true,
+          "kw_ar": true
+        }
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_in_google"
+          ],
+          "_raw": "click | auth: sign_in_google",
+          "_cleaned": "click | auth: sign_in_google"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "parameter_list": {
+        "variant": "google_sign_in"
+      },
+      "name": "button_28",
+      "_nested_name": "button_28"
+    },
+    {
+      "type": "title",
+      "value": "Variant: faq",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_29",
+      "_nested_name": "title_29"
     },
     {
       "type": "button",
@@ -602,8 +646,8 @@
       "parameter_list": {
         "variant": "faq"
       },
-      "name": "button_28",
-      "_nested_name": "button_28"
+      "name": "button_30",
+      "_nested_name": "button_30"
     },
     {
       "type": "button",
@@ -614,8 +658,8 @@
       "parameter_list": {
         "variant": "faq"
       },
-      "name": "button_29",
-      "_nested_name": "button_29"
+      "name": "button_31",
+      "_nested_name": "button_31"
     },
     {
       "type": "title",
@@ -678,8 +722,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_33",
-      "_nested_name": "text_33"
+      "name": "text_35",
+      "_nested_name": "text_35"
     },
     {
       "type": "toggle_bar",

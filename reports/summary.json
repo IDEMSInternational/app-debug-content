@@ -35,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 344
+        "count": 345
       },
       {
         "type": "calendar",
@@ -230,6 +230,10 @@
         "count": 59
       },
       {
+        "type": "table",
+        "count": 1
+      },
+      {
         "type": "task_card",
         "count": 31
       },
@@ -267,7 +271,7 @@
       },
       {
         "type": "title",
-        "count": 507
+        "count": 508
       },
       {
         "type": "toggle_bar",
@@ -307,7 +311,7 @@
       },
       {
         "type": "auth",
-        "count": 2
+        "count": 3
       },
       {
         "type": "auth_failure",
@@ -335,7 +339,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 28
+        "count": 29
       },
       {
         "type": "emit: force_restart",
@@ -1026,7 +1030,7 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 9
+        "total": 10
       },
       {
         "type": "data_list",
@@ -1106,7 +1110,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 58
+        "total": 59
       },
       {
         "type": "template",

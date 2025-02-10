@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_table",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "table",
+      "value": "comp_table_data",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "show_id": "false"
+      },
+      "name": "table_2",
+      "_nested_name": "table_2"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_table.xlsx"
+}
