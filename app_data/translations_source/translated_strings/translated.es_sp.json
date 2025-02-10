@@ -1,5 +1,10 @@
 [
   {
+    "SourceText": "Sign in with Google (custom text)",
+    "text": "Acceder con Google (texto personalizado)",
+    "type": "template"
+  },
+  {
     "SourceText": "Example Language Template",
     "text": "Plantilla de Ejemplo de Idioma",
     "type": "template"
