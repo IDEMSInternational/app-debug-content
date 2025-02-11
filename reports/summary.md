@@ -11,17 +11,17 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 345 |
+| button | 348 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 54 |
 | dashed_box | 19 |
-| data_items | 57 |
+| data_items | 59 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 204 |
+| display_group | 205 |
 | drawer | 1 |
 | form | 9 |
 | html | 4 |
@@ -55,7 +55,7 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 760 |
+| set_variable | 763 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -64,7 +64,7 @@
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 140 |
-| text | 991 |
+| text | 992 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
@@ -295,7 +295,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 98 |
 | template | component_demo | 59 |
-| template | debug | 267 |
+| template | debug | 268 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

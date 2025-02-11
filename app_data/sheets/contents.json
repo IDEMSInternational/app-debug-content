@@ -1481,6 +1481,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_form.xlsx"
     },
+    "comp_google_sign_in_button": {
+      "flow_type": "template",
+      "flow_name": "comp_google_sign_in_button",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_google_sign_in_button.xlsx"
+    },
     "comp_html": {
       "flow_type": "template",
       "flow_name": "comp_html",
@@ -2005,6 +2011,24 @@
       "flow_name": "debug_data_items_order",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
+    "debug_data_items_scope": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_scope",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items_scope.xlsx"
+    },
+    "debug_data_items_scope_in": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_scope_in",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items_scope.xlsx"
+    },
+    "debug_data_items_scope_out": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_scope_out",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items_scope.xlsx"
     },
     "debug_data_items_set_local": {
       "flow_type": "template",
