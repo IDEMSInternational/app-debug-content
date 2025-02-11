@@ -1,0 +1,156 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_scope_in",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "articles_data_list_name",
+      "value": "comp_data_items_list",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "articles_data_list_name"
+    },
+    {
+      "type": "data_items",
+      "name": "loop_inner",
+      "value": "@local.articles_data_list_name",
+      "parameter_list": {
+        "filter": "!@item.completed",
+        "limit": "1"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "first_uncompleted_article_id",
+          "value": "ID: @item.id",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "loop_inner.first_uncompleted_article_id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "ID: @item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "first_uncompleted_article_row_index",
+          "value": "Row Index: @item.row_index",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "loop_inner.first_uncompleted_article_row_index",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Row Index: @item.row_index",
+                "matchedExpression": "@item.row_index",
+                "type": "item",
+                "fieldName": "row_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.row_index": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_start",
+          "value": "Start",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@item.row_index == 0",
+          "_nested_name": "loop_inner.button_start",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@item.row_index == 0",
+                "matchedExpression": "@item.row_index",
+                "type": "item",
+                "fieldName": "row_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.row_index": [
+              "condition"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_continue",
+          "value": "Continue",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@item.row_index != 0",
+          "_nested_name": "loop_inner.button_continue",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "@item.row_index != 0",
+                "matchedExpression": "@item.row_index",
+                "type": "item",
+                "fieldName": "row_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.row_index": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "loop_inner",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.articles_data_list_name",
+            "matchedExpression": "@local.articles_data_list_name",
+            "type": "local",
+            "fieldName": "articles_data_list_name"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "!@item.completed",
+              "matchedExpression": "!@item.completed",
+              "type": "item",
+              "fieldName": "completed"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.articles_data_list_name": [
+          "value"
+        ],
+        "!@item.completed": [
+          "parameter_list.filter"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_scope.xlsx"
+}
