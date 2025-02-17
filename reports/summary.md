@@ -11,21 +11,22 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 348 |
+| button | 353 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 54 |
 | dashed_box | 19 |
-| data_items | 59 |
+| data_items | 64 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 205 |
+| display_group | 209 |
 | drawer | 1 |
 | form | 9 |
+| google_sign_in_button | 3 |
 | html | 4 |
-| image | 82 |
+| image | 83 |
 | items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
@@ -55,7 +56,7 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 763 |
+| set_variable | 772 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -63,15 +64,15 @@
 | table | 1 |
 | task_card | 31 |
 | task_progress_bar | 6 |
-| template | 140 |
-| text | 992 |
+| template | 141 |
+| text | 1012 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 508 |
-| toggle_bar | 61 |
+| title | 512 |
+| toggle_bar | 63 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -93,8 +94,8 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 31 |
-| emit: force_reprocess | 29 |
-| emit: force_restart | 2 |
+| emit: force_reprocess | 32 |
+| emit: force_restart | 3 |
 | emit: server_sync | 7 |
 | emit: set_language | 5 |
 | emit: set_skin | 1 |
@@ -102,7 +103,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 81 |
+| go_to | 82 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
@@ -117,7 +118,7 @@
 | screen_orientation | 3 |
 | set_data | 17 |
 | set_field | 116 |
-| set_item | 28 |
+| set_item | 30 |
 | set_items | 2 |
 | set_local | 49 |
 | share | 14 |
@@ -127,7 +128,7 @@
 | track_event | 2 |
 | trigger_actions | 1 |
 | undefined | 17 |
-| user | 1 |
+| user | 2 |
 </details>
 
 <details open>
@@ -294,8 +295,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 98 |
-| template | component_demo | 59 |
-| template | debug | 268 |
+| template | component_demo | 60 |
+| template | debug | 270 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

@@ -2924,6 +2924,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_audio_player.xlsx"
     },
+    "example_auth": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_auth",
+      "_xlsxPath": "example_sheets/example_auth.xlsx"
+    },
     "example_buttons_padding": {
       "flow_type": "template",
       "flow_name": "example_buttons_padding",
@@ -3073,12 +3079,6 @@
       "flow_name": "example_go_to_3",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_actions.xlsx"
-    },
-    "example_google_auth": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "example_google_auth",
-      "_xlsxPath": "example_sheets/example_google_auth.xlsx"
     },
     "example_inline_header_footer": {
       "flow_type": "template",
