@@ -35,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 348
+        "count": 353
       },
       {
         "type": "calendar",
@@ -59,7 +59,7 @@
       },
       {
         "type": "data_items",
-        "count": 59
+        "count": 64
       },
       {
         "type": "debug_toggle",
@@ -75,7 +75,7 @@
       },
       {
         "type": "display_group",
-        "count": 205
+        "count": 209
       },
       {
         "type": "drawer",
@@ -86,12 +86,16 @@
         "count": 9
       },
       {
+        "type": "google_sign_in_button",
+        "count": 3
+      },
+      {
         "type": "html",
         "count": 4
       },
       {
         "type": "image",
-        "count": 82
+        "count": 83
       },
       {
         "type": "items",
@@ -211,7 +215,7 @@
       },
       {
         "type": "set_variable",
-        "count": 763
+        "count": 772
       },
       {
         "type": "simple_checkbox",
@@ -243,11 +247,11 @@
       },
       {
         "type": "template",
-        "count": 140
+        "count": 141
       },
       {
         "type": "text",
-        "count": 992
+        "count": 1012
       },
       {
         "type": "text_area",
@@ -271,11 +275,11 @@
       },
       {
         "type": "title",
-        "count": 508
+        "count": 512
       },
       {
         "type": "toggle_bar",
-        "count": 61
+        "count": 63
       },
       {
         "type": "update_action_list",
@@ -339,11 +343,11 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 29
+        "count": 32
       },
       {
         "type": "emit: force_restart",
-        "count": 2
+        "count": 3
       },
       {
         "type": "emit: server_sync",
@@ -375,7 +379,7 @@
       },
       {
         "type": "go_to",
-        "count": 81
+        "count": 82
       },
       {
         "type": "go_to_url",
@@ -435,7 +439,7 @@
       },
       {
         "type": "set_item",
-        "count": 28
+        "count": 30
       },
       {
         "type": "set_items",
@@ -475,7 +479,7 @@
       },
       {
         "type": "user",
-        "count": 1
+        "count": 2
       }
     ]
   },
@@ -1110,12 +1114,12 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 59
+        "total": 60
       },
       {
         "type": "template",
         "subtype": "debug",
-        "total": 268
+        "total": 270
       },
       {
         "type": "template",

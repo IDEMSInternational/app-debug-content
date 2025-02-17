@@ -1,0 +1,669 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_auth",
+  "status": "released",
+  "rows": [
+    {
+      "type": "@events",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth_success",
+          "args": [],
+          "_raw": "auth_success | emit: force_reprocess",
+          "_cleaned": "click | auth_success | emit: force_reprocess",
+          "params": {
+            "emit": "force_reprocess"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "auth_failure",
+          "args": [],
+          "_raw": "auth_failure | emit: force_reprocess",
+          "_cleaned": "click | auth_failure | emit: force_reprocess",
+          "params": {
+            "emit": "force_reprocess"
+          }
+        }
+      ],
+      "condition": false,
+      "name": "@events_2",
+      "_nested_name": "@events_2"
+    },
+    {
+      "name": "is_user_signed_in",
+      "value": "!!@fields._auth_user_id",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "is_user_signed_in",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "!!@fields._auth_user_id",
+            "matchedExpression": "!@fields._auth_user_id",
+            "type": "fields",
+            "fieldName": "_auth_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@fields._auth_user_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Auth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Use the button below to sign in with google auth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in with Google",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": false,
+      "name": "google_sign_in_button_6",
+      "_nested_name": "google_sign_in_button_6"
+    },
+    {
+      "type": "button",
+      "name": "sign_in",
+      "value": "Sign in with Google",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_in_google"
+          ],
+          "_raw": "click | auth: sign_in_google",
+          "_cleaned": "click | auth: sign_in_google"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": "!@local.is_user_signed_in",
+      "_nested_name": "sign_in",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.is_user_signed_in",
+            "matchedExpression": "!@local.is_user_signed_in",
+            "type": "local",
+            "fieldName": "is_user_signed_in"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.is_user_signed_in": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_out"
+          ],
+          "_raw": "click | auth: sign_out",
+          "_cleaned": "click | auth: sign_out"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": "@local.is_user_signed_in",
+      "_nested_name": "sign_out",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.is_user_signed_in",
+            "matchedExpression": "@local.is_user_signed_in",
+            "type": "local",
+            "fieldName": "is_user_signed_in"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.is_user_signed_in": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "User info:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_9",
+      "_nested_name": "title_9"
+    },
+    {
+      "type": "text",
+      "value": "User is signed in: @local.is_user_signed_in",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "User is signed in: @local.is_user_signed_in",
+            "matchedExpression": "@local.is_user_signed_in",
+            "type": "local",
+            "fieldName": "is_user_signed_in"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.is_user_signed_in": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "ID: @fields._auth_user_id",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "ID: @fields._auth_user_id",
+            "matchedExpression": "@fields._auth_user_id",
+            "type": "fields",
+            "fieldName": "_auth_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Name: @fields._auth_user_name",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_12",
+      "_nested_name": "text_12",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Name: @fields._auth_user_name",
+            "matchedExpression": "@fields._auth_user_name",
+            "type": "fields",
+            "fieldName": "_auth_user_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Given Name: @fields._auth_user_given_name",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Given Name: @fields._auth_user_given_name",
+            "matchedExpression": "@fields._auth_user_given_name",
+            "type": "fields",
+            "fieldName": "_auth_user_given_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_given_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Family Name: @fields._auth_user_family_name",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_14",
+      "_nested_name": "text_14",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Family Name: @fields._auth_user_family_name",
+            "matchedExpression": "@fields._auth_user_family_name",
+            "type": "fields",
+            "fieldName": "_auth_user_family_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_family_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "friendly_name",
+      "value": "@fields._auth_user_given_name || @fields._auth_user_name",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "friendly_name",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._auth_user_given_name || @fields._auth_user_name",
+            "matchedExpression": "@fields._auth_user_given_name",
+            "type": "fields",
+            "fieldName": "_auth_user_given_name"
+          },
+          {
+            "fullExpression": "@fields._auth_user_given_name || @fields._auth_user_name",
+            "matchedExpression": "@fields._auth_user_name",
+            "type": "fields",
+            "fieldName": "_auth_user_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_given_name": [
+          "value"
+        ],
+        "@fields._auth_user_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Hello, @local.friendly_name!",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "!!@local.friendly_name",
+      "name": "text_16",
+      "_nested_name": "text_16",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Hello, @local.friendly_name!",
+            "matchedExpression": "@local.friendly_name",
+            "type": "local",
+            "fieldName": "friendly_name"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "!!@local.friendly_name",
+            "matchedExpression": "!@local.friendly_name",
+            "type": "local",
+            "fieldName": "friendly_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.friendly_name": [
+          "value"
+        ],
+        "!@local.friendly_name": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "value": "@fields._auth_user_picture",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "width: 96px",
+        "height: 96px"
+      ],
+      "name": "image_17",
+      "_nested_name": "image_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._auth_user_picture",
+            "matchedExpression": "@fields._auth_user_picture",
+            "type": "fields",
+            "fieldName": "_auth_user_picture"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_picture": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Refresh",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "button_18",
+      "_nested_name": "button_18"
+    },
+    {
+      "type": "title",
+      "value": "User Profile Restore",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_19",
+      "_nested_name": "title_19"
+    },
+    {
+      "type": "text",
+      "value": "If a user has signed in across multiple devices each device and auth profile will be listed below.\n\nThis can be used to help restore a profile when migrating devices",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_20",
+      "_nested_name": "text_20"
+    },
+    {
+      "type": "data_items",
+      "value": "app_auth_profiles",
+      "parameter_list": {
+        "sort": "updatedAt",
+        "reverse": "true",
+        "limit": "3"
+      },
+      "condition": true,
+      "rows": [
+        {
+          "type": "display_group",
+          "rows": [
+            {
+              "type": "text",
+              "value": "ID\n@item.id",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_1",
+              "_nested_name": "data_items_21.display_group_1.text_1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "ID\n@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Last Sync\n@item.contact_fields._server_sync_latest",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "data_items_21.display_group_1.text_2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Last Sync\n@item.contact_fields._server_sync_latest",
+                    "matchedExpression": "@item.contact_fields._server_sync_latest",
+                    "type": "item",
+                    "fieldName": "contact_fields"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.contact_fields._server_sync_latest": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Contact Fields\n\nTheme\n@item.contact_fields[\"rp-contact-field._app_theme\"]",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_3",
+              "_nested_name": "data_items_21.display_group_1.text_3",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Contact Fields\n\nTheme\n@item.contact_fields[\"rp-contact-field._app_theme\"]",
+                    "matchedExpression": "@item.contact_fields",
+                    "type": "item",
+                    "fieldName": "contact_fields"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.contact_fields": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Device\n@item.device_info.manufacturer\n@item.device_info.model",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_4",
+              "_nested_name": "data_items_21.display_group_1.text_4",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Device\n@item.device_info.manufacturer\n@item.device_info.model",
+                    "matchedExpression": "@item.device_info.manufacturer",
+                    "type": "item",
+                    "fieldName": "device_info"
+                  },
+                  {
+                    "fullExpression": "Device\n@item.device_info.manufacturer\n@item.device_info.model",
+                    "matchedExpression": "@item.device_info.model",
+                    "type": "item",
+                    "fieldName": "device_info"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.device_info.manufacturer": [
+                  "value"
+                ],
+                "@item.device_info.model": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "button",
+              "value": "Restore",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "user",
+                  "args": [
+                    "import",
+                    "@item.id"
+                  ],
+                  "_raw": "click | user : import : @item.id",
+                  "_cleaned": "click | user : import : @item.id"
+                },
+                {
+                  "trigger": "click",
+                  "action_id": "emit",
+                  "args": [
+                    "force_restart"
+                  ],
+                  "_raw": "click | emit : force_restart",
+                  "_cleaned": "click | emit : force_restart"
+                }
+              ],
+              "name": "button_5",
+              "_nested_name": "data_items_21.display_group_1.button_5",
+              "_dynamicFields": {
+                "action_list": {
+                  "0": {
+                    "args": {
+                      "1": [
+                        {
+                          "fullExpression": "@item.id",
+                          "matchedExpression": "@item.id",
+                          "type": "item",
+                          "fieldName": "id"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "click | user : import : @item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_cleaned": [
+                      {
+                        "fullExpression": "click | user : import : @item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  }
+                }
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "action_list.0.args.1",
+                  "action_list.0._raw",
+                  "action_list.0._cleaned"
+                ]
+              }
+            }
+          ],
+          "name": "display_group_1",
+          "_nested_name": "data_items_21.display_group_1"
+        }
+      ],
+      "name": "data_items_21",
+      "_nested_name": "data_items_21"
+    },
+    {
+      "type": "button",
+      "value": "View profile debug page",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "/user"
+          ],
+          "_raw": "click | go_to : /user",
+          "_cleaned": "click | go_to : /user"
+        }
+      ],
+      "name": "button_23",
+      "_nested_name": "button_23"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_auth.xlsx"
+}
