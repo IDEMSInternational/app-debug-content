@@ -451,7 +451,7 @@
     },
     {
       "type": "data_items",
-      "value": "app_auth_profiles",
+      "value": "_auth_profiles",
       "parameter_list": {
         "sort": "updatedAt",
         "reverse": "true",
@@ -516,6 +516,7 @@
               "_translations": {
                 "value": {}
               },
+              "condition": false,
               "name": "text_3",
               "_nested_name": "data_items_21.display_group_1.text_3",
               "_dynamicFields": {
