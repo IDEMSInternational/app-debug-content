@@ -183,7 +183,7 @@
       },
       {
         "type": "radio_button_grid",
-        "count": 10
+        "count": 11
       },
       {
         "type": "radio_group",
@@ -215,7 +215,7 @@
       },
       {
         "type": "set_variable",
-        "count": 772
+        "count": 773
       },
       {
         "type": "simple_checkbox",
@@ -251,7 +251,7 @@
       },
       {
         "type": "text",
-        "count": 1012
+        "count": 1013
       },
       {
         "type": "text_area",
@@ -343,7 +343,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 32
+        "count": 33
       },
       {
         "type": "emit: force_restart",
