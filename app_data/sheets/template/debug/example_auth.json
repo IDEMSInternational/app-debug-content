@@ -511,18 +511,17 @@
               }
             },
             {
-              "type": "text",
-              "value": "Contact Fields\n\nTheme\n@item.contact_fields[\"rp-contact-field._app_theme\"]",
+              "name": "auth_theme",
+              "value": "@item.contact_fields[\"rp-contact-field._app_theme\"]",
               "_translations": {
                 "value": {}
               },
-              "condition": false,
-              "name": "text_3",
-              "_nested_name": "data_items_21.display_group_1.text_3",
+              "type": "set_variable",
+              "_nested_name": "data_items_21.display_group_1.auth_theme",
               "_dynamicFields": {
                 "value": [
                   {
-                    "fullExpression": "Contact Fields\n\nTheme\n@item.contact_fields[\"rp-contact-field._app_theme\"]",
+                    "fullExpression": "@item.contact_fields[\"rp-contact-field._app_theme\"]",
                     "matchedExpression": "@item.contact_fields",
                     "type": "item",
                     "fieldName": "contact_fields"
@@ -537,12 +536,36 @@
             },
             {
               "type": "text",
-              "value": "Device\n@item.device_info.manufacturer\n@item.device_info.model",
+              "value": "Theme: @local.auth_theme",
               "_translations": {
                 "value": {}
               },
               "name": "text_4",
               "_nested_name": "data_items_21.display_group_1.text_4",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Theme: @local.auth_theme",
+                    "matchedExpression": "@local.auth_theme",
+                    "type": "local",
+                    "fieldName": "auth_theme"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.auth_theme": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Device\n@item.device_info.manufacturer\n@item.device_info.model",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_5",
+              "_nested_name": "data_items_21.display_group_1.text_5",
               "_dynamicFields": {
                 "value": [
                   {
@@ -595,8 +618,8 @@
                   "_cleaned": "click | emit : force_restart"
                 }
               ],
-              "name": "button_5",
-              "_nested_name": "data_items_21.display_group_1.button_5",
+              "name": "button_6",
+              "_nested_name": "data_items_21.display_group_1.button_6",
               "_dynamicFields": {
                 "action_list": {
                   "0": {

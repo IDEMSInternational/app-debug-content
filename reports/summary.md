@@ -48,7 +48,7 @@
 | progress_bar | 1 |
 | progress_path | 3 |
 | qr_code | 2 |
-| radio_button_grid | 10 |
+| radio_button_grid | 11 |
 | radio_group | 57 |
 | radio_group_grid | 5 |
 | round_button | 27 |
@@ -56,7 +56,7 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 772 |
+| set_variable | 773 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -65,7 +65,7 @@
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1012 |
+| text | 1013 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
@@ -94,7 +94,7 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 31 |
-| emit: force_reprocess | 32 |
+| emit: force_reprocess | 33 |
 | emit: force_restart | 3 |
 | emit: server_sync | 7 |
 | emit: set_language | 5 |
