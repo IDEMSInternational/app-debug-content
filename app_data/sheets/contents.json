@@ -336,6 +336,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
     },
+    "comp_radio_button_flex_img_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_radio_button_flex_img_data",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
+    },
     "comp_radio_button_grid_data": {
       "flow_type": "data_list",
       "flow_name": "comp_radio_button_grid_data",

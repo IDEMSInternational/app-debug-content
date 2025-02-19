@@ -1,0 +1,34 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_radio_button_flex_img_data",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "option_1",
+      "name": "option_1",
+      "image": "images/test_image.png"
+    },
+    {
+      "id": "option_2",
+      "name": "option_2",
+      "image": "https://placecats.com/millie/200/200"
+    },
+    {
+      "id": "option_3",
+      "name": "option_3",
+      "image": "https://placecats.com/neo_banana/120/180"
+    },
+    {
+      "id": "option_4",
+      "name": "option_4",
+      "image": "https://placecats.com/neo_banana/180/120"
+    },
+    {
+      "id": "option_5",
+      "name": "option_5",
+      "image": "https://placecats.com/neo/200/200"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx"
+}
