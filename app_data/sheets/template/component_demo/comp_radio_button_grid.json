@@ -597,7 +597,7 @@
         "answer_list": "@data.comp_radio_button_flex_data",
         "variant": "flex",
         "style": "secondary",
-        "item_width": "96px",
+        "item_width": "60px",
         "grid_gap": "8px"
       },
       "exclude_from_translation": true,
@@ -636,7 +636,7 @@
         "answer_list": "@data.comp_radio_button_flex_img_data",
         "variant": "flex",
         "style": "secondary",
-        "item_width": "96px",
+        "item_width": "60px",
         "grid_gap": "8px"
       },
       "exclude_from_translation": true,
