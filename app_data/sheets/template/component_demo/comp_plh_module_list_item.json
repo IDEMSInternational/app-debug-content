@@ -5,15 +5,70 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "name": "item_1_is_locked",
-      "value": false,
+      "type": "toggle_bar",
+      "name": "variant_toggle",
+      "_nested_name": "variant_toggle"
+    },
+    {
+      "name": "variant",
+      "value": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
-      "_nested_name": "item_1_is_locked"
+      "_nested_name": "variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+            "matchedExpression": "!@local.variant_toggle",
+            "type": "local",
+            "fieldName": "variant_toggle"
+          },
+          {
+            "fullExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+            "matchedExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+            "type": "calc",
+            "fieldName": "!@local.variant_toggle ? \"default\" : \"circle\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.variant_toggle": [
+          "value"
+        ],
+        "@calc(!@local.variant_toggle ? \"default\" : \"circle\")": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Variant: @local.variant",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Variant: @local.variant",
+            "matchedExpression": "@local.variant",
+            "type": "local",
+            "fieldName": "variant"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.variant": [
+          "value"
+        ]
+      }
     },
     {
       "type": "plh_module_list_item",
-      "name": "item_1",
-      "value": "capitalise text, target-template",
+      "value": "Example of a longer module title over multiple lines",
       "_translations": {
         "value": {}
       },
@@ -22,47 +77,40 @@
           "trigger": "click",
           "action_id": "go_to",
           "args": [
-            "comp_button"
+            "home_screen"
           ],
-          "_raw": "click | go_to: comp_button",
-          "_cleaned": "click | go_to: comp_button"
+          "_raw": "click | go_to: home_screen",
+          "_cleaned": "click | go_to: home_screen"
         }
       ],
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
-        "text_transform": "capitalise",
-        "is_locked": "@local.item_1_is_locked",
-        "nav_image_asset": "images/icons/expand_circle_right.png"
+        "nav_image_asset": "images/icons/expand_circle_right.png",
+        "variant": "@local.variant"
       },
-      "_nested_name": "item_1",
+      "name": "plh_module_list_item_5",
+      "_nested_name": "plh_module_list_item_5",
       "_dynamicFields": {
         "parameter_list": {
-          "is_locked": [
+          "variant": [
             {
-              "fullExpression": "@local.item_1_is_locked",
-              "matchedExpression": "@local.item_1_is_locked",
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
               "type": "local",
-              "fieldName": "item_1_is_locked"
+              "fieldName": "variant"
             }
           ]
         }
       },
       "_dynamicDependencies": {
-        "@local.item_1_is_locked": [
-          "parameter_list.is_locked"
+        "@local.variant": [
+          "parameter_list.variant"
         ]
       }
     },
     {
-      "name": "item_2_is_locked",
-      "value": true,
-      "type": "set_variable",
-      "_nested_name": "item_2_is_locked"
-    },
-    {
       "type": "plh_module_list_item",
-      "name": "item_2",
-      "value": "default locked module",
+      "value": "Highlighted",
       "_translations": {
         "value": {}
       },
@@ -71,68 +119,114 @@
           "trigger": "click",
           "action_id": "go_to",
           "args": [
-            "comp_button"
+            "home_screen"
           ],
-          "_raw": "click | go_to: comp_button",
-          "_cleaned": "click | go_to: comp_button"
+          "_raw": "click | go_to: home_screen",
+          "_cleaned": "click | go_to: home_screen"
         }
       ],
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
-        "is_locked": "@local.item_2_is_locked",
-        "locked_image_asset": "images/icons/locked.png"
+        "nav_image_asset": "images/icons/expand_circle_right.png",
+        "variant": "@local.variant",
+        "highlighted": "true"
       },
-      "_nested_name": "item_2",
+      "name": "plh_module_list_item_6",
+      "_nested_name": "plh_module_list_item_6",
       "_dynamicFields": {
         "parameter_list": {
-          "is_locked": [
+          "variant": [
             {
-              "fullExpression": "@local.item_2_is_locked",
-              "matchedExpression": "@local.item_2_is_locked",
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
               "type": "local",
-              "fieldName": "item_2_is_locked"
+              "fieldName": "variant"
             }
           ]
         }
       },
       "_dynamicDependencies": {
-        "@local.item_2_is_locked": [
-          "parameter_list.is_locked"
+        "@local.variant": [
+          "parameter_list.variant"
         ]
       }
     },
     {
       "type": "plh_module_list_item",
-      "name": "item_3",
-      "value": "capitalise text, locked module",
+      "value": "Locked",
       "_translations": {
         "value": {}
       },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home_screen"
+          ],
+          "_raw": "click | go_to: home_screen",
+          "_cleaned": "click | go_to: home_screen"
+        }
+      ],
       "parameter_list": {
         "module_image_asset": "images/module-1.png",
         "is_locked": "true",
-        "text_transform": "capitalise",
-        "locked_image_asset": "images/icons/locked.png"
+        "locked_image_asset": "images/icons/locked.png",
+        "variant": "@local.variant"
       },
-      "_nested_name": "item_3"
+      "name": "plh_module_list_item_7",
+      "_nested_name": "plh_module_list_item_7",
+      "_dynamicFields": {
+        "parameter_list": {
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant": [
+          "parameter_list.variant"
+        ]
+      }
     },
     {
       "type": "plh_module_list_item",
-      "name": "item_4",
-      "value": "uppercase text, no nav action",
+      "value": "No nav",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "module_image_asset": "images/Noura.png",
-        "text_transform": "uppercase"
+        "variant": "@local.variant"
       },
-      "_nested_name": "item_4"
+      "name": "plh_module_list_item_8",
+      "_nested_name": "plh_module_list_item_8",
+      "_dynamicFields": {
+        "parameter_list": {
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant": [
+          "parameter_list.variant"
+        ]
+      }
     },
     {
       "type": "plh_module_list_item",
-      "name": "item_4",
-      "value": "target-template, no module image asset",
+      "value": "No image",
       "_translations": {
         "value": {}
       },
@@ -141,16 +235,35 @@
           "trigger": "click",
           "action_id": "go_to",
           "args": [
-            "comp_audio"
+            "home_screen"
           ],
-          "_raw": "click | go_to: comp_audio",
-          "_cleaned": "click | go_to: comp_audio"
+          "_raw": "click | go_to: home_screen",
+          "_cleaned": "click | go_to: home_screen"
         }
       ],
       "parameter_list": {
-        "nav_image_asset": "images/icons/expand_circle_right.png"
+        "nav_image_asset": "images/icons/expand_circle_right.png",
+        "variant": "@local.variant"
       },
-      "_nested_name": "item_4"
+      "name": "plh_module_list_item_9",
+      "_nested_name": "plh_module_list_item_9",
+      "_dynamicFields": {
+        "parameter_list": {
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant": [
+          "parameter_list.variant"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx"

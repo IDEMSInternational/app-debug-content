@@ -51,7 +51,7 @@
       },
       {
         "type": "combo_box",
-        "count": 54
+        "count": 55
       },
       {
         "type": "dashed_box",
@@ -59,7 +59,7 @@
       },
       {
         "type": "data_items",
-        "count": 64
+        "count": 69
       },
       {
         "type": "debug_toggle",
@@ -75,7 +75,7 @@
       },
       {
         "type": "display_group",
-        "count": 209
+        "count": 210
       },
       {
         "type": "drawer",
@@ -99,7 +99,7 @@
       },
       {
         "type": "items",
-        "count": 50
+        "count": 51
       },
       {
         "type": "latex",
@@ -163,11 +163,11 @@
       },
       {
         "type": "plh_module_list_item",
-        "count": 5
+        "count": 6
       },
       {
         "type": "plh_progress_path",
-        "count": 1
+        "count": 2
       },
       {
         "type": "progress_bar",
@@ -183,7 +183,7 @@
       },
       {
         "type": "radio_button_grid",
-        "count": 11
+        "count": 14
       },
       {
         "type": "radio_group",
@@ -215,7 +215,7 @@
       },
       {
         "type": "set_variable",
-        "count": 773
+        "count": 781
       },
       {
         "type": "simple_checkbox",
@@ -251,7 +251,7 @@
       },
       {
         "type": "text",
-        "count": 1013
+        "count": 1020
       },
       {
         "type": "text_area",
@@ -275,11 +275,11 @@
       },
       {
         "type": "title",
-        "count": 512
+        "count": 516
       },
       {
         "type": "toggle_bar",
-        "count": 63
+        "count": 65
       },
       {
         "type": "update_action_list",
@@ -379,7 +379,7 @@
       },
       {
         "type": "go_to",
-        "count": 82
+        "count": 83
       },
       {
         "type": "go_to_url",
@@ -431,7 +431,7 @@
       },
       {
         "type": "set_data",
-        "count": 17
+        "count": 18
       },
       {
         "type": "set_field",
@@ -439,7 +439,7 @@
       },
       {
         "type": "set_item",
-        "count": 30
+        "count": 33
       },
       {
         "type": "set_items",
@@ -447,7 +447,7 @@
       },
       {
         "type": "set_local",
-        "count": 49
+        "count": 51
       },
       {
         "type": "share",
@@ -784,7 +784,7 @@
       },
       {
         "path": "images/icons/expand_circle_right.png",
-        "count": 2,
+        "count": 3,
         "size_kb": 0.9
       },
       {
@@ -904,7 +904,7 @@
       },
       {
         "path": "images/map_bg.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 3632.4
       },
       {
@@ -944,7 +944,7 @@
       },
       {
         "path": "images/test_image.png",
-        "count": 4,
+        "count": 5,
         "size_kb": 2
       },
       {
@@ -1034,12 +1034,12 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 10
+        "total": 11
       },
       {
         "type": "data_list",
         "subtype": "debug",
-        "total": 20
+        "total": 21
       },
       {
         "type": "data_list",
@@ -1119,7 +1119,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 270
+        "total": 272
       },
       {
         "type": "template",

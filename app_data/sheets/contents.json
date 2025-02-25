@@ -568,6 +568,17 @@
       "flow_subtype": "debug",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_items.xlsx"
     },
+    "module_tasks": {
+      "flow_type": "data_list",
+      "flow_subtype": "debug",
+      "flow_name": "module_tasks",
+      "_xlsxPath": "example_sheets/example_data_actions.xlsx",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        }
+      }
+    },
     "debug_answer_list_partial_data": {
       "flow_type": "data_list",
       "flow_name": "debug_answer_list_partial_data",
@@ -1988,6 +1999,12 @@
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
     },
+    "debug_data_items_actions_2": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_actions_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_items.xlsx"
+    },
     "debug_data_items_condition": {
       "flow_type": "template",
       "flow_name": "debug_data_items_condition",
@@ -3013,6 +3030,12 @@
       "flow_name": "example_condition_top_3",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_condition.xlsx"
+    },
+    "example_data_actions": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_data_actions",
+      "_xlsxPath": "example_sheets/example_data_actions.xlsx"
     },
     "example_data_from_id": {
       "flow_type": "template",
