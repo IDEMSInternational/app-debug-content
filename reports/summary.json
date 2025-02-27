@@ -35,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 353
+        "count": 355
       },
       {
         "type": "calendar",
@@ -251,7 +251,7 @@
       },
       {
         "type": "text",
-        "count": 1020
+        "count": 1023
       },
       {
         "type": "text_area",
@@ -275,7 +275,7 @@
       },
       {
         "type": "title",
-        "count": 516
+        "count": 518
       },
       {
         "type": "toggle_bar",
@@ -343,7 +343,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 33
+        "count": 34
       },
       {
         "type": "emit: force_restart",
@@ -351,7 +351,7 @@
       },
       {
         "type": "emit: server_sync",
-        "count": 7
+        "count": 8
       },
       {
         "type": "emit: set_language",
@@ -419,7 +419,7 @@
       },
       {
         "type": "reset_data",
-        "count": 6
+        "count": 7
       },
       {
         "type": "save_to_device",
@@ -1109,7 +1109,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 98
+        "total": 99
       },
       {
         "type": "template",

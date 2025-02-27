@@ -329,7 +329,7 @@
             "input_allowed": "false",
             "answer_list": "@local.answer_list"
           },
-          "condition": false,
+          "condition": true,
           "name": "combo_box_2",
           "_nested_name": "data_items_10.combo_box_2",
           "_dynamicFields": {
