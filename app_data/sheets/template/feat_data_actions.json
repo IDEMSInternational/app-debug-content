@@ -475,7 +475,7 @@
     },
     {
       "type": "title",
-      "value": "Hacky Workarounds",
+      "value": "Global Actions",
       "_translations": {
         "value": {}
       },
@@ -484,12 +484,48 @@
     },
     {
       "type": "text",
-      "value": "The following examples may work, but are fragile and could break in future updates",
+      "value": "The following applies to all data lists throughout the app",
       "_translations": {
         "value": {}
       },
       "name": "text_21",
       "_nested_name": "text_21"
+    },
+    {
+      "type": "button",
+      "value": "Reset all dynamic data",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "reset_data",
+          "args": [],
+          "_raw": "click | reset_data",
+          "_cleaned": "click | reset_data"
+        }
+      ],
+      "name": "button_22",
+      "_nested_name": "button_22"
+    },
+    {
+      "type": "title",
+      "value": "Hacky Workarounds",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_23",
+      "_nested_name": "title_23"
+    },
+    {
+      "type": "text",
+      "value": "The following examples may work, but are fragile and could break in future updates",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_24",
+      "_nested_name": "text_24"
     },
     {
       "type": "set_local",
@@ -544,8 +580,8 @@
           }
         }
       ],
-      "name": "button_23",
-      "_nested_name": "button_23",
+      "name": "button_26",
+      "_nested_name": "button_26",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -617,8 +653,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_24",
-      "_nested_name": "title_24"
+      "name": "title_27",
+      "_nested_name": "title_27"
     },
     {
       "type": "template",
@@ -633,8 +669,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_27",
-      "_nested_name": "text_27"
+      "name": "text_30",
+      "_nested_name": "text_30"
     },
     {
       "type": "button",
@@ -655,8 +691,8 @@
           }
         }
       ],
-      "name": "button_28",
-      "_nested_name": "button_28"
+      "name": "button_31",
+      "_nested_name": "button_31"
     },
     {
       "name": "number_field",
@@ -686,8 +722,8 @@
           }
         }
       ],
-      "name": "button_30",
-      "_nested_name": "button_30",
+      "name": "button_33",
+      "_nested_name": "button_33",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -736,8 +772,8 @@
           }
         }
       ],
-      "name": "button_31",
-      "_nested_name": "button_31",
+      "name": "button_34",
+      "_nested_name": "button_34",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -796,8 +832,8 @@
           }
         }
       ],
-      "name": "button_32",
-      "_nested_name": "button_32"
+      "name": "button_35",
+      "_nested_name": "button_35"
     },
     {
       "type": "title",
@@ -805,8 +841,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_33",
-      "_nested_name": "title_33"
+      "name": "title_36",
+      "_nested_name": "title_36"
     },
     {
       "type": "text",
@@ -814,8 +850,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_34",
-      "_nested_name": "text_34"
+      "name": "text_37",
+      "_nested_name": "text_37"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_data_actions.xlsx"

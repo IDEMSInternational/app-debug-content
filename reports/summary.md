@@ -11,7 +11,7 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 353 |
+| button | 355 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -65,13 +65,13 @@
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1020 |
+| text | 1023 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 516 |
+| title | 518 |
 | toggle_bar | 65 |
 | update_action_list | 2 |
 | video | 4 |
@@ -94,9 +94,9 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 31 |
-| emit: force_reprocess | 33 |
+| emit: force_reprocess | 34 |
 | emit: force_restart | 3 |
-| emit: server_sync | 7 |
+| emit: server_sync | 8 |
 | emit: set_language | 5 |
 | emit: set_skin | 1 |
 | emit: set_theme | 2 |
@@ -113,7 +113,7 @@
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 1 |
-| reset_data | 6 |
+| reset_data | 7 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
 | set_data | 18 |
@@ -294,7 +294,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 98 |
+| template |  | 99 |
 | template | component_demo | 60 |
 | template | debug | 272 |
 | template | example_generator | 2 |

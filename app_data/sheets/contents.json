@@ -3803,6 +3803,20 @@
       "flow_name": "feat_nav_stack_child",
       "_xlsxPath": "feature_sheets/feature_nav_stack.xlsx"
     },
+    "feat_server_sync_disabled": {
+      "flow_type": "template",
+      "flow_name": "feat_server_sync_disabled",
+      "parameter_list": {
+        "app_config": {
+          "SERVER": {
+            "sync": {
+              "enabled": false
+            }
+          }
+        }
+      },
+      "_xlsxPath": "feature_sheets/feature_server_sync_disabled.xlsx"
+    },
     "feat_task_group_subtask_toggle": {
       "flow_type": "template",
       "flow_name": "feat_task_group_subtask_toggle",

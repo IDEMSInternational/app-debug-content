@@ -1,0 +1,88 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_server_sync_disabled",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "SERVER": {
+        "sync": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Sync disabled",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "While this template is active (top-level template or fullscreen pop-up), syncing to the server is disabled",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text",
+      "name": "last_sync_text",
+      "value": "Last sync at: @fields._server_sync_latest",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "last_sync_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Last sync at: @fields._server_sync_latest",
+            "matchedExpression": "@fields._server_sync_latest",
+            "type": "fields",
+            "fieldName": "_server_sync_latest"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._server_sync_latest": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "sync_button",
+      "value": "Sync now",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "server_sync"
+          ],
+          "_raw": "click | emit: server_sync",
+          "_cleaned": "click | emit: server_sync"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "_nested_name": "sync_button"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_server_sync_disabled.xlsx"
+}
