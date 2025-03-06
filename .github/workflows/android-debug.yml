@@ -1,0 +1,14 @@
+##################################################################################
+#         Calls workflow from code repo
+##################################################################################
+name: Android - Debug
+
+on:
+  push:
+    branches:
+      - chore/android-signing-debug
+
+jobs:
+  android_release:
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-android-build.yml@master
+    secrets: inherit
