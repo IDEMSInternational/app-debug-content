@@ -11,6 +11,4 @@ on:
 jobs:
   android_release:
     uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-android-build.yml@chore/android-debug-signing
-    with:
-      lfs: true
     secrets: inherit
