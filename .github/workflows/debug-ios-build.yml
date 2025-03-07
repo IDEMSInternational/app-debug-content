@@ -1,0 +1,15 @@
+##################################################################################
+#         Calls workflow from code repo
+##################################################################################
+name: Debug - IOS Build
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - debug/reusable-ios-build
+
+jobs:
+  android_release:
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-build.yml@feat/reusable-ios-build
+    secrets: inherit
