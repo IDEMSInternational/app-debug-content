@@ -13,5 +13,3 @@ jobs:
   ios_build:
     uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-build.yml@feat/resusable-ios-build
     secrets: inherit
-    with:
-      branch: feat/resusable-ios-build
