@@ -1,7 +1,7 @@
 ##################################################################################
 #         Calls workflow from code repo
 ##################################################################################
-name: Debug - IOS Build
+name: IOS - Simulator Build
 
 on:
   workflow_dispatch:
@@ -11,5 +11,5 @@ on:
 
 jobs:
   ios_build:
-    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-build.yml@feat/resusable-ios-build
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-build.yml@master
     secrets: inherit
