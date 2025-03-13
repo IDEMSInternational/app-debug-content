@@ -5,9 +5,6 @@ name: IOS - Simulator Build
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - debug/reusable-ios-build
 
 jobs:
   ios_build:
