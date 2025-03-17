@@ -5,16 +5,130 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "title",
+      "value": "Basic Table",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Default table shows all data with sortable columns",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "table",
+      "value": "comp_table_data",
+      "_translations": {
+        "value": {}
+      },
+      "name": "table_4",
+      "_nested_name": "table_4"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Table",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "text",
+      "value": "Authoring options can be used to specify which columns to show, include a search box, and set default sort column.\nStyling can be used to fix the scrollable size of the table",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
       "type": "table",
       "value": "comp_table_data",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
-        "show_id": "false"
+        "display_columns": "ward, county",
+        "show_search": "true",
+        "sort_default": "ward desc"
       },
-      "name": "table_2",
-      "_nested_name": "table_2"
+      "style_list": [
+        "max-height: 33vh"
+      ],
+      "name": "table_7",
+      "_nested_name": "table_7"
+    },
+    {
+      "type": "title",
+      "value": "Table with large data source",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "margin-top: 2rem"
+      ],
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "name": "show_extended",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "show_extended"
+    },
+    {
+      "type": "button",
+      "value": "Show table",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "show_extended",
+            true
+          ],
+          "_raw": "click | set_local : show_extended : true",
+          "_cleaned": "click | set_local : show_extended : true"
+        }
+      ],
+      "name": "button_10",
+      "_nested_name": "button_10"
+    },
+    {
+      "type": "table",
+      "value": "comp_table_data_extended",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.show_extended",
+      "name": "table_11",
+      "_nested_name": "table_11",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.show_extended",
+            "matchedExpression": "@local.show_extended",
+            "type": "local",
+            "fieldName": "show_extended"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.show_extended": [
+          "condition"
+        ]
+      }
     }
   ],
   "_xlsxPath": "component_sheets/component_table.xlsx"

@@ -35,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 355
+        "count": 356
       },
       {
         "type": "calendar",
@@ -59,7 +59,7 @@
       },
       {
         "type": "data_items",
-        "count": 69
+        "count": 71
       },
       {
         "type": "debug_toggle",
@@ -99,7 +99,7 @@
       },
       {
         "type": "items",
-        "count": 51
+        "count": 49
       },
       {
         "type": "latex",
@@ -215,7 +215,7 @@
       },
       {
         "type": "set_variable",
-        "count": 781
+        "count": 782
       },
       {
         "type": "simple_checkbox",
@@ -235,7 +235,7 @@
       },
       {
         "type": "table",
-        "count": 1
+        "count": 3
       },
       {
         "type": "task_card",
@@ -251,7 +251,7 @@
       },
       {
         "type": "text",
-        "count": 1023
+        "count": 1025
       },
       {
         "type": "text_area",
@@ -275,7 +275,7 @@
       },
       {
         "type": "title",
-        "count": 518
+        "count": 521
       },
       {
         "type": "toggle_bar",
@@ -447,7 +447,7 @@
       },
       {
         "type": "set_local",
-        "count": 51
+        "count": 52
       },
       {
         "type": "share",
@@ -487,8 +487,8 @@
     "data": [
       {
         "assets": "total",
-        "KB": "35249 KB",
-        "MB": "35.2 MB"
+        "KB": "31746 KB",
+        "MB": "31.7 MB"
       },
       {
         "assets": "unused",
@@ -903,9 +903,9 @@
         "size_kb": 0.3
       },
       {
-        "path": "images/map_bg.svg",
+        "path": "images/map_view_bg.jpg",
         "count": 2,
-        "size_kb": 3632.4
+        "size_kb": 129.5
       },
       {
         "path": "images/modal_bg.svg",
@@ -1034,7 +1034,7 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 11
+        "total": 12
       },
       {
         "type": "data_list",

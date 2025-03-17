@@ -363,6 +363,12 @@
       "flow_type": "data_list",
       "flow_name": "comp_table_data",
       "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_table.xlsx"
+    },
+    "comp_table_data_extended": {
+      "flow_type": "data_list",
+      "flow_name": "comp_table_data_extended",
+      "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_table.xlsx",
       "_metadata": {
         "probability_ward": {
