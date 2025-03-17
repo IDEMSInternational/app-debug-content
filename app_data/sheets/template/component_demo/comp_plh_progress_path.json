@@ -23,12 +23,107 @@
     {
       "type": "plh_progress_path",
       "parameter_list": {
-        "background_image_asset": "images/map_bg.svg"
+        "background_image_asset": "images/map_view_bg.jpg"
       },
       "rows": [
         {
-          "type": "items",
+          "type": "data_items",
           "value": "@data.task_cards_data_plh",
+          "rows": [
+            {
+              "type": "plh_module_list_item",
+              "parameter_list": {
+                "variant": "circle",
+                "module_image_asset": "@item.image",
+                "highlighted": "@item.highlighted",
+                "locked_image_asset": "images/icons/locked.png",
+                "is_locked": "@item.locked"
+              },
+              "name": "plh_module_list_item_1",
+              "_nested_name": "plh_progress_path_3.data_items_1.plh_module_list_item_1",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "module_image_asset": [
+                    {
+                      "fullExpression": "@item.image",
+                      "matchedExpression": "@item.image",
+                      "type": "item",
+                      "fieldName": "image"
+                    }
+                  ],
+                  "highlighted": [
+                    {
+                      "fullExpression": "@item.highlighted",
+                      "matchedExpression": "@item.highlighted",
+                      "type": "item",
+                      "fieldName": "highlighted"
+                    }
+                  ],
+                  "is_locked": [
+                    {
+                      "fullExpression": "@item.locked",
+                      "matchedExpression": "@item.locked",
+                      "type": "item",
+                      "fieldName": "locked"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@item.image": [
+                  "parameter_list.module_image_asset"
+                ],
+                "@item.highlighted": [
+                  "parameter_list.highlighted"
+                ],
+                "@item.locked": [
+                  "parameter_list.is_locked"
+                ]
+              }
+            }
+          ],
+          "name": "data_items_1",
+          "_nested_name": "plh_progress_path_3.data_items_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.task_cards_data_plh",
+                "matchedExpression": "@data.task_cards_data_plh",
+                "type": "data",
+                "fieldName": "task_cards_data_plh"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.task_cards_data_plh": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "plh_progress_path_3",
+      "_nested_name": "plh_progress_path_3"
+    },
+    {
+      "type": "title",
+      "parameter_list": {
+        "Legacy implementation (using task card component)": "true"
+      },
+      "condition": false,
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "plh_progress_path",
+      "parameter_list": {
+        "background_image_asset": "images/map_view_bg.jpg"
+      },
+      "condition": false,
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "@data.task_cards_data_plh",
+          "condition": false,
           "rows": [
             {
               "type": "task_card",
@@ -41,8 +136,9 @@
                 "locked_image_asset": "images/icons/locked.png",
                 "highlighted": "@item.highlighted"
               },
+              "condition": false,
               "name": "task_card_1",
-              "_nested_name": "plh_progress_path_3.items_1.task_card_1",
+              "_nested_name": "plh_progress_path_6.data_items_1.task_card_1",
               "_dynamicFields": {
                 "parameter_list": {
                   "task_group_data": [
@@ -106,101 +202,8 @@
               }
             }
           ],
-          "name": "items_1",
-          "_nested_name": "plh_progress_path_3.items_1",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@data.task_cards_data_plh",
-                "matchedExpression": "@data.task_cards_data_plh",
-                "type": "data",
-                "fieldName": "task_cards_data_plh"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@data.task_cards_data_plh": [
-              "value"
-            ]
-          }
-        }
-      ],
-      "name": "plh_progress_path_3",
-      "_nested_name": "plh_progress_path_3"
-    },
-    {
-      "type": "title",
-      "value": "Using plh_module_list_item component",
-      "_translations": {
-        "value": {}
-      },
-      "name": "title_5",
-      "_nested_name": "title_5"
-    },
-    {
-      "type": "plh_progress_path",
-      "parameter_list": {
-        "background_image_asset": "images/map_bg.svg"
-      },
-      "rows": [
-        {
-          "type": "items",
-          "value": "@data.task_cards_data_plh",
-          "rows": [
-            {
-              "type": "plh_module_list_item",
-              "parameter_list": {
-                "variant": "circle",
-                "module_image_asset": "@item.image",
-                "highlighted": "@item.highlighted",
-                "locked_image_asset": "images/icons/locked.png",
-                "is_locked": "@item.locked"
-              },
-              "name": "plh_module_list_item_1",
-              "_nested_name": "plh_progress_path_6.items_1.plh_module_list_item_1",
-              "_dynamicFields": {
-                "parameter_list": {
-                  "module_image_asset": [
-                    {
-                      "fullExpression": "@item.image",
-                      "matchedExpression": "@item.image",
-                      "type": "item",
-                      "fieldName": "image"
-                    }
-                  ],
-                  "highlighted": [
-                    {
-                      "fullExpression": "@item.highlighted",
-                      "matchedExpression": "@item.highlighted",
-                      "type": "item",
-                      "fieldName": "highlighted"
-                    }
-                  ],
-                  "is_locked": [
-                    {
-                      "fullExpression": "@item.locked",
-                      "matchedExpression": "@item.locked",
-                      "type": "item",
-                      "fieldName": "locked"
-                    }
-                  ]
-                }
-              },
-              "_dynamicDependencies": {
-                "@item.image": [
-                  "parameter_list.module_image_asset"
-                ],
-                "@item.highlighted": [
-                  "parameter_list.highlighted"
-                ],
-                "@item.locked": [
-                  "parameter_list.is_locked"
-                ]
-              }
-            }
-          ],
-          "name": "items_1",
-          "_nested_name": "plh_progress_path_6.items_1",
+          "name": "data_items_1",
+          "_nested_name": "plh_progress_path_6.data_items_1",
           "_dynamicFields": {
             "value": [
               {

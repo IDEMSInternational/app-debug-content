@@ -904,12 +904,12 @@
     {
       "type": "button",
       "name": "button_par_3_2",
-      "value": "Text align parameter centre",
+      "value": "Text align parameter center",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
-        "text_align": "centre"
+        "text_align": "center"
       },
       "_nested_name": "button_par_3_2"
     },

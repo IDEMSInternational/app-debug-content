@@ -11,13 +11,13 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 355 |
+| button | 356 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 55 |
 | dashed_box | 19 |
-| data_items | 69 |
+| data_items | 71 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
@@ -27,7 +27,7 @@
 | google_sign_in_button | 3 |
 | html | 4 |
 | image | 83 |
-| items | 51 |
+| items | 49 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 2 |
@@ -56,22 +56,22 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 781 |
+| set_variable | 782 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 59 |
-| table | 1 |
+| table | 3 |
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1023 |
+| text | 1025 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 518 |
+| title | 521 |
 | toggle_bar | 65 |
 | update_action_list | 2 |
 | video | 4 |
@@ -120,7 +120,7 @@
 | set_field | 116 |
 | set_item | 33 |
 | set_items | 2 |
-| set_local | 51 |
+| set_local | 52 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
@@ -136,7 +136,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 35249 KB | 35.2 MB |
+| total | 31746 KB | 31.7 MB |
 | unused | 4579 KB | 4.6 MB |
 </details>
 
@@ -247,7 +247,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 22 |
-| images/map_bg.svg | 3632.4 | 2 |
+| images/map_view_bg.jpg | 129.5 | 2 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 5 |
 | images/shining_diamond.png | 17.7 | 1 |
@@ -279,7 +279,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list |  | 36 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
-| data_list | component_demo | 11 |
+| data_list | component_demo | 12 |
 | data_list | debug | 21 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
