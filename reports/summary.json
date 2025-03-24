@@ -75,7 +75,7 @@
       },
       {
         "type": "display_group",
-        "count": 210
+        "count": 214
       },
       {
         "type": "drawer",
@@ -163,7 +163,7 @@
       },
       {
         "type": "plh_module_list_item",
-        "count": 6
+        "count": 8
       },
       {
         "type": "plh_progress_path",
@@ -251,7 +251,7 @@
       },
       {
         "type": "text",
-        "count": 1025
+        "count": 1028
       },
       {
         "type": "text_area",
@@ -275,11 +275,11 @@
       },
       {
         "type": "title",
-        "count": 521
+        "count": 524
       },
       {
         "type": "toggle_bar",
-        "count": 65
+        "count": 68
       },
       {
         "type": "update_action_list",
@@ -379,7 +379,7 @@
       },
       {
         "type": "go_to",
-        "count": 83
+        "count": 79
       },
       {
         "type": "go_to_url",
@@ -403,7 +403,7 @@
       },
       {
         "type": "pop_up",
-        "count": 43
+        "count": 49
       },
       {
         "type": "process_template",
@@ -784,7 +784,7 @@
       },
       {
         "path": "images/icons/expand_circle_right.png",
-        "count": 3,
+        "count": 5,
         "size_kb": 0.9
       },
       {
@@ -839,7 +839,7 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 8,
+        "count": 9,
         "size_kb": 0.9
       },
       {
@@ -914,7 +914,7 @@
       },
       {
         "path": "images/module-1.png",
-        "count": 5,
+        "count": 7,
         "size_kb": 28.2
       },
       {

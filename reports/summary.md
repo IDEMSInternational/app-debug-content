@@ -21,7 +21,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 210 |
+| display_group | 214 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 3 |
@@ -43,7 +43,7 @@
 | plh_bottom_nav | 1 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
-| plh_module_list_item | 6 |
+| plh_module_list_item | 8 |
 | plh_progress_path | 2 |
 | progress_bar | 1 |
 | progress_path | 3 |
@@ -65,14 +65,14 @@
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1025 |
+| text | 1028 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 521 |
-| toggle_bar | 65 |
+| title | 524 |
+| toggle_bar | 68 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -103,13 +103,13 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 83 |
+| go_to | 79 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 11 |
 | open_external | 2 |
-| pop_up | 43 |
+| pop_up | 49 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 1 |
@@ -223,7 +223,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/book_white.svg | 0.7 | 12 |
 | images/icons/close.png | 2.5 | 1 |
 | images/icons/close.svg | 0.2 | 1 |
-| images/icons/expand_circle_right.png | 0.9 | 3 |
+| images/icons/expand_circle_right.png | 0.9 | 5 |
 | images/icons/globe_blue.svg | 3.9 | 19 |
 | images/icons/heart_blue.svg | 1.4 | 38 |
 | images/icons/heart_outline.svg | 0.6 | 14 |
@@ -234,7 +234,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 13 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 8 |
+| images/icons/locked.png | 0.9 | 9 |
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 7 |
@@ -249,7 +249,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick_white.svg | 0.3 | 22 |
 | images/map_view_bg.jpg | 129.5 | 2 |
 | images/modal_bg.svg | 37.3 | 1 |
-| images/module-1.png | 28.2 | 5 |
+| images/module-1.png | 28.2 | 7 |
 | images/shining_diamond.png | 17.7 | 1 |
 | images/square_1.svg | 0.7 | 4 |
 | images/square_2.svg | 1 | 3 |
