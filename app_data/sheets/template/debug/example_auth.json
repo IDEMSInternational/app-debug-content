@@ -91,9 +91,24 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
-      "condition": false,
+      "condition": "!@local.is_user_signed_in",
       "name": "google_sign_in_button_6",
-      "_nested_name": "google_sign_in_button_6"
+      "_nested_name": "google_sign_in_button_6",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.is_user_signed_in",
+            "matchedExpression": "!@local.is_user_signed_in",
+            "type": "local",
+            "fieldName": "is_user_signed_in"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.is_user_signed_in": [
+          "condition"
+        ]
+      }
     },
     {
       "type": "button",
@@ -111,6 +126,36 @@
           ],
           "_raw": "click | auth: sign_in_google",
           "_cleaned": "click | auth: sign_in_google"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": false,
+      "_nested_name": "sign_in"
+    },
+    {
+      "type": "button",
+      "name": "sign_in",
+      "value": "Sign in with Apple",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_in_apple"
+          ],
+          "_raw": "click | auth: sign_in_apple",
+          "_cleaned": "click | auth: sign_in_apple"
         },
         {
           "trigger": "click",
@@ -191,8 +236,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_9",
-      "_nested_name": "title_9"
+      "name": "title_10",
+      "_nested_name": "title_10"
     },
     {
       "type": "text",
@@ -200,8 +245,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_10",
-      "_nested_name": "text_10",
+      "name": "text_11",
+      "_nested_name": "text_11",
       "_dynamicFields": {
         "value": [
           {
@@ -224,8 +269,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_11",
-      "_nested_name": "text_11",
+      "name": "text_12",
+      "_nested_name": "text_12",
       "_dynamicFields": {
         "value": [
           {
@@ -248,8 +293,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_12",
-      "_nested_name": "text_12",
+      "name": "text_13",
+      "_nested_name": "text_13",
       "_dynamicFields": {
         "value": [
           {
@@ -272,8 +317,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_13",
-      "_nested_name": "text_13",
+      "name": "text_14",
+      "_nested_name": "text_14",
       "_dynamicFields": {
         "value": [
           {
@@ -296,8 +341,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_14",
-      "_nested_name": "text_14",
+      "name": "text_15",
+      "_nested_name": "text_15",
       "_dynamicFields": {
         "value": [
           {
@@ -354,8 +399,8 @@
         "value": {}
       },
       "condition": "!!@local.friendly_name",
-      "name": "text_16",
-      "_nested_name": "text_16",
+      "name": "text_17",
+      "_nested_name": "text_17",
       "_dynamicFields": {
         "value": [
           {
@@ -393,8 +438,8 @@
         "width: 96px",
         "height: 96px"
       ],
-      "name": "image_17",
-      "_nested_name": "image_17",
+      "name": "image_18",
+      "_nested_name": "image_18",
       "_dynamicFields": {
         "value": [
           {
@@ -428,8 +473,8 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
-      "name": "button_18",
-      "_nested_name": "button_18"
+      "name": "button_19",
+      "_nested_name": "button_19"
     },
     {
       "type": "title",
@@ -437,8 +482,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_19",
-      "_nested_name": "title_19"
+      "name": "title_20",
+      "_nested_name": "title_20"
     },
     {
       "type": "text",
@@ -446,8 +491,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_20",
-      "_nested_name": "text_20"
+      "name": "text_21",
+      "_nested_name": "text_21"
     },
     {
       "type": "data_items",
@@ -469,7 +514,7 @@
                 "value": {}
               },
               "name": "text_1",
-              "_nested_name": "data_items_21.display_group_1.text_1",
+              "_nested_name": "data_items_22.display_group_1.text_1",
               "_dynamicFields": {
                 "value": [
                   {
@@ -493,7 +538,7 @@
                 "value": {}
               },
               "name": "text_2",
-              "_nested_name": "data_items_21.display_group_1.text_2",
+              "_nested_name": "data_items_22.display_group_1.text_2",
               "_dynamicFields": {
                 "value": [
                   {
@@ -517,7 +562,7 @@
                 "value": {}
               },
               "type": "set_variable",
-              "_nested_name": "data_items_21.display_group_1.auth_theme",
+              "_nested_name": "data_items_22.display_group_1.auth_theme",
               "_dynamicFields": {
                 "value": [
                   {
@@ -541,7 +586,7 @@
                 "value": {}
               },
               "name": "text_4",
-              "_nested_name": "data_items_21.display_group_1.text_4",
+              "_nested_name": "data_items_22.display_group_1.text_4",
               "_dynamicFields": {
                 "value": [
                   {
@@ -565,7 +610,7 @@
                 "value": {}
               },
               "name": "text_5",
-              "_nested_name": "data_items_21.display_group_1.text_5",
+              "_nested_name": "data_items_22.display_group_1.text_5",
               "_dynamicFields": {
                 "value": [
                   {
@@ -619,7 +664,7 @@
                 }
               ],
               "name": "button_6",
-              "_nested_name": "data_items_21.display_group_1.button_6",
+              "_nested_name": "data_items_22.display_group_1.button_6",
               "_dynamicFields": {
                 "action_list": {
                   "0": {
@@ -662,11 +707,11 @@
             }
           ],
           "name": "display_group_1",
-          "_nested_name": "data_items_21.display_group_1"
+          "_nested_name": "data_items_22.display_group_1"
         }
       ],
-      "name": "data_items_21",
-      "_nested_name": "data_items_21"
+      "name": "data_items_22",
+      "_nested_name": "data_items_22"
     },
     {
       "type": "button",
@@ -685,8 +730,8 @@
           "_cleaned": "click | go_to : /user"
         }
       ],
-      "name": "button_23",
-      "_nested_name": "button_23"
+      "name": "button_24",
+      "_nested_name": "button_24"
     }
   ],
   "_xlsxPath": "example_sheets/example_auth.xlsx"
