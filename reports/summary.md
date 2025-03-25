@@ -11,7 +11,7 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | audio | 13 |
-| button | 356 |
+| button | 357 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -87,14 +87,14 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 3 |
+| auth | 4 |
 | auth_failure | 1 |
 | auth_success | 1 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 31 |
-| emit: force_reprocess | 34 |
+| emit: force_reprocess | 35 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 5 |

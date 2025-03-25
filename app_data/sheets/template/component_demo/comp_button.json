@@ -7,7 +7,7 @@
     {
       "type": "button",
       "name": "button_default",
-      "value": "Default Button",
+      "value": "Button Default",
       "_translations": {
         "value": {}
       },
@@ -30,6 +30,9 @@
       "_translations": {
         "value": {}
       },
+      "style_list": [
+        "text-size:"
+      ],
       "name": "title_3",
       "_nested_name": "title_3"
     },

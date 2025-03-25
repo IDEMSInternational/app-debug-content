@@ -285,7 +285,7 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_campaigns.xlsx",
+  "_xlsxPath": "debug_sheets/debug_campaigns.xlsx",
   "_metadata": {
     "schedule": {
       "type": "object"

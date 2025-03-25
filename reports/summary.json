@@ -35,7 +35,7 @@
       },
       {
         "type": "button",
-        "count": 356
+        "count": 357
       },
       {
         "type": "calendar",
@@ -315,7 +315,7 @@
       },
       {
         "type": "auth",
-        "count": 3
+        "count": 4
       },
       {
         "type": "auth_failure",
@@ -343,7 +343,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 34
+        "count": 35
       },
       {
         "type": "emit: force_restart",
