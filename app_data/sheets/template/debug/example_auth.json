@@ -78,7 +78,9 @@
       "type": "google_sign_in_button",
       "value": "Sign in with Google",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "action_list": [
         {
@@ -115,7 +117,9 @@
       "name": "sign_in",
       "value": "Sign in with Google",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "action_list": [
         {
@@ -145,7 +149,9 @@
       "name": "sign_in",
       "value": "Sign in with Apple",
       "_translations": {
-        "value": {}
+        "value": {
+          "es_sp": true
+        }
       },
       "action_list": [
         {

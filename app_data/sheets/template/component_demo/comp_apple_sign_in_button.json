@@ -1,12 +1,12 @@
 {
   "flow_type": "template",
-  "flow_name": "comp_google_sign_in_button",
+  "flow_name": "comp_apple_sign_in_button",
   "status": "released",
   "flow_subtype": "component_demo",
   "rows": [
     {
       "type": "title",
-      "value": "Google Sign In Button",
+      "value": "Apple Sign In Button",
       "_translations": {
         "value": {}
       },
@@ -14,8 +14,8 @@
       "_nested_name": "title_2"
     },
     {
-      "type": "google_sign_in_button",
-      "value": "Sign in with Google",
+      "type": "apple_sign_in_button",
+      "value": "Sign in with Apple",
       "_translations": {
         "value": {
           "es_sp": true
@@ -32,11 +32,11 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
-      "name": "google_sign_in_button_3",
-      "_nested_name": "google_sign_in_button_3"
+      "name": "apple_sign_in_button_3",
+      "_nested_name": "apple_sign_in_button_3"
     },
     {
-      "type": "google_sign_in_button",
+      "type": "apple_sign_in_button",
       "value": "Sign in",
       "_translations": {
         "value": {}
@@ -52,8 +52,8 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
-      "name": "google_sign_in_button_4",
-      "_nested_name": "google_sign_in_button_4"
+      "name": "apple_sign_in_button_4",
+      "_nested_name": "apple_sign_in_button_4"
     },
     {
       "type": "button",
@@ -118,5 +118,5 @@
       }
     }
   ],
-  "_xlsxPath": "component_sheets/component_google_sign_in_button.xlsx"
+  "_xlsxPath": "component_sheets/component_apple_sign_in_button.xlsx"
 }

@@ -10,8 +10,9 @@
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
+| apple_sign_in_button | 2 |
 | audio | 13 |
-| button | 357 |
+| button | 358 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -65,13 +66,13 @@
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1021 |
+| text | 1039 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 523 |
+| title | 525 |
 | toggle_bar | 68 |
 | update_action_list | 2 |
 | video | 4 |
@@ -87,14 +88,14 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 4 |
+| auth | 5 |
 | auth_failure | 1 |
 | auth_success | 1 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 31 |
-| emit: force_reprocess | 35 |
+| emit: force_reprocess | 38 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 5 |
@@ -295,9 +296,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 99 |
-| template | component_demo | 60 |
+| template | component_demo | 61 |
 | template | debug | 272 |
 | template | example_generator | 2 |
+| template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
 | template | example_sheet_defaults | 1 |
 | tour | debug | 4 |
