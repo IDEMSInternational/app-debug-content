@@ -1,7 +1,12 @@
 [
   {
-    "SourceText": "Sign in with Google (custom text)",
-    "text": "Acceder con Google (texto personalizado)",
+    "SourceText": "Sign in with Apple",
+    "text": "Acceder con Apple",
+    "type": "template"
+  },
+  {
+    "SourceText": "Sign in with Google",
+    "text": "Acceder con Google",
     "type": "template"
   },
   {

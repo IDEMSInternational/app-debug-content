@@ -7,13 +7,13 @@
   "rows": [
     {
       "type": "title",
-      "name": "title",
       "value": "Example Protected Fields",
       "_translations": {
         "value": {}
       },
       "exclude_from_translation": true,
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
       "type": "text",

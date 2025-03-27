@@ -30,12 +30,16 @@
         "count": 1
       },
       {
+        "type": "apple_sign_in_button",
+        "count": 2
+      },
+      {
         "type": "audio",
         "count": 13
       },
       {
         "type": "button",
-        "count": 357
+        "count": 358
       },
       {
         "type": "calendar",
@@ -251,7 +255,7 @@
       },
       {
         "type": "text",
-        "count": 1021
+        "count": 1039
       },
       {
         "type": "text_area",
@@ -275,7 +279,7 @@
       },
       {
         "type": "title",
-        "count": 523
+        "count": 525
       },
       {
         "type": "toggle_bar",
@@ -315,7 +319,7 @@
       },
       {
         "type": "auth",
-        "count": 4
+        "count": 5
       },
       {
         "type": "auth_failure",
@@ -343,7 +347,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 35
+        "count": 38
       },
       {
         "type": "emit: force_restart",
@@ -1114,7 +1118,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 60
+        "total": 61
       },
       {
         "type": "template",
@@ -1125,6 +1129,11 @@
         "type": "template",
         "subtype": "example_generator",
         "total": 2
+      },
+      {
+        "type": "template",
+        "subtype": "example_hardcoded",
+        "total": 1
       },
       {
         "type": "template",

@@ -1420,6 +1420,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_accordion.xlsx"
     },
+    "comp_apple_sign_in_button": {
+      "flow_type": "template",
+      "flow_name": "comp_apple_sign_in_button",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_apple_sign_in_button.xlsx"
+    },
     "comp_audio": {
       "flow_type": "template",
       "flow_name": "comp_audio",
