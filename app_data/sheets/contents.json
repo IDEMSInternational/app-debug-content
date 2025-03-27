@@ -3650,10 +3650,10 @@
       "flow_subtype": "example_generator",
       "flow_type": "template"
     },
-    "example_hardcoded_fields": {
+    "example_protected_fields": {
       "flow_type": "template",
       "flow_subtype": "example_hardcoded",
-      "flow_name": "example_hardcoded_fields",
+      "flow_name": "example_protected_fields",
       "comments": "List of fields automatically populated by app",
       "_xlsxPath": "example_sheets/to_be_sorted/hardcoded_variables.xlsx"
     },

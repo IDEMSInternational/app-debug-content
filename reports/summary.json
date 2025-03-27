@@ -231,7 +231,7 @@
       },
       {
         "type": "subtitle",
-        "count": 59
+        "count": 52
       },
       {
         "type": "table",
@@ -251,7 +251,7 @@
       },
       {
         "type": "text",
-        "count": 1028
+        "count": 1021
       },
       {
         "type": "text_area",
@@ -275,7 +275,7 @@
       },
       {
         "type": "title",
-        "count": 524
+        "count": 523
       },
       {
         "type": "toggle_bar",
@@ -1125,11 +1125,6 @@
         "type": "template",
         "subtype": "example_generator",
         "total": 2
-      },
-      {
-        "type": "template",
-        "subtype": "example_hardcoded",
-        "total": 1
       },
       {
         "type": "template",
