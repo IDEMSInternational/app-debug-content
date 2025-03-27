@@ -1,0 +1,420 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "example_hardcoded",
+  "flow_name": "example_protected_fields",
+  "status": "released",
+  "comments": "List of fields automatically populated by app",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Protected Fields",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "value": "_app_first_launch: @fields._app_first_launch",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_3",
+      "_nested_name": "text_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_first_launch: @fields._app_first_launch",
+            "matchedExpression": "@fields._app_first_launch",
+            "type": "fields",
+            "fieldName": "_app_first_launch"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_first_launch": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_language: @fields._app_language",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_language: @fields._app_language",
+            "matchedExpression": "@fields._app_language",
+            "type": "fields",
+            "fieldName": "_app_language"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_language_direction: @fields._app_language_direction",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_language_direction: @fields._app_language_direction",
+            "matchedExpression": "@fields._app_language_direction",
+            "type": "fields",
+            "fieldName": "_app_language_direction"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language_direction": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_skin: @fields._app_skin",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_6",
+      "_nested_name": "text_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_skin: @fields._app_skin",
+            "matchedExpression": "@fields._app_skin",
+            "type": "fields",
+            "fieldName": "_app_skin"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_skin": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_theme: @fields._app_theme",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_theme: @fields._app_theme",
+            "matchedExpression": "@fields._app_theme",
+            "type": "fields",
+            "fieldName": "_app_theme"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_theme": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_update_available: @fields._app_update_available",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_8",
+      "_nested_name": "text_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_update_available: @fields._app_update_available",
+            "matchedExpression": "@fields._app_update_available",
+            "type": "fields",
+            "fieldName": "_app_update_available"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_update_available": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_update_downloaded: @fields._app_update_downloaded",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_9",
+      "_nested_name": "text_9",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_update_downloaded: @fields._app_update_downloaded",
+            "matchedExpression": "@fields._app_update_downloaded",
+            "type": "fields",
+            "fieldName": "_app_update_downloaded"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_update_downloaded": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_user_id: @fields._app_user_id",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_10",
+      "_nested_name": "text_10",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_user_id: @fields._app_user_id",
+            "matchedExpression": "@fields._app_user_id",
+            "type": "fields",
+            "fieldName": "_app_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_user_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_app_version: @fields._app_version",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_11",
+      "_nested_name": "text_11",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_app_version: @fields._app_version",
+            "matchedExpression": "@fields._app_version",
+            "type": "fields",
+            "fieldName": "_app_version"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_version": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_auth_user_id: @fields._auth_user_id",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_12",
+      "_nested_name": "text_12",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_auth_user_id: @fields._auth_user_id",
+            "matchedExpression": "@fields._auth_user_id",
+            "type": "fields",
+            "fieldName": "_auth_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_content_version: @fields._content_version",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_content_version: @fields._content_version",
+            "matchedExpression": "@fields._content_version",
+            "type": "fields",
+            "fieldName": "_content_version"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._content_version": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_deployment_name: @fields._deployment_name",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_14",
+      "_nested_name": "text_14",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_deployment_name: @fields._deployment_name",
+            "matchedExpression": "@fields._deployment_name",
+            "type": "fields",
+            "fieldName": "_deployment_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._deployment_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_feedback_selected_text: @fields._feedback_selected_text",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_15",
+      "_nested_name": "text_15",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_feedback_selected_text: @fields._feedback_selected_text",
+            "matchedExpression": "@fields._feedback_selected_text",
+            "type": "fields",
+            "fieldName": "_feedback_selected_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._feedback_selected_text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_feedback_sidebar_open: @fields._feedback_sidebar_open",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_16",
+      "_nested_name": "text_16",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_feedback_sidebar_open: @fields._feedback_sidebar_open",
+            "matchedExpression": "@fields._feedback_sidebar_open",
+            "type": "fields",
+            "fieldName": "_feedback_sidebar_open"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._feedback_sidebar_open": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_platform: @fields._platform",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_17",
+      "_nested_name": "text_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_platform: @fields._platform",
+            "matchedExpression": "@fields._platform",
+            "type": "fields",
+            "fieldName": "_platform"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._platform": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_server_sync_latest: @fields._server_sync_latest",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_18",
+      "_nested_name": "text_18",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_server_sync_latest: @fields._server_sync_latest",
+            "matchedExpression": "@fields._server_sync_latest",
+            "type": "fields",
+            "fieldName": "_server_sync_latest"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._server_sync_latest": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/to_be_sorted/hardcoded_variables.xlsx"
+}

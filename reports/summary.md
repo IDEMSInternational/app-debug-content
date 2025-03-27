@@ -60,18 +60,18 @@
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 59 |
+| subtitle | 52 |
 | table | 3 |
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1028 |
+| text | 1021 |
 | text_area | 13 |
 | text_box | 52 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 524 |
+| title | 523 |
 | toggle_bar | 68 |
 | update_action_list | 2 |
 | video | 4 |
@@ -298,7 +298,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | template | component_demo | 60 |
 | template | debug | 272 |
 | template | example_generator | 2 |
-| template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
 | template | example_sheet_defaults | 1 |
 | tour | debug | 4 |
