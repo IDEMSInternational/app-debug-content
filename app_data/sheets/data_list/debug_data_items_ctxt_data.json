@@ -1,0 +1,12 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_data_items_ctxt_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "value": "Some value"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_context.xlsx"
+}

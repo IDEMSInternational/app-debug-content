@@ -591,6 +591,11 @@
       "data_list_name": "debug_answer_list_partial",
       "_xlsxPath": "debug_sheets/debug_answer_list.xlsx"
     },
+    "debug_data_items_ctxt_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_data_items_ctxt_data",
+      "_xlsxPath": "debug_sheets/debug_data_items_context.xlsx"
+    },
     "debug_data_items_rendering_data": {
       "flow_type": "data_list",
       "flow_name": "debug_data_items_rendering_data",
@@ -1823,6 +1828,12 @@
       "flow_name": "debug_accordion_variables",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_accordion.xlsx"
+    },
+    "debug_action_copy": {
+      "flow_type": "template",
+      "flow_name": "debug_action_copy",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_action_copy.xlsx"
     },
     "debug_actions_bottom": {
       "flow_type": "template",
@@ -3485,6 +3496,11 @@
       "_overrides": {
         "debug_circ_override_1": true
       }
+    },
+    "debug_data_items_context": {
+      "flow_type": "template",
+      "flow_name": "debug_data_items_context",
+      "_xlsxPath": "debug_sheets/debug_data_items_context.xlsx"
     },
     "debug_data_items_local": {
       "flow_type": "template",

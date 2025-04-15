@@ -301,10 +301,6 @@
     "md5Checksum": "81136e04436759812dc3f6e90c61de11",
     "size_kb": 0.3
   },
-  "images/map_view_bg.jpg": {
-    "md5Checksum": "cd5aec4cbcae96e47d78c7891bfb04c3",
-    "size_kb": 129.5
-  },
   "images/modal_bg.svg": {
     "md5Checksum": "83fa2d24b91d02b6e8c2b3a95607c572",
     "size_kb": 37.3
@@ -312,6 +308,14 @@
   "images/module-1.png": {
     "md5Checksum": "840e6c66b936d36e7c485c1f96972573",
     "size_kb": 28.2
+  },
+  "images/progress_path_bg_plh_kids_kw.jpg": {
+    "md5Checksum": "cd5aec4cbcae96e47d78c7891bfb04c3",
+    "size_kb": 129.5
+  },
+  "images/progress_path_bg_plh_kids_tz.jpg": {
+    "md5Checksum": "8936cdd0159371d00dee68d582de1875",
+    "size_kb": 85.1
   },
   "images/shining_diamond.png": {
     "md5Checksum": "fb49318e1789c7b70ac407bec6ec25c2",

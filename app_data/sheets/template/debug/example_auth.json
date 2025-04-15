@@ -76,6 +76,7 @@
     },
     {
       "type": "google_sign_in_button",
+      "name": "sign_in_google",
       "value": "Sign in with Google",
       "_translations": {
         "value": {
@@ -94,8 +95,7 @@
         }
       ],
       "condition": "!@local.is_user_signed_in",
-      "name": "google_sign_in_button_6",
-      "_nested_name": "google_sign_in_button_6",
+      "_nested_name": "sign_in_google",
       "_dynamicFields": {
         "condition": [
           {
@@ -113,8 +113,54 @@
       }
     },
     {
+      "type": "apple_sign_in_button",
+      "name": "sign_in_apple",
+      "value": "Sign in with Apple",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "condition": "!@local.is_user_signed_in && @fields._platform === \"ios\"",
+      "_nested_name": "sign_in_apple",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.is_user_signed_in && @fields._platform === \"ios\"",
+            "matchedExpression": "!@local.is_user_signed_in",
+            "type": "local",
+            "fieldName": "is_user_signed_in"
+          },
+          {
+            "fullExpression": "!@local.is_user_signed_in && @fields._platform === \"ios\"",
+            "matchedExpression": "@fields._platform",
+            "type": "fields",
+            "fieldName": "_platform"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.is_user_signed_in": [
+          "condition"
+        ],
+        "@fields._platform": [
+          "condition"
+        ]
+      }
+    },
+    {
       "type": "button",
-      "name": "sign_in",
       "value": "Sign in with Google",
       "_translations": {
         "value": {
@@ -142,54 +188,8 @@
         }
       ],
       "condition": false,
-      "_nested_name": "sign_in"
-    },
-    {
-      "type": "button",
-      "name": "sign_in",
-      "value": "Sign in with Apple",
-      "_translations": {
-        "value": {
-          "es_sp": true
-        }
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "auth",
-          "args": [
-            "sign_in_apple"
-          ],
-          "_raw": "click | auth: sign_in_apple",
-          "_cleaned": "click | auth: sign_in_apple"
-        },
-        {
-          "trigger": "click",
-          "action_id": "emit",
-          "args": [
-            "force_reprocess"
-          ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
-        }
-      ],
-      "condition": "!@local.is_user_signed_in",
-      "_nested_name": "sign_in",
-      "_dynamicFields": {
-        "condition": [
-          {
-            "fullExpression": "!@local.is_user_signed_in",
-            "matchedExpression": "!@local.is_user_signed_in",
-            "type": "local",
-            "fieldName": "is_user_signed_in"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "!@local.is_user_signed_in": [
-          "condition"
-        ]
-      }
+      "name": "button_8",
+      "_nested_name": "button_8"
     },
     {
       "type": "button",
@@ -444,6 +444,7 @@
         "width: 96px",
         "height: 96px"
       ],
+      "condition": "@fields._auth_user_picture",
       "name": "image_18",
       "_nested_name": "image_18",
       "_dynamicFields": {
@@ -454,11 +455,20 @@
             "type": "fields",
             "fieldName": "_auth_user_picture"
           }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@fields._auth_user_picture",
+            "matchedExpression": "@fields._auth_user_picture",
+            "type": "fields",
+            "fieldName": "_auth_user_picture"
+          }
         ]
       },
       "_dynamicDependencies": {
         "@fields._auth_user_picture": [
-          "value"
+          "value",
+          "condition"
         ]
       }
     },

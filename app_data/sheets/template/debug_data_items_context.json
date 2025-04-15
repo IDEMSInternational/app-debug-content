@@ -1,0 +1,347 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_context",
+  "status": "released",
+  "rows": [
+    {
+      "name": "external_string",
+      "value": "External 1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "external_string"
+    },
+    {
+      "name": "external_num",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "external_num"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.debug_data_items_ctxt_data",
+      "rows": [
+        {
+          "name": "internal_string",
+          "value": "Internal 1",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "data_items_4.internal_string"
+        },
+        {
+          "name": "internal_num",
+          "value": 3,
+          "type": "set_variable",
+          "_nested_name": "data_items_4.internal_num"
+        },
+        {
+          "name": "internal_list",
+          "value": [
+            "External 1",
+            "Internal 1"
+          ],
+          "type": "set_variable",
+          "_nested_name": "data_items_4.internal_list"
+        },
+        {
+          "type": "title",
+          "value": "Local vars defined outside of data-items, read inside",
+          "_translations": {
+            "value": {}
+          },
+          "name": "title_4",
+          "_nested_name": "data_items_4.title_4"
+        },
+        {
+          "type": "text",
+          "value": "external_string: @local.external_string",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_5",
+          "_nested_name": "data_items_4.text_5",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "external_string: @local.external_string",
+                "matchedExpression": "@local.external_string",
+                "type": "local",
+                "fieldName": "external_string"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.external_string": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "external_num: @local.external_num",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_6",
+          "_nested_name": "data_items_4.text_6",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "external_num: @local.external_num",
+                "matchedExpression": "@local.external_num",
+                "type": "local",
+                "fieldName": "external_num"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.external_num": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "title",
+          "value": "Local vars defined inside of data-items, read inside",
+          "_translations": {
+            "value": {}
+          },
+          "name": "title_7",
+          "_nested_name": "data_items_4.title_7"
+        },
+        {
+          "type": "text",
+          "value": "internal_string: @local.internal_string",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_8",
+          "_nested_name": "data_items_4.text_8",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "internal_string: @local.internal_string",
+                "matchedExpression": "@local.internal_string",
+                "type": "local",
+                "fieldName": "internal_string"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.internal_string": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "internal_num: @local.internal_num",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_9",
+          "_nested_name": "data_items_4.text_9",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "internal_num: @local.internal_num",
+                "matchedExpression": "@local.internal_num",
+                "type": "local",
+                "fieldName": "internal_num"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.internal_num": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "internal_list: @local.internal_list",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_10",
+          "_nested_name": "data_items_4.text_10",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "internal_list: @local.internal_list",
+                "matchedExpression": "@local.internal_list",
+                "type": "local",
+                "fieldName": "internal_list"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.internal_list": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "title",
+          "value": "Use case: expression involving external and internal local vars",
+          "_translations": {
+            "value": {}
+          },
+          "name": "title_11",
+          "_nested_name": "data_items_4.title_11"
+        },
+        {
+          "type": "display_group",
+          "rows": [
+            {
+              "name": "combination_calc_1",
+              "value": "@calc(@local.internal_list.includes(@local.external_string))",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "data_items_4.display_group_12.combination_calc_1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@calc(@local.internal_list.includes(@local.external_string))",
+                    "matchedExpression": "@local.internal_list.includes",
+                    "type": "local",
+                    "fieldName": "internal_list"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.internal_list.includes(@local.external_string))",
+                    "matchedExpression": "@local.external_string",
+                    "type": "local",
+                    "fieldName": "external_string"
+                  },
+                  {
+                    "fullExpression": "@calc(@local.internal_list.includes(@local.external_string))",
+                    "matchedExpression": "@calc(@local.internal_list.includes(@local.external_string))",
+                    "type": "calc",
+                    "fieldName": "@local.internal_list.includes(@local.external_string)"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.internal_list.includes": [
+                  "value"
+                ],
+                "@local.external_string": [
+                  "value"
+                ],
+                "@calc(@local.internal_list.includes(@local.external_string))": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "combination_calc_1: @local.combination_calc_1",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "data_items_4.display_group_12.text_2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "combination_calc_1: @local.combination_calc_1",
+                    "matchedExpression": "@local.combination_calc_1",
+                    "type": "local",
+                    "fieldName": "combination_calc_1"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.combination_calc_1": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "combination_exp_1",
+              "value": "@local.internal_list.includes(@local.external_string)",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "data_items_4.display_group_12.combination_exp_1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.internal_list.includes(@local.external_string)",
+                    "matchedExpression": "@local.internal_list.includes",
+                    "type": "local",
+                    "fieldName": "internal_list"
+                  },
+                  {
+                    "fullExpression": "@local.internal_list.includes(@local.external_string)",
+                    "matchedExpression": "@local.external_string",
+                    "type": "local",
+                    "fieldName": "external_string"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.internal_list.includes": [
+                  "value"
+                ],
+                "@local.external_string": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "combination_exp_1: @local.combination_exp_1",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_4",
+              "_nested_name": "data_items_4.display_group_12.text_4",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "combination_exp_1: @local.combination_exp_1",
+                    "matchedExpression": "@local.combination_exp_1",
+                    "type": "local",
+                    "fieldName": "combination_exp_1"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.combination_exp_1": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "name": "display_group_12",
+          "_nested_name": "data_items_4.display_group_12"
+        }
+      ],
+      "name": "data_items_4",
+      "_nested_name": "data_items_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_data_items_ctxt_data",
+            "matchedExpression": "@data.debug_data_items_ctxt_data",
+            "type": "data",
+            "fieldName": "debug_data_items_ctxt_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_data_items_ctxt_data": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_context.xlsx"
+}

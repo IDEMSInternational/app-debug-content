@@ -10,19 +10,19 @@
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
-| apple_sign_in_button | 2 |
+| apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 358 |
+| button | 359 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 55 |
+| combo_box | 59 |
 | dashed_box | 19 |
-| data_items | 71 |
+| data_items | 73 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 214 |
+| display_group | 216 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 3 |
@@ -44,8 +44,8 @@
 | plh_bottom_nav | 1 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
-| plh_module_list_item | 8 |
-| plh_progress_path | 2 |
+| plh_module_list_item | 9 |
+| plh_progress_path | 3 |
 | progress_bar | 1 |
 | progress_path | 3 |
 | qr_code | 2 |
@@ -57,7 +57,7 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 782 |
+| set_variable | 792 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -66,13 +66,13 @@
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1039 |
+| text | 1053 |
 | text_area | 13 |
-| text_box | 52 |
+| text_box | 53 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 525 |
+| title | 531 |
 | toggle_bar | 68 |
 | update_action_list | 2 |
 | video | 4 |
@@ -88,9 +88,10 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 5 |
+| auth | 4 |
 | auth_failure | 1 |
 | auth_success | 1 |
+| copy | 1 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
@@ -121,7 +122,7 @@
 | set_field | 116 |
 | set_item | 33 |
 | set_items | 2 |
-| set_local | 52 |
+| set_local | 56 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
@@ -137,8 +138,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31746 KB | 31.7 MB |
-| unused | 4579 KB | 4.6 MB |
+| total | 31616 KB | 31.6 MB |
+| unused | 4794 KB | 4.8 MB |
 </details>
 
 <details open>
@@ -157,6 +158,8 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/airplane_blue.svg | 1.5 |
 | images/icons/favicon.svg | 2.1 |
 | images/icons/red_cross_grey.png | 0.2 |
+| images/progress_path_bg_plh_kids_kw.jpg | 129.5 |
+| images/progress_path_bg_plh_kids_tz.jpg | 85.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
 | ios/icon-only.png | 128.1 |
@@ -177,6 +180,7 @@ Assets that have references within sheets but do not appear in app-data
 | debug_asset_pack_1/image_2.png | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
 | https://www.w3schools.com/html/mov_bbb.mp4 | 1 |
+| images/map_view_bg.jpg | 1 |
 </details>
 
 <details >
@@ -235,7 +239,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 13 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 9 |
+| images/icons/locked.png | 0.9 | 10 |
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 7 |
@@ -248,7 +252,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 22 |
-| images/map_view_bg.jpg | 129.5 | 2 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 7 |
 | images/shining_diamond.png | 17.7 | 1 |
@@ -277,7 +280,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 36 |
+| data_list |  | 37 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 12 |
@@ -295,9 +298,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 99 |
+| template |  | 100 |
 | template | component_demo | 61 |
-| template | debug | 272 |
+| template | debug | 273 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

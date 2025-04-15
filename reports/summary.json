@@ -31,7 +31,7 @@
       },
       {
         "type": "apple_sign_in_button",
-        "count": 2
+        "count": 3
       },
       {
         "type": "audio",
@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 358
+        "count": 359
       },
       {
         "type": "calendar",
@@ -55,7 +55,7 @@
       },
       {
         "type": "combo_box",
-        "count": 55
+        "count": 59
       },
       {
         "type": "dashed_box",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 71
+        "count": 73
       },
       {
         "type": "debug_toggle",
@@ -79,7 +79,7 @@
       },
       {
         "type": "display_group",
-        "count": 214
+        "count": 216
       },
       {
         "type": "drawer",
@@ -167,11 +167,11 @@
       },
       {
         "type": "plh_module_list_item",
-        "count": 8
+        "count": 9
       },
       {
         "type": "plh_progress_path",
-        "count": 2
+        "count": 3
       },
       {
         "type": "progress_bar",
@@ -219,7 +219,7 @@
       },
       {
         "type": "set_variable",
-        "count": 782
+        "count": 792
       },
       {
         "type": "simple_checkbox",
@@ -255,7 +255,7 @@
       },
       {
         "type": "text",
-        "count": 1039
+        "count": 1053
       },
       {
         "type": "text_area",
@@ -263,7 +263,7 @@
       },
       {
         "type": "text_box",
-        "count": 52
+        "count": 53
       },
       {
         "type": "text_bubble",
@@ -279,7 +279,7 @@
       },
       {
         "type": "title",
-        "count": 525
+        "count": 531
       },
       {
         "type": "toggle_bar",
@@ -319,7 +319,7 @@
       },
       {
         "type": "auth",
-        "count": 5
+        "count": 4
       },
       {
         "type": "auth_failure",
@@ -327,6 +327,10 @@
       },
       {
         "type": "auth_success",
+        "count": 1
+      },
+      {
+        "type": "copy",
         "count": 1
       },
       {
@@ -451,7 +455,7 @@
       },
       {
         "type": "set_local",
-        "count": 52
+        "count": 56
       },
       {
         "type": "share",
@@ -491,13 +495,13 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31746 KB",
-        "MB": "31.7 MB"
+        "KB": "31616 KB",
+        "MB": "31.6 MB"
       },
       {
         "assets": "unused",
-        "KB": "4579 KB",
-        "MB": "4.6 MB"
+        "KB": "4794 KB",
+        "MB": "4.8 MB"
       }
     ]
   },
@@ -538,6 +542,14 @@
       {
         "path": "images/icons/red_cross_grey.png",
         "size_kb": 0.2
+      },
+      {
+        "path": "images/progress_path_bg_plh_kids_kw.jpg",
+        "size_kb": 129.5
+      },
+      {
+        "path": "images/progress_path_bg_plh_kids_tz.jpg",
+        "size_kb": 85.1
       },
       {
         "path": "ios/icon-background.png",
@@ -589,6 +601,11 @@
       },
       {
         "path": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "images/map_view_bg.jpg",
         "count": 1,
         "missing": true
       }
@@ -843,7 +860,7 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 9,
+        "count": 10,
         "size_kb": 0.9
       },
       {
@@ -905,11 +922,6 @@
         "path": "images/icons/tick_white.svg",
         "count": 22,
         "size_kb": 0.3
-      },
-      {
-        "path": "images/map_view_bg.jpg",
-        "count": 2,
-        "size_kb": 129.5
       },
       {
         "path": "images/modal_bg.svg",
@@ -1023,7 +1035,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 36
+        "total": 37
       },
       {
         "type": "data_list",
@@ -1113,7 +1125,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 99
+        "total": 100
       },
       {
         "type": "template",
@@ -1123,7 +1135,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 272
+        "total": 273
       },
       {
         "type": "template",

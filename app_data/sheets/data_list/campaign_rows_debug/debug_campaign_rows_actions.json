@@ -74,10 +74,10 @@
           "trigger": "click",
           "action_id": "go_to",
           "args": [
-            "@data.something_fun.co_chef.text_template"
+            "example_text"
           ],
-          "_raw": "go_to: @data.something_fun.co_chef.text_template",
-          "_cleaned": "click | go_to: @data.something_fun.co_chef.text_template"
+          "_raw": "click | go_to: example_text",
+          "_cleaned": "click | go_to: example_text"
         },
         {
           "trigger": "sent",
