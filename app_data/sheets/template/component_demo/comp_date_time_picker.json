@@ -1,0 +1,362 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_date_time_picker",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Default",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "name": "var_1",
+      "type": "set_variable",
+      "_nested_name": "var_1"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_1",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "var_1",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: var_1: this.value",
+          "_cleaned": "changed | set_local: var_1: this.value"
+        }
+      ],
+      "_nested_name": "date_time_picker_1"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.var_1",
+            "matchedExpression": "@local.var_1",
+            "type": "local",
+            "fieldName": "var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Disabled",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "var_2",
+      "type": "set_variable",
+      "_nested_name": "var_2"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_2",
+      "value": "1994-12-15T13:47",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "var_2",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: var_2: this.value",
+          "_cleaned": "changed | set_local: var_2: this.value"
+        }
+      ],
+      "parameter_list": {
+        "disabled": "true"
+      },
+      "_nested_name": "date_time_picker_2"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.var_2",
+            "matchedExpression": "@local.var_2",
+            "type": "local",
+            "fieldName": "var_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_2": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Date Only",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_3"
+    },
+    {
+      "name": "var_3",
+      "type": "set_variable",
+      "_nested_name": "var_3"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_3",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "var_3",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: var_3: this.value",
+          "_cleaned": "changed | set_local: var_3: this.value"
+        }
+      ],
+      "parameter_list": {
+        "type": "date"
+      },
+      "_nested_name": "date_time_picker_3"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_3",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.var_3",
+            "matchedExpression": "@local.var_3",
+            "type": "local",
+            "fieldName": "var_3"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_3": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Time Only",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_4"
+    },
+    {
+      "name": "var_4",
+      "type": "set_variable",
+      "_nested_name": "var_4"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_4",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "var_4",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: var_4: this.value",
+          "_cleaned": "changed | set_local: var_4: this.value"
+        }
+      ],
+      "parameter_list": {
+        "type": "time"
+      },
+      "_nested_name": "date_time_picker_4"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_4",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_17",
+      "_nested_name": "text_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.var_4",
+            "matchedExpression": "@local.var_4",
+            "type": "local",
+            "fieldName": "var_4"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_4": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "Date Time",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_5"
+    },
+    {
+      "name": "var_5",
+      "type": "set_variable",
+      "_nested_name": "var_5"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_5",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "var_5",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: var_5: this.value",
+          "_cleaned": "changed | set_local: var_5: this.value"
+        }
+      ],
+      "parameter_list": {
+        "type": "date-time"
+      },
+      "_nested_name": "date_time_picker_5"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_5",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_21",
+      "_nested_name": "text_21",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.var_5",
+            "matchedExpression": "@local.var_5",
+            "type": "local",
+            "fieldName": "var_5"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_5": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "With Value",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_6"
+    },
+    {
+      "name": "var_6",
+      "type": "set_variable",
+      "_nested_name": "var_6"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_6",
+      "value": "1994-12-15T13:47",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "var_6",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: var_6: this.value",
+          "_cleaned": "changed | set_local: var_6: this.value"
+        }
+      ],
+      "parameter_list": {
+        "type": "date-time"
+      },
+      "_nested_name": "date_time_picker_6"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_6",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_25",
+      "_nested_name": "text_25",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.var_6",
+            "matchedExpression": "@local.var_6",
+            "type": "local",
+            "fieldName": "var_6"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_6": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_date_time_picker.xlsx"
+}

@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 359
+        "count": 360
       },
       {
         "type": "calendar",
@@ -64,6 +64,10 @@
       {
         "type": "data_items",
         "count": 73
+      },
+      {
+        "type": "date_time_picker",
+        "count": 6
       },
       {
         "type": "debug_toggle",
@@ -219,7 +223,7 @@
       },
       {
         "type": "set_variable",
-        "count": 792
+        "count": 798
       },
       {
         "type": "simple_checkbox",
@@ -255,7 +259,7 @@
       },
       {
         "type": "text",
-        "count": 1053
+        "count": 1059
       },
       {
         "type": "text_area",
@@ -263,7 +267,7 @@
       },
       {
         "type": "text_box",
-        "count": 53
+        "count": 54
       },
       {
         "type": "text_bubble",
@@ -279,7 +283,7 @@
       },
       {
         "type": "title",
-        "count": 531
+        "count": 538
       },
       {
         "type": "toggle_bar",
@@ -331,7 +335,7 @@
       },
       {
         "type": "copy",
-        "count": 1
+        "count": 2
       },
       {
         "type": "download_assets",
@@ -455,7 +459,7 @@
       },
       {
         "type": "set_local",
-        "count": 56
+        "count": 62
       },
       {
         "type": "share",
@@ -1130,12 +1134,12 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 61
+        "total": 62
       },
       {
         "type": "template",
         "subtype": "debug",
-        "total": 273
+        "total": 274
       },
       {
         "type": "template",
