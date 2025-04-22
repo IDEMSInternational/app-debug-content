@@ -8,5 +8,5 @@ on:
 
 jobs:
   ios_build:
-    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-build.yml@master
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-build.yml@feat/pdf-viewer-compatibility-check
     secrets: inherit
