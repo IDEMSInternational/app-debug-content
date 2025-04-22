@@ -1,0 +1,83 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_action_copy",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Click button to copy text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_1",
+      "_nested_name": "text_box_1"
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Copy",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "copy",
+          "args": [],
+          "_raw": "click | copy | text:@local.text_box_1",
+          "_cleaned": "click | copy | text:@local.text_box_1",
+          "params": {
+            "text": "@local.text_box_1"
+          }
+        }
+      ],
+      "_nested_name": "button_default",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | copy | text:@local.text_box_1",
+                "matchedExpression": "@local.text_box_1",
+                "type": "local",
+                "fieldName": "text_box_1"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | copy | text:@local.text_box_1",
+                "matchedExpression": "@local.text_box_1",
+                "type": "local",
+                "fieldName": "text_box_1"
+              }
+            ],
+            "params": {
+              "text": [
+                {
+                  "fullExpression": "@local.text_box_1",
+                  "matchedExpression": "@local.text_box_1",
+                  "type": "local",
+                  "fieldName": "text_box_1"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.text_box_1": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_action_copy.xlsx"
+}

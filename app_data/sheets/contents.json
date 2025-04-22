@@ -1485,6 +1485,12 @@
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_data_items.xlsx"
     },
+    "comp_date_time_picker": {
+      "flow_type": "template",
+      "flow_name": "comp_date_time_picker",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_date_time_picker.xlsx"
+    },
     "comp_demo_basic": {
       "flow_type": "template",
       "flow_name": "comp_demo_basic",
@@ -3395,6 +3401,12 @@
       "flow_name": "example_workshops_accordion",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_accordion.xlsx"
+    },
+    "feature_action_copy": {
+      "flow_type": "template",
+      "flow_name": "feature_action_copy",
+      "flow_subtype": "debug",
+      "_xlsxPath": "feature_sheets/feature_action_copy.xlsx"
     },
     "feature_combo_box_placeholder": {
       "flow_type": "template",

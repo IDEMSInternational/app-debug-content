@@ -12,13 +12,14 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 359 |
+| button | 360 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 59 |
 | dashed_box | 19 |
 | data_items | 73 |
+| date_time_picker | 6 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
@@ -57,7 +58,7 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 792 |
+| set_variable | 798 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -66,13 +67,13 @@
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 141 |
-| text | 1053 |
+| text | 1059 |
 | text_area | 13 |
-| text_box | 53 |
+| text_box | 54 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 531 |
+| title | 538 |
 | toggle_bar | 68 |
 | update_action_list | 2 |
 | video | 4 |
@@ -91,7 +92,7 @@
 | auth | 4 |
 | auth_failure | 1 |
 | auth_success | 1 |
-| copy | 1 |
+| copy | 2 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
@@ -122,7 +123,7 @@
 | set_field | 116 |
 | set_item | 33 |
 | set_items | 2 |
-| set_local | 56 |
+| set_local | 62 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
@@ -299,8 +300,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 100 |
-| template | component_demo | 61 |
-| template | debug | 273 |
+| template | component_demo | 62 |
+| template | debug | 274 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
