@@ -12,27 +12,29 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 360 |
+| button | 369 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 59 |
+| combo_box | 60 |
 | dashed_box | 19 |
-| data_items | 73 |
+| data_items | 74 |
+| data_query | 8 |
 | date_time_picker | 6 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 216 |
+| display_group | 225 |
 | drawer | 1 |
 | form | 9 |
-| google_sign_in_button | 3 |
+| google_sign_in_button | 4 |
 | html | 4 |
 | image | 83 |
 | items | 49 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 2 |
+| markdown | 10 |
 | nav_group | 6 |
 | navigation_bar | 6 |
 | nested_properties | 32 |
@@ -58,22 +60,22 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 798 |
+| set_variable | 805 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 52 |
-| table | 3 |
+| table | 6 |
 | task_card | 31 |
 | task_progress_bar | 6 |
-| template | 141 |
-| text | 1059 |
+| template | 142 |
+| text | 1092 |
 | text_area | 13 |
-| text_box | 54 |
+| text_box | 56 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 538 |
+| title | 556 |
 | toggle_bar | 68 |
 | update_action_list | 2 |
 | video | 4 |
@@ -89,15 +91,15 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 4 |
+| auth | 5 |
 | auth_failure | 1 |
 | auth_success | 1 |
 | copy | 2 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
-| emit: force_reload | 31 |
-| emit: force_reprocess | 38 |
+| emit: force_reload | 32 |
+| emit: force_reprocess | 40 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 5 |
@@ -106,12 +108,13 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 79 |
+| go_to | 80 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 11 |
 | open_external | 2 |
+| plh_parent_group | 7 |
 | pop_up | 49 |
 | process_template | 2 |
 | remove_item | 1 |
@@ -121,7 +124,7 @@
 | screen_orientation | 3 |
 | set_data | 18 |
 | set_field | 116 |
-| set_item | 33 |
+| set_item | 34 |
 | set_items | 2 |
 | set_local | 62 |
 | share | 14 |
@@ -281,11 +284,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 37 |
+| data_list |  | 41 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 12 |
-| data_list | debug | 21 |
+| data_list | debug | 24 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
@@ -299,9 +302,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 100 |
+| template |  | 101 |
 | template | component_demo | 62 |
-| template | debug | 274 |
+| template | debug | 277 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

@@ -1,0 +1,21 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_pdf_params",
+  "status": "released",
+  "rows": [
+    {
+      "id": "compatibility_error_message",
+      "param": "compatibility_error_message",
+      "description": "Message displayed when legacy browser detected",
+      "default": "Embedded PDFs are not supported in this browser, please use an up-to-date version of Google Chrome to view or open in external app"
+    },
+    {
+      "id": "open_external_text",
+      "param": "open_external_text",
+      "description": "Message displayed on legacy browser prompt button to open with external app",
+      "default": "Open with..."
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_pdf.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

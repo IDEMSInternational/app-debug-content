@@ -10,5 +10,6 @@
       "function": "function merge_families(familyData: any[], parent1Id: string, parent2Id: string) => {\n    try {\n      const mergedArray = familyData.filter(arr => arr.includes(parent1Id) || arr.includes(parent2Id)).flat();\n      const familyDataUpdated = familyData.filter(arr => !arr.includes(parent1Id) && !arr.includes(parent2Id));\n      familyDataUpdated.push(mergedArray)\n      return familyDataUpdated\n    } catch (error) {\n      console.error(\"[merge_families] error\", { familyData, parent1Id, parent2Id, error });\n    }\n  }"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_calc_functions.xlsx"
+  "_xlsxPath": "debug_sheets/debug_calc_functions.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
 }

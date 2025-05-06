@@ -1,0 +1,16 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "named_data_queries",
+  "status": "released",
+  "rows": [
+    {
+      "id": "next_module",
+      "value": "completed === false;",
+      "parameter_list": [
+        "list_id: data_query_items"
+      ]
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_query.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

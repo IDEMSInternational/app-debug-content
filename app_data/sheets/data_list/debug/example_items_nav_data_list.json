@@ -22,5 +22,6 @@
       "template": "example_text_button; example_text_image; example_text"
     }
   ],
-  "_xlsxPath": "example_sheets/example_items.xlsx"
+  "_xlsxPath": "example_sheets/example_items.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
 }

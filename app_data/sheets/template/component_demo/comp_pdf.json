@@ -6,52 +6,134 @@
   "rows": [
     {
       "type": "title",
-      "name": "title",
       "value": "PDF Viewer Component",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title"
+      "name": "title_2",
+      "_nested_name": "title_2"
     },
     {
-      "name": "error_message",
-      "value": "This feature is not supported in this browser, please use an up-to-date version of Google Chrome to view",
+      "name": "chrome_min_version",
+      "value": "119 (released October 2023)",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "error_message"
+      "_nested_name": "chrome_min_version"
+    },
+    {
+      "type": "text",
+      "value": "The `pdf` component displays pdf documents within an inline reader.\n\nThis feature is only compatible in modern browsers that use an underlying chrome version > @local.chrome_min_version\n\nOn legacy browsers will show button to open in external application instead.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "The `pdf` component displays pdf documents within an inline reader.\n\nThis feature is only compatible in modern browsers that use an underlying chrome version > @local.chrome_min_version\n\nOn legacy browsers will show button to open in external application instead.",
+            "matchedExpression": "@local.chrome_min_version",
+            "type": "local",
+            "fieldName": "chrome_min_version"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.chrome_min_version": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Authoring Parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "table",
+      "value": "comp_pdf_params",
+      "_translations": {
+        "value": {}
+      },
+      "name": "table_6",
+      "_nested_name": "table_6"
+    },
+    {
+      "type": "title",
+      "value": "Example",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "name": "compatibility_error_message",
+      "value": "Embedded PDFs are not supported in this browser, please use an up-to-date version of Google Chrome to view or open in external app",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "compatibility_error_message"
+    },
+    {
+      "name": "open_external_text",
+      "value": "Open with...",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "open_external_text"
     },
     {
       "type": "pdf",
-      "name": "pdf_viewer",
       "value": "example_pdf.pdf",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "starting_page": "3",
-        "error_message": "@local.error_message"
+        "compatibility_error_message": "@local.compatibility_error_message",
+        "open_external_text": "@local.open_external_text"
       },
-      "_nested_name": "pdf_viewer",
+      "name": "pdf_10",
+      "_nested_name": "pdf_10",
       "_dynamicFields": {
         "parameter_list": {
-          "error_message": [
+          "compatibility_error_message": [
             {
-              "fullExpression": "@local.error_message",
-              "matchedExpression": "@local.error_message",
+              "fullExpression": "@local.compatibility_error_message",
+              "matchedExpression": "@local.compatibility_error_message",
               "type": "local",
-              "fieldName": "error_message"
+              "fieldName": "compatibility_error_message"
+            }
+          ],
+          "open_external_text": [
+            {
+              "fullExpression": "@local.open_external_text",
+              "matchedExpression": "@local.open_external_text",
+              "type": "local",
+              "fieldName": "open_external_text"
             }
           ]
         }
       },
       "_dynamicDependencies": {
-        "@local.error_message": [
-          "parameter_list.error_message"
+        "@local.compatibility_error_message": [
+          "parameter_list.compatibility_error_message"
+        ],
+        "@local.open_external_text": [
+          "parameter_list.open_external_text"
         ]
       }
     }
   ],
-  "_xlsxPath": "component_sheets/component_pdf.xlsx"
+  "_xlsxPath": "component_sheets/component_pdf.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
 }

@@ -1,0 +1,32 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_parent_group_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "parent_group_1",
+      "name": "parent_group_1",
+      "text": "Parent Group 1",
+      "archived": false,
+      "hidden": false
+    },
+    {
+      "id": "parent_group_2",
+      "name": "parent_group_2",
+      "text": "Parent Group 2",
+      "archived": false,
+      "hidden": false
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_shared_parent_group.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_metadata": {
+    "archived": {
+      "type": "boolean"
+    },
+    "hidden": {
+      "type": "boolean"
+    }
+  }
+}
