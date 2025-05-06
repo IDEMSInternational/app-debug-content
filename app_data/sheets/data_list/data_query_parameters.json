@@ -1,0 +1,38 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "data_query_parameters",
+  "status": "released",
+  "rows": [
+    {
+      "id": "list_id",
+      "required": "*",
+      "type": "string",
+      "description": "ID of data_list to query"
+    },
+    {
+      "id": "ref",
+      "type": "string",
+      "description": "Ref if passing query from data_list instead of defining inline. \nE.g. `@data.query_list.example_query_1`\n\nData from the ref will supercede any other parameters or values set inline"
+    },
+    {
+      "id": "condition_type",
+      "type": "and | or",
+      "description": "If using multiple query conditions within value, specify whether to join these conditions as \"and\" or \"or\" operations",
+      "default": "and"
+    },
+    {
+      "id": "sort",
+      "type": "string",
+      "description": "Specify columns and directions to sort by. Sort default `id`.\n\nMultiple columns should be comma-separated, e.g. `sort: completed, score`\n\nTo sort descending include modifer, e.g. `sort: completed, score(desc)`",
+      "default": "id"
+    },
+    {
+      "id": "raw",
+      "type": "boolean",
+      "description": "Specify if using raw mango query expression. Default \"false\".\n\nNOTE - raw queries should include full json structure as defined at:\n\nhttps://github.com/cloudant/mango?tab=readme-ov-file#json-syntax-descriptions",
+      "default": false
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_query.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

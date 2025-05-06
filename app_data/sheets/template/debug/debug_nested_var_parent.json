@@ -1,0 +1,133 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_parent",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Parent Template",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_child",
+      "parameter_list": {
+        "variant": "box_white",
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "template",
+          "name": "template_child",
+          "value": "debug_nested_var_child",
+          "rows": [],
+          "_nested_name": "dg_child.template_child"
+        },
+        {
+          "type": "text",
+          "name": "text_1",
+          "value": "@local.dg_child.template_child.combo_box.value",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_child.text_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.dg_child.template_child.combo_box.value",
+                "matchedExpression": "@local.dg_child.template_child.combo_box.value",
+                "type": "local",
+                "fieldName": "dg_child"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.dg_child.template_child.combo_box.value": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "text_2",
+          "value": "@local.template_child.combo_box.value",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_child.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.template_child.combo_box.value",
+                "matchedExpression": "@local.template_child.combo_box.value",
+                "type": "local",
+                "fieldName": "template_child"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.template_child.combo_box.value": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_child"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "@local.dg_child.template_child.combo_box.value",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.dg_child.template_child.combo_box.value",
+            "matchedExpression": "@local.dg_child.template_child.combo_box.value",
+            "type": "local",
+            "fieldName": "dg_child"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.dg_child.template_child.combo_box.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "@local.template_child.combo_box.value",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.template_child.combo_box.value",
+            "matchedExpression": "@local.template_child.combo_box.value",
+            "type": "local",
+            "fieldName": "template_child"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.template_child.combo_box.value": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

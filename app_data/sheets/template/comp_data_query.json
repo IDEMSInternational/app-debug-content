@@ -1,0 +1,841 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_query",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Data Queries",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Data queries are used to lookup single values from data_lists and map to a local variable with realtime updating",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text",
+      "value": "To iterate over multiple items from a query see examples from the \"data_items\" component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "button",
+      "value": "Comp_data_items",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "comp_data_items"
+          ],
+          "_raw": "click | go_to : comp_data_items",
+          "_cleaned": "click | go_to : comp_data_items"
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    },
+    {
+      "type": "title",
+      "value": "Authoring Parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "table",
+      "value": "data_query_parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "table_7",
+      "_nested_name": "table_7"
+    },
+    {
+      "type": "title",
+      "value": "Example Data",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "table",
+      "value": "data_query_items",
+      "_translations": {
+        "value": {}
+      },
+      "name": "table_9",
+      "_nested_name": "table_9"
+    },
+    {
+      "type": "title",
+      "value": "Inline Queries",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_10",
+      "_nested_name": "title_10"
+    },
+    {
+      "type": "text",
+      "value": "Basic queries set the value of a local variable depending on the query.\nUse the `value` column to specify any logical query operations for data\n\nE.g. Find the next module not completed",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | name | value            | parameter_list                                        |\n|------------|---------|---------|-------------------------------------------------------|\n| data_query |  next_module |completed===false | list_id: data_query_items; |\n| text             |               | `@local.next_module.label`<br>`@local.next_module.completed` |      |",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_12",
+      "_nested_name": "markdown_12",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "| type       | name | value            | parameter_list                                        |\n|------------|---------|---------|-------------------------------------------------------|\n| data_query |  next_module |completed===false | list_id: data_query_items; |\n| text             |               | `@local.next_module.label`<br>`@local.next_module.completed` |      |",
+            "matchedExpression": "`@local.next_module.label",
+            "type": "raw",
+            "fieldName": "next_module"
+          },
+          {
+            "fullExpression": "| type       | name | value            | parameter_list                                        |\n|------------|---------|---------|-------------------------------------------------------|\n| data_query |  next_module |completed===false | list_id: data_query_items; |\n| text             |               | `@local.next_module.label`<br>`@local.next_module.completed` |      |",
+            "matchedExpression": "`@local.next_module.completed",
+            "type": "raw",
+            "fieldName": "next_module"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "`@local.next_module.label": [
+          "value"
+        ],
+        "`@local.next_module.completed": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_query",
+      "name": "next_module",
+      "value": "completed === false;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "list_id": "data_query_items"
+      },
+      "_nested_name": "next_module"
+    },
+    {
+      "type": "text",
+      "value": "_Output_\n\n@local.next_module.label\ncompleted: @local.next_module.completed",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_14",
+      "_nested_name": "text_14",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_Output_\n\n@local.next_module.label\ncompleted: @local.next_module.completed",
+            "matchedExpression": "@local.next_module.label",
+            "type": "local",
+            "fieldName": "next_module"
+          },
+          {
+            "fullExpression": "_Output_\n\n@local.next_module.label\ncompleted: @local.next_module.completed",
+            "matchedExpression": "@local.next_module.completed",
+            "type": "local",
+            "fieldName": "next_module"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.next_module.label": [
+          "value"
+        ],
+        "@local.next_module.completed": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Query sort",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
+    },
+    {
+      "type": "text",
+      "value": "Data can be sorted by multiple columns to prioritise which value is the first returned. Multiple columns should be space-separated, with (desc) direction specified if required\n\nE.g find the highest score module",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | score > 0 | list_id: data_query_items;<br>sort: score(desc) id |",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_17",
+      "_nested_name": "markdown_17"
+    },
+    {
+      "type": "data_query",
+      "name": "highest_score",
+      "value": "score > 0;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "list_id": "data_query_items",
+        "sort": "score(desc) id"
+      },
+      "_nested_name": "highest_score"
+    },
+    {
+      "type": "text",
+      "value": "@local.highest_score.label\nscore: @local.highest_score.score",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_19",
+      "_nested_name": "text_19",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.highest_score.label\nscore: @local.highest_score.score",
+            "matchedExpression": "@local.highest_score.label",
+            "type": "local",
+            "fieldName": "highest_score"
+          },
+          {
+            "fullExpression": "@local.highest_score.label\nscore: @local.highest_score.score",
+            "matchedExpression": "@local.highest_score.score",
+            "type": "local",
+            "fieldName": "highest_score"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.highest_score.label": [
+          "value"
+        ],
+        "@local.highest_score.score": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Compound Queries",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_20",
+      "_nested_name": "title_20"
+    },
+    {
+      "type": "text",
+      "value": "If sorting is insufficient to ensure data is retrieved in the correct order, compound queries can be used to specify multiple conditions.\n\nE.g. Find the first incomplete module that does not have a score recorded",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_21",
+      "_nested_name": "text_21"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | completed === false;<br>score ===0; | list_id: data_query_items; |",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_22",
+      "_nested_name": "markdown_22"
+    },
+    {
+      "type": "data_query",
+      "name": "next_non_started",
+      "value": "completed === false;\nscore ===0;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "list_id": "data_query_items"
+      },
+      "_nested_name": "next_non_started"
+    },
+    {
+      "type": "text",
+      "value": "@local.next_non_started.label\ncompleted: @local.next_non_started.completed;\nscore: @local.next_non_started.score;",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_24",
+      "_nested_name": "text_24",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.next_non_started.label\ncompleted: @local.next_non_started.completed;\nscore: @local.next_non_started.score;",
+            "matchedExpression": "@local.next_non_started.label",
+            "type": "local",
+            "fieldName": "next_non_started"
+          },
+          {
+            "fullExpression": "@local.next_non_started.label\ncompleted: @local.next_non_started.completed;\nscore: @local.next_non_started.score;",
+            "matchedExpression": "@local.next_non_started.completed",
+            "type": "local",
+            "fieldName": "next_non_started"
+          },
+          {
+            "fullExpression": "@local.next_non_started.label\ncompleted: @local.next_non_started.completed;\nscore: @local.next_non_started.score;",
+            "matchedExpression": "@local.next_non_started.score",
+            "type": "local",
+            "fieldName": "next_non_started"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.next_non_started.label": [
+          "value"
+        ],
+        "@local.next_non_started.completed": [
+          "value"
+        ],
+        "@local.next_non_started.score": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "By default comopund queries use \"and\" logic. Specify `condition_type: or` in the parameter_list to change to an \"or\" condition.\n\nE.g. Find the first module that is either not completed, or had a score below 50",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_25",
+      "_nested_name": "text_25"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | completed === false;<br>score <50; | list_id: data_query_items;<br>condition_type: or; |",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_26",
+      "_nested_name": "markdown_26"
+    },
+    {
+      "type": "data_query",
+      "name": "next_incomplete_or_failed",
+      "value": "completed === false;\nscore < 50;",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "list_id": "data_query_items",
+        "condition_type": "or"
+      },
+      "_nested_name": "next_incomplete_or_failed"
+    },
+    {
+      "type": "text",
+      "value": "@local.next_incomplete_or_failed.label \ncompleted: @local.next_incomplete_or_failed.completed\nscore: @local.next_incomplete_or_failed.score",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_28",
+      "_nested_name": "text_28",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.next_incomplete_or_failed.label \ncompleted: @local.next_incomplete_or_failed.completed\nscore: @local.next_incomplete_or_failed.score",
+            "matchedExpression": "@local.next_incomplete_or_failed.label",
+            "type": "local",
+            "fieldName": "next_incomplete_or_failed"
+          },
+          {
+            "fullExpression": "@local.next_incomplete_or_failed.label \ncompleted: @local.next_incomplete_or_failed.completed\nscore: @local.next_incomplete_or_failed.score",
+            "matchedExpression": "@local.next_incomplete_or_failed.completed",
+            "type": "local",
+            "fieldName": "next_incomplete_or_failed"
+          },
+          {
+            "fullExpression": "@local.next_incomplete_or_failed.label \ncompleted: @local.next_incomplete_or_failed.completed\nscore: @local.next_incomplete_or_failed.score",
+            "matchedExpression": "@local.next_incomplete_or_failed.score",
+            "type": "local",
+            "fieldName": "next_incomplete_or_failed"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.next_incomplete_or_failed.label": [
+          "value"
+        ],
+        "@local.next_incomplete_or_failed.completed": [
+          "value"
+        ],
+        "@local.next_incomplete_or_failed.score": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Query Refs",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_29",
+      "_nested_name": "title_29"
+    },
+    {
+      "type": "text",
+      "value": "Any query can also be stored in a data_list for easier reusability across templates",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_30",
+      "_nested_name": "text_30"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query |  | ref: `@data.named_data_queries.next_module.parameter_list` |",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_31",
+      "_nested_name": "markdown_31",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query |  | ref: `@data.named_data_queries.next_module.parameter_list` |",
+            "matchedExpression": "`@data.named_data_queries.next_module.parameter_list",
+            "type": "raw",
+            "fieldName": "named_data_queries"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "`@data.named_data_queries.next_module.parameter_list": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "value": "where `named_data_queries` has reference row:\n\n| id      | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| next_module | completed === false;  | list_id: data_query_items; |",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_32",
+      "_nested_name": "markdown_32"
+    },
+    {
+      "type": "data_query",
+      "name": "next_module_by_ref",
+      "parameter_list": {
+        "ref": "@data.named_data_queries.next_module"
+      },
+      "_nested_name": "next_module_by_ref",
+      "_dynamicFields": {
+        "parameter_list": {
+          "ref": [
+            {
+              "fullExpression": "@data.named_data_queries.next_module",
+              "matchedExpression": "@data.named_data_queries.next_module",
+              "type": "data",
+              "fieldName": "named_data_queries"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.named_data_queries.next_module": [
+          "parameter_list.ref"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@local.next_module_by_ref.label\ncompleted: @local.next_module_by_ref.completed",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_34",
+      "_nested_name": "text_34",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.next_module_by_ref.label\ncompleted: @local.next_module_by_ref.completed",
+            "matchedExpression": "@local.next_module_by_ref.label",
+            "type": "local",
+            "fieldName": "next_module_by_ref"
+          },
+          {
+            "fullExpression": "@local.next_module_by_ref.label\ncompleted: @local.next_module_by_ref.completed",
+            "matchedExpression": "@local.next_module_by_ref.completed",
+            "type": "local",
+            "fieldName": "next_module_by_ref"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.next_module_by_ref.label": [
+          "value"
+        ],
+        "@local.next_module_by_ref.completed": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Advanced Queries",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_35",
+      "_nested_name": "title_35"
+    },
+    {
+      "type": "text",
+      "value": "The query system is built on top of RX\nhttps://rxdb.info/rx-query.html#query-examples\n\nRaw queries can be used to create advanced queries with access to full specification\nThis can enable more complex expressions, such as combining \"and\" with \"or\" blocks, using regex expressions and more\n\nhttps://github.com/cloudant/mango?tab=readme-ov-file#json-syntax-descriptions",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_36",
+      "_nested_name": "text_36"
+    },
+    {
+      "name": "query_json",
+      "value": "{\n  \"$and\": [\n    { \"completed\": true },\n    { \"$or\": [{ \"score\": { \"$gt\": 70 } }, { \"score\": { \"$lt\": 50 }}] }\n  ]\n}",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "query_json"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n|data_query | `@local.query_json`  | list_id: data_query_items;<br>raw: true |\n\nwith raw query json that searches for completed modules with a score either above 70 or below 50",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_38",
+      "_nested_name": "markdown_38",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n|data_query | `@local.query_json`  | list_id: data_query_items;<br>raw: true |\n\nwith raw query json that searches for completed modules with a score either above 70 or below 50",
+            "matchedExpression": "`@local.query_json",
+            "type": "raw",
+            "fieldName": "query_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "`@local.query_json": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "value": "```json\n@local.query_json\n```",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_39",
+      "_nested_name": "markdown_39",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "```json\n@local.query_json\n```",
+            "matchedExpression": "@local.query_json",
+            "type": "local",
+            "fieldName": "query_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.query_json": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_query",
+      "name": "advanced_query",
+      "value": "@local.query_json",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "list_id": "data_query_items",
+        "raw": "true"
+      },
+      "_nested_name": "advanced_query",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.query_json",
+            "matchedExpression": "@local.query_json",
+            "type": "local",
+            "fieldName": "query_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.query_json": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@local.advanced_query.label \ncompleted: @local.advanced_query.completed\nscore: @local.advanced_query.score",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_41",
+      "_nested_name": "text_41",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.advanced_query.label \ncompleted: @local.advanced_query.completed\nscore: @local.advanced_query.score",
+            "matchedExpression": "@local.advanced_query.label",
+            "type": "local",
+            "fieldName": "advanced_query"
+          },
+          {
+            "fullExpression": "@local.advanced_query.label \ncompleted: @local.advanced_query.completed\nscore: @local.advanced_query.score",
+            "matchedExpression": "@local.advanced_query.completed",
+            "type": "local",
+            "fieldName": "advanced_query"
+          },
+          {
+            "fullExpression": "@local.advanced_query.label \ncompleted: @local.advanced_query.completed\nscore: @local.advanced_query.score",
+            "matchedExpression": "@local.advanced_query.score",
+            "type": "local",
+            "fieldName": "advanced_query"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.advanced_query.label": [
+          "value"
+        ],
+        "@local.advanced_query.completed": [
+          "value"
+        ],
+        "@local.advanced_query.score": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Raw syntax authoring can also handle regular expressions, \nE.g. find the first module where the label starts with \"mod\" (case-insensitive)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_42",
+      "_nested_name": "text_42"
+    },
+    {
+      "name": "regex_example_json",
+      "value": "{\n \"label\": { \"$regex\": \"^mod\", \"$options\": \"i\" }\n}",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "regex_example_json"
+    },
+    {
+      "type": "markdown",
+      "value": "```json\n@local.regex_example_json\n```",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_44",
+      "_nested_name": "markdown_44",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "```json\n@local.regex_example_json\n```",
+            "matchedExpression": "@local.regex_example_json",
+            "type": "local",
+            "fieldName": "regex_example_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.regex_example_json": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_query",
+      "name": "regex_query",
+      "value": "@local.regex_example_json",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "list_id": "data_query_items",
+        "raw": "true"
+      },
+      "_nested_name": "regex_query",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.regex_example_json",
+            "matchedExpression": "@local.regex_example_json",
+            "type": "local",
+            "fieldName": "regex_example_json"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.regex_example_json": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Label: @local.regex_query.label",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_46",
+      "_nested_name": "text_46",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Label: @local.regex_query.label",
+            "matchedExpression": "@local.regex_query.label",
+            "type": "local",
+            "fieldName": "regex_query"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.regex_query.label": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Query Actions",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "name": "title_47",
+      "_nested_name": "title_47"
+    },
+    {
+      "type": "text",
+      "value": "Additional actions and side effects can be triggered as a response to data changes",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "name": "text_48",
+      "_nested_name": "text_48"
+    },
+    {
+      "type": "data_query",
+      "value": "@data.data.query_named.next_module",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "name": "data_query_49",
+      "_nested_name": "data_query_49",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.data.query_named.next_module",
+            "matchedExpression": "@data.data.query_named.next_module",
+            "type": "data",
+            "fieldName": "data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.data.query_named.next_module": [
+          "value"
+        ]
+      }
+    },
+    {
+      "condition": false,
+      "type": "set_variable",
+      "name": "set_variable_50",
+      "_nested_name": "set_variable_50"
+    },
+    {
+      "type": "title",
+      "value": "(WiP) - Not Currently Supported",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_51",
+      "_nested_name": "title_51"
+    },
+    {
+      "type": "text",
+      "value": "Looping over multiple items by specifying a multiple parameter\n\nThis is not currently supported, instead recommend using data-items to loop",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_52",
+      "_nested_name": "text_52"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | completed === true  | multiple: true |",
+      "_translations": {
+        "value": {}
+      },
+      "name": "markdown_53",
+      "_nested_name": "markdown_53"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_query.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 360
+        "count": 369
       },
       {
         "type": "calendar",
@@ -55,7 +55,7 @@
       },
       {
         "type": "combo_box",
-        "count": 59
+        "count": 60
       },
       {
         "type": "dashed_box",
@@ -63,7 +63,11 @@
       },
       {
         "type": "data_items",
-        "count": 73
+        "count": 74
+      },
+      {
+        "type": "data_query",
+        "count": 8
       },
       {
         "type": "date_time_picker",
@@ -83,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 216
+        "count": 225
       },
       {
         "type": "drawer",
@@ -95,7 +99,7 @@
       },
       {
         "type": "google_sign_in_button",
-        "count": 3
+        "count": 4
       },
       {
         "type": "html",
@@ -120,6 +124,10 @@
       {
         "type": "map",
         "count": 2
+      },
+      {
+        "type": "markdown",
+        "count": 10
       },
       {
         "type": "nav_group",
@@ -223,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 798
+        "count": 805
       },
       {
         "type": "simple_checkbox",
@@ -243,7 +251,7 @@
       },
       {
         "type": "table",
-        "count": 3
+        "count": 6
       },
       {
         "type": "task_card",
@@ -255,11 +263,11 @@
       },
       {
         "type": "template",
-        "count": 141
+        "count": 142
       },
       {
         "type": "text",
-        "count": 1059
+        "count": 1092
       },
       {
         "type": "text_area",
@@ -267,7 +275,7 @@
       },
       {
         "type": "text_box",
-        "count": 54
+        "count": 56
       },
       {
         "type": "text_bubble",
@@ -283,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 538
+        "count": 556
       },
       {
         "type": "toggle_bar",
@@ -323,7 +331,7 @@
       },
       {
         "type": "auth",
-        "count": 4
+        "count": 5
       },
       {
         "type": "auth_failure",
@@ -351,11 +359,11 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 31
+        "count": 32
       },
       {
         "type": "emit: force_reprocess",
-        "count": 38
+        "count": 40
       },
       {
         "type": "emit: force_restart",
@@ -391,7 +399,7 @@
       },
       {
         "type": "go_to",
-        "count": 79
+        "count": 80
       },
       {
         "type": "go_to_url",
@@ -412,6 +420,10 @@
       {
         "type": "open_external",
         "count": 2
+      },
+      {
+        "type": "plh_parent_group",
+        "count": 7
       },
       {
         "type": "pop_up",
@@ -451,7 +463,7 @@
       },
       {
         "type": "set_item",
-        "count": 33
+        "count": 34
       },
       {
         "type": "set_items",
@@ -1039,7 +1051,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 37
+        "total": 41
       },
       {
         "type": "data_list",
@@ -1059,7 +1071,7 @@
       {
         "type": "data_list",
         "subtype": "debug",
-        "total": 21
+        "total": 24
       },
       {
         "type": "data_list",
@@ -1129,7 +1141,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 100
+        "total": 101
       },
       {
         "type": "template",
@@ -1139,7 +1151,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 274
+        "total": 277
       },
       {
         "type": "template",

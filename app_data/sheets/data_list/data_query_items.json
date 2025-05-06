@@ -1,0 +1,48 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "data_query_items",
+  "status": "released",
+  "rows": [
+    {
+      "id": "module_1",
+      "label": "Module 1",
+      "number": 1,
+      "completed": true,
+      "score": 45
+    },
+    {
+      "id": "module_2",
+      "label": "Module 2",
+      "number": 2,
+      "completed": true,
+      "score": 90
+    },
+    {
+      "id": "module_3",
+      "label": "Module 3",
+      "number": 3,
+      "completed": false,
+      "score": 70
+    },
+    {
+      "id": "module_4",
+      "label": "Module 4",
+      "number": 4,
+      "completed": false,
+      "score": 0
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_query.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_metadata": {
+    "number": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "score": {
+      "type": "number"
+    }
+  }
+}
