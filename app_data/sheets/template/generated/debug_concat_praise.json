@@ -1,0 +1,24 @@
+{
+  "flow_name": "debug_concat_praise",
+  "flow_subtype": "generated",
+  "flow_type": "template",
+  "rows": [
+    {
+      "type": "template",
+      "name": "debug_concatenation",
+      "value": "debug_concatenation",
+      "rows": [
+        {
+          "name": "module_id",
+          "value": "praise",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_concatenation.module_id"
+        }
+      ],
+      "_nested_name": "debug_concatenation"
+    }
+  ]
+}
