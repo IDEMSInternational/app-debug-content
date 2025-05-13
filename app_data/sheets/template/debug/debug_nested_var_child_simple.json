@@ -1,0 +1,52 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_child_simple",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Child Template",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "set_variable",
+      "name": "variable1",
+      "value": "This is the value",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "variable1"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Value of variable:@local.variable1",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of variable:@local.variable1",
+            "matchedExpression": "@local.variable1",
+            "type": "local",
+            "fieldName": "variable1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.variable1": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nested_var_simple.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

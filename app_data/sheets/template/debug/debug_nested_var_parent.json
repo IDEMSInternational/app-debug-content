@@ -31,7 +31,7 @@
         {
           "type": "text",
           "name": "text_1",
-          "value": "@local.dg_child.template_child.combo_box.value",
+          "value": "Value of nested local: @local.dg_child.template_child.combo_box.value",
           "_translations": {
             "value": {}
           },
@@ -39,7 +39,7 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.dg_child.template_child.combo_box.value",
+                "fullExpression": "Value of nested local: @local.dg_child.template_child.combo_box.value",
                 "matchedExpression": "@local.dg_child.template_child.combo_box.value",
                 "type": "local",
                 "fieldName": "dg_child"
@@ -55,7 +55,7 @@
         {
           "type": "text",
           "name": "text_2",
-          "value": "@local.template_child.combo_box.value",
+          "value": "Value of nested local: @local.template_child.combo_box.value",
           "_translations": {
             "value": {}
           },
@@ -63,7 +63,7 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "@local.template_child.combo_box.value",
+                "fullExpression": "Value of nested local: @local.template_child.combo_box.value",
                 "matchedExpression": "@local.template_child.combo_box.value",
                 "type": "local",
                 "fieldName": "template_child"
@@ -75,22 +75,70 @@
               "value"
             ]
           }
+        },
+        {
+          "type": "text",
+          "name": "text_3",
+          "value": "Value of nested local: @local.dg_child.template_child.combo_box",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_child.text_3",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Value of nested local: @local.dg_child.template_child.combo_box",
+                "matchedExpression": "@local.dg_child.template_child.combo_box",
+                "type": "local",
+                "fieldName": "dg_child"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.dg_child.template_child.combo_box": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "text_4",
+          "value": "Value of nested local: @local.template_child.combo_box",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_child.text_4",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Value of nested local: @local.template_child.combo_box",
+                "matchedExpression": "@local.template_child.combo_box",
+                "type": "local",
+                "fieldName": "template_child"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.template_child.combo_box": [
+              "value"
+            ]
+          }
         }
       ],
       "_nested_name": "dg_child"
     },
     {
       "type": "text",
-      "name": "text_3",
-      "value": "@local.dg_child.template_child.combo_box.value",
+      "name": "text_5",
+      "value": "Value of nested local: @local.dg_child.template_child.combo_box.value",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "text_3",
+      "_nested_name": "text_5",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.dg_child.template_child.combo_box.value",
+            "fullExpression": "Value of nested local: @local.dg_child.template_child.combo_box.value",
             "matchedExpression": "@local.dg_child.template_child.combo_box.value",
             "type": "local",
             "fieldName": "dg_child"
@@ -105,16 +153,16 @@
     },
     {
       "type": "text",
-      "name": "text_4",
-      "value": "@local.template_child.combo_box.value",
+      "name": "text_6",
+      "value": "Value of nested local: @local.template_child.combo_box.value",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "text_4",
+      "_nested_name": "text_6",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.template_child.combo_box.value",
+            "fullExpression": "Value of nested local: @local.template_child.combo_box.value",
             "matchedExpression": "@local.template_child.combo_box.value",
             "type": "local",
             "fieldName": "template_child"
@@ -123,6 +171,54 @@
       },
       "_dynamicDependencies": {
         "@local.template_child.combo_box.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "Value of nested local: @local.dg_child.template_child.combo_box",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of nested local: @local.dg_child.template_child.combo_box",
+            "matchedExpression": "@local.dg_child.template_child.combo_box",
+            "type": "local",
+            "fieldName": "dg_child"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.dg_child.template_child.combo_box": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_8",
+      "value": "Value of nested local: @local.template_child.combo_box",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of nested local: @local.template_child.combo_box",
+            "matchedExpression": "@local.template_child.combo_box",
+            "type": "local",
+            "fieldName": "template_child"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.template_child.combo_box": [
           "value"
         ]
       }

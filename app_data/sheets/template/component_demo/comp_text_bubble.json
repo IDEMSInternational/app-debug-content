@@ -141,13 +141,13 @@
     },
     {
       "type": "text_bubble",
-      "value": "variant: accent-1;\nFor kw comics",
+      "value": "variant: speaker-3;\nFor comics",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "speaker_image_asset": "images/Faisal.png",
-        "variant": "accent-1",
+        "variant": "speaker-3",
         "speaker_position": "right",
         "speaker_name": "Dalal"
       },
@@ -156,13 +156,13 @@
     },
     {
       "type": "text_bubble",
-      "value": "variant: accent-2;\nFor kw comics",
+      "value": "variant: speaker-4;\nFor comics",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
         "speaker_image_asset": "images/Faisal.png",
-        "variant": "accent-2",
+        "variant": "speaker-4",
         "speaker_name": "Faisal"
       },
       "name": "text_bubble_12",

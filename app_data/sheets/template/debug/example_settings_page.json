@@ -1,0 +1,159 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_settings_page",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "24px 0"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "name": "settings",
+      "value": "Settings",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "page_banner"
+      },
+      "style_list": [
+        "padding-inline: 24px"
+      ],
+      "_nested_name": "settings"
+    },
+    {
+      "type": "title",
+      "name": "account",
+      "value": "Account",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "section_banner"
+      },
+      "_nested_name": "account"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_account",
+      "parameter_list": {
+        "variant": "inline_padding",
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "button",
+          "value": "Button 1",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "card",
+            "icon": "images/icons/globe_blue.svg",
+            "icon_secondary_asset": "chevron-forward",
+            "style": "no-background",
+            "text_align": "left"
+          },
+          "name": "button_1",
+          "_nested_name": "dg_account.button_1"
+        },
+        {
+          "type": "button",
+          "value": "Button 2",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "card",
+            "icon": "images/icons/globe_blue.svg",
+            "icon_secondary_asset": "chevron-forward",
+            "style": "no-background",
+            "text_align": "left"
+          },
+          "name": "button_2",
+          "_nested_name": "dg_account.button_2"
+        },
+        {
+          "type": "button",
+          "value": "Button 3",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "card",
+            "icon": "images/icons/globe_blue.svg",
+            "icon_secondary_asset": "chevron-forward",
+            "style": "no-background",
+            "text_align": "left"
+          },
+          "name": "button_3",
+          "_nested_name": "dg_account.button_3"
+        }
+      ],
+      "_nested_name": "dg_account"
+    },
+    {
+      "type": "title",
+      "name": "general",
+      "value": "General",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "section_banner"
+      },
+      "_nested_name": "general"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_general",
+      "value": "Button 1",
+      "parameter_list": {
+        "variant": "inline_padding",
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "button",
+          "name": "button_about",
+          "value": "Button 2",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "card",
+            "icon": "images/icons/globe_blue.svg",
+            "icon_secondary_asset": "chevron-forward",
+            "style": "no-background",
+            "text_align": "left"
+          },
+          "_nested_name": "dg_general.button_about"
+        },
+        {
+          "type": "button",
+          "name": "button_terms",
+          "value": "Button 3",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "card",
+            "icon": "images/icons/globe_blue.svg",
+            "icon_secondary_asset": "chevron-forward",
+            "style": "no-background",
+            "text_align": "left"
+          },
+          "_nested_name": "dg_general.button_terms"
+        }
+      ],
+      "_nested_name": "dg_general"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_settings_page.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

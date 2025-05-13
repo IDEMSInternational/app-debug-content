@@ -46,7 +46,7 @@
     },
     {
       "type": "title",
-      "value": "Top to bottom (plh_kids_tz background)",
+      "value": "Starting position: top",
       "_translations": {
         "value": {}
       },
@@ -59,6 +59,9 @@
         "background_image_asset": "@local.background_image_asset",
         "starting_position": "top"
       },
+      "style_list": [
+        "margin-top: 0px"
+      ],
       "rows": [
         {
           "type": "data_items",
@@ -191,7 +194,7 @@
       "rows": [
         {
           "type": "title",
-          "value": "Bottom to top (plh_kids_kw background)",
+          "value": "Starting position: bottom",
           "_translations": {
             "value": {}
           },

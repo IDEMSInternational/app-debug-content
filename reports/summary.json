@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 369
+        "count": 374
       },
       {
         "type": "calendar",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 74
+        "count": 76
       },
       {
         "type": "data_query",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 225
+        "count": 229
       },
       {
         "type": "drawer",
@@ -135,7 +135,7 @@
       },
       {
         "type": "navigation_bar",
-        "count": 6
+        "count": 8
       },
       {
         "type": "nested_properties",
@@ -163,7 +163,7 @@
       },
       {
         "type": "plh_activity_check_in",
-        "count": 1
+        "count": 2
       },
       {
         "type": "plh_bottom_nav",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 805
+        "count": 824
       },
       {
         "type": "simple_checkbox",
@@ -259,15 +259,15 @@
       },
       {
         "type": "task_progress_bar",
-        "count": 6
+        "count": 7
       },
       {
         "type": "template",
-        "count": 142
+        "count": 143
       },
       {
         "type": "text",
-        "count": 1092
+        "count": 1108
       },
       {
         "type": "text_area",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 556
+        "count": 561
       },
       {
         "type": "toggle_bar",
@@ -415,7 +415,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 11
+        "count": 12
       },
       {
         "type": "open_external",
@@ -471,7 +471,7 @@
       },
       {
         "type": "set_local",
-        "count": 62
+        "count": 63
       },
       {
         "type": "share",
@@ -622,6 +622,16 @@
       },
       {
         "path": "images/map_view_bg.jpg",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "images/shell_closed.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "images/shell_open.png",
         "count": 1,
         "missing": true
       }
@@ -781,7 +791,7 @@
       },
       {
         "path": "images/icons/ask_question_white.svg",
-        "count": 2,
+        "count": 3,
         "size_kb": 1.4
       },
       {
@@ -816,7 +826,7 @@
       },
       {
         "path": "images/icons/close.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 0.2
       },
       {
@@ -826,12 +836,12 @@
       },
       {
         "path": "images/icons/globe_blue.svg",
-        "count": 19,
+        "count": 25,
         "size_kb": 3.9
       },
       {
         "path": "images/icons/heart_blue.svg",
-        "count": 38,
+        "count": 39,
         "size_kb": 1.4
       },
       {
@@ -851,7 +861,7 @@
       },
       {
         "path": "images/icons/house_white.svg",
-        "count": 5,
+        "count": 6,
         "size_kb": 0.6
       },
       {
@@ -876,12 +886,12 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 10,
+        "count": 11,
         "size_kb": 0.9
       },
       {
         "path": "images/icons/notification_bell.png",
-        "count": 1,
+        "count": 2,
         "size_kb": 0.9
       },
       {
@@ -891,7 +901,7 @@
       },
       {
         "path": "images/icons/reader_blue.svg",
-        "count": 7,
+        "count": 8,
         "size_kb": 1.4
       },
       {
@@ -921,7 +931,7 @@
       },
       {
         "path": "images/icons/star_white.svg",
-        "count": 21,
+        "count": 22,
         "size_kb": 1
       },
       {
@@ -1151,7 +1161,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 277
+        "total": 281
       },
       {
         "type": "template",
