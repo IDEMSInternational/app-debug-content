@@ -2289,6 +2289,13 @@
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_paragraphs.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_data_actions_dg": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "debug_data_actions_dg",
+      "_xlsxPath": "example_sheets/example_data_actions.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "debug_data_bottom": {
       "flow_type": "template",
       "flow_name": "debug_data_bottom",
@@ -4007,13 +4014,6 @@
       "flow_name": "feature_text_box_placeholder",
       "flow_subtype": "debug",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_prioritise_placeholder.xlsx",
-      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
-    },
-    "hp_hide": {
-      "flow_type": "template",
-      "flow_subtype": "debug",
-      "flow_name": "hp_hide",
-      "_xlsxPath": "example_sheets/example_data_actions.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "navigation_bar": {
