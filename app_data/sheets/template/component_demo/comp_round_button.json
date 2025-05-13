@@ -54,31 +54,49 @@
       "_nested_name": "round_button_par_2_3"
     },
     {
+      "type": "text",
+      "name": "text_1",
+      "value": "No Background Variants",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_1"
+    },
+    {
       "type": "round_button",
+      "name": "round_button_par_2_4",
       "parameter_list": {
         "icon_src": "images/icons/close.svg",
         "variant": "no-background"
       },
-      "name": "round_button_7",
-      "_nested_name": "round_button_7"
+      "_nested_name": "round_button_par_2_4"
     },
     {
       "type": "round_button",
+      "name": "round_button_par_2_5",
       "parameter_list": {
         "icon_src": "images/icons/close.png",
         "variant": "no-background"
       },
-      "name": "round_button_8",
-      "_nested_name": "round_button_8"
+      "_nested_name": "round_button_par_2_5"
     },
     {
       "type": "title",
       "name": "title_3",
-      "value": "Round button colour",
+      "value": "Round button colour variants",
       "_translations": {
         "value": {}
       },
       "_nested_name": "title_3"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Information",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "button_1"
     },
     {
       "type": "round_button",
@@ -89,12 +107,31 @@
       "_nested_name": "round_button_par_3_1"
     },
     {
+      "type": "text",
+      "name": "button_1",
+      "value": "Navigation",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "button_1"
+    },
+    {
       "type": "round_button",
       "name": "round_button_par_3_2",
       "parameter_list": {
-        "style": "navigation"
+        "style": "navigation",
+        "icon_src": "images/icons/close.svg"
       },
       "_nested_name": "round_button_par_3_2"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Yellow",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "button_1"
     },
     {
       "type": "round_button",
@@ -105,12 +142,30 @@
       "_nested_name": "round_button_par_3_3"
     },
     {
+      "type": "text",
+      "name": "button_1",
+      "value": "Orange",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "button_1"
+    },
+    {
       "type": "round_button",
       "name": "round_button_par_3_4",
       "parameter_list": {
         "style": "orange"
       },
       "_nested_name": "round_button_par_3_4"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Dark orange",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "button_1"
     },
     {
       "type": "round_button",
@@ -150,7 +205,7 @@
       "type": "round_button",
       "name": "round_button_par_5_1",
       "parameter_list": {
-        "text": ""
+        "text": "some text"
       },
       "_nested_name": "round_button_par_5_1"
     },

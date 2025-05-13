@@ -5,96 +5,156 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "name": "button_list",
+      "name": "button_list_1",
       "value": [
         {
           "name": "home_screen_button",
-          "text": "@global.home_screen",
+          "text": "Home",
           "image": "images/icons/house_white.svg",
           "target_template": "home_screen"
         },
         {
           "name": "parent_points_button",
-          "text": "@global.parent_points",
+          "text": "Star",
           "image": "images/icons/star_white.svg",
           "target_template": "parent_points"
         },
         {
           "name": "parent_library_button",
-          "text": "@global.parent_centre",
+          "text": "FAQ",
           "image": "images/icons/ask_question_white.svg",
           "target_template": "parent_centre"
         }
       ],
       "type": "set_variable",
-      "_nested_name": "button_list",
+      "_nested_name": "button_list_1"
+    },
+    {
+      "name": "button_list_2",
+      "value": [
+        {
+          "name": "home_screen_button",
+          "image": "images/icons/house_white.svg",
+          "target_template": "home_screen"
+        },
+        {
+          "name": "parent_points_button",
+          "image": "images/icons/star_white.svg",
+          "target_template": "parent_points"
+        },
+        {
+          "name": "parent_library_button",
+          "image": "images/icons/ask_question_white.svg",
+          "target_template": "parent_centre"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "button_list_2"
+    },
+    {
+      "name": "button_list_3",
+      "value": [
+        {
+          "name": "home_screen_button",
+          "text": "Globe",
+          "image": "images/icons/globe_blue.svg",
+          "target_template": "home_screen"
+        },
+        {
+          "name": "parent_points_button",
+          "text": "Page",
+          "image": "images/icons/reader_blue.svg",
+          "target_template": "parent_points"
+        },
+        {
+          "name": "parent_library_button",
+          "text": "Heart",
+          "image": "images/icons/heart_blue.svg",
+          "target_template": "parent_centre"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "button_list_3"
+    },
+    {
+      "type": "navigation_bar",
+      "parameter_list": {
+        "button_list": "@local.button_list_1",
+        "variant": "text_primary_contrast"
+      },
+      "style_list": [
+        "background-color: var(--ion-color-primary)"
+      ],
+      "name": "navigation_bar_5",
+      "_nested_name": "navigation_bar_5",
       "_dynamicFields": {
-        "value": {
-          "0": {
-            "text": [
-              {
-                "fullExpression": "@global.home_screen",
-                "matchedExpression": "@global.home_screen",
-                "type": "global",
-                "fieldName": "home_screen"
-              }
-            ]
-          },
-          "1": {
-            "text": [
-              {
-                "fullExpression": "@global.parent_points",
-                "matchedExpression": "@global.parent_points",
-                "type": "global",
-                "fieldName": "parent_points"
-              }
-            ]
-          },
-          "2": {
-            "text": [
-              {
-                "fullExpression": "@global.parent_centre",
-                "matchedExpression": "@global.parent_centre",
-                "type": "global",
-                "fieldName": "parent_centre"
-              }
-            ]
-          }
+        "parameter_list": {
+          "button_list": [
+            {
+              "fullExpression": "@local.button_list_1",
+              "matchedExpression": "@local.button_list_1",
+              "type": "local",
+              "fieldName": "button_list_1"
+            }
+          ]
         }
       },
       "_dynamicDependencies": {
-        "@global.home_screen": [
-          "value.0.text"
-        ],
-        "@global.parent_points": [
-          "value.1.text"
-        ],
-        "@global.parent_centre": [
-          "value.2.text"
+        "@local.button_list_1": [
+          "parameter_list.button_list"
         ]
       }
     },
     {
       "type": "navigation_bar",
       "parameter_list": {
-        "button_list": "@local.button_list"
+        "button_list": "@local.button_list_2"
       },
-      "name": "navigation_bar_3",
-      "_nested_name": "navigation_bar_3",
+      "style_list": [
+        "background-color: var(--ion-color-primary)"
+      ],
+      "name": "navigation_bar_6",
+      "_nested_name": "navigation_bar_6",
       "_dynamicFields": {
         "parameter_list": {
           "button_list": [
             {
-              "fullExpression": "@local.button_list",
-              "matchedExpression": "@local.button_list",
+              "fullExpression": "@local.button_list_2",
+              "matchedExpression": "@local.button_list_2",
               "type": "local",
-              "fieldName": "button_list"
+              "fieldName": "button_list_2"
             }
           ]
         }
       },
       "_dynamicDependencies": {
-        "@local.button_list": [
+        "@local.button_list_2": [
+          "parameter_list.button_list"
+        ]
+      }
+    },
+    {
+      "type": "navigation_bar",
+      "parameter_list": {
+        "button_list": "@local.button_list_3",
+        "variant": "text_primary"
+      },
+      "name": "navigation_bar_7",
+      "_nested_name": "navigation_bar_7",
+      "_dynamicFields": {
+        "parameter_list": {
+          "button_list": [
+            {
+              "fullExpression": "@local.button_list_3",
+              "matchedExpression": "@local.button_list_3",
+              "type": "local",
+              "fieldName": "button_list_3"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.button_list_3": [
           "parameter_list.button_list"
         ]
       }

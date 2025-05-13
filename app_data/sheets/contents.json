@@ -2737,11 +2737,25 @@
       "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_nested_var_child_simple": {
+      "flow_type": "template",
+      "flow_name": "debug_nested_var_child_simple",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nested_var_simple.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "debug_nested_var_parent": {
       "flow_type": "template",
       "flow_name": "debug_nested_var_parent",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_nested_var_parent_simple": {
+      "flow_type": "template",
+      "flow_name": "debug_nested_var_parent_simple",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nested_var_simple.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "debug_nesting_conditional": {
@@ -3808,6 +3822,20 @@
       "_xlsxPath": "example_sheets/to_be_sorted/example_global_field.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "example_settings_page": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_settings_page",
+      "parameter_list": {
+        "app_config": {
+          "LAYOUT": {
+            "page_padding": "24px 0"
+          }
+        }
+      },
+      "_xlsxPath": "example_sheets/example_settings_page.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "example_skin_override_default": {
       "flow_type": "template",
       "flow_name": "example_skin_override_default",
@@ -3979,6 +4007,13 @@
       "flow_name": "feature_text_box_placeholder",
       "flow_subtype": "debug",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_prioritise_placeholder.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "hp_hide": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "hp_hide",
+      "_xlsxPath": "example_sheets/example_data_actions.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "navigation_bar": {
