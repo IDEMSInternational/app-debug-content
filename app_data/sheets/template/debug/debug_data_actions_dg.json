@@ -1,0 +1,477 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "debug_data_actions_dg",
+  "status": "released",
+  "rows": [
+    {
+      "name": "module_id",
+      "value": "selfcare",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "module_id"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Without display group",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "name": "hp_review_count_1",
+      "type": "set_variable",
+      "_nested_name": "hp_review_count_1"
+    },
+    {
+      "type": "data_items",
+      "name": "hp_review_exists_1",
+      "value": "module_tasks",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "hp_review_count_1",
+            "@items.length"
+          ],
+          "_raw": "data_changed | set_local : hp_review_count_1 : @items.length",
+          "_cleaned": "data_changed | set_local : hp_review_count_1 : @items.length"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.id == @local.module_id"
+      },
+      "_nested_name": "hp_review_exists_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@local.module_id",
+              "type": "local",
+              "fieldName": "module_id"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.module_id": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "debug_hp_review_count_1",
+      "value": "hp_review_count_1: @local.hp_review_count_1",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debug_hp_review_count_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "hp_review_count_1: @local.hp_review_count_1",
+            "matchedExpression": "@local.hp_review_count_1",
+            "type": "local",
+            "fieldName": "hp_review_count_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.hp_review_count_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "check_in_1",
+      "value": "module_tasks",
+      "parameter_list": {
+        "filter": "@item.id == @local.module_id"
+      },
+      "condition": "@local.hp_review_count_1 !== undefined",
+      "rows": [
+        {
+          "type": "text",
+          "name": "debug_ts_1",
+          "value": "Show this only when hp review exists for this module",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "check_in_1.debug_ts_1"
+        }
+      ],
+      "_nested_name": "check_in_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@local.module_id",
+              "type": "local",
+              "fieldName": "module_id"
+            }
+          ]
+        },
+        "condition": [
+          {
+            "fullExpression": "@local.hp_review_count_1 !== undefined",
+            "matchedExpression": "@local.hp_review_count_1",
+            "type": "local",
+            "fieldName": "hp_review_count_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.module_id": [
+          "parameter_list.filter"
+        ],
+        "@local.hp_review_count_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "With display group",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_2",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "name": "hp_review_count_2",
+          "type": "set_variable",
+          "_nested_name": "dg_2.hp_review_count_2"
+        },
+        {
+          "type": "data_items",
+          "name": "hp_review_exists_2",
+          "value": "module_tasks",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "data_changed",
+              "action_id": "set_local",
+              "args": [
+                "hp_review_count_2",
+                "@items.length"
+              ],
+              "_raw": "data_changed | set_local : hp_review_count_2 : @items.length",
+              "_cleaned": "data_changed | set_local : hp_review_count_2 : @items.length"
+            }
+          ],
+          "parameter_list": {
+            "filter": "@item.id == @local.module_id"
+          },
+          "_nested_name": "dg_2.hp_review_exists_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "filter": [
+                {
+                  "fullExpression": "@item.id == @local.module_id",
+                  "matchedExpression": "@item.id",
+                  "type": "item",
+                  "fieldName": "id"
+                },
+                {
+                  "fullExpression": "@item.id == @local.module_id",
+                  "matchedExpression": "@local.module_id",
+                  "type": "local",
+                  "fieldName": "module_id"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "parameter_list.filter"
+            ],
+            "@local.module_id": [
+              "parameter_list.filter"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "debug_hp_review_count_2",
+          "value": "hp_review_count_2: @local.hp_review_count_2",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_2.debug_hp_review_count_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "hp_review_count_2: @local.hp_review_count_2",
+                "matchedExpression": "@local.hp_review_count_2",
+                "type": "local",
+                "fieldName": "hp_review_count_2"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.hp_review_count_2": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "data_items",
+          "name": "check_in_2",
+          "value": "module_tasks",
+          "parameter_list": {
+            "filter": "@item.id == @local.module_id"
+          },
+          "condition": "@local.hp_review_count_2 !== undefined",
+          "rows": [
+            {
+              "type": "text",
+              "name": "debug_ts_2",
+              "value": "Show this only when hp review exists for this module",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "dg_2.check_in_2.debug_ts_2"
+            }
+          ],
+          "_nested_name": "dg_2.check_in_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "filter": [
+                {
+                  "fullExpression": "@item.id == @local.module_id",
+                  "matchedExpression": "@item.id",
+                  "type": "item",
+                  "fieldName": "id"
+                },
+                {
+                  "fullExpression": "@item.id == @local.module_id",
+                  "matchedExpression": "@local.module_id",
+                  "type": "local",
+                  "fieldName": "module_id"
+                }
+              ]
+            },
+            "condition": [
+              {
+                "fullExpression": "@local.hp_review_count_2 !== undefined",
+                "matchedExpression": "@local.hp_review_count_2",
+                "type": "local",
+                "fieldName": "hp_review_count_2"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "parameter_list.filter"
+            ],
+            "@local.module_id": [
+              "parameter_list.filter"
+            ],
+            "@local.hp_review_count_2": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_2"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "With display group (but computation done outside)",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_3"
+    },
+    {
+      "name": "hp_review_count_3",
+      "type": "set_variable",
+      "_nested_name": "hp_review_count_3"
+    },
+    {
+      "type": "data_items",
+      "name": "hp_review_exists_3",
+      "value": "module_tasks",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "hp_review_count_3",
+            "@items.length"
+          ],
+          "_raw": "data_changed | set_local : hp_review_count_3 : @items.length",
+          "_cleaned": "data_changed | set_local : hp_review_count_3 : @items.length"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.id == @local.module_id"
+      },
+      "_nested_name": "hp_review_exists_3",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id == @local.module_id",
+              "matchedExpression": "@local.module_id",
+              "type": "local",
+              "fieldName": "module_id"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.module_id": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "dg_3",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "debug_hp_review_count_3",
+          "value": "hp_review_count_3: @local.hp_review_count_3",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_3.debug_hp_review_count_3",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "hp_review_count_3: @local.hp_review_count_3",
+                "matchedExpression": "@local.hp_review_count_3",
+                "type": "local",
+                "fieldName": "hp_review_count_3"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.hp_review_count_3": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "data_items",
+          "name": "check_in_3",
+          "value": "module_tasks",
+          "parameter_list": {
+            "filter": "@item.id == @local.module_id"
+          },
+          "condition": "@local.hp_review_count_3 !== undefined",
+          "rows": [
+            {
+              "type": "text",
+              "name": "debug_ts_3",
+              "value": "Show this only when hp review exists for this module",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "dg_3.check_in_3.debug_ts_3"
+            }
+          ],
+          "_nested_name": "dg_3.check_in_3",
+          "_dynamicFields": {
+            "parameter_list": {
+              "filter": [
+                {
+                  "fullExpression": "@item.id == @local.module_id",
+                  "matchedExpression": "@item.id",
+                  "type": "item",
+                  "fieldName": "id"
+                },
+                {
+                  "fullExpression": "@item.id == @local.module_id",
+                  "matchedExpression": "@local.module_id",
+                  "type": "local",
+                  "fieldName": "module_id"
+                }
+              ]
+            },
+            "condition": [
+              {
+                "fullExpression": "@local.hp_review_count_3 !== undefined",
+                "matchedExpression": "@local.hp_review_count_3",
+                "type": "local",
+                "fieldName": "hp_review_count_3"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "parameter_list.filter"
+            ],
+            "@local.module_id": [
+              "parameter_list.filter"
+            ],
+            "@local.hp_review_count_3": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "dg_3"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_data_actions.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
