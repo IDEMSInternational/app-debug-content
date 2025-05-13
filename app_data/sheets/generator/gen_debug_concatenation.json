@@ -1,0 +1,73 @@
+{
+  "flow_type": "generator",
+  "flow_name": "gen_debug_concatenation",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "module_tasks",
+    "output_flow_name": "debug_concat_@gen.id",
+    "output_flow_type": "template",
+    "output_flow_subtype": "generated"
+  },
+  "rows": [
+    {
+      "type": "template",
+      "name": "debug_concatenation",
+      "value": "debug_concatenation",
+      "rows": [
+        {
+          "name": "module_id",
+          "value": "@gen.id"
+        }
+      ]
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_output_flows": [
+    {
+      "flow_name": "debug_concat_selfcare",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_oneononetime",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_feelings",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_praise",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_instructions",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_rulesroutines",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_childdevelopment",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_consequences",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    {
+      "flow_name": "debug_concat_problemsolving",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    }
+  ]
+}

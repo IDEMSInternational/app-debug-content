@@ -1465,6 +1465,65 @@
           "flow_type": "template"
         }
       ]
+    },
+    "gen_debug_concatenation": {
+      "flow_type": "generator",
+      "flow_name": "gen_debug_concatenation",
+      "parameter_list": {
+        "input_data_list": "module_tasks",
+        "output_flow_name": "debug_concat_@gen.id",
+        "output_flow_type": "template",
+        "output_flow_subtype": "generated"
+      },
+      "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+      "_output_flows": [
+        {
+          "flow_name": "debug_concat_selfcare",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_oneononetime",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_feelings",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_praise",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_instructions",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_rulesroutines",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_childdevelopment",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_consequences",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        },
+        {
+          "flow_name": "debug_concat_problemsolving",
+          "flow_subtype": "generated",
+          "flow_type": "template"
+        }
+      ]
     }
   },
   "global": {
@@ -4098,6 +4157,12 @@
         "debug_circ_override_1": true
       }
     },
+    "debug_concatenation": {
+      "flow_type": "template",
+      "flow_name": "debug_concatenation",
+      "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "debug_data_items_context": {
       "flow_type": "template",
       "flow_name": "debug_data_items_context",
@@ -4699,6 +4764,51 @@
       "flow_name": "feature_two_columns_images_2",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_concat_childdevelopment": {
+      "flow_name": "debug_concat_childdevelopment",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_consequences": {
+      "flow_name": "debug_concat_consequences",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_feelings": {
+      "flow_name": "debug_concat_feelings",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_instructions": {
+      "flow_name": "debug_concat_instructions",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_oneononetime": {
+      "flow_name": "debug_concat_oneononetime",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_praise": {
+      "flow_name": "debug_concat_praise",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_problemsolving": {
+      "flow_name": "debug_concat_problemsolving",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_rulesroutines": {
+      "flow_name": "debug_concat_rulesroutines",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "debug_concat_selfcare": {
+      "flow_name": "debug_concat_selfcare",
+      "flow_subtype": "generated",
+      "flow_type": "template"
     },
     "home_screen": {
       "flow_type": "template",
