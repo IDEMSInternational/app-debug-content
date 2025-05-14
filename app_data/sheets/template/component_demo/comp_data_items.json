@@ -296,12 +296,12 @@
     },
     {
       "type": "title",
-      "name": "example_2",
+      "name": "example_3",
       "value": "Example 3: Data change trigger actions",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "example_2"
+      "_nested_name": "example_3"
     },
     {
       "name": "completed_counter",

@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 374
+        "count": 375
       },
       {
         "type": "calendar",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 76
+        "count": 80
       },
       {
         "type": "data_query",
@@ -163,7 +163,7 @@
       },
       {
         "type": "plh_activity_check_in",
-        "count": 2
+        "count": 1
       },
       {
         "type": "plh_bottom_nav",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 824
+        "count": 826
       },
       {
         "type": "simple_checkbox",
@@ -259,15 +259,15 @@
       },
       {
         "type": "task_progress_bar",
-        "count": 7
+        "count": 6
       },
       {
         "type": "template",
-        "count": 143
+        "count": 146
       },
       {
         "type": "text",
-        "count": 1108
+        "count": 1120
       },
       {
         "type": "text_area",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 561
+        "count": 566
       },
       {
         "type": "toggle_bar",
@@ -415,7 +415,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 12
+        "count": 11
       },
       {
         "type": "open_external",
@@ -471,7 +471,7 @@
       },
       {
         "type": "set_local",
-        "count": 63
+        "count": 66
       },
       {
         "type": "share",
@@ -626,12 +626,17 @@
         "missing": true
       },
       {
-        "path": "images/shell_closed.png",
+        "path": "pdf/01_mod1_intro.pdf",
         "count": 1,
         "missing": true
       },
       {
-        "path": "images/shell_open.png",
+        "path": "pdf/01_mod1_panimulang_gawain.pdf",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "pdf/01_mod1_session_structure.pdf",
         "count": 1,
         "missing": true
       }
@@ -886,12 +891,12 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 11,
+        "count": 10,
         "size_kb": 0.9
       },
       {
         "path": "images/icons/notification_bell.png",
-        "count": 2,
+        "count": 1,
         "size_kb": 0.9
       },
       {
@@ -1061,7 +1066,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 41
+        "total": 42
       },
       {
         "type": "data_list",
@@ -1151,7 +1156,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 101
+        "total": 103
       },
       {
         "type": "template",
@@ -1161,7 +1166,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 281
+        "total": 283
       },
       {
         "type": "template",

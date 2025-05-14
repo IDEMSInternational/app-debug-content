@@ -1,0 +1,25 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "pdf_data",
+  "status": "released",
+  "data_list_name": "pdf",
+  "rows": [
+    {
+      "id": "mod1_intro",
+      "title": "Introduksyon sa Modyul",
+      "pdf_asset": "pdf/01_mod1_intro.pdf"
+    },
+    {
+      "id": "01_mod1_session_structure",
+      "title": "Istruktura ng Sesyon",
+      "pdf_asset": "pdf/01_mod1_session_structure.pdf"
+    },
+    {
+      "id": "mod1_panimulang_gawain",
+      "title": "Panimulang Gawain",
+      "pdf_asset": "pdf/01_mod1_panimulang_gawain.pdf"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

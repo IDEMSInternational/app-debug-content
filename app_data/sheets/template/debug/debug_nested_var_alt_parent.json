@@ -1,0 +1,147 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_alt_parent",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "parent_var_1",
+      "value": "initial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_var_1"
+    },
+    {
+      "name": "parent_var_2",
+      "value": "initial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_var_2"
+    },
+    {
+      "type": "title",
+      "value": "Parent template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "template",
+      "value": "debug_nested_var_alt_child",
+      "rows": [
+        {
+          "name": "child_var_1",
+          "value": "@local.parent_var_1",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "binding_mode": "reference"
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_nested_var_alt_child.child_var_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.parent_var_1",
+                "matchedExpression": "@local.parent_var_1",
+                "type": "local",
+                "fieldName": "parent_var_1"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.parent_var_1": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "child_var_2",
+          "value": "@local.parent_var_2",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "binding_mode": "value"
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_nested_var_alt_child.child_var_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.parent_var_2",
+                "matchedExpression": "@local.parent_var_2",
+                "type": "local",
+                "fieldName": "parent_var_2"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.parent_var_2": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "debug_nested_var_alt_child",
+      "_nested_name": "debug_nested_var_alt_child"
+    },
+    {
+      "type": "text",
+      "value": "var_value: @local.parent_var_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "var_value: @local.parent_var_1",
+            "matchedExpression": "@local.parent_var_1",
+            "type": "local",
+            "fieldName": "parent_var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_var_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "var_value: @local.parent_var_2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "var_value: @local.parent_var_2",
+            "matchedExpression": "@local.parent_var_2",
+            "type": "local",
+            "fieldName": "parent_var_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_var_2": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
