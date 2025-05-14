@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_concatenation_parent",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "debug_concatenation_1",
+      "value": "debug_concatenation",
+      "rows": [
+        {
+          "name": "pdf_id",
+          "value": "01_mod1_session_structure",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_concatenation_1.pdf_id"
+        }
+      ],
+      "_nested_name": "debug_concatenation_1"
+    },
+    {
+      "type": "template",
+      "name": "debug_concatenation_2",
+      "value": "debug_concatenation",
+      "rows": [
+        {
+          "name": "pdf_id",
+          "value": "mod1_panimulang_gawain",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_concatenation_2.pdf_id"
+        }
+      ],
+      "_nested_name": "debug_concatenation_2"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

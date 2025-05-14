@@ -4,41 +4,17 @@
   "status": "released",
   "rows": [
     {
-      "type": "text",
-      "name": "text_version",
-      "value": "Code version: @fields._app_version",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "text_version",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "Code version: @fields._app_version",
-            "matchedExpression": "@fields._app_version",
-            "type": "fields",
-            "fieldName": "_app_version"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@fields._app_version": [
-          "value"
-        ]
-      }
-    },
-    {
-      "name": "module_id",
-      "value": "childdevelopment",
+      "name": "pdf_id",
+      "value": "mod1_intro",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "module_id"
+      "_nested_name": "pdf_id"
     },
     {
       "name": "data",
-      "value": "module_tasks",
+      "value": "pdf",
       "_translations": {
         "value": {}
       },
@@ -46,26 +22,26 @@
       "_nested_name": "data"
     },
     {
-      "name": "concat_module_id",
-      "value": "@local.data.@local.module_id",
+      "name": "concat_pdf_id",
+      "value": "@local.data.@local.pdf_id",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "concat_module_id",
+      "_nested_name": "concat_pdf_id",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.data.@local.module_id",
+            "fullExpression": "@local.data.@local.pdf_id",
             "matchedExpression": "@local.data",
             "type": "local",
             "fieldName": "data"
           },
           {
-            "fullExpression": "@local.data.@local.module_id",
-            "matchedExpression": "@local.module_id",
+            "fullExpression": "@local.data.@local.pdf_id",
+            "matchedExpression": "@local.pdf_id",
             "type": "local",
-            "fieldName": "module_id"
+            "fieldName": "pdf_id"
           }
         ]
       },
@@ -73,103 +49,127 @@
         "@local.data": [
           "value"
         ],
-        "@local.module_id": [
+        "@local.pdf_id": [
           "value"
         ]
       }
     },
     {
-      "name": "module_data",
-      "value": "@data.@local.concat_module_id",
+      "name": "pdf_data",
+      "value": "@data.@local.concat_pdf_id",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "module_data",
+      "_nested_name": "pdf_data",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.@local.concat_module_id",
-            "matchedExpression": "@local.concat_module_id",
+            "fullExpression": "@data.@local.concat_pdf_id",
+            "matchedExpression": "@local.concat_pdf_id",
             "type": "local",
-            "fieldName": "concat_module_id"
+            "fieldName": "concat_pdf_id"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.concat_module_id": [
+        "@local.concat_pdf_id": [
           "value"
         ]
       }
     },
     {
       "type": "text",
-      "name": "text_1",
-      "value": "1: @local.concat_module_id",
+      "value": "1: @local.concat_pdf_id",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "text_1",
+      "name": "text_6",
+      "_nested_name": "text_6",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "1: @local.concat_module_id",
-            "matchedExpression": "@local.concat_module_id",
+            "fullExpression": "1: @local.concat_pdf_id",
+            "matchedExpression": "@local.concat_pdf_id",
             "type": "local",
-            "fieldName": "concat_module_id"
+            "fieldName": "concat_pdf_id"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.concat_module_id": [
+        "@local.concat_pdf_id": [
           "value"
         ]
       }
     },
     {
       "type": "text",
-      "name": "text_2",
-      "value": "2: @data.@local.concat_module_id",
+      "value": "2: @data.@local.concat_pdf_id",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "text_2",
+      "name": "text_7",
+      "_nested_name": "text_7",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "2: @data.@local.concat_module_id",
-            "matchedExpression": "@local.concat_module_id",
+            "fullExpression": "2: @data.@local.concat_pdf_id",
+            "matchedExpression": "@local.concat_pdf_id",
             "type": "local",
-            "fieldName": "concat_module_id"
+            "fieldName": "concat_pdf_id"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.concat_module_id": [
+        "@local.concat_pdf_id": [
           "value"
         ]
       }
     },
     {
       "type": "text",
-      "name": "text_3",
-      "value": "3: @local.module_data.title",
+      "value": "3: @local.pdf_data.title",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "text_3",
+      "name": "text_8",
+      "_nested_name": "text_8",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "3: @local.module_data.title",
-            "matchedExpression": "@local.module_data.title",
+            "fullExpression": "3: @local.pdf_data.title",
+            "matchedExpression": "@local.pdf_data.title",
             "type": "local",
-            "fieldName": "module_data"
+            "fieldName": "pdf_data"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@local.module_data.title": [
+        "@local.pdf_data.title": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "4: @local.pdf_data.pdf_asset",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "4: @local.pdf_data.pdf_asset",
+            "matchedExpression": "@local.pdf_data.pdf_asset",
+            "type": "local",
+            "fieldName": "pdf_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.pdf_data.pdf_asset": [
           "value"
         ]
       }

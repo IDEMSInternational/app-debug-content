@@ -14,6 +14,11 @@
       "_nested_name": "title_1"
     },
     {
+      "name": "combo_box_in_parent",
+      "type": "set_variable",
+      "_nested_name": "combo_box_in_parent"
+    },
+    {
       "type": "display_group",
       "name": "dg_child",
       "parameter_list": {
