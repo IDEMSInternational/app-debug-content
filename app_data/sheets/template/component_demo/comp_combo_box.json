@@ -185,13 +185,39 @@
       }
     },
     {
+      "type": "combo_box",
+      "name": "combo_box_default_2",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1",
+        "disabled": "true"
+      },
+      "_nested_name": "combo_box_default_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
       "type": "title",
       "value": "Dropdown variant",
       "_translations": {
         "value": {}
       },
-      "name": "title_8",
-      "_nested_name": "title_8"
+      "name": "title_9",
+      "_nested_name": "title_9"
     },
     {
       "type": "combo_box",
@@ -262,8 +288,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_10",
-      "_nested_name": "text_10",
+      "name": "text_11",
+      "_nested_name": "text_11",
       "_dynamicFields": {
         "value": [
           {
@@ -286,8 +312,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_11",
-      "_nested_name": "text_11",
+      "name": "text_12",
+      "_nested_name": "text_12",
       "_dynamicFields": {
         "value": [
           {
@@ -310,8 +336,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_12",
-      "_nested_name": "text_12"
+      "name": "text_13",
+      "_nested_name": "text_13"
     },
     {
       "type": "combo_box",
@@ -375,8 +401,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_16",
-      "_nested_name": "text_16",
+      "name": "text_17",
+      "_nested_name": "text_17",
       "_dynamicFields": {
         "value": [
           {
@@ -399,8 +425,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_17",
-      "_nested_name": "text_17",
+      "name": "text_18",
+      "_nested_name": "text_18",
       "_dynamicFields": {
         "value": [
           {
@@ -423,8 +449,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_18",
-      "_nested_name": "text_18"
+      "name": "text_19",
+      "_nested_name": "text_19"
     },
     {
       "type": "combo_box",
@@ -471,8 +497,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_20",
-      "_nested_name": "text_20",
+      "name": "text_21",
+      "_nested_name": "text_21",
       "_dynamicFields": {
         "value": [
           {
@@ -495,8 +521,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_21",
-      "_nested_name": "text_21",
+      "name": "text_22",
+      "_nested_name": "text_22",
       "_dynamicFields": {
         "value": [
           {
@@ -519,8 +545,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_22",
-      "_nested_name": "text_22"
+      "name": "text_23",
+      "_nested_name": "text_23"
     },
     {
       "type": "combo_box",
@@ -552,16 +578,112 @@
     },
     {
       "type": "text",
+      "value": "Dynamic disabled:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_25",
+      "_nested_name": "text_25"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_enabled_1",
+      "value": true,
+      "parameter_list": {
+        "false_text": "Combo box is disabled",
+        "true_text": "Combo box is enabled"
+      },
+      "_nested_name": "toggle_enabled_1"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown_4",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_2",
+        "variant": "dropdown",
+        "disabled": "!@local.toggle_enabled_1"
+      },
+      "_nested_name": "combo_box_dropdown_4",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_2",
+              "matchedExpression": "@local.answer_list_2",
+              "type": "local",
+              "fieldName": "answer_list_2"
+            }
+          ],
+          "disabled": [
+            {
+              "fullExpression": "!@local.toggle_enabled_1",
+              "matchedExpression": "!@local.toggle_enabled_1",
+              "type": "local",
+              "fieldName": "toggle_enabled_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_2": [
+          "parameter_list.answer_list"
+        ],
+        "!@local.toggle_enabled_1": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown_5",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_2",
+        "variant": "dropdown",
+        "disabled_text": "Custom disabled text",
+        "disabled": "!@local.toggle_enabled_1"
+      },
+      "_nested_name": "combo_box_dropdown_5",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_2",
+              "matchedExpression": "@local.answer_list_2",
+              "type": "local",
+              "fieldName": "answer_list_2"
+            }
+          ],
+          "disabled": [
+            {
+              "fullExpression": "!@local.toggle_enabled_1",
+              "matchedExpression": "!@local.toggle_enabled_1",
+              "type": "local",
+              "fieldName": "toggle_enabled_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_2": [
+          "parameter_list.answer_list"
+        ],
+        "!@local.toggle_enabled_1": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
+      "type": "text",
       "value": "With title",
       "_translations": {
         "value": {}
       },
-      "name": "text_24",
-      "_nested_name": "text_24"
+      "name": "text_29",
+      "_nested_name": "text_29"
     },
     {
       "type": "combo_box",
-      "name": "combo_box_search_4",
+      "name": "combo_box_search_6",
       "action_list": [
         {
           "trigger": "changed",
@@ -580,7 +702,7 @@
         "placeholder": "Has a title",
         "text": "The Title"
       },
-      "_nested_name": "combo_box_search_4",
+      "_nested_name": "combo_box_search_6",
       "_dynamicFields": {
         "parameter_list": {
           "answer_list": [
@@ -605,8 +727,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_26",
-      "_nested_name": "title_26"
+      "name": "title_31",
+      "_nested_name": "title_31"
     },
     {
       "type": "combo_box",
@@ -957,8 +1079,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_44",
-      "_nested_name": "title_44"
+      "name": "title_49",
+      "_nested_name": "title_49"
     },
     {
       "type": "combo_box",
@@ -971,11 +1093,11 @@
           "value": "comp_combo_box_items",
           "rows": [],
           "name": "data_items_1",
-          "_nested_name": "combo_box_45.data_items_1"
+          "_nested_name": "combo_box_50.data_items_1"
         }
       ],
-      "name": "combo_box_45",
-      "_nested_name": "combo_box_45"
+      "name": "combo_box_50",
+      "_nested_name": "combo_box_50"
     },
     {
       "type": "button",

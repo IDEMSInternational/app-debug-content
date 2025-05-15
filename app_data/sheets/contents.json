@@ -2789,6 +2789,20 @@
       "_xlsxPath": "debug_sheets/debug_nested_var_simple.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_nested_var_emit_child": {
+      "flow_type": "template",
+      "flow_name": "debug_nested_var_emit_child",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_nested_var_emit_parent": {
+      "flow_type": "template",
+      "flow_name": "debug_nested_var_emit_parent",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "debug_nested_var_parent": {
       "flow_type": "template",
       "flow_name": "debug_nested_var_parent",
