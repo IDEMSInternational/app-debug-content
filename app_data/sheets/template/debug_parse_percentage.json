@@ -23,18 +23,27 @@
     },
     {
       "type": "text",
-      "value": 0.95,
+      "value": "95%",
+      "_translations": {
+        "value": {}
+      },
       "name": "text_4",
       "_nested_name": "text_4"
     },
     {
-      "value": 0,
+      "value": "0%",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
       "name": "set_variable_5",
       "_nested_name": "set_variable_5"
     },
     {
-      "value": 1,
+      "value": "100%",
+      "_translations": {
+        "value": {}
+      },
       "type": "set_variable",
       "name": "set_variable_6",
       "_nested_name": "set_variable_6"
