@@ -120,7 +120,7 @@
       "name": "round_button_par_3_2",
       "parameter_list": {
         "style": "navigation",
-        "icon_src": "images/icons/close.svg"
+        "icon_src": "close"
       },
       "_nested_name": "round_button_par_3_2"
     },
@@ -242,7 +242,7 @@
       ],
       "parameter_list": {
         "variant": "navigation",
-        "icon_src": "images/icons/audio/play-back-sharp.svg"
+        "icon_src": "play-forward"
       },
       "_nested_name": "back_button"
     },
