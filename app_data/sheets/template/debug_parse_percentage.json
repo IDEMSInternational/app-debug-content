@@ -1,0 +1,144 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_parse_percentage",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Parsing of percentage values",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Values directly in template:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text",
+      "value": 0.95,
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "value": 0,
+      "type": "set_variable",
+      "name": "set_variable_5",
+      "_nested_name": "set_variable_5"
+    },
+    {
+      "value": 1,
+      "type": "set_variable",
+      "name": "set_variable_6",
+      "_nested_name": "set_variable_6"
+    },
+    {
+      "type": "text",
+      "value": "Value from data list:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "text",
+      "value": "@data.debug_parse_percentage_data.id_1.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_parse_percentage_data.id_1.value",
+            "matchedExpression": "@data.debug_parse_percentage_data.id_1.value",
+            "type": "data",
+            "fieldName": "debug_parse_percentage_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_parse_percentage_data.id_1.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@data.debug_parse_percentage_data.id_2.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_parse_percentage_data.id_2.value",
+            "matchedExpression": "@data.debug_parse_percentage_data.id_2.value",
+            "type": "data",
+            "fieldName": "debug_parse_percentage_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_parse_percentage_data.id_2.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@data.debug_parse_percentage_data.id_3.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_parse_percentage_data.id_3.value",
+            "matchedExpression": "@data.debug_parse_percentage_data.id_3.value",
+            "type": "data",
+            "fieldName": "debug_parse_percentage_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_parse_percentage_data.id_3.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Value from data list in a table:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "table",
+      "value": "debug_parse_percentage_data",
+      "_translations": {
+        "value": {}
+      },
+      "name": "table_12",
+      "_nested_name": "table_12"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_parse_percentage.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

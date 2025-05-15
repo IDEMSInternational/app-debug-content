@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 375
+        "count": 376
       },
       {
         "type": "calendar",
@@ -111,7 +111,7 @@
       },
       {
         "type": "items",
-        "count": 49
+        "count": 50
       },
       {
         "type": "latex",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 826
+        "count": 828
       },
       {
         "type": "simple_checkbox",
@@ -251,7 +251,7 @@
       },
       {
         "type": "table",
-        "count": 6
+        "count": 7
       },
       {
         "type": "task_card",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1120
+        "count": 1129
       },
       {
         "type": "text_area",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 566
+        "count": 568
       },
       {
         "type": "toggle_bar",
@@ -452,6 +452,10 @@
       {
         "type": "screen_orientation",
         "count": 3
+      },
+      {
+        "type": "scroll_top",
+        "count": 1
       },
       {
         "type": "set_data",
@@ -806,7 +810,7 @@
       },
       {
         "path": "images/icons/audio/play-back-sharp.svg",
-        "count": 2,
+        "count": 1,
         "size_kb": 0.1
       },
       {
@@ -831,7 +835,7 @@
       },
       {
         "path": "images/icons/close.svg",
-        "count": 2,
+        "count": 1,
         "size_kb": 0.2
       },
       {
@@ -1066,7 +1070,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 42
+        "total": 44
       },
       {
         "type": "data_list",
@@ -1156,7 +1160,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 103
+        "total": 104
       },
       {
         "type": "template",
@@ -1166,7 +1170,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 283
+        "total": 284
       },
       {
         "type": "template",

@@ -1,0 +1,78 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_action_scroll_top",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Click button to scroll to the top",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "This is a placeholder to make sure the screen is long enough to have to scroll down to the button",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "items",
+      "value": "@data.scroll_number",
+      "rows": [
+        {
+          "type": "text",
+          "value": "text",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "items_4.text_1"
+        }
+      ],
+      "name": "items_4",
+      "_nested_name": "items_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.scroll_number",
+            "matchedExpression": "@data.scroll_number",
+            "type": "data",
+            "fieldName": "scroll_number"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.scroll_number": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Scroll Top",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "scroll_top",
+          "args": [],
+          "_raw": "click | scroll_top",
+          "_cleaned": "click | scroll_top"
+        }
+      ],
+      "_nested_name": "button_default"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_action_scroll_top.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

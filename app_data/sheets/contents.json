@@ -733,6 +733,17 @@
       "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_parse_percentage_data": {
+      "flow_type": "data_list",
+      "flow_name": "debug_parse_percentage_data",
+      "_xlsxPath": "debug_sheets/debug_parse_percentage.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+      "_metadata": {
+        "value": {
+          "type": "number"
+        }
+      }
+    },
     "debug_set_data_changed_data": {
       "flow_type": "data_list",
       "flow_name": "debug_set_data_changed_data",
@@ -1160,6 +1171,12 @@
       "flow_name": "pdf_data",
       "data_list_name": "pdf",
       "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "scroll_number": {
+      "flow_type": "data_list",
+      "flow_name": "scroll_number",
+      "_xlsxPath": "feature_sheets/feature_action_scroll_top.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "task_cards_data": {
@@ -4002,6 +4019,13 @@
       "_xlsxPath": "feature_sheets/feature_action_copy.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "feature_action_scroll_top": {
+      "flow_type": "template",
+      "flow_name": "feature_action_scroll_top",
+      "flow_subtype": "debug",
+      "_xlsxPath": "feature_sheets/feature_action_scroll_top.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "feature_combo_box_placeholder": {
       "flow_type": "template",
       "flow_name": "feature_combo_box_placeholder",
@@ -4260,6 +4284,12 @@
       "override_target": "debug_override_default",
       "override_condition": "@fields.debug_boolean",
       "_xlsxPath": "debug_sheets/debug_override.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_parse_percentage": {
+      "flow_type": "template",
+      "flow_name": "debug_parse_percentage",
+      "_xlsxPath": "debug_sheets/debug_parse_percentage.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "debug_rtl_variables": {

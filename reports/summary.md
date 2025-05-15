@@ -12,7 +12,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 375 |
+| button | 376 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -30,7 +30,7 @@
 | google_sign_in_button | 4 |
 | html | 4 |
 | image | 83 |
-| items | 49 |
+| items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 2 |
@@ -60,22 +60,22 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 826 |
+| set_variable | 828 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 52 |
-| table | 6 |
+| table | 7 |
 | task_card | 31 |
 | task_progress_bar | 6 |
 | template | 146 |
-| text | 1120 |
+| text | 1129 |
 | text_area | 13 |
 | text_box | 56 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 566 |
+| title | 568 |
 | toggle_bar | 68 |
 | update_action_list | 2 |
 | video | 4 |
@@ -122,6 +122,7 @@
 | reset_data | 7 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
+| scroll_top | 1 |
 | set_data | 18 |
 | set_field | 116 |
 | set_item | 34 |
@@ -229,12 +230,12 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/airplane_grey.png | 2.1 | 1 |
 | images/icons/ask_question_white.svg | 1.4 | 3 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
-| images/icons/audio/play-back-sharp.svg | 0.1 | 2 |
+| images/icons/audio/play-back-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
 | images/icons/book_white.svg | 0.7 | 12 |
 | images/icons/close.png | 2.5 | 1 |
-| images/icons/close.svg | 0.2 | 2 |
+| images/icons/close.svg | 0.2 | 1 |
 | images/icons/expand_circle_right.png | 0.9 | 5 |
 | images/icons/globe_blue.svg | 3.9 | 25 |
 | images/icons/heart_blue.svg | 1.4 | 39 |
@@ -287,7 +288,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 42 |
+| data_list |  | 44 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 12 |
@@ -305,9 +306,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 103 |
+| template |  | 104 |
 | template | component_demo | 62 |
-| template | debug | 283 |
+| template | debug | 284 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
