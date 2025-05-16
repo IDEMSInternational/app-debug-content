@@ -1,0 +1,73 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_emit_child",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "child_var_1",
+      "value": "initial child value",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "child_var_1"
+    },
+    {
+      "type": "title",
+      "value": "Child Template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "text",
+      "value": "child_var_1: @local.child_var_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "child_var_1: @local.child_var_1",
+            "matchedExpression": "@local.child_var_1",
+            "type": "local",
+            "fieldName": "child_var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.child_var_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Update Value",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "child_var_1",
+            "new value"
+          ],
+          "_raw": "click | set_local: child_var_1: new value",
+          "_cleaned": "click | set_local: child_var_1: new value"
+        }
+      ],
+      "_nested_name": "button_default"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

@@ -6,6 +6,50 @@
   "rows": [
     {
       "type": "title",
+      "value": "Disabled state",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_enabled",
+      "value": true,
+      "parameter_list": {
+        "false_text": "Text box is disabled",
+        "true_text": "Text box is enabled"
+      },
+      "_nested_name": "toggle_enabled"
+    },
+    {
+      "type": "text_box",
+      "parameter_list": {
+        "disabled": "!@local.toggle_enabled"
+      },
+      "name": "text_box_4",
+      "_nested_name": "text_box_4",
+      "_dynamicFields": {
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "!@local.toggle_enabled",
+              "matchedExpression": "!@local.toggle_enabled",
+              "type": "local",
+              "fieldName": "toggle_enabled"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "!@local.toggle_enabled": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
+      "type": "title",
       "name": "title_1",
       "value": "Maximum length",
       "_translations": {
