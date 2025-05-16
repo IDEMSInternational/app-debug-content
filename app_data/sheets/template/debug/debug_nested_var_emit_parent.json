@@ -1,0 +1,95 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_emit_parent",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "parent_var_1",
+      "value": "initial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_var_1"
+    },
+    {
+      "type": "title",
+      "value": "Parent template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "template",
+      "value": "debug_nested_var_emit_child",
+      "rows": [
+        {
+          "type": "set_variable",
+          "name": "child_var_1",
+          "value": "@local.parent_var_1",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_local",
+              "args": [
+                "parent_var_1"
+              ],
+              "_raw": "changed | set_local: parent_var_1",
+              "_cleaned": "changed | set_local: parent_var_1"
+            }
+          ],
+          "_nested_name": "debug_nested_var_emit_child.child_var_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.parent_var_1",
+                "matchedExpression": "@local.parent_var_1",
+                "type": "local",
+                "fieldName": "parent_var_1"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.parent_var_1": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "debug_nested_var_emit_child",
+      "_nested_name": "debug_nested_var_emit_child"
+    },
+    {
+      "type": "text",
+      "value": "var_value: @local.parent_var_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "var_value: @local.parent_var_1",
+            "matchedExpression": "@local.parent_var_1",
+            "type": "local",
+            "fieldName": "parent_var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_var_1": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
