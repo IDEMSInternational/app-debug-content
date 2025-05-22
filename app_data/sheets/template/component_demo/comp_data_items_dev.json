@@ -117,7 +117,7 @@
                 "value": {}
               },
               "name": "text_1",
-              "_nested_name": "data_items_4.display_group_4.text_1",
+              "_nested_name": "data_items_4.display_group_4_@item.id.text_1",
               "_dynamicFields": {
                 "value": [
                   {
@@ -126,11 +126,22 @@
                     "type": "local",
                     "fieldName": "itemNumber"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_4.display_group_4_@item.id.text_1",
+                    "matchedExpression": "@item.id.text_1",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
                 ]
               },
               "_dynamicDependencies": {
                 "@local.itemNumber": [
                   "value"
+                ],
+                "@item.id.text_1": [
+                  "_nested_name"
                 ]
               }
             },
@@ -142,7 +153,7 @@
               },
               "condition": "@local.isEven",
               "name": "text_2",
-              "_nested_name": "data_items_4.display_group_4.text_2",
+              "_nested_name": "data_items_4.display_group_4_@item.id.text_2",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -151,11 +162,22 @@
                     "type": "local",
                     "fieldName": "isEven"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_4.display_group_4_@item.id.text_2",
+                    "matchedExpression": "@item.id.text_2",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
                 ]
               },
               "_dynamicDependencies": {
                 "@local.isEven": [
                   "condition"
+                ],
+                "@item.id.text_2": [
+                  "_nested_name"
                 ]
               }
             },
@@ -167,7 +189,7 @@
               },
               "condition": "!@local.isEven",
               "name": "text_3",
-              "_nested_name": "data_items_4.display_group_4.text_3",
+              "_nested_name": "data_items_4.display_group_4_@item.id.text_3",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -176,11 +198,22 @@
                     "type": "local",
                     "fieldName": "isEven"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_4.display_group_4_@item.id.text_3",
+                    "matchedExpression": "@item.id.text_3",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
                 ]
               },
               "_dynamicDependencies": {
                 "!@local.isEven": [
                   "condition"
+                ],
+                "@item.id.text_3": [
+                  "_nested_name"
                 ]
               }
             },
@@ -191,7 +224,7 @@
                 "value": {}
               },
               "name": "text_4",
-              "_nested_name": "data_items_4.display_group_4.text_4",
+              "_nested_name": "data_items_4.display_group_4_@item.id.text_4",
               "_dynamicFields": {
                 "value": [
                   {
@@ -200,17 +233,52 @@
                     "type": "local",
                     "fieldName": "dueDate"
                   }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_4.display_group_4_@item.id.text_4",
+                    "matchedExpression": "@item.id.text_4",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
                 ]
               },
               "_dynamicDependencies": {
                 "@local.dueDate": [
                   "value"
+                ],
+                "@item.id.text_4": [
+                  "_nested_name"
                 ]
               }
             }
           ],
-          "name": "display_group_4",
-          "_nested_name": "data_items_4.display_group_4"
+          "name": "display_group_4_@item.id",
+          "_nested_name": "data_items_4.display_group_4_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "display_group_4_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_4.display_group_4_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
         }
       ],
       "name": "data_items_4",
