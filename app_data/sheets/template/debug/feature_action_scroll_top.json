@@ -55,6 +55,7 @@
           "_translations": {
             "value": {}
           },
+
           "name": "text_1_@item.id",
           "_nested_name": "items_5.text_1_@item.id",
           "_dynamicFields": {
