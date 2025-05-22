@@ -10,7 +10,7 @@
       "rows": [
         {
           "name": "pdf_id",
-          "value": "01_mod1_session_structure",
+          "value": "3_id",
           "_translations": {
             "value": {}
           },
@@ -27,7 +27,7 @@
       "rows": [
         {
           "name": "pdf_id",
-          "value": "mod1_panimulang_gawain",
+          "value": "id_2",
           "_translations": {
             "value": {}
           },
