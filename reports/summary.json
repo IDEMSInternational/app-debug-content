@@ -18,6 +18,10 @@
         "count": 18
       },
       {
+        "type": "action",
+        "count": 1
+      },
+      {
         "type": "advanced_dashed_box",
         "count": 4
       },
@@ -38,8 +42,12 @@
         "count": 13
       },
       {
+        "type": "begin_data",
+        "count": 1
+      },
+      {
         "type": "button",
-        "count": 377
+        "count": 381
       },
       {
         "type": "calendar",
@@ -55,7 +63,7 @@
       },
       {
         "type": "combo_box",
-        "count": 63
+        "count": 65
       },
       {
         "type": "dashed_box",
@@ -231,7 +239,7 @@
       },
       {
         "type": "set_variable",
-        "count": 831
+        "count": 846
       },
       {
         "type": "simple_checkbox",
@@ -263,11 +271,11 @@
       },
       {
         "type": "template",
-        "count": 147
+        "count": 148
       },
       {
         "type": "text",
-        "count": 1132
+        "count": 1138
       },
       {
         "type": "text_area",
@@ -291,7 +299,7 @@
       },
       {
         "type": "title",
-        "count": 571
+        "count": 574
       },
       {
         "type": "toggle_bar",
@@ -454,8 +462,8 @@
         "count": 3
       },
       {
-        "type": "scroll_top",
-        "count": 1
+        "type": "scroll",
+        "count": 2
       },
       {
         "type": "set_data",
@@ -475,7 +483,7 @@
       },
       {
         "type": "set_local",
-        "count": 68
+        "count": 75
       },
       {
         "type": "share",
@@ -1170,7 +1178,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 286
+        "total": 287
       },
       {
         "type": "template",

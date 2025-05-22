@@ -23,13 +23,38 @@
       "_nested_name": "child_var_2"
     },
     {
+      "name": "child_var_1",
+      "value": "temp_@local.child_var_1",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "type": "set_variable",
+      "_nested_name": "child_var_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "temp_@local.child_var_1",
+            "matchedExpression": "@local.child_var_1",
+            "type": "local",
+            "fieldName": "child_var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.child_var_1": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "title",
       "value": "Child Template",
       "_translations": {
         "value": {}
       },
-      "name": "title_4",
-      "_nested_name": "title_4"
+      "name": "title_5",
+      "_nested_name": "title_5"
     },
     {
       "type": "text",
@@ -37,8 +62,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_5",
-      "_nested_name": "text_5",
+      "name": "text_6",
+      "_nested_name": "text_6",
       "_dynamicFields": {
         "value": [
           {
@@ -61,8 +86,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_6",
-      "_nested_name": "text_6",
+      "name": "text_7",
+      "_nested_name": "text_7",
       "_dynamicFields": {
         "value": [
           {

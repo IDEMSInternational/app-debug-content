@@ -7,16 +7,18 @@
 | @item.input_type | 1 |
 | accordion | 6 |
 | accordion_section | 18 |
+| action | 1 |
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 377 |
+| begin_data | 1 |
+| button | 381 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 63 |
+| combo_box | 65 |
 | dashed_box | 19 |
 | data_items | 80 |
 | data_query | 8 |
@@ -60,7 +62,7 @@
 | set_default | 1 |
 | set_field | 28 |
 | set_local | 7 |
-| set_variable | 831 |
+| set_variable | 846 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -68,14 +70,14 @@
 | table | 7 |
 | task_card | 31 |
 | task_progress_bar | 6 |
-| template | 147 |
-| text | 1132 |
+| template | 148 |
+| text | 1138 |
 | text_area | 13 |
 | text_box | 57 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 571 |
+| title | 574 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -122,12 +124,12 @@
 | reset_data | 7 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
-| scroll_top | 1 |
+| scroll | 2 |
 | set_data | 18 |
 | set_field | 116 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 68 |
+| set_local | 75 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
@@ -308,7 +310,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 104 |
 | template | component_demo | 62 |
-| template | debug | 286 |
+| template | debug | 287 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

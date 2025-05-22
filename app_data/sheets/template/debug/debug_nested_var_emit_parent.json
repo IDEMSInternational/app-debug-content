@@ -6,7 +6,7 @@
   "rows": [
     {
       "name": "parent_var_1",
-      "value": "initial",
+      "value": "var1 initial",
       "_translations": {
         "value": {}
       },
@@ -14,13 +14,49 @@
       "_nested_name": "parent_var_1"
     },
     {
+      "name": "parent_var_2",
+      "value": "var2 initial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_var_2"
+    },
+    {
+      "name": "parent_var_3",
+      "value": "var3 initial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_var_3"
+    },
+    {
+      "name": "parent_var_4",
+      "value": "var4 initial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_var_4"
+    },
+    {
+      "name": "parent_var_5",
+      "value": "var5 initial",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "parent_var_5"
+    },
+    {
       "type": "title",
       "value": "Parent template",
       "_translations": {
         "value": {}
       },
-      "name": "title_3",
-      "_nested_name": "title_3"
+      "name": "title_7",
+      "_nested_name": "title_7"
     },
     {
       "type": "template",
@@ -60,6 +96,86 @@
               "value"
             ]
           }
+        },
+        {
+          "name": "child_var_does_not_exist",
+          "value": "@local.parent_var_2",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_local",
+              "args": [
+                "parent_var_2"
+              ],
+              "_raw": "changed | set_local: parent_var_2",
+              "_cleaned": "changed | set_local: parent_var_2"
+            }
+          ],
+          "type": "set_variable",
+          "_nested_name": "debug_nested_var_emit_child.child_var_does_not_exist",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.parent_var_2",
+                "matchedExpression": "@local.parent_var_2",
+                "type": "local",
+                "fieldName": "parent_var_2"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.parent_var_2": [
+              "value"
+            ]
+          }
+        },
+        {
+          "name": "child_var_2",
+          "value": "just some text",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_local",
+              "args": [
+                "parent_var_3"
+              ],
+              "_raw": "changed | set_local: parent_var_3",
+              "_cleaned": "changed | set_local: parent_var_3"
+            },
+            {
+              "trigger": "changed",
+              "action_id": "set_local",
+              "args": [
+                "parent_var_4"
+              ],
+              "_raw": "changed | set_local: parent_var_4",
+              "_cleaned": "changed | set_local: parent_var_4"
+            }
+          ],
+          "type": "set_variable",
+          "_nested_name": "debug_nested_var_emit_child.child_var_2"
+        },
+        {
+          "name": "combo_box_default_1",
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_local",
+              "args": [
+                "parent_var_5"
+              ],
+              "_raw": "changed | set_local: parent_var_5",
+              "_cleaned": "changed | set_local: parent_var_5"
+            }
+          ],
+          "type": "set_variable",
+          "_nested_name": "debug_nested_var_emit_child.combo_box_default_1"
         }
       ],
       "name": "debug_nested_var_emit_child",
@@ -67,16 +183,16 @@
     },
     {
       "type": "text",
-      "value": "var_value: @local.parent_var_1",
+      "value": "var1_value: @local.parent_var_1",
       "_translations": {
         "value": {}
       },
-      "name": "text_6",
-      "_nested_name": "text_6",
+      "name": "text_10",
+      "_nested_name": "text_10",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "var_value: @local.parent_var_1",
+            "fullExpression": "var1_value: @local.parent_var_1",
             "matchedExpression": "@local.parent_var_1",
             "type": "local",
             "fieldName": "parent_var_1"
@@ -88,6 +204,118 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "text",
+      "value": "var2_value: @local.parent_var_2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "var2_value: @local.parent_var_2",
+            "matchedExpression": "@local.parent_var_2",
+            "type": "local",
+            "fieldName": "parent_var_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_var_2": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "var3_value: @local.parent_var_3",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_12",
+      "_nested_name": "text_12",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "var3_value: @local.parent_var_3",
+            "matchedExpression": "@local.parent_var_3",
+            "type": "local",
+            "fieldName": "parent_var_3"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_var_3": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "var4_value: @local.parent_var_4",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "var4_value: @local.parent_var_4",
+            "matchedExpression": "@local.parent_var_4",
+            "type": "local",
+            "fieldName": "parent_var_4"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_var_4": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "combo_value: @local.parent_var_5",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_14",
+      "_nested_name": "text_14",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "combo_value: @local.parent_var_5",
+            "matchedExpression": "@local.parent_var_5",
+            "type": "local",
+            "fieldName": "parent_var_5"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_var_5": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "No listeners template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
+    },
+    {
+      "type": "template",
+      "value": "debug_nested_var_emit_child",
+      "rows": [],
+      "name": "debug_nested_var_emit_child",
+      "_nested_name": "debug_nested_var_emit_child"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
