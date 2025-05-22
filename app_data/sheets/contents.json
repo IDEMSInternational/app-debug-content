@@ -1161,10 +1161,9 @@
       "_xlsxPath": "component_sheets/component_data_query.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
-    "pdf_data": {
+    "pdf": {
       "flow_type": "data_list",
-      "flow_name": "pdf_data",
-      "data_list_name": "pdf",
+      "flow_name": "pdf",
       "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },

@@ -5,7 +5,7 @@
   "rows": [
     {
       "name": "pdf_id",
-      "value": "mod1_intro",
+      "value": "first_id",
       "_translations": {
         "value": {}
       },
@@ -13,17 +13,17 @@
       "_nested_name": "pdf_id"
     },
     {
-      "name": "data",
+      "name": "data_list_flow_name",
       "value": "pdf",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "data"
+      "_nested_name": "data_list_flow_name"
     },
     {
       "name": "concat_pdf_id",
-      "value": "@local.data.@local.pdf_id",
+      "value": "@local.data_list_flow_name.@local.pdf_id",
       "_translations": {
         "value": {}
       },
@@ -32,13 +32,13 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@local.data.@local.pdf_id",
-            "matchedExpression": "@local.data",
+            "fullExpression": "@local.data_list_flow_name.@local.pdf_id",
+            "matchedExpression": "@local.data_list_flow_name",
             "type": "local",
-            "fieldName": "data"
+            "fieldName": "data_list_flow_name"
           },
           {
-            "fullExpression": "@local.data.@local.pdf_id",
+            "fullExpression": "@local.data_list_flow_name.@local.pdf_id",
             "matchedExpression": "@local.pdf_id",
             "type": "local",
             "fieldName": "pdf_id"
@@ -46,7 +46,7 @@
         ]
       },
       "_dynamicDependencies": {
-        "@local.data": [
+        "@local.data_list_flow_name": [
           "value"
         ],
         "@local.pdf_id": [
@@ -128,7 +128,7 @@
     },
     {
       "type": "text",
-      "value": "2: @data.@local.concat_pdf_id",
+      "value": "2: @local.pdf_data.title",
       "_translations": {
         "value": {}
       },
@@ -137,31 +137,7 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "2: @data.@local.concat_pdf_id",
-            "matchedExpression": "@local.concat_pdf_id",
-            "type": "local",
-            "fieldName": "concat_pdf_id"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.concat_pdf_id": [
-          "value"
-        ]
-      }
-    },
-    {
-      "type": "text",
-      "value": "3: @local.pdf_data.title",
-      "_translations": {
-        "value": {}
-      },
-      "name": "text_9",
-      "_nested_name": "text_9",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "3: @local.pdf_data.title",
+            "fullExpression": "2: @local.pdf_data.title",
             "matchedExpression": "@local.pdf_data.title",
             "type": "local",
             "fieldName": "pdf_data"
@@ -170,30 +146,6 @@
       },
       "_dynamicDependencies": {
         "@local.pdf_data.title": [
-          "value"
-        ]
-      }
-    },
-    {
-      "type": "text",
-      "value": "4: @local.pdf_data.pdf_asset",
-      "_translations": {
-        "value": {}
-      },
-      "name": "text_10",
-      "_nested_name": "text_10",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "4: @local.pdf_data.pdf_asset",
-            "matchedExpression": "@local.pdf_data.pdf_asset",
-            "type": "local",
-            "fieldName": "pdf_data"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.pdf_data.pdf_asset": [
           "value"
         ]
       }

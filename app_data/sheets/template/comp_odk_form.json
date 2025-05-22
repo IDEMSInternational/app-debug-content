@@ -87,6 +87,10 @@
     {
       "type": "odk_form",
       "name": "form_1",
+      "value": "@field.odk_output",
+      "_translations": {
+        "value": {}
+      },
       "action_list": [
         {
           "trigger": "changed",
@@ -104,6 +108,14 @@
       },
       "_nested_name": "form_1",
       "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@field.odk_output",
+            "matchedExpression": "@field.odk_output",
+            "type": "field",
+            "fieldName": "odk_output"
+          }
+        ],
         "action_list": {
           "0": {
             "_raw": [
@@ -136,6 +148,9 @@
         }
       },
       "_dynamicDependencies": {
+        "@field.odk_output": [
+          "value"
+        ],
         "@local.form_1": [
           "action_list.0._raw",
           "action_list.0._cleaned"

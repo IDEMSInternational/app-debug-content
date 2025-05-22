@@ -174,21 +174,25 @@
     {
       "type": "combo_box",
       "name": "combo_box_default_2",
-      "hidden": "answer_list: @local.answer_list_1;",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1"
+      },
       "_nested_name": "combo_box_default_2",
       "_dynamicFields": {
-        "hidden": [
-          {
-            "fullExpression": "answer_list: @local.answer_list_1;",
-            "matchedExpression": "@local.answer_list_1",
-            "type": "local",
-            "fieldName": "answer_list_1"
-          }
-        ]
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
       },
       "_dynamicDependencies": {
         "@local.answer_list_1": [
-          "hidden"
+          "parameter_list.answer_list"
         ]
       }
     }
