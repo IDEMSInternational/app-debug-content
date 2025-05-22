@@ -24,8 +24,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "text_1",
-          "_nested_name": "loop_activities.text_1",
+          "name": "text_1_@item.id",
+          "_nested_name": "loop_activities.text_1_@item.id",
           "_dynamicFields": {
             "value": [
               {
@@ -34,11 +34,31 @@
                 "type": "local",
                 "fieldName": "filter"
               }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "loop_activities.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
             ]
           },
           "_dynamicDependencies": {
             "@local.filter": [
               "value"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         }

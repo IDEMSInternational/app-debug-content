@@ -422,8 +422,8 @@
             "in_progress_icon": "images/icons/in_progress.svg",
             "completed_icon": "images/icons/tick_white.svg"
           },
-          "name": "task_card_1",
-          "_nested_name": "data_items_19.task_card_1",
+          "name": "task_card_1_@item.id",
+          "_nested_name": "data_items_19.task_card_1_@item.id",
           "_dynamicFields": {
             "parameter_list": {
               "task_group_id": [
@@ -482,7 +482,23 @@
                   "fieldName": "card_image"
                 }
               ]
-            }
+            },
+            "name": [
+              {
+                "fullExpression": "task_card_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_19.task_card_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "@local.task_group_id": [
@@ -505,6 +521,10 @@
             ],
             "@local.card_image": [
               "parameter_list.image"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         }

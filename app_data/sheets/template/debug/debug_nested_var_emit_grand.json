@@ -1,0 +1,106 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_emit_grand",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "grandchild_var_1",
+      "value": "var 1 initial grandchild value",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "grandchild_var_1"
+    },
+    {
+      "name": "grandchild_var_2",
+      "value": "var 2 initial grandchild value",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "grandchild_var_2"
+    },
+    {
+      "type": "title",
+      "value": "Grandchild Template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "text",
+      "value": "grandchild_var_1: @local.grandchild_var_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "grandchild_var_1: @local.grandchild_var_1",
+            "matchedExpression": "@local.grandchild_var_1",
+            "type": "local",
+            "fieldName": "grandchild_var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.grandchild_var_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "grandchild_var_2: @local.grandchild_var_2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "grandchild_var_2: @local.grandchild_var_2",
+            "matchedExpression": "@local.grandchild_var_2",
+            "type": "local",
+            "fieldName": "grandchild_var_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.grandchild_var_2": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Update Grandchild Var 1",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "grandchild_var_1",
+            "new var1 value from grandchild"
+          ],
+          "_raw": "click | set_local: grandchild_var_1: new var1 value from grandchild",
+          "_cleaned": "click | set_local: grandchild_var_1: new var1 value from grandchild"
+        }
+      ],
+      "_nested_name": "button_default"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

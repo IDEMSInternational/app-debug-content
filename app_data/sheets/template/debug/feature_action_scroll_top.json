@@ -23,6 +23,29 @@
       "_nested_name": "text_3"
     },
     {
+      "type": "button",
+      "value": "Scroll To Bottom",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "scroll",
+          "args": [
+            "bottom"
+          ],
+          "_raw": "click | scroll: bottom | duration: 500",
+          "_cleaned": "click | scroll: bottom | duration: 500",
+          "params": {
+            "duration": 500
+          }
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
       "type": "items",
       "value": "@data.scroll_number",
       "rows": [
@@ -32,12 +55,36 @@
           "_translations": {
             "value": {}
           },
-          "name": "text_1",
-          "_nested_name": "items_4.text_1"
+          "name": "text_1_@item.id",
+          "_nested_name": "items_5.text_1_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "items_5.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
         }
       ],
-      "name": "items_4",
-      "_nested_name": "items_4",
+      "name": "items_5",
+      "_nested_name": "items_5",
       "_dynamicFields": {
         "value": [
           {
@@ -56,7 +103,6 @@
     },
     {
       "type": "button",
-      "name": "button_default",
       "value": "Scroll Top",
       "_translations": {
         "value": {}
@@ -64,13 +110,16 @@
       "action_list": [
         {
           "trigger": "click",
-          "action_id": "scroll_top",
-          "args": [],
-          "_raw": "click | scroll_top",
-          "_cleaned": "click | scroll_top"
+          "action_id": "scroll",
+          "args": [
+            "top"
+          ],
+          "_raw": "click | scroll: top",
+          "_cleaned": "click | scroll: top"
         }
       ],
-      "_nested_name": "button_default"
+      "name": "button_7",
+      "_nested_name": "button_7"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_action_scroll_top.xlsx",
