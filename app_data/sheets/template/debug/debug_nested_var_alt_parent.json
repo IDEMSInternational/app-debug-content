@@ -88,6 +88,33 @@
               "value"
             ]
           }
+        },
+        {
+          "name": "child_var_3",
+          "value": "@item.first_name",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "binding_mode": "reference\nsubmit"
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_nested_var_alt_child.child_var_3",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.first_name",
+                "matchedExpression": "@item.first_name",
+                "type": "item",
+                "fieldName": "first_name"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.first_name": [
+              "value"
+            ]
+          }
         }
       ],
       "name": "debug_nested_var_alt_child",
@@ -140,6 +167,29 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "button",
+      "name": "save_button",
+      "value": "Save to data_list",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "save_button"
+    },
+    {
+      "type": "action",
+      "value": "on_leave",
+      "_translations": {
+        "value": {}
+      },
+      "name": "action_10",
+      "_nested_name": "action_10"
+    },
+    {
+      "type": "begin_data",
+      "name": "begin_data_11",
+      "_nested_name": "begin_data_11"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",

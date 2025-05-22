@@ -737,12 +737,7 @@
       "flow_type": "data_list",
       "flow_name": "debug_parse_percentage_data",
       "_xlsxPath": "debug_sheets/debug_parse_percentage.xlsx",
-      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
-      "_metadata": {
-        "value": {
-          "type": "number"
-        }
-      }
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "debug_set_data_changed_data": {
       "flow_type": "data_list",
@@ -2792,6 +2787,13 @@
     "debug_nested_var_emit_child": {
       "flow_type": "template",
       "flow_name": "debug_nested_var_emit_child",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_nested_var_emit_grand": {
+      "flow_type": "template",
+      "flow_name": "debug_nested_var_emit_grand",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_nested_var.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
