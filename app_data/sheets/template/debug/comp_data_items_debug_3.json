@@ -1,0 +1,157 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items_debug_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Data items with no child rows",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "No child rows",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_data_items_list",
+      "rows": [],
+      "name": "data_items_4",
+      "_nested_name": "data_items_4"
+    },
+    {
+      "type": "text",
+      "value": "No child rows alt",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_data_items_list",
+      "_translations": {
+        "value": {}
+      },
+      "name": "data_items_7",
+      "_nested_name": "data_items_7"
+    },
+    {
+      "type": "text",
+      "value": "No item rows",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_data_items_list",
+      "parameter_list": {
+        "limit": "0"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "value": "Shouldn't be visible",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_9.text_1_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_9.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_9",
+      "_nested_name": "data_items_9"
+    },
+    {
+      "type": "text",
+      "value": "Manually hidden",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_data_items_list",
+      "hidden": true,
+      "rows": [
+        {
+          "type": "text",
+          "value": "Shouldn't be visible",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_12.text_1_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_12.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_12",
+      "_nested_name": "data_items_12"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_data_items.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

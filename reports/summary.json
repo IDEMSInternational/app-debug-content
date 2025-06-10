@@ -47,7 +47,7 @@
       },
       {
         "type": "button",
-        "count": 381
+        "count": 379
       },
       {
         "type": "calendar",
@@ -63,7 +63,7 @@
       },
       {
         "type": "combo_box",
-        "count": 65
+        "count": 67
       },
       {
         "type": "dashed_box",
@@ -71,7 +71,7 @@
       },
       {
         "type": "data_items",
-        "count": 80
+        "count": 86
       },
       {
         "type": "data_query",
@@ -95,7 +95,7 @@
       },
       {
         "type": "display_group",
-        "count": 229
+        "count": 238
       },
       {
         "type": "drawer",
@@ -211,7 +211,7 @@
       },
       {
         "type": "radio_group",
-        "count": 57
+        "count": 59
       },
       {
         "type": "radio_group_grid",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_field",
-        "count": 28
+        "count": 29
       },
       {
         "type": "set_local",
@@ -239,7 +239,7 @@
       },
       {
         "type": "set_variable",
-        "count": 846
+        "count": 843
       },
       {
         "type": "simple_checkbox",
@@ -267,15 +267,15 @@
       },
       {
         "type": "task_progress_bar",
-        "count": 6
+        "count": 7
       },
       {
         "type": "template",
-        "count": 148
+        "count": 147
       },
       {
         "type": "text",
-        "count": 1138
+        "count": 1148
       },
       {
         "type": "text_area",
@@ -283,7 +283,7 @@
       },
       {
         "type": "text_box",
-        "count": 57
+        "count": 58
       },
       {
         "type": "text_bubble",
@@ -299,7 +299,7 @@
       },
       {
         "type": "title",
-        "count": 574
+        "count": 581
       },
       {
         "type": "toggle_bar",
@@ -483,7 +483,7 @@
       },
       {
         "type": "set_local",
-        "count": 75
+        "count": 70
       },
       {
         "type": "share",
@@ -523,12 +523,12 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31616 KB",
+        "KB": "31614 KB",
         "MB": "31.6 MB"
       },
       {
         "assets": "unused",
-        "KB": "4794 KB",
+        "KB": "4797 KB",
         "MB": "4.8 MB"
       }
     ]
@@ -562,6 +562,10 @@
       {
         "path": "images/icons/airplane_blue.svg",
         "size_kb": 1.5
+      },
+      {
+        "path": "images/icons/close.png",
+        "size_kb": 2.5
       },
       {
         "path": "images/icons/favicon.svg",
@@ -634,21 +638,6 @@
       },
       {
         "path": "images/map_view_bg.jpg",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "pdf/01_mod1_intro.pdf",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "pdf/01_mod1_panimulang_gawain.pdf",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "pdf/01_mod1_session_structure.pdf",
         "count": 1,
         "missing": true
       }
@@ -837,11 +826,6 @@
         "size_kb": 0.7
       },
       {
-        "path": "images/icons/close.png",
-        "count": 1,
-        "size_kb": 2.5
-      },
-      {
         "path": "images/icons/close.svg",
         "count": 1,
         "size_kb": 0.2
@@ -853,7 +837,7 @@
       },
       {
         "path": "images/icons/globe_blue.svg",
-        "count": 25,
+        "count": 26,
         "size_kb": 3.9
       },
       {
@@ -1078,7 +1062,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 44
+        "total": 45
       },
       {
         "type": "data_list",
@@ -1168,7 +1152,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 104
+        "total": 105
       },
       {
         "type": "template",
@@ -1178,7 +1162,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 287
+        "total": 288
       },
       {
         "type": "template",

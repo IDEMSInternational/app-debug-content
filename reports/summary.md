@@ -14,19 +14,19 @@
 | apple_sign_in_button | 3 |
 | audio | 13 |
 | begin_data | 1 |
-| button | 381 |
+| button | 379 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 65 |
+| combo_box | 67 |
 | dashed_box | 19 |
-| data_items | 80 |
+| data_items | 86 |
 | data_query | 8 |
 | date_time_picker | 6 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 229 |
+| display_group | 238 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 4 |
@@ -55,29 +55,29 @@
 | progress_path | 3 |
 | qr_code | 2 |
 | radio_button_grid | 14 |
-| radio_group | 57 |
+| radio_group | 59 |
 | radio_group_grid | 5 |
 | round_button | 27 |
 | select_text | 7 |
 | set_default | 1 |
-| set_field | 28 |
+| set_field | 29 |
 | set_local | 7 |
-| set_variable | 846 |
+| set_variable | 843 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 52 |
 | table | 7 |
 | task_card | 31 |
-| task_progress_bar | 6 |
-| template | 148 |
-| text | 1138 |
+| task_progress_bar | 7 |
+| template | 147 |
+| text | 1148 |
 | text_area | 13 |
-| text_box | 57 |
+| text_box | 58 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 574 |
+| title | 581 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -129,7 +129,7 @@
 | set_field | 116 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 75 |
+| set_local | 70 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
@@ -145,8 +145,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31616 KB | 31.6 MB |
-| unused | 4794 KB | 4.8 MB |
+| total | 31614 KB | 31.6 MB |
+| unused | 4797 KB | 4.8 MB |
 </details>
 
 <details open>
@@ -163,6 +163,7 @@ Assets that appear in app-data but do not have references within sheets
 | android/splash.png | 147.4 |
 | images/home_bg.svg | 3632 |
 | images/icons/airplane_blue.svg | 1.5 |
+| images/icons/close.png | 2.5 |
 | images/icons/favicon.svg | 2.1 |
 | images/icons/red_cross_grey.png | 0.2 |
 | images/progress_path_bg_plh_kids_kw.jpg | 129.5 |
@@ -188,9 +189,6 @@ Assets that have references within sheets but do not appear in app-data
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
 | https://www.w3schools.com/html/mov_bbb.mp4 | 1 |
 | images/map_view_bg.jpg | 1 |
-| pdf/01_mod1_intro.pdf | 1 |
-| pdf/01_mod1_panimulang_gawain.pdf | 1 |
-| pdf/01_mod1_session_structure.pdf | 1 |
 </details>
 
 <details >
@@ -236,10 +234,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
 | images/icons/book_white.svg | 0.7 | 12 |
-| images/icons/close.png | 2.5 | 1 |
 | images/icons/close.svg | 0.2 | 1 |
 | images/icons/expand_circle_right.png | 0.9 | 5 |
-| images/icons/globe_blue.svg | 3.9 | 25 |
+| images/icons/globe_blue.svg | 3.9 | 26 |
 | images/icons/heart_blue.svg | 1.4 | 39 |
 | images/icons/heart_outline.svg | 0.6 | 14 |
 | images/icons/home.svg | 0.4 | 1 |
@@ -290,7 +287,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 44 |
+| data_list |  | 45 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 12 |
@@ -308,9 +305,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 104 |
+| template |  | 105 |
 | template | component_demo | 62 |
-| template | debug | 287 |
+| template | debug | 288 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

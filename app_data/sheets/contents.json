@@ -1173,6 +1173,12 @@
       "_xlsxPath": "feature_sheets/feature_action_scroll_top.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "short_list": {
+      "flow_type": "data_list",
+      "flow_name": "short_list",
+      "_xlsxPath": "debug_sheets/EFM_bugs.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "task_cards_data": {
       "flow_type": "data_list",
       "flow_name": "task_cards_data",
@@ -2099,6 +2105,13 @@
     "comp_data_items_debug_2": {
       "flow_type": "template",
       "flow_name": "comp_data_items_debug_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "component_sheets/component_data_items.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "comp_data_items_debug_3": {
+      "flow_type": "template",
+      "flow_name": "comp_data_items_debug_3",
       "flow_subtype": "debug",
       "_xlsxPath": "component_sheets/component_data_items.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
@@ -4364,6 +4377,12 @@
       "override_target": "doc_override_default",
       "override_condition": "@fields.doc_override_condition",
       "_xlsxPath": "doc_sheets/doc_override.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "efm_chapters": {
+      "flow_type": "template",
+      "flow_name": "efm_chapters",
+      "_xlsxPath": "debug_sheets/EFM_bugs.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "enter_dev_mode": {

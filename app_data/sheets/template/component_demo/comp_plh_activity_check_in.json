@@ -451,8 +451,8 @@
             "countdown_start_date": "@item.countdown_start_date",
             "countdown_text_list": "@local.countdown_text_list"
           },
-          "name": "plh_activity_check_in_1",
-          "_nested_name": "data_items_18.plh_activity_check_in_1",
+          "name": "plh_activity_check_in_1_@item.id",
+          "_nested_name": "data_items_18.plh_activity_check_in_1_@item.id",
           "_dynamicFields": {
             "parameter_list": {
               "countdown_days": [
@@ -479,7 +479,23 @@
                   "fieldName": "countdown_text_list"
                 }
               ]
-            }
+            },
+            "name": [
+              {
+                "fullExpression": "plh_activity_check_in_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_18.plh_activity_check_in_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "@item.countdown_days": [
@@ -490,6 +506,10 @@
             ],
             "@local.countdown_text_list": [
               "parameter_list.countdown_text_list"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         }
