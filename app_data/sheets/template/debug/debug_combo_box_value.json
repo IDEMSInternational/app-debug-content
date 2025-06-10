@@ -5,6 +5,24 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "type": "title",
+      "value": "Combo box intiial value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "title",
+      "value": "Example 1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
       "name": "answer_list",
       "value": [
         {
@@ -31,10 +49,10 @@
       "_translations": {
         "value": {}
       },
-      "exclude_from_translation": true,
       "parameter_list": {
         "answer_list": "@local.answer_list"
       },
+      "exclude_from_translation": true,
       "_nested_name": "combo_box",
       "_dynamicFields": {
         "parameter_list": {
@@ -50,6 +68,82 @@
       },
       "_dynamicDependencies": {
         "@local.answer_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Example 2 – string/number value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "name": "answer_list_2",
+      "value": [
+        {
+          "name": 1,
+          "text": "This is text 1"
+        },
+        {
+          "name": 2,
+          "text": "This is text 2"
+        },
+        {
+          "name": 3,
+          "text": "This is text 3"
+        }
+      ],
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "answer_list_2"
+    },
+    {
+      "type": "set_field",
+      "name": "debug_combo_box_value_number",
+      "value": 1,
+      "_nested_name": "debug_combo_box_value_number"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box",
+      "value": "@field.debug_combo_box_value_number",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@local.answer_list_2"
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "combo_box",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@field.debug_combo_box_value_number",
+            "matchedExpression": "@field.debug_combo_box_value_number",
+            "type": "field",
+            "fieldName": "debug_combo_box_value_number"
+          }
+        ],
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_2",
+              "matchedExpression": "@local.answer_list_2",
+              "type": "local",
+              "fieldName": "answer_list_2"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@field.debug_combo_box_value_number": [
+          "value"
+        ],
+        "@local.answer_list_2": [
           "parameter_list.answer_list"
         ]
       }

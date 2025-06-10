@@ -1,0 +1,12 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "short_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/EFM_bugs.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

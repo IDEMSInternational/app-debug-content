@@ -1121,6 +1121,62 @@
         }
       ],
       "_nested_name": "button_add"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "placeholder": "Select from data_list",
+        "variant": "dropdown"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_combo_box_items",
+          "rows": [],
+          "name": "data_items_1",
+          "_nested_name": "combo_box_53.data_items_1"
+        }
+      ],
+      "name": "combo_box_53",
+      "_nested_name": "combo_box_53"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "placeholder": "Select from data_list",
+        "variant": "dropdown"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_combo_box_items",
+          "parameter_list": {
+            "filter": "@item.id !== \"id_1\""
+          },
+          "rows": [],
+          "name": "data_items_1",
+          "_nested_name": "combo_box_55.data_items_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "filter": [
+                {
+                  "fullExpression": "@item.id !== \"id_1\"",
+                  "matchedExpression": "@item.id",
+                  "type": "item",
+                  "fieldName": "id"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "parameter_list.filter"
+            ]
+          }
+        }
+      ],
+      "name": "combo_box_55",
+      "_nested_name": "combo_box_55"
     }
   ],
   "_xlsxPath": "component_sheets/component_combo_box.xlsx",

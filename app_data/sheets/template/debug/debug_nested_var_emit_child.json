@@ -33,49 +33,22 @@
       "_nested_name": "child_var_1"
     },
     {
-      "name": "child_var_2",
-      "value": "var 2 initial child value",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "child_var_2"
-    },
-    {
-      "name": "child_var_3",
-      "value": "var 3 initial child value",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "child_var_3"
-    },
-    {
-      "name": "child_var_4",
-      "value": "var 4 initial child value",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "child_var_4"
-    },
-    {
       "type": "title",
+      "name": "child_title",
       "value": "Child Template",
       "_translations": {
         "value": {}
       },
-      "name": "title_7",
-      "_nested_name": "title_7"
+      "_nested_name": "child_title"
     },
     {
       "type": "text",
+      "name": "child_text1",
       "value": "child_var_1: @local.child_var_1",
       "_translations": {
         "value": {}
       },
-      "name": "text_8",
-      "_nested_name": "text_8",
+      "_nested_name": "child_text1",
       "_dynamicFields": {
         "value": [
           {
@@ -93,60 +66,22 @@
       }
     },
     {
-      "type": "button",
-      "name": "button_default",
-      "value": "Update Var 1",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_local",
-          "args": [
-            "child_var_1",
-            "new var1 value"
-          ],
-          "_raw": "click | set_local: child_var_1: new var1 value",
-          "_cleaned": "click | set_local: child_var_1: new var1 value"
-        }
-      ],
-      "_nested_name": "button_default"
-    },
-    {
-      "type": "button",
-      "name": "button_default",
-      "value": "Update Var 2",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_local",
-          "args": [
-            "child_var_2",
-            "new var2 value"
-          ],
-          "_raw": "click | set_local: child_var_2: new var2 value",
-          "_cleaned": "click | set_local: child_var_2: new var2 value"
-        }
-      ],
-      "_nested_name": "button_default"
-    },
-    {
       "type": "combo_box",
       "name": "combo_box_default_1",
+      "value": "@local.child_var_1",
+      "_translations": {
+        "value": {}
+      },
       "action_list": [
         {
           "trigger": "changed",
           "action_id": "set_local",
           "args": [
-            "child_var_4",
+            "child_var_1",
             "this.value"
           ],
-          "_raw": "changed | set_local: child_var_4: this.value",
-          "_cleaned": "changed | set_local: child_var_4: this.value"
+          "_raw": "changed | set_local: child_var_1: this.value",
+          "_cleaned": "changed | set_local: child_var_1: this.value"
         }
       ],
       "parameter_list": {
@@ -154,6 +89,14 @@
       },
       "_nested_name": "combo_box_default_1",
       "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.child_var_1",
+            "matchedExpression": "@local.child_var_1",
+            "type": "local",
+            "fieldName": "child_var_1"
+          }
+        ],
         "parameter_list": {
           "answer_list": [
             {
@@ -166,33 +109,59 @@
         }
       },
       "_dynamicDependencies": {
+        "@local.child_var_1": [
+          "value"
+        ],
         "@local.answer_list_1": [
           "parameter_list.answer_list"
         ]
       }
     },
     {
-      "type": "combo_box",
-      "name": "combo_box_default_2",
-      "parameter_list": {
-        "answer_list": "@local.answer_list_1"
+      "type": "text",
+      "name": "child_text2",
+      "value": "combo child value: @local.combo_box_default_1",
+      "_translations": {
+        "value": {}
       },
-      "_nested_name": "combo_box_default_2",
+      "_nested_name": "child_text2",
       "_dynamicFields": {
-        "parameter_list": {
-          "answer_list": [
-            {
-              "fullExpression": "@local.answer_list_1",
-              "matchedExpression": "@local.answer_list_1",
-              "type": "local",
-              "fieldName": "answer_list_1"
-            }
-          ]
-        }
+        "value": [
+          {
+            "fullExpression": "combo child value: @local.combo_box_default_1",
+            "matchedExpression": "@local.combo_box_default_1",
+            "type": "local",
+            "fieldName": "combo_box_default_1"
+          }
+        ]
       },
       "_dynamicDependencies": {
-        "@local.answer_list_1": [
-          "parameter_list.answer_list"
+        "@local.combo_box_default_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "child_text3",
+      "value": "child_var_1 (combo) value: @local.child_var_1",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "child_text3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "child_var_1 (combo) value: @local.child_var_1",
+            "matchedExpression": "@local.child_var_1",
+            "type": "local",
+            "fieldName": "child_var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.child_var_1": [
+          "value"
         ]
       }
     }

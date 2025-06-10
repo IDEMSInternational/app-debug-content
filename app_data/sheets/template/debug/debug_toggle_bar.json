@@ -74,8 +74,8 @@
               }
             }
           ],
-          "name": "toggle_bar_1",
-          "_nested_name": "data_items_6.toggle_bar_1",
+          "name": "toggle_bar_1_@item.id",
+          "_nested_name": "data_items_6.toggle_bar_1_@item.id",
           "_dynamicFields": {
             "value": [
               {
@@ -114,7 +114,23 @@
                   ]
                 }
               }
-            }
+            },
+            "name": [
+              {
+                "fullExpression": "toggle_bar_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_6.toggle_bar_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "@item.completed": [
@@ -124,6 +140,10 @@
               "action_list.0._raw",
               "action_list.0._cleaned",
               "action_list.0.params.completed"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         },
@@ -133,8 +153,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "text_2",
-          "_nested_name": "data_items_6.text_2",
+          "name": "text_2_@item.id",
+          "_nested_name": "data_items_6.text_2_@item.id",
           "_dynamicFields": {
             "value": [
               {
@@ -143,11 +163,31 @@
                 "type": "item",
                 "fieldName": "completed"
               }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_6.text_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
             ]
           },
           "_dynamicDependencies": {
             "@item.completed": [
               "value"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         }

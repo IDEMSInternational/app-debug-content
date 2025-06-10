@@ -76,8 +76,8 @@
                 "locked_image_asset": "images/icons/locked.png",
                 "is_locked": "@item.locked"
               },
-              "name": "plh_module_list_item_1",
-              "_nested_name": "plh_progress_path_4.data_items_1.plh_module_list_item_1",
+              "name": "plh_module_list_item_1_@item.id",
+              "_nested_name": "plh_progress_path_4.data_items_1.plh_module_list_item_1_@item.id",
               "_dynamicFields": {
                 "parameter_list": {
                   "module_image_asset": [
@@ -104,7 +104,23 @@
                       "fieldName": "locked"
                     }
                   ]
-                }
+                },
+                "name": [
+                  {
+                    "fullExpression": "plh_module_list_item_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "plh_progress_path_4.data_items_1.plh_module_list_item_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
               },
               "_dynamicDependencies": {
                 "@item.image": [
@@ -115,6 +131,10 @@
                 ],
                 "@item.locked": [
                   "parameter_list.is_locked"
+                ],
+                "@item.id": [
+                  "name",
+                  "_nested_name"
                 ]
               }
             }
@@ -221,8 +241,8 @@
                     "locked_image_asset": "images/icons/locked.png",
                     "is_locked": "@item.locked"
                   },
-                  "name": "plh_module_list_item_1",
-                  "_nested_name": "display_group_8.plh_progress_path_2.data_items_1.plh_module_list_item_1",
+                  "name": "plh_module_list_item_1_@item.id",
+                  "_nested_name": "display_group_8.plh_progress_path_2.data_items_1.plh_module_list_item_1_@item.id",
                   "_dynamicFields": {
                     "parameter_list": {
                       "module_image_asset": [
@@ -249,7 +269,23 @@
                           "fieldName": "locked"
                         }
                       ]
-                    }
+                    },
+                    "name": [
+                      {
+                        "fullExpression": "plh_module_list_item_1_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "display_group_8.plh_progress_path_2.data_items_1.plh_module_list_item_1_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
                   },
                   "_dynamicDependencies": {
                     "@item.image": [
@@ -260,6 +296,10 @@
                     ],
                     "@item.locked": [
                       "parameter_list.is_locked"
+                    ],
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
                     ]
                   }
                 }
@@ -355,8 +395,8 @@
                 "highlighted": "@item.highlighted"
               },
               "condition": false,
-              "name": "task_card_1",
-              "_nested_name": "plh_progress_path_11.data_items_1.task_card_1",
+              "name": "task_card_1_@item.id",
+              "_nested_name": "plh_progress_path_11.data_items_1.task_card_1_@item.id",
               "_dynamicFields": {
                 "parameter_list": {
                   "task_group_data": [
@@ -399,7 +439,23 @@
                       "fieldName": "highlighted"
                     }
                   ]
-                }
+                },
+                "name": [
+                  {
+                    "fullExpression": "task_card_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "plh_progress_path_11.data_items_1.task_card_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
               },
               "_dynamicDependencies": {
                 "@item.task_group_data": [
@@ -416,6 +472,10 @@
                 ],
                 "@item.highlighted": [
                   "parameter_list.highlighted"
+                ],
+                "@item.id": [
+                  "name",
+                  "_nested_name"
                 ]
               }
             }

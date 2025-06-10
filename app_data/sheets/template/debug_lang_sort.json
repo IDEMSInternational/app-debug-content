@@ -20,8 +20,8 @@
           "_translations": {
             "value": {}
           },
-          "name": "text_1",
-          "_nested_name": "data_items_4.text_1",
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_4.text_1_@item.id",
           "_dynamicFields": {
             "value": [
               {
@@ -30,11 +30,31 @@
                 "type": "item",
                 "fieldName": "text"
               }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_4.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
             ]
           },
           "_dynamicDependencies": {
             "@item.text": [
               "value"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         }

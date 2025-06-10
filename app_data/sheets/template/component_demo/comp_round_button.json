@@ -5,6 +5,15 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "title",
+      "name": "title_1",
+      "value": "Default round button",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
       "type": "round_button",
       "name": "round_button_default",
       "action_list": [
@@ -30,28 +39,35 @@
       "_nested_name": "title_2"
     },
     {
-      "type": "round_button",
-      "name": "round_button_par_2_1",
-      "parameter_list": {
-        "icon_src": "body-outline"
-      },
-      "_nested_name": "round_button_par_2_1"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_2_2",
-      "parameter_list": {
-        "icon_src": "images/icons/audio/play-back-sharp.svg"
-      },
-      "_nested_name": "round_button_par_2_2"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_2_3",
-      "parameter_list": {
-        "icon_src": "body-outline"
-      },
-      "_nested_name": "round_button_par_2_3"
+      "type": "display_group",
+      "name": "dg_1",
+      "rows": [
+        {
+          "type": "round_button",
+          "name": "round_button_par_2_1",
+          "parameter_list": {
+            "icon_src": "body-outline"
+          },
+          "_nested_name": "dg_1.round_button_par_2_1"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_2_2",
+          "parameter_list": {
+            "icon_src": "images/icons/audio/play-back-sharp.svg"
+          },
+          "_nested_name": "dg_1.round_button_par_2_2"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_2_3",
+          "parameter_list": {
+            "icon_src": "body-outline"
+          },
+          "_nested_name": "dg_1.round_button_par_2_3"
+        }
+      ],
+      "_nested_name": "dg_1"
     },
     {
       "type": "text",
@@ -63,22 +79,29 @@
       "_nested_name": "text_1"
     },
     {
-      "type": "round_button",
-      "name": "round_button_par_2_4",
-      "parameter_list": {
-        "icon_src": "images/icons/close.svg",
-        "variant": "no-background"
-      },
-      "_nested_name": "round_button_par_2_4"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_2_5",
-      "parameter_list": {
-        "icon_src": "images/icons/close.png",
-        "variant": "no-background"
-      },
-      "_nested_name": "round_button_par_2_5"
+      "type": "display_group",
+      "name": "dg_2",
+      "rows": [
+        {
+          "type": "round_button",
+          "name": "round_button_par_2_4",
+          "parameter_list": {
+            "icon_src": "images/icons/close.svg",
+            "variant": "no-background"
+          },
+          "_nested_name": "dg_2.round_button_par_2_4"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_2_5",
+          "parameter_list": {
+            "icon_src": "images/icons/globe_blue.svg",
+            "variant": "no-background"
+          },
+          "_nested_name": "dg_2.round_button_par_2_5"
+        }
+      ],
+      "_nested_name": "dg_2"
     },
     {
       "type": "title",
@@ -90,107 +113,271 @@
       "_nested_name": "title_3"
     },
     {
+      "type": "display_group",
+      "name": "dg_3",
+      "rows": [
+        {
+          "type": "text",
+          "name": "button_1",
+          "value": "Variant: information",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_3.button_1"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_3_1",
+          "parameter_list": {
+            "variant": "information"
+          },
+          "_nested_name": "dg_3.round_button_par_3_1"
+        }
+      ],
+      "_nested_name": "dg_3"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_4",
+      "rows": [
+        {
+          "type": "text",
+          "name": "button_1",
+          "value": "Variant: navigation",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_4.button_1"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_3_2",
+          "parameter_list": {
+            "variant": "navigation",
+            "icon_src": "close"
+          },
+          "_nested_name": "dg_4.round_button_par_3_2"
+        }
+      ],
+      "_nested_name": "dg_4"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_5",
+      "rows": [
+        {
+          "type": "text",
+          "name": "button_1",
+          "value": "Variant: yellow",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_5.button_1"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_3_3",
+          "parameter_list": {
+            "variant": "yellow",
+            "style": "yellow"
+          },
+          "_nested_name": "dg_5.round_button_par_3_3"
+        }
+      ],
+      "_nested_name": "dg_5"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_6",
+      "rows": [
+        {
+          "type": "text",
+          "name": "button_1",
+          "value": "Variant: orange",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_6.button_1"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_3_4",
+          "parameter_list": {
+            "variant": "orange",
+            "style": "orange"
+          },
+          "_nested_name": "dg_6.round_button_par_3_4"
+        }
+      ],
+      "_nested_name": "dg_6"
+    },
+    {
+      "type": "display_group",
+      "name": "dg_7",
+      "rows": [
+        {
+          "type": "text",
+          "name": "button_1",
+          "value": "Variant: dark_orange",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "dg_7.button_1"
+        },
+        {
+          "type": "round_button",
+          "name": "round_button_par_3_5",
+          "parameter_list": {
+            "variant": "dark_orange",
+            "style": "dark_orange"
+          },
+          "_nested_name": "dg_7.round_button_par_3_5"
+        }
+      ],
+      "_nested_name": "dg_7"
+    },
+    {
       "type": "text",
-      "name": "button_1",
-      "value": "Information",
+      "name": "text_4",
+      "value": "Variant: home_screen\nRound button positioning",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "button_1"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_3_1",
-      "parameter_list": {
-        "style": "information"
-      },
-      "_nested_name": "round_button_par_3_1"
-    },
-    {
-      "type": "text",
-      "name": "button_1",
-      "value": "Navigation",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "button_1"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_3_2",
-      "parameter_list": {
-        "style": "navigation",
-        "icon_src": "close"
-      },
-      "_nested_name": "round_button_par_3_2"
-    },
-    {
-      "type": "text",
-      "name": "button_1",
-      "value": "Yellow",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "button_1"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_3_3",
-      "parameter_list": {
-        "style": "yellow"
-      },
-      "_nested_name": "round_button_par_3_3"
-    },
-    {
-      "type": "text",
-      "name": "button_1",
-      "value": "Orange",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "button_1"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_3_4",
-      "parameter_list": {
-        "style": "orange"
-      },
-      "_nested_name": "round_button_par_3_4"
-    },
-    {
-      "type": "text",
-      "name": "button_1",
-      "value": "Dark orange",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "button_1"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_par_3_5",
-      "parameter_list": {
-        "style": "dark_orange"
-      },
-      "_nested_name": "round_button_par_3_5"
-    },
-    {
-      "type": "title",
-      "name": "title_4",
-      "value": "Round button positioning",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "title_4"
+      "_nested_name": "text_4"
     },
     {
       "type": "round_button",
       "name": "round_button_par_4_1",
       "parameter_list": {
+        "variant": "home_screen",
         "style": "home_screen"
       },
       "_nested_name": "round_button_par_4_1"
+    },
+    {
+      "type": "title",
+      "name": "nav_title",
+      "value": "Navigation button variants",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "nav_title"
+    },
+    {
+      "type": "text",
+      "name": "nav_back_button",
+      "value": "Variant: navigation\nUse case: Back Buttons",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "nav_back_button"
+    },
+    {
+      "type": "round_button",
+      "name": "back_button",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home_screen"
+          ],
+          "_raw": "click | go_to: home_screen",
+          "_cleaned": "click | go_to: home_screen"
+        }
+      ],
+      "parameter_list": {
+        "variant": "navigation",
+        "icon_src": "play-forward"
+      },
+      "_nested_name": "back_button"
+    },
+    {
+      "type": "text",
+      "name": "nav_article_button",
+      "value": "Variant: module\nUse case: Module article \"next\" buttons",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "nav_article_button"
+    },
+    {
+      "type": "round_button",
+      "name": "article_button",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "comp_button"
+          ],
+          "_raw": "click | go_to: comp_button",
+          "_cleaned": "click | go_to: comp_button"
+        }
+      ],
+      "parameter_list": {
+        "variant": "module",
+        "icon_src": "images/icons/book_white.svg"
+      },
+      "_nested_name": "article_button"
+    },
+    {
+      "type": "text",
+      "name": "nav_transparent_button",
+      "value": "Variant: no-background\nUse case: Transparent Nav Buttons",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "nav_transparent_button"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_transparent",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home_screen"
+          ],
+          "_raw": "click | go_to: home_screen",
+          "_cleaned": "click | go_to: home_screen"
+        }
+      ],
+      "parameter_list": {
+        "variant": "no-background",
+        "icon_src": "images/icons/globe_blue.svg"
+      },
+      "_nested_name": "round_button_transparent"
+    },
+    {
+      "type": "text",
+      "name": "nav_category_button",
+      "value": "Variant: category\nUse case: Category Buttons",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "nav_category_button"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_category",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "comp_button"
+          ],
+          "_raw": "click | go_to: comp_button",
+          "_cleaned": "click | go_to: comp_button"
+        }
+      ],
+      "parameter_list": {
+        "variant": "category",
+        "icon_src": "images/icons/globe_blue.svg"
+      },
+      "_nested_name": "round_button_category"
     },
     {
       "type": "title",
@@ -216,95 +403,6 @@
         "text": "any string as a button text"
       },
       "_nested_name": "round_button_par_5_2"
-    },
-    {
-      "type": "title",
-      "name": "nav_title",
-      "value": "Navigation buttons",
-      "_translations": {
-        "value": {}
-      },
-      "_nested_name": "nav_title"
-    },
-    {
-      "type": "round_button",
-      "name": "back_button",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "home_screen"
-          ],
-          "_raw": "click | go_to: home_screen",
-          "_cleaned": "click | go_to: home_screen"
-        }
-      ],
-      "parameter_list": {
-        "variant": "navigation",
-        "icon_src": "play-forward"
-      },
-      "_nested_name": "back_button"
-    },
-    {
-      "type": "round_button",
-      "name": "article_button",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "comp_button"
-          ],
-          "_raw": "click | go_to: comp_button",
-          "_cleaned": "click | go_to: comp_button"
-        }
-      ],
-      "parameter_list": {
-        "variant": "module",
-        "icon_src": "images/icons/book_white.svg"
-      },
-      "_nested_name": "article_button"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_transparent",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "home_screen"
-          ],
-          "_raw": "click | go_to: home_screen",
-          "_cleaned": "click | go_to: home_screen"
-        }
-      ],
-      "parameter_list": {
-        "variant": "no-background",
-        "icon_src": "images/icons/globe_blue.svg"
-      },
-      "_nested_name": "round_button_transparent"
-    },
-    {
-      "type": "round_button",
-      "name": "round_button_category",
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "go_to",
-          "args": [
-            "comp_button"
-          ],
-          "_raw": "click | go_to: comp_button",
-          "_cleaned": "click | go_to: comp_button"
-        }
-      ],
-      "parameter_list": {
-        "variant": "category",
-        "icon_src": "images/icons/globe_blue.svg"
-      },
-      "_nested_name": "round_button_category"
     }
   ],
   "_xlsxPath": "component_sheets/component_round_button .xlsx",
