@@ -422,8 +422,8 @@
             "in_progress_icon": "images/icons/in_progress.svg",
             "completed_icon": "images/icons/tick_white.svg"
           },
-          "name": "task_card_1",
-          "_nested_name": "data_items_19.task_card_1",
+          "name": "task_card_1_@item.id",
+          "_nested_name": "data_items_19.task_card_1_@item.id",
           "_dynamicFields": {
             "parameter_list": {
               "task_group_id": [
@@ -482,7 +482,23 @@
                   "fieldName": "card_image"
                 }
               ]
-            }
+            },
+            "name": [
+              {
+                "fullExpression": "task_card_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_19.task_card_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
           },
           "_dynamicDependencies": {
             "@local.task_group_id": [
@@ -505,6 +521,10 @@
             ],
             "@local.card_image": [
               "parameter_list.image"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         }
@@ -1970,7 +1990,7 @@
     },
     {
       "type": "title",
-      "value": "Card for a block button - Facilitator Mexico theme",
+      "value": "Card for a block button - Facilitator Apps",
       "_translations": {
         "value": {}
       },
@@ -2089,8 +2109,8 @@
       "parameter_list": {
         "task_id": "@local.task_id",
         "task_group_data": "@local.task_group_data",
-        "completed_column_name": "is_done",
-        "completed_field": "FALSE",
+        "completed_column_name": "@local.task_group_data.is_done",
+        "completed_field": "@local.task_completed_field",
         "title": "Pellentesque quis lectus pharetra, dictum orci ut, aliquet elit",
         "style": "button",
         "variant": "block-button",
@@ -2114,6 +2134,22 @@
               "type": "local",
               "fieldName": "task_group_data"
             }
+          ],
+          "completed_column_name": [
+            {
+              "fullExpression": "@local.task_group_data.is_done",
+              "matchedExpression": "@local.task_group_data.is_done",
+              "type": "local",
+              "fieldName": "task_group_data"
+            }
+          ],
+          "completed_field": [
+            {
+              "fullExpression": "@local.task_completed_field",
+              "matchedExpression": "@local.task_completed_field",
+              "type": "local",
+              "fieldName": "task_completed_field"
+            }
           ]
         }
       },
@@ -2123,6 +2159,12 @@
         ],
         "@local.task_group_data": [
           "parameter_list.task_group_data"
+        ],
+        "@local.task_group_data.is_done": [
+          "parameter_list.completed_column_name"
+        ],
+        "@local.task_completed_field": [
+          "parameter_list.completed_field"
         ]
       }
     },
