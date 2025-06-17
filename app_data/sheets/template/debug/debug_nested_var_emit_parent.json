@@ -29,6 +29,10 @@
       "rows": [
         {
           "name": "child_var_1",
+          "value": "text @local.var_1",
+          "_translations": {
+            "value": {}
+          },
           "action_list": [
             {
               "trigger": "changed",
@@ -41,7 +45,22 @@
             }
           ],
           "type": "set_variable",
-          "_nested_name": "template_in_parent.child_var_1"
+          "_nested_name": "template_in_parent.child_var_1",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "text @local.var_1",
+                "matchedExpression": "@local.var_1",
+                "type": "local",
+                "fieldName": "var_1"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.var_1": [
+              "value"
+            ]
+          }
         }
       ],
       "_nested_name": "template_in_parent"

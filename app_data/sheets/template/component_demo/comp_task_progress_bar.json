@@ -14,6 +14,15 @@
       "_nested_name": "title_2"
     },
     {
+      "type": "text",
+      "value": "Set progress percentage explicitly:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
       "name": "task_group",
       "value": "comp_task_progress_bar_data",
       "_translations": {
@@ -28,8 +37,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_4",
-      "_nested_name": "text_4"
+      "name": "text_5",
+      "_nested_name": "text_5"
     },
     {
       "type": "task_progress_bar",
@@ -37,8 +46,8 @@
         "task_group_data": "@local.task_group",
         "completed_field": "comp_task_progress_bar_completed"
       },
-      "name": "task_progress_bar_5",
-      "_nested_name": "task_progress_bar_5",
+      "name": "task_progress_bar_6",
+      "_nested_name": "task_progress_bar_6",
       "_dynamicFields": {
         "parameter_list": {
           "task_group_data": [
@@ -63,8 +72,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_6",
-      "_nested_name": "text_6"
+      "name": "text_7",
+      "_nested_name": "text_7"
     },
     {
       "name": "filtered_id_1",
@@ -91,8 +100,8 @@
         "completed_field": "comp_task_progress_bar_completed",
         "filter": "@task_item.id === @local.filtered_id_1 || @task_item.id === @local.filtered_id_2"
       },
-      "name": "task_progress_bar_9",
-      "_nested_name": "task_progress_bar_9",
+      "name": "task_progress_bar_10",
+      "_nested_name": "task_progress_bar_10",
       "_dynamicFields": {
         "parameter_list": {
           "task_group_data": [
@@ -137,8 +146,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_10",
-      "_nested_name": "text_10"
+      "name": "text_11",
+      "_nested_name": "text_11"
     },
     {
       "type": "data_items",
@@ -155,7 +164,7 @@
             "filter": "@task_item.id === \"id_a\" || @task_item.id === \"id_c\""
           },
           "name": "task_progress_bar_1_@item.id",
-          "_nested_name": "data_items_11.task_progress_bar_1_@item.id",
+          "_nested_name": "data_items_12.task_progress_bar_1_@item.id",
           "_dynamicFields": {
             "parameter_list": {
               "task_group_data": [
@@ -177,7 +186,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_11.task_progress_bar_1_@item.id",
+                "fullExpression": "data_items_12.task_progress_bar_1_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -195,8 +204,8 @@
           }
         }
       ],
-      "name": "data_items_11",
-      "_nested_name": "data_items_11",
+      "name": "data_items_12",
+      "_nested_name": "data_items_12",
       "_dynamicFields": {
         "value": [
           {
@@ -232,8 +241,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_13",
-      "_nested_name": "title_13"
+      "name": "title_14",
+      "_nested_name": "title_14"
     },
     {
       "type": "task_progress_bar",
@@ -243,8 +252,8 @@
         "variant": "wheel",
         "wheel_title": "Completed"
       },
-      "name": "task_progress_bar_14",
-      "_nested_name": "task_progress_bar_14",
+      "name": "task_progress_bar_15",
+      "_nested_name": "task_progress_bar_15",
       "_dynamicFields": {
         "parameter_list": {
           "task_group_data": [
@@ -274,7 +283,7 @@
             "value": {}
           },
           "name": "text_1_@item.id",
-          "_nested_name": "data_items_15.text_1_@item.id",
+          "_nested_name": "data_items_16.text_1_@item.id",
           "_dynamicFields": {
             "value": [
               {
@@ -294,7 +303,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_15.text_1_@item.id",
+                "fullExpression": "data_items_16.text_1_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -316,7 +325,7 @@
           "_translations": {
             "value": {}
           },
-          "_nested_name": "data_items_15.text_completed_@item.id",
+          "_nested_name": "data_items_16.text_completed_@item.id",
           "_dynamicFields": {
             "name": [
               {
@@ -336,7 +345,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_15.text_completed_@item.id",
+                "fullExpression": "data_items_16.text_completed_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -372,7 +381,7 @@
             }
           ],
           "name": "button_3_@item.id",
-          "_nested_name": "data_items_15.button_3_@item.id",
+          "_nested_name": "data_items_16.button_3_@item.id",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -414,7 +423,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_15.button_3_@item.id",
+                "fullExpression": "data_items_16.button_3_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -453,7 +462,7 @@
             }
           ],
           "hidden": true,
-          "_nested_name": "data_items_15.toggle_bar_@item.id",
+          "_nested_name": "data_items_16.toggle_bar_@item.id",
           "_dynamicFields": {
             "name": [
               {
@@ -503,7 +512,7 @@
             },
             "_nested_name": [
               {
-                "fullExpression": "data_items_15.toggle_bar_@item.id",
+                "fullExpression": "data_items_16.toggle_bar_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -526,8 +535,8 @@
           }
         }
       ],
-      "name": "data_items_15",
-      "_nested_name": "data_items_15",
+      "name": "data_items_16",
+      "_nested_name": "data_items_16",
       "_dynamicFields": {
         "value": [
           {
@@ -546,21 +555,21 @@
     },
     {
       "type": "title",
-      "value": "Task Progress Bar (progress_percent)",
+      "value": "Set progress percentage explicitly:",
       "_translations": {
         "value": {}
       },
-      "name": "title_17",
-      "_nested_name": "title_17"
+      "name": "title_18",
+      "_nested_name": "title_18"
     },
     {
       "type": "text",
-      "value": "Enter Percentage to update progress",
+      "value": "Enter percentage to update progress",
       "_translations": {
         "value": {}
       },
-      "name": "text_18",
-      "_nested_name": "text_18"
+      "name": "text_19",
+      "_nested_name": "text_19"
     },
     {
       "type": "text_box",
@@ -573,8 +582,11 @@
       "parameter_list": {
         "progress_percent": "@local.percent_value"
       },
-      "name": "task_progress_bar_20",
-      "_nested_name": "task_progress_bar_20",
+      "style_list": [
+        "margin-bottom: 24px"
+      ],
+      "name": "task_progress_bar_21",
+      "_nested_name": "task_progress_bar_21",
       "_dynamicFields": {
         "parameter_list": {
           "progress_percent": [

@@ -5,11 +5,31 @@
   "rows": [
     {
       "id": "id_1",
-      "text": "Example Language Template"
+      "text": "Example Language Template",
+      "_translations": {
+        "text": {
+          "es_sp": true
+        }
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Example Language Template"
+        }
+      }
     },
     {
       "id": "id_2",
-      "text": "This is a default text that needs to be translated"
+      "text": "This is a default text that needs to be translated",
+      "_translations": {
+        "text": {
+          "es_sp": true
+        }
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "This is a default text that needs to be translated"
+        }
+      }
     }
   ],
   "_xlsxPath": "debug_sheets/debug_translation_sort.xlsx",

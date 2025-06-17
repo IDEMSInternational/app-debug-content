@@ -47,7 +47,7 @@
       },
       {
         "type": "button",
-        "count": 379
+        "count": 389
       },
       {
         "type": "calendar",
@@ -71,7 +71,7 @@
       },
       {
         "type": "data_items",
-        "count": 86
+        "count": 89
       },
       {
         "type": "data_query",
@@ -79,7 +79,7 @@
       },
       {
         "type": "date_time_picker",
-        "count": 6
+        "count": 7
       },
       {
         "type": "debug_toggle",
@@ -239,7 +239,7 @@
       },
       {
         "type": "set_variable",
-        "count": 843
+        "count": 852
       },
       {
         "type": "simple_checkbox",
@@ -259,7 +259,7 @@
       },
       {
         "type": "table",
-        "count": 7
+        "count": 9
       },
       {
         "type": "task_card",
@@ -271,11 +271,11 @@
       },
       {
         "type": "template",
-        "count": 147
+        "count": 148
       },
       {
         "type": "text",
-        "count": 1148
+        "count": 1163
       },
       {
         "type": "text_area",
@@ -299,7 +299,7 @@
       },
       {
         "type": "title",
-        "count": 581
+        "count": 587
       },
       {
         "type": "toggle_bar",
@@ -371,7 +371,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 40
+        "count": 41
       },
       {
         "type": "emit: force_restart",
@@ -407,7 +407,7 @@
       },
       {
         "type": "go_to",
-        "count": 80
+        "count": 81
       },
       {
         "type": "go_to_url",
@@ -424,6 +424,10 @@
       {
         "type": "nav_stack",
         "count": 11
+      },
+      {
+        "type": "notification",
+        "count": 6
       },
       {
         "type": "open_external",
@@ -483,7 +487,7 @@
       },
       {
         "type": "set_local",
-        "count": 70
+        "count": 71
       },
       {
         "type": "share",
@@ -496,6 +500,10 @@
       {
         "type": "task",
         "count": 2
+      },
+      {
+        "type": "toast",
+        "count": 3
       },
       {
         "type": "toggle_field",
@@ -1062,7 +1070,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 45
+        "total": 44
       },
       {
         "type": "data_list",
@@ -1103,6 +1111,11 @@
         "type": "data_list",
         "subtype": "example_sheet_defaults",
         "total": 1
+      },
+      {
+        "type": "data_list",
+        "subtype": "feature",
+        "total": 2
       },
       {
         "type": "data_list",
@@ -1152,7 +1165,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 105
+        "total": 106
       },
       {
         "type": "template",
@@ -1162,7 +1175,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 288
+        "total": 289
       },
       {
         "type": "template",
@@ -1182,6 +1195,11 @@
       {
         "type": "template",
         "subtype": "example_sheet_defaults",
+        "total": 1
+      },
+      {
+        "type": "template",
+        "subtype": "feature",
         "total": 1
       },
       {

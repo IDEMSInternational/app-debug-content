@@ -951,6 +951,25 @@
         }
       }
     },
+    "notification_action_params": {
+      "flow_type": "data_list",
+      "flow_subtype": "feature",
+      "flow_name": "notification_action_params",
+      "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+      "_metadata": {
+        "required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "notification_permission_status": {
+      "flow_type": "data_list",
+      "flow_subtype": "feature",
+      "flow_name": "notification_permission_status",
+      "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "debug_filtered": {
       "flow_name": "debug_filtered",
       "flow_subtype": "generated",
@@ -1171,12 +1190,6 @@
       "flow_type": "data_list",
       "flow_name": "scroll_number",
       "_xlsxPath": "feature_sheets/feature_action_scroll_top.xlsx",
-      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
-    },
-    "short_list": {
-      "flow_type": "data_list",
-      "flow_name": "short_list",
-      "_xlsxPath": "debug_sheets/EFM_bugs.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "task_cards_data": {
@@ -4054,6 +4067,13 @@
       "_xlsxPath": "feature_sheets/feature_action_scroll_top.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "feature_action_toast": {
+      "flow_type": "template",
+      "flow_name": "feature_action_toast",
+      "flow_subtype": "debug",
+      "_xlsxPath": "feature_sheets/feature_action_toast.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "feature_combo_box_placeholder": {
       "flow_type": "template",
       "flow_name": "feature_combo_box_placeholder",
@@ -4356,6 +4376,12 @@
       "_xlsxPath": "debug_sheets/debug_translate_nested_rows.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_translation_data_changed": {
+      "flow_type": "template",
+      "flow_name": "debug_translation_data_changed",
+      "_xlsxPath": "debug_sheets/debug_translation_data_items.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "doc_field": {
       "flow_type": "template",
       "flow_name": "doc_field",
@@ -4600,6 +4626,13 @@
       "flow_type": "template",
       "flow_name": "feat_task_group_subtask_toggle",
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "feat_notification_actions": {
+      "flow_type": "template",
+      "flow_subtype": "feature",
+      "flow_name": "feat_notification_actions",
+      "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "feature_advanced_dashed_box": {

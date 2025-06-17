@@ -1,0 +1,30 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "feature",
+  "flow_name": "notification_permission_status",
+  "status": "released",
+  "rows": [
+    {
+      "id": "unsupported",
+      "status": "unsupported",
+      "description": "Running on a web platform that does not support notification api (e.g. chrome for android)"
+    },
+    {
+      "id": "schedule_at",
+      "status": "prompt",
+      "description": "User has not yet been prompted to allow permission. Can prompt"
+    },
+    {
+      "id": "title",
+      "status": "prompt-with-rationale",
+      "description": "User has been prompted but dismissed prompt without fully denying, e.g. via \"do not ask again\". Can re-prompt"
+    },
+    {
+      "id": "text",
+      "status": "undefined",
+      "description": "Status check has not been completed before template loaded. This may happen if using field on initial landing screen such as home page"
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

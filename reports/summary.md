@@ -14,15 +14,15 @@
 | apple_sign_in_button | 3 |
 | audio | 13 |
 | begin_data | 1 |
-| button | 379 |
+| button | 389 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 67 |
 | dashed_box | 19 |
-| data_items | 86 |
+| data_items | 89 |
 | data_query | 8 |
-| date_time_picker | 6 |
+| date_time_picker | 7 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
@@ -62,22 +62,22 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 843 |
+| set_variable | 852 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 52 |
-| table | 7 |
+| table | 9 |
 | task_card | 31 |
 | task_progress_bar | 7 |
-| template | 147 |
-| text | 1148 |
+| template | 148 |
+| text | 1163 |
 | text_area | 13 |
 | text_box | 58 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 581 |
+| title | 587 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -101,7 +101,7 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 32 |
-| emit: force_reprocess | 40 |
+| emit: force_reprocess | 41 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 5 |
@@ -110,11 +110,12 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 80 |
+| go_to | 81 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 11 |
+| notification | 6 |
 | open_external | 2 |
 | plh_parent_group | 7 |
 | pop_up | 49 |
@@ -129,10 +130,11 @@
 | set_field | 116 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 70 |
+| set_local | 71 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
+| toast | 3 |
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
@@ -287,7 +289,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 45 |
+| data_list |  | 44 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 12 |
@@ -296,6 +298,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
 | data_list | example_sheet_defaults | 1 |
+| data_list | feature | 2 |
 | data_list | generated | 13 |
 | data_list | lifecycle_actions | 1 |
 | data_pipe | debug | 1 |
@@ -305,12 +308,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 105 |
+| template |  | 106 |
 | template | component_demo | 62 |
-| template | debug | 288 |
+| template | debug | 289 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
 | template | example_sheet_defaults | 1 |
+| template | feature | 1 |
 | tour | debug | 4 |
 </details>
