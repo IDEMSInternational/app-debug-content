@@ -1,0 +1,205 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translation_data_changed",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "lang_select",
+      "value": "example_lang_select",
+      "rows": [],
+      "_nested_name": "lang_select"
+    },
+    {
+      "type": "data_items",
+      "value": "debug_lang_sort_data_list",
+      "rows": [
+        {
+          "type": "text",
+          "value": "@item.text",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_4.text_1_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.text",
+                "matchedExpression": "@item.text",
+                "type": "item",
+                "fieldName": "text"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_4.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.text": [
+              "value"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_4",
+      "_nested_name": "data_items_4"
+    },
+    {
+      "name": "foreign_key",
+      "value": "id_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "foreign_key"
+    },
+    {
+      "name": "module_title",
+      "type": "set_variable",
+      "_nested_name": "module_title"
+    },
+    {
+      "type": "data_items",
+      "name": "get_text",
+      "value": "debug_lang_sort_data_list",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "data_changed",
+          "action_id": "set_local",
+          "args": [
+            "module_title",
+            "@items[0]?.text"
+          ],
+          "_raw": "data_changed | set_local : module_title: @items[0]?.text",
+          "_cleaned": "data_changed | set_local : module_title: @items[0]?.text"
+        }
+      ],
+      "parameter_list": {
+        "filter": "@item.id == @local.foreign_key",
+        "limit": "1"
+      },
+      "_nested_name": "get_text",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id == @local.foreign_key",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            },
+            {
+              "fullExpression": "@item.id == @local.foreign_key",
+              "matchedExpression": "@local.foreign_key",
+              "type": "local",
+              "fieldName": "foreign_key"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "parameter_list.filter"
+        ],
+        "@local.foreign_key": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Text set through data_changed",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text_1"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "@local.module_title",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.module_title",
+            "matchedExpression": "@local.module_title",
+            "type": "local",
+            "fieldName": "module_title"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.module_title": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Text set directly",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "style": "emphasised"
+      },
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "@data.debug_lang_sort_data_list.id_1.text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_lang_sort_data_list.id_1.text",
+            "matchedExpression": "@data.debug_lang_sort_data_list.id_1.text",
+            "type": "data",
+            "fieldName": "debug_lang_sort_data_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_lang_sort_data_list.id_1.text": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_translation_data_items.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
