@@ -1,0 +1,90 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translate_nested_template",
+  "status": "released",
+  "rows": [
+    {
+      "type": "template",
+      "name": "lang_select",
+      "value": "example_lang_select",
+      "rows": [],
+      "_nested_name": "lang_select"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Text strings set directly in template (using @data)",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "@data.debug_lang_sort_data_list.id_1.text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_lang_sort_data_list.id_1.text",
+            "matchedExpression": "@data.debug_lang_sort_data_list.id_1.text",
+            "type": "data",
+            "fieldName": "debug_lang_sort_data_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.debug_lang_sort_data_list.id_1.text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Text strings set using nested template (using @data)",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "template",
+      "name": "example_text",
+      "value": "example_text",
+      "rows": [
+        {
+          "name": "text",
+          "value": "@data.debug_lang_sort_data_list.id_1.text",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "example_text.text",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@data.debug_lang_sort_data_list.id_1.text",
+                "matchedExpression": "@data.debug_lang_sort_data_list.id_1.text",
+                "type": "data",
+                "fieldName": "debug_lang_sort_data_list"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@data.debug_lang_sort_data_list.id_1.text": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "example_text"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_translate_nested_rows.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

@@ -20,7 +20,7 @@
 | colour_palette | 1 |
 | combo_box | 67 |
 | dashed_box | 19 |
-| data_items | 89 |
+| data_items | 87 |
 | data_query | 8 |
 | date_time_picker | 7 |
 | debug_toggle | 1 |
@@ -62,7 +62,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 852 |
+| set_variable | 851 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -70,14 +70,14 @@
 | table | 9 |
 | task_card | 31 |
 | task_progress_bar | 7 |
-| template | 148 |
-| text | 1163 |
+| template | 149 |
+| text | 1159 |
 | text_area | 13 |
 | text_box | 58 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 587 |
+| title | 589 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -130,7 +130,7 @@
 | set_field | 116 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 71 |
+| set_local | 70 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
