@@ -1,0 +1,267 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_translate_text",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Translate text component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "language_list",
+      "value": [
+        {
+          "name": "gb_en",
+          "text": "English"
+        },
+        {
+          "name": "es_sp",
+          "text": "Spanish"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "language_list"
+    },
+    {
+      "type": "text",
+      "value": "Set app language:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "radio_group",
+      "name": "global_language_select",
+      "value": "@fields._app_language",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "set_language",
+            "this.value"
+          ],
+          "_raw": "changed | emit: set_language: @local.global_language_select",
+          "_cleaned": "changed | emit: set_language: @local.global_language_select"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "changed | emit: force_reload",
+          "_cleaned": "changed | emit: force_reload"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.language_list"
+      },
+      "_nested_name": "global_language_select",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_language",
+            "matchedExpression": "@fields._app_language",
+            "type": "fields",
+            "fieldName": "_app_language"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.global_language_select",
+                "matchedExpression": "@local.global_language_select",
+                "type": "local",
+                "fieldName": "global_language_select"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | emit: set_language: @local.global_language_select",
+                "matchedExpression": "@local.global_language_select",
+                "type": "local",
+                "fieldName": "global_language_select"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.language_list",
+              "matchedExpression": "@local.language_list",
+              "type": "local",
+              "fieldName": "language_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language": [
+          "value"
+        ],
+        "@local.global_language_select": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.language_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "How are you feeling today?",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "text",
+      "value": "Set language for specifc text component:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "radio_group",
+      "name": "local_language_select",
+      "value": "gb_en",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@local.language_list"
+      },
+      "_nested_name": "local_language_select",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.language_list",
+              "matchedExpression": "@local.language_list",
+              "type": "local",
+              "fieldName": "language_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.language_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "translated_text",
+      "value": "How are you feeling today?",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "parameter_list": {
+        "language_code": "@local.local_language_select"
+      },
+      "_nested_name": "translated_text",
+      "_dynamicFields": {
+        "parameter_list": {
+          "language_code": [
+            {
+              "fullExpression": "@local.local_language_select",
+              "matchedExpression": "@local.local_language_select",
+              "type": "local",
+              "fieldName": "local_language_select"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.local_language_select": [
+          "parameter_list.language_code"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Copy translated text",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "copy",
+          "args": [],
+          "_raw": "click | copy | text: @local.translated_text",
+          "_cleaned": "click | copy | text: @local.translated_text",
+          "params": {
+            "text": "@local.translated_text"
+          }
+        }
+      ],
+      "name": "button_10",
+      "_nested_name": "button_10",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | copy | text: @local.translated_text",
+                "matchedExpression": "@local.translated_text",
+                "type": "local",
+                "fieldName": "translated_text"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | copy | text: @local.translated_text",
+                "matchedExpression": "@local.translated_text",
+                "type": "local",
+                "fieldName": "translated_text"
+              }
+            ],
+            "params": {
+              "text": [
+                {
+                  "fullExpression": "@local.translated_text",
+                  "matchedExpression": "@local.translated_text",
+                  "type": "local",
+                  "fieldName": "translated_text"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.translated_text": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_translate_text.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
