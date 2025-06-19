@@ -24,7 +24,7 @@
     },
     {
       "type": "text",
-      "value": "A device can only receive permisisons if explicitly granted. Usually a request is made on app load, but can also be sent as an action with response monitored in a field.\n\nPossible status descriptions are listed below",
+      "value": "A device can only receive permissions if explicitly granted. Usually a request is made on app load, but can also be sent as an action with response monitored in a field.\n\nPossible status descriptions are listed below",
       "_translations": {
         "value": {}
       },
@@ -437,6 +437,42 @@
       "_nested_name": "text_18"
     },
     {
+      "type": "text_box",
+      "name": "input_id",
+      "value": "debug_notification",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "placeholder": "Type your Notification ID"
+      },
+      "_nested_name": "input_id"
+    },
+    {
+      "type": "text_box",
+      "name": "input_title",
+      "value": "Notification Title",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "placeholder": "Type your Notification Title"
+      },
+      "_nested_name": "input_title"
+    },
+    {
+      "type": "text_box",
+      "name": "input_text",
+      "value": "Notification Text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "placeholder": "Type your Notification Text"
+      },
+      "_nested_name": "input_text"
+    },
+    {
       "type": "date_time_picker",
       "name": "input_datetime",
       "_nested_name": "input_datetime"
@@ -447,8 +483,8 @@
         "value": {}
       },
       "type": "set_variable",
-      "name": "set_variable_20",
-      "_nested_name": "set_variable_20",
+      "name": "set_variable_23",
+      "_nested_name": "set_variable_23",
       "_dynamicFields": {
         "value": [
           {
@@ -467,7 +503,7 @@
     },
     {
       "type": "button",
-      "value": "Schedule notification\n@local.input_datetime",
+      "value": "Schedule notification @local.input_id at @local.input_datetime",
       "_translations": {
         "value": {}
       },
@@ -478,12 +514,12 @@
           "args": [
             "create"
           ],
-          "_raw": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.input_datetime",
-          "_cleaned": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.input_datetime",
+          "_raw": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+          "_cleaned": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
           "params": {
-            "id": "debug_notification",
-            "title": "Notification Title",
-            "text": "Notification Text",
+            "id": "@local.input_id",
+            "title": "@local.input_title",
+            "text": "@local.input_text",
             "schedule_at": "@local.input_datetime"
           }
         }
@@ -491,12 +527,18 @@
       "parameter_list": {
         "disabled": "!@local.input_datetime"
       },
-      "name": "button_21",
-      "_nested_name": "button_21",
+      "name": "button_24",
+      "_nested_name": "button_24",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "Schedule notification\n@local.input_datetime",
+            "fullExpression": "Schedule notification @local.input_id at @local.input_datetime",
+            "matchedExpression": "@local.input_id",
+            "type": "local",
+            "fieldName": "input_id"
+          },
+          {
+            "fullExpression": "Schedule notification @local.input_id at @local.input_datetime",
             "matchedExpression": "@local.input_datetime",
             "type": "local",
             "fieldName": "input_datetime"
@@ -506,7 +548,25 @@
           "0": {
             "_raw": [
               {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.input_datetime",
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+                "matchedExpression": "@local.input_id",
+                "type": "local",
+                "fieldName": "input_id"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+                "matchedExpression": "@local.input_title",
+                "type": "local",
+                "fieldName": "input_title"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+                "matchedExpression": "@local.input_text",
+                "type": "local",
+                "fieldName": "input_text"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
                 "matchedExpression": "@local.input_datetime",
                 "type": "local",
                 "fieldName": "input_datetime"
@@ -514,13 +574,55 @@
             ],
             "_cleaned": [
               {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.input_datetime",
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+                "matchedExpression": "@local.input_id",
+                "type": "local",
+                "fieldName": "input_id"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+                "matchedExpression": "@local.input_title",
+                "type": "local",
+                "fieldName": "input_title"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+                "matchedExpression": "@local.input_text",
+                "type": "local",
+                "fieldName": "input_text"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
                 "matchedExpression": "@local.input_datetime",
                 "type": "local",
                 "fieldName": "input_datetime"
               }
             ],
             "params": {
+              "id": [
+                {
+                  "fullExpression": "@local.input_id",
+                  "matchedExpression": "@local.input_id",
+                  "type": "local",
+                  "fieldName": "input_id"
+                }
+              ],
+              "title": [
+                {
+                  "fullExpression": "@local.input_title",
+                  "matchedExpression": "@local.input_title",
+                  "type": "local",
+                  "fieldName": "input_title"
+                }
+              ],
+              "text": [
+                {
+                  "fullExpression": "@local.input_text",
+                  "matchedExpression": "@local.input_text",
+                  "type": "local",
+                  "fieldName": "input_text"
+                }
+              ],
               "schedule_at": [
                 {
                   "fullExpression": "@local.input_datetime",
@@ -544,11 +646,27 @@
         }
       },
       "_dynamicDependencies": {
+        "@local.input_id": [
+          "value",
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.id"
+        ],
         "@local.input_datetime": [
           "value",
           "action_list.0._raw",
           "action_list.0._cleaned",
           "action_list.0.params.schedule_at"
+        ],
+        "@local.input_title": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.title"
+        ],
+        "@local.input_text": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
         ],
         "!@local.input_datetime": [
           "parameter_list.disabled"
@@ -561,21 +679,21 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_22",
-      "_nested_name": "title_22"
+      "name": "title_25",
+      "_nested_name": "title_25"
     },
     {
       "type": "text",
-      "value": "Pending notifications can be retrieved from the internal `_notifications` data_list.\n\nSpecific notifications can be canceld by passing their id into the `notification: cancel` action. E.g.\n```\nclick | notification:cancel | id: @item.id\n```",
+      "value": "Pending notifications can be retrieved from the internal `_notifications` data_list.\n\nSpecific notifications can be canceled by passing their id into the `notification: cancel` action. E.g.\n```\nclick | notification:cancel | id: @item.id\n```",
       "_translations": {
         "value": {}
       },
-      "name": "text_23",
-      "_nested_name": "text_23",
+      "name": "text_26",
+      "_nested_name": "text_26",
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "Pending notifications can be retrieved from the internal `_notifications` data_list.\n\nSpecific notifications can be canceld by passing their id into the `notification: cancel` action. E.g.\n```\nclick | notification:cancel | id: @item.id\n```",
+            "fullExpression": "Pending notifications can be retrieved from the internal `_notifications` data_list.\n\nSpecific notifications can be canceled by passing their id into the `notification: cancel` action. E.g.\n```\nclick | notification:cancel | id: @item.id\n```",
             "matchedExpression": "@item.id",
             "type": "item",
             "fieldName": "id"
@@ -599,7 +717,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "data_items_24.formatted_date",
+          "_nested_name": "data_items_27.formatted_date",
           "_dynamicFields": {
             "value": [
               {
@@ -632,7 +750,7 @@
             "value": {}
           },
           "name": "text_2_@item.id",
-          "_nested_name": "data_items_24.text_2_@item.id",
+          "_nested_name": "data_items_27.text_2_@item.id",
           "_dynamicFields": {
             "value": [
               {
@@ -658,7 +776,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_24.text_2_@item.id",
+                "fullExpression": "data_items_27.text_2_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -697,7 +815,7 @@
             }
           ],
           "name": "button_3_@item.id",
-          "_nested_name": "data_items_24.button_3_@item.id",
+          "_nested_name": "data_items_27.button_3_@item.id",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -739,7 +857,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_24.button_3_@item.id",
+                "fullExpression": "data_items_27.button_3_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -757,8 +875,8 @@
           }
         }
       ],
-      "name": "data_items_24",
-      "_nested_name": "data_items_24"
+      "name": "data_items_27",
+      "_nested_name": "data_items_27"
     },
     {
       "type": "text",
@@ -766,8 +884,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_26",
-      "_nested_name": "text_26"
+      "name": "text_29",
+      "_nested_name": "text_29"
     },
     {
       "type": "button",
@@ -786,8 +904,8 @@
           "_cleaned": "click | notification: cancel_all"
         }
       ],
-      "name": "button_27",
-      "_nested_name": "button_27"
+      "name": "button_30",
+      "_nested_name": "button_30"
     },
     {
       "type": "title",
@@ -795,8 +913,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_28",
-      "_nested_name": "title_28"
+      "name": "title_31",
+      "_nested_name": "title_31"
     },
     {
       "type": "text",
@@ -804,8 +922,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_29",
-      "_nested_name": "text_29"
+      "name": "text_32",
+      "_nested_name": "text_32"
     },
     {
       "type": "button",
@@ -823,8 +941,8 @@
           "params": {}
         }
       ],
-      "name": "button_30",
-      "_nested_name": "button_30"
+      "name": "button_33",
+      "_nested_name": "button_33"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",

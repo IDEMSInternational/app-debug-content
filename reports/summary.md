@@ -73,7 +73,7 @@
 | template | 149 |
 | text | 1162 |
 | text_area | 13 |
-| text_box | 58 |
+| text_box | 61 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
