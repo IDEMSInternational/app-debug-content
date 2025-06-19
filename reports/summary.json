@@ -47,7 +47,7 @@
       },
       {
         "type": "button",
-        "count": 389
+        "count": 390
       },
       {
         "type": "calendar",
@@ -211,7 +211,7 @@
       },
       {
         "type": "radio_group",
-        "count": 59
+        "count": 61
       },
       {
         "type": "radio_group_grid",
@@ -239,7 +239,7 @@
       },
       {
         "type": "set_variable",
-        "count": 851
+        "count": 852
       },
       {
         "type": "simple_checkbox",
@@ -267,7 +267,7 @@
       },
       {
         "type": "task_progress_bar",
-        "count": 7
+        "count": 8
       },
       {
         "type": "template",
@@ -275,7 +275,7 @@
       },
       {
         "type": "text",
-        "count": 1159
+        "count": 1162
       },
       {
         "type": "text_area",
@@ -299,7 +299,7 @@
       },
       {
         "type": "title",
-        "count": 589
+        "count": 590
       },
       {
         "type": "toggle_bar",
@@ -351,7 +351,7 @@
       },
       {
         "type": "copy",
-        "count": 2
+        "count": 3
       },
       {
         "type": "download_assets",
@@ -367,7 +367,7 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 32
+        "count": 33
       },
       {
         "type": "emit: force_reprocess",
@@ -383,7 +383,7 @@
       },
       {
         "type": "emit: set_language",
-        "count": 5
+        "count": 6
       },
       {
         "type": "emit: set_skin",
@@ -1165,7 +1165,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 106
+        "total": 107
       },
       {
         "type": "template",

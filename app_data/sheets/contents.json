@@ -4818,6 +4818,12 @@
       "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "feature_translate_text": {
+      "flow_type": "template",
+      "flow_name": "feature_translate_text",
+      "_xlsxPath": "feature_sheets/feature_translate_text.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "feature_two_columns_images": {
       "flow_type": "template",
       "flow_name": "feature_two_columns_images",

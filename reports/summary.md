@@ -14,7 +14,7 @@
 | apple_sign_in_button | 3 |
 | audio | 13 |
 | begin_data | 1 |
-| button | 389 |
+| button | 390 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -55,29 +55,29 @@
 | progress_path | 3 |
 | qr_code | 2 |
 | radio_button_grid | 14 |
-| radio_group | 59 |
+| radio_group | 61 |
 | radio_group_grid | 5 |
 | round_button | 27 |
 | select_text | 7 |
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 851 |
+| set_variable | 852 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 52 |
 | table | 9 |
 | task_card | 31 |
-| task_progress_bar | 7 |
+| task_progress_bar | 8 |
 | template | 149 |
-| text | 1159 |
+| text | 1162 |
 | text_area | 13 |
 | text_box | 58 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 589 |
+| title | 590 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -96,15 +96,15 @@
 | auth | 5 |
 | auth_failure | 1 |
 | auth_success | 1 |
-| copy | 2 |
+| copy | 3 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
-| emit: force_reload | 32 |
+| emit: force_reload | 33 |
 | emit: force_reprocess | 41 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
-| emit: set_language | 5 |
+| emit: set_language | 6 |
 | emit: set_skin | 1 |
 | emit: set_theme | 2 |
 | emit: translator_mode_toggle | 1 |
@@ -308,7 +308,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 106 |
+| template |  | 107 |
 | template | component_demo | 62 |
 | template | debug | 289 |
 | template | example_generator | 2 |
