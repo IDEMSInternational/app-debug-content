@@ -223,6 +223,14 @@
       }
     },
     {
+      "name": "test_notification",
+      "parameter_list": {
+        "id": "debug_notification,\ntitle"
+      },
+      "type": "set_variable",
+      "_nested_name": "test_notification"
+    },
+    {
       "type": "button",
       "value": "Schedule Tomorrow\n@local.tomorrow_datetime",
       "_translations": {
@@ -245,8 +253,8 @@
           }
         }
       ],
-      "name": "button_14",
-      "_nested_name": "button_14",
+      "name": "button_15",
+      "_nested_name": "button_15",
       "_dynamicFields": {
         "value": [
           {
@@ -376,8 +384,8 @@
           }
         }
       ],
-      "name": "button_17",
-      "_nested_name": "button_17",
+      "name": "button_18",
+      "_nested_name": "button_18",
       "_dynamicFields": {
         "value": [
           {
@@ -433,8 +441,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_18",
-      "_nested_name": "text_18"
+      "name": "text_19",
+      "_nested_name": "text_19"
     },
     {
       "type": "text_box",
@@ -483,8 +491,8 @@
         "value": {}
       },
       "type": "set_variable",
-      "name": "set_variable_23",
-      "_nested_name": "set_variable_23",
+      "name": "set_variable_24",
+      "_nested_name": "set_variable_24",
       "_dynamicFields": {
         "value": [
           {
@@ -527,8 +535,8 @@
       "parameter_list": {
         "disabled": "!@local.input_datetime"
       },
-      "name": "button_24",
-      "_nested_name": "button_24",
+      "name": "button_25",
+      "_nested_name": "button_25",
       "_dynamicFields": {
         "value": [
           {
@@ -675,12 +683,12 @@
     },
     {
       "type": "title",
-      "value": "Cancel Notifications",
+      "value": "Pending Notifications",
       "_translations": {
         "value": {}
       },
-      "name": "title_25",
-      "_nested_name": "title_25"
+      "name": "title_26",
+      "_nested_name": "title_26"
     },
     {
       "type": "text",
@@ -688,8 +696,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_26",
-      "_nested_name": "text_26",
+      "name": "text_27",
+      "_nested_name": "text_27",
       "_dynamicFields": {
         "value": [
           {
@@ -709,6 +717,9 @@
     {
       "type": "data_items",
       "value": "_notifications",
+      "parameter_list": {
+        "filter": "@item.status==='pending'"
+      },
       "rows": [
         {
           "name": "formatted_date",
@@ -717,7 +728,7 @@
             "value": {}
           },
           "type": "set_variable",
-          "_nested_name": "data_items_27.formatted_date",
+          "_nested_name": "data_items_28.formatted_date",
           "_dynamicFields": {
             "value": [
               {
@@ -749,8 +760,11 @@
           "_translations": {
             "value": {}
           },
+          "style_list": [
+            "color: var(--ion-color-secondary)"
+          ],
           "name": "text_2_@item.id",
-          "_nested_name": "data_items_27.text_2_@item.id",
+          "_nested_name": "data_items_28.text_2_@item.id",
           "_dynamicFields": {
             "value": [
               {
@@ -776,7 +790,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_27.text_2_@item.id",
+                "fullExpression": "data_items_28.text_2_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -815,7 +829,7 @@
             }
           ],
           "name": "button_3_@item.id",
-          "_nested_name": "data_items_27.button_3_@item.id",
+          "_nested_name": "data_items_28.button_3_@item.id",
           "_dynamicFields": {
             "action_list": {
               "0": {
@@ -857,7 +871,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_27.button_3_@item.id",
+                "fullExpression": "data_items_28.button_3_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -875,8 +889,25 @@
           }
         }
       ],
-      "name": "data_items_27",
-      "_nested_name": "data_items_27"
+      "name": "data_items_28",
+      "_nested_name": "data_items_28",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.status==='pending'",
+              "matchedExpression": "@item.status",
+              "type": "item",
+              "fieldName": "status"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.status": [
+          "parameter_list.filter"
+        ]
+      }
     },
     {
       "type": "text",
@@ -884,8 +915,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_29",
-      "_nested_name": "text_29"
+      "name": "text_30",
+      "_nested_name": "text_30"
     },
     {
       "type": "button",
@@ -904,8 +935,218 @@
           "_cleaned": "click | notification: cancel_all"
         }
       ],
-      "name": "button_30",
-      "_nested_name": "button_30"
+      "name": "button_31",
+      "_nested_name": "button_31"
+    },
+    {
+      "type": "title",
+      "value": "Previous Notifications",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_32",
+      "_nested_name": "title_32"
+    },
+    {
+      "type": "text",
+      "value": "Any notifications previously scheduled will also be stored in the `_notifications` data_list\n\nThese will have a `status` column either marked as `dismissed` or `interacted`\n\nInteracted notifications will include an `action_performed` column with nested  `timestamp` and `id` property corresponding to the native action id",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_33",
+      "_nested_name": "text_33"
+    },
+    {
+      "type": "data_items",
+      "value": "_notifications",
+      "parameter_list": {
+        "filter": "@item.status!=='pending'"
+      },
+      "rows": [
+        {
+          "name": "formatted_date",
+          "value": "@calc(new Date(@item.schedule_at).toString())",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "data_items_34.formatted_date",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@calc(new Date(@item.schedule_at).toString())",
+                "matchedExpression": "@item.schedule_at",
+                "type": "item",
+                "fieldName": "schedule_at"
+              },
+              {
+                "fullExpression": "@calc(new Date(@item.schedule_at).toString())",
+                "matchedExpression": "@calc(new Date(@item.schedule_at).toString())",
+                "type": "calc",
+                "fieldName": "new Date(@item.schedule_at).toString()"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.schedule_at": [
+              "value"
+            ],
+            "@calc(new Date(@item.schedule_at).toString())": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "id: @item.id\nschedule_at: @local.formatted_date\nstatus: @item.status",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "color: var(--ion-color-secondary)"
+          ],
+          "name": "text_2_@item.id",
+          "_nested_name": "data_items_34.text_2_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "id: @item.id\nschedule_at: @local.formatted_date\nstatus: @item.status",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              },
+              {
+                "fullExpression": "id: @item.id\nschedule_at: @local.formatted_date\nstatus: @item.status",
+                "matchedExpression": "@local.formatted_date",
+                "type": "local",
+                "fieldName": "formatted_date"
+              },
+              {
+                "fullExpression": "id: @item.id\nschedule_at: @local.formatted_date\nstatus: @item.status",
+                "matchedExpression": "@item.status",
+                "type": "item",
+                "fieldName": "status"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_34.text_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "value",
+              "name",
+              "_nested_name"
+            ],
+            "@local.formatted_date": [
+              "value"
+            ],
+            "@item.status": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "Action ID: @item.action_performed.id\nAction Time: @item.action_performed.timestamp",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@item.action_performed",
+          "style_list": [
+            "color: var(--ion-color-secondary)"
+          ],
+          "name": "text_3_@item.id",
+          "_nested_name": "data_items_34.text_3_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Action ID: @item.action_performed.id\nAction Time: @item.action_performed.timestamp",
+                "matchedExpression": "@item.action_performed.id",
+                "type": "item",
+                "fieldName": "action_performed"
+              },
+              {
+                "fullExpression": "Action ID: @item.action_performed.id\nAction Time: @item.action_performed.timestamp",
+                "matchedExpression": "@item.action_performed.timestamp",
+                "type": "item",
+                "fieldName": "action_performed"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "@item.action_performed",
+                "matchedExpression": "@item.action_performed",
+                "type": "item",
+                "fieldName": "action_performed"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_3_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_34.text_3_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.action_performed.id": [
+              "value"
+            ],
+            "@item.action_performed.timestamp": [
+              "value"
+            ],
+            "@item.action_performed": [
+              "condition"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_34",
+      "_nested_name": "data_items_34",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.status!=='pending'",
+              "matchedExpression": "@item.status",
+              "type": "item",
+              "fieldName": "status"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.status": [
+          "parameter_list.filter"
+        ]
+      }
     },
     {
       "type": "title",
@@ -913,8 +1154,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_31",
-      "_nested_name": "title_31"
+      "name": "title_36",
+      "_nested_name": "title_36"
     },
     {
       "type": "text",
@@ -922,8 +1163,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_32",
-      "_nested_name": "text_32"
+      "name": "text_37",
+      "_nested_name": "text_37"
     },
     {
       "type": "button",
@@ -941,8 +1182,179 @@
           "params": {}
         }
       ],
-      "name": "button_33",
-      "_nested_name": "button_33"
+      "name": "button_38",
+      "_nested_name": "button_38"
+    },
+    {
+      "type": "title",
+      "value": "WiP (not yet supported)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_39",
+      "_nested_name": "title_39"
+    },
+    {
+      "type": "title",
+      "value": "Notification Triggered Actions",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_40",
+      "_nested_name": "title_40"
+    },
+    {
+      "type": "text",
+      "value": "Notifications can also have actions that will be triggered if the notification is interacted with.\n\nDue to authoring limitations these actions must be defined in a separate data_list and referenced by id. \n\nThe authored action_list can omit first trigger arg (e.g. `click`) and refer to specific notification data via `@data`\n\n|id|action_list|\n|---|---|\n|my_notification_action| `go_to : some_template` |\n\nAny fields or locals referenced in the action will be evaluated at the time of scheduling, not triggering",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_41",
+      "_nested_name": "text_41"
+    },
+    {
+      "name": "immediate_notification_time",
+      "value": "@calc(date_fns.addSeconds(new Date(),10))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "immediate_notification_time",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(date_fns.addSeconds(new Date(),10))",
+            "matchedExpression": "@calc(date_fns.addSeconds(new Date(),10))",
+            "type": "calc",
+            "fieldName": "date_fns.addSeconds(new Date(),10)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(date_fns.addSeconds(new Date(),10))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Set immediate notification time",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "button_43",
+      "_nested_name": "button_43"
+    },
+    {
+      "type": "button",
+      "value": "Schedule notification\n@local.immediate_notification_time",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+          "_cleaned": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+          "params": {
+            "id": "debug_notification",
+            "title": "Notification Title",
+            "text": "Notification Text",
+            "schedule_at": "@local.immediate_notification_time",
+            "action": "@data.notification_triggered_actions.demo_set_field"
+          }
+        }
+      ],
+      "name": "button_44",
+      "_nested_name": "button_44",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Schedule notification\n@local.immediate_notification_time",
+            "matchedExpression": "@local.immediate_notification_time",
+            "type": "local",
+            "fieldName": "immediate_notification_time"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+                "matchedExpression": "@local.immediate_notification_time",
+                "type": "local",
+                "fieldName": "immediate_notification_time"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+                "matchedExpression": "@data.notification_triggered_actions.demo_set_field",
+                "type": "data",
+                "fieldName": "notification_triggered_actions"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+                "matchedExpression": "@local.immediate_notification_time",
+                "type": "local",
+                "fieldName": "immediate_notification_time"
+              },
+              {
+                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+                "matchedExpression": "@data.notification_triggered_actions.demo_set_field",
+                "type": "data",
+                "fieldName": "notification_triggered_actions"
+              }
+            ],
+            "params": {
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.immediate_notification_time",
+                  "matchedExpression": "@local.immediate_notification_time",
+                  "type": "local",
+                  "fieldName": "immediate_notification_time"
+                }
+              ],
+              "action": [
+                {
+                  "fullExpression": "@data.notification_triggered_actions.demo_set_field",
+                  "matchedExpression": "@data.notification_triggered_actions.demo_set_field",
+                  "type": "data",
+                  "fieldName": "notification_triggered_actions"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.immediate_notification_time": [
+          "value",
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.schedule_at"
+        ],
+        "@data.notification_triggered_actions.demo_set_field": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.action"
+        ]
+      }
     }
   ],
   "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",

@@ -1,0 +1,64 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "feature",
+  "flow_name": "notification_triggered_actions",
+  "status": "released",
+  "rows": [
+    {
+      "id": "demo_set_field",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "notification_test",
+            true
+          ],
+          "_raw": "set_field : notification_test : true",
+          "_cleaned": "click | set_field : notification_test : true"
+        }
+      ]
+    },
+    {
+      "id": "demo_multiple",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "notification_test",
+            true
+          ],
+          "_raw": "set_field : notification_test : true",
+          "_cleaned": "click | set_field : notification_test : true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "home"
+          ],
+          "_raw": "go_to : home",
+          "_cleaned": "click | go_to : home"
+        }
+      ]
+    },
+    {
+      "id": "demo_notification_context",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "notification_test",
+            "@notification.text"
+          ],
+          "_raw": "set_field : notification_test : @notification.text",
+          "_cleaned": "click | set_field : notification_test : @notification.text"
+        }
+      ]
+    }
+  ],
+  "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
