@@ -1,0 +1,53 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_delete_account",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Are you sure you want to delete your auth account (cannot be undone)?",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "button",
+      "value": "Confirm Delete Account",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "delete_account"
+          ],
+          "_raw": "click | auth: delete_account",
+          "_cleaned": "click | auth: delete_account"
+        },
+        {
+          "trigger": "click",
+          "action_id": "reset_data",
+          "args": [],
+          "_raw": "click | reset_data",
+          "_cleaned": "click | reset_data"
+        },
+        {
+          "trigger": "click",
+          "action_id": "reset_app",
+          "args": [],
+          "_raw": "click | reset_app",
+          "_cleaned": "click | reset_app"
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_auth.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

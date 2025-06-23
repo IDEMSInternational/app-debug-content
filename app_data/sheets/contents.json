@@ -970,6 +970,13 @@
       "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "notification_triggered_actions": {
+      "flow_type": "data_list",
+      "flow_subtype": "feature",
+      "flow_name": "notification_triggered_actions",
+      "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "debug_filtered": {
       "flow_name": "debug_filtered",
       "flow_subtype": "generated",
@@ -3675,6 +3682,13 @@
       "flow_name": "example_dates",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_multiple_locals.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "example_delete_account": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "example_delete_account",
+      "_xlsxPath": "example_sheets/example_auth.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "example_dg": {

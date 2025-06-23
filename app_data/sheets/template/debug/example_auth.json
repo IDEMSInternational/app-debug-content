@@ -838,6 +838,35 @@
       ],
       "name": "button_24",
       "_nested_name": "button_24"
+    },
+    {
+      "type": "title",
+      "value": "Danger zone",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_25",
+      "_nested_name": "title_25"
+    },
+    {
+      "type": "button",
+      "value": "Delete Account",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_delete_account"
+          ],
+          "_raw": "click | pop_up: example_delete_account",
+          "_cleaned": "click | pop_up: example_delete_account"
+        }
+      ],
+      "name": "button_26",
+      "_nested_name": "button_26"
     }
   ],
   "_xlsxPath": "example_sheets/example_auth.xlsx",

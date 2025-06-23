@@ -14,13 +14,13 @@
 | apple_sign_in_button | 3 |
 | audio | 13 |
 | begin_data | 1 |
-| button | 390 |
+| button | 395 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 67 |
 | dashed_box | 19 |
-| data_items | 87 |
+| data_items | 88 |
 | data_query | 8 |
 | date_time_picker | 7 |
 | debug_toggle | 1 |
@@ -62,7 +62,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 852 |
+| set_variable | 857 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -71,13 +71,13 @@
 | task_card | 31 |
 | task_progress_bar | 8 |
 | template | 149 |
-| text | 1162 |
+| text | 1171 |
 | text_area | 13 |
-| text_box | 61 |
+| text_box | 62 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 590 |
+| title | 595 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -93,15 +93,15 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 5 |
+| auth | 6 |
 | auth_failure | 1 |
 | auth_success | 1 |
-| copy | 3 |
+| copy | 4 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 33 |
-| emit: force_reprocess | 41 |
+| emit: force_reprocess | 42 |
 | emit: force_restart | 3 |
 | emit: server_sync | 8 |
 | emit: set_language | 6 |
@@ -115,14 +115,14 @@
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 11 |
-| notification | 6 |
+| notification | 7 |
 | open_external | 2 |
 | plh_parent_group | 7 |
-| pop_up | 49 |
+| pop_up | 50 |
 | process_template | 2 |
 | remove_item | 1 |
-| reset_app | 1 |
-| reset_data | 7 |
+| reset_app | 2 |
+| reset_data | 8 |
 | save_to_device | 2 |
 | screen_orientation | 3 |
 | scroll | 2 |
@@ -298,7 +298,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
 | data_list | example_sheet_defaults | 1 |
-| data_list | feature | 2 |
+| data_list | feature | 3 |
 | data_list | generated | 13 |
 | data_list | lifecycle_actions | 1 |
 | data_pipe | debug | 1 |
@@ -310,7 +310,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 107 |
 | template | component_demo | 62 |
-| template | debug | 289 |
+| template | debug | 290 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

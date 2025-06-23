@@ -5,6 +5,11 @@
   "status": "released",
   "rows": [
     {
+      "id": "granted",
+      "status": "granted",
+      "description": "User has granted permission to receive notifications"
+    },
+    {
       "id": "unsupported",
       "status": "unsupported",
       "description": "Running on a web platform that does not support notification api (e.g. chrome for android)"
