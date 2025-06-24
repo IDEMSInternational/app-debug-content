@@ -133,6 +133,15 @@
       "_nested_name": "accordion_md"
     },
     {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1He3nS_qWno-_kJrzizhcUdC1vONKWaluPzC1rr-RfSw",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
+    },
+    {
       "style_list": [
         "answer_list: @data.comp_radio_button_grid_data",
         "item_width: @local.item_width_input",
