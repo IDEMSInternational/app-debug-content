@@ -202,6 +202,15 @@
         "forward_icon_asset": "images/icons/audio/play-forward-sharp.svg"
       },
       "_nested_name": "audio_6"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1utD4Kr0WVjvDwnMbg2wYupaPQ0VY0H2csb86fyi4bPI",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "component_sheets/component_audio.xlsx",

@@ -416,6 +416,15 @@
           "parameter_list.grid_gap"
         ]
       }
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1He3nS_qWno-_kJrzizhcUdC1vONKWaluPzC1rr-RfSw",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "component_sheets/component_accordion.xlsx",

@@ -116,6 +116,15 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1P6EhHmElOJOAoMH4h_vingVL82jyCfSTYPXj8eY2Iek",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "component_sheets/component_apple_sign_in_button.xlsx",

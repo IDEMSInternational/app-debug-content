@@ -1845,6 +1845,15 @@
         }
       ],
       "_nested_name": "button_reset"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1f_vq3KFGlExf1-g1PwPiDad9gOZkIOdRE5X99jCIRsM",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "component_sheets/component_carousel.xlsx",

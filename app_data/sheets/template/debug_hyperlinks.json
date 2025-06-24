@@ -83,6 +83,15 @@
         "value": {}
       },
       "_nested_name": "text_2"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/14Fub-lf6xLc6nG3_Mnab1qAcfLK88yfYJzlJQGXi-2M",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx",
