@@ -317,6 +317,24 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "text",
+      "name": "debug_sheet_link",
+      "value": "Debug sheet: https://docs.google.com/spreadsheets/d/1i_46RSdv8NzyqSIhjBXabUuW1ndiYRdjCgwgn5ZXsGk/edit?gid=568791997#gid=568791997",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debug_sheet_link"
+    },
+    {
+      "type": "text",
+      "name": "pr_link",
+      "value": "PR: https://github.com/IDEMSInternational/open-app-builder/pull/3008",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "pr_link"
     }
   ],
   "_xlsxPath": "debug_sheets/EFM_bugs.xlsx",

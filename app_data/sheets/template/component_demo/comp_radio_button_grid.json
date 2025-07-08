@@ -659,6 +659,15 @@
           "parameter_list.answer_list"
         ]
       }
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1yHLQHxZQuxs34gBU-ny95ZWs9e8-HybC4IAeFxwpcVw",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "component_sheets/component_radio_button_grid.xlsx",

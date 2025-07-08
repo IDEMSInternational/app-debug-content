@@ -29,7 +29,7 @@
       "rows": [
         {
           "name": "child_var_1",
-          "value": "text @local.var_1",
+          "value": "text @local.parent_var_1",
           "_translations": {
             "value": {}
           },
@@ -49,15 +49,15 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "text @local.var_1",
-                "matchedExpression": "@local.var_1",
+                "fullExpression": "text @local.parent_var_1",
+                "matchedExpression": "@local.parent_var_1",
                 "type": "local",
-                "fieldName": "var_1"
+                "fieldName": "parent_var_1"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@local.var_1": [
+            "@local.parent_var_1": [
               "value"
             ]
           }

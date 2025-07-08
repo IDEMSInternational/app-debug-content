@@ -949,7 +949,7 @@
     },
     {
       "type": "text",
-      "value": "Any notifications previously scheduled will also be stored in the `_notifications` data_list\n\nThese will have a `status` column either marked as `dismissed` or `interacted`\n\nInteracted notifications will include an `action_performed` column with nested  `timestamp` and `id` property corresponding to the native action id",
+      "value": "Any notifications previously scheduled will also be stored in the `_notifications` data_list\n\nThese will have a `status` column either marked as `ignored` or `interacted`\n\nInteracted notifications will include an `action_performed` column with nested  `timestamp` and `id` property corresponding to the native action id",
       "_translations": {
         "value": {}
       },
