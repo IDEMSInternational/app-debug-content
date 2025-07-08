@@ -479,6 +479,75 @@
       "type": "text_box",
       "name": "text_box_19",
       "_nested_name": "text_box_19"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1gg953sra_4FnUFKcAkoZQKxM0NHHNIc2qA9-z26Azdw",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
+    },
+    {
+      "name": "text_in_target_lang",
+      "value": "@local.source_text",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "language: @local.local_language_select",
+      "type": "set_variable",
+      "_nested_name": "text_in_target_lang",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.source_text",
+            "matchedExpression": "@local.source_text",
+            "type": "local",
+            "fieldName": "source_text"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "language: @local.local_language_select",
+            "matchedExpression": "@local.local_language_select",
+            "type": "local",
+            "fieldName": "local_language_select"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.source_text": [
+          "value"
+        ],
+        "@local.local_language_select": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@local.text_in_target_lang",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_22",
+      "_nested_name": "text_22",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.text_in_target_lang",
+            "matchedExpression": "@local.text_in_target_lang",
+            "type": "local",
+            "fieldName": "text_in_target_lang"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text_in_target_lang": [
+          "value"
+        ]
+      }
     }
   ],
   "_xlsxPath": "feature_sheets/feature_translate_text.xlsx",

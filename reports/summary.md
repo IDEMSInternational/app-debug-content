@@ -7,18 +7,16 @@
 | @item.input_type | 1 |
 | accordion | 6 |
 | accordion_section | 18 |
-| action | 1 |
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| begin_data | 1 |
-| button | 395 |
+| button | 392 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 67 |
+| combo_box | 66 |
 | dashed_box | 19 |
 | data_items | 88 |
 | data_query | 8 |
@@ -26,7 +24,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 238 |
+| display_group | 237 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 4 |
@@ -62,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 857 |
+| set_variable | 844 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -70,14 +68,14 @@
 | table | 9 |
 | task_card | 31 |
 | task_progress_bar | 8 |
-| template | 149 |
-| text | 1182 |
+| template | 146 |
+| text | 1176 |
 | text_area | 13 |
 | text_box | 62 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 595 |
+| title | 588 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -130,7 +128,7 @@
 | set_field | 116 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 70 |
+| set_local | 68 |
 | share | 14 |
 | start_tour | 2 |
 | task | 2 |
@@ -310,7 +308,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 107 |
 | template | component_demo | 62 |
-| template | debug | 290 |
+| template | debug | 283 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |

@@ -249,6 +249,15 @@
       ],
       "name": "display_group_9",
       "_nested_name": "display_group_9"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1pSFFOv9B9x0oUSuSJDp6RNePJ1XSP6yVSjXA8jzBclQ",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "debug_sheets/to_be_sorted/debug_radio_group.xlsx",
