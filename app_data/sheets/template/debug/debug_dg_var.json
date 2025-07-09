@@ -5,6 +5,67 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "name": "var_2",
+      "value": "Value",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "_nested_name": "var_2"
+    },
+    {
+      "name": "var_3",
+      "value": "@local.var_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "var_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.var_1",
+            "matchedExpression": "@local.var_1",
+            "type": "local",
+            "fieldName": "var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "var_4",
+      "value": "@local.var_1",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "flex: 0"
+      ],
+      "type": "set_variable",
+      "_nested_name": "var_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.var_1",
+            "matchedExpression": "@local.var_1",
+            "type": "local",
+            "fieldName": "var_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.var_1": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "var_1",
       "value": "Value",
       "_translations": {
@@ -80,16 +141,6 @@
             "max_value": "20"
           },
           "_nested_name": "dg_2.number_selector_4"
-        },
-        {
-          "name": "var_2",
-          "value": "Value",
-          "_translations": {
-            "value": {}
-          },
-          "exclude_from_translation": true,
-          "type": "set_variable",
-          "_nested_name": "dg_2.var_2"
         }
       ],
       "_nested_name": "dg_2"
@@ -125,30 +176,6 @@
             "max_value": "20"
           },
           "_nested_name": "dg_3.number_selector_6"
-        },
-        {
-          "name": "var_3",
-          "value": "@local.var_1",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_3.var_3",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@local.var_1",
-                "matchedExpression": "@local.var_1",
-                "type": "local",
-                "fieldName": "var_1"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.var_1": [
-              "value"
-            ]
-          }
         }
       ],
       "_nested_name": "dg_3"
@@ -183,33 +210,6 @@
             "max_value": "20"
           },
           "_nested_name": "dg_4.number_selector_8"
-        },
-        {
-          "name": "var_4",
-          "value": "@local.var_1",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "flex: 0"
-          ],
-          "type": "set_variable",
-          "_nested_name": "dg_4.var_4",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@local.var_1",
-                "matchedExpression": "@local.var_1",
-                "type": "local",
-                "fieldName": "var_1"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.var_1": [
-              "value"
-            ]
-          }
         }
       ],
       "_nested_name": "dg_4"

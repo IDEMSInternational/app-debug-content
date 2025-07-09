@@ -5,6 +5,11 @@
   "status": "released",
   "rows": [
     {
+      "name": "hp_review_count_2",
+      "type": "set_variable",
+      "_nested_name": "hp_review_count_2"
+    },
+    {
       "name": "module_id",
       "value": "selfcare",
       "_translations": {
@@ -175,11 +180,6 @@
         "style": "column"
       },
       "rows": [
-        {
-          "name": "hp_review_count_2",
-          "type": "set_variable",
-          "_nested_name": "dg_2.hp_review_count_2"
-        },
         {
           "type": "data_items",
           "name": "hp_review_exists_2",
