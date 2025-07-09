@@ -4,6 +4,54 @@
   "status": "released",
   "rows": [
     {
+      "name": "goal_selected_goal",
+      "value": "goal.@local.selected_goal",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "goal_selected_goal",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "goal.@local.selected_goal",
+            "matchedExpression": "@local.selected_goal",
+            "type": "local",
+            "fieldName": "selected_goal"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.selected_goal": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "goal_data",
+      "value": "@data.@local.goal_selected_goal",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "goal_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.@local.goal_selected_goal",
+            "matchedExpression": "@local.goal_selected_goal",
+            "type": "local",
+            "fieldName": "goal_selected_goal"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.goal_selected_goal": [
+          "value"
+        ]
+      }
+    },
+    {
       "name": "answer_list",
       "value": [
         {
@@ -86,54 +134,6 @@
       "name": "dg_selected_text",
       "condition": "@local.selected_goal != \"all\"",
       "rows": [
-        {
-          "name": "goal_selected_goal",
-          "value": "goal.@local.selected_goal",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_selected_text.goal_selected_goal",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "goal.@local.selected_goal",
-                "matchedExpression": "@local.selected_goal",
-                "type": "local",
-                "fieldName": "selected_goal"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.selected_goal": [
-              "value"
-            ]
-          }
-        },
-        {
-          "name": "goal_data",
-          "value": "@data.@local.goal_selected_goal",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_selected_text.goal_data",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@data.@local.goal_selected_goal",
-                "matchedExpression": "@local.goal_selected_goal",
-                "type": "local",
-                "fieldName": "goal_selected_goal"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.goal_selected_goal": [
-              "value"
-            ]
-          }
-        },
         {
           "type": "title",
           "name": "selected_text",

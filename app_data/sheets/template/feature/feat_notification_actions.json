@@ -1214,7 +1214,7 @@
     },
     {
       "name": "immediate_notification_time",
-      "value": "@calc(date_fns.addSeconds(new Date(),10))",
+      "value": "@calc(date_fns.addSeconds(new Date(),60))",
       "_translations": {
         "value": {}
       },
@@ -1223,15 +1223,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(date_fns.addSeconds(new Date(),10))",
-            "matchedExpression": "@calc(date_fns.addSeconds(new Date(),10))",
+            "fullExpression": "@calc(date_fns.addSeconds(new Date(),60))",
+            "matchedExpression": "@calc(date_fns.addSeconds(new Date(),60))",
             "type": "calc",
-            "fieldName": "date_fns.addSeconds(new Date(),10)"
+            "fieldName": "date_fns.addSeconds(new Date(),60)"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@calc(date_fns.addSeconds(new Date(),10))": [
+        "@calc(date_fns.addSeconds(new Date(),60))": [
           "value"
         ]
       }

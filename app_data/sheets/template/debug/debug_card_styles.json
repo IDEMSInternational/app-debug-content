@@ -83,6 +83,24 @@
       },
       "name": "task_card_8",
       "_nested_name": "task_card_8"
+    },
+    {
+      "type": "text",
+      "name": "debug_sheet",
+      "value": "Debug template: https://docs.google.com/spreadsheets/d/1QyFq6k9163Uh-WywA2fliV2tWrCor-kDsj9uhfcdOng/edit?gid=1054713933#gid=1054713933",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debug_sheet"
+    },
+    {
+      "type": "text",
+      "name": "issue_link",
+      "value": "Issue: https://github.com/IDEMSInternational/open-app-builder/issues/3035",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "issue_link"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_card_styles.xlsx",
