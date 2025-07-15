@@ -105,6 +105,12 @@
       "_nested_name": "dg_example_7"
     },
     {
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "name": "set_variable_2",
+      "_nested_name": "set_variable_2"
+    },
+    {
       "type": "display_group",
       "name": "dg_example_7",
       "action_list": [
@@ -135,12 +141,6 @@
           },
           "exclude_from_translation": true,
           "_nested_name": "dg_example_7.lottie_src"
-        },
-        {
-          "exclude_from_translation": true,
-          "type": "set_variable",
-          "name": "set_variable_2",
-          "_nested_name": "dg_example_7.set_variable_2"
         },
         {
           "type": "display_group",
@@ -209,6 +209,12 @@
         }
       ],
       "_nested_name": "dg_example_7"
+    },
+    {
+      "exclude_from_translation": true,
+      "type": "set_variable",
+      "name": "set_variable_3",
+      "_nested_name": "set_variable_3"
     },
     {
       "type": "display_group",
@@ -305,12 +311,6 @@
           ],
           "name": "display_group_2",
           "_nested_name": "dg_example_7.display_group_2"
-        },
-        {
-          "exclude_from_translation": true,
-          "type": "set_variable",
-          "name": "set_variable_3",
-          "_nested_name": "dg_example_7.set_variable_3"
         }
       ],
       "_nested_name": "dg_example_7"

@@ -169,17 +169,17 @@
       "_nested_name": "title_2"
     },
     {
+      "name": "hp_review_count_2",
+      "type": "set_variable",
+      "_nested_name": "hp_review_count_2"
+    },
+    {
       "type": "display_group",
       "name": "dg_2",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
-        {
-          "name": "hp_review_count_2",
-          "type": "set_variable",
-          "_nested_name": "dg_2.hp_review_count_2"
-        },
         {
           "type": "data_items",
           "name": "hp_review_exists_2",

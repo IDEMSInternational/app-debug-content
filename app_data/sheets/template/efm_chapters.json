@@ -13,86 +13,110 @@
       "_nested_name": "title_broken"
     },
     {
+      "name": "radio_description_1",
+      "value": "Individually",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "radio_description_1"
+    },
+    {
+      "name": "radio_description_2",
+      "value": "By topic",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "radio_description_2"
+    },
+    {
+      "name": "answer_list",
+      "value": [
+        {
+          "name": "individually",
+          "text": "@local.radio_description_1"
+        },
+        {
+          "name": "by_topic",
+          "text": "@local.radio_description_2"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list",
+      "_dynamicFields": {
+        "value": {
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@local.radio_description_1",
+                "matchedExpression": "@local.radio_description_1",
+                "type": "local",
+                "fieldName": "radio_description_1"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@local.radio_description_2",
+                "matchedExpression": "@local.radio_description_2",
+                "type": "local",
+                "fieldName": "radio_description_2"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.radio_description_1": [
+          "value.0.text"
+        ],
+        "@local.radio_description_2": [
+          "value.1.text"
+        ]
+      }
+    },
+    {
+      "name": "listing_style",
+      "value": "by_topic",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "listing_style"
+    },
+    {
+      "name": "template_name",
+      "value": "efm_chapter_acts_@local.listing_style",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "template_name",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "efm_chapter_acts_@local.listing_style",
+            "matchedExpression": "@local.listing_style",
+            "type": "local",
+            "fieldName": "listing_style"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.listing_style": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "dg_view",
       "parameter_list": {
         "style": "column"
       },
       "rows": [
-        {
-          "name": "radio_description_1",
-          "value": "Individually",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_view.radio_description_1"
-        },
-        {
-          "name": "radio_description_2",
-          "value": "By topic",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_view.radio_description_2"
-        },
-        {
-          "name": "answer_list",
-          "value": [
-            {
-              "name": "individually",
-              "text": "@local.radio_description_1"
-            },
-            {
-              "name": "by_topic",
-              "text": "@local.radio_description_2"
-            }
-          ],
-          "type": "set_variable",
-          "_nested_name": "dg_view.answer_list",
-          "_dynamicFields": {
-            "value": {
-              "0": {
-                "text": [
-                  {
-                    "fullExpression": "@local.radio_description_1",
-                    "matchedExpression": "@local.radio_description_1",
-                    "type": "local",
-                    "fieldName": "radio_description_1"
-                  }
-                ]
-              },
-              "1": {
-                "text": [
-                  {
-                    "fullExpression": "@local.radio_description_2",
-                    "matchedExpression": "@local.radio_description_2",
-                    "type": "local",
-                    "fieldName": "radio_description_2"
-                  }
-                ]
-              }
-            }
-          },
-          "_dynamicDependencies": {
-            "@local.radio_description_1": [
-              "value.0.text"
-            ],
-            "@local.radio_description_2": [
-              "value.1.text"
-            ]
-          }
-        },
-        {
-          "name": "listing_style",
-          "value": "by_topic",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_view.listing_style"
-        },
         {
           "type": "radio_group",
           "name": "radio_group",
@@ -169,30 +193,6 @@
               "parameter_list.answer_list"
             ]
           }
-        },
-        {
-          "name": "template_name",
-          "value": "efm_chapter_acts_@local.listing_style",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_view.template_name",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "efm_chapter_acts_@local.listing_style",
-                "matchedExpression": "@local.listing_style",
-                "type": "local",
-                "fieldName": "listing_style"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.listing_style": [
-              "value"
-            ]
-          }
         }
       ],
       "_nested_name": "dg_view"
@@ -231,6 +231,30 @@
       "_nested_name": "title_works"
     },
     {
+      "name": "template_name_alt",
+      "value": "efm_chapter_acts_@local.listing_style_alt",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "template_name_alt",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "efm_chapter_acts_@local.listing_style_alt",
+            "matchedExpression": "@local.listing_style_alt",
+            "type": "local",
+            "fieldName": "listing_style_alt"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.listing_style_alt": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "name": "dg_view_alt",
       "parameter_list": {
@@ -264,30 +288,6 @@
           "_dynamicDependencies": {
             "@local.answer_list": [
               "parameter_list.answer_list"
-            ]
-          }
-        },
-        {
-          "name": "template_name_alt",
-          "value": "efm_chapter_acts_@local.listing_style_alt",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "dg_view_alt.template_name_alt",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "efm_chapter_acts_@local.listing_style_alt",
-                "matchedExpression": "@local.listing_style_alt",
-                "type": "local",
-                "fieldName": "listing_style_alt"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.listing_style_alt": [
-              "value"
             ]
           }
         }

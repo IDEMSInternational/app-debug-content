@@ -1,0 +1,211 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_row_value_transform",
+  "status": "released",
+  "flow_subtype": "example",
+  "rows": [
+    {
+      "type": "text",
+      "value": "This sheet provides example of using row naming conventions to create data structures required for specific components",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "title",
+      "value": "List",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "text",
+      "value": "Any variable ending `_list` or containing `_list_` will be converted to a list\n\nLists use a `;` separator to separate array elements, e.g.\n```\nalice; bob\n```\nAdditionally, lists can include key-value pairs separated by `|`\n```\nname: value_1 | text: my_text; \nname: value_2 | text: my text 2\n```",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "name": "example_list",
+      "value": [
+        "English",
+        "French"
+      ],
+      "type": "set_variable",
+      "_nested_name": "example_list"
+    },
+    {
+      "name": "example_list_2",
+      "value": [
+        {
+          "name": "En",
+          "text": "English"
+        },
+        {
+          "name": "Fr",
+          "text": "Español"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "example_list_2"
+    },
+    {
+      "type": "text",
+      "value": "(TODO - example components)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "title",
+      "value": "Action List",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "text",
+      "value": "Any variable ending `_action_list` or containing `_action_list_` will be converted to a list\n\nAction lists use `|` to separate action arguments and also support nested parameters\n```\nclick | set_local: button_clicked: true;\nclick | set_field : another_field: true;\n```",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "name": "button_clicked",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "button_clicked"
+    },
+    {
+      "name": "example_action_list",
+      "value": [
+        {
+          "set_local": "button_clicked"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "example_action_list"
+    },
+    {
+      "type": "button",
+      "value": "Click to trigger action list",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "@local.example_action_list",
+          "args": [],
+          "_raw": "@local.example_action_list",
+          "_cleaned": "click | @local.example_action_list"
+        }
+      ],
+      "name": "button_12",
+      "_nested_name": "button_12",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "action_id": [
+              {
+                "fullExpression": "@local.example_action_list",
+                "matchedExpression": "@local.example_action_list",
+                "type": "local",
+                "fieldName": "example_action_list"
+              }
+            ],
+            "_raw": [
+              {
+                "fullExpression": "@local.example_action_list",
+                "matchedExpression": "@local.example_action_list",
+                "type": "local",
+                "fieldName": "example_action_list"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | @local.example_action_list",
+                "matchedExpression": "@local.example_action_list",
+                "type": "local",
+                "fieldName": "example_action_list"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.example_action_list": [
+          "action_list.0.action_id",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Button was clicked",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.button_clicked",
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.button_clicked",
+            "matchedExpression": "@local.button_clicked",
+            "type": "local",
+            "fieldName": "button_clicked"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.button_clicked": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Parameter List",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_14",
+      "_nested_name": "title_14"
+    },
+    {
+      "type": "text",
+      "value": "(TODO - Is this even used? can remove?)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_15",
+      "_nested_name": "text_15"
+    },
+    {
+      "type": "text",
+      "value": "Sheet Link:\nhttps://docs.google.com/spreadsheets/d/1iKfq3-wan4-GYvg4-XL07YLDt5ZDGIfoCCEK78-HzrI/edit?gid=1921555013#gid=1921555013",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_row_value_transform.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

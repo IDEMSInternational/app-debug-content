@@ -5,6 +5,15 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "name": "text_checkbox_3",
+      "value": "Contact me via email",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "text_checkbox_3"
+    },
+    {
       "type": "display_group",
       "name": "form",
       "value": "form",
@@ -126,15 +135,6 @@
               "action_list.0._cleaned"
             ]
           }
-        },
-        {
-          "name": "text_checkbox_3",
-          "value": "Contact me via email",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "form.text_checkbox_3"
         },
         {
           "type": "simple_checkbox",
