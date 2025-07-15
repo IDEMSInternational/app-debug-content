@@ -318,10 +318,6 @@
   "template_actions": {
     "data": [
       {
-        "type": "@local.example_action_list",
-        "count": 1
-      },
-      {
         "type": "add_data",
         "count": 2
       },
@@ -523,7 +519,7 @@
       },
       {
         "type": "undefined",
-        "count": 17
+        "count": 43
       },
       {
         "type": "user",
