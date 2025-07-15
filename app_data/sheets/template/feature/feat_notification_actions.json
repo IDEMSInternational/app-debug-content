@@ -1187,7 +1187,7 @@
     },
     {
       "type": "title",
-      "value": "WiP (not yet supported)",
+      "value": "Triggered action lists",
       "_translations": {
         "value": {}
       },
@@ -1195,26 +1195,17 @@
       "_nested_name": "title_39"
     },
     {
-      "type": "title",
-      "value": "Notification Triggered Actions",
-      "_translations": {
-        "value": {}
-      },
-      "name": "title_40",
-      "_nested_name": "title_40"
-    },
-    {
       "type": "text",
-      "value": "Notifications can also have actions that will be triggered if the notification is interacted with.\n\nDue to authoring limitations these actions must be defined in a separate data_list and referenced by id. \n\nThe authored action_list can omit first trigger arg (e.g. `click`) and refer to specific notification data via `@data`\n\n|id|action_list|\n|---|---|\n|my_notification_action| `go_to : some_template` |\n\nAny fields or locals referenced in the action will be evaluated at the time of scheduling, not triggering",
+      "value": "Created notifications can also reference external action_lists to trigger after delivery. The following triggers can be used:\n\n|trigger|description|example|\n|---|---|---|\n|`notification_received`| Evaluated the next time the app is running past the notification scheduled date. Recommended for data updates, such as setting field to remind user of received notifications | notification_received &#124; set_field &#124; show_notification_bell: true |\n|`notification_interacted`| Evaluated if user taps notification (native only). Recommended for navigation shortcuts, such as sending user to page related to notification  | notification_interacted &#124; go_to : /example_template |",
       "_translations": {
         "value": {}
       },
-      "name": "text_41",
-      "_nested_name": "text_41"
+      "name": "text_40",
+      "_nested_name": "text_40"
     },
     {
       "name": "immediate_notification_time",
-      "value": "@calc(date_fns.addSeconds(new Date(),10))",
+      "value": "@calc(date_fns.addSeconds(now(),10))",
       "_translations": {
         "value": {}
       },
@@ -1223,22 +1214,22 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@calc(date_fns.addSeconds(new Date(),10))",
-            "matchedExpression": "@calc(date_fns.addSeconds(new Date(),10))",
+            "fullExpression": "@calc(date_fns.addSeconds(now(),10))",
+            "matchedExpression": "@calc(date_fns.addSeconds(now(),10))",
             "type": "calc",
-            "fieldName": "date_fns.addSeconds(new Date(),10)"
+            "fieldName": "date_fns.addSeconds(now(),10)"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@calc(date_fns.addSeconds(new Date(),10))": [
+        "@calc(date_fns.addSeconds(now(),10))": [
           "value"
         ]
       }
     },
     {
       "type": "button",
-      "value": "Set immediate notification time",
+      "value": "Set notification time in 10 seconds",
       "_translations": {
         "value": {}
       },
@@ -1247,14 +1238,51 @@
           "trigger": "click",
           "action_id": "emit",
           "args": [
-            "force_reprocess"
+            "force_reload"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reload",
+          "_cleaned": "click | emit: force_reload"
         }
       ],
-      "name": "button_43",
-      "_nested_name": "button_43"
+      "name": "button_42",
+      "_nested_name": "button_42"
+    },
+    {
+      "name": "example_action_list",
+      "value": [
+        {
+          "trigger": "click",
+          "action_id": "notification_received",
+          "args": [],
+          "_raw": "notification_received | set_field : show_notification_bell : true",
+          "_cleaned": "click | notification_received | set_field : show_notification_bell : true",
+          "params": {
+            "set_field ": "show_notification_bell"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "notification_interacted",
+          "args": [],
+          "_raw": "notification_interacted | set_field : show_notification_bell: false",
+          "_cleaned": "click | notification_interacted | set_field : show_notification_bell: false",
+          "params": {
+            "set_field ": "show_notification_bell"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "notification_interacted",
+          "args": [],
+          "_raw": "notification_interacted | go_to : /user",
+          "_cleaned": "click | notification_interacted | go_to : /user",
+          "params": {
+            "go_to ": "/user"
+          }
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "example_action_list"
     },
     {
       "type": "button",
@@ -1269,14 +1297,14 @@
           "args": [
             "create"
           ],
-          "_raw": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
-          "_cleaned": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+          "_raw": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
+          "_cleaned": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
           "params": {
-            "id": "debug_notification",
+            "id": "debug_notification_with_action_list",
             "title": "Notification Title",
             "text": "Notification Text",
             "schedule_at": "@local.immediate_notification_time",
-            "action": "@data.notification_triggered_actions.demo_set_field"
+            "action_list": "@local.example_action_list"
           }
         }
       ],
@@ -1295,30 +1323,30 @@
           "0": {
             "_raw": [
               {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+                "fullExpression": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
                 "matchedExpression": "@local.immediate_notification_time",
                 "type": "local",
                 "fieldName": "immediate_notification_time"
               },
               {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
-                "matchedExpression": "@data.notification_triggered_actions.demo_set_field",
-                "type": "data",
-                "fieldName": "notification_triggered_actions"
+                "fullExpression": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
+                "matchedExpression": "@local.example_action_list",
+                "type": "local",
+                "fieldName": "example_action_list"
               }
             ],
             "_cleaned": [
               {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
+                "fullExpression": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
                 "matchedExpression": "@local.immediate_notification_time",
                 "type": "local",
                 "fieldName": "immediate_notification_time"
               },
               {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction: @data.notification_triggered_actions.demo_set_field",
-                "matchedExpression": "@data.notification_triggered_actions.demo_set_field",
-                "type": "data",
-                "fieldName": "notification_triggered_actions"
+                "fullExpression": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
+                "matchedExpression": "@local.example_action_list",
+                "type": "local",
+                "fieldName": "example_action_list"
               }
             ],
             "params": {
@@ -1330,12 +1358,12 @@
                   "fieldName": "immediate_notification_time"
                 }
               ],
-              "action": [
+              "action_list": [
                 {
-                  "fullExpression": "@data.notification_triggered_actions.demo_set_field",
-                  "matchedExpression": "@data.notification_triggered_actions.demo_set_field",
-                  "type": "data",
-                  "fieldName": "notification_triggered_actions"
+                  "fullExpression": "@local.example_action_list",
+                  "matchedExpression": "@local.example_action_list",
+                  "type": "local",
+                  "fieldName": "example_action_list"
                 }
               ]
             }
@@ -1349,12 +1377,162 @@
           "action_list.0._cleaned",
           "action_list.0.params.schedule_at"
         ],
-        "@data.notification_triggered_actions.demo_set_field": [
+        "@local.example_action_list": [
           "action_list.0._raw",
           "action_list.0._cleaned",
-          "action_list.0.params.action"
+          "action_list.0.params.action_list"
         ]
       }
+    },
+    {
+      "type": "button",
+      "value": "Reload Fields",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload",
+          "_cleaned": "click | emit: force_reload"
+        }
+      ],
+      "name": "button_45",
+      "_nested_name": "button_45"
+    },
+    {
+      "type": "text",
+      "value": "🔔 New Notifications!",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@fields.show_notification_bell",
+      "name": "text_46",
+      "_nested_name": "text_46",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.show_notification_bell",
+            "matchedExpression": "@fields.show_notification_bell",
+            "type": "fields",
+            "fieldName": "show_notification_bell"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.show_notification_bell": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Mark as read",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "show_notification_bell",
+            false
+          ],
+          "_raw": "click | set_field : show_notification_bell : false",
+          "_cleaned": "click | set_field : show_notification_bell : false"
+        }
+      ],
+      "condition": "@fields.show_notification_bell",
+      "name": "button_47",
+      "_nested_name": "button_47",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.show_notification_bell",
+            "matchedExpression": "@fields.show_notification_bell",
+            "type": "fields",
+            "fieldName": "show_notification_bell"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.show_notification_bell": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "WiP (not yet supported)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_48",
+      "_nested_name": "title_48"
+    },
+    {
+      "type": "text",
+      "value": "Using `@notification` syntax to refer to source notification context when triggering actions",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_49",
+      "_nested_name": "text_49"
+    },
+    {
+      "type": "text",
+      "value": "Specifying custom data to store with notification on create",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_50",
+      "_nested_name": "text_50"
+    },
+    {
+      "type": "text",
+      "name": "triggered_actions",
+      "value": "Setting action list from inline variable (set_variable only uses value column, which is not parsed as action_list type)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "notification_received",
+          "args": [],
+          "_raw": "notification_received | set_field : show_notification_bell : true",
+          "_cleaned": "click | notification_received | set_field : show_notification_bell : true",
+          "params": {
+            "set_field ": "show_notification_bell"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "notification_interacted",
+          "args": [],
+          "_raw": "notification_interacted | set_field : show_notification_bell: false",
+          "_cleaned": "click | notification_interacted | set_field : show_notification_bell: false",
+          "params": {
+            "set_field ": "show_notification_bell"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "notification_interacted",
+          "args": [],
+          "_raw": "notification_interacted | go_to : /user",
+          "_cleaned": "click | notification_interacted | go_to : /user",
+          "params": {
+            "go_to ": "/user"
+          }
+        }
+      ],
+      "_nested_name": "triggered_actions"
     }
   ],
   "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",

@@ -850,6 +850,26 @@
     },
     {
       "type": "button",
+      "value": "Force Home Reload",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_restart"
+          ],
+          "_raw": "click | emit: force_restart",
+          "_cleaned": "click | emit: force_restart"
+        }
+      ],
+      "name": "button_26",
+      "_nested_name": "button_26"
+    },
+    {
+      "type": "button",
       "value": "Delete Account",
       "_translations": {
         "value": {}
@@ -865,8 +885,8 @@
           "_cleaned": "click | pop_up: example_delete_account"
         }
       ],
-      "name": "button_26",
-      "_nested_name": "button_26"
+      "name": "button_27",
+      "_nested_name": "button_27"
     }
   ],
   "_xlsxPath": "example_sheets/example_auth.xlsx",

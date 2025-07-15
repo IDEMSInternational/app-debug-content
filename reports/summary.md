@@ -12,7 +12,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 392 |
+| button | 406 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -20,7 +20,7 @@
 | dashed_box | 19 |
 | data_items | 88 |
 | data_query | 8 |
-| date_time_picker | 7 |
+| date_time_picker | 8 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 844 |
+| set_variable | 850 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -69,13 +69,13 @@
 | task_card | 31 |
 | task_progress_bar | 8 |
 | template | 146 |
-| text | 1176 |
+| text | 1202 |
 | text_area | 13 |
-| text_box | 62 |
+| text_box | 63 |
 | text_bubble | 10 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 588 |
+| title | 610 |
 | toggle_bar | 70 |
 | update_action_list | 2 |
 | video | 4 |
@@ -94,13 +94,13 @@
 | auth | 6 |
 | auth_failure | 1 |
 | auth_success | 1 |
-| copy | 4 |
+| copy | 5 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
-| emit: force_reload | 33 |
-| emit: force_reprocess | 42 |
-| emit: force_restart | 3 |
+| emit: force_reload | 35 |
+| emit: force_reprocess | 41 |
+| emit: force_restart | 4 |
 | emit: server_sync | 8 |
 | emit: set_language | 6 |
 | emit: set_skin | 1 |
@@ -108,35 +108,37 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 81 |
+| go_to | 84 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 11 |
-| notification | 7 |
-| open_external | 2 |
+| notification | 8 |
+| notification_interacted | 2 |
+| notification_received | 1 |
+| open_external | 3 |
 | plh_parent_group | 7 |
 | pop_up | 50 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
 | reset_data | 8 |
-| save_to_device | 2 |
-| screen_orientation | 3 |
+| save_to_device | 3 |
+| screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 18 |
-| set_field | 116 |
+| set_field | 117 |
 | set_item | 34 |
 | set_items | 2 |
 | set_local | 68 |
-| share | 14 |
+| share | 15 |
 | start_tour | 2 |
 | task | 2 |
 | toast | 3 |
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
-| undefined | 17 |
+| undefined | 43 |
 | user | 2 |
 </details>
 
@@ -222,7 +224,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 7 |
-| images/example/jasper_1.jpg | 527.3 | 61 |
+| images/example/jasper_1.jpg | 527.3 | 62 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
@@ -296,7 +298,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
 | data_list | example_sheet_defaults | 1 |
-| data_list | feature | 3 |
+| data_list | feature | 2 |
 | data_list | generated | 13 |
 | data_list | lifecycle_actions | 1 |
 | data_pipe | debug | 1 |
@@ -306,9 +308,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 107 |
+| template |  | 108 |
 | template | component_demo | 62 |
 | template | debug | 283 |
+| template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
