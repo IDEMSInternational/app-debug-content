@@ -1,0 +1,735 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_native_functionality",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Upgrading Checklist",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "0. Consider delaying a little bit following latest Capacitor version launch (e.g. v7.1, 8.1 etc.). It is likely that 3rd party plugins will take time to align with latest capacitor version\n\n1. Follow the Upgrade Guides in [Capacitor Docs](https://capacitorjs.com/docs/) to peform initial upgrade\n\n2. Check for any variables that will not have automatically been upgraded by capacitor because they sit in `.template` files, e.g. `ios/App/App.xcodeproj/project.template.pbxproj` and `android/app/build.template.gradle`\n\n3. Ensure IOS pods correct\n```sh\nyarn workflow ios configure # This is to generate a valid App.xcodeproj/project.pbxproj file, which is required for `pod install`\ncd ios/App\nrm podfile.lock\npod install --repo-update\n```\n\n4. Review any breaking plugin changes mentioned in capacitor docs\n\n5. Check for updates to any community or 3rd party capacitor plugins, using repo docs to identify breaking changes\n\n6. Use examples in this sheet to test native functionality on web, ios and native. Ensure this sheet is updated to include any recent additions\n\n---",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-community/file-opener",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "text",
+      "value": "Device can save files to device",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "name": "image_path",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "image_path"
+    },
+    {
+      "type": "button",
+      "value": "Save Image",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "save_to_device",
+          "args": [
+            "@local.image_path"
+          ],
+          "_raw": "click | save_to_device: @local.image_path",
+          "_cleaned": "click | save_to_device: @local.image_path"
+        }
+      ],
+      "name": "button_7",
+      "_nested_name": "button_7",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "0": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | save_to_device: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | save_to_device: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "action_list.0.args.0",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/crashlytics",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "text",
+      "value": "Not available for testing in templates\nDev must manually trigger crahslytics service log",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/firestore",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_10",
+      "_nested_name": "title_10"
+    },
+    {
+      "type": "button",
+      "value": "Go to shared data debug page",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "/shared-data"
+          ],
+          "_raw": "click | go_to : /shared-data",
+          "_cleaned": "click | go_to : /shared-data"
+        }
+      ],
+      "name": "button_11",
+      "_nested_name": "button_11"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/authentication",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_12",
+      "_nested_name": "title_12"
+    },
+    {
+      "type": "button",
+      "value": "Go to example_auth",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "example_auth"
+          ],
+          "_raw": "click | go_to :  example_auth",
+          "_cleaned": "click | go_to :  example_auth"
+        }
+      ],
+      "name": "button_13",
+      "_nested_name": "button_13"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/performance",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_14",
+      "_nested_name": "title_14"
+    },
+    {
+      "type": "text",
+      "value": "Not actively in use",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_15",
+      "_nested_name": "text_15"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/clipboard",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_16",
+      "_nested_name": "title_16"
+    },
+    {
+      "type": "text_box",
+      "name": "copy_text_box",
+      "value": "text to copy",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "copy_text_box"
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Copy text to clipboard",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "copy",
+          "args": [],
+          "_raw": "click | copy | text:@local.copy_text_box, message: Copied to clipboard",
+          "_cleaned": "click | copy | text:@local.copy_text_box, message: Copied to clipboard",
+          "params": {
+            "text": "@local.copy_text_box",
+            "message": "Copied to clipboard"
+          }
+        }
+      ],
+      "_nested_name": "button_default",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | copy | text:@local.copy_text_box, message: Copied to clipboard",
+                "matchedExpression": "@local.copy_text_box",
+                "type": "local",
+                "fieldName": "copy_text_box"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | copy | text:@local.copy_text_box, message: Copied to clipboard",
+                "matchedExpression": "@local.copy_text_box",
+                "type": "local",
+                "fieldName": "copy_text_box"
+              }
+            ],
+            "params": {
+              "text": [
+                {
+                  "fullExpression": "@local.copy_text_box",
+                  "matchedExpression": "@local.copy_text_box",
+                  "type": "local",
+                  "fieldName": "copy_text_box"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.copy_text_box": [
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.text"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/core",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_19",
+      "_nested_name": "title_19"
+    },
+    {
+      "type": "text",
+      "value": "Platform: @fields._platform",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_20",
+      "_nested_name": "text_20",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Platform: @fields._platform",
+            "matchedExpression": "@fields._platform",
+            "type": "fields",
+            "fieldName": "_platform"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._platform": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/device",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_21",
+      "_nested_name": "title_21"
+    },
+    {
+      "type": "text",
+      "value": "Not available for testing in templates",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_22",
+      "_nested_name": "text_22"
+    },
+    {
+      "type": "text",
+      "value": "Dev can manually call Device.getInfo()",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_23",
+      "_nested_name": "text_23"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/filesystem",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_24",
+      "_nested_name": "title_24"
+    },
+    {
+      "type": "button",
+      "value": "Open Image (External)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "open_external",
+          "args": [
+            "@local.image_path"
+          ],
+          "_raw": "click | open_external: @local.image_path",
+          "_cleaned": "click | open_external: @local.image_path"
+        }
+      ],
+      "name": "button_25",
+      "_nested_name": "button_25",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "0": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | open_external: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | open_external: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "action_list.0.args.0",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/local-notifications",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_26",
+      "_nested_name": "title_26"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "input_datetime",
+      "_nested_name": "input_datetime"
+    },
+    {
+      "type": "button",
+      "value": "Schedule notification at @local.input_datetime",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "notification",
+          "args": [
+            "create"
+          ],
+          "_raw": "click | notification: create |\nid: debug_notification,\ntitle: Debug Notification,\ntext: Here is the notification text,\nschedule_at: @local.input_datetime\"",
+          "_cleaned": "click | notification: create |\nid: debug_notification,\ntitle: Debug Notification,\ntext: Here is the notification text,\nschedule_at: @local.input_datetime\"",
+          "params": {
+            "id": "debug_notification",
+            "title": "Debug Notification",
+            "text": "Here is the notification text",
+            "schedule_at": "@local.input_datetime\""
+          }
+        }
+      ],
+      "parameter_list": {
+        "disabled": "!@local.input_datetime"
+      },
+      "name": "button_28",
+      "_nested_name": "button_28",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Schedule notification at @local.input_datetime",
+            "matchedExpression": "@local.input_datetime",
+            "type": "local",
+            "fieldName": "input_datetime"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Debug Notification,\ntext: Here is the notification text,\nschedule_at: @local.input_datetime\"",
+                "matchedExpression": "@local.input_datetime",
+                "type": "local",
+                "fieldName": "input_datetime"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Debug Notification,\ntext: Here is the notification text,\nschedule_at: @local.input_datetime\"",
+                "matchedExpression": "@local.input_datetime",
+                "type": "local",
+                "fieldName": "input_datetime"
+              }
+            ],
+            "params": {
+              "schedule_at": [
+                {
+                  "fullExpression": "@local.input_datetime\"",
+                  "matchedExpression": "@local.input_datetime",
+                  "type": "local",
+                  "fieldName": "input_datetime"
+                }
+              ]
+            }
+          }
+        },
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "!@local.input_datetime",
+              "matchedExpression": "!@local.input_datetime",
+              "type": "local",
+              "fieldName": "input_datetime"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.input_datetime": [
+          "value",
+          "action_list.0._raw",
+          "action_list.0._cleaned",
+          "action_list.0.params.schedule_at"
+        ],
+        "!@local.input_datetime": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/push-notifications",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_29",
+      "_nested_name": "title_29"
+    },
+    {
+      "type": "text",
+      "value": "Not actively in use",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_30",
+      "_nested_name": "text_30"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/screen-orientation",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_31",
+      "_nested_name": "title_31"
+    },
+    {
+      "type": "button",
+      "value": "Set Landscape",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "screen_orientation",
+          "args": [
+            "landscape"
+          ],
+          "_raw": "click | screen_orientation : landscape",
+          "_cleaned": "click | screen_orientation : landscape"
+        }
+      ],
+      "name": "button_32",
+      "_nested_name": "button_32"
+    },
+    {
+      "type": "button",
+      "value": "Unlock Orientation",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "screen_orientation",
+          "args": [
+            "unlock"
+          ],
+          "_raw": "click | screen_orientation : unlock",
+          "_cleaned": "click | screen_orientation : unlock"
+        }
+      ],
+      "name": "button_33",
+      "_nested_name": "button_33"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/share",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_34",
+      "_nested_name": "title_34"
+    },
+    {
+      "type": "button",
+      "value": "Share Image",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "share",
+          "args": [
+            "file",
+            "@local.image_path"
+          ],
+          "_raw": "click | share : file: @local.image_path",
+          "_cleaned": "click | share : file: @local.image_path"
+        }
+      ],
+      "name": "button_35",
+      "_nested_name": "button_35",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.image_path",
+                  "matchedExpression": "@local.image_path",
+                  "type": "local",
+                  "fieldName": "image_path"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | share : file: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "click | share : file: @local.image_path",
+                "matchedExpression": "@local.image_path",
+                "type": "local",
+                "fieldName": "image_path"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.image_path": [
+          "action_list.0.args.1",
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/splash-screen",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_36",
+      "_nested_name": "title_36"
+    },
+    {
+      "type": "text",
+      "value": "Test on app startup",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_37",
+      "_nested_name": "text_37"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/toast",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_38",
+      "_nested_name": "title_38"
+    },
+    {
+      "type": "text",
+      "value": "Included in share (clipboard copy message)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_39",
+      "_nested_name": "text_39"
+    },
+    {
+      "type": "title",
+      "value": "@capawesome/capacitor-app-update",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_40",
+      "_nested_name": "title_40"
+    },
+    {
+      "type": "text",
+      "value": "Can only be tested following play store update",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_41",
+      "_nested_name": "text_41"
+    },
+    {
+      "type": "title",
+      "value": "capacitor-blob-writer",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_42",
+      "_nested_name": "title_42"
+    },
+    {
+      "type": "text",
+      "value": "Tested as part of share action (local asset copy made for sharing)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_43",
+      "_nested_name": "text_43"
+    },
+    {
+      "type": "title",
+      "value": "Upgrading Checklist",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_44",
+      "_nested_name": "title_44"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_native_functionality.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

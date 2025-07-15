@@ -14,6 +14,39 @@
       "_nested_name": "title_2"
     },
     {
+      "name": "variant",
+      "value": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "variant",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+            "matchedExpression": "!@local.variant_toggle",
+            "type": "local",
+            "fieldName": "variant_toggle"
+          },
+          {
+            "fullExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+            "matchedExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
+            "type": "calc",
+            "fieldName": "!@local.variant_toggle ? \"default\" : \"circle\""
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.variant_toggle": [
+          "value"
+        ],
+        "@calc(!@local.variant_toggle ? \"default\" : \"circle\")": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "display_group",
       "style_list": [
         "flex-direction: row-reverse",
@@ -24,39 +57,6 @@
           "type": "toggle_bar",
           "name": "variant_toggle",
           "_nested_name": "display_group_3.variant_toggle"
-        },
-        {
-          "name": "variant",
-          "value": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "display_group_3.variant",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
-                "matchedExpression": "!@local.variant_toggle",
-                "type": "local",
-                "fieldName": "variant_toggle"
-              },
-              {
-                "fullExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
-                "matchedExpression": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")",
-                "type": "calc",
-                "fieldName": "!@local.variant_toggle ? \"default\" : \"circle\""
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "!@local.variant_toggle": [
-              "value"
-            ],
-            "@calc(!@local.variant_toggle ? \"default\" : \"circle\")": [
-              "value"
-            ]
-          }
         },
         {
           "type": "text",
