@@ -88,7 +88,6 @@
 
 | type | count |
 | --- | --- |
-| @local.example_action_list | 1 |
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
@@ -139,7 +138,7 @@
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
-| undefined | 17 |
+| undefined | 43 |
 | user | 2 |
 </details>
 

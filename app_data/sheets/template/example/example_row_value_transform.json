@@ -92,7 +92,14 @@
       "name": "example_action_list",
       "value": [
         {
-          "set_local": "button_clicked"
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "button_clicked",
+            true
+          ],
+          "_raw": "click | set_local: button_clicked: true",
+          "_cleaned": "click | set_local: button_clicked: true"
         }
       ],
       "type": "set_variable",
@@ -104,52 +111,22 @@
       "_translations": {
         "value": {}
       },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "@local.example_action_list",
-          "args": [],
-          "_raw": "@local.example_action_list",
-          "_cleaned": "click | @local.example_action_list"
-        }
-      ],
+      "action_list": "@local.example_action_list",
       "name": "button_12",
       "_nested_name": "button_12",
       "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "action_id": [
-              {
-                "fullExpression": "@local.example_action_list",
-                "matchedExpression": "@local.example_action_list",
-                "type": "local",
-                "fieldName": "example_action_list"
-              }
-            ],
-            "_raw": [
-              {
-                "fullExpression": "@local.example_action_list",
-                "matchedExpression": "@local.example_action_list",
-                "type": "local",
-                "fieldName": "example_action_list"
-              }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | @local.example_action_list",
-                "matchedExpression": "@local.example_action_list",
-                "type": "local",
-                "fieldName": "example_action_list"
-              }
-            ]
+        "action_list": [
+          {
+            "fullExpression": "@local.example_action_list",
+            "matchedExpression": "@local.example_action_list",
+            "type": "local",
+            "fieldName": "example_action_list"
           }
-        }
+        ]
       },
       "_dynamicDependencies": {
         "@local.example_action_list": [
-          "action_list.0.action_id",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list"
         ]
       }
     },

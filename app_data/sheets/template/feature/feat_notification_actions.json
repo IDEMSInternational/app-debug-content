@@ -1251,13 +1251,34 @@
       "name": "example_action_list",
       "value": [
         {
-          "set_field ": "show_notification_bell"
+          "trigger": "click",
+          "action_id": "notification_received",
+          "args": [],
+          "_raw": "notification_received | set_field : show_notification_bell : true",
+          "_cleaned": "click | notification_received | set_field : show_notification_bell : true",
+          "params": {
+            "set_field ": "show_notification_bell"
+          }
         },
         {
-          "set_field ": "show_notification_bell"
+          "trigger": "click",
+          "action_id": "notification_interacted",
+          "args": [],
+          "_raw": "notification_interacted | set_field : show_notification_bell: false",
+          "_cleaned": "click | notification_interacted | set_field : show_notification_bell: false",
+          "params": {
+            "set_field ": "show_notification_bell"
+          }
         },
         {
-          "go_to ": "/user"
+          "trigger": "click",
+          "action_id": "notification_interacted",
+          "args": [],
+          "_raw": "notification_interacted | go_to : /user",
+          "_cleaned": "click | notification_interacted | go_to : /user",
+          "params": {
+            "go_to ": "/user"
+          }
         }
       ],
       "type": "set_variable",

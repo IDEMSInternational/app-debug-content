@@ -140,10 +140,18 @@
     },
     {
       "name": "icon_button_action_list",
-      "value": "click | set_field : something : dsfsd",
-      "_translations": {
-        "value": {}
-      },
+      "value": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "something",
+            "dsfsd"
+          ],
+          "_raw": "click | set_field : something : dsfsd",
+          "_cleaned": "click | set_field : something : dsfsd"
+        }
+      ],
       "type": "set_variable",
       "_nested_name": "icon_button_action_list"
     },
