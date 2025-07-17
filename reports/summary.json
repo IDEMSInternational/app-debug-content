@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 406
+        "count": 407
       },
       {
         "type": "calendar",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 237
+        "count": 238
       },
       {
         "type": "drawer",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1202
+        "count": 1203
       },
       {
         "type": "text_area",
@@ -279,7 +279,7 @@
       },
       {
         "type": "text_bubble",
-        "count": 10
+        "count": 11
       },
       {
         "type": "tile_component",
@@ -439,7 +439,7 @@
       },
       {
         "type": "plh_parent_group",
-        "count": 7
+        "count": 8
       },
       {
         "type": "pop_up",

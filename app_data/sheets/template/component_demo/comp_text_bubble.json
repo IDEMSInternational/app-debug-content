@@ -167,6 +167,18 @@
       },
       "name": "text_bubble_12",
       "_nested_name": "text_bubble_12"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: secondary;\nNo image, no name, full length",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "secondary"
+      },
+      "name": "text_bubble_13",
+      "_nested_name": "text_bubble_13"
     }
   ],
   "_xlsxPath": "component_sheets/component_text_bubble.xlsx",

@@ -1106,6 +1106,149 @@
                   "_nested_name"
                 ]
               }
+            },
+            {
+              "type": "display_group",
+              "condition": "!!@item.shared_id",
+              "rows": [
+                {
+                  "type": "text",
+                  "value": "Access Code: @item.access_code",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "name": "text_1",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_8.text_1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "Access Code: @item.access_code",
+                        "matchedExpression": "@item.access_code",
+                        "type": "item",
+                        "fieldName": "access_code"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_8.text_1",
+                        "matchedExpression": "@item.id.display_group_8.text_1",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.access_code": [
+                      "value"
+                    ],
+                    "@item.id.display_group_8.text_1": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "button",
+                  "value": "Refresh access code",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "action_list": [
+                    {
+                      "trigger": "click",
+                      "action_id": "plh_parent_group",
+                      "args": [
+                        "generate_access_code"
+                      ],
+                      "_raw": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
+                      "_cleaned": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
+                      "params": {
+                        "parent_group_id": "@item.id",
+                        "parent_groups_data_list": "debug_parent_group_data"
+                      }
+                    }
+                  ],
+                  "name": "button_2",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_8.button_2",
+                  "_dynamicFields": {
+                    "action_list": {
+                      "0": {
+                        "_raw": [
+                          {
+                            "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_cleaned": [
+                          {
+                            "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "params": {
+                          "parent_group_id": [
+                            {
+                              "fullExpression": "@item.id",
+                              "matchedExpression": "@item.id",
+                              "type": "item",
+                              "fieldName": "id"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "_nested_name": [
+                      {
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_8.button_2",
+                        "matchedExpression": "@item.id.display_group_8.button_2",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "action_list.0._raw",
+                      "action_list.0._cleaned",
+                      "action_list.0.params.parent_group_id"
+                    ],
+                    "@item.id.display_group_8.button_2": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "name": "display_group_8",
+              "_nested_name": "data_items_11.display_group_1_@item.id.display_group_8",
+              "_dynamicFields": {
+                "condition": [
+                  {
+                    "fullExpression": "!!@item.shared_id",
+                    "matchedExpression": "!@item.shared_id",
+                    "type": "item",
+                    "fieldName": "shared_id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_11.display_group_1_@item.id.display_group_8",
+                    "matchedExpression": "@item.id.display_group_8",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "!@item.shared_id": [
+                  "condition"
+                ],
+                "@item.id.display_group_8": [
+                  "_nested_name"
+                ]
+              }
             }
           ],
           "name": "display_group_1_@item.id",
