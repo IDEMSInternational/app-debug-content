@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 407
+        "count": 408
       },
       {
         "type": "calendar",
@@ -443,7 +443,7 @@
       },
       {
         "type": "pop_up",
-        "count": 50
+        "count": 51
       },
       {
         "type": "process_template",

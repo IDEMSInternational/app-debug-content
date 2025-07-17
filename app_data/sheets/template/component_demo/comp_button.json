@@ -709,9 +709,51 @@
         }
       ],
       "parameter_list": {
+        "style": "information",
         "disabled": "@local.toggle_bar_1"
       },
       "_nested_name": "button_disabled_dynamic",
+      "_dynamicFields": {
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "@local.toggle_bar_1",
+              "matchedExpression": "@local.toggle_bar_1",
+              "type": "local",
+              "fieldName": "toggle_bar_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_bar_1": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_disabled_dynamic_nav",
+      "value": "Disable this button via the toggle",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | pop_up: example_text",
+          "_cleaned": "click | pop_up: example_text"
+        }
+      ],
+      "parameter_list": {
+        "style": "navigation",
+        "disabled": "@local.toggle_bar_1"
+      },
+      "_nested_name": "button_disabled_dynamic_nav",
       "_dynamicFields": {
         "parameter_list": {
           "disabled": [
