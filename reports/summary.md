@@ -12,7 +12,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 406 |
+| button | 407 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -24,7 +24,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 237 |
+| display_group | 238 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 4 |
@@ -69,10 +69,10 @@
 | task_card | 31 |
 | task_progress_bar | 8 |
 | template | 146 |
-| text | 1202 |
+| text | 1203 |
 | text_area | 13 |
 | text_box | 63 |
-| text_bubble | 10 |
+| text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
 | title | 610 |
@@ -118,7 +118,7 @@
 | notification_interacted | 2 |
 | notification_received | 1 |
 | open_external | 3 |
-| plh_parent_group | 7 |
+| plh_parent_group | 8 |
 | pop_up | 50 |
 | process_template | 2 |
 | remove_item | 1 |
