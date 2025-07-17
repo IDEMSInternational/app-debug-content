@@ -74,7 +74,7 @@ config.app_config.APP_SIDEMENU_DEFAULTS.title = "Debug App";
 config.app_config.APP_SKINS.defaultSkinName = SKINS.defaultSkin.name
 config.app_config.APP_SKINS.available = [SKINS.defaultSkin, SKINS.debug]
 
-config.app_config.APP_THEMES.available = ["default", "professional", "pfr", "plh_facilitator_mx", "plh_facilitator_ph", "early_family_math", "plh_kids_kw", "plh_kids_tz"]
+config.app_config.APP_THEMES.available = ["default", "professional", "pfr", "plh_facilitator_mx", "plh_facilitator_my", "plh_facilitator_ph", "early_family_math", "plh_kids_kw", "plh_kids_tz"]
 config.app_config.APP_THEMES.defaultThemeName = "default"
 
 config.app_config.TASKS.enabled = true
