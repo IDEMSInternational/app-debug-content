@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 408
+        "count": 409
       },
       {
         "type": "calendar",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 88
+        "count": 89
       },
       {
         "type": "data_query",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 238
+        "count": 240
       },
       {
         "type": "drawer",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 850
+        "count": 855
       },
       {
         "type": "simple_checkbox",
@@ -263,11 +263,11 @@
       },
       {
         "type": "template",
-        "count": 146
+        "count": 147
       },
       {
         "type": "text",
-        "count": 1203
+        "count": 1209
       },
       {
         "type": "text_area",
@@ -295,7 +295,7 @@
       },
       {
         "type": "toggle_bar",
-        "count": 70
+        "count": 71
       },
       {
         "type": "update_action_list",
@@ -317,10 +317,6 @@
   },
   "template_actions": {
     "data": [
-      {
-        "type": "@local.example_action_list",
-        "count": 1
-      },
       {
         "type": "add_data",
         "count": 2
@@ -523,7 +519,7 @@
       },
       {
         "type": "undefined",
-        "count": 17
+        "count": 64
       },
       {
         "type": "user",
@@ -779,7 +775,7 @@
       },
       {
         "path": "images/example/jasper_1.jpg",
-        "count": 62,
+        "count": 64,
         "size_kb": 527.3
       },
       {
@@ -1169,7 +1165,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 108
+        "total": 109
       },
       {
         "type": "template",
@@ -1179,7 +1175,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 283
+        "total": 284
       },
       {
         "type": "template",

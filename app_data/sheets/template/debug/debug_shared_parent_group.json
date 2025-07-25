@@ -575,6 +575,64 @@
               }
             },
             {
+              "type": "template",
+              "name": "debug_parent_group_parents",
+              "value": "debug_parent_group_parents",
+              "rows": [
+                {
+                  "name": "parent_group_id",
+                  "value": "@item.id",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.debug_parent_group_parents.parent_group_id",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "data_items_11.display_group_1_@item.id.debug_parent_group_parents.parent_group_id",
+                        "matchedExpression": "@item.id.debug_parent_group_parents.parent_group_id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "value"
+                    ],
+                    "@item.id.debug_parent_group_parents.parent_group_id": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "data_items_11.display_group_1_@item.id.debug_parent_group_parents",
+              "_dynamicFields": {
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_11.display_group_1_@item.id.debug_parent_group_parents",
+                    "matchedExpression": "@item.id.debug_parent_group_parents",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id.debug_parent_group_parents": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
               "type": "display_group",
               "condition": "@item.cofacilitator_id && !@item.readonly",
               "rows": [
@@ -585,19 +643,19 @@
                     "value": {}
                   },
                   "name": "text_1",
-                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_5.text_1",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_6.text_1",
                   "_dynamicFields": {
                     "_nested_name": [
                       {
-                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_5.text_1",
-                        "matchedExpression": "@item.id.display_group_5.text_1",
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_6.text_1",
+                        "matchedExpression": "@item.id.display_group_6.text_1",
                         "type": "item",
                         "fieldName": "id"
                       }
                     ]
                   },
                   "_dynamicDependencies": {
-                    "@item.id.display_group_5.text_1": [
+                    "@item.id.display_group_6.text_1": [
                       "_nested_name"
                     ]
                   }
@@ -609,7 +667,7 @@
                     "value": {}
                   },
                   "name": "text_2",
-                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_5.text_2",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_6.text_2",
                   "_dynamicFields": {
                     "value": [
                       {
@@ -621,8 +679,8 @@
                     ],
                     "_nested_name": [
                       {
-                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_5.text_2",
-                        "matchedExpression": "@item.id.display_group_5.text_2",
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_6.text_2",
+                        "matchedExpression": "@item.id.display_group_6.text_2",
                         "type": "item",
                         "fieldName": "id"
                       }
@@ -632,7 +690,7 @@
                     "@item.cofacilitator_id": [
                       "value"
                     ],
-                    "@item.id.display_group_5.text_2": [
+                    "@item.id.display_group_6.text_2": [
                       "_nested_name"
                     ]
                   }
@@ -671,7 +729,7 @@
                   ],
                   "condition": "!@item.readonly",
                   "name": "button_3",
-                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_5.button_3",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_6.button_3",
                   "_dynamicFields": {
                     "action_list": {
                       "0": {
@@ -733,8 +791,8 @@
                     ],
                     "_nested_name": [
                       {
-                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_5.button_3",
-                        "matchedExpression": "@item.id.display_group_5.button_3",
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_6.button_3",
+                        "matchedExpression": "@item.id.display_group_6.button_3",
                         "type": "item",
                         "fieldName": "id"
                       }
@@ -754,14 +812,14 @@
                     "!@item.readonly": [
                       "condition"
                     ],
-                    "@item.id.display_group_5.button_3": [
+                    "@item.id.display_group_6.button_3": [
                       "_nested_name"
                     ]
                   }
                 }
               ],
-              "name": "display_group_5",
-              "_nested_name": "data_items_11.display_group_1_@item.id.display_group_5",
+              "name": "display_group_6",
+              "_nested_name": "data_items_11.display_group_1_@item.id.display_group_6",
               "_dynamicFields": {
                 "condition": [
                   {
@@ -779,8 +837,8 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "data_items_11.display_group_1_@item.id.display_group_5",
-                    "matchedExpression": "@item.id.display_group_5",
+                    "fullExpression": "data_items_11.display_group_1_@item.id.display_group_6",
+                    "matchedExpression": "@item.id.display_group_6",
                     "type": "item",
                     "fieldName": "id"
                   }
@@ -793,120 +851,7 @@
                 "!@item.readonly": [
                   "condition"
                 ],
-                "@item.id.display_group_5": [
-                  "_nested_name"
-                ]
-              }
-            },
-            {
-              "type": "button",
-              "value": "Add co-facilitator",
-              "_translations": {
-                "value": {}
-              },
-              "action_list": [
-                {
-                  "trigger": "click",
-                  "action_id": "plh_parent_group",
-                  "args": [
-                    "add_cofacilitator"
-                  ],
-                  "_raw": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                  "_cleaned": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                  "params": {
-                    "parent_group_id": "@item.id",
-                    "auth_id": "@local.co_facilitator_id",
-                    "parent_groups_data_list": "debug_parent_group_data",
-                    "parents_data_list": "debug_parent_data"
-                  }
-                }
-              ],
-              "condition": "!@item.readonly",
-              "name": "button_6",
-              "_nested_name": "data_items_11.display_group_1_@item.id.button_6",
-              "_dynamicFields": {
-                "action_list": {
-                  "0": {
-                    "_raw": [
-                      {
-                        "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      },
-                      {
-                        "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                        "matchedExpression": "@local.co_facilitator_id",
-                        "type": "local",
-                        "fieldName": "co_facilitator_id"
-                      }
-                    ],
-                    "_cleaned": [
-                      {
-                        "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      },
-                      {
-                        "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                        "matchedExpression": "@local.co_facilitator_id",
-                        "type": "local",
-                        "fieldName": "co_facilitator_id"
-                      }
-                    ],
-                    "params": {
-                      "parent_group_id": [
-                        {
-                          "fullExpression": "@item.id",
-                          "matchedExpression": "@item.id",
-                          "type": "item",
-                          "fieldName": "id"
-                        }
-                      ],
-                      "auth_id": [
-                        {
-                          "fullExpression": "@local.co_facilitator_id",
-                          "matchedExpression": "@local.co_facilitator_id",
-                          "type": "local",
-                          "fieldName": "co_facilitator_id"
-                        }
-                      ]
-                    }
-                  }
-                },
-                "condition": [
-                  {
-                    "fullExpression": "!@item.readonly",
-                    "matchedExpression": "!@item.readonly",
-                    "type": "item",
-                    "fieldName": "readonly"
-                  }
-                ],
-                "_nested_name": [
-                  {
-                    "fullExpression": "data_items_11.display_group_1_@item.id.button_6",
-                    "matchedExpression": "@item.id.button_6",
-                    "type": "item",
-                    "fieldName": "id"
-                  }
-                ]
-              },
-              "_dynamicDependencies": {
-                "@item.id": [
-                  "action_list.0._raw",
-                  "action_list.0._cleaned",
-                  "action_list.0.params.parent_group_id"
-                ],
-                "@local.co_facilitator_id": [
-                  "action_list.0._raw",
-                  "action_list.0._cleaned",
-                  "action_list.0.params.auth_id"
-                ],
-                "!@item.readonly": [
-                  "condition"
-                ],
-                "@item.id.button_6": [
+                "@item.id.display_group_6": [
                   "_nested_name"
                 ]
               }
@@ -915,8 +860,43 @@
               "type": "display_group",
               "rows": [
                 {
+                  "type": "text",
+                  "value": "Co-facilitator ID: @local.co_facilitator_id",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "name": "text_1",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_7.text_1",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "Co-facilitator ID: @local.co_facilitator_id",
+                        "matchedExpression": "@local.co_facilitator_id",
+                        "type": "local",
+                        "fieldName": "co_facilitator_id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_7.text_1",
+                        "matchedExpression": "@item.id.display_group_7.text_1",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.co_facilitator_id": [
+                      "value"
+                    ],
+                    "@item.id.display_group_7.text_1": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
                   "type": "button",
-                  "value": "Push updates to shared data",
+                  "value": "Add co-facilitator",
                   "_translations": {
                     "value": {}
                   },
@@ -925,37 +905,50 @@
                       "trigger": "click",
                       "action_id": "plh_parent_group",
                       "args": [
-                        "push"
+                        "add_cofacilitator"
                       ],
-                      "_raw": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                      "_cleaned": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                      "_raw": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                      "_cleaned": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                       "params": {
                         "parent_group_id": "@item.id",
+                        "auth_id": "@local.co_facilitator_id",
                         "parent_groups_data_list": "debug_parent_group_data",
                         "parents_data_list": "debug_parent_data"
                       }
                     }
                   ],
                   "condition": "!@item.readonly",
-                  "name": "button_1",
-                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_7.button_1",
+                  "name": "button_2",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_7.button_2",
                   "_dynamicFields": {
                     "action_list": {
                       "0": {
                         "_raw": [
                           {
-                            "fullExpression": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
                             "type": "item",
                             "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "matchedExpression": "@local.co_facilitator_id",
+                            "type": "local",
+                            "fieldName": "co_facilitator_id"
                           }
                         ],
                         "_cleaned": [
                           {
-                            "fullExpression": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
                             "type": "item",
                             "fieldName": "id"
+                          },
+                          {
+                            "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "matchedExpression": "@local.co_facilitator_id",
+                            "type": "local",
+                            "fieldName": "co_facilitator_id"
                           }
                         ],
                         "params": {
@@ -965,6 +958,14 @@
                               "matchedExpression": "@item.id",
                               "type": "item",
                               "fieldName": "id"
+                            }
+                          ],
+                          "auth_id": [
+                            {
+                              "fullExpression": "@local.co_facilitator_id",
+                              "matchedExpression": "@local.co_facilitator_id",
+                              "type": "local",
+                              "fieldName": "co_facilitator_id"
                             }
                           ]
                         }
@@ -976,93 +977,6 @@
                         "matchedExpression": "!@item.readonly",
                         "type": "item",
                         "fieldName": "readonly"
-                      }
-                    ],
-                    "_nested_name": [
-                      {
-                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_7.button_1",
-                        "matchedExpression": "@item.id.display_group_7.button_1",
-                        "type": "item",
-                        "fieldName": "id"
-                      }
-                    ]
-                  },
-                  "_dynamicDependencies": {
-                    "@item.id": [
-                      "action_list.0._raw",
-                      "action_list.0._cleaned",
-                      "action_list.0.params.parent_group_id"
-                    ],
-                    "!@item.readonly": [
-                      "condition"
-                    ],
-                    "@item.id.display_group_7.button_1": [
-                      "_nested_name"
-                    ]
-                  }
-                },
-                {
-                  "type": "button",
-                  "value": "Pull updates from shared data",
-                  "_translations": {
-                    "value": {}
-                  },
-                  "action_list": [
-                    {
-                      "trigger": "click",
-                      "action_id": "plh_parent_group",
-                      "args": [
-                        "pull"
-                      ],
-                      "_raw": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                      "_cleaned": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                      "params": {
-                        "parent_group_id": "@item.id",
-                        "parent_groups_data_list": "debug_parent_group_data",
-                        "parents_data_list": "debug_parent_data"
-                      }
-                    }
-                  ],
-                  "condition": "!!@item.shared_id",
-                  "name": "button_2",
-                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_7.button_2",
-                  "_dynamicFields": {
-                    "action_list": {
-                      "0": {
-                        "_raw": [
-                          {
-                            "fullExpression": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "_cleaned": [
-                          {
-                            "fullExpression": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "params": {
-                          "parent_group_id": [
-                            {
-                              "fullExpression": "@item.id",
-                              "matchedExpression": "@item.id",
-                              "type": "item",
-                              "fieldName": "id"
-                            }
-                          ]
-                        }
-                      }
-                    },
-                    "condition": [
-                      {
-                        "fullExpression": "!!@item.shared_id",
-                        "matchedExpression": "!@item.shared_id",
-                        "type": "item",
-                        "fieldName": "shared_id"
                       }
                     ],
                     "_nested_name": [
@@ -1080,7 +994,12 @@
                       "action_list.0._cleaned",
                       "action_list.0.params.parent_group_id"
                     ],
-                    "!@item.shared_id": [
+                    "@local.co_facilitator_id": [
+                      "action_list.0._raw",
+                      "action_list.0._cleaned",
+                      "action_list.0.params.auth_id"
+                    ],
+                    "!@item.readonly": [
                       "condition"
                     ],
                     "@item.id.display_group_7.button_2": [
@@ -1109,11 +1028,10 @@
             },
             {
               "type": "display_group",
-              "condition": "!!@item.shared_id",
               "rows": [
                 {
                   "type": "text",
-                  "value": "Access Code: @item.access_code",
+                  "value": "Access Code: @item.rp_access_code",
                   "_translations": {
                     "value": {}
                   },
@@ -1122,10 +1040,10 @@
                   "_dynamicFields": {
                     "value": [
                       {
-                        "fullExpression": "Access Code: @item.access_code",
-                        "matchedExpression": "@item.access_code",
+                        "fullExpression": "Access Code: @item.rp_access_code",
+                        "matchedExpression": "@item.rp_access_code",
                         "type": "item",
-                        "fieldName": "access_code"
+                        "fieldName": "rp_access_code"
                       }
                     ],
                     "_nested_name": [
@@ -1138,7 +1056,7 @@
                     ]
                   },
                   "_dynamicDependencies": {
-                    "@item.access_code": [
+                    "@item.rp_access_code": [
                       "value"
                     ],
                     "@item.id.display_group_8.text_1": [
@@ -1148,7 +1066,7 @@
                 },
                 {
                   "type": "button",
-                  "value": "Refresh access code",
+                  "value": "Refresh access code (shares group if not already shared)",
                   "_translations": {
                     "value": {}
                   },
@@ -1159,11 +1077,12 @@
                       "args": [
                         "generate_access_code"
                       ],
-                      "_raw": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
-                      "_cleaned": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
+                      "_raw": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
+                      "_cleaned": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
                       "params": {
                         "parent_group_id": "@item.id",
-                        "parent_groups_data_list": "debug_parent_group_data"
+                        "parent_groups_data_list": "debug_parent_group_data",
+                        "parents_data_list": "debug_parent_data"
                       }
                     }
                   ],
@@ -1174,7 +1093,7 @@
                       "0": {
                         "_raw": [
                           {
-                            "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
+                            "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
                             "type": "item",
                             "fieldName": "id"
@@ -1182,7 +1101,7 @@
                         ],
                         "_cleaned": [
                           {
-                            "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data",
+                            "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
                             "type": "item",
                             "fieldName": "id"
@@ -1224,14 +1143,6 @@
               "name": "display_group_8",
               "_nested_name": "data_items_11.display_group_1_@item.id.display_group_8",
               "_dynamicFields": {
-                "condition": [
-                  {
-                    "fullExpression": "!!@item.shared_id",
-                    "matchedExpression": "!@item.shared_id",
-                    "type": "item",
-                    "fieldName": "shared_id"
-                  }
-                ],
                 "_nested_name": [
                   {
                     "fullExpression": "data_items_11.display_group_1_@item.id.display_group_8",
@@ -1242,10 +1153,203 @@
                 ]
               },
               "_dynamicDependencies": {
-                "!@item.shared_id": [
-                  "condition"
-                ],
                 "@item.id.display_group_8": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "display_group",
+              "rows": [
+                {
+                  "type": "button",
+                  "value": "Push updates to shared data",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "action_list": [
+                    {
+                      "trigger": "click",
+                      "action_id": "plh_parent_group",
+                      "args": [
+                        "push"
+                      ],
+                      "_raw": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                      "_cleaned": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                      "params": {
+                        "parent_group_id": "@item.id",
+                        "parent_groups_data_list": "debug_parent_group_data",
+                        "parents_data_list": "debug_parent_data"
+                      }
+                    }
+                  ],
+                  "condition": "!@item.readonly",
+                  "name": "button_1",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_9.button_1",
+                  "_dynamicFields": {
+                    "action_list": {
+                      "0": {
+                        "_raw": [
+                          {
+                            "fullExpression": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_cleaned": [
+                          {
+                            "fullExpression": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "params": {
+                          "parent_group_id": [
+                            {
+                              "fullExpression": "@item.id",
+                              "matchedExpression": "@item.id",
+                              "type": "item",
+                              "fieldName": "id"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "condition": [
+                      {
+                        "fullExpression": "!@item.readonly",
+                        "matchedExpression": "!@item.readonly",
+                        "type": "item",
+                        "fieldName": "readonly"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_9.button_1",
+                        "matchedExpression": "@item.id.display_group_9.button_1",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "action_list.0._raw",
+                      "action_list.0._cleaned",
+                      "action_list.0.params.parent_group_id"
+                    ],
+                    "!@item.readonly": [
+                      "condition"
+                    ],
+                    "@item.id.display_group_9.button_1": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "button",
+                  "value": "Pull updates from shared data",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "action_list": [
+                    {
+                      "trigger": "click",
+                      "action_id": "plh_parent_group",
+                      "args": [
+                        "pull"
+                      ],
+                      "_raw": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                      "_cleaned": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                      "params": {
+                        "parent_group_id": "@item.id",
+                        "parent_groups_data_list": "debug_parent_group_data",
+                        "parents_data_list": "debug_parent_data"
+                      }
+                    }
+                  ],
+                  "condition": "!!@item.shared_id",
+                  "name": "button_2",
+                  "_nested_name": "data_items_11.display_group_1_@item.id.display_group_9.button_2",
+                  "_dynamicFields": {
+                    "action_list": {
+                      "0": {
+                        "_raw": [
+                          {
+                            "fullExpression": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "_cleaned": [
+                          {
+                            "fullExpression": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
+                            "matchedExpression": "@item.id",
+                            "type": "item",
+                            "fieldName": "id"
+                          }
+                        ],
+                        "params": {
+                          "parent_group_id": [
+                            {
+                              "fullExpression": "@item.id",
+                              "matchedExpression": "@item.id",
+                              "type": "item",
+                              "fieldName": "id"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "condition": [
+                      {
+                        "fullExpression": "!!@item.shared_id",
+                        "matchedExpression": "!@item.shared_id",
+                        "type": "item",
+                        "fieldName": "shared_id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "data_items_11.display_group_1_@item.id.display_group_9.button_2",
+                        "matchedExpression": "@item.id.display_group_9.button_2",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "action_list.0._raw",
+                      "action_list.0._cleaned",
+                      "action_list.0.params.parent_group_id"
+                    ],
+                    "!@item.shared_id": [
+                      "condition"
+                    ],
+                    "@item.id.display_group_9.button_2": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "name": "display_group_9",
+              "_nested_name": "data_items_11.display_group_1_@item.id.display_group_9",
+              "_dynamicFields": {
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_11.display_group_1_@item.id.display_group_9",
+                    "matchedExpression": "@item.id.display_group_9",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id.display_group_9": [
                   "_nested_name"
                 ]
               }
@@ -1346,6 +1450,15 @@
       ],
       "name": "display_group_14",
       "_nested_name": "display_group_14"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1fSMNZSWxBRoH6WQCrT-xdd5kOJjpM-wW5RQM59uSGgQ",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "debug_sheets/debug_shared_parent_group.xlsx",

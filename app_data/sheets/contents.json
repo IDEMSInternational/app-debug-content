@@ -2921,6 +2921,13 @@
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_overriding_value.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_parent_group_parents": {
+      "flow_type": "template",
+      "flow_name": "debug_parent_group_parents",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_shared_parent_group.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "debug_pop_up_dismiss": {
       "flow_type": "template",
       "flow_name": "debug_pop_up_dismiss",
@@ -4107,6 +4114,12 @@
       "flow_subtype": "debug",
       "flow_name": "user_actions",
       "_xlsxPath": "debug_sheets/debug_user_actions.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_action_list_var": {
+      "flow_type": "template",
+      "flow_name": "debug_action_list_var",
+      "_xlsxPath": "example_sheets/example_row_value_transform.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "debug_answer_list_partial": {
