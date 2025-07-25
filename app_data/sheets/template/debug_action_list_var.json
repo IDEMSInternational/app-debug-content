@@ -1,0 +1,136 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_action_list_var",
+  "status": "released",
+  "rows": [
+    {
+      "name": "text_1",
+      "value": "default",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "text_1"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_1",
+      "value": true,
+      "_nested_name": "toggle_bar_1"
+    },
+    {
+      "name": "my_action_list",
+      "value": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "text_1",
+            "The toggle is on"
+          ],
+          "_raw": "click | set_local: text_1: The toggle is on",
+          "_cleaned": "click | set_local: text_1: The toggle is on"
+        }
+      ],
+      "condition": "@local.toggle_bar_1",
+      "type": "set_variable",
+      "_nested_name": "my_action_list",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.toggle_bar_1",
+            "matchedExpression": "@local.toggle_bar_1",
+            "type": "local",
+            "fieldName": "toggle_bar_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_bar_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "name": "my_action_list",
+      "value": [
+        {
+          "trigger": "click",
+          "action_id": "undefined",
+          "args": [],
+          "_raw": "undefined",
+          "_cleaned": "click | undefined"
+        }
+      ],
+      "condition": "!@local.toggle_bar_1",
+      "type": "set_variable",
+      "_nested_name": "my_action_list",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.toggle_bar_1",
+            "matchedExpression": "!@local.toggle_bar_1",
+            "type": "local",
+            "fieldName": "toggle_bar_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.toggle_bar_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Click here",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": "@local.my_action_list",
+      "name": "button_6",
+      "_nested_name": "button_6",
+      "_dynamicFields": {
+        "action_list": [
+          {
+            "fullExpression": "@local.my_action_list",
+            "matchedExpression": "@local.my_action_list",
+            "type": "local",
+            "fieldName": "my_action_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.my_action_list": [
+          "action_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@local.text_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.text_1",
+            "matchedExpression": "@local.text_1",
+            "type": "local",
+            "fieldName": "text_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text_1": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_row_value_transform.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

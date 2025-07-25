@@ -12,19 +12,19 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 408 |
+| button | 409 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 66 |
 | dashed_box | 19 |
-| data_items | 88 |
+| data_items | 89 |
 | data_query | 8 |
 | date_time_picker | 8 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 238 |
+| display_group | 240 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 4 |
@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 850 |
+| set_variable | 855 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -68,15 +68,15 @@
 | table | 9 |
 | task_card | 31 |
 | task_progress_bar | 8 |
-| template | 146 |
-| text | 1203 |
+| template | 147 |
+| text | 1209 |
 | text_area | 13 |
 | text_box | 63 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
 | title | 610 |
-| toggle_bar | 70 |
+| toggle_bar | 71 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -88,7 +88,6 @@
 
 | type | count |
 | --- | --- |
-| @local.example_action_list | 1 |
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
@@ -139,7 +138,7 @@
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
-| undefined | 17 |
+| undefined | 64 |
 | user | 2 |
 </details>
 
@@ -225,7 +224,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 7 |
-| images/example/jasper_1.jpg | 527.3 | 62 |
+| images/example/jasper_1.jpg | 527.3 | 64 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
@@ -309,9 +308,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 108 |
+| template |  | 109 |
 | template | component_demo | 62 |
-| template | debug | 283 |
+| template | debug | 284 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

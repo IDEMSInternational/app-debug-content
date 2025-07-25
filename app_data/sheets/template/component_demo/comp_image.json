@@ -5,29 +5,34 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "title",
-      "name": "title_1",
-      "value": "Style",
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
       "_translations": {
         "value": {}
       },
-      "_nested_name": "title_1"
+      "name": "image_2",
+      "_nested_name": "image_2"
     },
     {
-      "type": "image",
-      "name": "image_par_1_1",
-      "parameter_list": {
-        "style": "null - (default)"
+      "type": "text",
+      "value": "Rounded corners",
+      "_translations": {
+        "value": {}
       },
-      "_nested_name": "image_par_1_1"
+      "name": "text_3",
+      "_nested_name": "text_3"
     },
     {
       "type": "image",
-      "name": "image_par_1_2",
+      "value": "images/example/jasper_1.jpg",
+      "_translations": {
+        "value": {}
+      },
       "parameter_list": {
         "style": "rounded_corners"
       },
-      "_nested_name": "image_par_1_2"
+      "name": "image_4",
+      "_nested_name": "image_4"
     }
   ],
   "_xlsxPath": "component_sheets/component_image.xlsx",
