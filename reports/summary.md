@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 855 |
+| set_variable | 880 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -69,14 +69,14 @@
 | task_card | 31 |
 | task_progress_bar | 8 |
 | template | 147 |
-| text | 1209 |
+| text | 1249 |
 | text_area | 13 |
 | text_box | 63 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
 | title | 610 |
-| toggle_bar | 71 |
+| toggle_bar | 73 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -108,14 +108,12 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 84 |
+| go_to | 85 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 11 |
 | notification | 8 |
-| notification_interacted | 2 |
-| notification_received | 1 |
 | open_external | 3 |
 | plh_parent_group | 8 |
 | pop_up | 51 |
@@ -127,7 +125,7 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 18 |
-| set_field | 117 |
+| set_field | 119 |
 | set_item | 34 |
 | set_items | 2 |
 | set_local | 68 |
@@ -308,7 +306,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 109 |
+| template |  | 110 |
 | template | component_demo | 62 |
 | template | debug | 284 |
 | template | example | 1 |
