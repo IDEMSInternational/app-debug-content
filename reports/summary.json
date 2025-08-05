@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 855
+        "count": 880
       },
       {
         "type": "simple_checkbox",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1209
+        "count": 1249
       },
       {
         "type": "text_area",
@@ -295,7 +295,7 @@
       },
       {
         "type": "toggle_bar",
-        "count": 71
+        "count": 73
       },
       {
         "type": "update_action_list",
@@ -399,7 +399,7 @@
       },
       {
         "type": "go_to",
-        "count": 84
+        "count": 85
       },
       {
         "type": "go_to_url",
@@ -420,14 +420,6 @@
       {
         "type": "notification",
         "count": 8
-      },
-      {
-        "type": "notification_interacted",
-        "count": 2
-      },
-      {
-        "type": "notification_received",
-        "count": 1
       },
       {
         "type": "open_external",
@@ -475,7 +467,7 @@
       },
       {
         "type": "set_field",
-        "count": 117
+        "count": 119
       },
       {
         "type": "set_item",
@@ -1165,7 +1157,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 109
+        "total": 110
       },
       {
         "type": "template",

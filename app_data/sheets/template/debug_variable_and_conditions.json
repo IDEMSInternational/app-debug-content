@@ -1,0 +1,1080 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_variable_and_conditions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_a1",
+      "value": "definition of a variable",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_a1"
+    },
+    {
+      "name": "a",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "a"
+    },
+    {
+      "type": "text",
+      "name": "test_a2",
+      "value": "a = @local.a",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_a2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "a = @local.a",
+            "matchedExpression": "@local.a",
+            "type": "local",
+            "fieldName": "a"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.a": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_b1",
+      "value": "re-definition of a variable",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_b1"
+    },
+    {
+      "name": "b",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "b"
+    },
+    {
+      "type": "text",
+      "name": "test_b2",
+      "value": "b = @local.b",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_b2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "b = @local.b",
+            "matchedExpression": "@local.b",
+            "type": "local",
+            "fieldName": "b"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.b": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "b",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "b"
+    },
+    {
+      "type": "text",
+      "name": "test_b3",
+      "value": "b = @local.b",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_b3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "b = @local.b",
+            "matchedExpression": "@local.b",
+            "type": "local",
+            "fieldName": "b"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.b": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_c1",
+      "value": "with a false the third time",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_c1"
+    },
+    {
+      "name": "c",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "c"
+    },
+    {
+      "type": "text",
+      "name": "test_c2",
+      "value": "c = @local.c",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_c2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "c = @local.c",
+            "matchedExpression": "@local.c",
+            "type": "local",
+            "fieldName": "c"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.c": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "c",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "c"
+    },
+    {
+      "type": "text",
+      "name": "test_c3",
+      "value": "c = @local.c",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_c3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "c = @local.c",
+            "matchedExpression": "@local.c",
+            "type": "local",
+            "fieldName": "c"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.c": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "c",
+      "value": 3,
+      "condition": false,
+      "type": "set_variable",
+      "_nested_name": "c"
+    },
+    {
+      "type": "text",
+      "name": "test_c4",
+      "value": "c = @local.c",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_c4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "c = @local.c",
+            "matchedExpression": "@local.c",
+            "type": "local",
+            "fieldName": "c"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.c": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_d1",
+      "value": "with a false the third time and TRUE||TRUE the fourth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_d1"
+    },
+    {
+      "name": "d",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "d"
+    },
+    {
+      "type": "text",
+      "name": "test_d2",
+      "value": "d = @local.d",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_d2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "d = @local.d",
+            "matchedExpression": "@local.d",
+            "type": "local",
+            "fieldName": "d"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.d": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "d",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "d"
+    },
+    {
+      "type": "text",
+      "name": "test_d3",
+      "value": "d = @local.d",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_d3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "d = @local.d",
+            "matchedExpression": "@local.d",
+            "type": "local",
+            "fieldName": "d"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.d": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "d",
+      "value": 3,
+      "condition": false,
+      "type": "set_variable",
+      "_nested_name": "d"
+    },
+    {
+      "type": "text",
+      "name": "test_d4",
+      "value": "d = @local.d",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_d4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "d = @local.d",
+            "matchedExpression": "@local.d",
+            "type": "local",
+            "fieldName": "d"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.d": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "d",
+      "value": 4,
+      "condition": "TRUE || TRUE",
+      "type": "set_variable",
+      "_nested_name": "d"
+    },
+    {
+      "type": "text",
+      "name": "test_d5",
+      "value": "d = @local.d",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_d5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "d = @local.d",
+            "matchedExpression": "@local.d",
+            "type": "local",
+            "fieldName": "d"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.d": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_e1",
+      "value": "with a false the third time and TRUE||TRUE the fourth and FALSE||FALSE the fifth",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_e1"
+    },
+    {
+      "name": "e",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "e"
+    },
+    {
+      "type": "text",
+      "name": "test_e2",
+      "value": "e = @local.e",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_e2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "e = @local.e",
+            "matchedExpression": "@local.e",
+            "type": "local",
+            "fieldName": "e"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.e": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "test_e_initial",
+      "value": "@local.e",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "test_e_initial",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.e",
+            "matchedExpression": "@local.e",
+            "type": "local",
+            "fieldName": "e"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.e": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "e",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "e"
+    },
+    {
+      "type": "text",
+      "name": "test_e3",
+      "value": "e = @local.e",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_e3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "e = @local.e",
+            "matchedExpression": "@local.e",
+            "type": "local",
+            "fieldName": "e"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.e": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "e",
+      "value": 3,
+      "condition": false,
+      "type": "set_variable",
+      "_nested_name": "e"
+    },
+    {
+      "type": "text",
+      "name": "test_e4",
+      "value": "e = @local.e",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_e4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "e = @local.e",
+            "matchedExpression": "@local.e",
+            "type": "local",
+            "fieldName": "e"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.e": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "e",
+      "value": 4,
+      "condition": "TRUE || TRUE",
+      "type": "set_variable",
+      "_nested_name": "e"
+    },
+    {
+      "type": "text",
+      "name": "warning_ff",
+      "value": "This is strange: a FALSE || FALSE condition is not stopping the line from being executed.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "color: red"
+      ],
+      "_nested_name": "warning_ff"
+    },
+    {
+      "type": "text",
+      "name": "test_e5",
+      "value": "e = @local.e",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_e5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "e = @local.e",
+            "matchedExpression": "@local.e",
+            "type": "local",
+            "fieldName": "e"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.e": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "e",
+      "value": 5,
+      "condition": "FALSE || FALSE",
+      "type": "set_variable",
+      "_nested_name": "e"
+    },
+    {
+      "type": "text",
+      "name": "test_e6",
+      "value": "e = @local.e",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_e6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "e = @local.e",
+            "matchedExpression": "@local.e",
+            "type": "local",
+            "fieldName": "e"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.e": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_test_e_initial",
+      "value": "e_initial = @local.test_e_initial",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_test_e_initial",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "e_initial = @local.test_e_initial",
+            "matchedExpression": "@local.test_e_initial",
+            "type": "local",
+            "fieldName": "test_e_initial"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.test_e_initial": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_f1",
+      "value": "with a false the third time and TRUE||TRUE the fourth and FALSE||FALSE the fifth defined as a variable before",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_f1"
+    },
+    {
+      "name": "f",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "f"
+    },
+    {
+      "type": "text",
+      "name": "test_f2",
+      "value": "f = @local.f",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_f2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "f = @local.f",
+            "matchedExpression": "@local.f",
+            "type": "local",
+            "fieldName": "f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.f": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "test_f_initial",
+      "value": "@local.f",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "test_f_initial",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.f",
+            "matchedExpression": "@local.f",
+            "type": "local",
+            "fieldName": "f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.f": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "f",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "f"
+    },
+    {
+      "type": "text",
+      "name": "test_f3",
+      "value": "f = @local.f",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_f3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "f = @local.f",
+            "matchedExpression": "@local.f",
+            "type": "local",
+            "fieldName": "f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.f": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "f",
+      "value": 3,
+      "condition": false,
+      "type": "set_variable",
+      "_nested_name": "f"
+    },
+    {
+      "type": "text",
+      "name": "test_f4",
+      "value": "f = @local.f",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_f4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "f = @local.f",
+            "matchedExpression": "@local.f",
+            "type": "local",
+            "fieldName": "f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.f": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "f",
+      "value": 4,
+      "condition": "TRUE || TRUE",
+      "type": "set_variable",
+      "_nested_name": "f"
+    },
+    {
+      "type": "text",
+      "name": "test_f5",
+      "value": "f = @local.f",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_f5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "f = @local.f",
+            "matchedExpression": "@local.f",
+            "type": "local",
+            "fieldName": "f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.f": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "warning_condition_ff",
+      "value": "But with a FALSE || FALSE condition as a variable defined previously, it works.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "color: red"
+      ],
+      "_nested_name": "warning_condition_ff"
+    },
+    {
+      "name": "condition_f",
+      "value": true,
+      "condition": "FALSE || FALSE",
+      "type": "set_variable",
+      "_nested_name": "condition_f"
+    },
+    {
+      "name": "condition_f",
+      "value": false,
+      "condition": "!(FALSE || FALSE)",
+      "type": "set_variable",
+      "_nested_name": "condition_f"
+    },
+    {
+      "type": "text",
+      "name": "text_condition_f",
+      "value": "condition_f = @local.condition_f",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_condition_f",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "condition_f = @local.condition_f",
+            "matchedExpression": "@local.condition_f",
+            "type": "local",
+            "fieldName": "condition_f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.condition_f": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "f",
+      "value": 5,
+      "condition": "@local.condition_f",
+      "type": "set_variable",
+      "_nested_name": "f",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.condition_f",
+            "matchedExpression": "@local.condition_f",
+            "type": "local",
+            "fieldName": "condition_f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.condition_f": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "test_f6",
+      "value": "f = @local.f",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "test_f6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "f = @local.f",
+            "matchedExpression": "@local.f",
+            "type": "local",
+            "fieldName": "f"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.f": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_test_f_initial",
+      "value": "f_initial = @local.test_f_initial",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_test_f_initial",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "f_initial = @local.test_f_initial",
+            "matchedExpression": "@local.test_f_initial",
+            "type": "local",
+            "fieldName": "test_f_initial"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.test_f_initial": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_debug_ff",
+      "value": "debugging the FALSE || FALSE condition",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_debug_ff"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_1",
+      "value": true,
+      "_nested_name": "toggle_1"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_2",
+      "value": true,
+      "_nested_name": "toggle_2"
+    },
+    {
+      "type": "text",
+      "name": "toggle_value_1",
+      "value": "toggle 1 = @local.toggle_1",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "toggle_value_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "toggle 1 = @local.toggle_1",
+            "matchedExpression": "@local.toggle_1",
+            "type": "local",
+            "fieldName": "toggle_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "toggle_value_2",
+      "value": "toggle 2 = @local.toggle_2",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "toggle_value_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "toggle 2 = @local.toggle_2",
+            "matchedExpression": "@local.toggle_2",
+            "type": "local",
+            "fieldName": "toggle_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_2": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "condition_combo",
+      "value": "@local.toggle_1 || @local.toggle_2",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "condition_combo",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.toggle_1 || @local.toggle_2",
+            "matchedExpression": "@local.toggle_1",
+            "type": "local",
+            "fieldName": "toggle_1"
+          },
+          {
+            "fullExpression": "@local.toggle_1 || @local.toggle_2",
+            "matchedExpression": "@local.toggle_2",
+            "type": "local",
+            "fieldName": "toggle_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_1": [
+          "value"
+        ],
+        "@local.toggle_2": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "condition_combo_text",
+      "value": "condition_combo = @local.condition_combo",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "condition_combo_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "condition_combo = @local.condition_combo",
+            "matchedExpression": "@local.condition_combo",
+            "type": "local",
+            "fieldName": "condition_combo"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.condition_combo": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "test_combo_1",
+      "value": "This appears if toggle_1 || toggle_2",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.toggle_1 || @local.toggle_2",
+      "_nested_name": "test_combo_1",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.toggle_1 || @local.toggle_2",
+            "matchedExpression": "@local.toggle_1",
+            "type": "local",
+            "fieldName": "toggle_1"
+          },
+          {
+            "fullExpression": "@local.toggle_1 || @local.toggle_2",
+            "matchedExpression": "@local.toggle_2",
+            "type": "local",
+            "fieldName": "toggle_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_1": [
+          "condition"
+        ],
+        "@local.toggle_2": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "test_combo_2",
+      "value": "This appears if condition_combo == TRUE",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.condition_combo",
+      "_nested_name": "test_combo_2",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.condition_combo",
+            "matchedExpression": "@local.condition_combo",
+            "type": "local",
+            "fieldName": "condition_combo"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.condition_combo": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "test_combo_3",
+      "value": "This appears if toggle_1 || FALSE",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.toggle_1 || FALSE",
+      "_nested_name": "test_combo_3",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.toggle_1 || FALSE",
+            "matchedExpression": "@local.toggle_1",
+            "type": "local",
+            "fieldName": "toggle_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "test_combo_4",
+      "value": "This appears if toggle_1 || \"FALSE\"",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.toggle_1 || \"FALSE\"",
+      "_nested_name": "test_combo_4",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.toggle_1 || \"FALSE\"",
+            "matchedExpression": "@local.toggle_1",
+            "type": "local",
+            "fieldName": "toggle_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.toggle_1": [
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_variable_and_conditions.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

@@ -367,13 +367,38 @@
     },
     {
       "type": "text",
-      "value": "_platform: @fields._platform",
+      "value": "_operating_system: @fields._operating_system",
       "_translations": {
         "value": {}
       },
       "exclude_from_translation": true,
       "name": "text_17",
       "_nested_name": "text_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "_operating_system: @fields._operating_system",
+            "matchedExpression": "@fields._operating_system",
+            "type": "fields",
+            "fieldName": "_operating_system"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._operating_system": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "_platform: @fields._platform",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "name": "text_18",
+      "_nested_name": "text_18",
       "_dynamicFields": {
         "value": [
           {
@@ -397,8 +422,8 @@
         "value": {}
       },
       "exclude_from_translation": true,
-      "name": "text_18",
-      "_nested_name": "text_18",
+      "name": "text_19",
+      "_nested_name": "text_19",
       "_dynamicFields": {
         "value": [
           {

@@ -4359,6 +4359,12 @@
       "_xlsxPath": "debug_sheets/debug_translate_nested_rows.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_variable_and_conditions": {
+      "flow_type": "template",
+      "flow_name": "debug_variable_and_conditions",
+      "_xlsxPath": "debug_sheets/debug_variable_and_conditions.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "doc_field": {
       "flow_type": "template",
       "flow_name": "doc_field",
