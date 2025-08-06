@@ -12,25 +12,25 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 409 |
+| button | 410 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 66 |
 | dashed_box | 19 |
-| data_items | 89 |
+| data_items | 91 |
 | data_query | 8 |
 | date_time_picker | 8 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 240 |
+| display_group | 241 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 4 |
 | html | 4 |
 | image | 83 |
-| items | 50 |
+| items | 51 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 2 |
@@ -47,10 +47,10 @@
 | plh_bottom_nav | 1 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
-| plh_module_list_item | 9 |
+| plh_module_list_item | 11 |
 | plh_progress_path | 3 |
 | progress_bar | 1 |
-| progress_path | 3 |
+| progress_path | 6 |
 | qr_code | 2 |
 | radio_button_grid | 14 |
 | radio_group | 61 |
@@ -60,23 +60,23 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 855 |
+| set_variable | 884 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 52 |
 | table | 9 |
-| task_card | 31 |
+| task_card | 32 |
 | task_progress_bar | 8 |
 | template | 147 |
-| text | 1209 |
+| text | 1250 |
 | text_area | 13 |
 | text_box | 63 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 610 |
-| toggle_bar | 71 |
+| title | 613 |
+| toggle_bar | 74 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -118,7 +118,7 @@
 | notification_received | 1 |
 | open_external | 3 |
 | plh_parent_group | 8 |
-| pop_up | 51 |
+| pop_up | 54 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -244,11 +244,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/home.svg | 0.4 | 1 |
 | images/icons/home_active.svg | 0.4 | 1 |
 | images/icons/house_white.svg | 0.6 | 6 |
-| images/icons/in_progress.svg | 1.1 | 16 |
+| images/icons/in_progress.svg | 1.1 | 17 |
 | images/icons/leaf_blue.svg | 1.7 | 13 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 10 |
+| images/icons/locked.png | 0.9 | 13 |
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 8 |
@@ -260,7 +260,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_white.svg | 1 | 22 |
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 13 |
-| images/icons/tick_white.svg | 0.3 | 22 |
+| images/icons/tick_white.svg | 0.3 | 23 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 7 |
 | images/shining_diamond.png | 17.7 | 1 |
@@ -308,7 +308,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 109 |
+| template |  | 111 |
 | template | component_demo | 62 |
 | template | debug | 284 |
 | template | example | 1 |

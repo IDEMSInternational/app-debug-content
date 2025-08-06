@@ -145,7 +145,7 @@
     },
     {
       "type": "text",
-      "value": "Notifications have been disabled by the user. \nPlease enable to use this featre",
+      "value": "Notifications have been disabled by the user. \nPlease enable to use this feature",
       "_translations": {
         "value": {}
       },
@@ -170,7 +170,7 @@
     },
     {
       "type": "title",
-      "value": "Create Notifcation",
+      "value": "Create Notification",
       "_translations": {
         "value": {}
       },

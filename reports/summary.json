@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 409
+        "count": 410
       },
       {
         "type": "calendar",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 89
+        "count": 91
       },
       {
         "type": "data_query",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 240
+        "count": 241
       },
       {
         "type": "drawer",
@@ -111,7 +111,7 @@
       },
       {
         "type": "items",
-        "count": 50
+        "count": 51
       },
       {
         "type": "latex",
@@ -179,7 +179,7 @@
       },
       {
         "type": "plh_module_list_item",
-        "count": 9
+        "count": 11
       },
       {
         "type": "plh_progress_path",
@@ -191,7 +191,7 @@
       },
       {
         "type": "progress_path",
-        "count": 3
+        "count": 6
       },
       {
         "type": "qr_code",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 855
+        "count": 884
       },
       {
         "type": "simple_checkbox",
@@ -255,7 +255,7 @@
       },
       {
         "type": "task_card",
-        "count": 31
+        "count": 32
       },
       {
         "type": "task_progress_bar",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1209
+        "count": 1250
       },
       {
         "type": "text_area",
@@ -291,11 +291,11 @@
       },
       {
         "type": "title",
-        "count": 610
+        "count": 613
       },
       {
         "type": "toggle_bar",
-        "count": 71
+        "count": 74
       },
       {
         "type": "update_action_list",
@@ -439,7 +439,7 @@
       },
       {
         "type": "pop_up",
-        "count": 51
+        "count": 54
       },
       {
         "type": "process_template",
@@ -875,7 +875,7 @@
       },
       {
         "path": "images/icons/in_progress.svg",
-        "count": 16,
+        "count": 17,
         "size_kb": 1.1
       },
       {
@@ -895,7 +895,7 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 10,
+        "count": 13,
         "size_kb": 0.9
       },
       {
@@ -955,7 +955,7 @@
       },
       {
         "path": "images/icons/tick_white.svg",
-        "count": 22,
+        "count": 23,
         "size_kb": 0.3
       },
       {
@@ -1165,7 +1165,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 109
+        "total": 111
       },
       {
         "type": "template",
