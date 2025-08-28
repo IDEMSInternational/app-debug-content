@@ -36,7 +36,6 @@
     },
     {
       "type": "display_group",
-      "name": "dg_variant_gray",
       "exclude_from_translation": true,
       "rows": [
         {
@@ -47,23 +46,23 @@
           },
           "exclude_from_translation": true,
           "name": "title_1",
-          "_nested_name": "dg_variant_gray.title_1"
+          "_nested_name": "display_group_4.title_1"
         },
         {
           "type": "text_area",
-          "name": "text_area",
           "value": "Type here",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "dg_variant_gray.text_area"
+          "name": "text_area_2",
+          "_nested_name": "display_group_4.text_area_2"
         }
       ],
-      "_nested_name": "dg_variant_gray"
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
     },
     {
       "type": "display_group",
-      "name": "dg_variant_gray",
       "exclude_from_translation": true,
       "parameter_list": {
         "variant": "box_gray"
@@ -77,14 +76,14 @@
           },
           "exclude_from_translation": true,
           "name": "title_1",
-          "_nested_name": "dg_variant_gray.title_1"
+          "_nested_name": "display_group_6.title_1"
         }
       ],
-      "_nested_name": "dg_variant_gray"
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
     },
     {
       "type": "display_group",
-      "name": "dg_variant_primary",
       "exclude_from_translation": true,
       "parameter_list": {
         "variant": "box_primary"
@@ -98,14 +97,14 @@
           },
           "exclude_from_translation": true,
           "name": "title_1",
-          "_nested_name": "dg_variant_primary.title_1"
+          "_nested_name": "display_group_8.title_1"
         }
       ],
-      "_nested_name": "dg_variant_primary"
+      "name": "display_group_8",
+      "_nested_name": "display_group_8"
     },
     {
       "type": "display_group",
-      "name": "dg_variant_secondary",
       "exclude_from_translation": true,
       "parameter_list": {
         "variant": "box_secondary"
@@ -119,14 +118,14 @@
           },
           "exclude_from_translation": true,
           "name": "title_1",
-          "_nested_name": "dg_variant_secondary.title_1"
+          "_nested_name": "display_group_10.title_1"
         }
       ],
-      "_nested_name": "dg_variant_secondary"
+      "name": "display_group_10",
+      "_nested_name": "display_group_10"
     },
     {
       "type": "display_group",
-      "name": "dg_variant_white",
       "exclude_from_translation": true,
       "parameter_list": {
         "variant": "box_white"
@@ -140,10 +139,11 @@
           },
           "exclude_from_translation": true,
           "name": "title_1",
-          "_nested_name": "dg_variant_white.title_1"
+          "_nested_name": "display_group_12.title_1"
         }
       ],
-      "_nested_name": "dg_variant_white"
+      "name": "display_group_12",
+      "_nested_name": "display_group_12"
     },
     {
       "type": "display_group",
@@ -208,18 +208,13 @@
     },
     {
       "type": "display_group",
-      "name": "example_dp_gr",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "tool_1"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title light_orange",
           "_translations": {
             "value": {}
@@ -231,11 +226,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "example_dp_gr.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_18.title_1"
         },
         {
           "type": "text",
-          "name": "text_ex_text",
           "value": "Text for display light_orange",
           "_translations": {
             "value": {}
@@ -244,25 +239,22 @@
           "parameter_list": {
             "text_align": "center"
           },
-          "_nested_name": "example_dp_gr.text_ex_text"
+          "name": "text_2",
+          "_nested_name": "display_group_18.text_2"
         }
       ],
-      "_nested_name": "example_dp_gr"
+      "name": "display_group_18",
+      "_nested_name": "display_group_18"
     },
     {
       "type": "display_group",
-      "name": "dg_example_2",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "tool_2"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title orange",
           "_translations": {
             "value": {}
@@ -274,11 +266,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "dg_example_2.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_20.title_1"
         },
         {
           "type": "text",
-          "name": "text_ex_text",
           "value": "Text for display orange",
           "_translations": {
             "value": {}
@@ -287,25 +279,22 @@
           "parameter_list": {
             "text_align": "right"
           },
-          "_nested_name": "dg_example_2.text_ex_text"
+          "name": "text_2",
+          "_nested_name": "display_group_20.text_2"
         }
       ],
-      "_nested_name": "dg_example_2"
+      "name": "display_group_20",
+      "_nested_name": "display_group_20"
     },
     {
       "type": "display_group",
-      "name": "dg_example_3",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "tool_3"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title light_blue",
           "_translations": {
             "value": {}
@@ -317,11 +306,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "dg_example_3.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_22.title_1"
         },
         {
           "type": "text",
-          "name": "text_ex_text",
           "value": "Text for display light_blue",
           "_translations": {
             "value": {}
@@ -330,25 +319,22 @@
           "parameter_list": {
             "text_align": "left"
           },
-          "_nested_name": "dg_example_3.text_ex_text"
+          "name": "text_2",
+          "_nested_name": "display_group_22.text_2"
         }
       ],
-      "_nested_name": "dg_example_3"
+      "name": "display_group_22",
+      "_nested_name": "display_group_22"
     },
     {
       "type": "display_group",
-      "name": "dg_example_4",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "tool_4"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title blue",
           "_translations": {
             "value": {}
@@ -360,11 +346,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "dg_example_4.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_24.title_1"
         },
         {
           "type": "text",
-          "name": "text_ex_text",
           "value": "Text for display blue",
           "_translations": {
             "value": {}
@@ -373,25 +359,22 @@
           "parameter_list": {
             "text_align": "center"
           },
-          "_nested_name": "dg_example_4.text_ex_text"
+          "name": "text_2",
+          "_nested_name": "display_group_24.text_2"
         }
       ],
-      "_nested_name": "dg_example_4"
+      "name": "display_group_24",
+      "_nested_name": "display_group_24"
     },
     {
       "type": "display_group",
-      "name": "dg_example_6",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "tool_5"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title dark_blue",
           "_translations": {
             "value": {}
@@ -403,11 +386,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "dg_example_6.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_26.title_1"
         },
         {
           "type": "text",
-          "name": "text_ex_text",
           "value": "Text for display dark_blue",
           "_translations": {
             "value": {}
@@ -416,26 +399,23 @@
           "parameter_list": {
             "text_align": "right"
           },
-          "_nested_name": "dg_example_6.text_ex_text"
+          "name": "text_2",
+          "_nested_name": "display_group_26.text_2"
         }
       ],
-      "_nested_name": "dg_example_6"
+      "name": "display_group_26",
+      "_nested_name": "display_group_26"
     },
     {
       "type": "display_group",
-      "name": "dg_example_7",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "banner_active",
         "offset": "30"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title with offset",
           "_translations": {
             "value": {}
@@ -447,11 +427,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "dg_example_7.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_28.title_1"
         },
         {
           "type": "image",
-          "name": "image",
           "value": "images/example/jasper_1.jpg",
           "_translations": {
             "value": {}
@@ -460,25 +440,22 @@
           "style_list": [
             "max-width: 250px"
           ],
-          "_nested_name": "dg_example_7.image"
+          "name": "image_2",
+          "_nested_name": "display_group_28.image_2"
         }
       ],
-      "_nested_name": "dg_example_7"
+      "name": "display_group_28",
+      "_nested_name": "display_group_28"
     },
     {
       "type": "display_group",
-      "name": "dg_example_8",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "white_box"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title white box",
           "_translations": {
             "value": {}
@@ -490,11 +467,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "dg_example_8.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_30.title_1"
         },
         {
           "type": "text",
-          "name": "text_ex_text",
           "value": "Text for display white box",
           "_translations": {
             "value": {}
@@ -503,25 +480,22 @@
           "parameter_list": {
             "text_align": "left"
           },
-          "_nested_name": "dg_example_8.text_ex_text"
+          "name": "text_2",
+          "_nested_name": "display_group_30.text_2"
         }
       ],
-      "_nested_name": "dg_example_8"
+      "name": "display_group_30",
+      "_nested_name": "display_group_30"
     },
     {
       "type": "display_group",
-      "name": "dg_example_8",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "white_box"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "title",
-          "name": "title_ex_s",
           "value": "Example title white box",
           "_translations": {
             "value": {}
@@ -533,11 +507,11 @@
           "style_list": [
             "margin: 10px 10px"
           ],
-          "_nested_name": "dg_example_8.title_ex_s"
+          "name": "title_1",
+          "_nested_name": "display_group_32.title_1"
         },
         {
           "type": "text",
-          "name": "text_ex_text",
           "value": "Text for display white box",
           "_translations": {
             "value": {}
@@ -546,25 +520,22 @@
           "parameter_list": {
             "text_align": "left"
           },
-          "_nested_name": "dg_example_8.text_ex_text"
+          "name": "text_2",
+          "_nested_name": "display_group_32.text_2"
         }
       ],
-      "_nested_name": "dg_example_8"
+      "name": "display_group_32",
+      "_nested_name": "display_group_32"
     },
     {
       "type": "display_group",
-      "name": "dg_example_8",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "navigation"
       },
-      "style_list": [
-        "min-height: 40px"
-      ],
       "rows": [
         {
           "type": "button",
-          "name": "btn_example",
           "value": "Continue",
           "_translations": {
             "value": {}
@@ -573,14 +544,15 @@
           "parameter_list": {
             "style": "blue"
           },
-          "_nested_name": "dg_example_8.btn_example"
+          "name": "button_1",
+          "_nested_name": "display_group_34.button_1"
         }
       ],
-      "_nested_name": "dg_example_8"
+      "name": "display_group_34",
+      "_nested_name": "display_group_34"
     },
     {
       "type": "display_group",
-      "name": "dg_example_8",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "banner_welcome"
@@ -589,20 +561,20 @@
       "rows": [
         {
           "type": "image",
-          "name": "image",
           "value": "images/example/jasper_1.jpg",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "dg_example_8.image"
+          "name": "image_1",
+          "_nested_name": "display_group_36.image_1"
         }
       ],
-      "_nested_name": "dg_example_8"
+      "name": "display_group_36",
+      "_nested_name": "display_group_36"
     },
     {
       "type": "display_group",
-      "name": "dg_example_7",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "banner_short"
@@ -611,7 +583,6 @@
       "rows": [
         {
           "type": "subtitle",
-          "name": "title_ex_s",
           "value": "Example short banner",
           "_translations": {
             "value": {}
@@ -620,24 +591,25 @@
           "parameter_list": {
             "style": "small emphasised"
           },
-          "_nested_name": "dg_example_7.title_ex_s"
+          "name": "subtitle_1",
+          "_nested_name": "display_group_38.subtitle_1"
         },
         {
           "type": "image",
-          "name": "image",
           "value": "images/example/jasper_1.jpg",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "dg_example_7.image"
+          "name": "image_2",
+          "_nested_name": "display_group_38.image_2"
         }
       ],
-      "_nested_name": "dg_example_7"
+      "name": "display_group_38",
+      "_nested_name": "display_group_38"
     },
     {
       "type": "display_group",
-      "name": "dg_example_7",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "banner_short"
@@ -645,7 +617,6 @@
       "rows": [
         {
           "type": "subtitle",
-          "name": "title_ex_s",
           "value": "Example short banner with more text",
           "_translations": {
             "value": {}
@@ -654,24 +625,25 @@
           "parameter_list": {
             "style": "small emphasised"
           },
-          "_nested_name": "dg_example_7.title_ex_s"
+          "name": "subtitle_1",
+          "_nested_name": "display_group_40.subtitle_1"
         },
         {
           "type": "image",
-          "name": "image",
           "value": "images/example/jasper_1.jpg",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "dg_example_7.image"
+          "name": "image_2",
+          "_nested_name": "display_group_40.image_2"
         }
       ],
-      "_nested_name": "dg_example_7"
+      "name": "display_group_40",
+      "_nested_name": "display_group_40"
     },
     {
       "type": "display_group",
-      "name": "dg_example_7",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "banner_welcome"
@@ -679,20 +651,20 @@
       "rows": [
         {
           "type": "image",
-          "name": "image",
           "value": "images/example/jasper_1.jpg",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "dg_example_7.image"
+          "name": "image_1",
+          "_nested_name": "display_group_42.image_1"
         }
       ],
-      "_nested_name": "dg_example_7"
+      "name": "display_group_42",
+      "_nested_name": "display_group_42"
     },
     {
       "type": "display_group",
-      "name": "dg_example_dashed_box",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "dashed_box",
@@ -710,31 +682,32 @@
             "style": "right"
           },
           "name": "subtitle_1",
-          "_nested_name": "dg_example_dashed_box.subtitle_1"
+          "_nested_name": "display_group_44.subtitle_1"
         },
         {
           "type": "parent_point_box",
-          "name": "points_example_1",
           "value": 3,
           "exclude_from_translation": true,
           "parameter_list": {
             "lottie_src": "lottie/blob_play_ball.json",
             "text": "text two"
           },
-          "_nested_name": "dg_example_dashed_box.points_example_1"
+          "name": "parent_point_box_2",
+          "_nested_name": "display_group_44.parent_point_box_2"
         },
         {
           "type": "button",
-          "name": "btn_example",
           "value": "Continue",
           "_translations": {
             "value": {}
           },
           "exclude_from_translation": true,
-          "_nested_name": "dg_example_dashed_box.btn_example"
+          "name": "button_3",
+          "_nested_name": "display_group_44.button_3"
         }
       ],
-      "_nested_name": "dg_example_dashed_box"
+      "name": "display_group_44",
+      "_nested_name": "display_group_44"
     },
     {
       "type": "title",
@@ -748,7 +721,7 @@
     },
     {
       "type": "display_group",
-      "name": "dg_example_form",
+      "name": "dg_example_form_1",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "form",
@@ -759,23 +732,23 @@
       "rows": [
         {
           "type": "text_box",
-          "name": "user_name",
+          "name": "user_name_1",
           "exclude_from_translation": true,
           "parameter_list": {
             "help": "some help text",
             "placeholder": "Add your name"
           },
-          "_nested_name": "dg_example_form.user_name"
+          "_nested_name": "dg_example_form_1.user_name_1"
         },
         {
           "type": "text_box",
-          "name": "user_phone",
+          "name": "user_phone_1",
           "exclude_from_translation": true,
           "parameter_list": {
             "help": "some help text",
             "placeholder": "Add your phone number"
           },
-          "_nested_name": "dg_example_form.user_phone"
+          "_nested_name": "dg_example_form_1.user_phone_1"
         },
         {
           "type": "simple_checkbox",
@@ -793,17 +766,17 @@
                 "demo_changed_field_checkbox",
                 "this.value"
               ],
-              "_raw": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
-              "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
+              "_raw": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_1",
+              "_cleaned": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_1"
             }
           ],
-          "_nested_name": "dg_example_form.checkbox_1",
+          "_nested_name": "dg_example_form_1.checkbox_1",
           "_dynamicFields": {
             "action_list": {
               "0": {
                 "_raw": [
                   {
-                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "fullExpression": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_1",
                     "matchedExpression": "@local.checkbox_1",
                     "type": "local",
                     "fieldName": "checkbox_1"
@@ -811,7 +784,7 @@
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+                    "fullExpression": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_1",
                     "matchedExpression": "@local.checkbox_1",
                     "type": "local",
                     "fieldName": "checkbox_1"
@@ -835,7 +808,7 @@
           "parameter_list": {
             "label_text": "Example answer?"
           },
-          "_nested_name": "dg_example_form.checkbox_2"
+          "_nested_name": "dg_example_form_1.checkbox_2"
         },
         {
           "type": "title",
@@ -845,19 +818,19 @@
           },
           "exclude_from_translation": true,
           "name": "title_5",
-          "_nested_name": "dg_example_form.title_5"
+          "_nested_name": "dg_example_form_1.title_5"
         },
         {
           "type": "text_area",
-          "name": "text_area",
+          "name": "text_area_1",
           "exclude_from_translation": true,
           "parameter_list": {
             "placeholder": "example placeholder"
           },
-          "_nested_name": "dg_example_form.text_area"
+          "_nested_name": "dg_example_form_1.text_area_1"
         }
       ],
-      "_nested_name": "dg_example_form"
+      "_nested_name": "dg_example_form_1"
     },
     {
       "type": "title",
@@ -871,7 +844,7 @@
     },
     {
       "type": "display_group",
-      "name": "dg_example_form",
+      "name": "dg_example_form_2",
       "exclude_from_translation": true,
       "parameter_list": {
         "style": "form",
@@ -882,27 +855,27 @@
       "rows": [
         {
           "type": "text_box",
-          "name": "user_name",
+          "name": "user_name_2",
           "exclude_from_translation": true,
           "parameter_list": {
             "help": "some help text",
             "placeholder": "Add your name"
           },
-          "_nested_name": "dg_example_form.user_name"
+          "_nested_name": "dg_example_form_2.user_name_2"
         },
         {
           "type": "text_box",
-          "name": "user_phone",
+          "name": "user_phone_2",
           "exclude_from_translation": true,
           "parameter_list": {
             "help": "some help text",
             "placeholder": "Add your phone number"
           },
-          "_nested_name": "dg_example_form.user_phone"
+          "_nested_name": "dg_example_form_2.user_phone_2"
         },
         {
           "type": "simple_checkbox",
-          "name": "checkbox_1",
+          "name": "checkbox_3",
           "value": false,
           "exclude_from_translation": true,
           "parameter_list": {
@@ -916,35 +889,35 @@
                 "demo_changed_field_checkbox",
                 "this.value"
               ],
-              "_raw": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
-              "_cleaned": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1"
+              "_raw": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_3",
+              "_cleaned": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_3"
             }
           ],
-          "_nested_name": "dg_example_form.checkbox_1",
+          "_nested_name": "dg_example_form_2.checkbox_3",
           "_dynamicFields": {
             "action_list": {
               "0": {
                 "_raw": [
                   {
-                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
-                    "matchedExpression": "@local.checkbox_1",
+                    "fullExpression": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_3",
+                    "matchedExpression": "@local.checkbox_3",
                     "type": "local",
-                    "fieldName": "checkbox_1"
+                    "fieldName": "checkbox_3"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
-                    "matchedExpression": "@local.checkbox_1",
+                    "fullExpression": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_3",
+                    "matchedExpression": "@local.checkbox_3",
                     "type": "local",
-                    "fieldName": "checkbox_1"
+                    "fieldName": "checkbox_3"
                   }
                 ]
               }
             }
           },
           "_dynamicDependencies": {
-            "@local.checkbox_1": [
+            "@local.checkbox_3": [
               "action_list.0._raw",
               "action_list.0._cleaned"
             ]
@@ -952,13 +925,13 @@
         },
         {
           "type": "simple_checkbox",
-          "name": "checkbox_2",
+          "name": "checkbox_4",
           "value": true,
           "exclude_from_translation": true,
           "parameter_list": {
             "label_text": "Example answer?"
           },
-          "_nested_name": "dg_example_form.checkbox_2"
+          "_nested_name": "dg_example_form_2.checkbox_4"
         },
         {
           "type": "title",
@@ -968,23 +941,22 @@
           },
           "exclude_from_translation": true,
           "name": "title_5",
-          "_nested_name": "dg_example_form.title_5"
+          "_nested_name": "dg_example_form_2.title_5"
         },
         {
           "type": "text_area",
-          "name": "text_area",
+          "name": "text_area_2",
           "exclude_from_translation": true,
           "parameter_list": {
             "placeholder": "example placeholder"
           },
-          "_nested_name": "dg_example_form.text_area"
+          "_nested_name": "dg_example_form_2.text_area_2"
         }
       ],
-      "_nested_name": "dg_example_form"
+      "_nested_name": "dg_example_form_2"
     },
     {
       "type": "display_group",
-      "name": "dg_variant_image",
       "exclude_from_translation": true,
       "parameter_list": {
         "background_image_asset": "images/activity_bg.svg",
@@ -1002,19 +974,75 @@
             "margin-top: 120px"
           ],
           "name": "title_1",
-          "_nested_name": "dg_variant_image.title_1"
+          "_nested_name": "display_group_52.title_1"
         },
         {
           "type": "text",
-          "name": "text",
           "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
           "_translations": {
             "value": {}
           },
-          "_nested_name": "dg_variant_image.text"
+          "name": "text_2",
+          "_nested_name": "display_group_52.text_2"
         }
       ],
-      "_nested_name": "dg_variant_image"
+      "name": "display_group_52",
+      "_nested_name": "display_group_52"
+    },
+    {
+      "type": "title",
+      "value": "Sticky display group in fullscreeen pop-up demo",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_54",
+      "_nested_name": "title_54"
+    },
+    {
+      "type": "button",
+      "value": "Ignore safe area",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "dg_sticky_safe_area_1"
+          ],
+          "_raw": "click | pop_up: dg_sticky_safe_area_1 | fullscreen: true",
+          "_cleaned": "click | pop_up: dg_sticky_safe_area_1 | fullscreen: true",
+          "params": {
+            "fullscreen": true
+          }
+        }
+      ],
+      "name": "button_55",
+      "_nested_name": "button_55"
+    },
+    {
+      "type": "button",
+      "value": "Do not ignore safe area",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "dg_sticky_safe_area_2"
+          ],
+          "_raw": "click | pop_up: dg_sticky_safe_area_2 | fullscreen: true",
+          "_cleaned": "click | pop_up: dg_sticky_safe_area_2 | fullscreen: true",
+          "params": {
+            "fullscreen": true
+          }
+        }
+      ],
+      "name": "button_56",
+      "_nested_name": "button_56"
     },
     {
       "type": "display_group",

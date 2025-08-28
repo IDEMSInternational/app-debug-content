@@ -20,14 +20,14 @@
           "label": "Home",
           "icon": "images/icons/home.svg",
           "active_icon": "images/icons/home_active.svg",
-          "target_template": "home_screen"
+          "target_template": "comp_plh_bottom_nav"
         },
         {
           "name": "library_button",
-          "label": "Library",
+          "label": "Library with a long name",
           "icon": "images/icons/local_library.svg",
           "active_icon": "images/icons/local_library_active.svg",
-          "target_template": "comp_plh_bottom_nav"
+          "target_template": "plh_bottom_nav_library"
         },
         {
           "name": "settings_button",
@@ -43,7 +43,9 @@
     {
       "type": "plh_bottom_nav",
       "parameter_list": {
-        "button_list": "@local.button_list"
+        "button_list": "@local.button_list",
+        "hide_inactive_text": "true",
+        "hide_wrapping_text": "false"
       },
       "name": "plh_bottom_nav_3",
       "_nested_name": "plh_bottom_nav_3",

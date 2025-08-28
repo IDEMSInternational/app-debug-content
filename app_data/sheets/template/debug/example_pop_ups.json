@@ -140,8 +140,8 @@
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit:completed",
-          "_cleaned": "completed | emit:completed"
+          "_raw": "completed | emit: completed",
+          "_cleaned": "completed | emit: completed"
         }
       ],
       "exclude_from_translation": true,

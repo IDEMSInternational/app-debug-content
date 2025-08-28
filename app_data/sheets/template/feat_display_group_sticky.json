@@ -9,10 +9,11 @@
         "sticky": "top",
         "style": "background_solid"
       },
+      "condition": "@local.view_selected === \"nav\"",
       "rows": [
         {
           "type": "title",
-          "value": "Sticky header",
+          "value": "Nav-bar style header content",
           "_translations": {
             "value": {}
           },
@@ -24,25 +25,158 @@
         }
       ],
       "name": "display_group_2",
-      "_nested_name": "display_group_2"
+      "_nested_name": "display_group_2",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.view_selected === \"nav\"",
+            "matchedExpression": "@local.view_selected",
+            "type": "local",
+            "fieldName": "view_selected"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.view_selected": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "background_image_asset": "images/activity_bg.svg",
+        "background_image_position": "right top"
+      },
+      "condition": "@local.view_selected === \"image_only\"",
+      "style_list": [
+        "min-height: 120px"
+      ],
+      "rows": [],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.view_selected === \"image_only\"",
+            "matchedExpression": "@local.view_selected",
+            "type": "local",
+            "fieldName": "view_selected"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.view_selected": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "background_image_asset": "images/activity_bg.svg",
+        "background_image_position": "right top"
+      },
+      "condition": "@local.view_selected === \"image_and_text\"",
+      "style_list": [
+        "min-height: 120px"
+      ],
+      "rows": [
+        {
+          "type": "title",
+          "value": "Header with image and content",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "header"
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_6.title_1"
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.view_selected === \"image_and_text\"",
+            "matchedExpression": "@local.view_selected",
+            "type": "local",
+            "fieldName": "view_selected"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.view_selected": [
+          "condition"
+        ]
+      }
     },
     {
       "type": "title",
-      "value": "Main page content",
+      "value": "Sticky display groups demo",
       "_translations": {
         "value": {}
       },
-      "name": "title_4",
-      "_nested_name": "title_4"
+      "name": "title_8",
+      "_nested_name": "title_8"
     },
     {
       "type": "text",
-      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "value": "Style of sticky display groups:",
       "_translations": {
         "value": {}
       },
-      "name": "text_5",
-      "_nested_name": "text_5"
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "name": "view_options_list",
+      "value": [
+        {
+          "name": "nav",
+          "text": "Nav bar"
+        },
+        {
+          "name": "image_only",
+          "text": "Image only"
+        },
+        {
+          "name": "image_and_text",
+          "text": "Image and text"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "view_options_list"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "view_selected",
+      "parameter_list": {
+        "answer_list": "@local.view_options_list",
+        "variant": "flex"
+      },
+      "_nested_name": "view_selected",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.view_options_list",
+              "matchedExpression": "@local.view_options_list",
+              "type": "local",
+              "fieldName": "view_options_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.view_options_list": [
+          "parameter_list.answer_list"
+        ]
+      }
     },
     {
       "type": "button",
@@ -65,38 +199,49 @@
           }
         }
       ],
-      "name": "button_6",
-      "_nested_name": "button_6"
+      "name": "button_12",
+      "_nested_name": "button_12"
     },
     {
-      "name": "boolean",
-      "value": true,
-      "type": "set_variable",
-      "_nested_name": "boolean"
-    },
-    {
-      "type": "text",
-      "value": "Boolean value: @local.boolean",
+      "type": "button",
+      "value": "Open this template as a fullscreen pop-up",
       "_translations": {
         "value": {}
       },
-      "name": "text_8",
-      "_nested_name": "text_8",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "Boolean value: @local.boolean",
-            "matchedExpression": "@local.boolean",
-            "type": "local",
-            "fieldName": "boolean"
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "feat_display_group_sticky"
+          ],
+          "_raw": "click | pop_up: feat_display_group_sticky | fullscreen: true",
+          "_cleaned": "click | pop_up: feat_display_group_sticky | fullscreen: true",
+          "params": {
+            "fullscreen": true
           }
-        ]
+        }
+      ],
+      "name": "button_13",
+      "_nested_name": "button_13"
+    },
+    {
+      "type": "title",
+      "value": "Additional content to make the page scrollable",
+      "_translations": {
+        "value": {}
       },
-      "_dynamicDependencies": {
-        "@local.boolean": [
-          "value"
-        ]
-      }
+      "name": "title_14",
+      "_nested_name": "title_14"
+    },
+    {
+      "type": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_15",
+      "_nested_name": "text_15"
     },
     {
       "type": "display_group",
@@ -104,15 +249,19 @@
         "sticky": "bottom",
         "style": "background_solid"
       },
+      "condition": "@local.view_selected === \"nav\"",
       "rows": [
         {
           "type": "title",
-          "value": "Sticky footer",
+          "value": "Nav-bar style footer content",
           "_translations": {
             "value": {}
           },
+          "parameter_list": {
+            "variant": "header"
+          },
           "name": "title_1",
-          "_nested_name": "display_group_9.title_1"
+          "_nested_name": "display_group_16.title_1"
         },
         {
           "type": "button",
@@ -120,68 +269,100 @@
           "_translations": {
             "value": {}
           },
-          "action_list": [
-            {
-              "trigger": "click",
-              "action_id": "go_to",
-              "args": [
-                "example_text"
-              ],
-              "_raw": "click | go_to: example_text",
-              "_cleaned": "click | go_to: example_text"
-            }
-          ],
           "name": "button_2",
-          "_nested_name": "display_group_9.button_2"
-        },
-        {
-          "type": "toggle_bar",
-          "name": "toggle_bar",
-          "action_list": [
-            {
-              "trigger": "changed",
-              "action_id": "set_local",
-              "args": [
-                "boolean",
-                "this.value"
-              ],
-              "_raw": "changed | set_local: boolean: @local.toggle_bar",
-              "_cleaned": "changed | set_local: boolean: @local.toggle_bar"
-            }
-          ],
-          "_nested_name": "display_group_9.toggle_bar",
-          "_dynamicFields": {
-            "action_list": {
-              "0": {
-                "_raw": [
-                  {
-                    "fullExpression": "changed | set_local: boolean: @local.toggle_bar",
-                    "matchedExpression": "@local.toggle_bar",
-                    "type": "local",
-                    "fieldName": "toggle_bar"
-                  }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_local: boolean: @local.toggle_bar",
-                    "matchedExpression": "@local.toggle_bar",
-                    "type": "local",
-                    "fieldName": "toggle_bar"
-                  }
-                ]
-              }
-            }
-          },
-          "_dynamicDependencies": {
-            "@local.toggle_bar": [
-              "action_list.0._raw",
-              "action_list.0._cleaned"
-            ]
-          }
+          "_nested_name": "display_group_16.button_2"
         }
       ],
-      "name": "display_group_9",
-      "_nested_name": "display_group_9"
+      "name": "display_group_16",
+      "_nested_name": "display_group_16",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.view_selected === \"nav\"",
+            "matchedExpression": "@local.view_selected",
+            "type": "local",
+            "fieldName": "view_selected"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.view_selected": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "background_image_asset": "images/bottom_image.svg",
+        "background_image_position": "left bottom"
+      },
+      "condition": "@local.view_selected === \"image_only\"",
+      "style_list": [
+        "min-height: 88px",
+        "width: 100%"
+      ],
+      "rows": [],
+      "name": "display_group_18",
+      "_nested_name": "display_group_18",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.view_selected === \"image_only\"",
+            "matchedExpression": "@local.view_selected",
+            "type": "local",
+            "fieldName": "view_selected"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.view_selected": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "variant": "inline_padding",
+        "background_image_asset": "images/bottom_image.svg",
+        "background_image_position": "left bottom"
+      },
+      "condition": "@local.view_selected === \"image_and_text\"",
+      "style_list": [
+        "min-height: 88px",
+        "width: 100%"
+      ],
+      "rows": [
+        {
+          "type": "title",
+          "value": "Footer with image and content",
+          "_translations": {
+            "value": {}
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_20.title_1"
+        }
+      ],
+      "name": "display_group_20",
+      "_nested_name": "display_group_20",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.view_selected === \"image_and_text\"",
+            "matchedExpression": "@local.view_selected",
+            "type": "local",
+            "fieldName": "view_selected"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.view_selected": [
+          "condition"
+        ]
+      }
     }
   ],
   "_xlsxPath": "feature_sheets/feature_display_group_sticky.xlsx",

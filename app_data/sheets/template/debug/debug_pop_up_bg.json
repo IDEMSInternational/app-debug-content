@@ -1,0 +1,75 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_up_bg",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "background_solid"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Debug pop-up background",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "header"
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_2.title_1"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "button",
+      "value": "Launch as pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_pop_up_bg"
+          ],
+          "_raw": "click | pop_up: debug_pop_up_bg",
+          "_cleaned": "click | pop_up: debug_pop_up_bg"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "button",
+      "value": "Launch as fullscreen pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_pop_up_bg"
+          ],
+          "_raw": "click | pop_up: debug_pop_up_bg | fullscreen: true",
+          "_cleaned": "click | pop_up: debug_pop_up_bg | fullscreen: true",
+          "params": {
+            "fullscreen": true
+          }
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_ups.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

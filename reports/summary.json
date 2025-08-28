@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 410
+        "count": 415
       },
       {
         "type": "calendar",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 91
+        "count": 96
       },
       {
         "type": "data_query",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 241
+        "count": 257
       },
       {
         "type": "drawer",
@@ -143,7 +143,7 @@
       },
       {
         "type": "number_selector",
-        "count": 21
+        "count": 24
       },
       {
         "type": "odk_form",
@@ -179,7 +179,7 @@
       },
       {
         "type": "plh_module_list_item",
-        "count": 11
+        "count": 16
       },
       {
         "type": "plh_progress_path",
@@ -191,7 +191,7 @@
       },
       {
         "type": "progress_path",
-        "count": 6
+        "count": 11
       },
       {
         "type": "qr_code",
@@ -199,7 +199,7 @@
       },
       {
         "type": "radio_button_grid",
-        "count": 14
+        "count": 17
       },
       {
         "type": "radio_group",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 884
+        "count": 886
       },
       {
         "type": "simple_checkbox",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1250
+        "count": 1259
       },
       {
         "type": "text_area",
@@ -275,7 +275,7 @@
       },
       {
         "type": "text_box",
-        "count": 63
+        "count": 65
       },
       {
         "type": "text_bubble",
@@ -291,11 +291,11 @@
       },
       {
         "type": "title",
-        "count": 613
+        "count": 626
       },
       {
         "type": "toggle_bar",
-        "count": 74
+        "count": 73
       },
       {
         "type": "update_action_list",
@@ -399,7 +399,7 @@
       },
       {
         "type": "go_to",
-        "count": 84
+        "count": 83
       },
       {
         "type": "go_to_url",
@@ -439,7 +439,7 @@
       },
       {
         "type": "pop_up",
-        "count": 54
+        "count": 59
       },
       {
         "type": "process_template",
@@ -487,7 +487,7 @@
       },
       {
         "type": "set_local",
-        "count": 68
+        "count": 67
       },
       {
         "type": "share",
@@ -531,8 +531,8 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31614 KB",
-        "MB": "31.6 MB"
+        "KB": "31771 KB",
+        "MB": "31.8 MB"
       },
       {
         "assets": "unused",
@@ -725,7 +725,7 @@
       },
       {
         "path": "images/activity_bg.svg",
-        "count": 3,
+        "count": 7,
         "size_kb": 13.8
       },
       {
@@ -740,7 +740,7 @@
       },
       {
         "path": "images/bottom_image.svg",
-        "count": 2,
+        "count": 6,
         "size_kb": 6.8
       },
       {
@@ -840,7 +840,7 @@
       },
       {
         "path": "images/icons/expand_circle_right.png",
-        "count": 5,
+        "count": 10,
         "size_kb": 0.9
       },
       {
@@ -895,7 +895,7 @@
       },
       {
         "path": "images/icons/locked.png",
-        "count": 13,
+        "count": 18,
         "size_kb": 0.9
       },
       {
@@ -967,6 +967,11 @@
         "path": "images/module-1.png",
         "count": 7,
         "size_kb": 28.2
+      },
+      {
+        "path": "images/sa_kids_app_pattern_blue.svg",
+        "count": 3,
+        "size_kb": 157
       },
       {
         "path": "images/shining_diamond.png",
@@ -1170,12 +1175,12 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 62
+        "total": 66
       },
       {
         "type": "template",
         "subtype": "debug",
-        "total": 284
+        "total": 285
       },
       {
         "type": "template",
