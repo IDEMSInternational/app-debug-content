@@ -4,6 +4,385 @@
   "status": "released",
   "rows": [
     {
+      "type": "title",
+      "value": "Interactive demo (with plh_module_list_item component)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "variant_list",
+      "value": [
+        {
+          "name": "curved",
+          "text": "curved"
+        },
+        {
+          "name": "wavy",
+          "text": "wavy"
+        },
+        {
+          "name": "basic",
+          "text": "basic"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "variant_list"
+    },
+    {
+      "type": "text",
+      "value": "Variant:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "variant_radio",
+      "value": "curved",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@local.variant_list",
+        "item_width": "72px"
+      },
+      "_nested_name": "variant_radio",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.variant_list",
+              "matchedExpression": "@local.variant_list",
+              "type": "local",
+              "fieldName": "variant_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Number of items (1-4):",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "number_selector",
+      "name": "limit",
+      "value": 4,
+      "parameter_list": {
+        "min_value": "1",
+        "max_value": "4"
+      },
+      "_nested_name": "limit"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "background_image_asset": "images/sa_kids_app_pattern_blue.svg"
+      },
+      "style_list": [
+        "padding-top: 24px",
+        "background-size: 100%",
+        "background-repeat: repeat"
+      ],
+      "rows": [
+        {
+          "type": "progress_path",
+          "parameter_list": {
+            "variant": "@local.variant_radio"
+          },
+          "rows": [
+            {
+              "type": "data_items",
+              "value": "task_cards_data",
+              "parameter_list": {
+                "limit": "@local.limit"
+              },
+              "rows": [
+                {
+                  "type": "plh_module_list_item",
+                  "parameter_list": {
+                    "module_image_asset": "@item.image",
+                    "nav_image_asset": "images/icons/expand_circle_right.png",
+                    "locked_image_asset": "images/icons/locked.png",
+                    "variant": "circle",
+                    "completed": "@item.completed",
+                    "highlighted": "@item.highlighted",
+                    "is_locked": "@item.locked"
+                  },
+                  "name": "plh_module_list_item_1_@item.id",
+                  "_nested_name": "display_group_8.progress_path_1.data_items_1.plh_module_list_item_1_@item.id",
+                  "_dynamicFields": {
+                    "parameter_list": {
+                      "module_image_asset": [
+                        {
+                          "fullExpression": "@item.image",
+                          "matchedExpression": "@item.image",
+                          "type": "item",
+                          "fieldName": "image"
+                        }
+                      ],
+                      "completed": [
+                        {
+                          "fullExpression": "@item.completed",
+                          "matchedExpression": "@item.completed",
+                          "type": "item",
+                          "fieldName": "completed"
+                        }
+                      ],
+                      "highlighted": [
+                        {
+                          "fullExpression": "@item.highlighted",
+                          "matchedExpression": "@item.highlighted",
+                          "type": "item",
+                          "fieldName": "highlighted"
+                        }
+                      ],
+                      "is_locked": [
+                        {
+                          "fullExpression": "@item.locked",
+                          "matchedExpression": "@item.locked",
+                          "type": "item",
+                          "fieldName": "locked"
+                        }
+                      ]
+                    },
+                    "name": [
+                      {
+                        "fullExpression": "plh_module_list_item_1_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "display_group_8.progress_path_1.data_items_1.plh_module_list_item_1_@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.image": [
+                      "parameter_list.module_image_asset"
+                    ],
+                    "@item.completed": [
+                      "parameter_list.completed"
+                    ],
+                    "@item.highlighted": [
+                      "parameter_list.highlighted"
+                    ],
+                    "@item.locked": [
+                      "parameter_list.is_locked"
+                    ],
+                    "@item.id": [
+                      "name",
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "name": "data_items_1",
+              "_nested_name": "display_group_8.progress_path_1.data_items_1",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "limit": [
+                    {
+                      "fullExpression": "@local.limit",
+                      "matchedExpression": "@local.limit",
+                      "type": "local",
+                      "fieldName": "limit"
+                    }
+                  ]
+                }
+              },
+              "_dynamicDependencies": {
+                "@local.limit": [
+                  "parameter_list.limit"
+                ]
+              }
+            }
+          ],
+          "name": "progress_path_1",
+          "_nested_name": "display_group_8.progress_path_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "variant": [
+                {
+                  "fullExpression": "@local.variant_radio",
+                  "matchedExpression": "@local.variant_radio",
+                  "type": "local",
+                  "fieldName": "variant_radio"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.variant_radio": [
+              "parameter_list.variant"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_8",
+      "_nested_name": "display_group_8"
+    },
+    {
+      "type": "progress_path",
+      "parameter_list": {
+        "variant": "@local.variant_radio"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "task_cards_data",
+          "parameter_list": {
+            "limit": "@local.limit"
+          },
+          "rows": [
+            {
+              "type": "plh_module_list_item",
+              "parameter_list": {
+                "module_image_asset": "@item.image",
+                "nav_image_asset": "images/icons/expand_circle_right.png",
+                "locked_image_asset": "images/icons/locked.png",
+                "variant": "circle",
+                "completed": "@item.completed",
+                "highlighted": "@item.highlighted",
+                "is_locked": "@item.locked"
+              },
+              "name": "plh_module_list_item_1_@item.id",
+              "_nested_name": "progress_path_10.data_items_1.plh_module_list_item_1_@item.id",
+              "_dynamicFields": {
+                "parameter_list": {
+                  "module_image_asset": [
+                    {
+                      "fullExpression": "@item.image",
+                      "matchedExpression": "@item.image",
+                      "type": "item",
+                      "fieldName": "image"
+                    }
+                  ],
+                  "completed": [
+                    {
+                      "fullExpression": "@item.completed",
+                      "matchedExpression": "@item.completed",
+                      "type": "item",
+                      "fieldName": "completed"
+                    }
+                  ],
+                  "highlighted": [
+                    {
+                      "fullExpression": "@item.highlighted",
+                      "matchedExpression": "@item.highlighted",
+                      "type": "item",
+                      "fieldName": "highlighted"
+                    }
+                  ],
+                  "is_locked": [
+                    {
+                      "fullExpression": "@item.locked",
+                      "matchedExpression": "@item.locked",
+                      "type": "item",
+                      "fieldName": "locked"
+                    }
+                  ]
+                },
+                "name": [
+                  {
+                    "fullExpression": "plh_module_list_item_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "progress_path_10.data_items_1.plh_module_list_item_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.image": [
+                  "parameter_list.module_image_asset"
+                ],
+                "@item.completed": [
+                  "parameter_list.completed"
+                ],
+                "@item.highlighted": [
+                  "parameter_list.highlighted"
+                ],
+                "@item.locked": [
+                  "parameter_list.is_locked"
+                ],
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "name": "data_items_1",
+          "_nested_name": "progress_path_10.data_items_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "limit": [
+                {
+                  "fullExpression": "@local.limit",
+                  "matchedExpression": "@local.limit",
+                  "type": "local",
+                  "fieldName": "limit"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.limit": [
+              "parameter_list.limit"
+            ]
+          }
+        }
+      ],
+      "name": "progress_path_10",
+      "_nested_name": "progress_path_10",
+      "_dynamicFields": {
+        "parameter_list": {
+          "variant": [
+            {
+              "fullExpression": "@local.variant_radio",
+              "matchedExpression": "@local.variant_radio",
+              "type": "local",
+              "fieldName": "variant_radio"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant_radio": [
+          "parameter_list.variant"
+        ]
+      }
+    },
+    {
       "name": "in_progress_icon",
       "value": "images/icons/in_progress.svg",
       "_translations": {
@@ -45,8 +424,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_6",
-      "_nested_name": "title_6"
+      "name": "title_16",
+      "_nested_name": "title_16"
     },
     {
       "type": "button",
@@ -98,7 +477,7 @@
                 }
               ],
               "name": "task_card_1_@item.id",
-              "_nested_name": "progress_path_8.data_items_1.task_card_1_@item.id",
+              "_nested_name": "progress_path_18.data_items_1.task_card_1_@item.id",
               "_dynamicFields": {
                 "parameter_list": {
                   "task_group_id": [
@@ -192,7 +571,7 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "progress_path_8.data_items_1.task_card_1_@item.id",
+                    "fullExpression": "progress_path_18.data_items_1.task_card_1_@item.id",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
@@ -236,7 +615,7 @@
             }
           ],
           "name": "data_items_1",
-          "_nested_name": "progress_path_8.data_items_1",
+          "_nested_name": "progress_path_18.data_items_1",
           "_dynamicFields": {
             "value": [
               {
@@ -254,8 +633,8 @@
           }
         }
       ],
-      "name": "progress_path_8",
-      "_nested_name": "progress_path_8"
+      "name": "progress_path_18",
+      "_nested_name": "progress_path_18"
     },
     {
       "type": "title",
@@ -263,8 +642,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_10",
-      "_nested_name": "title_10"
+      "name": "title_20",
+      "_nested_name": "title_20"
     },
     {
       "type": "display_group",
@@ -277,7 +656,7 @@
           "type": "toggle_bar",
           "name": "highlighted_toggle",
           "value": false,
-          "_nested_name": "display_group_11.highlighted_toggle"
+          "_nested_name": "display_group_21.highlighted_toggle"
         },
         {
           "type": "text",
@@ -286,7 +665,7 @@
             "value": {}
           },
           "name": "text_2",
-          "_nested_name": "display_group_11.text_2",
+          "_nested_name": "display_group_21.text_2",
           "_dynamicFields": {
             "value": [
               {
@@ -304,8 +683,8 @@
           }
         }
       ],
-      "name": "display_group_11",
-      "_nested_name": "display_group_11"
+      "name": "display_group_21",
+      "_nested_name": "display_group_21"
     },
     {
       "type": "progress_path",
@@ -339,7 +718,7 @@
                 }
               ],
               "name": "plh_module_list_item_1_@item.id",
-              "_nested_name": "progress_path_13.items_1.plh_module_list_item_1_@item.id",
+              "_nested_name": "progress_path_23.items_1.plh_module_list_item_1_@item.id",
               "_dynamicFields": {
                 "parameter_list": {
                   "module_image_asset": [
@@ -385,7 +764,7 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "progress_path_13.items_1.plh_module_list_item_1_@item.id",
+                    "fullExpression": "progress_path_23.items_1.plh_module_list_item_1_@item.id",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
@@ -413,7 +792,7 @@
             }
           ],
           "name": "items_1",
-          "_nested_name": "progress_path_13.items_1",
+          "_nested_name": "progress_path_23.items_1",
           "_dynamicFields": {
             "value": [
               {
@@ -431,8 +810,8 @@
           }
         }
       ],
-      "name": "progress_path_13",
-      "_nested_name": "progress_path_13"
+      "name": "progress_path_23",
+      "_nested_name": "progress_path_23"
     },
     {
       "type": "title",
@@ -440,8 +819,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_15",
-      "_nested_name": "title_15"
+      "name": "title_25",
+      "_nested_name": "title_25"
     },
     {
       "type": "progress_path",
@@ -475,7 +854,7 @@
                 }
               ],
               "name": "plh_module_list_item_1_@item.id",
-              "_nested_name": "progress_path_16.data_items_1.plh_module_list_item_1_@item.id",
+              "_nested_name": "progress_path_26.data_items_1.plh_module_list_item_1_@item.id",
               "_dynamicFields": {
                 "parameter_list": {
                   "module_image_asset": [
@@ -521,7 +900,7 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "progress_path_16.data_items_1.plh_module_list_item_1_@item.id",
+                    "fullExpression": "progress_path_26.data_items_1.plh_module_list_item_1_@item.id",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
@@ -549,7 +928,7 @@
             }
           ],
           "name": "data_items_1",
-          "_nested_name": "progress_path_16.data_items_1",
+          "_nested_name": "progress_path_26.data_items_1",
           "_dynamicFields": {
             "value": [
               {
@@ -567,8 +946,8 @@
           }
         }
       ],
-      "name": "progress_path_16",
-      "_nested_name": "progress_path_16"
+      "name": "progress_path_26",
+      "_nested_name": "progress_path_26"
     },
     {
       "type": "text",
@@ -576,8 +955,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_18",
-      "_nested_name": "text_18"
+      "name": "text_28",
+      "_nested_name": "text_28"
     }
   ],
   "_xlsxPath": "component_sheets/component_progress_path.xlsx",

@@ -1,0 +1,51 @@
+{
+  "flow_type": "template",
+  "flow_name": "dg_sticky_safe_area_2",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "ignore_safe_area": "false",
+        "background_image_asset": "images/activity_bg.svg",
+        "background_image_position": "right top"
+      },
+      "style_list": [
+        "min-height: 118px"
+      ],
+      "rows": [],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "title",
+      "value": "Ignore safe area: false (default). Sticky display groups respect pop-up padding and device safe area",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "display_group",
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "sticky": "bottom",
+        "ignore_safe_area": "false",
+        "background_image_asset": "images/bottom_image.svg",
+        "background_image_position": "left bottom"
+      },
+      "style_list": [
+        "min-height: 88px",
+        "width: 100%"
+      ],
+      "rows": [],
+      "name": "display_group_5",
+      "_nested_name": "display_group_5"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_display_group.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

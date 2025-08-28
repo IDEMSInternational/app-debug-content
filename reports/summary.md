@@ -12,19 +12,19 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 410 |
+| button | 415 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 66 |
 | dashed_box | 19 |
-| data_items | 91 |
+| data_items | 96 |
 | data_query | 8 |
 | date_time_picker | 8 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 241 |
+| display_group | 257 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 4 |
@@ -38,7 +38,7 @@
 | nav_group | 6 |
 | navigation_bar | 8 |
 | nested_properties | 32 |
-| number_selector | 21 |
+| number_selector | 24 |
 | odk_form | 1 |
 | parent_point_box | 25 |
 | parent_point_counter | 2 |
@@ -47,12 +47,12 @@
 | plh_bottom_nav | 1 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
-| plh_module_list_item | 11 |
+| plh_module_list_item | 16 |
 | plh_progress_path | 3 |
 | progress_bar | 1 |
-| progress_path | 6 |
+| progress_path | 11 |
 | qr_code | 2 |
-| radio_button_grid | 14 |
+| radio_button_grid | 17 |
 | radio_group | 61 |
 | radio_group_grid | 5 |
 | round_button | 27 |
@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 884 |
+| set_variable | 886 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -69,14 +69,14 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 147 |
-| text | 1250 |
+| text | 1259 |
 | text_area | 13 |
-| text_box | 63 |
+| text_box | 65 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 613 |
-| toggle_bar | 74 |
+| title | 626 |
+| toggle_bar | 73 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -108,7 +108,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 84 |
+| go_to | 83 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
@@ -118,7 +118,7 @@
 | notification_received | 1 |
 | open_external | 3 |
 | plh_parent_group | 8 |
-| pop_up | 54 |
+| pop_up | 59 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -130,7 +130,7 @@
 | set_field | 117 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 68 |
+| set_local | 67 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -147,7 +147,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31614 KB | 31.6 MB |
+| total | 31771 KB | 31.8 MB |
 | unused | 4797 KB | 4.8 MB |
 </details>
 
@@ -214,10 +214,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | i18n/flags/tz.svg | 0.5 | 2 |
 | images/Faisal.png | 3.5 | 2 |
 | images/Noura.png | 4.2 | 3 |
-| images/activity_bg.svg | 13.8 | 3 |
+| images/activity_bg.svg | 13.8 | 7 |
 | images/avatar_1.png | 67.7 | 19 |
 | images/bg_illustration.png | 255.4 | 3 |
-| images/bottom_image.svg | 6.8 | 2 |
+| images/bottom_image.svg | 6.8 | 6 |
 | images/diamond.png | 4.3 | 1 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
@@ -237,7 +237,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
 | images/icons/book_white.svg | 0.7 | 12 |
 | images/icons/close.svg | 0.2 | 1 |
-| images/icons/expand_circle_right.png | 0.9 | 5 |
+| images/icons/expand_circle_right.png | 0.9 | 10 |
 | images/icons/globe_blue.svg | 3.9 | 26 |
 | images/icons/heart_blue.svg | 1.4 | 39 |
 | images/icons/heart_outline.svg | 0.6 | 14 |
@@ -248,7 +248,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 13 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 13 |
+| images/icons/locked.png | 0.9 | 18 |
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 8 |
@@ -263,6 +263,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick_white.svg | 0.3 | 23 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 7 |
+| images/sa_kids_app_pattern_blue.svg | 157 | 3 |
 | images/shining_diamond.png | 17.7 | 1 |
 | images/square_1.svg | 0.7 | 4 |
 | images/square_2.svg | 1 | 3 |
@@ -309,8 +310,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 111 |
-| template | component_demo | 62 |
-| template | debug | 284 |
+| template | component_demo | 66 |
+| template | debug | 285 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

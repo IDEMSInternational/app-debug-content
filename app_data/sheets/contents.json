@@ -2066,6 +2066,20 @@
       "_xlsxPath": "component_sheets/component_youtube.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "dg_sticky_safe_area_1": {
+      "flow_type": "template",
+      "flow_name": "dg_sticky_safe_area_1",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_display_group.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "dg_sticky_safe_area_2": {
+      "flow_type": "template",
+      "flow_name": "dg_sticky_safe_area_2",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_display_group.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "example_task_carousel": {
       "flow_type": "template",
       "flow_name": "example_task_carousel",
@@ -2106,6 +2120,36 @@
       "flow_name": "parameters_3",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_accordion.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "plh_bottom_nav_library": {
+      "flow_type": "template",
+      "flow_name": "plh_bottom_nav_library",
+      "flow_subtype": "component_demo",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "comp_plh_bottom_nav",
+            "background": "none"
+          }
+        }
+      },
+      "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "plh_bottom_nav_settings": {
+      "flow_type": "template",
+      "flow_name": "plh_bottom_nav_settings",
+      "flow_subtype": "component_demo",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "comp_plh_bottom_nav",
+            "background": "none"
+          }
+        }
+      },
+      "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "comp_data_items_debug": {
@@ -2926,6 +2970,13 @@
       "flow_name": "debug_parent_group_parents",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_shared_parent_group.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_pop_up_bg": {
+      "flow_type": "template",
+      "flow_name": "debug_pop_up_bg",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_ups.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "debug_pop_up_dismiss": {
@@ -4371,6 +4422,19 @@
       "_xlsxPath": "debug_sheets/debug_variable_and_conditions.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "demo_progress_path_bg": {
+      "flow_type": "template",
+      "flow_name": "demo_progress_path_bg",
+      "parameter_list": {
+        "app_config": {
+          "LAYOUT": {
+            "page_padding": "24px 0"
+          }
+        }
+      },
+      "_xlsxPath": "component_sheets/component_progress_path.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "doc_field": {
       "flow_type": "template",
       "flow_name": "doc_field",
@@ -4842,20 +4906,6 @@
       "flow_type": "template",
       "flow_name": "nav_buttons",
       "_xlsxPath": "navigation.xlsx",
-      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
-    },
-    "plh_bottom_nav_settings": {
-      "flow_type": "template",
-      "flow_name": "plh_bottom_nav_settings",
-      "parameter_list": {
-        "app_config": {
-          "APP_FOOTER_DEFAULTS": {
-            "templateName": "comp_plh_bottom_nav",
-            "background": "none"
-          }
-        }
-      },
-      "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "template_orientation_landscape": {
