@@ -14,7 +14,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.7.6",
+  content_tag_latest: "1.7.7",
 };
 
 config.app_config.ASSET_PACKS = {
@@ -67,7 +67,7 @@ config.app_config.APP_HEADER_DEFAULTS.collapse = true;
 config.app_config.APP_HEADER_DEFAULTS.colour = "primary";
 config.app_config.APP_HEADER_DEFAULTS.variant = "default";
 
-config.app_config.APP_FOOTER_DEFAULTS.templateName = "feat_footer"
+config.app_config.APP_FOOTER_DEFAULTS.template = "feat_footer"
 
 config.app_config.APP_SIDEMENU_DEFAULTS.title = "Debug App";
 
