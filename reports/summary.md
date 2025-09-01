@@ -12,11 +12,11 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 3 |
 | audio | 13 |
-| button | 415 |
+| button | 416 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 66 |
+| combo_box | 68 |
 | dashed_box | 19 |
 | data_items | 96 |
 | data_query | 8 |
@@ -69,13 +69,13 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 147 |
-| text | 1259 |
+| text | 1262 |
 | text_area | 13 |
-| text_box | 65 |
+| text_box | 67 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 626 |
+| title | 629 |
 | toggle_bar | 73 |
 | update_action_list | 2 |
 | video | 4 |
@@ -118,7 +118,7 @@
 | notification_received | 1 |
 | open_external | 3 |
 | plh_parent_group | 8 |
-| pop_up | 59 |
+| pop_up | 60 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -311,7 +311,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 111 |
 | template | component_demo | 66 |
-| template | debug | 285 |
+| template | debug | 286 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
