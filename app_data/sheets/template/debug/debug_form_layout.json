@@ -1,0 +1,84 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_form_layout",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Form layout example",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "title",
+      "value": "Title",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_4",
+      "_nested_name": "text_box_4"
+    },
+    {
+      "type": "text",
+      "value": "Text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_6",
+      "_nested_name": "text_box_6"
+    },
+    {
+      "type": "title",
+      "value": "Title",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_8",
+      "_nested_name": "combo_box_8"
+    },
+    {
+      "type": "text",
+      "value": "Text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_10",
+      "_nested_name": "combo_box_10"
+    },
+    {
+      "type": "text",
+      "value": "Sheet: https://docs.google.com/spreadsheets/d/1-SX-9_ns4DJXHZL7fe653cchnaj8cXKQoBL5gVF-J2w/edit?gid=99275306#gid=99275306",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_form_layout.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 415
+        "count": 416
       },
       {
         "type": "calendar",
@@ -55,7 +55,7 @@
       },
       {
         "type": "combo_box",
-        "count": 66
+        "count": 68
       },
       {
         "type": "dashed_box",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1259
+        "count": 1262
       },
       {
         "type": "text_area",
@@ -275,7 +275,7 @@
       },
       {
         "type": "text_box",
-        "count": 65
+        "count": 67
       },
       {
         "type": "text_bubble",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 626
+        "count": 629
       },
       {
         "type": "toggle_bar",
@@ -439,7 +439,7 @@
       },
       {
         "type": "pop_up",
-        "count": 59
+        "count": 60
       },
       {
         "type": "process_template",
@@ -1180,7 +1180,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 285
+        "total": 286
       },
       {
         "type": "template",

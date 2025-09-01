@@ -76,31 +76,20 @@
     {
       "type": "title",
       "name": "title_2",
+      "value": "Placeholder",
+      "_translations": {
+        "value": {}
+      },
       "_nested_name": "title_2"
     },
     {
-      "name": "text_box_1",
-      "value": "Text box 1: \nShows @local.placeholder before user input is given, and when user input is deleted",
+      "name": "placeholder",
+      "value": "placeholder text",
       "_translations": {
         "value": {}
       },
       "type": "set_variable",
-      "_nested_name": "text_box_1",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "Text box 1: \nShows @local.placeholder before user input is given, and when user input is deleted",
-            "matchedExpression": "@local.placeholder",
-            "type": "local",
-            "fieldName": "placeholder"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.placeholder": [
-          "value"
-        ]
-      }
+      "_nested_name": "placeholder"
     },
     {
       "type": "text_box",
