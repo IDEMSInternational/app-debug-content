@@ -1,0 +1,12 @@
+##################################################################################
+#         Calls workflow from code repo
+##################################################################################
+name: IOS - Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ios_build:
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-release.yml@feat/ios-release-action
+    secrets: inherit
