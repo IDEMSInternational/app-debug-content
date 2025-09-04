@@ -5,8 +5,19 @@ name: IOS - Release
 
 on:
   workflow_dispatch:
+    inputs:
+      target:
+        description: "Where to deploy"
+        required: true
+        default: appetize
+        type: choice
+        options:
+          - appetize
+          - testflight
 
 jobs:
   ios_build:
     uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-ios-release.yml@feat/ios-release-action
+    with:
+      target: ${{ github.event.inputs.target }}
     secrets: inherit
