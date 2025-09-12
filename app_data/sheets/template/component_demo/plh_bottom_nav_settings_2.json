@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "plh_bottom_nav_settings_2",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": "comp_plh_bottom_nav",
+        "background": "none"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Settings 2",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

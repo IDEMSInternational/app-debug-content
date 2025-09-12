@@ -167,7 +167,7 @@
       },
       {
         "type": "plh_bottom_nav",
-        "count": 1
+        "count": 3
       },
       {
         "type": "plh_completion_modal",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 629
+        "count": 630
       },
       {
         "type": "toggle_bar",
@@ -399,7 +399,7 @@
       },
       {
         "type": "go_to",
-        "count": 83
+        "count": 84
       },
       {
         "type": "go_to_url",
@@ -420,14 +420,6 @@
       {
         "type": "notification",
         "count": 8
-      },
-      {
-        "type": "notification_interacted",
-        "count": 2
-      },
-      {
-        "type": "notification_received",
-        "count": 1
       },
       {
         "type": "open_external",
@@ -475,7 +467,7 @@
       },
       {
         "type": "set_field",
-        "count": 117
+        "count": 119
       },
       {
         "type": "set_item",
@@ -925,12 +917,12 @@
       },
       {
         "path": "images/icons/settings.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 2.4
       },
       {
         "path": "images/icons/settings_active.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 2.4
       },
       {
@@ -957,6 +949,11 @@
         "path": "images/icons/tick_white.svg",
         "count": 23,
         "size_kb": 0.3
+      },
+      {
+        "path": "images/icons/verified.svg",
+        "count": 1,
+        "size_kb": 0.5
       },
       {
         "path": "images/modal_bg.svg",
@@ -1175,7 +1172,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 66
+        "total": 67
       },
       {
         "type": "template",

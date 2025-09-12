@@ -2152,6 +2152,21 @@
       "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "plh_bottom_nav_settings_2": {
+      "flow_type": "template",
+      "flow_name": "plh_bottom_nav_settings_2",
+      "flow_subtype": "component_demo",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "templateName": "comp_plh_bottom_nav",
+            "background": "none"
+          }
+        }
+      },
+      "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
     "comp_data_items_debug": {
       "flow_type": "template",
       "flow_name": "comp_data_items_debug",

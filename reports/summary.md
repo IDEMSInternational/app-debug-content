@@ -44,7 +44,7 @@
 | parent_point_counter | 2 |
 | pdf | 4 |
 | plh_activity_check_in | 1 |
-| plh_bottom_nav | 1 |
+| plh_bottom_nav | 3 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
 | plh_module_list_item | 16 |
@@ -75,7 +75,7 @@
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 629 |
+| title | 630 |
 | toggle_bar | 73 |
 | update_action_list | 2 |
 | video | 4 |
@@ -108,14 +108,12 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 83 |
+| go_to | 84 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 5 |
 | nav_stack | 11 |
 | notification | 8 |
-| notification_interacted | 2 |
-| notification_received | 1 |
 | open_external | 3 |
 | plh_parent_group | 8 |
 | pop_up | 60 |
@@ -127,7 +125,7 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 18 |
-| set_field | 117 |
+| set_field | 119 |
 | set_item | 34 |
 | set_items | 2 |
 | set_local | 67 |
@@ -254,13 +252,14 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/reader_blue.svg | 1.4 | 8 |
 | images/icons/red_cross.png | 0.2 | 1 |
 | images/icons/school_blue.svg | 1.6 | 10 |
-| images/icons/settings.svg | 2.4 | 1 |
-| images/icons/settings_active.svg | 2.4 | 1 |
+| images/icons/settings.svg | 2.4 | 2 |
+| images/icons/settings_active.svg | 2.4 | 2 |
 | images/icons/star_blue.svg | 1.3 | 2 |
 | images/icons/star_white.svg | 1 | 22 |
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 23 |
+| images/icons/verified.svg | 0.5 | 1 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 7 |
 | images/sa_kids_app_pattern_blue.svg | 157 | 3 |
@@ -310,7 +309,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 111 |
-| template | component_demo | 66 |
+| template | component_demo | 67 |
 | template | debug | 286 |
 | template | example | 1 |
 | template | example_generator | 2 |

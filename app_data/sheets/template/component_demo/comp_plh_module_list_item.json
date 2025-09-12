@@ -116,6 +116,7 @@
         "module_image_asset": "images/module-1.png",
         "nav_image_asset": "images/icons/expand_circle_right.png",
         "locked_image_asset": "images/icons/locked.png",
+        "completed_image_asset": "images/icons/verified.svg",
         "variant": "@local.variant",
         "completed": "@local.completed_toggle",
         "highlighted": "@local.highlighted_toggle",
@@ -530,6 +531,110 @@
       },
       "name": "plh_module_list_item_19",
       "_nested_name": "plh_module_list_item_19",
+      "_dynamicFields": {
+        "parameter_list": {
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant": [
+          "parameter_list.variant"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Coloured demos",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_20",
+      "_nested_name": "title_20"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No nav",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "module_image_asset": "images/Noura.png",
+        "variant": "@local.variant",
+        "background": "#A6E9FF"
+      },
+      "name": "plh_module_list_item_21",
+      "_nested_name": "plh_module_list_item_21",
+      "_dynamicFields": {
+        "parameter_list": {
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant": [
+          "parameter_list.variant"
+        ]
+      }
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No nav",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "module_image_asset": "images/Noura.png",
+        "variant": "@local.variant",
+        "background": "#FFA777",
+        "highlighted": "true"
+      },
+      "name": "plh_module_list_item_22",
+      "_nested_name": "plh_module_list_item_22",
+      "_dynamicFields": {
+        "parameter_list": {
+          "variant": [
+            {
+              "fullExpression": "@local.variant",
+              "matchedExpression": "@local.variant",
+              "type": "local",
+              "fieldName": "variant"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.variant": [
+          "parameter_list.variant"
+        ]
+      }
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No nav",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "module_image_asset": "images/Noura.png",
+        "variant": "@local.variant",
+        "background": "#FFD973",
+        "is_locked": "true"
+      },
+      "name": "plh_module_list_item_23",
+      "_nested_name": "plh_module_list_item_23",
       "_dynamicFields": {
         "parameter_list": {
           "variant": [
