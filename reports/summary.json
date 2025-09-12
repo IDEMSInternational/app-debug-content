@@ -179,7 +179,7 @@
       },
       {
         "type": "plh_module_list_item",
-        "count": 16
+        "count": 19
       },
       {
         "type": "plh_progress_path",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 630
+        "count": 631
       },
       {
         "type": "toggle_bar",
@@ -712,7 +712,7 @@
       },
       {
         "path": "images/Noura.png",
-        "count": 3,
+        "count": 6,
         "size_kb": 4.2
       },
       {

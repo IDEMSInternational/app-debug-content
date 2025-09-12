@@ -47,7 +47,7 @@
 | plh_bottom_nav | 3 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
-| plh_module_list_item | 16 |
+| plh_module_list_item | 19 |
 | plh_progress_path | 3 |
 | progress_bar | 1 |
 | progress_path | 11 |
@@ -75,7 +75,7 @@
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 630 |
+| title | 631 |
 | toggle_bar | 73 |
 | update_action_list | 2 |
 | video | 4 |
@@ -211,7 +211,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | i18n/flags/gb.svg | 0.5 | 2 |
 | i18n/flags/tz.svg | 0.5 | 2 |
 | images/Faisal.png | 3.5 | 2 |
-| images/Noura.png | 4.2 | 3 |
+| images/Noura.png | 4.2 | 6 |
 | images/activity_bg.svg | 13.8 | 7 |
 | images/avatar_1.png | 67.7 | 19 |
 | images/bg_illustration.png | 255.4 | 3 |
