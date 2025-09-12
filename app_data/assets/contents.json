@@ -301,6 +301,10 @@
     "md5Checksum": "81136e04436759812dc3f6e90c61de11",
     "size_kb": 0.3
   },
+  "images/icons/verified.svg": {
+    "md5Checksum": "41f21e68727d9367ab32bd05f3aa30e3",
+    "size_kb": 0.5
+  },
   "images/modal_bg.svg": {
     "md5Checksum": "83fa2d24b91d02b6e8c2b3a95607c572",
     "size_kb": 37.3

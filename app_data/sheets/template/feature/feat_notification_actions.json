@@ -1251,34 +1251,33 @@
       "name": "example_action_list",
       "value": [
         {
-          "trigger": "click",
-          "action_id": "notification_received",
-          "args": [],
+          "trigger": "notification_received",
+          "action_id": "set_field",
+          "args": [
+            "show_notification_bell",
+            true
+          ],
           "_raw": "notification_received | set_field : show_notification_bell : true",
-          "_cleaned": "click | notification_received | set_field : show_notification_bell : true",
-          "params": {
-            "set_field ": "show_notification_bell"
-          }
+          "_cleaned": "notification_received | set_field : show_notification_bell : true"
         },
         {
-          "trigger": "click",
-          "action_id": "notification_interacted",
-          "args": [],
+          "trigger": "notification_interacted",
+          "action_id": "set_field",
+          "args": [
+            "show_notification_bell",
+            false
+          ],
           "_raw": "notification_interacted | set_field : show_notification_bell: false",
-          "_cleaned": "click | notification_interacted | set_field : show_notification_bell: false",
-          "params": {
-            "set_field ": "show_notification_bell"
-          }
+          "_cleaned": "notification_interacted | set_field : show_notification_bell: false"
         },
         {
-          "trigger": "click",
-          "action_id": "notification_interacted",
-          "args": [],
+          "trigger": "notification_interacted",
+          "action_id": "go_to",
+          "args": [
+            "/user"
+          ],
           "_raw": "notification_interacted | go_to : /user",
-          "_cleaned": "click | notification_interacted | go_to : /user",
-          "params": {
-            "go_to ": "/user"
-          }
+          "_cleaned": "notification_interacted | go_to : /user"
         }
       ],
       "type": "set_variable",
@@ -1502,34 +1501,33 @@
       },
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "notification_received",
-          "args": [],
+          "trigger": "notification_received",
+          "action_id": "set_field",
+          "args": [
+            "show_notification_bell",
+            true
+          ],
           "_raw": "notification_received | set_field : show_notification_bell : true",
-          "_cleaned": "click | notification_received | set_field : show_notification_bell : true",
-          "params": {
-            "set_field ": "show_notification_bell"
-          }
+          "_cleaned": "notification_received | set_field : show_notification_bell : true"
         },
         {
-          "trigger": "click",
-          "action_id": "notification_interacted",
-          "args": [],
+          "trigger": "notification_interacted",
+          "action_id": "set_field",
+          "args": [
+            "show_notification_bell",
+            false
+          ],
           "_raw": "notification_interacted | set_field : show_notification_bell: false",
-          "_cleaned": "click | notification_interacted | set_field : show_notification_bell: false",
-          "params": {
-            "set_field ": "show_notification_bell"
-          }
+          "_cleaned": "notification_interacted | set_field : show_notification_bell: false"
         },
         {
-          "trigger": "click",
-          "action_id": "notification_interacted",
-          "args": [],
+          "trigger": "notification_interacted",
+          "action_id": "go_to",
+          "args": [
+            "/user"
+          ],
           "_raw": "notification_interacted | go_to : /user",
-          "_cleaned": "click | notification_interacted | go_to : /user",
-          "params": {
-            "go_to ": "/user"
-          }
+          "_cleaned": "notification_interacted | go_to : /user"
         }
       ],
       "_nested_name": "triggered_actions"
