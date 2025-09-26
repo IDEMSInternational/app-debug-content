@@ -96,3 +96,4 @@ config.app_config.APP_LANGUAGES_META = {
 }
 
 export default config;
+
