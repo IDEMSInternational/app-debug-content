@@ -17,15 +17,8 @@ config.git = {
   content_tag_latest: "1.7.9",
 };
 
-config.app_config.ASSET_PACKS = {
-  enabled: true,
-  bucketName: "debug",
-  folderName: "asset_packs",
-};
-
 // set supabase config if decrypted values available
 // TODO - should supabase match general config and additional settings
-
 const supabaseConfig = loadEncryptedConfig("supabaseConfig.json");
 config.supabase = { ...supabaseConfig, enabled: supabaseConfig ? true : false };
 
@@ -33,6 +26,12 @@ config.firebase = {
   config: loadEncryptedConfig('firebase.json'),
   crashlytics: { enabled: true }
 }
+
+config.remote_assets = {
+  provider: "supabase",
+  bucketName: "debug",
+  folderName: "asset_packs",
+};
 
 config.error_logging = {
   dsn: "https://69ccfba168f04b848cdd96ac066d01b5@app.glitchtip.com/2438",
@@ -48,9 +47,9 @@ config.android = {
   zoom_enabled: true
 }
 
-config.analytics={
-  enabled:true,
-  provider:'matomo',
+config.analytics = {
+  enabled: true,
+  provider: 'matomo',
   siteId: 2,
   endpoint: "https://apps-server.idems.international/analytics"
 }
@@ -84,15 +83,15 @@ config.app_config.APP_UPDATES.enabled = true
 config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete"
 
 config.auth = {
-  provider:'firebase',
+  provider: 'firebase',
   /** uncomment if testing enforce login */
   // enforceLoginTemplate: "example_google_auth",
 
 }
 
-config.app_config.APP_LANGUAGES_META = { 
-  en_rtl: { rtl: true }, 
-  kw_ar: { rtl: true } 
+config.app_config.APP_LANGUAGES_META = {
+  en_rtl: { rtl: true },
+  kw_ar: { rtl: true }
 }
 
 export default config;
