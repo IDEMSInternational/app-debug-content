@@ -201,6 +201,10 @@
     "md5Checksum": "668d46c68a50b5862ae016cc05b8fa42",
     "size_kb": 0.9
   },
+  "images/icons/expand_circle_right.svg": {
+    "md5Checksum": "a72d1868e1782c052aa829835234ac0d",
+    "size_kb": 0.5
+  },
   "images/icons/favicon.svg": {
     "md5Checksum": "25a750c5524bd7c519b2b53a3abe5036",
     "size_kb": 2.1
@@ -244,6 +248,10 @@
   "images/icons/local_library_active.svg": {
     "md5Checksum": "32cacaa501602e12c42cbf6f9a908efd",
     "size_kb": 1.6
+  },
+  "images/icons/lock.svg": {
+    "md5Checksum": "0626195897db0154bcbd0f9942868f60",
+    "size_kb": 0.5
   },
   "images/icons/locked.png": {
     "md5Checksum": "6ca7d189a83dfb8bc324844899755518",
