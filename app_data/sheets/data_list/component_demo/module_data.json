@@ -1,0 +1,84 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "module_data",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "id_1",
+      "name": "Module 1",
+      "completed": true,
+      "highlighted": false,
+      "locked": false
+    },
+    {
+      "id": "id_2",
+      "name": "Module 2 with a long name over mulitple lines",
+      "completed": true,
+      "highlighted": false,
+      "locked": false
+    },
+    {
+      "id": "id_3",
+      "name": "Module 3",
+      "completed": false,
+      "highlighted": true,
+      "locked": false
+    },
+    {
+      "id": "id_4",
+      "name": "Module 4",
+      "completed": false,
+      "highlighted": false,
+      "locked": true
+    },
+    {
+      "id": "id_5",
+      "name": "Module 5",
+      "completed": false,
+      "highlighted": false,
+      "locked": true
+    },
+    {
+      "id": "id_6",
+      "name": "Module 6",
+      "completed": false,
+      "highlighted": false,
+      "locked": true
+    },
+    {
+      "id": "id_7",
+      "name": "Module 7",
+      "completed": false,
+      "highlighted": false,
+      "locked": true
+    },
+    {
+      "id": "id_8",
+      "name": "Module 8",
+      "completed": false,
+      "highlighted": false,
+      "locked": true
+    },
+    {
+      "id": "id_9",
+      "name": "Module 9",
+      "completed": false,
+      "highlighted": false,
+      "locked": true
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    },
+    "highlighted": {
+      "type": "boolean"
+    },
+    "locked": {
+      "type": "boolean"
+    }
+  }
+}

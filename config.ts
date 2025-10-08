@@ -14,18 +14,11 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.7.9",
-};
-
-config.app_config.ASSET_PACKS = {
-  enabled: true,
-  bucketName: "debug",
-  folderName: "asset_packs",
+  content_tag_latest: "1.7.10",
 };
 
 // set supabase config if decrypted values available
 // TODO - should supabase match general config and additional settings
-
 const supabaseConfig = loadEncryptedConfig("supabaseConfig.json");
 config.supabase = { ...supabaseConfig, enabled: supabaseConfig ? true : false };
 
@@ -61,6 +54,12 @@ config.ios = {
   zoom_enabled: true
 }
 
+config.remote_assets = {
+  provider: "supabase",
+  bucketName: "debug",
+  folderName: "asset_packs",
+};
+
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
 config.app_config.APP_HEADER_DEFAULTS.collapse = true;
@@ -87,7 +86,6 @@ config.auth = {
   provider:'firebase',
   /** uncomment if testing enforce login */
   // enforceLoginTemplate: "example_google_auth",
-
 }
 
 config.app_config.APP_LANGUAGES_META = { 

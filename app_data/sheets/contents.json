@@ -438,6 +438,24 @@
         }
       }
     },
+    "module_data": {
+      "flow_type": "data_list",
+      "flow_name": "module_data",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        },
+        "highlighted": {
+          "type": "boolean"
+        },
+        "locked": {
+          "type": "boolean"
+        }
+      }
+    },
     "data_query_items": {
       "flow_type": "data_list",
       "flow_name": "data_query_items",
@@ -2078,6 +2096,13 @@
       "flow_name": "dg_sticky_safe_area_2",
       "flow_subtype": "component_demo",
       "_xlsxPath": "component_sheets/component_display_group.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "eg_plh_module_list_item": {
+      "flow_type": "template",
+      "flow_name": "eg_plh_module_list_item",
+      "flow_subtype": "component_demo",
+      "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "example_task_carousel": {
@@ -3881,6 +3906,13 @@
       "flow_name": "example_lang_user_name",
       "flow_subtype": "debug",
       "_xlsxPath": "example_sheets/to_be_sorted/example_languages.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "example_login_page": {
+      "flow_type": "template",
+      "flow_name": "example_login_page",
+      "flow_subtype": "debug",
+      "_xlsxPath": "example_sheets/example_login_page.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
     "example_multiple_locals": {

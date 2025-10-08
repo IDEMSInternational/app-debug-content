@@ -14,6 +14,15 @@
       "_nested_name": "title_2"
     },
     {
+      "type": "title",
+      "value": "Default variant",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
       "type": "apple_sign_in_button",
       "value": "Sign in with Apple",
       "_translations": {
@@ -32,8 +41,8 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
-      "name": "apple_sign_in_button_3",
-      "_nested_name": "apple_sign_in_button_3"
+      "name": "apple_sign_in_button_4",
+      "_nested_name": "apple_sign_in_button_4"
     },
     {
       "type": "apple_sign_in_button",
@@ -52,26 +61,19 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
-      "name": "apple_sign_in_button_4",
-      "_nested_name": "apple_sign_in_button_4"
+      "name": "apple_sign_in_button_5",
+      "_nested_name": "apple_sign_in_button_5"
     },
     {
-      "type": "button",
-      "name": "sign_out",
-      "value": "Sign out",
+      "type": "apple_sign_in_button",
+      "value": "Disabled",
       "_translations": {
         "value": {}
       },
+      "parameter_list": {
+        "disabled": "true"
+      },
       "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "auth",
-          "args": [
-            "sign_out"
-          ],
-          "_raw": "click | auth: sign_out",
-          "_cleaned": "click | auth: sign_out"
-        },
         {
           "trigger": "click",
           "action_id": "emit",
@@ -82,6 +84,101 @@
           "_cleaned": "click | emit: force_reprocess"
         }
       ],
+      "name": "apple_sign_in_button_6",
+      "_nested_name": "apple_sign_in_button_6"
+    },
+    {
+      "type": "title",
+      "value": "Variant: native_apple",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in with Apple",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "parameter_list": {
+        "variant": "native_apple"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "apple_sign_in_button_8",
+      "_nested_name": "apple_sign_in_button_8"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "native_apple"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "apple_sign_in_button_9",
+      "_nested_name": "apple_sign_in_button_9"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Disabled",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "native_apple",
+        "disabled": "true"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "apple_sign_in_button_10",
+      "_nested_name": "apple_sign_in_button_10"
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "click | auth": "sign_out",
+        "click | emit": "force_reprocess"
+      },
       "_nested_name": "sign_out"
     },
     {
@@ -90,8 +187,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_6",
-      "_nested_name": "text_6"
+      "name": "text_12",
+      "_nested_name": "text_12"
     },
     {
       "type": "text",
@@ -99,8 +196,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_7",
-      "_nested_name": "text_7",
+      "name": "text_13",
+      "_nested_name": "text_13",
       "_dynamicFields": {
         "value": [
           {
