@@ -13,7 +13,7 @@
     {
       "type": "data_items",
       "name": "loop",
-      "value": "@data.debug",
+      "value": "@data.debug_number_list",
       "parameter_list": {
         "filter": "([].concat(@item.number_1_list)).includes(@local.two)",
         "shuffle": "true",
@@ -76,10 +76,10 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@data.debug",
-            "matchedExpression": "@data.debug",
+            "fullExpression": "@data.debug_number_list",
+            "matchedExpression": "@data.debug_number_list",
             "type": "data",
-            "fieldName": "debug"
+            "fieldName": "debug_number_list"
           }
         ],
         "parameter_list": {
@@ -100,7 +100,7 @@
         }
       },
       "_dynamicDependencies": {
-        "@data.debug": [
+        "@data.debug_number_list": [
           "value"
         ],
         "@item.number_1_list": [
