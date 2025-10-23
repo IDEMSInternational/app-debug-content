@@ -7,21 +7,6 @@
       "id": "item_1",
       "text": "Item 1 text",
       "image_asset": "images/example/jasper_1.jpg",
-      "number_1_list": [
-        "1",
-        "2",
-        "3"
-      ],
-      "number_2_list": [
-        "1",
-        "2",
-        "3"
-      ],
-      "number_3_list": [
-        "1",
-        "2",
-        "3"
-      ],
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}

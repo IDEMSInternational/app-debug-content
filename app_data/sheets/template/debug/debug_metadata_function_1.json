@@ -5,6 +5,51 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "type": "title",
+      "name": "title",
+      "value": "Doesn't work",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Filter `filter: @item.number_1_list.includes(@fields.debug_number);` doesn't work since the column `number_1_list` contains both numbers and arrays",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "`": "true"
+      },
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Filter `filter: @item.number_1_list.includes(@fields.debug_number);` doesn't work since the column `number_1_list` contains both numbers and arrays",
+            "matchedExpression": "@item.number_1_list.includes",
+            "type": "item",
+            "fieldName": "number_1_list"
+          },
+          {
+            "fullExpression": "Filter `filter: @item.number_1_list.includes(@fields.debug_number);` doesn't work since the column `number_1_list` contains both numbers and arrays",
+            "matchedExpression": "@fields.debug_number",
+            "type": "fields",
+            "fieldName": "debug_number"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@item.number_1_list.includes": [
+          "value"
+        ],
+        "@fields.debug_number": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "data_items",
       "name": "loop",
       "value": "@data.debug_number_list",

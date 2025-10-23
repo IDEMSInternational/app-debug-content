@@ -5,6 +5,24 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "type": "title",
+      "name": "title",
+      "value": "Works",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Authoring workaround on the data list: use`1;` instead of `1` to force also lists of length 1 to be arrays",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
       "type": "data_items",
       "name": "loop",
       "value": "@data.debug_number_list",

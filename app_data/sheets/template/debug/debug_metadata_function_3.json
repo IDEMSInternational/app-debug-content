@@ -5,11 +5,29 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "type": "title",
+      "name": "title",
+      "value": "Works",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Authoring workaround on the filter: Use javascript checks to cover case where entries are not arrays (or string/number discrepancy)",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text"
+    },
+    {
       "type": "data_items",
       "name": "loop",
       "value": "@data.debug_number_list",
       "parameter_list": {
-        "filter": "@item.number_3_list.includes(@fields.debug_number)"
+        "filter": "(@item.number_1_list && ([].concat(@item.number_1_list)).map(x => String(x)).includes(String(@fields.debug_number)))"
       },
       "rows": [
         {
@@ -70,13 +88,19 @@
         "parameter_list": {
           "filter": [
             {
-              "fullExpression": "@item.number_3_list.includes(@fields.debug_number)",
-              "matchedExpression": "@item.number_3_list.includes",
+              "fullExpression": "(@item.number_1_list && ([].concat(@item.number_1_list)).map(x => String(x)).includes(String(@fields.debug_number)))",
+              "matchedExpression": "@item.number_1_list",
               "type": "item",
-              "fieldName": "number_3_list"
+              "fieldName": "number_1_list"
             },
             {
-              "fullExpression": "@item.number_3_list.includes(@fields.debug_number)",
+              "fullExpression": "(@item.number_1_list && ([].concat(@item.number_1_list)).map(x => String(x)).includes(String(@fields.debug_number)))",
+              "matchedExpression": "@item.number_1_list",
+              "type": "item",
+              "fieldName": "number_1_list"
+            },
+            {
+              "fullExpression": "(@item.number_1_list && ([].concat(@item.number_1_list)).map(x => String(x)).includes(String(@fields.debug_number)))",
               "matchedExpression": "@fields.debug_number",
               "type": "fields",
               "fieldName": "debug_number"
@@ -88,7 +112,8 @@
         "@data.debug_number_list": [
           "value"
         ],
-        "@item.number_3_list.includes": [
+        "@item.number_1_list": [
+          "parameter_list.filter",
           "parameter_list.filter"
         ],
         "@fields.debug_number": [
