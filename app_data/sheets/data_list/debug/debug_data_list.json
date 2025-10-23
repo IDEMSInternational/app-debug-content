@@ -9,6 +9,16 @@
       "id": "item_1",
       "text": "Item 1 text",
       "image_asset": "images/example/jasper_1.jpg",
+      "number_1_list": [
+        "1",
+        "2",
+        "3"
+      ],
+      "number_2_list": [
+        "1",
+        "2",
+        "3"
+      ],
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}
@@ -23,6 +33,14 @@
       "id": "item_2",
       "text": "Item 2 text",
       "image_asset": "images/example/circular.png",
+      "number_1_list": [
+        "1",
+        "2"
+      ],
+      "number_2_list": [
+        "1",
+        "2"
+      ],
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}
@@ -36,6 +54,10 @@
     {
       "id": "item_3",
       "text": "Item 3 text",
+      "number_1_list": 1,
+      "number_2_list": [
+        "1"
+      ],
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}

@@ -1,0 +1,117 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_metadata_function_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "two",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "two"
+    },
+    {
+      "type": "data_items",
+      "name": "loop",
+      "value": "@data.debug",
+      "parameter_list": {
+        "filter": "@item.number_2_list.includes(@local.two)",
+        "shuffle": "true",
+        "limit": "1"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "text_@item._index",
+          "value": "@item.id at index @item._index",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "loop.text_@item._index",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "text_@item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "@item.id at index @item._index",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              },
+              {
+                "fullExpression": "@item.id at index @item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "loop.text_@item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item._index": [
+              "name",
+              "value",
+              "_nested_name"
+            ],
+            "@item.id": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "loop",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug",
+            "matchedExpression": "@data.debug",
+            "type": "data",
+            "fieldName": "debug"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.number_2_list.includes(@local.two)",
+              "matchedExpression": "@item.number_2_list.includes",
+              "type": "item",
+              "fieldName": "number_2_list"
+            },
+            {
+              "fullExpression": "@item.number_2_list.includes(@local.two)",
+              "matchedExpression": "@local.two",
+              "type": "local",
+              "fieldName": "two"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.debug": [
+          "value"
+        ],
+        "@item.number_2_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@local.two": [
+          "parameter_list.filter"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
