@@ -5,25 +5,17 @@
   "flow_subtype": "debug",
   "rows": [
     {
-      "name": "two",
-      "value": 2,
-      "type": "set_variable",
-      "_nested_name": "two"
-    },
-    {
       "type": "data_items",
       "name": "loop",
       "value": "@data.debug_number_list",
       "parameter_list": {
-        "filter": "@item.number_1_list.includes(@local.two)",
-        "shuffle": "true",
-        "limit": "1"
+        "filter": "@item.number_1_list.includes(@fields.debug_number)"
       },
       "rows": [
         {
           "type": "text",
           "name": "text_@item._index",
-          "value": "@item.id at index @item._index",
+          "value": "@item.id",
           "_translations": {
             "value": {}
           },
@@ -39,16 +31,10 @@
             ],
             "value": [
               {
-                "fullExpression": "@item.id at index @item._index",
+                "fullExpression": "@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
-              },
-              {
-                "fullExpression": "@item.id at index @item._index",
-                "matchedExpression": "@item._index",
-                "type": "item",
-                "fieldName": "_index"
               }
             ],
             "_nested_name": [
@@ -63,7 +49,6 @@
           "_dynamicDependencies": {
             "@item._index": [
               "name",
-              "value",
               "_nested_name"
             ],
             "@item.id": [
@@ -85,16 +70,16 @@
         "parameter_list": {
           "filter": [
             {
-              "fullExpression": "@item.number_1_list.includes(@local.two)",
+              "fullExpression": "@item.number_1_list.includes(@fields.debug_number)",
               "matchedExpression": "@item.number_1_list.includes",
               "type": "item",
               "fieldName": "number_1_list"
             },
             {
-              "fullExpression": "@item.number_1_list.includes(@local.two)",
-              "matchedExpression": "@local.two",
-              "type": "local",
-              "fieldName": "two"
+              "fullExpression": "@item.number_1_list.includes(@fields.debug_number)",
+              "matchedExpression": "@fields.debug_number",
+              "type": "fields",
+              "fieldName": "debug_number"
             }
           ]
         }
@@ -106,7 +91,7 @@
         "@item.number_1_list.includes": [
           "parameter_list.filter"
         ],
-        "@local.two": [
+        "@fields.debug_number": [
           "parameter_list.filter"
         ]
       }
