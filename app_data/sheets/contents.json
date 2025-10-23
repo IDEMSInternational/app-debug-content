@@ -551,6 +551,19 @@
       "_xlsxPath": "debug_sheets/to_be_sorted/debug_nav.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
     },
+    "debug_number_list": {
+      "flow_type": "data_list",
+      "flow_name": "debug_number_list",
+      "data_list_name": "debug_number_list",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+      "_metadata": {
+        "number_1_list": {
+          "type": "number"
+        }
+      }
+    },
     "debug_parent_data": {
       "flow_type": "data_list",
       "flow_name": "debug_parent_data",
@@ -2840,6 +2853,27 @@
     "debug_metadata": {
       "flow_type": "template",
       "flow_name": "debug_metadata",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_metadata_function_1": {
+      "flow_type": "template",
+      "flow_name": "debug_metadata_function_1",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_metadata_function_2": {
+      "flow_type": "template",
+      "flow_name": "debug_metadata_function_2",
+      "flow_subtype": "debug",
+      "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+      "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+    },
+    "debug_metadata_function_3": {
+      "flow_type": "template",
+      "flow_name": "debug_metadata_function_3",
       "flow_subtype": "debug",
       "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
       "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"

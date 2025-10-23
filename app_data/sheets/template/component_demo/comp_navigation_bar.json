@@ -17,13 +17,13 @@
           "name": "parent_points_button",
           "text": "Star",
           "image": "images/icons/star_white.svg",
-          "target_template": "parent_points"
+          "target_template": "comp_navigation_bar"
         },
         {
           "name": "parent_library_button",
           "text": "FAQ",
           "image": "images/icons/ask_question_white.svg",
-          "target_template": "parent_centre"
+          "target_template": "home_screen"
         }
       ],
       "type": "set_variable",
@@ -40,12 +40,12 @@
         {
           "name": "parent_points_button",
           "image": "images/icons/star_white.svg",
-          "target_template": "parent_points"
+          "target_template": "comp_navigation_bar"
         },
         {
           "name": "parent_library_button",
           "image": "images/icons/ask_question_white.svg",
-          "target_template": "parent_centre"
+          "target_template": "home_screen"
         }
       ],
       "type": "set_variable",
@@ -64,13 +64,13 @@
           "name": "parent_points_button",
           "text": "Page",
           "image": "images/icons/reader_blue.svg",
-          "target_template": "parent_points"
+          "target_template": "comp_navigation_bar"
         },
         {
           "name": "parent_library_button",
           "text": "Heart",
           "image": "images/icons/heart_blue.svg",
-          "target_template": "parent_centre"
+          "target_template": "home_screen"
         }
       ],
       "type": "set_variable",

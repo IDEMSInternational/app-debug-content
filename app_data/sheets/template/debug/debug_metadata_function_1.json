@@ -1,0 +1,144 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_metadata_function_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Doesn't work",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Filter `filter: @item.number_1_list.includes(@fields.debug_number);` doesn't work since the column `number_1_list` contains both numbers and arrays",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Filter `filter: @item.number_1_list.includes(@fields.debug_number);` doesn't work since the column `number_1_list` contains both numbers and arrays",
+            "matchedExpression": "@item.number_1_list.includes",
+            "type": "item",
+            "fieldName": "number_1_list"
+          },
+          {
+            "fullExpression": "Filter `filter: @item.number_1_list.includes(@fields.debug_number);` doesn't work since the column `number_1_list` contains both numbers and arrays",
+            "matchedExpression": "@fields.debug_number",
+            "type": "fields",
+            "fieldName": "debug_number"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@item.number_1_list.includes": [
+          "value"
+        ],
+        "@fields.debug_number": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "name": "loop",
+      "value": "@data.debug_number_list",
+      "parameter_list": {
+        "filter": "@item.number_1_list.includes(@fields.debug_number)"
+      },
+      "rows": [
+        {
+          "type": "text",
+          "name": "text_@item._index",
+          "value": "@item.id",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "loop.text_@item._index",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "text_@item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ],
+            "value": [
+              {
+                "fullExpression": "@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "loop.text_@item._index",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item._index": [
+              "name",
+              "_nested_name"
+            ],
+            "@item.id": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "loop",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_number_list",
+            "matchedExpression": "@data.debug_number_list",
+            "type": "data",
+            "fieldName": "debug_number_list"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.number_1_list.includes(@fields.debug_number)",
+              "matchedExpression": "@item.number_1_list.includes",
+              "type": "item",
+              "fieldName": "number_1_list"
+            },
+            {
+              "fullExpression": "@item.number_1_list.includes(@fields.debug_number)",
+              "matchedExpression": "@fields.debug_number",
+              "type": "fields",
+              "fieldName": "debug_number"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.debug_number_list": [
+          "value"
+        ],
+        "@item.number_1_list.includes": [
+          "parameter_list.filter"
+        ],
+        "@fields.debug_number": [
+          "parameter_list.filter"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}
