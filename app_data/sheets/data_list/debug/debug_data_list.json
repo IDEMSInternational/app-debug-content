@@ -19,6 +19,11 @@
         "2",
         "3"
       ],
+      "number_3_list": [
+        "1",
+        "2",
+        "3"
+      ],
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}
@@ -41,6 +46,10 @@
         "1",
         "2"
       ],
+      "number_3_list": [
+        "1",
+        "2"
+      ],
       "to_translate": "Hello",
       "_translations": {
         "to_translate": {}
@@ -56,6 +65,10 @@
       "text": "Item 3 text",
       "number_1_list": 1,
       "number_2_list": [
+        "1"
+      ],
+      "number_3_list": [
+        "0",
         "1"
       ],
       "to_translate": "Hello",
