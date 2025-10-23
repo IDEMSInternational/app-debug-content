@@ -14,7 +14,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.7.10",
+  content_tag_latest: "1.7.11",
 };
 
 // set supabase config if decrypted values available

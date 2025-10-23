@@ -18,7 +18,7 @@
 | colour_palette | 1 |
 | combo_box | 68 |
 | dashed_box | 19 |
-| data_items | 98 |
+| data_items | 100 |
 | data_query | 8 |
 | date_time_picker | 8 |
 | debug_toggle | 1 |
@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 888 |
+| set_variable | 890 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -69,7 +69,7 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 147 |
-| text | 1264 |
+| text | 1266 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
@@ -312,7 +312,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 111 |
 | template | component_demo | 68 |
-| template | debug | 287 |
+| template | debug | 289 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
