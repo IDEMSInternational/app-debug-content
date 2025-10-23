@@ -20,9 +20,6 @@
       "_translations": {
         "value": {}
       },
-      "parameter_list": {
-        "`": "true"
-      },
       "_nested_name": "text",
       "_dynamicFields": {
         "value": [
