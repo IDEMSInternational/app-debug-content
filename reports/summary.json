@@ -31,7 +31,7 @@
       },
       {
         "type": "apple_sign_in_button",
-        "count": 3
+        "count": 8
       },
       {
         "type": "audio",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 96
+        "count": 100
       },
       {
         "type": "data_query",
@@ -99,7 +99,7 @@
       },
       {
         "type": "google_sign_in_button",
-        "count": 4
+        "count": 9
       },
       {
         "type": "html",
@@ -179,11 +179,11 @@
       },
       {
         "type": "plh_module_list_item",
-        "count": 19
+        "count": 21
       },
       {
         "type": "plh_progress_path",
-        "count": 3
+        "count": 4
       },
       {
         "type": "progress_bar",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 886
+        "count": 890
       },
       {
         "type": "simple_checkbox",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1262
+        "count": 1266
       },
       {
         "type": "text_area",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 631
+        "count": 639
       },
       {
         "type": "toggle_bar",
@@ -331,7 +331,7 @@
       },
       {
         "type": "auth",
-        "count": 6
+        "count": 5
       },
       {
         "type": "auth_failure",
@@ -359,11 +359,11 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 35
+        "count": 31
       },
       {
         "type": "emit: force_reprocess",
-        "count": 41
+        "count": 50
       },
       {
         "type": "emit: force_restart",
@@ -431,7 +431,7 @@
       },
       {
         "type": "pop_up",
-        "count": 60
+        "count": 61
       },
       {
         "type": "process_template",
@@ -523,7 +523,7 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31771 KB",
+        "KB": "31772 KB",
         "MB": "31.8 MB"
       },
       {
@@ -836,6 +836,11 @@
         "size_kb": 0.9
       },
       {
+        "path": "images/icons/expand_circle_right.svg",
+        "count": 1,
+        "size_kb": 0.5
+      },
+      {
         "path": "images/icons/globe_blue.svg",
         "count": 26,
         "size_kb": 3.9
@@ -886,8 +891,13 @@
         "size_kb": 1.6
       },
       {
+        "path": "images/icons/lock.svg",
+        "count": 1,
+        "size_kb": 0.5
+      },
+      {
         "path": "images/icons/locked.png",
-        "count": 18,
+        "count": 19,
         "size_kb": 0.9
       },
       {
@@ -952,7 +962,7 @@
       },
       {
         "path": "images/icons/verified.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 0.5
       },
       {
@@ -962,7 +972,7 @@
       },
       {
         "path": "images/module-1.png",
-        "count": 7,
+        "count": 8,
         "size_kb": 28.2
       },
       {
@@ -982,7 +992,7 @@
       },
       {
         "path": "images/square_2.svg",
-        "count": 3,
+        "count": 4,
         "size_kb": 1
       },
       {
@@ -1087,7 +1097,7 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 12
+        "total": 13
       },
       {
         "type": "data_list",
@@ -1172,12 +1182,12 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 67
+        "total": 68
       },
       {
         "type": "template",
         "subtype": "debug",
-        "total": 286
+        "total": 289
       },
       {
         "type": "template",

@@ -83,6 +83,15 @@
       "image": "images/square_1.svg",
       "locked": true,
       "highlighted": false
+    },
+    {
+      "id": "task_group_id_10",
+      "task_group_data": "task_group_10",
+      "completed_field": "task_group_10_completed",
+      "title": "Task Group 10",
+      "image": "images/square_2.svg",
+      "locked": true,
+      "highlighted": false
     }
   ],
   "_xlsxPath": "component_sheets/component_plh_progress_path.xlsx",

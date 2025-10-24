@@ -1,0 +1,199 @@
+{
+  "flow_type": "template",
+  "flow_name": "eg_plh_module_list_item",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Module List Item Example",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "background_list",
+      "value": [
+        "var(--plh-module-list-item-background-1)",
+        "var(--plh-module-list-item-background-2)",
+        "var(--plh-module-list-item-background-3)"
+      ],
+      "type": "set_variable",
+      "_nested_name": "background_list"
+    },
+    {
+      "type": "data_items",
+      "value": "module_data",
+      "rows": [
+        {
+          "name": "index_modulo_3",
+          "value": "@calc(@item._index % 3)",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "data_items_4.index_modulo_3",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@calc(@item._index % 3)",
+                "matchedExpression": "@item._index",
+                "type": "item",
+                "fieldName": "_index"
+              },
+              {
+                "fullExpression": "@calc(@item._index % 3)",
+                "matchedExpression": "@calc(@item._index % 3)",
+                "type": "calc",
+                "fieldName": "@item._index % 3"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item._index": [
+              "value"
+            ],
+            "@calc(@item._index % 3)": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "plh_module_list_item",
+          "value": "@item.name",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "pop_up",
+              "args": [
+                "example_text"
+              ],
+              "_raw": "click | pop_up: example_text",
+              "_cleaned": "click | pop_up: example_text"
+            }
+          ],
+          "parameter_list": {
+            "module_image_asset": "images/module-1.png",
+            "nav_image_asset": "images/icons/expand_circle_right.svg",
+            "locked_image_asset": "images/icons/lock.svg",
+            "completed_image_asset": "images/icons/verified.svg",
+            "completed": "@item.completed",
+            "highlighted": "@item.highlighted",
+            "is_locked": "@item.locked",
+            "background": "@calc(@local.background_list.at(@local.index_modulo_3))"
+          },
+          "name": "plh_module_list_item_2_@item.id",
+          "_nested_name": "data_items_4.plh_module_list_item_2_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.name",
+                "matchedExpression": "@item.name",
+                "type": "item",
+                "fieldName": "name"
+              }
+            ],
+            "parameter_list": {
+              "completed": [
+                {
+                  "fullExpression": "@item.completed",
+                  "matchedExpression": "@item.completed",
+                  "type": "item",
+                  "fieldName": "completed"
+                }
+              ],
+              "highlighted": [
+                {
+                  "fullExpression": "@item.highlighted",
+                  "matchedExpression": "@item.highlighted",
+                  "type": "item",
+                  "fieldName": "highlighted"
+                }
+              ],
+              "is_locked": [
+                {
+                  "fullExpression": "@item.locked",
+                  "matchedExpression": "@item.locked",
+                  "type": "item",
+                  "fieldName": "locked"
+                }
+              ],
+              "background": [
+                {
+                  "fullExpression": "@calc(@local.background_list.at(@local.index_modulo_3))",
+                  "matchedExpression": "@local.background_list.at",
+                  "type": "local",
+                  "fieldName": "background_list"
+                },
+                {
+                  "fullExpression": "@calc(@local.background_list.at(@local.index_modulo_3))",
+                  "matchedExpression": "@local.index_modulo_3",
+                  "type": "local",
+                  "fieldName": "index_modulo_3"
+                },
+                {
+                  "fullExpression": "@calc(@local.background_list.at(@local.index_modulo_3))",
+                  "matchedExpression": "@calc(@local.background_list.at(@local.index_modulo_3))",
+                  "type": "calc",
+                  "fieldName": "@local.background_list.at(@local.index_modulo_3)"
+                }
+              ]
+            },
+            "name": [
+              {
+                "fullExpression": "plh_module_list_item_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_4.plh_module_list_item_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.name": [
+              "value"
+            ],
+            "@item.completed": [
+              "parameter_list.completed"
+            ],
+            "@item.highlighted": [
+              "parameter_list.highlighted"
+            ],
+            "@item.locked": [
+              "parameter_list.is_locked"
+            ],
+            "@local.background_list.at": [
+              "parameter_list.background"
+            ],
+            "@local.index_modulo_3": [
+              "parameter_list.background"
+            ],
+            "@calc(@local.background_list.at(@local.index_modulo_3))": [
+              "parameter_list.background"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_4",
+      "_nested_name": "data_items_4"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_plh_module_list_item.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

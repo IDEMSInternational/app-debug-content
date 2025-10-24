@@ -10,7 +10,7 @@
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
-| apple_sign_in_button | 3 |
+| apple_sign_in_button | 8 |
 | audio | 13 |
 | button | 416 |
 | calendar | 1 |
@@ -18,7 +18,7 @@
 | colour_palette | 1 |
 | combo_box | 68 |
 | dashed_box | 19 |
-| data_items | 96 |
+| data_items | 100 |
 | data_query | 8 |
 | date_time_picker | 8 |
 | debug_toggle | 1 |
@@ -27,7 +27,7 @@
 | display_group | 257 |
 | drawer | 1 |
 | form | 9 |
-| google_sign_in_button | 4 |
+| google_sign_in_button | 9 |
 | html | 4 |
 | image | 83 |
 | items | 51 |
@@ -47,8 +47,8 @@
 | plh_bottom_nav | 3 |
 | plh_completion_modal | 1 |
 | plh_module_details_header | 3 |
-| plh_module_list_item | 19 |
-| plh_progress_path | 3 |
+| plh_module_list_item | 21 |
+| plh_progress_path | 4 |
 | progress_bar | 1 |
 | progress_path | 11 |
 | qr_code | 2 |
@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 886 |
+| set_variable | 890 |
 | simple_checkbox | 41 |
 | slider | 32 |
 | square_button | 8 |
@@ -69,13 +69,13 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 147 |
-| text | 1262 |
+| text | 1266 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 631 |
+| title | 639 |
 | toggle_bar | 73 |
 | update_action_list | 2 |
 | video | 4 |
@@ -91,15 +91,15 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 6 |
+| auth | 5 |
 | auth_failure | 1 |
 | auth_success | 1 |
 | copy | 5 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
-| emit: force_reload | 35 |
-| emit: force_reprocess | 41 |
+| emit: force_reload | 31 |
+| emit: force_reprocess | 50 |
 | emit: force_restart | 4 |
 | emit: server_sync | 8 |
 | emit: set_language | 6 |
@@ -116,7 +116,7 @@
 | notification | 8 |
 | open_external | 3 |
 | plh_parent_group | 8 |
-| pop_up | 60 |
+| pop_up | 61 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -145,7 +145,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31771 KB | 31.8 MB |
+| total | 31772 KB | 31.8 MB |
 | unused | 4797 KB | 4.8 MB |
 </details>
 
@@ -236,6 +236,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/book_white.svg | 0.7 | 12 |
 | images/icons/close.svg | 0.2 | 1 |
 | images/icons/expand_circle_right.png | 0.9 | 10 |
+| images/icons/expand_circle_right.svg | 0.5 | 1 |
 | images/icons/globe_blue.svg | 3.9 | 26 |
 | images/icons/heart_blue.svg | 1.4 | 39 |
 | images/icons/heart_outline.svg | 0.6 | 14 |
@@ -246,7 +247,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/leaf_blue.svg | 1.7 | 13 |
 | images/icons/local_library.svg | 1.6 | 1 |
 | images/icons/local_library_active.svg | 1.6 | 1 |
-| images/icons/locked.png | 0.9 | 18 |
+| images/icons/lock.svg | 0.5 | 1 |
+| images/icons/locked.png | 0.9 | 19 |
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 8 |
@@ -259,13 +261,13 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/star_yellow.svg | 0.6 | 1 |
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 23 |
-| images/icons/verified.svg | 0.5 | 1 |
+| images/icons/verified.svg | 0.5 | 2 |
 | images/modal_bg.svg | 37.3 | 1 |
-| images/module-1.png | 28.2 | 7 |
+| images/module-1.png | 28.2 | 8 |
 | images/sa_kids_app_pattern_blue.svg | 157 | 3 |
 | images/shining_diamond.png | 17.7 | 1 |
 | images/square_1.svg | 0.7 | 4 |
-| images/square_2.svg | 1 | 3 |
+| images/square_2.svg | 1 | 4 |
 | images/square_3.svg | 1 | 3 |
 | images/square_4.svg | 1 | 3 |
 | images/test_image.png | 2 | 5 |
@@ -292,7 +294,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list |  | 44 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
-| data_list | component_demo | 12 |
+| data_list | component_demo | 13 |
 | data_list | debug | 24 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
@@ -309,8 +311,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 111 |
-| template | component_demo | 67 |
-| template | debug | 286 |
+| template | component_demo | 68 |
+| template | debug | 289 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

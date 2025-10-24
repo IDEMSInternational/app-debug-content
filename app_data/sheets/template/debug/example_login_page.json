@@ -1,0 +1,93 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_login_page",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Example Login Page",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in with Apple",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "apple_sign_in_button_3",
+      "_nested_name": "apple_sign_in_button_3"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in with Google",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess",
+          "_cleaned": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "google_sign_in_button_4",
+      "_nested_name": "google_sign_in_button_4"
+    },
+    {
+      "type": "text",
+      "value": "or",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "text_align": "center"
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "button",
+      "value": "Continue without an account",
+      "_translations": {
+        "value": {}
+      },
+      "name": "button_6",
+      "_nested_name": "button_6"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1dL2rIl7F-QE9b1CDQQHOdSnPoLu5WxaJoR1DDFYsneM/edit?gid=1921555013#gid=1921555013",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
+    }
+  ],
+  "_xlsxPath": "example_sheets/example_login_page.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

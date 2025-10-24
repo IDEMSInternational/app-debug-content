@@ -30,15 +30,6 @@
           ],
           "_raw": "click | asset_pack: download: debug_asset_pack_1",
           "_cleaned": "click | asset_pack: download: debug_asset_pack_1"
-        },
-        {
-          "trigger": "click",
-          "action_id": "emit",
-          "args": [
-            "force_reload"
-          ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
         }
       ],
       "_nested_name": "button_1"
@@ -208,15 +199,6 @@
           ],
           "_raw": "changed | emit: set_language: @local.language_select",
           "_cleaned": "changed | emit: set_language: @local.language_select"
-        },
-        {
-          "trigger": "changed",
-          "action_id": "emit",
-          "args": [
-            "force_reload"
-          ],
-          "_raw": "changed | emit: force_reload",
-          "_cleaned": "changed | emit: force_reload"
         }
       ],
       "parameter_list": {
@@ -278,26 +260,6 @@
     },
     {
       "type": "button",
-      "name": "button_2",
-      "value": "Reload page",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "emit",
-          "args": [
-            "force_reload"
-          ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
-        }
-      ],
-      "_nested_name": "button_2"
-    },
-    {
-      "type": "button",
       "name": "button_3",
       "value": "Reset remote assets (return to core asset pack before any downloads)",
       "_translations": {
@@ -312,15 +274,6 @@
           ],
           "_raw": "click | asset_pack: reset",
           "_cleaned": "click | asset_pack: reset"
-        },
-        {
-          "trigger": "click",
-          "action_id": "emit",
-          "args": [
-            "force_reload"
-          ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
         }
       ],
       "_nested_name": "button_3"
