@@ -11,11 +11,11 @@
       },
       {
         "type": "accordion",
-        "count": 6
+        "count": 8
       },
       {
         "type": "accordion_section",
-        "count": 18
+        "count": 20
       },
       {
         "type": "advanced_dashed_box",
@@ -63,7 +63,7 @@
       },
       {
         "type": "data_items",
-        "count": 100
+        "count": 103
       },
       {
         "type": "data_query",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 257
+        "count": 260
       },
       {
         "type": "drawer",
@@ -107,7 +107,7 @@
       },
       {
         "type": "image",
-        "count": 83
+        "count": 85
       },
       {
         "type": "items",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 890
+        "count": 906
       },
       {
         "type": "simple_checkbox",
@@ -263,11 +263,11 @@
       },
       {
         "type": "template",
-        "count": 147
+        "count": 154
       },
       {
         "type": "text",
-        "count": 1266
+        "count": 1278
       },
       {
         "type": "text_area",
@@ -291,7 +291,7 @@
       },
       {
         "type": "title",
-        "count": 639
+        "count": 642
       },
       {
         "type": "toggle_bar",
@@ -1102,7 +1102,7 @@
       {
         "type": "data_list",
         "subtype": "debug",
-        "total": 24
+        "total": 26
       },
       {
         "type": "data_list",
@@ -1161,6 +1161,11 @@
       },
       {
         "type": "generator",
+        "subtype": "debug",
+        "total": 1
+      },
+      {
+        "type": "generator",
         "subtype": "example_generator",
         "total": 2
       },
@@ -1187,7 +1192,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 289
+        "total": 293
       },
       {
         "type": "template",
@@ -1218,6 +1223,11 @@
         "type": "template",
         "subtype": "feature",
         "total": 1
+      },
+      {
+        "type": "template",
+        "subtype": "generated",
+        "total": 3
       },
       {
         "type": "tour",

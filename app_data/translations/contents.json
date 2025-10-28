@@ -7,5 +7,8 @@
   },
   "kw_ar": {
     "filename": "kw_ar/strings.json"
+  },
+  "za_xh": {
+    "filename": "za_xh/strings.json"
   }
 }
