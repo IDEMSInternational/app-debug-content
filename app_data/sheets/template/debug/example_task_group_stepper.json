@@ -106,7 +106,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | active:false",
-              "_cleaned": "click | set_item | active:false",
               "params": {
                 "active": false
               }
@@ -116,7 +115,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | _index: @item._index + 1, active:true",
-              "_cleaned": "click | set_item | _index: @item._index + 1, active:true",
               "params": {
                 "_index": "@item._index + 1",
                 "active": true
@@ -137,14 +135,6 @@
             "action_list": {
               "1": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_item | _index: @item._index + 1, active:true",
-                    "matchedExpression": "@item._index",
-                    "type": "item",
-                    "fieldName": "_index"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_item | _index: @item._index + 1, active:true",
                     "matchedExpression": "@item._index",
@@ -194,7 +184,6 @@
             ],
             "@item._index": [
               "action_list.1._raw",
-              "action_list.1._cleaned",
               "action_list.1.params._index"
             ],
             "@item.active": [
@@ -218,7 +207,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | active:false",
-              "_cleaned": "click | set_item | active:false",
               "params": {
                 "active": false
               }
@@ -228,7 +216,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | _index: @item._index - 1, active:true",
-              "_cleaned": "click | set_item | _index: @item._index - 1, active:true",
               "params": {
                 "_index": "@item._index - 1",
                 "active": true
@@ -249,14 +236,6 @@
             "action_list": {
               "1": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_item | _index: @item._index - 1, active:true",
-                    "matchedExpression": "@item._index",
-                    "type": "item",
-                    "fieldName": "_index"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_item | _index: @item._index - 1, active:true",
                     "matchedExpression": "@item._index",
@@ -306,7 +285,6 @@
             ],
             "@item._index": [
               "action_list.1._raw",
-              "action_list.1._cleaned",
               "action_list.1.params._index"
             ],
             "@item.active": [

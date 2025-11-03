@@ -1,0 +1,307 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_translate_nest",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "foreign_key",
+      "value": "foreign_1",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "foreign_key"
+    },
+    {
+      "type": "data_items",
+      "name": "loop",
+      "value": "@data.debug_translation",
+      "parameter_list": {
+        "filter": "@item.foreign_key == @local.foreign_key"
+      },
+      "rows": [
+        {
+          "type": "display_group",
+          "name": "dg",
+          "parameter_list": {
+            "style": "column"
+          },
+          "rows": [
+            {
+              "name": "text",
+              "value": "@item.text",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "loop.dg.text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.text",
+                    "matchedExpression": "@item.text",
+                    "type": "item",
+                    "fieldName": "text"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.text": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "accordion_title",
+              "value": "@item.accordion_title",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "loop.dg.accordion_title",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.accordion_title",
+                    "matchedExpression": "@item.accordion_title",
+                    "type": "item",
+                    "fieldName": "accordion_title"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.accordion_title": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "name": "accordion_text",
+              "value": "@item.accordion_text",
+              "_translations": {
+                "value": {}
+              },
+              "type": "set_variable",
+              "_nested_name": "loop.dg.accordion_text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.accordion_text",
+                    "matchedExpression": "@item.accordion_text",
+                    "type": "item",
+                    "fieldName": "accordion_text"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.accordion_text": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "print_text",
+              "value": "@local.text",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "loop.dg.print_text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.text",
+                    "matchedExpression": "@local.text",
+                    "type": "local",
+                    "fieldName": "text"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.text": [
+                  "value"
+                ]
+              }
+            },
+            {
+              "type": "accordion",
+              "name": "accordion",
+              "rows": [
+                {
+                  "type": "accordion_section",
+                  "name": "section",
+                  "value": "@local.accordion_title",
+                  "rows": [
+                    {
+                      "type": "text",
+                      "name": "print_accordion_text",
+                      "value": "@local.accordion_text",
+                      "_translations": {
+                        "value": {}
+                      },
+                      "_nested_name": "loop.dg.accordion.section.print_accordion_text",
+                      "_dynamicFields": {
+                        "value": [
+                          {
+                            "fullExpression": "@local.accordion_text",
+                            "matchedExpression": "@local.accordion_text",
+                            "type": "local",
+                            "fieldName": "accordion_text"
+                          }
+                        ]
+                      },
+                      "_dynamicDependencies": {
+                        "@local.accordion_text": [
+                          "value"
+                        ]
+                      }
+                    }
+                  ],
+                  "_nested_name": "loop.dg.accordion.section",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.accordion_title",
+                        "matchedExpression": "@local.accordion_title",
+                        "type": "local",
+                        "fieldName": "accordion_title"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.accordion_title": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "loop.dg.accordion"
+            },
+            {
+              "type": "template",
+              "name": "translated_content",
+              "value": "translated_content",
+              "rows": [
+                {
+                  "name": "text",
+                  "value": "@item.text",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "loop.dg.translated_content.text",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.text",
+                        "matchedExpression": "@item.text",
+                        "type": "item",
+                        "fieldName": "text"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.text": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "accordion_title",
+                  "value": "@item.accordion_title",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "loop.dg.translated_content.accordion_title",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.accordion_title",
+                        "matchedExpression": "@item.accordion_title",
+                        "type": "item",
+                        "fieldName": "accordion_title"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.accordion_title": [
+                      "value"
+                    ]
+                  }
+                },
+                {
+                  "name": "accordion_text",
+                  "value": "@item.accordion_text",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "type": "set_variable",
+                  "_nested_name": "loop.dg.translated_content.accordion_text",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.accordion_text",
+                        "matchedExpression": "@item.accordion_text",
+                        "type": "item",
+                        "fieldName": "accordion_text"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.accordion_text": [
+                      "value"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "loop.dg.translated_content"
+            }
+          ],
+          "_nested_name": "loop.dg"
+        }
+      ],
+      "_nested_name": "loop",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.debug_translation",
+            "matchedExpression": "@data.debug_translation",
+            "type": "data",
+            "fieldName": "debug_translation"
+          }
+        ],
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.foreign_key == @local.foreign_key",
+              "matchedExpression": "@item.foreign_key",
+              "type": "item",
+              "fieldName": "foreign_key"
+            },
+            {
+              "fullExpression": "@item.foreign_key == @local.foreign_key",
+              "matchedExpression": "@local.foreign_key",
+              "type": "local",
+              "fieldName": "foreign_key"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.debug_translation": [
+          "value"
+        ],
+        "@item.foreign_key": [
+          "parameter_list.filter"
+        ],
+        "@local.foreign_key": [
+          "parameter_list.filter"
+        ]
+      }
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_translate.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

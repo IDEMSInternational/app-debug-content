@@ -51,8 +51,7 @@
             "doc_example_field",
             true
           ],
-          "_raw": "click | set_field: doc_example_field: true",
-          "_cleaned": "click | set_field: doc_example_field: true"
+          "_raw": "click | set_field: doc_example_field: true"
         }
       ],
       "_nested_name": "button"
@@ -72,8 +71,7 @@
             "doc_example_field",
             false
           ],
-          "_raw": "click | set_field: doc_example_field: false",
-          "_cleaned": "click | set_field: doc_example_field: false"
+          "_raw": "click | set_field: doc_example_field: false"
         }
       ],
       "_nested_name": "button"

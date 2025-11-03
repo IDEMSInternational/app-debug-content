@@ -109,8 +109,7 @@
               "args": [
                 "@item.completed_field"
               ],
-              "_raw": "changed | toggle_field: @item.completed_field",
-              "_cleaned": "changed | toggle_field: @item.completed_field"
+              "_raw": "changed | toggle_field: @item.completed_field"
             },
             {
               "trigger": "changed",
@@ -118,8 +117,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "changed | emit: force_reload",
-              "_cleaned": "changed | emit: force_reload"
+              "_raw": "changed | emit: force_reload"
             }
           ],
           "parameter_list": {
@@ -163,14 +161,6 @@
                     "type": "item",
                     "fieldName": "completed_field"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | toggle_field: @item.completed_field",
-                    "matchedExpression": "@item.completed_field",
-                    "type": "item",
-                    "fieldName": "completed_field"
-                  }
                 ]
               }
             },
@@ -191,8 +181,7 @@
             "@item.completed_field": [
               "value",
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }

@@ -49,7 +49,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\ncompleted:true",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\ncompleted:true",
           "params": {
             "_list_id": "feat_data_actions_list",
             "completed": true
@@ -71,7 +70,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false",
           "params": {
             "_list_id": "feat_data_actions_list",
             "completed": false
@@ -93,7 +91,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number * 2",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number * 2",
           "params": {
             "_list_id": "feat_data_actions_list",
             "number": "@item.number * 2"
@@ -106,14 +103,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number * 2",
-                "matchedExpression": "@item.number",
-                "type": "item",
-                "fieldName": "number"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number * 2",
                 "matchedExpression": "@item.number",
@@ -137,7 +126,6 @@
       "_dynamicDependencies": {
         "@item.number": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.number"
         ]
       }
@@ -154,7 +142,6 @@
           "action_id": "reset_data",
           "args": [],
           "_raw": "click | reset_data | \n\n_list_id: feat_data_actions_list",
-          "_cleaned": "click | reset_data | \n\n_list_id: feat_data_actions_list",
           "params": {
             "_list_id": "feat_data_actions_list"
           }
@@ -200,7 +187,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\ncompleted:!@item.completed",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\ncompleted:!@item.completed",
           "params": {
             "_list_id": "feat_data_actions_list",
             "_index": 0,
@@ -214,14 +200,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\ncompleted:!@item.completed",
-                "matchedExpression": "!@item.completed",
-                "type": "item",
-                "fieldName": "completed"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\ncompleted:!@item.completed",
                 "matchedExpression": "!@item.completed",
@@ -245,7 +223,6 @@
       "_dynamicDependencies": {
         "!@item.completed": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.completed"
         ]
       }
@@ -271,7 +248,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_id: @local.target_id,\ncompleted:!@item.completed",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_id: @local.target_id,\ncompleted:!@item.completed",
           "params": {
             "_list_id": "feat_data_actions_list",
             "_id": "@local.target_id",
@@ -293,20 +269,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_id: @local.target_id,\ncompleted:!@item.completed",
-                "matchedExpression": "@local.target_id",
-                "type": "local",
-                "fieldName": "target_id"
-              },
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_id: @local.target_id,\ncompleted:!@item.completed",
-                "matchedExpression": "!@item.completed",
-                "type": "item",
-                "fieldName": "completed"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_id: @local.target_id,\ncompleted:!@item.completed",
                 "matchedExpression": "@local.target_id",
@@ -345,12 +307,10 @@
         "@local.target_id": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params._id"
         ],
         "!@item.completed": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.completed"
         ]
       }
@@ -367,8 +327,7 @@
             "target_index",
             "this.value"
           ],
-          "_raw": "changed | set_local : target_index: this.value",
-          "_cleaned": "changed | set_local : target_index: this.value"
+          "_raw": "changed | set_local : target_index: this.value"
         }
       ],
       "parameter_list": {
@@ -389,7 +348,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.target_index,\ncompleted:!@item.completed",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.target_index,\ncompleted:!@item.completed",
           "params": {
             "_list_id": "feat_data_actions_list",
             "_index": "@local.target_index",
@@ -411,20 +369,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.target_index,\ncompleted:!@item.completed",
-                "matchedExpression": "@local.target_index",
-                "type": "local",
-                "fieldName": "target_index"
-              },
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.target_index,\ncompleted:!@item.completed",
-                "matchedExpression": "!@item.completed",
-                "type": "item",
-                "fieldName": "completed"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.target_index,\ncompleted:!@item.completed",
                 "matchedExpression": "@local.target_index",
@@ -463,12 +407,10 @@
         "@local.target_index": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params._index"
         ],
         "!@item.completed": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.completed"
         ]
       }
@@ -502,8 +444,7 @@
           "trigger": "click",
           "action_id": "reset_data",
           "args": [],
-          "_raw": "click | reset_data",
-          "_cleaned": "click | reset_data"
+          "_raw": "click | reset_data"
         }
       ],
       "name": "button_22",
@@ -572,7 +513,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.last_index,\ncompleted:!@item.completed",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.last_index,\ncompleted:!@item.completed",
           "params": {
             "_list_id": "feat_data_actions_list",
             "_index": "@local.last_index",
@@ -586,20 +526,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.last_index,\ncompleted:!@item.completed",
-                "matchedExpression": "@local.last_index",
-                "type": "local",
-                "fieldName": "last_index"
-              },
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.last_index,\ncompleted:!@item.completed",
-                "matchedExpression": "!@item.completed",
-                "type": "item",
-                "fieldName": "completed"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.last_index,\ncompleted:!@item.completed",
                 "matchedExpression": "@local.last_index",
@@ -637,12 +563,10 @@
       "_dynamicDependencies": {
         "@local.last_index": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params._index"
         ],
         "!@item.completed": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.completed"
         ]
       }
@@ -684,7 +608,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: 20",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: 20",
           "params": {
             "_list_id": "feat_data_actions_list",
             "number": 20
@@ -715,7 +638,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
           "params": {
             "_list_id": "feat_data_actions_list",
             "@local.number_field": 20
@@ -734,22 +656,13 @@
                 "type": "local",
                 "fieldName": "number_field"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20",
-                "matchedExpression": "@local.number_field",
-                "type": "local",
-                "fieldName": "number_field"
-              }
             ]
           }
         }
       },
       "_dynamicDependencies": {
         "@local.number_field": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -765,7 +678,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
-          "_cleaned": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
           "params": {
             "_list_id": "feat_data_actions_list",
             "number": "@item.number+1"
@@ -778,14 +690,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
-                "matchedExpression": "@item.number",
-                "type": "item",
-                "fieldName": "number"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
                 "matchedExpression": "@item.number",
@@ -809,7 +713,6 @@
       "_dynamicDependencies": {
         "@item.number": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.number"
         ]
       }
@@ -826,7 +729,6 @@
           "action_id": "reset_data",
           "args": [],
           "_raw": "click | reset_data | \n\n_list_id: feat_data_actions_list",
-          "_cleaned": "click | reset_data | \n\n_list_id: feat_data_actions_list",
           "params": {
             "_list_id": "feat_data_actions_list"
           }

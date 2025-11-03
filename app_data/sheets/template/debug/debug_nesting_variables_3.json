@@ -36,8 +36,7 @@
             "toggle_value",
             "!@local.toggle_value"
           ],
-          "_raw": "click | set_local : toggle_value:!@local.toggle_value",
-          "_cleaned": "click | set_local : toggle_value:!@local.toggle_value"
+          "_raw": "click | set_local : toggle_value:!@local.toggle_value"
         }
       ],
       "exclude_from_translation": true,
@@ -70,14 +69,6 @@
                 "type": "local",
                 "fieldName": "toggle_value"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_local : toggle_value:!@local.toggle_value",
-                "matchedExpression": "!@local.toggle_value",
-                "type": "local",
-                "fieldName": "toggle_value"
-              }
             ]
           }
         }
@@ -88,8 +79,7 @@
         ],
         "!@local.toggle_value": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },

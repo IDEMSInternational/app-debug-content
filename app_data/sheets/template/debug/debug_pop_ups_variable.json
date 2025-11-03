@@ -38,8 +38,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up:example_text",
-          "_cleaned": "click | pop_up:example_text"
+          "_raw": "click | pop_up:example_text"
         }
       ],
       "exclude_from_translation": true,
@@ -69,8 +68,7 @@
           "args": [
             "@local.template_name"
           ],
-          "_raw": "click | pop_up:@local.template_name",
-          "_cleaned": "click | pop_up:@local.template_name"
+          "_raw": "click | pop_up:@local.template_name"
         }
       ],
       "exclude_from_translation": true,
@@ -95,14 +93,6 @@
                 "type": "local",
                 "fieldName": "template_name"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | pop_up:@local.template_name",
-                "matchedExpression": "@local.template_name",
-                "type": "local",
-                "fieldName": "template_name"
-              }
             ]
           }
         }
@@ -110,8 +100,7 @@
       "_dynamicDependencies": {
         "@local.template_name": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

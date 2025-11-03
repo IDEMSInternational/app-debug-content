@@ -6,7 +6,7 @@
   "rows": [
     {
       "type": "title",
-      "value": "PLH Module List Item Example",
+      "value": "PLH Module List Item Rotating Colours Example",
       "_translations": {
         "value": {}
       },
@@ -73,8 +73,7 @@
               "args": [
                 "example_text"
               ],
-              "_raw": "click | pop_up: example_text",
-              "_cleaned": "click | pop_up: example_text"
+              "_raw": "click | pop_up: example_text"
             }
           ],
           "parameter_list": {

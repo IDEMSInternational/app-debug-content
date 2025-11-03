@@ -12,7 +12,6 @@
           "action_id": "auth_success",
           "args": [],
           "_raw": "auth_success | emit: force_reprocess",
-          "_cleaned": "click | auth_success | emit: force_reprocess",
           "params": {
             "emit": "force_reprocess"
           }
@@ -22,7 +21,6 @@
           "action_id": "auth_failure",
           "args": [],
           "_raw": "auth_failure | emit: force_reprocess",
-          "_cleaned": "click | auth_failure | emit: force_reprocess",
           "params": {
             "emit": "force_reprocess"
           }
@@ -90,8 +88,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "!@local.is_user_signed_in",
@@ -128,8 +125,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "!@local.is_user_signed_in && @fields._platform === \"ios\"",
@@ -174,8 +170,7 @@
           "args": [
             "sign_in_google"
           ],
-          "_raw": "click | auth: sign_in_google",
-          "_cleaned": "click | auth: sign_in_google"
+          "_raw": "click | auth: sign_in_google"
         },
         {
           "trigger": "click",
@@ -183,8 +178,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": false,
@@ -205,8 +199,7 @@
           "args": [
             "sign_out"
           ],
-          "_raw": "click | auth: sign_out",
-          "_cleaned": "click | auth: sign_out"
+          "_raw": "click | auth: sign_out"
         },
         {
           "trigger": "click",
@@ -214,8 +207,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "@local.is_user_signed_in",
@@ -485,8 +477,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "name": "button_19",
@@ -721,8 +712,7 @@
                     "import",
                     "@item.id"
                   ],
-                  "_raw": "click | user : import : @item.id",
-                  "_cleaned": "click | user : import : @item.id"
+                  "_raw": "click | user : import : @item.id"
                 },
                 {
                   "trigger": "click",
@@ -730,8 +720,7 @@
                   "args": [
                     "force_restart"
                   ],
-                  "_raw": "click | emit : force_restart",
-                  "_cleaned": "click | emit : force_restart"
+                  "_raw": "click | emit : force_restart"
                 }
               ],
               "name": "button_6",
@@ -756,14 +745,6 @@
                         "type": "item",
                         "fieldName": "id"
                       }
-                    ],
-                    "_cleaned": [
-                      {
-                        "fullExpression": "click | user : import : @item.id",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      }
                     ]
                   }
                 },
@@ -779,8 +760,7 @@
               "_dynamicDependencies": {
                 "@item.id": [
                   "action_list.0.args.1",
-                  "action_list.0._raw",
-                  "action_list.0._cleaned"
+                  "action_list.0._raw"
                 ],
                 "@item.id.button_6": [
                   "_nested_name"
@@ -832,8 +812,7 @@
           "args": [
             "/user"
           ],
-          "_raw": "click | go_to : /user",
-          "_cleaned": "click | go_to : /user"
+          "_raw": "click | go_to : /user"
         }
       ],
       "name": "button_24",
@@ -861,8 +840,7 @@
           "args": [
             "force_restart"
           ],
-          "_raw": "click | emit: force_restart",
-          "_cleaned": "click | emit: force_restart"
+          "_raw": "click | emit: force_restart"
         }
       ],
       "name": "button_26",
@@ -881,8 +859,7 @@
           "args": [
             "example_delete_account"
           ],
-          "_raw": "click | pop_up: example_delete_account",
-          "_cleaned": "click | pop_up: example_delete_account"
+          "_raw": "click | pop_up: example_delete_account"
         }
       ],
       "name": "button_27",

@@ -82,8 +82,7 @@
             "debug_combo_box_1_value",
             "this.value"
           ],
-          "_raw": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1",
-          "_cleaned": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1"
+          "_raw": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1"
         }
       ],
       "_nested_name": "combo_box_1",
@@ -115,14 +114,6 @@
                 "type": "local",
                 "fieldName": "combo_box_1"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1",
-                "matchedExpression": "@local.combo_box_1",
-                "type": "local",
-                "fieldName": "combo_box_1"
-              }
             ]
           }
         }
@@ -135,8 +126,7 @@
           "parameter_list.answer_list"
         ],
         "@local.combo_box_1": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -229,8 +219,7 @@
             "debug_combo_box_2_value",
             "this.value"
           ],
-          "_raw": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2",
-          "_cleaned": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2"
+          "_raw": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2"
         }
       ],
       "_nested_name": "combo_box_2",
@@ -262,14 +251,6 @@
                 "type": "local",
                 "fieldName": "combo_box_2"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2",
-                "matchedExpression": "@local.combo_box_2",
-                "type": "local",
-                "fieldName": "combo_box_2"
-              }
             ]
           }
         }
@@ -282,8 +263,7 @@
           "parameter_list.answer_list"
         ],
         "@local.combo_box_2": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -384,8 +364,7 @@
             "debug_combo_box_3_value",
             "this.value"
           ],
-          "_raw": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3",
-          "_cleaned": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3"
+          "_raw": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3"
         }
       ],
       "_nested_name": "combo_box_3",
@@ -417,14 +396,6 @@
                 "type": "local",
                 "fieldName": "combo_box_3"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3",
-                "matchedExpression": "@local.combo_box_3",
-                "type": "local",
-                "fieldName": "combo_box_3"
-              }
             ]
           }
         }
@@ -437,8 +408,7 @@
           "parameter_list.answer_list"
         ],
         "@local.combo_box_3": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

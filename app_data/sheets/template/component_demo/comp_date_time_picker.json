@@ -29,8 +29,7 @@
             "var_1",
             "this.value"
           ],
-          "_raw": "changed | set_local: var_1: this.value",
-          "_cleaned": "changed | set_local: var_1: this.value"
+          "_raw": "changed | set_local: var_1: this.value"
         }
       ],
       "_nested_name": "date_time_picker_1"
@@ -88,8 +87,7 @@
             "var_2",
             "this.value"
           ],
-          "_raw": "changed | set_local: var_2: this.value",
-          "_cleaned": "changed | set_local: var_2: this.value"
+          "_raw": "changed | set_local: var_2: this.value"
         }
       ],
       "parameter_list": {
@@ -146,8 +144,7 @@
             "var_3",
             "this.value"
           ],
-          "_raw": "changed | set_local: var_3: this.value",
-          "_cleaned": "changed | set_local: var_3: this.value"
+          "_raw": "changed | set_local: var_3: this.value"
         }
       ],
       "parameter_list": {
@@ -204,8 +201,7 @@
             "var_4",
             "this.value"
           ],
-          "_raw": "changed | set_local: var_4: this.value",
-          "_cleaned": "changed | set_local: var_4: this.value"
+          "_raw": "changed | set_local: var_4: this.value"
         }
       ],
       "parameter_list": {
@@ -262,8 +258,7 @@
             "var_5",
             "this.value"
           ],
-          "_raw": "changed | set_local: var_5: this.value",
-          "_cleaned": "changed | set_local: var_5: this.value"
+          "_raw": "changed | set_local: var_5: this.value"
         }
       ],
       "parameter_list": {
@@ -324,8 +319,7 @@
             "var_6",
             "this.value"
           ],
-          "_raw": "changed | set_local: var_6: this.value",
-          "_cleaned": "changed | set_local: var_6: this.value"
+          "_raw": "changed | set_local: var_6: this.value"
         }
       ],
       "parameter_list": {

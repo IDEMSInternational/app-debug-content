@@ -32,8 +32,7 @@
             "text_box_1",
             ""
           ],
-          "_raw": "click | set_local: text_box_1:",
-          "_cleaned": "click | set_local: text_box_1:"
+          "_raw": "click | set_local: text_box_1:"
         }
       ],
       "name": "button_5",

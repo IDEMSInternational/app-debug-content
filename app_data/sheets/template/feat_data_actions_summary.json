@@ -240,8 +240,7 @@
                   "trigger": "click",
                   "action_id": "remove_item",
                   "args": [],
-                  "_raw": "click | remove_item",
-                  "_cleaned": "click | remove_item"
+                  "_raw": "click | remove_item"
                 }
               ],
               "condition": "@local.show_remove && @item._user_created",

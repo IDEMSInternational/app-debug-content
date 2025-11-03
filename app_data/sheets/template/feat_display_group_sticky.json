@@ -192,7 +192,6 @@
             "open"
           ],
           "_raw": "click | nav_stack: open | template: feat_display_group_sticky, header: false",
-          "_cleaned": "click | nav_stack: open | template: feat_display_group_sticky, header: false",
           "params": {
             "template": "feat_display_group_sticky",
             "header": false
@@ -216,7 +215,6 @@
             "feat_display_group_sticky"
           ],
           "_raw": "click | pop_up: feat_display_group_sticky | fullscreen: true",
-          "_cleaned": "click | pop_up: feat_display_group_sticky | fullscreen: true",
           "params": {
             "fullscreen": true
           }
@@ -238,8 +236,7 @@
           "args": [
             "feat_display_group_sticky"
           ],
-          "_raw": "click | pop_up: feat_display_group_sticky",
-          "_cleaned": "click | pop_up: feat_display_group_sticky"
+          "_raw": "click | pop_up: feat_display_group_sticky"
         }
       ],
       "name": "button_14",

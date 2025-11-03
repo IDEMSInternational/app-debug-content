@@ -69,6 +69,15 @@
     },
     {
       "type": "text",
+      "value": "Text with inline **bold** and _italics_ via markdown",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "text",
       "name": "text_formatting_1",
       "value": "Standard text",
       "_translations": {
@@ -157,8 +166,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_15",
-      "_nested_name": "title_15"
+      "name": "title_16",
+      "_nested_name": "title_16"
     },
     {
       "type": "text",
@@ -166,8 +175,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_16",
-      "_nested_name": "text_16"
+      "name": "text_17",
+      "_nested_name": "text_17"
     },
     {
       "type": "text",
@@ -178,8 +187,8 @@
       "style_list": [
         "font-size:14px"
       ],
-      "name": "text_17",
-      "_nested_name": "text_17"
+      "name": "text_18",
+      "_nested_name": "text_18"
     }
   ],
   "_xlsxPath": "component_sheets/component_text.xlsx",

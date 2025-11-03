@@ -28,8 +28,7 @@
             "completed_count",
             "@items.length"
           ],
-          "_raw": "data_changed | set_local : completed_count : @items.length",
-          "_cleaned": "data_changed | set_local : completed_count : @items.length"
+          "_raw": "data_changed | set_local : completed_count : @items.length"
         }
       ],
       "parameter_list": {
@@ -80,8 +79,7 @@
             "current_module_id",
             "@items[0]?.id"
           ],
-          "_raw": "data_changed | set_local : current_module_id : @items[0]?.id",
-          "_cleaned": "data_changed | set_local : current_module_id : @items[0]?.id"
+          "_raw": "data_changed | set_local : current_module_id : @items[0]?.id"
         }
       ],
       "parameter_list": {
@@ -234,7 +232,6 @@
                   "action_id": "set_item",
                   "args": [],
                   "_raw": "changed | set_item | completed: !@item.completed",
-                  "_cleaned": "changed | set_item | completed: !@item.completed",
                   "params": {
                     "completed": "!@item.completed"
                   }
@@ -254,14 +251,6 @@
                 "action_list": {
                   "0": {
                     "_raw": [
-                      {
-                        "fullExpression": "changed | set_item | completed: !@item.completed",
-                        "matchedExpression": "!@item.completed",
-                        "type": "item",
-                        "fieldName": "completed"
-                      }
-                    ],
-                    "_cleaned": [
                       {
                         "fullExpression": "changed | set_item | completed: !@item.completed",
                         "matchedExpression": "!@item.completed",
@@ -296,7 +285,6 @@
                 ],
                 "!@item.completed": [
                   "action_list.0._raw",
-                  "action_list.0._cleaned",
                   "action_list.0.params.completed"
                 ],
                 "@item.id.toggle_bar_2": [

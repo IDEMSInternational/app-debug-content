@@ -68,7 +68,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "changed | set_item | completed: !@item.completed",
-              "_cleaned": "changed | set_item | completed: !@item.completed",
               "params": {
                 "completed": "!@item.completed"
               }
@@ -88,14 +87,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "changed | set_item | completed: !@item.completed",
-                    "matchedExpression": "!@item.completed",
-                    "type": "item",
-                    "fieldName": "completed"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "changed | set_item | completed: !@item.completed",
                     "matchedExpression": "!@item.completed",
@@ -138,7 +129,6 @@
             ],
             "!@item.completed": [
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "action_list.0.params.completed"
             ],
             "@item.id": [

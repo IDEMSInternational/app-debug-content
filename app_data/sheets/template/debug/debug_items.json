@@ -47,8 +47,7 @@
               "args": [
                 "@item.content_template"
               ],
-              "_raw": "click | go_to: @item.content_template",
-              "_cleaned": "click | go_to: @item.content_template"
+              "_raw": "click | go_to: @item.content_template"
             }
           ],
           "_nested_name": "idems_column.button_@item.id",
@@ -88,14 +87,6 @@
                     "type": "item",
                     "fieldName": "content_template"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | go_to: @item.content_template",
-                    "matchedExpression": "@item.content_template",
-                    "type": "item",
-                    "fieldName": "content_template"
-                  }
                 ]
               }
             },
@@ -118,8 +109,7 @@
             ],
             "@item.content_template": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }

@@ -33,8 +33,7 @@
             "set_language",
             "this.value"
           ],
-          "_raw": "changed | emit: set_language: @local.language_select",
-          "_cleaned": "changed | emit: set_language: @local.language_select"
+          "_raw": "changed | emit: set_language: @local.language_select"
         },
         {
           "trigger": "changed",
@@ -42,8 +41,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "changed | emit: force_reload",
-          "_cleaned": "changed | emit: force_reload"
+          "_raw": "changed | emit: force_reload"
         }
       ],
       "parameter_list": {
@@ -62,14 +60,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | emit: set_language: @local.language_select",
-                "matchedExpression": "@local.language_select",
-                "type": "local",
-                "fieldName": "language_select"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | emit: set_language: @local.language_select",
                 "matchedExpression": "@local.language_select",
@@ -95,8 +85,7 @@
           "value"
         ],
         "@local.language_select": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.language_list": [
           "parameter_list.answer_list"

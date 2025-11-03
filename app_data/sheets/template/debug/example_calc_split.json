@@ -734,8 +734,7 @@
             "people",
             "@local.people_string"
           ],
-          "_raw": "click | set_field: people: @local.people_string",
-          "_cleaned": "click | set_field: people: @local.people_string"
+          "_raw": "click | set_field: people: @local.people_string"
         }
       ],
       "_nested_name": "save to field",
@@ -759,14 +758,6 @@
                 "type": "local",
                 "fieldName": "people_string"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_field: people: @local.people_string",
-                "matchedExpression": "@local.people_string",
-                "type": "local",
-                "fieldName": "people_string"
-              }
             ]
           }
         }
@@ -774,8 +765,7 @@
       "_dynamicDependencies": {
         "@local.people_string": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

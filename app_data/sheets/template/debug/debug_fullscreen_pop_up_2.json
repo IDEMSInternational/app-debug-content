@@ -17,8 +17,7 @@
           "args": [
             "debug_fullscreen_pop_up_3"
           ],
-          "_raw": "click | pop_up: debug_fullscreen_pop_up_3",
-          "_cleaned": "click | pop_up: debug_fullscreen_pop_up_3"
+          "_raw": "click | pop_up: debug_fullscreen_pop_up_3"
         }
       ],
       "name": "button_2",

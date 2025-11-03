@@ -14,8 +14,7 @@
             "debug_field",
             "value_set_through_notification_action"
           ],
-          "_raw": "sent | set_field: debug_field : value_set_through_notification_action",
-          "_cleaned": "sent | set_field: debug_field : value_set_through_notification_action"
+          "_raw": "sent | set_field: debug_field : value_set_through_notification_action"
         },
         {
           "trigger": "sent",
@@ -24,8 +23,7 @@
             "debug_actions_1.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_actions_1.sent : true",
-          "_cleaned": "sent | set_field: debug_actions_1.sent : true"
+          "_raw": "sent | set_field: debug_actions_1.sent : true"
         }
       ],
       "priority": 1,
@@ -45,8 +43,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         },
         {
           "trigger": "sent",
@@ -55,8 +52,7 @@
             "debug_actions_2.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_actions_2.sent : true",
-          "_cleaned": "sent | set_field: debug_actions_2.sent : true"
+          "_raw": "sent | set_field: debug_actions_2.sent : true"
         }
       ],
       "priority": 2,
@@ -76,8 +72,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | go_to: example_text",
-          "_cleaned": "click | go_to: example_text"
+          "_raw": "click | go_to: example_text"
         },
         {
           "trigger": "sent",
@@ -86,8 +81,7 @@
             "debug_actions_1.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_actions_1.sent: FALSE",
-          "_cleaned": "sent | set_field: debug_actions_1.sent: FALSE"
+          "_raw": "sent | set_field: debug_actions_1.sent: FALSE"
         },
         {
           "trigger": "sent",
@@ -96,8 +90,7 @@
             "debug_actions_2.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_actions_2.sent: FALSE",
-          "_cleaned": "sent | set_field: debug_actions_2.sent: FALSE"
+          "_raw": "sent | set_field: debug_actions_2.sent: FALSE"
         }
       ],
       "priority": 3,

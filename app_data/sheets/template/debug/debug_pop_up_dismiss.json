@@ -27,8 +27,7 @@
           "args": [
             "example_emit"
           ],
-          "_raw": "click | pop_up: example_emit",
-          "_cleaned": "click | pop_up: example_emit"
+          "_raw": "click | pop_up: example_emit"
         }
       ],
       "_nested_name": "button_pop_up_1"
@@ -56,8 +55,7 @@
           "args": [
             "debug_pop_up_return"
           ],
-          "_raw": "click | pop_up: debug_pop_up_return",
-          "_cleaned": "click | pop_up: debug_pop_up_return"
+          "_raw": "click | pop_up: debug_pop_up_return"
         }
       ],
       "_nested_name": "button_pop_up_2"

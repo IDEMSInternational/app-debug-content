@@ -43,8 +43,7 @@
           "args": [
             "comp_data_items"
           ],
-          "_raw": "click | go_to : comp_data_items",
-          "_cleaned": "click | go_to : comp_data_items"
+          "_raw": "click | go_to : comp_data_items"
         }
       ],
       "name": "button_5",

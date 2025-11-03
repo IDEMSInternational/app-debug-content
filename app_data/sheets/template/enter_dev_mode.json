@@ -102,8 +102,7 @@
             "reply_entered",
             true
           ],
-          "_raw": "click | set_local:reply_entered:true",
-          "_cleaned": "click | set_local:reply_entered:true"
+          "_raw": "click | set_local:reply_entered:true"
         }
       ],
       "hidden": "@local.text_box == @global.dev_mode_code || @local.text_box == @global.test_mode_code",
@@ -176,8 +175,7 @@
             "reply_entered",
             true
           ],
-          "_raw": "click | set_local:reply_entered:true",
-          "_cleaned": "click | set_local:reply_entered:true"
+          "_raw": "click | set_local:reply_entered:true"
         },
         {
           "trigger": "click",
@@ -186,8 +184,7 @@
             "user_mode",
             false
           ],
-          "_raw": "click | set_field:user_mode:false",
-          "_cleaned": "click | set_field:user_mode:false"
+          "_raw": "click | set_field:user_mode:false"
         },
         {
           "trigger": "click",
@@ -195,8 +192,7 @@
           "args": [
             "force_restart"
           ],
-          "_raw": "click | emit:force_restart",
-          "_cleaned": "click | emit:force_restart"
+          "_raw": "click | emit:force_restart"
         }
       ],
       "hidden": "!(@local.text_box == @global.dev_mode_code || @local.text_box == @global.test_mode_code)",

@@ -7,11 +7,9 @@
     {
       "type": "declare_global_constant",
       "name": "app_name",
-      "value": "My App",
+      "value": "Debug App",
       "_translations": {
-        "value": {
-          "kw_ar": true
-        }
+        "value": {}
       }
     },
     {

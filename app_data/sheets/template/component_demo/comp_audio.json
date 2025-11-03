@@ -110,8 +110,7 @@
           "args": [
             "example_transcript"
           ],
-          "_raw": "info_click | pop_up: example_transcript",
-          "_cleaned": "info_click | pop_up: example_transcript"
+          "_raw": "info_click | pop_up: example_transcript"
         }
       ],
       "exclude_from_translation": true,
@@ -185,8 +184,7 @@
           "args": [
             "idems.international"
           ],
-          "_raw": "info_click | go_to_url: idems.international",
-          "_cleaned": "info_click | go_to_url: idems.international"
+          "_raw": "info_click | go_to_url: idems.international"
         }
       ],
       "exclude_from_translation": true,

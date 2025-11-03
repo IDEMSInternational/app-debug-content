@@ -13,7 +13,7 @@
     },
     {
       "id": "id_2",
-      "name": "Module 2 with a long name over mulitple lines",
+      "name": "Module 2 with a long name over multiple lines",
       "completed": true,
       "highlighted": false,
       "locked": false

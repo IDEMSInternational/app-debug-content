@@ -25,8 +25,7 @@
           "args": [
             "portrait"
           ],
-          "_raw": "click | screen_orientation: portrait",
-          "_cleaned": "click | screen_orientation: portrait"
+          "_raw": "click | screen_orientation: portrait"
         }
       ],
       "name": "button_3",
@@ -45,8 +44,7 @@
           "args": [
             "landscape"
           ],
-          "_raw": "click | screen_orientation: landscape",
-          "_cleaned": "click | screen_orientation: landscape"
+          "_raw": "click | screen_orientation: landscape"
         }
       ],
       "name": "button_4",
@@ -65,8 +63,7 @@
           "args": [
             "unlock"
           ],
-          "_raw": "click | screen_orientation: unlock",
-          "_cleaned": "click | screen_orientation: unlock"
+          "_raw": "click | screen_orientation: unlock"
         }
       ],
       "name": "button_5",
@@ -94,8 +91,7 @@
           "args": [
             "template_orientation_landscape"
           ],
-          "_raw": "click | go_to: template_orientation_landscape",
-          "_cleaned": "click | go_to: template_orientation_landscape"
+          "_raw": "click | go_to: template_orientation_landscape"
         }
       ],
       "name": "button_7",
@@ -124,7 +120,6 @@
             "template_orientation_landscape"
           ],
           "_raw": "click | pop_up: template_orientation_landscape | fullscreen: true",
-          "_cleaned": "click | pop_up: template_orientation_landscape | fullscreen: true",
           "params": {
             "fullscreen": true
           }

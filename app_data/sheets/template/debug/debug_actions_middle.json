@@ -46,8 +46,7 @@
             "@local.field_1",
             "@local.value_1"
           ],
-          "_raw": "completed | set_field: @local.field_1 : @local.value_1",
-          "_cleaned": "completed | set_field: @local.field_1 : @local.value_1"
+          "_raw": "completed | set_field: @local.field_1 : @local.value_1"
         },
         {
           "trigger": "completed",
@@ -55,8 +54,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit: completed",
-          "_cleaned": "completed | emit: completed"
+          "_raw": "completed | emit: completed"
         }
       ],
       "exclude_from_translation": true,
@@ -96,20 +94,6 @@
                 "type": "local",
                 "fieldName": "value_1"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "completed | set_field: @local.field_1 : @local.value_1",
-                "matchedExpression": "@local.field_1",
-                "type": "local",
-                "fieldName": "field_1"
-              },
-              {
-                "fullExpression": "completed | set_field: @local.field_1 : @local.value_1",
-                "matchedExpression": "@local.value_1",
-                "type": "local",
-                "fieldName": "value_1"
-              }
             ]
           }
         }
@@ -117,13 +101,11 @@
       "_dynamicDependencies": {
         "@local.field_1": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.value_1": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -149,8 +131,7 @@
             "debug_actions_middle_2",
             "Value 2"
           ],
-          "_raw": "completed | set_field: debug_actions_middle_2 : Value 2",
-          "_cleaned": "completed | set_field: debug_actions_middle_2 : Value 2"
+          "_raw": "completed | set_field: debug_actions_middle_2 : Value 2"
         },
         {
           "trigger": "completed",
@@ -158,8 +139,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit: completed",
-          "_cleaned": "completed | emit: completed"
+          "_raw": "completed | emit: completed"
         }
       ],
       "exclude_from_translation": true,

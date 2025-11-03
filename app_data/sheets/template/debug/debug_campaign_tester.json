@@ -105,8 +105,7 @@
             "active",
             "this.value"
           ],
-          "_raw": "changed | set_local: active: @local.radio_group",
-          "_cleaned": "changed | set_local: active: @local.radio_group"
+          "_raw": "changed | set_local: active: @local.radio_group"
         },
         {
           "trigger": "changed",
@@ -114,8 +113,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "changed | emit: force_reprocess",
-          "_cleaned": "changed | emit: force_reprocess"
+          "_raw": "changed | emit: force_reprocess"
         }
       ],
       "parameter_list": {
@@ -126,14 +124,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | set_local: active: @local.radio_group",
-                "matchedExpression": "@local.radio_group",
-                "type": "local",
-                "fieldName": "radio_group"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_local: active: @local.radio_group",
                 "matchedExpression": "@local.radio_group",
@@ -156,8 +146,7 @@
       },
       "_dynamicDependencies": {
         "@local.radio_group": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list": [
           "parameter_list.answer_list"
@@ -207,8 +196,7 @@
               "args": [
                 "@local.active_campaign.action_list"
               ],
-              "_raw": "click | trigger_actions: @local.active_campaign.action_list",
-              "_cleaned": "click | trigger_actions: @local.active_campaign.action_list"
+              "_raw": "click | trigger_actions: @local.active_campaign.action_list"
             }
           ],
           "exclude_from_translation": true,
@@ -241,14 +229,6 @@
                     "type": "local",
                     "fieldName": "active_campaign"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | trigger_actions: @local.active_campaign.action_list",
-                    "matchedExpression": "@local.active_campaign.action_list",
-                    "type": "local",
-                    "fieldName": "active_campaign"
-                  }
                 ]
               }
             },
@@ -274,8 +254,7 @@
           "_dynamicDependencies": {
             "@local.active_campaign.action_list": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.active_campaign.icon": [
               "parameter_list.icon_src"

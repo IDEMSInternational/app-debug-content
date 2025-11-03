@@ -21,8 +21,7 @@
           "args": [
             "open"
           ],
-          "_raw": "click | feedback:open",
-          "_cleaned": "click | feedback:open"
+          "_raw": "click | feedback:open"
         },
         {
           "trigger": "click",
@@ -30,8 +29,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "!@fields._feedback_sidebar_open",
@@ -66,8 +64,7 @@
           "args": [
             "close"
           ],
-          "_raw": "click | feedback:close",
-          "_cleaned": "click | feedback:close"
+          "_raw": "click | feedback:close"
         },
         {
           "trigger": "click",
@@ -75,8 +72,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "@fields._feedback_sidebar_open",
@@ -111,8 +107,7 @@
           "args": [
             "/template"
           ],
-          "_raw": "click | go_to:/template",
-          "_cleaned": "click | go_to:/template"
+          "_raw": "click | go_to:/template"
         }
       ],
       "name": "button_5",
@@ -131,8 +126,7 @@
           "args": [
             "/user"
           ],
-          "_raw": "click | go_to:/user",
-          "_cleaned": "click | go_to:/user"
+          "_raw": "click | go_to:/user"
         }
       ],
       "name": "button_6",
@@ -151,8 +145,7 @@
           "args": [
             "/shared-data"
           ],
-          "_raw": "click | go_to:/shared-data",
-          "_cleaned": "click | go_to:/shared-data"
+          "_raw": "click | go_to:/shared-data"
         }
       ],
       "name": "button_7",
@@ -171,8 +164,7 @@
           "args": [
             "/notifications"
           ],
-          "_raw": "click | go_to:/notifications",
-          "_cleaned": "click | go_to:/notifications"
+          "_raw": "click | go_to:/notifications"
         }
       ],
       "name": "button_8",
@@ -191,8 +183,7 @@
           "args": [
             "/component"
           ],
-          "_raw": "click | go_to:/component",
-          "_cleaned": "click | go_to:/component"
+          "_raw": "click | go_to:/component"
         }
       ],
       "name": "button_9",
@@ -211,8 +202,7 @@
           "args": [
             "/campaigns"
           ],
-          "_raw": "click | go_to:/campaigns",
-          "_cleaned": "click | go_to:/campaigns"
+          "_raw": "click | go_to:/campaigns"
         }
       ],
       "name": "button_10",
@@ -231,8 +221,7 @@
           "args": [
             "/theme"
           ],
-          "_raw": "click | go_to:/theme",
-          "_cleaned": "click | go_to:/theme"
+          "_raw": "click | go_to:/theme"
         }
       ],
       "name": "button_11",
@@ -249,8 +238,7 @@
           "trigger": "click",
           "action_id": "reset_app",
           "args": [],
-          "_raw": "click | reset_app",
-          "_cleaned": "click | reset_app"
+          "_raw": "click | reset_app"
         }
       ],
       "name": "button_12",

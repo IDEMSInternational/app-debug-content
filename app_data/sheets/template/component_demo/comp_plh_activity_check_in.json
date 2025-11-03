@@ -111,8 +111,7 @@
                 "countdown_start_date",
                 "@local.now"
               ],
-              "_raw": "click | set_local: countdown_start_date: @local.now",
-              "_cleaned": "click | set_local: countdown_start_date: @local.now"
+              "_raw": "click | set_local: countdown_start_date: @local.now"
             }
           ],
           "name": "button_1",
@@ -137,14 +136,6 @@
                     "type": "local",
                     "fieldName": "now"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_local: countdown_start_date: @local.now",
-                    "matchedExpression": "@local.now",
-                    "type": "local",
-                    "fieldName": "now"
-                  }
                 ]
               }
             }
@@ -152,8 +143,7 @@
           "_dynamicDependencies": {
             "@local.now": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         },
@@ -171,8 +161,7 @@
                 "countdown_start_date",
                 "@local.yesterday"
               ],
-              "_raw": "click | set_local: countdown_start_date: @local.yesterday",
-              "_cleaned": "click | set_local: countdown_start_date: @local.yesterday"
+              "_raw": "click | set_local: countdown_start_date: @local.yesterday"
             }
           ],
           "name": "button_2",
@@ -197,14 +186,6 @@
                     "type": "local",
                     "fieldName": "yesterday"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_local: countdown_start_date: @local.yesterday",
-                    "matchedExpression": "@local.yesterday",
-                    "type": "local",
-                    "fieldName": "yesterday"
-                  }
                 ]
               }
             }
@@ -212,8 +193,7 @@
           "_dynamicDependencies": {
             "@local.yesterday": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }
@@ -235,8 +215,7 @@
             "countdown_start_date",
             "undefined"
           ],
-          "_raw": "click | set_local: countdown_start_date: undefined",
-          "_cleaned": "click | set_local: countdown_start_date: undefined"
+          "_raw": "click | set_local: countdown_start_date: undefined"
         }
       ],
       "name": "button_11",
@@ -347,7 +326,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | _list_id: comp_plh_activity_check_in_data, _id: id_1, countdown_days: @local.countdown_days, countdown_start_date: @local.countdown_start_date",
-          "_cleaned": "click | set_data | _list_id: comp_plh_activity_check_in_data, _id: id_1, countdown_days: @local.countdown_days, countdown_start_date: @local.countdown_start_date",
           "params": {
             "_list_id": "comp_plh_activity_check_in_data",
             "_id": "id_1",
@@ -362,20 +340,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | set_data | _list_id: comp_plh_activity_check_in_data, _id: id_1, countdown_days: @local.countdown_days, countdown_start_date: @local.countdown_start_date",
-                "matchedExpression": "@local.countdown_days",
-                "type": "local",
-                "fieldName": "countdown_days"
-              },
-              {
-                "fullExpression": "click | set_data | _list_id: comp_plh_activity_check_in_data, _id: id_1, countdown_days: @local.countdown_days, countdown_start_date: @local.countdown_start_date",
-                "matchedExpression": "@local.countdown_start_date",
-                "type": "local",
-                "fieldName": "countdown_start_date"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_data | _list_id: comp_plh_activity_check_in_data, _id: id_1, countdown_days: @local.countdown_days, countdown_start_date: @local.countdown_start_date",
                 "matchedExpression": "@local.countdown_days",
@@ -413,12 +377,10 @@
       "_dynamicDependencies": {
         "@local.countdown_days": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.countdown_days"
         ],
         "@local.countdown_start_date": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.countdown_start_date"
         ]
       }
@@ -436,8 +398,7 @@
               "args": [
                 "home_screen"
               ],
-              "_raw": "click | go_to: home_screen",
-              "_cleaned": "click | go_to: home_screen"
+              "_raw": "click | go_to: home_screen"
             }
           ],
           "parameter_list": {

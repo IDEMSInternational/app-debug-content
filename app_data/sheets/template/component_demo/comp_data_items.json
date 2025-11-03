@@ -164,7 +164,6 @@
                   "action_id": "set_item",
                   "args": [],
                   "_raw": "changed | set_item | completed: !@item.completed",
-                  "_cleaned": "changed | set_item | completed: !@item.completed",
                   "params": {
                     "completed": "!@item.completed"
                   }
@@ -184,14 +183,6 @@
                 "action_list": {
                   "0": {
                     "_raw": [
-                      {
-                        "fullExpression": "changed | set_item | completed: !@item.completed",
-                        "matchedExpression": "!@item.completed",
-                        "type": "item",
-                        "fieldName": "completed"
-                      }
-                    ],
-                    "_cleaned": [
                       {
                         "fullExpression": "changed | set_item | completed: !@item.completed",
                         "matchedExpression": "!@item.completed",
@@ -226,7 +217,6 @@
                 ],
                 "!@item.completed": [
                   "action_list.0._raw",
-                  "action_list.0._cleaned",
                   "action_list.0.params.completed"
                 ],
                 "@item.id.toggle_bar_4": [
@@ -385,8 +375,7 @@
             "completed_counter",
             "@items.length"
           ],
-          "_raw": "data_changed | set_local : completed_counter : @items.length",
-          "_cleaned": "data_changed | set_local : completed_counter : @items.length"
+          "_raw": "data_changed | set_local : completed_counter : @items.length"
         }
       ],
       "parameter_list": {
@@ -451,8 +440,7 @@
             "comp_data_items_all_complete",
             "@items.length === 0"
           ],
-          "_raw": "data_changed | set_field : comp_data_items_all_complete : @items.length === 0",
-          "_cleaned": "data_changed | set_field : comp_data_items_all_complete : @items.length === 0"
+          "_raw": "data_changed | set_field : comp_data_items_all_complete : @items.length === 0"
         }
       ],
       "parameter_list": {
@@ -524,8 +512,7 @@
           "args": [
             "feat_data_actions"
           ],
-          "_raw": "click | go_to : feat_data_actions",
-          "_cleaned": "click | go_to : feat_data_actions"
+          "_raw": "click | go_to : feat_data_actions"
         }
       ],
       "name": "button_18",
@@ -762,7 +749,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | completed: !@item.completed",
-              "_cleaned": "click | set_item | completed: !@item.completed",
               "params": {
                 "completed": "!@item.completed"
               }
@@ -781,14 +767,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_item | completed: !@item.completed",
-                    "matchedExpression": "!@item.completed",
-                    "type": "item",
-                    "fieldName": "completed"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_item | completed: !@item.completed",
                     "matchedExpression": "!@item.completed",
@@ -824,7 +802,6 @@
             ],
             "!@item.completed": [
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "action_list.0.params.completed"
             ]
           }
@@ -842,7 +819,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | _index: 0, completed:true",
-              "_cleaned": "click | set_item | _index: 0, completed:true",
               "params": {
                 "_index": 0,
                 "completed": true
@@ -888,7 +864,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | _id: id_1, completed:true",
-              "_cleaned": "click | set_item | _id: id_1, completed:true",
               "params": {
                 "_id": "id_1",
                 "completed": true
@@ -934,7 +909,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | _index: @item._index + 1, completed:false",
-              "_cleaned": "click | set_item | _index: @item._index + 1, completed:false",
               "params": {
                 "_index": "@item._index + 1",
                 "completed": false
@@ -954,14 +928,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_item | _index: @item._index + 1, completed:false",
-                    "matchedExpression": "@item._index",
-                    "type": "item",
-                    "fieldName": "_index"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_item | _index: @item._index + 1, completed:false",
                     "matchedExpression": "@item._index",
@@ -997,7 +963,6 @@
             ],
             "@item._index": [
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "action_list.0.params._index"
             ]
           }
@@ -1046,7 +1011,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "changed | set_item | label: this.value",
-              "_cleaned": "changed | set_item | label: this.value",
               "params": {
                 "label": "this.value"
               }
@@ -1185,8 +1149,7 @@
                     "edit_id",
                     "@item.id"
                   ],
-                  "_raw": "click | set_local : edit_id : @item.id",
-                  "_cleaned": "click | set_local : edit_id : @item.id"
+                  "_raw": "click | set_local : edit_id : @item.id"
                 },
                 {
                   "trigger": "click",
@@ -1195,8 +1158,7 @@
                     "edit_text",
                     "@item.label"
                   ],
-                  "_raw": "click | set_local: edit_text: @item.label",
-                  "_cleaned": "click | set_local: edit_text: @item.label"
+                  "_raw": "click | set_local: edit_text: @item.label"
                 }
               ],
               "name": "button_2",
@@ -1215,14 +1177,6 @@
                       ]
                     },
                     "_raw": [
-                      {
-                        "fullExpression": "click | set_local : edit_id : @item.id",
-                        "matchedExpression": "@item.id",
-                        "type": "item",
-                        "fieldName": "id"
-                      }
-                    ],
-                    "_cleaned": [
                       {
                         "fullExpression": "click | set_local : edit_id : @item.id",
                         "matchedExpression": "@item.id",
@@ -1249,14 +1203,6 @@
                         "type": "item",
                         "fieldName": "label"
                       }
-                    ],
-                    "_cleaned": [
-                      {
-                        "fullExpression": "click | set_local: edit_text: @item.label",
-                        "matchedExpression": "@item.label",
-                        "type": "item",
-                        "fieldName": "label"
-                      }
                     ]
                   }
                 },
@@ -1272,13 +1218,11 @@
               "_dynamicDependencies": {
                 "@item.id": [
                   "action_list.0.args.1",
-                  "action_list.0._raw",
-                  "action_list.0._cleaned"
+                  "action_list.0._raw"
                 ],
                 "@item.label": [
                   "action_list.1.args.1",
-                  "action_list.1._raw",
-                  "action_list.1._cleaned"
+                  "action_list.1._raw"
                 ],
                 "@item.id.button_2": [
                   "_nested_name"
@@ -1349,8 +1293,7 @@
                     "edit_text",
                     "this.value"
                   ],
-                  "_raw": "changed | set_local : edit_text: this.value",
-                  "_cleaned": "changed | set_local : edit_text: this.value"
+                  "_raw": "changed | set_local : edit_text: this.value"
                 }
               ],
               "name": "text_box_1",
@@ -1394,7 +1337,6 @@
                   "action_id": "set_item",
                   "args": [],
                   "_raw": "click | set_item | label: @local.edit_text",
-                  "_cleaned": "click | set_item | label: @local.edit_text",
                   "params": {
                     "label": "@local.edit_text"
                   }
@@ -1406,8 +1348,7 @@
                     "edit_id",
                     "undefined"
                   ],
-                  "_raw": "click | set_local : edit_id : undefined",
-                  "_cleaned": "click | set_local : edit_id : undefined"
+                  "_raw": "click | set_local : edit_id : undefined"
                 }
               ],
               "parameter_list": {
@@ -1419,14 +1360,6 @@
                 "action_list": {
                   "0": {
                     "_raw": [
-                      {
-                        "fullExpression": "click | set_item | label: @local.edit_text",
-                        "matchedExpression": "@local.edit_text",
-                        "type": "local",
-                        "fieldName": "edit_text"
-                      }
-                    ],
-                    "_cleaned": [
                       {
                         "fullExpression": "click | set_item | label: @local.edit_text",
                         "matchedExpression": "@local.edit_text",
@@ -1458,7 +1391,6 @@
               "_dynamicDependencies": {
                 "@local.edit_text": [
                   "action_list.0._raw",
-                  "action_list.0._cleaned",
                   "action_list.0.params.label"
                 ],
                 "@item.id.button_2": [
@@ -1774,7 +1706,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | completed: !@item.completed",
-              "_cleaned": "click | set_item | completed: !@item.completed",
               "params": {
                 "completed": "!@item.completed"
               }
@@ -1786,14 +1717,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_item | completed: !@item.completed",
-                    "matchedExpression": "!@item.completed",
-                    "type": "item",
-                    "fieldName": "completed"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_item | completed: !@item.completed",
                     "matchedExpression": "!@item.completed",
@@ -1833,7 +1756,6 @@
           "_dynamicDependencies": {
             "!@item.completed": [
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "action_list.0.params.completed"
             ],
             "@item.id": [
@@ -2108,7 +2030,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | completed: !@item.completed",
-              "_cleaned": "click | set_item | completed: !@item.completed",
               "params": {
                 "completed": "!@item.completed"
               }
@@ -2120,14 +2041,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | set_item | completed: !@item.completed",
-                    "matchedExpression": "!@item.completed",
-                    "type": "item",
-                    "fieldName": "completed"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | set_item | completed: !@item.completed",
                     "matchedExpression": "!@item.completed",
@@ -2167,7 +2080,6 @@
           "_dynamicDependencies": {
             "!@item.completed": [
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "action_list.0.params.completed"
             ],
             "@item.id": [
@@ -2237,8 +2149,7 @@
             "data_list_name",
             "comp_data_items_list"
           ],
-          "_raw": "click | set_local : data_list_name : comp_data_items_list",
-          "_cleaned": "click | set_local : data_list_name : comp_data_items_list"
+          "_raw": "click | set_local : data_list_name : comp_data_items_list"
         }
       ],
       "condition": "!@local.data_list_name",
@@ -2274,8 +2185,7 @@
             "data_list_name",
             ""
           ],
-          "_raw": "click | set_local : data_list_name :",
-          "_cleaned": "click | set_local : data_list_name :"
+          "_raw": "click | set_local : data_list_name :"
         }
       ],
       "condition": "@local.data_list_name",
@@ -2394,7 +2304,6 @@
                   "action_id": "set_items",
                   "args": [],
                   "_raw": "click | set_items |\n completed:false",
-                  "_cleaned": "click | set_items |\n completed:false",
                   "params": {
                     "completed": false
                   }
@@ -2415,7 +2324,6 @@
                   "action_id": "set_items",
                   "args": [],
                   "_raw": "click | set_items |\n completed:!@item.completed",
-                  "_cleaned": "click | set_items |\n completed:!@item.completed",
                   "params": {
                     "completed": "!@item.completed"
                   }
@@ -2426,14 +2334,6 @@
                 "action_list": {
                   "0": {
                     "_raw": [
-                      {
-                        "fullExpression": "click | set_items |\n completed:!@item.completed",
-                        "matchedExpression": "!@item.completed",
-                        "type": "item",
-                        "fieldName": "completed"
-                      }
-                    ],
-                    "_cleaned": [
                       {
                         "fullExpression": "click | set_items |\n completed:!@item.completed",
                         "matchedExpression": "!@item.completed",
@@ -2457,7 +2357,6 @@
               "_dynamicDependencies": {
                 "!@item.completed": [
                   "action_list.0._raw",
-                  "action_list.0._cleaned",
                   "action_list.0.params.completed"
                 ]
               }

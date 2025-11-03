@@ -132,8 +132,7 @@
                 "listing_style",
                 "this.value"
               ],
-              "_raw": "changed | set_local: listing_style: @local.radio_group",
-              "_cleaned": "changed | set_local: listing_style: @local.radio_group"
+              "_raw": "changed | set_local: listing_style: @local.radio_group"
             }
           ],
           "parameter_list": {
@@ -159,14 +158,6 @@
                     "type": "local",
                     "fieldName": "radio_group"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_local: listing_style: @local.radio_group",
-                    "matchedExpression": "@local.radio_group",
-                    "type": "local",
-                    "fieldName": "radio_group"
-                  }
                 ]
               }
             },
@@ -186,8 +177,7 @@
               "value"
             ],
             "@local.radio_group": [
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.answer_list": [
               "parameter_list.answer_list"

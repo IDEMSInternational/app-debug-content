@@ -112,8 +112,7 @@
             "@local.radio_group_final",
             "@local.radio_group"
           ],
-          "_raw": "click | set_field:@local.radio_group_final:@local.radio_group",
-          "_cleaned": "click | set_field:@local.radio_group_final:@local.radio_group"
+          "_raw": "click | set_field:@local.radio_group_final:@local.radio_group"
         }
       ],
       "exclude_from_translation": true,
@@ -152,20 +151,6 @@
                 "type": "local",
                 "fieldName": "radio_group"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_field:@local.radio_group_final:@local.radio_group",
-                "matchedExpression": "@local.radio_group_final",
-                "type": "local",
-                "fieldName": "radio_group_final"
-              },
-              {
-                "fullExpression": "click | set_field:@local.radio_group_final:@local.radio_group",
-                "matchedExpression": "@local.radio_group",
-                "type": "local",
-                "fieldName": "radio_group"
-              }
             ]
           }
         }
@@ -173,13 +158,11 @@
       "_dynamicDependencies": {
         "@local.radio_group_final": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.radio_group": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -222,8 +205,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "click | emit:completed",
-          "_cleaned": "click | emit:completed"
+          "_raw": "click | emit:completed"
         }
       ],
       "exclude_from_translation": true,

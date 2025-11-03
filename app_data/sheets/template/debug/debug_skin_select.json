@@ -45,8 +45,7 @@
             "set_skin",
             "this.value"
           ],
-          "_raw": "changed | emit: set_skin:@local.skin_select",
-          "_cleaned": "changed | emit: set_skin:@local.skin_select"
+          "_raw": "changed | emit: set_skin:@local.skin_select"
         },
         {
           "trigger": "changed",
@@ -54,8 +53,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "changed | emit: force_reload",
-          "_cleaned": "changed | emit: force_reload"
+          "_raw": "changed | emit: force_reload"
         }
       ],
       "exclude_from_translation": true,
@@ -81,14 +79,6 @@
                 "type": "local",
                 "fieldName": "skin_select"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | emit: set_skin:@local.skin_select",
-                "matchedExpression": "@local.skin_select",
-                "type": "local",
-                "fieldName": "skin_select"
-              }
             ]
           }
         },
@@ -108,8 +98,7 @@
           "value"
         ],
         "@local.skin_select": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.skins_list": [
           "parameter_list.answer_list"

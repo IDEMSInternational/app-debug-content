@@ -13,8 +13,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         },
         {
           "trigger": "click",
@@ -23,8 +22,7 @@
             "debug_boolean",
             true
           ],
-          "_raw": "click | set_field : debug_boolean : true",
-          "_cleaned": "click | set_field : debug_boolean : true"
+          "_raw": "click | set_field : debug_boolean : true"
         }
       ],
       "priority": 4,
@@ -50,8 +48,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         },
         {
           "trigger": "click",
@@ -60,8 +57,7 @@
             "debug_number",
             "100"
           ],
-          "_raw": "click | set_field : debug_number : 100",
-          "_cleaned": "click | set_field : debug_number : 100"
+          "_raw": "click | set_field : debug_number : 100"
         }
       ],
       "priority": 3,
@@ -87,8 +83,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         },
         {
           "trigger": "sent",
@@ -97,8 +92,7 @@
             "debug_cond_row_bool.sent",
             true
           ],
-          "_raw": "sent | set_field : debug_cond_row_bool.sent : true",
-          "_cleaned": "sent | set_field : debug_cond_row_bool.sent : true"
+          "_raw": "sent | set_field : debug_cond_row_bool.sent : true"
         }
       ],
       "priority": 2,
@@ -127,8 +121,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         },
         {
           "trigger": "click",
@@ -137,8 +130,7 @@
             "debug_string",
             "my_phrase"
           ],
-          "_raw": "click | set_field : debug_string : my_phrase",
-          "_cleaned": "click | set_field : debug_string : my_phrase"
+          "_raw": "click | set_field : debug_string : my_phrase"
         }
       ],
       "priority": 1,

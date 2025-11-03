@@ -1,0 +1,27 @@
+{
+  "flow_type": "data_pipe",
+  "flow_name": "comp_combo_box_pipe",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "operation": "map",
+      "args_list": [
+        "id: @row.id",
+        "text: @row.text_new",
+        "name: {@row.id}_new"
+      ],
+      "input_source": "comp_combo_box_items",
+      "output_target": "new_comp_combo_box_items"
+    }
+  ],
+  "_xlsxPath": "component_sheets/component_combo_box.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_output_flows": [
+    {
+      "flow_name": "new_comp_combo_box_items",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    }
+  ]
+}

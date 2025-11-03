@@ -141,8 +141,7 @@
             "debug_nav_field_2",
             "1"
           ],
-          "_raw": "click | set_field: debug_nav_field_2: 1",
-          "_cleaned": "click | set_field: debug_nav_field_2: 1"
+          "_raw": "click | set_field: debug_nav_field_2: 1"
         },
         {
           "trigger": "click",
@@ -150,8 +149,7 @@
           "args": [
             "debug_nav_2"
           ],
-          "_raw": "click | go_to: debug_nav_2",
-          "_cleaned": "click | go_to: debug_nav_2"
+          "_raw": "click | go_to: debug_nav_2"
         }
       ],
       "name": "button_8",
@@ -171,8 +169,7 @@
             "debug_nav_field",
             "2"
           ],
-          "_raw": "click | set_field: debug_nav_field: 2",
-          "_cleaned": "click | set_field: debug_nav_field: 2"
+          "_raw": "click | set_field: debug_nav_field: 2"
         }
       ],
       "name": "button_9",

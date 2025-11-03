@@ -18,8 +18,7 @@
           "args": [
             "example_emit"
           ],
-          "_raw": "click | go_to: example_emit",
-          "_cleaned": "click | go_to: example_emit"
+          "_raw": "click | go_to: example_emit"
         }
       ],
       "_nested_name": "button_go_to_1"
@@ -38,8 +37,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "click | emit:completed",
-          "_cleaned": "click | emit:completed"
+          "_raw": "click | emit:completed"
         },
         {
           "trigger": "click",
@@ -47,8 +45,7 @@
           "args": [
             "example_emit"
           ],
-          "_raw": "click | go_to: example_emit",
-          "_cleaned": "click | go_to: example_emit"
+          "_raw": "click | go_to: example_emit"
         }
       ],
       "_nested_name": "button_go_to_2"
@@ -67,8 +64,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit:completed",
-          "_cleaned": "completed | emit:completed"
+          "_raw": "completed | emit:completed"
         },
         {
           "trigger": "uncompleted",
@@ -76,8 +72,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "uncompleted | emit:completed",
-          "_cleaned": "uncompleted | emit:completed"
+          "_raw": "uncompleted | emit:completed"
         },
         {
           "trigger": "click",
@@ -85,8 +80,7 @@
           "args": [
             "example_emit"
           ],
-          "_raw": "click | go_to: example_emit",
-          "_cleaned": "click | go_to: example_emit"
+          "_raw": "click | go_to: example_emit"
         }
       ],
       "_nested_name": "button_go_to_3"
@@ -107,8 +101,7 @@
             "dismiss_pop_up",
             true
           ],
-          "_raw": "click | go_to: example_emit: dismiss_pop_up: true",
-          "_cleaned": "click | go_to: example_emit: dismiss_pop_up: true"
+          "_raw": "click | go_to: example_emit: dismiss_pop_up: true"
         }
       ],
       "_nested_name": "button_go_to_4"

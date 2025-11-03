@@ -45,8 +45,7 @@
             "local_1",
             "this.value"
           ],
-          "_raw": "changed | set_local : local_1 : @local.checkbox",
-          "_cleaned": "changed | set_local : local_1 : @local.checkbox"
+          "_raw": "changed | set_local : local_1 : @local.checkbox"
         }
       ],
       "_nested_name": "checkbox",
@@ -60,22 +59,13 @@
                 "type": "local",
                 "fieldName": "checkbox"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_local : local_1 : @local.checkbox",
-                "matchedExpression": "@local.checkbox",
-                "type": "local",
-                "fieldName": "checkbox"
-              }
             ]
           }
         }
       },
       "_dynamicDependencies": {
         "@local.checkbox": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -93,8 +83,7 @@
           "args": [
             "force_restart"
           ],
-          "_raw": "click | emit: force_restart",
-          "_cleaned": "click | emit: force_restart"
+          "_raw": "click | emit: force_restart"
         }
       ],
       "_nested_name": "button_1"
@@ -113,8 +102,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
+          "_raw": "click | emit: force_reload"
         }
       ],
       "_nested_name": "button_2"
@@ -133,8 +121,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "_nested_name": "button_3"

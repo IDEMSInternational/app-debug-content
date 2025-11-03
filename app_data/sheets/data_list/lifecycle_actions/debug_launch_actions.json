@@ -18,8 +18,7 @@
           "args": [
             "complete"
           ],
-          "_raw": "app_update: complete",
-          "_cleaned": "click | app_update: complete"
+          "_raw": "app_update: complete"
         }
       ]
     },
@@ -38,7 +37,6 @@
             "debug_launch_pop_up"
           ],
           "_raw": "pop_up: debug_launch_pop_up | fullscreen: true, showCloseButton: true",
-          "_cleaned": "click | pop_up: debug_launch_pop_up | fullscreen: true, showCloseButton: true",
           "params": {
             "fullscreen": true,
             "showCloseButton": true
@@ -51,8 +49,7 @@
             "language_selected",
             true
           ],
-          "_raw": "set_field: language_selected: true",
-          "_cleaned": "click | set_field: language_selected: true"
+          "_raw": "set_field: language_selected: true"
         }
       ]
     },
@@ -67,8 +64,7 @@
           "args": [
             "prompt"
           ],
-          "_raw": "app_update: prompt",
-          "_cleaned": "click | app_update: prompt"
+          "_raw": "app_update: prompt"
         }
       ]
     }

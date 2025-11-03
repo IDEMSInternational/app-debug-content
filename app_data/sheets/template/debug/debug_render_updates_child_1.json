@@ -29,8 +29,7 @@
             "debug_render_updates_field",
             "this.value"
           ],
-          "_raw": "changed | set_field:debug_render_updates_field:@local.debug_render_updates_text",
-          "_cleaned": "changed | set_field:debug_render_updates_field:@local.debug_render_updates_text"
+          "_raw": "changed | set_field:debug_render_updates_field:@local.debug_render_updates_text"
         },
         {
           "trigger": "changed",
@@ -38,8 +37,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "changed | emit:force_reprocess",
-          "_cleaned": "changed | emit:force_reprocess"
+          "_raw": "changed | emit:force_reprocess"
         }
       ],
       "exclude_from_translation": true,
@@ -62,14 +60,6 @@
                 "type": "local",
                 "fieldName": "debug_render_updates_text"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field:debug_render_updates_field:@local.debug_render_updates_text",
-                "matchedExpression": "@local.debug_render_updates_text",
-                "type": "local",
-                "fieldName": "debug_render_updates_text"
-              }
             ]
           }
         }
@@ -79,8 +69,7 @@
           "value"
         ],
         "@local.debug_render_updates_text": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },

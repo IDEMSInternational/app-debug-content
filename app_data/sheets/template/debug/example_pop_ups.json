@@ -38,8 +38,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up:example_text",
-          "_cleaned": "click | pop_up:example_text"
+          "_raw": "click | pop_up:example_text"
         }
       ],
       "exclude_from_translation": true,
@@ -69,8 +68,7 @@
           "args": [
             "example_go_to_2"
           ],
-          "_raw": "click | pop_up:example_go_to_2",
-          "_cleaned": "click | pop_up:example_go_to_2"
+          "_raw": "click | pop_up:example_go_to_2"
         }
       ],
       "exclude_from_translation": true,
@@ -100,8 +98,7 @@
           "args": [
             "example_text_long"
           ],
-          "_raw": "click | pop_up:example_text_long",
-          "_cleaned": "click | pop_up:example_text_long"
+          "_raw": "click | pop_up:example_text_long"
         }
       ],
       "exclude_from_translation": true,
@@ -131,8 +128,7 @@
           "args": [
             "example_go_to_3"
           ],
-          "_raw": "click | pop_up:example_go_to_3",
-          "_cleaned": "click | pop_up:example_go_to_3"
+          "_raw": "click | pop_up:example_go_to_3"
         },
         {
           "trigger": "completed",
@@ -140,8 +136,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit: completed",
-          "_cleaned": "completed | emit: completed"
+          "_raw": "completed | emit: completed"
         }
       ],
       "exclude_from_translation": true,
@@ -182,7 +177,6 @@
             "example_text_long"
           ],
           "_raw": "click | pop_up: example_text_long | fullscreen:true",
-          "_cleaned": "click | pop_up: example_text_long | fullscreen:true",
           "params": {
             "fullscreen": true
           }
@@ -216,7 +210,6 @@
             "example_emit"
           ],
           "_raw": "click | pop_up:example_emit | fullscreen:true, showCloseButton:false",
-          "_cleaned": "click | pop_up:example_emit | fullscreen:true, showCloseButton:false",
           "params": {
             "fullscreen": true,
             "showCloseButton": false
@@ -250,7 +243,6 @@
             "example_completion"
           ],
           "_raw": "click | pop_up: example_completion | variant:plh_completion",
-          "_cleaned": "click | pop_up: example_completion | variant:plh_completion",
           "params": {
             "variant": "plh_completion"
           }
@@ -267,7 +259,6 @@
             "example_text"
           ],
           "_raw": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
-          "_cleaned": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
           "params": {
             "variant": "plh_completion",
             "background_image": "confetti.svg"

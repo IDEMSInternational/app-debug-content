@@ -39,8 +39,7 @@
           "args": [
             "debug_pop_up_bg"
           ],
-          "_raw": "click | pop_up: debug_pop_up_bg",
-          "_cleaned": "click | pop_up: debug_pop_up_bg"
+          "_raw": "click | pop_up: debug_pop_up_bg"
         }
       ],
       "name": "button_4",
@@ -60,7 +59,6 @@
             "debug_pop_up_bg"
           ],
           "_raw": "click | pop_up: debug_pop_up_bg | fullscreen: true",
-          "_cleaned": "click | pop_up: debug_pop_up_bg | fullscreen: true",
           "params": {
             "fullscreen": true
           }

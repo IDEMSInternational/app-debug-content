@@ -6,7 +6,7 @@
     {
       "type": "text",
       "name": "text",
-      "value": "@global.parent_app has downloaded an update. Please restart the app to finish installation.",
+      "value": "@global.app_name has downloaded an update. Please restart the app to finish installation.",
       "_translations": {
         "value": {}
       },
@@ -14,15 +14,15 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@global.parent_app has downloaded an update. Please restart the app to finish installation.",
-            "matchedExpression": "@global.parent_app",
+            "fullExpression": "@global.app_name has downloaded an update. Please restart the app to finish installation.",
+            "matchedExpression": "@global.app_name",
             "type": "global",
-            "fieldName": "parent_app"
+            "fieldName": "app_name"
           }
         ]
       },
       "_dynamicDependencies": {
-        "@global.parent_app": [
+        "@global.app_name": [
           "value"
         ]
       }
@@ -41,8 +41,7 @@
           "args": [
             "complete"
           ],
-          "_raw": "click | app_update: complete",
-          "_cleaned": "click | app_update: complete"
+          "_raw": "click | app_update: complete"
         }
       ],
       "_nested_name": "button"
