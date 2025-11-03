@@ -14,6 +14,15 @@
       "_nested_name": "title_2"
     },
     {
+      "type": "title",
+      "value": "Full width",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
       "type": "apple_sign_in_button",
       "value": "Sign in with Apple",
       "_translations": {
@@ -31,8 +40,8 @@
           "_raw": "click | emit: force_reprocess"
         }
       ],
-      "name": "apple_sign_in_button_3",
-      "_nested_name": "apple_sign_in_button_3"
+      "name": "apple_sign_in_button_4",
+      "_nested_name": "apple_sign_in_button_4"
     },
     {
       "type": "google_sign_in_button",
@@ -52,8 +61,8 @@
           "_raw": "click | emit: force_reprocess"
         }
       ],
-      "name": "google_sign_in_button_4",
-      "_nested_name": "google_sign_in_button_4"
+      "name": "google_sign_in_button_5",
+      "_nested_name": "google_sign_in_button_5"
     },
     {
       "type": "text",
@@ -64,8 +73,8 @@
       "parameter_list": {
         "text_align": "center"
       },
-      "name": "text_5",
-      "_nested_name": "text_5"
+      "name": "text_6",
+      "_nested_name": "text_6"
     },
     {
       "type": "button",
@@ -73,8 +82,99 @@
       "_translations": {
         "value": {}
       },
-      "name": "button_6",
-      "_nested_name": "button_6"
+      "name": "button_7",
+      "_nested_name": "button_7"
+    },
+    {
+      "type": "title",
+      "value": "Centred",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_8",
+      "_nested_name": "title_8"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "apple_sign_in_button",
+          "value": "Sign in with Apple",
+          "_translations": {
+            "value": {
+              "es_sp": true
+            }
+          },
+          "parameter_list": {
+            "width": "centre"
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "force_reprocess"
+              ],
+              "_raw": "click | emit: force_reprocess"
+            }
+          ],
+          "name": "apple_sign_in_button_1",
+          "_nested_name": "display_group_9.apple_sign_in_button_1"
+        },
+        {
+          "type": "google_sign_in_button",
+          "value": "Sign in with Google",
+          "_translations": {
+            "value": {
+              "es_sp": true
+            }
+          },
+          "parameter_list": {
+            "width": "centre"
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "emit",
+              "args": [
+                "force_reprocess"
+              ],
+              "_raw": "click | emit: force_reprocess"
+            }
+          ],
+          "name": "google_sign_in_button_2",
+          "_nested_name": "display_group_9.google_sign_in_button_2"
+        },
+        {
+          "type": "text",
+          "value": "or",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "center"
+          },
+          "name": "text_3",
+          "_nested_name": "display_group_9.text_3"
+        },
+        {
+          "type": "button",
+          "value": "Continue without an account",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width: max-content"
+          ],
+          "name": "button_4",
+          "_nested_name": "display_group_9.button_4"
+        }
+      ],
+      "name": "display_group_9",
+      "_nested_name": "display_group_9"
     },
     {
       "type": "text",
