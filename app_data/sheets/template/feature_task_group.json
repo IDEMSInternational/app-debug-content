@@ -41,8 +41,7 @@
                   "args": [
                     "force_reload"
                   ],
-                  "_raw": "completed | emit: force_reload",
-                  "_cleaned": "completed | emit: force_reload"
+                  "_raw": "completed | emit: force_reload"
                 }
               ],
               "parameter_list": {

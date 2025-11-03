@@ -34,8 +34,7 @@
           "args": [
             "@local.child_local_variable"
           ],
-          "_raw": "click | emit:@local.child_local_variable",
-          "_cleaned": "click | emit:@local.child_local_variable"
+          "_raw": "click | emit:@local.child_local_variable"
         }
       ],
       "exclude_from_translation": true,
@@ -71,14 +70,6 @@
                 "type": "local",
                 "fieldName": "child_local_variable"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | emit:@local.child_local_variable",
-                "matchedExpression": "@local.child_local_variable",
-                "type": "local",
-                "fieldName": "child_local_variable"
-              }
             ]
           }
         },
@@ -98,7 +89,6 @@
           "value",
           "action_list.0.args.0",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "parameter_list.key_1"
         ]
       }

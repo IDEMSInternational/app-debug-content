@@ -40,8 +40,7 @@
               "args": [
                 "parent_var_1"
               ],
-              "_raw": "changed | set_local: parent_var_1",
-              "_cleaned": "changed | set_local: parent_var_1"
+              "_raw": "changed | set_local: parent_var_1"
             }
           ],
           "type": "set_variable",

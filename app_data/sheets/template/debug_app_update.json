@@ -26,8 +26,7 @@
           "args": [
             "prompt"
           ],
-          "_raw": "click | app_update: prompt",
-          "_cleaned": "click | app_update: prompt"
+          "_raw": "click | app_update: prompt"
         }
       ],
       "_nested_name": "button"
@@ -46,8 +45,7 @@
           "args": [
             "force"
           ],
-          "_raw": "click | app_update: force",
-          "_cleaned": "click | app_update: force"
+          "_raw": "click | app_update: force"
         }
       ],
       "_nested_name": "button"

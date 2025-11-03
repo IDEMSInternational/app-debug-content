@@ -198,8 +198,7 @@
                 "household_teens_2",
                 "this.value"
               ],
-              "_raw": "changed | set_field: household_teens_2: this.value",
-              "_cleaned": "changed | set_field: household_teens_2: this.value"
+              "_raw": "changed | set_field: household_teens_2: this.value"
             },
             {
               "trigger": "changed",
@@ -208,8 +207,7 @@
                 "household_teens",
                 "this.value"
               ],
-              "_raw": "changed | set_local: household_teens: this.value",
-              "_cleaned": "changed | set_local: household_teens: this.value"
+              "_raw": "changed | set_local: household_teens: this.value"
             }
           ],
           "exclude_from_translation": true,
@@ -355,8 +353,7 @@
                     "@item.teen_age",
                     "this.value"
                   ],
-                  "_raw": "changed | set_field: @item.teen_age : this.value",
-                  "_cleaned": "changed | set_field: @item.teen_age : this.value"
+                  "_raw": "changed | set_field: @item.teen_age : this.value"
                 }
               ],
               "parameter_list": {
@@ -401,14 +398,6 @@
                         "type": "item",
                         "fieldName": "teen_age"
                       }
-                    ],
-                    "_cleaned": [
-                      {
-                        "fullExpression": "changed | set_field: @item.teen_age : this.value",
-                        "matchedExpression": "@item.teen_age",
-                        "type": "item",
-                        "fieldName": "teen_age"
-                      }
                     ]
                   }
                 },
@@ -446,8 +435,7 @@
                 "@item.teen_age": [
                   "value",
                   "action_list.0.args.0",
-                  "action_list.0._raw",
-                  "action_list.0._cleaned"
+                  "action_list.0._raw"
                 ],
                 "@global.tap_and_type": [
                   "parameter_list.placeholder"
@@ -536,8 +524,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit:completed",
-          "_cleaned": "completed | emit:completed"
+          "_raw": "completed | emit:completed"
         },
         {
           "trigger": "uncompleted",
@@ -545,8 +532,7 @@
           "args": [
             "uncompleted"
           ],
-          "_raw": "uncompleted | emit:uncompleted",
-          "_cleaned": "uncompleted | emit:uncompleted"
+          "_raw": "uncompleted | emit:uncompleted"
         }
       ],
       "rows": [

@@ -57,8 +57,7 @@
           "args": [
             "args"
           ],
-          "_raw": "click | invalid_action : args",
-          "_cleaned": "click | invalid_action : args"
+          "_raw": "click | invalid_action : args"
         }
       ],
       "exclude_from_translation": true,

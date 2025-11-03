@@ -18,8 +18,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | go_to: example_text",
-          "_cleaned": "click | go_to: example_text"
+          "_raw": "click | go_to: example_text"
         }
       ],
       "_nested_name": "button_default"
@@ -193,8 +192,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -217,8 +215,7 @@
                 "heart_toggle",
                 "this.value"
               ],
-              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3",
-              "_cleaned": "changed | set_field: heart_toggle: @local.toggle_bar_3"
+              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3"
             }
           ],
           "parameter_list": {
@@ -245,14 +242,6 @@
                     "type": "local",
                     "fieldName": "toggle_bar_3"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
-                    "matchedExpression": "@local.toggle_bar_3",
-                    "type": "local",
-                    "fieldName": "toggle_bar_3"
-                  }
                 ]
               }
             }
@@ -262,8 +251,7 @@
               "value"
             ],
             "@local.toggle_bar_3": [
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }
@@ -296,8 +284,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -321,8 +308,7 @@
                 "heart_toggle",
                 "this.value"
               ],
-              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3",
-              "_cleaned": "changed | set_field: heart_toggle: @local.toggle_bar_3"
+              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3"
             }
           ],
           "parameter_list": {
@@ -350,14 +336,6 @@
                     "type": "local",
                     "fieldName": "toggle_bar_3"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
-                    "matchedExpression": "@local.toggle_bar_3",
-                    "type": "local",
-                    "fieldName": "toggle_bar_3"
-                  }
                 ]
               }
             },
@@ -375,8 +353,7 @@
               "value"
             ],
             "@local.toggle_bar_3": [
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "!@local.is_locked": [
               "condition"
@@ -454,8 +431,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -479,8 +455,7 @@
                 "heart_toggle",
                 "this.value"
               ],
-              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3",
-              "_cleaned": "changed | set_field: heart_toggle: @local.toggle_bar_3"
+              "_raw": "changed | set_field: heart_toggle: @local.toggle_bar_3"
             }
           ],
           "parameter_list": {
@@ -508,14 +483,6 @@
                     "type": "local",
                     "fieldName": "toggle_bar_3"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_field: heart_toggle: @local.toggle_bar_3",
-                    "matchedExpression": "@local.toggle_bar_3",
-                    "type": "local",
-                    "fieldName": "toggle_bar_3"
-                  }
                 ]
               }
             },
@@ -533,8 +500,7 @@
               "value"
             ],
             "@local.toggle_bar_3": [
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "!@local.is_locked_2": [
               "condition"
@@ -643,8 +609,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -666,8 +631,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -704,8 +668,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -745,8 +708,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {

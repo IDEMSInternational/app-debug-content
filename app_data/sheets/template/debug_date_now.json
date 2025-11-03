@@ -99,8 +99,7 @@
             "output_date",
             "@local.calculated_date"
           ],
-          "_raw": "click | set_local: output_date: @local.calculated_date",
-          "_cleaned": "click | set_local: output_date: @local.calculated_date"
+          "_raw": "click | set_local: output_date: @local.calculated_date"
         }
       ],
       "name": "button_7",
@@ -125,14 +124,6 @@
                 "type": "local",
                 "fieldName": "calculated_date"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_local: output_date: @local.calculated_date",
-                "matchedExpression": "@local.calculated_date",
-                "type": "local",
-                "fieldName": "calculated_date"
-              }
             ]
           }
         }
@@ -140,8 +131,7 @@
       "_dynamicDependencies": {
         "@local.calculated_date": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -159,8 +149,7 @@
             "output_date",
             "@calc(now())"
           ],
-          "_raw": "click | set_local: output_date: @calc(now())",
-          "_cleaned": "click | set_local: output_date: @calc(now())"
+          "_raw": "click | set_local: output_date: @calc(now())"
         }
       ],
       "name": "button_8",
@@ -185,14 +174,6 @@
                 "type": "calc",
                 "fieldName": "now()"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_local: output_date: @calc(now())",
-                "matchedExpression": "@calc(now())",
-                "type": "calc",
-                "fieldName": "now()"
-              }
             ]
           }
         }
@@ -200,8 +181,7 @@
       "_dynamicDependencies": {
         "@calc(now())": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },

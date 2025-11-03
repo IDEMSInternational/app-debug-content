@@ -46,8 +46,7 @@
             "https",
             "//github.com/IDEMSInternational/parenting-app-ui"
           ],
-          "_raw": "click | go_to_url: https://github.com/IDEMSInternational/parenting-app-ui",
-          "_cleaned": "click | go_to_url: https://github.com/IDEMSInternational/parenting-app-ui"
+          "_raw": "click | go_to_url: https://github.com/IDEMSInternational/parenting-app-ui"
         }
       ],
       "_nested_name": "button_1"
@@ -66,8 +65,7 @@
           "args": [
             "github.com/IDEMSInternational/parenting-app-ui"
           ],
-          "_raw": "click | go_to_url: github.com/IDEMSInternational/parenting-app-ui",
-          "_cleaned": "click | go_to_url: github.com/IDEMSInternational/parenting-app-ui"
+          "_raw": "click | go_to_url: github.com/IDEMSInternational/parenting-app-ui"
         }
       ],
       "_nested_name": "button_2"
@@ -86,8 +84,7 @@
           "args": [
             "@local.url_with_https"
           ],
-          "_raw": "click | go_to_url: @local.url_with_https",
-          "_cleaned": "click | go_to_url: @local.url_with_https"
+          "_raw": "click | go_to_url: @local.url_with_https"
         }
       ],
       "_nested_name": "button_3",
@@ -111,14 +108,6 @@
                 "type": "local",
                 "fieldName": "url_with_https"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | go_to_url: @local.url_with_https",
-                "matchedExpression": "@local.url_with_https",
-                "type": "local",
-                "fieldName": "url_with_https"
-              }
             ]
           }
         }
@@ -126,8 +115,7 @@
       "_dynamicDependencies": {
         "@local.url_with_https": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -145,8 +133,7 @@
           "args": [
             "@local.url_without_https"
           ],
-          "_raw": "click | go_to_url: @local.url_without_https",
-          "_cleaned": "click | go_to_url: @local.url_without_https"
+          "_raw": "click | go_to_url: @local.url_without_https"
         }
       ],
       "_nested_name": "button_4",
@@ -170,14 +157,6 @@
                 "type": "local",
                 "fieldName": "url_without_https"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | go_to_url: @local.url_without_https",
-                "matchedExpression": "@local.url_without_https",
-                "type": "local",
-                "fieldName": "url_without_https"
-              }
             ]
           }
         }
@@ -185,8 +164,7 @@
       "_dynamicDependencies": {
         "@local.url_without_https": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

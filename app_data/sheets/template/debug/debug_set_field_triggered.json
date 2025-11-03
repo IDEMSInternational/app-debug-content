@@ -19,8 +19,7 @@
             "debug_tracker_@row.type",
             "this.value"
           ],
-          "_raw": "changed | set_field:debug_tracker_@row.type:@local.text_box",
-          "_cleaned": "changed | set_field:debug_tracker_@row.type:@local.text_box"
+          "_raw": "changed | set_field:debug_tracker_@row.type:@local.text_box"
         }
       ],
       "exclude_from_translation": true,
@@ -59,20 +58,6 @@
                 "type": "local",
                 "fieldName": "text_box"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field:debug_tracker_@row.type:@local.text_box",
-                "matchedExpression": "@row.type",
-                "type": "row",
-                "fieldName": "type"
-              },
-              {
-                "fullExpression": "changed | set_field:debug_tracker_@row.type:@local.text_box",
-                "matchedExpression": "@local.text_box",
-                "type": "local",
-                "fieldName": "text_box"
-              }
             ]
           }
         }
@@ -83,12 +68,10 @@
         ],
         "@row.type": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.text_box": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -147,8 +130,7 @@
             "debug_triggered_text_box",
             "@local.text_box"
           ],
-          "_raw": "completed | set_field:debug_triggered_text_box:@local.text_box",
-          "_cleaned": "completed | set_field:debug_triggered_text_box:@local.text_box"
+          "_raw": "completed | set_field:debug_triggered_text_box:@local.text_box"
         },
         {
           "trigger": "completed",
@@ -156,8 +138,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit:completed",
-          "_cleaned": "completed | emit:completed"
+          "_raw": "completed | emit:completed"
         },
         {
           "trigger": "uncompleted",
@@ -165,8 +146,7 @@
           "args": [
             "uncompleted"
           ],
-          "_raw": "uncompleted | emit:uncompleted",
-          "_cleaned": "uncompleted | emit:uncompleted"
+          "_raw": "uncompleted | emit:uncompleted"
         }
       ],
       "exclude_from_translation": true,
@@ -200,14 +180,6 @@
                 "type": "local",
                 "fieldName": "text_box"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "completed | set_field:debug_triggered_text_box:@local.text_box",
-                "matchedExpression": "@local.text_box",
-                "type": "local",
-                "fieldName": "text_box"
-              }
             ]
           }
         }
@@ -215,8 +187,7 @@
       "_dynamicDependencies": {
         "@local.text_box": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

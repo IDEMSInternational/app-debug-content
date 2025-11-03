@@ -13,8 +13,7 @@
           "args": [
             "weekly_workshops"
           ],
-          "_raw": "click | go_to:weekly_workshops",
-          "_cleaned": "click | go_to:weekly_workshops"
+          "_raw": "click | go_to:weekly_workshops"
         }
       ],
       "exclude_from_translation": true,
@@ -120,8 +119,7 @@
           "args": [
             "parent_points"
           ],
-          "_raw": "click | go_to:parent_points",
-          "_cleaned": "click | go_to:parent_points"
+          "_raw": "click | go_to:parent_points"
         }
       ],
       "exclude_from_translation": true,
@@ -226,8 +224,7 @@
           "args": [
             "parent_centre"
           ],
-          "_raw": "click | go_to:parent_centre",
-          "_cleaned": "click | go_to:parent_centre"
+          "_raw": "click | go_to:parent_centre"
         }
       ],
       "exclude_from_translation": true,
@@ -314,6 +311,15 @@
         }
       ],
       "_nested_name": "dg_example_7"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx",

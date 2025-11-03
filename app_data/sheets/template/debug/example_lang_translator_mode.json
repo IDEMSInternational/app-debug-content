@@ -71,8 +71,7 @@
           "args": [
             "translator_mode_toggle"
           ],
-          "_raw": "click | emit: translator_mode_toggle",
-          "_cleaned": "click | emit: translator_mode_toggle"
+          "_raw": "click | emit: translator_mode_toggle"
         }
       ],
       "exclude_from_translation": true,

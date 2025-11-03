@@ -78,7 +78,6 @@
           "action_id": "share",
           "args": [],
           "_raw": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
-          "_cleaned": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
           "params": {
             "text": "@local.shareable_text",
             "url": "@local.shareable_url",
@@ -94,32 +93,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
-                "matchedExpression": "@local.shareable_text",
-                "type": "local",
-                "fieldName": "shareable_text"
-              },
-              {
-                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
-                "matchedExpression": "@local.shareable_url",
-                "type": "local",
-                "fieldName": "shareable_url"
-              },
-              {
-                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
-                "matchedExpression": "@local.image_path",
-                "type": "local",
-                "fieldName": "image_path"
-              },
-              {
-                "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
-                "matchedExpression": "@local.shareable_title",
-                "type": "local",
-                "fieldName": "shareable_title"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title",
                 "matchedExpression": "@local.shareable_text",
@@ -185,22 +158,18 @@
       "_dynamicDependencies": {
         "@local.shareable_text": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.text"
         ],
         "@local.shareable_url": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.url"
         ],
         "@local.image_path": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.file"
         ],
         "@local.shareable_title": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.title"
         ]
       }
@@ -217,7 +186,6 @@
           "action_id": "share",
           "args": [],
           "_raw": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
-          "_cleaned": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
           "params": {
             "text": "@local.shareable_text",
             "file": "@local.image_path"
@@ -230,20 +198,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
-                "matchedExpression": "@local.shareable_text",
-                "type": "local",
-                "fieldName": "shareable_text"
-              },
-              {
-                "fullExpression": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
-                "matchedExpression": "@local.image_path",
-                "type": "local",
-                "fieldName": "image_path"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path",
                 "matchedExpression": "@local.shareable_text",
@@ -281,12 +235,10 @@
       "_dynamicDependencies": {
         "@local.shareable_text": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.text"
         ],
         "@local.image_path": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.file"
         ]
       }
@@ -303,7 +255,6 @@
           "action_id": "share",
           "args": [],
           "_raw": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
-          "_cleaned": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
           "params": {
             "title": "@local.shareable_title",
             "file": "@local.image_path"
@@ -316,20 +267,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
-                "matchedExpression": "@local.shareable_title",
-                "type": "local",
-                "fieldName": "shareable_title"
-              },
-              {
-                "fullExpression": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
-                "matchedExpression": "@local.image_path",
-                "type": "local",
-                "fieldName": "image_path"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path",
                 "matchedExpression": "@local.shareable_title",
@@ -367,12 +304,10 @@
       "_dynamicDependencies": {
         "@local.shareable_title": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.title"
         ],
         "@local.image_path": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.file"
         ]
       }
@@ -423,7 +358,6 @@
           "action_id": "share",
           "args": [],
           "_raw": "click | share | text: @local.shareable_text",
-          "_cleaned": "click | share | text: @local.shareable_text",
           "params": {
             "text": "@local.shareable_text"
           }
@@ -434,14 +368,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | share | text: @local.shareable_text",
-                "matchedExpression": "@local.shareable_text",
-                "type": "local",
-                "fieldName": "shareable_text"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | share | text: @local.shareable_text",
                 "matchedExpression": "@local.shareable_text",
@@ -465,7 +391,6 @@
       "_dynamicDependencies": {
         "@local.shareable_text": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.text"
         ]
       }
@@ -501,7 +426,6 @@
           "action_id": "share",
           "args": [],
           "_raw": "click | share | url: @local.shareable_url",
-          "_cleaned": "click | share | url: @local.shareable_url",
           "params": {
             "url": "@local.shareable_url"
           }
@@ -512,14 +436,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | share | url: @local.shareable_url",
-                "matchedExpression": "@local.shareable_url",
-                "type": "local",
-                "fieldName": "shareable_url"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | share | url: @local.shareable_url",
                 "matchedExpression": "@local.shareable_url",
@@ -543,7 +459,6 @@
       "_dynamicDependencies": {
         "@local.shareable_url": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.url"
         ]
       }
@@ -570,7 +485,6 @@
           "action_id": "share",
           "args": [],
           "_raw": "click | share | text: @local.shareable_text",
-          "_cleaned": "click | share | text: @local.shareable_text",
           "params": {
             "text": "@local.shareable_text"
           }
@@ -600,14 +514,6 @@
                 "fieldName": "shareable_text"
               }
             ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share | text: @local.shareable_text",
-                "matchedExpression": "@local.shareable_text",
-                "type": "local",
-                "fieldName": "shareable_text"
-              }
-            ],
             "params": {
               "text": [
                 {
@@ -625,7 +531,6 @@
         "@local.shareable_text": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.text"
         ]
       }
@@ -675,7 +580,6 @@
           "action_id": "share",
           "args": [],
           "_raw": "click | share | file: @local.image_path",
-          "_cleaned": "click | share | file: @local.image_path",
           "params": {
             "file": "@local.image_path"
           }
@@ -687,14 +591,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | share | file: @local.image_path",
-                "matchedExpression": "@local.image_path",
-                "type": "local",
-                "fieldName": "image_path"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | share | file: @local.image_path",
                 "matchedExpression": "@local.image_path",
@@ -718,7 +614,6 @@
       "_dynamicDependencies": {
         "@local.image_path": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.file"
         ]
       }
@@ -780,8 +675,7 @@
             "file",
             "@local.pdf_path"
           ],
-          "_raw": "click | share: file: @local.pdf_path",
-          "_cleaned": "click | share: file: @local.pdf_path"
+          "_raw": "click | share: file: @local.pdf_path"
         }
       ],
       "_nested_name": "share_button_1",
@@ -805,14 +699,6 @@
                 "type": "local",
                 "fieldName": "pdf_path"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share: file: @local.pdf_path",
-                "matchedExpression": "@local.pdf_path",
-                "type": "local",
-                "fieldName": "pdf_path"
-              }
             ]
           }
         }
@@ -820,8 +706,7 @@
       "_dynamicDependencies": {
         "@local.pdf_path": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -882,8 +767,7 @@
             "text",
             "@local.shareable_text"
           ],
-          "_raw": "click | share: text: @local.shareable_text",
-          "_cleaned": "click | share: text: @local.shareable_text"
+          "_raw": "click | share: text: @local.shareable_text"
         }
       ],
       "_nested_name": "share_button_1",
@@ -907,14 +791,6 @@
                 "type": "local",
                 "fieldName": "shareable_text"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share: text: @local.shareable_text",
-                "matchedExpression": "@local.shareable_text",
-                "type": "local",
-                "fieldName": "shareable_text"
-              }
             ]
           }
         }
@@ -922,8 +798,7 @@
       "_dynamicDependencies": {
         "@local.shareable_text": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -960,8 +835,7 @@
             "url",
             "@local.shareable_url"
           ],
-          "_raw": "click | share: url: @local.shareable_url",
-          "_cleaned": "click | share: url: @local.shareable_url"
+          "_raw": "click | share: url: @local.shareable_url"
         }
       ],
       "_nested_name": "share_button_2",
@@ -985,14 +859,6 @@
                 "type": "local",
                 "fieldName": "shareable_url"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share: url: @local.shareable_url",
-                "matchedExpression": "@local.shareable_url",
-                "type": "local",
-                "fieldName": "shareable_url"
-              }
             ]
           }
         }
@@ -1000,8 +866,7 @@
       "_dynamicDependencies": {
         "@local.shareable_url": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -1029,8 +894,7 @@
             "text",
             "@local.shareable_text"
           ],
-          "_raw": "click | share: text: @local.shareable_text",
-          "_cleaned": "click | share: text: @local.shareable_text"
+          "_raw": "click | share: text: @local.shareable_text"
         }
       ],
       "parameter_list": {
@@ -1066,14 +930,6 @@
                 "type": "local",
                 "fieldName": "shareable_text"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share: text: @local.shareable_text",
-                "matchedExpression": "@local.shareable_text",
-                "type": "local",
-                "fieldName": "shareable_text"
-              }
             ]
           }
         }
@@ -1082,8 +938,7 @@
         "@local.shareable_text": [
           "value",
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -1110,8 +965,7 @@
           "args": [
             "@local.shareable_text"
           ],
-          "_raw": "click | share: @local.shareable_text",
-          "_cleaned": "click | share: @local.shareable_text"
+          "_raw": "click | share: @local.shareable_text"
         }
       ],
       "_nested_name": "share_button_3",
@@ -1135,14 +989,6 @@
                 "type": "local",
                 "fieldName": "shareable_text"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share: @local.shareable_text",
-                "matchedExpression": "@local.shareable_text",
-                "type": "local",
-                "fieldName": "shareable_text"
-              }
             ]
           }
         }
@@ -1150,8 +996,7 @@
       "_dynamicDependencies": {
         "@local.shareable_text": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

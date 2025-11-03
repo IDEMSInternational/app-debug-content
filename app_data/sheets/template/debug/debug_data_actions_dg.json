@@ -42,8 +42,7 @@
             "hp_review_count_1",
             "@items.length"
           ],
-          "_raw": "data_changed | set_local : hp_review_count_1 : @items.length",
-          "_cleaned": "data_changed | set_local : hp_review_count_1 : @items.length"
+          "_raw": "data_changed | set_local : hp_review_count_1 : @items.length"
         }
       ],
       "parameter_list": {
@@ -195,8 +194,7 @@
                 "hp_review_count_2",
                 "@items.length"
               ],
-              "_raw": "data_changed | set_local : hp_review_count_2 : @items.length",
-              "_cleaned": "data_changed | set_local : hp_review_count_2 : @items.length"
+              "_raw": "data_changed | set_local : hp_review_count_2 : @items.length"
             }
           ],
           "parameter_list": {
@@ -344,8 +342,7 @@
             "hp_review_count_3",
             "@items.length"
           ],
-          "_raw": "data_changed | set_local : hp_review_count_3 : @items.length",
-          "_cleaned": "data_changed | set_local : hp_review_count_3 : @items.length"
+          "_raw": "data_changed | set_local : hp_review_count_3 : @items.length"
         }
       ],
       "parameter_list": {

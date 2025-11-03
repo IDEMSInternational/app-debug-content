@@ -84,8 +84,7 @@
           "args": [
             "debug_tour_var_hyphen"
           ],
-          "_raw": "click | start_tour: debug_tour_var_hyphen",
-          "_cleaned": "click | start_tour: debug_tour_var_hyphen"
+          "_raw": "click | start_tour: debug_tour_var_hyphen"
         }
       ],
       "_nested_name": "button"

@@ -32,8 +32,7 @@
             "local_var",
             "!@local.local_var"
           ],
-          "_raw": "click | set_local: local_var: !@local.local_var",
-          "_cleaned": "click | set_local: local_var: !@local.local_var"
+          "_raw": "click | set_local: local_var: !@local.local_var"
         }
       ],
       "name": "button_4",
@@ -58,14 +57,6 @@
                 "type": "local",
                 "fieldName": "local_var"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_local: local_var: !@local.local_var",
-                "matchedExpression": "!@local.local_var",
-                "type": "local",
-                "fieldName": "local_var"
-              }
             ]
           }
         }
@@ -73,8 +64,7 @@
       "_dynamicDependencies": {
         "!@local.local_var": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },

@@ -346,8 +346,7 @@
             "show_reversed_version",
             true
           ],
-          "_raw": "click | set_local: show_reversed_version: true",
-          "_cleaned": "click | set_local: show_reversed_version: true"
+          "_raw": "click | set_local: show_reversed_version: true"
         }
       ],
       "name": "button_11",

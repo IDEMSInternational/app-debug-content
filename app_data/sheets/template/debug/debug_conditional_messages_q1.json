@@ -25,8 +25,7 @@
             "answer_q1",
             "this.value"
           ],
-          "_raw": "changed | set_field:answer_q1:@local.slider_q1",
-          "_cleaned": "changed | set_field:answer_q1:@local.slider_q1"
+          "_raw": "changed | set_field:answer_q1:@local.slider_q1"
         }
       ],
       "exclude_from_translation": true,
@@ -44,22 +43,13 @@
                 "type": "local",
                 "fieldName": "slider_q1"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field:answer_q1:@local.slider_q1",
-                "matchedExpression": "@local.slider_q1",
-                "type": "local",
-                "fieldName": "slider_q1"
-              }
             ]
           }
         }
       },
       "_dynamicDependencies": {
         "@local.slider_q1": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -102,8 +92,7 @@
           "args": [
             "debug_conditional_messages_q2"
           ],
-          "_raw": "click | go_to:debug_conditional_messages_q2",
-          "_cleaned": "click | go_to:debug_conditional_messages_q2"
+          "_raw": "click | go_to:debug_conditional_messages_q2"
         }
       ],
       "exclude_from_translation": true,

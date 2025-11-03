@@ -59,8 +59,7 @@
               "args": [
                 "example_text"
               ],
-              "_raw": "click | pop_up:example_text",
-              "_cleaned": "click | pop_up:example_text"
+              "_raw": "click | pop_up:example_text"
             }
           ],
           "exclude_from_translation": true,

@@ -487,8 +487,7 @@
             "var_counter",
             "@local.var_counter+ 1"
           ],
-          "_raw": "click | set_local:var_counter:@local.var_counter+ 1",
-          "_cleaned": "click | set_local:var_counter:@local.var_counter+ 1"
+          "_raw": "click | set_local:var_counter:@local.var_counter+ 1"
         }
       ],
       "exclude_from_translation": true,
@@ -521,14 +520,6 @@
                 "type": "local",
                 "fieldName": "var_counter"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_local:var_counter:@local.var_counter+ 1",
-                "matchedExpression": "@local.var_counter",
-                "type": "local",
-                "fieldName": "var_counter"
-              }
             ]
           }
         }
@@ -537,8 +528,7 @@
         "@local.var_counter": [
           "value",
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },

@@ -51,8 +51,7 @@
           "args": [
             "example_startup_1"
           ],
-          "_raw": "click | process_template: example_startup_1",
-          "_cleaned": "click | process_template: example_startup_1"
+          "_raw": "click | process_template: example_startup_1"
         },
         {
           "trigger": "click",
@@ -60,8 +59,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "_nested_name": "trigger_1"
@@ -80,8 +78,7 @@
           "args": [
             "example_startup_2"
           ],
-          "_raw": "click | process_template: example_startup_2",
-          "_cleaned": "click | process_template: example_startup_2"
+          "_raw": "click | process_template: example_startup_2"
         },
         {
           "trigger": "click",
@@ -89,8 +86,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "_nested_name": "trigger_2"

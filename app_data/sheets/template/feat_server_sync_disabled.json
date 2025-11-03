@@ -68,8 +68,7 @@
           "args": [
             "server_sync"
           ],
-          "_raw": "click | emit: server_sync",
-          "_cleaned": "click | emit: server_sync"
+          "_raw": "click | emit: server_sync"
         },
         {
           "trigger": "click",
@@ -77,8 +76,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "_nested_name": "sync_button"

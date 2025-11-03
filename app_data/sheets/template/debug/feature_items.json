@@ -76,8 +76,7 @@
               "args": [
                 "@item.link"
               ],
-              "_raw": "click | go_to: @item.link",
-              "_cleaned": "click | go_to: @item.link"
+              "_raw": "click | go_to: @item.link"
             }
           ],
           "_nested_name": "items_default.button_@item.id",
@@ -117,14 +116,6 @@
                     "type": "item",
                     "fieldName": "link"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | go_to: @item.link",
-                    "matchedExpression": "@item.link",
-                    "type": "item",
-                    "fieldName": "link"
-                  }
                 ]
               }
             },
@@ -147,8 +138,7 @@
             ],
             "@item.link": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }
@@ -246,8 +236,7 @@
                   "args": [
                     "@item.link"
                   ],
-                  "_raw": "click | go_to: @item.link",
-                  "_cleaned": "click | go_to: @item.link"
+                  "_raw": "click | go_to: @item.link"
                 }
               ],
               "_nested_name": "dg.items_dg.button_@item.id",
@@ -287,14 +276,6 @@
                         "type": "item",
                         "fieldName": "link"
                       }
-                    ],
-                    "_cleaned": [
-                      {
-                        "fullExpression": "click | go_to: @item.link",
-                        "matchedExpression": "@item.link",
-                        "type": "item",
-                        "fieldName": "link"
-                      }
                     ]
                   }
                 },
@@ -317,8 +298,7 @@
                 ],
                 "@item.link": [
                   "action_list.0.args.0",
-                  "action_list.0._raw",
-                  "action_list.0._cleaned"
+                  "action_list.0._raw"
                 ]
               }
             }
@@ -426,8 +406,7 @@
                       "args": [
                         "@item.link"
                       ],
-                      "_raw": "click | go_to: @item.link",
-                      "_cleaned": "click | go_to: @item.link"
+                      "_raw": "click | go_to: @item.link"
                     }
                   ],
                   "_nested_name": "dg2a.items_dg.dg2b.button_@item.id",
@@ -467,14 +446,6 @@
                             "type": "item",
                             "fieldName": "link"
                           }
-                        ],
-                        "_cleaned": [
-                          {
-                            "fullExpression": "click | go_to: @item.link",
-                            "matchedExpression": "@item.link",
-                            "type": "item",
-                            "fieldName": "link"
-                          }
                         ]
                       }
                     },
@@ -497,8 +468,7 @@
                     ],
                     "@item.link": [
                       "action_list.0.args.0",
-                      "action_list.0._raw",
-                      "action_list.0._cleaned"
+                      "action_list.0._raw"
                     ]
                   }
                 }

@@ -138,8 +138,7 @@
             "show_map_1",
             "!@local.show_map_1"
           ],
-          "_raw": "click | set_local: show_map_1: !@local.show_map_1",
-          "_cleaned": "click | set_local: show_map_1: !@local.show_map_1"
+          "_raw": "click | set_local: show_map_1: !@local.show_map_1"
         }
       ],
       "name": "button_6",
@@ -164,14 +163,6 @@
                 "type": "local",
                 "fieldName": "show_map_1"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_local: show_map_1: !@local.show_map_1",
-                "matchedExpression": "!@local.show_map_1",
-                "type": "local",
-                "fieldName": "show_map_1"
-              }
             ]
           }
         }
@@ -179,8 +170,7 @@
       "_dynamicDependencies": {
         "!@local.show_map_1": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

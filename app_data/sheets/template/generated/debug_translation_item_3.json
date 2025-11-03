@@ -1,0 +1,24 @@
+{
+  "flow_name": "debug_translation_item_3",
+  "flow_subtype": "generated",
+  "flow_type": "template",
+  "rows": [
+    {
+      "type": "template",
+      "name": "debug_data_items_translate_nest",
+      "value": "debug_data_items_translate_nest",
+      "rows": [
+        {
+          "name": "foreign_key",
+          "value": "foreign_3",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "debug_data_items_translate_nest.foreign_key"
+        }
+      ],
+      "_nested_name": "debug_data_items_translate_nest"
+    }
+  ]
+}

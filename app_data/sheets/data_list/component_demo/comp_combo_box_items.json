@@ -7,17 +7,20 @@
     {
       "id": "id_1",
       "name": "name_1",
-      "text": "Item 1"
+      "text": "Item 1",
+      "text_new": "New text item 1"
     },
     {
       "id": "id_2",
       "name": "name_2",
-      "text": "Item 2"
+      "text": "Item 2",
+      "text_new": "New text item 2"
     },
     {
       "id": "id_3",
       "name": "name_3",
-      "text": "Item 3"
+      "text": "Item 3",
+      "text_new": "New text item 3"
     }
   ],
   "_xlsxPath": "component_sheets/component_combo_box.xlsx",

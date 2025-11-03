@@ -126,7 +126,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "click | set_item | updated: true",
-              "_cleaned": "click | set_item | updated: true",
               "params": {
                 "updated": true
               }
@@ -295,6 +294,6 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_data_items.xlsx",
+  "_xlsxPath": "debug_sheets/debug_data_items_translate.xlsx",
   "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
 }

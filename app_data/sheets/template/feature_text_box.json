@@ -116,6 +116,15 @@
         "number_input": "true"
       },
       "_nested_name": "text_box_3"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx",

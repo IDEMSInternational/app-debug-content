@@ -96,6 +96,59 @@
         "label_text": "label text"
       },
       "_nested_name": "simple_checkbox_par_3_2"
+    },
+    {
+      "type": "title",
+      "value": "Disabled state",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_13",
+      "_nested_name": "title_13"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "enable_checkbox",
+      "value": true,
+      "parameter_list": {
+        "true_text": "checkbox is enabled",
+        "false_text": "checkbox is disabled"
+      },
+      "_nested_name": "enable_checkbox"
+    },
+    {
+      "type": "simple_checkbox",
+      "parameter_list": {
+        "disabled": "!@local.enable_checkbox"
+      },
+      "name": "simple_checkbox_15",
+      "_nested_name": "simple_checkbox_15",
+      "_dynamicFields": {
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "!@local.enable_checkbox",
+              "matchedExpression": "!@local.enable_checkbox",
+              "type": "local",
+              "fieldName": "enable_checkbox"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "!@local.enable_checkbox": [
+          "parameter_list.disabled"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/19t6lEBkVF0LV2dMD1yL6nbuUIFiiYNa0xLA1QQAyyxU",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "component_sheets/component_simple_checkbox .xlsx",

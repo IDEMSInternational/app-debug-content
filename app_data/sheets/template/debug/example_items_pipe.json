@@ -211,8 +211,7 @@
               "args": [
                 "@item.unlock_fieldname"
               ],
-              "_raw": "click | toggle_field:@item.unlock_fieldname",
-              "_cleaned": "click | toggle_field:@item.unlock_fieldname"
+              "_raw": "click | toggle_field:@item.unlock_fieldname"
             },
             {
               "trigger": "click",
@@ -220,8 +219,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit: force_reload",
-              "_cleaned": "click | emit: force_reload"
+              "_raw": "click | emit: force_reload"
             }
           ],
           "_nested_name": "items_3.item_toggle_@item.id",
@@ -253,14 +251,6 @@
                     "type": "item",
                     "fieldName": "unlock_fieldname"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | toggle_field:@item.unlock_fieldname",
-                    "matchedExpression": "@item.unlock_fieldname",
-                    "type": "item",
-                    "fieldName": "unlock_fieldname"
-                  }
                 ]
               }
             },
@@ -280,8 +270,7 @@
             ],
             "@item.unlock_fieldname": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }
@@ -523,8 +512,7 @@
               "args": [
                 "@item.unlock_fieldname"
               ],
-              "_raw": "click | toggle_field:@item.unlock_fieldname",
-              "_cleaned": "click | toggle_field:@item.unlock_fieldname"
+              "_raw": "click | toggle_field:@item.unlock_fieldname"
             },
             {
               "trigger": "click",
@@ -532,8 +520,7 @@
               "args": [
                 "force_reload"
               ],
-              "_raw": "click | emit: force_reload",
-              "_cleaned": "click | emit: force_reload"
+              "_raw": "click | emit: force_reload"
             }
           ],
           "_nested_name": "items_6.item_toggle_@item.id",
@@ -565,14 +552,6 @@
                     "type": "item",
                     "fieldName": "unlock_fieldname"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | toggle_field:@item.unlock_fieldname",
-                    "matchedExpression": "@item.unlock_fieldname",
-                    "type": "item",
-                    "fieldName": "unlock_fieldname"
-                  }
                 ]
               }
             },
@@ -592,8 +571,7 @@
             ],
             "@item.unlock_fieldname": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }

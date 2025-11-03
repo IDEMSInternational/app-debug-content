@@ -28,8 +28,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "name": "apple_sign_in_button_3",
@@ -50,8 +49,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "name": "google_sign_in_button_4",

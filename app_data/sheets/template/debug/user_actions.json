@@ -45,8 +45,7 @@
             "example_1",
             "this.value"
           ],
-          "_raw": "changed | set_field : example_1 : this.value",
-          "_cleaned": "changed | set_field : example_1 : this.value"
+          "_raw": "changed | set_field : example_1 : this.value"
         },
         {
           "trigger": "changed",
@@ -54,8 +53,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "changed | emit : force_reprocess",
-          "_cleaned": "changed | emit : force_reprocess"
+          "_raw": "changed | emit : force_reprocess"
         }
       ],
       "name": "text_box_5",
@@ -161,8 +159,7 @@
           "args": [
             "server_sync"
           ],
-          "_raw": "click | emit : server_sync",
-          "_cleaned": "click | emit : server_sync"
+          "_raw": "click | emit : server_sync"
         },
         {
           "trigger": "click",
@@ -170,8 +167,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit : force_reprocess",
-          "_cleaned": "click | emit : force_reprocess"
+          "_raw": "click | emit : force_reprocess"
         }
       ],
       "name": "button_9",
@@ -214,8 +210,7 @@
             "import",
             "@local.user_id_input"
           ],
-          "_raw": "click | user: import: @local.user_id_input",
-          "_cleaned": "click | user: import: @local.user_id_input"
+          "_raw": "click | user: import: @local.user_id_input"
         },
         {
           "trigger": "click",
@@ -223,8 +218,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit : force_reprocess",
-          "_cleaned": "click | emit : force_reprocess"
+          "_raw": "click | emit : force_reprocess"
         }
       ],
       "name": "button_13",
@@ -249,14 +243,6 @@
                 "type": "local",
                 "fieldName": "user_id_input"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | user: import: @local.user_id_input",
-                "matchedExpression": "@local.user_id_input",
-                "type": "local",
-                "fieldName": "user_id_input"
-              }
             ]
           }
         }
@@ -264,8 +250,7 @@
       "_dynamicDependencies": {
         "@local.user_id_input": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

@@ -17,8 +17,7 @@
           "args": [
             "feat_app_layout_header_compact"
           ],
-          "_raw": "click | go_to: feat_app_layout_header_compact",
-          "_cleaned": "click | go_to: feat_app_layout_header_compact"
+          "_raw": "click | go_to: feat_app_layout_header_compact"
         }
       ],
       "name": "button_2",
@@ -37,8 +36,7 @@
           "args": [
             "feat_app_layout_custom_header"
           ],
-          "_raw": "click | go_to: feat_app_layout_custom_header",
-          "_cleaned": "click | go_to: feat_app_layout_custom_header"
+          "_raw": "click | go_to: feat_app_layout_custom_header"
         }
       ],
       "name": "button_3",
@@ -57,8 +55,7 @@
           "args": [
             "feat_app_layout_no_header"
           ],
-          "_raw": "click | go_to: feat_app_layout_no_header",
-          "_cleaned": "click | go_to: feat_app_layout_no_header"
+          "_raw": "click | go_to: feat_app_layout_no_header"
         }
       ],
       "name": "button_4",
@@ -77,8 +74,7 @@
           "args": [
             "feat_app_layout_inline_header"
           ],
-          "_raw": "click | go_to: feat_app_layout_inline_header",
-          "_cleaned": "click | go_to: feat_app_layout_inline_header"
+          "_raw": "click | go_to: feat_app_layout_inline_header"
         }
       ],
       "name": "button_5",
@@ -97,8 +93,7 @@
           "args": [
             "feat_app_layout_custom_footer"
           ],
-          "_raw": "click | go_to: feat_app_layout_custom_footer",
-          "_cleaned": "click | go_to: feat_app_layout_custom_footer"
+          "_raw": "click | go_to: feat_app_layout_custom_footer"
         }
       ],
       "name": "button_6",
@@ -117,8 +112,7 @@
           "args": [
             "feat_app_layout_padding"
           ],
-          "_raw": "click | go_to: feat_app_layout_padding",
-          "_cleaned": "click | go_to: feat_app_layout_padding"
+          "_raw": "click | go_to: feat_app_layout_padding"
         }
       ],
       "name": "button_7",
@@ -137,8 +131,7 @@
           "args": [
             "home_screen"
           ],
-          "_raw": "click | go_to: home_screen",
-          "_cleaned": "click | go_to: home_screen"
+          "_raw": "click | go_to: home_screen"
         }
       ],
       "name": "button_8",

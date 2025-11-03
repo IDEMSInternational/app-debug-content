@@ -204,8 +204,7 @@
                 "current_article",
                 "@local.id"
               ],
-              "_raw": "click | set_field: current_article: @local.id",
-              "_cleaned": "click | set_field: current_article: @local.id"
+              "_raw": "click | set_field: current_article: @local.id"
             },
             {
               "trigger": "click",
@@ -213,8 +212,7 @@
               "args": [
                 "article"
               ],
-              "_raw": "click | go_to: article",
-              "_cleaned": "click | go_to: article"
+              "_raw": "click | go_to: article"
             }
           ],
           "_nested_name": "dg_header.button",
@@ -238,14 +236,6 @@
                     "type": "local",
                     "fieldName": "id"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | set_field: current_article: @local.id",
-                    "matchedExpression": "@local.id",
-                    "type": "local",
-                    "fieldName": "id"
-                  }
                 ]
               }
             }
@@ -253,8 +243,7 @@
           "_dynamicDependencies": {
             "@local.id": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         }

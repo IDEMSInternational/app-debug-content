@@ -78,8 +78,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "_nested_name": "force_reprocess"
@@ -98,8 +97,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
+          "_raw": "click | emit: force_reload"
         }
       ],
       "_nested_name": "force_reload"

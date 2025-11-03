@@ -15,8 +15,7 @@
           "args": [
             "uncompleted"
           ],
-          "_raw": "uncompleted | emit:uncompleted",
-          "_cleaned": "uncompleted | emit:uncompleted"
+          "_raw": "uncompleted | emit:uncompleted"
         }
       ],
       "rows": [
@@ -145,8 +144,7 @@
               "args": [
                 "uncompleted"
               ],
-              "_raw": "click | emit:uncompleted",
-              "_cleaned": "click | emit:uncompleted"
+              "_raw": "click | emit:uncompleted"
             }
           ],
           "exclude_from_translation": true,

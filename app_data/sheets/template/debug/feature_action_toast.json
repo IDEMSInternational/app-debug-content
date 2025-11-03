@@ -35,7 +35,6 @@
           "action_id": "toast",
           "args": [],
           "_raw": "click | toast | message: @local.message",
-          "_cleaned": "click | toast | message: @local.message",
           "params": {
             "message": "@local.message"
           }
@@ -46,14 +45,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | toast | message: @local.message",
-                "matchedExpression": "@local.message",
-                "type": "local",
-                "fieldName": "message"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | toast | message: @local.message",
                 "matchedExpression": "@local.message",
@@ -77,7 +68,6 @@
       "_dynamicDependencies": {
         "@local.message": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.message"
         ]
       }
@@ -95,7 +85,6 @@
           "action_id": "toast",
           "args": [],
           "_raw": "click | toast | message:",
-          "_cleaned": "click | toast | message:",
           "params": {
             "message": ""
           }
@@ -116,7 +105,6 @@
           "action_id": "toast",
           "args": [],
           "_raw": "click | toast | message: hard coded toast",
-          "_cleaned": "click | toast | message: hard coded toast",
           "params": {
             "message": "hard coded toast"
           }

@@ -85,8 +85,7 @@
             "set_language",
             "this.value"
           ],
-          "_raw": "changed | emit: set_language: @local.global_language_select",
-          "_cleaned": "changed | emit: set_language: @local.global_language_select"
+          "_raw": "changed | emit: set_language: @local.global_language_select"
         },
         {
           "trigger": "changed",
@@ -94,8 +93,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "changed | emit: force_reload",
-          "_cleaned": "changed | emit: force_reload"
+          "_raw": "changed | emit: force_reload"
         }
       ],
       "parameter_list": {
@@ -114,14 +112,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | emit: set_language: @local.global_language_select",
-                "matchedExpression": "@local.global_language_select",
-                "type": "local",
-                "fieldName": "global_language_select"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | emit: set_language: @local.global_language_select",
                 "matchedExpression": "@local.global_language_select",
@@ -147,8 +137,7 @@
           "value"
         ],
         "@local.global_language_select": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.language_list": [
           "parameter_list.answer_list"
@@ -352,7 +341,6 @@
           "action_id": "copy",
           "args": [],
           "_raw": "click | copy | text: @local.source_text",
-          "_cleaned": "click | copy | text: @local.source_text",
           "params": {
             "text": "@local.source_text"
           }
@@ -365,14 +353,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | copy | text: @local.source_text",
-                "matchedExpression": "@local.source_text",
-                "type": "local",
-                "fieldName": "source_text"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | copy | text: @local.source_text",
                 "matchedExpression": "@local.source_text",
@@ -404,7 +384,6 @@
       "_dynamicDependencies": {
         "@local.source_text": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.text"
         ],
         "@local.local_language_select": [
@@ -424,7 +403,6 @@
           "action_id": "copy",
           "args": [],
           "_raw": "click | copy | text: @local.text_in_spanish",
-          "_cleaned": "click | copy | text: @local.text_in_spanish",
           "params": {
             "text": "@local.text_in_spanish"
           }
@@ -437,14 +415,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | copy | text: @local.text_in_spanish",
-                "matchedExpression": "@local.text_in_spanish",
-                "type": "local",
-                "fieldName": "text_in_spanish"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | copy | text: @local.text_in_spanish",
                 "matchedExpression": "@local.text_in_spanish",
@@ -476,7 +446,6 @@
       "_dynamicDependencies": {
         "@local.text_in_spanish": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.text"
         ],
         "@local.local_language_select": [

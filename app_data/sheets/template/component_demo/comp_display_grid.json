@@ -102,8 +102,7 @@
                   "args": [
                     "force_reprocess"
                   ],
-                  "_raw": "changed | emit:force_reprocess",
-                  "_cleaned": "changed | emit:force_reprocess"
+                  "_raw": "changed | emit:force_reprocess"
                 }
               ],
               "exclude_from_translation": true,
@@ -795,7 +794,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: comp_display_grid_data,\ntext: Text override",
-          "_cleaned": "click | set_data | \n\n_list_id: comp_display_grid_data,\ntext: Text override",
           "params": {
             "_list_id": "comp_display_grid_data",
             "text": "Text override"
@@ -817,7 +815,6 @@
           "action_id": "reset_data",
           "args": [],
           "_raw": "click | reset_data | \n\n_list_id: comp_display_grid_data",
-          "_cleaned": "click | reset_data | \n\n_list_id: comp_display_grid_data",
           "params": {
             "_list_id": "comp_display_grid_data"
           }

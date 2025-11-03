@@ -327,8 +327,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit:force_reprocess",
-          "_cleaned": "click | emit:force_reprocess"
+          "_raw": "click | emit:force_reprocess"
         }
       ],
       "_nested_name": "button_1"
@@ -352,8 +351,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "changed | emit:force_reprocess",
-          "_cleaned": "changed | emit:force_reprocess"
+          "_raw": "changed | emit:force_reprocess"
         }
       ],
       "parameter_list": {

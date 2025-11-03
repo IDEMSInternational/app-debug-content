@@ -17,7 +17,6 @@
             "open"
           ],
           "_raw": "click | nav_stack: open | \ntemplate: feat_nav_stack_child, \ntitle: Stack Title",
-          "_cleaned": "click | nav_stack: open | \ntemplate: feat_nav_stack_child, \ntitle: Stack Title",
           "params": {
             "template": "feat_nav_stack_child",
             "title": "Stack Title"
@@ -40,8 +39,7 @@
           "args": [
             "close_top"
           ],
-          "_raw": "click | nav_stack: close_top",
-          "_cleaned": "click | nav_stack: close_top"
+          "_raw": "click | nav_stack: close_top"
         }
       ],
       "name": "button_3",
@@ -60,8 +58,7 @@
           "args": [
             "close_all"
           ],
-          "_raw": "click | nav_stack: close_all",
-          "_cleaned": "click | nav_stack: close_all"
+          "_raw": "click | nav_stack: close_all"
         }
       ],
       "name": "button_4",
@@ -81,7 +78,6 @@
             "open"
           ],
           "_raw": "click | nav_stack: open | template: feat_nav_stack_child, title: Stack Title, show_close_button: false",
-          "_cleaned": "click | nav_stack: open | template: feat_nav_stack_child, title: Stack Title, show_close_button: false",
           "params": {
             "template": "feat_nav_stack_child",
             "title": "Stack Title",

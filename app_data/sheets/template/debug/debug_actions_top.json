@@ -80,8 +80,7 @@
                 "debug_actions_top_1",
                 "Value 1"
               ],
-              "_raw": "completed | set_field: debug_actions_top_1 : Value 1",
-              "_cleaned": "completed | set_field: debug_actions_top_1 : Value 1"
+              "_raw": "completed | set_field: debug_actions_top_1 : Value 1"
             }
           ],
           "exclude_from_translation": true,
@@ -109,8 +108,7 @@
                 "debug_actions_top_2",
                 "Value 2"
               ],
-              "_raw": "completed | set_field: debug_actions_top_2 : Value 2",
-              "_cleaned": "completed | set_field: debug_actions_top_2 : Value 2"
+              "_raw": "completed | set_field: debug_actions_top_2 : Value 2"
             }
           ],
           "exclude_from_translation": true,
@@ -157,8 +155,7 @@
                 "debug_actions_top_3",
                 "Value 3"
               ],
-              "_raw": "completed | set_field: debug_actions_top_3: Value 3",
-              "_cleaned": "completed | set_field: debug_actions_top_3: Value 3"
+              "_raw": "completed | set_field: debug_actions_top_3: Value 3"
             },
             {
               "trigger": "completed",
@@ -166,8 +163,7 @@
               "args": [
                 "completed"
               ],
-              "_raw": "completed | emit: completed",
-              "_cleaned": "completed | emit: completed"
+              "_raw": "completed | emit: completed"
             }
           ],
           "exclude_from_translation": true,
@@ -195,8 +191,7 @@
                 "debug_actions_top_4",
                 "Value 4"
               ],
-              "_raw": "completed | set_field: debug_actions_top_4: Value 4",
-              "_cleaned": "completed | set_field: debug_actions_top_4: Value 4"
+              "_raw": "completed | set_field: debug_actions_top_4: Value 4"
             },
             {
               "trigger": "completed",
@@ -204,8 +199,7 @@
               "args": [
                 "completed"
               ],
-              "_raw": "completed | emit: completed",
-              "_cleaned": "completed | emit: completed"
+              "_raw": "completed | emit: completed"
             }
           ],
           "exclude_from_translation": true,
@@ -251,8 +245,7 @@
               "args": [
                 "completed"
               ],
-              "_raw": "completed | emit: completed",
-              "_cleaned": "completed | emit: completed"
+              "_raw": "completed | emit: completed"
             }
           ],
           "exclude_from_translation": true,
@@ -279,8 +272,7 @@
               "args": [
                 "completed"
               ],
-              "_raw": "completed | emit: completed",
-              "_cleaned": "completed | emit: completed"
+              "_raw": "completed | emit: completed"
             }
           ],
           "exclude_from_translation": true,

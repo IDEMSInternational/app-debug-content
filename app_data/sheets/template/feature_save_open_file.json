@@ -92,8 +92,7 @@
           "args": [
             "@local.image_path"
           ],
-          "_raw": "click | save_to_device: @local.image_path",
-          "_cleaned": "click | save_to_device: @local.image_path"
+          "_raw": "click | save_to_device: @local.image_path"
         }
       ],
       "_nested_name": "save_button_1",
@@ -117,14 +116,6 @@
                 "type": "local",
                 "fieldName": "image_path"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | save_to_device: @local.image_path",
-                "matchedExpression": "@local.image_path",
-                "type": "local",
-                "fieldName": "image_path"
-              }
             ]
           }
         }
@@ -132,8 +123,7 @@
       "_dynamicDependencies": {
         "@local.image_path": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -151,8 +141,7 @@
           "args": [
             "@local.image_path"
           ],
-          "_raw": "click | open_external: @local.image_path",
-          "_cleaned": "click | open_external: @local.image_path"
+          "_raw": "click | open_external: @local.image_path"
         }
       ],
       "_nested_name": "open_button_1",
@@ -176,14 +165,6 @@
                 "type": "local",
                 "fieldName": "image_path"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | open_external: @local.image_path",
-                "matchedExpression": "@local.image_path",
-                "type": "local",
-                "fieldName": "image_path"
-              }
             ]
           }
         }
@@ -191,8 +172,7 @@
       "_dynamicDependencies": {
         "@local.image_path": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -276,8 +256,7 @@
           "args": [
             "@local.pdf_path"
           ],
-          "_raw": "click | save_to_device: @local.pdf_path",
-          "_cleaned": "click | save_to_device: @local.pdf_path"
+          "_raw": "click | save_to_device: @local.pdf_path"
         }
       ],
       "_nested_name": "save_button_2",
@@ -301,14 +280,6 @@
                 "type": "local",
                 "fieldName": "pdf_path"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | save_to_device: @local.pdf_path",
-                "matchedExpression": "@local.pdf_path",
-                "type": "local",
-                "fieldName": "pdf_path"
-              }
             ]
           }
         }
@@ -316,8 +287,7 @@
       "_dynamicDependencies": {
         "@local.pdf_path": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -335,8 +305,7 @@
           "args": [
             "@local.pdf_path"
           ],
-          "_raw": "click | open_external: @local.pdf_path",
-          "_cleaned": "click | open_external: @local.pdf_path"
+          "_raw": "click | open_external: @local.pdf_path"
         }
       ],
       "_nested_name": "open_button_2",
@@ -360,14 +329,6 @@
                 "type": "local",
                 "fieldName": "pdf_path"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | open_external: @local.pdf_path",
-                "matchedExpression": "@local.pdf_path",
-                "type": "local",
-                "fieldName": "pdf_path"
-              }
             ]
           }
         }
@@ -375,8 +336,7 @@
       "_dynamicDependencies": {
         "@local.pdf_path": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }
