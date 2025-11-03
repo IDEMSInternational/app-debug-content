@@ -113,7 +113,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "changed | set_data | \n_list_id: @local.data_list_name, \n_id: @local.row_id, \n@local.response_column: this.value",
-          "_cleaned": "changed | set_data | \n_list_id: @local.data_list_name, \n_id: @local.row_id, \n@local.response_column: this.value",
           "params": {
             "_list_id": "@local.data_list_name",
             "_id": "@local.row_id",
@@ -133,26 +132,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | set_data | \n_list_id: @local.data_list_name, \n_id: @local.row_id, \n@local.response_column: this.value",
-                "matchedExpression": "@local.data_list_name",
-                "type": "local",
-                "fieldName": "data_list_name"
-              },
-              {
-                "fullExpression": "changed | set_data | \n_list_id: @local.data_list_name, \n_id: @local.row_id, \n@local.response_column: this.value",
-                "matchedExpression": "@local.row_id",
-                "type": "local",
-                "fieldName": "row_id"
-              },
-              {
-                "fullExpression": "changed | set_data | \n_list_id: @local.data_list_name, \n_id: @local.row_id, \n@local.response_column: this.value",
-                "matchedExpression": "@local.response_column",
-                "type": "local",
-                "fieldName": "response_column"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_data | \n_list_id: @local.data_list_name, \n_id: @local.row_id, \n@local.response_column: this.value",
                 "matchedExpression": "@local.data_list_name",
@@ -206,17 +185,14 @@
       "_dynamicDependencies": {
         "@local.data_list_name": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params._list_id"
         ],
         "@local.row_id": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params._id"
         ],
         "@local.response_column": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list": [
           "parameter_list.answer_list"
@@ -242,7 +218,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "changed | set_item | @local.response_column: this.value",
-              "_cleaned": "changed | set_item | @local.response_column: this.value",
               "params": {
                 "@local.response_column": "this.value"
               }
@@ -268,14 +243,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "changed | set_item | @local.response_column: this.value",
-                    "matchedExpression": "@local.response_column",
-                    "type": "local",
-                    "fieldName": "response_column"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "changed | set_item | @local.response_column: this.value",
                     "matchedExpression": "@local.response_column",
@@ -315,8 +282,7 @@
           "_dynamicDependencies": {
             "@local.response_column": [
               "value",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.answer_list": [
               "parameter_list.answer_list"
@@ -339,7 +305,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "changed | set_item | @local.response_column: this.value",
-              "_cleaned": "changed | set_item | @local.response_column: this.value",
               "params": {
                 "@local.response_column": "this.value"
               }
@@ -364,14 +329,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "changed | set_item | @local.response_column: this.value",
-                    "matchedExpression": "@local.response_column",
-                    "type": "local",
-                    "fieldName": "response_column"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "changed | set_item | @local.response_column: this.value",
                     "matchedExpression": "@local.response_column",
@@ -411,8 +368,7 @@
           "_dynamicDependencies": {
             "@local.response_column": [
               "value",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.answer_list": [
               "parameter_list.answer_list"

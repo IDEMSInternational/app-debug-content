@@ -25,8 +25,7 @@
           "args": [
             "back"
           ],
-          "_raw": "click | nav: back",
-          "_cleaned": "click | nav: back"
+          "_raw": "click | nav: back"
         }
       ],
       "name": "button_3",
@@ -45,8 +44,7 @@
           "args": [
             "forward"
           ],
-          "_raw": "click | nav: forward",
-          "_cleaned": "click | nav: forward"
+          "_raw": "click | nav: forward"
         }
       ],
       "name": "button_4",
@@ -65,8 +63,7 @@
           "args": [
             "feat_nav_actions_1"
           ],
-          "_raw": "click | go_to: feat_nav_actions_1",
-          "_cleaned": "click | go_to: feat_nav_actions_1"
+          "_raw": "click | go_to: feat_nav_actions_1"
         }
       ],
       "name": "button_5",
@@ -85,8 +82,7 @@
           "args": [
             "feat_nav_actions_2"
           ],
-          "_raw": "click | go_to: feat_nav_actions_2",
-          "_cleaned": "click | go_to: feat_nav_actions_2"
+          "_raw": "click | go_to: feat_nav_actions_2"
         }
       ],
       "name": "button_6",

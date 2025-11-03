@@ -26,8 +26,7 @@
           "trigger": "click",
           "action_id": "download_assets",
           "args": [],
-          "_raw": "click | download_assets",
-          "_cleaned": "click | download_assets"
+          "_raw": "click | download_assets"
         }
       ],
       "exclude_from_translation": true,

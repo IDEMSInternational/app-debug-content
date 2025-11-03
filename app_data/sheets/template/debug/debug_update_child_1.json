@@ -132,8 +132,7 @@
           "args": [
             "example_text_option_1"
           ],
-          "_raw": "completed | pop_up : example_text_option_1",
-          "_cleaned": "completed | pop_up : example_text_option_1"
+          "_raw": "completed | pop_up : example_text_option_1"
         }
       ],
       "condition": "@local.show_first_template",
@@ -176,8 +175,7 @@
           "args": [
             "example_text_option_2"
           ],
-          "_raw": "completed | pop_up : example_text_option_2",
-          "_cleaned": "completed | pop_up : example_text_option_2"
+          "_raw": "completed | pop_up : example_text_option_2"
         }
       ],
       "condition": "!@local.show_first_template",

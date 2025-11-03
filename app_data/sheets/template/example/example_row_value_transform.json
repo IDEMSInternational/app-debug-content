@@ -98,8 +98,7 @@
             "button_clicked",
             true
           ],
-          "_raw": "click | set_local: button_clicked: true",
-          "_cleaned": "click | set_local: button_clicked: true"
+          "_raw": "click | set_local: button_clicked: true"
         }
       ],
       "type": "set_variable",

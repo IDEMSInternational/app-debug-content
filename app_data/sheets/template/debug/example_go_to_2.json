@@ -28,8 +28,7 @@
           "args": [
             "example_emit"
           ],
-          "_raw": "click | go_to: example_emit",
-          "_cleaned": "click | go_to: example_emit"
+          "_raw": "click | go_to: example_emit"
         }
       ],
       "exclude_from_translation": true,
@@ -59,8 +58,7 @@
           "args": [
             "example_emit"
           ],
-          "_raw": "click | go_to:example_emit",
-          "_cleaned": "click | go_to:example_emit"
+          "_raw": "click | go_to:example_emit"
         },
         {
           "trigger": "click",
@@ -68,8 +66,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "click | emit:completed",
-          "_cleaned": "click | emit:completed"
+          "_raw": "click | emit:completed"
         }
       ],
       "exclude_from_translation": true,

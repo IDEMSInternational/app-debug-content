@@ -472,8 +472,7 @@
                   "args": [
                     "example_text"
                   ],
-                  "_raw": "click | pop_up: example_text",
-                  "_cleaned": "click | pop_up: example_text"
+                  "_raw": "click | pop_up: example_text"
                 }
               ],
               "name": "task_card_1_@item.id",
@@ -713,8 +712,7 @@
                   "args": [
                     "example_text"
                   ],
-                  "_raw": "click | pop_up: example_text",
-                  "_cleaned": "click | pop_up: example_text"
+                  "_raw": "click | pop_up: example_text"
                 }
               ],
               "name": "plh_module_list_item_1_@item.id",
@@ -849,8 +847,7 @@
                   "args": [
                     "example_text"
                   ],
-                  "_raw": "click | pop_up: example_text",
-                  "_cleaned": "click | pop_up: example_text"
+                  "_raw": "click | pop_up: example_text"
                 }
               ],
               "name": "plh_module_list_item_1_@item.id",

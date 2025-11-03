@@ -30,8 +30,7 @@
           "args": [
             "debug_text_wrapping_popup"
           ],
-          "_raw": "click | pop_up:debug_text_wrapping_popup",
-          "_cleaned": "click | pop_up:debug_text_wrapping_popup"
+          "_raw": "click | pop_up:debug_text_wrapping_popup"
         }
       ],
       "_nested_name": "button"

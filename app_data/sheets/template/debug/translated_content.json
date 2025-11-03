@@ -1,0 +1,115 @@
+{
+  "flow_type": "template",
+  "flow_name": "translated_content",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "text",
+      "value": "TEST",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "text"
+    },
+    {
+      "name": "accordion_title",
+      "value": "TEST",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "accordion_title"
+    },
+    {
+      "name": "accordion_text",
+      "value": "TEST",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "accordion_text"
+    },
+    {
+      "type": "text",
+      "name": "print_text",
+      "value": "@local.text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "print_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.text",
+            "matchedExpression": "@local.text",
+            "type": "local",
+            "fieldName": "text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "accordion",
+      "name": "accordion",
+      "rows": [
+        {
+          "type": "accordion_section",
+          "name": "section",
+          "value": "@local.accordion_title",
+          "rows": [
+            {
+              "type": "text",
+              "name": "print_accordion_text",
+              "value": "@local.accordion_text",
+              "_translations": {
+                "value": {}
+              },
+              "_nested_name": "accordion.section.print_accordion_text",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@local.accordion_text",
+                    "matchedExpression": "@local.accordion_text",
+                    "type": "local",
+                    "fieldName": "accordion_text"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@local.accordion_text": [
+                  "value"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "accordion.section",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.accordion_title",
+                "matchedExpression": "@local.accordion_title",
+                "type": "local",
+                "fieldName": "accordion_title"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.accordion_title": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "accordion"
+    }
+  ],
+  "_xlsxPath": "debug_sheets/debug_data_items_translate.xlsx",
+  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+}

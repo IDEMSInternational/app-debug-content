@@ -27,8 +27,7 @@
           "args": [
             "debug_tour"
           ],
-          "_raw": "click | start_tour: debug_tour",
-          "_cleaned": "click | start_tour: debug_tour"
+          "_raw": "click | start_tour: debug_tour"
         }
       ],
       "_nested_name": "button"

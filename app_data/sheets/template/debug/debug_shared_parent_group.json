@@ -53,8 +53,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "!@local.is_user_signed_in",
@@ -89,8 +88,7 @@
           "args": [
             "sign_out"
           ],
-          "_raw": "click | auth: sign_out",
-          "_cleaned": "click | auth: sign_out"
+          "_raw": "click | auth: sign_out"
         },
         {
           "trigger": "click",
@@ -98,8 +96,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "@local.is_user_signed_in",
@@ -203,7 +200,6 @@
             "create_random"
           ],
           "_raw": "click | plh_parent_group: create_random | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-          "_cleaned": "click | plh_parent_group: create_random | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
           "params": {
             "parent_groups_data_list": "debug_parent_group_data",
             "parents_data_list": "debug_parent_data"
@@ -492,7 +488,6 @@
                       "action_id": "set_item",
                       "args": [],
                       "_raw": "changed | set_item | text: this.value",
-                      "_cleaned": "changed | set_item | text: this.value",
                       "params": {
                         "text": "this.value"
                       }
@@ -709,7 +704,6 @@
                         "remove_cofacilitator"
                       ],
                       "_raw": "click | plh_parent_group: remove_cofacilitator | parent_group_id: @item.id, auth_id: @item.cofacilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                      "_cleaned": "click | plh_parent_group: remove_cofacilitator | parent_group_id: @item.id, auth_id: @item.cofacilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                       "params": {
                         "parent_group_id": "@item.id",
                         "auth_id": "@item.cofacilitator_id",
@@ -723,8 +717,7 @@
                       "args": [
                         "force_reload"
                       ],
-                      "_raw": "click | emit: force_reload",
-                      "_cleaned": "click | emit: force_reload"
+                      "_raw": "click | emit: force_reload"
                     }
                   ],
                   "condition": "!@item.readonly",
@@ -734,20 +727,6 @@
                     "action_list": {
                       "0": {
                         "_raw": [
-                          {
-                            "fullExpression": "click | plh_parent_group: remove_cofacilitator | parent_group_id: @item.id, auth_id: @item.cofacilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          },
-                          {
-                            "fullExpression": "click | plh_parent_group: remove_cofacilitator | parent_group_id: @item.id, auth_id: @item.cofacilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.cofacilitator_id",
-                            "type": "item",
-                            "fieldName": "cofacilitator_id"
-                          }
-                        ],
-                        "_cleaned": [
                           {
                             "fullExpression": "click | plh_parent_group: remove_cofacilitator | parent_group_id: @item.id, auth_id: @item.cofacilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
@@ -801,12 +780,10 @@
                   "_dynamicDependencies": {
                     "@item.id": [
                       "action_list.0._raw",
-                      "action_list.0._cleaned",
                       "action_list.0.params.parent_group_id"
                     ],
                     "@item.cofacilitator_id": [
                       "action_list.0._raw",
-                      "action_list.0._cleaned",
                       "action_list.0.params.auth_id"
                     ],
                     "!@item.readonly": [
@@ -908,7 +885,6 @@
                         "add_cofacilitator"
                       ],
                       "_raw": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                      "_cleaned": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                       "params": {
                         "parent_group_id": "@item.id",
                         "auth_id": "@local.co_facilitator_id",
@@ -924,20 +900,6 @@
                     "action_list": {
                       "0": {
                         "_raw": [
-                          {
-                            "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          },
-                          {
-                            "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@local.co_facilitator_id",
-                            "type": "local",
-                            "fieldName": "co_facilitator_id"
-                          }
-                        ],
-                        "_cleaned": [
                           {
                             "fullExpression": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
@@ -991,12 +953,10 @@
                   "_dynamicDependencies": {
                     "@item.id": [
                       "action_list.0._raw",
-                      "action_list.0._cleaned",
                       "action_list.0.params.parent_group_id"
                     ],
                     "@local.co_facilitator_id": [
                       "action_list.0._raw",
-                      "action_list.0._cleaned",
                       "action_list.0.params.auth_id"
                     ],
                     "!@item.readonly": [
@@ -1078,7 +1038,6 @@
                         "generate_access_code"
                       ],
                       "_raw": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
-                      "_cleaned": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
                       "params": {
                         "parent_group_id": "@item.id",
                         "parent_groups_data_list": "debug_parent_group_data",
@@ -1092,14 +1051,6 @@
                     "action_list": {
                       "0": {
                         "_raw": [
-                          {
-                            "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "_cleaned": [
                           {
                             "fullExpression": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
@@ -1131,7 +1082,6 @@
                   "_dynamicDependencies": {
                     "@item.id": [
                       "action_list.0._raw",
-                      "action_list.0._cleaned",
                       "action_list.0.params.parent_group_id"
                     ],
                     "@item.id.display_group_8.button_2": [
@@ -1175,7 +1125,6 @@
                         "push"
                       ],
                       "_raw": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                      "_cleaned": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                       "params": {
                         "parent_group_id": "@item.id",
                         "parent_groups_data_list": "debug_parent_group_data",
@@ -1190,14 +1139,6 @@
                     "action_list": {
                       "0": {
                         "_raw": [
-                          {
-                            "fullExpression": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "_cleaned": [
                           {
                             "fullExpression": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
@@ -1237,7 +1178,6 @@
                   "_dynamicDependencies": {
                     "@item.id": [
                       "action_list.0._raw",
-                      "action_list.0._cleaned",
                       "action_list.0.params.parent_group_id"
                     ],
                     "!@item.readonly": [
@@ -1262,7 +1202,6 @@
                         "pull"
                       ],
                       "_raw": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                      "_cleaned": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                       "params": {
                         "parent_group_id": "@item.id",
                         "parent_groups_data_list": "debug_parent_group_data",
@@ -1277,14 +1216,6 @@
                     "action_list": {
                       "0": {
                         "_raw": [
-                          {
-                            "fullExpression": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-                            "matchedExpression": "@item.id",
-                            "type": "item",
-                            "fieldName": "id"
-                          }
-                        ],
-                        "_cleaned": [
                           {
                             "fullExpression": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
                             "matchedExpression": "@item.id",
@@ -1324,7 +1255,6 @@
                   "_dynamicDependencies": {
                     "@item.id": [
                       "action_list.0._raw",
-                      "action_list.0._cleaned",
                       "action_list.0.params.parent_group_id"
                     ],
                     "!@item.shared_id": [
@@ -1412,7 +1342,6 @@
                 "push"
               ],
               "_raw": "click | plh_parent_group: push | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
-              "_cleaned": "click | plh_parent_group: push | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data",
               "params": {
                 "parent_groups_data_list": "debug_parent_group_data",
                 "parents_data_list": "debug_parent_data"
@@ -1436,7 +1365,6 @@
                 "pull"
               ],
               "_raw": "click | plh_parent_group: pull | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data, completion_tracking_data_list: debug_pg_completion_data",
-              "_cleaned": "click | plh_parent_group: pull | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data, completion_tracking_data_list: debug_pg_completion_data",
               "params": {
                 "parent_groups_data_list": "debug_parent_group_data",
                 "parents_data_list": "debug_parent_data",

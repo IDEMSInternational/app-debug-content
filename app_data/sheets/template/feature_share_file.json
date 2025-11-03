@@ -93,8 +93,7 @@
             "file",
             "@local.image_path"
           ],
-          "_raw": "click | share: file: @local.image_path",
-          "_cleaned": "click | share: file: @local.image_path"
+          "_raw": "click | share: file: @local.image_path"
         }
       ],
       "_nested_name": "share_button_1",
@@ -118,14 +117,6 @@
                 "type": "local",
                 "fieldName": "image_path"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share: file: @local.image_path",
-                "matchedExpression": "@local.image_path",
-                "type": "local",
-                "fieldName": "image_path"
-              }
             ]
           }
         }
@@ -133,8 +124,7 @@
       "_dynamicDependencies": {
         "@local.image_path": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -195,8 +185,7 @@
             "file",
             "@local.pdf_path"
           ],
-          "_raw": "click | share: file: @local.pdf_path",
-          "_cleaned": "click | share: file: @local.pdf_path"
+          "_raw": "click | share: file: @local.pdf_path"
         }
       ],
       "_nested_name": "share_button_1",
@@ -220,14 +209,6 @@
                 "type": "local",
                 "fieldName": "pdf_path"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | share: file: @local.pdf_path",
-                "matchedExpression": "@local.pdf_path",
-                "type": "local",
-                "fieldName": "pdf_path"
-              }
             ]
           }
         }
@@ -235,8 +216,7 @@
       "_dynamicDependencies": {
         "@local.pdf_path": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

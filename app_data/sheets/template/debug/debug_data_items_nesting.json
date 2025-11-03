@@ -117,7 +117,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "completed | set_item | completed: true",
-              "_cleaned": "completed | set_item | completed: true",
               "params": {
                 "completed": true
               }
@@ -127,7 +126,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "uncompleted | set_item | _index: @item._index - 1, completed: false",
-              "_cleaned": "uncompleted | set_item | _index: @item._index - 1, completed: false",
               "params": {
                 "_index": "@item._index - 1",
                 "completed": false
@@ -140,14 +138,6 @@
             "action_list": {
               "1": {
                 "_raw": [
-                  {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, completed: false",
-                    "matchedExpression": "@item._index",
-                    "type": "item",
-                    "fieldName": "_index"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "uncompleted | set_item | _index: @item._index - 1, completed: false",
                     "matchedExpression": "@item._index",
@@ -171,7 +161,6 @@
           "_dynamicDependencies": {
             "@item._index": [
               "action_list.1._raw",
-              "action_list.1._cleaned",
               "action_list.1.params._index"
             ]
           }
@@ -283,7 +272,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "completed | set_item | Boolean: true",
-              "_cleaned": "completed | set_item | Boolean: true",
               "params": {
                 "Boolean": true
               }
@@ -293,7 +281,6 @@
               "action_id": "set_item",
               "args": [],
               "_raw": "uncompleted | set_item | _index: @item._index - 1, Boolean: false",
-              "_cleaned": "uncompleted | set_item | _index: @item._index - 1, Boolean: false",
               "params": {
                 "_index": "@item._index - 1",
                 "Boolean": false
@@ -306,14 +293,6 @@
             "action_list": {
               "1": {
                 "_raw": [
-                  {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, Boolean: false",
-                    "matchedExpression": "@item._index",
-                    "type": "item",
-                    "fieldName": "_index"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "uncompleted | set_item | _index: @item._index - 1, Boolean: false",
                     "matchedExpression": "@item._index",
@@ -337,7 +316,6 @@
           "_dynamicDependencies": {
             "@item._index": [
               "action_list.1._raw",
-              "action_list.1._cleaned",
               "action_list.1.params._index"
             ]
           }

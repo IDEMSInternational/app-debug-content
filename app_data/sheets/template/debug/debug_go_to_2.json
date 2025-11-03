@@ -29,8 +29,7 @@
             "debug_go_to_field",
             "this.value"
           ],
-          "_raw": "changed | set_field:debug_go_to_field:@local.debug_text_box",
-          "_cleaned": "changed | set_field:debug_go_to_field:@local.debug_text_box"
+          "_raw": "changed | set_field:debug_go_to_field:@local.debug_text_box"
         }
       ],
       "exclude_from_translation": true,
@@ -53,14 +52,6 @@
                 "type": "local",
                 "fieldName": "debug_text_box"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field:debug_go_to_field:@local.debug_text_box",
-                "matchedExpression": "@local.debug_text_box",
-                "type": "local",
-                "fieldName": "debug_text_box"
-              }
             ]
           }
         }
@@ -70,8 +61,7 @@
           "value"
         ],
         "@local.debug_text_box": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -123,8 +113,7 @@
           "args": [
             "debug_go_to_3"
           ],
-          "_raw": "click | go_to:debug_go_to_3",
-          "_cleaned": "click | go_to:debug_go_to_3"
+          "_raw": "click | go_to:debug_go_to_3"
         }
       ],
       "exclude_from_translation": true,
@@ -144,8 +133,7 @@
           "args": [
             "completed"
           ],
-          "_raw": "click | emit:completed",
-          "_cleaned": "click | emit:completed"
+          "_raw": "click | emit:completed"
         }
       ],
       "exclude_from_translation": true,

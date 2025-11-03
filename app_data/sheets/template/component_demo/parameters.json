@@ -102,8 +102,7 @@
                   "args": [
                     "force_reprocess"
                   ],
-                  "_raw": "changed | emit:force_reprocess",
-                  "_cleaned": "changed | emit:force_reprocess"
+                  "_raw": "changed | emit:force_reprocess"
                 }
               ],
               "exclude_from_translation": true,
@@ -354,8 +353,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "changed | emit:force_reprocess",
-          "_cleaned": "changed | emit:force_reprocess"
+          "_raw": "changed | emit:force_reprocess"
         }
       ],
       "parameter_list": {

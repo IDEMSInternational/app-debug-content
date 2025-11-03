@@ -43,8 +43,7 @@
             "show_button_1",
             false
           ],
-          "_raw": "click | set_local:show_button_1:false",
-          "_cleaned": "click | set_local:show_button_1:false"
+          "_raw": "click | set_local:show_button_1:false"
         }
       ],
       "condition": "@local.show_button_1",

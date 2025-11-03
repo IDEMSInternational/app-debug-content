@@ -14,8 +14,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | go_to: example_text",
-          "_cleaned": "click | go_to: example_text"
+          "_raw": "click | go_to: example_text"
         }
       ],
       "_nested_name": "button_default"
@@ -97,8 +96,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -116,8 +114,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {

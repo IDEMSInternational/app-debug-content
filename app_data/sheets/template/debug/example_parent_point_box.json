@@ -25,8 +25,7 @@
             "@local.example_count",
             "@local.example_count+1"
           ],
-          "_raw": "click | set_field: @local.example_count: @local.example_count+1",
-          "_cleaned": "click | set_field: @local.example_count: @local.example_count+1"
+          "_raw": "click | set_field: @local.example_count: @local.example_count+1"
         },
         {
           "trigger": "info_click",
@@ -34,8 +33,7 @@
           "args": [
             "example_parent_point_box_info"
           ],
-          "_raw": "info_click | pop_up: example_parent_point_box_info",
-          "_cleaned": "info_click | pop_up: example_parent_point_box_info"
+          "_raw": "info_click | pop_up: example_parent_point_box_info"
         }
       ],
       "parameter_list": {
@@ -86,20 +84,6 @@
                 "type": "local",
                 "fieldName": "example_count"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_field: @local.example_count: @local.example_count+1",
-                "matchedExpression": "@local.example_count",
-                "type": "local",
-                "fieldName": "example_count"
-              },
-              {
-                "fullExpression": "click | set_field: @local.example_count: @local.example_count+1",
-                "matchedExpression": "@local.example_count",
-                "type": "local",
-                "fieldName": "example_count"
-              }
             ]
           }
         }
@@ -110,9 +94,7 @@
           "action_list.0.args.0",
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -131,8 +113,7 @@
             "example_field",
             "parent_point_box_value"
           ],
-          "_raw": "info_click | set_field: example_field: parent_point_box_value",
-          "_cleaned": "info_click | set_field: example_field: parent_point_box_value"
+          "_raw": "info_click | set_field: example_field: parent_point_box_value"
         }
       ],
       "parameter_list": {

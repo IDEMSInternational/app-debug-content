@@ -90,8 +90,7 @@
             "demo_changed_combo_box",
             "this.value"
           ],
-          "_raw": "changed | set_field: demo_changed_combo_box: @local.combo_box",
-          "_cleaned": "changed | set_field: demo_changed_combo_box: @local.combo_box"
+          "_raw": "changed | set_field: demo_changed_combo_box: @local.combo_box"
         }
       ],
       "exclude_from_translation": true,
@@ -104,14 +103,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | set_field: demo_changed_combo_box: @local.combo_box",
-                "matchedExpression": "@local.combo_box",
-                "type": "local",
-                "fieldName": "combo_box"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_field: demo_changed_combo_box: @local.combo_box",
                 "matchedExpression": "@local.combo_box",
@@ -134,8 +125,7 @@
       },
       "_dynamicDependencies": {
         "@local.combo_box": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list_1": [
           "parameter_list.answer_list"
@@ -188,8 +178,7 @@
             "demo_changed_radio_group",
             "this.value"
           ],
-          "_raw": "changed | set_field: demo_changed_radio_group: @local.radio_group",
-          "_cleaned": "changed | set_field: demo_changed_radio_group: @local.radio_group"
+          "_raw": "changed | set_field: demo_changed_radio_group: @local.radio_group"
         }
       ],
       "exclude_from_translation": true,
@@ -201,14 +190,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | set_field: demo_changed_radio_group: @local.radio_group",
-                "matchedExpression": "@local.radio_group",
-                "type": "local",
-                "fieldName": "radio_group"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_field: demo_changed_radio_group: @local.radio_group",
                 "matchedExpression": "@local.radio_group",
@@ -231,8 +212,7 @@
       },
       "_dynamicDependencies": {
         "@local.radio_group": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list_2": [
           "parameter_list.answer_list"
@@ -310,8 +290,7 @@
             "demo_changed_text_box",
             "this.value"
           ],
-          "_raw": "changed | set_field: demo_changed_text_box: @local.text_box",
-          "_cleaned": "changed | set_field: demo_changed_text_box: @local.text_box"
+          "_raw": "changed | set_field: demo_changed_text_box: @local.text_box"
         }
       ],
       "exclude_from_translation": true,
@@ -329,22 +308,13 @@
                 "type": "local",
                 "fieldName": "text_box"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: demo_changed_text_box: @local.text_box",
-                "matchedExpression": "@local.text_box",
-                "type": "local",
-                "fieldName": "text_box"
-              }
             ]
           }
         }
       },
       "_dynamicDependencies": {
         "@local.text_box": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -395,8 +365,7 @@
             "demo_changed_slider",
             "this.value"
           ],
-          "_raw": "changed | set_field: demo_changed_slider: @local.slider",
-          "_cleaned": "changed | set_field: demo_changed_slider: @local.slider"
+          "_raw": "changed | set_field: demo_changed_slider: @local.slider"
         }
       ],
       "exclude_from_translation": true,
@@ -419,22 +388,13 @@
                 "type": "local",
                 "fieldName": "slider"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: demo_changed_slider: @local.slider",
-                "matchedExpression": "@local.slider",
-                "type": "local",
-                "fieldName": "slider"
-              }
             ]
           }
         }
       },
       "_dynamicDependencies": {
         "@local.slider": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },

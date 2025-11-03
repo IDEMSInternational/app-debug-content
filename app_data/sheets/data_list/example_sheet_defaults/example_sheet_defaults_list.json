@@ -15,8 +15,7 @@
             "example_sheet_default.item_1.completed",
             true
           ],
-          "_raw": "click | set_field : example_sheet_default.item_1.completed : true",
-          "_cleaned": "click | set_field : example_sheet_default.item_1.completed : true"
+          "_raw": "click | set_field : example_sheet_default.item_1.completed : true"
         }
       ],
       "exclude_from_translation": true
@@ -32,8 +31,7 @@
             "example_sheet_default.item_2.completed",
             true
           ],
-          "_raw": "click | set_field : example_sheet_default.item_2.completed : true",
-          "_cleaned": "click | set_field : example_sheet_default.item_2.completed : true"
+          "_raw": "click | set_field : example_sheet_default.item_2.completed : true"
         }
       ],
       "exclude_from_translation": true
@@ -49,8 +47,7 @@
             "example_sheet_default.item_3.completed",
             true
           ],
-          "_raw": "click | set_field : example_sheet_default.item_3.completed : true",
-          "_cleaned": "click | set_field : example_sheet_default.item_3.completed : true"
+          "_raw": "click | set_field : example_sheet_default.item_3.completed : true"
         }
       ],
       "exclude_from_translation": true
@@ -65,8 +62,7 @@
             "example_sheet_default.item_4.completed",
             true
           ],
-          "_raw": "click | set_field : example_sheet_default.item_4.completed : true",
-          "_cleaned": "click | set_field : example_sheet_default.item_4.completed : true"
+          "_raw": "click | set_field : example_sheet_default.item_4.completed : true"
         }
       ],
       "exclude_from_translation": true
@@ -81,8 +77,7 @@
             "example_sheet_default.item_5.completed",
             true
           ],
-          "_raw": "click | set_field : example_sheet_default.item_5.completed : true",
-          "_cleaned": "click | set_field : example_sheet_default.item_5.completed : true"
+          "_raw": "click | set_field : example_sheet_default.item_5.completed : true"
         },
         {
           "trigger": "click",
@@ -91,8 +86,7 @@
             "example_sheet_defaults_completed",
             true
           ],
-          "_raw": "click | set_field : example_sheet_defaults_completed : true",
-          "_cleaned": "click | set_field : example_sheet_defaults_completed : true"
+          "_raw": "click | set_field : example_sheet_defaults_completed : true"
         }
       ],
       "text": "ID: item_5",
@@ -109,8 +103,7 @@
             "example_sheet_default.item_6.completed",
             true
           ],
-          "_raw": "click | set_field : example_sheet_default.item_6.completed : true",
-          "_cleaned": "click | set_field : example_sheet_default.item_6.completed : true"
+          "_raw": "click | set_field : example_sheet_default.item_6.completed : true"
         }
       ],
       "exclude_from_translation": true,

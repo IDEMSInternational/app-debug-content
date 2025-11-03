@@ -1,0 +1,22 @@
+{
+  "flow_name": "new_comp_combo_box_items",
+  "flow_subtype": "generated",
+  "flow_type": "data_list",
+  "rows": [
+    {
+      "id": "id_1",
+      "name": "id_1_new",
+      "text": "New text item 1"
+    },
+    {
+      "id": "id_2",
+      "name": "id_2_new",
+      "text": "New text item 2"
+    },
+    {
+      "id": "id_3",
+      "name": "id_3_new",
+      "text": "New text item 3"
+    }
+  ]
+}

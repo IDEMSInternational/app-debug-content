@@ -48,8 +48,7 @@
                 "hide_content",
                 false
               ],
-              "_raw": "click | set_local:hide_content:false",
-              "_cleaned": "click | set_local:hide_content:false"
+              "_raw": "click | set_local:hide_content:false"
             },
             {
               "trigger": "click",
@@ -58,8 +57,7 @@
                 "hide_intro",
                 true
               ],
-              "_raw": "click | set_local:hide_intro:true",
-              "_cleaned": "click | set_local:hide_intro:true"
+              "_raw": "click | set_local:hide_intro:true"
             }
           ],
           "parameter_list": {
@@ -108,8 +106,7 @@
                 "hide_intro",
                 false
               ],
-              "_raw": "click |  set_local:hide_intro:false",
-              "_cleaned": "click |  set_local:hide_intro:false"
+              "_raw": "click |  set_local:hide_intro:false"
             },
             {
               "trigger": "click",
@@ -118,8 +115,7 @@
                 "hide_content",
                 true
               ],
-              "_raw": "click | set_local:hide_content:true",
-              "_cleaned": "click | set_local:hide_content:true"
+              "_raw": "click | set_local:hide_content:true"
             }
           ],
           "parameter_list": {

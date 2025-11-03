@@ -96,8 +96,7 @@
             "@local.combo_box_2_var",
             "this.value"
           ],
-          "_raw": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
-          "_cleaned": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2"
+          "_raw": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2"
         }
       ],
       "exclude_from_translation": true,
@@ -131,20 +130,6 @@
                 "type": "local",
                 "fieldName": "combo_box_2"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
-                "matchedExpression": "@local.combo_box_2_var",
-                "type": "local",
-                "fieldName": "combo_box_2_var"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
-                "matchedExpression": "@local.combo_box_2",
-                "type": "local",
-                "fieldName": "combo_box_2"
-              }
             ]
           }
         },
@@ -162,12 +147,10 @@
       "_dynamicDependencies": {
         "@local.combo_box_2_var": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.combo_box_2": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list": [
           "parameter_list.answer_list"

@@ -80,8 +80,7 @@
             "child_var_1",
             "this.value"
           ],
-          "_raw": "changed | set_local: child_var_1: this.value",
-          "_cleaned": "changed | set_local: child_var_1: this.value"
+          "_raw": "changed | set_local: child_var_1: this.value"
         }
       ],
       "parameter_list": {

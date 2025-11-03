@@ -15,8 +15,7 @@
             "debug_actions_2a.clicked",
             true
           ],
-          "_raw": "click | set_field: debug_actions_2a.clicked: TRUE",
-          "_cleaned": "click | set_field: debug_actions_2a.clicked: TRUE"
+          "_raw": "click | set_field: debug_actions_2a.clicked: TRUE"
         },
         {
           "trigger": "sent",
@@ -25,8 +24,7 @@
             "debug_actions_2a.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_actions_2a.sent: TRUE",
-          "_cleaned": "sent | set_field: debug_actions_2a.sent: TRUE"
+          "_raw": "sent | set_field: debug_actions_2a.sent: TRUE"
         }
       ],
       "priority": 1,
@@ -44,8 +42,7 @@
             "debug_actions_2b.clicked",
             true
           ],
-          "_raw": "click | set_field: debug_actions_2b.clicked: TRUE",
-          "_cleaned": "click | set_field: debug_actions_2b.clicked: TRUE"
+          "_raw": "click | set_field: debug_actions_2b.clicked: TRUE"
         },
         {
           "trigger": "sent",
@@ -54,8 +51,7 @@
             "debug_actions_2b.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_actions_2b.sent: TRUE",
-          "_cleaned": "sent | set_field: debug_actions_2b.sent: TRUE"
+          "_raw": "sent | set_field: debug_actions_2b.sent: TRUE"
         }
       ],
       "priority": 2,
@@ -73,8 +69,7 @@
             "debug_actions_2c.clicked",
             true
           ],
-          "_raw": "click | set_field: debug_actions_2c.clicked: TRUE",
-          "_cleaned": "click | set_field: debug_actions_2c.clicked: TRUE"
+          "_raw": "click | set_field: debug_actions_2c.clicked: TRUE"
         },
         {
           "trigger": "sent",
@@ -83,8 +78,7 @@
             "debug_actions_2c.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_actions_2c.sent: TRUE",
-          "_cleaned": "sent | set_field: debug_actions_2c.sent: TRUE"
+          "_raw": "sent | set_field: debug_actions_2c.sent: TRUE"
         },
         {
           "trigger": "sent",
@@ -93,8 +87,7 @@
             "debug_actions_4.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_actions_4.sent: FALSE",
-          "_cleaned": "sent | set_field: debug_actions_4.sent: FALSE"
+          "_raw": "sent | set_field: debug_actions_4.sent: FALSE"
         },
         {
           "trigger": "sent",
@@ -103,8 +96,7 @@
             "debug_actions_5.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_actions_5.sent: FALSE",
-          "_cleaned": "sent | set_field: debug_actions_5.sent: FALSE"
+          "_raw": "sent | set_field: debug_actions_5.sent: FALSE"
         }
       ],
       "priority": 3,
@@ -121,8 +113,7 @@
           "args": [
             "w_1on1_stepper"
           ],
-          "_raw": "click | go_to: w_1on1_stepper",
-          "_cleaned": "click | go_to: w_1on1_stepper"
+          "_raw": "click | go_to: w_1on1_stepper"
         }
       ],
       "priority": 4,

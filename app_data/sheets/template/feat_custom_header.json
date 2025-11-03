@@ -39,8 +39,7 @@
               "args": [
                 "back"
               ],
-              "_raw": "click | nav: back",
-              "_cleaned": "click | nav: back"
+              "_raw": "click | nav: back"
             }
           ],
           "name": "button_3",

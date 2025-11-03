@@ -28,8 +28,7 @@
           "args": [
             "example_event"
           ],
-          "_raw": "click | track_event : example_event",
-          "_cleaned": "click | track_event : example_event"
+          "_raw": "click | track_event : example_event"
         }
       ],
       "exclude_from_translation": true,
@@ -50,7 +49,6 @@
             "example_event"
           ],
           "_raw": "click | track_event : example_event | category:example_events, action:click",
-          "_cleaned": "click | track_event : example_event | category:example_events, action:click",
           "params": {
             "category": "example_events",
             "action": "click"

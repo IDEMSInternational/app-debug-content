@@ -190,8 +190,7 @@
                       "args": [
                         "example_text"
                       ],
-                      "_raw": "click | pop_up: example_text",
-                      "_cleaned": "click | pop_up: example_text"
+                      "_raw": "click | pop_up: example_text"
                     }
                   ],
                   "type": "set_variable",
@@ -407,8 +406,7 @@
                       "args": [
                         "example_text"
                       ],
-                      "_raw": "click | pop_up: example_text",
-                      "_cleaned": "click | pop_up: example_text"
+                      "_raw": "click | pop_up: example_text"
                     }
                   ],
                   "type": "set_variable",

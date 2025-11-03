@@ -148,8 +148,7 @@
             "something",
             "dsfsd"
           ],
-          "_raw": "click | set_field : something : dsfsd",
-          "_cleaned": "click | set_field : something : dsfsd"
+          "_raw": "click | set_field : something : dsfsd"
         }
       ],
       "type": "set_variable",
@@ -181,8 +180,7 @@
                 "demo_changed_field_parent_point",
                 "@local.points_example"
               ],
-              "_raw": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
-              "_cleaned": "changed | set_field: demo_changed_field_parent_point: @local.points_example"
+              "_raw": "changed | set_field: demo_changed_field_parent_point: @local.points_example"
             }
           ],
           "exclude_from_translation": true,
@@ -219,14 +217,6 @@
                     "type": "local",
                     "fieldName": "points_example"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
-                    "matchedExpression": "@local.points_example",
-                    "type": "local",
-                    "fieldName": "points_example"
-                  }
                 ]
               }
             },
@@ -255,8 +245,7 @@
             ],
             "@local.points_example": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.icon_src_jpg": [
               "parameter_list.icon_src"
@@ -281,8 +270,7 @@
                 "demo_changed_field_parent_point",
                 "@local.points_example"
               ],
-              "_raw": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
-              "_cleaned": "changed | set_field: demo_changed_field_parent_point: @local.points_example"
+              "_raw": "changed | set_field: demo_changed_field_parent_point: @local.points_example"
             }
           ],
           "exclude_from_translation": true,
@@ -319,14 +307,6 @@
                     "type": "local",
                     "fieldName": "points_example"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
-                    "matchedExpression": "@local.points_example",
-                    "type": "local",
-                    "fieldName": "points_example"
-                  }
                 ]
               }
             },
@@ -355,8 +335,7 @@
             ],
             "@local.points_example": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.icon_src_svg": [
               "parameter_list.icon_src"
@@ -378,8 +357,7 @@
                 "demo_changed_field_parent_point_1",
                 "@local.points_example_1"
               ],
-              "_raw": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1",
-              "_cleaned": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1"
+              "_raw": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1"
             }
           ],
           "exclude_from_translation": true,
@@ -402,14 +380,6 @@
                   ]
                 },
                 "_raw": [
-                  {
-                    "fullExpression": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1",
-                    "matchedExpression": "@local.points_example_1",
-                    "type": "local",
-                    "fieldName": "points_example_1"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1",
                     "matchedExpression": "@local.points_example_1",
@@ -441,8 +411,7 @@
           "_dynamicDependencies": {
             "@local.points_example_1": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.icon_src_data": [
               "parameter_list.icon_src"
@@ -464,8 +433,7 @@
                 "demo_changed_field_parent_point_2",
                 "@local.points_example_2"
               ],
-              "_raw": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2",
-              "_cleaned": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2"
+              "_raw": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2"
             }
           ],
           "exclude_from_translation": true,
@@ -488,14 +456,6 @@
                   ]
                 },
                 "_raw": [
-                  {
-                    "fullExpression": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2",
-                    "matchedExpression": "@local.points_example_2",
-                    "type": "local",
-                    "fieldName": "points_example_2"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2",
                     "matchedExpression": "@local.points_example_2",
@@ -527,8 +487,7 @@
           "_dynamicDependencies": {
             "@local.points_example_2": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@data.article.article_1.icon_asset": [
               "parameter_list.icon_src"
@@ -653,6 +612,15 @@
         }
       ],
       "_nested_name": "dg"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx",

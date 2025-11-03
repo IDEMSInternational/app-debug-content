@@ -36,7 +36,6 @@
             "bottom"
           ],
           "_raw": "click | scroll: bottom | duration: 500",
-          "_cleaned": "click | scroll: bottom | duration: 500",
           "params": {
             "duration": 500
           }
@@ -114,8 +113,7 @@
           "args": [
             "top"
           ],
-          "_raw": "click | scroll: top",
-          "_cleaned": "click | scroll: top"
+          "_raw": "click | scroll: top"
         }
       ],
       "name": "button_7",

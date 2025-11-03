@@ -38,8 +38,7 @@
             "demo_changed_field_4",
             "this.value"
           ],
-          "_raw": "changed | set_field: demo_changed_field_4: @local.radio_group",
-          "_cleaned": "changed | set_field: demo_changed_field_4: @local.radio_group"
+          "_raw": "changed | set_field: demo_changed_field_4: @local.radio_group"
         }
       ],
       "exclude_from_translation": true,
@@ -51,14 +50,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | set_field: demo_changed_field_4: @local.radio_group",
-                "matchedExpression": "@local.radio_group",
-                "type": "local",
-                "fieldName": "radio_group"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_field: demo_changed_field_4: @local.radio_group",
                 "matchedExpression": "@local.radio_group",
@@ -81,8 +72,7 @@
       },
       "_dynamicDependencies": {
         "@local.radio_group": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list_2": [
           "parameter_list.answer_list"

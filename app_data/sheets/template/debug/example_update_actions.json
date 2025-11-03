@@ -24,8 +24,7 @@
             "text_1",
             "@local.nav_resume_message"
           ],
-          "_raw": "nav_resume | set_local:text_1:@local.nav_resume_message",
-          "_cleaned": "nav_resume | set_local:text_1:@local.nav_resume_message"
+          "_raw": "nav_resume | set_local:text_1:@local.nav_resume_message"
         }
       ],
       "_nested_name": "custom_actions_1",
@@ -49,14 +48,6 @@
                 "type": "local",
                 "fieldName": "nav_resume_message"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "nav_resume | set_local:text_1:@local.nav_resume_message",
-                "matchedExpression": "@local.nav_resume_message",
-                "type": "local",
-                "fieldName": "nav_resume_message"
-              }
             ]
           }
         }
@@ -64,8 +55,7 @@
       "_dynamicDependencies": {
         "@local.nav_resume_message": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -91,8 +81,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up:example_text",
-          "_cleaned": "click | pop_up:example_text"
+          "_raw": "click | pop_up:example_text"
         }
       ],
       "name": "button_5",
@@ -155,8 +144,7 @@
             "example_count",
             "+@fields.example_count + 1"
           ],
-          "_raw": "nav_resume | set_field: example_count: +@fields.example_count + 1",
-          "_cleaned": "nav_resume | set_field: example_count: +@fields.example_count + 1"
+          "_raw": "nav_resume | set_field: example_count: +@fields.example_count + 1"
         }
       ],
       "_nested_name": "custom_actions_2",
@@ -180,14 +168,6 @@
                 "type": "fields",
                 "fieldName": "example_count"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "nav_resume | set_field: example_count: +@fields.example_count + 1",
-                "matchedExpression": "@fields.example_count",
-                "type": "fields",
-                "fieldName": "example_count"
-              }
             ]
           }
         }
@@ -195,8 +175,7 @@
       "_dynamicDependencies": {
         "@fields.example_count": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     }

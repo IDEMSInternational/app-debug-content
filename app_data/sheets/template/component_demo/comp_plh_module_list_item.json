@@ -108,8 +108,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -320,8 +319,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -362,8 +360,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -405,8 +402,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -448,8 +444,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {
@@ -521,8 +516,7 @@
           "args": [
             "example_text"
           ],
-          "_raw": "click | pop_up: example_text",
-          "_cleaned": "click | pop_up: example_text"
+          "_raw": "click | pop_up: example_text"
         }
       ],
       "parameter_list": {

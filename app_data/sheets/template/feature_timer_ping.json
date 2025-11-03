@@ -38,6 +38,15 @@
         "starting_seconds": "5"
       },
       "_nested_name": "ping_3"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx",

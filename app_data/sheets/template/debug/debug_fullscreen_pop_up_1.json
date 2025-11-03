@@ -18,7 +18,6 @@
             "debug_fullscreen_pop_up_2"
           ],
           "_raw": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen_alt: true",
-          "_cleaned": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen_alt: true",
           "params": {
             "fullscreen_alt": true
           }
@@ -42,7 +41,6 @@
             "debug_fullscreen_pop_up_2"
           ],
           "_raw": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen: true",
-          "_cleaned": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen: true",
           "params": {
             "fullscreen": true
           }

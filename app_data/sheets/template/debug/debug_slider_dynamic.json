@@ -49,8 +49,7 @@
             "slider_2_field",
             "this.value"
           ],
-          "_raw": "changed | set_field:slider_2_field:@local.slider_2",
-          "_cleaned": "changed | set_field:slider_2_field:@local.slider_2"
+          "_raw": "changed | set_field:slider_2_field:@local.slider_2"
         }
       ],
       "exclude_from_translation": true,
@@ -68,22 +67,13 @@
                 "type": "local",
                 "fieldName": "slider_2"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field:slider_2_field:@local.slider_2",
-                "matchedExpression": "@local.slider_2",
-                "type": "local",
-                "fieldName": "slider_2"
-              }
             ]
           }
         }
       },
       "_dynamicDependencies": {
         "@local.slider_2": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },

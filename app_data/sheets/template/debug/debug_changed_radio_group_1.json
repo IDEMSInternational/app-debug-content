@@ -48,8 +48,7 @@
             "@local.demo_changed_local",
             "this.value"
           ],
-          "_raw": "changed | set_field: @local.demo_changed_local: @local.radio_group",
-          "_cleaned": "changed | set_field: @local.demo_changed_local: @local.radio_group"
+          "_raw": "changed | set_field: @local.demo_changed_local: @local.radio_group"
         }
       ],
       "exclude_from_translation": true,
@@ -83,20 +82,6 @@
                 "type": "local",
                 "fieldName": "radio_group"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.demo_changed_local: @local.radio_group",
-                "matchedExpression": "@local.demo_changed_local",
-                "type": "local",
-                "fieldName": "demo_changed_local"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.demo_changed_local: @local.radio_group",
-                "matchedExpression": "@local.radio_group",
-                "type": "local",
-                "fieldName": "radio_group"
-              }
             ]
           }
         },
@@ -114,12 +99,10 @@
       "_dynamicDependencies": {
         "@local.demo_changed_local": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.radio_group": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list_2": [
           "parameter_list.answer_list"

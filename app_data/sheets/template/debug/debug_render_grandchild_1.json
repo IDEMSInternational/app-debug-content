@@ -45,8 +45,7 @@
             "test_render_updates_field",
             "this.value"
           ],
-          "_raw": "changed | set_field:test_render_updates_field:@local.radio_group",
-          "_cleaned": "changed | set_field:test_render_updates_field:@local.radio_group"
+          "_raw": "changed | set_field:test_render_updates_field:@local.radio_group"
         },
         {
           "trigger": "changed",
@@ -54,8 +53,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "changed | emit:force_reload",
-          "_cleaned": "changed | emit:force_reload"
+          "_raw": "changed | emit:force_reload"
         }
       ],
       "exclude_from_translation": true,
@@ -83,14 +81,6 @@
                 "type": "local",
                 "fieldName": "radio_group"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field:test_render_updates_field:@local.radio_group",
-                "matchedExpression": "@local.radio_group",
-                "type": "local",
-                "fieldName": "radio_group"
-              }
             ]
           }
         },
@@ -110,8 +100,7 @@
           "value"
         ],
         "@local.radio_group": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.answer_list_1": [
           "parameter_list.answer_list"

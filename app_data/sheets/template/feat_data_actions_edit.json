@@ -58,7 +58,6 @@
               "action_id": "add_data",
               "args": [],
               "_raw": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
-              "_cleaned": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
               "params": {
                 "_list_id": "feat_data_actions_list",
                 "completed": false,
@@ -72,14 +71,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
-                    "matchedExpression": "@local.input_label",
-                    "type": "local",
-                    "fieldName": "input_label"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
                     "matchedExpression": "@local.input_label",
@@ -103,7 +94,6 @@
           "_dynamicDependencies": {
             "@local.input_label": [
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "action_list.0.params.label"
             ]
           }
@@ -124,7 +114,6 @@
           "action_id": "reset_data",
           "args": [],
           "_raw": "click | reset_data | \n\n_list_id: feat_data_actions_list",
-          "_cleaned": "click | reset_data | \n\n_list_id: feat_data_actions_list",
           "params": {
             "_list_id": "feat_data_actions_list"
           }
@@ -179,7 +168,6 @@
           "action_id": "reset_data",
           "args": [],
           "_raw": "click | reset_data | \n\n_list_id: feat_data_actions_list",
-          "_cleaned": "click | reset_data | \n\n_list_id: feat_data_actions_list",
           "params": {
             "_list_id": "feat_data_actions_list"
           }

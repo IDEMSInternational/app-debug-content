@@ -817,8 +817,7 @@
               "args": [
                 "@local.task_group_id@local.stepper"
               ],
-              "_raw": "click | go_to:@local.task_group_id@local.stepper",
-              "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
+              "_raw": "click | go_to:@local.task_group_id@local.stepper"
             },
             {
               "trigger": "completed",
@@ -826,8 +825,7 @@
               "args": [
                 "server_sync"
               ],
-              "_raw": "completed | emit: server_sync",
-              "_cleaned": "completed | emit: server_sync"
+              "_raw": "completed | emit: server_sync"
             }
           ],
           "parameter_list": {
@@ -872,20 +870,6 @@
                     "type": "local",
                     "fieldName": "stepper"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.task_group_id",
-                    "type": "local",
-                    "fieldName": "task_group_id"
-                  },
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.stepper",
-                    "type": "local",
-                    "fieldName": "stepper"
-                  }
                 ]
               }
             },
@@ -928,13 +912,11 @@
             "@local.task_group_id": [
               "action_list.0.args.0",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "parameter_list.task_group_id"
             ],
             "@local.stepper": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.card_title": [
               "parameter_list.title"
@@ -957,8 +939,7 @@
               "args": [
                 "@local.task_group_id@local.stepper"
               ],
-              "_raw": "click | go_to:@local.task_group_id@local.stepper",
-              "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
+              "_raw": "click | go_to:@local.task_group_id@local.stepper"
             },
             {
               "trigger": "completed",
@@ -966,8 +947,7 @@
               "args": [
                 "server_sync"
               ],
-              "_raw": "completed | emit: server_sync",
-              "_cleaned": "completed | emit: server_sync"
+              "_raw": "completed | emit: server_sync"
             }
           ],
           "parameter_list": {
@@ -1012,20 +992,6 @@
                     "type": "local",
                     "fieldName": "stepper"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.task_group_id",
-                    "type": "local",
-                    "fieldName": "task_group_id"
-                  },
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.stepper",
-                    "type": "local",
-                    "fieldName": "stepper"
-                  }
                 ]
               }
             },
@@ -1068,13 +1034,11 @@
             "@local.task_group_id": [
               "action_list.0.args.0",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "parameter_list.task_group_id"
             ],
             "@local.stepper": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.card_title": [
               "parameter_list.title"
@@ -1097,8 +1061,7 @@
               "args": [
                 "@local.task_group_id@local.stepper"
               ],
-              "_raw": "click | go_to:@local.task_group_id@local.stepper",
-              "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
+              "_raw": "click | go_to:@local.task_group_id@local.stepper"
             },
             {
               "trigger": "completed",
@@ -1106,8 +1069,7 @@
               "args": [
                 "server_sync"
               ],
-              "_raw": "completed | emit: server_sync",
-              "_cleaned": "completed | emit: server_sync"
+              "_raw": "completed | emit: server_sync"
             }
           ],
           "parameter_list": {
@@ -1152,20 +1114,6 @@
                     "type": "local",
                     "fieldName": "stepper"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.task_group_id",
-                    "type": "local",
-                    "fieldName": "task_group_id"
-                  },
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.stepper",
-                    "type": "local",
-                    "fieldName": "stepper"
-                  }
                 ]
               }
             },
@@ -1208,13 +1156,11 @@
             "@local.task_group_id": [
               "action_list.0.args.0",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "parameter_list.task_group_id"
             ],
             "@local.stepper": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.card_title": [
               "parameter_list.title"
@@ -1237,8 +1183,7 @@
               "args": [
                 "@local.task_group_id@local.stepper"
               ],
-              "_raw": "click | go_to:@local.task_group_id@local.stepper",
-              "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
+              "_raw": "click | go_to:@local.task_group_id@local.stepper"
             },
             {
               "trigger": "completed",
@@ -1246,8 +1191,7 @@
               "args": [
                 "server_sync"
               ],
-              "_raw": "completed | emit: server_sync",
-              "_cleaned": "completed | emit: server_sync"
+              "_raw": "completed | emit: server_sync"
             }
           ],
           "parameter_list": {
@@ -1292,20 +1236,6 @@
                     "type": "local",
                     "fieldName": "stepper"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.task_group_id",
-                    "type": "local",
-                    "fieldName": "task_group_id"
-                  },
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.stepper",
-                    "type": "local",
-                    "fieldName": "stepper"
-                  }
                 ]
               }
             },
@@ -1348,13 +1278,11 @@
             "@local.task_group_id": [
               "action_list.0.args.0",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "parameter_list.task_group_id"
             ],
             "@local.stepper": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.card_title": [
               "parameter_list.title"
@@ -1377,8 +1305,7 @@
               "args": [
                 "@local.task_group_id@local.stepper"
               ],
-              "_raw": "click | go_to:@local.task_group_id@local.stepper",
-              "_cleaned": "click | go_to:@local.task_group_id@local.stepper"
+              "_raw": "click | go_to:@local.task_group_id@local.stepper"
             },
             {
               "trigger": "completed",
@@ -1386,8 +1313,7 @@
               "args": [
                 "server_sync"
               ],
-              "_raw": "completed | emit: server_sync",
-              "_cleaned": "completed | emit: server_sync"
+              "_raw": "completed | emit: server_sync"
             }
           ],
           "parameter_list": {
@@ -1432,20 +1358,6 @@
                     "type": "local",
                     "fieldName": "stepper"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.task_group_id",
-                    "type": "local",
-                    "fieldName": "task_group_id"
-                  },
-                  {
-                    "fullExpression": "click | go_to:@local.task_group_id@local.stepper",
-                    "matchedExpression": "@local.stepper",
-                    "type": "local",
-                    "fieldName": "stepper"
-                  }
                 ]
               }
             },
@@ -1488,13 +1400,11 @@
             "@local.task_group_id": [
               "action_list.0.args.0",
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "parameter_list.task_group_id"
             ],
             "@local.stepper": [
               "action_list.0.args.0",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ],
             "@local.card_title": [
               "parameter_list.title"
@@ -1816,7 +1726,6 @@
           "action_id": "set_data",
           "args": [],
           "_raw": "click | set_data | \n\n_list_id: comp_carousel_items,\ntext: Text override",
-          "_cleaned": "click | set_data | \n\n_list_id: comp_carousel_items,\ntext: Text override",
           "params": {
             "_list_id": "comp_carousel_items",
             "text": "Text override"
@@ -1838,7 +1747,6 @@
           "action_id": "reset_data",
           "args": [],
           "_raw": "click | reset_data | \n\n_list_id: comp_carousel_items",
-          "_cleaned": "click | reset_data | \n\n_list_id: comp_carousel_items",
           "params": {
             "_list_id": "comp_carousel_items"
           }

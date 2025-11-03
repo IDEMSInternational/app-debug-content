@@ -104,8 +104,7 @@
                   "args": [
                     "uncompleted"
                   ],
-                  "_raw": "click | emit:uncompleted",
-                  "_cleaned": "click | emit:uncompleted"
+                  "_raw": "click | emit:uncompleted"
                 }
               ],
               "exclude_from_translation": true,

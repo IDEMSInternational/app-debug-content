@@ -35,8 +35,7 @@
                 "demo_changed_field_checkbox_1",
                 "this.value"
               ],
-              "_raw": "changed | set_field:demo_changed_field_checkbox_1:@local.checkbox_1",
-              "_cleaned": "changed | set_field:demo_changed_field_checkbox_1:@local.checkbox_1"
+              "_raw": "changed | set_field:demo_changed_field_checkbox_1:@local.checkbox_1"
             }
           ],
           "exclude_from_translation": true,
@@ -55,22 +54,13 @@
                     "type": "local",
                     "fieldName": "checkbox_1"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_field:demo_changed_field_checkbox_1:@local.checkbox_1",
-                    "matchedExpression": "@local.checkbox_1",
-                    "type": "local",
-                    "fieldName": "checkbox_1"
-                  }
                 ]
               }
             }
           },
           "_dynamicDependencies": {
             "@local.checkbox_1": [
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         },
@@ -86,8 +76,7 @@
                 "demo_changed_field_checkbox_2",
                 "@local.form.checkbox_1"
               ],
-              "_raw": "changed | set_field:demo_changed_field_checkbox_2:@local.form.checkbox_1",
-              "_cleaned": "changed | set_field:demo_changed_field_checkbox_2:@local.form.checkbox_1"
+              "_raw": "changed | set_field:demo_changed_field_checkbox_2:@local.form.checkbox_1"
             }
           ],
           "exclude_from_translation": true,
@@ -116,14 +105,6 @@
                     "type": "local",
                     "fieldName": "form"
                   }
-                ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "changed | set_field:demo_changed_field_checkbox_2:@local.form.checkbox_1",
-                    "matchedExpression": "@local.form.checkbox_1",
-                    "type": "local",
-                    "fieldName": "form"
-                  }
                 ]
               }
             }
@@ -131,8 +112,7 @@
           "_dynamicDependencies": {
             "@local.form.checkbox_1": [
               "action_list.0.args.1",
-              "action_list.0._raw",
-              "action_list.0._cleaned"
+              "action_list.0._raw"
             ]
           }
         },

@@ -39,8 +39,7 @@
             "example_list_override_field",
             "undefined"
           ],
-          "_raw": "click | set_field : example_list_override_field : undefined",
-          "_cleaned": "click | set_field : example_list_override_field : undefined"
+          "_raw": "click | set_field : example_list_override_field : undefined"
         },
         {
           "trigger": "click",
@@ -48,8 +47,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "click | emit : force_reload",
-          "_cleaned": "click | emit : force_reload"
+          "_raw": "click | emit : force_reload"
         }
       ],
       "exclude_from_translation": true,
@@ -70,8 +68,7 @@
             "example_list_override_field",
             "1"
           ],
-          "_raw": "click | set_field : example_list_override_field : 1",
-          "_cleaned": "click | set_field : example_list_override_field : 1"
+          "_raw": "click | set_field : example_list_override_field : 1"
         },
         {
           "trigger": "click",
@@ -79,8 +76,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "click | emit : force_reload",
-          "_cleaned": "click | emit : force_reload"
+          "_raw": "click | emit : force_reload"
         }
       ],
       "exclude_from_translation": true,

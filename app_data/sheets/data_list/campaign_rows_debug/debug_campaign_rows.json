@@ -15,8 +15,7 @@
             "debug_daily_1.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_daily_1.sent: true",
-          "_cleaned": "sent | set_field: debug_daily_1.sent: true"
+          "_raw": "sent | set_field: debug_daily_1.sent: true"
         }
       ],
       "priority": 4,
@@ -48,8 +47,7 @@
             "debug_daily_2.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_daily_2.sent: true",
-          "_cleaned": "sent | set_field: debug_daily_2.sent: true"
+          "_raw": "sent | set_field: debug_daily_2.sent: true"
         }
       ],
       "priority": 3,
@@ -83,8 +81,7 @@
             "debug_daily_3.sent",
             true
           ],
-          "_raw": "sent | set_field: debug_daily_3.sent: true",
-          "_cleaned": "sent | set_field: debug_daily_3.sent: true"
+          "_raw": "sent | set_field: debug_daily_3.sent: true"
         }
       ],
       "priority": 2,
@@ -118,8 +115,7 @@
             "debug_daily_1.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_1.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_1.sent: false"
+          "_raw": "sent | set_field: debug_daily_1.sent: false"
         },
         {
           "trigger": "sent",
@@ -128,8 +124,7 @@
             "debug_daily_2.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_2.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_2.sent: false"
+          "_raw": "sent | set_field: debug_daily_2.sent: false"
         },
         {
           "trigger": "sent",
@@ -138,8 +133,7 @@
             "debug_daily_3.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_3.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_3.sent: false"
+          "_raw": "sent | set_field: debug_daily_3.sent: false"
         }
       ],
       "priority": 1,
@@ -171,8 +165,7 @@
             "debug_daily_1.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_1.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_1.sent: false"
+          "_raw": "sent | set_field: debug_daily_1.sent: false"
         },
         {
           "trigger": "sent",
@@ -181,8 +174,7 @@
             "debug_daily_2.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_2.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_2.sent: false"
+          "_raw": "sent | set_field: debug_daily_2.sent: false"
         },
         {
           "trigger": "sent",
@@ -191,8 +183,7 @@
             "debug_daily_3.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_3.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_3.sent: false"
+          "_raw": "sent | set_field: debug_daily_3.sent: false"
         }
       ],
       "priority": 1,
@@ -224,8 +215,7 @@
             "debug_daily_1.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_1.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_1.sent: false"
+          "_raw": "sent | set_field: debug_daily_1.sent: false"
         },
         {
           "trigger": "sent",
@@ -234,8 +224,7 @@
             "debug_daily_2.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_2.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_2.sent: false"
+          "_raw": "sent | set_field: debug_daily_2.sent: false"
         },
         {
           "trigger": "sent",
@@ -244,8 +233,7 @@
             "debug_daily_3.sent",
             false
           ],
-          "_raw": "sent | set_field: debug_daily_3.sent: false",
-          "_cleaned": "sent | set_field: debug_daily_3.sent: false"
+          "_raw": "sent | set_field: debug_daily_3.sent: false"
         }
       ],
       "priority": 1,

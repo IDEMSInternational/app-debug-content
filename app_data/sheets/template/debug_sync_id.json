@@ -269,8 +269,7 @@
             "sync_status",
             "@local.syncing"
           ],
-          "_raw": "click | set_local: sync_status: @local.syncing",
-          "_cleaned": "click | set_local: sync_status: @local.syncing"
+          "_raw": "click | set_local: sync_status: @local.syncing"
         },
         {
           "trigger": "click",
@@ -279,8 +278,7 @@
             "sync_status",
             "@local.syncing"
           ],
-          "_raw": "click | set_local: sync_status: @local.syncing",
-          "_cleaned": "click | set_local: sync_status: @local.syncing"
+          "_raw": "click | set_local: sync_status: @local.syncing"
         },
         {
           "trigger": "click",
@@ -288,8 +286,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         },
         {
           "trigger": "click",
@@ -297,8 +294,7 @@
           "args": [
             "server_sync"
           ],
-          "_raw": "click | emit: server_sync",
-          "_cleaned": "click | emit: server_sync"
+          "_raw": "click | emit: server_sync"
         },
         {
           "trigger": "click",
@@ -307,8 +303,7 @@
             "sync_status",
             ""
           ],
-          "_raw": "click | set_local: sync_status:",
-          "_cleaned": "click | set_local: sync_status:"
+          "_raw": "click | set_local: sync_status:"
         },
         {
           "trigger": "click",
@@ -317,8 +312,7 @@
             "sync_button_clicked",
             true
           ],
-          "_raw": "click | set_local: sync_button_clicked: true",
-          "_cleaned": "click | set_local: sync_button_clicked: true"
+          "_raw": "click | set_local: sync_button_clicked: true"
         },
         {
           "trigger": "click",
@@ -326,8 +320,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "!@local.sync_status",
@@ -346,14 +339,6 @@
               ]
             },
             "_raw": [
-              {
-                "fullExpression": "click | set_local: sync_status: @local.syncing",
-                "matchedExpression": "@local.syncing",
-                "type": "local",
-                "fieldName": "syncing"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | set_local: sync_status: @local.syncing",
                 "matchedExpression": "@local.syncing",
@@ -380,14 +365,6 @@
                 "type": "local",
                 "fieldName": "syncing"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | set_local: sync_status: @local.syncing",
-                "matchedExpression": "@local.syncing",
-                "type": "local",
-                "fieldName": "syncing"
-              }
             ]
           }
         },
@@ -404,10 +381,8 @@
         "@local.syncing": [
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.1.args.1",
-          "action_list.1._raw",
-          "action_list.1._cleaned"
+          "action_list.1._raw"
         ],
         "!@local.sync_status": [
           "condition"

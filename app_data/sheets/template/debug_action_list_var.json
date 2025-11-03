@@ -28,8 +28,7 @@
             "text_1",
             "The toggle is on"
           ],
-          "_raw": "click | set_local: text_1: The toggle is on",
-          "_cleaned": "click | set_local: text_1: The toggle is on"
+          "_raw": "click | set_local: text_1: The toggle is on"
         }
       ],
       "condition": "@local.toggle_bar_1",
@@ -58,8 +57,7 @@
           "trigger": "click",
           "action_id": "undefined",
           "args": [],
-          "_raw": "undefined",
-          "_cleaned": "click | undefined"
+          "_raw": "undefined"
         }
       ],
       "condition": "!@local.toggle_bar_1",

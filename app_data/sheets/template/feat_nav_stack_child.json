@@ -26,7 +26,6 @@
             "open"
           ],
           "_raw": "click | nav_stack: open | template: feat_nav_stack",
-          "_cleaned": "click | nav_stack: open | template: feat_nav_stack",
           "params": {
             "template": "feat_nav_stack"
           }
@@ -48,8 +47,7 @@
           "args": [
             "close_top"
           ],
-          "_raw": "click | nav_stack: close_top",
-          "_cleaned": "click | nav_stack: close_top"
+          "_raw": "click | nav_stack: close_top"
         }
       ],
       "name": "button_4",
@@ -68,8 +66,7 @@
           "args": [
             "close_all"
           ],
-          "_raw": "click | nav_stack: close_all",
-          "_cleaned": "click | nav_stack: close_all"
+          "_raw": "click | nav_stack: close_all"
         }
       ],
       "name": "button_5",

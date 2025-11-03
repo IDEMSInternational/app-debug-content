@@ -106,8 +106,7 @@
             "@local.response_history_field",
             "start"
           ],
-          "_raw": "changed | set_field: @local.response_history_field: start",
-          "_cleaned": "changed | set_field: @local.response_history_field: start"
+          "_raw": "changed | set_field: @local.response_history_field: start"
         },
         {
           "trigger": "changed",
@@ -116,8 +115,7 @@
             "@local.last_response_field",
             "this.value"
           ],
-          "_raw": "changed | set_field: @local.last_response_field: @local.slider_1",
-          "_cleaned": "changed | set_field: @local.last_response_field: @local.slider_1"
+          "_raw": "changed | set_field: @local.last_response_field: @local.slider_1"
         },
         {
           "trigger": "changed",
@@ -126,8 +124,7 @@
             "@local.last_response_version_field",
             "@fields.@local.version_field"
           ],
-          "_raw": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field",
-          "_cleaned": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field"
+          "_raw": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field"
         },
         {
           "trigger": "changed",
@@ -136,8 +133,7 @@
             "@local.last_response_timestamp_field",
             "@calc(timestamp())"
           ],
-          "_raw": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())",
-          "_cleaned": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())"
+          "_raw": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())"
         }
       ],
       "condition": "!@local.update_history",
@@ -170,14 +166,6 @@
                 "type": "local",
                 "fieldName": "response_history_field"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: start",
-                "matchedExpression": "@local.response_history_field",
-                "type": "local",
-                "fieldName": "response_history_field"
-              }
             ]
           },
           "1": {
@@ -192,20 +180,6 @@
               ]
             },
             "_raw": [
-              {
-                "fullExpression": "changed | set_field: @local.last_response_field: @local.slider_1",
-                "matchedExpression": "@local.last_response_field",
-                "type": "local",
-                "fieldName": "last_response_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.last_response_field: @local.slider_1",
-                "matchedExpression": "@local.slider_1",
-                "type": "local",
-                "fieldName": "slider_1"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_field: @local.last_response_field: @local.slider_1",
                 "matchedExpression": "@local.last_response_field",
@@ -252,20 +226,6 @@
                 "type": "local",
                 "fieldName": "version_field"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field",
-                "matchedExpression": "@local.last_response_version_field",
-                "type": "local",
-                "fieldName": "last_response_version_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field",
-                "matchedExpression": "@local.version_field",
-                "type": "local",
-                "fieldName": "version_field"
-              }
             ]
           },
           "3": {
@@ -300,20 +260,6 @@
                 "type": "calc",
                 "fieldName": "timestamp()"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())",
-                "matchedExpression": "@local.last_response_timestamp_field",
-                "type": "local",
-                "fieldName": "last_response_timestamp_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())",
-                "matchedExpression": "@calc(timestamp())",
-                "type": "calc",
-                "fieldName": "timestamp()"
-              }
             ]
           }
         },
@@ -330,37 +276,30 @@
         "@local.last_response_field": [
           "value",
           "action_list.1.args.0",
-          "action_list.1._raw",
-          "action_list.1._cleaned"
+          "action_list.1._raw"
         ],
         "@local.response_history_field": [
           "action_list.0.args.0",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.slider_1": [
-          "action_list.1._raw",
-          "action_list.1._cleaned"
+          "action_list.1._raw"
         ],
         "@local.last_response_version_field": [
           "action_list.2.args.0",
-          "action_list.2._raw",
-          "action_list.2._cleaned"
+          "action_list.2._raw"
         ],
         "@local.version_field": [
           "action_list.2.args.1",
-          "action_list.2._raw",
-          "action_list.2._cleaned"
+          "action_list.2._raw"
         ],
         "@local.last_response_timestamp_field": [
           "action_list.3.args.0",
-          "action_list.3._raw",
-          "action_list.3._cleaned"
+          "action_list.3._raw"
         ],
         "@calc(timestamp())": [
           "action_list.3.args.1",
-          "action_list.3._raw",
-          "action_list.3._cleaned"
+          "action_list.3._raw"
         ],
         "!@local.update_history": [
           "condition"
@@ -382,8 +321,7 @@
             "@local.response_history_field",
             "@fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field"
           ],
-          "_raw": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-          "_cleaned": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field"
+          "_raw": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field"
         },
         {
           "trigger": "changed",
@@ -392,8 +330,7 @@
             "@local.last_response_field",
             "this.value"
           ],
-          "_raw": "changed | set_field: @local.last_response_field: @local.slider_1",
-          "_cleaned": "changed | set_field: @local.last_response_field: @local.slider_1"
+          "_raw": "changed | set_field: @local.last_response_field: @local.slider_1"
         },
         {
           "trigger": "changed",
@@ -402,8 +339,7 @@
             "@local.last_response_version_field",
             "@fields.@local.version_field"
           ],
-          "_raw": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field",
-          "_cleaned": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field"
+          "_raw": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field"
         },
         {
           "trigger": "changed",
@@ -412,8 +348,7 @@
             "@local.last_response_timestamp_field",
             "@calc(timestamp())"
           ],
-          "_raw": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())",
-          "_cleaned": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())"
+          "_raw": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())"
         }
       ],
       "condition": "@local.update_history",
@@ -532,56 +467,6 @@
                 "type": "local",
                 "fieldName": "version_field"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.response_history_field",
-                "type": "local",
-                "fieldName": "response_history_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.response_history_field",
-                "type": "local",
-                "fieldName": "response_history_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.list_separator_1",
-                "type": "local",
-                "fieldName": "list_separator_1"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.last_response_field",
-                "type": "local",
-                "fieldName": "last_response_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.list_separator_2",
-                "type": "local",
-                "fieldName": "list_separator_2"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.last_response_timestamp_field",
-                "type": "local",
-                "fieldName": "last_response_timestamp_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.list_separator_2",
-                "type": "local",
-                "fieldName": "list_separator_2"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.response_history_field: @fields.@local.response_history_field @local.list_separator_1 @fields.@local.last_response_field @local.list_separator_2 @fields.@local.last_response_timestamp_field @local.list_separator_2 @fields.@local.version_field",
-                "matchedExpression": "@local.version_field",
-                "type": "local",
-                "fieldName": "version_field"
-              }
             ]
           },
           "1": {
@@ -596,20 +481,6 @@
               ]
             },
             "_raw": [
-              {
-                "fullExpression": "changed | set_field: @local.last_response_field: @local.slider_1",
-                "matchedExpression": "@local.last_response_field",
-                "type": "local",
-                "fieldName": "last_response_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.last_response_field: @local.slider_1",
-                "matchedExpression": "@local.slider_1",
-                "type": "local",
-                "fieldName": "slider_1"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_field: @local.last_response_field: @local.slider_1",
                 "matchedExpression": "@local.last_response_field",
@@ -656,20 +527,6 @@
                 "type": "local",
                 "fieldName": "version_field"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field",
-                "matchedExpression": "@local.last_response_version_field",
-                "type": "local",
-                "fieldName": "last_response_version_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.last_response_version_field: @fields.@local.version_field",
-                "matchedExpression": "@local.version_field",
-                "type": "local",
-                "fieldName": "version_field"
-              }
             ]
           },
           "3": {
@@ -704,20 +561,6 @@
                 "type": "calc",
                 "fieldName": "timestamp()"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())",
-                "matchedExpression": "@local.last_response_timestamp_field",
-                "type": "local",
-                "fieldName": "last_response_timestamp_field"
-              },
-              {
-                "fullExpression": "changed | set_field: @local.last_response_timestamp_field: @calc(timestamp())",
-                "matchedExpression": "@calc(timestamp())",
-                "type": "calc",
-                "fieldName": "timestamp()"
-              }
             ]
           }
         },
@@ -735,61 +578,47 @@
           "value",
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.1.args.0",
-          "action_list.1._raw",
-          "action_list.1._cleaned"
+          "action_list.1._raw"
         ],
         "@local.response_history_field": [
           "action_list.0.args.0",
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.list_separator_1": [
           "action_list.0.args.1",
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.list_separator_2": [
           "action_list.0.args.1",
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.0._raw",
-          "action_list.0._cleaned",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.last_response_timestamp_field": [
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.3.args.0",
-          "action_list.3._raw",
-          "action_list.3._cleaned"
+          "action_list.3._raw"
         ],
         "@local.version_field": [
           "action_list.0.args.1",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.2.args.1",
-          "action_list.2._raw",
-          "action_list.2._cleaned"
+          "action_list.2._raw"
         ],
         "@local.slider_1": [
-          "action_list.1._raw",
-          "action_list.1._cleaned"
+          "action_list.1._raw"
         ],
         "@local.last_response_version_field": [
           "action_list.2.args.0",
-          "action_list.2._raw",
-          "action_list.2._cleaned"
+          "action_list.2._raw"
         ],
         "@calc(timestamp())": [
           "action_list.3.args.1",
-          "action_list.3._raw",
-          "action_list.3._cleaned"
+          "action_list.3._raw"
         ],
         "@local.update_history": [
           "condition"

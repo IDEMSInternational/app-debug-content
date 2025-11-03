@@ -98,8 +98,7 @@
             "show_extended",
             true
           ],
-          "_raw": "click | set_local : show_extended : true",
-          "_cleaned": "click | set_local : show_extended : true"
+          "_raw": "click | set_local : show_extended : true"
         }
       ],
       "name": "button_10",

@@ -5,8 +5,8 @@
 | --- | --- |
 | @events | 1 |
 | @item.input_type | 1 |
-| accordion | 6 |
-| accordion_section | 18 |
+| accordion | 8 |
+| accordion_section | 20 |
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
@@ -16,20 +16,20 @@
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 68 |
+| combo_box | 70 |
 | dashed_box | 19 |
-| data_items | 100 |
+| data_items | 103 |
 | data_query | 8 |
 | date_time_picker | 8 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 257 |
+| display_group | 260 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 9 |
 | html | 4 |
-| image | 83 |
+| image | 85 |
 | items | 51 |
 | latex | 1 |
 | lottie_animation | 6 |
@@ -60,23 +60,23 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 890 |
-| simple_checkbox | 41 |
+| set_variable | 906 |
+| simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
 | subtitle | 52 |
 | table | 9 |
 | task_card | 32 |
 | task_progress_bar | 8 |
-| template | 147 |
-| text | 1266 |
+| template | 154 |
+| text | 1304 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 639 |
-| toggle_bar | 73 |
+| title | 644 |
+| toggle_bar | 74 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -295,7 +295,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 13 |
-| data_list | debug | 24 |
+| data_list | debug | 26 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
@@ -307,17 +307,19 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_pipe | example_pipe | 6 |
 | data_pipe | generated | 2 |
 | generator |  | 1 |
+| generator | debug | 1 |
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 111 |
 | template | component_demo | 68 |
-| template | debug | 289 |
+| template | debug | 293 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
 | template | example_list_override | 1 |
 | template | example_sheet_defaults | 1 |
 | template | feature | 1 |
+| template | generated | 3 |
 | tour | debug | 4 |
 </details>

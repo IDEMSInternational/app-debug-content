@@ -111,8 +111,7 @@
           "args": [
             "request_permission"
           ],
-          "_raw": "click | notification: request_permission",
-          "_cleaned": "click | notification: request_permission"
+          "_raw": "click | notification: request_permission"
         },
         {
           "trigger": "click",
@@ -120,8 +119,7 @@
           "args": [
             "force_reprocess"
           ],
-          "_raw": "click | emit: force_reprocess",
-          "_cleaned": "click | emit: force_reprocess"
+          "_raw": "click | emit: force_reprocess"
         }
       ],
       "condition": "@local.should_show_request",
@@ -244,7 +242,6 @@
             "create"
           ],
           "_raw": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.tomorrow_datetime",
-          "_cleaned": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.tomorrow_datetime",
           "params": {
             "id": "debug_notification",
             "title": "Notification Title",
@@ -274,14 +271,6 @@
                 "fieldName": "tomorrow_datetime"
               }
             ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.tomorrow_datetime",
-                "matchedExpression": "@local.tomorrow_datetime",
-                "type": "local",
-                "fieldName": "tomorrow_datetime"
-              }
-            ],
             "params": {
               "schedule_at": [
                 {
@@ -299,7 +288,6 @@
         "@local.tomorrow_datetime": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.schedule_at"
         ]
       }
@@ -375,7 +363,6 @@
             "create"
           ],
           "_raw": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.next_monday_datetime",
-          "_cleaned": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.next_monday_datetime",
           "params": {
             "id": "debug_notification",
             "title": "Notification Title",
@@ -405,14 +392,6 @@
                 "fieldName": "next_monday_datetime"
               }
             ],
-            "_cleaned": [
-              {
-                "fullExpression": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.next_monday_datetime",
-                "matchedExpression": "@local.next_monday_datetime",
-                "type": "local",
-                "fieldName": "next_monday_datetime"
-              }
-            ],
             "params": {
               "schedule_at": [
                 {
@@ -430,7 +409,6 @@
         "@local.next_monday_datetime": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.schedule_at"
         ]
       }
@@ -523,7 +501,6 @@
             "create"
           ],
           "_raw": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
-          "_cleaned": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
           "params": {
             "id": "@local.input_id",
             "title": "@local.input_title",
@@ -555,32 +532,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
-                "matchedExpression": "@local.input_id",
-                "type": "local",
-                "fieldName": "input_id"
-              },
-              {
-                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
-                "matchedExpression": "@local.input_title",
-                "type": "local",
-                "fieldName": "input_title"
-              },
-              {
-                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
-                "matchedExpression": "@local.input_text",
-                "type": "local",
-                "fieldName": "input_text"
-              },
-              {
-                "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
-                "matchedExpression": "@local.input_datetime",
-                "type": "local",
-                "fieldName": "input_datetime"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
                 "matchedExpression": "@local.input_id",
@@ -657,23 +608,19 @@
         "@local.input_id": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.id"
         ],
         "@local.input_datetime": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.schedule_at"
         ],
         "@local.input_title": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.title"
         ],
         "@local.input_text": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.text"
         ],
         "!@local.input_datetime": [
@@ -822,7 +769,6 @@
                 "cancel"
               ],
               "_raw": "click | notification: cancel | id: @item.id",
-              "_cleaned": "click | notification: cancel | id: @item.id",
               "params": {
                 "id": "@item.id"
               }
@@ -834,14 +780,6 @@
             "action_list": {
               "0": {
                 "_raw": [
-                  {
-                    "fullExpression": "click | notification: cancel | id: @item.id",
-                    "matchedExpression": "@item.id",
-                    "type": "item",
-                    "fieldName": "id"
-                  }
-                ],
-                "_cleaned": [
                   {
                     "fullExpression": "click | notification: cancel | id: @item.id",
                     "matchedExpression": "@item.id",
@@ -881,7 +819,6 @@
           "_dynamicDependencies": {
             "@item.id": [
               "action_list.0._raw",
-              "action_list.0._cleaned",
               "action_list.0.params.id",
               "name",
               "_nested_name"
@@ -931,8 +868,7 @@
           "args": [
             "cancel_all"
           ],
-          "_raw": "click | notification: cancel_all",
-          "_cleaned": "click | notification: cancel_all"
+          "_raw": "click | notification: cancel_all"
         }
       ],
       "name": "button_31",
@@ -1178,7 +1114,6 @@
           "action_id": "go_to",
           "args": [],
           "_raw": "click | go_to | debug_campaigns",
-          "_cleaned": "click | go_to | debug_campaigns",
           "params": {}
         }
       ],
@@ -1240,8 +1175,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
+          "_raw": "click | emit: force_reload"
         }
       ],
       "name": "button_42",
@@ -1257,8 +1191,7 @@
             "show_notification_bell",
             true
           ],
-          "_raw": "notification_received | set_field : show_notification_bell : true",
-          "_cleaned": "notification_received | set_field : show_notification_bell : true"
+          "_raw": "notification_received | set_field : show_notification_bell : true"
         },
         {
           "trigger": "notification_interacted",
@@ -1267,8 +1200,7 @@
             "show_notification_bell",
             false
           ],
-          "_raw": "notification_interacted | set_field : show_notification_bell: false",
-          "_cleaned": "notification_interacted | set_field : show_notification_bell: false"
+          "_raw": "notification_interacted | set_field : show_notification_bell: false"
         },
         {
           "trigger": "notification_interacted",
@@ -1276,8 +1208,7 @@
           "args": [
             "/user"
           ],
-          "_raw": "notification_interacted | go_to : /user",
-          "_cleaned": "notification_interacted | go_to : /user"
+          "_raw": "notification_interacted | go_to : /user"
         }
       ],
       "type": "set_variable",
@@ -1297,7 +1228,6 @@
             "create"
           ],
           "_raw": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
-          "_cleaned": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
           "params": {
             "id": "debug_notification_with_action_list",
             "title": "Notification Title",
@@ -1321,20 +1251,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
-                "matchedExpression": "@local.immediate_notification_time",
-                "type": "local",
-                "fieldName": "immediate_notification_time"
-              },
-              {
-                "fullExpression": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
-                "matchedExpression": "@local.example_action_list",
-                "type": "local",
-                "fieldName": "example_action_list"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list",
                 "matchedExpression": "@local.immediate_notification_time",
@@ -1373,12 +1289,10 @@
         "@local.immediate_notification_time": [
           "value",
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.schedule_at"
         ],
         "@local.example_action_list": [
           "action_list.0._raw",
-          "action_list.0._cleaned",
           "action_list.0.params.action_list"
         ]
       }
@@ -1396,8 +1310,7 @@
           "args": [
             "force_reload"
           ],
-          "_raw": "click | emit: force_reload",
-          "_cleaned": "click | emit: force_reload"
+          "_raw": "click | emit: force_reload"
         }
       ],
       "name": "button_45",
@@ -1442,8 +1355,7 @@
             "show_notification_bell",
             false
           ],
-          "_raw": "click | set_field : show_notification_bell : false",
-          "_cleaned": "click | set_field : show_notification_bell : false"
+          "_raw": "click | set_field : show_notification_bell : false"
         }
       ],
       "condition": "@fields.show_notification_bell",
@@ -1507,8 +1419,7 @@
             "show_notification_bell",
             true
           ],
-          "_raw": "notification_received | set_field : show_notification_bell : true",
-          "_cleaned": "notification_received | set_field : show_notification_bell : true"
+          "_raw": "notification_received | set_field : show_notification_bell : true"
         },
         {
           "trigger": "notification_interacted",
@@ -1517,8 +1428,7 @@
             "show_notification_bell",
             false
           ],
-          "_raw": "notification_interacted | set_field : show_notification_bell: false",
-          "_cleaned": "notification_interacted | set_field : show_notification_bell: false"
+          "_raw": "notification_interacted | set_field : show_notification_bell: false"
         },
         {
           "trigger": "notification_interacted",
@@ -1526,8 +1436,7 @@
           "args": [
             "/user"
           ],
-          "_raw": "notification_interacted | go_to : /user",
-          "_cleaned": "notification_interacted | go_to : /user"
+          "_raw": "notification_interacted | go_to : /user"
         }
       ],
       "_nested_name": "triggered_actions"

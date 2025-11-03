@@ -60,8 +60,7 @@
             "feature_input_tracker_1",
             "this.value"
           ],
-          "_raw": "changed | set_field: feature_input_tracker_1:@local.text_box_1",
-          "_cleaned": "changed | set_field: feature_input_tracker_1:@local.text_box_1"
+          "_raw": "changed | set_field: feature_input_tracker_1:@local.text_box_1"
         }
       ],
       "exclude_from_translation": true,
@@ -73,14 +72,6 @@
         "action_list": {
           "0": {
             "_raw": [
-              {
-                "fullExpression": "changed | set_field: feature_input_tracker_1:@local.text_box_1",
-                "matchedExpression": "@local.text_box_1",
-                "type": "local",
-                "fieldName": "text_box_1"
-              }
-            ],
-            "_cleaned": [
               {
                 "fullExpression": "changed | set_field: feature_input_tracker_1:@local.text_box_1",
                 "matchedExpression": "@local.text_box_1",
@@ -103,8 +94,7 @@
       },
       "_dynamicDependencies": {
         "@local.text_box_1": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.placeholder": [
           "parameter_list.placeholder"
@@ -151,8 +141,7 @@
             "feature_input_tracker_2",
             "this.value"
           ],
-          "_raw": "changed | set_field: feature_input_tracker_2:@local.text_box_2",
-          "_cleaned": "changed | set_field: feature_input_tracker_2:@local.text_box_2"
+          "_raw": "changed | set_field: feature_input_tracker_2:@local.text_box_2"
         }
       ],
       "exclude_from_translation": true,
@@ -175,14 +164,6 @@
                 "type": "local",
                 "fieldName": "text_box_2"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: feature_input_tracker_2:@local.text_box_2",
-                "matchedExpression": "@local.text_box_2",
-                "type": "local",
-                "fieldName": "text_box_2"
-              }
             ]
           }
         }
@@ -192,8 +173,7 @@
           "value"
         ],
         "@local.text_box_2": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ]
       }
     },
@@ -246,8 +226,7 @@
             "feature_input_tracker_3",
             "this.value"
           ],
-          "_raw": "changed | set_field: feature_input_tracker_3:@local.text_box_3",
-          "_cleaned": "changed | set_field: feature_input_tracker_3:@local.text_box_3"
+          "_raw": "changed | set_field: feature_input_tracker_3:@local.text_box_3"
         }
       ],
       "exclude_from_translation": true,
@@ -273,14 +252,6 @@
                 "type": "local",
                 "fieldName": "text_box_3"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: feature_input_tracker_3:@local.text_box_3",
-                "matchedExpression": "@local.text_box_3",
-                "type": "local",
-                "fieldName": "text_box_3"
-              }
             ]
           }
         },
@@ -300,8 +271,7 @@
           "value"
         ],
         "@local.text_box_3": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.placeholder": [
           "parameter_list.placeholder"
@@ -323,8 +293,7 @@
             "feature_input_tracker_4",
             "this.value"
           ],
-          "_raw": "changed | set_field: feature_input_tracker_4:@local.text_box_4",
-          "_cleaned": "changed | set_field: feature_input_tracker_4:@local.text_box_4"
+          "_raw": "changed | set_field: feature_input_tracker_4:@local.text_box_4"
         }
       ],
       "exclude_from_translation": true,
@@ -351,14 +320,6 @@
                 "type": "local",
                 "fieldName": "text_box_4"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: feature_input_tracker_4:@local.text_box_4",
-                "matchedExpression": "@local.text_box_4",
-                "type": "local",
-                "fieldName": "text_box_4"
-              }
             ]
           }
         },
@@ -378,8 +339,7 @@
           "value"
         ],
         "@local.text_box_4": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.placeholder": [
           "parameter_list.placeholder"
@@ -426,8 +386,7 @@
             "feature_input_tracker_5",
             "this.value"
           ],
-          "_raw": "changed | set_field: feature_input_tracker_5:@local.text_box_5",
-          "_cleaned": "changed | set_field: feature_input_tracker_5:@local.text_box_5"
+          "_raw": "changed | set_field: feature_input_tracker_5:@local.text_box_5"
         }
       ],
       "exclude_from_translation": true,
@@ -454,14 +413,6 @@
                 "type": "local",
                 "fieldName": "text_box_5"
               }
-            ],
-            "_cleaned": [
-              {
-                "fullExpression": "changed | set_field: feature_input_tracker_5:@local.text_box_5",
-                "matchedExpression": "@local.text_box_5",
-                "type": "local",
-                "fieldName": "text_box_5"
-              }
             ]
           }
         },
@@ -481,8 +432,7 @@
           "value"
         ],
         "@local.text_box_5": [
-          "action_list.0._raw",
-          "action_list.0._cleaned"
+          "action_list.0._raw"
         ],
         "@local.placeholder": [
           "parameter_list.placeholder"

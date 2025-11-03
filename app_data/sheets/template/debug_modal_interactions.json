@@ -26,7 +26,6 @@
             "open"
           ],
           "_raw": "click | nav_stack: open | template: debug_modal_interactions",
-          "_cleaned": "click | nav_stack: open | template: debug_modal_interactions",
           "params": {
             "template": "debug_modal_interactions"
           }
@@ -48,8 +47,7 @@
           "args": [
             "close_top"
           ],
-          "_raw": "click | nav_stack: close_top",
-          "_cleaned": "click | nav_stack: close_top"
+          "_raw": "click | nav_stack: close_top"
         }
       ],
       "name": "button_4",
