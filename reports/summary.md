@@ -69,21 +69,15 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 154 |
-<<<<<<< Updated upstream
 | text | 1304 |
-=======
-| text | 1306 |
->>>>>>> Stashed changes
+| text | 1305 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-<<<<<<< Updated upstream
 | title | 644 |
-=======
-| title | 647 |
->>>>>>> Stashed changes
+| title | 645 |
 | toggle_bar | 74 |
 | update_action_list | 2 |
 | video | 4 |
@@ -191,7 +185,7 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg | 2 |
+| click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg | 1 |
 | confetti.svg | 1 |
 | debug_asset_pack_1/image_2.png | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
@@ -309,8 +303,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | example_pipe | 5 |
 | data_list | example_sheet_defaults | 1 |
 | data_list | feature | 2 |
-| data_list | generated | 13 |
+| data_list | generated | 14 |
 | data_list | lifecycle_actions | 1 |
+| data_pipe | component_demo | 1 |
 | data_pipe | debug | 1 |
 | data_pipe | example_pipe | 6 |
 | data_pipe | generated | 2 |

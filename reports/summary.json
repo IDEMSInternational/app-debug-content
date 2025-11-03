@@ -267,11 +267,8 @@
       },
       {
         "type": "text",
-<<<<<<< Updated upstream
         "count": 1304
-=======
-        "count": 1306
->>>>>>> Stashed changes
+        "count": 1305
       },
       {
         "type": "text_area",
@@ -295,11 +292,8 @@
       },
       {
         "type": "title",
-<<<<<<< Updated upstream
         "count": 644
-=======
-        "count": 647
->>>>>>> Stashed changes
+        "count": 645
       },
       {
         "type": "toggle_bar",
@@ -621,7 +615,7 @@
     "data": [
       {
         "path": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
-        "count": 2,
+        "count": 1,
         "missing": true
       },
       {
@@ -1140,11 +1134,16 @@
       {
         "type": "data_list",
         "subtype": "generated",
-        "total": 13
+        "total": 14
       },
       {
         "type": "data_list",
         "subtype": "lifecycle_actions",
+        "total": 1
+      },
+      {
+        "type": "data_pipe",
+        "subtype": "component_demo",
         "total": 1
       },
       {
