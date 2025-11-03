@@ -31,7 +31,7 @@
       },
       {
         "type": "apple_sign_in_button",
-        "count": 8
+        "count": 10
       },
       {
         "type": "audio",
@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 416
+        "count": 417
       },
       {
         "type": "calendar",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 260
+        "count": 261
       },
       {
         "type": "drawer",
@@ -99,7 +99,7 @@
       },
       {
         "type": "google_sign_in_button",
-        "count": 9
+        "count": 11
       },
       {
         "type": "html",
@@ -267,7 +267,11 @@
       },
       {
         "type": "text",
+<<<<<<< Updated upstream
         "count": 1304
+=======
+        "count": 1306
+>>>>>>> Stashed changes
       },
       {
         "type": "text_area",
@@ -291,7 +295,11 @@
       },
       {
         "type": "title",
+<<<<<<< Updated upstream
         "count": 644
+=======
+        "count": 647
+>>>>>>> Stashed changes
       },
       {
         "type": "toggle_bar",
@@ -363,7 +371,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 50
+        "count": 54
       },
       {
         "type": "emit: force_restart",
