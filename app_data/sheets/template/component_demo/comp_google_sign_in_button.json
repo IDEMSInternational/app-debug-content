@@ -85,13 +85,35 @@
       "_nested_name": "google_sign_in_button_6"
     },
     {
+      "type": "google_sign_in_button",
+      "value": "Width: centre",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "width": "centre"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "google_sign_in_button_7",
+      "_nested_name": "google_sign_in_button_7"
+    },
+    {
       "type": "title",
       "value": "Variant: native_google",
       "_translations": {
         "value": {}
       },
-      "name": "title_7",
-      "_nested_name": "title_7"
+      "name": "title_8",
+      "_nested_name": "title_8"
     },
     {
       "type": "google_sign_in_button",
@@ -114,8 +136,8 @@
           "_raw": "click | emit: force_reprocess"
         }
       ],
-      "name": "google_sign_in_button_8",
-      "_nested_name": "google_sign_in_button_8"
+      "name": "google_sign_in_button_9",
+      "_nested_name": "google_sign_in_button_9"
     },
     {
       "type": "google_sign_in_button",
@@ -136,8 +158,8 @@
           "_raw": "click | emit: force_reprocess"
         }
       ],
-      "name": "google_sign_in_button_9",
-      "_nested_name": "google_sign_in_button_9"
+      "name": "google_sign_in_button_10",
+      "_nested_name": "google_sign_in_button_10"
     },
     {
       "type": "google_sign_in_button",
@@ -159,8 +181,8 @@
           "_raw": "click | emit: force_reprocess"
         }
       ],
-      "name": "google_sign_in_button_10",
-      "_nested_name": "google_sign_in_button_10"
+      "name": "google_sign_in_button_11",
+      "_nested_name": "google_sign_in_button_11"
     },
     {
       "type": "button",
@@ -195,8 +217,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_12",
-      "_nested_name": "text_12"
+      "name": "text_13",
+      "_nested_name": "text_13"
     },
     {
       "type": "text",
@@ -204,8 +226,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_13",
-      "_nested_name": "text_13",
+      "name": "text_14",
+      "_nested_name": "text_14",
       "_dynamicFields": {
         "value": [
           {

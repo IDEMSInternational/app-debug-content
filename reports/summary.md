@@ -10,9 +10,9 @@
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
-| apple_sign_in_button | 8 |
+| apple_sign_in_button | 10 |
 | audio | 13 |
-| button | 416 |
+| button | 417 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -24,10 +24,10 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 260 |
+| display_group | 261 |
 | drawer | 1 |
 | form | 9 |
-| google_sign_in_button | 9 |
+| google_sign_in_button | 11 |
 | html | 4 |
 | image | 85 |
 | items | 51 |
@@ -69,13 +69,13 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 154 |
-| text | 1305 |
+| text | 1306 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 645 |
+| title | 647 |
 | toggle_bar | 74 |
 | update_action_list | 2 |
 | video | 4 |
@@ -99,7 +99,7 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 31 |
-| emit: force_reprocess | 50 |
+| emit: force_reprocess | 54 |
 | emit: force_restart | 4 |
 | emit: server_sync | 8 |
 | emit: set_language | 6 |
