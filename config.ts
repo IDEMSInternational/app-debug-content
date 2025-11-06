@@ -6,15 +6,15 @@ const config = generateDeploymentConfig("debug");
 config.api.db_name = "debug"
 
 config.google_drive = {
-  sheets_folder_ids: ["1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"],
-  assets_folder_ids: ["1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs"],
+  sheets_folders: [{ id: "1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc", name: "Debug Sheets" }],
+  assets_folders: [{ id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs", name: "Debug Assets" }],
 };
 
 config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.8.1",
+  content_tag_latest: "1.8.2",
 };
 
 // set supabase config if decrypted values available
