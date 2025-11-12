@@ -1,0 +1,20 @@
+[
+ {
+    "SourceText": "**Warning Sign 1: Lerato is quiet and withdrawn — a change in mood can signal something is wrong.**",
+    "text": "**Uphawu lwesilumkiso 1: u-Lerato uthule kwaye urhoxile - ukutshintsha kwemo kubonisa ukuba kukho into engalunganga.**",
+    "type": "data_list",
+    "note": ""
+  },
+  {
+    "SourceText": "**Warning Sign 2: @data.characters.f3_daughter_12.name hears about a classmate sharing private photos — hearing such stories is a warning sign to talk with your teen about pressure and safety online.**",
+    "text": "**Impawu zesilumkiso 2: U@data.characters.f3_daughter_12.name uve ngomntana afunda naye oye wabelana ngeefoto zabucala - ukuva amabali anjalo zimpawu zesilumkiso ukuba uthethe nomntana wakho ofikisayo kunye nokhuseleko lwe-intanethi**",
+    "type": "data_list",
+    "note": "The string @data.characters.f3_daughter_12.name should not be translated."
+  },
+  {
+    "SourceText": "**Here are some examples of shared online moments:**\n\n🖥️ Watch a short video or song together\n💜 Share memes and funny clips\n😊 Ask your teen to teach you something online (like posting a family photo)\n💬 Ask “Did you see anything fun or interesting online today?” \n📓 Help with research or homework online",
+    "text": "**Nantsi eminye imizekelo yamaxesha okwabelana kwi-intanethi:**\n\n🖥️ Bukelani ividiyo emfutshane okanye ingoma kunye\n💜 Yabelana ngeememes kunye neeklip ezihlekisayo\n😊 Cela umntana wakho ofikisayo akufundise into kwi-intanethi ( njengokufaka ifoto yosapho)\n💬 Buza \"Ingaba ubone nantoni na ehlekisayo okanye eenza umdla kwi-intanethi namhlanje?\"\n📓 Uncedo ngophando okanye umsebenzi wasekhaya kwi-intanethi",
+    "type": "data_list",
+    "note": ""
+  }
+]
