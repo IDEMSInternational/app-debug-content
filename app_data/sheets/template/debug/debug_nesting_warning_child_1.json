@@ -35,6 +35,9 @@
       "_nested_name": "text_1"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_nesting_warning.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nesting_warning.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/19slCWTqdJXfqU2fKnYYBc3L9GOF8-JTgse5d-7pCvNU"
+  }
 }

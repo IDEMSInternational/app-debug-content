@@ -78,6 +78,9 @@
       "_nested_name": "info_2"
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_analytics.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/example_analytics.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1QenXw8GM78NM7KAemn4ev2dLeF3DRzJc3WqOxcvcizc"
+  }
 }

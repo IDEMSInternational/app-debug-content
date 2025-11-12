@@ -33,6 +33,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_template_components.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/to_be_sorted/feature_template_components.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+  }
 }

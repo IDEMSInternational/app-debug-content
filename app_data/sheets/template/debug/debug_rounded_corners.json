@@ -18,6 +18,9 @@
       "_nested_name": "image"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_rounded_corners.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_rounded_corners.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1f90OH3oI6EzMebTpXGjfdqIlxcNhhLWKrl4orWl-xIA"
+  }
 }

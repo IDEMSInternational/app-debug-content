@@ -137,6 +137,9 @@
       "_nested_name": "tool_tiles"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_tile_text.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_tile_text.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Y1pMWgVpJEXiJSpK8MCVKdjEwIdS3pzgHJM6A8PadeE"
+  }
 }

@@ -269,6 +269,9 @@
       "_nested_name": "toggle_12"
     }
   ],
-  "_xlsxPath": "component_sheets/component_toggle_bar.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_toggle_bar.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/17SbJITgQSdNs3PNusDJrkbmCLDutOH9jN_qiea8r0zo"
+  }
 }

@@ -51,6 +51,9 @@
       "_nested_name": "nav_buttons"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_stepper.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_stepper.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/18-w6tExfgnSs_majQdZkxkq0jMzqJsJFhOsrmhPfm8g"
+  }
 }

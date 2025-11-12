@@ -120,6 +120,9 @@
       "_nested_name": "debug_radio_group_replies_2"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_overriding_value.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_overriding_value.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1_pf1KBX1JXFU2RAFtGCp4npNwyb9sCMcjgGBDY4w4Ro"
+  }
 }

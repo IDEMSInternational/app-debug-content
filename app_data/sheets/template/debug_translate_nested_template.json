@@ -85,6 +85,9 @@
       "_nested_name": "example_text"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_translate_nested_rows.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_translate_nested_rows.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/19Z3qPWelQF0h96KYtsxwikRFAwk5cC9EfK-ksN_OqCk"
+  }
 }

@@ -208,6 +208,9 @@
       "_nested_name": "text_box_par_5_2"
     }
   ],
-  "_xlsxPath": "component_sheets/component_text_box.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_text_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/10RX7I92ZaLMRDGHuNVdl7d6inTfS7aRP1jVXUs7oqwg"
+  }
 }

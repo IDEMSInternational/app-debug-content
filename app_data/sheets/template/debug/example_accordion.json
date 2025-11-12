@@ -508,6 +508,9 @@
       "_nested_name": "accordion"
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_accordion.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/example_accordion.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1gfnWmr59DF0ZsuSuBh0K1o9fMqEg-z6Qa7eJNsiB-rQ"
+  }
 }

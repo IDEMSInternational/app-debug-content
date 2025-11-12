@@ -30,6 +30,9 @@
       "description": "Status check has not been completed before template loaded. This may happen if using field on initial landing screen such as home page"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_notification_actions.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_notification_actions.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1m_q57wKk7rWCzW5J2DQu8IH4DNYM_rILbDifrN-d_iQ"
+  }
 }

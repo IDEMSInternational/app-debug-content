@@ -184,6 +184,9 @@
       "_nested_name": "display_group_9"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_nav_stack_header.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_stack_header.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oYFIMFUJKC5-DObNl52B9dsEJOJmn2zrbmxO6cRFxGA"
+  }
 }

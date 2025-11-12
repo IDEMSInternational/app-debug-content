@@ -22,6 +22,9 @@
       "message_text": "This is regular text"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_tour.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_tour.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1CQzsurOr4egC706cx_Fvkk5Zfvl-vRmd-Pu40mYM1qA"
+  }
 }

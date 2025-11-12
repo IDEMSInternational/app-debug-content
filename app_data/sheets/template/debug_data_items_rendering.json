@@ -43,6 +43,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_data_items_nested_template.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_data_items_nested_template.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/14XXwZ7R_7qIBo5xKYuxnPVQbQidI--PPJ7TVvZxwy1k"
+  }
 }

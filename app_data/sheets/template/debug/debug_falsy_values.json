@@ -394,6 +394,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_falsy_values.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_falsy_values.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1EoyRaYxMs1Ddkv1lU_7qQc-itw720cEDH8hyF5h86NA"
+  }
 }

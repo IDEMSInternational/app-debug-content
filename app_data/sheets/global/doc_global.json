@@ -18,6 +18,9 @@
       "value": false
     }
   ],
-  "_xlsxPath": "doc_sheets/doc_global.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "doc_sheets/doc_global.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1fCPp2zpXBALc2BIJlaNj75YA9-hzsLbiizMgtYykQbE"
+  }
 }

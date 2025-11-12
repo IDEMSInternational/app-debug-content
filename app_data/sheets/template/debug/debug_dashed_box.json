@@ -133,6 +133,9 @@
       "_nested_name": "dashed_box_9"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_dashed_box.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_dashed_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1_gnFbp23_wovBK5mtsppiHpYmqNfS3fvb0fYnP66qZI"
+  }
 }

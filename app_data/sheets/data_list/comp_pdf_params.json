@@ -16,6 +16,9 @@
       "default": "Open with..."
     }
   ],
-  "_xlsxPath": "component_sheets/component_pdf.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_pdf.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1VXM9zYgrsZIB4h8slC9mg3P9C-jsXuPScNaml-1qaOk"
+  }
 }

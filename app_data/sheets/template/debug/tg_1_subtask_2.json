@@ -23,6 +23,9 @@
       "_nested_name": "image_3"
     }
   ],
-  "_xlsxPath": "example_sheets/example_task_group_stepper.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_task_group_stepper.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1w1OpqizCEDqf0FT7tgja3CUgdnXxJ2CGbh8v8N4gpQs"
+  }
 }

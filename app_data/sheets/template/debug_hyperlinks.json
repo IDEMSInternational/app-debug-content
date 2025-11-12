@@ -94,6 +94,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_hyperlinks.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_hyperlinks.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/14Fub-lf6xLc6nG3_Mnab1qAcfLK88yfYJzlJQGXi-2M"
+  }
 }

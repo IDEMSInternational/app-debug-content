@@ -35,6 +35,9 @@
       "_nested_name": "image_4"
     }
   ],
-  "_xlsxPath": "component_sheets/component_image.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_image.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/18HsajaVrBamjTdkZjFi3XaYWj3MQGCy7dy-U8BeUG-Q"
+  }
 }

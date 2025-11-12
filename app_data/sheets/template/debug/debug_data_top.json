@@ -97,6 +97,9 @@
       "_nested_name": "debug_data_middle"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_data_lists.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_data_lists.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1vtr341TIg0MDq99syARtSK6VmvI3rFjEdYfwgwdb1ek"
+  }
 }

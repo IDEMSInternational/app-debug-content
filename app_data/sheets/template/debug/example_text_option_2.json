@@ -14,6 +14,9 @@
       "_nested_name": "text"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_update_sibling.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_update_sibling.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Nj0i_YukWlZmr40gFVN1W6AIFaTBLISycfSfdDkJrTo"
+  }
 }

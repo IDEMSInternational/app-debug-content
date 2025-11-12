@@ -18,6 +18,9 @@
       "_nested_name": "example_text_long"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_launch_actions.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_launch_actions.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1zofHkaZ9NMcUgM7U7fPXxclVw4qXN8crHkXcQf-HCr8"
+  }
 }

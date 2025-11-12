@@ -176,6 +176,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_modal_interactions.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_modal_interactions.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1IUHvMxxNLfwVTPdtNO-yKuhj8QJ9K-qr24WP9LMwBLc"
+  }
 }

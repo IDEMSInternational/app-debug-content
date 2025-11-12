@@ -13,6 +13,9 @@
       "exclude_from_translation": true
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_dev_mode.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/to_be_sorted/feature_dev_mode.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1WvmUTJB31vBeBldAWZDuqwlZ0RcQzbRZFbewRBIhvuY"
+  }
 }

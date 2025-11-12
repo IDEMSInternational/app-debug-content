@@ -761,6 +761,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_field_null.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_field_null.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ADX-ChbZf14aXOJJHmI23ZEXwWhSgocRia3fZWXQJcc"
+  }
 }

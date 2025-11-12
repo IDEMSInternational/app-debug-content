@@ -82,6 +82,9 @@
       "_nested_name": "sync_button"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_server_sync_disabled.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_server_sync_disabled.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ywYcJQEK9Jd_u5UDc7twzUc_f-t68DQ9usn3p17b3os"
+  }
 }

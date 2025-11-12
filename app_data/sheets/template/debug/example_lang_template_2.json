@@ -93,6 +93,9 @@
       "_nested_name": "example_lang_template_1"
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_languages.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/example_languages.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1vv1DbyXEkOEHVEAMwjtQW0vS23DDUBK1oOw24moe64M"
+  }
 }

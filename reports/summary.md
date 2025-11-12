@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 906 |
+| set_variable | 907 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -69,7 +69,7 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 154 |
-| text | 1306 |
+| text | 1311 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
@@ -145,8 +145,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 31772 KB | 31.8 MB |
-| unused | 4797 KB | 4.8 MB |
+| total | 2465 KB | 2.5 MB |
+| unused | 1155 KB | 1.2 MB |
 </details>
 
 <details open>
@@ -161,7 +161,6 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon-only.png | 128.1 |
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
-| images/home_bg.svg | 3632 |
 | images/icons/airplane_blue.svg | 1.5 |
 | images/icons/close.png | 2.5 |
 | images/icons/favicon.svg | 2.1 |
@@ -173,7 +172,6 @@ Assets that appear in app-data but do not have references within sheets
 | ios/icon-only.png | 128.1 |
 | ios/icon.png | 128.1 |
 | ios/splash.png | 147.4 |
-| map_data/KRCS_branches_2.json | 9.9 |
 </details>
 
 <details open>
@@ -185,10 +183,19 @@ Assets that have references within sheets but do not appear in app-data
 | --- | --- |
 | click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg | 1 |
 | confetti.svg | 1 |
+| debug_asset_pack_1/image_1.png | 1 |
 | debug_asset_pack_1/image_2.png | 1 |
+| debug_asset_pack_1/image_3.png | 1 |
+| debug_asset_pack_1/image_4.png | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
-| https://www.w3schools.com/html/mov_bbb.mp4 | 1 |
 | images/map_view_bg.jpg | 1 |
+| map_data/KRCS_branches.json | 2 |
+| map_data/airports.json | 1 |
+| map_data/centroids.json | 2 |
+| map_data/forecast_data_geojson.json | 4 |
+| map_data/forecast_riots.json | 2 |
+| map_data/ke.json | 2 |
+| map_data/population_and_boundaries.json | 4 |
 </details>
 
 <details >
@@ -201,11 +208,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | audio/baby_elephant_walk.wav | 430.7 | 3 |
 | audio/test_audio.mp3 | 43.4 | 8 |
 | audio/timer/bell_1.mp3 | 121.6 | 1 |
-| audio/timer/ping_1.wav | 196.4 | 1 |
-| audio/timer/ping_2.wav | 829.6 | 1 |
-| debug_asset_pack_1/image_1.png | 8.8 | 1 |
-| debug_asset_pack_1/image_3.png | 9.6 | 1 |
-| debug_asset_pack_1/image_4.png | 11.9 | 1 |
+| audio/timer/ping_1.wav | 196.4 | 2 |
 | debug_theme_language.png | 21.9 | 1 |
 | example_pdf.pdf | 139.4 | 4 |
 | i18n/flags/gb.svg | 0.5 | 2 |
@@ -274,16 +277,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/test_image_no_translations.png | 2.8 | 1 |
 | lottie/blob_play_ball.json | 69.4 | 16 |
 | lottie/cascading_stars.json | 140.5 | 1 |
-| map_data/KRCS_branches.json | 9.9 | 2 |
-| map_data/airports.json | 25.2 | 1 |
-| map_data/centroids.json | 13.4 | 2 |
-| map_data/forecast_data_geojson.json | 133.5 | 4 |
-| map_data/forecast_riots.json | 48.6 | 2 |
-| map_data/ke.json | 10219.4 | 2 |
-| map_data/population_and_boundaries.json | 4513.3 | 4 |
 | odk_form.json | 8 | 1 |
-| video/lets_slow_down.mp4 | 13482.2 | 2 |
-| video/lets_slow_down.vtt | 1.8 | 1 |
 </details>
 
 <details >
@@ -291,7 +285,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 44 |
+| data_list |  | 45 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 13 |
@@ -312,7 +306,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 111 |
+| template |  | 112 |
 | template | component_demo | 68 |
 | template | debug | 293 |
 | template | example | 1 |

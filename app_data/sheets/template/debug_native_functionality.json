@@ -676,6 +676,9 @@
       "_nested_name": "title_44"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_native_functionality.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_native_functionality.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1CdNKMwDDRTXN1HPTD1FCPOTUL0oGSIuGdZRwjBuq7H0"
+  }
 }

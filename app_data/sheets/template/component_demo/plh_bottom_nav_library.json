@@ -22,6 +22,9 @@
       "_nested_name": "title"
     }
   ],
-  "_xlsxPath": "component_sheets/component_plh_bottom_nav.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_bottom_nav.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1weQYXdg4McVzhM5d4p0-iqKgqNaXeVMjLp4Qwp-u6MI"
+  }
 }

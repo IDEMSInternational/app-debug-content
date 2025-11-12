@@ -1389,6 +1389,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_shared_parent_group.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_shared_parent_group.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1fSMNZSWxBRoH6WQCrT-xdd5kOJjpM-wW5RQM59uSGgQ"
+  }
 }

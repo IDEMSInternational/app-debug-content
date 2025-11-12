@@ -441,6 +441,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "component_sheets/component_radio_group.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_radio_group.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1qfatsiHKJ8sCBcJ8oqo3InLrjzT_a2Qxvw6RyxVMTxY"
+  }
 }

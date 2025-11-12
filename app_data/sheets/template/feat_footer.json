@@ -48,6 +48,9 @@
       }
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_footer.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/to_be_sorted/feature_footer.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/10iy1Vq-pfD2ERBX6xY66-GY87B8_srAnBKz9hOpRYIo"
+  }
 }

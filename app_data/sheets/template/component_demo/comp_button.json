@@ -990,6 +990,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "component_sheets/component_button.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_button.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1OmgZICjM5EMT1KgLOU_ovDljRF_SPlpQAgkKWPrNX0s"
+  }
 }

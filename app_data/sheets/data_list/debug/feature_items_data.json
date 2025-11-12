@@ -23,6 +23,9 @@
       "link": "link_3"
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_items.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/to_be_sorted/feature_items.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1LnKtclWcnbFs8vQKSUVCFd50IG81iZChb3VgRujpOrg"
+  }
 }

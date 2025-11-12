@@ -752,6 +752,9 @@
       }
     }
   ],
-  "_xlsxPath": "example_sheets/example_items.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_items.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1n82prWaYx-HWKW0ibxv-sO_Vuw9WxvuNLRJ_jI_WXtk"
+  }
 }

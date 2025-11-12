@@ -10,6 +10,9 @@
       "_nested_name": "colour_palette"
     }
   ],
-  "_xlsxPath": "component_sheets/component_colour_palette.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_colour_palette.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1p-r3mbxL_V-MrM3Z2CafQfauyvxDrq0CWyTby6Y45MQ"
+  }
 }

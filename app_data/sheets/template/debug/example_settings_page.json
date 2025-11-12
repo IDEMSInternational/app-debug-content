@@ -154,6 +154,9 @@
       "_nested_name": "dg_general"
     }
   ],
-  "_xlsxPath": "example_sheets/example_settings_page.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_settings_page.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1XpIEK2kKv2pKdKJ8cIj7IQVw3JEmMhbDxRTsJzhF3uI"
+  }
 }

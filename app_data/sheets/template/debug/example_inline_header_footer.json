@@ -97,6 +97,9 @@
       "_nested_name": "display_group_6"
     }
   ],
-  "_xlsxPath": "example_sheets/example_inline_header_footer.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_inline_header_footer.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1D7BtGET428mBHMRIZbiDY_sCHPnAd1g7F44Jhs-3b1Y"
+  }
 }

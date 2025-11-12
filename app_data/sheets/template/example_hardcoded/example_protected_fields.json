@@ -441,6 +441,9 @@
       }
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/hardcoded_variables.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/hardcoded_variables.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1X10C5YWsqJ7NRJp-pSiaYjdAoV4hl5-scvisiBThmq8"
+  }
 }

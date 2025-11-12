@@ -382,6 +382,9 @@
       }
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_display_group_sticky.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_display_group_sticky.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1tY8sa8ocDl552gIUAP263zgl3JQVcIeS4foaKk7nlMk"
+  }
 }

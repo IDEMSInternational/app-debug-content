@@ -12,6 +12,9 @@
       "_nested_name": "dashed_box"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_advanced_dashed_box.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_advanced_dashed_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1vnij3ASAYSvOXe4wU9F9BKl52SjTeTKZ_QkKl81fUnc"
+  }
 }

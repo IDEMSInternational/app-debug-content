@@ -151,6 +151,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "component_sheets/component_simple_checkbox .xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_simple_checkbox .xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/19t6lEBkVF0LV2dMD1yL6nbuUIFiiYNa0xLA1QQAyyxU"
+  }
 }

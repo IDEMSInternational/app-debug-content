@@ -14,7 +14,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.8.2",
+  content_tag_latest: "1.8.3",
 };
 
 // set supabase config if decrypted values available
@@ -65,6 +65,11 @@ config.remote_assets = {
   bucketName: "debug",
   folderName: "asset_packs",
 };
+
+// To reduce app size, exclude large assets
+config.app_data.assets_filter_function = (fileEntry) =>
+  !(fileEntry.relativePath.startsWith("video/") || fileEntry.relativePath.startsWith("map_data/"));
+
 
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";

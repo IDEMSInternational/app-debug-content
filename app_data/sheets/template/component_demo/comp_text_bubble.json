@@ -181,6 +181,9 @@
       "_nested_name": "text_bubble_13"
     }
   ],
-  "_xlsxPath": "component_sheets/component_text_bubble.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_text_bubble.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Yo8X4TrTW2lzEgusDplAQ-y-JJvQOIqXGNLVON1uvRo"
+  }
 }

@@ -44,31 +44,6 @@
     "md5Checksum": "000bdadc5c44489368e4320d987892a7",
     "size_kb": 196.4
   },
-  "audio/timer/ping_2.wav": {
-    "md5Checksum": "a9cad2b710e4c0efc104be4eed375d80",
-    "size_kb": 829.6
-  },
-  "debug_asset_pack_1/image_1.png": {
-    "md5Checksum": "c26f0932f501f5b0e55322c0ad30fddf",
-    "size_kb": 8.8
-  },
-  "debug_asset_pack_1/image_3.png": {
-    "md5Checksum": "5de98f5bb24410b7e088a6b36dd87b8e",
-    "size_kb": 9.6
-  },
-  "debug_asset_pack_1/image_4.png": {
-    "md5Checksum": "085692002e23e08fa7134e6b01007ce4",
-    "overrides": {
-      "theme_default": {
-        "es_sp": {
-          "filePath": "debug_asset_pack_1/es_sp/image_4.png",
-          "md5Checksum": "fe9353eee21f8afa0cf9346a7d4aaa6e",
-          "size_kb": 10.1
-        }
-      }
-    },
-    "size_kb": 11.9
-  },
   "debug_theme_language.png": {
     "md5Checksum": "a86e175e00b77a34a936cc08214359ca",
     "size_kb": 21.9
@@ -148,10 +123,6 @@
   "images/faces/sad.svg": {
     "md5Checksum": "44f0f4aee98a30f31d445b169922f940",
     "size_kb": 1.1
-  },
-  "images/home_bg.svg": {
-    "md5Checksum": "c28a3bfccb3e3aa2e2d53f7263421cdb",
-    "size_kb": 3632
   },
   "images/icons/airplane_blue.png": {
     "md5Checksum": "13171a5a00f8626185911d9ed36fb1c3",
@@ -403,48 +374,8 @@
     "md5Checksum": "131145b165cd19613a9e277a514eec2f",
     "size_kb": 140.5
   },
-  "map_data/KRCS_branches.json": {
-    "md5Checksum": "bb1ebd6c0e99c23ecba3e441192991b6",
-    "size_kb": 9.9
-  },
-  "map_data/KRCS_branches_2.json": {
-    "md5Checksum": "bb1ebd6c0e99c23ecba3e441192991b6",
-    "size_kb": 9.9
-  },
-  "map_data/airports.json": {
-    "md5Checksum": "a1d6b52daca8af69bef18c42d6431ce0",
-    "size_kb": 25.2
-  },
-  "map_data/centroids.json": {
-    "md5Checksum": "f041bee2c57b7f4c92b88546a05116f8",
-    "size_kb": 13.4
-  },
-  "map_data/forecast_data_geojson.json": {
-    "md5Checksum": "9c8109ef8e302cad49ecd2bb184908b3",
-    "size_kb": 133.5
-  },
-  "map_data/forecast_riots.json": {
-    "md5Checksum": "4ced38fc0e746d7279859f1e4341b55d",
-    "size_kb": 48.6
-  },
-  "map_data/ke.json": {
-    "md5Checksum": "9a887a75373ec2e4bef94070ca0597f1",
-    "size_kb": 10219.4
-  },
-  "map_data/population_and_boundaries.json": {
-    "md5Checksum": "e82525f3f8057054ff7879d156ddd322",
-    "size_kb": 4513.3
-  },
   "odk_form.json": {
     "md5Checksum": "8b89a6b050f58c0fa0de2d0ff0bd2f32",
     "size_kb": 8
-  },
-  "video/lets_slow_down.mp4": {
-    "md5Checksum": "62f06faa95a979d128b4356db9bb396e",
-    "size_kb": 13482.2
-  },
-  "video/lets_slow_down.vtt": {
-    "md5Checksum": "1c172282f4c58766a03562d1eb88a4a4",
-    "size_kb": 1.8
   }
 }

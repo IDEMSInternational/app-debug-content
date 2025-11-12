@@ -77,6 +77,9 @@
       "_nested_name": "button"
     }
   ],
-  "_xlsxPath": "doc_sheets/doc_field.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "doc_sheets/doc_field.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1QU1mbD6xFjXDXWqm136cSngeCdhVzK130AXTX7fbx3c"
+  }
 }

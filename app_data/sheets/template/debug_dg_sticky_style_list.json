@@ -82,6 +82,9 @@
       "_nested_name": "display_group_5"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_dg_sticky_style_list.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_dg_sticky_style_list.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1fwibHu1p6mOTGAwVb0cpi3IloiiKjwxqyidfj32zXMs"
+  }
 }

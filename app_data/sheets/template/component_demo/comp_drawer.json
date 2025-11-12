@@ -125,6 +125,9 @@
       "_nested_name": "drawer_11"
     }
   ],
-  "_xlsxPath": "component_sheets/component_drawer.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_drawer.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1NY-FwPH7AZNlBoaS3Oi0E5j20ppdZwt0zbnqh72D1Tk"
+  }
 }

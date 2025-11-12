@@ -20,6 +20,9 @@
       "_nested_name": "subtemplate_2"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nested_same_name.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_nested_same_name.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/18IUtYynfJAyv-m3trIC1Oa4kUHJ9IX7dsE60q3NbnQ8"
+  }
 }

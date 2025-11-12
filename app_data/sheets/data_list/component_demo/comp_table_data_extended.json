@@ -21755,8 +21755,11 @@
       "risk_county": 2.1
     }
   ],
-  "_xlsxPath": "component_sheets/component_table.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_table.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1utCg51oPxeT3rI1s74GmoNvdsS60aXOvCiVsKUTSMLY"
+  },
   "_metadata": {
     "probability_ward": {
       "type": "number"

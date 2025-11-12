@@ -29,6 +29,9 @@
       }
     }
   ],
-  "_xlsxPath": "example_sheets/example_data_pipes_join.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_data_pipes_join.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1imxKEBQ31qpdu7NeXuH3UyK88G_G1jitLdw9CRZ9ZIY"
+  }
 }

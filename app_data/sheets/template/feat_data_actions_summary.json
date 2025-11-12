@@ -330,6 +330,9 @@
       }
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_data_actions.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_data_actions.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1nREviZhw2HG1YQy6KA1S9PU4Q36RRVHdwSYf3TMbduk"
+  }
 }

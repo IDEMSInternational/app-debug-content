@@ -255,6 +255,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_user_actions.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_user_actions.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/18ZIJpW1pSu23RF7Z9AlCe_RxfoiH-66S4K9Wxt4OsKo"
+  }
 }

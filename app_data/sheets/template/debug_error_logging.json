@@ -64,6 +64,9 @@
       "_nested_name": "error_button"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_errors.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_errors.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1-ZqEGx7vR8JBOwtgaC4KFiY-G4NQMwHrruCNmauZJ_o"
+  }
 }

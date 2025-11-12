@@ -283,6 +283,9 @@
       "_nested_name": "debug_actions_middle_3"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_overriding_action_list.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_overriding_action_list.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1_1x84zeJke-g7oQPNQeVbd6iAYqqiDMLYTUGlFdznmg"
+  }
 }

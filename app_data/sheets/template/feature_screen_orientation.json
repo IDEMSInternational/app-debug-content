@@ -129,6 +129,9 @@
       "_nested_name": "button_9"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_screen_orientation.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_screen_orientation.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13KnDdmBicPDZaWFNnlIck7WNMLlM02HjD0-_UiqZ4z8"
+  }
 }

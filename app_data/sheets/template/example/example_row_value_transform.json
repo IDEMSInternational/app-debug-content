@@ -182,6 +182,9 @@
       "_nested_name": "text_16"
     }
   ],
-  "_xlsxPath": "example_sheets/example_row_value_transform.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_row_value_transform.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1iKfq3-wan4-GYvg4-XL07YLDt5ZDGIfoCCEK78-HzrI"
+  }
 }

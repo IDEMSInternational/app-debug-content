@@ -59,6 +59,9 @@
       "_nested_name": "plh_completion_modal_3"
     }
   ],
-  "_xlsxPath": "component_sheets/component_plh_completion_modal.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_completion_modal.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Uw0QcLJfb2PzvKLSdxXdJojx-zvbUfw12dl-Sy6KrC8"
+  }
 }

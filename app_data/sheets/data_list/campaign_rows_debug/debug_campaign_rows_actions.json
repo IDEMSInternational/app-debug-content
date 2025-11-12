@@ -102,8 +102,11 @@
       "icon": "images/icons/heart_blue.svg"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_campaigns.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_campaigns.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Jf38D4pkoBO0QIUcw1IFAqlEokrUzhOESi3hNlW0vZM"
+  },
   "_metadata": {
     "priority": {
       "type": "number"

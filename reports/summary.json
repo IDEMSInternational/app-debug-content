@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 906
+        "count": 907
       },
       {
         "type": "simple_checkbox",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1306
+        "count": 1311
       },
       {
         "type": "text_area",
@@ -523,13 +523,13 @@
     "data": [
       {
         "assets": "total",
-        "KB": "31772 KB",
-        "MB": "31.8 MB"
+        "KB": "2465 KB",
+        "MB": "2.5 MB"
       },
       {
         "assets": "unused",
-        "KB": "4797 KB",
-        "MB": "4.8 MB"
+        "KB": "1155 KB",
+        "MB": "1.2 MB"
       }
     ]
   },
@@ -554,10 +554,6 @@
       {
         "path": "android/splash.png",
         "size_kb": 147.4
-      },
-      {
-        "path": "images/home_bg.svg",
-        "size_kb": 3632
       },
       {
         "path": "images/icons/airplane_blue.svg",
@@ -602,10 +598,6 @@
       {
         "path": "ios/splash.png",
         "size_kb": 147.4
-      },
-      {
-        "path": "map_data/KRCS_branches_2.json",
-        "size_kb": 9.9
       }
     ]
   },
@@ -622,7 +614,22 @@
         "missing": true
       },
       {
+        "path": "debug_asset_pack_1/image_1.png",
+        "count": 1,
+        "missing": true
+      },
+      {
         "path": "debug_asset_pack_1/image_2.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "debug_asset_pack_1/image_3.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "debug_asset_pack_1/image_4.png",
         "count": 1,
         "missing": true
       },
@@ -632,13 +639,43 @@
         "missing": true
       },
       {
-        "path": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "path": "images/map_view_bg.jpg",
         "count": 1,
         "missing": true
       },
       {
-        "path": "images/map_view_bg.jpg",
+        "path": "map_data/KRCS_branches.json",
+        "count": 2,
+        "missing": true
+      },
+      {
+        "path": "map_data/airports.json",
         "count": 1,
+        "missing": true
+      },
+      {
+        "path": "map_data/centroids.json",
+        "count": 2,
+        "missing": true
+      },
+      {
+        "path": "map_data/forecast_data_geojson.json",
+        "count": 4,
+        "missing": true
+      },
+      {
+        "path": "map_data/forecast_riots.json",
+        "count": 2,
+        "missing": true
+      },
+      {
+        "path": "map_data/ke.json",
+        "count": 2,
+        "missing": true
+      },
+      {
+        "path": "map_data/population_and_boundaries.json",
+        "count": 4,
         "missing": true
       }
     ]
@@ -662,28 +699,8 @@
       },
       {
         "path": "audio/timer/ping_1.wav",
-        "count": 1,
+        "count": 2,
         "size_kb": 196.4
-      },
-      {
-        "path": "audio/timer/ping_2.wav",
-        "count": 1,
-        "size_kb": 829.6
-      },
-      {
-        "path": "debug_asset_pack_1/image_1.png",
-        "count": 1,
-        "size_kb": 8.8
-      },
-      {
-        "path": "debug_asset_pack_1/image_3.png",
-        "count": 1,
-        "size_kb": 9.6
-      },
-      {
-        "path": "debug_asset_pack_1/image_4.png",
-        "count": 1,
-        "size_kb": 11.9
       },
       {
         "path": "debug_theme_language.png",
@@ -1026,54 +1043,9 @@
         "size_kb": 140.5
       },
       {
-        "path": "map_data/KRCS_branches.json",
-        "count": 2,
-        "size_kb": 9.9
-      },
-      {
-        "path": "map_data/airports.json",
-        "count": 1,
-        "size_kb": 25.2
-      },
-      {
-        "path": "map_data/centroids.json",
-        "count": 2,
-        "size_kb": 13.4
-      },
-      {
-        "path": "map_data/forecast_data_geojson.json",
-        "count": 4,
-        "size_kb": 133.5
-      },
-      {
-        "path": "map_data/forecast_riots.json",
-        "count": 2,
-        "size_kb": 48.6
-      },
-      {
-        "path": "map_data/ke.json",
-        "count": 2,
-        "size_kb": 10219.4
-      },
-      {
-        "path": "map_data/population_and_boundaries.json",
-        "count": 4,
-        "size_kb": 4513.3
-      },
-      {
         "path": "odk_form.json",
         "count": 1,
         "size_kb": 8
-      },
-      {
-        "path": "video/lets_slow_down.mp4",
-        "count": 2,
-        "size_kb": 13482.2
-      },
-      {
-        "path": "video/lets_slow_down.vtt",
-        "count": 1,
-        "size_kb": 1.8
       }
     ]
   },
@@ -1082,7 +1054,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 44
+        "total": 45
       },
       {
         "type": "data_list",
@@ -1187,7 +1159,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 111
+        "total": 112
       },
       {
         "type": "template",
