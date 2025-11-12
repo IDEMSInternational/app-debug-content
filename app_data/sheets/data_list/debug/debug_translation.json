@@ -10,9 +10,15 @@
       "foreign_key": "foreign_1",
       "text": "**Warning Sign 1: Lerato is quiet and withdrawn — a change in mood can signal something is wrong.**",
       "_translations": {
-        "text": {},
-        "accordion_title": {},
-        "accordion_text": {}
+        "text": {
+          "za_xh": true
+        },
+        "accordion_title": {
+          "za_xh": true
+        },
+        "accordion_text": {
+          "za_xh": true
+        }
       },
       "_translatedFields": {
         "text": {
@@ -33,9 +39,15 @@
       "foreign_key": "foreign_2",
       "text": "**Warning Sign 2: @data.characters.f3_daughter_12.name hears about a classmate sharing private photos — hearing such stories is a warning sign to talk with your teen about pressure and safety online.**",
       "_translations": {
-        "text": {},
-        "accordion_title": {},
-        "accordion_text": {}
+        "text": {
+          "za_xh": true
+        },
+        "accordion_title": {
+          "za_xh": true
+        },
+        "accordion_text": {
+          "za_xh": true
+        }
       },
       "_translatedFields": {
         "text": {
@@ -56,9 +68,15 @@
       "foreign_key": "foreign_3",
       "text": "**Here are some examples of shared online moments:**\n\n🖥️ Watch a short video or song together\n💜 Share memes and funny clips\n😊 Ask your teen to teach you something online (like posting a family photo)\n💬 Ask “Did you see anything fun or interesting online today?” \n📓 Help with research or homework online",
       "_translations": {
-        "text": {},
-        "accordion_title": {},
-        "accordion_text": {}
+        "text": {
+          "za_xh": true
+        },
+        "accordion_title": {
+          "za_xh": true
+        },
+        "accordion_text": {
+          "za_xh": true
+        }
       },
       "_translatedFields": {
         "text": {
