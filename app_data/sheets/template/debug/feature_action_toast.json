@@ -113,6 +113,9 @@
       "_nested_name": "button_default"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_action_toast.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_action_toast.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1WGR_pxk-7iBHKX2BDdzdmjiaVjiwe-qKIou47uZFqHo"
+  }
 }

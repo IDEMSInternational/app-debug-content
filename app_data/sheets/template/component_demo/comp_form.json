@@ -105,6 +105,9 @@
       "_nested_name": "form_par_4_2"
     }
   ],
-  "_xlsxPath": "component_sheets/component_form.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_form.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1IJOxTi2qLa4MAQOQXmkn0HjO3hIUKJL16vfr2idkZOI"
+  }
 }

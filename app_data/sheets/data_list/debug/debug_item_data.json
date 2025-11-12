@@ -17,8 +17,11 @@
       "boolean": false
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_template_variables.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_template_variables.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1tL6CPHEIW-GPMYjdhVKQToy_hZ1H5qNIBkkh9XnA5QM"
+  },
   "_metadata": {
     "number": {
       "type": "number"

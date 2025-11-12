@@ -32,8 +32,11 @@
       "score": 0
     }
   ],
-  "_xlsxPath": "component_sheets/component_data_query.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_data_query.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1TU1hS7Sj0yoNZWd10lKpkKyubryrbbT4UCmVhsZEeOo"
+  },
   "_metadata": {
     "number": {
       "type": "number"

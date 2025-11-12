@@ -79,6 +79,9 @@
       "_nested_name": "text_11"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_form_layout.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_form_layout.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1-SX-9_ns4DJXHZL7fe653cchnaj8cXKQoBL5gVF-J2w"
+  }
 }

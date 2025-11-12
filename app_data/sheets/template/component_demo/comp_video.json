@@ -17,6 +17,9 @@
       "_nested_name": "video_src"
     }
   ],
-  "_xlsxPath": "component_sheets/component_video.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_video.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1OjY24TnAWRxiiPT9vED59DLwz2Zb9RmUHw-Lym1pCXo"
+  }
 }

@@ -367,6 +367,9 @@
       "_nested_name": "example_text_3"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_conditional_messages.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_conditional_messages.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1TRhQoX5rPOXxnRFphFGRc5TefsNaJYgt7JpAdVZYL7Y"
+  }
 }

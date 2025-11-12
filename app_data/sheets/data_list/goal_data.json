@@ -29,6 +29,9 @@
       "image": "images/icons/heart_blue.svg"
     }
   ],
-  "_xlsxPath": "demo_sheets/article_data.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "demo_sheets/article_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1tQkdC-W1gqBh4HAhN3PL4J4kM8Ktf05M16fZGqDUl_w"
+  }
 }

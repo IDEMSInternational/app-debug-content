@@ -17,6 +17,9 @@
       "data": "example_w_2_data"
     }
   ],
-  "_xlsxPath": "example_sheets/example_generator.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_generator.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1afaK3pdINPYGUaz9mPgUi6ePo8_gsP0QOt1EjqQ7d9c"
+  }
 }

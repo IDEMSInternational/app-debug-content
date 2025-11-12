@@ -73,8 +73,11 @@
       "visible_default": false
     }
   ],
-  "_xlsxPath": "component_sheets/component_map.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_map.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
+  },
   "_metadata": {
     "point_radius_max": {
       "type": "number"

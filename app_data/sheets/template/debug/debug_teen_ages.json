@@ -547,6 +547,9 @@
       "_nested_name": "nav_buttons"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_items_fields.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_items_fields.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1vm9aDgmBaJBQfl6CgAje8Ys02qicW2M8v96JaMJ5-f8"
+  }
 }

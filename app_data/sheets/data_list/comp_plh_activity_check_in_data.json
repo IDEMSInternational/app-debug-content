@@ -9,8 +9,11 @@
       "countdown_days": 7
     }
   ],
-  "_xlsxPath": "component_sheets/component_plh_activity_check_in.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_activity_check_in.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1anFgMo2Uad0A9lgtKvbdjA4GyrkMvuWO90rdzMNc-SQ"
+  },
   "_metadata": {
     "countdown_days": {
       "type": "number"

@@ -68,6 +68,9 @@
       "_nested_name": "button_5"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_pop_ups.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_pop_ups.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ESiY3It66heuxfPl9PMZuYOKM6jjjpk9qIWH48Q_m-s"
+  }
 }

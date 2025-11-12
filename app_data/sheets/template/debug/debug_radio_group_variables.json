@@ -265,6 +265,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_component_variables.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_component_variables.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1jXlpblYFQPBX1h54OVhM_KEXXaApxyZSuVr22jPhmes"
+  }
 }

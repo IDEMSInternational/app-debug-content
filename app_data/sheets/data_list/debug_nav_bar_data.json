@@ -16,6 +16,9 @@
       "target_template": "example_calc"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_nav_bar.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_bar.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1vPD2dY1UUoVk67K8cXC3CKuaUNwUZBBa-p0ofWKNb1w"
+  }
 }

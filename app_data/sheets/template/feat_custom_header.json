@@ -50,6 +50,9 @@
       "_nested_name": "display_group_2"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_app_layout.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_app_layout.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Z46gTluTPeffqpiAZMapYo0imm59GU03j0sW9UChvPM"
+  }
 }

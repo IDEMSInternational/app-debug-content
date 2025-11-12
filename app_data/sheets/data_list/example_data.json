@@ -1,0 +1,20 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "example_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "text_1"
+    },
+    {
+      "id": "id_2",
+      "text": "text_2"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1uXhyNzRlT48CPVT0WMDh_blVVKJ0KaDDkCFmrQ1ao78"
+  }
+}

@@ -266,6 +266,9 @@
       "_nested_name": "button_12"
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_feedback.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/to_be_sorted/feature_feedback.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1IsjWr7NcPspsUWstdFKzTRD6iKmNxCutipQ5a0vvLsU"
+  }
 }

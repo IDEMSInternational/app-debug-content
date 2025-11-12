@@ -33,8 +33,11 @@
       "input_type": "text_box"
     }
   ],
-  "_xlsxPath": "component_sheets/component_display_grid.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_display_grid.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ul3lknh0YGXtRrCjyqF7Wdq9OaQERhfTZTetVPYO_2M"
+  },
   "_metadata": {
     "required": {
       "type": "boolean"

@@ -32,6 +32,9 @@
       "_nested_name": "other_name"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_nesting.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_nesting.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/11vBEHy3TXQTjxIHABGo_El4lrqJcK4kcdre3X5qkUKY"
+  }
 }

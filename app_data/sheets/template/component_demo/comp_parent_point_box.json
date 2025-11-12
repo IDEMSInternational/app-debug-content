@@ -105,6 +105,9 @@
       "_nested_name": "parent_point_box_par_4_2"
     }
   ],
-  "_xlsxPath": "component_sheets/component_parent_point_box.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_parent_point_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/10xgdH_zlA7HxyfF9Uq99AnbSC5wQNHoYS9vhvGXwaJ8"
+  }
 }

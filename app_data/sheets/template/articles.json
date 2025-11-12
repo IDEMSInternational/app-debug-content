@@ -295,6 +295,9 @@
       }
     }
   ],
-  "_xlsxPath": "demo_sheets/articles.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "demo_sheets/articles.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/170S7nBUXkYxY2N0IBXYGejxrKZWNs0ri25kunh0VP0Y"
+  }
 }

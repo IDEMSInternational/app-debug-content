@@ -1,0 +1,113 @@
+{
+  "flow_type": "template",
+  "flow_name": "calling_data",
+  "status": "released",
+  "rows": [
+    {
+      "value": "@data. is not visible as text uness some additional text is included at some point along the referencing chain.\nAlso, turning on debug mode in the app shows the values even after it is turned off.",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "type": "set_variable",
+      "name": "set_variable_2",
+      "_nested_name": "set_variable_2"
+    },
+    {
+      "type": "text",
+      "name": "text_postfix",
+      "value": ".text",
+      "_translations": {
+        "value": {}
+      },
+      "condition": false,
+      "_nested_name": "text_postfix"
+    },
+    {
+      "type": "text",
+      "name": "print_data",
+      "value": "@data.example_data.id_1.text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "print_data",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@data.example_data.id_1.text",
+            "matchedExpression": "@data.example_data.id_1.text",
+            "type": "data",
+            "fieldName": "example_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.example_data.id_1.text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "print_data_with_text",
+      "value": "with text: @data.example_data.id_1.text",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "print_data_with_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "with text: @data.example_data.id_1.text",
+            "matchedExpression": "@data.example_data.id_1.text",
+            "type": "data",
+            "fieldName": "example_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@data.example_data.id_1.text": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "print_data_with_reference",
+      "value": "with text later: @local.print_data",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "print_data_with_reference",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "with text later: @local.print_data",
+            "matchedExpression": "@local.print_data",
+            "type": "local",
+            "fieldName": "print_data"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.print_data": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "template_link",
+      "value": "[Template link](https://docs.google.com/spreadsheets/d/1uXhyNzRlT48CPVT0WMDh_blVVKJ0KaDDkCFmrQ1ao78/edit?gid=0#gid=0)",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "template_link"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_data.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1uXhyNzRlT48CPVT0WMDh_blVVKJ0KaDDkCFmrQ1ao78"
+  }
+}

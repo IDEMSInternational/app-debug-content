@@ -55,6 +55,9 @@
       "_nested_name": "display_group_2"
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_new_nav_buttons.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/example_new_nav_buttons.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1yupKd_6VLezrTX2jXrcloAUVK_o8Q4XQTkcYjpqDZg8"
+  }
 }

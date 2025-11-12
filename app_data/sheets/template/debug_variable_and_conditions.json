@@ -1075,6 +1075,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_variable_and_conditions.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_variable_and_conditions.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1uBGEpbVyZz7WSRHk9eHkLjCo_L0nZqflCkvgy07ojDg"
+  }
 }

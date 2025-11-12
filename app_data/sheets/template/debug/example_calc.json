@@ -987,6 +987,9 @@
       }
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_calc.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/example_calc.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15TccctjzepSPPv9xrLp46fhYldNN0wrho1zA5voTYcg"
+  }
 }

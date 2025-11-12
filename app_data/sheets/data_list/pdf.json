@@ -16,6 +16,9 @@
       "title": "Title for item starting with number"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_concatenation.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_concatenation.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ZYmn8EF1y1F00VbA-kz2vqntrZfCHJ92fglDhh5vkRw"
+  }
 }

@@ -866,6 +866,9 @@
       "_nested_name": "button_27"
     }
   ],
-  "_xlsxPath": "example_sheets/example_auth.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_auth.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/12xo0ewDN0bbeVrs3klWd9J8DkFQLTCYX1zhGWnovqIo"
+  }
 }

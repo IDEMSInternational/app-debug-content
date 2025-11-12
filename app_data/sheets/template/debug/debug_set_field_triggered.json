@@ -192,6 +192,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_set_field_triggered.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_set_field_triggered.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1g8-V84JrMiGnATxoI0JLkPYZ9wkvDJpGfkcqIlpuLdw"
+  }
 }

@@ -106,6 +106,9 @@
       }
     }
   ],
-  "_xlsxPath": "example_sheets/debug_skin_select.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/debug_skin_select.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1I4KOfILcyeT9IX1rBpnTfQ4sZimCakYvelOP7ePLtf4"
+  }
 }

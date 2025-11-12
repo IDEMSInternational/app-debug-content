@@ -59,8 +59,11 @@
       "completed": false
     }
   ],
-  "_xlsxPath": "example_sheets/example_data_pipes.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_data_pipes.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/18CUEEFHYs6FqJmaAiXzTRspWxV1alqSkcr1wuEOHfNw"
+  },
   "_metadata": {
     "value": {
       "type": "number"

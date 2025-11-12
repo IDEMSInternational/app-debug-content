@@ -2165,6 +2165,9 @@
       }
     }
   ],
-  "_xlsxPath": "component_sheets/component_task_card.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_task_card.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1_RY8HbsATOAZU2EDXY5R9OOE_YBEbW0EjTP5zxYP2aA"
+  }
 }

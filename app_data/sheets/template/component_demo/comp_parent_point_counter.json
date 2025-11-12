@@ -22,6 +22,9 @@
       "_nested_name": "parent_point_counter_3"
     }
   ],
-  "_xlsxPath": "component_sheets/component_parent_point_counter.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_parent_point_counter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13OCh9zMQsI0NuUjy0L-4bJwDF3Do84mhbuQIP7Or61Y"
+  }
 }

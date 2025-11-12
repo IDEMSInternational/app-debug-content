@@ -395,6 +395,9 @@
       }
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_languages.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_languages.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Vp9V0JCmd49ZSXQpC9YftRgDVrkA0xVfJlQ-H1n5pts"
+  }
 }

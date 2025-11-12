@@ -226,6 +226,9 @@
       "_nested_name": "animated_slides_2"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_animated_slides.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_animated_slides.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15eQ1B7BFQKQVdAM1mD1qPa_vGrudfylYVVDOtPenkWI"
+  }
 }

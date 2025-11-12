@@ -211,6 +211,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "component_sheets/component_audio.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_audio.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1utD4Kr0WVjvDwnMbg2wYupaPQ0VY0H2csb86fyi4bPI"
+  }
 }

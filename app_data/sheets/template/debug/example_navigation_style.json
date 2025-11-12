@@ -194,6 +194,9 @@
       }
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_navigation_style.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/example_navigation_style.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1YbCB0_7qDHRZ8rf5y7ZUk4IaCzamZXgfKcMyC7DyFYk"
+  }
 }

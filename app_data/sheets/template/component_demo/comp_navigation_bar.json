@@ -160,6 +160,9 @@
       }
     }
   ],
-  "_xlsxPath": "component_sheets/component_navigation_bar.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_navigation_bar.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1zrwdmmMbVhhAs2Z8PttCAJidk7N9VgCG7E99SOcWFZs"
+  }
 }

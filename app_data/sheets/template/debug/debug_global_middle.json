@@ -134,6 +134,9 @@
       "_nested_name": "debug_global_bottom"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_global.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_global.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1S3VriqghzxPOc99uXeHxR-V4hBuwyowdjnyY6IoiPxg"
+  }
 }

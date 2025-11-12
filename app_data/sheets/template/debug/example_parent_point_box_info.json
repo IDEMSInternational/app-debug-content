@@ -32,6 +32,9 @@
       "_nested_name": "text_4"
     }
   ],
-  "_xlsxPath": "example_sheets/to_be_sorted/example_parent_point_box.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/to_be_sorted/example_parent_point_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1OzJtUnbn8b4km7x7eYmCajOugn9syQhdzWEUzuILIkc"
+  }
 }

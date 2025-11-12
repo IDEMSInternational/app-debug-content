@@ -24,6 +24,9 @@
       "_nested_name": "button_2"
     }
   ],
-  "_xlsxPath": "debug_sheets/to_be_sorted/debug_fullscreen_pop_up.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_fullscreen_pop_up.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1YW7zE4CPt_osn3NzwXwvFCBPjseo1LE5kpYBo190U0s"
+  }
 }

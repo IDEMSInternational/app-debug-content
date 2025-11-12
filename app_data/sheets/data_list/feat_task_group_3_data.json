@@ -17,6 +17,9 @@
       "description": "Subtask 2 in Task Group 3"
     }
   ],
-  "_xlsxPath": "feature_sheets/to_be_sorted/feature_task_group.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/to_be_sorted/feature_task_group.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1j4glnh-PLx5ZkQXBsdjjMOAo5gO_AM4pQbprTLsuSdo"
+  }
 }

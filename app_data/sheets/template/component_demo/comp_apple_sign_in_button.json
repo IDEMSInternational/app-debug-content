@@ -86,12 +86,12 @@
     },
     {
       "type": "apple_sign_in_button",
-      "value": "Width: centre",
+      "value": "style: width_content;",
       "_translations": {
         "value": {}
       },
       "parameter_list": {
-        "width": "centre"
+        "style": "width_content"
       },
       "action_list": [
         {
@@ -240,6 +240,9 @@
       "_nested_name": "sheet_link"
     }
   ],
-  "_xlsxPath": "component_sheets/component_apple_sign_in_button.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_apple_sign_in_button.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1P6EhHmElOJOAoMH4h_vingVL82jyCfSTYPXj8eY2Iek"
+  }
 }

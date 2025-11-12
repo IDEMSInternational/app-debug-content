@@ -653,6 +653,9 @@
       "_nested_name": "plh_progress_path_15"
     }
   ],
-  "_xlsxPath": "component_sheets/component_plh_progress_path.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_progress_path.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/130xy0FbCqgVMg8astiR5FBzuUMfVBHtg9k6wmweE1BA"
+  }
 }

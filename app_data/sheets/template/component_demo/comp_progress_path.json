@@ -891,6 +891,9 @@
       "_nested_name": "text_26"
     }
   ],
-  "_xlsxPath": "component_sheets/component_progress_path.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_progress_path.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/14BBKG07nqUWDmcscdUMv1AKYSWGBUPCNDT-VcSERHyU"
+  }
 }

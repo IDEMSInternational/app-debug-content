@@ -16,6 +16,9 @@
       "value": "100%"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_parse_percentage.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_parse_percentage.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1_x5-AVV5eVcXicjpqcbKXgVZ3US-cWvqB8SdoT5DhVE"
+  }
 }

@@ -101,6 +101,9 @@
       "_nested_name": "set_variable_13"
     }
   ],
-  "_xlsxPath": "component_sheets/component_dashed_box.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_dashed_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1tegEdFICcE1kvFFBwOGXM52bzHJEOLt_MD6CRrE6kzw"
+  }
 }

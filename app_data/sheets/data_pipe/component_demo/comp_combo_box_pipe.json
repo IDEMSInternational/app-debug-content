@@ -15,8 +15,11 @@
       "output_target": "new_comp_combo_box_items"
     }
   ],
-  "_xlsxPath": "component_sheets/component_combo_box.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc",
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_combo_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1uIkaMlDjoDN7uTpHkSeEQ6Yp-4ehX9IrBQMrolpfjQc"
+  },
   "_output_flows": [
     {
       "flow_name": "new_comp_combo_box_items",

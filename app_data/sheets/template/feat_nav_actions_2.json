@@ -89,6 +89,9 @@
       "_nested_name": "button_6"
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_nav_actions.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_nav_actions.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1_1F5DS-fIC9hFDjwWajP7z8Npt6szjM9jKrvR4ZPYEE"
+  }
 }

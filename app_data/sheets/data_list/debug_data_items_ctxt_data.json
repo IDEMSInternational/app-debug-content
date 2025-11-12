@@ -8,6 +8,9 @@
       "value": "Some value"
     }
   ],
-  "_xlsxPath": "debug_sheets/debug_data_items_context.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_data_items_context.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1p5j0rR7hUW8oyoj3Dz8RpUflxiLBliV0uz_tAt6NYfA"
+  }
 }

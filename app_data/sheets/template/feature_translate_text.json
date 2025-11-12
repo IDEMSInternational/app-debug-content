@@ -528,6 +528,9 @@
       }
     }
   ],
-  "_xlsxPath": "feature_sheets/feature_translate_text.xlsx",
-  "_sheetsFolderUrl": "https://drive.google.com/drive/u/0/folders/1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc"
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "feature_sheets/feature_translate_text.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1gg953sra_4FnUFKcAkoZQKxM0NHHNIc2qA9-z26Azdw"
+  }
 }
