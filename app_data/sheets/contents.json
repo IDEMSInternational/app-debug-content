@@ -2745,16 +2745,6 @@
         "url": "https://docs.google.com/spreadsheets/d/1bQ2I077nSRFpe5aLszbPzhwNysZrAbS7EeEPlwCQ7AA"
       }
     },
-    "debug_tab_group": {
-      "flow_type": "template",
-      "flow_name": "debug_tab_group",
-      "flow_subtype": "component_demo",
-      "_source": {
-        "name": "Debug Sheets",
-        "path": "component_sheets/debug_tab_group.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1HTqpAEkwxFJPwh1ulKmAEuH1jcMiBZQU3rfSVTlVT5Y"
-      }
-    },
     "dg_sticky_safe_area_1": {
       "flow_type": "template",
       "flow_name": "dg_sticky_safe_area_1",
