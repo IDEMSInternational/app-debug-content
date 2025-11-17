@@ -1,0 +1,15 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "example_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "text": "text_1"
+    },
+    {
+      "id": "id_2",
+      "text": "text_2"
+    }
+  ]
+}

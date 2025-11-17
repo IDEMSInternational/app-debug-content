@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_action_copy",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Click button to copy text"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_1"
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Copy",
+      "action_list": "click | copy | text:@local.text_box_1, message: Copied to clipboard\n\n"
+    }
+  ]
+}

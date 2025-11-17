@@ -1,0 +1,68 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_changed_radio_group_4",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "demo_changed_field_7",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name:name_var_1 | text:First; \nname:name_var_2 | text:Second",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group",
+      "action_list": "changed | set_field: demo_changed_field_8: @local.radio_group",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list_2;"
+    },
+    {
+      "type": "begin_template",
+      "name": "box_duo",
+      "value": "box_duo",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "box_1",
+      "value": "example_text",
+      "hidden": "@field.demo_changed_field_7 || @field.demo_changed_field_8==\"name_var_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "@field.demo_changed_field_7 || @field.demo_changed_field_8==\"name_var_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "box_2",
+      "value": "example_text",
+      "hidden": "@field.demo_changed_field_7 || @field.demo_changed_field_8==\"name_var_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "@field.demo_changed_field_7 || @field.demo_changed_field_8==\"name_var_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

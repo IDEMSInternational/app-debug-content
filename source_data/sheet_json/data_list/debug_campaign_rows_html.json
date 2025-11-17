@@ -1,0 +1,40 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows_debug",
+  "flow_name": "debug_campaign_rows_html",
+  "status": "released",
+  "rows": [
+    {
+      "id": "debug_html_1",
+      "priority": 1,
+      "campaign_list": "debug_html",
+      "text": "<b>Bold Text</b>",
+      "title": "Bold",
+      "__EMPTY_5": "#REF!"
+    },
+    {
+      "id": "debug_html_2",
+      "priority": 2,
+      "campaign_list": "debug_html",
+      "text": "**Bold Markdown**",
+      "title": "Bold Markdown",
+      "comments": "This will be stripped by notification system"
+    },
+    {
+      "id": "debug_html_3",
+      "priority": 3,
+      "campaign_list": "debug_html",
+      "text": "\n<p><span style=\"color: #99cc00;\">M</span>u<span style=\"color: #008080;\">lti</span>Colo<span style=\"color: #ff6600;\">r</span> <span style=\"color: #000080;\">P</span><span style=\"color: #00ccff;\">u</span><span style=\"color: #ff0000;\">s</span><span style=\"color: #808080;\">h</span></p>",
+      "title": "Mixed HTML",
+      "comments": "copied from:\nhttps://www.braze.com/docs/developer_guide/platform_integration_guides/android/push_notifications/android/html_rendered_push/"
+    },
+    {
+      "id": "debug_html_4",
+      "priority": 4,
+      "campaign_list": "debug_html",
+      "text": "<string name=\"welcome\">Welcome to <b>Android</b>!</string>",
+      "title": "Android HTML",
+      "comments": "copied from:\nhttps://developer.android.com/guide/topics/resources/string-resource#StylingWithHTML "
+    }
+  ]
+}

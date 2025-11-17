@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_top",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_data_middle",
+      "value": "debug_data_middle",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "debug_data_bottom",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_2",
+      "value": "@data.debug.item_3.text",
+      "exclude_from_translation": true,
+      "comments": "This text is not overridden correctly"
+    },
+    {
+      "name": "text_3",
+      "value": "@data.debug.item_3.text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_4",
+      "value": "@data.debug.item_3.text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_parent_group_parents",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "parent_group_id",
+      "value": "default"
+    },
+    {
+      "type": "title",
+      "value": "Parents:"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "debug_parent_data",
+      "value": "debug_parent_data",
+      "parameter_list": "filter: @item.group_id == @local.parent_group_id"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "@item.first_name",
+      "condition": "!@item.rp_name"
+    },
+    {
+      "type": "text",
+      "value": "@item.rp_name",
+      "condition": "@item.rp_name"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

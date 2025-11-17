@@ -1,0 +1,28 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_number_button_5",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "number_selector",
+      "name": "default",
+      "comments": "Default "
+    },
+    {
+      "type": "number_selector",
+      "name": "par_5_1",
+      "parameter_list": "category_list: ",
+      "comments": "Category list  parameter null"
+    },
+    {
+      "name": "category_list",
+      "value": "0-10; 11-20; 21-30; 31-40; 41-50; 51-60; 61-70; 71-80; 80+;"
+    },
+    {
+      "type": "number_selector",
+      "name": "par_5_2",
+      "parameter_list": "category_list: @local.category_list\n"
+    }
+  ]
+}

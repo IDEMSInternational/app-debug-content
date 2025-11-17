@@ -1,0 +1,107 @@
+{
+  "flow_type": "template",
+  "flow_name": "demo_progress_path_bg",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "24px 0"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Static demo"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "background_image_asset: images/sa_kids_app_pattern_blue.svg;\nstyle: column;",
+      "style_list": "padding-top: 24px;\nbackground-size: 670px;\nbackground-repeat: repeat;"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: curved;\nvertical_spacing: 36;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "task_cards_data"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "module_image_asset: @item.image;\nnav_image_asset: images/icons/expand_circle_right.png;\nlocked_image_asset: images/icons/locked.png;\nvariant: circle;\ncompleted: @item.completed;\nhighlighted: @item.highlighted;\nis_locked: @item.locked;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Interactive demo",
+      "style_list": "padding-top: 120px;"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Number of items (1-4):"
+    },
+    {
+      "type": "number_selector",
+      "name": "limit",
+      "value": 4,
+      "parameter_list": "min_value:1;\nmax_value:4; "
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Vertical spacing (px):"
+    },
+    {
+      "type": "text_box",
+      "name": "vertical_spacing",
+      "value": 82
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "background_image_asset: images/sa_kids_app_pattern_blue.svg;\nstyle: column;",
+      "style_list": "padding-top: 24px;\nbackground-size: 670px;\nbackground-repeat: repeat;"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: curved;\nvertical_spacing: @local.vertical_spacing;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "task_cards_data",
+      "parameter_list": "limit: @local.limit;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "module_image_asset: @item.image;\nnav_image_asset: images/icons/expand_circle_right.png;\nlocked_image_asset: images/icons/locked.png;\nvariant: circle;\ncompleted: @item.completed;\nhighlighted: @item.highlighted;\nis_locked: @item.locked;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

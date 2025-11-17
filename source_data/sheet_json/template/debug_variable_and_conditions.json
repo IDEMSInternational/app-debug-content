@@ -1,0 +1,329 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_variable_and_conditions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_a1",
+      "value": "definition of a variable"
+    },
+    {
+      "name": "a",
+      "value": 1
+    },
+    {
+      "type": "text",
+      "name": "test_a2",
+      "value": "a = @local.a"
+    },
+    {
+      "type": "text",
+      "name": "text_b1",
+      "value": "re-definition of a variable"
+    },
+    {
+      "name": "b",
+      "value": 1
+    },
+    {
+      "type": "text",
+      "name": "test_b2",
+      "value": "b = @local.b"
+    },
+    {
+      "name": "b",
+      "value": 2
+    },
+    {
+      "type": "text",
+      "name": "test_b3",
+      "value": "b = @local.b"
+    },
+    {
+      "type": "text",
+      "name": "text_c1",
+      "value": "with a false the third time"
+    },
+    {
+      "name": "c",
+      "value": 1
+    },
+    {
+      "type": "text",
+      "name": "test_c2",
+      "value": "c = @local.c"
+    },
+    {
+      "name": "c",
+      "value": 2
+    },
+    {
+      "type": "text",
+      "name": "test_c3",
+      "value": "c = @local.c"
+    },
+    {
+      "name": "c",
+      "value": 3,
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "test_c4",
+      "value": "c = @local.c"
+    },
+    {
+      "type": "text",
+      "name": "text_d1",
+      "value": "with a false the third time and TRUE||TRUE the fourth"
+    },
+    {
+      "name": "d",
+      "value": 1
+    },
+    {
+      "type": "text",
+      "name": "test_d2",
+      "value": "d = @local.d"
+    },
+    {
+      "name": "d",
+      "value": 2
+    },
+    {
+      "type": "text",
+      "name": "test_d3",
+      "value": "d = @local.d"
+    },
+    {
+      "name": "d",
+      "value": 3,
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "test_d4",
+      "value": "d = @local.d"
+    },
+    {
+      "name": "d",
+      "value": 4,
+      "condition": "TRUE || TRUE"
+    },
+    {
+      "type": "text",
+      "name": "test_d5",
+      "value": "d = @local.d"
+    },
+    {
+      "type": "text",
+      "name": "text_e1",
+      "value": "with a false the third time and TRUE||TRUE the fourth and FALSE||FALSE the fifth"
+    },
+    {
+      "name": "e",
+      "value": 1
+    },
+    {
+      "type": "text",
+      "name": "test_e2",
+      "value": "e = @local.e"
+    },
+    {
+      "name": "test_e_initial",
+      "value": "@local.e"
+    },
+    {
+      "name": "e",
+      "value": 2
+    },
+    {
+      "type": "text",
+      "name": "test_e3",
+      "value": "e = @local.e"
+    },
+    {
+      "name": "e",
+      "value": 3,
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "test_e4",
+      "value": "e = @local.e"
+    },
+    {
+      "name": "e",
+      "value": 4,
+      "condition": "TRUE || TRUE"
+    },
+    {
+      "type": "text",
+      "name": "warning_ff",
+      "value": "This is strange: a FALSE || FALSE condition is not stopping the line from being executed.",
+      "style_list": "color: red;"
+    },
+    {
+      "type": "text",
+      "name": "test_e5",
+      "value": "e = @local.e"
+    },
+    {
+      "name": "e",
+      "value": 5,
+      "condition": "FALSE || FALSE"
+    },
+    {
+      "type": "text",
+      "name": "test_e6",
+      "value": "e = @local.e"
+    },
+    {
+      "type": "text",
+      "name": "text_test_e_initial",
+      "value": "e_initial = @local.test_e_initial"
+    },
+    {
+      "type": "text",
+      "name": "text_f1",
+      "value": "with a false the third time and TRUE||TRUE the fourth and FALSE||FALSE the fifth defined as a variable before"
+    },
+    {
+      "name": "f",
+      "value": 1
+    },
+    {
+      "type": "text",
+      "name": "test_f2",
+      "value": "f = @local.f"
+    },
+    {
+      "name": "test_f_initial",
+      "value": "@local.f"
+    },
+    {
+      "name": "f",
+      "value": 2
+    },
+    {
+      "type": "text",
+      "name": "test_f3",
+      "value": "f = @local.f"
+    },
+    {
+      "name": "f",
+      "value": 3,
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "test_f4",
+      "value": "f = @local.f"
+    },
+    {
+      "name": "f",
+      "value": 4,
+      "condition": "TRUE || TRUE"
+    },
+    {
+      "type": "text",
+      "name": "test_f5",
+      "value": "f = @local.f"
+    },
+    {
+      "type": "text",
+      "name": "warning_condition_ff",
+      "value": "But with a FALSE || FALSE condition as a variable defined previously, it works.",
+      "style_list": "color: red;"
+    },
+    {
+      "name": "condition_f",
+      "value": true,
+      "condition": "FALSE || FALSE"
+    },
+    {
+      "name": "condition_f",
+      "value": false,
+      "condition": "!(FALSE || FALSE)"
+    },
+    {
+      "type": "text",
+      "name": "text_condition_f",
+      "value": "condition_f = @local.condition_f"
+    },
+    {
+      "name": "f",
+      "value": 5,
+      "condition": "@local.condition_f"
+    },
+    {
+      "type": "text",
+      "name": "test_f6",
+      "value": "f = @local.f"
+    },
+    {
+      "type": "text",
+      "name": "text_test_f_initial",
+      "value": "f_initial = @local.test_f_initial"
+    },
+    {
+      "type": "text",
+      "name": "text_debug_ff",
+      "value": "debugging the FALSE || FALSE condition"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_1",
+      "value": true
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_2",
+      "value": true
+    },
+    {
+      "type": "text",
+      "name": "toggle_value_1",
+      "value": "toggle 1 = @local.toggle_1"
+    },
+    {
+      "type": "text",
+      "name": "toggle_value_2",
+      "value": "toggle 2 = @local.toggle_2"
+    },
+    {
+      "name": "condition_combo",
+      "value": "@local.toggle_1 || @local.toggle_2"
+    },
+    {
+      "type": "text",
+      "name": "condition_combo_text",
+      "value": "condition_combo = @local.condition_combo"
+    },
+    {
+      "type": "text",
+      "name": "test_combo_1",
+      "value": "This appears if toggle_1 || toggle_2",
+      "condition": "@local.toggle_1 || @local.toggle_2"
+    },
+    {
+      "type": "text",
+      "name": "test_combo_2",
+      "value": "This appears if condition_combo == TRUE",
+      "condition": "@local.condition_combo"
+    },
+    {
+      "type": "text",
+      "name": "test_combo_3",
+      "value": "This appears if toggle_1 || FALSE",
+      "condition": "@local.toggle_1 || FALSE"
+    },
+    {
+      "type": "text",
+      "name": "test_combo_4",
+      "value": "This appears if toggle_1 || \"FALSE\"",
+      "condition": "@local.toggle_1 || \"FALSE\""
+    }
+  ]
+}

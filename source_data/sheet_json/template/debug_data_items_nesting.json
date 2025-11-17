@@ -1,0 +1,69 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_nesting",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Data items with nested template"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items",
+      "value": "example_pipe_appended",
+      "parameter_list": "limit: 2"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "completed_@item.id",
+      "value": "Item completed: @item.completed"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_emit",
+      "value": "example_emit",
+      "action_list": "completed | set_item | completed: true;\nuncompleted | set_item | _index: @item._index - 1, completed: false;"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items",
+      "value": "example_pipe_appended",
+      "parameter_list": "limit: 2"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "completed_@item.id",
+      "value": "Item completed: @item.completed"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_emit",
+      "value": "example_emit",
+      "action_list": "completed | set_item | Boolean: true;\nuncompleted | set_item | _index: @item._index - 1, Boolean: false;"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

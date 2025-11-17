@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_date_now",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Days to add from today:"
+    },
+    {
+      "type": "number_selector",
+      "name": "days_to_add",
+      "value": 0,
+      "parameter_list": "min_value: -100;\nmax_value: 100;"
+    },
+    {
+      "name": "calculated_date",
+      "value": "@calc(new Date(Date.now() + (@local.days_to_add * 24 * 60 * 60 * 1000)))"
+    },
+    {
+      "type": "text",
+      "value": "Calculated date: @local.calculated_date"
+    },
+    {
+      "name": "output_date",
+      "value": 0
+    },
+    {
+      "type": "button",
+      "value": "Set output date to calculated date",
+      "action_list": "click | set_local: output_date: @local.calculated_date"
+    },
+    {
+      "type": "button",
+      "value": "Set output date to now",
+      "action_list": "click | set_local: output_date: @calc(now())"
+    },
+    {
+      "type": "text",
+      "value": "Output date: @local.output_date"
+    }
+  ]
+}

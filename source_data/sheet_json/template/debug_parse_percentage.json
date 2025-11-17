@@ -1,0 +1,49 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_parse_percentage",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Parsing of percentage values"
+    },
+    {
+      "type": "text",
+      "value": "Values directly in template:"
+    },
+    {
+      "type": "text",
+      "value": "95%"
+    },
+    {
+      "value": "0%"
+    },
+    {
+      "value": "100%"
+    },
+    {
+      "type": "text",
+      "value": "Value from data list:"
+    },
+    {
+      "type": "text",
+      "value": "@data.debug_parse_percentage_data.id_1.value"
+    },
+    {
+      "type": "text",
+      "value": "@data.debug_parse_percentage_data.id_2.value"
+    },
+    {
+      "type": "text",
+      "value": "@data.debug_parse_percentage_data.id_3.value"
+    },
+    {
+      "type": "text",
+      "value": "Value from data list in a table:"
+    },
+    {
+      "type": "table",
+      "value": "debug_parse_percentage_data"
+    }
+  ]
+}

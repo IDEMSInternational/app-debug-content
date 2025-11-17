@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_ups_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Button 1 is a simple text pop-up:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_1",
+      "value": "Button 1",
+      "action_list": "click | pop_up:example_text",
+      "exclude_from_translation": true,
+      "comments": "This launches a simple pop-up (without buttons)"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Button 2 is a pop-up with a button:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_3",
+      "value": "Button 2",
+      "action_list": "click | pop_up:example_go_to_3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Button 3 pops up the example_text_image template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_3",
+      "value": "Button 3",
+      "action_list": "click | pop_up:example_text_image",
+      "exclude_from_translation": true
+    }
+  ]
+}

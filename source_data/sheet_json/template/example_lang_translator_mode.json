@@ -1,0 +1,54 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_lang_translator_mode",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Translator Mode",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "intro_text",
+      "value": "Translator mode shows text alongside any known translations. It can be enabled via the translator_mode_toggle emit",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "example_lang_select",
+      "value": "example_lang_select",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "enabled_text",
+      "value": "Translator Mode Enabled: @fields._translator_mode_enabled",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "toggle_button",
+      "value": "Toggle Translator Mode",
+      "action_list": "click | emit: translator_mode_toggle",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "translated_text",
+      "value": "How are you feeling today?"
+    },
+    {
+      "type": "text",
+      "name": "untranslated_text",
+      "value": "This text has not been translated",
+      "exclude_from_translation": true
+    }
+  ]
+}

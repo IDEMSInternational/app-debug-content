@@ -1,0 +1,86 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_translate_nest",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "foreign_key",
+      "value": "foreign_1"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop",
+      "value": "@data.debug_translation",
+      "parameter_list": "filter: @item.foreign_key == @local.foreign_key"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg",
+      "parameter_list": "style: column;"
+    },
+    {
+      "name": "text",
+      "value": "@item.text"
+    },
+    {
+      "name": "accordion_title",
+      "value": "@item.accordion_title"
+    },
+    {
+      "name": "accordion_text",
+      "value": "@item.accordion_text"
+    },
+    {
+      "type": "text",
+      "name": "print_text",
+      "value": "@local.text"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "section",
+      "value": "@local.accordion_title"
+    },
+    {
+      "type": "text",
+      "name": "print_accordion_text",
+      "value": "@local.accordion_text"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "begin_template",
+      "name": "translated_content",
+      "value": "translated_content"
+    },
+    {
+      "name": "text",
+      "value": "@item.text"
+    },
+    {
+      "name": "accordion_title",
+      "value": "@item.accordion_title"
+    },
+    {
+      "name": "accordion_text",
+      "value": "@item.accordion_text"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

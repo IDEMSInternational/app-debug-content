@@ -1,0 +1,83 @@
+{
+  "flow_type": "template",
+  "flow_name": "parameters",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Radio Button Grid",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "subtitle",
+      "name": "parameters",
+      "value": "Parameters",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.comp_radio_button_grid_params"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_name",
+      "value": "@item.id",
+      "style_list": "width: 150px"
+    },
+    {
+      "type": "text_box",
+      "name": "{@item.id}_input",
+      "value": "@item.default_value",
+      "condition": "@item.default_value",
+      "style_list": "width: 100px",
+      "action_list": "changed | emit:force_reprocess;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_input",
+      "condition": "!@item.default_value",
+      "style_list": "width: 100px"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_description",
+      "value": "@item.description",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "subtitle",
+      "name": "output",
+      "value": "Output"
+    },
+    {
+      "type": "text",
+      "name": "output_text",
+      "value": "Selected: @local.grid_1"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "grid_1",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1He3nS_qWno-_kJrzizhcUdC1vONKWaluPzC1rr-RfSw"
+    }
+  ]
+}

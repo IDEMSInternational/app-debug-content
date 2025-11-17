@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_text_area",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text_area",
+      "name": "text_area",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: example placeholder;"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "the text entered is:\n\n@local.text_area",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

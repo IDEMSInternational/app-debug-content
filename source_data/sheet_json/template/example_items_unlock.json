@@ -1,0 +1,62 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_unlock",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "workshop_example",
+      "value": "Example Items Unlock"
+    },
+    {
+      "type": "set_variable",
+      "name": "current_week",
+      "value": "@calc(window.date_fns.differenceInWeeks(new Date(), new Date(\"2021-08-01\"))+1)",
+      "comments": "Variables could be used directly in calculations, but rewriting here just for reference\n\nNOTE - for notes on available calc methods see example_calc \nhttps://docs.google.com/spreadsheets/d/15TccctjzepSPPv9xrLp46fhYldNN0wrho1zA5voTYcg/edit#gid=1595229908"
+    },
+    {
+      "type": "text",
+      "name": "text_current_week",
+      "value": "@local.current_week"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "comments": "Now display in a regular way, so add display_group if wanting in a row"
+    },
+    {
+      "type": "set_field",
+      "name": "@item.unlock_fieldname",
+      "value": "@calc(@item.unlock_week > @local.current_week)",
+      "comments": "Only process if not already unlocked"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "group_@item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_group_item_@item.id",
+      "value": "group item: @item.id",
+      "comments": "Fixed items within nested display groups - 2021-08-13"
+    },
+    {
+      "type": "text",
+      "name": "text_workshop_unlock_week_@item.id",
+      "value": "Unlock week: @item.unlock_week"
+    },
+    {
+      "type": "text",
+      "name": "text_workshop_unlocked_@item.id",
+      "value": "Unlocked: @fields.@item.unlock_fieldname",
+      "comments": "Doesn't work:\n@fields.example_unlocked_@item.id\n\nSo added variable to data list instead"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

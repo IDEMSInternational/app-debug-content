@@ -1,0 +1,20 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_and_blank_child_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Initial text"
+    },
+    {
+      "type": "begin_template",
+      "name": "subtemplate_1"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

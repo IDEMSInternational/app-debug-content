@@ -1,0 +1,234 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_shared_parent_group",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Auth"
+    },
+    {
+      "name": "is_user_signed_in",
+      "value": "!!@fields._auth_user_id"
+    },
+    {
+      "type": "google_sign_in_button",
+      "name": "sign_in_google",
+      "value": "Sign in with Google",
+      "action_list": "click | emit: force_reprocess;",
+      "condition": "!@local.is_user_signed_in"
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "action_list": "click | auth: sign_out;\nclick | emit: force_reprocess;",
+      "condition": "@local.is_user_signed_in"
+    },
+    {
+      "type": "text",
+      "value": "My auth ID: @fields._auth_user_id",
+      "condition": "@local.is_user_signed_in"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Co-facilitator to add:"
+    },
+    {
+      "type": "text_box",
+      "name": "co_facilitator_id",
+      "parameter_list": "placeholder: Enter ID of proposed co-facilitator;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Local Parent Groups"
+    },
+    {
+      "type": "button",
+      "value": "Generate new parent group",
+      "action_list": "click | plh_parent_group: create_random | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_parent_group_data"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column;",
+      "style_list": "background-color: lightgrey;\nmargin: 12px;\npadding: 12px;"
+    },
+    {
+      "type": "title",
+      "value": "@item.text"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Parent group is shared ✅",
+      "condition": "!!@item.shared_id"
+    },
+    {
+      "type": "text",
+      "value": "Parent group is not shared ❌",
+      "condition": "!@item.shared_id"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "As co-facilitator, you cannot edit this parent group",
+      "condition": "!!@item.readonly"
+    },
+    {
+      "type": "text",
+      "value": "As parent group owner, you can edit this parent group",
+      "condition": "!@item.readonly"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "!@item.readonly"
+    },
+    {
+      "type": "text",
+      "value": "Edit group text:"
+    },
+    {
+      "type": "text_box",
+      "name": "parent_group_text_@item._index",
+      "value": "@item.text",
+      "action_list": "changed | set_item | text: this.value"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_parent_group_parents",
+      "value": "debug_parent_group_parents"
+    },
+    {
+      "name": "parent_group_id",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@item.cofacilitator_id && !@item.readonly"
+    },
+    {
+      "type": "text",
+      "value": "Co-facilitator ID:"
+    },
+    {
+      "type": "text",
+      "value": "@item.cofacilitator_id"
+    },
+    {
+      "type": "button",
+      "value": "Remove",
+      "action_list": "click | plh_parent_group: remove_cofacilitator | parent_group_id: @item.id, auth_id: @item.cofacilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data;\nclick | emit: force_reload;",
+      "condition": "!@item.readonly"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Co-facilitator ID: @local.co_facilitator_id"
+    },
+    {
+      "type": "button",
+      "value": "Add co-facilitator",
+      "action_list": "click | plh_parent_group: add_cofacilitator | parent_group_id: @item.id, auth_id: @local.co_facilitator_id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data;",
+      "condition": "!@item.readonly"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Access Code: @item.rp_access_code"
+    },
+    {
+      "type": "button",
+      "value": "Refresh access code (shares group if not already shared)",
+      "action_list": "click | plh_parent_group: generate_access_code | \nparent_group_id: @item.id,\nparent_groups_data_list: debug_parent_group_data,\nparents_data_list: debug_parent_data;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Push updates to shared data",
+      "action_list": "click | plh_parent_group: push | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data;",
+      "condition": "!@item.readonly"
+    },
+    {
+      "type": "button",
+      "value": "Pull updates from shared data",
+      "action_list": "click | plh_parent_group: pull | parent_group_id: @item.id, parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data;",
+      "condition": "!!@item.shared_id"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Global actions"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Push all shared group data",
+      "action_list": "click | plh_parent_group: push | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data;"
+    },
+    {
+      "type": "button",
+      "value": "Pull all shared group data",
+      "action_list": "click | plh_parent_group: pull | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data, completion_tracking_data_list: debug_pg_completion_data;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1fSMNZSWxBRoH6WQCrT-xdd5kOJjpM-wW5RQM59uSGgQ"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_go_to_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This is the first template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_1",
+      "value": "Go to the second template",
+      "action_list": "click | go_to:debug_go_to_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "go_to_field",
+      "value": "Value of debug_go_to_field: @fields.debug_go_to_field",
+      "exclude_from_translation": true,
+      "comments": "This is set in debug_go_to_2 and should be updated after nav back"
+    }
+  ]
+}

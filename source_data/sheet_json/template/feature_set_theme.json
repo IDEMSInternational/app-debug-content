@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_set_theme",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Set Theme"
+    },
+    {
+      "name": "theme_list",
+      "value": "name: default | text: default; name: professional | text: professional;"
+    },
+    {
+      "type": "radio_group",
+      "name": "theme_select",
+      "value": "@fields._app_theme",
+      "action_list": "changed | emit: set_theme:@local.theme_select;\nchanged | emit: force_reload;",
+      "parameter_list": "answer_list: @local.theme_list; options_per_row: 2"
+    }
+  ]
+}

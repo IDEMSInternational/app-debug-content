@@ -1,0 +1,222 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_calc_substring",
+  "status": "released",
+  "rows": [
+    {
+      "name": "val_1",
+      "value": "ananas"
+    },
+    {
+      "name": "val_2",
+      "value": "bananas"
+    },
+    {
+      "type": "title",
+      "name": "example_string",
+      "value": "Determine whether a string contains a substring"
+    },
+    {
+      "name": "some_string",
+      "value": "apples; bananas; pears"
+    },
+    {
+      "name": "substring_check_1",
+      "value": "@calc(@local.some_string.includes(@local.val_1))"
+    },
+    {
+      "name": "substring_check_2",
+      "value": "@calc(@local.some_string.includes(@local.val_2))"
+    },
+    {
+      "type": "text",
+      "name": "text_org",
+      "value": "Original string: @local.some_string"
+    },
+    {
+      "type": "text",
+      "name": "text_sub_1",
+      "value": "Contains @local.val_1: @local.substring_check_1"
+    },
+    {
+      "type": "text",
+      "name": "text_sub_2",
+      "value": "Contains @local.val_2: @local.substring_check_2"
+    },
+    {
+      "type": "title",
+      "name": "example_array",
+      "value": "Determine whether a list contains a value"
+    },
+    {
+      "name": "some_list",
+      "value": "apples; bananas; pears"
+    },
+    {
+      "type": "text",
+      "name": "text_org",
+      "value": "Original list: @local.some_list"
+    },
+    {
+      "name": "val_check_1",
+      "value": "@calc(@local.some_list.includes(@local.val_1))"
+    },
+    {
+      "name": "val_check_2",
+      "value": "@calc(@local.some_list.includes(@local.val_2))"
+    },
+    {
+      "type": "text",
+      "name": "text_val_1",
+      "value": "Contains @local.val_1: @local.val_check_1"
+    },
+    {
+      "type": "text",
+      "name": "text_val_2",
+      "value": "Contains @local.val_2: @local.val_check_2"
+    },
+    {
+      "type": "title",
+      "name": "example_array",
+      "value": "Determine whether a list (coming from a data list entry) contains a value",
+      "comments": "Examples below demonstrate interpretation of _list in various places"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "_list in column name AND no _list in local var",
+      "parameter_list": "style: emphasised",
+      "comments": "This works"
+    },
+    {
+      "name": "some_data",
+      "value": "@data.example_calc.example_2.value_list"
+    },
+    {
+      "type": "text",
+      "name": "text_org_data",
+      "value": "Original list: @local.some_data"
+    },
+    {
+      "name": "val_check_1_data",
+      "value": "@calc(@local.some_data.includes(@local.val_1))"
+    },
+    {
+      "name": "val_check_2_data",
+      "value": "@calc(@local.some_data.includes(@local.val_2))"
+    },
+    {
+      "type": "text",
+      "name": "text_val_1_data",
+      "value": "Contains @local.val_1: @local.val_check_1_data"
+    },
+    {
+      "type": "text",
+      "name": "text_val_2_data",
+      "value": "Contains @local.val_2: @local.val_check_2_data"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "_list in column name AND _list in local var",
+      "parameter_list": "style: emphasised",
+      "comments": "This doesn't work"
+    },
+    {
+      "name": "some_data_list",
+      "value": "@data.example_calc.example_2.value_list"
+    },
+    {
+      "type": "text",
+      "name": "text_org_data",
+      "value": "Original list: @local.some_data_list"
+    },
+    {
+      "name": "val_check_1_data",
+      "value": "@calc(@local.some_data_list.includes(@local.val_1))"
+    },
+    {
+      "name": "val_check_2_data",
+      "value": "@calc(@local.some_data_list.includes(@local.val_2))"
+    },
+    {
+      "type": "text",
+      "name": "text_val_1_data",
+      "value": "Contains @local.val_1: @local.val_check_1_data"
+    },
+    {
+      "type": "text",
+      "name": "text_val_2_data",
+      "value": "Contains @local.val_2: @local.val_check_2_data"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "no _list in column name AND no _list in local var",
+      "parameter_list": "style: emphasised",
+      "comments": "This doesn't work"
+    },
+    {
+      "name": "some_data",
+      "value": "@data.example_calc.example_2.value"
+    },
+    {
+      "type": "text",
+      "name": "text_org_data",
+      "value": "Original list: @local.some_data"
+    },
+    {
+      "name": "val_check_1_data",
+      "value": "@calc(@local.some_data.includes(@local.val_1))"
+    },
+    {
+      "name": "val_check_2_data",
+      "value": "@calc(@local.some_data.includes(@local.val_2))"
+    },
+    {
+      "type": "text",
+      "name": "text_val_1_data",
+      "value": "Contains @local.val_1: @local.val_check_1_data"
+    },
+    {
+      "type": "text",
+      "name": "text_val_2_data",
+      "value": "Contains @local.val_2: @local.val_check_2_data"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "no _list in column name AND _list in local var",
+      "parameter_list": "style: emphasised",
+      "comments": "This doesn't work"
+    },
+    {
+      "name": "some_data_list",
+      "value": "@data.example_calc.example_2.value"
+    },
+    {
+      "type": "text",
+      "name": "text_org_data",
+      "value": "Original list: @local.some_data_list"
+    },
+    {
+      "name": "val_check_1_data",
+      "value": "@calc(@local.some_data_list.includes(@local.val_1))"
+    },
+    {
+      "name": "val_check_2_data",
+      "value": "@calc(@local.some_data_list.includes(@local.val_2))"
+    },
+    {
+      "type": "text",
+      "name": "text_val_1_data",
+      "value": "Contains @local.val_1: @local.val_check_1_data"
+    },
+    {
+      "type": "text",
+      "name": "text_val_2_data",
+      "value": "Contains @local.val_2: @local.val_check_2_data"
+    }
+  ]
+}

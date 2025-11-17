@@ -1,0 +1,45 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_update_actions",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "nav_resume_message",
+      "value": "Welcome Back!"
+    },
+    {
+      "type": "update_action_list",
+      "name": "custom_actions_1",
+      "action_list": "nav_resume | set_local:text_1:@local.nav_resume_message",
+      "comments": "This will add actions to the parent container (row starting 'begin_template'). New actions will be merged with existing.\n\nThe updated action_list requires a name so that we can properly identify which actions to update on rerender."
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "I will update after the popup has closed"
+    },
+    {
+      "type": "button",
+      "value": "Show Popup",
+      "action_list": "click | pop_up:example_text"
+    },
+    {
+      "type": "set_field",
+      "name": "example_count",
+      "value": 1,
+      "condition": "!@fields.example_count"
+    },
+    {
+      "type": "text",
+      "name": "example_count_text",
+      "value": "Example count: @fields.example_count"
+    },
+    {
+      "type": "update_action_list",
+      "name": "custom_actions_2",
+      "action_list": "nav_resume | set_field: example_count: +@fields.example_count + 1"
+    }
+  ]
+}

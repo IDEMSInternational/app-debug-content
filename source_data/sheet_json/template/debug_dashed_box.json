@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dashed_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "example_markdown",
+      "value": "Some text including markdown: **bold**"
+    },
+    {
+      "name": "example_plain_text",
+      "value": "Example of multiple paragraphs of plain text.\nHere is a second paragraph after a single line-break.\n\nHere is a third paragraph after a double line-break.\n\nHere is a link: [IDEMS Website](https://www.idems.international/)"
+    },
+    {
+      "type": "dashed_box",
+      "value": "@local.example_markdown"
+    },
+    {
+      "type": "text",
+      "value": "@local.example_markdown"
+    },
+    {
+      "type": "dashed_box",
+      "value": "@local.example_plain_text"
+    },
+    {
+      "type": "text",
+      "value": "@local.example_plain_text"
+    },
+    {
+      "type": "title",
+      "value": "Dashed box with no value:"
+    },
+    {
+      "type": "dashed_box"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_operations",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "filter_title",
+      "value": "Filter: field_value > 2"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.field_value > 2;"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.field_value",
+      "value": "field_value: @item.field_value"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "sort_title",
+      "value": "Sort: field_value"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.field_value > 2;\nsort: field_value;"
+    },
+    {
+      "type": "text",
+      "name": "item_text_sort_id_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_sort_field_value_@item.field_value",
+      "value": "field_value: @item.field_value"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "reverse_title",
+      "value": "Reverse"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.field_value > 2;\nsort: field_value;\nreverse;"
+    },
+    {
+      "type": "text",
+      "name": "item_text_3_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_4_@item.field_value",
+      "value": "field_value: @item.field_value"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "shuffle_title",
+      "value": "Shuffle"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.field_value > 2;\nshuffle;"
+    },
+    {
+      "type": "text",
+      "name": "item_text_5_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_6_@item.field_value",
+      "value": "field_value: @item.field_value"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "button",
+      "name": "button_reload_1",
+      "value": "Force Reload",
+      "action_list": "click | emit: force_reload"
+    },
+    {
+      "type": "title",
+      "name": "filter_title",
+      "value": "Limit: 1 (shuffled)"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.field_value > 2;\nshuffle;\nlimit: 1;"
+    },
+    {
+      "type": "text",
+      "name": "item_text_7_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_8_@item.field_value",
+      "value": "field_value: @item.field_value"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

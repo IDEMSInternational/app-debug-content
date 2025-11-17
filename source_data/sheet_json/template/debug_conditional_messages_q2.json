@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_conditional_messages_q2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "answer_q2",
+      "value": "NA",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "slider",
+      "name": "slider_q2",
+      "action_list": "changed | set_field:answer_q2:@local.slider_q2",
+      "exclude_from_translation": true,
+      "parameter_list": "title: Question 2"
+    },
+    {
+      "type": "text",
+      "name": "text_q2",
+      "value": "answer to q2 saved in field answer_q2: @field.answer_q2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "back_to_q1",
+      "value": "Back to Q1",
+      "action_list": "click | go_to:debug_conditional_messages_q1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "conditional_texts",
+      "value": "Go to conditional texts",
+      "action_list": "click | go_to:debug_conditional_texts",
+      "exclude_from_translation": true
+    }
+  ]
+}

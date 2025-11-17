@@ -1,0 +1,28 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_data_template",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@data.example.example1.value",
+      "exclude_from_translation": true,
+      "comments": "This should read the data from the the data_list"
+    },
+    {
+      "type": "text",
+      "name": "broken_1",
+      "value": "@data.example.example1",
+      "exclude_from_translation": true,
+      "comments": "Note - this will not work as need to explicitly state the column (e.g. .value) for data lists"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_1",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @data.example.example3.value_list"
+    }
+  ]
+}

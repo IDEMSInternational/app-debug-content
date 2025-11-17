@@ -1,0 +1,37 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_action_scroll_top",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Click button to scroll to the top"
+    },
+    {
+      "type": "text",
+      "value": "This is a placeholder to make sure the screen is long enough to have to scroll down to the button"
+    },
+    {
+      "type": "button",
+      "value": "Scroll To Bottom",
+      "action_list": "click | scroll: bottom | duration: 500;"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.scroll_number"
+    },
+    {
+      "type": "text",
+      "value": "text"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "button",
+      "value": "Scroll Top",
+      "action_list": "click | scroll: top;"
+    }
+  ]
+}

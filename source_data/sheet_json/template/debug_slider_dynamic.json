@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_slider_dynamic",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "slider",
+      "name": "slider_1",
+      "exclude_from_translation": true,
+      "parameter_list": "title: Slider 1"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "local variable for slider 1: @local.slider_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "slider",
+      "name": "slider_2",
+      "action_list": "changed | set_field:slider_2_field:@local.slider_2;",
+      "exclude_from_translation": true,
+      "parameter_list": "title: Slider 2"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "local variable for slider 2: @local.slider_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "field for slider 2: @field.slider_2_field",
+      "exclude_from_translation": true
+    }
+  ]
+}

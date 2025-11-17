@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_sheet_defaults",
+  "status": "released",
+  "flow_subtype": "example_sheet_defaults",
+  "rows": [
+    {
+      "type": "@default",
+      "exclude_from_translation": true,
+      "comments": "Default settings can also be used in templates, e.g. to omit all translations"
+    },
+    {
+      "type": "begin_items",
+      "name": "items",
+      "value": "@data.example_sheet_defaults_list"
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "@item.text"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.id",
+      "action_list": "@item.action_list"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

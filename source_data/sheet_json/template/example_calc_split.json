@@ -1,0 +1,156 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_calc_split",
+  "status": "released",
+  "rows": [
+    {
+      "name": "val_1",
+      "value": "ananas"
+    },
+    {
+      "name": "val_2",
+      "value": "bananas"
+    },
+    {
+      "type": "title",
+      "name": "example_string",
+      "value": "Split a string to substrings"
+    },
+    {
+      "name": "original_string",
+      "value": "fruit_1: apples; fruit_2: bananas; fruit_3: pears"
+    },
+    {
+      "type": "text",
+      "name": "show_original_string",
+      "value": "@local.original_string"
+    },
+    {
+      "name": "array",
+      "value": "@calc(@local.original_string.split(\";\"))"
+    },
+    {
+      "type": "text",
+      "name": "show_array",
+      "value": "@local.array"
+    },
+    {
+      "type": "title",
+      "name": "example_json",
+      "value": "Start with a json string "
+    },
+    {
+      "name": "original_json_string",
+      "value": "{\"name\":\"John\", \"birth\":\"1986-12-14\", \"city\":\"New York\"}"
+    },
+    {
+      "name": "parse_json",
+      "value": "@calc(JSON.parse(@local.original_json_string))"
+    },
+    {
+      "name": "undo_json",
+      "value": "@calc(JSON.stringify(@local.parse_json))"
+    },
+    {
+      "type": "text",
+      "name": "show_parsed",
+      "value": "@local.parse_json"
+    },
+    {
+      "type": "text",
+      "name": "show_city",
+      "value": "@local.parse_json.city"
+    },
+    {
+      "type": "title",
+      "name": "example_json",
+      "value": "Start with a nested json string "
+    },
+    {
+      "name": "people",
+      "value": "{\"person_1\":{\"name\":\"John\", \"birth\":\"1986-12-14\", \"city\":\"New York\"}, \"person_2\":{\"name\":\"Emma\", \"birth\":\"1982-10-20\", \"city\":\"London\"}}"
+    },
+    {
+      "name": "parse_people",
+      "value": "@calc(JSON.parse(@local.people))"
+    },
+    {
+      "type": "text",
+      "name": "show_2_city",
+      "value": "@local.parse_people.person_2.city"
+    },
+    {
+      "name": "change_city",
+      "value": "@calc(@local.parse_people.person_2[\"city\"] = \"Cape Town\")"
+    },
+    {
+      "type": "text",
+      "name": "show_2_city_changed",
+      "value": "@local.parse_people.person_2.city"
+    },
+    {
+      "name": "new_person",
+      "value": "person_3"
+    },
+    {
+      "name": "add_person_3",
+      "value": "@calc(@local.parse_people[@local.new_person] = {})"
+    },
+    {
+      "type": "text",
+      "name": "text_add_person_3",
+      "value": "Type a city for person_3"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_1"
+    },
+    {
+      "name": "person_3_name",
+      "value": "@calc(@local.parse_people[@local.new_person].city = @local.text_box_1)"
+    },
+    {
+      "name": "person_3_city",
+      "value": "@calc(@local.parse_people[@local.new_person].name = \"Adam\")"
+    },
+    {
+      "type": "text",
+      "name": "text_add_person_3",
+      "value": "Select who you want to rename"
+    },
+    {
+      "name": "answer_list",
+      "value": "name: person_1 | text: person_1; name: person_2 | text: person_2; name: person_3 | text: person_3"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid",
+      "parameter_list": "answer_list: @local.answer_list"
+    },
+    {
+      "type": "text",
+      "name": "text_add_person_3",
+      "value": "Type a new name for @local.radio_button_grid"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_2"
+    },
+    {
+      "name": "new_name",
+      "value": "@calc(@local.parse_people[@local.radio_button_grid].name = @local.text_box_2)",
+      "condition": "@local.radio_button_grid"
+    },
+    {
+      "name": "people_string",
+      "value": "@calc(JSON.stringify(@local.parse_people))"
+    },
+    {
+      "type": "button",
+      "name": "save to field",
+      "value": "Save to field",
+      "action_list": "click | set_field: people: @local.people_string"
+    }
+  ]
+}

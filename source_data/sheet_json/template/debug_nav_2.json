@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Another page"
+    },
+    {
+      "type": "button",
+      "value": "Go to first page",
+      "action_list": "click | go_to: debug_nav"
+    }
+  ]
+}

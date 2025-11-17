@@ -1,0 +1,40 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_nested_comp_var",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "nested_options_template",
+      "value": "example_double_ref_comp_var",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "first_template",
+      "value": "example_component_variables",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list",
+      "value": "name:name_var_1 | text:Option a; name:name_var_2 | text: Option b; name:name_var_3 | text: Option c",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_with_nested_options",
+      "value": "text should be what is in the comment",
+      "exclude_from_translation": true,
+      "comments": "Finding nested vales for the first @nested_options_template.first_template.option_buttons._value and the second @nested_options_template.second_template.option_buttons._value "
+    }
+  ]
+}

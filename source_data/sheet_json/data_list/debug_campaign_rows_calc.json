@@ -1,0 +1,56 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows_debug",
+  "flow_name": "debug_campaign_rows_calc",
+  "status": "released",
+  "rows": [
+    {
+      "id": "debug_calc_1",
+      "action_list": "sent | set_field: @row.id : FALSE;",
+      "priority": -1,
+      "campaign_list": "debug_calc"
+    },
+    {
+      "id": "debug_calc_2",
+      "action_list": "sent | set_field: @row.id : FALSE;\nsent | set_field: @row.id.sent : TRUE;",
+      "priority": 1,
+      "activation_condition_list": "first_launch | before : @calc(Math.min(0.001,0.002)) : day",
+      "campaign_list": "debug_calc"
+    },
+    {
+      "id": "debug_calc_3",
+      "action_list": "sent | set_field: @row.id : FALSE;\nsent | set_field: @row.id.sent : TRUE;",
+      "priority": 2,
+      "activation_condition_list": "first_launch | before : 1 : day",
+      "campaign_list": "debug_calc"
+    },
+    {
+      "id": "debug_calc_4",
+      "action_list": "sent | set_field: @row.id : FALSE;\nsent | set_field: @row.id.sent : TRUE;",
+      "priority": 3,
+      "activation_condition_list": "first_launch | before : @calc(Math.min(1,3)) : day",
+      "campaign_list": "debug_calc"
+    },
+    {
+      "id": "debug_calc_5",
+      "action_list": "sent | set_field: @row.id : FALSE;\nsent | set_field: @row.id.sent : TRUE;",
+      "priority": 4,
+      "activation_condition_list": "first_launch | before : @calc(Math.max(1,3)) : day",
+      "campaign_list": "debug_calc"
+    },
+    {
+      "id": "debug_calc_6",
+      "action_list": "sent | set_field: @row.id : FALSE;\nsent | set_field: @row.id.sent : TRUE;",
+      "priority": 5,
+      "activation_condition_list": "get_field:first | w_self_care_started: true | before : 0.001 : day",
+      "campaign_list": "debug_calc"
+    },
+    {
+      "id": "debug_calc_7",
+      "action_list": "sent | set_field: @row.id : FALSE;\nsent | set_field: @row.id.sent : TRUE;",
+      "priority": 5,
+      "activation_condition_list": "get_field:first | w_self_care_started: true | before : 2 : min",
+      "campaign_list": "debug_calc"
+    }
+  ]
+}

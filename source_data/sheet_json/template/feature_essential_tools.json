@@ -1,0 +1,340 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_essential_tools",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_1;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top:20px;"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 15px;\nmax-width: 320px"
+    },
+    {
+      "type": "button",
+      "name": "bt_1",
+      "value": "Button",
+      "exclude_from_translation": true,
+      "parameter_list": "style: nested_color full-width;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_2;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top:20px;"
+    },
+    {
+      "type": "subtitle",
+      "name": "ss",
+      "value": "Subtitle",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top: 15px;\n"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 15px;\nmax-width: 320px"
+    },
+    {
+      "type": "button",
+      "name": "bt_2",
+      "value": "Button",
+      "exclude_from_translation": true,
+      "parameter_list": "style: nested_color full-width;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_3;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top:20px;"
+    },
+    {
+      "type": "subtitle",
+      "name": "ss",
+      "value": "Subtitle",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top: 15px;\n"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 15px;\nmax-width: 320px"
+    },
+    {
+      "type": "button",
+      "name": "bt_3",
+      "value": "Button",
+      "exclude_from_translation": true,
+      "parameter_list": "style: nested_color  full-width;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_4;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top:20px;"
+    },
+    {
+      "type": "subtitle",
+      "name": "ss",
+      "value": "Subtitle",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top: 15px;\n"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 15px;\nmax-width: 320px"
+    },
+    {
+      "type": "button",
+      "name": "bt_3",
+      "value": "Button",
+      "exclude_from_translation": true,
+      "parameter_list": "style: nested_color full-width;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_5;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top:20px;"
+    },
+    {
+      "type": "subtitle",
+      "name": "ss",
+      "value": "Subtitle",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top: 15px;\n"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 15px;\nmax-width: 320px"
+    },
+    {
+      "type": "button",
+      "name": "bt_3",
+      "value": "Button",
+      "exclude_from_translation": true,
+      "parameter_list": "style: nested_color full-width;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_5;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top:20px;"
+    },
+    {
+      "type": "subtitle",
+      "name": "ss",
+      "value": "Subtitle",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;",
+      "style_list": "margin-top: 15px;\n"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 15px;\nmax-width: 320px"
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true,
+      "parameter_list": "style: corner;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_2;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 10px;\nmax-width: 320px"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "bgg_1",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_1;",
+      "style_list": "maggin-top:15px;"
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_3;",
+      "style_list": "padding: 10px 15px;"
+    },
+    {
+      "type": "title",
+      "name": "ft",
+      "value": "GET REAL",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white;"
+    },
+    {
+      "type": "text",
+      "name": "ftt",
+      "value": "Can your teen actually do what you are about to ask? It may be impossible for them to read quietly all day, but half an hour when you really need it is realistic.",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;\nstyle: whiteText;",
+      "style_list": "margin-top: 10px;\nmax-width: 320px"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "bgg_1",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_2;",
+      "style_list": "maggin-top:15px;"
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

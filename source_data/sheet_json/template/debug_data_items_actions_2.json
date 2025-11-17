@@ -1,0 +1,85 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_actions_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "data_list_name",
+      "value": "debug_data_list_order"
+    },
+    {
+      "name": "row_id",
+      "value": "item_a"
+    },
+    {
+      "name": "response_column",
+      "value": "response"
+    },
+    {
+      "name": "yes",
+      "value": "Yes"
+    },
+    {
+      "name": "no",
+      "value": "No"
+    },
+    {
+      "name": "answer_list",
+      "value": "name: yes | text: @local.yes;\nname: no | text: @local.no"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Select and store as dynamic data"
+    },
+    {
+      "type": "radio_button_grid",
+      "action_list": "changed | set_data | \n_list_id: @local.data_list_name, \n_id: @local.row_id, \n@local.response_column: this.value",
+      "parameter_list": "answer_list: @local.answer_list;\nvariant: flex;\nstyle: secondary;",
+      "condition": false,
+      "comments": "Test 1a\nUse set_data action from outside of loop\nDoes not work as actions don't evaluate dynamic parameters\nPossibly fixed with #2753"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.data_list_name",
+      "parameter_list": "filter: @item.id == @local.row_id"
+    },
+    {
+      "type": "radio_button_grid",
+      "value": "@item.@local.response_column",
+      "action_list": "changed | set_item | @local.response_column: this.value",
+      "parameter_list": "answer_list: @local.answer_list;\nvariant: flex;\nstyle: secondary;",
+      "condition": true,
+      "comments": "Test 1b\nUse set_item action from inside of loop\nWorking on PR branch\n"
+    },
+    {
+      "type": "combo_box",
+      "value": "@item.@local.response_column",
+      "action_list": "changed | set_item | @local.response_column: this.value",
+      "parameter_list": "input_allowed: false; answer_list: @local.answer_list;",
+      "condition": true,
+      "comments": "Test 2\nUse set_item action from inside of loop\nDoes not work on first render but does on subsequent (combo_box issue) - possibly linked to styling when no-value present (TBC)"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Show dynamic data value"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "show_data",
+      "value": "@local.data_list_name"
+    },
+    {
+      "type": "text",
+      "value": "@item.id - @item.@local.response_column"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

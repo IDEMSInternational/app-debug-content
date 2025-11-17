@@ -1,0 +1,56 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_global_bottom",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@global.debug_item_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "@global.debug_item_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "@global.debug_item_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "@global.debug_item_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "This text is directly authored in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "This text is directly authored in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "This text is directly authored in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_8",
+      "value": "This text is directly authored in the value",
+      "exclude_from_translation": true
+    }
+  ]
+}

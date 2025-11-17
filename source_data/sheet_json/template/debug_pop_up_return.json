@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_up_return",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "name": "button_go_to_1",
+      "value": "Go to another template without dismissing this pop-up",
+      "action_list": "click | go_to: example_emit;"
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_2",
+      "value": "Go to another template and dismiss this pop-up when leaving",
+      "action_list": "click | emit:completed; \nclick | go_to: example_emit;",
+      "comments": "Doesn't work, when returning returning the pop-up is still open"
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_3",
+      "value": "Go to another template and dismiss this pop-up on return",
+      "action_list": "completed | emit:completed; \nuncompleted | emit:completed; \nclick | go_to: example_emit;",
+      "comments": "Doesn't work, when returning returning the pop-up is still open"
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_4",
+      "value": "Go to another template and dismiss this pop-up on return",
+      "action_list": "click | go_to: example_emit: dismiss_pop_up: true;",
+      "comments": "OR try emit: force_reload / force_reprocess"
+    }
+  ]
+}

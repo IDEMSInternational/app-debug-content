@@ -1,0 +1,17 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_delete_account",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Are you sure you want to delete your auth account (cannot be undone)?"
+    },
+    {
+      "type": "button",
+      "value": "Confirm Delete Account",
+      "action_list": "click | auth: delete_account;\nclick | reset_data;\nclick | reset_app;"
+    }
+  ]
+}

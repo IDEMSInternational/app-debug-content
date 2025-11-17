@@ -1,0 +1,63 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translation_radio_group",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@global.individual",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "@global.together",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "text_3",
+      "value": "Radio group with globals (doesn't work)",
+      "exclude_from_translation": true,
+      "parameter_list": "style:emphasised"
+    },
+    {
+      "name": "answer_list_1",
+      "value": "name: individual | text: @global.individual ;\nname: together | text: @global.together ;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_1",
+      "parameter_list": "answer_list: @local.answer_list_1;"
+    },
+    {
+      "type": "title",
+      "name": "text_4",
+      "value": "Radio group with locals (works)",
+      "parameter_list": "style:emphasised"
+    },
+    {
+      "name": "individual",
+      "value": "@global.individual",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "together",
+      "value": "@global.together",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name: individual | text: @local.individual ;\nname: together | text: @local.together ;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_2",
+      "parameter_list": "answer_list: @local.answer_list_2;"
+    }
+  ]
+}

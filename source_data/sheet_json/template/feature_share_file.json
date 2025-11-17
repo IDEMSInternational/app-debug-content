@@ -1,0 +1,52 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_share_file",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Share Files"
+    },
+    {
+      "type": "subtitle",
+      "value": "Image"
+    },
+    {
+      "name": "image_path",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "text",
+      "value": "@local.image_path"
+    },
+    {
+      "type": "image",
+      "value": "@local.image_path"
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share Image",
+      "action_list": "click | share: file: @local.image_path"
+    },
+    {
+      "type": "subtitle",
+      "value": "PDF"
+    },
+    {
+      "name": "pdf_path",
+      "value": "example_pdf.pdf"
+    },
+    {
+      "type": "pdf",
+      "name": "pdf_viewer",
+      "value": "@local.pdf_path"
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share PDF",
+      "action_list": "click | share: file: @local.pdf_path"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_concatenation",
+  "status": "released",
+  "rows": [
+    {
+      "name": "pdf_id",
+      "value": "first_id"
+    },
+    {
+      "name": "data_list_flow_name",
+      "value": "pdf",
+      "comments": "The values concatenate to: "
+    },
+    {
+      "name": "concat_pdf_id",
+      "value": "@local.data_list_flow_name.@local.pdf_id",
+      "comments": "pdf.first_id"
+    },
+    {
+      "name": "pdf_data",
+      "value": "@data.@local.concat_pdf_id",
+      "comments": "@data.pdf.first_id"
+    },
+    {
+      "type": "title",
+      "value": "@local.pdf_id",
+      "comments": "first_id"
+    },
+    {
+      "type": "text",
+      "value": "1: @local.concat_pdf_id",
+      "comments": "pdf.first_id"
+    },
+    {
+      "type": "text",
+      "value": "2: @local.pdf_data.title",
+      "comments": "@data.pdf.first_id.title"
+    }
+  ]
+}

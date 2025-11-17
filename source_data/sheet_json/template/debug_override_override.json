@@ -1,0 +1,23 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_override_override",
+  "status": "released",
+  "override_target": "debug_override_default",
+  "override_condition": "@fields.debug_boolean",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Override title"
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_override_default",
+      "value": "debug_override_default",
+      "is_override_target": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

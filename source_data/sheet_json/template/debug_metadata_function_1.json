@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_metadata_function_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Doesn't work"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Filter `filter: @item.number_1_list.includes(@fields.debug_number);` doesn't work since the column `number_1_list` contains both numbers and arrays"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop",
+      "value": "@data.debug_number_list",
+      "parameter_list": "filter: @item.number_1_list.includes(@fields.debug_number);"
+    },
+    {
+      "type": "text",
+      "name": "text_@item._index",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

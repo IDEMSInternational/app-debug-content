@@ -1,0 +1,128 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_pipe_2",
+  "status": "released",
+  "rows": [
+    {
+      "name": "local_string",
+      "value": "first"
+    },
+    {
+      "name": "local_number",
+      "value": 3
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "String comparison (local)"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.name == @local.local_string;"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "name: @item.name"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "unlock_week: @item.unlock_week"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "String comparison"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.name == \"first\";"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "name: @item.name"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "unlock_week: @item.unlock_week"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Number comparison (local)"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.unlock_week > @local.local_number; limit: 1"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "name: @item.name"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "unlock_week: @item.unlock_week"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Number comparison"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.unlock_week > 3;  limit: 1"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "name: @item.name"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "unlock_week: @item.unlock_week"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_up_bg",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: background_solid;"
+    },
+    {
+      "type": "title",
+      "value": "Debug pop-up background",
+      "parameter_list": "variant: header;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Launch as pop-up",
+      "action_list": "click | pop_up: debug_pop_up_bg;"
+    },
+    {
+      "type": "button",
+      "value": "Launch as fullscreen pop-up",
+      "action_list": "click | pop_up: debug_pop_up_bg | fullscreen: true;"
+    }
+  ]
+}

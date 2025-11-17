@@ -1,0 +1,117 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_accordion",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "begin_accordion",
+      "name": "accordion"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "first_section",
+      "value": "Section title 1"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "This text appears in the first accordion section"
+    },
+    {
+      "type": "image",
+      "name": "image_1",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "second_section",
+      "value": "Section title 2",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "This text appears in the second accordion section"
+    },
+    {
+      "type": "image",
+      "name": "image_2",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "subtitle",
+      "name": "text_accordion",
+      "value": "Text Accordion"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_2"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "third_section",
+      "value": "Long section title for the third accordion component on this page"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "subtitle",
+      "name": "text_accordion",
+      "value": "Markdown"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion_md"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "third_section",
+      "value": "Markdown"
+    },
+    {
+      "type": "text",
+      "name": "text_md",
+      "value": "1. A \n2. Numbered\n3. List\nAnd\n- A \n- Bulleted\n- list"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1He3nS_qWno-_kJrzizhcUdC1vONKWaluPzC1rr-RfSw",
+      "__EMPTY": true
+    },
+    {
+      "comments": "changed | emit:force_reprocess;",
+      "__EMPTY": true
+    },
+    {
+      "comments": "changed | emit:force_reprocess;",
+      "style_list": "answer_list: @data.comp_radio_button_grid_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input",
+      "__EMPTY": true
+    }
+  ]
+}

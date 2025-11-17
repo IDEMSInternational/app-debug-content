@@ -1,0 +1,150 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_toggle_bar",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "variant parameters"
+    },
+    {
+      "type": "text",
+      "value": "Variant: ios"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_1",
+      "parameter_list": "variant: ios;"
+    },
+    {
+      "type": "text",
+      "value": "Variant: android"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_2",
+      "parameter_list": "variant: android;"
+    },
+    {
+      "type": "text",
+      "value": "Variant: icon"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_3",
+      "parameter_list": "variant: icon;\nicon_true_asset: images/icons/heart_blue.svg;\nicon_false_asset: images/icons/heart_outline.svg;"
+    },
+    {
+      "type": "text",
+      "value": "Variant: in_button"
+    },
+    {
+      "type": "begin_button",
+      "value": "Icon and toggle",
+      "parameter_list": "style: card;\nicon: images/icons/school_blue.svg;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_1",
+      "parameter_list": "position: right;\nvariant: in_button;"
+    },
+    {
+      "type": "end_button"
+    },
+    {
+      "type": "begin_button",
+      "value": "Icon and toggle",
+      "parameter_list": "style: card;\nicon: images/icons/school_blue.svg;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_1",
+      "parameter_list": "position: right;\nvariant: in_button ios;"
+    },
+    {
+      "type": "end_button"
+    },
+    {
+      "type": "title",
+      "value": "Button card-portrait"
+    },
+    {
+      "type": "begin_button",
+      "value": "Portrait card",
+      "parameter_list": "variant: card-portrait;\nimage_asset: images/example/circular.png;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_2",
+      "parameter_list": "variant: icon;\nicon_true_asset: images/icons/heart_blue.svg;\nicon_false_asset: images/icons/heart_outline.svg;"
+    },
+    {
+      "type": "end_button"
+    },
+    {
+      "type": "title",
+      "value": "false_text/true_text parameters"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_5",
+      "parameter_list": "false_text: The toggle value is false; true_text: The toggle value is true;",
+      "comments": "Values for both false_text and true_text must be provided for either one to render"
+    },
+    {
+      "type": "title",
+      "value": "Show Icons parameters"
+    },
+    {
+      "type": "text",
+      "value": "Variant: android"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_6",
+      "parameter_list": "show_icons: true; variant: android;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_7",
+      "parameter_list": "show_icons: false; variant: android;"
+    },
+    {
+      "type": "text",
+      "value": "Variant: ios"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_8",
+      "parameter_list": "show_icons: true; variant: ios;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_9",
+      "parameter_list": "show_icons: false; variant: ios;"
+    },
+    {
+      "type": "title",
+      "value": "Position"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_10",
+      "parameter_list": "position: left;true_text: some text for true value; variant: android;",
+      "comments": "Position of the toggle-bar"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_11",
+      "parameter_list": "position: right;true_text: some text for true value; variant: android;",
+      "comments": "Position of the toggle-bar"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_12",
+      "parameter_list": "position: center;true_text: some text for true value; variant: android;",
+      "comments": "Position of the toggle-bar"
+    }
+  ]
+}

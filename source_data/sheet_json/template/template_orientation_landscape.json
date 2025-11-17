@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "template_orientation_landscape",
+  "status": "released",
+  "parameter_list": {
+    "orientation": "landscape"
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Landscape Template"
+    },
+    {
+      "type": "text",
+      "value": "This template will lock orientation to landscape mode when displayed"
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "Emit completed",
+      "action_list": "click | emit:completed"
+    },
+    {
+      "type": "button",
+      "name": "button_uncompleted",
+      "value": "Emit uncompleted",
+      "action_list": "click | emit:uncompleted"
+    }
+  ]
+}

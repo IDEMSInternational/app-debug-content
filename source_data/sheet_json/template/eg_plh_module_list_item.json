@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "eg_plh_module_list_item",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Module List Item Rotating Colours Example"
+    },
+    {
+      "name": "background_list",
+      "value": "var(--plh-module-list-item-background-1);\nvar(--plh-module-list-item-background-2);\nvar(--plh-module-list-item-background-3);"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "module_data"
+    },
+    {
+      "name": "index_modulo_3",
+      "value": "@calc(@item._index % 3)"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "@item.name",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "module_image_asset: images/module-1.png;\nnav_image_asset: images/icons/expand_circle_right.svg;\nlocked_image_asset: images/icons/lock.svg;\ncompleted_image_asset: images/icons/verified.svg;\ncompleted: @item.completed;\nhighlighted: @item.highlighted;\nis_locked: @item.locked;\nbackground: @calc(@local.background_list.at(@local.index_modulo_3));"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

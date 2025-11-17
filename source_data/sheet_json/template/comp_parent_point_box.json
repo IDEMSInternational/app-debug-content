@@ -1,0 +1,76 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_parent_point_box",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Icon Source"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_1_1",
+      "parameter_list": "icon_src: null - (default)",
+      "comments": "No icon"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_1_2",
+      "parameter_list": "icon_src: string",
+      "comments": "Path to icon"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Lottie Source"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_2_1",
+      "parameter_list": "lottie_src: null - (default)",
+      "comments": "No lottie animation"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_2_2",
+      "parameter_list": "lottie_src: string",
+      "comments": "Path to lottie animation"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Text"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_3_1",
+      "parameter_list": "text: null - (default)",
+      "comments": "No text"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_3_2",
+      "parameter_list": "text: string",
+      "comments": "Any string as a text"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Play celebration"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_4_1",
+      "parameter_list": "play_celebration: true - (default) ",
+      "comments": "Show falling stars when item is clicked"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_par_4_2",
+      "parameter_list": "play_celebration: false",
+      "comments": "Disable falling stars"
+    }
+  ]
+}

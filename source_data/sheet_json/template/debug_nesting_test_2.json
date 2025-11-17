@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_test_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "other_name",
+      "value": "debug_test_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "name_1",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "title for sheet 1 was overwritten twice",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_emit_child",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list_1",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3;"
+    },
+    {
+      "name": "child_var_1",
+      "value": "var 1 initial child value"
+    },
+    {
+      "type": "title",
+      "name": "child_title",
+      "value": "Child Template"
+    },
+    {
+      "type": "text",
+      "name": "child_text1",
+      "value": "child_var_1: @local.child_var_1"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_default_1",
+      "value": "@local.child_var_1",
+      "action_list": "changed | set_local: child_var_1: this.value;",
+      "parameter_list": "answer_list: @local.answer_list_1;\n"
+    },
+    {
+      "type": "text",
+      "name": "child_text2",
+      "value": "combo child value: @local.combo_box_default_1"
+    },
+    {
+      "type": "text",
+      "name": "child_text3",
+      "value": "child_var_1 (combo) value: @local.child_var_1"
+    }
+  ]
+}

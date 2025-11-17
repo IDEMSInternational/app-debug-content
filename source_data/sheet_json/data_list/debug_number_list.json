@@ -1,0 +1,24 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_number_list",
+  "status": "released",
+  "data_list_name": "debug_number_list",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "item_1",
+      "number_1_list": "1; 2; 3",
+      "number_2_list": "1; 2; 3"
+    },
+    {
+      "id": "item_2",
+      "number_1_list": "1; 2",
+      "number_2_list": "1; 2"
+    },
+    {
+      "id": "item_3",
+      "number_1_list": 1,
+      "number_2_list": "1;"
+    }
+  ]
+}

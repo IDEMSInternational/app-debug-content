@@ -1,0 +1,72 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_combo_box",
+  "status": "released",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name: name_1 | text: This is text 1;  name: name_2 | text: This is text 2;  name: name_3 | text: This is text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_defaults",
+      "value": "nothing",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nstyle: active;"
+    },
+    {
+      "type": "text",
+      "name": "text_result",
+      "value": "You selected @local.combo_box_defaults",
+      "exclude_from_translation": true,
+      "comments": "Suggestion: \n@local.[combo_box_name] is the selected value of the combo box. If nothing is selected this is the value of [combo_box_name]\n(same syntax as for radio_group)"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_text_in_pop_up",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\ntext: Text above the answers;\nplaceholder: Click here to answer;\nstyle: active;"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_with_placeholder_1",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nplaceholder: Click here to answer;"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_with_placeholder_2",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nplaceholder: Click here to answer;",
+      "comments": "Placeholder should be displayed when nothing is selected. In that case, @local.combo_box_with_placeholder_2 is the value of combo_box_with_placeholder_2 (i.e. \"nothing\") \n\nDesign comment: \nPlaceholder should look different from (pre-)selected answer"
+    },
+    {
+      "type": "text",
+      "name": "text_result",
+      "value": "You selected @local.combo_box_with_placeholder_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_allow_input",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nplaceholder: Click here to answer;\ninput_allowed: true;\nanswer_placeholder: Type your own;\nstyle: active;"
+    },
+    {
+      "name": "input_allowed",
+      "value": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_allow_input_through_var",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nplaceholder: Click here to answer;\ninput_allowed: @local.input_allowed;\nanswer_placeholder: Type your own;\nstyle: active;"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

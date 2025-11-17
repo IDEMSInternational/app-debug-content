@@ -1,0 +1,28 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_data_items_list",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "id_1",
+      "label": "Task 1",
+      "completed": false,
+      "type": "type_a",
+      "comments": "We will be querying based on completed, so it is important that a value exists in the first row data which can be used to infer the data type\n \nAdditionally the id column must contain string data",
+      "_app_meta_field": "example metadata"
+    },
+    {
+      "id": "id_2",
+      "label": "Task 2",
+      "completed": true,
+      "type": "type_b"
+    },
+    {
+      "id": "id_3",
+      "label": "Task 3",
+      "completed": true,
+      "type": "type_b"
+    }
+  ]
+}

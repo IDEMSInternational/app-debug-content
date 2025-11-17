@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_text_button",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Emit completed",
+      "action_list": "click | emit: completed",
+      "exclude_from_translation": true
+    }
+  ]
+}

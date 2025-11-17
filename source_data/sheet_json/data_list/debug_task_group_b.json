@@ -1,0 +1,23 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_task_group_b",
+  "status": "released",
+  "rows": [
+    {
+      "id": "b_1",
+      "text": "Local Task B1",
+      "completed": false
+    },
+    {
+      "id": "b_2",
+      "text": "Child Group C Completed",
+      "task_child": "debug_task_group_c",
+      "completed": false
+    },
+    {
+      "id": "b_3",
+      "text": "Local Task B3",
+      "completed": false
+    }
+  ]
+}

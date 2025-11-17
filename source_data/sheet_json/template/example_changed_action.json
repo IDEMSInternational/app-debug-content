@@ -1,0 +1,105 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_changed_action",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "demo_changed_combo_box",
+      "value": "na",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_field",
+      "name": "demo_changed_slider",
+      "value": "na",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_field",
+      "name": "demo_changed_radio_group",
+      "value": "na",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_field",
+      "name": "demo_changed_text_box",
+      "value": "na",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list_1",
+      "value": "First; Second; Third",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name:name_var_1 | text:First; \nname:name_var_2 | text:Second;\nname:name_var_3 | text:Third; \nname:name_var_4 | text:Fourth",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box",
+      "action_list": "changed | set_field: demo_changed_combo_box: @local.combo_box",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list_1;\nplaceholder: Click and choose!"
+    },
+    {
+      "type": "text",
+      "name": "comb_box_text",
+      "value": "the selected choice in combo box is @field.demo_changed_combo_box",
+      "hidden": "@field.demo_changed_combo_box==\"na\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group",
+      "action_list": "changed | set_field: demo_changed_radio_group: @local.radio_group",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list_2;"
+    },
+    {
+      "type": "text",
+      "name": "radio_group_field_text",
+      "value": "The value of demo_changed_radio_group is @field.demo_changed_radio_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "radio_group_text",
+      "value": "the selected choice in radio group is @field.demo_changed_radio_group",
+      "hidden": "@field.demo_changed_radio_group==\"na\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "text_box",
+      "action_list": "changed | set_field: demo_changed_text_box: @local.text_box",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: Click and type!"
+    },
+    {
+      "type": "text",
+      "name": "text_box_text",
+      "value": "The value in the text box is @field.demo_changed_text_box",
+      "hidden": "@field.demo_changed_text_box==\"na\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "slider",
+      "name": "slider",
+      "value": 3,
+      "action_list": "changed | set_field: demo_changed_slider: @local.slider",
+      "exclude_from_translation": true,
+      "parameter_list": "min: 0; \nmax: 7; \nmin_value_label: least; \nmax_value_label: most; \nlabels_count: 8;\nno_value: false;"
+    },
+    {
+      "type": "text",
+      "name": "slider_text",
+      "value": "the selected choice in slider is @field.demo_changed_slider",
+      "hidden": "@field.demo_changed_slider==\"na\"",
+      "exclude_from_translation": true
+    }
+  ]
+}

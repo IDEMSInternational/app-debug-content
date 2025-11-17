@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_concatenation_parent",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_concatenation_1",
+      "value": "debug_concatenation"
+    },
+    {
+      "name": "pdf_id",
+      "value": "3_id",
+      "comment": "Doesn't work (id starting with a number)"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_concatenation_2",
+      "value": "debug_concatenation"
+    },
+    {
+      "name": "pdf_id",
+      "value": "id_2",
+      "comment": "Works (id starting with a letter)"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "feat_data_actions_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "label": "Task 1",
+      "number": 1,
+      "completed": false
+    },
+    {
+      "id": "id_2",
+      "label": "Task 2",
+      "number": 2,
+      "completed": true
+    },
+    {
+      "id": "id_3",
+      "label": "Task 3",
+      "number": 3,
+      "completed": true
+    }
+  ]
+}

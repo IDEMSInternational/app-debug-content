@@ -1,0 +1,103 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_calc_functions",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "field_family_data",
+      "value": "[[\"Cecilie\", \"Lone\"], [\"Emil\", \"Tobias\", \"Linus\"], [\"Robin\"]]"
+    },
+    {
+      "name": "family_data",
+      "value": "@fields.field_family_data"
+    },
+    {
+      "name": "parent_1",
+      "value": "Linus"
+    },
+    {
+      "name": "parent_2",
+      "value": "Robin"
+    },
+    {
+      "type": "text",
+      "name": "text_broken",
+      "value": "@calc(@data.debug_functions.families.merge; merge_families(@local.family_data, @local.parent_1, @local.parent_2))",
+      "condition": false,
+      "comments": "Does not work"
+    },
+    {
+      "type": "title",
+      "value": "Original family_data"
+    },
+    {
+      "type": "text",
+      "value": "@local.family_data"
+    },
+    {
+      "type": "title",
+      "value": "plh_add_family"
+    },
+    {
+      "type": "text",
+      "value": "Function: plh_add_family(family_data, \"Ada\", \"Blaise\")"
+    },
+    {
+      "type": "text",
+      "value": "Result:"
+    },
+    {
+      "name": "plh_add_family_result",
+      "value": "@calc(plh_add_family(@local.family_data, \"Ada\", \"Blaise\"))"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.plh_add_family_result))",
+      "comments": "Stringify result otherwise the text component will flatten the array"
+    },
+    {
+      "type": "title",
+      "value": "plh_merge_families"
+    },
+    {
+      "type": "text",
+      "value": "Function: plh_merge_families(family_data, \"Linus\", \"Robin\")"
+    },
+    {
+      "type": "text",
+      "value": "Result:"
+    },
+    {
+      "name": "plh_merge_families_result",
+      "value": "@calc(plh_merge_families(@local.family_data, @local.parent_1, @local.parent_2))"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.plh_merge_families_result))",
+      "comments": "Stringify result otherwise the text component will flatten the array"
+    },
+    {
+      "type": "title",
+      "value": "plh_remove_family_member"
+    },
+    {
+      "type": "text",
+      "value": "Function: plh_remove_family_member(family_data, \"Robin\")"
+    },
+    {
+      "type": "text",
+      "value": "Result:"
+    },
+    {
+      "name": "plh_remove_family_member_result",
+      "value": "@calc(plh_remove_family_member(@local.family_data, @local.parent_2))"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.plh_remove_family_member_result))",
+      "comments": "Stringify result otherwise the text component will flatten the array"
+    }
+  ]
+}

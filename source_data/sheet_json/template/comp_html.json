@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_html",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "html",
+      "name": "html_card",
+      "value": "<ion-card>\n  <ion-card-header>\n    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>\n    <ion-card-title>Card Title</ion-card-title>\n  </ion-card-header>\n  <ion-card-content>\n    Keep close to Nature's heart... and break clear away, once in awhile,\n    and climb a mountain or spend a week in the woods. Wash your spirit clean.\n  </ion-card-content>\n</ion-card>"
+    },
+    {
+      "name": "red",
+      "value": "Red text"
+    },
+    {
+      "type": "html",
+      "name": "html_text",
+      "value": "<p style=\"color: red;\"> @local.red </p>"
+    }
+  ]
+}

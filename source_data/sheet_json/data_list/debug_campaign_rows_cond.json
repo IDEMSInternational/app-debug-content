@@ -1,0 +1,37 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows_debug",
+  "flow_name": "debug_campaign_rows_cond",
+  "status": "released",
+  "rows": [
+    {
+      "id": "debug_cond_bool",
+      "action_list": "click | pop_up: example_text; click | set_field : debug_boolean : true",
+      "priority": 4,
+      "deactivation_condition_list": "@fields.debug_boolean",
+      "campaign_list": "debug_condition",
+      "__EMPTY_5": "#REF!"
+    },
+    {
+      "id": "debug_cond_numb",
+      "action_list": "click | pop_up: example_text ; click | set_field : debug_number : 100",
+      "priority": 3,
+      "deactivation_condition_list": "@fields.debug_number == 100",
+      "campaign_list": "debug_condition"
+    },
+    {
+      "id": "debug_cond_row_bool",
+      "action_list": "click | pop_up: example_text; sent | set_field : @row.id.sent : true",
+      "priority": 2,
+      "deactivation_condition_list": "get_field | @row.id.sent : true",
+      "campaign_list": "debug_condition"
+    },
+    {
+      "id": "debug_cond_string",
+      "action_list": "click | pop_up: example_text ; click | set_field : debug_string : my_phrase",
+      "priority": 1,
+      "deactivation_condition_list": "@fields.debug_string == \"my_phrase\"",
+      "campaign_list": "debug_condition"
+    }
+  ]
+}

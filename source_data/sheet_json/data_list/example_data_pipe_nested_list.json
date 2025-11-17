@@ -1,0 +1,16 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_nested_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_3",
+      "text::eng": "Goodbye"
+    },
+    {
+      "id": "id_4",
+      "text::eng": "Hello"
+    }
+  ]
+}

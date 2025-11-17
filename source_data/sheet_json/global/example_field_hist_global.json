@@ -1,0 +1,13 @@
+{
+  "flow_type": "global",
+  "flow_subtype": "debug",
+  "flow_name": "example_field_hist_global",
+  "status": "released",
+  "rows": [
+    {
+      "type": "declare_field_default",
+      "name": "debug_version",
+      "value": "v1"
+    }
+  ]
+}

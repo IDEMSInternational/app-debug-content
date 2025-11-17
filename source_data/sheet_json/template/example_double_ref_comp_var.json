@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_double_ref_comp_var",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "first_template",
+      "value": "example_component_variables",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "second_template",
+      "value": "example_component_variables",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_with_double_ref_options",
+      "value": "text should be what is in the comment",
+      "exclude_from_translation": true,
+      "comments": "Finding nested valeus for the first @first_template.option_buttons._value and the second @second_template.option_buttons._value "
+    },
+    {
+      "comments": "Long term (access nested row value)"
+    },
+    {
+      "comments": "@first_template.option_buttons"
+    },
+    {
+      "comments": "Short term (set a variable that can be overwritten and accessed)"
+    }
+  ]
+}

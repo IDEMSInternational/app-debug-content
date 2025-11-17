@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_task_prog_bar_legacy",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "comments_1": "This implementation is valid, but uses the legacy system of tracking task completion using fields. Task completion should be tracked using dynamic data instead",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Task Progress Bar – Legacy \"field\" implementation"
+    },
+    {
+      "name": "task_group",
+      "value": "comp_task_progress_bar_data"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group;\ncompleted_field: comp_task_progress_bar_completed;"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.comp_task_progress_bar_data"
+    },
+    {
+      "type": "text",
+      "value": "Task @item.id"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_@item.id",
+      "value": "@field.@item.completed_field",
+      "action_list": "changed | toggle_field: @item.completed_field;\nchanged | emit: force_reload;",
+      "parameter_list": "true_text: Completed;\nfalse_text: Not completed"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

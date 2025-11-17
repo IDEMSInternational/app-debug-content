@@ -1,0 +1,29 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "debug",
+  "flow_name": "example_templating_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "example_1",
+      "text": "Hello @row.id",
+      "comments": "<span>Row replacements happen at compile time<br/><br/>Simple replacements use </span><span><i>@row</i></span><span> and can refer to any other column</span>"
+    },
+    {
+      "id": "example_2",
+      "text_2": "{@row.id}_completed",
+      "comments": "Complex replacements can use additional curly brace syntax to distinguish, such as adding text after the row lookup "
+    },
+    {
+      "id": "example_3",
+      "text": "Hello @row.id",
+      "text_2": "@row.text - with additional message",
+      "comments": "NOT WORKING\nOne row replacement can't refer to another as tracking nested changes during replacement cycle is quite exhaustive and not currently implemented"
+    },
+    {
+      "id": "example_4",
+      "action_list": "click | set_field : example_templating_{@row.id}_completed: true",
+      "comments": "Entire action lists can be passed with templated references"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_pipe",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_unlocked",
+      "value": "Unlocked (limit 1)"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: @item.unlocked;\nsort: field_value;\nreverse;\nlimit: 1;",
+      "comments": "Parameter list can be used to sort, filter, limit and reverse items"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "name: @item.name"
+    },
+    {
+      "type": "text",
+      "name": "item_text_3_@item.id",
+      "value": "+@item._index+1"
+    },
+    {
+      "type": "text",
+      "name": "item_text_4_@item.id",
+      "value": "value: @item.field_value"
+    },
+    {
+      "type": "button",
+      "name": "item_toggle_@item.id",
+      "value": "Lock",
+      "action_list": "click | toggle_field:@item.unlock_fieldname;\nclick | emit: force_reload",
+      "comments": "Support added for new toggle_field which will force field value to boolean and toggle"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "title_locked",
+      "value": "Locked (all)"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "filter: !@item.unlocked;\nsort: field_value;\nreverse;"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "name: @item.name"
+    },
+    {
+      "type": "text",
+      "name": "item_text_3_@item.id",
+      "value": "+@item._index+1"
+    },
+    {
+      "type": "text",
+      "name": "value: item_text_4_@item.id",
+      "value": "value: @item.field_value"
+    },
+    {
+      "type": "button",
+      "name": "item_toggle_@item.id",
+      "value": "Unlock",
+      "action_list": "click | toggle_field:@item.unlock_fieldname;\nclick | emit: force_reload",
+      "comments": "TODO - force_reload still doesn't process from original data lists unfortunately"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

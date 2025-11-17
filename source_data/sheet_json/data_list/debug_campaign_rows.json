@@ -1,0 +1,112 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows_debug",
+  "flow_name": "debug_campaign_rows",
+  "status": "released",
+  "comments": "This contains content for schedules",
+  "rows": [
+    {
+      "id": "debug_daily_1",
+      "action_list": "sent | set_field: @row.id.sent: true;",
+      "priority": 4,
+      "campaign_list": "debug_daily",
+      "text::eng": "Text 1",
+      "title::eng": "Debug Notification 1"
+    },
+    {
+      "id": "debug_daily_2",
+      "action_list": "sent | set_field: @row.id.sent: true;",
+      "priority": 3,
+      "campaign_list": "debug_daily",
+      "text::eng": "How are you feeling today?",
+      "title::eng": "Debug Notification 2"
+    },
+    {
+      "id": "debug_daily_3",
+      "action_list": "sent | set_field: @row.id.sent: true;",
+      "priority": 2,
+      "campaign_list": "debug_daily",
+      "text::eng": "Text: @global.debug_variable_1",
+      "title::eng": "Debug Notification 3"
+    },
+    {
+      "id": "debug_daily_4a",
+      "action_list": "sent | set_field: debug_daily_1.sent: false;\nsent | set_field: debug_daily_2.sent: false;\nsent | set_field: debug_daily_3.sent: false;",
+      "priority": 1,
+      "campaign_list": "debug_daily",
+      "text::eng": "Text 4",
+      "title::eng": "Debug Notification 4a",
+      "comment": "When rows have same priority one will be picked at random"
+    },
+    {
+      "id": "debug_daily_4b",
+      "action_list": "sent | set_field: debug_daily_1.sent: false;\nsent | set_field: debug_daily_2.sent: false;\nsent | set_field: debug_daily_3.sent: false;",
+      "priority": 1,
+      "campaign_list": "debug_daily",
+      "text::eng": "Text 4",
+      "title::eng": "Debug Notification 4b"
+    },
+    {
+      "id": "debug_daily_4c",
+      "action_list": "sent | set_field: debug_daily_1.sent: false;\nsent | set_field: debug_daily_2.sent: false;\nsent | set_field: debug_daily_3.sent: false;",
+      "priority": 1,
+      "campaign_list": "debug_daily",
+      "text::eng": "Text 4",
+      "title::eng": "Debug Notification 4c"
+    },
+    {
+      "id": "debug_fixed_saturday",
+      "campaign_list": "debug_fixed_saturday;",
+      "text::eng": "We hope you are having a nice weekend",
+      "title::eng": "Debug Fixed Saturday"
+    },
+    {
+      "id": "debug_fixed_december_no_time",
+      "campaign_list": "debug_fixed_december_no_time",
+      "text::eng": "December daily - no time specified",
+      "title::eng": "Debug Fixed December No Time"
+    },
+    {
+      "id": "debug_fixed_december_early",
+      "campaign_list": "debug_fixed_december_early",
+      "text::eng": "December daily - early",
+      "title::eng": "Debug Fixed December Early"
+    },
+    {
+      "id": "debug_fixed_december_noon",
+      "campaign_list": "debug_fixed_december_noon",
+      "text::eng": "December daily - noon",
+      "title::eng": "Debug Fixed December Noon"
+    },
+    {
+      "id": "debug_fixed_december_late",
+      "campaign_list": "debug_fixed_december_late",
+      "text::eng": "December daily - late",
+      "title::eng": "Debug Fixed December Late"
+    },
+    {
+      "id": "debug_fixed_new_years_day",
+      "campaign_list": "debug_fixed_new_years_day;",
+      "text::eng": "Happy new year",
+      "title::eng": "Debug Fixed New Years Day"
+    },
+    {
+      "id": "debug_2058_7",
+      "campaign_list": "debug_2058_7",
+      "text::eng": "3.12pm",
+      "title::eng": "debug_2058_7"
+    },
+    {
+      "id": "debug_2058_8",
+      "campaign_list": "debug_2058_8",
+      "text::eng": "3.14pm",
+      "title::eng": "debug_2058_8"
+    },
+    {
+      "id": "debug_2058_9",
+      "campaign_list": "debug_2058_9",
+      "text::eng": "3.17pm",
+      "title::eng": "debug_2058_9"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_bottom_nav",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": "comp_plh_bottom_nav",
+        "background": "none"
+      }
+    }
+  },
+  "rows": [
+    {
+      "name": "button_list",
+      "value": "name: home_button | label: Home | icon: images/icons/home.svg | active_icon: images/icons/home_active.svg | target_template: comp_plh_bottom_nav;\nname: library_button | label: Library with a long name | icon: images/icons/local_library.svg | active_icon: images/icons/local_library_active.svg | target_template: plh_bottom_nav_library;\nname: settings_button | label: Settings | icon: images/icons/settings.svg | active_icon: images/icons/settings_active.svg | target_template: plh_bottom_nav_settings;\nname: settings_button_2 | label: ASingleLongString | icon: images/icons/settings.svg | active_icon: images/icons/settings_active.svg | target_template: plh_bottom_nav_settings_2;"
+    },
+    {
+      "type": "plh_bottom_nav",
+      "name": "nav_default",
+      "parameter_list": "button_list: @local.button_list;"
+    },
+    {
+      "type": "plh_bottom_nav",
+      "name": "nav_hide_inactive_text",
+      "parameter_list": "button_list: @local.button_list;\nhide_inactive_text: true;"
+    },
+    {
+      "type": "plh_bottom_nav",
+      "name": "nav_variant_pill",
+      "parameter_list": "button_list: @local.button_list;\nvariant: pill;"
+    }
+  ]
+}

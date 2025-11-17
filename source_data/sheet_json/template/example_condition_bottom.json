@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_condition_bottom",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name:name_var_1 | text:First;  name:name_var_2 | text:Second; name:name_var_3 | text:Third",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "field_name",
+      "value": "radio_button_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_text",
+      "value": "nothing",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list",
+      "comments": "change | set_field:@local.field_name:@local.radio_group_text"
+    },
+    {
+      "type": "text",
+      "name": "text_result",
+      "value": "You selected @local.radio_group_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_reply",
+      "value": "Reply text",
+      "hidden": "@local.radio_group_text = \"nothing\"",
+      "exclude_from_translation": true
+    }
+  ]
+}

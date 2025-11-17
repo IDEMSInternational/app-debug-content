@@ -1,0 +1,52 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_render_grandchild_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Grandchild 2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "(grandchild) Value of test_render_updates_field: @fields.test_render_updates_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "(grandchild) selected no",
+      "hidden": "@fields.test_render_updates_field!=\"no\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "(grandchild) selected yes",
+      "hidden": "@fields.test_render_updates_field!=\"yes\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Text 4",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Text 5",
+      "exclude_from_translation": true
+    }
+  ]
+}

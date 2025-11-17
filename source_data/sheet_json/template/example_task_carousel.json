@@ -1,0 +1,50 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_task_carousel",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Example carousel"
+    },
+    {
+      "name": "task_groups_data",
+      "value": "workshop_tasks"
+    },
+    {
+      "type": "text",
+      "value": "Parameters: space_between: 6; task_groups_data: @local.task_groups_data"
+    },
+    {
+      "type": "begin_carousel",
+      "parameter_list": "space_between: 6; task_groups_data:@local.task_groups_data"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.@local.task_groups_data"
+    },
+    {
+      "type": "begin_template",
+      "value": "module_card"
+    },
+    {
+      "name": "workshop_id",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1f_vq3KFGlExf1-g1PwPiDad9gOZkIOdRE5X99jCIRsM"
+    }
+  ]
+}

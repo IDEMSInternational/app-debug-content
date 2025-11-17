@@ -1,0 +1,30 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "feature",
+  "flow_name": "notification_action_params",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id",
+      "param": "id",
+      "required": true,
+      "description": "Specify id that can also be used to cancel notification.\nIf an existing notification with the same ID exists it will be replaced"
+    },
+    {
+      "id": "schedule_at",
+      "param": "schedule_at",
+      "required": true,
+      "description": "Datetime object for when to schedule the notification, usually created via intermediate variable calc statement. E.g. \n`@calc(date_fns.addDays(now(),7))`"
+    },
+    {
+      "id": "title",
+      "param": "title",
+      "description": "Title to appear at top of notification. Default title can be set in deployment config"
+    },
+    {
+      "id": "text",
+      "param": "text",
+      "description": "Text to appear in body of notification. Default text can be set in deployment config"
+    }
+  ]
+}

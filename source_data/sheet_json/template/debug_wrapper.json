@@ -1,0 +1,23 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_wrapper",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "wrapper_template",
+      "exclude_from_translation": true,
+      "comments": "This template simply renders the debug_two_texts template, for testing nested_properties"
+    },
+    {
+      "name": "text_1",
+      "value": "No text to display in wrapper_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

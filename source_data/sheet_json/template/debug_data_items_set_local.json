@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_set_local",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Top-level"
+    },
+    {
+      "name": "local_var_1",
+      "value": true
+    },
+    {
+      "type": "button",
+      "value": "Toggle local_var_1 value",
+      "action_list": "click | set_local: local_var_1: !@local.local_var_1"
+    },
+    {
+      "type": "text",
+      "value": "Value of local_var_1: @local.local_var_1"
+    },
+    {
+      "type": "title",
+      "value": "Data-items"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_toggle_bar_data"
+    },
+    {
+      "type": "button",
+      "value": "Toggle local_var_1 value",
+      "action_list": "click | set_local: local_var_1: !@local.local_var_1"
+    },
+    {
+      "type": "text",
+      "value": "Value of local_var_1: @local.local_var_1"
+    },
+    {
+      "name": "local_var_2",
+      "value": true
+    },
+    {
+      "type": "button",
+      "value": "Toggle local_var_2 value",
+      "action_list": "click | set_local: local_var_2: !@local.local_var_2"
+    },
+    {
+      "type": "text",
+      "value": "Value of local_var_2: @local.local_var_2"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Top-level"
+    },
+    {
+      "type": "text",
+      "value": "Value of local_var_2: @local.local_var_2"
+    }
+  ]
+}

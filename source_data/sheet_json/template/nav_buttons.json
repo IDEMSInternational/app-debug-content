@@ -1,0 +1,60 @@
+{
+  "flow_type": "template",
+  "flow_name": "nav_buttons",
+  "status": "released",
+  "rows": [
+    {
+      "name": "use_completed_chevron",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "use_uncompleted_chevron",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "display_back",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "buttons",
+      "parameter_list": "style: navigation"
+    },
+    {
+      "type": "round_button",
+      "name": "button_uncompleted_chevron",
+      "action_list": "click | emit:uncompleted",
+      "hidden": "(!@local.use_uncompleted_chevron) || (!@local.display_back)",
+      "parameter_list": "icon_src: chevron-back;\nstyle: navigation"
+    },
+    {
+      "type": "round_button",
+      "name": "button_uncompleted",
+      "action_list": "click | emit:uncompleted",
+      "hidden": "@local.use_uncompleted_chevron || (!@local.display_back)",
+      "parameter_list": "icon_src: caret-back;\nstyle:navigation"
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "Save",
+      "action_list": "click | emit:completed",
+      "hidden": "@local.use_completed_chevron",
+      "parameter_list": "style:navigation; text_align: center",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "round_button",
+      "name": "button_completed_chevron",
+      "action_list": "click | emit:completed",
+      "hidden": "!@local.use_completed_chevron",
+      "parameter_list": "icon_src: chevron-forward;\nstyle: navigation"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

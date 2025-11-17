@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_nav_stack",
+  "status": "released",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Nav stack open",
+      "action_list": "click | nav_stack: open | \ntemplate: feat_nav_stack_child, \ntitle: Stack Title"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack close top",
+      "action_list": "click | nav_stack: close_top"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack close all",
+      "action_list": "click | nav_stack: close_all"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack open (no close button)",
+      "action_list": "click | nav_stack: open | template: feat_nav_stack_child, title: Stack Title, show_close_button: false;"
+    }
+  ]
+}

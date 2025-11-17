@@ -1,0 +1,111 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_condition_top_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "var_1",
+      "value": "\"val_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "var_2",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "var_3",
+      "value": 5,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "example_text_1",
+      "value": "example_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is not satisfied",
+      "condition": "@local.var_1==\"val_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is satisfied",
+      "condition": "@local.var_1==\"val_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "example_text_2",
+      "value": "example_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is satisfied",
+      "condition": "@local.var_3<9",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is not satisfied",
+      "condition": "@local.var_3>9",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "example_text_3",
+      "value": "example_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is satisfied",
+      "condition": "@local.var_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is not satisfied",
+      "condition": "!@local.var_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "example_text_4",
+      "value": "example_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is not satisfied",
+      "condition": "!@local.var_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "The condition is satisfied",
+      "condition": "@local.var_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_sticky_style_list",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;",
+      "style_list": "justify-content: space-between;\npadding: 0 24px;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "style_list": "width: 96px; "
+    },
+    {
+      "type": "toggle_bar",
+      "parameter_list": "show_icons: false; \nvariant: ios;\nposition: right"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Non-sticky equivalent:"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "justify-content: space-between;\npadding: 0 24px;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "style_list": "width: 96px; "
+    },
+    {
+      "type": "toggle_bar",
+      "parameter_list": "show_icons: false; \nvariant: ios;\nposition: right"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

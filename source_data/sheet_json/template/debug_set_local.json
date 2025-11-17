@@ -1,0 +1,63 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_local",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "debug_variable_one",
+      "value": "Value of the first debug variable.",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "debug_variable_two",
+      "value": "Value of the second debug variable",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "debug_variable_3",
+      "value": "Value of the third debug variable",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "debug_variable_four",
+      "value": "Value of the fourth debug variable",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "debug_variable_five",
+      "value": "Value of the fifth debug variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "debug_text_1",
+      "value": "Text that includes @local.debug_variable_one",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "debug_text_2",
+      "value": "Text that includes @local.debug_variable_two",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "debug_text_3",
+      "value": "Text that includes @local.debug_variable_3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "debug_text_4",
+      "value": "Text that includes @local.debug_variable_four",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "debug_text_5",
+      "value": "Text that includes @local.debug_variable-five",
+      "exclude_from_translation": true
+    }
+  ]
+}

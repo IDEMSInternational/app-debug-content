@@ -1,0 +1,56 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_text_box",
+  "status": "released",
+  "rows": [
+    {
+      "name": "blank_display_text",
+      "value": "Click here to answer",
+      "exclude_from_translation": true,
+      "comments": "text shown inside box before clicking on it"
+    },
+    {
+      "type": "set_default",
+      "name": "_value",
+      "value": "@local.default_value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "text_box",
+      "exclude_from_translation": true,
+      "parameter_list": "blank_display_text:@local.blank_display_text;help: some help text;\nplaceholder: example placeholder;"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_1",
+      "value": "Answer 1",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\ntext_align: right;\nplaceholder: Add your answer;"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_2",
+      "value": "Answer 2",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\ntext_align: left;\nplaceholder: Add your answer 2 ;"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_3",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: center;\nplaceholder: Add your answer 3 ;"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_3",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: center;\nplaceholder: Add your answer 3; number_input: true;"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

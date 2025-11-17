@@ -1,0 +1,116 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_pop_ups",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "This is the main template demonstrating three types of pop-ups.",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Button 1 is a simple text pop-up:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_1",
+      "value": "Button 1",
+      "action_list": "click | pop_up:example_text",
+      "exclude_from_translation": true,
+      "comments": "This launches a simple pop-up (without buttons)"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Button 2 (example_go_to_2) dismisses on all:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_2",
+      "value": "Button 2",
+      "action_list": "click | pop_up:example_go_to_2; ",
+      "exclude_from_translation": true,
+      "comments": "This launches a popup with navigation. Return actions will be ignored (no complete/uncomplete handling), and popup will close on return"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Button 3 simple pop-up containing long, scrollable content:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_3",
+      "value": "Button 3",
+      "action_list": "click | pop_up:example_text_long",
+      "exclude_from_translation": true,
+      "comments": "This launches a simple pop-up (without buttons)"
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Button 4 (example_go_to_3) dismisses on completed:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_4",
+      "value": "Button 4",
+      "action_list": "click | pop_up:example_go_to_3; \ncompleted | emit: completed",
+      "exclude_from_translation": true,
+      "comments": "This launches a popup with navigation. As there is a completed listener it will stay open until that is received"
+    },
+    {
+      "type": "title",
+      "name": "full_screen",
+      "value": "Full Screen Popups",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "Button 5 pops up the simple text pop-up in fullscreen",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_5",
+      "value": "Button 5",
+      "action_list": "click | pop_up: example_text_long | fullscreen:true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "Button 6 pops up the simple text pop-up in fullscreen without a close button (closes on emit)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_6",
+      "value": "Button 6",
+      "action_list": "click | pop_up:example_emit | fullscreen:true, showCloseButton:false;",
+      "exclude_from_translation": true,
+      "comments": "The parameters used for fullscreen popups come from the main codebase so for now don't match the standard authoring case format (e.g. show_close_button)"
+    },
+    {
+      "type": "title",
+      "value": "Completion Modal"
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_7",
+      "value": "Complete",
+      "action_list": "click | pop_up: example_completion | variant:plh_completion;"
+    },
+    {
+      "action_list": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg;"
+    }
+  ]
+}

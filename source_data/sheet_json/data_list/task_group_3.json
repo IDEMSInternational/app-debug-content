@@ -1,0 +1,15 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "task_group_3",
+  "status": "released",
+  "rows": [
+    {
+      "id": "task_1",
+      "completed": false
+    },
+    {
+      "id": "task_2",
+      "completed": false
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_native_functionality",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Upgrading Checklist"
+    },
+    {
+      "type": "text",
+      "value": "0. Consider delaying a little bit following latest Capacitor version launch (e.g. v7.1, 8.1 etc.). It is likely that 3rd party plugins will take time to align with latest capacitor version\n\n1. Follow the Upgrade Guides in [Capacitor Docs](https://capacitorjs.com/docs/) to peform initial upgrade\n\n2. Check for any variables that will not have automatically been upgraded by capacitor because they sit in `.template` files, e.g. `ios/App/App.xcodeproj/project.template.pbxproj` and `android/app/build.template.gradle`\n\n3. Ensure IOS pods correct\n```sh\nyarn workflow ios configure # This is to generate a valid App.xcodeproj/project.pbxproj file, which is required for `pod install`\ncd ios/App\nrm podfile.lock\npod install --repo-update\n```\n\n4. Review any breaking plugin changes mentioned in capacitor docs\n\n5. Check for updates to any community or 3rd party capacitor plugins, using repo docs to identify breaking changes\n\n6. Use examples in this sheet to test native functionality on web, ios and native. Ensure this sheet is updated to include any recent additions\n\n---"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-community/file-opener",
+      "comments": "feature_save_open_file"
+    },
+    {
+      "type": "text",
+      "value": "Device can save files to device"
+    },
+    {
+      "name": "image_path",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "button",
+      "value": "Save Image",
+      "action_list": "click | save_to_device: @local.image_path"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/crashlytics"
+    },
+    {
+      "type": "text",
+      "value": "Not available for testing in templates\nDev must manually trigger crahslytics service log"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/firestore"
+    },
+    {
+      "type": "button",
+      "value": "Go to shared data debug page",
+      "action_list": "click | go_to : /shared-data"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/authentication"
+    },
+    {
+      "type": "button",
+      "value": "Go to example_auth",
+      "action_list": "click | go_to :  example_auth"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/performance"
+    },
+    {
+      "type": "text",
+      "value": "Not actively in use",
+      "comments": "Some example code in PerformanceMonitorService"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/clipboard"
+    },
+    {
+      "type": "text_box",
+      "name": "copy_text_box",
+      "value": "text to copy"
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Copy text to clipboard",
+      "action_list": "click | copy | text:@local.copy_text_box, message: Copied to clipboard\n\n"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/core"
+    },
+    {
+      "type": "text",
+      "value": "Platform: @fields._platform",
+      "comments": "Core used to display platform\n(if not working entire app would fail)"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/device"
+    },
+    {
+      "type": "text",
+      "value": "Not available for testing in templates"
+    },
+    {
+      "type": "text",
+      "value": "Dev can manually call Device.getInfo()"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/filesystem"
+    },
+    {
+      "type": "button",
+      "value": "Open Image (External)",
+      "action_list": "click | open_external: @local.image_path"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/local-notifications"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "input_datetime"
+    },
+    {
+      "type": "button",
+      "value": "Schedule notification at @local.input_datetime",
+      "action_list": "click | notification: create |\nid: debug_notification,\ntitle: Debug Notification,\ntext: Here is the notification text,\nschedule_at: @local.input_datetime\"",
+      "parameter_list": "disabled: !@local.input_datetime"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/push-notifications"
+    },
+    {
+      "type": "text",
+      "value": "Not actively in use",
+      "comments": "Some example code in PushNotificationsService"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/screen-orientation"
+    },
+    {
+      "type": "button",
+      "value": "Set Landscape",
+      "action_list": "click | screen_orientation : landscape"
+    },
+    {
+      "type": "button",
+      "value": "Unlock Orientation",
+      "action_list": "click | screen_orientation : unlock"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/share"
+    },
+    {
+      "type": "button",
+      "value": "Share Image",
+      "action_list": "click | share : file: @local.image_path"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/splash-screen"
+    },
+    {
+      "type": "text",
+      "value": "Test on app startup"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor/toast"
+    },
+    {
+      "type": "text",
+      "value": "Included in share (clipboard copy message)"
+    },
+    {
+      "type": "title",
+      "value": "@capawesome/capacitor-app-update"
+    },
+    {
+      "type": "text",
+      "value": "Can only be tested following play store update"
+    },
+    {
+      "type": "title",
+      "value": "capacitor-blob-writer"
+    },
+    {
+      "type": "text",
+      "value": "Tested as part of share action (local asset copy made for sharing)"
+    },
+    {
+      "type": "title",
+      "value": "Upgrading Checklist"
+    }
+  ]
+}

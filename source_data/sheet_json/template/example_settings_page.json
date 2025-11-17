@@ -1,0 +1,78 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_settings_page",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "24px 0"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "name": "settings",
+      "value": "Settings",
+      "parameter_list": "variant: page_banner",
+      "style_list": "padding-inline: 24px;"
+    },
+    {
+      "type": "title",
+      "name": "account",
+      "value": "Account",
+      "parameter_list": "variant: section_banner"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_account",
+      "parameter_list": "variant: inline_padding; style: column"
+    },
+    {
+      "type": "button",
+      "value": "Button 1",
+      "parameter_list": "variant: card;\nicon: images/icons/globe_blue.svg;\nicon_secondary_asset: chevron-forward;\nstyle: no-background;\ntext_align: left;"
+    },
+    {
+      "type": "button",
+      "value": "Button 2",
+      "parameter_list": "variant: card;\nicon: images/icons/globe_blue.svg;\nicon_secondary_asset: chevron-forward;\nstyle: no-background;\ntext_align: left;"
+    },
+    {
+      "type": "button",
+      "value": "Button 3",
+      "parameter_list": "variant: card;\nicon: images/icons/globe_blue.svg;\nicon_secondary_asset: chevron-forward;\nstyle: no-background;\ntext_align: left;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "general",
+      "value": "General",
+      "parameter_list": "variant: section_banner"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_general",
+      "value": "Button 1",
+      "parameter_list": "variant: inline_padding; style: column"
+    },
+    {
+      "type": "button",
+      "name": "button_about",
+      "value": "Button 2",
+      "parameter_list": "variant: card;\nicon: images/icons/globe_blue.svg;\nicon_secondary_asset: chevron-forward;\nstyle: no-background;\ntext_align: left;"
+    },
+    {
+      "type": "button",
+      "name": "button_terms",
+      "value": "Button 3",
+      "parameter_list": "variant: card;\nicon: images/icons/globe_blue.svg;\nicon_secondary_asset: chevron-forward;\nstyle: no-background;\ntext_align: left;"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

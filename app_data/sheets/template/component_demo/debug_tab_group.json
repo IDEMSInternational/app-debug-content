@@ -1,0 +1,291 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_tab_group",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "active_1",
+      "value": true,
+      "type": "set_variable",
+      "_nested_name": "active_1"
+    },
+    {
+      "name": "active_2",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "active_2"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "name": "tab_button_1",
+          "value": "Actions",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_1",
+                true
+              ],
+              "_raw": "click | set_local: active_1: true"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_2",
+                false
+              ],
+              "_raw": "click | set_local: active_2: false"
+            }
+          ],
+          "parameter_list": {
+            "variant": "tab",
+            "active": "@local.active_1"
+          },
+          "_nested_name": "display_group_4.tab_button_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "active": [
+                {
+                  "fullExpression": "@local.active_1",
+                  "matchedExpression": "@local.active_1",
+                  "type": "local",
+                  "fieldName": "active_1"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.active_1": [
+              "parameter_list.active"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "tab_button_2",
+          "value": "Parents",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_1",
+                false
+              ],
+              "_raw": "click | set_local: active_1: false"
+            },
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_2",
+                true
+              ],
+              "_raw": "click | set_local: active_2: true"
+            }
+          ],
+          "parameter_list": {
+            "variant": "tab",
+            "active": "@local.active_2"
+          },
+          "_nested_name": "display_group_4.tab_button_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "active": [
+                {
+                  "fullExpression": "@local.active_2",
+                  "matchedExpression": "@local.active_2",
+                  "type": "local",
+                  "fieldName": "active_2"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.active_2": [
+              "parameter_list.active"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    },
+    {
+      "name": "active_tab",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "active_tab"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "name": "tab_button_1",
+          "value": "Actions",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_tab",
+                "1"
+              ],
+              "_raw": "click | set_local: active_tab: 1"
+            }
+          ],
+          "parameter_list": {
+            "variant": "tab",
+            "active": "@local.active_tab == 1"
+          },
+          "_nested_name": "display_group_8.tab_button_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "active": [
+                {
+                  "fullExpression": "@local.active_tab == 1",
+                  "matchedExpression": "@local.active_tab",
+                  "type": "local",
+                  "fieldName": "active_tab"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.active_tab": [
+              "parameter_list.active"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "tab_button_2",
+          "value": "Parents",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_tab",
+                "2"
+              ],
+              "_raw": "click | set_local: active_tab: 2"
+            }
+          ],
+          "parameter_list": {
+            "variant": "tab",
+            "active": "@local.active_tab == 2"
+          },
+          "_nested_name": "display_group_8.tab_button_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "active": [
+                {
+                  "fullExpression": "@local.active_tab == 2",
+                  "matchedExpression": "@local.active_tab",
+                  "type": "local",
+                  "fieldName": "active_tab"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.active_tab": [
+              "parameter_list.active"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_8",
+      "_nested_name": "display_group_8"
+    },
+    {
+      "type": "display_group",
+      "name": "tab_content_1",
+      "condition": "@local.active_tab == 1",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Content 1",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "tab_content_1.text_1"
+        }
+      ],
+      "_nested_name": "tab_content_1",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.active_tab == 1",
+            "matchedExpression": "@local.active_tab",
+            "type": "local",
+            "fieldName": "active_tab"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.active_tab": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "name": "tab_content_2",
+      "condition": "@local.active_tab == 2",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Content 2",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "tab_content_2.text_1"
+        }
+      ],
+      "_nested_name": "tab_content_2",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.active_tab == 2",
+            "matchedExpression": "@local.active_tab",
+            "type": "local",
+            "fieldName": "active_tab"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.active_tab": [
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/debug_tab_group.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1HTqpAEkwxFJPwh1ulKmAEuH1jcMiBZQU3rfSVTlVT5Y"
+  }
+}

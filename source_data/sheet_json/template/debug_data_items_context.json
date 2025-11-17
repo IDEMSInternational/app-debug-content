@@ -1,0 +1,88 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_context",
+  "status": "released",
+  "rows": [
+    {
+      "name": "external_string",
+      "value": "External 1"
+    },
+    {
+      "name": "external_num",
+      "value": 2
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.debug_data_items_ctxt_data"
+    },
+    {
+      "name": "internal_string",
+      "value": "Internal 1"
+    },
+    {
+      "name": "internal_num",
+      "value": 3
+    },
+    {
+      "name": "internal_list",
+      "value": "External 1; Internal 1"
+    },
+    {
+      "type": "title",
+      "value": "Local vars defined outside of data-items, read inside"
+    },
+    {
+      "type": "text",
+      "value": "external_string: @local.external_string"
+    },
+    {
+      "type": "text",
+      "value": "external_num: @local.external_num"
+    },
+    {
+      "type": "title",
+      "value": "Local vars defined inside of data-items, read inside"
+    },
+    {
+      "type": "text",
+      "value": "internal_string: @local.internal_string"
+    },
+    {
+      "type": "text",
+      "value": "internal_num: @local.internal_num"
+    },
+    {
+      "type": "text",
+      "value": "internal_list: @local.internal_list"
+    },
+    {
+      "type": "title",
+      "value": "Use case: expression involving external and internal local vars"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "name": "combination_calc_1",
+      "value": "@calc(@local.internal_list.includes(@local.external_string))"
+    },
+    {
+      "type": "text",
+      "value": "combination_calc_1: @local.combination_calc_1"
+    },
+    {
+      "name": "combination_exp_1",
+      "value": "@local.internal_list.includes(@local.external_string)"
+    },
+    {
+      "type": "text",
+      "value": "combination_exp_1: @local.combination_exp_1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

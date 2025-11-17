@@ -1,0 +1,36 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_field_triggered",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text_box",
+      "name": "@row.type",
+      "value": "@fields.debug_tracker_@row.type",
+      "action_list": "changed | set_field:debug_tracker_@row.type:@local.@row.name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "text_box\n---------------------------------------------------\nlocal: @local.text_box   \nfield: @fields.debug_tracker_text_box    \ntriggered: @fields.debug_triggered_text_box",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "nav_buttons",
+      "value": "nav_buttons",
+      "action_list": "completed | set_field:debug_triggered_text_box:@local.text_box;\ncompleted | emit:completed;\nuncompleted | emit:uncompleted;",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "use_completed_chevron",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "named_data_queries",
+  "status": "released",
+  "rows": [
+    {
+      "id": "next_module",
+      "value": "completed === false;",
+      "parameter_list": "list_id: data_query_items;",
+      "comments": "Queries listed here can be provided by the data_query\n`ref` parameter"
+    }
+  ]
+}

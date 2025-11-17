@@ -1,0 +1,56 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_table",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Basic Table"
+    },
+    {
+      "type": "text",
+      "value": "Default table shows all data with sortable columns"
+    },
+    {
+      "type": "table",
+      "value": "comp_table_data"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Table"
+    },
+    {
+      "type": "text",
+      "value": "Authoring options can be used to specify which columns to show, include a search box, and set default sort column.\nStyling can be used to fix the scrollable size of the table"
+    },
+    {
+      "type": "table",
+      "value": "comp_table_data",
+      "parameter_list": "display_columns: ward, county;\nshow_search;\nsort_default: ward desc;",
+      "comments": "display_columns - comma-separated list of columns to display (order preserved)\n\nshow_search - include a box to search and filter data\n\nsort_default - initial sort column. Default sort 'asc' order, unless 'desc' specified\n\nmax-height style can force the table to scroll within a fixed space",
+      "style_list": "max-height: 33vh;"
+    },
+    {
+      "type": "title",
+      "value": "Table with large data source",
+      "style_list": "margin-top: 2rem;"
+    },
+    {
+      "name": "show_extended",
+      "value": false
+    },
+    {
+      "type": "button",
+      "value": "Show table",
+      "action_list": "click | set_local : show_extended : true",
+      "comments": "Rendering the full data set can be a little resource intensive, so only do so when required"
+    },
+    {
+      "type": "table",
+      "value": "comp_table_data_extended",
+      "condition": "@local.show_extended",
+      "comments": "Recommended to restrict the max-height displayed for more performant scrolling"
+    }
+  ]
+}

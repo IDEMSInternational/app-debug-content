@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "id",
+      "value": "@fields.debug_nav_field"
+    },
+    {
+      "name": "text",
+      "value": ".text"
+    },
+    {
+      "name": "data_text",
+      "value": "debug_nav_list.@local.id@local.text"
+    },
+    {
+      "type": "title",
+      "value": "Example Page"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@data.debug_nav_list.1.text"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "@data.@local.data_text"
+    },
+    {
+      "type": "button",
+      "value": "Go to another page",
+      "action_list": "click | set_field: debug_nav_field_2: 1;\nclick | go_to: debug_nav_2"
+    },
+    {
+      "type": "button",
+      "value": "Set field",
+      "action_list": "click | set_field: debug_nav_field: 2;"
+    }
+  ]
+}

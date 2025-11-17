@@ -1,0 +1,29 @@
+{
+  "flow_type": "data_pipe",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_sort",
+  "status": "released",
+  "rows": [
+    {
+      "operation": "sort",
+      "args_list": "sort_order",
+      "input_source": "example_data_pipe_list",
+      "output_target": "example_pipe_sort_order",
+      "comments": "First argument is field to sort by. If sorting by multiple columns should use multiple operations"
+    },
+    {
+      "operation": "sort",
+      "args_list": "sort_order; desc",
+      "input_source": "example_data_pipe_list",
+      "output_target": "example_pipe_sort_desc",
+      "comments": "Second argument is (optional) direction. Only valid direction is 'desc' as default is 'asc'"
+    },
+    {
+      "operation": "sort",
+      "args_list": "sort_alpha",
+      "input_source": "example_data_pipe_list",
+      "output_target": "example_pipe_sort_alpha",
+      "comments": "Can sort numbers or words (alphabetically)"
+    }
+  ]
+}

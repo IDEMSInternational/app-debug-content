@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_go_to_nest_top",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This text is followed by the template debug_go_to_nest_bottom",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "name_debug_go_to_nest_bottom",
+      "value": "debug_go_to_nest_bottom",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_newline",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "\n\n"
+    },
+    {
+      "type": "text",
+      "value": " value with spaces "
+    },
+    {
+      "type": "text",
+      "value": "\n\nvalue with line breaks\n\n"
+    },
+    {
+      "type": "text",
+      "value": "\n\n"
+    },
+    {
+      "type": "text",
+      "value": "\n\n"
+    },
+    {
+      "type": "text",
+      "value": "\n"
+    },
+    {
+      "type": "text",
+      "value": "\n"
+    },
+    {
+      "type": "text",
+      "value": "\n\nvalue with carriage returns"
+    }
+  ]
+}

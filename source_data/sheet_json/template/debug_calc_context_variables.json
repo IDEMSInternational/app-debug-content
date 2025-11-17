@@ -1,0 +1,25 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_calc_context_variables",
+  "status": "released",
+  "rows": [
+    {
+      "name": "user_id_from_calc",
+      "value": "@calc(this.app_user_id)",
+      "__EMPTY": true
+    },
+    {
+      "name": "user_id_from_field",
+      "value": "@fields._app_user_id",
+      "__EMPTY": true
+    },
+    {
+      "type": "text",
+      "value": "User ID from calc context: @local.user_id_from_calc"
+    },
+    {
+      "type": "text",
+      "value": "User ID from field: @local.user_id_from_field"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_calc_date",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Today"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Today is @fields.current_date"
+    },
+    {
+      "type": "set_variable",
+      "name": "date",
+      "value": "@calc(Date())"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Today is @local.date"
+    },
+    {
+      "type": "set_variable",
+      "name": "day",
+      "value": "@calc((new Date()).getDay())"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Today is @local.day"
+    },
+    {
+      "type": "set_variable",
+      "name": "christmas",
+      "value": "@calc(new Date(2021,12, 25))"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Christmas is @local.christmas"
+    },
+    {
+      "type": "set_variable",
+      "name": "christmas_time",
+      "value": "@calc((new Date(2021,12, 25)).getTime())"
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Christmas time is @local.christmas_time"
+    },
+    {
+      "type": "set_variable",
+      "name": "days_to_christmas",
+      "value": "@calc( (@local.christmas_time - (new Date()).getTime())  / (1000 * 3600 * 24) )"
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "Christmas is in @local.days_to_christmas days"
+    },
+    {
+      "type": "set_variable",
+      "name": "midnight",
+      "value": "@calc((new Date()).setHours(0,0,0,0))"
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "Midnight was at @local.midnight"
+    },
+    {
+      "type": "set_variable",
+      "name": "midnight_time",
+      "value": "@calc(((new Date()).setHours(0,0,0,0)))"
+    },
+    {
+      "type": "text",
+      "name": "text_8",
+      "value": "Midnight time was @local.midnight_time"
+    }
+  ]
+}

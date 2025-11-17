@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_header_compact",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "variant": "compact"
+      },
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": false
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Template-level app config layout overrides"
+    },
+    {
+      "type": "title",
+      "value": "header variant: compact,\nfooter disabled"
+    },
+    {
+      "type": "begin_template",
+      "name": "feat_app_layout_menu",
+      "value": "feat_app_layout_menu"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

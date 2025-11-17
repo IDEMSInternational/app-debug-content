@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_data_from_id",
+  "status": "released",
+  "rows": [
+    {
+      "name": "data_item_id",
+      "value": "@data.example.example1.id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "example",
+      "value": "example.@local.data_item_id",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "data_item",
+      "value": "@data.@local.example",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "id: @local.data_item_id\nwhich is the same as\nid: @local.data_item.id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "value: @local.data_item.value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "text: @local.data_item.text",
+      "exclude_from_translation": true
+    }
+  ]
+}

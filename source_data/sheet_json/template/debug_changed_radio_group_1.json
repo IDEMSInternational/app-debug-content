@@ -1,0 +1,45 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_changed_radio_group_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "demo_changed_field_1",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "demo_changed_local",
+      "value": "demo_changed_field_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name:name_var_1 | text:First; \nname:name_var_2 | text:Second",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group",
+      "action_list": "changed | set_field: @local.demo_changed_local: @local.radio_group",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list_2;"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@field.demo_changed_field_1 || @field.demo_changed_field_2==\"name_var_1\"",
+      "hidden": "@field.demo_changed_field_1 || @field.demo_changed_field_2==\"name_var_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "@field.demo_changed_field_1 || @field.demo_changed_field_2==\"name_var_2\"",
+      "hidden": "@field.demo_changed_field_1 || @field.demo_changed_field_2==\"name_var_2\"",
+      "exclude_from_translation": true
+    }
+  ]
+}

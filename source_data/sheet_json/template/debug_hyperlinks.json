@@ -1,0 +1,57 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_hyperlinks",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_same",
+      "value": "Open link in the same tab"
+    },
+    {
+      "type": "text",
+      "name": "text_direct",
+      "value": "Direct link https://www.freecodecamp.org/."
+    },
+    {
+      "type": "text",
+      "name": "text_html",
+      "value": "HTML link <a href=\"https://www.freecodecamp.org/\">freeCodeCamp</a>."
+    },
+    {
+      "type": "title",
+      "name": "title_new",
+      "value": "Open link in new tab"
+    },
+    {
+      "type": "text",
+      "name": "text_markdown",
+      "value": "Markdown link [freeCodeCamp](https://www.freecodecamp.org/)."
+    },
+    {
+      "type": "html",
+      "name": "html_text_1",
+      "value": "<p>Check out <a href=\"https://www.freecodecamp.org/\" target=\"_blank\" rel=\"noopener noreferrer\">freeCodeCamp</a>.</p>"
+    },
+    {
+      "type": "html",
+      "name": "html_text_2",
+      "value": "Check out <a href=\"https://www.freecodecamp.org/\" target=\"_blank\" rel=\"noopener noreferrer\">freeCodeCamp</a>."
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "<p>Check out <a href=\"https://www.freecodecamp.org/\" target=\"_blank\" rel=\"noopener noreferrer\">freeCodeCamp</a>.</p>"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Check out <a href=\"https://www.freecodecamp.org/\" target=\"_blank\" rel=\"noopener noreferrer\">freeCodeCamp</a>."
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/14Fub-lf6xLc6nG3_Mnab1qAcfLK88yfYJzlJQGXi-2M"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_pg_completion_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id_1"
+    },
+    {
+      "id": "id_2"
+    },
+    {
+      "id": "id_3"
+    }
+  ]
+}

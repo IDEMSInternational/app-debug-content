@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_middle",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_data_bottom",
+      "value": "debug_data_bottom",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_1",
+      "value": "@data.debug.item_2.text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_2",
+      "value": "@data.debug.item_2.text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_3",
+      "value": "This text is overridden directly in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

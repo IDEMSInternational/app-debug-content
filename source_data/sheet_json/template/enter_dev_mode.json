@@ -1,0 +1,73 @@
+{
+  "flow_type": "template",
+  "flow_name": "enter_dev_mode",
+  "status": "released",
+  "rows": [
+    {
+      "name": "submit",
+      "value": "Submit"
+    },
+    {
+      "name": "text_box_placeholder",
+      "value": "Tap and type",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "reply_entered",
+      "value": false
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Enter developer mode"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "To launch the app in developer mode, enter your developer code in the box below and press @local.submit."
+    },
+    {
+      "type": "text_box",
+      "name": "text_box",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder:@local.text_box_placeholder"
+    },
+    {
+      "type": "button",
+      "name": "button_incorrect_code",
+      "value": "@local.submit",
+      "action_list": "click | set_local:reply_entered:true",
+      "hidden": "@local.text_box == @global.dev_mode_code || @local.text_box == @global.test_mode_code",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_correct_code",
+      "value": "@local.submit",
+      "action_list": "click | set_local:reply_entered:true;\nclick | set_field:user_mode:false;\nclick | emit:force_restart;",
+      "hidden": "!(@local.text_box == @global.dev_mode_code || @local.text_box == @global.test_mode_code)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "enter_replies",
+      "hidden": "!@local.reply_entered",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "You have successfully entered developer mode.",
+      "hidden": "@fields.user_mode"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "You have entered an incorrect code.",
+      "hidden": "!@fields.user_mode"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

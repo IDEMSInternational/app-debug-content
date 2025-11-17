@@ -1,0 +1,78 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_overriding_value",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Nested template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Hiding and conditions work correctly",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_radio_group_replies_1",
+      "value": "debug_radio_group_replies"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Nested template with overridden text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Hiding no longer works when specified on the same row as the text. When specified on the display group, hiding does work. Condition works fine.",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_radio_group_replies_2",
+      "value": "debug_radio_group_replies"
+    },
+    {
+      "name": "text_1_hidden",
+      "value": "New text first - hidden",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_1_condition",
+      "value": "New text first - condition",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_1_display_group",
+      "value": "New text first - hidden on display group",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_2_hidden",
+      "value": "New text second - hidden",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_2_condition",
+      "value": "New text second - condition",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_2_display_group",
+      "value": "New text second - hidden on display group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

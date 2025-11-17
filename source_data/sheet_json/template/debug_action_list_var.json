@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_action_list_var",
+  "status": "released",
+  "rows": [
+    {
+      "name": "text_1",
+      "value": "default"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_1",
+      "value": true
+    },
+    {
+      "name": "my_action_list",
+      "value": "click | set_local: text_1: The toggle is on;",
+      "condition": "@local.toggle_bar_1"
+    },
+    {
+      "name": "my_action_list",
+      "value": "undefined",
+      "condition": "!@local.toggle_bar_1"
+    },
+    {
+      "type": "button",
+      "value": "Click here",
+      "action_list": "@local.my_action_list"
+    },
+    {
+      "type": "text",
+      "value": "@local.text_1"
+    }
+  ]
+}

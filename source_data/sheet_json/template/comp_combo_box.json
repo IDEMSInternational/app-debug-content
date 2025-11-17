@@ -1,0 +1,333 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_combo_box",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "answer_list_1",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3;"
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3;\nname: name_4 | text: This is text 4;  \nname: name_5 | text: This is text 5;  \nname: name_6 | text: This is text 6;\nname: name_7 | text: This is text 7;  \nname: name_8 | text: This is text 8;  \nname: name_9 | text: This is text 9;\nname: name_10 | text: This is text 10;  \nname: name_11 | text: This is text 11;  \nname: name_12 | text: This is text 12;\nname: name_13 | text: This is text 13;\nname: name_14 | text: This is text 14;\nname: name_15 | text: This is text 15;"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Default"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_default_1",
+      "action_list": "changed | set_local: var_1: this.value;",
+      "parameter_list": "answer_list: @local.answer_list_1;\n"
+    },
+    {
+      "type": "text",
+      "value": "Combo box value: @local.combo_box_default_1"
+    },
+    {
+      "type": "text",
+      "value": "var_1 value: @local.var_1"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_default_2",
+      "parameter_list": "answer_list: @local.answer_list_1;\ndisabled: true;"
+    },
+    {
+      "type": "title",
+      "value": "Dropdown variant"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown_1",
+      "action_list": "changed | set_local: var_1: @local.combo_box_dropdown_1",
+      "parameter_list": "variant: dropdown;\nanswer_list: @local.answer_list_1;\nplaceholder: Select from dropdown;"
+    },
+    {
+      "type": "text",
+      "value": "Dropdown value: @local.combo_box_dropdown_1"
+    },
+    {
+      "type": "text",
+      "value": "var_1 value: @local.var_1"
+    },
+    {
+      "type": "text",
+      "value": "Disabled (no answer_list):"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown_2",
+      "parameter_list": "variant: dropdown;\ndisabled_text: This is disabled;"
+    },
+    {
+      "type": "title",
+      "name": "title_8",
+      "value": "Dropdown variant with search filter"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_search_1",
+      "action_list": "changed | set_local: var_1: this.value;",
+      "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\n"
+    },
+    {
+      "type": "text",
+      "value": "Combo box value: @local.combo_box_search_1"
+    },
+    {
+      "type": "text",
+      "value": "var_1 value: @local.var_1"
+    },
+    {
+      "type": "text",
+      "value": "With placeholder"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_search_2",
+      "action_list": "changed | set_local: var_1: this.value;",
+      "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\nplaceholder: Select an answer...;"
+    },
+    {
+      "type": "text",
+      "value": "Combo box value: @local.combo_box_search_2"
+    },
+    {
+      "type": "text",
+      "value": "var_1 value: @local.var_1"
+    },
+    {
+      "type": "text",
+      "value": "Disabled"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_search_3",
+      "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\ndisabled_text: This is disabled;\ndisabled: true"
+    },
+    {
+      "type": "text",
+      "value": "Dynamic disabled:"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_enabled_1",
+      "value": true,
+      "parameter_list": "false_text: Combo box is disabled;\ntrue_text: Combo box is enabled;"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown_4",
+      "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\ndisabled: !@local.toggle_enabled_1;                                                                                                                                                                        "
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown_5",
+      "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\ndisabled_text: Custom disabled text;\ndisabled: !@local.toggle_enabled_1;"
+    },
+    {
+      "type": "text",
+      "value": "With title"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_search_6",
+      "action_list": "changed | set_local: var_1: this.value;",
+      "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\nplaceholder: Has a title;\ntext: The Title;"
+    },
+    {
+      "type": "title",
+      "value": "Disabled"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_disabled_1",
+      "parameter_list": "answer_list: ;\ndisabled_text: No/empty answer list"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_disabled_2",
+      "parameter_list": "answer_list: @local.answer_list_1;\ndisabled_text: Manually disabled;\ndisabled: true"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Input allowed"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_2_1",
+      "parameter_list": "input_allowed: true; answer_list: @local.answer_list_1",
+      "comments": "User can set a custom response"
+    },
+    {
+      "type": "title ",
+      "name": "title_3",
+      "value": "Input position"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_3_1",
+      "parameter_list": "input_allowed: true;input_position: top; answer_list: @local.answer_list_1",
+      "comments": "The iput box appears at the top of the drop-down list"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_3_2",
+      "parameter_list": "input_allowed: true; input_position: bottom; answer_list: @local.answer_list_1",
+      "comments": "The iput box appears at the bottom of the drop-down list"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Answer placeholder"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_4_1",
+      "parameter_list": "answer_placeholder: type your own; answer_list: @local.answer_list_1;input_allowed: true",
+      "comments": "A placeholder to be used until custom input is typed"
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "Placeholder"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_5_1",
+      "parameter_list": "placeholder: click here to answer; answer_list: @local.answer_list_1",
+      "comments": "Placeholder to be used until selection is made."
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "Text "
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_6_1",
+      "parameter_list": "text: text to appear on top; answer_list: @local.answer_list_1",
+      "comments": "Text to appear on top in the pop-up window"
+    },
+    {
+      "type": "title",
+      "name": "title_7",
+      "value": "Changed action"
+    },
+    {
+      "name": "var_1",
+      "value": "Nothing_selected"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_par_7_1",
+      "action_list": "changed | set_local : var_1: @local.combo_box_par_7_1",
+      "parameter_list": "answer_list: @local.answer_list_1;\n",
+      "comments": "List of the answers to be displayed"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Value of var_1: @local.var_1"
+    },
+    {
+      "type": "title",
+      "value": "Data_list options"
+    },
+    {
+      "type": "begin_combo_box",
+      "parameter_list": "placeholder: Select from data_list"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_combo_box_items",
+      "comments": "Data list should include columns for name and text"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_combo_box"
+    },
+    {
+      "type": "button",
+      "name": "button_add",
+      "value": "Add data",
+      "action_list": "click | add_data | \n\n_list_id: comp_combo_box_items,\nname: added_data_name,\ntext: Added data"
+    },
+    {
+      "type": "begin_combo_box",
+      "parameter_list": "placeholder: Select from data_list;\nvariant: dropdown;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_combo_box_items"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_combo_box"
+    },
+    {
+      "type": "begin_combo_box",
+      "parameter_list": "placeholder: Select from data_list;\nvariant: dropdown;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_combo_box_items",
+      "parameter_list": "filter: @item.id !== \"id_1\""
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_combo_box"
+    },
+    {
+      "type": "title",
+      "value": "Custom key/value names"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_default_key_value",
+      "parameter_list": "placeholder: Default key/value names;\nanswer_list: @data.comp_combo_box_items;"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.combo_box_default_key_value"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_overridden_key_value",
+      "parameter_list": "placeholder: Overridden key/value names;\nanswer_list: @data.comp_combo_box_items;\noptions_key: id;\noptions_value: name;"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.combo_box_overridden_key_value"
+    },
+    {
+      "type": "title",
+      "value": "Workaround: Custom key/value names using data pipe"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_data_pipe",
+      "parameter_list": "placeholder: Overridden key/value names;\nanswer_list: @data.new_comp_combo_box_items;"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.combo_box_data_pipe"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1uIkaMlDjoDN7uTpHkSeEQ6Yp-4ehX9IrBQMrolpfjQc"
+    }
+  ]
+}

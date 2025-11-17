@@ -1,0 +1,118 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_var",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "var_1",
+      "value": "Value ",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Correctly spaced dg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_1"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_1",
+      "parameter_list": "min_value:0;\nmax_value:20;"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_2",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Correctly spaced dg with variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_2"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_3",
+      "parameter_list": "min_value:0;\nmax_value:20;"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_4",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "name": "var_2",
+      "value": "Value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Awkwardly spaced dg with nested variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_3"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_5",
+      "parameter_list": "min_value:0;\nmax_value:20;"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_6",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "name": "var_3",
+      "value": "@local.var_1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Correctly spaced dg with nested variable (this flex should be the default)"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_4"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_7",
+      "parameter_list": "min_value:0;\nmax_value:20;"
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_8",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "name": "var_4",
+      "value": "@local.var_1",
+      "style_list": "flex: 0"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

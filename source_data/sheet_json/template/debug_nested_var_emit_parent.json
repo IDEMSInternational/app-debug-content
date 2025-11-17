@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_var_emit_parent",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "parent_var_1",
+      "value": "var1 initial"
+    },
+    {
+      "type": "title",
+      "name": "parent_title",
+      "value": "Parent template"
+    },
+    {
+      "type": "begin_template",
+      "name": "template_in_parent",
+      "value": "debug_nested_var_emit_child"
+    },
+    {
+      "name": "child_var_1",
+      "value": "text @local.parent_var_1",
+      "action_list": "changed | set_local: parent_var_1"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "name": "parent_text1",
+      "value": "var1_value: @local.parent_var_1"
+    }
+  ]
+}

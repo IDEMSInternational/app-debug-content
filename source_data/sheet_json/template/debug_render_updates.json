@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_render_updates",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Parent",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Changing either child input should update the other sibling",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Value of debug_render_updates_field: \nfield: @fields.debug_render_updates_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_updates_child_1",
+      "value": "debug_render_updates_child_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_updates_child_2",
+      "value": "debug_render_updates_child_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

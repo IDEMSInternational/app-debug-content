@@ -1,0 +1,252 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_task_card",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "task_group_data",
+      "value": "comp_task_card_data"
+    },
+    {
+      "name": "task_group_id",
+      "value": "id_of_task_group_within_highlightable_tasks"
+    },
+    {
+      "name": "task_id",
+      "value": "id_of_an_individual_task"
+    },
+    {
+      "name": "card_title",
+      "value": "Card Title"
+    },
+    {
+      "name": "card_subtitle",
+      "value": "Longer text or description goes here. Multiple lines of conent display as a paragraph."
+    },
+    {
+      "name": "card_image",
+      "value": "images/test_image.png"
+    },
+    {
+      "name": "task_title",
+      "value": "Individual Task"
+    },
+    {
+      "name": "task_group_completed_field",
+      "value": "task_group_id_completed",
+      "comments": "Legacy – for use with legacy field-based task system"
+    },
+    {
+      "name": "task_completed_field",
+      "value": "task_id_completed",
+      "comments": "Legacy – for use with legacy field-based task system"
+    },
+    {
+      "type": "title",
+      "value": "Card for a task group/module – variant: landscape (default)"
+    },
+    {
+      "type": "task_card",
+      "name": "card_params_2",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;\nlocked_image_asset:images/icons/locked.png;"
+    },
+    {
+      "type": "text",
+      "value": "Filter applied to subtasks"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\nfilter: @task_item.number !== 2;\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "text",
+      "value": "Filter applied to subtasks using local var"
+    },
+    {
+      "name": "filter_task_id",
+      "value": "task_1"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\nfilter: @task_item.id === \"@local.filter_task_id\";\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "text",
+      "value": "Filter applied to subtasks within data-items loop"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_task_card_data_2"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\nfilter: @task_item.id === \"@item.linked_id\";\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "Using custom completed column name for subtasks"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\ncompleted_column_name: is_done;\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "title",
+      "value": "Card for a task group/module – style: portrait"
+    },
+    {
+      "type": "task_card",
+      "name": "card_params_2_portrait",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nvariant: portrait;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "title",
+      "value": "Card for a task group/module – variant: portrait, background-secondary"
+    },
+    {
+      "type": "task_card",
+      "name": "card_params_2_portrait_secondary",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nvariant: portrait background-secondary;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;\nprogress_units_name: activities;"
+    },
+    {
+      "type": "title",
+      "value": "Card for a task group/module – variant: portrait, background-primary"
+    },
+    {
+      "type": "task_card",
+      "name": "card_params_2_portrait_primary",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntask_group_data: @local.task_group_data;\ncompleted_field: @local.task_group_completed_field;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nvariant: portrait, background-primary;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "title",
+      "value": "Card for an individual task"
+    },
+    {
+      "type": "task_card",
+      "name": "card_params_1",
+      "parameter_list": "id_of_task_group"
+    },
+    {
+      "type": "title",
+      "value": "Card for an individual task - style: button"
+    },
+    {
+      "type": "task_card",
+      "name": "card_button_1",
+      "action_list": "click | set_field: @local.task_completed_field: true;\nclick | emit: force_reload;\nclick | go_to:@local.task_group_id@local.join@local.task_id;",
+      "parameter_list": "task_id: @local.task_id;\ncompleted_field: @local.task_completed_field;\ntitle: @local.task_title;\nimage: @local.card_image;\nstyle: button;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "task_card",
+      "name": "card_button_2",
+      "action_list": "click | set_field: @local.task_completed_field: true;\nclick | emit: force_reload;\nclick | go_to:@local.task_group_id@local.join@local.task_id;",
+      "parameter_list": "task_id: @local.task_id;\ncompleted_field: @local.task_completed_field;\ntitle: @local.task_title;\nstyle: button;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "task_card",
+      "name": "card_button_3",
+      "action_list": "click | set_field: @local.task_completed_field: true;\nclick | emit: force_reload;\nclick | go_to:@local.task_group_id@local.join@local.task_id;",
+      "parameter_list": "task_id: @local.task_id;\ncompleted_field: @local.task_completed_field;\ntitle:  Example long title (wraps over multiple lines);\nstyle: button;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "begin_task_card",
+      "name": "card_button_toggle_1",
+      "action_list": "click | set_field: @local.task_completed_field: true;\nclick | emit: force_reload;\nclick | go_to:@local.task_group_id@local.join@local.task_id;",
+      "parameter_list": "task_id: @local.task_id;\ncompleted_field: @local.task_completed_field;\ntitle: @local.task_title;\nimage: @local.card_image;\nstyle: button;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_1",
+      "parameter_list": "position: right;"
+    },
+    {
+      "type": "end_task_card"
+    },
+    {
+      "type": "begin_task_card",
+      "name": "card_button_toggle_2",
+      "action_list": "click | set_field: @local.task_completed_field: true;\nclick | emit: force_reload;\nclick | go_to:@local.task_group_id@local.join@local.task_id;",
+      "parameter_list": "task_id: @local.task_id;\ncompleted_field: @local.task_completed_field;\ntitle: Example long title (two lines);\nimage: @local.card_image;\nstyle: button;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_2",
+      "parameter_list": "position: right;"
+    },
+    {
+      "type": "end_task_card"
+    },
+    {
+      "type": "title",
+      "value": "Card containing custom content (experimental)"
+    },
+    {
+      "type": "begin_task_card",
+      "name": "card_1"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "title",
+      "value": "One-on-One Time"
+    },
+    {
+      "type": "subtitle",
+      "value": "One-on-one time helps build a positive, trusting relationship"
+    },
+    {
+      "type": "progress_bar",
+      "parameter_list": "task_group: w_1on1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_task_card"
+    },
+    {
+      "type": "title",
+      "value": "Card for a block button - Facilitator Apps"
+    },
+    {
+      "type": "task_card",
+      "name": "block_button",
+      "value": "Block Button",
+      "action_list": "click | set_field: @local.task_completed_field: true;\nclick | emit: force_reload;",
+      "parameter_list": "task_id: @local.task_id;\ntask_group_data: @local.task_group_data;\ncompleted_field: FALSE;\ntitle: Pellentesque quis lectus pharetra, dictum orci ut, aliquet elit;\nstyle: button;\nvariant: block-button;\nimage: images/example/jasper_1.jpg;",
+      "comments": "To be used in PLH Facilitator homepage"
+    },
+    {
+      "type": "task_card",
+      "name": "block_button",
+      "value": "Block Button",
+      "parameter_list": "task_id: @local.task_id;\ntask_group_data: @local.task_group_data;\ncompleted_column_name: @local.task_group_data.is_done;\ncompleted_field: @local.task_completed_field;\ntitle: Pellentesque quis lectus pharetra, dictum orci ut, aliquet elit;\nstyle: button;\nvariant: block-button;\nimage: images/example/jasper_1.jpg;",
+      "comments": "To be used in PLH Facilitator homepage"
+    },
+    {
+      "name": "kw_img",
+      "value": "https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg"
+    },
+    {
+      "type": "begin_task_card",
+      "name": "card_activity_kw",
+      "action_list": "click | set_field: @local.task_completed_field: true;\nclick | emit: force_reload;\nclick | go_to:@local.task_group_id@local.join@local.task_id;",
+      "parameter_list": "title: Fun with Food;\nimage: @local.kw_img;\nvariant: portrait",
+      "comments": "To be used in PLH Kids KW activity library"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_@item.id",
+      "parameter_list": "variant: icon; \nposition: right;\nicon_true_asset: images/icons/heart_blue.svg;\nicon_false_asset: images/icons/heart_outline.svg;"
+    },
+    {
+      "type": "end_task_card"
+    }
+  ]
+}

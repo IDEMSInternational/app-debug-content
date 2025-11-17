@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_startup_trigger",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "example_1",
+      "value": "Example Startup Trigger",
+      "comments": "Trigger reprocessing of templates that were initially processed on startup\n\n(Note - can be used with any template, not just startup templates)"
+    },
+    {
+      "type": "text",
+      "name": "example_startup_text",
+      "value": "example_startup_field: @fields.example_startup_field"
+    },
+    {
+      "type": "button",
+      "name": "trigger_1",
+      "value": "Trigger example_startup_1",
+      "action_list": "click | process_template: example_startup_1;\nclick | emit: force_reprocess;",
+      "comments": "Trigger the reprocessing of template example_startup_1\n(which is also automatically processed on startup)\n\nAs we want to display the reprocessed variable in this template also call force_reprocess"
+    },
+    {
+      "type": "button",
+      "name": "trigger_2",
+      "value": "Trigger example_startup_2",
+      "action_list": "click | process_template: example_startup_2;\nclick | emit: force_reprocess;"
+    }
+  ]
+}

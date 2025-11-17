@@ -1,0 +1,40 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_calc_case",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "example_5",
+      "value": "Convert string case"
+    },
+    {
+      "name": "some_string",
+      "value": "Some string"
+    },
+    {
+      "name": "some_string_lc",
+      "value": "@calc(@local.some_string.toLowerCase())"
+    },
+    {
+      "name": "some_string_uc",
+      "value": "@calc(@local.some_string.toUpperCase())"
+    },
+    {
+      "type": "text",
+      "name": "text_5.1",
+      "value": "Original string: @local.some_string"
+    },
+    {
+      "type": "text",
+      "name": "text_5.2",
+      "value": "In upper case: @local.some_string_uc"
+    },
+    {
+      "type": "text",
+      "name": "text_5.3",
+      "value": "In lower case: @local.some_string_lc"
+    }
+  ]
+}

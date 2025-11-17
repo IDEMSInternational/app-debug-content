@@ -1,0 +1,39 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "task_cards_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "task_group_id_1",
+      "task_group_data": "task_group_1",
+      "completed_field": "task_group_1_completed",
+      "title": "Task Group 1",
+      "image": "images/square_1.svg",
+      "locked": false
+    },
+    {
+      "id": "task_group_id_2",
+      "task_group_data": "task_group_2",
+      "completed_field": "task_group_2_completed",
+      "title": "Task Group 2 (long name)",
+      "image": "images/square_2.svg",
+      "locked": false
+    },
+    {
+      "id": "task_group_id_3",
+      "task_group_data": "task_group_3",
+      "completed_field": "task_group_3_completed",
+      "title": "Task Group 3 (very long name that takes up three lines to test styling)",
+      "image": "images/square_3.svg",
+      "locked": true
+    },
+    {
+      "id": "task_group_id_4",
+      "task_group_data": "task_group_4",
+      "completed_field": "task_group_4_completed",
+      "title": "Task Group 4",
+      "image": "images/square_4.svg",
+      "locked": true
+    }
+  ]
+}

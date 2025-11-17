@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_condition",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Data-items 1"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items_2",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "(!@item.completed) && (!@item._last)"
+    },
+    {
+      "type": "text",
+      "name": "condition_text_@item.id",
+      "value": "Condition passed",
+      "condition": "(!@item.completed) && (!@item._last)"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Data-items 2"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items_1",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "Value of condition: @calc((!@item.completed) && (!@item._last))"
+    },
+    {
+      "type": "text",
+      "name": "condition_text_@item.id",
+      "value": "Condition passed",
+      "condition": "(!@item.completed) && (!@item._last)"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

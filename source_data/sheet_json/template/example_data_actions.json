@@ -1,0 +1,74 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_data_actions",
+  "status": "released",
+  "rows": [
+    {
+      "name": "current_module_id"
+    },
+    {
+      "name": "completed_count"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local : completed_count : @items.length",
+      "parameter_list": "filter: @item.completed;",
+      "comments": "Use a counter variable as a means to track the difference in case where there is no current_module_id due to all modules being completed, vs the data_loop not yet evaluated"
+    },
+    {
+      "type": "data_items",
+      "value": "@data.module_tasks",
+      "action_list": "data_changed | set_local : current_module_id : @items[0]?.id",
+      "parameter_list": "\nfilter: !@item.completed;\nlimit: 1;",
+      "comments": "Generate a list of the first non-completed items and update local variables when data changes\n\nUse ? operator to set fallback undefined if no value exists\n\nIMPORTANT - the item loop cannot have any inner child rows in order to set the item data (default sets inner row data), for convenience the `begin` and `end` statements can be dropped in favour of a single inline expression"
+    },
+    {
+      "type": "text",
+      "value": "Current Module: @local.current_module_id\nCompleted Count: @local.completed_count"
+    },
+    {
+      "type": "title",
+      "value": "Debug"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.module_tasks",
+      "condition": "@local.completed_count !== undefined"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "name": "unlocked",
+      "value": "@item.id == @local.current_module_id || @item.completed",
+      "comments": "Want a module to be unlocked if it's completed or if it's the first uncompleted"
+    },
+    {
+      "type": "toggle_bar",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "value": "🟢Unlocked",
+      "condition": "@local.unlocked"
+    },
+    {
+      "type": "text",
+      "value": "🔒Locked",
+      "condition": "!@local.unlocked"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

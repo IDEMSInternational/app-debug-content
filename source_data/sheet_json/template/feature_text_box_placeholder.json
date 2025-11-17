@@ -1,0 +1,86 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_text_box_placeholder",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "placeholder",
+      "value": "placeholder",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_field",
+      "name": "feature_default_input",
+      "value": "default input",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Text box 1: \nShows @local.placeholder before user input is given, and when user input is deleted",
+      "exclude_from_translation": true,
+      "comments": "This works correctly"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_1",
+      "action_list": "changed | set_field: feature_input_tracker_1:@local.text_box_1",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder:@local.placeholder"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Text box 2: \nShows @fields.feature_default_input  before user input is given. Is blank when user input is deleted.",
+      "exclude_from_translation": true,
+      "comments": "This works correctly"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_2",
+      "value": "@fields.feature_default_input",
+      "action_list": "changed | set_field: feature_input_tracker_2:@local.text_box_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Text boxes 3 and 4: \nShows @fields.feature_default_input before user input is given. Shows @local.placeholder when user input is deleted.",
+      "exclude_from_translation": true,
+      "comments": "These work correctly"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_3",
+      "value": "@fields.feature_default_input",
+      "action_list": "changed | set_field: feature_input_tracker_3:@local.text_box_3",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder:@local.placeholder;"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_4",
+      "value": "@fields.feature_default_input",
+      "action_list": "changed | set_field: feature_input_tracker_4:@local.text_box_4",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder:@local.placeholder;\nprioritise_placeholder:false",
+      "comments": "prioritise_placeholder is false by default"
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Text box 5: \nShows @local.placeholder before user input is given, and when user input is deleted.",
+      "exclude_from_translation": true,
+      "comments": "This does not yet work correctly"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_5",
+      "value": "@fields.feature_default_input",
+      "action_list": "changed | set_field: feature_input_tracker_5:@local.text_box_5",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder:@local.placeholder; \nprioritise_placeholder:true"
+    }
+  ]
+}

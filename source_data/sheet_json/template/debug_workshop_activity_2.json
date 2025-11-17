@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_workshop_activity_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "intro_title",
+      "value": "Intro"
+    },
+    {
+      "type": "text",
+      "name": "intro_text"
+    },
+    {
+      "type": "begin_template",
+      "name": "content_box"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

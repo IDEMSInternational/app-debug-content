@@ -1,0 +1,15 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_footer",
+  "status": "released",
+  "rows": [
+    {
+      "name": "button_list",
+      "value": "image: images/icons/house_white.svg | target_template: home_screen;\nimage: images/icons/star_white.svg | target_template: feature_rtl_language;\nimage: images/icons/book_white.svg | target_template: debug_skin_select;"
+    },
+    {
+      "type": "navigation_bar",
+      "parameter_list": "button_list: @local.button_list"
+    }
+  ]
+}

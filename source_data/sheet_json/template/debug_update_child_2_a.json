@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_update_child_2_a",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "radio_group_final",
+      "value": "radio_group_final_temp"
+    },
+    {
+      "name": "answer_list",
+      "value": "name:option_1 |  text: Option 1;  name: option_2 | text: Option 2;"
+    },
+    {
+      "name": "options_per_row",
+      "value": 2,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group",
+      "parameter_list": "answer_list: @local.answer_list; options_per_row: @local.options_per_row;"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Local variable: @local.radio_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_update_child_2_b",
+      "value": "debug_update_child_2_b"
+    },
+    {
+      "name": "show_first_template",
+      "value": "@local.radio_group == \"option_1\""
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

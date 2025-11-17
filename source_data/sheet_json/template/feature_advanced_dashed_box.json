@@ -1,0 +1,50 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_advanced_dashed_box",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_advanced_dashed_box",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success. ",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/globe_blue.svg ;       \nicon_position: top-left;"
+    },
+    {
+      "type": "button",
+      "name": "btn_example_1",
+      "value": "some text as an example ",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_advanced_dashed_box",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_advanced_dashed_box",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success. ",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/globe_blue.svg ;       \nicon_position: top-left;"
+    },
+    {
+      "type": "subtitle",
+      "value": "Subtitle",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_1",
+      "value": 3,
+      "exclude_from_translation": true,
+      "parameter_list": "lottie_src: lottie/blob_play_ball.json        ;\ntext:text two;"
+    },
+    {
+      "type": "end_advanced_dashed_box",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_pdf",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PDF Viewer Component"
+    },
+    {
+      "name": "chrome_min_version",
+      "value": "119 (released October 2023)",
+      "comments": "Current known minimum chrome version required for compatibility"
+    },
+    {
+      "type": "text",
+      "value": "The `pdf` component displays pdf documents within an inline reader.\n\nThis feature is only compatible in modern browsers that use an underlying chrome version > @local.chrome_min_version\n\nOn legacy browsers will show button to open in external application instead.",
+      "comments": "See compatibility notes in PR\nhttps://github.com/IDEMSInternational/open-app-builder/pull/2904"
+    },
+    {
+      "type": "title",
+      "value": "Authoring Parameters"
+    },
+    {
+      "type": "table",
+      "value": "comp_pdf_params"
+    },
+    {
+      "type": "title",
+      "value": "Example"
+    },
+    {
+      "name": "compatibility_error_message",
+      "value": "Embedded PDFs are not supported in this browser, please use an up-to-date version of Google Chrome to view or open in external app",
+      "comments": "It is better to explicitly set compatibility and open external parameters instead of using defaults as these are not currently linked to the translation system"
+    },
+    {
+      "name": "open_external_text",
+      "value": "Open with..."
+    },
+    {
+      "type": "pdf",
+      "value": "example_pdf.pdf",
+      "parameter_list": "starting_page: 3;\ncompatibility_error_message: @local.compatibility_error_message;\nopen_external_text: @local.open_external_text;"
+    }
+  ]
+}

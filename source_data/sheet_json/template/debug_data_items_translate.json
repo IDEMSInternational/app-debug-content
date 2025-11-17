@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_translate",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Looping over list with translatable column"
+    },
+    {
+      "type": "text",
+      "name": "text_data_items",
+      "value": "**Data items**"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items",
+      "value": "@data.debug_data_list",
+      "comments": "Data list here debug_data_lists"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "index_@item.id",
+      "value": "Translatable column: @item.to_translate"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "Add \"updated\" property",
+      "action_list": "click | set_item | updated: true"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "name": "text_items",
+      "value": "**Items**"
+    },
+    {
+      "type": "begin_items",
+      "name": "items",
+      "value": "@data.debug_data_list"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "index_@item.id",
+      "value": "Translatable column: @item.to_translate"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

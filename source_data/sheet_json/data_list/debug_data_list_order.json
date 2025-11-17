@@ -1,0 +1,30 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_data_list_order",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "item_1"
+    },
+    {
+      "id": "item_2"
+    },
+    {
+      "id": "item_10",
+      "property": "A value"
+    },
+    {
+      "id": "item_a"
+    },
+    {
+      "id": "item_11"
+    },
+    {
+      "id": "bb"
+    },
+    {
+      "id": "aa"
+    }
+  ]
+}

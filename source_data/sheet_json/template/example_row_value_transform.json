@@ -1,0 +1,71 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_row_value_transform",
+  "status": "released",
+  "flow_subtype": "example",
+  "rows": [
+    {
+      "type": "text",
+      "value": "This sheet provides example of using row naming conventions to create data structures required for specific components "
+    },
+    {
+      "type": "title",
+      "value": "List"
+    },
+    {
+      "type": "text",
+      "value": "Any variable ending `_list` or containing `_list_` will be converted to a list\n\nLists use a `;` separator to separate array elements, e.g.\n```\nalice; bob\n```\nAdditionally, lists can include key-value pairs separated by `|`\n```\nname: value_1 | text: my_text; \nname: value_2 | text: my text 2\n```",
+      "comments": "I believe the `|` was introduced to support legacy answer_lists, however we may want to rethink whether this syntax is consistent with other compoennts\n\nhttps://github.com/IDEMSInternational/open-app-builder/pull/2211"
+    },
+    {
+      "name": "example_list",
+      "value": "English; French"
+    },
+    {
+      "name": "example_list_2",
+      "value": "name: En | text: English; \nname: Fr | text: Español;"
+    },
+    {
+      "type": "text",
+      "value": "(TODO - example components)"
+    },
+    {
+      "type": "title",
+      "value": "Action List"
+    },
+    {
+      "type": "text",
+      "value": "Any variable ending `_action_list` or containing `_action_list_` will be converted to a list\n\nAction lists use `|` to separate action arguments and also support nested parameters\n```\nclick | set_local: button_clicked: true;\nclick | set_field : another_field: true;\n```"
+    },
+    {
+      "name": "button_clicked",
+      "value": false
+    },
+    {
+      "name": "example_action_list",
+      "value": "click | set_local: button_clicked: true;"
+    },
+    {
+      "type": "button",
+      "value": "Click to trigger action list",
+      "action_list": "@local.example_action_list"
+    },
+    {
+      "type": "text",
+      "value": "Button was clicked",
+      "condition": "@local.button_clicked"
+    },
+    {
+      "type": "title",
+      "value": "Parameter List"
+    },
+    {
+      "type": "text",
+      "value": "(TODO - Is this even used? can remove?)"
+    },
+    {
+      "type": "text",
+      "value": "Sheet Link:\nhttps://docs.google.com/spreadsheets/d/1iKfq3-wan4-GYvg4-XL07YLDt5ZDGIfoCCEK78-HzrI/edit?gid=1921555013#gid=1921555013"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_data_actions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Data Actions"
+    },
+    {
+      "type": "title",
+      "value": "Bulk Actions"
+    },
+    {
+      "type": "begin_template",
+      "value": "feat_data_actions_summary"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "value": "The following actions will apply to all list items"
+    },
+    {
+      "type": "button",
+      "value": "Mark all complete",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\ncompleted:true",
+      "comments": "Multiple properties can also be listed, i.e.\n\ncompleted:true,\nnumber: 25"
+    },
+    {
+      "type": "button",
+      "value": "Mark all incomplete",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false"
+    },
+    {
+      "type": "button",
+      "value": "Double number",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number * 2",
+      "comments": "updates can contain variables and calculations"
+    },
+    {
+      "type": "button",
+      "value": "Reset to original state",
+      "action_list": "click | reset_data | \n\n_list_id: feat_data_actions_list",
+      "comments": "restore values to original data_list"
+    },
+    {
+      "type": "title",
+      "value": "Individual Actions"
+    },
+    {
+      "type": "begin_template",
+      "value": "feat_data_actions_summary"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "value": "The following actions target individual items"
+    },
+    {
+      "type": "button",
+      "value": "Toggle first item",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\ncompleted:!@item.completed",
+      "comments": "_index can be used to select an item by index (starting at 0)"
+    },
+    {
+      "type": "set_local",
+      "name": "target_id",
+      "value": "id_3",
+      "comments": "Local variables can also be used as part of any action"
+    },
+    {
+      "type": "button",
+      "value": "Toggle target id: @local.target_id\n(set from variable)",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_id: @local.target_id,\ncompleted:!@item.completed",
+      "comments": "_id can be used to select an item by id"
+    },
+    {
+      "type": "number_selector",
+      "name": "target_index",
+      "value": 0,
+      "action_list": "changed | set_local : target_index: this.value",
+      "parameter_list": "min_value: 0;\nmax_value: 2;"
+    },
+    {
+      "type": "button",
+      "value": "Toggle index by variable\n@local.target_index",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.target_index,\ncompleted:!@item.completed;",
+      "comments": "_index can include variables and calculations.\n\nNOTE - this example is contrived as a next_index variable could just be calculated"
+    },
+    {
+      "type": "title",
+      "value": "Global Actions"
+    },
+    {
+      "type": "text",
+      "value": "The following applies to all data lists throughout the app"
+    },
+    {
+      "type": "button",
+      "value": "Reset all dynamic data",
+      "action_list": "click | reset_data",
+      "comments": "Calling `reset_data` without a target list will reset all dynamic data throughout the app, returning the data to the state of the originally authored data_lists"
+    },
+    {
+      "type": "title",
+      "value": "Hacky Workarounds"
+    },
+    {
+      "type": "text",
+      "value": "The following examples may work, but are fragile and could break in future updates"
+    },
+    {
+      "type": "set_local",
+      "name": "last_index",
+      "value": "@calc(Object.keys(@data.feat_data_actions_list).length - 1)",
+      "comments": "Hacky workaround to get length of data which template returns as hashmap object, and -1 to get last index"
+    },
+    {
+      "type": "button",
+      "value": "Toggle last item",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: @local.last_index,\ncompleted:!@item.completed",
+      "comments": "In the future better options will be available to filter list to only include last element"
+    },
+    {
+      "type": "title",
+      "value": "Quality Assurance"
+    },
+    {
+      "type": "begin_template",
+      "value": "feat_data_actions_summary"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "value": "Test setting number from string. It should automatically be converted to a number"
+    },
+    {
+      "type": "button",
+      "value": "Set number from string",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: 20",
+      "comments": "By default the list of key-value pairs is parsed as string, but custom code converts to type matched by original data schema"
+    },
+    {
+      "name": "number_field",
+      "value": "number"
+    },
+    {
+      "type": "button",
+      "value": "Set from variable field",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n@local.number_field: 20"
+    },
+    {
+      "type": "button",
+      "value": "Add 1 to number",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\nnumber: @item.number+1",
+      "comments": "Can confirm parsed as number by adding 1 (if string value would append 1)"
+    },
+    {
+      "type": "button",
+      "value": "Reset to original state",
+      "action_list": "click | reset_data | \n\n_list_id: feat_data_actions_list"
+    },
+    {
+      "type": "title",
+      "value": "Filtered Actions"
+    },
+    {
+      "type": "text",
+      "value": "(WiP)"
+    }
+  ]
+}

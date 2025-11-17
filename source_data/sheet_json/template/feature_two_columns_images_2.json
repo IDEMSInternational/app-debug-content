@@ -1,0 +1,84 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_two_columns_images_2",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "ParentApp funded by",
+      "parameter_list": "style: center; text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: two_columns_images"
+    },
+    {
+      "type": "image",
+      "name": "funder_1",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_2",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_3",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_4",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_5",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_6",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_7",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_8",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_9",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "funder_10",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

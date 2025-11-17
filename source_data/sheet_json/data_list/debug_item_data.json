@@ -1,0 +1,20 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_item_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id1",
+      "number": 1,
+      "string": "hello",
+      "boolean": true
+    },
+    {
+      "id": "id2",
+      "number": 2,
+      "string": "goodbye",
+      "boolean": false
+    }
+  ]
+}

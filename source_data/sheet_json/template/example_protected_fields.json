@@ -1,0 +1,99 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "example_hardcoded",
+  "flow_name": "example_protected_fields",
+  "status": "released",
+  "comments": "List of fields automatically populated by app",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Example Protected Fields",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_first_launch: @fields._app_first_launch",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_language: @fields._app_language",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_language_direction: @fields._app_language_direction",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_skin: @fields._app_skin",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_theme: @fields._app_theme",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_update_available: @fields._app_update_available",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_update_downloaded: @fields._app_update_downloaded",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_user_id: @fields._app_user_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_app_version: @fields._app_version",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_auth_user_id: @fields._auth_user_id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_content_version: @fields._content_version",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_deployment_name: @fields._deployment_name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_feedback_selected_text: @fields._feedback_selected_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_feedback_sidebar_open: @fields._feedback_sidebar_open",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_operating_system: @fields._operating_system",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_platform: @fields._platform",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "_server_sync_latest: @fields._server_sync_latest",
+      "exclude_from_translation": true
+    }
+  ]
+}

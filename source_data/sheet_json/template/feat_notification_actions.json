@@ -1,0 +1,271 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "feature",
+  "flow_name": "feat_notification_actions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Notification Actions"
+    },
+    {
+      "type": "title",
+      "value": "Permisions"
+    },
+    {
+      "type": "text",
+      "value": "A device can only receive permissions if explicitly granted. Usually a request is made on app load, but can also be sent as an action with response monitored in a field.\n\nPossible status descriptions are listed below",
+      "comments": "As the field does not live-update it may be slightly out of sync if permissions granted between initial template render and permission popup interaction (e.g. if using on a home page)"
+    },
+    {
+      "type": "table",
+      "value": "notification_permission_status",
+      "parameter_list": "display_columns: status, description"
+    },
+    {
+      "type": "text",
+      "value": "Status: **@fields._notification_permission_status**",
+      "comments": "https://capacitorjs.com/docs/plugins/web#aliases"
+    },
+    {
+      "name": "should_show_request",
+      "value": "@fields._notification_permission_status !== 'granted' && @fields._notification_permission_status !== 'denied'",
+      "comments": "This is rarely required as the app requests permission on first load, but might still be useful if a user has reject permission without fully denying (can ask again)"
+    },
+    {
+      "type": "button",
+      "value": "Request Permission",
+      "action_list": "click | notification: request_permission;\nclick | emit: force_reprocess;",
+      "condition": "@local.should_show_request"
+    },
+    {
+      "type": "text",
+      "value": "Notifications have been disabled by the user. \nPlease enable to use this feature",
+      "condition": "@fields._notification_permission_status === 'denied'",
+      "comments": "If a user has previously denied permission the request will be supressed and user will need to manually re-enable"
+    },
+    {
+      "type": "title",
+      "value": "Create Notification"
+    },
+    {
+      "type": "text",
+      "value": "A one-time notification can be scheduled using an action"
+    },
+    {
+      "type": "table",
+      "value": "notification_action_params",
+      "parameter_list": "display_columns: param, required, description"
+    },
+    {
+      "name": "tomorrow_datetime",
+      "value": "@calc(date_fns.addDays(now(),1))",
+      "comments": "Use date_fns utilities to handle scheduling:\nhttps://date-fns.org/docs/Getting-Started "
+    },
+    {
+      "name": "test_notification",
+      "parameter_list": "id: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.tomorrow_datetime"
+    },
+    {
+      "type": "button",
+      "value": "Schedule Tomorrow\n@local.tomorrow_datetime",
+      "action_list": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.tomorrow_datetime"
+    },
+    {
+      "name": "next_monday_date",
+      "value": "@calc(date_fns.nextMonday(now()))"
+    },
+    {
+      "name": "next_monday_datetime",
+      "value": "@calc(date_fns.set(@local.next_monday_date,{ hours: 9, minutes: 0, seconds: 0 }))",
+      "comments": "Specific day operators will set to midnight, so need to adjust time accordingly"
+    },
+    {
+      "type": "button",
+      "value": "Schedule Next Monday at 9am\n@local.next_monday_datetime",
+      "action_list": "click | notification: create |\nid: debug_notification,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.next_monday_datetime"
+    },
+    {
+      "type": "text",
+      "value": "Notifications can also be scheduled following user input"
+    },
+    {
+      "type": "text_box",
+      "name": "input_id",
+      "value": "debug_notification",
+      "parameter_list": "placeholder: Type your Notification ID"
+    },
+    {
+      "type": "text_box",
+      "name": "input_title",
+      "value": "Notification Title",
+      "parameter_list": "placeholder: Type your Notification Title"
+    },
+    {
+      "type": "text_box",
+      "name": "input_text",
+      "value": "Notification Text",
+      "parameter_list": "placeholder: Type your Notification Text"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "input_datetime"
+    },
+    {
+      "value": "Schedule at input datetime\n@local.input_datetime"
+    },
+    {
+      "type": "button",
+      "value": "Schedule notification @local.input_id at @local.input_datetime",
+      "action_list": "click | notification: create |\nid: @local.input_id,\ntitle: @local.input_title,\ntext: @local.input_text,\nschedule_at: @local.input_datetime",
+      "parameter_list": "disabled: !@local.input_datetime"
+    },
+    {
+      "type": "title",
+      "value": "Pending Notifications"
+    },
+    {
+      "type": "text",
+      "value": "Pending notifications can be retrieved from the internal `_notifications` data_list.\n\nSpecific notifications can be canceled by passing their id into the `notification: cancel` action. E.g.\n```\nclick | notification:cancel | id: @item.id\n```"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "_notifications",
+      "parameter_list": "filter: @item.status==='pending'"
+    },
+    {
+      "name": "formatted_date",
+      "value": "@calc(new Date(@item.schedule_at).toString())"
+    },
+    {
+      "type": "text",
+      "value": "id: @item.id\nschedule_at: @local.formatted_date",
+      "style_list": "color: var(--ion-color-secondary)"
+    },
+    {
+      "type": "button",
+      "value": "Cancel Notification",
+      "action_list": "click | notification: cancel | id: @item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "It is also possible to cancel all notifications with the `notification | cancel_all` action"
+    },
+    {
+      "type": "button",
+      "value": "Cancel All Notifications",
+      "action_list": "click | notification: cancel_all"
+    },
+    {
+      "type": "title",
+      "value": "Previous Notifications"
+    },
+    {
+      "type": "text",
+      "value": "Any notifications previously scheduled will also be stored in the `_notifications` data_list\n\nThese will have a `status` column either marked as `ignored` or `interacted`\n\nInteracted notifications will include an `action_performed` column with nested  `timestamp` and `id` property corresponding to the native action id"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "_notifications",
+      "parameter_list": "filter: @item.status!=='pending'"
+    },
+    {
+      "name": "formatted_date",
+      "value": "@calc(new Date(@item.schedule_at).toString())"
+    },
+    {
+      "type": "text",
+      "value": "id: @item.id\nschedule_at: @local.formatted_date\nstatus: @item.status",
+      "style_list": "color: var(--ion-color-secondary)"
+    },
+    {
+      "type": "text",
+      "value": "Action ID: @item.action_performed.id\nAction Time: @item.action_performed.timestamp",
+      "condition": "@item.action_performed",
+      "style_list": "color: var(--ion-color-secondary)"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Notification Schedules"
+    },
+    {
+      "type": "text",
+      "value": "An alternative notification scheduling system is implemented via the campaigns feature"
+    },
+    {
+      "type": "button",
+      "value": "Go to Debug Campaigns",
+      "action_list": "click | go_to | debug_campaigns",
+      "comments": "debug_campaigns"
+    },
+    {
+      "type": "title",
+      "value": "Triggered action lists"
+    },
+    {
+      "type": "text",
+      "value": "Created notifications can also reference external action_lists to trigger after delivery. The following triggers can be used:\n\n|trigger|description|example|\n|---|---|---|\n|`notification_received`| Evaluated the next time the app is running past the notification scheduled date. Recommended for data updates, such as setting field to remind user of received notifications | notification_received &#124; set_field &#124; show_notification_bell: true |\n|`notification_interacted`| Evaluated if user taps notification (native only). Recommended for navigation shortcuts, such as sending user to page related to notification  | notification_interacted &#124; go_to : /example_template |"
+    },
+    {
+      "name": "immediate_notification_time",
+      "value": "@calc(date_fns.addSeconds(now(),10))",
+      "comments": "HACK - there's no easy way to re-evaluate the variable when triggering the action so use separate button to set the notification timer"
+    },
+    {
+      "type": "button",
+      "value": "Set notification time in 10 seconds",
+      "action_list": "click | emit: force_reload;",
+      "comments": "Reprocessing will automatically recalculate the immediate_notification_time variable"
+    },
+    {
+      "name": "example_action_list",
+      "value": "notification_received | set_field : show_notification_bell : true;\nnotification_interacted | set_field : show_notification_bell: false;\nnotification_interacted | go_to : /user;",
+      "comments": "The action_list still needs to be specified in the value column, and needs to have a name ending `_action_list` to parse correctly"
+    },
+    {
+      "type": "button",
+      "value": "Schedule notification\n@local.immediate_notification_time",
+      "action_list": "click | notification: create |\nid: debug_notification_with_action_list,\ntitle: Notification Title,\ntext: Notification Text,\nschedule_at: @local.immediate_notification_time,\naction_list: @local.example_action_list"
+    },
+    {
+      "type": "button",
+      "value": "Reload Fields",
+      "action_list": "click | emit: force_reload;"
+    },
+    {
+      "type": "text",
+      "value": "🔔 New Notifications!",
+      "condition": "@fields.show_notification_bell"
+    },
+    {
+      "type": "button",
+      "value": "Mark as read",
+      "action_list": "click | set_field : show_notification_bell : false;",
+      "condition": "@fields.show_notification_bell"
+    },
+    {
+      "type": "title",
+      "value": "WiP (not yet supported)"
+    },
+    {
+      "type": "text",
+      "value": "Using `@notification` syntax to refer to source notification context when triggering actions"
+    },
+    {
+      "type": "text",
+      "value": "Specifying custom data to store with notification on create"
+    },
+    {
+      "type": "text",
+      "name": "triggered_actions",
+      "value": "Setting action list from inline variable (set_variable only uses value column, which is not parsed as action_list type)",
+      "action_list": "notification_received | set_field : show_notification_bell : true;\nnotification_interacted | set_field : show_notification_bell: false;\nnotification_interacted | go_to : /user;"
+    }
+  ]
+}

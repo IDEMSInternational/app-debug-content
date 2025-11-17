@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_metadata_function_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Works"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Authoring workaround on the filter: Use javascript checks to cover case where entries are not arrays (or string/number discrepancy)"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop",
+      "value": "@data.debug_number_list",
+      "parameter_list": "filter: (@item.number_1_list && ([].concat(@item.number_1_list)).map(x => String(x)).includes(String(@fields.debug_number)));"
+    },
+    {
+      "type": "text",
+      "name": "text_@item._index",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

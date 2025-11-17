@@ -1,0 +1,25 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_list_parsing",
+  "status": "released",
+  "rows": [
+    {
+      "name": "answer_list_1",
+      "value": "name:option_1 | text: option_1_text; \nname:option_2 | text: option_2_text;\nname:option_3 | text: option_3_text;\nname:option_4 | text: option_4_text;\nname:option_5 | text: option_5_text;\nname:option_6 | text: option_6_text"
+    },
+    {
+      "name": "answer_1_list",
+      "value": "name:option_1 | text: option_1_text; \nname:option_2 | text: option_2_text;\nname:option_3 | text: option_3_text;\nname:option_4 | text: option_4_text;\nname:option_5 | text: option_5_text;\nname:option_6 | text: option_6_text"
+    },
+    {
+      "type": "text",
+      "name": "show_answer_list_1",
+      "value": "answer_list_1: @local.answer_list_1"
+    },
+    {
+      "type": "text",
+      "name": "show_answer_1_list",
+      "value": "answer_1_list: @local.answer_1_list"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_number_selector",
+  "status": "released",
+  "rows": [
+    {
+      "name": "category_list",
+      "value": "0-10; 11-20; 21-30; 31-40; 41-50; 51-60; 61-70; 71-80; 80+;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector",
+      "exclude_from_translation": true,
+      "parameter_list": "category_list: @local.category_list;\nfirst_display_term:4;"
+    },
+    {
+      "name": "ten",
+      "value": 10
+    },
+    {
+      "type": "set_field",
+      "name": "debug_field_fifteen",
+      "value": 15
+    },
+    {
+      "name": "fifteen",
+      "value": "+@fields.debug_field_fifteen"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Default initial value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_1",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Initial value set directly",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_2",
+      "value": 5,
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Initial value set through local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_3",
+      "value": "@local.ten",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Initial value set through field preceded by '+",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_4",
+      "value": "+@fields.debug_field_fifteen",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "Initial value set through local with field preceded by '+",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "number_selector",
+      "name": "number_selector_5",
+      "value": "@local.fifteen",
+      "parameter_list": "min_value:0;\nmax_value:20; "
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

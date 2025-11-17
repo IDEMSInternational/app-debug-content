@@ -1,0 +1,19 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_nav_bar_data",
+  "status": "released",
+  "rows": [
+    {
+      "image": "images/icons/globe_blue.svg",
+      "target_template": "home_screen"
+    },
+    {
+      "image": "images/icons/heart_blue.svg",
+      "target_template": "example_dg"
+    },
+    {
+      "image": "images/icons/school_blue.svg",
+      "target_template": "example_calc"
+    }
+  ]
+}

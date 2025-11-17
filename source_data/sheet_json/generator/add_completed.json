@@ -1,0 +1,18 @@
+{
+  "flow_type": "generator",
+  "flow_name": "add_completed",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "task_lists",
+    "output_flow_name": "{@gen.id}_add_completed",
+    "output_flow_type": "data_pipe"
+  },
+  "rows": [
+    {
+      "operation": "append_columns",
+      "args_list": "completed: FALSE;",
+      "input_source": "{@gen.id}",
+      "output_target": "{@gen.id}_with_completed"
+    }
+  ]
+}

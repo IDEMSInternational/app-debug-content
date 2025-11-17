@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "calling_data",
+  "status": "released",
+  "rows": [
+    {
+      "value": "@data. is not visible as text uness some additional text is included at some point along the referencing chain.\nAlso, turning on debug mode in the app shows the values even after it is turned off.",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "text_postfix",
+      "value": ".text",
+      "condition": false,
+      "comments": "to be removed if not necessary"
+    },
+    {
+      "type": "text",
+      "name": "print_data",
+      "value": "@data.example_data.id_1.text",
+      "comments": "not visible"
+    },
+    {
+      "type": "text",
+      "name": "print_data_with_text",
+      "value": "with text: @data.example_data.id_1.text",
+      "comments": "visible"
+    },
+    {
+      "type": "text",
+      "name": "print_data_with_reference",
+      "value": "with text later: @local.print_data",
+      "comments": "visible"
+    },
+    {
+      "type": "text",
+      "name": "template_link",
+      "value": "[Template link](https://docs.google.com/spreadsheets/d/1uXhyNzRlT48CPVT0WMDh_blVVKJ0KaDDkCFmrQ1ao78/edit?gid=0#gid=0)"
+    }
+  ]
+}

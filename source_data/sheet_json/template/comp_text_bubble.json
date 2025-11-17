@@ -1,0 +1,81 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_text_bubble",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "parameter_list": {
+    "show_footer": false
+  },
+  "rows": [
+    {
+      "type": "text_bubble",
+      "value": "When the content is wide enough, the text bubble takes up the maximum screen width. Otherwise, the text bubble's width fits the content within it.",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "speaker_position: right;\nvariant: primary;",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;\nspeaker_position: right;\nvariant: primary;"
+    },
+    {
+      "type": "begin_text_bubble",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;\nvariant: gray;"
+    },
+    {
+      "type": "title",
+      "value": "Text bubble with multiple content rows"
+    },
+    {
+      "type": "text",
+      "value": "variant: gray;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/circular.png",
+      "style_list": "width: 64px"
+    },
+    {
+      "type": "end_text_bubble"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: secondary;",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;\nvariant: secondary;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: no_border;",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;\nvariant: no_border;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: primary, no_border;",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;\nvariant: primary, no_border;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "Text bubble containing some Markdown **bold** and *italics* text. And a numbered list:\n1. Item one\n2. Item two\n3. Item three",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: primary;\nFor kw facilitator",
+      "parameter_list": "speaker_image_asset: images/Noura.png;\nvariant: primary;\nspeaker_name: Sayiddah Noura;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: speaker-3;\nFor comics",
+      "parameter_list": "speaker_image_asset: images/Faisal.png;\nvariant: speaker-3; \nspeaker_position: right;\nspeaker_name: Dalal;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: speaker-4;\nFor comics",
+      "parameter_list": "speaker_image_asset: images/Faisal.png;\nvariant: speaker-4;\nspeaker_name: Faisal;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "variant: secondary;\nNo image, no name, full length",
+      "parameter_list": "variant: secondary;"
+    }
+  ]
+}

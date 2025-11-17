@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_answer_list_partial",
+  "status": "released",
+  "rows": [
+    {
+      "name": "answer_data",
+      "value": "@data.debug_answer_list_partial"
+    },
+    {
+      "name": "answer_list",
+      "value": "name:option_1 | text: @local.answer_data.option_1.text | image: @local.answer_data.option_1.image_asset; \nname:option_2 | text: @local.answer_data.option_2.text | image: @local.answer_data.option_2.image_asset; \nname:option_3 | text: @local.answer_data.option_3.text | image: @local.answer_data.option_3.image_asset;\nname:option_4 | text: @local.answer_data.option_4.text | image: @local.answer_data.option_4.image_asset;"
+    },
+    {
+      "type": "title",
+      "value": "combo_box"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "input_allowed: false;\nanswer_list: @local.answer_list;\nplaceholder: Tap and choose;"
+    },
+    {
+      "type": "title",
+      "value": "radio_button_grid"
+    },
+    {
+      "type": "radio_button_grid",
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "title",
+      "value": "radio_group"
+    },
+    {
+      "type": "radio_group",
+      "parameter_list": "answer_list: @local.answer_list;"
+    }
+  ]
+}

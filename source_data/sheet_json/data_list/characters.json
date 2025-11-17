@@ -1,0 +1,15 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "characters",
+  "status": "released",
+  "rows": [
+    {
+      "id": "f1_father",
+      "name::eng": "Abdulaziz"
+    },
+    {
+      "id": "f3_son_4",
+      "name::eng": "Ahmed"
+    }
+  ]
+}

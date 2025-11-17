@@ -1,0 +1,87 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_checkbox",
+  "status": "released",
+  "rows": [
+    {
+      "name": "label_text",
+      "value": "Label text in local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_1",
+      "value": false,
+      "action_list": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Reverse true;  reverse:true;"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "checkbox field: @field.demo_changed_field_checkbox",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "checkbox local: @local.checkbox_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_2",
+      "value": true,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?; align: left;"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "checkbox local: @local.checkbox_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_3",
+      "value": "@field.demo_changed_field_checkbox",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?; align: center;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_4",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_5",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_6",
+      "value": "@local.checkbox_4",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Checkbox with label_text set through local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_7",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: @local.label_text; align: right;"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

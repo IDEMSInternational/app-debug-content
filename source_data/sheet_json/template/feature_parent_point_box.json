@@ -1,0 +1,157 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_parent_point_box",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "value 1 is @fields.demo_changed_field_parent_point",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "value 2 is @fields.demo_changed_field_parent_point_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "value 3 is @fields.demo_changed_field_parent_point_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg",
+      "exclude_from_translation": true,
+      "parameter_list": "style: parent_point;",
+      "style_list": "flex-wrap: wrap;"
+    },
+    {
+      "name": "init_value_1",
+      "value": 2,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "icon_src_jpg",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "icon_src_svg",
+      "value": "images/icons/reader_blue.svg"
+    },
+    {
+      "name": "icon_src_data",
+      "value": "@data.article.article_1.icon_asset"
+    },
+    {
+      "name": "text1",
+      "value": "Good money choice 1",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "icon_button_action_list",
+      "value": "click | set_field : something : dsfsd"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_1",
+      "value": "@local.init_value_1",
+      "action_list": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src:@local.icon_src_jpg; \ninfo_button_action_list: @local.icon_button_action_list\ntext: @local.text1;"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_2",
+      "value": "@local.init_value_1",
+      "action_list": "changed | set_field: demo_changed_field_parent_point: @local.points_example",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: @local.icon_src_svg; \ninfo_button_action_list: @local.icon_button_action_list\ntext: @local.text1;"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_3",
+      "value": 3,
+      "action_list": "changed | set_field: demo_changed_field_parent_point_1: @local.points_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: @local.icon_src_data;\ntext: @local.text1;"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_4",
+      "value": 3,
+      "action_list": "changed | set_field: demo_changed_field_parent_point_2: @local.points_example_2",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: @data.article.article_1.icon_asset;\ntext: @local.text1;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "lottie",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg",
+      "exclude_from_translation": true,
+      "parameter_list": "style: parent_point;",
+      "style_list": "flex-wrap: wrap;"
+    },
+    {
+      "name": "init_value_1",
+      "value": 2,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example",
+      "value": "@local.init_value_1",
+      "exclude_from_translation": true,
+      "parameter_list": "lottie_src: lottie/blob_play_ball.json;\ntext: no celebration; play_celebration: false;"
+    },
+    {
+      "name": "text4",
+      "value": "text one",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_1",
+      "value": 3,
+      "exclude_from_translation": true,
+      "parameter_list": "lottie_src: lottie/blob_play_ball.json;\ntext:text two;"
+    },
+    {
+      "name": "text5",
+      "value": "text two",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_2",
+      "value": 3,
+      "exclude_from_translation": true,
+      "parameter_list": "lottie_src: lottie/blob_play_ball.json;\ntext: text three;"
+    },
+    {
+      "name": "text6",
+      "value": "text three",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_title",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "This a title"
+    },
+    {
+      "type": "title",
+      "value": "Title with more text to wrap over multiple lines"
+    },
+    {
+      "type": "title",
+      "value": "Title with a tooltip",
+      "parameter_list": "help: Hi, I'm a tooltip!"
+    },
+    {
+      "type": "title",
+      "value": "Title centre-aligned",
+      "parameter_list": "text_align: center"
+    },
+    {
+      "type": "title",
+      "value": "Title right-aligned",
+      "parameter_list": "text_align: right"
+    },
+    {
+      "type": "title",
+      "value": "Title with header variant",
+      "parameter_list": "variant: header"
+    },
+    {
+      "type": "title",
+      "value": "Title as Page Banner",
+      "parameter_list": "variant: page_banner",
+      "comments": "This variant is currently only implemented for the `plh_kids_kw` deployment"
+    },
+    {
+      "type": "title",
+      "value": "Title as Section Banner",
+      "parameter_list": "variant: section_banner",
+      "comments": "This variant is currently only implemented for the `plh_kids_kw` deployment"
+    }
+  ]
+}

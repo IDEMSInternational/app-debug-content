@@ -1,0 +1,26 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_parent_point_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "example_count",
+      "value": 0
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box",
+      "value": "@local.example_count",
+      "action_list": "click | set_field: @local.example_count: @local.example_count+1;\ninfo_click | pop_up: example_parent_point_box_info",
+      "parameter_list": "text: Example Parent Point;\nlottie_src: lottie/blob_play_ball.json;\ninfo_icon_src: images/icons/question_mark.svg;"
+    },
+    {
+      "type": "parent_point_box",
+      "name": "parent_point_box_set_field",
+      "value": "@local.example_count",
+      "action_list": "info_click | set_field: example_field: parent_point_box_value",
+      "parameter_list": "info_icon_src: images/icons/question_mark.svg;"
+    }
+  ]
+}

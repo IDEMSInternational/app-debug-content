@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_go_to_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This is the third template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "Complete the current template",
+      "action_list": "click | emit:completed",
+      "exclude_from_translation": true
+    }
+  ]
+}

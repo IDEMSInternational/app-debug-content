@@ -1,0 +1,106 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_render_parent",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Parent",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Value of test_render_updates_field: \nfield: @fields.test_render_updates_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_child",
+      "value": "debug_render_child",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "debug_render_grandchild_2b",
+      "value": "debug_render_grandchild_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "Grandchild 2b",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_3",
+      "value": "(parent) selected no",
+      "hidden": "@fields.test_render_updates_field!=\"no\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_4",
+      "value": "(parent) selected yes",
+      "hidden": "@fields.test_render_updates_field!=\"yes\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_5",
+      "value": "(parent) Value of test_render_updates_field: @fields.test_render_updates_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "debug_render_grandchild_3b",
+      "value": "example_title_text",
+      "condition": "@fields.test_render_updates_field==\"no\"",
+      "exclude_from_translation": true,
+      "comments": "This row does not work as expected"
+    },
+    {
+      "name": "title",
+      "value": "Grandchild 3b",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "(parent) selected no",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "debug_render_grandchild_4b",
+      "value": "example_title_text",
+      "condition": "@fields.test_render_updates_field==\"yes\"",
+      "exclude_from_translation": true,
+      "comments": "This row does not work as expected"
+    },
+    {
+      "name": "title",
+      "value": "Grandchild 4b",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "(parent) selected yes",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

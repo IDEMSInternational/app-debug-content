@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_update_sibling_2_a",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "pair",
+      "value": "pair"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "box_1",
+      "value": "debug_radio_group_2"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "box_2",
+      "value": "debug_update_sibling_2_b"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

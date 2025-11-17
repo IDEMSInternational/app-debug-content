@@ -1,0 +1,40 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_multiple_locals",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "name_1",
+      "value": "This is text 1",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "name_2",
+      "value": "This is text 2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "name_3",
+      "value": "This is text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list",
+      "value": "name: name_1 | text: @local.name_1;  name: name_2 | text: @local.name_2;  name: name_3 | text: @local.name_3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_defaults",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "@local.@local.combo_box_defaults",
+      "exclude_from_translation": true
+    }
+  ]
+}

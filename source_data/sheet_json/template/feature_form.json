@@ -1,0 +1,220 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_form",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "form with 'go to'"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": "style: form; get_device_info: true; button_text: Send; button_go_to: feature_audio;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_name",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your name;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_phone",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your phone number;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_1",
+      "value": false,
+      "action_list": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_2",
+      "value": true,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "title",
+      "value": "Some text here",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "text_area",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: example placeholder;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "pop up form"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": "style: form; get_device_info: true; button_text: Send; button_pop_up: feature_audio;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_name",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your name;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_phone",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your phone number;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_1",
+      "value": false,
+      "action_list": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_2",
+      "value": true,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "title",
+      "value": "Some text here",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "text_area",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: example placeholder;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "with both params"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": "style: form;\nget_device_info: true;\nbutton_text: Send;\nbutton_pop_up: feature_audio;\nbutton_go_to: feature_audio;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_name",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your name;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_phone",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your phone number;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_1",
+      "value": false,
+      "action_list": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_2",
+      "value": true,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "title",
+      "value": "Some text here",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "text_area",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: example placeholder;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "outside display group"
+    },
+    {
+      "type": "begin_form",
+      "name": "dg_example_form",
+      "exclude_from_translation": true,
+      "parameter_list": " get_device_info: true; button_text: Send; button_pop_up: feature_audio;button_go_to: feature_audio;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_name",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your name;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_phone",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your phone number;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_1",
+      "value": false,
+      "action_list": "changed | set_field:demo_changed_field_checkbox:@local.checkbox_1",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_2",
+      "value": true,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "title",
+      "value": "Some text here",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "text_area",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: example placeholder;"
+    },
+    {
+      "type": "end_form",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

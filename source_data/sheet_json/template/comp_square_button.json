@@ -1,0 +1,72 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_square_button",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "square_button",
+      "name": "button_default",
+      "action_list": "click | go_to: example_text",
+      "comments": "This is the default"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Square button with icon"
+    },
+    {
+      "type": "square_button",
+      "name": "square_button_par_2_1",
+      "parameter_list": "icon_src: ",
+      "comments": "This is the default"
+    },
+    {
+      "type": "square_button",
+      "name": "square_button_par_2_2",
+      "parameter_list": "icon_src: images/icons/audio/play-sharp.svg\n",
+      "comments": "File path in plh_assets/global"
+    },
+    {
+      "type": "square_button",
+      "name": "square_button_par_2_3",
+      "parameter_list": "icon_src: body-outline\n",
+      "comments": "Icon from https://ionic.io/ionicons"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Square button colour"
+    },
+    {
+      "type": "square_button",
+      "name": "square_button_par_3_1",
+      "parameter_list": "style: information",
+      "comments": "This is the default"
+    },
+    {
+      "type": "square_button",
+      "name": "square_button_par_3_2",
+      "parameter_list": "style: navigation "
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "To be removed"
+    },
+    {
+      "type": "square_button",
+      "name": "square_button_par_4_1",
+      "action_list": "click | pop_up: example_text",
+      "parameter_list": "disabled: false",
+      "comments": "This is the default"
+    },
+    {
+      "type": "square_button",
+      "name": "square_button_par_4_2",
+      "action_list": "click | pop_up: example_text",
+      "parameter_list": "disabled: true",
+      "comments": "Not used and not working, remove."
+    }
+  ]
+}

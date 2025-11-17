@@ -1,0 +1,108 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_find_first",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Find first completed item"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "find_first_completed",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "completed_@item.id",
+      "value": "Item completed: @item.completed"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "continue_loop_@item.id",
+      "parameter_list": "style: column",
+      "condition": "!!!@local.stop_loop_completed"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "for_first_completed_@item.id",
+      "parameter_list": "style: column",
+      "condition": "@item.completed"
+    },
+    {
+      "name": "stop_loop_completed",
+      "value": true
+    },
+    {
+      "type": "text",
+      "name": "condition_text_@item.id",
+      "value": "**The first completed item is @item.id**"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Find first not completed item"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "find_first_not_completed",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "completed_@item.id",
+      "value": "Item completed: @item.completed"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "continue_loop_@item.id",
+      "parameter_list": "style: column",
+      "condition": "!!!@local.stop_loop_not_completed"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "for_first_not_completed_@item.id",
+      "parameter_list": "style: column",
+      "condition": "!@item.completed"
+    },
+    {
+      "name": "stop_loop_not_completed",
+      "value": true
+    },
+    {
+      "type": "text",
+      "name": "condition_text_@item.id",
+      "value": "**The first not completed item is @item.id**"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

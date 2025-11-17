@@ -1,0 +1,424 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Dynamic Data"
+    },
+    {
+      "type": "title",
+      "name": "example_1",
+      "value": "Example 1: All items"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list",
+      "comments": "Data lists can optionally be referenced just by name (without @data)"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "✅",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "❌",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "toggle_bar",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed: !@item.completed",
+      "comments": "Use set_item action to sync the toggle value with the item list"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "example_2",
+      "value": "Example 2: Show list of completed items"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_data_items_list",
+      "parameter_list": "filter: @item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "example_3",
+      "value": "Example 3: Data change trigger actions"
+    },
+    {
+      "name": "completed_counter"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_data_items_list",
+      "action_list": "data_changed | set_local : completed_counter : @items.length;",
+      "parameter_list": "filter: @item.completed",
+      "comments": "Whenever the data changes the action will be triggered to update the local counter variable\n\nNOTE - if begin/end statement have templated rows the counter will reflect the total number of templated rows and not the number of completed items (to fix in future)"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "Total Completed: @local.completed_counter"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_data_items_list",
+      "action_list": "data_changed | set_field : comp_data_items_all_complete : @items.length === 0",
+      "parameter_list": "filter: !@item.completed",
+      "comments": "Slightly hacky way to perform negative check to see if all items are completed (no non-completed), and store as field"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "All items completed? :  @field.comp_data_items_all_complete"
+    },
+    {
+      "type": "title",
+      "name": "example_3a",
+      "value": "Example 4: Update multiple items",
+      "comments": "Use set_data action, examples in feature sheet"
+    },
+    {
+      "type": "button",
+      "value": "See examples from \nfeat_data_actions",
+      "action_list": "click | go_to : feat_data_actions",
+      "comments": "feature_data_actions"
+    },
+    {
+      "type": "title",
+      "name": "example_4",
+      "value": "Example 5: Set item at index/id"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "✅",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "❌",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "id_@item._index",
+      "value": "Index: @item._index"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "toggle_button_@item.id",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "button",
+      "name": "index_1_button_@item.id",
+      "value": "Set item at index 0 to completed",
+      "action_list": "click | set_item | _index: 0, completed:true"
+    },
+    {
+      "type": "button",
+      "name": "id_button_@item.id",
+      "value": "Set item with id \"id_1\" to completed",
+      "action_list": "click | set_item | _id: id_1, completed:true"
+    },
+    {
+      "type": "button",
+      "name": "index_plus_1_button_@item.id",
+      "value": "Set item at index (this + 1) to uncompleted",
+      "action_list": "click | set_item | _index: @item._index + 1, completed:false"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Example 6a: Simple text fields"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text_box",
+      "value": "@item.label",
+      "action_list": "changed | set_item | label: this.value;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Example 6b: Advanced text fields"
+    },
+    {
+      "type": "set_local",
+      "name": "edit_id"
+    },
+    {
+      "type": "set_local",
+      "name": "edit_text"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@local.edit_id !== @item.id"
+    },
+    {
+      "type": "text",
+      "value": "@item.label"
+    },
+    {
+      "type": "button",
+      "value": "Edit",
+      "action_list": "click | set_local : edit_id : @item.id;\nclick | set_local: edit_text: @item.label;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@local.edit_id == @item.id"
+    },
+    {
+      "type": "text_box",
+      "value": "@item.label",
+      "action_list": "changed | set_local : edit_text: this.value;"
+    },
+    {
+      "type": "button",
+      "value": "Save",
+      "action_list": "click | set_item | label: @local.edit_text;\nclick | set_local : edit_id : undefined",
+      "parameter_list": "action_delay: 50"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "example_5",
+      "value": "Example 7: Item readonly data"
+    },
+    {
+      "type": "title",
+      "value": "Completed"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list",
+      "parameter_list": "filter: @item.completed"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "_index: @item._index"
+    },
+    {
+      "type": "text",
+      "value": "_id: @item._id"
+    },
+    {
+      "type": "text",
+      "value": "_first: @item._first"
+    },
+    {
+      "type": "text",
+      "value": "_last: @item._last"
+    },
+    {
+      "type": "text",
+      "value": "completed: @item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Toggle Item Completed",
+      "action_list": "click | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Not Completed"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list",
+      "parameter_list": "filter: !@item.completed"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "_index: @item._index"
+    },
+    {
+      "type": "text",
+      "value": "_id: @item._id"
+    },
+    {
+      "type": "text",
+      "value": "_first: @item._first",
+      "comments": "TODO"
+    },
+    {
+      "type": "text",
+      "value": "_last: @item._last",
+      "comments": "make tidier"
+    },
+    {
+      "type": "text",
+      "value": "completed: @item.completed",
+      "comments": "add example to set_item from outside"
+    },
+    {
+      "type": "end_display_group",
+      "comments": "add example to set_items from outside (unfiltered)"
+    },
+    {
+      "type": "button",
+      "value": "Toggle Item Completed",
+      "action_list": "click | set_item | completed: !@item.completed",
+      "comments": "add example to set_items from outside (filtered)"
+    },
+    {
+      "type": "end_data_items",
+      "comments": "update docs"
+    },
+    {
+      "type": "title",
+      "name": "example_2_b",
+      "value": "Example 8: change list source using variables"
+    },
+    {
+      "name": "data_list_name",
+      "comments": "When there is no data list specified no items will be shown"
+    },
+    {
+      "type": "button",
+      "name": "data_list_set",
+      "value": "Set list \"comp_data_items\"",
+      "action_list": "click | set_local : data_list_name : comp_data_items_list",
+      "condition": "!@local.data_list_name"
+    },
+    {
+      "type": "button",
+      "name": "data_list_unset",
+      "value": "Set empty list",
+      "action_list": "click | set_local : data_list_name :",
+      "condition": "@local.data_list_name"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.data_list_name",
+      "comments": "Data lists can also reference name from variables"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": false,
+      "comments": "Legacy examples - not shown"
+    },
+    {
+      "type": "title",
+      "name": "legacy_1",
+      "value": "Legacy: Set multiple (rendered items)",
+      "comments": "Prefer set_data from outside component"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list",
+      "parameter_list": "limit: 1"
+    },
+    {
+      "type": "button",
+      "name": "mark_uncompleted_button",
+      "value": "Mark all uncompleted",
+      "action_list": "click | set_items |\n completed:false",
+      "comments": "The set_items command will apply to all items in the current loop"
+    },
+    {
+      "type": "button",
+      "name": "toggle_all_button",
+      "value": "Toggle all (does not work if values different)",
+      "action_list": "click | set_items |\n completed:!@item.completed",
+      "comments": "Note - not currently possible to refer to item value, it will instead toggle all to be opposite of first item"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "example_2_b",
+      "value": "Example 8: change list source using variables"
+    }
+  ]
+}

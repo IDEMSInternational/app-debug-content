@@ -1,0 +1,194 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_progress_path",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Interactive demo (with plh_module_list_item component)"
+    },
+    {
+      "name": "variant_list",
+      "value": "name: curved | text: curved;\nname: wavy | text: wavy;  \nname: basic | text: basic;"
+    },
+    {
+      "type": "text",
+      "value": "Variant:"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "variant_radio",
+      "value": "curved",
+      "parameter_list": "answer_list: @local.variant_list;\nitem_width: 72px;"
+    },
+    {
+      "type": "text",
+      "value": "Number of items (1-4):"
+    },
+    {
+      "type": "number_selector",
+      "name": "limit",
+      "value": 4,
+      "parameter_list": "min_value:1;\nmax_value:4; "
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "background_image_asset: images/sa_kids_app_pattern_blue.svg;",
+      "style_list": "padding-top: 24px;\nbackground-size: 100%;\nbackground-repeat: repeat;"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: @local.variant_radio;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "task_cards_data",
+      "parameter_list": "limit: @local.limit;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "module_image_asset: @item.image;\nnav_image_asset: images/icons/expand_circle_right.png;\nlocked_image_asset: images/icons/locked.png;\nvariant: circle;\ncompleted: @item.completed;\nhighlighted: @item.highlighted;\nis_locked: @item.locked;",
+      "comments": "The progress_path component is currently designed to work either the task_card component (cricle variant) or the plh_module_list_item component (circle variant)"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: @local.variant_radio;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "task_cards_data",
+      "parameter_list": "limit: @local.limit;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "module_image_asset: @item.image;\nnav_image_asset: images/icons/expand_circle_right.png;\nlocked_image_asset: images/icons/locked.png;\nvariant: circle;\ncompleted: @item.completed;\nhighlighted: @item.highlighted;\nis_locked: @item.locked;",
+      "comments": "The progress_path component is currently designed to work either the task_card component (cricle variant) or the plh_module_list_item component (circle variant)"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "name": "in_progress_icon",
+      "value": "images/icons/in_progress.svg"
+    },
+    {
+      "name": "completed_icon",
+      "value": "images/icons/tick_white.svg"
+    },
+    {
+      "name": "highlighted_text",
+      "value": "Active"
+    },
+    {
+      "name": "progress_units_name",
+      "value": "sections"
+    },
+    {
+      "type": "title",
+      "value": "Progress path using data items - path doesn't show"
+    },
+    {
+      "type": "button",
+      "name": "locked_toggle",
+      "value": "Toggle locked status of task_group_id_1",
+      "parameter_list": "click | set_data | \n\n_list_id: task_cards_data,\n_id: task_group_id_1,\nlocked: !@item.locked"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: curved;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.task_cards_data"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "variant: circle;\ntask_group_id: @item.id;\ntask_group_data: @item.task_group_data;\ncompleted_field: @item.completed_field;\ntitle: @item.title;\nimage: @item.image;\nin_progress_icon: @local.in_progress_icon;\ncompleted_icon: @local.completed_icon;\nhighlighted_text: @local.highlighted_text;\nprogress_units_name: @local.progress_units_name;\nlocked: @item.locked;\nlocked_image_asset:images/icons/locked.png;",
+      "action_list": "click | pop_up: example_text;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "title",
+      "value": "Progress path using plh_module_list_item - path segments not aligned"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "highlighted_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "All items highlighted: @local.highlighted_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: curved;"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.task_cards_data"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "module_image_asset: @item.image;\nlocked_image_asset: images/icons/locked.png;\nvariant: circle; \ncompleted: @fields.@item.completed;\nhighlighted: @local.highlighted_toggle;\nis_locked: @item.locked;",
+      "action_list": "click | pop_up: example_text;"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "title",
+      "value": "Progress path using data items AND plh_module_list_item - current use case"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: curved;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.task_cards_data"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "module_image_asset: @item.image;\nlocked_image_asset: images/icons/locked.png;\nvariant: circle; \ncompleted: @fields.@item.completed;\nhighlighted: @local.highlighted_toggle;\nis_locked: @item.locked;",
+      "action_list": "click | pop_up: example_text;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "text",
+      "value": "Template: https://docs.google.com/spreadsheets/d/14BBKG07nqUWDmcscdUMv1AKYSWGBUPCNDT-VcSERHyU/edit?gid=1837915733#gid=1837915733"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translation_data_items",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "example_lang_select",
+      "value": "example_lang_select"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_activities",
+      "value": "@data.debug_translation_data"
+    },
+    {
+      "type": "text",
+      "name": "debug_title_translation_@item.id",
+      "value": "@item.text"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_activities",
+      "value": "@data.debug_translation_data"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_text",
+      "value": "example_text"
+    },
+    {
+      "name": "text",
+      "value": "@item.text"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

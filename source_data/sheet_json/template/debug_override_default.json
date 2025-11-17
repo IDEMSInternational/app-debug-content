@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_override_default",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Default title"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_1",
+      "value": "@field.debug_boolean",
+      "action_list": "changed | set_field:debug_boolean:@local.toggle_1;\nchanged | emit: force_reload"
+    }
+  ]
+}

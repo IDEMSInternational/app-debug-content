@@ -1,0 +1,70 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_var_in_bulleted_list_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "List with last item global",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "* First item\n* @global.savings_option_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "List with first item global",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "* @global.savings_option_1\n* Second item",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "List with only global and a bit of text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "This is a bit of text before the list\n* @global.savings_option_1\n* @global.savings_option_2",
+      "exclude_from_translation": true,
+      "comment": "style: numbered; or style: marked;"
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "List with only global using *",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "* @global.savings_option_1\n* @global.savings_option_2",
+      "exclude_from_translation": true,
+      "comment": "Alternative method to assign a bullet where only dynamic expression exists (no hardcoded text)"
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "Ordered lists (hardcoded)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "1. @global.savings_option_1\n2. @global.savings_option_2",
+      "exclude_from_translation": true
+    }
+  ]
+}

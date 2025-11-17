@@ -1,0 +1,25 @@
+{
+  "flow_type": "generator",
+  "flow_name": "debug_translation_gen",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "input_data_list": "debug_translation",
+    "output_flow_name": "debug_translation_{@gen.id}",
+    "output_flow_type": "template"
+  },
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_data_items_translate_nest",
+      "value": "debug_data_items_translate_nest"
+    },
+    {
+      "name": "foreign_key",
+      "value": "@gen.foreign_key"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

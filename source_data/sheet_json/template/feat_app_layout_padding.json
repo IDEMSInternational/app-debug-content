@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_padding",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "32px 0"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Template-level app config layout overrides"
+    },
+    {
+      "type": "title",
+      "value": "Page padding: 32px 0"
+    },
+    {
+      "type": "begin_template",
+      "name": "feat_app_layout_menu",
+      "value": "feat_app_layout_menu"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "title",
+      "value": "Applying padding to specific elements"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column;",
+      "style_list": "padding-inline: 24px;",
+      "comments": "In this case, the padding is applied twice: once on the component container (as all style_list properties are) and again on a child of the display group component (in accordance with the custom handling of styles for the display group component). See issue #2709"
+    },
+    {
+      "type": "text",
+      "value": "Display group with custom padding"
+    },
+    {
+      "type": "button",
+      "value": "A button"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column;\nvariant: inline_padding;"
+    },
+    {
+      "type": "text",
+      "value": "Display group with variant: inline_padding"
+    },
+    {
+      "type": "button",
+      "value": "A button"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

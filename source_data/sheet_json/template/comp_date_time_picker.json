@@ -1,0 +1,117 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_date_time_picker",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Default"
+    },
+    {
+      "name": "var_1"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_1",
+      "action_list": "changed | set_local: var_1: this.value;"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_1"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Disabled"
+    },
+    {
+      "name": "var_2"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_2",
+      "value": "1994-12-15T13:47",
+      "action_list": "changed | set_local: var_2: this.value;",
+      "parameter_list": "disabled: true"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_2"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Date Only"
+    },
+    {
+      "name": "var_3"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_3",
+      "action_list": "changed | set_local: var_3: this.value;",
+      "parameter_list": "type: date"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_3"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Time Only"
+    },
+    {
+      "name": "var_4"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_4",
+      "action_list": "changed | set_local: var_4: this.value;",
+      "parameter_list": "type: time"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_4"
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "Date Time"
+    },
+    {
+      "name": "var_5"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_5",
+      "action_list": "changed | set_local: var_5: this.value;",
+      "parameter_list": "type: date-time"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_5"
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "With Value"
+    },
+    {
+      "name": "var_6"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_6",
+      "value": "1994-12-15T13:47",
+      "action_list": "changed | set_local: var_6: this.value;",
+      "parameter_list": "type: date-time"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.var_6"
+    }
+  ]
+}

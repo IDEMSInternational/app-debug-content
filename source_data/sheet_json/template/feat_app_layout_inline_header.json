@@ -1,0 +1,42 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_inline_header",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;\nstyle: background_solid;"
+    },
+    {
+      "type": "title",
+      "value": "Sticky header",
+      "parameter_list": "variant: header;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Template-level app config layout overrides"
+    },
+    {
+      "type": "title",
+      "value": "Header hidden, inline sticky dg"
+    },
+    {
+      "type": "begin_template",
+      "name": "feat_app_layout_menu",
+      "value": "feat_app_layout_menu"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

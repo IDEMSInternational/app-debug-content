@@ -1,0 +1,47 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_dashed_box",
+  "status": "released",
+  "rows": [
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_passive",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success. ",
+      "exclude_from_translation": true,
+      "parameter_list": "style: alert;icon_src: images/icons/star_white.svg;\nicon_position: top-right;"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_active",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success. ",
+      "exclude_from_translation": true,
+      "parameter_list": "style: default;icon_src: images/icons/star_white.svg;\nicon_position: top-left;"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_passive",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success. ",
+      "exclude_from_translation": true,
+      "parameter_list": "style: alert;icon_src: images/icons/star_white.svg;\nicon_position: bottom-left;"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_active",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success. ",
+      "exclude_from_translation": true,
+      "parameter_list": "style: default;icon_src: images/icons/star_white.svg;\nicon_position: bottom-right;"
+    },
+    {
+      "type": "dashed_box",
+      "name": "dashed_box_active",
+      "value": "Every time you do a relax, mark your star in ParentPoints to track your success. ",
+      "exclude_from_translation": true,
+      "parameter_list": "style: alert;icon_src: images/icons/star_white.svg;\nicon_position: bottom-right;"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

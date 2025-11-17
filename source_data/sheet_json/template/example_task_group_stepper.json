@@ -1,0 +1,46 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_task_group_stepper",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "task_group",
+      "value": "example_tg_stepper_data"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.task_group"
+    },
+    {
+      "name": "template_name",
+      "value": "tg_1_@item.id"
+    },
+    {
+      "type": "begin_template",
+      "name": "@local.template_name",
+      "value": "@local.template_name",
+      "condition": "@item.active"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "button",
+      "name": "nav_forwards_@item.id",
+      "value": "Next",
+      "action_list": "click | set_item | active:false;\nclick | set_item | _index: @item._index + 1, active:true;",
+      "condition": "@item.active && !@item._last"
+    },
+    {
+      "type": "button",
+      "name": "nav_backwards_@item.id",
+      "value": "Back",
+      "action_list": "click | set_item | active:false;\nclick | set_item | _index: @item._index - 1, active:true;",
+      "condition": "@item.active && !@item._first"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

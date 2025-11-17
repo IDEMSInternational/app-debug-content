@@ -1,0 +1,15 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_actions_bottom",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Button",
+      "action_list": "click | emit:completed",
+      "exclude_from_translation": true
+    }
+  ]
+}

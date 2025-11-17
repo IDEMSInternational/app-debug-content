@@ -1,0 +1,19 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_pdf_params",
+  "status": "released",
+  "rows": [
+    {
+      "id": "@row.param",
+      "param": "compatibility_error_message",
+      "description": "Message displayed when legacy browser detected",
+      "default": "Embedded PDFs are not supported in this browser, please use an up-to-date version of Google Chrome to view or open in external app"
+    },
+    {
+      "id": "@row.param",
+      "param": "open_external_text",
+      "description": "Message displayed on legacy browser prompt button to open with external app",
+      "default": "Open with..."
+    }
+  ]
+}

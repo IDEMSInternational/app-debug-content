@@ -1,0 +1,28 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_lang_template_pop_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "@data.example_lang.example_lang_1.title"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@data.example_lang.example_lang_1.text"
+    },
+    {
+      "type": "image",
+      "name": "image_1",
+      "value": "@data.example_lang.example_lang_1.image_asset"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie_1",
+      "value": "@data.example_lang.example_lang_1.lottie_asset"
+    }
+  ]
+}

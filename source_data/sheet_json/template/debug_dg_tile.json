@@ -1,0 +1,114 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_tile",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "label_group",
+      "value": "@global.together"
+    },
+    {
+      "name": "image_group",
+      "value": "@global.together_image"
+    },
+    {
+      "name": "label_individual",
+      "value": "@global.individual"
+    },
+    {
+      "name": "image_individual",
+      "value": "@global.individual_image"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_1"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_1",
+      "parameter_list": "first_line_text: @local.label_individual;\nstyle: workshop_page;\nicon_src:@local.image_individual;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_2",
+      "parameter_list": "first_line_text: @local.label_group;\nstyle: workshop_page;\nicon_src:@local.image_group;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_2"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_3",
+      "parameter_list": "first_line_text: @local.label_individual;\nstyle: workshop_page;\nicon_src:@local.image_individual;",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_4",
+      "parameter_list": "first_line_text: @local.label_group;\nstyle: workshop_page;\nicon_src:@local.image_group;",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_3",
+      "style_list": "justify-content: center"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_5",
+      "parameter_list": "first_line_text: @local.label_individual;\nstyle: workshop_page;\nicon_src:@local.image_individual;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_6",
+      "parameter_list": "first_line_text: @local.label_group;\nstyle: workshop_page;\nicon_src:@local.image_group;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_4",
+      "style_list": "justify-content: space-evenly"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_7",
+      "parameter_list": "first_line_text: @local.label_individual;\nstyle: workshop_page;\nicon_src:@local.image_individual;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_8",
+      "parameter_list": "first_line_text: @local.label_group;\nstyle: workshop_page;\nicon_src:@local.image_group;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_5",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_9",
+      "parameter_list": "first_line_text: @local.label_individual;\nstyle: workshop_page;\nicon_src:@local.image_individual;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_10",
+      "parameter_list": "first_line_text: @local.label_group;\nstyle: workshop_page;\nicon_src:@local.image_group;"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_test_1_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Test 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "test_1_text",
+      "value": "success: test1 text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_override_1",
+      "value": "debug_nesting_override_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "template_wrapper",
+      "value": "debug_nesting_sheet_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "success: test1 title",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "@local.test_1_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Test 2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "test_2_text",
+      "value": "success: test2 text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_sheet_2",
+      "value": "debug_nesting_sheet_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "sucess: test2 title",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "@local.test_2_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "set_variable",
+      "name": "test_3_text",
+      "value": "success: text3_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Test 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "wrapper",
+      "value": "debug_nesting_override_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "template_wrapper",
+      "value": "debug_nesting_override_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "template_wrapper",
+      "value": "debug_nesting_sheet_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "success: text3_title",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "@local.test_3_text",
+      "exclude_from_translation": true,
+      "comments": "Test setting deeply nested property from local variables"
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

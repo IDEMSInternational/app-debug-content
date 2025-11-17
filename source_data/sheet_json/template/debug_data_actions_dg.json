@@ -1,0 +1,143 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "debug_data_actions_dg",
+  "status": "released",
+  "rows": [
+    {
+      "name": "module_id",
+      "value": "selfcare"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Without display group"
+    },
+    {
+      "name": "hp_review_count_1"
+    },
+    {
+      "type": "data_items",
+      "name": "hp_review_exists_1",
+      "value": "module_tasks",
+      "action_list": "data_changed | set_local : hp_review_count_1 : @items.length",
+      "parameter_list": "filter: @item.id == @local.module_id"
+    },
+    {
+      "type": "text",
+      "name": "debug_hp_review_count_1",
+      "value": "hp_review_count_1: @local.hp_review_count_1"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "check_in_1",
+      "value": "module_tasks",
+      "parameter_list": "filter: @item.id == @local.module_id",
+      "condition": "@local.hp_review_count_1 !== undefined"
+    },
+    {
+      "type": "text",
+      "name": "debug_ts_1",
+      "value": "Show this only when hp review exists for this module"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "With display group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_2",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "hp_review_count_2"
+    },
+    {
+      "type": "data_items",
+      "name": "hp_review_exists_2",
+      "value": "module_tasks",
+      "action_list": "data_changed | set_local : hp_review_count_2 : @items.length",
+      "parameter_list": "filter: @item.id == @local.module_id"
+    },
+    {
+      "type": "text",
+      "name": "debug_hp_review_count_2",
+      "value": "hp_review_count_2: @local.hp_review_count_2"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "check_in_2",
+      "value": "module_tasks",
+      "parameter_list": "filter: @item.id == @local.module_id",
+      "condition": "@local.hp_review_count_2 !== undefined"
+    },
+    {
+      "type": "text",
+      "name": "debug_ts_2",
+      "value": "Show this only when hp review exists for this module"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "With display group (but computation done outside)"
+    },
+    {
+      "name": "hp_review_count_3"
+    },
+    {
+      "type": "data_items",
+      "name": "hp_review_exists_3",
+      "value": "module_tasks",
+      "action_list": "data_changed | set_local : hp_review_count_3 : @items.length",
+      "parameter_list": "filter: @item.id == @local.module_id"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_3",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "debug_hp_review_count_3",
+      "value": "hp_review_count_3: @local.hp_review_count_3"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "check_in_3",
+      "value": "module_tasks",
+      "parameter_list": "filter: @item.id == @local.module_id",
+      "condition": "@local.hp_review_count_3 !== undefined"
+    },
+    {
+      "type": "text",
+      "name": "debug_ts_3",
+      "value": "Show this only when hp review exists for this module"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "debug_sheet_link",
+      "value": "Debug sheet: https://docs.google.com/spreadsheets/d/1kpRKj95Js24IYsYwT-3lbfFO-XAOuiDTycGZih0DWOU/edit?gid=1079947998#gid=1079947998"
+    },
+    {
+      "type": "text",
+      "name": "pr_link",
+      "value": "PR: https://github.com/IDEMSInternational/open-app-builder/pull/3008"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_rtl_language",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "RTL language support"
+    },
+    {
+      "type": "text",
+      "value": "Language Direction: @fields._app_language_direction",
+      "comments": "Will either be \"ltr\" or \"rtl\" depending on active language. RTL languages should be indicated in the deployment config `config.app_config.APP_LANGUAGES_META`"
+    },
+    {
+      "type": "text",
+      "value": "Some text in English",
+      "comments": "\"Some text in English\" is currently the only string with a corresponding translation in en_rtl"
+    },
+    {
+      "name": "language_list",
+      "value": "name: gb_en | text: 1. English;\nname: en_rtl | text: 2. English RTL;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "action_list": "changed | emit: set_language: @local.language_select;\nchanged | emit: force_reload;",
+      "parameter_list": "answer_list: @local.language_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Some text in English which includes Markdown. It also ends in a ends in a full stop.\n1. First **item**\n2. Second item\n- First _bullet_\n- Second bullet"
+    },
+    {
+      "type": "title",
+      "value": "Images"
+    },
+    {
+      "type": "text",
+      "value": "Example image that flips horizontally on RTL."
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@fields._app_language_direction == \"ltr\"",
+      "comments": "Display different rows depending on language direction"
+    },
+    {
+      "type": "image",
+      "value": "images/avatar_1.png",
+      "style_list": "height: 100px;"
+    },
+    {
+      "type": "text",
+      "value": "Some text in English"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@fields._app_language_direction == \"rtl\""
+    },
+    {
+      "type": "image",
+      "value": "images/avatar_1.png",
+      "style_list": "height: 100px;\ntransform: scaleX(-1);",
+      "comments": "Tranform style_list flips horizontally. \n\nIf using image that has included text could use different image instead"
+    },
+    {
+      "type": "text",
+      "value": "Some text in English"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

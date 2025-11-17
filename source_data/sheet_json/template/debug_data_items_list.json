@@ -1,0 +1,176 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Looping over list specified in local variable"
+    },
+    {
+      "name": "data_flow",
+      "value": "debug_data_list_order",
+      "comments": "Data list here debug_data_lists"
+    },
+    {
+      "name": "data_name",
+      "value": "debug"
+    },
+    {
+      "type": "text",
+      "value": "**Data items by flow name**"
+    },
+    {
+      "type": "text",
+      "value": "Excl data"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.data_flow",
+      "comments": "Error: Cannot assign to read only property '0' of string 'd'"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "Incl data"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.@local.data_flow",
+      "condition": false,
+      "comments": "Error: [data_list] \"data_flow\" not found\nError: No data exists for collection [data_flow], cannot initialise"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "**Data items by data list name**"
+    },
+    {
+      "type": "text",
+      "value": "Excl data"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.data_name",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "Incl data"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.@local.data_name",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "**Items by flow name**"
+    },
+    {
+      "type": "text",
+      "value": "Excl data"
+    },
+    {
+      "type": "begin_items",
+      "value": "@local.data_flow",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "text",
+      "value": "Incl data"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.@local.data_flow",
+      "comments": "Works"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "text",
+      "value": "**Items by data list name**"
+    },
+    {
+      "type": "text",
+      "value": "Excl data"
+    },
+    {
+      "type": "begin_items",
+      "value": "@local.data_name",
+      "condition": false,
+      "comments": "Error: Cannot assign to read only property '0' of string 'd'"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "text",
+      "value": "Incl data"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.@local.data_name",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

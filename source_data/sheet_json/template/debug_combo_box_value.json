@@ -1,0 +1,51 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_value",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Combo box intiial value"
+    },
+    {
+      "type": "title",
+      "value": "Example 1"
+    },
+    {
+      "name": "answer_list",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box",
+      "value": "name_2",
+      "parameter_list": "answer_list: @local.answer_list;",
+      "comments": "The text displayed initially should be \"This is text 2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "Example 2 – string/number value"
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name: 1 | text: This is text 1;  \nname: 2 | text: This is text 2;  \nname: 3 | text: This is text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_field",
+      "name": "debug_combo_box_value_number",
+      "value": 1,
+      "comments": "Save value to field to cast as string"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box",
+      "value": "@field.debug_combo_box_value_number",
+      "parameter_list": "answer_list: @local.answer_list_2;",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_temp_override_es_sp",
+  "status": "released",
+  "flow_subtype": "debug",
+  "override_target": "example_temp_override_default",
+  "override_condition": "\"@fields._app_language\".startsWith(\"es\")",
+  "comments": "condition used to apply override to all es users (e.g. es_sp)",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "ES_SP Overridden Template",
+      "exclude_from_translation": true,
+      "comments": "Show additional content before main template in override"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_override_default",
+      "value": "example_temp_override_default",
+      "exclude_from_translation": true,
+      "is_override_target": true,
+      "comments": "This is required to allow an override template to include the original version of the template that it is overriding (otherwise would cause infinite loop)"
+    },
+    {
+      "name": "a_or_b",
+      "value": "b"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}
