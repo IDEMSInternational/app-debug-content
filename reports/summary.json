@@ -39,7 +39,7 @@
       },
       {
         "type": "button",
-        "count": 421
+        "count": 417
       },
       {
         "type": "calendar",
@@ -87,7 +87,7 @@
       },
       {
         "type": "display_group",
-        "count": 265
+        "count": 261
       },
       {
         "type": "drawer",
@@ -231,7 +231,7 @@
       },
       {
         "type": "set_variable",
-        "count": 910
+        "count": 907
       },
       {
         "type": "simple_checkbox",
@@ -267,7 +267,7 @@
       },
       {
         "type": "text",
-        "count": 1313
+        "count": 1311
       },
       {
         "type": "text_area",
@@ -479,7 +479,7 @@
       },
       {
         "type": "set_local",
-        "count": 73
+        "count": 67
       },
       {
         "type": "share",
@@ -1164,7 +1164,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 69
+        "total": 68
       },
       {
         "type": "template",

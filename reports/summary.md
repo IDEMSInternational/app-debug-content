@@ -12,7 +12,7 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 10 |
 | audio | 13 |
-| button | 421 |
+| button | 417 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -24,7 +24,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 265 |
+| display_group | 261 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 11 |
@@ -60,7 +60,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 910 |
+| set_variable | 907 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -69,7 +69,7 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 154 |
-| text | 1313 |
+| text | 1311 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
@@ -128,7 +128,7 @@
 | set_field | 119 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 73 |
+| set_local | 67 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -307,7 +307,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 112 |
-| template | component_demo | 69 |
+| template | component_demo | 68 |
 | template | debug | 293 |
 | template | example | 1 |
 | template | example_generator | 2 |
