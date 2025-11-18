@@ -7,7 +7,10 @@ config.api.db_name = "debug"
 
 config.google_drive = {
   sheets_folders: [{ id: "1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc", name: "Debug Sheets" }],
-  assets_folders: [{ id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs", name: "Debug Assets" }],
+  assets_folders: [
+    { id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs", name: "Debug Assets" },
+    { id: "19Kbwidpb_nOKpJAuRCkVLpAzWbKPzNm1", name: "debug_asset_pack_1", remote: true }
+  ],
 };
 
 config.web.favicon_asset = "images/icons/favicon.svg";
