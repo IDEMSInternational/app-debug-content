@@ -3,7 +3,7 @@
   "flow_type": "asset_pack",
   "rows": [
     {
-      "id": "debug_asset_pack_1/image_4.png",
+      "id": "asset_pack_debugging/image_4.png",
       "md5Checksum": "23bd56d294206bdeadccf744b15f9b00",
       "size_kb": 11.8,
       "overrides": {
@@ -11,32 +11,32 @@
           "es_sp": {
             "size_kb": 10,
             "md5Checksum": "a2b6687f417f10b3d98f5a920a61a86e",
-            "filePath": "debug_asset_pack_1/es_sp/image_4.png"
+            "filePath": "asset_pack_debugging/es_sp/image_4.png"
           }
         }
       }
     },
     {
-      "id": "debug_asset_pack_1/image_1.png",
+      "id": "asset_pack_debugging/image_1.png",
       "md5Checksum": "ffcd780c1f2741241aa739c83f057fd6",
       "size_kb": 8.8
     },
     {
-      "id": "debug_asset_pack_1/image_2.png",
+      "id": "asset_pack_debugging/image_2.png",
       "md5Checksum": "bef7116ee7f169361ec33f3d589a9412",
       "size_kb": 8.6
     },
     {
-      "id": "debug_asset_pack_1/image_3.png",
-      "overridesOnly": true,
-      "size_kb": 10.5,
+      "id": "asset_pack_debugging/image_3.png",
       "md5Checksum": "b28f7448d449b159057f8773b53da956",
+      "size_kb": 10.5,
+      "overridesOnly": true,
       "overrides": {
         "theme_default": {
           "es_sp": {
             "size_kb": 10.5,
             "md5Checksum": "b28f7448d449b159057f8773b53da956",
-            "filePath": "debug_asset_pack_1/es_sp/image_3.png"
+            "filePath": "asset_pack_debugging/es_sp/image_3.png"
           }
         }
       }
