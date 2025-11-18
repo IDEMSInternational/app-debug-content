@@ -44,6 +44,27 @@
     "md5Checksum": "000bdadc5c44489368e4320d987892a7",
     "size_kb": 196.4
   },
+  "debug_remote_asset_pack_1/image_1.png": {
+    "md5Checksum": "c26f0932f501f5b0e55322c0ad30fddf",
+    "size_kb": 8.8
+  },
+  "debug_remote_asset_pack_1/image_3.png": {
+    "md5Checksum": "5de98f5bb24410b7e088a6b36dd87b8e",
+    "size_kb": 9.6
+  },
+  "debug_remote_asset_pack_1/image_4.png": {
+    "md5Checksum": "085692002e23e08fa7134e6b01007ce4",
+    "overrides": {
+      "theme_default": {
+        "es_sp": {
+          "filePath": "debug_remote_asset_pack_1/es_sp/image_4.png",
+          "md5Checksum": "fe9353eee21f8afa0cf9346a7d4aaa6e",
+          "size_kb": 10.1
+        }
+      }
+    },
+    "size_kb": 11.9
+  },
   "debug_theme_language.png": {
     "md5Checksum": "a86e175e00b77a34a936cc08214359ca",
     "size_kb": 21.9

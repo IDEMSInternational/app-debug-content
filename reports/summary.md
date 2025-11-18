@@ -146,7 +146,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 2465 KB | 2.5 MB |
-| unused | 1155 KB | 1.2 MB |
+| unused | 1185 KB | 1.2 MB |
 </details>
 
 <details open>
@@ -161,6 +161,9 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon-only.png | 128.1 |
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
+| debug_remote_asset_pack_1/image_1.png | 8.8 |
+| debug_remote_asset_pack_1/image_3.png | 9.6 |
+| debug_remote_asset_pack_1/image_4.png | 11.9 |
 | images/icons/airplane_blue.svg | 1.5 |
 | images/icons/close.png | 2.5 |
 | images/icons/favicon.svg | 2.1 |

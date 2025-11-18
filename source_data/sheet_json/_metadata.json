@@ -3728,16 +3728,6 @@
   },
   {
     "flow_type": "template",
-    "flow_subtype": "component_demo",
-    "flow_name": "debug_tab_group",
-    "_source": {
-      "name": "Debug Sheets",
-      "path": "component_sheets/debug_tab_group.xlsx",
-      "url": "https://docs.google.com/spreadsheets/d/1HTqpAEkwxFJPwh1ulKmAEuH1jcMiBZQU3rfSVTlVT5Y"
-    }
-  },
-  {
-    "flow_type": "template",
     "flow_name": "debug_task_group_completion",
     "_source": {
       "name": "Debug Sheets",
