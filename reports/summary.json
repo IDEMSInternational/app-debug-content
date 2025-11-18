@@ -528,7 +528,7 @@
       },
       {
         "assets": "unused",
-        "KB": "1155 KB",
+        "KB": "1185 KB",
         "MB": "1.2 MB"
       }
     ]
@@ -554,6 +554,18 @@
       {
         "path": "android/splash.png",
         "size_kb": 147.4
+      },
+      {
+        "path": "debug_remote_asset_pack_1/image_1.png",
+        "size_kb": 8.8
+      },
+      {
+        "path": "debug_remote_asset_pack_1/image_3.png",
+        "size_kb": 9.6
+      },
+      {
+        "path": "debug_remote_asset_pack_1/image_4.png",
+        "size_kb": 11.9
       },
       {
         "path": "images/icons/airplane_blue.svg",
