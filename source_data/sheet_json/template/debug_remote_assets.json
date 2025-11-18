@@ -25,8 +25,9 @@
     },
     {
       "type": "image",
-      "value": "debug_asset_pack_1/image_1.png",
-      "style_list": "max-width:140px"
+      "value": "asset_pack_debugging/image_1.png",
+      "style_list": "max-width:140px",
+      "comments": "Assets are nested inside `asset_pack_debugging` folder for clearer separation in core asset folders, but nesting is not necessary"
     },
     {
       "type": "end_display_group"
@@ -41,7 +42,7 @@
     },
     {
       "type": "image",
-      "value": "debug_asset_pack_1/image_2.png",
+      "value": "asset_pack_debugging/image_2.png",
       "style_list": "max-width:140px"
     },
     {
@@ -57,7 +58,7 @@
     },
     {
       "type": "image",
-      "value": "debug_asset_pack_1/image_3.png",
+      "value": "asset_pack_debugging/image_3.png",
       "style_list": "max-width:140px"
     },
     {
@@ -73,7 +74,7 @@
     },
     {
       "type": "image",
-      "value": "debug_asset_pack_1/image_4.png",
+      "value": "asset_pack_debugging/image_4.png",
       "style_list": "max-width:140px"
     },
     {

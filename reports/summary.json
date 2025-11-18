@@ -523,12 +523,12 @@
     "data": [
       {
         "assets": "total",
-        "KB": "2465 KB",
+        "KB": "2495 KB",
         "MB": "2.5 MB"
       },
       {
         "assets": "unused",
-        "KB": "1185 KB",
+        "KB": "1155 KB",
         "MB": "1.2 MB"
       }
     ]
@@ -554,18 +554,6 @@
       {
         "path": "android/splash.png",
         "size_kb": 147.4
-      },
-      {
-        "path": "debug_remote_asset_pack_1/image_1.png",
-        "size_kb": 8.8
-      },
-      {
-        "path": "debug_remote_asset_pack_1/image_3.png",
-        "size_kb": 9.6
-      },
-      {
-        "path": "debug_remote_asset_pack_1/image_4.png",
-        "size_kb": 11.9
       },
       {
         "path": "images/icons/airplane_blue.svg",
@@ -616,32 +604,17 @@
   "assets_missing": {
     "data": [
       {
+        "path": "asset_pack_debugging/image_2.png",
+        "count": 1,
+        "missing": true
+      },
+      {
         "path": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
         "count": 1,
         "missing": true
       },
       {
         "path": "confetti.svg",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "debug_asset_pack_1/image_1.png",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "debug_asset_pack_1/image_2.png",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "debug_asset_pack_1/image_3.png",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "debug_asset_pack_1/image_4.png",
         "count": 1,
         "missing": true
       },
@@ -694,6 +667,21 @@
   },
   "asset_summary": {
     "data": [
+      {
+        "path": "asset_pack_debugging/image_1.png",
+        "count": 1,
+        "size_kb": 8.8
+      },
+      {
+        "path": "asset_pack_debugging/image_3.png",
+        "count": 1,
+        "size_kb": 9.6
+      },
+      {
+        "path": "asset_pack_debugging/image_4.png",
+        "count": 1,
+        "size_kb": 11.9
+      },
       {
         "path": "audio/baby_elephant_walk.wav",
         "count": 3,

@@ -145,8 +145,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 2465 KB | 2.5 MB |
-| unused | 1185 KB | 1.2 MB |
+| total | 2495 KB | 2.5 MB |
+| unused | 1155 KB | 1.2 MB |
 </details>
 
 <details open>
@@ -161,9 +161,6 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon-only.png | 128.1 |
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
-| debug_remote_asset_pack_1/image_1.png | 8.8 |
-| debug_remote_asset_pack_1/image_3.png | 9.6 |
-| debug_remote_asset_pack_1/image_4.png | 11.9 |
 | images/icons/airplane_blue.svg | 1.5 |
 | images/icons/close.png | 2.5 |
 | images/icons/favicon.svg | 2.1 |
@@ -184,12 +181,9 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
+| asset_pack_debugging/image_2.png | 1 |
 | click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg | 1 |
 | confetti.svg | 1 |
-| debug_asset_pack_1/image_1.png | 1 |
-| debug_asset_pack_1/image_2.png | 1 |
-| debug_asset_pack_1/image_3.png | 1 |
-| debug_asset_pack_1/image_4.png | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
 | images/map_view_bg.jpg | 1 |
 | map_data/KRCS_branches.json | 2 |
@@ -208,6 +202,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
+| asset_pack_debugging/image_1.png | 8.8 | 1 |
+| asset_pack_debugging/image_3.png | 9.6 | 1 |
+| asset_pack_debugging/image_4.png | 11.9 | 1 |
 | audio/baby_elephant_walk.wav | 430.7 | 3 |
 | audio/test_audio.mp3 | 43.4 | 8 |
 | audio/timer/bell_1.mp3 | 121.6 | 1 |
