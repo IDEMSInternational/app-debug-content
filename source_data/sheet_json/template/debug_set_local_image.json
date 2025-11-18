@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_local_image",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "debug_variable",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "direct_image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Text below the direct image and above the variable image.",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "variable_image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    }
+  ]
+}

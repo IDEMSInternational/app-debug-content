@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_scope_in",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "articles_data_list_name",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_inner",
+      "value": "@local.articles_data_list_name",
+      "parameter_list": "filter: !@item.completed; \nlimit: 1",
+      "comments": "Subtemplate to ensure @item refers to inner scope"
+    },
+    {
+      "type": "text",
+      "name": "first_uncompleted_article_id",
+      "value": "ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "first_uncompleted_article_row_index",
+      "value": "Row Index: @item.row_index"
+    },
+    {
+      "type": "button",
+      "name": "button_start",
+      "value": "Start",
+      "condition": "@item.row_index == 0"
+    },
+    {
+      "type": "button",
+      "name": "button_continue",
+      "value": "Continue",
+      "condition": "@item.row_index != 0"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

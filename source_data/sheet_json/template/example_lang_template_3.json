@@ -1,0 +1,42 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_lang_template_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "lang_select",
+      "value": "example_lang_select"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "**@data.example_lang.example_lang_1.title**",
+      "exclude_from_translation": true,
+      "comments": "text_1 and text_2 should display the same"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "@data.example_lang.example_lang_1.bold_title",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "@data.example_lang.example_lang_1.title happy",
+      "exclude_from_translation": true,
+      "comments": "text_3 and text_4 should display the same"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "@data.example_lang.example_lang_1.title_and_happy",
+      "exclude_from_translation": true
+    }
+  ]
+}

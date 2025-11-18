@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_nav_actions_2",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "feat_nav_actions_2"
+    },
+    {
+      "type": "button",
+      "value": "Navigate back",
+      "action_list": "click | nav: back"
+    },
+    {
+      "type": "button",
+      "value": "Navigate forward",
+      "action_list": "click | nav: forward"
+    },
+    {
+      "type": "button",
+      "value": "Go to feat_nav_actions_1",
+      "action_list": "click | go_to: feat_nav_actions_1"
+    },
+    {
+      "type": "button",
+      "value": "Go to feat_nav_actions_2",
+      "action_list": "click | go_to: feat_nav_actions_2"
+    }
+  ]
+}

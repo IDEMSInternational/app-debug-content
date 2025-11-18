@@ -1,0 +1,106 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_button",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "label_group",
+      "value": "@global.together"
+    },
+    {
+      "name": "image_group",
+      "value": "@global.together_image"
+    },
+    {
+      "name": "label_individual",
+      "value": "@global.individual"
+    },
+    {
+      "name": "image_individual",
+      "value": "@global.individual_image"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_1"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Text 1"
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Text 2"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_2"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Text 3",
+      "style_list": "flex:1"
+    },
+    {
+      "type": "button",
+      "name": "button_4",
+      "value": "Text 4",
+      "style_list": "flex:2"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_3",
+      "parameter_list": "style:parent_point"
+    },
+    {
+      "type": "button",
+      "name": "button_5",
+      "value": "Text 5"
+    },
+    {
+      "type": "button",
+      "name": "button_6",
+      "value": "Text 6"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_4",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "button",
+      "name": "button_7",
+      "value": "Text 7"
+    },
+    {
+      "type": "button",
+      "name": "button_8",
+      "value": "Text 8"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "button_9",
+      "value": "Text 9"
+    },
+    {
+      "type": "button",
+      "name": "button_10",
+      "value": "Text 10"
+    }
+  ]
+}

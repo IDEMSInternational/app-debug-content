@@ -1,0 +1,12 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_r_template",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Nested template"
+    }
+  ]
+}

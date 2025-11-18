@@ -1,0 +1,19 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_lottie",
+  "status": "released",
+  "rows": [
+    {
+      "type": "lottie_animation",
+      "name": "relax_anim",
+      "value": "lottie/blob_play_ball.json",
+      "exclude_from_translation": true,
+      "comments": "Points to here"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

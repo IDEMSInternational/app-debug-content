@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "plh_bottom_nav_settings",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": "comp_plh_bottom_nav",
+        "background": "none"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Settings"
+    }
+  ]
+}

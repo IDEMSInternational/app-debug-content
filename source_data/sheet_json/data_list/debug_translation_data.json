@@ -1,0 +1,16 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_translation_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id_1",
+      "text::eng": "How are you feeling today?"
+    },
+    {
+      "id": "id_2",
+      "text::eng": "Untranslated text"
+    }
+  ]
+}

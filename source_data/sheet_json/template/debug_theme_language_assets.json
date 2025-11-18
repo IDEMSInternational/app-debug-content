@@ -1,0 +1,46 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_theme_language_assets",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "subtitle",
+      "value": "Example image:"
+    },
+    {
+      "type": "image",
+      "value": "debug_theme_language.png"
+    },
+    {
+      "type": "subtitle",
+      "value": "Set theme:"
+    },
+    {
+      "name": "theme_list",
+      "value": "name: default | text: default; name: professional | text: professional;"
+    },
+    {
+      "type": "radio_group",
+      "name": "theme_select",
+      "value": "@fields._app_theme",
+      "action_list": "changed | emit: set_theme:@local.theme_select;\nchanged | emit: force_reload;",
+      "parameter_list": "answer_list: @local.theme_list; options_per_row: 2"
+    },
+    {
+      "type": "subtitle",
+      "value": "Set language:"
+    },
+    {
+      "name": "language_select_options",
+      "value": "@data.debug_language"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "action_list": "changed | emit: set_language:@local.language_select;\nchanged | emit: force_reload;",
+      "parameter_list": "answer_list: @local.language_select_options;"
+    }
+  ]
+}

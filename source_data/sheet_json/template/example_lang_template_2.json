@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_lang_template_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "example_lang_template_1",
+      "value": "example_lang_template_1"
+    },
+    {
+      "name": "text_1",
+      "value": "This is a modified text that needs to be translated.\n\nThis is a nested text."
+    },
+    {
+      "name": "reply_happy",
+      "value": "This is the modified reply if the feeling response is happy, the first option.\n\nThis is a nested text."
+    },
+    {
+      "name": "reply_ok",
+      "value": "This is the modified reply if the feeling response is ok, the second option.\n\nThis is a nested text."
+    },
+    {
+      "name": "reply_sad",
+      "value": "This is the modified reply if the feeling response is sad, the third option.\n\nThis is a nested text."
+    },
+    {
+      "name": "subtitle_2",
+      "value": "Which of the following do you like the most (this is modified)?"
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name: option_1 | text:Cats (modified text in answer list);\nname: option_2 | text:Dogs (modified text in answer list);\nname: option_3 | text:Chinchillas (modified text in answer list);"
+    },
+    {
+      "name": "input_allowed",
+      "value": false
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

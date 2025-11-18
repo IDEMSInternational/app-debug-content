@@ -1,0 +1,34 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_var_hyphen",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "@global.parent_app-based learning"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Works in gb_en"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Your @global.parent_app Code"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Works in gb_en and in za_af"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Launch tour",
+      "action_list": "click | start_tour: debug_tour_var_hyphen"
+    }
+  ]
+}

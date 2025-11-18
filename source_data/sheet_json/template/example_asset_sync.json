@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_asset_sync",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Remote asset sync testing",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Download assets",
+      "action_list": "click | download_assets",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "flow_type": "template",
+  "flow_name": "article_box",
+  "status": "released",
+  "rows": [
+    {
+      "name": "id",
+      "value": "article_1"
+    },
+    {
+      "name": "article_id",
+      "value": "article.@local.id"
+    },
+    {
+      "name": "article_data",
+      "value": "@data.@local.article_id"
+    },
+    {
+      "name": "article_goal",
+      "value": "@local.article_data.goal"
+    },
+    {
+      "name": "goal_article_goal",
+      "value": "goal.@local.article_goal"
+    },
+    {
+      "name": "goal_data",
+      "value": "@data.@local.goal_article_goal"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_header",
+      "parameter_list": "style: dashed_box; icon_src: @local.goal_data.icon_asset; icon_position:top-right; "
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "@local.article_data.title"
+    },
+    {
+      "type": "text",
+      "name": "abstract",
+      "value": "@local.article_data.abstract"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Read more",
+      "action_list": "click | set_field: current_article: @local.id; click | go_to: article"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

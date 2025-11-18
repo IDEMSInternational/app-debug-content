@@ -1,0 +1,57 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Dynamic Data"
+    },
+    {
+      "name": "local_1",
+      "value": "Value 1"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "local_1 value: @local.local_1"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "local_1 value: @local.local_1"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_@item.id"
+    },
+    {
+      "type": "text",
+      "name": "dg_id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "dg_text_@item.id",
+      "value": "local_1 value: @local.local_1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

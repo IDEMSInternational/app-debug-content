@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_line_break",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "my_text",
+      "value": "This is the first line of text. \nThis sentence follows a single line break, and is followed by a double line break. \n\nThis is the last line."
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Variable text: @local.my_text"
+    },
+    {
+      "type": "text",
+      "name": "text_list",
+      "value": "- First bullet point\nSentence following a single line break.\n- Second bullet point.\n\nSentence following a double line break...\n- Third bullet point with text set through variable. @local.my_text"
+    }
+  ]
+}

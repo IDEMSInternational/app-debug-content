@@ -1,0 +1,54 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_two_columns_images",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Powered by Parenting for Lifelong Health and partners",
+      "parameter_list": "style: center; text_align: center;"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: two_columns_images"
+    },
+    {
+      "type": "image",
+      "name": "partner_1",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "partner_2",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "partner_3",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "partner_4",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "partner_5",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

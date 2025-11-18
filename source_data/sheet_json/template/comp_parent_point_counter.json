@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_parent_point_counter",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "parent_point_counter",
+      "parameter_list": "icon_src: images/icons/star_blue.svg"
+    },
+    {
+      "type": "parent_point_counter",
+      "parameter_list": "icon_src: images/icons/star_yellow.svg;\ncount: 5"
+    }
+  ]
+}

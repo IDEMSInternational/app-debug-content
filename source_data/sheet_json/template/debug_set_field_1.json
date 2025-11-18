@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_field_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "variable",
+      "value": "Value of the field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Field value is @field.variable",
+      "exclude_from_translation": true,
+      "comments": "Before we switched to templating, this used to be @fields -- but I don't see why it should be plural"
+    }
+  ]
+}

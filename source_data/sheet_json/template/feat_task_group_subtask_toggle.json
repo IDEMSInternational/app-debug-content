@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_task_group_subtask_toggle",
+  "status": "released",
+  "rows": [
+    {
+      "name": "task_group_data"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.@local.task_group_data"
+    },
+    {
+      "type": "text",
+      "value": "@item.id"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_@item.id",
+      "value": "@field.@item.completed_field",
+      "action_list": "changed | toggle_field: @item.completed_field;\nchanged | emit: force_reload;"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

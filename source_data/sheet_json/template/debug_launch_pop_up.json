@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_launch_pop_up",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "feature_rtl_language",
+      "value": "feature_rtl_language"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_text_long",
+      "value": "example_text_long",
+      "comments": "Add additional content to make the template scroll on most screens"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

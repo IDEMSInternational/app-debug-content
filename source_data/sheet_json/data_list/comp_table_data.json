@@ -1,0 +1,68 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_table_data",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "id_1",
+      "ward": "Kemeloi-maraba Ward",
+      "county": "NANDI",
+      "subcounty": "Aldai Sub County"
+    },
+    {
+      "id": "id_2",
+      "ward": "Kabwareng Ward",
+      "county": "NANDI",
+      "subcounty": "Aldai Sub County"
+    },
+    {
+      "id": "id_3",
+      "ward": "Terik Ward",
+      "county": "NANDI",
+      "subcounty": "Aldai Sub County"
+    },
+    {
+      "id": "id_4",
+      "ward": "Usonga Ward",
+      "county": "Siaya",
+      "subcounty": "Alego Usonga Sub County"
+    },
+    {
+      "id": "id_5",
+      "ward": "West Alego Ward",
+      "county": "Siaya",
+      "subcounty": "Alego Usonga Sub County"
+    },
+    {
+      "id": "id_6",
+      "ward": "Central Alego Ward",
+      "county": "Siaya",
+      "subcounty": "Alego Usonga Sub County"
+    },
+    {
+      "id": "id_7",
+      "ward": "Siaya Township Ward",
+      "county": "Siaya",
+      "subcounty": "Alego Usonga Sub County"
+    },
+    {
+      "id": "id_8",
+      "ward": "North Alego Ward",
+      "county": "Siaya",
+      "subcounty": "Alego Usonga Sub County"
+    },
+    {
+      "id": "id_9",
+      "ward": "Mathatani Ward",
+      "county": "Machakos",
+      "subcounty": "Athi River Sub County"
+    },
+    {
+      "id": "id_10",
+      "ward": "Syokimau-mulolongo Ward",
+      "county": "Machakos",
+      "subcounty": "Athi River Sub County"
+    }
+  ]
+}

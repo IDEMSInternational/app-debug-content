@@ -1,0 +1,193 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_tile",
+  "status": "released",
+  "rows": [
+    {
+      "comments": "Frame # 538"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg;\nfirst_line_text: First item text;\nsecond_line_text: Second item text;\nstyle: quick_start_passive;"
+    },
+    {
+      "name": "icon_src",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "first_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "second_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "style",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_2",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: Second item text;\nsecond_line_text: Second item text;\nstyle: quick_start;"
+    },
+    {
+      "name": "first_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "second_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "style",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_3",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: Third item text;\nsecond_line_text: Third item text;\nstyle: quick_start_blue;"
+    },
+    {
+      "name": "first_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "second_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "style",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_3",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: Fourth item text;\nsecond_line_text: Fourth item text;\nstyle: quick_start_red;"
+    },
+    {
+      "name": "first_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "second_line_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "style",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg",
+      "exclude_from_translation": true,
+      "parameter_list": "style: parent_point;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg;\nfirst_line_text: First itemt;\nsecond_line_text: Second;\nstyle:parent_centre_2;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg;\nfirst_line_text: First item;\nsecond_line_text: Second;\nstyle: parent_centre_3;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg;\nfirst_line_text: First itemt;\nsecond_line_text: Second;\nstyle: parent_centre_4;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg; first_line_text: First;\nsecond_line_text: Second;\nstyle: parent_centre_1;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg;\nfirst_line_text: First itemt;\nsecond_line_text: Second;\nstyle:parent_centre_1;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg;\nfirst_line_text: First item;\nsecond_line_text: Second;\nstyle: parent_centre_2;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/star_white.svg;\nfirst_line_text: First itemt;\nsecond_line_text: Second;\nstyle: parent_centre_3;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: First; icon_src: images/icons/star_white.svg;\nsecond_line_text: Second;\nstyle: parent_centre_4;"
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: First; icon_src: images/icons/star_white.svg;\nsecond_line_text: Second;\nstyle: parent_centre_4;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "tile_component",
+      "name": "tile_example_1",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: First; icon_src: images/icons/star_white.svg;\nsecond_line_text: Second;\nstyle: parent_centre_4;"
+    },
+    {
+      "type": "tile_component",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/faces/happy.svg        ;\nfirst_line_text: First item text;\nsecond_line_text: Second item text;\nstyle: quick_start_passive;"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style:two_columns;"
+    },
+    {
+      "type": "tile_component",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: How to add self-care;\nstyle: image_text;icon_src: images/faces/happy.svg        ;"
+    },
+    {
+      "type": "tile_component",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: How to spend one-on-one time;\nstyle: image_text;icon_src: images/faces/happy.svg        ;"
+    },
+    {
+      "type": "tile_component",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: How to Praise;\nstyle: image_text;icon_src: images/faces/happy.svg        ;"
+    },
+    {
+      "type": "tile_component",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: How to manage stress;\nstyle: image_text;icon_src: images/faces/happy.svg        ;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

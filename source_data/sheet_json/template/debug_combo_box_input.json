@@ -1,0 +1,25 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_input",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nplaceholder: Click here to answer;\ninput_allowed: true;\nanswer_placeholder: Type your own;"
+    },
+    {
+      "type": "text",
+      "name": "text_result",
+      "value": "Local combo box variable: @local.combo_box",
+      "exclude_from_translation": true
+    }
+  ]
+}

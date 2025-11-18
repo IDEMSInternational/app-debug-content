@@ -1,0 +1,29 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_radio_button_category_data",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "option_1",
+      "name": "option_1",
+      "text": "All Activities",
+      "image": "images/icons/reader_blue.svg",
+      "image_checked": "images/icons/tick.svg"
+    },
+    {
+      "id": "option_2",
+      "name": "option_2",
+      "text": "Played",
+      "image": "images/icons/star_blue.svg",
+      "image_checked": "images/icons/tick.svg"
+    },
+    {
+      "id": "option_3",
+      "name": "option_3",
+      "text": "Not Played",
+      "image": "images/icons/school_blue.svg",
+      "image_checked": "images/icons/tick.svg"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_go_to_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This is the second template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_box",
+      "name": "debug_text_box",
+      "value": "@fields.debug_go_to_field",
+      "action_list": "changed | set_field:debug_go_to_field:@local.@row.name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "go_to_field",
+      "value": "Value of debug_go_to_field: \nlocal: @local.debug_text_box;\nfield: @fields.debug_go_to_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_1",
+      "value": "Go to the third template",
+      "action_list": "click | go_to:debug_go_to_3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_completed",
+      "value": "Complete the current template",
+      "action_list": "click | emit:completed",
+      "exclude_from_translation": true
+    }
+  ]
+}

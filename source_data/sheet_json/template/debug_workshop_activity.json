@@ -1,0 +1,62 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_workshop_activity",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "hide_intro",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "hide_content",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_animated_section",
+      "name": "intro",
+      "hidden": "@local.hide_intro"
+    },
+    {
+      "type": "title",
+      "name": "intro_title",
+      "value": "Intro"
+    },
+    {
+      "type": "text",
+      "name": "intro_text"
+    },
+    {
+      "type": "round_button",
+      "name": "button_completed_chevron",
+      "action_list": "click | set_local:hide_content:false; \nclick | set_local:hide_intro:true",
+      "parameter_list": "icon_src: chevron-forward;\nstyle: navigation"
+    },
+    {
+      "type": "end_animated_section"
+    },
+    {
+      "type": "begin_animated_section",
+      "name": "content",
+      "hidden": "@local.hide_content"
+    },
+    {
+      "type": "begin_template",
+      "name": "content_box"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "round_button",
+      "name": "button_uncompleted_chevron",
+      "action_list": "click |  set_local:hide_intro:false; \nclick | set_local:hide_content:true; ",
+      "parameter_list": "icon_src: chevron-back;\nstyle: navigation"
+    },
+    {
+      "type": "end_animated_section"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_server_sync_disabled",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "SERVER": {
+        "sync": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Sync disabled"
+    },
+    {
+      "type": "text",
+      "value": "While this template is active (top-level template or fullscreen pop-up), syncing to the server is disabled"
+    },
+    {
+      "type": "text",
+      "name": "last_sync_text",
+      "value": "Last sync at: @fields._server_sync_latest"
+    },
+    {
+      "type": "button",
+      "name": "sync_button",
+      "value": "Sync now",
+      "action_list": "click | emit: server_sync;\nclick | emit: force_reprocess;"
+    }
+  ]
+}

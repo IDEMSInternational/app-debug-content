@@ -1,0 +1,12 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_fullscreen_pop_up_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Popup text"
+    }
+  ]
+}

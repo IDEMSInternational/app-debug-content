@@ -1,0 +1,17 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_advanced_dashed_box_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_advanced_dashed_box",
+      "name": "dashed_box",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_advanced_dashed_box",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "doc_override_default",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Default title"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_1",
+      "value": "@field.doc_override_condition",
+      "action_list": "changed | set_field:doc_override_condition:@local.toggle_1;\nchanged | emit: force_reload"
+    }
+  ]
+}

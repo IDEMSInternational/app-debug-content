@@ -1,0 +1,20 @@
+{
+  "flow_type": "global",
+  "flow_name": "doc_global",
+  "status": "released",
+  "override_target": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "doc_example_global",
+      "value": "Example global value",
+      "comments": "Accessible throughout templates via: @global.doc_example_global"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "doc_example_field",
+      "value": false,
+      "comments": "Accessible throughout templates via: @fields.doc_example_field"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_items",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "basic_example",
+      "value": "Basic Example",
+      "comments": "This example loops over a list of items defined in the corresponding data list, populating info about them"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items",
+      "parameter_list": "style: column",
+      "comments": "value should correspond to an array of items to iterate over. If an object will iterate over values.\n\nIt will render in a display_group, so specify column if preferable"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_text_2_@item.id",
+      "value": "@item.name"
+    },
+    {
+      "type": "text",
+      "name": "item_text_3_@item.id",
+      "value": "+@item._index+1",
+      "comments": "Index will automatically be populated based on list order. \n\nNote - number 0 does not seem to display (bug?), so incrementing by 1"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Setting conditional variables"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items"
+    },
+    {
+      "type": "set_field",
+      "name": "example_items_field_@item.id",
+      "value": "@item.field_value",
+      "condition": "@item.field_value > 2"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "text",
+      "name": "conditional_var_1",
+      "value": "This should be set as 7: @fields.example_items_field_item_1"
+    },
+    {
+      "type": "text",
+      "name": "conditional_var_2",
+      "value": "This should be not set (blank): @fields.example_items_field_item_2"
+    },
+    {
+      "type": "title",
+      "name": "workshop_example",
+      "value": "@global.workshop_capital Example",
+      "comments": "Populating info from @global.workshop data list:\nhttps://docs.google.com/spreadsheets/d/1PNPiy9SiVMcwWTXGn2of5cvBYfCAPyyjtooczyTBKk0/edit#gid=559635134"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.workshop",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "name": "item_id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "item_number_@item.id",
+      "value": "@item.number"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

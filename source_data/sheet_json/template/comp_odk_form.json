@@ -1,0 +1,64 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_odk_form",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "ODK Form"
+    },
+    {
+      "type": "subtitle",
+      "name": "parameters",
+      "value": "Parameters"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "form_parameters"
+    },
+    {
+      "type": "text",
+      "name": "form_asset_name",
+      "value": "form_asset",
+      "style_list": "width: 120px"
+    },
+    {
+      "type": "text_box",
+      "name": "form_asset_input",
+      "value": "odk_form.json",
+      "style_list": "width: 200px",
+      "action_list": "changed | emit:force_reprocess;"
+    },
+    {
+      "type": "text",
+      "name": "form_asset_description",
+      "value": "Path to form asset data. This must be pre-processed using the xlsform converter workspace.",
+      "style_list": "width: 300px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "subtitle",
+      "value": "Example 1"
+    },
+    {
+      "type": "odk_form",
+      "name": "form_1",
+      "value": "@field.odk_output",
+      "action_list": "changed | set_field: odk_output: @local.form_1",
+      "parameter_list": "form_asset: @local.form_asset_input;"
+    },
+    {
+      "type": "subtitle",
+      "name": "subtitle",
+      "value": "XML Form Value"
+    },
+    {
+      "type": "text",
+      "name": "form_1_values",
+      "value": "@local.form_1"
+    }
+  ]
+}

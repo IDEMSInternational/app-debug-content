@@ -1,0 +1,59 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "user_actions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "User Actions"
+    },
+    {
+      "type": "title",
+      "value": "Current Profile"
+    },
+    {
+      "type": "text",
+      "value": "Change the example field below to store value to user profile"
+    },
+    {
+      "type": "text_box",
+      "value": "@fields.example_1",
+      "action_list": "changed | set_field : example_1 : this.value;\nchanged | emit : force_reprocess;"
+    },
+    {
+      "type": "text",
+      "value": "Example field: @fields.example_1"
+    },
+    {
+      "type": "text",
+      "value": "id: @fields._app_user_id"
+    },
+    {
+      "type": "text",
+      "value": "Last Sync: @fields._server_sync_latest"
+    },
+    {
+      "type": "button",
+      "value": "Sync Now",
+      "action_list": "click | emit : server_sync;\nclick | emit : force_reprocess;"
+    },
+    {
+      "type": "title",
+      "value": "Import"
+    },
+    {
+      "type": "text",
+      "value": "Input the ID of a user to import"
+    },
+    {
+      "type": "text_box",
+      "name": "user_id_input"
+    },
+    {
+      "type": "button",
+      "value": "Import User",
+      "action_list": "click | user: import: @local.user_id_input;\nclick | emit : force_reprocess;"
+    }
+  ]
+}

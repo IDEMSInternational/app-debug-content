@@ -1,0 +1,84 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_data_actions_edit",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Data Actions Edit"
+    },
+    {
+      "type": "title",
+      "value": "Add Data"
+    },
+    {
+      "type": "begin_template",
+      "value": "feat_data_actions_summary"
+    },
+    {
+      "name": "show_number",
+      "value": false
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text_box",
+      "name": "input_label",
+      "parameter_list": "placeholder: label"
+    },
+    {
+      "type": "button",
+      "value": "Add Data",
+      "action_list": "click | add_data | \n\n_list_id: feat_data_actions_list,\ncompleted:false,\nlabel: @local.input_label",
+      "comments": "This will add a generic pre-populated row\n\nNOTE - the data will automatically appear at the end of the items when sorted by default order"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Reset to original state",
+      "action_list": "click | reset_data | \n\n_list_id: feat_data_actions_list"
+    },
+    {
+      "type": "title",
+      "value": "Remove Data"
+    },
+    {
+      "type": "begin_template",
+      "value": "feat_data_actions_summary"
+    },
+    {
+      "name": "show_number",
+      "value": false
+    },
+    {
+      "name": "show_remove",
+      "value": true,
+      "comments": "The summary template includes option to show an item delete button. Note this will only be shown beside user-generated content (see example in summary template)"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text"
+    },
+    {
+      "type": "button",
+      "value": "Reset to original state",
+      "action_list": "click | reset_data | \n\n_list_id: feat_data_actions_list"
+    },
+    {
+      "type": "title",
+      "value": "Data Validation"
+    },
+    {
+      "type": "text",
+      "value": "(WiP)"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_wrapping_popup",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "thisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimesthisisaverylongstringwithoutobviousbreakpointstowraprepeatedmultipletimes",
+      "style_list": "overflow-wrap: anywhere;"
+    }
+  ]
+}

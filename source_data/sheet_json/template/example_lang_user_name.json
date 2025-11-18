@@ -1,0 +1,82 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_lang_user_name",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "lang_select",
+      "value": "example_lang_select"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "User name translation",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "global_box",
+      "parameter_list": "style:dashed_box"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "global.user_name_default:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "@global.user_name_default",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "fields.user_name:",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "@fields.user_name",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Set user_name to Bob",
+      "action_list": "click | set_field : user_name : Bob",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Set user_name back to default",
+      "action_list": "click | set_field : user_name : @global.user_name_default",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Set user_name back to default with \"\"",
+      "action_list": "click | set_field : user_name : \"@global.user_name_default\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_4",
+      "value": "Set user_name back to default with ''",
+      "action_list": "click | set_field : user_name : '@global.user_name_default'",
+      "exclude_from_translation": true
+    }
+  ]
+}

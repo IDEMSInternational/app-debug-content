@@ -1,0 +1,54 @@
+{
+  "flow_type": "global",
+  "flow_name": "example_initialise_global",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "declare_global_constant",
+      "name": "example_global_constant_text",
+      "value": "Example Global Constant Text",
+      "exclude_from_translation": true,
+      "comments": "I'm setting a new global constant"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "example_global_constant_title",
+      "value": "Example Global Constant Title",
+      "exclude_from_translation": true,
+      "comments": "I'm setting a new global constant"
+    },
+    {
+      "type": "declare_global_constant",
+      "name": "example_global_constant_image",
+      "value": "images/icons/heart_blue.svg",
+      "exclude_from_translation": true,
+      "comments": "I'm setting a new global constant"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_1",
+      "value": "Value of Field 1",
+      "exclude_from_translation": true,
+      "comments": "This should be defined in one template and persist to another"
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_0",
+      "value": "Value of field 0",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_4",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "declare_field_default",
+      "name": "field_5",
+      "value": 5,
+      "exclude_from_translation": true
+    }
+  ]
+}

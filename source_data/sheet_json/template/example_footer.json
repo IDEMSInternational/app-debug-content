@@ -1,0 +1,15 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_footer",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "value": "navigation_bar_display_group"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_rows_debug",
+  "flow_name": "debug_campaign_rows_actions_2",
+  "status": "released",
+  "comments": "Can be merged into main actions once PR merged to support dismissed/sent actions",
+  "rows": [
+    {
+      "id": "debug_actions_2a",
+      "action_list": "click | set_field: @row.id.clicked: TRUE;\nsent | set_field: @row.id.sent: TRUE;",
+      "priority": 1,
+      "campaign_list": "debug_actions_2"
+    },
+    {
+      "id": "debug_actions_2b",
+      "action_list": "click | set_field: @row.id.clicked: TRUE;\nsent | set_field: @row.id.sent: TRUE;",
+      "priority": 2,
+      "campaign_list": "debug_actions_2"
+    },
+    {
+      "id": "debug_actions_2c",
+      "action_list": "click | set_field: @row.id.clicked: TRUE;\nsent | set_field: @row.id.sent: TRUE;\nsent | set_field: debug_actions_4.sent: FALSE;\nsent | set_field: debug_actions_5.sent: FALSE;",
+      "priority": 3,
+      "campaign_list": "debug_actions_2"
+    },
+    {
+      "id": "debug_actions_2d",
+      "action_list": "click | go_to: w_1on1_stepper",
+      "priority": 4,
+      "campaign_list": "debug_actions_2",
+      "text": "Go to the @global.workshop stepper",
+      "title": "Debug 1on1 stepper"
+    }
+  ]
+}

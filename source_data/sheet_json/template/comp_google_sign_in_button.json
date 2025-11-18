@@ -1,0 +1,75 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_google_sign_in_button",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Google Sign In Button"
+    },
+    {
+      "type": "title",
+      "value": "Default variant"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in with Google",
+      "action_list": "click | emit: force_reprocess;",
+      "comments": "In keeping with Google's guideline's (https://developers.google.com/identity/branding-guidelines#text), the text value should make it \"clear to the user that they are signing into your app or signing up for your app with their Google credentials\""
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Disabled",
+      "parameter_list": "disabled: true;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "style: width_content",
+      "parameter_list": "style: width_content;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "title",
+      "value": "Variant: native_google"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in with Google",
+      "parameter_list": "variant: native_google;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in",
+      "parameter_list": "variant: native_google;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Disabled",
+      "parameter_list": "variant: native_google;\ndisabled: true;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "action_list": "click | auth: sign_out;\nclick | emit: force_reprocess;"
+    },
+    {
+      "type": "text",
+      "value": "Currently signed in user:"
+    },
+    {
+      "type": "text",
+      "value": "@fields._auth_user_id"
+    }
+  ]
+}

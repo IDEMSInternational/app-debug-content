@@ -1,0 +1,69 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_double_radio_group_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "template_name",
+      "value": "debug_radio_group",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list_1_list",
+      "value": "name:name_var_1 | text:First;  name:name_var_2 | text:Second; name:name_var_3 | text:Third",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list_2_list",
+      "value": "name:name_var_1 | text:1;  name:name_var_2 | text:2; name:name_var_3 | text:3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_radio_group_1",
+      "value": "debug_radio_group",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "This is the first instance of @local.template_name",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list",
+      "value": "@local.answer_list_1_list",
+      "exclude_from_translation": true,
+      "comments": "need to add the case of arrays in line 530ish of template container component"
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_radio_group_2",
+      "value": "debug_radio_group",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "This is the second instance of debug_radio_group",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_list",
+      "value": "@local.answer_list_2_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1pSFFOv9B9x0oUSuSJDp6RNePJ1XSP6yVSjXA8jzBclQ"
+    }
+  ]
+}

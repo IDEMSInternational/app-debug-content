@@ -1,0 +1,64 @@
+{
+  "flow_type": "template",
+  "flow_name": "articles",
+  "status": "released",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name: all | image: images/icons/globe_blue.svg; \nname: education | image: images/icons/school_blue.svg;\nname: child_dev | image: images/icons/leaf_blue.svg;\nname: relations | image: images/icons/heart_blue.svg;"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "selected_goal",
+      "value": "all",
+      "parameter_list": "answer_list: @local.answer_list;\nitem_width: 50px"
+    },
+    {
+      "type": "title",
+      "name": "selected_text",
+      "value": "All articles",
+      "condition": "@local.selected_goal == \"all\""
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_selected_text",
+      "condition": "@local.selected_goal != \"all\""
+    },
+    {
+      "name": "goal_selected_goal",
+      "value": "goal.@local.selected_goal"
+    },
+    {
+      "name": "goal_data",
+      "value": "@data.@local.goal_selected_goal"
+    },
+    {
+      "type": "title",
+      "name": "selected_text",
+      "value": "@local.goal_data.title"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.article"
+    },
+    {
+      "type": "begin_template",
+      "name": "box_@item.id",
+      "value": "article_box",
+      "condition": "@local.selected_goal == @item.goal || @local.selected_goal == \"all\""
+    },
+    {
+      "name": "id",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

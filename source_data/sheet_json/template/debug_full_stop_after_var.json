@@ -1,0 +1,106 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_full_stop_after_var",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "local_full_stop",
+      "value": "Local with a full stop",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "This string ends with a local variable with a full stop at the end: @local.local_full_stop.",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "This string ends with a local variable with a space before a full stop at the end: @local.local_full_stop .",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "This string ends with a field variable with a full stop at the end: @field.field_full_stop.",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "This string ends with a field variable with a space before a full stop at the end: @field.field_full_stop .",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "This string ends with a global constant with a full stop at the end: @global.global_full_stop.",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "This string ends with a global constant with a space before a full stop at the end: @global.global_full_stop .",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "This string ends with a global constant followed by three dots: @global.global_full_stop...",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "Dynamic Texts"
+    },
+    {
+      "name": "dynamic_lookup",
+      "value": "local_full_stop"
+    },
+    {
+      "name": "dynamic_text_1",
+      "value": "@local.@local.dynamic_lookup"
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "Dynamic with full stop: @local.dynamic_text_1.",
+      "exclude_from_translation": true,
+      "comment": "This does work however"
+    },
+    {
+      "type": "text",
+      "name": "text_8",
+      "value": "@local.dynamic_text_1+\".\"",
+      "exclude_from_translation": true,
+      "comment": "Similar to text_9, but force full stop"
+    },
+    {
+      "type": "text",
+      "name": "text_9",
+      "value": "@local.dynamic_text_1.",
+      "exclude_from_translation": true,
+      "comment": "(now working)"
+    },
+    {
+      "type": "text",
+      "name": "text_10",
+      "value": "@local.@local.dynamic_lookup.",
+      "exclude_from_translation": true,
+      "comment": "(now working)"
+    },
+    {
+      "type": "title",
+      "value": "Mixed Sentences",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_11",
+      "value": "Start text: @local.local_full_stop. More text follows.",
+      "exclude_from_translation": true
+    }
+  ]
+}

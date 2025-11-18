@@ -1,0 +1,105 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_falsy_values",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "falsy_var_1",
+      "value": 0
+    },
+    {
+      "name": "falsy_var_2",
+      "value": false
+    },
+    {
+      "name": "falsy_var_3",
+      "value": "null"
+    },
+    {
+      "name": "falsy_var_4",
+      "value": "NaN"
+    },
+    {
+      "name": "falsy_var_5",
+      "value": "undefined"
+    },
+    {
+      "name": "falsy_var_6",
+      "value": "\"\""
+    },
+    {
+      "name": "falsy_var_7"
+    },
+    {
+      "type": "text",
+      "name": "text_1a",
+      "value": "Example 1: @local.falsy_var_1"
+    },
+    {
+      "type": "text",
+      "name": "text_1b",
+      "value": "@local.falsy_var_1"
+    },
+    {
+      "type": "text",
+      "name": "text_2a",
+      "value": "Example 2: @local.falsy_var_2"
+    },
+    {
+      "type": "text",
+      "name": "text_2b",
+      "value": "@local.falsy_var_2"
+    },
+    {
+      "type": "text",
+      "name": "text_3a",
+      "value": "Example 3: @local.falsy_var_3"
+    },
+    {
+      "type": "text",
+      "name": "text_3b",
+      "value": "@local.falsy_var_3"
+    },
+    {
+      "type": "text",
+      "name": "text_4a",
+      "value": "Example 4: @local.falsy_var_4"
+    },
+    {
+      "type": "text",
+      "name": "text_4b",
+      "value": "@local.falsy_var_4"
+    },
+    {
+      "type": "text",
+      "name": "text_5a",
+      "value": "Example 5: @local.falsy_var_5"
+    },
+    {
+      "type": "text",
+      "name": "text_5b",
+      "value": "@local.falsy_var_5"
+    },
+    {
+      "type": "text",
+      "name": "text_6a",
+      "value": "Example 6: @local.falsy_var_6"
+    },
+    {
+      "type": "text",
+      "name": "text_6b",
+      "value": "@local.falsy_var_6"
+    },
+    {
+      "type": "text",
+      "name": "text_7a",
+      "value": "Example 7: @local.falsy_var_7"
+    },
+    {
+      "type": "text",
+      "name": "text_7b",
+      "value": "@local.falsy_var_7"
+    }
+  ]
+}

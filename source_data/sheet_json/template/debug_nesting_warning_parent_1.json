@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_warning_parent_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_nesting_warning_child_1",
+      "value": "debug_nesting_warning_child_1"
+    },
+    {
+      "name": "title_1",
+      "value": "New title"
+    },
+    {
+      "name": "text_1",
+      "value": "Add text (previously blank)"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

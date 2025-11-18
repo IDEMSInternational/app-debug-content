@@ -1,0 +1,125 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_display_group_sticky",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;\nstyle: background_solid;",
+      "condition": "@local.view_selected === \"nav\""
+    },
+    {
+      "type": "title",
+      "value": "Nav-bar style header content",
+      "parameter_list": "variant: header;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;\nbackground_image_asset: images/activity_bg.svg;\nbackground_image_position: right top;",
+      "condition": "@local.view_selected === \"image_only\"",
+      "style_list": "min-height: 120px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;\nbackground_image_asset: images/activity_bg.svg;\nbackground_image_position: right top;",
+      "condition": "@local.view_selected === \"image_and_text\"",
+      "style_list": "min-height: 120px"
+    },
+    {
+      "type": "title",
+      "value": "Header with image and content",
+      "parameter_list": "variant: header;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Sticky display groups demo"
+    },
+    {
+      "type": "text",
+      "value": "Style of sticky display groups:"
+    },
+    {
+      "name": "view_options_list",
+      "value": "name: nav | text: Nav bar;\nname: image_only | text: Image only;\nname: image_and_text | text: Image and text;"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "view_selected",
+      "parameter_list": "answer_list: @local.view_options_list; \nvariant: flex;"
+    },
+    {
+      "type": "button",
+      "value": "Open this template as nav stack",
+      "action_list": "click | nav_stack: open | template: feat_display_group_sticky, header: false;",
+      "comments": "Set `header: false` when opening a template with its own sticky header as a stack. The inline sticky header should include its own close button, if required"
+    },
+    {
+      "type": "button",
+      "value": "Open this template as a fullscreen pop-up",
+      "action_list": "click | pop_up: feat_display_group_sticky | fullscreen: true;",
+      "comments": "Set `header: false` when opening a template with its own sticky header as a stack. The inline sticky header should include its own close button, if required"
+    },
+    {
+      "type": "button",
+      "value": "Open this template as a pop-up (sticky DGs not fully supported)",
+      "action_list": "click | pop_up: feat_display_group_sticky;",
+      "comments": "Set `header: false` when opening a template with its own sticky header as a stack. The inline sticky header should include its own close button, if required"
+    },
+    {
+      "type": "title",
+      "value": "Additional content to make the page scrollable"
+    },
+    {
+      "type": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom;\nstyle: background_solid;",
+      "condition": "@local.view_selected === \"nav\""
+    },
+    {
+      "type": "title",
+      "value": "Nav-bar style footer content",
+      "parameter_list": "variant: header;"
+    },
+    {
+      "type": "button",
+      "value": "Click here"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom;\nbackground_image_asset: images/bottom_image.svg;\nbackground_image_position: left bottom;",
+      "condition": "@local.view_selected === \"image_only\"",
+      "style_list": "min-height: 88px;\nwidth: 100%;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom;\nvariant: inline_padding;\nbackground_image_asset: images/bottom_image.svg;\nbackground_image_position: left bottom;",
+      "condition": "@local.view_selected === \"image_and_text\"",
+      "style_list": "min-height: 88px;\nwidth: 100%;"
+    },
+    {
+      "type": "title",
+      "value": "Footer with image and content"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

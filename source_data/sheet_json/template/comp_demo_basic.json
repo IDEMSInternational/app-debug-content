@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_demo_basic",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "demo_basic",
+      "value": "Demo basic component",
+      "parameter_list": "my_string_param: Hello world"
+    },
+    {
+      "type": "demo_basic",
+      "parameter_list": "my_string_param: Hello world;\nvariant: circle_secondary;"
+    },
+    {
+      "type": "demo_basic",
+      "value": "Demo basic component",
+      "parameter_list": "variant: square_primary;\nmy_boolean_param: false;"
+    }
+  ]
+}

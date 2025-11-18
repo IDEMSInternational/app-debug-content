@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_map",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": false
+      }
+    }
+  },
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "extent_kenya",
+      "value": "3773864.3, -520876.1, 4661891.1, 636925.3",
+      "comments": "This is the \"extent\" of the country of Kenya, in EPSG:3857 co-ordinates"
+    },
+    {
+      "name": "show_map_1",
+      "value": true
+    },
+    {
+      "type": "map",
+      "name": "map_1",
+      "parameter_list": "layer_groups: @data.comp_map_layer_groups;\nextent: @local.extent_kenya;",
+      "condition": "@local.show_map_1",
+      "comments": "Map using `layer_groups` property to pass data list of layer group rows"
+    },
+    {
+      "type": "map",
+      "name": "map_2",
+      "parameter_list": "layers: @data.comp_map_layer_data;\nextent: @local.extent_kenya;",
+      "condition": "!@local.show_map_1",
+      "comments": "Map using `layers` property to pass data list of layer rows"
+    },
+    {
+      "type": "button",
+      "value": "Toggle visible map",
+      "action_list": "click | set_local: show_map_1: !@local.show_map_1"
+    }
+  ]
+}

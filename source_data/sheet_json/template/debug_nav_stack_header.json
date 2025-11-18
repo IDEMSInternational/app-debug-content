@@ -1,0 +1,69 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_stack_header",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;\nstyle: background_solid;",
+      "style_list": "padding: 8px 8px 0 8px;"
+    },
+    {
+      "type": "image",
+      "name": "icon_asset",
+      "value": "images/icons/globe_blue.svg",
+      "style_list": "width: 46px"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "My Title"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Main page content"
+    },
+    {
+      "type": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "type": "button",
+      "value": "Open this template as nav stack",
+      "action_list": "click | nav_stack: open | template: debug_nav_stack_header, header: false;",
+      "comments": "Set `header: false` when opening a template with its own sticky header as a stack. The inline sticky header should include its own close button, if required"
+    },
+    {
+      "name": "boolean",
+      "value": true
+    },
+    {
+      "type": "text",
+      "value": "Boolean value: @local.boolean"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom;\nstyle: background_solid;"
+    },
+    {
+      "type": "title",
+      "value": "Sticky footer"
+    },
+    {
+      "type": "button",
+      "value": "Click here",
+      "action_list": "click | go_to: example_text"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar",
+      "action_list": "changed | set_local: boolean: @local.toggle_bar"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

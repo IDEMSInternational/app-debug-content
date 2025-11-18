@@ -1,0 +1,107 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_nav",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Using items to create a nav group template list"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_items_nav",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "this_entry",
+      "value": "@item.template"
+    },
+    {
+      "name": "my_list",
+      "value": "@local.my_list; @local.this_entry",
+      "condition": "@local.my_list"
+    },
+    {
+      "name": "my_list",
+      "value": "@local.this_entry",
+      "condition": "!@local.my_list"
+    },
+    {
+      "type": "text",
+      "name": "print_list",
+      "value": "@local.my_list"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "nav_group",
+      "name": "nav_group_1",
+      "value": "@local.my_list"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Desired result"
+    },
+    {
+      "name": "template_list_2",
+      "value": "example_text_button; example_text_image; example_text"
+    },
+    {
+      "type": "text",
+      "name": "example_2",
+      "value": "@local.template_list_2"
+    },
+    {
+      "type": "nav_group",
+      "name": "nav_group_2",
+      "value": "@local.template_list_2"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Result when using CONCATENATE function"
+    },
+    {
+      "name": "template_list_3",
+      "value": "@data.example_items_nav.id_concat.template"
+    },
+    {
+      "type": "text",
+      "name": "example_3",
+      "value": "@local.template_list_3"
+    },
+    {
+      "type": "nav_group",
+      "name": "nav_group_3",
+      "value": "@local.template_list_3"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Result when passing in a whole data list"
+    },
+    {
+      "type": "nav_group",
+      "name": "nav_group_4",
+      "value": "@data.example_items_nav"
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "Result when passing in a whole data list as a \"_list\" local variable"
+    },
+    {
+      "name": "template_list_5",
+      "value": "@data.example_items_nav"
+    },
+    {
+      "type": "nav_group",
+      "name": "nav_group_5",
+      "value": "@local.template_list_5"
+    }
+  ]
+}

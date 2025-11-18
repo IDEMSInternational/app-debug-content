@@ -1,0 +1,59 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translate_nested_rows",
+  "status": "released",
+  "rows": [
+    {
+      "name": "language_list",
+      "value": "name: gb_en | text: 1. English;\nname: en_rtl | text: 2. English RTL;"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "action_list": "changed | emit: set_language: @local.language_select;\nchanged | emit: force_reload;",
+      "parameter_list": "answer_list: @local.language_list"
+    },
+    {
+      "type": "text",
+      "value": "Some text in English"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Some text in English"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "button_text",
+      "value": "Some text in English"
+    },
+    {
+      "type": "begin_button",
+      "value": "@local.button_text",
+      "parameter_list": "variant: card-portrait;\nimage_asset: images/example/jasper_1.jpg"
+    },
+    {
+      "type": "end_button"
+    },
+    {
+      "name": "kw_img",
+      "value": "https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg"
+    },
+    {
+      "type": "begin_task_card",
+      "parameter_list": "title: @local.button_text;\nimage: @local.kw_img;\nvariant: portrait"
+    },
+    {
+      "type": "toggle_bar",
+      "parameter_list": "variant: icon; \nposition: right;\nicon_true_asset: images/icons/heart_blue.svg;\nicon_false_asset: images/icons/heart_outline.svg;"
+    },
+    {
+      "type": "end_task_card"
+    }
+  ]
+}

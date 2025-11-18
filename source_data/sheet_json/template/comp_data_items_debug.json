@@ -1,0 +1,46 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items_debug",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "completed_counter",
+      "value": 0
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list",
+      "action_list": "data_changed | set_local : completed_counter : @items.length;"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "✅",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "❌",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "toggle_bar",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

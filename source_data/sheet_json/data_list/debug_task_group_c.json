@@ -1,0 +1,17 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_task_group_c",
+  "status": "released",
+  "rows": [
+    {
+      "id": "c_1",
+      "text": "Task C1",
+      "completed": false
+    },
+    {
+      "id": "c_2",
+      "text": "Task C2",
+      "completed": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_items",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "@data.parent_centre.bereavement.title"
+    },
+    {
+      "type": "begin_items",
+      "name": "idems_column",
+      "value": "@data.bereavement"
+    },
+    {
+      "type": "button",
+      "name": "button_@item.id",
+      "value": "@item.title",
+      "action_list": "click | go_to: @item.content_template"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

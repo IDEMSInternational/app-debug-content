@@ -1,0 +1,19 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_parse_percentage_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "value": "95%"
+    },
+    {
+      "id": "id_2",
+      "value": "0%"
+    },
+    {
+      "id": "id_3",
+      "value": "100%"
+    }
+  ]
+}

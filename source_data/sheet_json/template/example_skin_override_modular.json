@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_skin_override_modular",
+  "status": "released",
+  "flow_subtype": "debug",
+  "override_target": "example_skin_override_default",
+  "override_condition": "@fields._app_skin == \"modular\"",
+  "comments": "condition used to apply override when the skin is changed to \"modular\"",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Modular Skin Overridden Template",
+      "exclude_from_translation": true,
+      "comments": "Show additional content before main template in override"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_skin_override_default",
+      "value": "example_skin_override_default",
+      "exclude_from_translation": true,
+      "is_override_target": true,
+      "comments": "This is required to allow an override template to include the original version of the template that it is overriding (otherwise would cause infinite loop)"
+    },
+    {
+      "name": "a_or_b",
+      "value": "b"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

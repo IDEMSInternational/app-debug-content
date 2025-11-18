@@ -1,0 +1,15 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_go_to_nest_bottom",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Go to example_emit and come back",
+      "action_list": "click | go_to:example_emit",
+      "exclude_from_translation": true
+    }
+  ]
+}

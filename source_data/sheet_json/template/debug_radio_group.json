@@ -1,0 +1,61 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_radio_group",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This is the radio group debug template"
+    },
+    {
+      "name": "answer_list_1",
+      "value": "name:name_var_1 | text:First;  name:name_var_2 | text:Second; name:name_var_3 | text:Third"
+    },
+    {
+      "name": "answer_list_2",
+      "value": "name: individual | text: @global.individual | image:@global.individual_image;\nname: together | text: @global.together | image:@global.together_image"
+    },
+    {
+      "name": "answer_list_3",
+      "value": "name: individual | text: First | image: images/avatar_1.png        ;\nname: together | text: Second| image: images/avatar_1.png        "
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_1",
+      "parameter_list": "answer_list: @local.answer_list_1"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_2",
+      "parameter_list": "answer_list: @local.answer_list_2"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_3",
+      "parameter_list": "answer_list: @local.answer_list_3"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "image",
+      "name": "image_1",
+      "value": "@global.individual_image"
+    },
+    {
+      "type": "image",
+      "name": "image_2",
+      "value": "@global.together_image"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1pSFFOv9B9x0oUSuSJDp6RNePJ1XSP6yVSjXA8jzBclQ"
+    }
+  ]
+}

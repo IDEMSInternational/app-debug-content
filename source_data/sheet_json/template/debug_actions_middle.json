@@ -1,0 +1,51 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_actions_middle",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "field_1",
+      "value": "debug_actions_middle_1",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "value_1",
+      "value": "Value 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Set the field debug_actions_middle_1 through a local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_actions_bottom_1",
+      "value": "debug_actions_bottom",
+      "action_list": "completed | set_field: @local.field_1 : @local.value_1;\ncompleted | emit: completed",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Set the field debug_actions_middle_2 directly",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_actions_bottom_2",
+      "value": "debug_actions_bottom",
+      "action_list": "completed | set_field: debug_actions_middle_2 : Value 2;\ncompleted | emit: completed",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

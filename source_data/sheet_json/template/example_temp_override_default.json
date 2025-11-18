@@ -1,0 +1,46 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_temp_override_default",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "a_or_b",
+      "value": "a",
+      "comments": "Show different content in template depending on variable"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Override Template Default",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_a",
+      "value": "Change language below to apply override",
+      "condition": "@local.a_or_b === \"a\"",
+      "comments": "Template contains text that will also differ depending on passed variable"
+    },
+    {
+      "type": "text",
+      "name": "text_b",
+      "value": "Content has been overridden",
+      "condition": "@local.a_or_b === \"b\""
+    },
+    {
+      "type": "text",
+      "name": "text_c",
+      "value": "The value of the global variable example_glob_override is: @global.example_glob_override"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_lang_select",
+      "value": "example_lang_select"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

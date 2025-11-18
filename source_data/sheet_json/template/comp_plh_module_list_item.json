@@ -1,0 +1,147 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_module_list_item",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Module List Item Component"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "variant_toggle"
+    },
+    {
+      "name": "variant",
+      "value": "@calc(!@local.variant_toggle ? \"default\" : \"circle\")"
+    },
+    {
+      "type": "text",
+      "value": "Variant: @local.variant"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Interactive demo"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "Title",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "module_image_asset: images/module-1.png;\nnav_image_asset: images/icons/expand_circle_right.png;\nlocked_image_asset: images/icons/locked.png;\ncompleted_image_asset: images/icons/verified.svg;\nvariant: @local.variant;\ncompleted: @local.completed_toggle;\nhighlighted: @local.highlighted_toggle;\nis_locked: @local.locked_toggle;"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "completed_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Completed: @local.completed_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "highlighted_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Highlighted: @local.highlighted_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "locked_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Locked: @local.locked_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Static demos"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "Example of a longer module title over multiple lines",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "module_image_asset: images/module-1.png;\nnav_image_asset: images/icons/expand_circle_right.png;\nvariant: @local.variant;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "Completed",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "module_image_asset: images/module-1.png;\nnav_image_asset: images/icons/expand_circle_right.png;\nvariant: @local.variant;\ncompleted: true;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "Highlighted",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "module_image_asset: images/module-1.png;\nnav_image_asset: images/icons/expand_circle_right.png;\nvariant: @local.variant;\nhighlighted: true;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "Locked",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "module_image_asset:images/module-1.png;\nis_locked: true;\nlocked_image_asset: images/icons/locked.png;\nvariant: @local.variant;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No nav",
+      "parameter_list": "module_image_asset:images/Noura.png;\nvariant: @local.variant;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No image",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "nav_image_asset: images/icons/expand_circle_right.png;\nvariant: @local.variant;"
+    },
+    {
+      "type": "title",
+      "value": "Coloured demos"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No nav",
+      "parameter_list": "module_image_asset:images/Noura.png;\nvariant: @local.variant;\nbackground: #A6E9FF;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No nav",
+      "parameter_list": "module_image_asset:images/Noura.png;\nvariant: @local.variant;\nbackground: #FFA777;\nhighlighted: true;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "value": "No nav",
+      "parameter_list": "module_image_asset:images/Noura.png;\nvariant: @local.variant;\nbackground: #FFD973;\nis_locked: true;"
+    }
+  ]
+}

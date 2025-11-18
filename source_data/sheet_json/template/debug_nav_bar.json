@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_bar",
+  "status": "released",
+  "rows": [
+    {
+      "name": "button_list",
+      "value": "image: images/icons/globe_blue.svg | target_template: home_screen;\nimage: images/icons/heart_blue.svg | target_template: example_dg;\nimage: images/icons/school_blue.svg | target_template: example_calc;"
+    },
+    {
+      "type": "navigation_bar",
+      "name": "navigation_bar_local",
+      "parameter_list": "button_list: @local.button_list"
+    },
+    {
+      "name": "button_list_data",
+      "value": "@data.debug_nav_bar_data"
+    },
+    {
+      "type": "navigation_bar",
+      "name": "navigation_bar_data_local",
+      "parameter_list": "button_list: @local.button_list_data"
+    },
+    {
+      "type": "navigation_bar",
+      "name": "navigation_bar_data_direct",
+      "parameter_list": "button_list: @data.debug_nav_bar_data"
+    }
+  ]
+}

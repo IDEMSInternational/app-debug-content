@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_example",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Thats dangerous"
+    },
+    {
+      "type": "text",
+      "value": "Example text."
+    },
+    {
+      "type": "text",
+      "value": "More text"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "ok"
+    }
+  ]
+}

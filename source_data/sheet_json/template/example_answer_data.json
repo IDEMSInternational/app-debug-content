@@ -1,0 +1,82 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_answer_data",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Use data list to create an answer list"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_1",
+      "parameter_list": "answer_list: @data.example_items_radio"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid_1",
+      "parameter_list": "answer_list: @data.example_items_radio"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_1",
+      "value": "@fields.debug_combo_box_1_value",
+      "parameter_list": "answer_list: @data.example_items_radio; placeholder: prompt",
+      "action_list": "changed | set_field: debug_combo_box_1_value: @local.combo_box_1"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Use data list through local variable"
+    },
+    {
+      "name": "answer_list_data",
+      "value": "example_items_radio"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_2",
+      "parameter_list": "answer_list: @data.@local.answer_list_data; placeholder: prompt"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid_2",
+      "parameter_list": "answer_list: @data.@local.answer_list_data; placeholder: prompt"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_2",
+      "value": "@fields.debug_combo_box_2_value",
+      "parameter_list": "answer_list: @data.@local.answer_list_data; placeholder: prompt",
+      "action_list": "changed | set_field: debug_combo_box_2_value: @local.combo_box_2"
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "Answer list directly in spreadsheet"
+    },
+    {
+      "name": "answer_list",
+      "value": "name: item_1 | text: first; name: item_2 | text: second; name: item_3 | text: third"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_3",
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid_3",
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_3",
+      "value": "@fields.debug_combo_box_3_value",
+      "parameter_list": "answer_list: @local.answer_list; placeholder: prompt",
+      "action_list": "changed | set_field: debug_combo_box_3_value: @local.combo_box_3"
+    }
+  ]
+}

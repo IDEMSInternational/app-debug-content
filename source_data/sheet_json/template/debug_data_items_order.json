@@ -1,0 +1,59 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_order",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Data list order"
+    },
+    {
+      "type": "text",
+      "name": "text_data_items",
+      "value": "**Data items**"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items",
+      "value": "@data.debug_data_list_order"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "index_@item.id",
+      "value": "Item index: @item._index"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "name": "text_items",
+      "value": "**Items**"
+    },
+    {
+      "type": "begin_items",
+      "name": "items",
+      "value": "@data.debug_data_list_order"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "Item ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "index_@item.id",
+      "value": "Item index: @item._index"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

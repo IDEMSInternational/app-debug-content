@@ -1,0 +1,111 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_set_fields_in_action",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_0",
+      "value": "The value of field_0 is @field.field_0",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Override field_1",
+      "action_list": "click | set_field:field_1:\"New value of Field 1\"",
+      "exclude_from_translation": true,
+      "comments": "Overrides the value of field_1"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "The value of field_1 is @field.field_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Create field_2",
+      "action_list": "click | set_field:field_2:\"Value of Field 2\"",
+      "exclude_from_translation": true,
+      "comments": "Creates a new field called field_2 with value Value of Field 2"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "The value of field_2 is @field.field_2",
+      "exclude_from_translation": true,
+      "comments": "this text would be The value of field_2 is 'undefined' so presumably an empty string or even @field.field_2? until the button is pressed in which case it would change to The value of field_2 is Value of Field 2"
+    },
+    {
+      "type": "text",
+      "name": "text_hidden_4",
+      "value": "This should be hidden when field_4 is TRUE",
+      "hidden": "@field.field_4",
+      "exclude_from_translation": true,
+      "comments": "There could be more complex conditions for shown ie @filed.field_4>3)"
+    },
+    {
+      "type": "text",
+      "name": "text_not_hidden_4",
+      "value": "This should be hidden when field_4 is FALSE",
+      "hidden": "!@field.field_4",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_hidden_5",
+      "value": "This should be hidden when field_5 is more than 2",
+      "hidden": "@field.field_5>2",
+      "exclude_from_translation": true,
+      "comments": "Not currently implemented?"
+    },
+    {
+      "type": "text",
+      "name": "text_not_hidden_5_a",
+      "value": "This should be hidden when field_5 is less than or equal to 2",
+      "hidden": "@field.field_5<=2",
+      "exclude_from_translation": true,
+      "comments": "Not currently implemented?"
+    },
+    {
+      "type": "text",
+      "name": "text_not_hidden_5_b",
+      "value": "This should be hidden when field_5 is less than or equal to 2",
+      "hidden": "!@field.field_5>2",
+      "exclude_from_translation": true,
+      "comments": "Not currently implemented?"
+    },
+    {
+      "type": "button",
+      "name": "button_set_raw",
+      "value": "set raw value",
+      "action_list": "click | set_field:example_raw:`@global.example_global_constant_text`",
+      "exclude_from_translation": true,
+      "comments": "To set a field to a raw, non-parsed value wrap with backticks `...`"
+    },
+    {
+      "type": "text",
+      "name": "text_raw",
+      "value": "raw: `@fields.example_raw`",
+      "exclude_from_translation": true,
+      "comments": "This will not be parsed"
+    },
+    {
+      "type": "text",
+      "name": "text_raw_parsed",
+      "value": "parsed: @fields.example_raw",
+      "exclude_from_translation": true,
+      "comments": "This will be parsed"
+    },
+    {
+      "type": "text",
+      "name": "text_raw_combined",
+      "value": "will not work when combined:\nraw: `@fields.example_raw`\nparsed: @fields.example_raw",
+      "exclude_from_translation": true,
+      "comments": "Due to additional check for dynamic field after first parse (e.g. @local.@global.some_field), it's not possible to mix both raw and dynamic values in the same expression. Instead the full expression will be treated as raw"
+    }
+  ]
+}

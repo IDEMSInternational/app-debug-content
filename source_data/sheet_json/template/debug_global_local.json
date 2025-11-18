@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_global_local",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "template",
+      "value": "template"
+    },
+    {
+      "name": "debug_item_1",
+      "value": "_debug_item_1"
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up",
+      "value": "Simple pop-up",
+      "action_list": "click | pop_up:example_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_go_to",
+      "value": "@global.debug_item_1",
+      "action_list": "click | go_to:@local.template@local.debug_item_1",
+      "exclude_from_translation": true
+    }
+  ]
+}

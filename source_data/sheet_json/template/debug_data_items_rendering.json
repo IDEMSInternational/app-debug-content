@@ -1,0 +1,26 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_rendering",
+  "status": "released",
+  "rows": [
+    {
+      "name": "iterator",
+      "value": "debug_data_items_rendering_data"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.iterator"
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_data_items_r_template",
+      "value": "debug_data_items_r_template"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

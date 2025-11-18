@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_app_update",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Debug app update feature"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Prompt update",
+      "action_list": "click | app_update: prompt"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Force update",
+      "action_list": "click | app_update: force"
+    }
+  ]
+}

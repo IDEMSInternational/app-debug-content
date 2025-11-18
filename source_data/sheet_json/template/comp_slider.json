@@ -1,0 +1,132 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_slider",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "slider",
+      "name": "slider_default",
+      "comments": "this is the default"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Help tooltip"
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_1_1",
+      "parameter_list": "help: any text for help tooltip",
+      "comments": "any text for help tooltip"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Title"
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_2_1",
+      "parameter_list": "title: any text as a title",
+      "comments": "any text as a title"
+    },
+    {
+      "type": "title ",
+      "name": "title_3",
+      "value": "Minimum & maximum value"
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_3_1",
+      "parameter_list": "min: 5 ; max: 8",
+      "comments": "any numbers as min and max values; number 5 is selected as the minimum value and number 8 is selected as the maximum value. min should be less than max."
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Minimum & maximum value label"
+    },
+    {
+      "type": "slider ",
+      "name": "slider_par_4_1",
+      "parameter_list": "min_value_label: minimum label",
+      "comments": "A string below the minimum value"
+    },
+    {
+      "type": "slider ",
+      "name": "slider_par_4_2",
+      "parameter_list": "max_value_label: maximum label",
+      "comments": "A sting below the maximum value    "
+    },
+    {
+      "type": "slider ",
+      "name": "slider_par_4_3",
+      "parameter_list": "min_value_label: minimum label; max_value_label: maximum label",
+      "comments": "A string below both minimum and maximum values"
+    },
+    {
+      "type": "title ",
+      "name": "title_5",
+      "value": "Step"
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_5_1",
+      "parameter_list": "min: 0; max: 10; step: 2",
+      "comments": "a number as a step size. This number needs to divide (max - min)"
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_5_2",
+      "parameter_list": "min: 0; max: 10; step: 5",
+      "comments": "a number as a step size. This number needs to divide (max - min)"
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "Labels count"
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_6_1",
+      "parameter_list": "min: 0; max: 10; labels_count: 6",
+      "comments": "a number as the number of labels to show. This labels count minus 1 needs to divide (max - min). Selection of labels in between is possible/can be done."
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_6_2",
+      "parameter_list": "min: 0; max: 10; labels_count: 3",
+      "comments": "a number as the number of labels to show. This labels count minus 1 needs to divide (max - min). Selection of labels in between is possible/can be done."
+    },
+    {
+      "type": "title",
+      "name": "title_7",
+      "value": "To be removed"
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_7_1",
+      "parameter_list": "no_value: false",
+      "comments": "Not working, not used. Same as the default."
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_7_2",
+      "parameter_list": "no_value: true",
+      "comments": "Not working, not used. Same as the default."
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_7_3",
+      "parameter_list": "no_value_text: 'no_value'",
+      "comments": "Not working, not used. Same as the default."
+    },
+    {
+      "type": "slider",
+      "name": "slider_par_7_4",
+      "parameter_list": "no_value_text:string",
+      "comments": "Not working, not used. Same as the default."
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_carousel",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Example"
+    },
+    {
+      "type": "text",
+      "value": "Parameters:\ncentred_slides: true (default);\ncentre_first_and_last: false (default);"
+    },
+    {
+      "type": "begin_carousel",
+      "parameter_list": "centred_slides: true;\ncentre_first_and_last: false"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_1",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 1"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_2",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 2"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 2"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_3",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 3"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 3"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_4",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 4"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 4"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_5",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 5"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 5"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "text",
+      "value": "Parameters:\ncentred_slides: true (default);\ncentre_first_and_last: true;"
+    },
+    {
+      "type": "begin_carousel",
+      "parameter_list": "centred_slides: true;\ncentre_first_and_last: true;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_1",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 1"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_2",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 2"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 2"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_3",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 3"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 3"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_4",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 4"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 4"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_5",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 5"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 5"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "text",
+      "value": "Parameters:\ncentred_slides: false;"
+    },
+    {
+      "type": "begin_carousel",
+      "parameter_list": "centred_slides: false"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_1",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 1"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_2",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 2"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 2"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_3",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 3"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 3"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_4",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 4"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 4"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_5",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 5"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 5"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "text",
+      "value": "Parameters:\nloop: true; "
+    },
+    {
+      "type": "begin_carousel",
+      "parameter_list": "loop: true; "
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_1",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 1"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_2",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 2"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 2"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_3",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 3"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 3"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_4",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 4"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 4"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "slide_5",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "Title 5"
+    },
+    {
+      "type": "text",
+      "value": "Paragraph 5"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "title",
+      "value": "Example using task cards"
+    },
+    {
+      "type": "text",
+      "value": "Parameters:\nspace_between: 8;"
+    },
+    {
+      "type": "begin_carousel",
+      "parameter_list": "space_between: 8;"
+    },
+    {
+      "name": "task_group_id",
+      "value": "w_self_care"
+    },
+    {
+      "name": "task_id",
+      "value": "home_practice"
+    },
+    {
+      "name": "stepper",
+      "value": "_stepper"
+    },
+    {
+      "name": "completed",
+      "value": "_completed"
+    },
+    {
+      "name": "join",
+      "value": "_"
+    },
+    {
+      "name": "card_title",
+      "value": "Self Care"
+    },
+    {
+      "name": "card_subtitle",
+      "value": "This module is about YOU. Looking after yourself is essential for parenting."
+    },
+    {
+      "name": "card_image",
+      "value": "images/avatar_1.png"
+    },
+    {
+      "type": "task_card",
+      "name": "task_card_1",
+      "action_list": "click | go_to:@local.task_group_id@local.stepper;\ncompleted | emit: server_sync;",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nstyle: portrait;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "task_card",
+      "name": "task_card_2",
+      "action_list": "click | go_to:@local.task_group_id@local.stepper;\ncompleted | emit: server_sync;",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nstyle: portrait;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "task_card",
+      "name": "task_card_3",
+      "action_list": "click | go_to:@local.task_group_id@local.stepper;\ncompleted | emit: server_sync;",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nstyle: portrait;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "task_card",
+      "name": "task_card_4",
+      "action_list": "click | go_to:@local.task_group_id@local.stepper;\ncompleted | emit: server_sync;",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nstyle: portrait;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "task_card",
+      "name": "task_card_5",
+      "action_list": "click | go_to:@local.task_group_id@local.stepper;\ncompleted | emit: server_sync;",
+      "parameter_list": "task_group_id: @local.task_group_id;\ntitle: @local.card_title;\nsubtitle: @local.card_subtitle;\nimage: @local.card_image;\nstyle: portrait;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "title",
+      "value": "Example using items"
+    },
+    {
+      "type": "begin_carousel"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.comp_carousel_items"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "@item.title"
+    },
+    {
+      "type": "text",
+      "value": "@item.text"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "title",
+      "value": "Example using data_items"
+    },
+    {
+      "type": "begin_carousel",
+      "name": "data_items_carousel"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_carousel_items"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column",
+      "style_list": "border-style: solid"
+    },
+    {
+      "type": "title",
+      "value": "@item.title"
+    },
+    {
+      "type": "text",
+      "value": "@item.text"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "button",
+      "name": "button_override",
+      "value": "Override text",
+      "action_list": "click | set_data | \n\n_list_id: comp_carousel_items,\ntext: Text override"
+    },
+    {
+      "type": "button",
+      "name": "button_reset",
+      "value": "Reset to original state",
+      "action_list": "click | reset_data | \n\n_list_id: comp_carousel_items"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1f_vq3KFGlExf1-g1PwPiDad9gOZkIOdRE5X99jCIRsM"
+    }
+  ]
+}

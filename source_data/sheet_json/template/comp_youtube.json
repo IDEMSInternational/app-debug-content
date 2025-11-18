@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_youtube",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "youtube",
+      "name": "youtube_1",
+      "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
+      "comments": "The linked video is episode 001 of the IDEMS Podcast"
+    },
+    {
+      "type": "youtube",
+      "name": "youtube_2",
+      "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
+      "parameter_list": "allow_fullscreen: false;"
+    },
+    {
+      "type": "youtube",
+      "name": "youtube_3",
+      "value": "0oOAGrStVGI",
+      "comments": "This is not supported: the value must be a full YouTube URL",
+      "condition": false
+    }
+  ]
+}

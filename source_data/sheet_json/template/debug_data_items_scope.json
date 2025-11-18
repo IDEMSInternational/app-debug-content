@@ -1,0 +1,119 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_scope",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "module_id",
+      "value": "item_1"
+    },
+    {
+      "name": "modules_data_list_name",
+      "value": "debug_data_list_order"
+    },
+    {
+      "name": "articles_data_list_name",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_outer",
+      "value": "@local.modules_data_list_name",
+      "parameter_list": "filter: @item.id == @local.module_id",
+      "comments": "Outer loop is needed to access module completion"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_module_not_completed",
+      "parameter_list": "style: column",
+      "condition": "!@item.completed"
+    },
+    {
+      "name": "module_completed",
+      "value": "@item.completed"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_inner",
+      "value": "@local.articles_data_list_name",
+      "parameter_list": "filter: !@item.completed; \nlimit: 1",
+      "comments": "Ambiguous which scope the @item should refer to. Currently seems to assume it's outer scope, but I would have expected inner scope (since referring to outer can be achieved by local variables)"
+    },
+    {
+      "type": "text",
+      "name": "first_uncompleted_article_id",
+      "value": "ID: @item.id"
+    },
+    {
+      "type": "text",
+      "name": "first_uncompleted_article_index",
+      "value": "Row Index: @item.row_index"
+    },
+    {
+      "type": "button",
+      "name": "button_start",
+      "value": "Start",
+      "condition": "@item.row_index == 0"
+    },
+    {
+      "type": "button",
+      "name": "button_continue",
+      "value": "Continue",
+      "condition": "@item.row_index != 0"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "button_restart",
+      "value": "Restart",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Toggle completion"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "✅",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "❌",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "toggle_bar",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

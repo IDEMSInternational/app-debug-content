@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_image",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "text",
+      "value": "Rounded corners"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "parameter_list": "style: rounded_corners;"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "colours",
+  "status": "released",
+  "data_list_name": "colours",
+  "rows": [
+    {
+      "id": "blue",
+      "name": "Blue"
+    },
+    {
+      "id": "red",
+      "name": "Red"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow"
+    },
+    {
+      "id": "green",
+      "name": "Green"
+    }
+  ]
+}

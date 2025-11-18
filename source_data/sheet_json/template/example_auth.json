@@ -1,0 +1,177 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_auth",
+  "status": "released",
+  "rows": [
+    {
+      "type": "@events",
+      "action_list": "auth_success | emit: force_reprocess;\nauth_failure | emit: force_reprocess;",
+      "condition": false,
+      "comments": "proposed syntax"
+    },
+    {
+      "name": "is_user_signed_in",
+      "value": "!!@fields._auth_user_id"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Auth"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Use the button below to sign in with google auth"
+    },
+    {
+      "type": "google_sign_in_button",
+      "name": "sign_in_google",
+      "value": "Sign in with Google",
+      "action_list": "click | emit: force_reprocess;",
+      "condition": "!@local.is_user_signed_in"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "name": "sign_in_apple",
+      "value": "Sign in with Apple",
+      "action_list": "click | emit: force_reprocess;",
+      "condition": "!@local.is_user_signed_in && @fields._platform === \"ios\""
+    },
+    {
+      "type": "button",
+      "value": "Sign in with Google",
+      "action_list": "click | auth: sign_in_google;\nclick | emit: force_reprocess;",
+      "condition": false,
+      "comments": "Prefer dedicated Google/Apple button, but standalone action is also supported"
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "action_list": "click | auth: sign_out;\nclick | emit: force_reprocess;",
+      "condition": "@local.is_user_signed_in"
+    },
+    {
+      "type": "title",
+      "value": "User info:"
+    },
+    {
+      "type": "text",
+      "value": "User is signed in: @local.is_user_signed_in"
+    },
+    {
+      "type": "text",
+      "value": "ID: @fields._auth_user_id"
+    },
+    {
+      "type": "text",
+      "value": "Name: @fields._auth_user_name",
+      "comments": "Name is typically a combination of given_name and family_name (although may vary by auth provider)"
+    },
+    {
+      "type": "text",
+      "value": "Given Name: @fields._auth_user_given_name"
+    },
+    {
+      "type": "text",
+      "value": "Family Name: @fields._auth_user_family_name"
+    },
+    {
+      "name": "friendly_name",
+      "value": "@fields._auth_user_given_name || @fields._auth_user_name",
+      "comments": "Seeing as `_auth_user_given_name` may not always be available, we should use the full `_auth_user_name` as a fallback when displaying the name to the user"
+    },
+    {
+      "type": "text",
+      "value": "Hello, @local.friendly_name!",
+      "condition": "!!@local.friendly_name"
+    },
+    {
+      "type": "image",
+      "value": "@fields._auth_user_picture",
+      "style_list": "width: 96px;\nheight: 96px;",
+      "condition": "@fields._auth_user_picture",
+      "comments": "The intrinsic (max) size for auth profile pictures is 96px x 96px when provided by firebase"
+    },
+    {
+      "type": "button",
+      "value": "Refresh",
+      "action_list": "click | emit: force_reprocess"
+    },
+    {
+      "type": "title",
+      "value": "User Profile Restore"
+    },
+    {
+      "type": "text",
+      "value": "If a user has signed in across multiple devices each device and auth profile will be listed below.\n\nThis can be used to help restore a profile when migrating devices"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "_auth_profiles",
+      "parameter_list": "sort: updatedAt;\nreverse;\nlimit: 3;",
+      "condition": true,
+      "comments": "_auth_profiles data is created internally and accessible as a regular data_list\n\nit includes a list of all previously synced auth profiles (not including current). See console logs for full profile data and list of fields available"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "ID\n@item.id",
+      "comments": "All user profile data can be accessed from within items. This includes contact_fields and dynamic_data"
+    },
+    {
+      "type": "text",
+      "value": "Last Sync\n@item.contact_fields._server_sync_latest",
+      "comments": "Server_sync latest is a special contact field that does not use prefixes so can be accessed directly"
+    },
+    {
+      "name": "auth_theme",
+      "value": "@item.contact_fields[\"rp-contact-field._app_theme\"]",
+      "comments": "Use intermediate variables to access deeply nested item values\n\nAs contact fields are stored with a prefix and keys containing flattened json, need to use specific syntax to access"
+    },
+    {
+      "type": "text",
+      "value": "Theme: @local.auth_theme"
+    },
+    {
+      "type": "text",
+      "value": "Device\n@item.device_info.manufacturer\n@item.device_info.model"
+    },
+    {
+      "type": "button",
+      "value": "Restore",
+      "action_list": "click | user : import : @item.id;\nclick | emit : force_restart",
+      "comments": "The item id is the same as item _app_user_id\n\nTo be confirmed if full restart required after restoring auth profile (may depend on content and settings)"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "button",
+      "value": "View profile debug page",
+      "action_list": "click | go_to : /user",
+      "comments": "Further examples can be seen at the `/user` page"
+    },
+    {
+      "type": "title",
+      "value": "Danger zone"
+    },
+    {
+      "type": "button",
+      "value": "Force Home Reload",
+      "action_list": "click | emit: force_restart",
+      "comments": "Can be useful for testing whether auth state persisted after force nav"
+    },
+    {
+      "type": "button",
+      "value": "Delete Account",
+      "action_list": "click | pop_up: example_delete_account;"
+    }
+  ]
+}

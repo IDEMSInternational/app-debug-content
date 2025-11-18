@@ -1,0 +1,167 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_progress_path",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Interactive demo"
+    },
+    {
+      "name": "variant_list",
+      "value": "name: curved | text: curved;\nname: wavy | text: wavy;  \nname: basic | text: basic;"
+    },
+    {
+      "type": "text",
+      "value": "Variant:"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "variant_radio",
+      "value": "curved",
+      "parameter_list": "answer_list: @local.variant_list;\nitem_width: 72px;"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Number of items (1-4):"
+    },
+    {
+      "type": "number_selector",
+      "name": "limit",
+      "value": 4,
+      "parameter_list": "min_value:1;\nmax_value:4; "
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Vertical spacing (px):"
+    },
+    {
+      "type": "text_box",
+      "name": "vertical_spacing",
+      "value": 82
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: @local.variant_radio;\nvertical_spacing: @local.vertical_spacing;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "task_cards_data",
+      "parameter_list": "limit: @local.limit;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "module_image_asset: @item.image;\nnav_image_asset: images/icons/expand_circle_right.png;\nlocked_image_asset: images/icons/locked.png;\nvariant: circle;\ncompleted: @item.completed;\nhighlighted: @item.highlighted;\nis_locked: @item.locked;",
+      "comments": "The progress_path component is currently designed to work either the task_card component (cricle variant) or the plh_module_list_item component (circle variant)"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "title",
+      "value": "With task_card component"
+    },
+    {
+      "name": "in_progress_icon",
+      "value": "images/icons/in_progress.svg"
+    },
+    {
+      "name": "completed_icon",
+      "value": "images/icons/tick_white.svg"
+    },
+    {
+      "name": "highlighted_text",
+      "value": "Active"
+    },
+    {
+      "name": "progress_units_name",
+      "value": "sections"
+    },
+    {
+      "type": "title",
+      "value": "Variant: \"wavy\" (default)"
+    },
+    {
+      "type": "begin_progress_path"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.task_cards_data"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "variant: circle;\ntask_group_id: @item.id;\ntask_group_data: @item.task_group_data;\ncompleted_field: @item.completed_field;\ntitle: @item.title;\nimage: @item.image;\nin_progress_icon: @local.in_progress_icon;\ncompleted_icon: @local.completed_icon;\nhighlighted_text: @local.highlighted_text;\nprogress_units_name: @local.progress_units_name;",
+      "action_list": "click | go_to: home_screen"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "title",
+      "value": "Variant: \"basic\""
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: basic;"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.task_cards_data"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "variant: circle;\ntask_group_id: @item.id;\ntask_group_data: @item.task_group_data;\ncompleted_field: @item.completed_field;\ntitle: @item.title;\nimage: @item.image;\nin_progress_icon: @local.in_progress_icon;\ncompleted_icon: @local.completed_icon;\nhighlighted_text: @local.highlighted_text;\nprogress_units_name: @local.progress_units_name;"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "title",
+      "value": "Variant: \"curved\""
+    },
+    {
+      "type": "begin_progress_path",
+      "parameter_list": "variant: curved;"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.task_cards_data"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "variant: circle;\ntask_group_id: @item.id;\ntask_group_data: @item.task_group_data;\ncompleted_field: @item.completed_field;\ntitle: @item.title;\nimage: @item.image;\nin_progress_icon: @local.in_progress_icon;\ncompleted_icon: @local.completed_icon;\nhighlighted_text: @local.highlighted_text;\nprogress_units_name: @local.progress_units_name;\nlocked: @item.locked;\nlocked_image_asset:images/icons/locked.png;"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_progress_path"
+    },
+    {
+      "type": "text",
+      "value": "Template: https://docs.google.com/spreadsheets/d/14BBKG07nqUWDmcscdUMv1AKYSWGBUPCNDT-VcSERHyU/edit?gid=569531329#gid=569531329"
+    }
+  ]
+}

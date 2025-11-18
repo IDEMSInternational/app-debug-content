@@ -1,0 +1,97 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_activity_check_in",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "page_title",
+      "value": "Activity Check in"
+    },
+    {
+      "name": "data_list",
+      "value": "comp_plh_activity_check_in_data"
+    },
+    {
+      "name": "countdown_text_list",
+      "value": "in 1 day, in 2 days, in 3 days, in 4 days, in 5 days, in 6 days, in 7 days, over 7 days"
+    },
+    {
+      "type": "title",
+      "value": "Choose a countdown start date"
+    },
+    {
+      "name": "now",
+      "value": "@calc(now())"
+    },
+    {
+      "name": "yesterday",
+      "value": "@calc(new Date(Date.now() - (24 * 60 * 60 * 1000)))"
+    },
+    {
+      "name": "countdown_start_date",
+      "value": 0
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Use today",
+      "action_list": "click | set_local: countdown_start_date: @local.now"
+    },
+    {
+      "type": "button",
+      "value": "Use yesterday",
+      "action_list": "click | set_local: countdown_start_date: @local.yesterday"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Unset",
+      "action_list": "click | set_local: countdown_start_date: undefined"
+    },
+    {
+      "type": "text",
+      "value": "Start date: @local.countdown_start_date"
+    },
+    {
+      "type": "title",
+      "value": "Choose a number of days to count down"
+    },
+    {
+      "type": "number_selector",
+      "name": "countdown_days",
+      "value": "@data.comp_plh_activity_check_in_data.id_1.countdown_days",
+      "parameter_list": "max_value: 100"
+    },
+    {
+      "type": "text",
+      "value": "Countdown days: @local.countdown_days"
+    },
+    {
+      "type": "title",
+      "value": "Update component"
+    },
+    {
+      "type": "button",
+      "value": "Update component source data",
+      "action_list": "click | set_data | _list_id: comp_plh_activity_check_in_data, _id: id_1, countdown_days: @local.countdown_days, countdown_start_date: @local.countdown_start_date;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_plh_activity_check_in_data"
+    },
+    {
+      "type": "plh_activity_check_in",
+      "action_list": "click | go_to: home_screen;",
+      "parameter_list": "activity_id: id_2;\ntitle: Check-in;\nlocked_icon_asset: images/icons/locked.png;\nlocked_image_asset: images/diamond.png;\nunlocked_icon_asset: images/icons/notification_bell.png;\nunlocked_image_asset: images/shining_diamond.png;\ncountdown_days: @item.countdown_days;\ncountdown_start_date: @item.countdown_start_date;\ncountdown_text_list: @local.countdown_text_list"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

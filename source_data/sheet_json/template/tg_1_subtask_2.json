@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "tg_1_subtask_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Task Group 1, Subtask 2"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg"
+    }
+  ]
+}

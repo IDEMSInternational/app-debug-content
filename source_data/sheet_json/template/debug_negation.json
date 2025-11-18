@@ -1,0 +1,46 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_negation",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "var_true",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "name": "var_false",
+      "value": false,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "true_true",
+      "value": "Variable true  (this text is hidden)",
+      "hidden": "@local.var_true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "true_false",
+      "value": "Variable true Hidden negated (this text is visible)",
+      "hidden": "!@local.var_true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "false_true",
+      "value": "Variable false (this text is visible)",
+      "hidden": "@local.var_false",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "false_false",
+      "value": "Variable false Hidden negated (this text is hidden)",
+      "hidden": "!@local.var_false",
+      "exclude_from_translation": true
+    }
+  ]
+}

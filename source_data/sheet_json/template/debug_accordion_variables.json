@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_accordion_variables",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_accordion",
+      "name": "accordion"
+    },
+    {
+      "name": "variable_invisible",
+      "value": "This variable does not show as an accordion header"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.debug_accordion_data"
+    },
+    {
+      "name": "variable",
+      "value": "Value for @item.id"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "accordion_section_@item.id",
+      "value": "@item.title"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "@local.variable"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_accordion"
+    }
+  ]
+}

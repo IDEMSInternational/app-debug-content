@@ -1,0 +1,38 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_test_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "name_1",
+      "value": "debug_nesting_sheet_1",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "This title was overwritten",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "name_2",
+      "value": "debug_nesting_sheet_1",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "This title was overwritten as well",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

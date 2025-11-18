@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_ups_override",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "example_pop_ups",
+      "value": "example_pop_ups",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_1",
+      "value": "This is template shows how buttons can be overwritten.",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_2",
+      "value": "Button 1 has a new button text, but the action_list is unaltered.",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_pop_up_1",
+      "value": "New Button 1 ",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_3",
+      "value": "Button 2 has an altered action_list. It now launches a simple text pop-up.",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button_pop_up_2",
+      "action_list": "click | pop_up:example_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_4",
+      "value": "Button 3 is unaltered. ",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

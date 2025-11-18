@@ -1,0 +1,71 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_task_group",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Feature: task group"
+    },
+    {
+      "name": "task_groups_data",
+      "value": "feat_task_groups_data"
+    },
+    {
+      "type": "begin_carousel",
+      "parameter_list": "space_between: 6;\ntask_group_data: @local.task_groups_data"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.@local.task_groups_data"
+    },
+    {
+      "type": "task_card",
+      "action_list": "completed | emit: force_reload",
+      "parameter_list": "task_group_id: @item.id;\ntask_group_data: feat_task_group_@item.number;\ncompleted_field: @item.completed_field;\ntitle: @item.title;\nsubtitle: @item.description;\nimage: @item.image_asset;\nstyle: portrait;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_carousel"
+    },
+    {
+      "type": "begin_display_grid",
+      "name": "grid_1",
+      "parameter_list": "item_width: 100px;\nitem_border: solid;\ngrid_gap: 2px;"
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.@local.task_groups_data"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "text",
+      "value": "@item.title"
+    },
+    {
+      "type": "begin_template",
+      "value": "feat_task_group_subtask_toggle"
+    },
+    {
+      "name": "task_group_data",
+      "value": "feat_task_group_@item.number"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_grid"
+    }
+  ]
+}

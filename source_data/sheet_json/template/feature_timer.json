@@ -1,0 +1,55 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_timer",
+  "status": "released",
+  "rows": [
+    {
+      "name": "help_text",
+      "value": "Click <img src=\"images/icons/audio/play-sharp.svg\" width=\"30\" height=\"30\"> to start the timer",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "timer",
+      "name": "timer_with_help",
+      "exclude_from_translation": true,
+      "parameter_list": "help: @local.help_text; title: with help;"
+    },
+    {
+      "type": "timer",
+      "name": "timer_is_editable_on_playing",
+      "exclude_from_translation": true,
+      "parameter_list": "help: @local.help_text; title: is editable on playing; is_editable_on_playing: true;"
+    },
+    {
+      "type": "timer",
+      "name": "timer_with_starting_minutes_5",
+      "exclude_from_translation": true,
+      "parameter_list": "help: @local.help_text; title: with starting minutes 5; starting_minutes: 5;"
+    },
+    {
+      "type": "timer",
+      "name": "timer_with_starting_seconds_20",
+      "exclude_from_translation": true,
+      "parameter_list": "help: @local.help_text; title: with starting seconds 20; starting_seconds: 20;"
+    },
+    {
+      "type": "timer",
+      "name": "timer_with_duration_extension_2",
+      "exclude_from_translation": true,
+      "parameter_list": "help: @local.help_text; title: with duration_extension 2; duration_extension: 2;",
+      "comments": "there is a problem when we extend by more than one minute, the icon doesn`t change "
+    },
+    {
+      "type": "timer",
+      "name": "timer_with_value",
+      "value": 5,
+      "exclude_from_translation": true,
+      "parameter_list": "help: @local.help_text; title: with value 5"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

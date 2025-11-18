@@ -1,0 +1,17 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_template_variables",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "mock_variable_1",
+      "value": "Mock value 1"
+    },
+    {
+      "type": "text",
+      "name": "mock_text_1",
+      "value": "Text that includes @local.mock_variable_1"
+    }
+  ]
+}

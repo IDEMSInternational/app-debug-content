@@ -1,0 +1,19 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_item_variable",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_data_items",
+      "value": "debug_item_data"
+    },
+    {
+      "type": "text",
+      "value": "@item._index + 1"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

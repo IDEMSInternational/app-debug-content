@@ -1,0 +1,20 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_parent_point_box_info",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "lottie_animation",
+      "value": "lottie/blob_play_ball.json"
+    },
+    {
+      "type": "title",
+      "value": "Example Parent Point"
+    },
+    {
+      "type": "text",
+      "value": "Info here about this particular parent point."
+    }
+  ]
+}

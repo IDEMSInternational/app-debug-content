@@ -1,0 +1,26 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_lang_sort",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "lang_select",
+      "value": "example_lang_select"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_lang_sort_data_list"
+    },
+    {
+      "type": "text",
+      "value": "@item.text"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

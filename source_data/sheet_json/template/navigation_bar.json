@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "navigation_bar",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "button_list",
+      "value": "name: home_screen_button | text: @global.home_screen | image: images/icons/house_white.svg | target_template: home_screen;\nname: parent_points_button | text: @global.parent_points | image: images/icons/star_white.svg | target_template: parent_points;\nname: parent_library_button | text: @global.parent_centre | image: images/icons/book_white.svg | target_template: parent_centre;"
+    },
+    {
+      "type": "navigation_bar",
+      "parameter_list": "button_list: @local.button_list"
+    }
+  ]
+}

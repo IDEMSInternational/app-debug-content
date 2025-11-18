@@ -1,0 +1,80 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_radio_group_variables",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "option_1",
+      "value": "Option 1",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_2",
+      "value": "Option 2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "option_3",
+      "value": "Option 3",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_1_list",
+      "value": "name:name_1 | text:Text 1;  name:name_2 | text: Text 2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_2_list",
+      "value": "name:name_1 | text:@local.option_1;  name:name_2 | text:@local.option_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "answer_3_list",
+      "value": "name:name_1 | text:@global.example_global_constant_text;  name:name_2 | text:@global.example_global_constant_title",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "This is the radio group variables debug template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Direct answer list (set through local variable)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_1",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_1_list;"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Answer list contains local variables",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_2",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_2_list;"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Answer list contains global variables",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_3",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_3_list;"
+    }
+  ]
+}

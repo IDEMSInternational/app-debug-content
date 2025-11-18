@@ -1,0 +1,75 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_radio_group_replies",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name:name_var_1 | text:First; \nname:name_var_2 | text:Second",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "text",
+      "name": "text_1_hidden",
+      "value": "Text first - hidden",
+      "hidden": "@local.radio_group != \"name_var_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1_condition",
+      "value": "Text first - condition",
+      "condition": "@local.radio_group == \"name_var_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_1",
+      "hidden": "@local.radio_group != \"name_var_1\""
+    },
+    {
+      "type": "text",
+      "name": "text_1_display_group",
+      "value": "Text first - hidden on display group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_2_hidden",
+      "value": "Text second - hidden",
+      "hidden": "@local.radio_group != \"name_var_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2_condition",
+      "value": "Text second - condition",
+      "condition": "@local.radio_group == \"name_var_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_2",
+      "hidden": "@local.radio_group != \"name_var_2\""
+    },
+    {
+      "type": "text",
+      "name": "text_2_display_group",
+      "value": "Text second - hidden on display group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

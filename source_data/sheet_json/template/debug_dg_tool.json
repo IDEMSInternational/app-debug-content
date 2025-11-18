@@ -1,0 +1,65 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_tool",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "tool_style",
+      "value": "tool_1"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_1",
+      "parameter_list": "style: tool_1 column"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Title",
+      "parameter_list": "style: alternative"
+    },
+    {
+      "type": "subtitle",
+      "name": "subtitle_1",
+      "value": "Subtitle",
+      "parameter_list": "style: alternative"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Text",
+      "parameter_list": "style: alternative"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Button",
+      "parameter_list": "style: navigation"
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Button 2",
+      "parameter_list": "style: information"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Third button"
+    },
+    {
+      "type": "button",
+      "name": "button_4",
+      "value": "Button 4"
+    },
+    {
+      "type": "image",
+      "name": "image_src",
+      "value": "images/avatar_1.png\t"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

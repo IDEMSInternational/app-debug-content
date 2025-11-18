@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_hidden_buttons",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Placeholder Text to create separation",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "exclude_from_translation": true,
+      "comments": "This is button_1 which should be hidden since the value is blank"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Placeholder Text to create separation..",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "button_2",
+      "value": "Hidden Button",
+      "hidden": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "Placeholder Text to create separation",
+      "exclude_from_translation": true
+    }
+  ]
+}

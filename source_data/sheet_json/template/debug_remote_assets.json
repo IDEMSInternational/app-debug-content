@@ -1,0 +1,104 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_remote_assets",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Remote assets"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Download required assets",
+      "action_list": "click | asset_pack: download: debug_asset_pack_1;"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Remote asset replaces core equivalent:",
+      "style_list": "width:140px"
+    },
+    {
+      "type": "image",
+      "value": "debug_asset_pack_1/image_1.png",
+      "style_list": "max-width:140px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Remote asset has no core equivalent:",
+      "style_list": "width:140px"
+    },
+    {
+      "type": "image",
+      "value": "debug_asset_pack_1/image_2.png",
+      "style_list": "max-width:140px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Remote asset adds an override:",
+      "style_list": "width:140px"
+    },
+    {
+      "type": "image",
+      "value": "debug_asset_pack_1/image_3.png",
+      "style_list": "max-width:140px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Remote asset replaces core and override:",
+      "style_list": "width:140px"
+    },
+    {
+      "type": "image",
+      "value": "debug_asset_pack_1/image_4.png",
+      "style_list": "max-width:140px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Select language:"
+    },
+    {
+      "name": "language_list",
+      "value": "name: gb_en | text: English; name: es_sp | text: Español;"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "action_list": "changed | emit: set_language: @local.language_select;",
+      "parameter_list": "answer_list: @local.language_list"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Reset remote assets (return to core asset pack before any downloads)",
+      "action_list": "click | asset_pack: reset;"
+    }
+  ]
+}

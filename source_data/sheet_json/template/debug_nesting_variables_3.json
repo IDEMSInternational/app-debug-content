@@ -1,0 +1,57 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_variables_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "heading_1",
+      "value": "TEST 1: Conditional properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "toggle_value",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "toggle_button",
+      "value": "Value: @local.toggle_value",
+      "action_list": "click | set_local : toggle_value:!@local.toggle_value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "two_texts_a",
+      "value": "debug_two_texts",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_local_variable",
+      "value": "Text variant 1 (toggle to change)",
+      "exclude_from_translation": true,
+      "condition": "@local.toggle_value"
+    },
+    {
+      "type": "set_variable",
+      "name": "child_local_variable",
+      "value": "Text variant 2 (toggle to change)",
+      "exclude_from_translation": true,
+      "condition": "!@local.toggle_value"
+    },
+    {
+      "type": "set_variable",
+      "name": "child_text_1",
+      "value": "Success: text_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

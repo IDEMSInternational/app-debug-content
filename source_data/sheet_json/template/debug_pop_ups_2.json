@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_ups_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_pop_ups_1",
+      "value": "debug_pop_ups_1"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

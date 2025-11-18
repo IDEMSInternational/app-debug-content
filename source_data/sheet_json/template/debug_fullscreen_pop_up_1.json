@@ -1,0 +1,20 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_fullscreen_pop_up_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Launch fullscreen popup (new style)",
+      "action_list": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen_alt: true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "value": "Launch fullscreen popup (old style)",
+      "action_list": "click | pop_up: debug_fullscreen_pop_up_2 | fullscreen: true",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_display_grid",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Display Grid",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "subtitle",
+      "name": "parameters",
+      "value": "Parameters",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.comp_display_grid_params"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_name",
+      "value": "@item.id",
+      "style_list": "width: 150px"
+    },
+    {
+      "type": "@item.input_type",
+      "name": "{@item.id}_input",
+      "value": "@item.default_value",
+      "condition": "@item.default_value",
+      "style_list": "width: 100px",
+      "action_list": "changed | emit:force_reprocess;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_input",
+      "condition": "!@item.default_value",
+      "style_list": "width: 100px"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_description",
+      "value": "@item.description",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "subtitle",
+      "name": "example_1",
+      "value": "Example 1 - Multi-line items"
+    },
+    {
+      "type": "begin_display_grid",
+      "name": "grid_1",
+      "parameter_list": "item_width: @local.item_width_input;\nitem_border: @local.item_border_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.comp_display_grid_data"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column",
+      "comments": "Multiple rows would usually display as separate grid items, so use display group to keep as single item. \nNot required if just using a single image or template component"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_id",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_text",
+      "value": "@item.text"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_grid"
+    },
+    {
+      "type": "subtitle",
+      "name": "example_2",
+      "value": "Example 1b - Using data_items"
+    },
+    {
+      "type": "begin_display_grid",
+      "name": "grid_2",
+      "parameter_list": "item_width: @local.item_width_input;\nitem_border: @local.item_border_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_display_grid_data"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column",
+      "comments": "Multiple rows would usually display as separate grid items, so use display group to keep as single item. \nNot required if just using a single image or template component"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_id",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_text",
+      "value": "@item.text"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_display_grid"
+    },
+    {
+      "type": "button",
+      "name": "button_override",
+      "value": "Override text",
+      "action_list": "click | set_data | \n\n_list_id: comp_display_grid_data,\ntext: Text override"
+    },
+    {
+      "type": "button",
+      "name": "button_reset",
+      "value": "Reset to original state",
+      "action_list": "click | reset_data | \n\n_list_id: comp_display_grid_data"
+    },
+    {
+      "type": "subtitle",
+      "name": "example_2",
+      "value": "Example 2 - Images"
+    },
+    {
+      "type": "begin_display_grid",
+      "name": "grid_2",
+      "parameter_list": "item_width: @local.item_width_input;\nitem_border: @local.item_border_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.comp_display_grid_data"
+    },
+    {
+      "type": "image",
+      "name": "{@item.id}_image",
+      "value": "@item.image",
+      "comments": "As we are only showing a single image we don't need any additional display group wrapper"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "end_display_grid"
+    }
+  ]
+}

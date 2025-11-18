@@ -1,0 +1,97 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_var_in_bulleted_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "List with last item global",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "- First item\n- @global.savings_option_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "List with first item global",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "- @global.savings_option_1\n- Second item",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title_3",
+      "value": "List with only global",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "\"- \"+@global.savings_option_1\n\"- \"+@global.savings_option_2",
+      "exclude_from_translation": true,
+      "comment": "As the expression contains no hardcoded text we need to force parsing the `-` as a string (otherwise will try treat as a number and result in NaN)\n\nstyle: numbered; or style: marked;"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "List with only global and a bit of text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "This is a bit of text before the list\n- @global.savings_option_1\n- @global.savings_option_2",
+      "exclude_from_translation": true,
+      "comment": "style: numbered; or style: marked;"
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "List with only global using *",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "* @global.savings_option_1\n* @global.savings_option_2",
+      "exclude_from_translation": true,
+      "comment": "Alternative method to assign a bullet where only dynamic expression exists (no hardcoded text). This is parsed as markdown (read as markdown.pl spec):\nhttps://daringfireball.net/projects/markdown/syntax"
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "Ordered lists (hardcoded)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "1. @global.savings_option_1\nsome text as a second line\n2. @global.savings_option_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title_7",
+      "value": "Ordered lists (automated)",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "\"- \"+@global.savings_option_1\n\"- \"+@global.savings_option_2",
+      "parameter_list": "style: numbered",
+      "exclude_from_translation": true,
+      "comment": "As in case of standalone `-` marked lists, the parser will interpret as an expression if no hardcoded text exists, so force parsing as string"
+    }
+  ]
+}

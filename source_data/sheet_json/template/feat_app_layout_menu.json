@@ -1,0 +1,43 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_menu",
+  "status": "released",
+  "comments": "Menu shared between templates",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Compact header, no footer",
+      "action_list": "click | go_to: feat_app_layout_header_compact"
+    },
+    {
+      "type": "button",
+      "value": "Custom header, no back button",
+      "action_list": "click | go_to: feat_app_layout_custom_header"
+    },
+    {
+      "type": "button",
+      "value": "No header",
+      "action_list": "click | go_to: feat_app_layout_no_header"
+    },
+    {
+      "type": "button",
+      "value": "Header hidden, inline sticky dg",
+      "action_list": "click | go_to: feat_app_layout_inline_header"
+    },
+    {
+      "type": "button",
+      "value": "Custom footer",
+      "action_list": "click | go_to: feat_app_layout_custom_footer"
+    },
+    {
+      "type": "button",
+      "value": "No page padding",
+      "action_list": "click | go_to: feat_app_layout_padding"
+    },
+    {
+      "type": "button",
+      "value": "Go home",
+      "action_list": "click | go_to: home_screen"
+    }
+  ]
+}

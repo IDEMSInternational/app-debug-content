@@ -1,0 +1,26 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_title_text",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example Title",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "subtitle",
+      "name": "subtitle",
+      "value": "Example Subtitle",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Example text",
+      "exclude_from_translation": true
+    }
+  ]
+}

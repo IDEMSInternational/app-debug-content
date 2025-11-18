@@ -1,0 +1,45 @@
+{
+  "flow_type": "template",
+  "flow_name": "translated_content",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "text",
+      "value": "TEST"
+    },
+    {
+      "name": "accordion_title",
+      "value": "TEST"
+    },
+    {
+      "name": "accordion_text",
+      "value": "TEST"
+    },
+    {
+      "type": "text",
+      "name": "print_text",
+      "value": "@local.text"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "section",
+      "value": "@local.accordion_title"
+    },
+    {
+      "type": "text",
+      "name": "print_accordion_text",
+      "value": "@local.accordion_text"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    }
+  ]
+}

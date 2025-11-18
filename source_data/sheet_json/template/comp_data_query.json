@@ -1,0 +1,237 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_query",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Data Queries"
+    },
+    {
+      "type": "text",
+      "value": "Data queries are used to lookup single values from data_lists and map to a local variable with realtime updating"
+    },
+    {
+      "type": "text",
+      "value": "To iterate over multiple items from a query see examples from the \"data_items\" component"
+    },
+    {
+      "type": "button",
+      "value": "Comp_data_items\n",
+      "action_list": "click | go_to : comp_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Authoring Parameters"
+    },
+    {
+      "type": "table",
+      "value": "data_query_parameters\n"
+    },
+    {
+      "type": "title",
+      "value": "Example Data\n"
+    },
+    {
+      "type": "table",
+      "value": "data_query_items\n"
+    },
+    {
+      "type": "title",
+      "value": "Inline Queries"
+    },
+    {
+      "type": "text",
+      "value": "Basic queries set the value of a local variable depending on the query.\nUse the `value` column to specify any logical query operations for data\n\nE.g. Find the next module not completed",
+      "comments": "Available logical operators:\n<, <=, =>, >, ===, !=="
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | name | value            | parameter_list                                        |\n|------------|---------|---------|-------------------------------------------------------|\n| data_query |  next_module |completed===false | list_id: data_query_items; |\n| text             |               | `@local.next_module.label`<br>`@local.next_module.completed` |      |"
+    },
+    {
+      "type": "data_query",
+      "name": "next_module",
+      "value": "completed === false;\n",
+      "parameter_list": "list_id: data_query_items;",
+      "comments": "By default data_query will return a single item"
+    },
+    {
+      "type": "text",
+      "value": "_Output_\n\n@local.next_module.label\ncompleted: @local.next_module.completed"
+    },
+    {
+      "type": "title",
+      "value": "Query sort"
+    },
+    {
+      "type": "text",
+      "value": "Data can be sorted by multiple columns to prioritise which value is the first returned. Multiple columns should be space-separated, with (desc) direction specified if required\n\nE.g find the highest score module"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | score > 0 | list_id: data_query_items;<br>sort: score(desc) id |"
+    },
+    {
+      "type": "data_query",
+      "name": "highest_score",
+      "value": "score > 0;",
+      "parameter_list": "list_id: data_query_items;\nsort: score(desc) id;",
+      "comments": "Default sort direction is ascending. Specify (desc) to sort descending as required"
+    },
+    {
+      "type": "text",
+      "value": "@local.highest_score.label\nscore: @local.highest_score.score"
+    },
+    {
+      "type": "title",
+      "value": "Compound Queries"
+    },
+    {
+      "type": "text",
+      "value": "If sorting is insufficient to ensure data is retrieved in the correct order, compound queries can be used to specify multiple conditions.\n\nE.g. Find the first incomplete module that does not have a score recorded"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | completed === false;<br>score ===0; | list_id: data_query_items; |"
+    },
+    {
+      "type": "data_query",
+      "name": "next_non_started",
+      "value": "completed === false;\nscore ===0;",
+      "parameter_list": "list_id: data_query_items;"
+    },
+    {
+      "type": "text",
+      "value": "@local.next_non_started.label\ncompleted: @local.next_non_started.completed;\nscore: @local.next_non_started.score;"
+    },
+    {
+      "type": "text",
+      "value": "By default comopund queries use \"and\" logic. Specify `condition_type: or` in the parameter_list to change to an \"or\" condition.\n\nE.g. Find the first module that is either not completed, or had a score below 50"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | completed === false;<br>score <50; | list_id: data_query_items;<br>condition_type: or; |"
+    },
+    {
+      "type": "data_query",
+      "name": "next_incomplete_or_failed",
+      "value": "completed === false;\nscore < 50;",
+      "parameter_list": "list_id: data_query_items;\ncondition_type: or;"
+    },
+    {
+      "type": "text",
+      "value": "@local.next_incomplete_or_failed.label \ncompleted: @local.next_incomplete_or_failed.completed\nscore: @local.next_incomplete_or_failed.score"
+    },
+    {
+      "type": "title",
+      "value": "Query Refs"
+    },
+    {
+      "type": "text",
+      "value": "Any query can also be stored in a data_list for easier reusability across templates"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query |  | ref: `@data.named_data_queries.next_module.parameter_list` |"
+    },
+    {
+      "type": "markdown",
+      "value": "where `named_data_queries` has reference row:\n\n| id      | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| next_module | completed === false;  | list_id: data_query_items; |"
+    },
+    {
+      "type": "data_query",
+      "name": "next_module_by_ref",
+      "parameter_list": "ref: @data.named_data_queries.next_module",
+      "comments": "If using a data query already defined in a data_list use the `data_query` param to provide ref"
+    },
+    {
+      "type": "text",
+      "value": "@local.next_module_by_ref.label\ncompleted: @local.next_module_by_ref.completed"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Queries"
+    },
+    {
+      "type": "text",
+      "value": "The query system is built on top of RX\nhttps://rxdb.info/rx-query.html#query-examples\n\nRaw queries can be used to create advanced queries with access to full specification\nThis can enable more complex expressions, such as combining \"and\" with \"or\" blocks, using regex expressions and more\n\nhttps://github.com/cloudant/mango?tab=readme-ov-file#json-syntax-descriptions"
+    },
+    {
+      "name": "query_json",
+      "value": "{\n  \"$and\": [\n    { \"completed\": true },\n    { \"$or\": [{ \"score\": { \"$gt\": 70 } }, { \"score\": { \"$lt\": 50 }}] }\n  ]\n}",
+      "comments": "Use intermediate variable to define advanced query json for easier authoring"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n|data_query | `@local.query_json`  | list_id: data_query_items;<br>raw: true |\n\nwith raw query json that searches for completed modules with a score either above 70 or below 50"
+    },
+    {
+      "type": "markdown",
+      "value": "```json\n@local.query_json\n```"
+    },
+    {
+      "type": "data_query",
+      "name": "advanced_query",
+      "value": "@local.query_json",
+      "parameter_list": "list_id: data_query_items;\nraw:true;"
+    },
+    {
+      "type": "text",
+      "value": "@local.advanced_query.label \ncompleted: @local.advanced_query.completed\nscore: @local.advanced_query.score"
+    },
+    {
+      "type": "text",
+      "value": "Raw syntax authoring can also handle regular expressions, \nE.g. find the first module where the label starts with \"mod\" (case-insensitive)"
+    },
+    {
+      "name": "regex_example_json",
+      "value": "{\n \"label\": { \"$regex\": \"^mod\", \"$options\": \"i\" }\n}"
+    },
+    {
+      "type": "markdown",
+      "value": "```json\n@local.regex_example_json\n```"
+    },
+    {
+      "type": "data_query",
+      "name": "regex_query",
+      "value": "@local.regex_example_json",
+      "parameter_list": "list_id: data_query_items;\nraw:true;"
+    },
+    {
+      "type": "text",
+      "value": "Label: @local.regex_query.label"
+    },
+    {
+      "type": "title",
+      "value": "Query Actions",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "value": "Additional actions and side effects can be triggered as a response to data changes",
+      "condition": false
+    },
+    {
+      "type": "data_query",
+      "value": "@data.data.query_named.next_module",
+      "condition": false
+    },
+    {
+      "condition": false
+    },
+    {
+      "type": "title",
+      "value": "(WiP) - Not Currently Supported"
+    },
+    {
+      "type": "text",
+      "value": "Looping over multiple items by specifying a multiple parameter\n\nThis is not currently supported, instead recommend using data-items to loop",
+      "comments": "This would require better authoring support for ad-hoc item loops, e.g. from a fixed set of numbers or list generated in a template"
+    },
+    {
+      "type": "markdown",
+      "value": "| type       | value            | parameter_list                                        |\n|------------|------------------|-------------------------------------------------------|\n| data_query | completed === true  | multiple: true |"
+    }
+  ]
+}

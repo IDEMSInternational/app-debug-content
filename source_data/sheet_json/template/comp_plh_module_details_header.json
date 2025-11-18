@@ -1,0 +1,23 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_module_details_header",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "plh_module_details_header",
+      "value": "Module Title: Taking Care of Yourself",
+      "parameter_list": "background_image_asset: images/bg_illustration.png;\nmodule_image_asset:images/module-1.png;"
+    },
+    {
+      "type": "plh_module_details_header",
+      "value": "Short Module Title",
+      "parameter_list": "background_image_asset: images/bg_illustration.png;\nmodule_image_asset:images/module-1.png;\nhide_back_button: true;"
+    },
+    {
+      "type": "plh_module_details_header",
+      "value": "Module Title: This is a really long module title that has more than 30 characters",
+      "parameter_list": "background_image_asset: images/bg_illustration.png;\nmodule_image_asset:images/Noura.png;"
+    }
+  ]
+}

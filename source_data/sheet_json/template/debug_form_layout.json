@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_form_layout",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Form layout example"
+    },
+    {
+      "type": "title",
+      "value": "Title"
+    },
+    {
+      "type": "text_box"
+    },
+    {
+      "type": "text",
+      "value": "Text"
+    },
+    {
+      "type": "text_box"
+    },
+    {
+      "type": "title",
+      "value": "Title"
+    },
+    {
+      "type": "combo_box"
+    },
+    {
+      "type": "text",
+      "value": "Text"
+    },
+    {
+      "type": "combo_box"
+    },
+    {
+      "type": "text",
+      "value": "Sheet: https://docs.google.com/spreadsheets/d/1-SX-9_ns4DJXHZL7fe653cchnaj8cXKQoBL5gVF-J2w/edit?gid=99275306#gid=99275306"
+    }
+  ]
+}

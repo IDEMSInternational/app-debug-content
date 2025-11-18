@@ -1,0 +1,20 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_global_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "@global.debug_variable_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Text that includes @global.debug_variable_1",
+      "exclude_from_translation": true
+    }
+  ]
+}

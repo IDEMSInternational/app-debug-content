@@ -1,0 +1,28 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_custom_header",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "style_list": "justify-content: center;"
+    },
+    {
+      "type": "text",
+      "comments": "blank element"
+    },
+    {
+      "type": "text",
+      "value": "Custom Header",
+      "style_list": "color: white;"
+    },
+    {
+      "type": "button",
+      "value": "Back",
+      "action_list": "click | nav: back"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

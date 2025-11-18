@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_card_styles",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Each \"card\"-style component"
+    },
+    {
+      "type": "title",
+      "value": "button component"
+    },
+    {
+      "type": "button",
+      "value": "Button, card variant",
+      "parameter_list": "variant: card;\nicon: images/icons/leaf_blue.svg;"
+    },
+    {
+      "type": "button",
+      "value": "Button, card-portrait variant",
+      "parameter_list": "variant: card-portrait;\nimage_asset: images/example/jasper_1.jpg;"
+    },
+    {
+      "type": "title",
+      "value": "task_card component"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "title: Task card, button variant;\nimage: images/icons/leaf_blue.svg;\nvariant: button;\ncompleted_icon: images/icons/tick_white.svg;\ncompleted_field: debug_boolean;\ntask_id: some_task;"
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "title: Task card;\nsubtitle: Portrait style;\nimage: images/example/jasper_1.jpg;\nstyle: portrait;\ntask_group_id: feat_task_group_1_data;\nin_progress_icon: images/icons/in_progress.svg;\ncompleted_icon: images/icons/tick_white.svg;"
+    },
+    {
+      "type": "text",
+      "name": "debug_sheet",
+      "value": "Debug template: https://docs.google.com/spreadsheets/d/1QyFq6k9163Uh-WywA2fliV2tWrCor-kDsj9uhfcdOng/edit?gid=1054713933#gid=1054713933"
+    },
+    {
+      "type": "text",
+      "name": "issue_link",
+      "value": "Issue: https://github.com/IDEMSInternational/open-app-builder/issues/3035"
+    }
+  ]
+}

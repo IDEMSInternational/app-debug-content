@@ -1,0 +1,193 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_variable_type",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "var_counter",
+      "value": 1,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "var_counter_calc",
+      "value": "10*@local.var_counter",
+      "exclude_from_translation": true,
+      "comments": "Note - this will show correctly first time but not update with var_counter (set_variable initialises only)\nNEED alternative syntax, e.g. calc_variable (or find better way to infer)"
+    },
+    {
+      "type": "set_variable",
+      "name": "var_counter_addition",
+      "value": "@local.var_counter + @local.var_counter",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "var_bool_true",
+      "value": "@data.debug_vars.bool_true.value",
+      "exclude_from_translation": true,
+      "comments": "bool_true"
+    },
+    {
+      "type": "set_variable",
+      "name": "var_recursive_lookup",
+      "value": "@local.var_bool_true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "var_dynamic_nested_name",
+      "value": "var_bool_true",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "var_dynamic_nested",
+      "value": "@local.@local.var_dynamic_nested_name",
+      "exclude_from_translation": true,
+      "comments": "check replaced variable evaluates"
+    },
+    {
+      "type": "set_variable",
+      "name": "var_bool_false",
+      "value": "@data.debug_vars.bool_false.value",
+      "exclude_from_translation": true,
+      "comments": "bool_false"
+    },
+    {
+      "type": "set_variable",
+      "name": "var_number_0",
+      "value": "@data.debug_vars.number_0.value",
+      "exclude_from_translation": true,
+      "comments": "number_0"
+    },
+    {
+      "type": "set_variable",
+      "name": "var_list_1",
+      "value": "@data.debug_vars.list_1.value_list",
+      "exclude_from_translation": true,
+      "comments": "list_1"
+    },
+    {
+      "type": "set_variable",
+      "name": "var_list_1_length",
+      "value": "@local.var_list_1.length",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "var_text_1",
+      "value": "@data.debug_vars.text_1.value",
+      "exclude_from_translation": true,
+      "comments": "text_1"
+    },
+    {
+      "type": "set_variable",
+      "name": "global_text",
+      "value": "@global.debug_variable_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "List length Test: @local.var_list_1_length",
+      "exclude_from_translation": true,
+      "comments": "Length of object array"
+    },
+    {
+      "type": "text",
+      "name": "text_4wrong",
+      "value": "Expected fail calculation: 10*@local.var_counter",
+      "exclude_from_translation": true,
+      "comments": "This will not work - the calculated part should be handled as another variable"
+    },
+    {
+      "type": "text",
+      "name": "text_4right",
+      "value": "Expected pass calculation: @local.var_counter_calc",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Basic Text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "Multiple values: @local.var_bool_true and @local.var_bool_false",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "Recursive lookup: @local.var_recursive_lookup",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_dynamic_nested",
+      "value": "Dynamic nested pass: @local.var_dynamic_nested",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_number_1_increment",
+      "value": "Counter value: @local.var_counter",
+      "action_list": "click | set_local:var_counter:@local.var_counter+ 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "TODO - nested rows",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_8",
+      "value": "Expected: global.debug_variable_1 lookup\nResult: @local.global_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_9",
+      "value": "Global text test: @global.debug_variable_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "var_col_1",
+      "value": "@data.debug_vars.collection_1.value_collection",
+      "exclude_from_translation": true,
+      "comments": "Note - we cannot specify _collection in the name as it will be parsed differently"
+    },
+    {
+      "type": "set_variable",
+      "name": "var_col_1_key1",
+      "value": "@local.var_col_1.key1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_col",
+      "value": "col_1 (object): @local.var_col_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_col_key",
+      "value": "key1: @local.var_col_1_key1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "test_col_key",
+      "value": "@local.var_col_1_key1 === \"val1\"",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_audio_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "audio",
+      "name": "audio_src",
+      "value": "audio/baby_elephant_walk.wav",
+      "exclude_from_translation": true,
+      "parameter_list": "title:  Test title"
+    }
+  ]
+}

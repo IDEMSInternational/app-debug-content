@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_items_generated",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_items",
+      "name": "test_name",
+      "value": "@data.example_pipe_completed"
+    },
+    {
+      "type": "text",
+      "name": "item_text_1_@item.id",
+      "value": "id: @item.id"
+    },
+    {
+      "type": "end_items"
+    }
+  ]
+}

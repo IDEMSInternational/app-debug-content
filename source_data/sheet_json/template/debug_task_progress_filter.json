@@ -1,0 +1,52 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_task_progress_filter",
+  "status": "released",
+  "rows": [
+    {
+      "name": "task_group",
+      "value": "comp_task_progress_bar_data"
+    },
+    {
+      "type": "text",
+      "value": "Filtered tasks within data-items loop:"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list",
+      "parameter_list": "filter: @item.id === \"id_1\""
+    },
+    {
+      "type": "text",
+      "value": "item_id from loop: @item.id"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group;\ncompleted_field: comp_task_progress_bar_completed;\nfilter: @task_item.id === \"id_a\" || @task_item.id === \"id_c\";"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.task_group"
+    },
+    {
+      "type": "text",
+      "value": "Task @item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_completed_@item.id",
+      "value": "Completed: @item.completed"
+    },
+    {
+      "type": "button",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed:!@item.completed;"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

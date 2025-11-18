@@ -1,0 +1,14 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_text",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This is the example text template used on pop-up components",
+      "exclude_from_translation": true
+    }
+  ]
+}

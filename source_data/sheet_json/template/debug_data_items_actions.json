@@ -1,0 +1,73 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_actions",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "local_var",
+      "value": "original_value"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Value of local variable: @local.local_var"
+    },
+    {
+      "type": "title",
+      "value": "Data items actions - no nesting"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "value": "Completed: @item.completed"
+    },
+    {
+      "type": "button",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "button",
+      "value": "Set local",
+      "action_list": "click | set_local: local_var: new_value"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Data items actions - nested"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "value": "Completed: @item.completed"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "button",
+      "value": "Set local",
+      "action_list": "click | set_local: local_var: new_value"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

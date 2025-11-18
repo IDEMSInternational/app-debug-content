@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_new_nav_buttons",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: banner",
+      "comments": "style:navigation;"
+    },
+    {
+      "type": "text",
+      "name": "left",
+      "value": "left button",
+      "exclude_from_translation": true,
+      "style_list": "flex:1",
+      "comments": "style:left_arrow"
+    },
+    {
+      "type": "text",
+      "name": "blank_text",
+      "value": "\"\"",
+      "exclude_from_translation": true,
+      "style_list": "flex:4"
+    },
+    {
+      "type": "text",
+      "name": "right",
+      "value": "right button",
+      "exclude_from_translation": true,
+      "style_list": "flex:1",
+      "comments": "style: right_arrow"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    }
+  ]
+}

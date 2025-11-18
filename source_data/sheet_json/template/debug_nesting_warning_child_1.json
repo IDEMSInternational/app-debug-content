@@ -1,0 +1,29 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_warning_child_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "display_group"
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Title"
+    },
+    {
+      "type": "text",
+      "name": "text_1"
+    }
+  ]
+}

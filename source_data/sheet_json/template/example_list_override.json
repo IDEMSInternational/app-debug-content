@@ -1,0 +1,61 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_list_override",
+  "status": "released",
+  "flow_subtype": "example_list_override",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Example List Override",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Use the toggle below to dynamically change the data_list",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "set_default",
+      "value": "Set Default List",
+      "action_list": "click | set_field : example_list_override_field : undefined;\nclick | emit : force_reload",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "set_list_1",
+      "value": "Set List 1",
+      "action_list": "click | set_field : example_list_override_field : 1;\nclick | emit : force_reload",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "selected_list",
+      "value": "Selected List: @fields.example_list_override_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "Result",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.example_list_override_data",
+      "exclude_from_translation": true,
+      "comments": "The items will always render from the same data list (name), however that list itself is overriden on condition defined in the main contents"
+    },
+    {
+      "type": "text",
+      "name": "result_text_@item.id",
+      "value": "@item.text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_items",
+      "exclude_from_translation": true
+    }
+  ]
+}

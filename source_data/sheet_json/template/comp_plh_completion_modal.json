@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_completion_modal",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Completion modal"
+    },
+    {
+      "type": "begin_plh_completion_modal",
+      "parameter_list": "background_image_asset: images/modal_bg.svg;"
+    },
+    {
+      "type": "title",
+      "value": "Congratulations",
+      "parameter_list": "text_align:center;",
+      "style_list": "text-align:center;\ncolor:white;"
+    },
+    {
+      "type": "button",
+      "value": "Unlock your moment of play",
+      "action_list": "click | go_to: comp_accordion"
+    },
+    {
+      "type": "end_plh_completion_modal"
+    }
+  ]
+}

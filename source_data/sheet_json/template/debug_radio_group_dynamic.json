@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_radio_group_dynamic",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name:name_var_1 | text:First; \nname:name_var_2 | text:Second",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_1",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "local variable for radio group 1: @local.radio_group_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group_2",
+      "action_list": "changed | set_field:radio_group_2_field:@local.radio_group_2",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "local variable for radio group 2: @local.radio_group_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "field for radio group 2: @field.radio_group_2_field",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "example_generator",
+  "flow_name": "example_generator_list",
+  "status": "released",
+  "rows": [
+    {
+      "id": "w_1",
+      "title": "Workshop 1",
+      "text_condition": "@fields.show_image_1",
+      "data": "example_w_1_data",
+      "comments": "Dynamic fields will be passed to generated template as-is"
+    },
+    {
+      "id": "w_2",
+      "title": "Workshop 2",
+      "text_condition": true,
+      "data": "example_w_2_data"
+    }
+  ]
+}

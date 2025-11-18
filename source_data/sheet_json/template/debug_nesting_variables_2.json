@@ -1,0 +1,144 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_variables_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "var_text_1",
+      "value": "Success: text_1",
+      "exclude_from_translation": true,
+      "comments": "variables declared can be used anywhere on the sheet, including in child templates"
+    },
+    {
+      "type": "text",
+      "name": "heading_1",
+      "value": "TEST 1 - Overwrite a general wrapper to display a named template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_wrapper_1",
+      "value": "debug_wrapper",
+      "exclude_from_translation": true,
+      "comments": "We should be able to achieve the same behaviour using nested properties to access the template within a template"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "wrapper_template",
+      "value": "debug_two_texts",
+      "exclude_from_translation": true,
+      "comments": "The value needs to get written into the template wrapper_template"
+    },
+    {
+      "type": "set_variable",
+      "name": "child_local_variable",
+      "value": "Success: nesting local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_text_1",
+      "value": "@local.var_text_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "heading_2",
+      "value": "The template below should match the template above, and has been set by 2 levels of nested_properties",
+      "exclude_from_translation": true,
+      "condition": false
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_wrapper_2",
+      "value": "debug_wrapper",
+      "exclude_from_translation": true,
+      "condition": false,
+      "comments": "We should be able to achieve the same behaviour using nested properties to access the template within a template"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "wrapper_template",
+      "value": "debug_wrapper",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "wrapper_template",
+      "value": "debug_two_texts",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_local_variable",
+      "value": "Success: nesting local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_text_1",
+      "value": "@local.var_text_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "heading_3",
+      "value": "The content below adds additional content to the template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_wrapper_1",
+      "value": "debug_wrapper",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "wrapper_template",
+      "value": "debug_two_texts",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_local_variable",
+      "value": "Success: nesting local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_text_1",
+      "value": "@local.var_text_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

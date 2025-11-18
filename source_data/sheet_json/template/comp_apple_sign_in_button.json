@@ -1,0 +1,80 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_apple_sign_in_button",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Apple Sign In Button"
+    },
+    {
+      "type": "title",
+      "value": "Default variant"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in with Apple",
+      "action_list": "click | emit: force_reprocess;",
+      "comments": "Button is styled in line with Apple's guidleines: https://developer.apple.com/documentation/sign_in_with_apple/displaying-sign-in-with-apple-buttons-on-the-web"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Disabled",
+      "parameter_list": "disabled: true;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "style: width_content;",
+      "parameter_list": "style: width_content;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "title",
+      "value": "Variant: native_apple"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in with Apple",
+      "parameter_list": "variant: native_apple;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in",
+      "parameter_list": "variant: native_apple;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Disabled",
+      "parameter_list": "variant: native_apple;\ndisabled: true;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "button",
+      "name": "sign_out",
+      "value": "Sign out",
+      "parameter_list": "click | auth: sign_out;\nclick | emit: force_reprocess;"
+    },
+    {
+      "type": "text",
+      "value": "Currently signed in user:"
+    },
+    {
+      "type": "text",
+      "value": "@fields._auth_user_id"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1P6EhHmElOJOAoMH4h_vingVL82jyCfSTYPXj8eY2Iek"
+    }
+  ]
+}

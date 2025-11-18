@@ -1,0 +1,29 @@
+{
+  "flow_type": "template",
+  "flow_name": "doc_field",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Setting a field"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Value of doc_example_field: @field.doc_example_field"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Set field to true",
+      "action_list": "click | set_field: doc_example_field: true;"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Set field to false",
+      "action_list": "click | set_field: doc_example_field: false;"
+    }
+  ]
+}

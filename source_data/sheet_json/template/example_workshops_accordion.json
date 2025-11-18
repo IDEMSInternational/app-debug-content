@@ -1,0 +1,183 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_workshops_accordion",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "label_group",
+      "value": "@global.together"
+    },
+    {
+      "name": "image_group",
+      "value": "@global.together_image"
+    },
+    {
+      "name": "label_individual",
+      "value": "@global.individual"
+    },
+    {
+      "name": "image_individual",
+      "value": "@global.individual_image"
+    },
+    {
+      "name": "title_1",
+      "value": "First title"
+    },
+    {
+      "name": "text_1",
+      "value": "Text 1"
+    },
+    {
+      "name": "title_2",
+      "value": "Second title"
+    },
+    {
+      "name": "text_2",
+      "value": "Text 2"
+    },
+    {
+      "name": "title_3",
+      "value": "Third title"
+    },
+    {
+      "name": "text_3",
+      "value": "Text 3"
+    },
+    {
+      "name": "title_4",
+      "value": "Custom icons"
+    },
+    {
+      "type": "set_field",
+      "name": "debug_completion_level",
+      "value": 0
+    },
+    {
+      "type": "set_field",
+      "name": "debug_section_3_disabled",
+      "value": true
+    },
+    {
+      "type": "begin_workshops_accordion",
+      "name": "workshops_accordion"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "first",
+      "parameter_list": "state: open;\ntitle: @local.title_1",
+      "comments": "state: closed (default), open\n\ntitle: empty string (default), string"
+    },
+    {
+      "type": "begin_template",
+      "name": "template_1",
+      "value": "example_text"
+    },
+    {
+      "name": "text",
+      "value": "@local.text_1"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "name": "completion_level_2",
+      "value": "+0"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "second",
+      "value": "@fields.debug_completion_level",
+      "parameter_list": "title: @local.title_2;"
+    },
+    {
+      "type": "begin_template",
+      "name": "template_2",
+      "value": "example_text_button"
+    },
+    {
+      "name": "text",
+      "value": "@local.text_2"
+    },
+    {
+      "name": "button",
+      "value": "Button 2"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "third",
+      "action_list": "click | pop_up: example_text",
+      "parameter_list": "title: @local.title_3; launch_when_locked: true",
+      "disabled": "@fields.debug_section_3_disabled",
+      "comments": "disabled: false (default), true\n\nlaunch_when_locked: false (default), true\n\naction_list: action to be executed when the section is clicked IF disabled: true and launch_when_locked: true"
+    },
+    {
+      "type": "begin_template",
+      "name": "template_3",
+      "value": "example_text"
+    },
+    {
+      "name": "text",
+      "value": "@local.text_3"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "fourth",
+      "parameter_list": "title: @local.title_4;\ncompleted_icon_asset: images/icons/globe_blue.svg;\nin_progress_icon_asset: images/icons/heart_blue.svg;\ndisabled_icon_asset: images/icons/leaf_blue.svg;"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Text 4"
+    },
+    {
+      "type": "image",
+      "name": "image",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "fifth",
+      "parameter_list": "title: Title 5;\n"
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Text 5"
+    },
+    {
+      "type": "button",
+      "name": "button_5",
+      "value": "Button 5"
+    },
+    {
+      "type": "button",
+      "name": "button_6",
+      "value": "Button 6"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_workshops_accordion"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_task_progress_bar",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Task Progress Bar"
+    },
+    {
+      "name": "task_group",
+      "value": "comp_task_progress_bar_data"
+    },
+    {
+      "type": "text",
+      "value": "All tasks in data list:"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group;\ncompleted_field: comp_task_progress_bar_completed;"
+    },
+    {
+      "type": "text",
+      "value": "Filtered tasks (id_a and id_c):"
+    },
+    {
+      "name": "filtered_id_1",
+      "value": "\"id_a\""
+    },
+    {
+      "name": "filtered_id_2",
+      "value": "\"id_c\""
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group;\ncompleted_field: comp_task_progress_bar_completed;\nfilter: @task_item.id === @local.filtered_id_1 || @task_item.id === @local.filtered_id_2;"
+    },
+    {
+      "type": "text",
+      "value": "Filtered tasks within data-items loop:"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list",
+      "parameter_list": "filter: @item.id === \"id_1\""
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group;\ncompleted_field: comp_task_progress_bar_completed;\nfilter: @task_item.id === \"id_a\" || @task_item.id === \"id_c\";"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Task Progress Wheel"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group;\ncompleted_field: comp_task_progress_bar_completed;\nvariant: wheel;\nwheel_title: Completed"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.task_group"
+    },
+    {
+      "type": "text",
+      "value": "Task @item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_completed_@item.id",
+      "value": "Completed: @item.completed"
+    },
+    {
+      "type": "button",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed:!@item.completed;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_@item.id",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed:!@item.completed;",
+      "comments": "Toggle bar is currently not fully working inside a data_items loop (the associated local variable cannot be accessed correctly)",
+      "hidden": true
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Set progress percentage explicitly:"
+    },
+    {
+      "type": "text",
+      "value": "Enter percentage to update progress"
+    },
+    {
+      "type": "text_box",
+      "name": "percent_value",
+      "value": 50
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "progress_percent: @local.percent_value;"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "variant: wheel;\nprogress_percent: @local.percent_value;",
+      "style_list": "padding-bottom: 24px;"
+    }
+  ]
+}

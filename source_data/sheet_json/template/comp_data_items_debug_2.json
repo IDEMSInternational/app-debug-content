@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items_debug_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "toggle_bar",
+      "name": "filter",
+      "value": true
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_activities",
+      "value": "comp_data_items_list",
+      "parameter_list": "limit:1",
+      "comments": "Debug issue seen in\nhttps://github.com/IDEMSInternational/open-app-builder/issues/2777\n\nInner data_items don't have access to outer local variables"
+    },
+    {
+      "type": "text",
+      "value": "Filter: @local.filter"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_action_toast",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Click for toast"
+    },
+    {
+      "name": "message",
+      "value": "Looks like toast"
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Toast Var",
+      "action_list": "click | toast | message: @local.message\n\n"
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "No Message",
+      "action_list": "click | toast | message:\n\n"
+    },
+    {
+      "type": "button",
+      "name": "button_default",
+      "value": "Toast Message",
+      "action_list": "click | toast | message: hard coded toast\n\n"
+    }
+  ]
+}

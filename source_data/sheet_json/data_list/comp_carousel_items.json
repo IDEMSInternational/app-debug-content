@@ -1,0 +1,28 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_carousel_items",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "id_1",
+      "title": "Title 1",
+      "text": "Paragraph 1"
+    },
+    {
+      "id": "id_2",
+      "title": "Title 2",
+      "text": "Paragraph 2"
+    },
+    {
+      "id": "id_3",
+      "title": "Title 3",
+      "text": "Paragraph 3"
+    },
+    {
+      "id": "id_4",
+      "title": "Title 4",
+      "text": "Paragraph 4"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_no_header",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Template-level app config layout overrides"
+    },
+    {
+      "type": "title",
+      "value": "No header"
+    },
+    {
+      "type": "begin_template",
+      "name": "feat_app_layout_menu",
+      "value": "feat_app_layout_menu"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

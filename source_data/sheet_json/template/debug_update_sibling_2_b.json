@@ -1,0 +1,39 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_update_sibling_2_b",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "example_text_button",
+      "value": "example_text_button",
+      "action_list": "uncompleted | emit:uncompleted"
+    },
+    {
+      "name": "local_var",
+      "value": "@fields.radio_group_final_temp"
+    },
+    {
+      "name": "text",
+      "value": "Condition evaluates as option 1.\n\nValue of field: @fields.radio_group_final_temp \nValue of local that follows field: @local.local_var",
+      "condition": "@fields.radio_group_final_temp == \"option_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "Condition evaluates as option 2.\n\nValue of field: @fields.radio_group_final_temp \nValue of local that follows field: @local.local_var",
+      "condition": "@fields.radio_group_final_temp == \"option_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button",
+      "value": "Emit uncompleted",
+      "action_list": "click | emit:uncompleted",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

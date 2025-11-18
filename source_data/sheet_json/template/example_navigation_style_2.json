@@ -1,0 +1,49 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_navigation_style_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "page_1_title",
+      "value": "This Page",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "page_1_text",
+      "value": "This is the text for this page",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: navigation"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "return",
+      "action_list": "click | go_to:home_screen",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "go back",
+      "action_list": "click | go_to:home_screen",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "hidden",
+      "value": "hideme ",
+      "exclude_from_translation": true
+    }
+  ]
+}

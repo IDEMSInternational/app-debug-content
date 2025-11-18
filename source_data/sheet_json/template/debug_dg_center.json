@@ -1,0 +1,65 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_center",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Centering a title component",
+      "style_list": "text-align: center"
+    },
+    {
+      "type": "subtitle",
+      "name": "subtitle",
+      "value": "Centering a subtitle component",
+      "style_list": "text-align: center"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Centering a text component",
+      "style_list": "text-align: center",
+      "comments": "As text automatically still fills the whole width justify-content won't work, so use text-align instead. This can be done on the text element itself, a display group is not required."
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Three ways of centering an image component"
+    },
+    {
+      "type": "image",
+      "name": "image_1",
+      "value": "images/avatar_1.png",
+      "comments": "<span>This image is not in a display group. If it were then justify-content center would work, but because it is standalone there is nothing to align it in reference to. Instead a (counter-intuitive) way to center is to add </span><span><i>margin:auto</i></span><span> - which encourages both left and right margins to take up as much space as possible (and force into center).</span>"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_1",
+      "style_list": "justify-content: center"
+    },
+    {
+      "type": "image",
+      "name": "image_2",
+      "value": "images/avatar_1.png",
+      "comments": "<span>Need to use max-width instead of width. This is a slightly weird bug that can't easily be resolved. Basically the image inside the display group is not observing the width as set (100px) due to some annoying style behaviours at the level of nesting. The hacky fix for this is specifying a </span><span><i>max-width </i></span><span>property which sort of forces it not to ignore the property (possibly could be resolved in the future with some changes to how images are displayed, but beyond scope for fixing right now) </span>"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_2",
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "image",
+      "name": "image_3",
+      "value": "images/avatar_1.png"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_scope_out",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "module_id",
+      "value": "item_1"
+    },
+    {
+      "name": "modules_data_list_name",
+      "value": "debug_data_list_order"
+    },
+    {
+      "name": "articles_data_list_name",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop_outer",
+      "value": "@local.modules_data_list_name",
+      "parameter_list": "filter: @item.id == @local.module_id"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_module_not_completed",
+      "parameter_list": "style: column",
+      "condition": "!@item.completed"
+    },
+    {
+      "name": "module_completed",
+      "value": "@item.completed"
+    },
+    {
+      "type": "begin_template",
+      "name": "loop_inner",
+      "value": "debug_data_items_scope_in",
+      "comments": "Move inner loop to subtemplate"
+    },
+    {
+      "name": "articles_data_list_name",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "button_restart",
+      "value": "Restart",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Toggle completion"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "✅",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "❌",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "toggle_bar",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

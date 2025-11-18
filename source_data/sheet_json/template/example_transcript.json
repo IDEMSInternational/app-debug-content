@@ -1,0 +1,12 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_transcript",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "text",
+      "value": "This is an audio message in English."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_set_data_changed",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Issue:\nset_data action does not receive lateset value from combobox\n\nFixed via: \nhttps://github.com/IDEMSInternational/open-app-builder/pull/2749\n\nhttps://github.com/IDEMSInternational/open-app-builder/pull/2750"
+    },
+    {
+      "name": "answer_list_1",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3;"
+    },
+    {
+      "type": "title",
+      "value": "Set data list value from combo box (local notation)"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_1",
+      "action_list": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: @local.combo_box_1;",
+      "parameter_list": "answer_list: @local.answer_list_1;\nvariant: dropdown;"
+    },
+    {
+      "type": "title",
+      "value": "Set data list value from combo box (this notation)"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_2",
+      "action_list": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: this.value;",
+      "parameter_list": "answer_list: @local.answer_list_1;\nvariant: dropdown;"
+    },
+    {
+      "type": "title",
+      "value": "Items"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_set_data_changed_data"
+    },
+    {
+      "type": "text",
+      "value": "data row value: @item.value"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Use Case"
+    },
+    {
+      "type": "text",
+      "value": "Concatenate item with changed value (this notation)"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_4",
+      "action_list": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{this.value};",
+      "parameter_list": "answer_list: @local.answer_list_1;\nvariant: dropdown;"
+    },
+    {
+      "type": "title",
+      "value": "TODO - not currently supported"
+    },
+    {
+      "type": "text",
+      "value": "Concatenate item with changed value (local notation)"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_3",
+      "action_list": "changed | set_data |\n_list_id: debug_set_data_changed_data,\n_id: row_1,\nvalue: {@item.id}_{@local.combo_box_3};",
+      "parameter_list": "answer_list: @local.answer_list_1;\nvariant: dropdown;",
+      "comments": "May work following \nhttps://github.com/IDEMSInternational/open-app-builder/pull/2753                                                "
+    }
+  ]
+}

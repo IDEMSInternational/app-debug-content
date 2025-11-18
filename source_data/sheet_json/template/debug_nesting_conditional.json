@@ -1,0 +1,73 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_conditional",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "text_2",
+      "value": "Success: text_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_1_toggle",
+      "value": true,
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "var_toggle_text",
+      "value": "The value of the toggle is: @local.text_1_toggle",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "intro_1",
+      "value": "The following template should change text_1 value depending on the value of a variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "direct_template_2",
+      "value": "debug_two_texts",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_text_1",
+      "value": "Success: text_1 - toggle TRUE",
+      "exclude_from_translation": true,
+      "condition": "@local.text_1_toggle"
+    },
+    {
+      "type": "set_variable",
+      "name": "child_text_1",
+      "value": "Success: text_1 - toggle FALSE",
+      "exclude_from_translation": true,
+      "condition": "!@local.text_1_toggle"
+    },
+    {
+      "type": "set_variable",
+      "name": "child_text_2",
+      "value": "Expected: \"Success: text_2\"\nResult: @local.text_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "set_variable",
+      "name": "child_local_variable",
+      "value": "Success: nesting local variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "toggle text",
+      "value": "Toggle value of text_1",
+      "action_list": "click | set_local: var_toggle: !@local.var_toggle",
+      "exclude_from_translation": true
+    }
+  ]
+}

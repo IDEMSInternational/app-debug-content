@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_call_global_constants",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "@global.example_global_constant_title",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Text that includes @global.example_global_constant_text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "image",
+      "name": "image_src",
+      "value": "@global.example_global_constant_image",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "There should be an image above this text, whose source is example_global_image",
+      "exclude_from_translation": true
+    }
+  ]
+}

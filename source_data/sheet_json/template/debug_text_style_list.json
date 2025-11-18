@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_style_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Text with custom CSS applied from style_list",
+      "style_list": "color: red;"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Text 1"
+    },
+    {
+      "type": "text",
+      "value": "Text 2"
+    },
+    {
+      "type": "text",
+      "value": "Text 3",
+      "style_list": "flex: 2;"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

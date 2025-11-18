@@ -1,0 +1,44 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_screen_orientation",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Set screen orientation using action"
+    },
+    {
+      "type": "button",
+      "value": "Set Portrait",
+      "action_list": "click | screen_orientation: portrait;"
+    },
+    {
+      "type": "button",
+      "value": "Set Landscape",
+      "action_list": "click | screen_orientation: landscape;"
+    },
+    {
+      "type": "button",
+      "value": "Unlock",
+      "action_list": "click | screen_orientation: unlock;"
+    },
+    {
+      "type": "title",
+      "value": "Go to template with fixed orientation"
+    },
+    {
+      "type": "button",
+      "value": "Landscape Template",
+      "action_list": "click | go_to: template_orientation_landscape;"
+    },
+    {
+      "type": "title",
+      "value": "Fullscreen pop-up with fixed orientation"
+    },
+    {
+      "type": "button",
+      "value": "Fullscreen pop-up",
+      "action_list": "click | pop_up: template_orientation_landscape | fullscreen: true;"
+    }
+  ]
+}

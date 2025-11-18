@@ -1,0 +1,36 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_tour_template_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Example Tour Template 1"
+    },
+    {
+      "type": "set_variable",
+      "name": "show_button_1",
+      "value": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Template 1"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Click Me",
+      "action_list": "click | set_local:show_button_1:false",
+      "condition": "@local.show_button_1"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Conditional logic works!",
+      "condition": "!@local.show_button_1"
+    }
+  ]
+}

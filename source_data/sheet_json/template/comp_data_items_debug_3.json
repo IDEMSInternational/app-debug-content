@@ -1,0 +1,63 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items_debug_3",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Data items with no child rows"
+    },
+    {
+      "type": "text",
+      "value": "No child rows"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "No child rows alt"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_data_items_list"
+    },
+    {
+      "type": "text",
+      "value": "No item rows"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_data_items_list",
+      "parameter_list": "limit: 0;"
+    },
+    {
+      "type": "text",
+      "value": "Shouldn't be visible"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "Manually hidden"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_data_items_list",
+      "hidden": true
+    },
+    {
+      "type": "text",
+      "value": "Shouldn't be visible"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

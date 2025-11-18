@@ -1,0 +1,56 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_test_1_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_sheet_1a",
+      "value": "debug_nesting_sheet_1",
+      "exclude_from_translation": true,
+      "comments": "Expect debug_nesting_sheet_1 rendered (single title line), with overwritten title"
+    },
+    {
+      "name": "title",
+      "value": "title for sheet 1a was overwritten",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_sheet_2a",
+      "value": "debug_nesting_sheet_2",
+      "exclude_from_translation": true,
+      "comments": "Expect second instance of debug_nesting_sheet_2 rendered (title + text), with overwritten title"
+    },
+    {
+      "name": "title",
+      "value": "title for sheet 2 was overwritten",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_sheet_2b",
+      "value": "debug_nesting_sheet_2",
+      "exclude_from_translation": true,
+      "comments": "Expect second instance of debug_nesting_sheet_2 rendered (single title line), with overwritten text"
+    },
+    {
+      "name": "text",
+      "value": "text for sheet 2 was overwritten",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_login_page",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Example Login Page"
+    },
+    {
+      "type": "title",
+      "value": "Full width"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in with Apple",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in with Google",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "text",
+      "value": "or",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "button",
+      "value": "Continue without an account"
+    },
+    {
+      "type": "title",
+      "value": "Centred"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column;"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in with Apple",
+      "parameter_list": "style: width_content;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in with Google",
+      "parameter_list": "style: width_auto;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "text",
+      "value": "or",
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "button",
+      "value": "Continue without an account",
+      "style_list": "max-width: max-content"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1dL2rIl7F-QE9b1CDQQHOdSnPoLu5WxaJoR1DDFYsneM/edit?gid=1921555013#gid=1921555013"
+    }
+  ]
+}

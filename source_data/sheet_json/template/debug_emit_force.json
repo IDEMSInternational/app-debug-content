@@ -1,0 +1,40 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_emit_force",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "local_1",
+      "value": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Value of local_1: @local.local_1"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox",
+      "action_list": "changed | set_local : local_1 : @local.checkbox"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Force restart",
+      "action_list": "click | emit: force_restart"
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Force reload",
+      "action_list": "click | emit: force_reload"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Force reprocess",
+      "action_list": "click | emit: force_reprocess"
+    }
+  ]
+}

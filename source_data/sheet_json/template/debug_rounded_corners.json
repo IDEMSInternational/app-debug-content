@@ -1,0 +1,15 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_rounded_corners",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "image",
+      "name": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true,
+      "parameter_list": "style: rounded_corners;"
+    }
+  ]
+}

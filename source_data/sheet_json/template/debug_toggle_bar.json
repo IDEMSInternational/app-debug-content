@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_toggle_bar",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Toggle bar 1 (top-level)"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar_1",
+      "value": true
+    },
+    {
+      "type": "text",
+      "value": "toggle bar 1 value: @local.toggle_bar_1"
+    },
+    {
+      "type": "title",
+      "value": "Toggle bar 2 (in data-items loop)"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_toggle_bar_data"
+    },
+    {
+      "type": "toggle_bar",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "item.completed: @item.completed"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_nav_stack_child",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Nav stack with title and scrollable content"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack open",
+      "action_list": "click | nav_stack: open | template: feat_nav_stack"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack close top",
+      "action_list": "click | nav_stack: close_top"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack close all",
+      "action_list": "click | nav_stack: close_all"
+    },
+    {
+      "type": "title",
+      "value": "Additional text to make the content long enough to be scrollable:"
+    },
+    {
+      "type": "text",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ]
+}

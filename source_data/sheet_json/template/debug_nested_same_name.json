@@ -1,0 +1,92 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_same_name",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Double nested 1"
+    },
+    {
+      "type": "begin_template",
+      "name": "template_1",
+      "value": "debug_text_and_blank_child_1",
+      "comments": "This does not work since it has two nested properties with the same name."
+    },
+    {
+      "name": "text",
+      "value": "Text 1"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "subtemplate_1",
+      "value": "debug_text_and_blank_child_1"
+    },
+    {
+      "name": "text",
+      "value": "Text 2"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "subtemplate_1",
+      "value": "example_text"
+    },
+    {
+      "name": "text",
+      "value": "Text 3"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Double nested 2"
+    },
+    {
+      "type": "begin_template",
+      "name": "template_2",
+      "value": "debug_text_and_blank_child_1",
+      "comments": "This works since the nested properties have distinct names."
+    },
+    {
+      "name": "text",
+      "value": "Text 1"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "subtemplate_1",
+      "value": "debug_text_and_blank_child_2"
+    },
+    {
+      "name": "text",
+      "value": "Text 2"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "subtemplate_2",
+      "value": "example_text"
+    },
+    {
+      "name": "text",
+      "value": "Text 3"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

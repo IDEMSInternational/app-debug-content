@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_completion",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Hurray!"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This is the example text template used on pop-up components",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Thank you for completing module",
+      "action_list": "click | go_to: comp_accordion;"
+    }
+  ]
+}

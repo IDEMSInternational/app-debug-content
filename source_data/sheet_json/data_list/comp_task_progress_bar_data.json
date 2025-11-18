@@ -1,0 +1,31 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_task_progress_bar_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_a",
+      "completed": false
+    },
+    {
+      "id": "id_b",
+      "completed": false
+    },
+    {
+      "id": "id_c",
+      "completed": false
+    },
+    {
+      "id": "id_d",
+      "completed": false
+    },
+    {
+      "id": "id_e",
+      "completed": false
+    },
+    {
+      "id": "id_f",
+      "completed": false
+    }
+  ]
+}

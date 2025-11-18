@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_pop_up_dismiss",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "The pop-up launched by the following button should dismiss when \"completed\" or \"uncompleted\" is emitted:",
+      "comments": "This is the case whether or not the parent template has an action handler for \"completed\"/\"uncompleted\""
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_1",
+      "value": "Launch pop-up",
+      "action_list": "click | pop_up: example_emit;"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "When returning (e.g. because the next template emits completed) to a pop-up that has been dismissed, instead one should return to the underlying template:"
+    },
+    {
+      "type": "button",
+      "name": "button_pop_up_2",
+      "value": "Pop-up to test returning",
+      "action_list": "click | pop_up: debug_pop_up_return"
+    }
+  ]
+}

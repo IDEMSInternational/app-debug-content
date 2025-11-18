@@ -1,0 +1,19 @@
+{
+  "flow_type": "template",
+  "flow_name": "assets_demo",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Assets demo"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "image",
+      "value": "tz_sw/images/tanzania"
+    }
+  ]
+}

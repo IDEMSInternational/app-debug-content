@@ -1,0 +1,56 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_dg_form",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "form",
+      "value": "form",
+      "parameter_list": "style: form; \nget_device_info: true; \nbutton_text: Send;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_1",
+      "value": false,
+      "action_list": "changed | set_field:demo_changed_field_checkbox_1:@local.checkbox_1",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: checkbox 1; align:left"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_2",
+      "value": false,
+      "action_list": "changed | set_field:demo_changed_field_checkbox_2:@local.form.checkbox_1",
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: checkbox 2; align:left"
+    },
+    {
+      "name": "text_checkbox_3",
+      "value": "Contact me via email"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_3",
+      "parameter_list": "label_text: checkbox 3; align:left"
+    },
+    {
+      "type": "text",
+      "name": "text_checkbox_3",
+      "value": "Checkbox 3 text",
+      "hidden": "!@local.checkbox_3",
+      "comments": "Conditions don't work"
+    },
+    {
+      "type": "text",
+      "name": "text_checkbox_3_form",
+      "value": "Checkbox 3 form text",
+      "hidden": "!@local.form.checkbox_3",
+      "comments": "Conditions don't work"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

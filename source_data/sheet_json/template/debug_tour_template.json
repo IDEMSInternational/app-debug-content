@@ -1,0 +1,29 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_tour_template",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Debug Tour"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Go to debug_tour",
+      "action_list": "click | start_tour: debug_tour"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "global: @global.parent_app"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "data: @data.example.example1.text"
+    }
+  ]
+}

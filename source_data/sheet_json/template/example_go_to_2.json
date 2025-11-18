@@ -1,0 +1,36 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_go_to_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Button 1: Go to example emit",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_1",
+      "value": "Button 1",
+      "action_list": "click | go_to: example_emit",
+      "exclude_from_translation": true,
+      "comments": "This returns to the current template after finishing example_emit"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Button 2: Go to example_emit and mark as completed",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_go_to_2",
+      "value": "Button 2",
+      "action_list": "click | go_to:example_emit; click | emit:completed",
+      "exclude_from_translation": true,
+      "comments": "This does not return to the current template after finishing example_emit"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "goal_data",
+  "status": "released",
+  "data_list_name": "goal",
+  "rows": [
+    {
+      "id": "@default",
+      "text": "@row.title",
+      "name": "@row.id",
+      "image": "@row.icon_asset"
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "icon_asset": "images/icons/school_blue.svg"
+    },
+    {
+      "id": "child_dev",
+      "title": "Child development",
+      "icon_asset": "images/icons/leaf_blue.svg"
+    },
+    {
+      "id": "relations",
+      "title": "Relationships",
+      "icon_asset": "images/icons/heart_blue.svg"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_task_group_completion",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "text",
+      "value": "Debug task group completion feature"
+    },
+    {
+      "name": "data_list_a",
+      "value": "debug_task_group_a"
+    },
+    {
+      "name": "data_list_b",
+      "value": "debug_task_group_b"
+    },
+    {
+      "name": "row_id_a",
+      "value": "a_1"
+    },
+    {
+      "name": "row_id_b",
+      "value": "b_2"
+    },
+    {
+      "type": "button",
+      "name": "button",
+      "value": "Evaluate task group completion",
+      "action_list": "click | task: evaluate | data_list_name: @local.data_list_b, row_id: @local.row_id_b;\nclick | task: evaluate | data_list_name: @local.data_list_a;",
+      "comments": "This example uses local variables to more closely resemble a real-world use case. But values can also be provided directly to the action paramaters.\n\nThe order of actions is important when calling the action multiple times together: the lowest-level task should be evaluated first to ensure that any changes are reflected higher up.\n\nThe second action invocation demonstrates that the \"row_id\" parameter is optional: if not provided then every task row of the source data list will be evaluated."
+    },
+    {
+      "type": "title",
+      "value": "debug_task_group_a"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.debug_task_group_a"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_completed_@item.id",
+      "value": "✅",
+      "hidden": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "text_incomplete_@item.id",
+      "value": "❌",
+      "hidden": "@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "@item.text"
+    },
+    {
+      "type": "button",
+      "name": "toggle_button_@item.id",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed:!@item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "debug_task_group_b"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.debug_task_group_b"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_completed_@item.id",
+      "value": "✅",
+      "hidden": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "text_incomplete_@item.id",
+      "value": "❌",
+      "hidden": "@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "@item.text"
+    },
+    {
+      "type": "button",
+      "name": "toggle_button_@item.id",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed:!@item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "debug_task_group_c"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.debug_task_group_c"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_complete_@item.id",
+      "value": "✅",
+      "hidden": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "text_incomplete_@item.id",
+      "value": "❌",
+      "hidden": "@item.completed"
+    },
+    {
+      "type": "text",
+      "name": "id_@item.id",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "text_@item.id",
+      "value": "@item.text"
+    },
+    {
+      "type": "button",
+      "name": "toggle_button_@item.id",
+      "value": "Toggle completed",
+      "action_list": "click | set_item | completed:!@item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

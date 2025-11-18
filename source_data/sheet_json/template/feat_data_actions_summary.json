@@ -1,0 +1,67 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_data_actions_summary",
+  "status": "released",
+  "rows": [
+    {
+      "type": "set_local",
+      "name": "show_number",
+      "value": true
+    },
+    {
+      "type": "set_local",
+      "name": "show_label",
+      "value": true
+    },
+    {
+      "type": "set_local",
+      "name": "show_remove",
+      "value": false
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.feat_data_actions_list",
+      "comments": "This is just a utility template to list summary of data_items (so can be used in multiple places)"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "✅",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "❌",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "value": "@item.number",
+      "condition": "@local.show_number"
+    },
+    {
+      "type": "text",
+      "value": "@item.label",
+      "condition": "@local.show_label"
+    },
+    {
+      "type": "button",
+      "value": "Remove",
+      "action_list": "click | remove_item",
+      "condition": "@local.show_remove && @item._user_created",
+      "comments": "Only show delete button next to items that have been user gnerated (default sheet values repopulated on load, so any removal would be temporary)"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

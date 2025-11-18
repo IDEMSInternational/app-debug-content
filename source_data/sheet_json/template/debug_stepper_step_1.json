@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_stepper_step_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Step 1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "This is the first step in the nav_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "nav_buttons",
+      "value": "nav_buttons",
+      "action_list": "completed | emit:completed; uncompleted | emit:uncompleted;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

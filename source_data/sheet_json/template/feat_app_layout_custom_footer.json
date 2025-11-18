@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_app_layout_custom_footer",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "templateName": "feat_custom_footer",
+        "background": "none"
+      }
+    }
+  },
+  "rows": [
+    {
+      "type": "title",
+      "value": "Template-level app config layout overrides"
+    },
+    {
+      "type": "title",
+      "value": "Custom footer"
+    },
+    {
+      "type": "begin_template",
+      "name": "feat_app_layout_menu",
+      "value": "feat_app_layout_menu"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

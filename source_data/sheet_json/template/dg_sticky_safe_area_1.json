@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "dg_sticky_safe_area_1",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;\nignore_safe_area: true;\nbackground_image_asset: images/activity_bg.svg;\nbackground_image_position: right top;",
+      "style_list": "min-height: 118px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Ignore safe area: true. Sticky display groups go right to the edge of the visible screen"
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "sticky: bottom;\nignore_safe_area: true;\nbackground_image_asset: images/bottom_image.svg;\nbackground_image_position: left bottom;",
+      "style_list": "min-height: 88px;\nwidth: 100%;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    }
+  ]
+}

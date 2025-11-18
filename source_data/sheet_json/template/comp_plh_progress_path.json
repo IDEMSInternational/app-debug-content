@@ -1,0 +1,140 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_path",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "24px 0"
+      }
+    }
+  },
+  "rows": [
+    {
+      "name": "background_image_asset",
+      "value": "@calc(@field._app_theme === \"plh_kids_tz\" ? \"images/progress_path_bg_plh_kids_tz.jpg\" : \"images/progress_path_bg_plh_kids_kw.jpg\")"
+    },
+    {
+      "type": "title",
+      "value": "Starting position: top"
+    },
+    {
+      "type": "title",
+      "value": "9 items"
+    },
+    {
+      "type": "begin_plh_progress_path",
+      "parameter_list": "background_image_asset: @local.background_image_asset;\nstarting_position: top;\nmodule_count: 9;",
+      "style_list": "margin-top: 0px;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.task_cards_data_plh",
+      "parameter_list": "limit: 9;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "variant: circle;\nmodule_image_asset: @item.image;\nhighlighted: @item.highlighted;\nlocked_image_asset: images/icons/locked.png;\nis_locked: @item.locked;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_plh_progress_path"
+    },
+    {
+      "type": "title",
+      "value": "10 items"
+    },
+    {
+      "type": "begin_plh_progress_path",
+      "parameter_list": "background_image_asset: @local.background_image_asset;\nstarting_position: top;\nmodule_count: 10;",
+      "style_list": "margin-top: 0px;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.task_cards_data_plh"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "variant: circle;\nmodule_image_asset: @item.image;\nhighlighted: @item.highlighted;\nlocked_image_asset: images/icons/locked.png;\nis_locked: @item.locked;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_plh_progress_path"
+    },
+    {
+      "name": "show_reversed_version",
+      "value": false
+    },
+    {
+      "type": "button",
+      "value": "Show demo of starting_position: bottom (page will scroll)",
+      "action_list": "click | set_local: show_reversed_version: true;"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column;",
+      "condition": "@local.show_reversed_version"
+    },
+    {
+      "type": "title",
+      "value": "Starting position: bottom"
+    },
+    {
+      "type": "begin_plh_progress_path",
+      "parameter_list": "background_image_asset: @local.background_image_asset;\nstarting_position: bottom;",
+      "comments": "`starting_position: bottom` is default"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.task_cards_data_plh",
+      "parameter_list": "limit: 9;"
+    },
+    {
+      "type": "plh_module_list_item",
+      "parameter_list": "variant: circle;\nmodule_image_asset: @item.image;\nhighlighted: @item.highlighted;\nlocked_image_asset: images/icons/locked.png;\nis_locked: @item.locked;",
+      "comments": "The progress_path component is currently designed to work with a list of plh_module_list_item components with the \"circle\" variant applied (or task cards with the \"circle\" variant applied [legacy]). Other child components have not been tested"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_plh_progress_path"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "parameter_list": "Legacy implementation (using task card component)",
+      "condition": false
+    },
+    {
+      "type": "begin_plh_progress_path",
+      "parameter_list": "background_image_asset:images/map_view_bg.jpg;",
+      "condition": false
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.task_cards_data_plh",
+      "condition": false
+    },
+    {
+      "type": "task_card",
+      "parameter_list": "variant: circle;\ntask_group_data: @item.task_group_data;\ncompleted_field: @item.completed_field;\nimage: @item.image;\nlocked: @item.locked;\nlocked_image_asset:images/icons/locked.png;\nhighlighted: @item.highlighted",
+      "condition": false
+    },
+    {
+      "type": "end_data_items",
+      "condition": false
+    },
+    {
+      "type": "end_plh_progress_path",
+      "condition": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_hp_review_specific",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "home_practice_review",
+      "value": "debug_hp_review",
+      "action_list": "completed | emit:completed; uncompleted | emit:uncompleted"
+    },
+    {
+      "name": "workshop_data",
+      "value": "@data.workshop.w_consequence"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

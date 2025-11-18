@@ -1,0 +1,243 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_round_button",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Default round button"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_default",
+      "action_list": "click | go_to: example_text",
+      "comments": "<span>This is the default i.e </span><span><b>variant: information</b></span>"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Round button with icon"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_1"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_2_1",
+      "parameter_list": "icon_src: body-outline\n",
+      "comments": "This is the default"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_2_2",
+      "parameter_list": "icon_src: images/icons/audio/play-back-sharp.svg",
+      "comments": "File path in assets folder"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_2_3",
+      "parameter_list": "icon_src: body-outline\n",
+      "comments": "Icon from https://ionic.io/ionicons"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "No Background Variants"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_2"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_2_4",
+      "parameter_list": "icon_src: images/icons/close.svg;\nvariant: no-background;"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_2_5",
+      "parameter_list": "icon_src: images/icons/globe_blue.svg;\nvariant: no-background;",
+      "comments": "png files will not work, the icon must be an svg (in assets folder or as ionicon)"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title ",
+      "name": "title_3",
+      "value": "Round button colour variants"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_3"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Variant: information"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_3_1",
+      "parameter_list": "variant: information",
+      "comments": "This is the default"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_4"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Variant: navigation"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_3_2",
+      "parameter_list": "variant: navigation;\nicon_src: close;",
+      "comments": "For some reason, the diameter of the button is smaller."
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_5"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Variant: yellow"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_3_3",
+      "parameter_list": "variant: yellow;\nstyle: yellow;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_6"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Variant: orange"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_3_4",
+      "parameter_list": "variant: orange;\nstyle: orange;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_7"
+    },
+    {
+      "type": "text",
+      "name": "button_1",
+      "value": "Variant: dark_orange"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_3_5",
+      "parameter_list": "variant: dark_orange;\nstyle: dark_orange;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Variant: home_screen\nRound button positioning"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_4_1",
+      "parameter_list": "variant: home_screen;\nstyle: home_screen;",
+      "comments": "The button is positioned to the right. For some reason it appears bigger."
+    },
+    {
+      "type": "title",
+      "name": "nav_title",
+      "value": "Navigation button variants"
+    },
+    {
+      "type": "text",
+      "name": "nav_back_button",
+      "value": "Variant: navigation\nUse case: Back Buttons"
+    },
+    {
+      "type": "round_button",
+      "name": "back_button",
+      "action_list": "click | go_to: home_screen",
+      "parameter_list": "variant: navigation; \nicon_src: play-forward;",
+      "comments": "Used for Kuwait theme Nav buttons"
+    },
+    {
+      "type": "text",
+      "name": "nav_article_button",
+      "value": "Variant: module\nUse case: Module article \"next\" buttons"
+    },
+    {
+      "type": "round_button",
+      "name": "article_button",
+      "action_list": "click | go_to: comp_button",
+      "parameter_list": "variant: module; \nicon_src: images/icons/book_white.svg;",
+      "comments": "Used for Kuwait theme Module articles"
+    },
+    {
+      "type": "text",
+      "name": "nav_transparent_button",
+      "value": "Variant: no-background\nUse case: Transparent Nav Buttons"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_transparent",
+      "action_list": "click | go_to: home_screen",
+      "parameter_list": "variant: no-background; \nicon_src: images/icons/globe_blue.svg;"
+    },
+    {
+      "type": "text",
+      "name": "nav_category_button",
+      "value": "Variant: category\nUse case: Category Buttons"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_category",
+      "action_list": "click | go_to: comp_button",
+      "parameter_list": "variant: category; \nicon_src: images/icons/globe_blue.svg;",
+      "comments": "Used for Kuwait Theme Category Buttons"
+    },
+    {
+      "type": "title ",
+      "name": "title_5",
+      "value": "Button text"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_5_1",
+      "parameter_list": "text: some text"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_par_5_2",
+      "parameter_list": "text: any string as a button text",
+      "comments": "Text colour on the button is white, for some reason the button appears oval."
+    }
+  ]
+}

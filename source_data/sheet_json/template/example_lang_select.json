@@ -1,0 +1,28 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_lang_select",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Language Select",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "language_list",
+      "value": "name: za_en | text: English; name: es_sp | text: Español;",
+      "exclude_from_translation": true,
+      "comments": "language codes ISO 639-3:\nhttps://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "action_list": "changed | emit: set_language:@local.language_select;\nchanged | emit: force_reload;",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.language_list",
+      "comments": "The _app_language will be a reserved field, so it should be treated as readonly (updated via the set_language emit).\n\nAfter update a full reload is required"
+    }
+  ]
+}

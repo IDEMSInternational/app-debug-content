@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_hp_review",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "workshop_data"
+    },
+    {
+      "name": "workshop",
+      "value": "@local.workshop_data.id"
+    },
+    {
+      "name": "debug",
+      "value": "_debug",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "workshop_debug",
+      "value": "@local.workshop@local.debug"
+    },
+    {
+      "type": "text",
+      "name": "debug_description",
+      "value": "This template should show the same information on both sections"
+    },
+    {
+      "type": "begin_template",
+      "name": "workshop_activity",
+      "value": "debug_workshop_activity",
+      "action_list": "completed | emit:completed; \nuncompleted | emit:uncompleted; "
+    },
+    {
+      "name": "intro_text",
+      "value": "@local.workshop_data.id\n@local.workshop\n@local.debug\n@local.workshop_debug"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "content_box",
+      "value": "example_title_text"
+    },
+    {
+      "name": "title",
+      "value": "Content"
+    },
+    {
+      "name": "text",
+      "value": "@local.workshop_data.id\n@local.workshop\n@local.debug\n@local.workshop_debug"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

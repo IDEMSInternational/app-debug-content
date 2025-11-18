@@ -1,0 +1,49 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_modal_interactions",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "A template for testing interactions between different components that use modals"
+    },
+    {
+      "type": "button",
+      "value": "Open this template as nav-stack",
+      "action_list": "click | nav_stack: open | template: debug_modal_interactions"
+    },
+    {
+      "type": "button",
+      "value": "Close top nav-stack",
+      "action_list": "click | nav_stack: close_top"
+    },
+    {
+      "name": "answer_list_1",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3;"
+    },
+    {
+      "type": "text",
+      "value": "Show components with modals:"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "show_components",
+      "value": false
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @local.answer_list_1;\nplaceholder: Combo box",
+      "condition": "!!@local.show_components"
+    },
+    {
+      "name": "audio_transcript",
+      "value": "This is an audio message in English."
+    },
+    {
+      "type": "audio",
+      "name": "audio_2",
+      "parameter_list": "title: Audio player;\nsrc: audio/test_audio.mp3;\ntranscript_text: @local.audio_transcript;",
+      "condition": "!!@local.show_components"
+    }
+  ]
+}

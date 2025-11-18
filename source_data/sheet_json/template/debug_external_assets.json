@@ -1,0 +1,20 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_external_assets",
+  "status": "released",
+  "rows": [
+    {
+      "type": "video",
+      "value": "https://lzheiqzxigrkkxloksef.supabase.co/storage/v1/object/public/debug/files_to_stream/file_example_MP4_1920_18MG.mp4?t=2024-10-02T13%3A46%3A15.046Z",
+      "__EMPTY": true
+    },
+    {
+      "type": "image",
+      "value": "https://lzheiqzxigrkkxloksef.supabase.co/storage/v1/object/public/debug/files_to_stream/jasper_1.jpg?t=2024-10-02T13%3A58%3A22.953Z"
+    },
+    {
+      "type": "audio",
+      "value": "https://lzheiqzxigrkkxloksef.supabase.co/storage/v1/object/public/debug/files_to_stream/test_audio.mp3?t=2024-10-02T13%3A58%3A46.442Z"
+    }
+  ]
+}

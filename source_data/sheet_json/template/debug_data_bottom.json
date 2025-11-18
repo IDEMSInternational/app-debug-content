@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_bottom",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@data.debug.item_1.text",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "This text is directly authored in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "This text is directly authored in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "@data.debug.item_1.text",
+      "exclude_from_translation": true
+    }
+  ]
+}

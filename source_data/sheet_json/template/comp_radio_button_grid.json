@@ -1,0 +1,123 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_radio_button_grid",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Radio Button Grid",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "subtitle",
+      "name": "parameters",
+      "value": "Parameters",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_items",
+      "value": "@data.comp_radio_button_grid_params"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "@item.id"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_name",
+      "value": "@item.id",
+      "style_list": "width: 150px"
+    },
+    {
+      "type": "text_box",
+      "name": "{@item.id}_input",
+      "value": "@item.default_value",
+      "condition": "@item.default_value",
+      "style_list": "width: 100px",
+      "action_list": "changed | emit:force_reprocess;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_input",
+      "condition": "!@item.default_value",
+      "style_list": "width: 100px"
+    },
+    {
+      "type": "text",
+      "name": "{@item.id}_description",
+      "value": "@item.description",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_items"
+    },
+    {
+      "type": "subtitle",
+      "name": "output",
+      "value": "Output"
+    },
+    {
+      "type": "text",
+      "name": "output_text",
+      "value": "Selected: @local.grid_1"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "grid_1",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "Circle Grid Buttons"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "grid_2",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_category_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\nvariant: circle-icon;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "Variant: flex"
+    },
+    {
+      "type": "radio_button_grid",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_flex_data; \nvariant: flex;\nitem_width: @local.item_width_input;\ngrid_gap: @local.grid_gap_input;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Style: secondary"
+    },
+    {
+      "type": "radio_button_grid",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_flex_data; \nvariant: flex;\nstyle: secondary;\nitem_width: 60px;\ngrid_gap: 8px;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Images only"
+    },
+    {
+      "type": "radio_button_grid",
+      "parameter_list": "answer_list: @data.comp_radio_button_flex_img_data; \nvariant: flex;\nstyle: secondary;\nitem_width: 60px;\ngrid_gap: 8px;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1yHLQHxZQuxs34gBU-ny95ZWs9e8-HybC4IAeFxwpcVw"
+    }
+  ]
+}

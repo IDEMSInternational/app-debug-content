@@ -1,0 +1,128 @@
+{
+  "flow_type": "data_list",
+  "flow_subtype": "campaign_schedule",
+  "flow_name": "debug_campaign_schedules",
+  "status": "released",
+  "comments": "This contains schedules for notifications",
+  "rows": [
+    {
+      "id": "debug_daily",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.batch_size": 5,
+      "time.hour": 19,
+      "time.minute": 30,
+      "comment": "debug notifications triggered daily at 19:30"
+    },
+    {
+      "id": "debug_fixed_saturday",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.day_of_week": 6,
+      "time.hour": 19,
+      "time.minute": 30,
+      "comment": "campaign will run on the 6th day of the week (Saturday)\nNOTE - week starts on day 1 which is Monday\n(as per https://date-fns.org/v2.26.0/docs/setISODay)"
+    },
+    {
+      "id": "debug_fixed_past",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.start_date": 33178,
+      "schedule.end_date": 33207,
+      "comment": "campaign will never be activated"
+    },
+    {
+      "id": "debug_fixed_december_no_time",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.start_date": 44531,
+      "schedule.end_date": 44561,
+      "comment": "campaign will be activated, and notifications scheduled in advance"
+    },
+    {
+      "id": "debug_fixed_december_early",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.start_date": 44531,
+      "schedule.end_date": 44561,
+      "time.hour": 6,
+      "time.minute": 0,
+      "comment": "campaign will be activated, and notifications scheduled in advance"
+    },
+    {
+      "id": "debug_fixed_december_noon",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.start_date": 44531,
+      "schedule.end_date": 44561,
+      "time.hour": 12,
+      "time.minute": 0,
+      "comment": "campaign will be activated, and notifications scheduled in advance"
+    },
+    {
+      "id": "debug_fixed_december_late",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.start_date": 44531,
+      "schedule.end_date": 44561,
+      "time.hour": 22,
+      "time.minute": 0,
+      "comment": "campaign will be activated, and notifications scheduled in advance"
+    },
+    {
+      "id": "debug_fixed_new_years_day",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.start_date": 44562,
+      "schedule.end_date": 44562,
+      "time.hour": 13,
+      "time.minute": 0,
+      "comment": "This will schedule just one notification (time period covers start of day specified to end of day specified)"
+    },
+    {
+      "id": "debug_consecutive_days",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.batch_size": 5,
+      "comment": "NOT YET IMPLEMENTED\nScheduled campaigns will recalculate and schedule their next notification on app start and re-init\nIncreasing batch size will schedule additional notifications in advance in case user does not revisit app"
+    },
+    {
+      "id": "debug_actions",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "time.hour": 18,
+      "time.minute": 0,
+      "comment": "To test actions"
+    },
+    {
+      "id": "debug_actions_2",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "time.hour": 18,
+      "time.minute": 1,
+      "comment": "To test actions"
+    },
+    {
+      "id": "debug_condition",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.day_of_week": 1,
+      "time.hour": 17,
+      "time.minute": 0
+    },
+    {
+      "id": "debug_html",
+      "activation_condition_list": "@fields.debug_campaigns_enabled"
+    },
+    {
+      "id": "debug_2058_7",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "time.hour": 15,
+      "time.minute": 12,
+      "comment": "To debug issue 2058"
+    },
+    {
+      "id": "debug_2058_8",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "time.hour": 15,
+      "time.minute": 14,
+      "comment": "To debug issue 2058"
+    },
+    {
+      "id": "debug_2058_9",
+      "activation_condition_list": "@fields.debug_campaigns_enabled",
+      "schedule.day_of_week": 3,
+      "time.hour": 15,
+      "time.minute": 17,
+      "comment": "To debug issue 2058"
+    }
+  ]
+}

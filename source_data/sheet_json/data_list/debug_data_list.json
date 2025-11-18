@@ -1,0 +1,31 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_data_list",
+  "status": "released",
+  "data_list_name": "debug",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "@metadata",
+      "no": "type: number"
+    },
+    {
+      "id": "item_1",
+      "text": "Item 1 text",
+      "image_asset": "images/example/jasper_1.jpg",
+      "to_translate::eng": "Hello",
+      "comment_breaking": "\n\n\n"
+    },
+    {
+      "id": "item_2",
+      "text": "Item 2 text",
+      "image_asset": "images/example/circular.png",
+      "to_translate::eng": "Hello"
+    },
+    {
+      "id": "item_3",
+      "text": "Item 3 text",
+      "to_translate::eng": "Hello"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_input_var",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_1",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nplaceholder: Click here to answer;\ninput_allowed: true;\nanswer_placeholder: Type your own;"
+    },
+    {
+      "name": "input_allowed",
+      "value": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_2",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;\nplaceholder: Click here to answer;\ninput_allowed: @local.input_allowed;\nanswer_placeholder: Type your own;",
+      "comments": "Setting input_allowed through a local variable doesn't work"
+    }
+  ]
+}

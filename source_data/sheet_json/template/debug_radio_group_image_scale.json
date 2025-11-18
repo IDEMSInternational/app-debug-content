@@ -1,0 +1,73 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_radio_group_image_scale",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "individual_text",
+      "value": "@global.individual",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "individual_image",
+      "value": "images/avatar_1.png",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "together_text",
+      "value": "@global.together",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "together_image",
+      "value": "images/avatar_1.png",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Tiles"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "tile_component",
+      "name": "individual_workshop",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: @local.individual_text;\nstyle: workshop_page;\nicon_src:@local.individual_image;"
+    },
+    {
+      "type": "tile_component",
+      "name": "group_workshop",
+      "exclude_from_translation": true,
+      "parameter_list": "first_line_text: @local.together_text;\nstyle: workshop_page;\nicon_src:@local.together_image;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Radio group"
+    },
+    {
+      "name": "answer_list_1",
+      "value": "name: individual | text: @local.individual_text | image: @local.individual_image;\nname: together | text: @local.together_text | image: @local.together_image",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "radio_group_grid",
+      "name": "radio_group_1",
+      "value": "@fields.workshop_path",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list_1;"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1pSFFOv9B9x0oUSuSJDp6RNePJ1XSP6yVSjXA8jzBclQ"
+    }
+  ]
+}

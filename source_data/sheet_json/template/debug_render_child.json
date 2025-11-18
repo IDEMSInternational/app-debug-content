@@ -1,0 +1,128 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_render_child",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Child",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_grandchild_1",
+      "value": "debug_render_grandchild_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_grandchild_2a",
+      "value": "debug_render_grandchild_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "Grandchild 2a",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_3",
+      "value": "(child) selected no",
+      "hidden": "@fields.test_render_updates_field!=\"no\"",
+      "exclude_from_translation": true,
+      "comments": "Should now be fixed"
+    },
+    {
+      "name": "text_4",
+      "value": "(child) selected yes",
+      "hidden": "@fields.test_render_updates_field!=\"yes\"",
+      "exclude_from_translation": true,
+      "comments": "Should now be fixed"
+    },
+    {
+      "name": "text_5",
+      "value": "(child) Value of test_render_updates_field: @fields.test_render_updates_field",
+      "exclude_from_translation": true,
+      "comments": "Should now be fixed"
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_grandchild_2b",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_grandchild_3a",
+      "value": "example_title_text",
+      "hidden": "@fields.test_render_updates_field!=\"no\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "Grandchild 3a",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "(child) selected no",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_grandchild_3b",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_grandchild_4a",
+      "value": "example_title_text",
+      "hidden": "@fields.test_render_updates_field!=\"yes\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "title",
+      "value": "Grandchild 4a",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text",
+      "value": "(child) selected yes",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_render_grandchild_4b",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

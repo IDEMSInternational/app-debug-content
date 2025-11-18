@@ -1,0 +1,97 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "task_cards_data_plh",
+  "status": "released",
+  "rows": [
+    {
+      "id": "task_group_id_1",
+      "task_group_data": "task_group_1",
+      "completed_field": "task_group_1_completed",
+      "title": "Task Group 1",
+      "image": "images/square_1.svg",
+      "locked": false,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_2",
+      "task_group_data": "task_group_2",
+      "completed_field": "task_group_2_completed",
+      "title": "Task Group 2 (long name)",
+      "image": "images/square_2.svg",
+      "locked": false,
+      "highlighted": true
+    },
+    {
+      "id": "task_group_id_3",
+      "task_group_data": "task_group_3",
+      "completed_field": "task_group_3_completed",
+      "title": "Task Group 3 (very long name that takes up three lines to test styling)",
+      "image": "images/square_3.svg",
+      "locked": true,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_4",
+      "task_group_data": "task_group_4",
+      "completed_field": "task_group_4_completed",
+      "title": "Task Group 4",
+      "image": "images/square_4.svg",
+      "locked": true,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_5",
+      "task_group_data": "task_group_5",
+      "completed_field": "task_group_5_completed",
+      "title": "Task Group 5",
+      "image": "images/square_1.svg",
+      "locked": true,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_6",
+      "task_group_data": "task_group_6",
+      "completed_field": "task_group_6_completed",
+      "title": "Task Group 6 ",
+      "image": "images/square_2.svg",
+      "locked": true,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_7",
+      "task_group_data": "task_group_7",
+      "completed_field": "task_group_7_completed",
+      "title": "Task Group 7",
+      "image": "images/square_3.svg",
+      "locked": true,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_8",
+      "task_group_data": "task_group_8",
+      "completed_field": "task_group_8_completed",
+      "title": "Task Group 8",
+      "image": "images/square_4.svg",
+      "locked": true,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_9",
+      "task_group_data": "task_group_9",
+      "completed_field": "task_group_9_completed",
+      "title": "Task Group 9",
+      "image": "images/square_1.svg",
+      "locked": true,
+      "highlighted": false
+    },
+    {
+      "id": "task_group_id_10",
+      "task_group_data": "task_group_10",
+      "completed_field": "task_group_10_completed",
+      "title": "Task Group 10",
+      "image": "images/square_2.svg",
+      "locked": true,
+      "highlighted": false
+    }
+  ]
+}

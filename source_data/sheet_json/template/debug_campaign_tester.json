@@ -1,0 +1,61 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "debug_campaign_tester",
+  "status": "released",
+  "comments": "test56",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Campaign to be tested"
+    },
+    {
+      "name": "active"
+    },
+    {
+      "name": "campaign",
+      "value": "@campaign."
+    },
+    {
+      "name": "active_campaign",
+      "value": "@local.campaign@local.active",
+      "condition": "@local.active"
+    },
+    {
+      "name": "answer_list",
+      "value": "name: debug_daily | text: debug_daily; \nname: debug_actions | text: debug_actions; \nname: debug_calc | text: debug_calc"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group",
+      "value": "radio_group",
+      "action_list": "changed | set_local: active: @local.radio_group; changed | emit: force_reprocess",
+      "parameter_list": "answer_list: @local.answer_list"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "@local.active",
+      "exclude_from_translation": true,
+      "parameter_list": "style:column"
+    },
+    {
+      "type": "text",
+      "name": "campaign_id",
+      "value": "Campaign id: @local.active_campaign.id",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "round_button",
+      "name": "campaign_quickstart",
+      "action_list": "click | trigger_actions: @local.active_campaign.action_list;",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: @local.active_campaign.icon;\ntext:  @local.active_campaign.text;\nstyle: home_screen yellow;",
+      "style_list": "padding: 0;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    }
+  ]
+}

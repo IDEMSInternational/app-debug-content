@@ -1,0 +1,63 @@
+{
+  "flow_type": "template",
+  "flow_name": "navigation_bar_display_group",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: nav_bar"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: nav_bar_button"
+    },
+    {
+      "type": "image",
+      "value": "images/icons/house_white.svg"
+    },
+    {
+      "type": "text",
+      "value": "@global.home_screen",
+      "parameter_list": "text_align: center;\nstyle: alternative;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: nav_bar_button"
+    },
+    {
+      "type": "image",
+      "value": "images/icons/star_white.svg"
+    },
+    {
+      "type": "text",
+      "value": "@global.parent_points",
+      "parameter_list": "text_align: center;\nstyle: alternative"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: nav_bar_button"
+    },
+    {
+      "type": "image",
+      "value": "images/icons/book_white.svg"
+    },
+    {
+      "type": "text",
+      "value": "@global.parent_centre",
+      "parameter_list": "text_align: center;\nstyle: alternative"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_fullscreen_pop_up_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Launch popup",
+      "action_list": "click | pop_up: debug_fullscreen_pop_up_3"
+    }
+  ]
+}

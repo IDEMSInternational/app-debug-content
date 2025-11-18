@@ -1,0 +1,75 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_data_items_dev",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Dynamic Data"
+    },
+    {
+      "type": "title",
+      "name": "example_1",
+      "value": "Example xx: Intermediate Variables"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@data.comp_data_items_list"
+    },
+    {
+      "name": "itemNumber",
+      "value": "@item.row_index + 1",
+      "comments": "<span>Local variables created within a data_items loop are only available within the loop (can't be referenced outside).<br/>They </span><span><b>do not</b></span><span> need to be named relative to item, e.g. itemNumber_@item.id<br/><br/>They are read_only variables, so cannot be set via set_local<br/>They will be re-evaluated any time the item loop re-renders (when any item data changes)<br/><br/>They can only include @item @local and @calc expressions</span>"
+    },
+    {
+      "name": "isEven",
+      "value": "@local.itemNumber % 2 === 0",
+      "comments": "Variables will be available to subsequent expressions for creating more complex calculations"
+    },
+    {
+      "name": "dueDate",
+      "value": "@calc(window.date_fns.addMonths(new Date(),@local.itemNumber).toDateString())",
+      "comments": "This is an example using global functions with item data"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "@local.itemNumber"
+    },
+    {
+      "type": "text",
+      "value": "Even",
+      "condition": "@local.isEven",
+      "comments": "Templated rows have access to full range of expressions and columns (not restricted like variables)"
+    },
+    {
+      "type": "text",
+      "value": "Odd",
+      "condition": "!@local.isEven"
+    },
+    {
+      "type": "text",
+      "value": "Due: @local.dueDate"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Not Currently Supported"
+    },
+    {
+      "type": "text",
+      "value": "- Condition column (prefer inline JS)\n- Fields, campaigns or other external data (use intermediate locals outside of loop)",
+      "comments": "These only apply to local variables, they can still be applied to the templated rows rendered within a loop"
+    }
+  ]
+}

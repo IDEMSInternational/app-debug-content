@@ -1,0 +1,14 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nesting_sheet_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Title of debug_nesting_sheet_1",
+      "exclude_from_translation": true
+    }
+  ]
+}

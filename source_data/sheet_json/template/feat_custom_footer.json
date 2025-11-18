@@ -1,0 +1,12 @@
+{
+  "flow_type": "template",
+  "flow_name": "feat_custom_footer",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "A custom footer",
+      "parameter_list": "text_align: center;"
+    }
+  ]
+}

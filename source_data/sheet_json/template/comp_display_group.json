@@ -1,0 +1,574 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_display_group",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top;\nvariant: inline_padding;\nbackground_image_asset: images/activity_bg.svg;\nbackground_image_position: right top;\nstyle: background_solid;",
+      "style_list": "min-height: 118px",
+      "comments": "If setting a sticky display group with text should use background_solid style to ensure still clear when displayed over scrolling content\n\nWhen using images a minimum height should be used to ensure image displays at a reasonable size when no other content in header"
+    },
+    {
+      "type": "title",
+      "value": "Sticky Display Group with Image",
+      "style_list": "justify-content: center;\nmax-width: 40vw;",
+      "comments": "max-width used in this case just to ensure text appears reasonably alongside specific background image"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "Default Display Group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "value": "Type here"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: box_gray;"
+    },
+    {
+      "type": "title",
+      "value": "Variant: box_gray",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: box_primary;"
+    },
+    {
+      "type": "title",
+      "value": "Variant: box_primary",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: box_secondary;"
+    },
+    {
+      "type": "title",
+      "value": "Variant: box_secondary",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: box_white;"
+    },
+    {
+      "type": "title",
+      "value": "Variant: box_white",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: box_white;"
+    },
+    {
+      "type": "title",
+      "value": "Variant: box_white",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: box_secondary_alt;\nstyle: column;"
+    },
+    {
+      "type": "text",
+      "value": "A TITLE",
+      "exclude_from_translation": true,
+      "style_list": "font-size: 0.8rem;\ncolor: white;"
+    },
+    {
+      "type": "text",
+      "value": "Variant: box_secondary_alt",
+      "exclude_from_translation": true,
+      "style_list": "margin-top: -6px;\ncolor: white;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_1;"
+    },
+    {
+      "type": "title",
+      "value": "Example title light_orange",
+      "exclude_from_translation": true,
+      "parameter_list": "style: primary;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "text",
+      "value": "Text for display light_orange",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_2;"
+    },
+    {
+      "type": "title",
+      "value": "Example title orange",
+      "exclude_from_translation": true,
+      "parameter_list": "style: primary;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "text",
+      "value": "Text for display orange",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: right;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_3;"
+    },
+    {
+      "type": "title",
+      "value": "Example title light_blue",
+      "exclude_from_translation": true,
+      "parameter_list": "style: primary;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "text",
+      "value": "Text for display light_blue",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_4;"
+    },
+    {
+      "type": "title",
+      "value": "Example title blue",
+      "exclude_from_translation": true,
+      "parameter_list": "style: primary;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "text",
+      "value": "Text for display blue",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: center;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: tool_5;"
+    },
+    {
+      "type": "title",
+      "value": "Example title dark_blue",
+      "exclude_from_translation": true,
+      "parameter_list": "style: alternative;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "text",
+      "value": "Text for display dark_blue",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: right;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: banner_active;\noffset: 30;"
+    },
+    {
+      "type": "title",
+      "value": "Example title with offset",
+      "exclude_from_translation": true,
+      "parameter_list": "style: primary;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true,
+      "style_list": "max-width: 250px;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white_box;"
+    },
+    {
+      "type": "title",
+      "value": "Example title white box",
+      "exclude_from_translation": true,
+      "parameter_list": "style: primary;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "text",
+      "value": "Text for display white box",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: white_box;"
+    },
+    {
+      "type": "title",
+      "value": "Example title white box",
+      "exclude_from_translation": true,
+      "parameter_list": "style: primary;",
+      "style_list": "margin: 10px 10px;"
+    },
+    {
+      "type": "text",
+      "value": "Text for display white box",
+      "exclude_from_translation": true,
+      "parameter_list": "text_align: left;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: navigation;"
+    },
+    {
+      "type": "button",
+      "value": "Continue",
+      "exclude_from_translation": true,
+      "parameter_list": "style: blue;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: banner_welcome;",
+      "style_list": "\n"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style:banner_short;",
+      "style_list": "\n"
+    },
+    {
+      "type": "subtitle",
+      "value": "Example short banner",
+      "exclude_from_translation": true,
+      "parameter_list": "style:small emphasised;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style:banner_short;"
+    },
+    {
+      "type": "subtitle",
+      "value": "Example short banner with more text",
+      "exclude_from_translation": true,
+      "parameter_list": "style:small emphasised;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: banner_welcome;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: dashed_box; icon_src: images/icons/star_white.svg;"
+    },
+    {
+      "type": "subtitle",
+      "value": "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "exclude_from_translation": true,
+      "parameter_list": "style: right;"
+    },
+    {
+      "type": "parent_point_box",
+      "value": 3,
+      "exclude_from_translation": true,
+      "parameter_list": "lottie_src: lottie/blob_play_ball.json;\ntext:text two;"
+    },
+    {
+      "type": "button",
+      "value": "Continue",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "form with 'go to'",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_form_1",
+      "exclude_from_translation": true,
+      "parameter_list": "style: form; get_device_info: true; button_text: Send; button_go_to: feature_audio;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_name_1",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your name;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_phone_1",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your phone number;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_1",
+      "value": false,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?",
+      "action_list": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_1"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_2",
+      "value": true,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "title",
+      "value": "Some text here",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "text_area_1",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: example placeholder;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "pop up form",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_form_2",
+      "exclude_from_translation": true,
+      "parameter_list": "style: form; get_device_info: true; button_text: Send; button_pop_up: feature_audio;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_name_2",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your name;"
+    },
+    {
+      "type": "text_box",
+      "name": "user_phone_2",
+      "exclude_from_translation": true,
+      "parameter_list": "help: some help text;\nplaceholder: Add your phone number;"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_3",
+      "value": false,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?",
+      "action_list": "changed | set_field: demo_changed_field_checkbox: @local.checkbox_3"
+    },
+    {
+      "type": "simple_checkbox",
+      "name": "checkbox_4",
+      "value": true,
+      "exclude_from_translation": true,
+      "parameter_list": "label_text: Example answer?"
+    },
+    {
+      "type": "title",
+      "value": "Some text here",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text_area",
+      "name": "text_area_2",
+      "exclude_from_translation": true,
+      "parameter_list": "placeholder: example placeholder;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "background_image_asset:images/activity_bg.svg;\nstyle: column;"
+    },
+    {
+      "type": "title",
+      "value": "Display Group with Image",
+      "exclude_from_translation": true,
+      "style_list": "margin-top: 120px;"
+    },
+    {
+      "type": "text",
+      "value": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "Sticky display group in fullscreeen pop-up demo"
+    },
+    {
+      "type": "button",
+      "value": "Ignore safe area",
+      "action_list": "click | pop_up: dg_sticky_safe_area_1 | fullscreen: true;"
+    },
+    {
+      "type": "button",
+      "value": "Do not ignore safe area",
+      "action_list": "click | pop_up: dg_sticky_safe_area_2 | fullscreen: true;"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_bottom_image",
+      "exclude_from_translation": true,
+      "parameter_list": "sticky: bottom;\nvariant: inline_padding;\nbackground_image_asset: images/bottom_image.svg;\nbackground_image_position: left bottom;",
+      "style_list": "min-height: 88px;\nwidth: 100%;"
+    },
+    {
+      "type": "text",
+      "value": "Footer text",
+      "exclude_from_translation": true,
+      "style_list": "margin-top: 36px;\n"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    }
+  ]
+}

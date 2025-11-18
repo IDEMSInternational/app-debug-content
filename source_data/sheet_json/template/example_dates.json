@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_dates",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "first",
+      "value": "@field.first_app_open is the first time it opened",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "today",
+      "value": "@field.current_date is today",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "week",
+      "value": "second_week is @field.second_week",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "time_difference",
+      "value": "the time difference is @field.time_difference",
+      "exclude_from_translation": true
+    }
+  ]
+}

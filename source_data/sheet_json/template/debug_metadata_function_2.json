@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_metadata_function_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Works"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "Authoring workaround on the data list: use`1;` instead of `1` to force also lists of length 1 to be arrays"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "loop",
+      "value": "@data.debug_number_list",
+      "parameter_list": "filter: @item.number_2_list.includes(@fields.debug_number);"
+    },
+    {
+      "type": "text",
+      "name": "text_@item._index",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

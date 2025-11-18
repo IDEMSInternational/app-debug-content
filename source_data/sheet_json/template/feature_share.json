@@ -1,0 +1,175 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_share",
+  "status": "released",
+  "rows": [
+    {
+      "name": "shareable_text",
+      "value": "Hi. You can share this text."
+    },
+    {
+      "name": "shareable_url",
+      "value": "https://www.idems.international/"
+    },
+    {
+      "name": "image_path",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "name": "shareable_title",
+      "value": "My Title"
+    },
+    {
+      "type": "title",
+      "value": "Share action"
+    },
+    {
+      "type": "text",
+      "value": "The share action can be called with the following params: `text`, `url`, `file`, `title` and `dialog_title`. These are interpreted differently depending on the app receiving the share data. In general, `text`, `file` and `url` seem to be the most widely supported and predictably handled. \n\n`title` and `dialog_title` are exposed for completeness, the latter will only have an effect on Android and seems to be unsupported on more recent Android versions."
+    },
+    {
+      "type": "title",
+      "value": "Share action with multiple params"
+    },
+    {
+      "type": "button",
+      "value": "Share - all params",
+      "action_list": "click | share | \ntext: @local.shareable_text,\nurl: @local.shareable_url,\nfile: @local.image_path,\ntitle: @local.shareable_title,\ndialog_title: My Dialog Title"
+    },
+    {
+      "type": "button",
+      "value": "Share - text and file",
+      "action_list": "click | share | \ntext: @local.shareable_text,\nfile: @local.image_path"
+    },
+    {
+      "type": "button",
+      "value": "Share - title and file",
+      "action_list": "click | share | \ntitle: @local.shareable_title,\nfile: @local.image_path"
+    },
+    {
+      "type": "title",
+      "value": "Share Text"
+    },
+    {
+      "type": "text",
+      "value": "@local.shareable_text"
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share Text",
+      "action_list": "click | share | text: @local.shareable_text"
+    },
+    {
+      "type": "title",
+      "value": "Share URL"
+    },
+    {
+      "type": "text",
+      "value": "IDEMS Website"
+    },
+    {
+      "type": "button",
+      "name": "share_button_2",
+      "value": "Share URL",
+      "action_list": "click | share | url: @local.shareable_url"
+    },
+    {
+      "type": "title",
+      "value": "Share from select-text Component"
+    },
+    {
+      "type": "select_text",
+      "name": "select_text_1",
+      "value": "@local.shareable_text",
+      "action_list": "click | share | text: @local.shareable_text",
+      "parameter_list": "copy_text: Share;\ncopied_text: Sharing...;"
+    },
+    {
+      "type": "title",
+      "value": "Share image"
+    },
+    {
+      "type": "image",
+      "value": "@local.image_path"
+    },
+    {
+      "type": "button",
+      "value": "Share Image",
+      "action_list": "click | share | file: @local.image_path"
+    },
+    {
+      "type": "title",
+      "value": "Share PDF"
+    },
+    {
+      "name": "pdf_path",
+      "value": "example_pdf.pdf"
+    },
+    {
+      "type": "pdf",
+      "name": "pdf_viewer",
+      "value": "@local.pdf_path"
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share PDF",
+      "action_list": "click | share: file: @local.pdf_path"
+    },
+    {
+      "type": "title",
+      "value": "Legacy syntax"
+    },
+    {
+      "type": "title",
+      "value": "Share Text"
+    },
+    {
+      "type": "text",
+      "value": "@local.shareable_text"
+    },
+    {
+      "type": "button",
+      "name": "share_button_1",
+      "value": "Share Text",
+      "action_list": "click | share: text: @local.shareable_text"
+    },
+    {
+      "type": "title",
+      "value": "Share URL"
+    },
+    {
+      "type": "text",
+      "value": "IDEMS Website"
+    },
+    {
+      "type": "button",
+      "name": "share_button_2",
+      "value": "Share URL",
+      "action_list": "click | share: url: @local.shareable_url"
+    },
+    {
+      "type": "title",
+      "value": "Share from select-text Component"
+    },
+    {
+      "type": "select_text",
+      "name": "select_text_1",
+      "value": "@local.shareable_text",
+      "action_list": "click | share: text: @local.shareable_text",
+      "parameter_list": "copy_text: Share;\ncopied_text: Sharing...;"
+    },
+    {
+      "type": "title",
+      "value": "Default Share (deprecated)"
+    },
+    {
+      "type": "button",
+      "name": "share_button_3",
+      "value": "Share Text",
+      "action_list": "click | share: @local.shareable_text",
+      "comments": "Using the \"share\" action without a following action ID will default to sharing text"
+    }
+  ]
+}

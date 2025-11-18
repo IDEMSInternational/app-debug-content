@@ -1,0 +1,168 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_field_null_if",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "local_var_1",
+      "value": "Hello"
+    },
+    {
+      "type": "set_field",
+      "name": "debug_field_1"
+    },
+    {
+      "type": "set_field",
+      "name": "debug_field_2",
+      "value": "@local.local_var_1"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Set debug_field_3 to blank",
+      "action_list": "click | set_field : debug_field_3 : ",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Set debug_field_4 to a blank local variable",
+      "action_list": "click | set_field : debug_field_4 : @local.local_var_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Set debug_field_5 to a non existing local variable",
+      "action_list": "click | set_field : debug_field_5 : @local.local_var_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Value of local variable: @local.local_var_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Value of debug_field_1: @fields.debug_field_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "debug_field_1 is not null",
+      "hidden": "!@calc(if(@fields.debug_field_1))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "debug_field_1 is null",
+      "hidden": "@calc(if(@fields.debug_field_1))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_5",
+      "value": "Value of debug_field_2: @fields.debug_field_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_6",
+      "value": "debug_field_2 is not null",
+      "hidden": "!@calc(if(@fields.debug_field_2))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_7",
+      "value": "debug_field_2 is null",
+      "hidden": "@calc(if(@fields.debug_field_2))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_8",
+      "value": "Value of debug_field_3: @fields.debug_field_3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_9",
+      "value": "debug_field_3 is not null",
+      "hidden": "!@calc(if(@fields.debug_field_3))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_10",
+      "value": "debug_field_3 is null",
+      "hidden": "@calc(if(@fields.debug_field_3))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_11",
+      "value": "Value of debug_field_4: @fields.debug_field_4",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_12",
+      "value": "debug_field_4 is not null",
+      "hidden": "!@calc(if(@fields.debug_field_4))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_13",
+      "value": "debug_field_4 is null",
+      "hidden": "@calc(if(@fields.debug_field_4))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_14",
+      "value": "Value of debug_field_5: @fields.debug_field_5",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_15",
+      "value": "debug_field_5 is not null",
+      "hidden": "!@calc(if(@fields.debug_field_5))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_16",
+      "value": "debug_field_5 is null",
+      "hidden": "@calc(if(@fields.debug_field_5))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_17",
+      "value": "Value of debug_field_6: @fields.debug_field_6",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_18",
+      "value": "debug_field_6 is not null",
+      "hidden": "!@calc(if(@fields.debug_field_6))",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_19",
+      "value": "debug_field_6 is null",
+      "hidden": "@calc(if(@fields.debug_field_6))",
+      "exclude_from_translation": true
+    }
+  ]
+}

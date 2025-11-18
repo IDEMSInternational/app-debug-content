@@ -1,0 +1,60 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_dg_dashed_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_dashed_box",
+      "value": "dg_example_dashed_box",
+      "exclude_from_translation": true,
+      "parameter_list": "style: dashed_box;"
+    },
+    {
+      "type": "subtitle",
+      "value": "Subtitle",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "parent_point_box",
+      "name": "points_example_1",
+      "value": 3,
+      "exclude_from_translation": true,
+      "parameter_list": "lottie_src: lottie/blob_play_ball.json;\ntext:text two;"
+    },
+    {
+      "type": "button",
+      "name": "btn_example",
+      "value": "Continue",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_dashed_box_2",
+      "value": "dg_example_dashed_box",
+      "exclude_from_translation": true,
+      "parameter_list": "style: dashed_box;"
+    },
+    {
+      "type": "image",
+      "value": "images/example/jasper_1.jpg",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "caption",
+      "value": "Caption goes here",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: caption"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    }
+  ]
+}

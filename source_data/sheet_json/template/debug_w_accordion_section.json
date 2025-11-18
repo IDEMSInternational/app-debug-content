@@ -1,0 +1,56 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_w_accordion_section",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "label_group",
+      "value": "@global.together"
+    },
+    {
+      "name": "image_group",
+      "value": "@global.together_image"
+    },
+    {
+      "name": "label_individual",
+      "value": "@global.individual"
+    },
+    {
+      "name": "image_individual",
+      "value": "@global.individual_image"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Text 1"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "sub"
+    },
+    {
+      "type": "tile_component",
+      "name": "sub_1",
+      "parameter_list": "first_line_text: @local.label_individual;\nstyle: workshop_page;\nicon_src:@local.image_individual;"
+    },
+    {
+      "type": "tile_component",
+      "name": "sub_2",
+      "parameter_list": "first_line_text: @local.label_group;\nstyle: workshop_page;\nicon_src:@local.image_group;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Button 1"
+    },
+    {
+      "type": "button",
+      "name": "button_2",
+      "value": "Button 2"
+    }
+  ]
+}

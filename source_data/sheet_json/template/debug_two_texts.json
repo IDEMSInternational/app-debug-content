@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_two_texts",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "child_local_variable",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "child_text_1",
+      "value": "Failed: \"text_1\" has not been overwritten",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "child_text_from_local_variable",
+      "value": "@local.child_local_variable",
+      "action_list": "click | emit:@local.child_local_variable",
+      "exclude_from_translation": true,
+      "parameter_list": "key_1: @local.child_local_variable;",
+      "comments": "test setting from a local variable that requires overwrite (starts blank)"
+    }
+  ]
+}

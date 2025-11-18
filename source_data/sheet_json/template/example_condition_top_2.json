@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_condition_top_2",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "example_condition_bottom",
+      "value": "example_condition_bottom",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_result",
+      "value": "@local.radio_group_text",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_reply",
+      "value": "Reply for selecting first",
+      "condition": "@field.radio_button_field==\"name_var_1\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_reply",
+      "value": "Reply for selecting second",
+      "condition": "@field.radio_button_field==\"name_var_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_reply",
+      "value": "Reply for selecting third",
+      "condition": "@field.radio_button_field==\"name_var_3\"",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

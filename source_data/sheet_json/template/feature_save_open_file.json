@@ -1,0 +1,68 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_save_open_file",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Save and Open Files"
+    },
+    {
+      "type": "subtitle",
+      "value": "Image"
+    },
+    {
+      "name": "image_path",
+      "value": "images/example/jasper_1.jpg"
+    },
+    {
+      "type": "text",
+      "value": "@local.image_path"
+    },
+    {
+      "type": "image",
+      "value": "@local.image_path"
+    },
+    {
+      "type": "button",
+      "name": "save_button_1",
+      "value": "Save Image",
+      "action_list": "click | save_to_device: @local.image_path"
+    },
+    {
+      "type": "button",
+      "name": "open_button_1",
+      "value": "Open Image",
+      "action_list": "click | open_external: @local.image_path"
+    },
+    {
+      "type": "subtitle",
+      "value": "PDF"
+    },
+    {
+      "name": "pdf_path",
+      "value": "example_pdf.pdf"
+    },
+    {
+      "type": "text",
+      "value": "@local.pdf_path"
+    },
+    {
+      "type": "pdf",
+      "name": "pdf_viewer",
+      "value": "@local.pdf_path"
+    },
+    {
+      "type": "button",
+      "name": "save_button_2",
+      "value": "Save PDF",
+      "action_list": "click | save_to_device: @local.pdf_path"
+    },
+    {
+      "type": "button",
+      "name": "open_button_2",
+      "value": "Open PDF",
+      "action_list": "click | open_external: @local.pdf_path"
+    }
+  ]
+}

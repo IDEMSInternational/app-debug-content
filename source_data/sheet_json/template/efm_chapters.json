@@ -1,0 +1,92 @@
+{
+  "flow_type": "template",
+  "flow_name": "efm_chapters",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_broken",
+      "value": "This syntax used to work but now doesn't"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_view",
+      "parameter_list": "style: column"
+    },
+    {
+      "name": "radio_description_1",
+      "value": "Individually"
+    },
+    {
+      "name": "radio_description_2",
+      "value": "By topic"
+    },
+    {
+      "name": "answer_list",
+      "value": "name:individually | text: @local.radio_description_1; name:by_topic | text: @local.radio_description_2 ;"
+    },
+    {
+      "name": "listing_style",
+      "value": "by_topic"
+    },
+    {
+      "type": "radio_group",
+      "name": "radio_group",
+      "value": "@local.listing_style",
+      "action_list": "changed | set_local: listing_style: @local.radio_group",
+      "parameter_list": "answer_list: @local.answer_list; options_per_row: 2"
+    },
+    {
+      "name": "template_name",
+      "value": "efm_chapter_acts_@local.listing_style"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "@local.listing_style",
+      "comments": "This value does not update as you change the radio group's value"
+    },
+    {
+      "type": "title",
+      "name": "title_works",
+      "value": "This is an authoring workaround"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_view_alt",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "radio_group",
+      "name": "listing_style_alt",
+      "value": "by_topic",
+      "parameter_list": "answer_list: @local.answer_list; options_per_row: 2"
+    },
+    {
+      "name": "template_name_alt",
+      "value": "efm_chapter_acts_@local.listing_style_alt"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "text_1_alt",
+      "value": "@local.listing_style_alt",
+      "comments": "This value DOES update as you change the radio group's value"
+    },
+    {
+      "type": "text",
+      "name": "debug_sheet_link",
+      "value": "Debug sheet: https://docs.google.com/spreadsheets/d/1i_46RSdv8NzyqSIhjBXabUuW1ndiYRdjCgwgn5ZXsGk/edit?gid=568791997#gid=568791997"
+    },
+    {
+      "type": "text",
+      "name": "pr_link",
+      "value": "PR: https://github.com/IDEMSInternational/open-app-builder/pull/3008"
+    }
+  ]
+}

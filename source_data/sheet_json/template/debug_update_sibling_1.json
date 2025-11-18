@@ -1,0 +1,52 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_update_sibling_1",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "pair",
+      "value": "pair"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "box_1",
+      "value": "debug_radio_group_2"
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "begin_nested_properties",
+      "name": "box_2",
+      "value": "example_text_button",
+      "comments": "The content of box 2 does not dynamically update according to the value of the field"
+    },
+    {
+      "name": "text",
+      "value": "Condition evaluates as option 1.\n\nValue of field: @fields.radio_group_final_temp ",
+      "condition": "@fields.radio_group_final_temp == \"option_1\"",
+      "exclude_from_translation": true,
+      "comments": "However, if the content is copied over to a separate template, it does update - see debug_update_sibling_2_a and debug_update_sibling_2_b"
+    },
+    {
+      "name": "text",
+      "value": "Condition evaluates as option 2.\n\nValue of field: @fields.radio_group_final_temp ",
+      "condition": "@fields.radio_group_final_temp == \"option_2\"",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "button",
+      "value": "Emit uncompleted",
+      "action_list": "click | emit:uncompleted",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_nested_properties"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

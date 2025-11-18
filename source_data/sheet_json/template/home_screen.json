@@ -1,0 +1,45 @@
+{
+  "flow_type": "template",
+  "flow_name": "home_screen",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title_home",
+      "value": "Welcome to Debug"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "Access Templates"
+    },
+    {
+      "type": "button",
+      "name": "button_templates",
+      "value": "Templates",
+      "action_list": "click | go_to:/template"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Switch Themes"
+    },
+    {
+      "type": "button",
+      "name": "button_themes",
+      "value": "Themes",
+      "action_list": "click | go_to:/theme"
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "View Components"
+    },
+    {
+      "type": "button",
+      "name": "button_components",
+      "value": "Components",
+      "action_list": "click | go_to:/component"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "feat_task_groups_data",
+  "status": "released",
+  "data_list_name": "feat_task_groups",
+  "rows": [
+    {
+      "id": "task_group_1",
+      "number": 1,
+      "title": "Task Group 1",
+      "description": "The first task group",
+      "image_asset": "images/example/jasper_1.jpg",
+      "completed_field": "task_group_1_completed"
+    },
+    {
+      "id": "task_group_2",
+      "number": 2,
+      "title": "Task Group 2",
+      "description": "The second task group",
+      "image_asset": "images/example/jasper_1.jpg",
+      "completed_field": "task_group_2_completed"
+    },
+    {
+      "id": "task_group_3",
+      "number": 3,
+      "title": "Task Group 3",
+      "description": "The third task group",
+      "image_asset": "images/example/jasper_1.jpg",
+      "completed_field": "task_group_3_completed"
+    }
+  ]
+}

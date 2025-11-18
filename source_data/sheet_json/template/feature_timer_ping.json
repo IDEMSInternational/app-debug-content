@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_timer_ping",
+  "status": "released",
+  "rows": [
+    {
+      "type": "timer",
+      "name": "ping_1",
+      "exclude_from_translation": true,
+      "parameter_list": "title: Example 1;\nping: audio/timer/ping_1.wav;\nstarting_minutes: 0;\nstarting_seconds: 5"
+    },
+    {
+      "type": "timer",
+      "name": "ping_2",
+      "exclude_from_translation": true,
+      "parameter_list": "title: Example 2;\nping: audio/timer/ping_1.wav;\nstarting_minutes: 0;\nstarting_seconds: 5"
+    },
+    {
+      "type": "timer",
+      "name": "ping_3",
+      "exclude_from_translation": true,
+      "parameter_list": "title: Example 3;\nping: audio/timer/bell_1.mp3;\nstarting_minutes: 0;\nstarting_seconds: 5"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

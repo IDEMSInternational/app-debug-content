@@ -1,0 +1,117 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_text_box",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Disabled state"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_enabled",
+      "value": true,
+      "parameter_list": "false_text: Text box is disabled;\ntrue_text: Text box is enabled;"
+    },
+    {
+      "type": "text_box",
+      "parameter_list": "disabled: !@local.toggle_enabled"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Maximum length"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_1_1",
+      "parameter_list": "max_length: 30",
+      "comments": "Maximum length of input value"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_1_2",
+      "parameter_list": "max_length: 31",
+      "comments": "Any number as a maximum length input value"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Placeholder"
+    },
+    {
+      "name": "placeholder",
+      "value": "placeholder text"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_2_1",
+      "parameter_list": "placeholder: ",
+      "comments": "No placeholder"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_2_2",
+      "parameter_list": "placeholder: @local.placeholder",
+      "comments": "Shows @local.placeholder before user input is given, and when user input is deleted"
+    },
+    {
+      "type": "title ",
+      "name": "title_3",
+      "value": "Text alignment"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_3_1",
+      "parameter_list": "text_align: center",
+      "comments": "Position of input is to the center"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_3_2",
+      "parameter_list": "text_align: left",
+      "comments": "Position of input is to the left"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_3_3",
+      "parameter_list": "text_align: right",
+      "comments": "Position of input is to the right"
+    },
+    {
+      "type": "title",
+      "name": "title_4",
+      "value": "Number input"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_4_1",
+      "parameter_list": "number_input: false",
+      "comments": "Default text type input"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_4_2",
+      "parameter_list": "number_input: true",
+      "comments": "Number type input (allows only number)"
+    },
+    {
+      "type": "title",
+      "name": "title_5",
+      "value": "Prioritise placeholder"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_5_1",
+      "parameter_list": "prioritise_placeholder: false",
+      "comments": "Placeholder is not prioritised"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_par_5_2",
+      "parameter_list": "prioritise_placeholder: true",
+      "comments": "Placeholder is prioritised"
+    }
+  ]
+}

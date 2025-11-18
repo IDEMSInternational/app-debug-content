@@ -1,0 +1,42 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_translate_nested_template",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "lang_select",
+      "value": "example_lang_select"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Text strings set directly in template (using @data)"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "@data.debug_lang_sort_data_list.id_1.text"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Text strings set using nested template (using @data)"
+    },
+    {
+      "type": "begin_template",
+      "name": "example_text",
+      "value": "example_text"
+    },
+    {
+      "name": "text",
+      "value": "@data.debug_lang_sort_data_list.id_1.text"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

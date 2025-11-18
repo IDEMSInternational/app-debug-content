@@ -1,0 +1,63 @@
+{
+  "flow_type": "template",
+  "flow_name": "app_menu",
+  "status": "released",
+  "rows": [
+    {
+      "type": "debug_toggle",
+      "name": "debug_toggle"
+    },
+    {
+      "type": "button",
+      "value": "Open feedback",
+      "action_list": "click | feedback:open;\nclick | emit: force_reprocess;",
+      "condition": "!@fields._feedback_sidebar_open"
+    },
+    {
+      "type": "button",
+      "value": "Close feedback",
+      "action_list": "click | feedback:close;\nclick | emit: force_reprocess;",
+      "condition": "@fields._feedback_sidebar_open"
+    },
+    {
+      "type": "button",
+      "value": "Templates",
+      "action_list": "click | go_to:/template"
+    },
+    {
+      "type": "button",
+      "value": "Dynamic data",
+      "action_list": "click | go_to:/user"
+    },
+    {
+      "type": "button",
+      "value": "Shared data",
+      "action_list": "click | go_to:/shared-data"
+    },
+    {
+      "type": "button",
+      "value": "Notifications",
+      "action_list": "click | go_to:/notifications"
+    },
+    {
+      "type": "button",
+      "value": "Components",
+      "action_list": "click | go_to:/component"
+    },
+    {
+      "type": "button",
+      "value": "Campaigns",
+      "action_list": "click | go_to:/campaigns"
+    },
+    {
+      "type": "button",
+      "value": "Themes",
+      "action_list": "click | go_to:/theme"
+    },
+    {
+      "type": "button",
+      "value": "Reset app",
+      "action_list": "click | reset_app"
+    }
+  ]
+}

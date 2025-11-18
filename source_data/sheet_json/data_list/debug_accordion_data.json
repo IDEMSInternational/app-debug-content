@@ -1,0 +1,20 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_accordion_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "section_1",
+      "title": "First section"
+    },
+    {
+      "id": "section_2",
+      "title": "Second section"
+    },
+    {
+      "id": "section_3",
+      "title": "Third section"
+    }
+  ]
+}

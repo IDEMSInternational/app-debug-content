@@ -1,0 +1,102 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_text",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_default",
+      "value": "Default "
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Text alignment"
+    },
+    {
+      "type": "text",
+      "name": "text_align_1",
+      "value": "Left aligned text",
+      "parameter_list": "text_align:left"
+    },
+    {
+      "type": "text",
+      "name": "text_align_2",
+      "value": "Centered text",
+      "parameter_list": "text_align:center"
+    },
+    {
+      "type": "text",
+      "name": "text_align_3",
+      "value": "Right aligned text",
+      "parameter_list": "text_align:right"
+    },
+    {
+      "type": "title",
+      "name": "title_2",
+      "value": "Formatting"
+    },
+    {
+      "type": "text",
+      "value": "Text with inline **bold** and _italics_ via markdown"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_1",
+      "value": "Standard text",
+      "parameter_list": "style:standard"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_2",
+      "value": "Contextual text",
+      "parameter_list": "style: contextual"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_3",
+      "value": "Emphasised text",
+      "parameter_list": "style: emphasised"
+    },
+    {
+      "type": "text",
+      "name": "text_formatting_4",
+      "value": "Alternative text",
+      "parameter_list": "style:alternative"
+    },
+    {
+      "type": "text",
+      "name": "text_css_1",
+      "value": "Text with custom CSS added via style_list",
+      "style_list": "color: red"
+    },
+    {
+      "type": "text",
+      "name": "text_css_2",
+      "value": "Text with custom CSS added via style_list",
+      "style_list": "color: #A020F0"
+    },
+    {
+      "type": "text",
+      "name": "text_css_3",
+      "value": "Text with custom CSS added via style_list",
+      "style_list": "text-transform: uppercase"
+    },
+    {
+      "type": "title",
+      "value": "Text with typographic punctuation"
+    },
+    {
+      "type": "text",
+      "value": "She said, -- \"A 'simple' sentence...\" --- unknown",
+      "comments": "The markdown parser will automatically replace certain symbols with typographic equivalents. E.g. \"---\" becomes \"–\".\nSee docs here: https://github.com/othree/smartypants.js#readme"
+    },
+    {
+      "type": "text",
+      "value": "She said, -\\- \\\"A \\'simple\\' sentence\\...\\\" \\-\\-- unknown",
+      "style_list": "font-size:14px;",
+      "comments": "These substitutions can be overridden by using the backslash \"\\\" as an escape character.\nSee docs here: https://github.com/othree/smartypants.js?tab=readme-ov-file#backslash-escapes"
+    }
+  ]
+}

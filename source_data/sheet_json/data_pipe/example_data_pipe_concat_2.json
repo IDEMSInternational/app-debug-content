@@ -1,0 +1,21 @@
+{
+  "flow_type": "data_pipe",
+  "flow_subtype": "example_pipe",
+  "flow_name": "example_data_pipe_concat_2",
+  "status": "released",
+  "rows": [
+    {
+      "operation": "concat",
+      "args_list": "example_data_pipe_list_1; ",
+      "input_source": "example_data_pipe_list_3",
+      "output_target": "example_data_pipe_concat_1_3",
+      "comments": "<span>1. Can either write one list in input source and the rest in args_list, or all lists in args_list<br/>2. Concat operation expects row IDs to be unique. If not, gives an error: </span><span><i>Trace: Error: Multiple entries exist for index: id_2 at ConcatOperator.checkDuplicateRows </i></span>"
+    },
+    {
+      "operation": "concat",
+      "args_list": "example_data_pipe_nested_list;\nexample_data_pipe_list_1; ",
+      "input_source": false,
+      "output_target": "example_data_pipe_concat_1_nested"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_rtl_variables",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "lang_select",
+      "value": "example_lang_select"
+    },
+    {
+      "name": "language_list",
+      "value": "name: gb_en | text: English; name: kw_ar | text: Arabic;"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "title",
+      "value": "Translation contains @ global"
+    },
+    {
+      "type": "text",
+      "name": "global_after_at",
+      "value": "Changes to the @global.privacy_policy"
+    },
+    {
+      "type": "title",
+      "value": "Translation contains global @"
+    },
+    {
+      "type": "text",
+      "name": "global_before_at",
+      "value": "You deserve some praise, too. Thank you again for using @global.app_name. It shows you really care!"
+    },
+    {
+      "type": "title",
+      "value": "Translation contains @ data"
+    },
+    {
+      "type": "text",
+      "name": "data_after_at",
+      "value": "How did @data.characters.f1_father.name help his daughter learn these skills?"
+    },
+    {
+      "type": "title",
+      "value": "Translation contains data @"
+    },
+    {
+      "type": "text",
+      "name": "data_before_at",
+      "value": "Okay, @data.characters.f3_son_4.name, you can do it yourself."
+    },
+    {
+      "type": "title",
+      "value": "Markdown and variables"
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "value": "By providing your consent below you acknowledge reading and accepting the @global.terms_and_conditions and @global.privacy_policy. The most important commitments are:\n1. This is, and will always be, a fully free app.\n2. Your data will never be sold. We are not for profit.\n3. By using the app you are helping to make the app better for you and others.\n4. Your anonymised data may be used for research purposes by our @global.app_name team."
+    }
+  ]
+}

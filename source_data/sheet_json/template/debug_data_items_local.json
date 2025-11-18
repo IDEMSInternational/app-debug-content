@@ -1,0 +1,50 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_data_items_local",
+  "status": "released",
+  "rows": [
+    {
+      "name": "iterator",
+      "value": "debug_data_items_rendering_data"
+    },
+    {
+      "name": "local_var",
+      "value": true
+    },
+    {
+      "type": "button",
+      "value": "Toggle var value",
+      "action_list": "click | set_local: local_var: !@local.local_var"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "[1] local_var: @local.local_var"
+    },
+    {
+      "type": "begin_data_items",
+      "name": "data_items",
+      "value": "@local.iterator"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "[2] local_var: @local.local_var"
+    },
+    {
+      "type": "begin_template",
+      "name": "debug_data_items_r_template",
+      "value": "debug_data_items_r_template"
+    },
+    {
+      "name": "title",
+      "value": "[3] local_var: @local.local_var"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

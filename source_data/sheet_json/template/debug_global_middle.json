@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_global_middle",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "debug_global_bottom",
+      "value": "debug_global_bottom",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_2",
+      "value": "@global.debug_item_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_3",
+      "value": "@global.debug_item_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_4",
+      "value": "This text is overridden directly in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_6",
+      "value": "@global.debug_item_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_7",
+      "value": "@global.debug_item_2",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "text_8",
+      "value": "This text is overridden directly in the value",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_template",
+      "exclude_from_translation": true
+    }
+  ]
+}

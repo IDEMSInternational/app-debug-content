@@ -1,0 +1,29 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_long_link_dashed_box",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg",
+      "parameter_list": "style: dashed_box"
+    },
+    {
+      "type": "text",
+      "name": "text_same_1",
+      "value": "Direct long link https://www.kpwkm.gov.my/kpwkm/index.php?r=portal/about&id=b0J5ZFBERFhsalo2U05TWk1nSzVDQT09"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "dashed_box",
+      "value": "Direct long link https://www.kpwkm.gov.my/kpwkm/index.php?r=portal/about&id=b0J5ZFBERFhsalo2U05TWk1nSzVDQT09"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/14Fub-lf6xLc6nG3_Mnab1qAcfLK88yfYJzlJQGXi-2M"
+    }
+  ]
+}

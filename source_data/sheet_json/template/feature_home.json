@@ -1,0 +1,150 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_home",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_7",
+      "action_list": "click | go_to:weekly_workshops",
+      "exclude_from_translation": true,
+      "parameter_list": "style: home_screen light;\n",
+      "style_list": "\nmargin: 40px 10px 0px 10px;"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie_src",
+      "value": "lottie/blob_play_ball.json",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: column;",
+      "style_list": "padding: 0;"
+    },
+    {
+      "type": "title",
+      "name": "title_ex_s",
+      "value": "@global.weekly_workshops",
+      "exclude_from_translation": true,
+      "parameter_list": "style: alternative;",
+      "style_list": " align-self: flex-start; margin-left: 20px;\n    margin-bottom: 8px;\n    margin-top: 15px;"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_1",
+      "value": "Value",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/leaf_blue.svg;\ntext: Message;\nstyle: home_screen yellow;",
+      "style_list": "padding: 0;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_7",
+      "action_list": "click | go_to:parent_points",
+      "exclude_from_translation": true,
+      "parameter_list": "style: home_screen shade;\n",
+      "style_list": "\nmargin: 40px 10px 0px 10px;"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie_src",
+      "value": "lottie/blob_play_ball.json",
+      "exclude_from_translation": true
+    },
+    {
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style: column;",
+      "style_list": "padding: 0;"
+    },
+    {
+      "type": "title",
+      "name": "title_ex_s",
+      "value": "@global.parent_points",
+      "exclude_from_translation": true,
+      "parameter_list": "style: alternative;",
+      "style_list": " align-self: flex-start;\n  white-space: nowrap;\nmargin-top: 15px;"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_1",
+      "value": "Value",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/school_blue.svg;\ntext: Start;\nstyle: home_screen orange;",
+      "style_list": "padding: 0;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "name": "dg_example_7",
+      "action_list": "click | go_to:parent_centre",
+      "exclude_from_translation": true,
+      "parameter_list": "style: home_screen dark;\n",
+      "style_list": "\nmargin: 40px 10px 0px 10px;"
+    },
+    {
+      "type": "lottie_animation",
+      "name": "lottie_src",
+      "value": "lottie/blob_play_ball.json",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group",
+      "exclude_from_translation": true,
+      "parameter_list": "style:column;",
+      "style_list": "padding: 0;"
+    },
+    {
+      "type": "title",
+      "name": "title_ex_s",
+      "value": "@global.parent_centre",
+      "exclude_from_translation": true,
+      "parameter_list": "style: alternative;",
+      "style_list": "align-self: flex-start;\n white-space: nowrap;\nmargin-top:15px;"
+    },
+    {
+      "type": "round_button",
+      "name": "round_button_1",
+      "value": "Value",
+      "exclude_from_translation": true,
+      "parameter_list": "icon_src: images/icons/house_white.svg;\n\nstyle: home_screen dark_orange;",
+      "style_list": "padding: 0;"
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "exclude_from_translation": true
+    },
+    {
+      "type": "end_display_group",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

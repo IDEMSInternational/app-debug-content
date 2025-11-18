@@ -1,0 +1,42 @@
+{
+  "flow_type": "template",
+  "flow_name": "feature_formatting",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title1",
+      "value": "<span>This is a title where part of it is </span><span><i>italics</i></span>",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text1",
+      "value": "<span>This is text where part is </span><span><b>bold </b></span><span>part is in </span><span><i>italics</i></span><span><b><i> </b></i></span><span>and part is </span><span><b><i>both bold and italics (emphasised) </b></i></span>",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "dashed_box",
+      "name": "box1",
+      "value": "<span>This is a dashed box where some of the text is </span><span><b>bold</b></span><span> and </span><span><i>italics</i></span>",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "button",
+      "name": "button1",
+      "value": "<span>Some of this button is </span><span><b>bold. </b></span><span><i>WOAH!</i></span>",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "list1",
+      "value": "There is a - dash - betwen these words but it's not a list\nThis is text with a list in it\n* List item 1\n* List item 2\n* List item 3",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ARbNRGDer5vj9qSpRMZFrMkYifGkH3TLtDVp72YbaqU"
+    }
+  ]
+}

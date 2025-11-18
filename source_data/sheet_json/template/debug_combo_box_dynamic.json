@@ -1,0 +1,49 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_dynamic",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list",
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3",
+      "exclude_from_translation": true
+    },
+    {
+      "name": "combo_box_2_var",
+      "value": "combo_box_2_field",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_1",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "text",
+      "name": "text_1",
+      "value": "local variable for combo box 1: @local.combo_box_1",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_2",
+      "action_list": "changed | set_field: @local.combo_box_2_var: @local.combo_box_2",
+      "exclude_from_translation": true,
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "text",
+      "name": "text_2",
+      "value": "Local variable for combo box 2: @local.combo_box_2",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "name": "text_3",
+      "value": "field for combo box 2: @field.combo_box_2_field",
+      "exclude_from_translation": true
+    }
+  ]
+}
