@@ -11,9 +11,12 @@
     },
     {
       "type": "button",
-      "name": "button_1",
-      "value": "Download required assets",
+      "value": "Download asset pack (action)",
       "action_list": "click | asset_pack: download: debug_asset_pack_1;"
+    },
+    {
+      "type": "asset_pack_download_button",
+      "parameter_list": "asset_pack: debug_asset_pack_1;\ndefault_text: Download asset pack (component);\nprogress_text: Downloading...;\nsuccess_text: ✅ Success;\nerror_text: ❌ Failure;"
     },
     {
       "type": "begin_display_group"

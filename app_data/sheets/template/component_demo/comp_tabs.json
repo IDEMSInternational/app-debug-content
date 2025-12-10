@@ -1,0 +1,167 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_tabs",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Default configuration",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "tabs",
+      "rows": [
+        {
+          "type": "tab",
+          "value": "First",
+          "rows": [
+            {
+              "type": "title",
+              "value": "Content 1",
+              "_translations": {
+                "value": {}
+              },
+              "name": "title_1",
+              "_nested_name": "tabs_3.tab_1.title_1"
+            },
+            {
+              "type": "text",
+              "value": "Content 1",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "tabs_3.tab_1.text_2"
+            }
+          ],
+          "name": "tab_1",
+          "_nested_name": "tabs_3.tab_1"
+        },
+        {
+          "type": "tab",
+          "value": "Second",
+          "rows": [
+            {
+              "type": "title",
+              "value": "Content 2",
+              "_translations": {
+                "value": {}
+              },
+              "name": "title_1",
+              "_nested_name": "tabs_3.tab_2.title_1"
+            },
+            {
+              "type": "text",
+              "value": "Longer content over multiple lines to demonstrate tab content of different heights",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "tabs_3.tab_2.text_2"
+            }
+          ],
+          "name": "tab_2",
+          "_nested_name": "tabs_3.tab_2"
+        }
+      ],
+      "name": "tabs_3",
+      "_nested_name": "tabs_3"
+    },
+    {
+      "type": "title",
+      "value": "Param overrides",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "tabs",
+      "parameter_list": {
+        "animation_duration_ms": "0",
+        "compact_buttons": "true",
+        "animate_height": "false",
+        "selected_index": "1"
+      },
+      "rows": [
+        {
+          "type": "tab",
+          "value": "First",
+          "rows": [
+            {
+              "type": "title",
+              "value": "Content 1",
+              "_translations": {
+                "value": {}
+              },
+              "name": "title_1",
+              "_nested_name": "tabs_6.tab_1.title_1"
+            },
+            {
+              "type": "text",
+              "value": "Content 1",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "tabs_6.tab_1.text_2"
+            }
+          ],
+          "name": "tab_1",
+          "_nested_name": "tabs_6.tab_1"
+        },
+        {
+          "type": "tab",
+          "value": "Second",
+          "parameter_list": {
+            "label": "2nd"
+          },
+          "rows": [
+            {
+              "type": "title",
+              "value": "Content 2",
+              "_translations": {
+                "value": {}
+              },
+              "name": "title_1",
+              "_nested_name": "tabs_6.tab_2.title_1"
+            },
+            {
+              "type": "text",
+              "value": "Longer content over multiple lines to demonstrate tab content of different heights",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "tabs_6.tab_2.text_2"
+            }
+          ],
+          "name": "tab_2",
+          "_nested_name": "tabs_6.tab_2"
+        }
+      ],
+      "name": "tabs_6",
+      "_nested_name": "tabs_6"
+    },
+    {
+      "type": "text",
+      "value": "[Source sheet](https://docs.google.com/spreadsheets/d/1raJlddyTZlGxQyv78Nm5PHJxMftisYuCWFWgIVvGxq8/edit?gid=332666066#gid=332666066)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_tabs.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1raJlddyTZlGxQyv78Nm5PHJxMftisYuCWFWgIVvGxq8"
+  }
+}

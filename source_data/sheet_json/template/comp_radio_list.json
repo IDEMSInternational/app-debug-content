@@ -1,0 +1,82 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_radio_list",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Radio list component"
+    },
+    {
+      "type": "title",
+      "value": "Basic implementation:"
+    },
+    {
+      "name": "answer_list_1",
+      "value": "name: option_1 | text: First;\nname: option_2 | text: Second;\nname: option_3 | text: Third; \nname: option_4 | text: Fourth;"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_1",
+      "parameter_list": "answer_list: @local.answer_list_1;\n"
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_1"
+    },
+    {
+      "type": "title",
+      "value": "Specify default selection:"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_2",
+      "value": "option_2",
+      "parameter_list": "answer_list: @local.answer_list_1;\n"
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_2"
+    },
+    {
+      "type": "title",
+      "value": "Answer list provided via data-items:"
+    },
+    {
+      "type": "begin_radio_list",
+      "name": "radio_list_3"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_radio_list_items"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_radio_list"
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_3"
+    },
+    {
+      "type": "title",
+      "value": "Override default answer list key/value names:"
+    },
+    {
+      "name": "answer_list_2",
+      "value": "id: option_1 | label: First;\nid: option_2 | label: Second;\nid: option_3 | label: Third; \nid: option_4 | label: Fourth;"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_4",
+      "parameter_list": "answer_list: @local.answer_list_2;\noptions_key: id;\noptions_value: label;"
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_4"
+    }
+  ]
+}

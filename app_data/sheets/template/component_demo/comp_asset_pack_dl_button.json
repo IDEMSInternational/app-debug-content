@@ -1,0 +1,49 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_asset_pack_dl_button",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "asset_pack_download_button",
+      "name": "download_status",
+      "parameter_list": {
+        "asset_pack": "debug_asset_pack_1",
+        "default_text": "Download asset pack",
+        "progress_text": "Downloading...",
+        "success_text": "✅ Success",
+        "error_text": "❌ Failure"
+      },
+      "_nested_name": "download_status"
+    },
+    {
+      "type": "text",
+      "value": "Download status is: @local.download_status",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Download status is: @local.download_status",
+            "matchedExpression": "@local.download_status",
+            "type": "local",
+            "fieldName": "download_status"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.download_status": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_asset_pack_download_button.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1kV8Bd2wvP3swyrYPYDAJf0px3Gd9PLeDIF4wdgcF-9w"
+  }
+}

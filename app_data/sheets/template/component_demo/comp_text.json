@@ -132,7 +132,7 @@
         "value": {}
       },
       "style_list": [
-        "color: red"
+        "color: var(--ion-color-secondary-300)"
       ],
       "_nested_name": "text_css_1"
     },

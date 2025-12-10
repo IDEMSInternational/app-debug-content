@@ -15,8 +15,7 @@
     },
     {
       "type": "button",
-      "name": "button_1",
-      "value": "Download required assets",
+      "value": "Download asset pack (action)",
       "_translations": {
         "value": {}
       },
@@ -31,7 +30,20 @@
           "_raw": "click | asset_pack: download: debug_asset_pack_1"
         }
       ],
-      "_nested_name": "button_1"
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "asset_pack_download_button",
+      "parameter_list": {
+        "asset_pack": "debug_asset_pack_1",
+        "default_text": "Download asset pack (component)",
+        "progress_text": "Downloading...",
+        "success_text": "✅ Success",
+        "error_text": "❌ Failure"
+      },
+      "name": "asset_pack_download_button_4",
+      "_nested_name": "asset_pack_download_button_4"
     },
     {
       "type": "display_group",
@@ -46,7 +58,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_4.text_1"
+          "_nested_name": "display_group_5.text_1"
         },
         {
           "type": "image",
@@ -58,11 +70,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_4.image_2"
+          "_nested_name": "display_group_5.image_2"
         }
       ],
-      "name": "display_group_4",
-      "_nested_name": "display_group_4"
+      "name": "display_group_5",
+      "_nested_name": "display_group_5"
     },
     {
       "type": "display_group",
@@ -77,7 +89,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_6.text_1"
+          "_nested_name": "display_group_7.text_1"
         },
         {
           "type": "image",
@@ -89,11 +101,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_6.image_2"
+          "_nested_name": "display_group_7.image_2"
         }
       ],
-      "name": "display_group_6",
-      "_nested_name": "display_group_6"
+      "name": "display_group_7",
+      "_nested_name": "display_group_7"
     },
     {
       "type": "display_group",
@@ -108,7 +120,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_8.text_1"
+          "_nested_name": "display_group_9.text_1"
         },
         {
           "type": "image",
@@ -120,11 +132,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_8.image_2"
+          "_nested_name": "display_group_9.image_2"
         }
       ],
-      "name": "display_group_8",
-      "_nested_name": "display_group_8"
+      "name": "display_group_9",
+      "_nested_name": "display_group_9"
     },
     {
       "type": "display_group",
@@ -139,7 +151,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_10.text_1"
+          "_nested_name": "display_group_11.text_1"
         },
         {
           "type": "image",
@@ -151,11 +163,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_10.image_2"
+          "_nested_name": "display_group_11.image_2"
         }
       ],
-      "name": "display_group_10",
-      "_nested_name": "display_group_10"
+      "name": "display_group_11",
+      "_nested_name": "display_group_11"
     },
     {
       "type": "title",
@@ -163,8 +175,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_12",
-      "_nested_name": "title_12"
+      "name": "title_13",
+      "_nested_name": "title_13"
     },
     {
       "name": "language_list",

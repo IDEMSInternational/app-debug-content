@@ -29,9 +29,6 @@
       "_translations": {
         "value": {}
       },
-      "style_list": [
-        "text-size:"
-      ],
       "name": "title_3",
       "_nested_name": "title_3"
     },
@@ -979,6 +976,113 @@
         "style": "flexible"
       },
       "_nested_name": "button_par_4_3"
+    },
+    {
+      "type": "button",
+      "value": "Compact",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "compact"
+      },
+      "name": "button_59",
+      "_nested_name": "button_59"
+    },
+    {
+      "name": "active_tab",
+      "value": 1,
+      "type": "set_variable",
+      "_nested_name": "active_tab"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "name": "tab_button_1",
+          "value": "Tab 1",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_tab",
+                "1"
+              ],
+              "_raw": "click | set_local: active_tab: 1"
+            }
+          ],
+          "parameter_list": {
+            "variant": "tab",
+            "highlighted": "@local.active_tab == 1"
+          },
+          "_nested_name": "display_group_61.tab_button_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "highlighted": [
+                {
+                  "fullExpression": "@local.active_tab == 1",
+                  "matchedExpression": "@local.active_tab",
+                  "type": "local",
+                  "fieldName": "active_tab"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.active_tab": [
+              "parameter_list.highlighted"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "tab_button_2",
+          "value": "Tab 2",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "active_tab",
+                "2"
+              ],
+              "_raw": "click | set_local: active_tab: 2"
+            }
+          ],
+          "parameter_list": {
+            "variant": "tab",
+            "highlighted": "@local.active_tab == 2"
+          },
+          "_nested_name": "display_group_61.tab_button_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "highlighted": [
+                {
+                  "fullExpression": "@local.active_tab == 2",
+                  "matchedExpression": "@local.active_tab",
+                  "type": "local",
+                  "fieldName": "active_tab"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.active_tab": [
+              "parameter_list.highlighted"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_61",
+      "_nested_name": "display_group_61"
     },
     {
       "type": "text",

@@ -1,0 +1,23 @@
+{
+  "asset_pack_debugging/image_1.png": {
+    "md5Checksum": "ffcd780c1f2741241aa739c83f057fd6",
+    "size_kb": 8.8
+  },
+  "asset_pack_debugging/image_2.png": {
+    "md5Checksum": "bef7116ee7f169361ec33f3d589a9412",
+    "size_kb": 8.6
+  },
+  "asset_pack_debugging/image_4.png": {
+    "md5Checksum": "23bd56d294206bdeadccf744b15f9b00",
+    "overrides": {
+      "theme_default": {
+        "es_sp": {
+          "filePath": "asset_pack_debugging/es_sp/image_4.png",
+          "md5Checksum": "a2b6687f417f10b3d98f5a920a61a86e",
+          "size_kb": 10
+        }
+      }
+    },
+    "size_kb": 11.8
+  }
+}
