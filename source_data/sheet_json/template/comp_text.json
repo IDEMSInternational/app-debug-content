@@ -63,13 +63,13 @@
       "type": "text",
       "name": "text_formatting_4",
       "value": "Alternative text",
-      "parameter_list": "style:alternative"
+      "parameter_list": "style: alternative"
     },
     {
       "type": "text",
       "name": "text_css_1",
       "value": "Text with custom CSS added via style_list",
-      "style_list": "color: red"
+      "style_list": "color: var(--ion-color-secondary-300);"
     },
     {
       "type": "text",

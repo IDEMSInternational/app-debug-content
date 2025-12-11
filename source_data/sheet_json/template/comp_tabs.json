@@ -1,0 +1,95 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_tabs",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Default configuration"
+    },
+    {
+      "type": "begin_tabs"
+    },
+    {
+      "type": "begin_tab",
+      "value": "First"
+    },
+    {
+      "type": "title",
+      "value": "Content 1"
+    },
+    {
+      "type": "text",
+      "value": "Content 1"
+    },
+    {
+      "type": "end_tab"
+    },
+    {
+      "type": "begin_tab",
+      "value": "Second"
+    },
+    {
+      "type": "title",
+      "value": "Content 2"
+    },
+    {
+      "type": "text",
+      "value": "Longer content over multiple lines to demonstrate tab content of different heights"
+    },
+    {
+      "type": "end_tab"
+    },
+    {
+      "type": "end_tabs"
+    },
+    {
+      "type": "title",
+      "value": "Param overrides"
+    },
+    {
+      "type": "begin_tabs",
+      "parameter_list": "animation_duration_ms: 0;\ncompact_buttons: true;\nanimate_height: false;\nselected_index: 1;"
+    },
+    {
+      "type": "begin_tab",
+      "value": "First"
+    },
+    {
+      "type": "title",
+      "value": "Content 1"
+    },
+    {
+      "type": "text",
+      "value": "Content 1"
+    },
+    {
+      "type": "end_tab"
+    },
+    {
+      "type": "begin_tab",
+      "value": "Second",
+      "parameter_list": "label: 2nd;",
+      "comments": "Label string can be specified in params (will take precedence over value)"
+    },
+    {
+      "type": "title",
+      "value": "Content 2"
+    },
+    {
+      "type": "text",
+      "value": "Longer content over multiple lines to demonstrate tab content of different heights"
+    },
+    {
+      "type": "end_tab"
+    },
+    {
+      "type": "end_tabs"
+    },
+    {
+      "type": "text",
+      "value": "[Source sheet](https://docs.google.com/spreadsheets/d/1raJlddyTZlGxQyv78Nm5PHJxMftisYuCWFWgIVvGxq8/edit?gid=332666066#gid=332666066)"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_calc_array",
+  "status": "released",
+  "rows": [
+    {
+      "name": "my_var",
+      "value": "@calc([0,4,5,6])",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "my_var",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc([0,4,5,6])",
+            "matchedExpression": "@calc([0,4,5,6])",
+            "type": "calc",
+            "fieldName": "[0,4,5,6]"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc([0,4,5,6])": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "does_include",
+      "value": "@calc(@local.my_var.includes(4))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "does_include",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.my_var.includes(4))",
+            "matchedExpression": "@local.my_var.includes",
+            "type": "local",
+            "fieldName": "my_var"
+          },
+          {
+            "fullExpression": "@calc(@local.my_var.includes(4))",
+            "matchedExpression": "@calc(@local.my_var.includes(4))",
+            "type": "calc",
+            "fieldName": "@local.my_var.includes(4)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.my_var.includes": [
+          "value"
+        ],
+        "@calc(@local.my_var.includes(4))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Does include: @local.does_include",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Does include: @local.does_include",
+            "matchedExpression": "@local.does_include",
+            "type": "local",
+            "fieldName": "does_include"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.does_include": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "my_var_list",
+      "value": "@calc([0,4,5,6])",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "my_var_list",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc([0,4,5,6])",
+            "matchedExpression": "@calc([0,4,5,6])",
+            "type": "calc",
+            "fieldName": "[0,4,5,6]"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc([0,4,5,6])": [
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "does_include_l",
+      "value": "@calc(@local.my_var_list.includes(4))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "does_include_l",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(@local.my_var_list.includes(4))",
+            "matchedExpression": "@local.my_var_list.includes",
+            "type": "local",
+            "fieldName": "my_var_list"
+          },
+          {
+            "fullExpression": "@calc(@local.my_var_list.includes(4))",
+            "matchedExpression": "@calc(@local.my_var_list.includes(4))",
+            "type": "calc",
+            "fieldName": "@local.my_var_list.includes(4)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.my_var_list.includes": [
+          "value"
+        ],
+        "@calc(@local.my_var_list.includes(4))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Does include (list): @local.does_include_l",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Does include (list): @local.does_include_l",
+            "matchedExpression": "@local.does_include_l",
+            "type": "local",
+            "fieldName": "does_include_l"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.does_include_l": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_calc_context_variables.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/125_zehOos_qTDKvhMVqKzUJAIYamS-RVh6cJ4G3VcjY"
+  }
+}

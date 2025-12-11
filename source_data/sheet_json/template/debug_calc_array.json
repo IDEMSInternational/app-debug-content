@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_calc_array",
+  "status": "released",
+  "rows": [
+    {
+      "name": "my_var",
+      "value": "@calc([0,4,5,6])",
+      "__EMPTY": true
+    },
+    {
+      "name": "does_include",
+      "value": "@calc(@local.my_var.includes(4))"
+    },
+    {
+      "type": "text",
+      "value": "Does include: @local.does_include"
+    },
+    {
+      "name": "my_var_list",
+      "value": "@calc([0,4,5,6])",
+      "__EMPTY": true
+    },
+    {
+      "name": "does_include_l",
+      "value": "@calc(@local.my_var_list.includes(4))"
+    },
+    {
+      "type": "text",
+      "value": "Does include (list): @local.does_include_l"
+    }
+  ]
+}

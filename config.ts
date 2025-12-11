@@ -7,14 +7,16 @@ config.api.db_name = "debug"
 
 config.google_drive = {
   sheets_folders: [{ id: "1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc", name: "Debug Sheets" }],
-  assets_folders: [{ id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs", name: "Debug Assets" }],
+  assets_folders: [{ id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs", name: "Debug Assets" },
+  { id: "19Kbwidpb_nOKpJAuRCkVLpAzWbKPzNm1", name: "debug_asset_pack_1", remote: true }
+  ],
 };
 
 config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.9.2",
+  content_tag_latest: "1.9.3",
 };
 
 // set supabase config if decrypted values available
@@ -28,7 +30,7 @@ config.firebase = {
 }
 
 config.remote_assets = {
-  provider: "supabase",
+  provider: "firebase",
   bucketName: "debug",
   folderName: "asset_packs",
 };

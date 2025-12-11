@@ -488,6 +488,16 @@
         }
       }
     },
+    "comp_radio_list_items": {
+      "flow_type": "data_list",
+      "flow_name": "comp_radio_list_items",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_radio_list.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY"
+      }
+    },
     "comp_table_data": {
       "flow_type": "data_list",
       "flow_name": "comp_table_data",
@@ -2179,6 +2189,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1P6EhHmElOJOAoMH4h_vingVL82jyCfSTYPXj8eY2Iek"
       }
     },
+    "comp_asset_pack_dl_button": {
+      "flow_type": "template",
+      "flow_name": "comp_asset_pack_dl_button",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_asset_pack_download_button.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1kV8Bd2wvP3swyrYPYDAJf0px3Gd9PLeDIF4wdgcF-9w"
+      }
+    },
     "comp_audio": {
       "flow_type": "template",
       "flow_name": "comp_audio",
@@ -2551,6 +2571,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1qfatsiHKJ8sCBcJ8oqo3InLrjzT_a2Qxvw6RyxVMTxY"
       }
     },
+    "comp_radio_list": {
+      "flow_type": "template",
+      "flow_name": "comp_radio_list",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_radio_list.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY"
+      }
+    },
     "comp_round_button": {
       "flow_type": "template",
       "flow_name": "comp_round_button",
@@ -2619,6 +2649,16 @@
         "name": "Debug Sheets",
         "path": "component_sheets/component_table.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1utCg51oPxeT3rI1s74GmoNvdsS60aXOvCiVsKUTSMLY"
+      }
+    },
+    "comp_tabs": {
+      "flow_type": "template",
+      "flow_name": "comp_tabs",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_tabs.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1raJlddyTZlGxQyv78Nm5PHJxMftisYuCWFWgIVvGxq8"
       }
     },
     "comp_task_card": {
@@ -5864,6 +5904,15 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/debug_app_update.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1H6VhPmnxOIV5tw9p4XbVYS0tfNU3M7KZzgH9GmomNPI"
+      }
+    },
+    "debug_calc_array": {
+      "flow_type": "template",
+      "flow_name": "debug_calc_array",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_calc_context_variables.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/125_zehOos_qTDKvhMVqKzUJAIYamS-RVh6cJ4G3VcjY"
       }
     },
     "debug_calc_context_variables": {

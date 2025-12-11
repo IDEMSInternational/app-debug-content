@@ -1,0 +1,295 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_radio_list",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Radio list component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "title",
+      "value": "Basic implementation:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_3",
+      "_nested_name": "title_3"
+    },
+    {
+      "name": "answer_list_1",
+      "value": [
+        {
+          "name": "option_1",
+          "text": "First"
+        },
+        {
+          "name": "option_2",
+          "text": "Second"
+        },
+        {
+          "name": "option_3",
+          "text": "Third"
+        },
+        {
+          "name": "option_4",
+          "text": "Fourth"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list_1"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_1",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1"
+      },
+      "_nested_name": "radio_list_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected: @local.radio_list_1",
+            "matchedExpression": "@local.radio_list_1",
+            "type": "local",
+            "fieldName": "radio_list_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Specify default selection:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_2",
+      "value": "option_2",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1"
+      },
+      "_nested_name": "radio_list_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_2",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected: @local.radio_list_2",
+            "matchedExpression": "@local.radio_list_2",
+            "type": "local",
+            "fieldName": "radio_list_2"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_2": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Answer list provided via data-items:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_10",
+      "_nested_name": "title_10"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_3",
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_radio_list_items",
+          "rows": [],
+          "name": "data_items_1",
+          "_nested_name": "radio_list_3.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_list_3"
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_3",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected: @local.radio_list_3",
+            "matchedExpression": "@local.radio_list_3",
+            "type": "local",
+            "fieldName": "radio_list_3"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_3": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Override default answer list key/value names:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_14",
+      "_nested_name": "title_14"
+    },
+    {
+      "name": "answer_list_2",
+      "value": [
+        {
+          "id": "option_1",
+          "label": "First"
+        },
+        {
+          "id": "option_2",
+          "label": "Second"
+        },
+        {
+          "id": "option_3",
+          "label": "Third"
+        },
+        {
+          "id": "option_4",
+          "label": "Fourth"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list_2"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_4",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_2",
+        "options_key": "id",
+        "options_value": "label"
+      },
+      "_nested_name": "radio_list_4",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_2",
+              "matchedExpression": "@local.answer_list_2",
+              "type": "local",
+              "fieldName": "answer_list_2"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_2": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.radio_list_4",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_17",
+      "_nested_name": "text_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected: @local.radio_list_4",
+            "matchedExpression": "@local.radio_list_4",
+            "type": "local",
+            "fieldName": "radio_list_4"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_4": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_radio_list.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY"
+  }
+}

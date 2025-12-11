@@ -686,7 +686,7 @@
         "answer_list": "@local.answer_list_2",
         "variant": "dropdown",
         "placeholder": "Has a title",
-        "text": "The Title"
+        "modal_title": "The Title"
       },
       "_nested_name": "combo_box_search_6",
       "_dynamicFields": {
@@ -934,7 +934,7 @@
       "type": "combo_box",
       "name": "combo_box_par_6_1",
       "parameter_list": {
-        "text": "text to appear on top",
+        "modal_title": "text to appear on top",
         "answer_list": "@local.answer_list_1"
       },
       "_nested_name": "combo_box_par_6_1",

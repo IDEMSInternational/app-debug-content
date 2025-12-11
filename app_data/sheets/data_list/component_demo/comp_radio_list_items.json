@@ -1,0 +1,33 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_radio_list_items",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "id_1",
+      "name": "option_1",
+      "text": "First"
+    },
+    {
+      "id": "id_2",
+      "name": "option_2",
+      "text": "Second"
+    },
+    {
+      "id": "id_3",
+      "name": "option_3",
+      "text": "Third"
+    },
+    {
+      "id": "id_4",
+      "name": "option_4",
+      "text": "Fourth"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_radio_list.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY"
+  }
+}
