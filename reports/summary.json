@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 420
+        "count": 419
       },
       {
         "type": "calendar",
@@ -239,7 +239,7 @@
       },
       {
         "type": "set_variable",
-        "count": 914
+        "count": 915
       },
       {
         "type": "simple_checkbox",
@@ -283,7 +283,7 @@
       },
       {
         "type": "text",
-        "count": 1323
+        "count": 1326
       },
       {
         "type": "text_area",
@@ -495,7 +495,7 @@
       },
       {
         "type": "set_local",
-        "count": 69
+        "count": 68
       },
       {
         "type": "share",
@@ -1185,7 +1185,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 293
+        "total": 294
       },
       {
         "type": "template",

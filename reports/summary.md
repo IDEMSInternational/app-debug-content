@@ -13,7 +13,7 @@
 | apple_sign_in_button | 10 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 420 |
+| button | 419 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -62,7 +62,7 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 914 |
+| set_variable | 915 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -73,7 +73,7 @@
 | task_card | 32 |
 | task_progress_bar | 8 |
 | template | 154 |
-| text | 1323 |
+| text | 1326 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
@@ -132,7 +132,7 @@
 | set_field | 119 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 69 |
+| set_local | 68 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -312,7 +312,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 113 |
 | template | component_demo | 71 |
-| template | debug | 293 |
+| template | debug | 294 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
