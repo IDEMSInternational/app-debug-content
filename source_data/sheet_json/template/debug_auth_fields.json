@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_auth_fields",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "fields._auth_user_name = @fields._auth_user_name"
+    },
+    {
+      "type": "text",
+      "value": "fields._auth_user_given_name = @fields._auth_user_given_name"
+    }
+  ]
+}

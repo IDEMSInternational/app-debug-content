@@ -3059,6 +3059,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1-vppapq7aTWKSK-uKpx7STr7QBiYBiZ9nC45wnvtFnE"
       }
     },
+    "debug_auth_fields": {
+      "flow_type": "template",
+      "flow_name": "debug_auth_fields",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_auth_fields.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/16ddtNuXBYmYM879yIJRI1Gb4-adCFxIR00WVMO-ie98"
+      }
+    },
     "debug_calc_functions": {
       "flow_type": "template",
       "flow_name": "debug_calc_functions",
@@ -4607,7 +4617,7 @@
       "_source": {
         "name": "Debug Sheets",
         "path": "debug_sheets/debug_text_box.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1B9X6lvSaLUHh7XmuNkJbK2Pup1H__jGf_DfvPQvLL7w"
+        "url": "https://docs.google.com/spreadsheets/d/1eHmPLXWWpjzLUeuTs-LsqAPixLA3HEpTBaM4a6fDaGM"
       }
     },
     "debug_text_line_break": {

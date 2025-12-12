@@ -1,0 +1,61 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_auth_fields",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "fields._auth_user_name = @fields._auth_user_name",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "fields._auth_user_name = @fields._auth_user_name",
+            "matchedExpression": "@fields._auth_user_name",
+            "type": "fields",
+            "fieldName": "_auth_user_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "fields._auth_user_given_name = @fields._auth_user_given_name",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "fields._auth_user_given_name = @fields._auth_user_given_name",
+            "matchedExpression": "@fields._auth_user_given_name",
+            "type": "fields",
+            "fieldName": "_auth_user_given_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._auth_user_given_name": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_auth_fields.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/16ddtNuXBYmYM879yIJRI1Gb4-adCFxIR00WVMO-ie98"
+  }
+}
