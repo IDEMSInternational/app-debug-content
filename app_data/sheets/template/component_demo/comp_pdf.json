@@ -100,7 +100,8 @@
       "parameter_list": {
         "starting_page": "3",
         "compatibility_error_message": "@local.compatibility_error_message",
-        "open_external_text": "@local.open_external_text"
+        "open_external_text": "@local.open_external_text",
+        "allow_fullscreen": "true"
       },
       "name": "pdf_10",
       "_nested_name": "pdf_10",

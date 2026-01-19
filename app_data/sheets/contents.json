@@ -597,6 +597,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1TU1hS7Sj0yoNZWd10lKpkKyubryrbbT4UCmVhsZEeOo"
       }
     },
+    "combo_box_wide_list_data": {
+      "flow_type": "data_list",
+      "flow_name": "combo_box_wide_list_data",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/to_be_sorted/debug_combo_box.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/13h4OJiMok3XG9DklnRzVmUue_9cXydVTclI4Ixb5nAo"
+      }
+    },
     "debug_accordion_data": {
       "flow_type": "data_list",
       "flow_name": "debug_accordion_data",
@@ -3069,6 +3079,16 @@
         "url": "https://docs.google.com/spreadsheets/d/16ddtNuXBYmYM879yIJRI1Gb4-adCFxIR00WVMO-ie98"
       }
     },
+    "debug_button_compact": {
+      "flow_type": "template",
+      "flow_name": "debug_button_compact",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_button_compact.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/129ahll0J71SyMMyG3aMbIrtVj0WlfpsIuZoWB-LL2CY"
+      }
+    },
     "debug_calc_functions": {
       "flow_type": "template",
       "flow_name": "debug_calc_functions",
@@ -3208,6 +3228,16 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/to_be_sorted/debug_component_variables.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1jXlpblYFQPBX1h54OVhM_KEXXaApxyZSuVr22jPhmes"
+      }
+    },
+    "debug_combo_box_wide_list": {
+      "flow_type": "template",
+      "flow_name": "debug_combo_box_wide_list",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/to_be_sorted/debug_combo_box.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/13h4OJiMok3XG9DklnRzVmUue_9cXydVTclI4Ixb5nAo"
       }
     },
     "debug_conditional_messages_q1": {
@@ -3938,6 +3968,16 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/to_be_sorted/debug_small_issues.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1A159jPS8rSDnA2GDUTda6xeC_Kyu3oYk_-KbuhzMqmQ"
+      }
+    },
+    "debug_nested_rows": {
+      "flow_type": "template",
+      "flow_name": "debug_nested_rows",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_nested_rows.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1Nf9JvJUAMi0MaSeTvo6r-FPEhY_qLHQ2hZ_UxkLmav4"
       }
     },
     "debug_nested_same_name": {

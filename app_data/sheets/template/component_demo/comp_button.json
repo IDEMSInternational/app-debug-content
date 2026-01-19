@@ -59,6 +59,27 @@
     },
     {
       "type": "title",
+      "value": "variant: compact;",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "button",
+      "value": "Compact variant",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "compact"
+      },
+      "name": "button_7",
+      "_nested_name": "button_7"
+    },
+    {
+      "type": "title",
       "name": "title_0",
       "value": "Button card",
       "_translations": {
@@ -75,8 +96,8 @@
       "parameter_list": {
         "variant": "card"
       },
-      "name": "button_7",
-      "_nested_name": "button_7"
+      "name": "button_9",
+      "_nested_name": "button_9"
     },
     {
       "type": "button",
@@ -88,8 +109,8 @@
         "variant": "card",
         "icon": "images/icons/leaf_blue.svg"
       },
-      "name": "button_8",
-      "_nested_name": "button_8"
+      "name": "button_10",
+      "_nested_name": "button_10"
     },
     {
       "type": "button",
@@ -106,11 +127,11 @@
             "position": "right",
             "style": "in_button"
           },
-          "_nested_name": "button_9.toggle_bar_1"
+          "_nested_name": "button_11.toggle_bar_1"
         }
       ],
-      "name": "button_9",
-      "_nested_name": "button_9"
+      "name": "button_11",
+      "_nested_name": "button_11"
     },
     {
       "type": "title",
@@ -118,8 +139,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_11",
-      "_nested_name": "title_11"
+      "name": "title_13",
+      "_nested_name": "title_13"
     },
     {
       "type": "button",
@@ -134,8 +155,8 @@
         "style": "no-background",
         "text_align": "left"
       },
-      "name": "button_12",
-      "_nested_name": "button_12"
+      "name": "button_14",
+      "_nested_name": "button_14"
     },
     {
       "type": "button",
@@ -150,8 +171,8 @@
         "style": "no-background",
         "text_align": "left"
       },
-      "name": "button_13",
-      "_nested_name": "button_13"
+      "name": "button_15",
+      "_nested_name": "button_15"
     },
     {
       "type": "title",
@@ -159,8 +180,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_14",
-      "_nested_name": "title_14"
+      "name": "title_16",
+      "_nested_name": "title_16"
     },
     {
       "type": "button",
@@ -173,11 +194,11 @@
         {
           "type": "toggle_bar",
           "name": "toggle_bar_2",
-          "_nested_name": "button_15.toggle_bar_2"
+          "_nested_name": "button_17.toggle_bar_2"
         }
       ],
-      "name": "button_15",
-      "_nested_name": "button_15"
+      "name": "button_17",
+      "_nested_name": "button_17"
     },
     {
       "type": "button",
@@ -220,7 +241,7 @@
             "icon_true_asset": "images/icons/heart_blue.svg",
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
-          "_nested_name": "button_17.toggle_bar_3",
+          "_nested_name": "button_19.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -253,8 +274,8 @@
           }
         }
       ],
-      "name": "button_17",
-      "_nested_name": "button_17"
+      "name": "button_19",
+      "_nested_name": "button_19"
     },
     {
       "type": "text",
@@ -262,8 +283,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_19",
-      "_nested_name": "text_19"
+      "name": "text_21",
+      "_nested_name": "text_21"
     },
     {
       "name": "is_locked",
@@ -314,7 +335,7 @@
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
           "condition": "!@local.is_locked",
-          "_nested_name": "button_21.toggle_bar_3",
+          "_nested_name": "button_23.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -365,7 +386,7 @@
           },
           "condition": "@local.is_locked",
           "name": "image_2",
-          "_nested_name": "button_21.image_2",
+          "_nested_name": "button_23.image_2",
           "_dynamicFields": {
             "condition": [
               {
@@ -383,8 +404,8 @@
           }
         }
       ],
-      "name": "button_21",
-      "_nested_name": "button_21",
+      "name": "button_23",
+      "_nested_name": "button_23",
       "_dynamicFields": {
         "parameter_list": {
           "disabled": [
@@ -409,8 +430,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_23",
-      "_nested_name": "text_23"
+      "name": "text_25",
+      "_nested_name": "text_25"
     },
     {
       "name": "is_locked_2",
@@ -461,7 +482,7 @@
             "icon_false_asset": "images/icons/heart_outline.svg"
           },
           "condition": "!@local.is_locked_2",
-          "_nested_name": "button_25.toggle_bar_3",
+          "_nested_name": "button_27.toggle_bar_3",
           "_dynamicFields": {
             "value": [
               {
@@ -512,7 +533,7 @@
           },
           "condition": "@local.is_locked_2",
           "name": "image_2",
-          "_nested_name": "button_25.image_2",
+          "_nested_name": "button_27.image_2",
           "_dynamicFields": {
             "condition": [
               {
@@ -530,8 +551,8 @@
           }
         }
       ],
-      "name": "button_25",
-      "_nested_name": "button_25",
+      "name": "button_27",
+      "_nested_name": "button_27",
       "_dynamicFields": {
         "parameter_list": {
           "disabled": [
@@ -556,8 +577,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_27",
-      "_nested_name": "title_27"
+      "name": "title_29",
+      "_nested_name": "title_29"
     },
     {
       "type": "button",
@@ -568,8 +589,8 @@
       "parameter_list": {
         "variant": "faq"
       },
-      "name": "button_28",
-      "_nested_name": "button_28"
+      "name": "button_30",
+      "_nested_name": "button_30"
     },
     {
       "type": "button",
@@ -580,8 +601,8 @@
       "parameter_list": {
         "variant": "faq"
       },
-      "name": "button_29",
-      "_nested_name": "button_29"
+      "name": "button_31",
+      "_nested_name": "button_31"
     },
     {
       "type": "title",
@@ -642,8 +663,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_33",
-      "_nested_name": "text_33"
+      "name": "text_35",
+      "_nested_name": "text_35"
     },
     {
       "type": "toggle_bar",
@@ -986,8 +1007,8 @@
       "parameter_list": {
         "variant": "compact"
       },
-      "name": "button_59",
-      "_nested_name": "button_59"
+      "name": "button_61",
+      "_nested_name": "button_61"
     },
     {
       "name": "active_tab",
@@ -1020,7 +1041,7 @@
             "variant": "tab",
             "highlighted": "@local.active_tab == 1"
           },
-          "_nested_name": "display_group_61.tab_button_1",
+          "_nested_name": "display_group_63.tab_button_1",
           "_dynamicFields": {
             "parameter_list": {
               "highlighted": [
@@ -1061,7 +1082,7 @@
             "variant": "tab",
             "highlighted": "@local.active_tab == 2"
           },
-          "_nested_name": "display_group_61.tab_button_2",
+          "_nested_name": "display_group_63.tab_button_2",
           "_dynamicFields": {
             "parameter_list": {
               "highlighted": [
@@ -1081,8 +1102,8 @@
           }
         }
       ],
-      "name": "display_group_61",
-      "_nested_name": "display_group_61"
+      "name": "display_group_63",
+      "_nested_name": "display_group_63"
     },
     {
       "type": "text",

@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 419
+        "count": 438
       },
       {
         "type": "calendar",
@@ -59,7 +59,7 @@
       },
       {
         "type": "combo_box",
-        "count": 71
+        "count": 72
       },
       {
         "type": "dashed_box",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 104
+        "count": 105
       },
       {
         "type": "data_query",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 262
+        "count": 268
       },
       {
         "type": "drawer",
@@ -238,8 +238,12 @@
         "count": 7
       },
       {
+        "type": "set_parameter",
+        "count": 1
+      },
+      {
         "type": "set_variable",
-        "count": 915
+        "count": 986
       },
       {
         "type": "simple_checkbox",
@@ -279,11 +283,11 @@
       },
       {
         "type": "template",
-        "count": 154
+        "count": 155
       },
       {
         "type": "text",
-        "count": 1326
+        "count": 1328
       },
       {
         "type": "text_area",
@@ -307,7 +311,7 @@
       },
       {
         "type": "title",
-        "count": 658
+        "count": 661
       },
       {
         "type": "toggle_bar",
@@ -427,7 +431,7 @@
       },
       {
         "type": "nav",
-        "count": 5
+        "count": 6
       },
       {
         "type": "nav_stack",
@@ -487,7 +491,7 @@
       },
       {
         "type": "set_item",
-        "count": 34
+        "count": 35
       },
       {
         "type": "set_items",
@@ -495,7 +499,7 @@
       },
       {
         "type": "set_local",
-        "count": 68
+        "count": 69
       },
       {
         "type": "share",
@@ -1090,7 +1094,7 @@
       {
         "type": "data_list",
         "subtype": "debug",
-        "total": 26
+        "total": 27
       },
       {
         "type": "data_list",
@@ -1185,7 +1189,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 294
+        "total": 297
       },
       {
         "type": "template",

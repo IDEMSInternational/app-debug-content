@@ -14,6 +14,18 @@
       "param": "open_external_text",
       "description": "Message displayed on legacy browser prompt button to open with external app",
       "default": "Open with..."
+    },
+    {
+      "id": "@row.param",
+      "param": "allow_fullscreen",
+      "description": "If true, a button is included in the PDF viewer toolbar to enter fullscreen mode",
+      "default": false
+    },
+    {
+      "id": "@row.param",
+      "param": "starting_page",
+      "description": "Page of PDF that will be displayed on initial load",
+      "default": 1
     }
   ]
 }

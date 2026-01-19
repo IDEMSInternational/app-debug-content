@@ -1,0 +1,153 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_wide_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list_1",
+      "value": [
+        {
+          "name": "option_1",
+          "text": "@data.combo_box_wide_list_data.options.option_1_text"
+        },
+        {
+          "name": "option_2",
+          "text": "@data.combo_box_wide_list_data.options.option_2_text"
+        },
+        {
+          "name": "option_3",
+          "text": "@data.combo_box_wide_list_data.options.option_3_text"
+        },
+        {
+          "name": "option_4",
+          "text": "@data.combo_box_wide_list_data.options.option_4_text"
+        },
+        {
+          "name": "option_5",
+          "text": "@data.combo_box_wide_list_data.options.option_5_text"
+        },
+        {
+          "name": "option_6",
+          "text": "@data.combo_box_wide_list_data.options.option_6_text"
+        }
+      ],
+      "type": "set_variable",
+      "_nested_name": "answer_list_1",
+      "_dynamicFields": {
+        "value": {
+          "0": {
+            "text": [
+              {
+                "fullExpression": "@data.combo_box_wide_list_data.options.option_1_text",
+                "matchedExpression": "@data.combo_box_wide_list_data.options.option_1_text",
+                "type": "data",
+                "fieldName": "combo_box_wide_list_data"
+              }
+            ]
+          },
+          "1": {
+            "text": [
+              {
+                "fullExpression": "@data.combo_box_wide_list_data.options.option_2_text",
+                "matchedExpression": "@data.combo_box_wide_list_data.options.option_2_text",
+                "type": "data",
+                "fieldName": "combo_box_wide_list_data"
+              }
+            ]
+          },
+          "2": {
+            "text": [
+              {
+                "fullExpression": "@data.combo_box_wide_list_data.options.option_3_text",
+                "matchedExpression": "@data.combo_box_wide_list_data.options.option_3_text",
+                "type": "data",
+                "fieldName": "combo_box_wide_list_data"
+              }
+            ]
+          },
+          "3": {
+            "text": [
+              {
+                "fullExpression": "@data.combo_box_wide_list_data.options.option_4_text",
+                "matchedExpression": "@data.combo_box_wide_list_data.options.option_4_text",
+                "type": "data",
+                "fieldName": "combo_box_wide_list_data"
+              }
+            ]
+          },
+          "4": {
+            "text": [
+              {
+                "fullExpression": "@data.combo_box_wide_list_data.options.option_5_text",
+                "matchedExpression": "@data.combo_box_wide_list_data.options.option_5_text",
+                "type": "data",
+                "fieldName": "combo_box_wide_list_data"
+              }
+            ]
+          },
+          "5": {
+            "text": [
+              {
+                "fullExpression": "@data.combo_box_wide_list_data.options.option_6_text",
+                "matchedExpression": "@data.combo_box_wide_list_data.options.option_6_text",
+                "type": "data",
+                "fieldName": "combo_box_wide_list_data"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.combo_box_wide_list_data.options.option_1_text": [
+          "value.0.text"
+        ],
+        "@data.combo_box_wide_list_data.options.option_2_text": [
+          "value.1.text"
+        ],
+        "@data.combo_box_wide_list_data.options.option_3_text": [
+          "value.2.text"
+        ],
+        "@data.combo_box_wide_list_data.options.option_4_text": [
+          "value.3.text"
+        ],
+        "@data.combo_box_wide_list_data.options.option_5_text": [
+          "value.4.text"
+        ],
+        "@data.combo_box_wide_list_data.options.option_6_text": [
+          "value.5.text"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1"
+      },
+      "name": "combo_box_3",
+      "_nested_name": "combo_box_3",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/to_be_sorted/debug_combo_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/13h4OJiMok3XG9DklnRzVmUue_9cXydVTclI4Ixb5nAo"
+  }
+}
