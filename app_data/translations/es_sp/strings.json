@@ -52,5 +52,7 @@
   "Text and @global.language_global_1": "Texto y @global.language_global_1",
   "activities": "actividades",
   "Featured": "Destacado",
-  "This is an audio message in English.": "Este es un mensaje de audio en inglés."
+  "This is an audio message in English.": "Este es un mensaje de audio en inglés.",
+  "First": "Primero",
+  "Second": "Segundo"
 }
