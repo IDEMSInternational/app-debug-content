@@ -1,0 +1,54 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_rows",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_template",
+      "value": "my_template"
+    },
+    {
+      "name": "my_var",
+      "value": "value2"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column;\nvariant: box;"
+    },
+    {
+      "type": "title",
+      "value": "Title text",
+      "parameter_list": "size: large;"
+    },
+    {
+      "type": "button",
+      "action_list": "click | nav | target_template: my_template;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "set_parameter",
+      "name": "style",
+      "value": "column"
+    },
+    {
+      "name": "variant",
+      "value": "box"
+    },
+    {
+      "type": "title",
+      "value": "Title text"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

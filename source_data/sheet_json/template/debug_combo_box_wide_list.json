@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_wide_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "name": "answer_list_1",
+      "value": "name: option_1 | text: @data.combo_box_wide_list_data.options.option_1_text; \nname: option_2 | text: @data.combo_box_wide_list_data.options.option_2_text; \nname: option_3 | text: @data.combo_box_wide_list_data.options.option_3_text; \nname: option_4 | text: @data.combo_box_wide_list_data.options.option_4_text; \nname: option_5 | text: @data.combo_box_wide_list_data.options.option_5_text; \nname: option_6 | text: @data.combo_box_wide_list_data.options.option_6_text; "
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @local.answer_list_1;"
+    }
+  ]
+}

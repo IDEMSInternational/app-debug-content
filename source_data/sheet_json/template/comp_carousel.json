@@ -10,11 +10,11 @@
     },
     {
       "type": "text",
-      "value": "Parameters:\ncentred_slides: true (default);\ncentre_first_and_last: false (default);"
+      "value": "Parameters:\ncentred_slides: true (default);"
     },
     {
       "type": "begin_carousel",
-      "parameter_list": "centred_slides: true;\ncentre_first_and_last: false"
+      "parameter_list": "centred_slides: true;"
     },
     {
       "type": "begin_display_group",
@@ -106,11 +106,11 @@
     },
     {
       "type": "text",
-      "value": "Parameters:\ncentred_slides: true (default);\ncentre_first_and_last: true;"
+      "value": "Parameters:\ncentred_slides: true (default);\ninitial_slide_index: 2;"
     },
     {
       "type": "begin_carousel",
-      "parameter_list": "centred_slides: true;\ncentre_first_and_last: true;"
+      "parameter_list": "centred_slides: true;\ninitial_slide_index: 2;"
     },
     {
       "type": "begin_display_group",
@@ -508,7 +508,8 @@
     },
     {
       "type": "begin_carousel",
-      "name": "data_items_carousel"
+      "name": "data_items_carousel",
+      "parameter_list": "initial_slide_index: 3;"
     },
     {
       "type": "begin_data_items",

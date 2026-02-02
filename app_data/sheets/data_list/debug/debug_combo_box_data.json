@@ -1,0 +1,17 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_combo_box_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id_1",
+      "value": "Default"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_combo_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1RmMTxBSOL_Mw60VyQayh1Iy_3P6Nmd7AlrKns4emFLA"
+  }
+}

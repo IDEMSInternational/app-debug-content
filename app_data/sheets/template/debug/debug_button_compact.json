@@ -1,0 +1,227 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_button_compact",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "comparison_compact",
+      "value": "Same buttons but default:",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "comparison_compact"
+    },
+    {
+      "type": "button",
+      "value": "Some text",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "compact"
+      },
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "button",
+      "value": "Some longer text that wraps onto multiple lines",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "compact"
+      },
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "value": "text 1",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "compact"
+          },
+          "name": "button_1",
+          "_nested_name": "display_group_5.button_1"
+        },
+        {
+          "type": "button",
+          "value": "text 2",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "compact"
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_5.button_2"
+        },
+        {
+          "type": "button",
+          "value": "text 3",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "compact"
+          },
+          "name": "button_3",
+          "_nested_name": "display_group_5.button_3"
+        }
+      ],
+      "name": "display_group_5",
+      "_nested_name": "display_group_5"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "value": "Some longer text that wraps onto multiple lines",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "compact"
+          },
+          "name": "button_1",
+          "_nested_name": "display_group_7.button_1"
+        },
+        {
+          "type": "button",
+          "value": "Medium length text",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "compact"
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_7.button_2"
+        },
+        {
+          "type": "button",
+          "value": "Longer text that wraps onto multiple lines",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "compact"
+          },
+          "name": "button_3",
+          "_nested_name": "display_group_7.button_3"
+        }
+      ],
+      "name": "display_group_7",
+      "_nested_name": "display_group_7"
+    },
+    {
+      "type": "text",
+      "name": "comparison_default",
+      "value": "Same buttons but default:",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "comparison_default"
+    },
+    {
+      "type": "button",
+      "value": "Some text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "button_10",
+      "_nested_name": "button_10"
+    },
+    {
+      "type": "button",
+      "value": "Some longer text that wraps onto multiple lines",
+      "_translations": {
+        "value": {}
+      },
+      "name": "button_11",
+      "_nested_name": "button_11"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "value": "text 1",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_1",
+          "_nested_name": "display_group_12.button_1"
+        },
+        {
+          "type": "button",
+          "value": "text 2",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_12.button_2"
+        },
+        {
+          "type": "button",
+          "value": "text 3",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_3",
+          "_nested_name": "display_group_12.button_3"
+        }
+      ],
+      "name": "display_group_12",
+      "_nested_name": "display_group_12"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "value": "Some longer text that wraps onto multiple lines",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_1",
+          "_nested_name": "display_group_14.button_1"
+        },
+        {
+          "type": "button",
+          "value": "Medium length text",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_14.button_2"
+        },
+        {
+          "type": "button",
+          "value": "Longer text that wraps onto multiple lines",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_3",
+          "_nested_name": "display_group_14.button_3"
+        }
+      ],
+      "name": "display_group_14",
+      "_nested_name": "display_group_14"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_button_compact.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/129ahll0J71SyMMyG3aMbIrtVj0WlfpsIuZoWB-LL2CY"
+  }
+}

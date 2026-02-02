@@ -1,0 +1,15 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "combo_box_wide_list_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "options",
+      "option_1_text": "Option 1 text",
+      "option_3_text": "Option 3 text",
+      "option_4_text": "Option 4 text",
+      "option_5_text": "Option 5 text"
+    }
+  ]
+}

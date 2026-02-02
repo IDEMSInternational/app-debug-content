@@ -13,19 +13,19 @@
 | apple_sign_in_button | 10 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 419 |
+| button | 439 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 71 |
+| combo_box | 73 |
 | dashed_box | 19 |
-| data_items | 104 |
+| data_items | 106 |
 | data_query | 8 |
 | date_time_picker | 8 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 262 |
+| display_group | 268 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 11 |
@@ -62,7 +62,8 @@
 | set_default | 1 |
 | set_field | 29 |
 | set_local | 7 |
-| set_variable | 915 |
+| set_parameter | 1 |
+| set_variable | 917 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -72,14 +73,14 @@
 | tabs | 2 |
 | task_card | 32 |
 | task_progress_bar | 8 |
-| template | 154 |
-| text | 1326 |
+| template | 155 |
+| text | 1329 |
 | text_area | 13 |
 | text_box | 67 |
 | text_bubble | 11 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 658 |
+| title | 661 |
 | toggle_bar | 74 |
 | update_action_list | 2 |
 | video | 4 |
@@ -115,7 +116,7 @@
 | go_to | 84 |
 | go_to_url | 5 |
 | invalid_action | 1 |
-| nav | 5 |
+| nav | 6 |
 | nav_stack | 11 |
 | notification | 8 |
 | open_external | 3 |
@@ -128,11 +129,11 @@
 | save_to_device | 3 |
 | screen_orientation | 5 |
 | scroll | 2 |
-| set_data | 18 |
+| set_data | 19 |
 | set_field | 119 |
 | set_item | 34 |
 | set_items | 2 |
-| set_local | 68 |
+| set_local | 69 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -293,7 +294,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 14 |
-| data_list | debug | 26 |
+| data_list | debug | 28 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
 | data_list | example_pipe | 5 |
@@ -312,7 +313,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 113 |
 | template | component_demo | 71 |
-| template | debug | 294 |
+| template | debug | 298 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
