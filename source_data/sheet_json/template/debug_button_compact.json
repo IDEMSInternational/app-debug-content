@@ -1,0 +1,114 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_button_compact",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "comparison_compact",
+      "value": "Same buttons but default:"
+    },
+    {
+      "type": "button",
+      "value": "Some text",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "button",
+      "value": "Some longer text that wraps onto multiple lines",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "text 1",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "button",
+      "value": "text 2",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "button",
+      "value": "text 3",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Some longer text that wraps onto multiple lines",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "button",
+      "value": "Medium length text",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "button",
+      "value": "Longer text that wraps onto multiple lines",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "name": "comparison_default",
+      "value": "Same buttons but default:"
+    },
+    {
+      "type": "button",
+      "value": "Some text"
+    },
+    {
+      "type": "button",
+      "value": "Some longer text that wraps onto multiple lines"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "text 1"
+    },
+    {
+      "type": "button",
+      "value": "text 2"
+    },
+    {
+      "type": "button",
+      "value": "text 3"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Some longer text that wraps onto multiple lines"
+    },
+    {
+      "type": "button",
+      "value": "Medium length text"
+    },
+    {
+      "type": "button",
+      "value": "Longer text that wraps onto multiple lines"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

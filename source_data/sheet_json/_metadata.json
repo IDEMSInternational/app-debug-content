@@ -28,6 +28,16 @@
   },
   {
     "flow_type": "data_list",
+    "flow_subtype": "debug",
+    "flow_name": "combo_box_wide_list_data",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/to_be_sorted/debug_combo_box.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/13h4OJiMok3XG9DklnRzVmUue_9cXydVTclI4Ixb5nAo"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_subtype": "component_demo",
     "flow_name": "comp_carousel_items",
     "_source": {
@@ -360,6 +370,16 @@
       "name": "Debug Sheets",
       "path": "debug_sheets/debug_campaigns.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1Jf38D4pkoBO0QIUcw1IFAqlEokrUzhOESi3hNlW0vZM"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_subtype": "debug",
+    "flow_name": "debug_combo_box_data",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_combo_box.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1RmMTxBSOL_Mw60VyQayh1Iy_3P6Nmd7AlrKns4emFLA"
     }
   },
   {
@@ -2000,6 +2020,16 @@
   },
   {
     "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_button_compact",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_button_compact.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/129ahll0J71SyMMyG3aMbIrtVj0WlfpsIuZoWB-LL2CY"
+    }
+  },
+  {
+    "flow_type": "template",
     "flow_name": "debug_calc_array",
     "_source": {
       "name": "Debug Sheets",
@@ -2107,6 +2137,16 @@
   {
     "flow_type": "template",
     "flow_subtype": "debug",
+    "flow_name": "debug_combo_box",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_combo_box.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1RmMTxBSOL_Mw60VyQayh1Iy_3P6Nmd7AlrKns4emFLA"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
     "flow_name": "debug_combo_box_dynamic",
     "_source": {
       "name": "Debug Sheets",
@@ -2172,6 +2212,16 @@
       "name": "Debug Sheets",
       "path": "debug_sheets/to_be_sorted/debug_component_variables.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1jXlpblYFQPBX1h54OVhM_KEXXaApxyZSuVr22jPhmes"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_combo_box_wide_list",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/to_be_sorted/debug_combo_box.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/13h4OJiMok3XG9DklnRzVmUue_9cXydVTclI4Ixb5nAo"
     }
   },
   {
@@ -3091,6 +3141,16 @@
       "name": "Debug Sheets",
       "path": "debug_sheets/to_be_sorted/debug_small_issues.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1A159jPS8rSDnA2GDUTda6xeC_Kyu3oYk_-KbuhzMqmQ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_nested_rows",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nested_rows.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1Nf9JvJUAMi0MaSeTvo6r-FPEhY_qLHQ2hZ_UxkLmav4"
     }
   },
   {

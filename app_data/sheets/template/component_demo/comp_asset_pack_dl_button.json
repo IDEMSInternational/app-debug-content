@@ -11,6 +11,7 @@
         "asset_pack": "debug_asset_pack_1",
         "default_text": "Download asset pack",
         "progress_text": "Downloading...",
+        "progress_display": "count",
         "success_text": "✅ Success",
         "error_text": "❌ Failure"
       },

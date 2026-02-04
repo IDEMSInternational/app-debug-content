@@ -25,7 +25,8 @@
     {
       "type": "navigation_bar",
       "parameter_list": {
-        "button_list": "@local.button_list"
+        "button_list": "@local.button_list",
+        "persist_highlight": "true"
       },
       "name": "navigation_bar_3",
       "_nested_name": "navigation_bar_3",

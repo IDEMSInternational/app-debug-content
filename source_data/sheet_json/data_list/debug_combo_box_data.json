@@ -1,0 +1,12 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_combo_box_data",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "id": "id_1",
+      "value": "Default"
+    }
+  ]
+}

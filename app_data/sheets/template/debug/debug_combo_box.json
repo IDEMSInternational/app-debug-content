@@ -1,0 +1,151 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "combo_box",
+      "name": "combo_box_1",
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_combo_box_items",
+          "rows": [],
+          "name": "data_items_1",
+          "_nested_name": "combo_box_1.data_items_1"
+        }
+      ],
+      "_nested_name": "combo_box_1"
+    },
+    {
+      "type": "text",
+      "value": "Value of combo_box_1: @local.combo_box_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value of combo_box_1: @local.combo_box_1",
+            "matchedExpression": "@local.combo_box_1",
+            "type": "local",
+            "fieldName": "combo_box_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.combo_box_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data |\n_list_id: debug_combo_box_data,\n_id: id_1,\nvalue: @local.combo_box_1",
+          "params": {
+            "_list_id": "debug_combo_box_data",
+            "_id": "id_1",
+            "value": "@local.combo_box_1"
+          }
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | set_data |\n_list_id: debug_combo_box_data,\n_id: id_1,\nvalue: @local.combo_box_1",
+                "matchedExpression": "@local.combo_box_1",
+                "type": "local",
+                "fieldName": "combo_box_1"
+              }
+            ],
+            "params": {
+              "value": [
+                {
+                  "fullExpression": "@local.combo_box_1",
+                  "matchedExpression": "@local.combo_box_1",
+                  "type": "local",
+                  "fieldName": "combo_box_1"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.combo_box_1": [
+          "action_list.0._raw",
+          "action_list.0.params.value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "value": "debug_combo_box_data",
+      "rows": [
+        {
+          "type": "text",
+          "value": "@item.value",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_6.text_1_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.value",
+                "matchedExpression": "@item.value",
+                "type": "item",
+                "fieldName": "value"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_6.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.value": [
+              "value"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_6",
+      "_nested_name": "data_items_6"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_combo_box.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1RmMTxBSOL_Mw60VyQayh1Iy_3P6Nmd7AlrKns4emFLA"
+  }
+}

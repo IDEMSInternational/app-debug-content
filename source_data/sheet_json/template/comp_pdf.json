@@ -42,7 +42,7 @@
     {
       "type": "pdf",
       "value": "example_pdf.pdf",
-      "parameter_list": "starting_page: 3;\ncompatibility_error_message: @local.compatibility_error_message;\nopen_external_text: @local.open_external_text;"
+      "parameter_list": "starting_page: 3;\ncompatibility_error_message: @local.compatibility_error_message;\nopen_external_text: @local.open_external_text;\nallow_fullscreen: true;"
     }
   ]
 }

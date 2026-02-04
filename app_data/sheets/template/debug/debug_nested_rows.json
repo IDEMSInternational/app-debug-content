@@ -1,0 +1,103 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nested_rows",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "template",
+      "value": "my_template",
+      "rows": [
+        {
+          "name": "my_var",
+          "value": "value2",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "my_template.my_var"
+        }
+      ],
+      "name": "my_template",
+      "_nested_name": "my_template"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "style": "column",
+        "variant": "box"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Title text",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "size": "large"
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_4.title_1"
+        },
+        {
+          "type": "button",
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "nav",
+              "args": [],
+              "_raw": "click | nav | target_template: my_template",
+              "params": {
+                "target_template": "my_template"
+              }
+            }
+          ],
+          "name": "button_2",
+          "_nested_name": "display_group_4.button_2"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    },
+    {
+      "name": "variant",
+      "value": "box",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "variant"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "set_parameter",
+          "name": "style",
+          "value": "column",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "display_group_6.style"
+        },
+        {
+          "type": "title",
+          "value": "Title text",
+          "_translations": {
+            "value": {}
+          },
+          "name": "title_3",
+          "_nested_name": "display_group_6.title_3"
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nested_rows.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1Nf9JvJUAMi0MaSeTvo6r-FPEhY_qLHQ2hZ_UxkLmav4"
+  }
+}

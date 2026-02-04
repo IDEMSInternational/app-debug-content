@@ -9,7 +9,7 @@
     },
     {
       "type": "navigation_bar",
-      "parameter_list": "button_list: @local.button_list"
+      "parameter_list": "button_list: @local.button_list;\npersist_highlight: true;"
     }
   ]
 }

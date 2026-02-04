@@ -10,7 +10,7 @@
     },
     {
       "name": "task_groups_data",
-      "value": "workshop_tasks"
+      "value": "comp_task_card_data"
     },
     {
       "type": "text",
@@ -26,7 +26,7 @@
     },
     {
       "type": "begin_template",
-      "value": "module_card"
+      "value": "comp_task_card"
     },
     {
       "name": "workshop_id",

@@ -26,6 +26,15 @@
     },
     {
       "type": "title",
+      "value": "variant: compact;"
+    },
+    {
+      "type": "button",
+      "value": "Compact variant",
+      "parameter_list": "variant: compact;"
+    },
+    {
+      "type": "title",
       "name": "title_0",
       "value": "Button card"
     },

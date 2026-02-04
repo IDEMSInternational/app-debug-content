@@ -16,7 +16,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.9.7",
+  content_tag_latest: "1.10.0",
 };
 
 // set supabase config if decrypted values available
@@ -42,10 +42,11 @@ config.error_logging = {
 config.android = {
   app_id: 'international.idems.debug_app',
   app_name: 'Debug App',
-  splash_asset_path: "./app_data/assets/android/splash.png",
-  icon_asset_path: "./app_data/assets/android/icon.png",
-  icon_asset_foreground_path: "./app_data/assets/android/icon-foreground.png",
-  icon_asset_background_path: "./app_data/assets/android/icon-background.png",
+  logo_asset_path: "./app_data/assets/android/icon-foreground.png",
+  // splash_asset_path: "./app_data/assets/android/splash.png",
+  // icon_asset_path: "./app_data/assets/android/icon.png",
+  // icon_asset_foreground_path: "./app_data/assets/android/icon-foreground.png",
+  // icon_asset_background_path: "./app_data/assets/android/icon-background.png",
   zoom_enabled: true
 }
 
@@ -59,7 +60,9 @@ config.analytics = {
 config.ios = {
   app_id: "international.idems.debug-app",
   app_name: "Debug App",
-  zoom_enabled: true
+  zoom_enabled: true,
+  logo_asset_path: "./app_data/assets/android/icon-foreground.png",
+  // logo_background_color: ""
 }
 
 config.remote_assets = {

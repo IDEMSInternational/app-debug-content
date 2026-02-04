@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "begin_combo_box",
+      "name": "combo_box_1"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_combo_box_items"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_combo_box"
+    },
+    {
+      "type": "text",
+      "value": "Value of combo_box_1: @local.combo_box_1"
+    },
+    {
+      "type": "button",
+      "action_list": "click | set_data |\n_list_id: debug_combo_box_data,\n_id: id_1,\nvalue: @local.combo_box_1"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_combo_box_data"
+    },
+    {
+      "type": "text",
+      "value": "@item.value"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}
