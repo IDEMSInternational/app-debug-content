@@ -1,0 +1,184 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_force_reprocess",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_local",
+      "name": "local_1",
+      "value": "Default",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "local_1"
+    },
+    {
+      "type": "set_field",
+      "name": "debug_force_reprocess_field",
+      "value": "Default",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debug_force_reprocess_field"
+    },
+    {
+      "type": "text",
+      "value": "local value: @local.local_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "local value: @local.local_1",
+            "matchedExpression": "@local.local_1",
+            "type": "local",
+            "fieldName": "local_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.local_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "field value: @field.debug_force_reprocess_field",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "field value: @field.debug_force_reprocess_field",
+            "matchedExpression": "@field.debug_force_reprocess_field",
+            "type": "field",
+            "fieldName": "debug_force_reprocess_field"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@field.debug_force_reprocess_field": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text_box",
+      "name": "user_input",
+      "_nested_name": "user_input"
+    },
+    {
+      "type": "button",
+      "value": "Update local",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "local_1",
+            "@local.user_input"
+          ],
+          "_raw": "click | set_local: local_1: @local.user_input"
+        }
+      ],
+      "name": "button_7",
+      "_nested_name": "button_7",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.user_input",
+                  "matchedExpression": "@local.user_input",
+                  "type": "local",
+                  "fieldName": "user_input"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: local_1: @local.user_input",
+                "matchedExpression": "@local.user_input",
+                "type": "local",
+                "fieldName": "user_input"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.user_input": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Update field",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "debug_force_reprocess_field",
+            "@local.user_input"
+          ],
+          "_raw": "click | set_field: debug_force_reprocess_field: @local.user_input"
+        }
+      ],
+      "name": "button_8",
+      "_nested_name": "button_8",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.user_input",
+                  "matchedExpression": "@local.user_input",
+                  "type": "local",
+                  "fieldName": "user_input"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_field: debug_force_reprocess_field: @local.user_input",
+                "matchedExpression": "@local.user_input",
+                "type": "local",
+                "fieldName": "user_input"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.user_input": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_force_reprocess.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1GJtcPf4Xj7QAz63wdEvNGw5ecO45AU0Sv5vPi44ZrXU"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_lesson_cta",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Lesson CTA Component"
+    },
+    {
+      "type": "begin_plh_lesson_cta",
+      "value": "Lesson name",
+      "parameter_list": "subtitle: Course name;\ncta_text: Continue;\nbadge_text: Lesson;\nbackground_image_asset: images/lesson-cta-bg.svg;",
+      "action_list": "click | toast | message: Lesson CTA clicked;"
+    },
+    {
+      "name": "course_id",
+      "value": "course_1"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: lesson_data;\nfilter: @task_item.course_id == \"@local.course_id\"  &&  @task_item.filter_val;"
+    },
+    {
+      "type": "end_plh_lesson_cta"
+    }
+  ]
+}

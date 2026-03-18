@@ -1,0 +1,22 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "combo_options",
+  "status": "released",
+  "rows": [
+    {
+      "id": "option_1",
+      "name": "option_1",
+      "text": "option_1"
+    },
+    {
+      "id": "option_2",
+      "name": "option_2",
+      "text": "option_2"
+    },
+    {
+      "id": "option_3",
+      "name": "option_3",
+      "text": "option_3"
+    }
+  ]
+}

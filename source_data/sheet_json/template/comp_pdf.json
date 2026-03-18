@@ -40,9 +40,27 @@
       "value": "Open with..."
     },
     {
+      "type": "text",
+      "value": "Show/hide \"open external\" button:"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "show_open_external_button",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Show/hide \"download\" button:"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "show_download_button",
+      "value": false
+    },
+    {
       "type": "pdf",
       "value": "example_pdf.pdf",
-      "parameter_list": "starting_page: 3;\ncompatibility_error_message: @local.compatibility_error_message;\nopen_external_text: @local.open_external_text;\nallow_fullscreen: true;"
+      "parameter_list": "starting_page: 3;\ncompatibility_error_message: @local.compatibility_error_message;\nopen_external_text: @local.open_external_text;\nshow_open_external_button:@local.show_open_external_button;\nshow_download_button: @local.show_download_button;"
     }
   ]
 }

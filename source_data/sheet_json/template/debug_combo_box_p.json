@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_p",
+  "status": "released",
+  "rows": [
+    {
+      "type": "combo_box",
+      "name": "combo_box_with_placeholder",
+      "action_list": "changed | set_local : @item.name: this.value;",
+      "parameter_list": "placeholder: Placeholder text; \nanswer_list: @data.combo_options;"
+    },
+    {
+      "type": "button",
+      "value": "Update combo box value",
+      "action_list": "click | set_local: combo_box_with_placeholder: option_1;"
+    },
+    {
+      "type": "text",
+      "value": "Combo box value: @local.combo_box_with_placeholder"
+    }
+  ]
+}

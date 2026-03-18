@@ -38,6 +38,15 @@
   },
   {
     "flow_type": "data_list",
+    "flow_name": "combo_options",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_combo_box_placeholder.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1RNwHYFtA4KEPGmoyVBWMYI9GtSpH7tNtoth6Jn0Npnc"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_subtype": "component_demo",
     "flow_name": "comp_carousel_items",
     "_source": {
@@ -263,6 +272,15 @@
       "name": "Debug Sheets",
       "path": "component_sheets/component_task_progress_bar.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1KenOF4C7BjVmg07zONWQgRygVWMDaXCOGLOSfC5vx7g"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_name": "course_data",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "example_sheets/example_plh_course_accordion.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
     }
   },
   {
@@ -864,6 +882,24 @@
       "name": "Debug Sheets",
       "path": "demo_sheets/article_data.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1tQkdC-W1gqBh4HAhN3PL4J4kM8Ktf05M16fZGqDUl_w"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_name": "lesson_data",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "example_sheets/example_plh_course_accordion.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
+    }
+  },
+  {
+    "flow_type": "data_list",
+    "flow_name": "lesson_data_simple",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_plh_course_accordion.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
     }
   },
   {
@@ -1595,6 +1631,36 @@
   {
     "flow_type": "template",
     "flow_subtype": "component_demo",
+    "flow_name": "comp_plh_course_accordion",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_plh_course_accordion.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "component_demo",
+    "flow_name": "comp_plh_course_sub_item",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_plh_course_accordion.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "component_demo",
+    "flow_name": "comp_plh_lesson_cta",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_plh_lesson_cta.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1BhQeOTQ8lPZACLJqxBAL_Pm3vzyp9qlN6FFuxbropfQ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "component_demo",
     "flow_name": "comp_plh_module_details_header",
     "_source": {
       "name": "Debug Sheets",
@@ -2187,11 +2253,30 @@
   {
     "flow_type": "template",
     "flow_subtype": "debug",
+    "flow_name": "debug_combo_box_margins",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_combo_box_margins.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/17kRSTtO5VuxOA1lehuVYNY33RTqGo2nEDBqCkg2z0Kw"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
     "flow_name": "debug_combo_box_not_in_dg",
     "_source": {
       "name": "Debug Sheets",
       "path": "debug_sheets/to_be_sorted/debug_combo_box_in_dg.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/18S8kmEvSmLnSBlppdJDigllI_TTYz7d-I8h10qqvOq0"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_combo_box_p",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_combo_box_placeholder.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1RNwHYFtA4KEPGmoyVBWMYI9GtSpH7tNtoth6Jn0Npnc"
     }
   },
   {
@@ -2711,6 +2796,16 @@
       "name": "Debug Sheets",
       "path": "debug_sheets/to_be_sorted/debug_field_null.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1ADX-ChbZf14aXOJJHmI23ZEXwWhSgocRia3fZWXQJcc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_force_reprocess",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_force_reprocess.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1GJtcPf4Xj7QAz63wdEvNGw5ecO45AU0Sv5vPi44ZrXU"
     }
   },
   {
@@ -4542,6 +4637,25 @@
       "name": "Debug Sheets",
       "path": "example_sheets/to_be_sorted/example_condition.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1ZhrwgryqYKtj-HQvl7rYNgR07EGZKBcAwsSABGVb_sk"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "component_demo",
+    "flow_name": "example_course_accordion",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "example_sheets/example_plh_course_accordion.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "example_courses_page",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "example_sheets/example_plh_course_accordion.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
     }
   },
   {

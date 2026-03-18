@@ -1,0 +1,82 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_lesson_cta",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Lesson CTA Component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "plh_lesson_cta",
+      "value": "Lesson name",
+      "parameter_list": {
+        "subtitle": "Course name",
+        "cta_text": "Continue",
+        "badge_text": "Lesson",
+        "background_image_asset": "images/lesson-cta-bg.svg"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "click | toast | message: Lesson CTA clicked",
+          "params": {
+            "message": "Lesson CTA clicked"
+          }
+        }
+      ],
+      "rows": [
+        {
+          "name": "course_id",
+          "value": "course_1",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "plh_lesson_cta_3.course_id"
+        },
+        {
+          "type": "task_progress_bar",
+          "parameter_list": {
+            "task_group_data": "lesson_data",
+            "filter": "@task_item.course_id == \"@local.course_id\"  &&  @task_item.filter_val"
+          },
+          "name": "task_progress_bar_2",
+          "_nested_name": "plh_lesson_cta_3.task_progress_bar_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "filter": [
+                {
+                  "fullExpression": "@task_item.course_id == \"@local.course_id\"  &&  @task_item.filter_val",
+                  "matchedExpression": "@local.course_id",
+                  "type": "local",
+                  "fieldName": "course_id"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.course_id": [
+              "parameter_list.filter"
+            ]
+          }
+        }
+      ],
+      "name": "plh_lesson_cta_3",
+      "_nested_name": "plh_lesson_cta_3"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_lesson_cta.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1BhQeOTQ8lPZACLJqxBAL_Pm3vzyp9qlN6FFuxbropfQ"
+  }
+}

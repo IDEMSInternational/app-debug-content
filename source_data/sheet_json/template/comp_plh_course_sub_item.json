@@ -1,0 +1,89 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_course_sub_item",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Course Accordion Sub Item Component"
+    },
+    {
+      "type": "text",
+      "value": "Used items within a course accordion"
+    },
+    {
+      "type": "title",
+      "value": "Interactive Demo"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "action_list": "click | pop_up: example_text;",
+      "parameter_list": "title:One on One time;\ncompleted:@local.completed_toggle;\nlocked:@local.locked_toggle;\nhighlighted:@local.highlighted_toggle;"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "completed_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Completed State: @local.completed_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "highlighted_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Highlighted State: @local.highlighted_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "locked_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Locked State: @local.locked_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "STATIC DEMOS"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "parameter_list": "title:A long example string that exceeds two lines of characters;\ncompleted:true;"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "parameter_list": "title:A slightly long example text string that exceeds two lines of characters and words;\nlocked:true;"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "parameter_list": "title:A slightly long example text string that exceeds two lines of characters and words;\nhighlighted:true;"
+    }
+  ]
+}

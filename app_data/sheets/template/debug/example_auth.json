@@ -819,13 +819,23 @@
       "_nested_name": "button_24"
     },
     {
-      "type": "title",
-      "value": "Danger zone",
+      "type": "button",
+      "value": "Force Reprocess",
       "_translations": {
         "value": {}
       },
-      "name": "title_25",
-      "_nested_name": "title_25"
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "button_25",
+      "_nested_name": "button_25"
     },
     {
       "type": "button",
@@ -847,6 +857,15 @@
       "_nested_name": "button_26"
     },
     {
+      "type": "title",
+      "value": "Danger zone",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_27",
+      "_nested_name": "title_27"
+    },
+    {
       "type": "button",
       "value": "Delete Account",
       "_translations": {
@@ -862,8 +881,8 @@
           "_raw": "click | pop_up: example_delete_account"
         }
       ],
-      "name": "button_27",
-      "_nested_name": "button_27"
+      "name": "button_28",
+      "_nested_name": "button_28"
     }
   ],
   "_source": {

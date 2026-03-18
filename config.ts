@@ -16,7 +16,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.10.0",
+  content_tag_latest: "1.10.2",
 };
 
 // set supabase config if decrypted values available
@@ -26,7 +26,20 @@ config.supabase = { ...supabaseConfig, enabled: supabaseConfig ? true : false };
 
 config.firebase = {
   config: loadEncryptedConfig('firebase.json'),
-  crashlytics: { enabled: true }
+  crashlytics: { enabled: true },
+
+  // Enable appCheck with site key generated from google cloud console (debug project)
+  appCheck: { recaptchaEnterpriseSiteKey: '6LdLYakrAAAAAGW1eU7MAPdsMUIwxYk4y3LqxiVO' },
+
+  // Configure firebase functions region
+  // NOTE - not strictly required (default is us-central1), but would need change if project deploys functions to different region
+  functions: {
+    region: 'us-central1'
+  }
+}
+
+config.remote_functions = {
+  provider: 'firebase'
 }
 
 config.remote_assets = {

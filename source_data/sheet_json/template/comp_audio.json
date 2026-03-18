@@ -23,7 +23,7 @@
     {
       "type": "audio",
       "name": "audio_1",
-      "value": "audio/test_audio.mp3",
+      "value": "audio/baby_elephant_walk.wav",
       "exclude_from_translation": true
     },
     {

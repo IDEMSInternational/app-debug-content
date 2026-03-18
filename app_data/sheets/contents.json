@@ -141,6 +141,15 @@
         "url": "https://docs.google.com/spreadsheets/d/1A_Y1ncmUbaDAEV8W134IJcESq8d-idS_cJNExDmf5r0"
       }
     },
+    "combo_options": {
+      "flow_type": "data_list",
+      "flow_name": "combo_options",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_combo_box_placeholder.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1RNwHYFtA4KEPGmoyVBWMYI9GtSpH7tNtoth6Jn0Npnc"
+      }
+    },
     "comp_map_layer_data": {
       "flow_type": "data_list",
       "flow_name": "comp_map_layer_data",
@@ -561,6 +570,23 @@
           "type": "boolean"
         },
         "highlighted": {
+          "type": "boolean"
+        },
+        "locked": {
+          "type": "boolean"
+        }
+      }
+    },
+    "course_data": {
+      "flow_type": "data_list",
+      "flow_name": "course_data",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_plh_course_accordion.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
+      },
+      "_metadata": {
+        "completed": {
           "type": "boolean"
         },
         "locked": {
@@ -1510,6 +1536,49 @@
         "name": "Debug Sheets",
         "path": "demo_sheets/article_data.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1tQkdC-W1gqBh4HAhN3PL4J4kM8Ktf05M16fZGqDUl_w"
+      }
+    },
+    "lesson_data": {
+      "flow_type": "data_list",
+      "flow_name": "lesson_data",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_plh_course_accordion.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
+      },
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        },
+        "highlighted": {
+          "type": "boolean"
+        },
+        "locked": {
+          "type": "boolean"
+        },
+        "filter_val": {
+          "type": "boolean"
+        }
+      }
+    },
+    "lesson_data_simple": {
+      "flow_type": "data_list",
+      "flow_name": "lesson_data_simple",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_course_accordion.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
+      },
+      "_metadata": {
+        "completed": {
+          "type": "boolean"
+        },
+        "highlighted": {
+          "type": "boolean"
+        },
+        "locked": {
+          "type": "boolean"
+        }
       }
     },
     "debug_launch_actions": {
@@ -2514,6 +2583,36 @@
         "url": "https://docs.google.com/spreadsheets/d/1Uw0QcLJfb2PzvKLSdxXdJojx-zvbUfw12dl-Sy6KrC8"
       }
     },
+    "comp_plh_course_accordion": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_course_accordion",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_course_accordion.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
+      }
+    },
+    "comp_plh_course_sub_item": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_course_sub_item",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_course_accordion.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
+      }
+    },
+    "comp_plh_lesson_cta": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_lesson_cta",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_lesson_cta.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1BhQeOTQ8lPZACLJqxBAL_Pm3vzyp9qlN6FFuxbropfQ"
+      }
+    },
     "comp_plh_module_details_header": {
       "flow_type": "template",
       "flow_name": "comp_plh_module_details_header",
@@ -2833,6 +2932,16 @@
         "name": "Debug Sheets",
         "path": "component_sheets/component_plh_module_list_item.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1Tq8Ib_ZcJsABW9U9XbQxgnmtv_uayXk28DXoa94j1aE"
+      }
+    },
+    "example_course_accordion": {
+      "flow_type": "template",
+      "flow_name": "example_course_accordion",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_plh_course_accordion.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
       }
     },
     "example_task_carousel": {
@@ -3218,6 +3327,16 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/to_be_sorted/debug_combo_box.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/13h4OJiMok3XG9DklnRzVmUue_9cXydVTclI4Ixb5nAo"
+      }
+    },
+    "debug_combo_box_margins": {
+      "flow_type": "template",
+      "flow_name": "debug_combo_box_margins",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_combo_box_margins.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/17kRSTtO5VuxOA1lehuVYNY33RTqGo2nEDBqCkg2z0Kw"
       }
     },
     "debug_combo_box_not_in_dg": {
@@ -3648,6 +3767,16 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/to_be_sorted/debug_field_null.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1ADX-ChbZf14aXOJJHmI23ZEXwWhSgocRia3fZWXQJcc"
+      }
+    },
+    "debug_force_reprocess": {
+      "flow_type": "template",
+      "flow_name": "debug_force_reprocess",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_force_reprocess.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1GJtcPf4Xj7QAz63wdEvNGw5ecO45AU0Sv5vPi44ZrXU"
       }
     },
     "debug_form_layout": {
@@ -6022,6 +6151,15 @@
         "debug_circ_override_1": true
       }
     },
+    "debug_combo_box_p": {
+      "flow_type": "template",
+      "flow_name": "debug_combo_box_p",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_combo_box_placeholder.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1RNwHYFtA4KEPGmoyVBWMYI9GtSpH7tNtoth6Jn0Npnc"
+      }
+    },
     "debug_concatenation": {
       "flow_type": "template",
       "flow_name": "debug_concatenation",
@@ -6407,6 +6545,15 @@
         "name": "Debug Sheets",
         "path": "example_sheets/example_row_value_transform.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1iKfq3-wan4-GYvg4-XL07YLDt5ZDGIfoCCEK78-HzrI"
+      }
+    },
+    "example_courses_page": {
+      "flow_type": "template",
+      "flow_name": "example_courses_page",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_plh_course_accordion.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
       }
     },
     "example_generator_output_w_1": {

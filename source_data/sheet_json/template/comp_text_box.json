@@ -112,6 +112,35 @@
       "name": "text_box_par_5_2",
       "parameter_list": "prioritise_placeholder: true",
       "comments": "Placeholder is prioritised"
+    },
+    {
+      "type": "title",
+      "value": "Update method"
+    },
+    {
+      "type": "text",
+      "value": "Updates \"on blur\" (when deselected) - default:"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_on_blur"
+    },
+    {
+      "type": "text",
+      "value": "Value: @local.text_box_on_blur"
+    },
+    {
+      "type": "text",
+      "value": "Updates \"on input\" (i.e. on keystroke):"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_on_input",
+      "parameter_list": "update_on_input: true;"
+    },
+    {
+      "type": "text",
+      "value": "Value: @local.text_box_on_input"
     }
   ]
 }

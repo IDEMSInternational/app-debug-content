@@ -1,0 +1,85 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_courses_page",
+  "status": "released",
+  "rows": [
+    {
+      "name": "course_data",
+      "value": "course_data"
+    },
+    {
+      "name": "lesson_data",
+      "value": "lesson_data"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.course_data"
+    },
+    {
+      "type": "begin_template",
+      "value": "comp_course_accordion"
+    },
+    {
+      "name": "course_id",
+      "value": "@item.id"
+    },
+    {
+      "name": "course_completed",
+      "value": "@item.completed"
+    },
+    {
+      "name": "course_title",
+      "value": "@item.title"
+    },
+    {
+      "name": "course_locked",
+      "value": "@item.locked"
+    },
+    {
+      "name": "course_image",
+      "value": "@item.image"
+    },
+    {
+      "name": "open",
+      "value": "@item._first"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "@local.lesson_data"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "✅",
+      "condition": "@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "❌",
+      "condition": "!@item.completed"
+    },
+    {
+      "type": "text",
+      "value": "@item.title"
+    },
+    {
+      "type": "toggle_bar",
+      "value": "@item.completed",
+      "action_list": "changed | set_item | completed: !@item.completed"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

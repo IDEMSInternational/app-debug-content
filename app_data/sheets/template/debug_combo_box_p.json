@@ -1,0 +1,119 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_p",
+  "status": "released",
+  "rows": [
+    {
+      "type": "combo_box",
+      "name": "combo_box_with_placeholder",
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "@item.name",
+            "this.value"
+          ],
+          "_raw": "changed | set_local : @item.name: this.value"
+        }
+      ],
+      "parameter_list": {
+        "placeholder": "Placeholder text",
+        "answer_list": "@data.combo_options"
+      },
+      "_nested_name": "combo_box_with_placeholder",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "0": [
+                {
+                  "fullExpression": "@item.name",
+                  "matchedExpression": "@item.name",
+                  "type": "item",
+                  "fieldName": "name"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "changed | set_local : @item.name: this.value",
+                "matchedExpression": "@item.name",
+                "type": "item",
+                "fieldName": "name"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.combo_options",
+              "matchedExpression": "@data.combo_options",
+              "type": "data",
+              "fieldName": "combo_options"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.name": [
+          "action_list.0.args.0",
+          "action_list.0._raw"
+        ],
+        "@data.combo_options": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Update combo box value",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "combo_box_with_placeholder",
+            "option_1"
+          ],
+          "_raw": "click | set_local: combo_box_with_placeholder: option_1"
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "text",
+      "value": "Combo box value: @local.combo_box_with_placeholder",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Combo box value: @local.combo_box_with_placeholder",
+            "matchedExpression": "@local.combo_box_with_placeholder",
+            "type": "local",
+            "fieldName": "combo_box_with_placeholder"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.combo_box_with_placeholder": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_combo_box_placeholder.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1RNwHYFtA4KEPGmoyVBWMYI9GtSpH7tNtoth6Jn0Npnc"
+  }
+}

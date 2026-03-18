@@ -1,0 +1,40 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_force_reprocess",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_local",
+      "name": "local_1",
+      "value": "Default"
+    },
+    {
+      "type": "set_field",
+      "name": "debug_force_reprocess_field",
+      "value": "Default"
+    },
+    {
+      "type": "text",
+      "value": "local value: @local.local_1"
+    },
+    {
+      "type": "text",
+      "value": "field value: @field.debug_force_reprocess_field"
+    },
+    {
+      "type": "text_box",
+      "name": "user_input"
+    },
+    {
+      "type": "button",
+      "value": "Update local",
+      "action_list": "click | set_local: local_1: @local.user_input;"
+    },
+    {
+      "type": "button",
+      "value": "Update field",
+      "action_list": "click | set_field: debug_force_reprocess_field: @local.user_input;"
+    }
+  ]
+}

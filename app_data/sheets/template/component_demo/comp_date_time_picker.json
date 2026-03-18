@@ -350,6 +350,199 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "Min/max",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "text",
+      "value": "Explicit values:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_27",
+      "_nested_name": "text_27"
+    },
+    {
+      "name": "datetime_1",
+      "value": "2026-03-04T12:12:00",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "datetime_1"
+    },
+    {
+      "name": "date_1",
+      "value": "2026-03-07",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "date_1"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_7",
+      "parameter_list": {
+        "type": "date-time",
+        "min": "@local.datetime_1",
+        "max": "@local.date_1"
+      },
+      "_nested_name": "date_time_picker_7",
+      "_dynamicFields": {
+        "parameter_list": {
+          "min": [
+            {
+              "fullExpression": "@local.datetime_1",
+              "matchedExpression": "@local.datetime_1",
+              "type": "local",
+              "fieldName": "datetime_1"
+            }
+          ],
+          "max": [
+            {
+              "fullExpression": "@local.date_1",
+              "matchedExpression": "@local.date_1",
+              "type": "local",
+              "fieldName": "date_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.datetime_1": [
+          "parameter_list.min"
+        ],
+        "@local.date_1": [
+          "parameter_list.max"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "value: @local.date_time_picker_7",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_31",
+      "_nested_name": "text_31",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.date_time_picker_7",
+            "matchedExpression": "@local.date_time_picker_7",
+            "type": "local",
+            "fieldName": "date_time_picker_7"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.date_time_picker_7": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Using now():",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_32",
+      "_nested_name": "text_32"
+    },
+    {
+      "name": "datetime_2",
+      "value": "@calc(now())",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "datetime_2",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(now())",
+            "matchedExpression": "@calc(now())",
+            "type": "calc",
+            "fieldName": "now()"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@calc(now())": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_8",
+      "parameter_list": {
+        "type": "date-time",
+        "min": "@local.datetime_1",
+        "max": "@local.datetime_2"
+      },
+      "_nested_name": "date_time_picker_8",
+      "_dynamicFields": {
+        "parameter_list": {
+          "min": [
+            {
+              "fullExpression": "@local.datetime_1",
+              "matchedExpression": "@local.datetime_1",
+              "type": "local",
+              "fieldName": "datetime_1"
+            }
+          ],
+          "max": [
+            {
+              "fullExpression": "@local.datetime_2",
+              "matchedExpression": "@local.datetime_2",
+              "type": "local",
+              "fieldName": "datetime_2"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.datetime_1": [
+          "parameter_list.min"
+        ],
+        "@local.datetime_2": [
+          "parameter_list.max"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "value: @local.date_time_picker_8",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_35",
+      "_nested_name": "text_35",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.date_time_picker_8",
+            "matchedExpression": "@local.date_time_picker_8",
+            "type": "local",
+            "fieldName": "date_time_picker_8"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.date_time_picker_8": [
+          "value"
+        ]
+      }
     }
   ],
   "_source": {

@@ -112,6 +112,49 @@
     {
       "type": "text",
       "value": "value: @local.var_6"
+    },
+    {
+      "type": "title",
+      "name": "title_6",
+      "value": "Min/max"
+    },
+    {
+      "type": "text",
+      "value": "Explicit values:"
+    },
+    {
+      "name": "datetime_1",
+      "value": "2026-03-04T12:12:00"
+    },
+    {
+      "name": "date_1",
+      "value": "2026-03-07"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_7",
+      "parameter_list": "type: date-time;\nmin: @local.datetime_1;\nmax: @local.date_1;"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.date_time_picker_7"
+    },
+    {
+      "type": "text",
+      "value": "Using now():"
+    },
+    {
+      "name": "datetime_2",
+      "value": "@calc(now())"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_8",
+      "parameter_list": "type: date-time;\nmin: @local.datetime_1;\nmax: @local.datetime_2;"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.date_time_picker_8"
     }
   ]
 }

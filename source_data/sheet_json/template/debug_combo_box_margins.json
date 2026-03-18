@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_combo_box_margins",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "combo_box",
+      "value": "Some text"
+    },
+    {
+      "type": "text_bubble",
+      "value": "Hello!"
+    }
+  ]
+}

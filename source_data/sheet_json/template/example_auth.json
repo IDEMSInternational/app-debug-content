@@ -159,14 +159,19 @@
       "comments": "Further examples can be seen at the `/user` page"
     },
     {
-      "type": "title",
-      "value": "Danger zone"
+      "type": "button",
+      "value": "Force Reprocess",
+      "action_list": "click | emit: force_reprocess;"
     },
     {
       "type": "button",
       "value": "Force Home Reload",
       "action_list": "click | emit: force_restart",
       "comments": "Can be useful for testing whether auth state persisted after force nav"
+    },
+    {
+      "type": "title",
+      "value": "Danger zone"
     },
     {
       "type": "button",
