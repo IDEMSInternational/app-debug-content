@@ -1,0 +1,41 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "course_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "course_1",
+      "title": "Course 1",
+      "image": "images/module-1.png",
+      "completed": false,
+      "locked": false
+    },
+    {
+      "id": "course_2",
+      "title": "Course 2",
+      "image": "images/module-1.png",
+      "completed": false,
+      "locked": true
+    },
+    {
+      "id": "course_3",
+      "title": "Course 3 – With a longer name wrapped over multiple lines",
+      "image": "images/module-1.png",
+      "completed": true,
+      "locked": false
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_plh_course_accordion.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
+  },
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    },
+    "locked": {
+      "type": "boolean"
+    }
+  }
+}

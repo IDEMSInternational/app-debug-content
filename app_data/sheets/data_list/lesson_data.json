@@ -1,0 +1,98 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "lesson_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "lesson_1",
+      "course_id": "course_1",
+      "title": "Lesson 1a",
+      "completed": true,
+      "highlighted": false,
+      "locked": false,
+      "filter_val": true
+    },
+    {
+      "id": "lesson_2",
+      "course_id": "course_1",
+      "title": "Lesson 1b",
+      "completed": false,
+      "highlighted": true,
+      "locked": false,
+      "filter_val": true
+    },
+    {
+      "id": "lesson_3",
+      "course_id": "course_1",
+      "title": "Lesson 1c – with a longer name wrapped over multiple lines",
+      "completed": false,
+      "highlighted": false,
+      "locked": false,
+      "filter_val": true
+    },
+    {
+      "id": "lesson_4",
+      "course_id": "course_1",
+      "title": "Lesson 1d",
+      "completed": false,
+      "highlighted": false,
+      "locked": true,
+      "filter_val": true
+    },
+    {
+      "id": "lesson_5",
+      "course_id": "course_1",
+      "title": "Lesson 1e",
+      "completed": false,
+      "highlighted": false,
+      "locked": false,
+      "filter_val": false
+    },
+    {
+      "id": "lesson_6",
+      "course_id": "course_2",
+      "title": "Lesson 2a",
+      "completed": false,
+      "highlighted": false,
+      "locked": false,
+      "filter_val": true
+    },
+    {
+      "id": "lesson_7",
+      "course_id": "course_2",
+      "title": "Lesson 2b",
+      "completed": false,
+      "highlighted": false,
+      "locked": false,
+      "filter_val": true
+    },
+    {
+      "id": "lesson_8",
+      "course_id": "course_3",
+      "title": "Lesson 3a",
+      "completed": true,
+      "highlighted": false,
+      "locked": false,
+      "filter_val": true
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_plh_course_accordion.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1U3cEU-mEjN4ZBixUfzEcIQ_9CiZ5r15TMmM2qJ9gwH0"
+  },
+  "_metadata": {
+    "completed": {
+      "type": "boolean"
+    },
+    "highlighted": {
+      "type": "boolean"
+    },
+    "locked": {
+      "type": "boolean"
+    },
+    "filter_val": {
+      "type": "boolean"
+    }
+  }
+}

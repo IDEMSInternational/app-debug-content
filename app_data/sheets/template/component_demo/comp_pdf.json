@@ -92,6 +92,36 @@
       "_nested_name": "open_external_text"
     },
     {
+      "type": "text",
+      "value": "Show/hide \"open external\" button:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "show_open_external_button",
+      "value": false,
+      "_nested_name": "show_open_external_button"
+    },
+    {
+      "type": "text",
+      "value": "Show/hide \"download\" button:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_12",
+      "_nested_name": "text_12"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "show_download_button",
+      "value": false,
+      "_nested_name": "show_download_button"
+    },
+    {
       "type": "pdf",
       "value": "example_pdf.pdf",
       "_translations": {
@@ -101,10 +131,11 @@
         "starting_page": "3",
         "compatibility_error_message": "@local.compatibility_error_message",
         "open_external_text": "@local.open_external_text",
-        "allow_fullscreen": "true"
+        "show_open_external_button": "@local.show_open_external_button",
+        "show_download_button": "@local.show_download_button"
       },
-      "name": "pdf_10",
-      "_nested_name": "pdf_10",
+      "name": "pdf_14",
+      "_nested_name": "pdf_14",
       "_dynamicFields": {
         "parameter_list": {
           "compatibility_error_message": [
@@ -122,6 +153,22 @@
               "type": "local",
               "fieldName": "open_external_text"
             }
+          ],
+          "show_open_external_button": [
+            {
+              "fullExpression": "@local.show_open_external_button",
+              "matchedExpression": "@local.show_open_external_button",
+              "type": "local",
+              "fieldName": "show_open_external_button"
+            }
+          ],
+          "show_download_button": [
+            {
+              "fullExpression": "@local.show_download_button",
+              "matchedExpression": "@local.show_download_button",
+              "type": "local",
+              "fieldName": "show_download_button"
+            }
           ]
         }
       },
@@ -131,6 +178,12 @@
         ],
         "@local.open_external_text": [
           "parameter_list.open_external_text"
+        ],
+        "@local.show_open_external_button": [
+          "parameter_list.show_open_external_button"
+        ],
+        "@local.show_download_button": [
+          "parameter_list.show_download_button"
         ]
       }
     }

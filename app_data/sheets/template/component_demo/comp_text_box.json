@@ -206,6 +206,94 @@
         "prioritise_placeholder": "true"
       },
       "_nested_name": "text_box_par_5_2"
+    },
+    {
+      "type": "title",
+      "value": "Update method",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_22",
+      "_nested_name": "title_22"
+    },
+    {
+      "type": "text",
+      "value": "Updates \"on blur\" (when deselected) - default:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_23",
+      "_nested_name": "text_23"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_on_blur",
+      "_nested_name": "text_box_on_blur"
+    },
+    {
+      "type": "text",
+      "value": "Value: @local.text_box_on_blur",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_25",
+      "_nested_name": "text_25",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value: @local.text_box_on_blur",
+            "matchedExpression": "@local.text_box_on_blur",
+            "type": "local",
+            "fieldName": "text_box_on_blur"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text_box_on_blur": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Updates \"on input\" (i.e. on keystroke):",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_26",
+      "_nested_name": "text_26"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_on_input",
+      "parameter_list": {
+        "update_on_input": "true"
+      },
+      "_nested_name": "text_box_on_input"
+    },
+    {
+      "type": "text",
+      "value": "Value: @local.text_box_on_input",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_28",
+      "_nested_name": "text_28",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value: @local.text_box_on_input",
+            "matchedExpression": "@local.text_box_on_input",
+            "type": "local",
+            "fieldName": "text_box_on_input"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text_box_on_input": [
+          "value"
+        ]
+      }
     }
   ],
   "_source": {

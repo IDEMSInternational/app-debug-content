@@ -97,6 +97,10 @@
       "value": "She said, -\\- \\\"A \\'simple\\' sentence\\...\\\" \\-\\-- unknown",
       "style_list": "font-size:14px;",
       "comments": "These substitutions can be overridden by using the backslash \"\\\" as an escape character.\nSee docs here: https://github.com/othree/smartypants.js?tab=readme-ov-file#backslash-escapes"
+    },
+    {
+      "type": "text",
+      "value": "Spreadsheet link: https://docs.google.com/spreadsheets/d/1iZHeAAZAQ8q-XNKrW_ww3yvPUVGwc407uhAF7vu1TtM/edit?gid=569531329#gid=569531329"
     }
   ]
 }

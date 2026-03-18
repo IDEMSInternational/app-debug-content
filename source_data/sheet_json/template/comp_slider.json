@@ -127,6 +127,11 @@
       "name": "slider_par_7_4",
       "parameter_list": "no_value_text:string",
       "comments": "Not working, not used. Same as the default."
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1oSJHE2gq_WqgQM6NAKWBfuxCXIjcJ1k4aIUl422QK60/edit?gid=569531329#gid=569531329"
     }
   ]
 }

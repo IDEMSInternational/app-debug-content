@@ -1,0 +1,42 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "lesson_data_simple",
+  "status": "released",
+  "rows": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1",
+      "completed": true,
+      "highlighted": false,
+      "locked": false
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2",
+      "completed": false,
+      "highlighted": true,
+      "locked": false
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3 – with a longer name wrapped over multiple lines",
+      "completed": false,
+      "highlighted": false,
+      "locked": false
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4",
+      "completed": false,
+      "highlighted": false,
+      "locked": true
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5",
+      "completed": false,
+      "highlighted": false,
+      "locked": false
+    }
+  ]
+}

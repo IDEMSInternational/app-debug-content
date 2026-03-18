@@ -1,0 +1,108 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_course_accordion",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Course Accordion Component"
+    },
+    {
+      "type": "text",
+      "value": "Used for a collection of modules/lessons"
+    },
+    {
+      "type": "title",
+      "value": "Interactive Demo"
+    },
+    {
+      "type": "begin_plh_course_accordion",
+      "parameter_list": "image_asset: images/Noura.png;\ntitle:Improving your relationship with your teenager;\ncompleted:@local.completed_toggle;\nlocked:@local.locked_toggle;\nopen:@local.open_toggle;\nsub_items_name: lessons;\nimage_alignment: @local.image_alignment;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "lesson_data_simple"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "value": "@item.title",
+      "action_list": "click | toast | message: @item.title clicked;",
+      "parameter_list": "highlighted: @item.highlighted;\nlocked: @item.locked;\ncompleted: @item.completed;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_plh_course_accordion"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "completed_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Completed Course: @local.completed_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "open_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Open Course: @local.open_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "style_list": "flex-direction: row-reverse;\njustify-content: space-between;"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "locked_toggle",
+      "value": false
+    },
+    {
+      "type": "text",
+      "value": "Locked Course: @local.locked_toggle"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "name": "image_alignment",
+      "value": "bottom"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "button",
+      "value": "Image align: bottom (default)",
+      "action_list": "click | set_local: image_alignment: bottom;"
+    },
+    {
+      "type": "button",
+      "value": "Image align: centre",
+      "action_list": "click | set_local: image_alignment: centre;"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

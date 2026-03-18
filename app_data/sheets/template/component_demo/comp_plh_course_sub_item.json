@@ -1,0 +1,259 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_course_sub_item",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Course Accordion Sub Item Component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Used items within a course accordion",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "title",
+      "value": "Interactive Demo",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | pop_up: example_text"
+        }
+      ],
+      "parameter_list": {
+        "title": "One on One time",
+        "completed": "@local.completed_toggle",
+        "locked": "@local.locked_toggle",
+        "highlighted": "@local.highlighted_toggle"
+      },
+      "name": "plh_course_sub_item_5",
+      "_nested_name": "plh_course_sub_item_5",
+      "_dynamicFields": {
+        "parameter_list": {
+          "completed": [
+            {
+              "fullExpression": "@local.completed_toggle",
+              "matchedExpression": "@local.completed_toggle",
+              "type": "local",
+              "fieldName": "completed_toggle"
+            }
+          ],
+          "locked": [
+            {
+              "fullExpression": "@local.locked_toggle",
+              "matchedExpression": "@local.locked_toggle",
+              "type": "local",
+              "fieldName": "locked_toggle"
+            }
+          ],
+          "highlighted": [
+            {
+              "fullExpression": "@local.highlighted_toggle",
+              "matchedExpression": "@local.highlighted_toggle",
+              "type": "local",
+              "fieldName": "highlighted_toggle"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.completed_toggle": [
+          "parameter_list.completed"
+        ],
+        "@local.locked_toggle": [
+          "parameter_list.locked"
+        ],
+        "@local.highlighted_toggle": [
+          "parameter_list.highlighted"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "style_list": [
+        "flex-direction: row-reverse",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "completed_toggle",
+          "value": false,
+          "_nested_name": "display_group_6.completed_toggle"
+        },
+        {
+          "type": "text",
+          "value": "Completed State: @local.completed_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_6.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Completed State: @local.completed_toggle",
+                "matchedExpression": "@local.completed_toggle",
+                "type": "local",
+                "fieldName": "completed_toggle"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.completed_toggle": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
+    },
+    {
+      "type": "display_group",
+      "style_list": [
+        "flex-direction: row-reverse",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "highlighted_toggle",
+          "value": false,
+          "_nested_name": "display_group_8.highlighted_toggle"
+        },
+        {
+          "type": "text",
+          "value": "Highlighted State: @local.highlighted_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_8.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Highlighted State: @local.highlighted_toggle",
+                "matchedExpression": "@local.highlighted_toggle",
+                "type": "local",
+                "fieldName": "highlighted_toggle"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.highlighted_toggle": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_8",
+      "_nested_name": "display_group_8"
+    },
+    {
+      "type": "display_group",
+      "style_list": [
+        "flex-direction: row-reverse",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "locked_toggle",
+          "value": false,
+          "_nested_name": "display_group_10.locked_toggle"
+        },
+        {
+          "type": "text",
+          "value": "Locked State: @local.locked_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_10.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Locked State: @local.locked_toggle",
+                "matchedExpression": "@local.locked_toggle",
+                "type": "local",
+                "fieldName": "locked_toggle"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.locked_toggle": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_10",
+      "_nested_name": "display_group_10"
+    },
+    {
+      "type": "title",
+      "value": "STATIC DEMOS",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_12",
+      "_nested_name": "title_12"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "parameter_list": {
+        "title": "A long example string that exceeds two lines of characters",
+        "completed": "true"
+      },
+      "name": "plh_course_sub_item_13",
+      "_nested_name": "plh_course_sub_item_13"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "parameter_list": {
+        "title": "A slightly long example text string that exceeds two lines of characters and words",
+        "locked": "true"
+      },
+      "name": "plh_course_sub_item_14",
+      "_nested_name": "plh_course_sub_item_14"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "parameter_list": {
+        "title": "A slightly long example text string that exceeds two lines of characters and words",
+        "highlighted": "true"
+      },
+      "name": "plh_course_sub_item_15",
+      "_nested_name": "plh_course_sub_item_15"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_course_accordion.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
+  }
+}

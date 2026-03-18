@@ -1,0 +1,66 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_course_accordion",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "course_completed",
+      "value": false
+    },
+    {
+      "name": "course_id",
+      "value": "course_1"
+    },
+    {
+      "name": "course_title",
+      "value": "Course 1"
+    },
+    {
+      "name": "course_locked",
+      "value": false
+    },
+    {
+      "name": "course_image",
+      "value": "images/module-1.png"
+    },
+    {
+      "name": "open",
+      "value": false
+    },
+    {
+      "name": "sub_items_name",
+      "value": "Lessons"
+    },
+    {
+      "name": "completed_text",
+      "value": "Done"
+    },
+    {
+      "name": "locked_text",
+      "value": "Locked"
+    },
+    {
+      "type": "begin_plh_course_accordion",
+      "value": "@local.course_title",
+      "parameter_list": "locked: @local.course_locked;\nimage_asset: @local.course_image;\nopen: @local.open;\ncompleted: @local.course_completed;\nsub_items_name: @local.sub_items_name;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "lesson_data",
+      "parameter_list": "filter: @item.course_id == @local.course_id  &&  @item.filter_val"
+    },
+    {
+      "type": "plh_course_sub_item",
+      "value": "@item.title",
+      "parameter_list": "highlighted: @item.highlighted;\nlocked: @item.locked;\ncompleted: @item.completed;\ncompleted_text: @local.completed_text;\nlocked_text: @local.locked_text;",
+      "action_list": "click | toast | message: @item.title clicked;"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "end_plh_course_accordion"
+    }
+  ]
+}

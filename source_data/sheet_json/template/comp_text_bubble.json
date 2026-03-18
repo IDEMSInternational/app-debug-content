@@ -76,6 +76,10 @@
       "type": "text_bubble",
       "value": "variant: secondary;\nNo image, no name, full length",
       "parameter_list": "variant: secondary;"
+    },
+    {
+      "type": "text",
+      "value": "Sheet: https://docs.google.com/spreadsheets/d/1Yo8X4TrTW2lzEgusDplAQ-y-JJvQOIqXGNLVON1uvRo/edit?gid=569531329#gid=569531329"
     }
   ]
 }

@@ -1,0 +1,412 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_course_accordion",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Course Accordion Component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Used for a collection of modules/lessons",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "title",
+      "value": "Interactive Demo",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "plh_course_accordion",
+      "parameter_list": {
+        "image_asset": "images/Noura.png",
+        "title": "Improving your relationship with your teenager",
+        "completed": "@local.completed_toggle",
+        "locked": "@local.locked_toggle",
+        "open": "@local.open_toggle",
+        "sub_items_name": "lessons",
+        "image_alignment": "@local.image_alignment"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "lesson_data_simple",
+          "rows": [
+            {
+              "type": "plh_course_sub_item",
+              "value": "@item.title",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "toast",
+                  "args": [],
+                  "_raw": "click | toast | message: @item.title clicked",
+                  "params": {
+                    "message": "@item.title clicked"
+                  }
+                }
+              ],
+              "parameter_list": {
+                "highlighted": "@item.highlighted",
+                "locked": "@item.locked",
+                "completed": "@item.completed"
+              },
+              "name": "plh_course_sub_item_1_@item.id",
+              "_nested_name": "plh_course_accordion_5.data_items_1.plh_course_sub_item_1_@item.id",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.title",
+                    "matchedExpression": "@item.title",
+                    "type": "item",
+                    "fieldName": "title"
+                  }
+                ],
+                "action_list": {
+                  "0": {
+                    "_raw": [
+                      {
+                        "fullExpression": "click | toast | message: @item.title clicked",
+                        "matchedExpression": "@item.title",
+                        "type": "item",
+                        "fieldName": "title"
+                      }
+                    ],
+                    "params": {
+                      "message": [
+                        {
+                          "fullExpression": "@item.title clicked",
+                          "matchedExpression": "@item.title",
+                          "type": "item",
+                          "fieldName": "title"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "parameter_list": {
+                  "highlighted": [
+                    {
+                      "fullExpression": "@item.highlighted",
+                      "matchedExpression": "@item.highlighted",
+                      "type": "item",
+                      "fieldName": "highlighted"
+                    }
+                  ],
+                  "locked": [
+                    {
+                      "fullExpression": "@item.locked",
+                      "matchedExpression": "@item.locked",
+                      "type": "item",
+                      "fieldName": "locked"
+                    }
+                  ],
+                  "completed": [
+                    {
+                      "fullExpression": "@item.completed",
+                      "matchedExpression": "@item.completed",
+                      "type": "item",
+                      "fieldName": "completed"
+                    }
+                  ]
+                },
+                "name": [
+                  {
+                    "fullExpression": "plh_course_sub_item_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "plh_course_accordion_5.data_items_1.plh_course_sub_item_1_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.title": [
+                  "value",
+                  "action_list.0._raw",
+                  "action_list.0.params.message"
+                ],
+                "@item.highlighted": [
+                  "parameter_list.highlighted"
+                ],
+                "@item.locked": [
+                  "parameter_list.locked"
+                ],
+                "@item.completed": [
+                  "parameter_list.completed"
+                ],
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "name": "data_items_1",
+          "_nested_name": "plh_course_accordion_5.data_items_1"
+        }
+      ],
+      "name": "plh_course_accordion_5",
+      "_nested_name": "plh_course_accordion_5",
+      "_dynamicFields": {
+        "parameter_list": {
+          "completed": [
+            {
+              "fullExpression": "@local.completed_toggle",
+              "matchedExpression": "@local.completed_toggle",
+              "type": "local",
+              "fieldName": "completed_toggle"
+            }
+          ],
+          "locked": [
+            {
+              "fullExpression": "@local.locked_toggle",
+              "matchedExpression": "@local.locked_toggle",
+              "type": "local",
+              "fieldName": "locked_toggle"
+            }
+          ],
+          "open": [
+            {
+              "fullExpression": "@local.open_toggle",
+              "matchedExpression": "@local.open_toggle",
+              "type": "local",
+              "fieldName": "open_toggle"
+            }
+          ],
+          "image_alignment": [
+            {
+              "fullExpression": "@local.image_alignment",
+              "matchedExpression": "@local.image_alignment",
+              "type": "local",
+              "fieldName": "image_alignment"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.completed_toggle": [
+          "parameter_list.completed"
+        ],
+        "@local.locked_toggle": [
+          "parameter_list.locked"
+        ],
+        "@local.open_toggle": [
+          "parameter_list.open"
+        ],
+        "@local.image_alignment": [
+          "parameter_list.image_alignment"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "style_list": [
+        "flex-direction: row-reverse",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "completed_toggle",
+          "value": false,
+          "_nested_name": "display_group_7.completed_toggle"
+        },
+        {
+          "type": "text",
+          "value": "Completed Course: @local.completed_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_7.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Completed Course: @local.completed_toggle",
+                "matchedExpression": "@local.completed_toggle",
+                "type": "local",
+                "fieldName": "completed_toggle"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.completed_toggle": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_7",
+      "_nested_name": "display_group_7"
+    },
+    {
+      "type": "display_group",
+      "style_list": [
+        "flex-direction: row-reverse",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "open_toggle",
+          "value": false,
+          "_nested_name": "display_group_9.open_toggle"
+        },
+        {
+          "type": "text",
+          "value": "Open Course: @local.open_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_9.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Open Course: @local.open_toggle",
+                "matchedExpression": "@local.open_toggle",
+                "type": "local",
+                "fieldName": "open_toggle"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.open_toggle": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_9",
+      "_nested_name": "display_group_9"
+    },
+    {
+      "type": "display_group",
+      "style_list": [
+        "flex-direction: row-reverse",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "locked_toggle",
+          "value": false,
+          "_nested_name": "display_group_11.locked_toggle"
+        },
+        {
+          "type": "text",
+          "value": "Locked Course: @local.locked_toggle",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_11.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "Locked Course: @local.locked_toggle",
+                "matchedExpression": "@local.locked_toggle",
+                "type": "local",
+                "fieldName": "locked_toggle"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.locked_toggle": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_11",
+      "_nested_name": "display_group_11"
+    },
+    {
+      "name": "image_alignment",
+      "value": "bottom",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "image_alignment"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "button",
+          "value": "Image align: bottom (default)",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "image_alignment",
+                "bottom"
+              ],
+              "_raw": "click | set_local: image_alignment: bottom"
+            }
+          ],
+          "name": "button_1",
+          "_nested_name": "display_group_14.button_1"
+        },
+        {
+          "type": "button",
+          "value": "Image align: centre",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "image_alignment",
+                "centre"
+              ],
+              "_raw": "click | set_local: image_alignment: centre"
+            }
+          ],
+          "name": "button_2",
+          "_nested_name": "display_group_14.button_2"
+        }
+      ],
+      "name": "display_group_14",
+      "_nested_name": "display_group_14"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_course_accordion.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1I61lTFaH8IkbjHSnc7mpE-wskLuLO2-c9aY1Ain3dyc"
+  }
+}
