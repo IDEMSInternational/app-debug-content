@@ -56,6 +56,11 @@
     },
     {
       "type": "button",
+      "value": "Remote Functions",
+      "action_list": "click | go_to:/remote-functions"
+    },
+    {
+      "type": "button",
       "value": "Reset app",
       "action_list": "click | reset_app"
     }

@@ -1,0 +1,26 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_box_value",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Debug text box value updates"
+    },
+    {
+      "type": "text_box",
+      "name": "user_input"
+    },
+    {
+      "type": "text",
+      "value": "Text box value: @local.user_input"
+    },
+    {
+      "type": "button",
+      "value": "Disabled until valid",
+      "parameter_list": "disabled: !@local.user_input;",
+      "action_list": "click | toast | message: Button clicked;"
+    }
+  ]
+}

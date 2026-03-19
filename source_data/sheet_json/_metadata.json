@@ -4021,6 +4021,16 @@
   {
     "flow_type": "template",
     "flow_subtype": "debug",
+    "flow_name": "debug_text_box_value",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_text_box_value.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/14q7yu_WhVjew6xGzlqP589Dc9RAswrdv33ZTLTw9Tlc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
     "flow_name": "debug_text_line_break",
     "_source": {
       "name": "Debug Sheets",

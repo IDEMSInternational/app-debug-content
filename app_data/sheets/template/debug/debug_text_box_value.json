@@ -1,0 +1,91 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_box_value",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Debug text box value updates",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text_box",
+      "name": "user_input",
+      "_nested_name": "user_input"
+    },
+    {
+      "type": "text",
+      "value": "Text box value: @local.user_input",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Text box value: @local.user_input",
+            "matchedExpression": "@local.user_input",
+            "type": "local",
+            "fieldName": "user_input"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.user_input": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Disabled until valid",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "disabled": "!@local.user_input"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "click | toast | message: Button clicked",
+          "params": {
+            "message": "Button clicked"
+          }
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5",
+      "_dynamicFields": {
+        "parameter_list": {
+          "disabled": [
+            {
+              "fullExpression": "!@local.user_input",
+              "matchedExpression": "!@local.user_input",
+              "type": "local",
+              "fieldName": "user_input"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "!@local.user_input": [
+          "parameter_list.disabled"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_text_box_value.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/14q7yu_WhVjew6xGzlqP589Dc9RAswrdv33ZTLTw9Tlc"
+  }
+}

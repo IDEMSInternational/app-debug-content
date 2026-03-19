@@ -4809,6 +4809,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1eHmPLXWWpjzLUeuTs-LsqAPixLA3HEpTBaM4a6fDaGM"
       }
     },
+    "debug_text_box_value": {
+      "flow_type": "template",
+      "flow_name": "debug_text_box_value",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_text_box_value.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/14q7yu_WhVjew6xGzlqP589Dc9RAswrdv33ZTLTw9Tlc"
+      }
+    },
     "debug_text_line_break": {
       "flow_type": "template",
       "flow_name": "debug_text_line_break",

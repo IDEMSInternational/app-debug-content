@@ -229,6 +229,25 @@
     },
     {
       "type": "button",
+      "value": "Remote Functions",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "/remote-functions"
+          ],
+          "_raw": "click | go_to:/remote-functions"
+        }
+      ],
+      "name": "button_12",
+      "_nested_name": "button_12"
+    },
+    {
+      "type": "button",
       "value": "Reset app",
       "_translations": {
         "value": {}
@@ -241,8 +260,8 @@
           "_raw": "click | reset_app"
         }
       ],
-      "name": "button_12",
-      "_nested_name": "button_12"
+      "name": "button_13",
+      "_nested_name": "button_13"
     }
   ],
   "_source": {
