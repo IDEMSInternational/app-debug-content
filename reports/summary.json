@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 445
+        "count": 447
       },
       {
         "type": "calendar",
@@ -299,7 +299,7 @@
       },
       {
         "type": "text",
-        "count": 1356
+        "count": 1357
       },
       {
         "type": "text_area",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text_box",
-        "count": 70
+        "count": 71
       },
       {
         "type": "text_bubble",
@@ -323,7 +323,7 @@
       },
       {
         "type": "title",
-        "count": 669
+        "count": 670
       },
       {
         "type": "toggle_bar",
@@ -431,7 +431,7 @@
       },
       {
         "type": "go_to",
-        "count": 84
+        "count": 85
       },
       {
         "type": "go_to_url",
@@ -527,7 +527,7 @@
       },
       {
         "type": "toast",
-        "count": 6
+        "count": 7
       },
       {
         "type": "toggle_field",
@@ -1206,7 +1206,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 300
+        "total": 301
       },
       {
         "type": "template",

@@ -13,7 +13,7 @@
 | apple_sign_in_button | 10 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 445 |
+| button | 447 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -77,13 +77,13 @@
 | task_card | 32 |
 | task_progress_bar | 9 |
 | template | 156 |
-| text | 1356 |
+| text | 1357 |
 | text_area | 13 |
-| text_box | 70 |
+| text_box | 71 |
 | text_bubble | 12 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 669 |
+| title | 670 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
@@ -116,7 +116,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 84 |
+| go_to | 85 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |
@@ -140,7 +140,7 @@
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
-| toast | 6 |
+| toast | 7 |
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
@@ -317,7 +317,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 115 |
 | template | component_demo | 75 |
-| template | debug | 300 |
+| template | debug | 301 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
