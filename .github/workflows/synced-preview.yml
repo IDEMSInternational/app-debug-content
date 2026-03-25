@@ -1,0 +1,16 @@
+name: TestHub Ephemeral Sync & Preview
+
+on:
+  workflow_dispatch:
+    inputs:
+      user_email:
+        description: 'The email of the TestHub user requesting the build'
+        required: true
+        type: string
+
+jobs:
+  testhub_preview:
+    uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-synced-preview.yml@offload-testhub-build
+    with:
+      user_email: ${{ github.event.inputs.user_email }}
+    secrets: inherit
