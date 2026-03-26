@@ -4,13 +4,20 @@ on:
   workflow_dispatch:
     inputs:
       user_email:
-        description: 'The email of the TestHub user requesting the build'
         required: true
+        type: string
+      webhook_url:
+        required: false
+        type: string
+      webhook_token:
+        required: false
         type: string
 
 jobs:
-  testhub_preview:
+  synced_preview:
     uses: IDEMSInternational/open-app-builder/.github/workflows/reusable-synced-preview.yml@offload-testhub-build
     with:
       user_email: ${{ github.event.inputs.user_email }}
+      webhook_url: ${{ github.event.inputs.webhook_url }}
+      webhook_token: ${{ github.event.inputs.webhook_token }}
     secrets: inherit
