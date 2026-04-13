@@ -266,6 +266,11 @@
       "name": "triggered_actions",
       "value": "Setting action list from inline variable (set_variable only uses value column, which is not parsed as action_list type)",
       "action_list": "notification_received | set_field : show_notification_bell : true;\nnotification_interacted | set_field : show_notification_bell: false;\nnotification_interacted | go_to : /user;"
+    },
+    {
+      "type": "text",
+      "name": "debug_sheet",
+      "value": "Sheet: https://docs.google.com/spreadsheets/d/1m_q57wKk7rWCzW5J2DQu8IH4DNYM_rILbDifrN-d_iQ/edit?gid=1107968849#gid=1107968849"
     }
   ]
 }

@@ -122,6 +122,15 @@
         }
       }
     },
+    "certificate_data": {
+      "flow_type": "data_list",
+      "flow_name": "certificate_data",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_plh_certificate.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1AdD0d8XqbtGSaZaS-SSONDZrcI7rWks3ScUfmZPY7jc"
+      }
+    },
     "characters": {
       "flow_type": "data_list",
       "flow_name": "characters",
@@ -4339,6 +4348,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1_pf1KBX1JXFU2RAFtGCp4npNwyb9sCMcjgGBDY4w4Ro"
       }
     },
+    "debug_parent_group_join": {
+      "flow_type": "template",
+      "flow_name": "debug_parent_group_join",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_shared_parent_group.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1fSMNZSWxBRoH6WQCrT-xdd5kOJjpM-wW5RQM59uSGgQ"
+      }
+    },
     "debug_parent_group_parents": {
       "flow_type": "template",
       "flow_name": "debug_parent_group_parents",
@@ -4487,6 +4506,16 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/to_be_sorted/debug_component_variables.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1jXlpblYFQPBX1h54OVhM_KEXXaApxyZSuVr22jPhmes"
+      }
+    },
+    "debug_radio_list": {
+      "flow_type": "template",
+      "flow_name": "debug_radio_list",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_radio_list.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1Hd0TujNCN2Zobay6HEg2Z7vSAbXajwduAXpY7doFf3Y"
       }
     },
     "debug_relax_checkbox": {
@@ -6595,6 +6624,15 @@
         "name": "Debug Sheets",
         "path": "example_sheets/to_be_sorted/example_overrides.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1MpoH3BxhECZRmYM10HZ0pTOoe69FJ-fEW9FwzK-Q6yw"
+      }
+    },
+    "example_plh_certificate": {
+      "flow_type": "template",
+      "flow_name": "example_plh_certificate",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_plh_certificate.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1AdD0d8XqbtGSaZaS-SSONDZrcI7rWks3ScUfmZPY7jc"
       }
     },
     "example_sheet_defaults": {

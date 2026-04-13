@@ -1,0 +1,11 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "certificate_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id1",
+      "comments": "At least one row is required for data list instantiation in general"
+    }
+  ]
+}

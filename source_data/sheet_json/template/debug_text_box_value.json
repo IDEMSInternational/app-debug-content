@@ -9,6 +9,10 @@
       "value": "Debug text box value updates"
     },
     {
+      "type": "text",
+      "value": "Test reaction of setting input text_box and button that depends on value. \n\nThe button should become active when a user types and disabled when the input is cleared.\nThere is a slight delay (default 500ms), but even if a user tries to tap button before that time passes the system will auto-correct to either update value or disable as required\n\nMore details in https://github.com/IDEMSInternational/open-app-builder/pull/3391"
+    },
+    {
       "type": "text_box",
       "name": "user_input"
     },

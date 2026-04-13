@@ -16,7 +16,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.10.4",
+  content_tag_latest: "1.10.5",
 };
 
 // set supabase config if decrypted values available
@@ -104,6 +104,7 @@ config.app_config.APP_SKINS.available = [SKINS.defaultSkin, SKINS.debug]
 
 config.app_config.APP_THEMES.available = [
   "default",
+  "ae_app",
   "early_family_math",
   "pfr",
   "plh_facilitator_cw",

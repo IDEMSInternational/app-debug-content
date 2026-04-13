@@ -10,7 +10,7 @@
     },
     {
       "name": "answer_list_2",
-      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2;  \nname: name_3 | text: This is text 3;\nname: name_4 | text: This is text 4;  \nname: name_5 | text: This is text 5;  \nname: name_6 | text: This is text 6;\nname: name_7 | text: This is text 7;  \nname: name_8 | text: This is text 8;  \nname: name_9 | text: This is text 9;\nname: name_10 | text: This is text 10;  \nname: name_11 | text: This is text 11;  \nname: name_12 | text: This is text 12;\nname: name_13 | text: This is text 13;\nname: name_14 | text: This is text 14;\nname: name_15 | text: This is text 15;"
+      "value": "name: name_1 | text: This is text 1;  \nname: name_2 | text: This is text 2 | badge: primary;  \nname: name_3 | text: This is text 3 | badge: secondary | badge_color: secondary;\nname: name_4 | text: This is text 4;  \nname: name_5 | text: This is text 5;  \nname: name_6 | text: This is text 6;\nname: name_7 | text: This is text 7;  \nname: name_8 | text: This is text 8;  \nname: name_9 | text: This is text 9;\nname: name_10 | text: This is text 10;  \nname: name_11 | text: This is text 11;  \nname: name_12 | text: This is text 12;\nname: name_13 | text: This is text 13;\nname: name_14 | text: This is text 14;\nname: name_15 | text: This is text 15;"
     },
     {
       "type": "title",
@@ -121,13 +121,17 @@
     },
     {
       "type": "combo_box",
+      "parameter_list": "answer_list: @local.answer_list_2;\ndisabled: !@local.toggle_enabled_1;                                                                                                                                                                        "
+    },
+    {
+      "type": "combo_box",
       "name": "combo_box_dropdown_4",
       "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\ndisabled: !@local.toggle_enabled_1;                                                                                                                                                                        "
     },
     {
       "type": "combo_box",
       "name": "combo_box_dropdown_5",
-      "parameter_list": "answer_list: @local.answer_list_2;\nvariant: dropdown;\ndisabled_text: Custom disabled text;\ndisabled: !@local.toggle_enabled_1;"
+      "parameter_list": "answer_list: @local.answer_list_1;\nvariant: dropdown;\ndisabled_text: Custom disabled text;\ndisabled: !@local.toggle_enabled_1;"
     },
     {
       "type": "text",
@@ -295,8 +299,7 @@
     },
     {
       "type": "combo_box",
-      "name": "combo_box_default_key_value",
-      "parameter_list": "placeholder: Default key/value names;\nanswer_list: @data.comp_combo_box_items;"
+      "name": "combo_box_default_key_value"
     },
     {
       "type": "text",
@@ -323,6 +326,33 @@
     {
       "type": "text",
       "value": "value: @local.combo_box_data_pipe"
+    },
+    {
+      "type": "title",
+      "value": "Badges on options"
+    },
+    {
+      "type": "text",
+      "value": "Modal variant:"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @data.comp_combo_box_items;\noptions_meta_badge_text: badge;\noptions_meta_badge_color: badge_color;"
+    },
+    {
+      "type": "text",
+      "value": "Dropdown variant:"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "variant: dropdown;\nanswer_list: @data.comp_combo_box_items;\noptions_meta_badge_text: badge;\noptions_meta_badge_color: badge_color;"
+    },
+    {
+      "value": "With search:"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "variant: dropdown;\nanswer_list: @local.answer_list_2;\noptions_meta_badge_text: badge;\noptions_meta_badge_color: badge_color;"
     },
     {
       "type": "text",

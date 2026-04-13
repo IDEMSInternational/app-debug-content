@@ -18,6 +18,11 @@
       "type": "plh_module_details_header",
       "value": "Module Title: This is a really long module title that has more than 30 characters",
       "parameter_list": "background_image_asset: images/bg_illustration.png;\nmodule_image_asset:images/Noura.png;"
+    },
+    {
+      "type": "plh_module_details_header",
+      "value": "No Module Image Asset",
+      "parameter_list": "background_image_asset: images/bg_illustration.png;"
     }
   ]
 }

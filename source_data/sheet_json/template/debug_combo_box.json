@@ -36,6 +36,42 @@
     },
     {
       "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Populating from field"
+    },
+    {
+      "type": "button",
+      "value": "Set field",
+      "action_list": "click | set_field: debug_combo_box_field: name_2;"
+    },
+    {
+      "type": "button",
+      "value": "Reload page",
+      "action_list": "click | emit: force_reload;"
+    },
+    {
+      "type": "combo_box",
+      "value": "@field.debug_combo_box_field",
+      "parameter_list": "answer_list: @data.comp_combo_box_items;"
+    },
+    {
+      "type": "combo_box",
+      "value": "@field.debug_combo_box_field",
+      "parameter_list": "answer_list: @data.comp_combo_box_items;\nvariant: dropdown;"
+    },
+    {
+      "type": "title",
+      "value": "Long option name"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @data.debug_combo_box_data;\noptions_key: id;\noptions_value: value;\nplaceholder: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "variant: dropdown;\nanswer_list: @data.debug_combo_box_data;\noptions_key: id;\noptions_value: value;\nplaceholder: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm;"
     }
   ]
 }

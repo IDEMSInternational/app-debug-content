@@ -1,0 +1,453 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_plh_certificate",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "URL:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "text_box",
+      "name": "url",
+      "value": "https://certificator-malaysia-1-349333393514.europe-west1.run.app/certificates",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "url"
+    },
+    {
+      "type": "text",
+      "value": "Name:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "text_box",
+      "name": "name",
+      "_nested_name": "name"
+    },
+    {
+      "type": "text",
+      "value": "Certificate template:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "text_box",
+      "name": "certificate_template",
+      "value": "grid",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "certificate_template"
+    },
+    {
+      "type": "text",
+      "value": "Certificate data list:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "text_box",
+      "name": "certificate_data_list",
+      "value": "certificate_data",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "certificate_data_list"
+    },
+    {
+      "type": "text",
+      "value": "Local var name in which to store result:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "text_box",
+      "name": "result_local_variable_name",
+      "value": "result",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "result_local_variable_name"
+    },
+    {
+      "name": "result",
+      "type": "set_variable",
+      "_nested_name": "result"
+    },
+    {
+      "type": "button",
+      "value": "Generate Certificate",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "plh_certificate",
+          "args": [
+            "generate"
+          ],
+          "_raw": "click | plh_certificate: generate |\nurl: @local.url,\nname: @local.name,\nid: my_course_1,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: result",
+          "params": {
+            "url": "@local.url",
+            "name": "@local.name",
+            "id": "my_course_1",
+            "certificate_template": "@local.certificate_template",
+            "certificate_data_list": "@local.certificate_data_list",
+            "result_local_variable_name": "result"
+          }
+        }
+      ],
+      "name": "button_13",
+      "_nested_name": "button_13",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | plh_certificate: generate |\nurl: @local.url,\nname: @local.name,\nid: my_course_1,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: result",
+                "matchedExpression": "@local.url",
+                "type": "local",
+                "fieldName": "url"
+              },
+              {
+                "fullExpression": "click | plh_certificate: generate |\nurl: @local.url,\nname: @local.name,\nid: my_course_1,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: result",
+                "matchedExpression": "@local.name",
+                "type": "local",
+                "fieldName": "name"
+              },
+              {
+                "fullExpression": "click | plh_certificate: generate |\nurl: @local.url,\nname: @local.name,\nid: my_course_1,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: result",
+                "matchedExpression": "@local.certificate_template",
+                "type": "local",
+                "fieldName": "certificate_template"
+              },
+              {
+                "fullExpression": "click | plh_certificate: generate |\nurl: @local.url,\nname: @local.name,\nid: my_course_1,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: result",
+                "matchedExpression": "@local.certificate_data_list",
+                "type": "local",
+                "fieldName": "certificate_data_list"
+              }
+            ],
+            "params": {
+              "url": [
+                {
+                  "fullExpression": "@local.url",
+                  "matchedExpression": "@local.url",
+                  "type": "local",
+                  "fieldName": "url"
+                }
+              ],
+              "name": [
+                {
+                  "fullExpression": "@local.name",
+                  "matchedExpression": "@local.name",
+                  "type": "local",
+                  "fieldName": "name"
+                }
+              ],
+              "certificate_template": [
+                {
+                  "fullExpression": "@local.certificate_template",
+                  "matchedExpression": "@local.certificate_template",
+                  "type": "local",
+                  "fieldName": "certificate_template"
+                }
+              ],
+              "certificate_data_list": [
+                {
+                  "fullExpression": "@local.certificate_data_list",
+                  "matchedExpression": "@local.certificate_data_list",
+                  "type": "local",
+                  "fieldName": "certificate_data_list"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.url": [
+          "action_list.0._raw",
+          "action_list.0.params.url"
+        ],
+        "@local.name": [
+          "action_list.0._raw",
+          "action_list.0.params.name"
+        ],
+        "@local.certificate_template": [
+          "action_list.0._raw",
+          "action_list.0.params.certificate_template"
+        ],
+        "@local.certificate_data_list": [
+          "action_list.0._raw",
+          "action_list.0.params.certificate_data_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Success",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.result?.success",
+      "style_list": [
+        "color: var(--ion-color-green)"
+      ],
+      "name": "text_14",
+      "_nested_name": "text_14",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.result?.success",
+            "matchedExpression": "@local.result",
+            "type": "local",
+            "fieldName": "result"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.result": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Failure",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.result?.error",
+      "style_list": [
+        "color: var(--ion-color-red)"
+      ],
+      "name": "text_15",
+      "_nested_name": "text_15",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.result?.error",
+            "matchedExpression": "@local.result",
+            "type": "local",
+            "fieldName": "result"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.result": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.result))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.result))",
+            "matchedExpression": "@local.result",
+            "type": "local",
+            "fieldName": "result"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.result))",
+            "matchedExpression": "@calc(JSON.stringify(@local.result))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.result)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.result": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.result))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "value": "certificate_data",
+      "rows": [
+        {
+          "type": "display_group",
+          "condition": "!!@item.url",
+          "rows": [
+            {
+              "type": "image",
+              "value": "@item.url",
+              "_translations": {
+                "value": {}
+              },
+              "name": "image_1",
+              "_nested_name": "data_items_17.display_group_1_@item.id.image_1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "@item.url",
+                    "matchedExpression": "@item.url",
+                    "type": "item",
+                    "fieldName": "url"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_17.display_group_1_@item.id.image_1",
+                    "matchedExpression": "@item.id.image_1",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.url": [
+                  "value"
+                ],
+                "@item.id.image_1": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "button",
+              "value": "Download",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "save_to_device",
+                  "args": [
+                    "@item.url"
+                  ],
+                  "_raw": "click | save_to_device: @item.url | open: true, subfolder: certificates",
+                  "params": {
+                    "open": true,
+                    "subfolder": "certificates"
+                  }
+                }
+              ],
+              "name": "button_2",
+              "_nested_name": "data_items_17.display_group_1_@item.id.button_2",
+              "_dynamicFields": {
+                "action_list": {
+                  "0": {
+                    "args": {
+                      "0": [
+                        {
+                          "fullExpression": "@item.url",
+                          "matchedExpression": "@item.url",
+                          "type": "item",
+                          "fieldName": "url"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "click | save_to_device: @item.url | open: true, subfolder: certificates",
+                        "matchedExpression": "@item.url",
+                        "type": "item",
+                        "fieldName": "url"
+                      }
+                    ]
+                  }
+                },
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_17.display_group_1_@item.id.button_2",
+                    "matchedExpression": "@item.id.button_2",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.url": [
+                  "action_list.0.args.0",
+                  "action_list.0._raw"
+                ],
+                "@item.id.button_2": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "name": "display_group_1_@item.id",
+          "_nested_name": "data_items_17.display_group_1_@item.id",
+          "_dynamicFields": {
+            "condition": [
+              {
+                "fullExpression": "!!@item.url",
+                "matchedExpression": "!@item.url",
+                "type": "item",
+                "fieldName": "url"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "display_group_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_17.display_group_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@item.url": [
+              "condition"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_17",
+      "_nested_name": "data_items_17"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_plh_certificate.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1AdD0d8XqbtGSaZaS-SSONDZrcI7rWks3ScUfmZPY7jc"
+  }
+}
