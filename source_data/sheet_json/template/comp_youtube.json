@@ -7,13 +7,13 @@
     {
       "type": "youtube",
       "name": "youtube_1",
-      "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
+      "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
       "comments": "The linked video is episode 001 of the IDEMS Podcast"
     },
     {
       "type": "youtube",
       "name": "youtube_2",
-      "value": "https://www.youtube.com/watch?v=0oOAGrStVGI",
+      "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
       "parameter_list": "allow_fullscreen: false;"
     },
     {

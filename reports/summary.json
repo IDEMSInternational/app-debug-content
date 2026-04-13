@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 447
+        "count": 455
       },
       {
         "type": "calendar",
@@ -59,7 +59,7 @@
       },
       {
         "type": "combo_box",
-        "count": 75
+        "count": 83
       },
       {
         "type": "dashed_box",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 110
+        "count": 113
       },
       {
         "type": "data_query",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 276
+        "count": 277
       },
       {
         "type": "drawer",
@@ -103,7 +103,7 @@
       },
       {
         "type": "google_sign_in_button",
-        "count": 11
+        "count": 12
       },
       {
         "type": "html",
@@ -111,7 +111,7 @@
       },
       {
         "type": "image",
-        "count": 85
+        "count": 86
       },
       {
         "type": "items",
@@ -191,7 +191,7 @@
       },
       {
         "type": "plh_module_details_header",
-        "count": 3
+        "count": 4
       },
       {
         "type": "plh_module_list_item",
@@ -227,7 +227,7 @@
       },
       {
         "type": "radio_list",
-        "count": 4
+        "count": 5
       },
       {
         "type": "round_button",
@@ -255,7 +255,7 @@
       },
       {
         "type": "set_variable",
-        "count": 939
+        "count": 945
       },
       {
         "type": "simple_checkbox",
@@ -299,7 +299,7 @@
       },
       {
         "type": "text",
-        "count": 1357
+        "count": 1387
       },
       {
         "type": "text_area",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text_box",
-        "count": 71
+        "count": 81
       },
       {
         "type": "text_bubble",
@@ -323,7 +323,7 @@
       },
       {
         "type": "title",
-        "count": 670
+        "count": 675
       },
       {
         "type": "toggle_bar",
@@ -363,7 +363,7 @@
       },
       {
         "type": "auth",
-        "count": 5
+        "count": 6
       },
       {
         "type": "auth_failure",
@@ -391,11 +391,11 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 31
+        "count": 32
       },
       {
         "type": "emit: force_reprocess",
-        "count": 55
+        "count": 57
       },
       {
         "type": "emit: force_restart",
@@ -458,8 +458,12 @@
         "count": 3
       },
       {
+        "type": "plh_certificate",
+        "count": 1
+      },
+      {
         "type": "plh_parent_group",
-        "count": 8
+        "count": 10
       },
       {
         "type": "pop_up",
@@ -483,7 +487,7 @@
       },
       {
         "type": "save_to_device",
-        "count": 3
+        "count": 4
       },
       {
         "type": "screen_orientation",
@@ -499,7 +503,7 @@
       },
       {
         "type": "set_field",
-        "count": 120
+        "count": 121
       },
       {
         "type": "set_item",
@@ -511,7 +515,7 @@
       },
       {
         "type": "set_local",
-        "count": 74
+        "count": 77
       },
       {
         "type": "share",
@@ -776,7 +780,7 @@
       },
       {
         "path": "images/bg_illustration.png",
-        "count": 3,
+        "count": 4,
         "size_kb": 255.4
       },
       {
@@ -1017,7 +1021,7 @@
       {
         "path": "images/lesson-cta-bg.svg",
         "count": 1,
-        "size_kb": 3.9
+        "size_kb": 4
       },
       {
         "path": "images/modal_bg.svg",
@@ -1091,7 +1095,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 49
+        "total": 50
       },
       {
         "type": "data_list",
@@ -1196,7 +1200,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 115
+        "total": 116
       },
       {
         "type": "template",
@@ -1206,7 +1210,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 301
+        "total": 303
       },
       {
         "type": "template",

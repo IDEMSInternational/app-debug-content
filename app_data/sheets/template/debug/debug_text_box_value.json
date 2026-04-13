@@ -14,6 +14,15 @@
       "_nested_name": "title_2"
     },
     {
+      "type": "text",
+      "value": "Test reaction of setting input text_box and button that depends on value. \n\nThe button should become active when a user types and disabled when the input is cleared.\nThere is a slight delay (default 500ms), but even if a user tries to tap button before that time passes the system will auto-correct to either update value or disable as required\n\nMore details in https://github.com/IDEMSInternational/open-app-builder/pull/3391",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
       "type": "text_box",
       "name": "user_input",
       "_nested_name": "user_input"
@@ -24,8 +33,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_4",
-      "_nested_name": "text_4",
+      "name": "text_5",
+      "_nested_name": "text_5",
       "_dynamicFields": {
         "value": [
           {
@@ -62,8 +71,8 @@
           }
         }
       ],
-      "name": "button_5",
-      "_nested_name": "button_5",
+      "name": "button_6",
+      "_nested_name": "button_6",
       "_dynamicFields": {
         "parameter_list": {
           "disabled": [

@@ -13,24 +13,24 @@
 | apple_sign_in_button | 10 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 447 |
+| button | 455 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 75 |
+| combo_box | 83 |
 | dashed_box | 19 |
-| data_items | 110 |
+| data_items | 113 |
 | data_query | 8 |
 | date_time_picker | 10 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 276 |
+| display_group | 277 |
 | drawer | 1 |
 | form | 9 |
-| google_sign_in_button | 11 |
+| google_sign_in_button | 12 |
 | html | 4 |
-| image | 85 |
+| image | 86 |
 | items | 51 |
 | latex | 1 |
 | lottie_animation | 6 |
@@ -50,7 +50,7 @@
 | plh_course_accordion | 2 |
 | plh_course_sub_item | 6 |
 | plh_lesson_cta | 1 |
-| plh_module_details_header | 3 |
+| plh_module_details_header | 4 |
 | plh_module_list_item | 21 |
 | plh_progress_path | 4 |
 | progress_bar | 1 |
@@ -59,14 +59,14 @@
 | radio_button_grid | 17 |
 | radio_group | 61 |
 | radio_group_grid | 5 |
-| radio_list | 4 |
+| radio_list | 5 |
 | round_button | 27 |
 | select_text | 7 |
 | set_default | 1 |
 | set_field | 30 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 939 |
+| set_variable | 945 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -77,13 +77,13 @@
 | task_card | 32 |
 | task_progress_bar | 9 |
 | template | 156 |
-| text | 1357 |
+| text | 1387 |
 | text_area | 13 |
-| text_box | 71 |
+| text_box | 81 |
 | text_bubble | 12 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 670 |
+| title | 675 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
@@ -99,15 +99,15 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 5 |
+| auth | 6 |
 | auth_failure | 1 |
 | auth_success | 1 |
 | copy | 5 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
-| emit: force_reload | 31 |
-| emit: force_reprocess | 55 |
+| emit: force_reload | 32 |
+| emit: force_reprocess | 57 |
 | emit: force_restart | 4 |
 | emit: server_sync | 8 |
 | emit: set_language | 6 |
@@ -123,20 +123,21 @@
 | nav_stack | 11 |
 | notification | 8 |
 | open_external | 3 |
-| plh_parent_group | 8 |
+| plh_certificate | 1 |
+| plh_parent_group | 10 |
 | pop_up | 62 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
 | reset_data | 8 |
-| save_to_device | 3 |
+| save_to_device | 4 |
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 19 |
-| set_field | 120 |
+| set_field | 121 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 74 |
+| set_local | 77 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -225,7 +226,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/Noura.png | 4.2 | 7 |
 | images/activity_bg.svg | 13.8 | 7 |
 | images/avatar_1.png | 67.7 | 19 |
-| images/bg_illustration.png | 255.4 | 3 |
+| images/bg_illustration.png | 255.4 | 4 |
 | images/bottom_image.svg | 6.8 | 6 |
 | images/diamond.png | 4.3 | 1 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
@@ -273,7 +274,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 23 |
 | images/icons/verified.svg | 0.5 | 2 |
-| images/lesson-cta-bg.svg | 3.9 | 1 |
+| images/lesson-cta-bg.svg | 4 | 1 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 12 |
 | images/sa_kids_app_pattern_blue.svg | 157 | 3 |
@@ -294,7 +295,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 49 |
+| data_list |  | 50 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 14 |
@@ -315,9 +316,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 115 |
+| template |  | 116 |
 | template | component_demo | 75 |
-| template | debug | 301 |
+| template | debug | 303 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

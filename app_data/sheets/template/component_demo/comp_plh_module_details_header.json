@@ -43,6 +43,18 @@
       },
       "name": "plh_module_details_header_4",
       "_nested_name": "plh_module_details_header_4"
+    },
+    {
+      "type": "plh_module_details_header",
+      "value": "No Module Image Asset",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "background_image_asset": "images/bg_illustration.png"
+      },
+      "name": "plh_module_details_header_5",
+      "_nested_name": "plh_module_details_header_5"
     }
   ],
   "_source": {

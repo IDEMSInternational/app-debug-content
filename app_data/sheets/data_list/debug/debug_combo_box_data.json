@@ -7,6 +7,10 @@
     {
       "id": "id_1",
       "value": "Default"
+    },
+    {
+      "id": "id_2",
+      "value": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm"
     }
   ],
   "_source": {

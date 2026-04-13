@@ -14,13 +14,17 @@
       "id": "id_2",
       "name": "name_2",
       "text": "Item 2",
-      "text_new": "New text item 2"
+      "text_new": "New text item 2",
+      "badge": "default",
+      "badge_color": "primary"
     },
     {
       "id": "id_3",
       "name": "name_3",
       "text": "Item 3",
-      "text_new": "New text item 3"
+      "text_new": "New text item 3",
+      "badge": "secondary",
+      "badge_color": "secondary"
     }
   ],
   "_source": {

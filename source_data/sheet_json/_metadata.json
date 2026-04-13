@@ -10,6 +10,15 @@
   },
   {
     "flow_type": "data_list",
+    "flow_name": "certificate_data",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "example_sheets/example_plh_certificate.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1AdD0d8XqbtGSaZaS-SSONDZrcI7rWks3ScUfmZPY7jc"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_name": "characters",
     "_source": {
       "name": "Debug Sheets",
@@ -3488,6 +3497,16 @@
   {
     "flow_type": "template",
     "flow_subtype": "debug",
+    "flow_name": "debug_parent_group_join",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_shared_parent_group.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1fSMNZSWxBRoH6WQCrT-xdd5kOJjpM-wW5RQM59uSGgQ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
     "flow_name": "debug_parent_group_parents",
     "_source": {
       "name": "Debug Sheets",
@@ -3651,6 +3670,16 @@
       "name": "Debug Sheets",
       "path": "debug_sheets/to_be_sorted/debug_component_variables.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1jXlpblYFQPBX1h54OVhM_KEXXaApxyZSuVr22jPhmes"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_radio_list",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_radio_list.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1Hd0TujNCN2Zobay6HEg2Z7vSAbXajwduAXpY7doFf3Y"
     }
   },
   {
@@ -5056,6 +5085,15 @@
       "name": "Debug Sheets",
       "path": "example_sheets/to_be_sorted/example_parent_point_box.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1OzJtUnbn8b4km7x7eYmCajOugn9syQhdzWEUzuILIkc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "example_plh_certificate",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "example_sheets/example_plh_certificate.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1AdD0d8XqbtGSaZaS-SSONDZrcI7rWks3ScUfmZPY7jc"
     }
   },
   {

@@ -1,0 +1,15 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "certificate_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id1"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_plh_certificate.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1AdD0d8XqbtGSaZaS-SSONDZrcI7rWks3ScUfmZPY7jc"
+  }
+}

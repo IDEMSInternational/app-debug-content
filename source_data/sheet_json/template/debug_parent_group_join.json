@@ -1,0 +1,146 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_parent_group_join",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Parent group join remote"
+    },
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in with Google",
+      "action_list": "click | emit: force_reprocess;",
+      "condition": "!@fields._auth_user_id"
+    },
+    {
+      "type": "button",
+      "value": "Sign out",
+      "action_list": "click | auth: sign_out;\nclick | emit: force_reprocess;",
+      "condition": "!!@fields._auth_user_id"
+    },
+    {
+      "type": "text",
+      "value": "Access code:"
+    },
+    {
+      "type": "text_box",
+      "name": "access_code"
+    },
+    {
+      "type": "text",
+      "value": "Auth ID:"
+    },
+    {
+      "type": "text_box",
+      "name": "auth_user_id",
+      "value": "@fields._auth_user_id",
+      "comments": "Editable for debugging purposes"
+    },
+    {
+      "type": "text",
+      "value": "App user ID:"
+    },
+    {
+      "type": "text_box",
+      "name": "app_user_id",
+      "value": "@fields._app_user_id",
+      "comments": "Editable for debugging purposes"
+    },
+    {
+      "type": "text",
+      "value": "First Name:"
+    },
+    {
+      "type": "text_box",
+      "name": "first_name"
+    },
+    {
+      "type": "text",
+      "value": "Last Name:"
+    },
+    {
+      "type": "text_box",
+      "name": "last_name"
+    },
+    {
+      "name": "result"
+    },
+    {
+      "type": "button",
+      "value": "Join parent group",
+      "action_list": "click | set_local: result: \"\";\nclick | plh_parent_group: join_remote |\naccess_code: @local.access_code,\napp_user_id: @local.app_user_id,\nauth_user_id: @local.auth_user_id,\nresult_local_variable_name: result,\nfirst_name: @local.first_name,\nlast_name: @local.last_name;",
+      "comments": "access_code, app_user_id, auth_user_id and\nresult_local_variable_name are predefined parameters. Any other key-value pairs will be passed through to shared data unchanged, e.g. \"first_name\", \"gender\" etc."
+    },
+    {
+      "type": "text",
+      "value": "Group not found, please check your access code",
+      "condition": "@local.result?.error && @local.result?.message == \"User group not found\"",
+      "style_list": "color: red;"
+    },
+    {
+      "type": "text",
+      "value": "An unknown error occured, please try again later",
+      "condition": "@local.result?.error && @local.result?.message !== \"User group not found\"",
+      "style_list": "color: red;"
+    },
+    {
+      "type": "text",
+      "value": "Success",
+      "condition": "@local.result?.success",
+      "style_list": "color: green;"
+    },
+    {
+      "type": "text",
+      "value": "Full result:"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.result))"
+    },
+    {
+      "type": "text",
+      "value": "Result success:\n@local.result.success"
+    },
+    {
+      "type": "text",
+      "value": "Result error:\n@local.result.error"
+    },
+    {
+      "type": "text",
+      "value": "Result message:\n@local.result.message"
+    },
+    {
+      "type": "title",
+      "value": "Pull shared group data (must be authenticated)"
+    },
+    {
+      "type": "button",
+      "value": "Pull all shared group data",
+      "action_list": "click | plh_parent_group: pull | parent_groups_data_list: debug_parent_group_data, parents_data_list: debug_parent_data, completion_tracking_data_list: debug_pg_completion_data;"
+    },
+    {
+      "type": "text",
+      "value": "Parent data:"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_parent_data"
+    },
+    {
+      "type": "text",
+      "value": "Name: @item.first_name @item.last_name",
+      "condition": "!!@item.first_name"
+    },
+    {
+      "type": "text",
+      "value": "Name: @item.rp_first_name @item.rp_last_name",
+      "condition": "!!@item.rp_first_name",
+      "comments": "Fields populated to shared data from remote sources get `rp_prefix` (a hangover from when rapidpro was the only remote source)"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

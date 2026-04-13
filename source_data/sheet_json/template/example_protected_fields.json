@@ -8,7 +8,8 @@
     {
       "type": "title",
       "value": "Example Protected Fields",
-      "exclude_from_translation": true
+      "exclude_from_translation": true,
+      "comments": "Also known as \"System Variables\" within the code and in the reactive templates paradigm"
     },
     {
       "type": "text",

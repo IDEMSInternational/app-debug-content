@@ -1440,6 +1440,15 @@
         }
       ],
       "_nested_name": "triggered_actions"
+    },
+    {
+      "type": "text",
+      "name": "debug_sheet",
+      "value": "Sheet: https://docs.google.com/spreadsheets/d/1m_q57wKk7rWCzW5J2DQu8IH4DNYM_rILbDifrN-d_iQ/edit?gid=1107968849#gid=1107968849",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "debug_sheet"
     }
   ],
   "_source": {

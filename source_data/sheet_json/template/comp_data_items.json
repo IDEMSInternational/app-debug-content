@@ -419,6 +419,14 @@
       "type": "title",
       "name": "example_2_b",
       "value": "Example 8: change list source using variables"
+    },
+    {
+      "name": "count"
+    },
+    {
+      "type": "data_items",
+      "action_list": "data_changed | set_local: count: @items.length",
+      "parameter_list": "filter: @item.is_checked"
     }
   ]
 }

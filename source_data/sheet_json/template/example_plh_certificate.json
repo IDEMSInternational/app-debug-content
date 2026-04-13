@@ -1,0 +1,98 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_plh_certificate",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "URL:"
+    },
+    {
+      "type": "text_box",
+      "name": "url",
+      "value": "https://certificator-malaysia-1-349333393514.europe-west1.run.app/certificates"
+    },
+    {
+      "type": "text",
+      "value": "Name:"
+    },
+    {
+      "type": "text_box",
+      "name": "name"
+    },
+    {
+      "type": "text",
+      "value": "Certificate template:"
+    },
+    {
+      "type": "text_box",
+      "name": "certificate_template",
+      "value": "grid"
+    },
+    {
+      "type": "text",
+      "value": "Certificate data list:"
+    },
+    {
+      "type": "text_box",
+      "name": "certificate_data_list",
+      "value": "certificate_data"
+    },
+    {
+      "type": "text",
+      "value": "Local var name in which to store result:"
+    },
+    {
+      "type": "text_box",
+      "name": "result_local_variable_name",
+      "value": "result"
+    },
+    {
+      "name": "result"
+    },
+    {
+      "type": "button",
+      "value": "Generate Certificate",
+      "action_list": "click | plh_certificate: generate |\nurl: @local.url,\nname: @local.name,\nid: my_course_1,\ncertificate_template: @local.certificate_template,\ncertificate_data_list: @local.certificate_data_list,\nresult_local_variable_name: result;"
+    },
+    {
+      "type": "text",
+      "value": "Success",
+      "condition": "@local.result?.success",
+      "style_list": "color: var(--ion-color-green);"
+    },
+    {
+      "type": "text",
+      "value": "Failure",
+      "condition": "@local.result?.error",
+      "style_list": "color: var(--ion-color-red);"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.result))"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "certificate_data"
+    },
+    {
+      "type": "begin_display_group",
+      "condition": "!!@item.url"
+    },
+    {
+      "type": "image",
+      "value": "@item.url"
+    },
+    {
+      "type": "button",
+      "value": "Download",
+      "action_list": "click | save_to_device: @item.url | open: true, subfolder: certificates;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}
