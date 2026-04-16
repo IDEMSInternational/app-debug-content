@@ -5,6 +5,15 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "text",
+      "value": "Default Params",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
       "type": "youtube",
       "name": "youtube_1",
       "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
@@ -12,6 +21,15 @@
         "value": {}
       },
       "_nested_name": "youtube_1"
+    },
+    {
+      "type": "text",
+      "value": "`allow_fullscreen: false`",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
     },
     {
       "type": "youtube",
@@ -24,6 +42,33 @@
         "allow_fullscreen": "false"
       },
       "_nested_name": "youtube_2"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Configuration",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_6",
+      "_nested_name": "title_6"
+    },
+    {
+      "type": "text",
+      "value": "Use custom youtube embed params for more advanced configuration\n\nE.g. Custom start and end with no controls to play just short clip\n```\n/watch?v=YE7VzlLtp-4&start=60&end=65&controls=0\n```",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "youtube",
+      "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4&start=60&end=65&controls=0",
+      "_translations": {
+        "value": {}
+      },
+      "name": "youtube_8",
+      "_nested_name": "youtube_8"
     },
     {
       "type": "youtube",

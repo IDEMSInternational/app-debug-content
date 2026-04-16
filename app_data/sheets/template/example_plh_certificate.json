@@ -400,6 +400,70 @@
                   "_nested_name"
                 ]
               }
+            },
+            {
+              "type": "button",
+              "value": "Download",
+              "_translations": {
+                "value": {}
+              },
+              "action_list": [
+                {
+                  "trigger": "click",
+                  "action_id": "save_to_device",
+                  "args": [
+                    "@item.url"
+                  ],
+                  "_raw": "click | save_to_device: @item.url | open: true, subfolder: certificates",
+                  "params": {
+                    "open": true,
+                    "subfolder": "certificates"
+                  }
+                }
+              ],
+              "name": "button_3",
+              "_nested_name": "data_items_17.display_group_1_@item.id.button_3",
+              "_dynamicFields": {
+                "action_list": {
+                  "0": {
+                    "args": {
+                      "0": [
+                        {
+                          "fullExpression": "@item.url",
+                          "matchedExpression": "@item.url",
+                          "type": "item",
+                          "fieldName": "url"
+                        }
+                      ]
+                    },
+                    "_raw": [
+                      {
+                        "fullExpression": "click | save_to_device: @item.url | open: true, subfolder: certificates",
+                        "matchedExpression": "@item.url",
+                        "type": "item",
+                        "fieldName": "url"
+                      }
+                    ]
+                  }
+                },
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_17.display_group_1_@item.id.button_3",
+                    "matchedExpression": "@item.id.button_3",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.url": [
+                  "action_list.0.args.0",
+                  "action_list.0._raw"
+                ],
+                "@item.id.button_3": [
+                  "_nested_name"
+                ]
+              }
             }
           ],
           "name": "display_group_1_@item.id",
