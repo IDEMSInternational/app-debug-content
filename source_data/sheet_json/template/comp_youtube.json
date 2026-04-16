@@ -5,16 +5,37 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "text",
+      "value": "Default Params"
+    },
+    {
       "type": "youtube",
       "name": "youtube_1",
-      "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
-      "comments": "The linked video is episode 001 of the IDEMS Podcast"
+      "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4"
+    },
+    {
+      "type": "text",
+      "value": "`allow_fullscreen: false`"
     },
     {
       "type": "youtube",
       "name": "youtube_2",
       "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4",
       "parameter_list": "allow_fullscreen: false;"
+    },
+    {
+      "type": "title",
+      "value": "Advanced Configuration"
+    },
+    {
+      "type": "text",
+      "value": "Use custom youtube embed params for more advanced configuration\n\nE.g. Custom start and end with no controls to play just short clip\n```\n/watch?v=YE7VzlLtp-4&start=60&end=65&controls=0\n```",
+      "comments": "Not all params will be applied, color, fs, hl, rel and playsinline are configured within the component\n\nThis example isn't super useful as the limited clip only plays on first play, when replay is pressed it starts from beginning\n\nFurther work could be done in the future to improve functionality by directly integrating with youtube js API"
+    },
+    {
+      "type": "youtube",
+      "value": "https://www.youtube.com/watch?v=YE7VzlLtp-4&start=60&end=65&controls=0",
+      "comments": "See full list of available parameters at:\nhttps://developers.google.com/youtube/player_parameters#Parameters"
     },
     {
       "type": "youtube",

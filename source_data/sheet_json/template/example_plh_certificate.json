@@ -89,6 +89,11 @@
       "action_list": "click | save_to_device: @item.url | open: true, subfolder: certificates;"
     },
     {
+      "type": "button",
+      "value": "Download",
+      "action_list": "click | save_to_device: @item.url | open: true, subfolder: certificates;"
+    },
+    {
       "type": "end_display_group"
     },
     {

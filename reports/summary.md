@@ -13,7 +13,7 @@
 | apple_sign_in_button | 10 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 455 |
+| button | 456 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -77,18 +77,18 @@
 | task_card | 32 |
 | task_progress_bar | 9 |
 | template | 156 |
-| text | 1387 |
+| text | 1390 |
 | text_area | 13 |
 | text_box | 81 |
 | text_bubble | 12 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 675 |
+| title | 676 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
 | workshops_accordion | 2 |
-| youtube | 3 |
+| youtube | 4 |
 </details>
 
 <details >
@@ -130,7 +130,7 @@
 | remove_item | 1 |
 | reset_app | 2 |
 | reset_data | 8 |
-| save_to_device | 4 |
+| save_to_device | 5 |
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 19 |
