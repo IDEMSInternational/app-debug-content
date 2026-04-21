@@ -73,6 +73,7 @@ config.analytics = {
 config.ios = {
   app_id: "international.idems.debug-app",
   app_name: "Debug App",
+  app_display_name: "Debug App+",
   zoom_enabled: true,
   logo_asset_path: "./app_data/assets/android/icon-foreground.png",
   // logo_background_color: ""
