@@ -1,0 +1,19 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_filter_items",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "label": "Item 1"
+    },
+    {
+      "id": "id_2",
+      "label": "Item 2"
+    },
+    {
+      "id": "id_3",
+      "label": "Item 3"
+    }
+  ]
+}

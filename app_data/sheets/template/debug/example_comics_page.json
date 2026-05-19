@@ -1,0 +1,140 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_comics_page",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "24px 0"
+      }
+    }
+  },
+  "rows": [
+    {
+      "name": "task_group",
+      "value": "example_task_progress_bar_data",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "task_group"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "variant": "inline_padding",
+        "style": "column"
+      },
+      "rows": [
+        {
+          "type": "task_progress_bar",
+          "parameter_list": {
+            "task_group_data": "@local.task_group",
+            "completed_field": "@local.task_group_completed"
+          },
+          "name": "task_progress_bar_1",
+          "_nested_name": "display_group_3.task_progress_bar_1",
+          "_dynamicFields": {
+            "parameter_list": {
+              "task_group_data": [
+                {
+                  "fullExpression": "@local.task_group",
+                  "matchedExpression": "@local.task_group",
+                  "type": "local",
+                  "fieldName": "task_group"
+                }
+              ],
+              "completed_field": [
+                {
+                  "fullExpression": "@local.task_group_completed",
+                  "matchedExpression": "@local.task_group_completed",
+                  "type": "local",
+                  "fieldName": "task_group_completed"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.task_group": [
+              "parameter_list.task_group_data"
+            ],
+            "@local.task_group_completed": [
+              "parameter_list.completed_field"
+            ]
+          }
+        },
+        {
+          "type": "text_bubble",
+          "value": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "speaker_image_asset": "images/Noura.png",
+            "variant": "primary",
+            "speaker_name": "Teja"
+          },
+          "name": "text_bubble_2",
+          "_nested_name": "display_group_3.text_bubble_2"
+        }
+      ],
+      "name": "display_group_3",
+      "_nested_name": "display_group_3"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "variant": "inline_padding",
+        "style": "row"
+      },
+      "style_list": [
+        "width:100%",
+        "min-height:50px",
+        "border-top:1px solid #eee",
+        "background-color:#fdfdfd",
+        "padding:5px 0 0 0"
+      ],
+      "rows": [
+        {
+          "type": "round_button",
+          "parameter_list": {
+            "icon_src": "images/icons/audio/play-back-sharp.svg",
+            "variant": "no-background"
+          },
+          "name": "round_button_1",
+          "_nested_name": "display_group_5.round_button_1"
+        },
+        {
+          "type": "button",
+          "value": "Continue",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:70vw"
+          ],
+          "name": "button_2",
+          "_nested_name": "display_group_5.button_2"
+        }
+      ],
+      "name": "display_group_5",
+      "_nested_name": "display_group_5"
+    },
+    {
+      "type": "text",
+      "value": "Sheet: https://docs.google.com/spreadsheets/d/15QTSunSyQI-25ktl-5EAsr-nZOvkKI_LjLbjnZNJCDE/edit?usp=sharing",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_comics_page.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15QTSunSyQI-25ktl-5EAsr-nZOvkKI_LjLbjnZNJCDE"
+  }
+}

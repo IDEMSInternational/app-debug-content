@@ -1,0 +1,53 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_display_group_wrap",
+  "status": "released",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "wrap: true;",
+      "style_list": "justify-content: space-between;"
+    },
+    {
+      "type": "round_button"
+    },
+    {
+      "type": "button",
+      "value": "button 2"
+    },
+    {
+      "type": "text",
+      "value": "Some text"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "title",
+      "value": "Example from production:"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom;\nwrap: true;",
+      "style_list": "padding: 12px 16px;\njustify-content: center;"
+    },
+    {
+      "type": "round_button",
+      "parameter_list": "icon_src: arrow-back;\nvariant: no-background;"
+    },
+    {
+      "type": "button",
+      "value": "Continue",
+      "parameter_list": "style: navigation;\ndisabled: !@local.completed_enabled",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "button",
+      "value": "Skip text",
+      "parameter_list": "variant: card;\nstyle: no-background;"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

@@ -111,6 +111,15 @@
         }
       ],
       "_nested_name": "button_default"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1WGR_pxk-7iBHKX2BDdzdmjiaVjiwe-qKIou47uZFqHo/edit?usp=sharing",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
     }
   ],
   "_source": {

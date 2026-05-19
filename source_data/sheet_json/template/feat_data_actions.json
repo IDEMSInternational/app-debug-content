@@ -171,8 +171,40 @@
       "value": "Filtered Actions"
     },
     {
+      "type": "begin_template",
+      "value": "feat_data_actions_summary"
+    },
+    {
+      "type": "end_template"
+    },
+    {
       "type": "text",
-      "value": "(WiP)"
+      "value": "Each of these examples demonstrates a different operator, targetting some subset of the items and setting the number to 5."
+    },
+    {
+      "type": "button",
+      "value": "Filter",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_filter: @item.id.startsWith('id_2'),\nnumber: 5"
+    },
+    {
+      "type": "button",
+      "value": "Limit",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_limit: 2,\nnumber: 5"
+    },
+    {
+      "type": "button",
+      "value": "Reverse",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\n_reverse: true,\nnumber: 5"
+    },
+    {
+      "type": "button",
+      "value": "Sort",
+      "action_list": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\n_sort: number,\nnumber: 5"
+    },
+    {
+      "type": "button",
+      "value": "Reset to original state",
+      "action_list": "click | reset_data | \n\n_list_id: feat_data_actions_list"
     }
   ]
 }

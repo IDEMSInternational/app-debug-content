@@ -36,6 +36,12 @@
       "action_list": "click | emit: force_reprocess;"
     },
     {
+      "type": "google_sign_in_button",
+      "value": "Include import latest user data",
+      "parameter_list": "import_latest_user_data: true;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
       "type": "title",
       "value": "Variant: native_google"
     },
