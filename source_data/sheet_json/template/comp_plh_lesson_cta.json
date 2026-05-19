@@ -24,6 +24,22 @@
     },
     {
       "type": "end_plh_lesson_cta"
+    },
+    {
+      "type": "begin_plh_lesson_cta",
+      "value": "Navigating communication and screen time for children at school and at home",
+      "parameter_list": "subtitle: Communication;\ncta_text: Continue;\nbadge_text: Track;\nbackground_image_asset: images/lesson-cta-bg.svg;"
+    },
+    {
+      "name": "course_id",
+      "value": "course_2"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: lesson_data;\nfilter: @task_item.course_id == \"@local.course_id\"  &&  @task_item.filter_val;"
+    },
+    {
+      "type": "end_plh_lesson_cta"
     }
   ]
 }

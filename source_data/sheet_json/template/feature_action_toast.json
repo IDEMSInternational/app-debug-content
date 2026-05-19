@@ -29,6 +29,11 @@
       "name": "button_default",
       "value": "Toast Message",
       "action_list": "click | toast | message: hard coded toast\n\n"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1WGR_pxk-7iBHKX2BDdzdmjiaVjiwe-qKIou47uZFqHo/edit?usp=sharing"
     }
   ]
 }

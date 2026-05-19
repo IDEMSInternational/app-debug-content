@@ -1,0 +1,56 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "example_comics_page",
+  "status": "released",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "24px 0"
+      }
+    }
+  },
+  "rows": [
+    {
+      "name": "task_group",
+      "value": "example_task_progress_bar_data"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "variant: inline_padding;\nstyle: column;"
+    },
+    {
+      "type": "task_progress_bar",
+      "parameter_list": "task_group_data: @local.task_group;\ncompleted_field: @local.task_group_completed;"
+    },
+    {
+      "type": "text_bubble",
+      "value": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+      "parameter_list": "speaker_image_asset: images/Noura.png;\nvariant: primary;\nspeaker_name: Teja;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom;\nvariant: inline_padding;\nstyle: row;",
+      "style_list": "width:100%;\nmin-height:50px;\nborder-top:1px solid #eee;\nbackground-color:#fdfdfd;\npadding:5px 0 0 0;"
+    },
+    {
+      "type": "round_button",
+      "parameter_list": "icon_src:images/icons/audio/play-back-sharp.svg;\nvariant:no-background;"
+    },
+    {
+      "type": "button",
+      "value": "Continue",
+      "style_list": "width:70vw;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "value": "Sheet: https://docs.google.com/spreadsheets/d/15QTSunSyQI-25ktl-5EAsr-nZOvkKI_LjLbjnZNJCDE/edit?usp=sharing"
+    }
+  ]
+}

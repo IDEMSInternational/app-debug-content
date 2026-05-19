@@ -31,7 +31,7 @@
       },
       {
         "type": "apple_sign_in_button",
-        "count": 10
+        "count": 12
       },
       {
         "type": "asset_pack_download_button",
@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 456
+        "count": 471
       },
       {
         "type": "calendar",
@@ -59,7 +59,7 @@
       },
       {
         "type": "combo_box",
-        "count": 83
+        "count": 85
       },
       {
         "type": "dashed_box",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 113
+        "count": 117
       },
       {
         "type": "data_query",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 277
+        "count": 282
       },
       {
         "type": "drawer",
@@ -103,7 +103,7 @@
       },
       {
         "type": "google_sign_in_button",
-        "count": 12
+        "count": 14
       },
       {
         "type": "html",
@@ -187,7 +187,7 @@
       },
       {
         "type": "plh_lesson_cta",
-        "count": 1
+        "count": 2
       },
       {
         "type": "plh_module_details_header",
@@ -231,7 +231,7 @@
       },
       {
         "type": "round_button",
-        "count": 27
+        "count": 30
       },
       {
         "type": "select_text",
@@ -255,7 +255,7 @@
       },
       {
         "type": "set_variable",
-        "count": 945
+        "count": 949
       },
       {
         "type": "simple_checkbox",
@@ -291,15 +291,15 @@
       },
       {
         "type": "task_progress_bar",
-        "count": 9
+        "count": 11
       },
       {
         "type": "template",
-        "count": 156
+        "count": 157
       },
       {
         "type": "text",
-        "count": 1390
+        "count": 1402
       },
       {
         "type": "text_area",
@@ -311,7 +311,7 @@
       },
       {
         "type": "text_bubble",
-        "count": 12
+        "count": 13
       },
       {
         "type": "tile_component",
@@ -323,7 +323,7 @@
       },
       {
         "type": "title",
-        "count": 676
+        "count": 682
       },
       {
         "type": "toggle_bar",
@@ -363,7 +363,7 @@
       },
       {
         "type": "auth",
-        "count": 6
+        "count": 8
       },
       {
         "type": "auth_failure",
@@ -391,11 +391,11 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 32
+        "count": 35
       },
       {
         "type": "emit: force_reprocess",
-        "count": 57
+        "count": 63
       },
       {
         "type": "emit: force_restart",
@@ -403,7 +403,7 @@
       },
       {
         "type": "emit: server_sync",
-        "count": 8
+        "count": 9
       },
       {
         "type": "emit: set_language",
@@ -483,7 +483,7 @@
       },
       {
         "type": "reset_data",
-        "count": 8
+        "count": 9
       },
       {
         "type": "save_to_device",
@@ -499,11 +499,11 @@
       },
       {
         "type": "set_data",
-        "count": 19
+        "count": 23
       },
       {
         "type": "set_field",
-        "count": 121
+        "count": 122
       },
       {
         "type": "set_item",
@@ -515,7 +515,7 @@
       },
       {
         "type": "set_local",
-        "count": 77
+        "count": 76
       },
       {
         "type": "share",
@@ -765,7 +765,7 @@
       },
       {
         "path": "images/Noura.png",
-        "count": 7,
+        "count": 8,
         "size_kb": 4.2
       },
       {
@@ -860,7 +860,7 @@
       },
       {
         "path": "images/icons/audio/play-back-sharp.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 0.1
       },
       {
@@ -1020,7 +1020,7 @@
       },
       {
         "path": "images/lesson-cta-bg.svg",
-        "count": 1,
+        "count": 2,
         "size_kb": 4
       },
       {
@@ -1095,7 +1095,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 50
+        "total": 51
       },
       {
         "type": "data_list",
@@ -1200,7 +1200,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 116
+        "total": 118
       },
       {
         "type": "template",
@@ -1210,7 +1210,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 303
+        "total": 305
       },
       {
         "type": "template",

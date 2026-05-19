@@ -10,25 +10,25 @@
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
-| apple_sign_in_button | 10 |
+| apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 456 |
+| button | 471 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 83 |
+| combo_box | 85 |
 | dashed_box | 19 |
-| data_items | 113 |
+| data_items | 117 |
 | data_query | 8 |
 | date_time_picker | 10 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 277 |
+| display_group | 282 |
 | drawer | 1 |
 | form | 9 |
-| google_sign_in_button | 12 |
+| google_sign_in_button | 14 |
 | html | 4 |
 | image | 86 |
 | items | 51 |
@@ -49,7 +49,7 @@
 | plh_completion_modal | 1 |
 | plh_course_accordion | 2 |
 | plh_course_sub_item | 6 |
-| plh_lesson_cta | 1 |
+| plh_lesson_cta | 2 |
 | plh_module_details_header | 4 |
 | plh_module_list_item | 21 |
 | plh_progress_path | 4 |
@@ -60,13 +60,13 @@
 | radio_group | 61 |
 | radio_group_grid | 5 |
 | radio_list | 5 |
-| round_button | 27 |
+| round_button | 30 |
 | select_text | 7 |
 | set_default | 1 |
 | set_field | 30 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 945 |
+| set_variable | 949 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -75,15 +75,15 @@
 | table | 9 |
 | tabs | 2 |
 | task_card | 32 |
-| task_progress_bar | 9 |
-| template | 156 |
-| text | 1390 |
+| task_progress_bar | 11 |
+| template | 157 |
+| text | 1402 |
 | text_area | 13 |
 | text_box | 81 |
-| text_bubble | 12 |
+| text_bubble | 13 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 676 |
+| title | 682 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
@@ -99,17 +99,17 @@
 | add_data | 2 |
 | app_update | 3 |
 | asset_pack | 2 |
-| auth | 6 |
+| auth | 8 |
 | auth_failure | 1 |
 | auth_success | 1 |
 | copy | 5 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
-| emit: force_reload | 32 |
-| emit: force_reprocess | 57 |
+| emit: force_reload | 35 |
+| emit: force_reprocess | 63 |
 | emit: force_restart | 4 |
-| emit: server_sync | 8 |
+| emit: server_sync | 9 |
 | emit: set_language | 6 |
 | emit: set_skin | 1 |
 | emit: set_theme | 2 |
@@ -129,15 +129,15 @@
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
-| reset_data | 8 |
+| reset_data | 9 |
 | save_to_device | 5 |
 | screen_orientation | 5 |
 | scroll | 2 |
-| set_data | 19 |
-| set_field | 121 |
+| set_data | 23 |
+| set_field | 122 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 77 |
+| set_local | 76 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -223,7 +223,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | i18n/flags/gb.svg | 0.5 | 2 |
 | i18n/flags/tz.svg | 0.5 | 2 |
 | images/Faisal.png | 3.5 | 2 |
-| images/Noura.png | 4.2 | 7 |
+| images/Noura.png | 4.2 | 8 |
 | images/activity_bg.svg | 13.8 | 7 |
 | images/avatar_1.png | 67.7 | 19 |
 | images/bg_illustration.png | 255.4 | 4 |
@@ -242,7 +242,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/airplane_grey.png | 2.1 | 1 |
 | images/icons/ask_question_white.svg | 1.4 | 3 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
-| images/icons/audio/play-back-sharp.svg | 0.1 | 1 |
+| images/icons/audio/play-back-sharp.svg | 0.1 | 2 |
 | images/icons/audio/play-forward-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-sharp.svg | 0.1 | 4 |
 | images/icons/book_white.svg | 0.7 | 12 |
@@ -274,7 +274,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 23 |
 | images/icons/verified.svg | 0.5 | 2 |
-| images/lesson-cta-bg.svg | 4 | 1 |
+| images/lesson-cta-bg.svg | 4 | 2 |
 | images/modal_bg.svg | 37.3 | 1 |
 | images/module-1.png | 28.2 | 12 |
 | images/sa_kids_app_pattern_blue.svg | 157 | 3 |
@@ -295,7 +295,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 50 |
+| data_list |  | 51 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 14 |
@@ -316,9 +316,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 116 |
+| template |  | 118 |
 | template | component_demo | 75 |
-| template | debug | 303 |
+| template | debug | 305 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

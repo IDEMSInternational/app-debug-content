@@ -77,6 +77,11 @@
     {
       "type": "text",
       "value": "Selected: @local.radio_list_4"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY/edit?usp=sharing"
     }
   ]
 }

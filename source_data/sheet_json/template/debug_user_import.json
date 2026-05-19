@@ -1,0 +1,74 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_user_import",
+  "status": "released",
+  "rows": [
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in and import",
+      "parameter_list": "import_latest_user_data: true;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in and import",
+      "parameter_list": "import_latest_user_data: true;",
+      "action_list": "click | emit: force_reprocess;"
+    },
+    {
+      "type": "button",
+      "value": "Sign in with Google",
+      "action_list": "click | auth: sign_in_google | import_latest_user_data: true;\nclick | emit: force_reprocess;"
+    },
+    {
+      "type": "button",
+      "value": "Sign out",
+      "action_list": "click | auth: sign_out;\nclick | emit: force_reload;"
+    },
+    {
+      "type": "button",
+      "value": "Reload page",
+      "action_list": "click | emit: force_reload;"
+    },
+    {
+      "type": "button",
+      "value": "Sync (push)",
+      "action_list": "click | emit: server_sync;\nclick | emit: force_reprocess;"
+    },
+    {
+      "type": "text",
+      "value": "Current app_user_id: @fields._app_user_id"
+    },
+    {
+      "type": "title",
+      "value": "Available profiles for restore"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "_auth_profiles",
+      "parameter_list": "sort: updatedAt;\nreverse;"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "ID: @item.app_user_id"
+    },
+    {
+      "type": "text",
+      "value": "Last updated: @item.updatedAt"
+    },
+    {
+      "type": "button",
+      "value": "Restore",
+      "parameter_list": "click | user: import: @item.id;\nclick | emit: force_reprocess;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

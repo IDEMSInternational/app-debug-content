@@ -72,6 +72,24 @@
     {
       "type": "combo_box",
       "parameter_list": "variant: dropdown;\nanswer_list: @data.debug_combo_box_data;\noptions_key: id;\noptions_value: value;\nplaceholder: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm;"
+    },
+    {
+      "type": "title",
+      "value": "Condition visibility"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @data.debug_combo_box_data;\noptions_key: id;\noptions_value: value;",
+      "condition": false
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @data.debug_combo_box_data;\noptions_key: id;\noptions_value: value;\nvariant: dropdown;",
+      "condition": false
+    },
+    {
+      "type": "text",
+      "value": "End"
     }
   ]
 }

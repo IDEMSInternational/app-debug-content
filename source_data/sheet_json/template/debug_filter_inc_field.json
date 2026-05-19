@@ -1,0 +1,70 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_filter_inc_field",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Hard coded value"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_filter_items",
+      "parameter_list": "filter: @item.id === \"id_1\";"
+    },
+    {
+      "type": "text",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Value from local"
+    },
+    {
+      "name": "local_id",
+      "value": "id_1"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_filter_items",
+      "parameter_list": "filter: @item.id === @local.local_id;"
+    },
+    {
+      "type": "text",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
+      "type": "title",
+      "value": "Value from field"
+    },
+    {
+      "type": "button",
+      "value": "Set field",
+      "action_list": "click | set_field: field_id: id_1;"
+    },
+    {
+      "type": "button",
+      "value": "Refresh page",
+      "action_list": "click | emit: force_reload;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "debug_filter_items",
+      "parameter_list": "filter: @item.id === @field.field_id;"
+    },
+    {
+      "type": "text",
+      "value": "@item.id"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

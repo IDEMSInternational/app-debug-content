@@ -1,0 +1,335 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_user_import",
+  "status": "released",
+  "rows": [
+    {
+      "type": "google_sign_in_button",
+      "value": "Sign in and import",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "import_latest_user_data": "true"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "google_sign_in_button_2",
+      "_nested_name": "google_sign_in_button_2"
+    },
+    {
+      "type": "apple_sign_in_button",
+      "value": "Sign in and import",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "import_latest_user_data": "true"
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "apple_sign_in_button_3",
+      "_nested_name": "apple_sign_in_button_3"
+    },
+    {
+      "type": "button",
+      "value": "Sign in with Google",
+      "_translations": {
+        "value": {
+          "es_sp": true
+        }
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_in_google"
+          ],
+          "_raw": "click | auth: sign_in_google | import_latest_user_data: true",
+          "params": {
+            "import_latest_user_data": true
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "button",
+      "value": "Sign out",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "auth",
+          "args": [
+            "sign_out"
+          ],
+          "_raw": "click | auth: sign_out"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload"
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    },
+    {
+      "type": "button",
+      "value": "Reload page",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload"
+        }
+      ],
+      "name": "button_6",
+      "_nested_name": "button_6"
+    },
+    {
+      "type": "button",
+      "value": "Sync (push)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "server_sync"
+          ],
+          "_raw": "click | emit: server_sync"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reprocess"
+          ],
+          "_raw": "click | emit: force_reprocess"
+        }
+      ],
+      "name": "button_7",
+      "_nested_name": "button_7"
+    },
+    {
+      "type": "text",
+      "value": "Current app_user_id: @fields._app_user_id",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Current app_user_id: @fields._app_user_id",
+            "matchedExpression": "@fields._app_user_id",
+            "type": "fields",
+            "fieldName": "_app_user_id"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields._app_user_id": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Available profiles for restore",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_9",
+      "_nested_name": "title_9"
+    },
+    {
+      "type": "data_items",
+      "value": "_auth_profiles",
+      "parameter_list": {
+        "sort": "updatedAt",
+        "reverse": "true"
+      },
+      "rows": [
+        {
+          "type": "display_group",
+          "rows": [
+            {
+              "type": "text",
+              "value": "ID: @item.app_user_id",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_1",
+              "_nested_name": "data_items_10.display_group_1_@item.id.text_1",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "ID: @item.app_user_id",
+                    "matchedExpression": "@item.app_user_id",
+                    "type": "item",
+                    "fieldName": "app_user_id"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_10.display_group_1_@item.id.text_1",
+                    "matchedExpression": "@item.id.text_1",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.app_user_id": [
+                  "value"
+                ],
+                "@item.id.text_1": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "value": "Last updated: @item.updatedAt",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_2",
+              "_nested_name": "data_items_10.display_group_1_@item.id.text_2",
+              "_dynamicFields": {
+                "value": [
+                  {
+                    "fullExpression": "Last updated: @item.updatedAt",
+                    "matchedExpression": "@item.updatedAt",
+                    "type": "item",
+                    "fieldName": "updatedAt"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_10.display_group_1_@item.id.text_2",
+                    "matchedExpression": "@item.id.text_2",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.updatedAt": [
+                  "value"
+                ],
+                "@item.id.text_2": [
+                  "_nested_name"
+                ]
+              }
+            },
+            {
+              "type": "button",
+              "value": "Restore",
+              "_translations": {
+                "value": {}
+              },
+              "parameter_list": {
+                "click | user": "import",
+                "click | emit": "force_reprocess"
+              },
+              "name": "button_3",
+              "_nested_name": "data_items_10.display_group_1_@item.id.button_3",
+              "_dynamicFields": {
+                "_nested_name": [
+                  {
+                    "fullExpression": "data_items_10.display_group_1_@item.id.button_3",
+                    "matchedExpression": "@item.id.button_3",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id.button_3": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "name": "display_group_1_@item.id",
+          "_nested_name": "data_items_10.display_group_1_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "display_group_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_10.display_group_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_10",
+      "_nested_name": "data_items_10"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_user_import.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1tBXe0tRjis4RiVvXiPxF4KWjqQ18xnVa7FJAhnfm7ss"
+  }
+}

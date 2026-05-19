@@ -1,0 +1,24 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "debug_filter_items",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "label": "Item 1"
+    },
+    {
+      "id": "id_2",
+      "label": "Item 2"
+    },
+    {
+      "id": "id_3",
+      "label": "Item 3"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_filter_inc_field.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1C30JqDqwdkU90_ZTajACg5_I8gqhr8An-Ir-ie2wpKA"
+  }
+}

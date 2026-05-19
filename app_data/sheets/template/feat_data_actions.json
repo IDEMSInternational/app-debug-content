@@ -747,13 +747,160 @@
       "_nested_name": "title_36"
     },
     {
+      "type": "template",
+      "value": "feat_data_actions_summary",
+      "rows": [],
+      "name": "feat_data_actions_summary",
+      "_nested_name": "feat_data_actions_summary"
+    },
+    {
       "type": "text",
-      "value": "(WiP)",
+      "value": "Each of these examples demonstrates a different operator, targetting some subset of the items and setting the number to 5.",
       "_translations": {
         "value": {}
       },
-      "name": "text_37",
-      "_nested_name": "text_37"
+      "name": "text_39",
+      "_nested_name": "text_39"
+    },
+    {
+      "type": "button",
+      "value": "Filter",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_filter: @item.id.startsWith('id_2'),\nnumber: 5",
+          "params": {
+            "_list_id": "feat_data_actions_list",
+            "_filter": "@item.id.startsWith('id_2')",
+            "number": 5
+          }
+        }
+      ],
+      "name": "button_40",
+      "_nested_name": "button_40",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_filter: @item.id.startsWith('id_2'),\nnumber: 5",
+                "matchedExpression": "@item.id.startsWith",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "params": {
+              "_filter": [
+                {
+                  "fullExpression": "@item.id.startsWith('id_2')",
+                  "matchedExpression": "@item.id.startsWith",
+                  "type": "item",
+                  "fieldName": "id"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.id.startsWith": [
+          "action_list.0._raw",
+          "action_list.0.params._filter"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Limit",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_limit: 2,\nnumber: 5",
+          "params": {
+            "_list_id": "feat_data_actions_list",
+            "_limit": 2,
+            "number": 5
+          }
+        }
+      ],
+      "name": "button_41",
+      "_nested_name": "button_41"
+    },
+    {
+      "type": "button",
+      "value": "Reverse",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\n_reverse: true,\nnumber: 5",
+          "params": {
+            "_list_id": "feat_data_actions_list",
+            "_index": 0,
+            "_reverse": true,
+            "number": 5
+          }
+        }
+      ],
+      "name": "button_42",
+      "_nested_name": "button_42"
+    },
+    {
+      "type": "button",
+      "value": "Sort",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_data",
+          "args": [],
+          "_raw": "click | set_data | \n\n_list_id: feat_data_actions_list,\n_index: 0,\n_sort: number,\nnumber: 5",
+          "params": {
+            "_list_id": "feat_data_actions_list",
+            "_index": 0,
+            "_sort": "number",
+            "number": 5
+          }
+        }
+      ],
+      "name": "button_43",
+      "_nested_name": "button_43"
+    },
+    {
+      "type": "button",
+      "value": "Reset to original state",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "reset_data",
+          "args": [],
+          "_raw": "click | reset_data | \n\n_list_id: feat_data_actions_list",
+          "params": {
+            "_list_id": "feat_data_actions_list"
+          }
+        }
+      ],
+      "name": "button_44",
+      "_nested_name": "button_44"
     }
   ],
   "_source": {

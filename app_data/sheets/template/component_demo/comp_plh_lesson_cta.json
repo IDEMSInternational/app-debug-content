@@ -72,6 +72,55 @@
       ],
       "name": "plh_lesson_cta_3",
       "_nested_name": "plh_lesson_cta_3"
+    },
+    {
+      "type": "plh_lesson_cta",
+      "value": "Navigating communication and screen time for children at school and at home",
+      "parameter_list": {
+        "subtitle": "Communication",
+        "cta_text": "Continue",
+        "badge_text": "Track",
+        "background_image_asset": "images/lesson-cta-bg.svg"
+      },
+      "rows": [
+        {
+          "name": "course_id",
+          "value": "course_2",
+          "_translations": {
+            "value": {}
+          },
+          "type": "set_variable",
+          "_nested_name": "plh_lesson_cta_5.course_id"
+        },
+        {
+          "type": "task_progress_bar",
+          "parameter_list": {
+            "task_group_data": "lesson_data",
+            "filter": "@task_item.course_id == \"@local.course_id\"  &&  @task_item.filter_val"
+          },
+          "name": "task_progress_bar_2",
+          "_nested_name": "plh_lesson_cta_5.task_progress_bar_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "filter": [
+                {
+                  "fullExpression": "@task_item.course_id == \"@local.course_id\"  &&  @task_item.filter_val",
+                  "matchedExpression": "@local.course_id",
+                  "type": "local",
+                  "fieldName": "course_id"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.course_id": [
+              "parameter_list.filter"
+            ]
+          }
+        }
+      ],
+      "name": "plh_lesson_cta_5",
+      "_nested_name": "plh_lesson_cta_5"
     }
   ],
   "_source": {

@@ -1,0 +1,127 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_display_group_wrap",
+  "status": "released",
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "wrap": "true"
+      },
+      "style_list": [
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "round_button",
+          "name": "round_button_1",
+          "_nested_name": "display_group_2.round_button_1"
+        },
+        {
+          "type": "button",
+          "value": "button 2",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_2.button_2"
+        },
+        {
+          "type": "text",
+          "value": "Some text",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_3",
+          "_nested_name": "display_group_2.text_3"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "title",
+      "value": "Example from production:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "wrap": "true"
+      },
+      "style_list": [
+        "padding: 12px 16px",
+        "justify-content: center"
+      ],
+      "rows": [
+        {
+          "type": "round_button",
+          "parameter_list": {
+            "icon_src": "arrow-back",
+            "variant": "no-background"
+          },
+          "name": "round_button_1",
+          "_nested_name": "display_group_5.round_button_1"
+        },
+        {
+          "type": "button",
+          "value": "Continue",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "style": "navigation",
+            "disabled": "!@local.completed_enabled"
+          },
+          "style_list": [
+            "flex: 1"
+          ],
+          "name": "button_2",
+          "_nested_name": "display_group_5.button_2",
+          "_dynamicFields": {
+            "parameter_list": {
+              "disabled": [
+                {
+                  "fullExpression": "!@local.completed_enabled",
+                  "matchedExpression": "!@local.completed_enabled",
+                  "type": "local",
+                  "fieldName": "completed_enabled"
+                }
+              ]
+            }
+          },
+          "_dynamicDependencies": {
+            "!@local.completed_enabled": [
+              "parameter_list.disabled"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "value": "Skip text",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "card",
+            "style": "no-background"
+          },
+          "name": "button_3",
+          "_nested_name": "display_group_5.button_3"
+        }
+      ],
+      "name": "display_group_5",
+      "_nested_name": "display_group_5"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_display_group_wrap.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1XOknY8BZoaGcKhme-kzsKS6yiiTsc7iU4PBKclnsKcU"
+  }
+}
