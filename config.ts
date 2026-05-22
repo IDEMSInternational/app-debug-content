@@ -16,7 +16,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.10.7",
+  content_tag_latest: "1.10.8",
 };
 
 // set supabase config if decrypted values available
@@ -92,7 +92,7 @@ config.app_data.assets_filter_function = (fileEntry) =>
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "Debug App";
 config.app_config.APP_HEADER_DEFAULTS.collapse = true;
-config.app_config.APP_HEADER_DEFAULTS.colour = "primary";
+config.app_config.APP_HEADER_DEFAULTS.background = "primary";
 config.app_config.APP_HEADER_DEFAULTS.variant = "default";
 
 config.app_config.APP_FOOTER_DEFAULTS.template = "feat_footer"
