@@ -16,7 +16,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.10.8",
+  content_tag_latest: "1.10.9",
 };
 
 // set supabase config if decrypted values available
@@ -77,12 +77,6 @@ config.ios = {
   logo_asset_path: "./app_data/assets/android/icon-foreground.png",
   // logo_background_color: ""
 }
-
-config.remote_assets = {
-  provider: "supabase",
-  bucketName: "debug",
-  folderName: "asset_packs",
-};
 
 // To reduce app size, exclude large assets
 config.app_data.assets_filter_function = (fileEntry) =>

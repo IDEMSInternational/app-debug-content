@@ -113,6 +113,32 @@
       "_nested_name": "button_default"
     },
     {
+      "type": "button",
+      "name": "button_default",
+      "value": "Long duration",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "toast",
+          "args": [],
+          "_raw": "click | toast | message: Long duration, duration: long",
+          "params": {
+            "message": "Long duration",
+            "duration": "long"
+          }
+        }
+      ],
+      "_nested_name": "button_default"
+    },
+    {
+      "name": "note",
+      "type": "set_variable",
+      "_nested_name": "note"
+    },
+    {
       "type": "text",
       "name": "sheet_link",
       "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1WGR_pxk-7iBHKX2BDdzdmjiaVjiwe-qKIou47uZFqHo/edit?usp=sharing",

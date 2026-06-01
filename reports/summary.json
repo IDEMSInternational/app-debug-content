@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 471
+        "count": 472
       },
       {
         "type": "calendar",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 282
+        "count": 283
       },
       {
         "type": "drawer",
@@ -111,7 +111,7 @@
       },
       {
         "type": "image",
-        "count": 86
+        "count": 87
       },
       {
         "type": "items",
@@ -255,7 +255,7 @@
       },
       {
         "type": "set_variable",
-        "count": 949
+        "count": 950
       },
       {
         "type": "simple_checkbox",
@@ -299,7 +299,7 @@
       },
       {
         "type": "text",
-        "count": 1402
+        "count": 1403
       },
       {
         "type": "text_area",
@@ -531,7 +531,7 @@
       },
       {
         "type": "toast",
-        "count": 7
+        "count": 8
       },
       {
         "type": "toggle_field",
@@ -641,6 +641,11 @@
     "data": [
       {
         "path": "asset_pack_debugging/image_2.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "asset_pack_debugging/image_5.png",
         "count": 1,
         "missing": true
       },
