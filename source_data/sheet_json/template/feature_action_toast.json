@@ -31,6 +31,17 @@
       "action_list": "click | toast | message: hard coded toast\n\n"
     },
     {
+      "type": "button",
+      "name": "button_default",
+      "value": "Long duration",
+      "action_list": "click | toast | message: Long duration, duration: long;\n\n",
+      "comments": "duration can be either 'short' (2000ms) or 'long' (3500ms) (default 'short'). Arbitrary ms values are not supported by the Capacitor API (a restriction of the native platforms)."
+    },
+    {
+      "name": "note",
+      "comments": "The Capacitor Toast API also exposes a 'position' parameter, but it is not supported on web or newer Android versions, so should not be used."
+    },
+    {
       "type": "text",
       "name": "sheet_link",
       "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1WGR_pxk-7iBHKX2BDdzdmjiaVjiwe-qKIou47uZFqHo/edit?usp=sharing"

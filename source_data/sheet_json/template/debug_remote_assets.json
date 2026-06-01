@@ -84,6 +84,22 @@
       "type": "end_display_group"
     },
     {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "No core version, remote asset pack contains override only",
+      "style_list": "width:140px"
+    },
+    {
+      "type": "image",
+      "value": "asset_pack_debugging/image_5.png",
+      "style_list": "max-width:140px"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
       "type": "title",
       "value": "Select language:"
     },

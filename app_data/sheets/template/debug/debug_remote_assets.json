@@ -170,13 +170,44 @@
       "_nested_name": "display_group_11"
     },
     {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "No core version, remote asset pack contains override only",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_13.text_1"
+        },
+        {
+          "type": "image",
+          "value": "asset_pack_debugging/image_5.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_13.image_2"
+        }
+      ],
+      "name": "display_group_13",
+      "_nested_name": "display_group_13"
+    },
+    {
       "type": "title",
       "value": "Select language:",
       "_translations": {
         "value": {}
       },
-      "name": "title_13",
-      "_nested_name": "title_13"
+      "name": "title_15",
+      "_nested_name": "title_15"
     },
     {
       "name": "language_list",

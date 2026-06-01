@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 471 |
+| button | 472 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -25,12 +25,12 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 282 |
+| display_group | 283 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
 | html | 4 |
-| image | 86 |
+| image | 87 |
 | items | 51 |
 | latex | 1 |
 | lottie_animation | 6 |
@@ -66,7 +66,7 @@
 | set_field | 30 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 949 |
+| set_variable | 950 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -77,7 +77,7 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1402 |
+| text | 1403 |
 | text_area | 13 |
 | text_box | 81 |
 | text_bubble | 13 |
@@ -141,7 +141,7 @@
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
-| toast | 7 |
+| toast | 8 |
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
@@ -191,6 +191,7 @@ Assets that have references within sheets but do not appear in app-data
 | path | count |
 | --- | --- |
 | asset_pack_debugging/image_2.png | 1 |
+| asset_pack_debugging/image_5.png | 1 |
 | click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg | 1 |
 | confetti.svg | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
