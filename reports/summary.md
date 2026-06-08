@@ -13,13 +13,13 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
 | audio | 13 |
-| button | 472 |
+| button | 473 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 85 |
 | dashed_box | 19 |
-| data_items | 117 |
+| data_items | 118 |
 | data_query | 8 |
 | date_time_picker | 10 |
 | debug_toggle | 1 |
@@ -66,7 +66,7 @@
 | set_field | 30 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 950 |
+| set_variable | 949 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -83,7 +83,7 @@
 | text_bubble | 13 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 682 |
+| title | 683 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
@@ -137,7 +137,7 @@
 | set_field | 122 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 76 |
+| set_local | 77 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |

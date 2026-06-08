@@ -308,6 +308,83 @@
         }
       ],
       "_nested_name": "button_3"
+    },
+    {
+      "type": "title",
+      "value": "Asset pack metadata",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_19",
+      "_nested_name": "title_19"
+    },
+    {
+      "type": "data_items",
+      "value": "_asset_packs",
+      "rows": [
+        {
+          "type": "text",
+          "value": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_20.text_1_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              },
+              {
+                "fullExpression": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
+                "matchedExpression": "@item.name",
+                "type": "item",
+                "fieldName": "name"
+              },
+              {
+                "fullExpression": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
+                "matchedExpression": "@item.status",
+                "type": "item",
+                "fieldName": "status"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_20.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "value",
+              "name",
+              "_nested_name"
+            ],
+            "@item.name": [
+              "value"
+            ],
+            "@item.status": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_20",
+      "_nested_name": "data_items_20"
     }
   ],
   "_source": {

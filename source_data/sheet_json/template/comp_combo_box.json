@@ -299,7 +299,8 @@
     },
     {
       "type": "combo_box",
-      "name": "combo_box_default_key_value"
+      "name": "combo_box_default_key_value",
+      "parameter_list": "answer_list: @data.comp_combo_box_items;"
     },
     {
       "type": "text",
@@ -308,7 +309,7 @@
     {
       "type": "combo_box",
       "name": "combo_box_overridden_key_value",
-      "parameter_list": "placeholder: Overridden key/value names;\nanswer_list: @data.comp_combo_box_items;\noptions_key: id;\noptions_value: name;"
+      "parameter_list": "placeholder: Overridden key/value names;\nanswer_list: @data.comp_combo_box_items;\noptions_key: id;\noptions_value: item_name;"
     },
     {
       "type": "text",
