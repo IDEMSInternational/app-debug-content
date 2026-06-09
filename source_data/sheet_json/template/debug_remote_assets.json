@@ -119,6 +119,21 @@
       "name": "button_3",
       "value": "Reset remote assets (return to core asset pack before any downloads)",
       "action_list": "click | asset_pack: reset;"
+    },
+    {
+      "type": "title",
+      "value": "Asset pack metadata"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "_asset_packs"
+    },
+    {
+      "type": "text",
+      "value": "id: @item.id,\nname: @item.name,\nstatus: @item.status"
+    },
+    {
+      "type": "end_data_items"
     }
   ]
 }

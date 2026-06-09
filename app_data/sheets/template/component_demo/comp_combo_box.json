@@ -1205,7 +1205,27 @@
     {
       "type": "combo_box",
       "name": "combo_box_default_key_value",
-      "_nested_name": "combo_box_default_key_value"
+      "parameter_list": {
+        "answer_list": "@data.comp_combo_box_items"
+      },
+      "_nested_name": "combo_box_default_key_value",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.comp_combo_box_items",
+              "matchedExpression": "@data.comp_combo_box_items",
+              "type": "data",
+              "fieldName": "comp_combo_box_items"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.comp_combo_box_items": [
+          "parameter_list.answer_list"
+        ]
+      }
     },
     {
       "type": "text",
@@ -1238,7 +1258,7 @@
         "placeholder": "Overridden key/value names",
         "answer_list": "@data.comp_combo_box_items",
         "options_key": "id",
-        "options_value": "name"
+        "options_value": "item_name"
       },
       "_nested_name": "combo_box_overridden_key_value",
       "_dynamicFields": {

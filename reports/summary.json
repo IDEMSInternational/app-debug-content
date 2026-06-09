@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 472
+        "count": 473
       },
       {
         "type": "calendar",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 117
+        "count": 118
       },
       {
         "type": "data_query",
@@ -255,7 +255,7 @@
       },
       {
         "type": "set_variable",
-        "count": 950
+        "count": 949
       },
       {
         "type": "simple_checkbox",
@@ -323,7 +323,7 @@
       },
       {
         "type": "title",
-        "count": 682
+        "count": 683
       },
       {
         "type": "toggle_bar",
@@ -515,7 +515,7 @@
       },
       {
         "type": "set_local",
-        "count": 76
+        "count": 77
       },
       {
         "type": "share",
