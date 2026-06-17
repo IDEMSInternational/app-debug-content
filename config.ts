@@ -3,6 +3,11 @@ import { SKINS } from "./skins";
 
 const config = generateDeploymentConfig("debug");
 
+config.git = {
+  content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
+  content_tag_latest: "1.10.11",
+};
+
 config.api.db_name = "debug"
 
 config.google_drive = {
@@ -12,12 +17,13 @@ config.google_drive = {
   ],
 };
 
-config.web.favicon_asset = "images/icons/favicon.svg";
+config.canto = {
+  url: "https://parentingforlifelonghealth.canto.com",
+  sourceFolders: [{ id: "V0DQB", name: "Debug Canto Assets" }],
+  ...loadEncryptedConfig("canto.json"),
+}
 
-config.git = {
-  content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.10.11",
-};
+config.web.favicon_asset = "images/icons/favicon.svg";
 
 // set supabase config if decrypted values available
 // TODO - should supabase match general config and additional settings
