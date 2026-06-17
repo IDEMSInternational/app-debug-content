@@ -19,6 +19,22 @@
       "parameter_list": "asset_pack: debug_asset_pack_1;\ndefault_text: Download asset pack (component);\nprogress_text: Downloading...;\nsuccess_text: ✅ Success;\nerror_text: ❌ Failure;"
     },
     {
+      "type": "button",
+      "value": "Cancel in-progress downloads",
+      "action_list": "click | asset_pack: cancel_download;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "_asset_packs"
+    },
+    {
+      "type": "text",
+      "value": "id: @item.id,\ndownload_status: @item.download_status"
+    },
+    {
+      "type": "end_data_items"
+    },
+    {
       "type": "begin_display_group"
     },
     {
@@ -116,7 +132,6 @@
     },
     {
       "type": "button",
-      "name": "button_3",
       "value": "Reset remote assets (return to core asset pack before any downloads)",
       "action_list": "click | asset_pack: reset;"
     },
@@ -130,7 +145,7 @@
     },
     {
       "type": "text",
-      "value": "id: @item.id,\nname: @item.name,\nstatus: @item.status"
+      "value": "id: @item.id,\nname: @item.name,\ndownload_status: @item.download_status"
     },
     {
       "type": "end_data_items"

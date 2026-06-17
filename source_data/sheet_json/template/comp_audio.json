@@ -61,6 +61,16 @@
     },
     {
       "type": "title",
+      "value": "variant: button_only"
+    },
+    {
+      "type": "audio",
+      "value": "audio/test_audio.mp3",
+      "exclude_from_translation": true,
+      "parameter_list": "variant: button_only;"
+    },
+    {
+      "type": "title",
       "value": "variant: large"
     },
     {

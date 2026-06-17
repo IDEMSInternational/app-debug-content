@@ -12,14 +12,14 @@
 | animated_slides | 1 |
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
-| audio | 13 |
+| audio | 14 |
 | button | 473 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 85 |
 | dashed_box | 19 |
-| data_items | 118 |
+| data_items | 119 |
 | data_query | 8 |
 | date_time_picker | 10 |
 | debug_toggle | 1 |
@@ -29,7 +29,7 @@
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
-| html | 4 |
+| html | 6 |
 | image | 87 |
 | items | 51 |
 | latex | 1 |
@@ -63,10 +63,10 @@
 | round_button | 30 |
 | select_text | 7 |
 | set_default | 1 |
-| set_field | 30 |
+| set_field | 31 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 949 |
+| set_variable | 950 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -77,13 +77,13 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1403 |
+| text | 1412 |
 | text_area | 13 |
-| text_box | 81 |
+| text_box | 84 |
 | text_bubble | 13 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 683 |
+| title | 685 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
@@ -98,7 +98,7 @@
 | --- | --- |
 | add_data | 2 |
 | app_update | 3 |
-| asset_pack | 2 |
+| asset_pack | 3 |
 | auth | 8 |
 | auth_failure | 1 |
 | auth_success | 1 |
@@ -134,7 +134,7 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 23 |
-| set_field | 122 |
+| set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
 | set_local | 77 |
@@ -216,7 +216,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | asset_pack_debugging/image_3.png | 9.6 | 1 |
 | asset_pack_debugging/image_4.png | 11.9 | 1 |
 | audio/baby_elephant_walk.wav | 430.7 | 4 |
-| audio/test_audio.mp3 | 43.4 | 7 |
+| audio/test_audio.mp3 | 43.4 | 8 |
 | audio/timer/bell_1.mp3 | 121.6 | 1 |
 | audio/timer/ping_1.wav | 196.4 | 2 |
 | debug_theme_language.png | 21.9 | 1 |
@@ -317,7 +317,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 118 |
+| template |  | 119 |
 | template | component_demo | 75 |
 | template | debug | 305 |
 | template | example | 1 |

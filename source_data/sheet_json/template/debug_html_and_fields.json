@@ -1,0 +1,75 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_html_and_fields",
+  "status": "released",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "age_inf",
+      "value": 25
+    },
+    {
+      "type": "text",
+      "value": "@fields.age_inf"
+    },
+    {
+      "type": "text",
+      "value": "**Fields**"
+    },
+    {
+      "type": "text_box",
+      "name": "age_inf",
+      "value": "@fields.age_inf",
+      "action_list": "changed | set_field: age_inf : this.value;",
+      "parameter_list": "number_input: true\nplaceholder: Entrez la valeur ;"
+    },
+    {
+      "type": "html",
+      "value": "<div style=\"background-color: #f0f4f8; border-left: 4px solid #0056b3; padding: 12px 16px; border-radius: 4px; margin: 8px 0; font-family: sans-serif;\">\n**L'infrormation est : @fields.age_inf drm**</div>"
+    },
+    {
+      "type": "text",
+      "value": "**local**"
+    },
+    {
+      "type": "text_box",
+      "name": "age_inf_local",
+      "value": "@local.age_inf_local",
+      "action_list": "changed | set_local: age_inf_local : this.value;",
+      "parameter_list": "number_input: true\nplaceholder: Entrez la valeur ;"
+    },
+    {
+      "type": "html",
+      "value": "<div style=\"background-color: #f0f4f8; border-left: 4px solid #0056b3; padding: 12px 16px; border-radius: 4px; margin: 8px 0; font-family: sans-serif;\">\n##L'infrormation est : @local.age_inf_local drm</div>"
+    },
+    {
+      "type": "text",
+      "value": "**style_list**"
+    },
+    {
+      "type": "text_box",
+      "name": "age_inf_field",
+      "value": "@fields.age_inf_field",
+      "action_list": "changed | set_field: age_inf_field : this.value;",
+      "parameter_list": "number_input: true\nplaceholder: Entrez la valeur ;"
+    },
+    {
+      "type": "text",
+      "value": "**L'information est : @fields.age_inf_field drm**",
+      "style_list": "background-color: #f0f4f8; border-left: 4px solid #0056b3; padding: 12px 16px; border-radius: 4px; margin: 8px 0; font-family: sans-serif;"
+    },
+    {
+      "type": "title",
+      "value": "**L'information est : @fields.age_inf_field drm**",
+      "parameter_list": "variant: section_banner"
+    },
+    {
+      "type": "text",
+      "value": "Text"
+    },
+    {
+      "type": "text",
+      "value": "* This is the first list item.\n* Here's the second list item.\n\n    > A blockquote would look great below the second list item.\n\n* And here's the third list item."
+    }
+  ]
+}
