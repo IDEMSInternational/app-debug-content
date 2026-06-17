@@ -143,7 +143,7 @@
     },
     {
       "type": "title",
-      "value": "variant: large",
+      "value": "variant: button_only",
       "_translations": {
         "value": {}
       },
@@ -151,13 +151,35 @@
       "_nested_name": "title_13"
     },
     {
+      "type": "audio",
+      "value": "audio/test_audio.mp3",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "parameter_list": {
+        "variant": "button_only"
+      },
+      "name": "audio_14",
+      "_nested_name": "audio_14"
+    },
+    {
+      "type": "title",
+      "value": "variant: large",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
+    },
+    {
       "type": "text",
       "value": "Range bar disabled:",
       "_translations": {
         "value": {}
       },
-      "name": "text_14",
-      "_nested_name": "text_14"
+      "name": "text_16",
+      "_nested_name": "text_16"
     },
     {
       "type": "audio",

@@ -1,0 +1,308 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_html_and_fields",
+  "status": "released",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "age_inf",
+      "value": 25,
+      "_nested_name": "age_inf"
+    },
+    {
+      "type": "text",
+      "value": "@fields.age_inf",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.age_inf",
+            "matchedExpression": "@fields.age_inf",
+            "type": "fields",
+            "fieldName": "age_inf"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.age_inf": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "**Fields**",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "text_box",
+      "name": "age_inf",
+      "value": "@fields.age_inf",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "age_inf",
+            "this.value"
+          ],
+          "_raw": "changed | set_field: age_inf : this.value"
+        }
+      ],
+      "parameter_list": {
+        "number_input": "true\nplaceholder"
+      },
+      "_nested_name": "age_inf",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.age_inf",
+            "matchedExpression": "@fields.age_inf",
+            "type": "fields",
+            "fieldName": "age_inf"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.age_inf": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "html",
+      "value": "<div style=\"background-color: #f0f4f8; border-left: 4px solid #0056b3; padding: 12px 16px; border-radius: 4px; margin: 8px 0; font-family: sans-serif;\">\n**L'infrormation est : @fields.age_inf drm**</div>",
+      "_translations": {
+        "value": {}
+      },
+      "name": "html_6",
+      "_nested_name": "html_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "<div style=\"background-color: #f0f4f8; border-left: 4px solid #0056b3; padding: 12px 16px; border-radius: 4px; margin: 8px 0; font-family: sans-serif;\">\n**L'infrormation est : @fields.age_inf drm**</div>",
+            "matchedExpression": "@fields.age_inf",
+            "type": "fields",
+            "fieldName": "age_inf"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.age_inf": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "**local**",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "text_box",
+      "name": "age_inf_local",
+      "value": "@local.age_inf_local",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_local",
+          "args": [
+            "age_inf_local",
+            "this.value"
+          ],
+          "_raw": "changed | set_local: age_inf_local : this.value"
+        }
+      ],
+      "parameter_list": {
+        "number_input": "true\nplaceholder"
+      },
+      "_nested_name": "age_inf_local",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.age_inf_local",
+            "matchedExpression": "@local.age_inf_local",
+            "type": "local",
+            "fieldName": "age_inf_local"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.age_inf_local": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "html",
+      "value": "<div style=\"background-color: #f0f4f8; border-left: 4px solid #0056b3; padding: 12px 16px; border-radius: 4px; margin: 8px 0; font-family: sans-serif;\">\n##L'infrormation est : @local.age_inf_local drm</div>",
+      "_translations": {
+        "value": {}
+      },
+      "name": "html_9",
+      "_nested_name": "html_9",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "<div style=\"background-color: #f0f4f8; border-left: 4px solid #0056b3; padding: 12px 16px; border-radius: 4px; margin: 8px 0; font-family: sans-serif;\">\n##L'infrormation est : @local.age_inf_local drm</div>",
+            "matchedExpression": "@local.age_inf_local",
+            "type": "local",
+            "fieldName": "age_inf_local"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.age_inf_local": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "**style_list**",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "text_box",
+      "name": "age_inf_field",
+      "value": "@fields.age_inf_field",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "set_field",
+          "args": [
+            "age_inf_field",
+            "this.value"
+          ],
+          "_raw": "changed | set_field: age_inf_field : this.value"
+        }
+      ],
+      "parameter_list": {
+        "number_input": "true\nplaceholder"
+      },
+      "_nested_name": "age_inf_field",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields.age_inf_field",
+            "matchedExpression": "@fields.age_inf_field",
+            "type": "fields",
+            "fieldName": "age_inf_field"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.age_inf_field": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "**L'information est : @fields.age_inf_field drm**",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "background-color: #f0f4f8",
+        "border-left: 4px solid #0056b3",
+        "padding: 12px 16px",
+        "border-radius: 4px",
+        "margin: 8px 0",
+        "font-family: sans-serif"
+      ],
+      "name": "text_12",
+      "_nested_name": "text_12",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "**L'information est : @fields.age_inf_field drm**",
+            "matchedExpression": "@fields.age_inf_field",
+            "type": "fields",
+            "fieldName": "age_inf_field"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.age_inf_field": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "**L'information est : @fields.age_inf_field drm**",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "variant": "section_banner"
+      },
+      "name": "title_13",
+      "_nested_name": "title_13",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "**L'information est : @fields.age_inf_field drm**",
+            "matchedExpression": "@fields.age_inf_field",
+            "type": "fields",
+            "fieldName": "age_inf_field"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.age_inf_field": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_14",
+      "_nested_name": "text_14"
+    },
+    {
+      "type": "text",
+      "value": "* This is the first list item.\n* Here's the second list item.\n\n    > A blockquote would look great below the second list item.\n\n* And here's the third list item.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_15",
+      "_nested_name": "text_15"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_html_and_fields.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1PbvkYzOFtnU0OsPydg-4UZLA2qSnqlMyIIA-wDoGBto"
+  }
+}

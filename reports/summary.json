@@ -39,7 +39,7 @@
       },
       {
         "type": "audio",
-        "count": 13
+        "count": 14
       },
       {
         "type": "button",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 118
+        "count": 119
       },
       {
         "type": "data_query",
@@ -107,7 +107,7 @@
       },
       {
         "type": "html",
-        "count": 4
+        "count": 6
       },
       {
         "type": "image",
@@ -243,7 +243,7 @@
       },
       {
         "type": "set_field",
-        "count": 30
+        "count": 31
       },
       {
         "type": "set_local",
@@ -255,7 +255,7 @@
       },
       {
         "type": "set_variable",
-        "count": 949
+        "count": 950
       },
       {
         "type": "simple_checkbox",
@@ -299,7 +299,7 @@
       },
       {
         "type": "text",
-        "count": 1403
+        "count": 1412
       },
       {
         "type": "text_area",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text_box",
-        "count": 81
+        "count": 84
       },
       {
         "type": "text_bubble",
@@ -323,7 +323,7 @@
       },
       {
         "type": "title",
-        "count": 683
+        "count": 685
       },
       {
         "type": "toggle_bar",
@@ -359,7 +359,7 @@
       },
       {
         "type": "asset_pack",
-        "count": 2
+        "count": 3
       },
       {
         "type": "auth",
@@ -503,7 +503,7 @@
       },
       {
         "type": "set_field",
-        "count": 122
+        "count": 124
       },
       {
         "type": "set_item",
@@ -730,7 +730,7 @@
       },
       {
         "path": "audio/test_audio.mp3",
-        "count": 7,
+        "count": 8,
         "size_kb": 43.4
       },
       {
@@ -1205,7 +1205,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 118
+        "total": 119
       },
       {
         "type": "template",

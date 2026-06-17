@@ -46,6 +46,84 @@
       "_nested_name": "asset_pack_download_button_4"
     },
     {
+      "type": "button",
+      "value": "Cancel in-progress downloads",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "cancel_download"
+          ],
+          "_raw": "click | asset_pack: cancel_download"
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    },
+    {
+      "type": "data_items",
+      "value": "_asset_packs",
+      "rows": [
+        {
+          "type": "text",
+          "value": "id: @item.id,\ndownload_status: @item.download_status",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_6.text_1_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "id: @item.id,\ndownload_status: @item.download_status",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              },
+              {
+                "fullExpression": "id: @item.id,\ndownload_status: @item.download_status",
+                "matchedExpression": "@item.download_status",
+                "type": "item",
+                "fieldName": "download_status"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_6.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "value",
+              "name",
+              "_nested_name"
+            ],
+            "@item.download_status": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_6",
+      "_nested_name": "data_items_6"
+    },
+    {
       "type": "display_group",
       "rows": [
         {
@@ -58,7 +136,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_5.text_1"
+          "_nested_name": "display_group_8.text_1"
         },
         {
           "type": "image",
@@ -70,11 +148,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_5.image_2"
+          "_nested_name": "display_group_8.image_2"
         }
       ],
-      "name": "display_group_5",
-      "_nested_name": "display_group_5"
+      "name": "display_group_8",
+      "_nested_name": "display_group_8"
     },
     {
       "type": "display_group",
@@ -89,7 +167,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_7.text_1"
+          "_nested_name": "display_group_10.text_1"
         },
         {
           "type": "image",
@@ -101,11 +179,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_7.image_2"
+          "_nested_name": "display_group_10.image_2"
         }
       ],
-      "name": "display_group_7",
-      "_nested_name": "display_group_7"
+      "name": "display_group_10",
+      "_nested_name": "display_group_10"
     },
     {
       "type": "display_group",
@@ -120,7 +198,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_9.text_1"
+          "_nested_name": "display_group_12.text_1"
         },
         {
           "type": "image",
@@ -132,11 +210,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_9.image_2"
+          "_nested_name": "display_group_12.image_2"
         }
       ],
-      "name": "display_group_9",
-      "_nested_name": "display_group_9"
+      "name": "display_group_12",
+      "_nested_name": "display_group_12"
     },
     {
       "type": "display_group",
@@ -151,7 +229,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_11.text_1"
+          "_nested_name": "display_group_14.text_1"
         },
         {
           "type": "image",
@@ -163,11 +241,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_11.image_2"
+          "_nested_name": "display_group_14.image_2"
         }
       ],
-      "name": "display_group_11",
-      "_nested_name": "display_group_11"
+      "name": "display_group_14",
+      "_nested_name": "display_group_14"
     },
     {
       "type": "display_group",
@@ -182,7 +260,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_13.text_1"
+          "_nested_name": "display_group_16.text_1"
         },
         {
           "type": "image",
@@ -194,11 +272,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_13.image_2"
+          "_nested_name": "display_group_16.image_2"
         }
       ],
-      "name": "display_group_13",
-      "_nested_name": "display_group_13"
+      "name": "display_group_16",
+      "_nested_name": "display_group_16"
     },
     {
       "type": "title",
@@ -206,8 +284,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_15",
-      "_nested_name": "title_15"
+      "name": "title_18",
+      "_nested_name": "title_18"
     },
     {
       "name": "language_list",
@@ -292,7 +370,6 @@
     },
     {
       "type": "button",
-      "name": "button_3",
       "value": "Reset remote assets (return to core asset pack before any downloads)",
       "_translations": {
         "value": {}
@@ -307,7 +384,8 @@
           "_raw": "click | asset_pack: reset"
         }
       ],
-      "_nested_name": "button_3"
+      "name": "button_21",
+      "_nested_name": "button_21"
     },
     {
       "type": "title",
@@ -315,8 +393,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_19",
-      "_nested_name": "title_19"
+      "name": "title_22",
+      "_nested_name": "title_22"
     },
     {
       "type": "data_items",
@@ -324,31 +402,31 @@
       "rows": [
         {
           "type": "text",
-          "value": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
+          "value": "id: @item.id,\nname: @item.name,\ndownload_status: @item.download_status",
           "_translations": {
             "value": {}
           },
           "name": "text_1_@item.id",
-          "_nested_name": "data_items_20.text_1_@item.id",
+          "_nested_name": "data_items_23.text_1_@item.id",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
+                "fullExpression": "id: @item.id,\nname: @item.name,\ndownload_status: @item.download_status",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
               },
               {
-                "fullExpression": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
+                "fullExpression": "id: @item.id,\nname: @item.name,\ndownload_status: @item.download_status",
                 "matchedExpression": "@item.name",
                 "type": "item",
                 "fieldName": "name"
               },
               {
-                "fullExpression": "id: @item.id,\nname: @item.name,\nstatus: @item.status",
-                "matchedExpression": "@item.status",
+                "fullExpression": "id: @item.id,\nname: @item.name,\ndownload_status: @item.download_status",
+                "matchedExpression": "@item.download_status",
                 "type": "item",
-                "fieldName": "status"
+                "fieldName": "download_status"
               }
             ],
             "name": [
@@ -361,7 +439,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_20.text_1_@item.id",
+                "fullExpression": "data_items_23.text_1_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -377,14 +455,14 @@
             "@item.name": [
               "value"
             ],
-            "@item.status": [
+            "@item.download_status": [
               "value"
             ]
           }
         }
       ],
-      "name": "data_items_20",
-      "_nested_name": "data_items_20"
+      "name": "data_items_23",
+      "_nested_name": "data_items_23"
     }
   ],
   "_source": {
