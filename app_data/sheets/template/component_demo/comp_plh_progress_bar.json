@@ -1,0 +1,352 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_bar",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "title_1",
+      "value": "Getting everything ready for you",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "title_1"
+    },
+    {
+      "name": "title_2",
+      "value": "Looking at what your child needs",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "title_3",
+      "value": "Understanding your goal",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "title_3"
+    },
+    {
+      "name": "title_4",
+      "value": "Making this just for your family",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "title_4"
+    },
+    {
+      "name": "title_5",
+      "value": "Almost done",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "title_5"
+    },
+    {
+      "name": "start",
+      "value": false,
+      "type": "set_variable",
+      "_nested_name": "start"
+    },
+    {
+      "type": "button",
+      "value": "Start",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "start",
+            true
+          ],
+          "_raw": "click | set_local: start: true"
+        }
+      ],
+      "name": "button_8",
+      "_nested_name": "button_8"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_1",
+      "parameter_list": {
+        "title": "@local.title_1",
+        "duration": "3000",
+        "auto_play": "@local.start",
+        "color": "var(--ion-color-primary-300)"
+      },
+      "_nested_name": "bar_1",
+      "_dynamicFields": {
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "@local.title_1",
+              "matchedExpression": "@local.title_1",
+              "type": "local",
+              "fieldName": "title_1"
+            }
+          ],
+          "auto_play": [
+            {
+              "fullExpression": "@local.start",
+              "matchedExpression": "@local.start",
+              "type": "local",
+              "fieldName": "start"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.title_1": [
+          "parameter_list.title"
+        ],
+        "@local.start": [
+          "parameter_list.auto_play"
+        ]
+      }
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_2",
+      "parameter_list": {
+        "title": "@local.title_2",
+        "duration": "2000",
+        "auto_play": "@local.bar_1 == 100",
+        "color": "var(--ion-color-secondary-300)"
+      },
+      "_nested_name": "bar_2",
+      "_dynamicFields": {
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "@local.title_2",
+              "matchedExpression": "@local.title_2",
+              "type": "local",
+              "fieldName": "title_2"
+            }
+          ],
+          "auto_play": [
+            {
+              "fullExpression": "@local.bar_1 == 100",
+              "matchedExpression": "@local.bar_1",
+              "type": "local",
+              "fieldName": "bar_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.title_2": [
+          "parameter_list.title"
+        ],
+        "@local.bar_1": [
+          "parameter_list.auto_play"
+        ]
+      }
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_3",
+      "parameter_list": {
+        "title": "@local.title_3",
+        "duration": "1000",
+        "auto_play": "@local.bar_2 == 100",
+        "color": "var(--ion-color-primary-700)"
+      },
+      "_nested_name": "bar_3",
+      "_dynamicFields": {
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "@local.title_3",
+              "matchedExpression": "@local.title_3",
+              "type": "local",
+              "fieldName": "title_3"
+            }
+          ],
+          "auto_play": [
+            {
+              "fullExpression": "@local.bar_2 == 100",
+              "matchedExpression": "@local.bar_2",
+              "type": "local",
+              "fieldName": "bar_2"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.title_3": [
+          "parameter_list.title"
+        ],
+        "@local.bar_2": [
+          "parameter_list.auto_play"
+        ]
+      }
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_4",
+      "parameter_list": {
+        "title": "@local.title_4",
+        "duration": "1000",
+        "auto_play": "@local.bar_3 == 100",
+        "color": "red"
+      },
+      "_nested_name": "bar_4",
+      "_dynamicFields": {
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "@local.title_4",
+              "matchedExpression": "@local.title_4",
+              "type": "local",
+              "fieldName": "title_4"
+            }
+          ],
+          "auto_play": [
+            {
+              "fullExpression": "@local.bar_3 == 100",
+              "matchedExpression": "@local.bar_3",
+              "type": "local",
+              "fieldName": "bar_3"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.title_4": [
+          "parameter_list.title"
+        ],
+        "@local.bar_3": [
+          "parameter_list.auto_play"
+        ]
+      }
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_5",
+      "parameter_list": {
+        "title": "@local.title_5",
+        "duration": "1000",
+        "auto_play": "@local.bar_4 == 100",
+        "color": "#a241bf"
+      },
+      "_nested_name": "bar_5",
+      "_dynamicFields": {
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "@local.title_5",
+              "matchedExpression": "@local.title_5",
+              "type": "local",
+              "fieldName": "title_5"
+            }
+          ],
+          "auto_play": [
+            {
+              "fullExpression": "@local.bar_4 == 100",
+              "matchedExpression": "@local.bar_4",
+              "type": "local",
+              "fieldName": "bar_4"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.title_5": [
+          "parameter_list.title"
+        ],
+        "@local.bar_4": [
+          "parameter_list.auto_play"
+        ]
+      }
+    },
+    {
+      "type": "data_items",
+      "value": "comp_plh_progress_bar_data",
+      "parameter_list": {
+        "filter": "@item.id === \"id_1\""
+      },
+      "rows": [
+        {
+          "type": "plh_progress_bar",
+          "name": "bar_6",
+          "value": "@calc((@item.completed_count / @item.total_count) * 100)",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "title": "Progress set dynamically"
+          },
+          "_nested_name": "data_items_14.bar_6",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@calc((@item.completed_count / @item.total_count) * 100)",
+                "matchedExpression": "@item.completed_count",
+                "type": "item",
+                "fieldName": "completed_count"
+              },
+              {
+                "fullExpression": "@calc((@item.completed_count / @item.total_count) * 100)",
+                "matchedExpression": "@item.total_count",
+                "type": "item",
+                "fieldName": "total_count"
+              },
+              {
+                "fullExpression": "@calc((@item.completed_count / @item.total_count) * 100)",
+                "matchedExpression": "@calc((@item.completed_count / @item.total_count) * 100)",
+                "type": "calc",
+                "fieldName": "(@item.completed_count / @item.total_count) * 100"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.completed_count": [
+              "value"
+            ],
+            "@item.total_count": [
+              "value"
+            ],
+            "@calc((@item.completed_count / @item.total_count) * 100)": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_14",
+      "_nested_name": "data_items_14",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.id === \"id_1\"",
+              "matchedExpression": "@item.id",
+              "type": "item",
+              "fieldName": "id"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.id": [
+          "parameter_list.filter"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_progress_bar.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
+  }
+}

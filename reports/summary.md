@@ -13,13 +13,13 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
 | audio | 14 |
-| button | 473 |
+| button | 474 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 85 |
 | dashed_box | 19 |
-| data_items | 119 |
+| data_items | 120 |
 | data_query | 8 |
 | date_time_picker | 10 |
 | debug_toggle | 1 |
@@ -52,6 +52,7 @@
 | plh_lesson_cta | 2 |
 | plh_module_details_header | 4 |
 | plh_module_list_item | 21 |
+| plh_progress_bar | 6 |
 | plh_progress_path | 4 |
 | progress_bar | 1 |
 | progress_path | 11 |
@@ -66,7 +67,7 @@
 | set_field | 31 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 950 |
+| set_variable | 956 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -137,7 +138,7 @@
 | set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 77 |
+| set_local | 78 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -296,7 +297,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 51 |
+| data_list |  | 52 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 14 |
@@ -318,7 +319,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 119 |
-| template | component_demo | 75 |
+| template | component_demo | 76 |
 | template | debug | 305 |
 | template | example | 1 |
 | template | example_generator | 2 |

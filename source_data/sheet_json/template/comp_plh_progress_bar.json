@@ -1,0 +1,76 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_bar",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "name": "title_1",
+      "value": "Getting everything ready for you"
+    },
+    {
+      "name": "title_2",
+      "value": "Looking at what your child needs"
+    },
+    {
+      "name": "title_3",
+      "value": "Understanding your goal"
+    },
+    {
+      "name": "title_4",
+      "value": "Making this just for your family"
+    },
+    {
+      "name": "title_5",
+      "value": "Almost done"
+    },
+    {
+      "name": "start",
+      "value": false
+    },
+    {
+      "type": "button",
+      "value": "Start",
+      "action_list": "click | set_local: start: true;"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_1",
+      "parameter_list": "title: @local.title_1;\nduration: 3000;\nauto_play: @local.start;\ncolor: var(--ion-color-primary-300)"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_2",
+      "parameter_list": "title: @local.title_2;\nduration: 2000;\nauto_play: @local.bar_1 == 100;\ncolor: var(--ion-color-secondary-300)"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_3",
+      "parameter_list": "title: @local.title_3;\nduration: 1000;\nauto_play: @local.bar_2 == 100;\ncolor: var(--ion-color-primary-700)"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_4",
+      "parameter_list": "title: @local.title_4;\nduration: 1000;\nauto_play: @local.bar_3 == 100;\ncolor: red;"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_5",
+      "parameter_list": "title: @local.title_5;\nduration: 1000;\nauto_play: @local.bar_4 == 100;\ncolor: #a241bf;"
+    },
+    {
+      "type": "begin_data_items",
+      "value": "comp_plh_progress_bar_data",
+      "parameter_list": "filter: @item.id === \"id_1\";"
+    },
+    {
+      "type": "plh_progress_bar",
+      "name": "bar_6",
+      "value": "@calc((@item.completed_count / @item.total_count) * 100)",
+      "parameter_list": "title: Progress set dynamically"
+    },
+    {
+      "type": "end_data_items"
+    }
+  ]
+}

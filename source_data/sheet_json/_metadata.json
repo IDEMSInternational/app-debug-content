@@ -169,6 +169,15 @@
   },
   {
     "flow_type": "data_list",
+    "flow_name": "comp_plh_progress_bar_data",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_plh_progress_bar.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_subtype": "component_demo",
     "flow_name": "comp_radio_button_category_data",
     "_source": {
@@ -1694,6 +1703,16 @@
       "name": "Debug Sheets",
       "path": "component_sheets/component_plh_module_list_item.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1Tq8Ib_ZcJsABW9U9XbQxgnmtv_uayXk28DXoa94j1aE"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "component_demo",
+    "flow_name": "comp_plh_progress_bar",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_plh_progress_bar.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
     }
   },
   {
