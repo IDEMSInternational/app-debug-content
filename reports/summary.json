@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 473
+        "count": 474
       },
       {
         "type": "calendar",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 119
+        "count": 120
       },
       {
         "type": "data_query",
@@ -198,6 +198,10 @@
         "count": 21
       },
       {
+        "type": "plh_progress_bar",
+        "count": 6
+      },
+      {
         "type": "plh_progress_path",
         "count": 4
       },
@@ -255,7 +259,7 @@
       },
       {
         "type": "set_variable",
-        "count": 950
+        "count": 956
       },
       {
         "type": "simple_checkbox",
@@ -515,7 +519,7 @@
       },
       {
         "type": "set_local",
-        "count": 77
+        "count": 78
       },
       {
         "type": "share",
@@ -1100,7 +1104,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 51
+        "total": 52
       },
       {
         "type": "data_list",
@@ -1210,7 +1214,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 75
+        "total": 76
       },
       {
         "type": "template",

@@ -339,6 +339,23 @@
         }
       }
     },
+    "comp_plh_progress_bar_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_plh_progress_bar_data",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_progress_bar.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
+      },
+      "_metadata": {
+        "completed_count": {
+          "type": "number"
+        },
+        "total_count": {
+          "type": "number"
+        }
+      }
+    },
     "comp_task_bar_legacy_data": {
       "flow_type": "data_list",
       "flow_name": "comp_task_bar_legacy_data",
@@ -2652,6 +2669,16 @@
         "name": "Debug Sheets",
         "path": "component_sheets/component_plh_module_list_item.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1Tq8Ib_ZcJsABW9U9XbQxgnmtv_uayXk28DXoa94j1aE"
+      }
+    },
+    "comp_plh_progress_bar": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_progress_bar",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_progress_bar.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
       }
     },
     "comp_plh_progress_path": {
