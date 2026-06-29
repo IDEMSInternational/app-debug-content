@@ -3206,6 +3206,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1vnij3ASAYSvOXe4wU9F9BKl52SjTeTKZ_QkKl81fUnc"
       }
     },
+    "debug_asset_packs": {
+      "flow_type": "template",
+      "flow_name": "debug_asset_packs",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_remote_assets.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1QPtxcCZEgUpXA26niqoXD0OQni2WAa3kgTPExonkCKU"
+      }
+    },
     "debug_audio_1": {
       "flow_type": "template",
       "flow_name": "debug_audio_1",

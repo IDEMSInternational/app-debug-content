@@ -40,13 +40,44 @@
       "_nested_name": "display_group_2"
     },
     {
+      "type": "display_group",
+      "parameter_list": {
+        "wrap": "true"
+      },
+      "style_list": [
+        "justify-content: center"
+      ],
+      "rows": [
+        {
+          "type": "button",
+          "value": "Centred",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_1",
+          "_nested_name": "display_group_4.button_1"
+        },
+        {
+          "type": "button",
+          "value": "Centred",
+          "_translations": {
+            "value": {}
+          },
+          "name": "button_2",
+          "_nested_name": "display_group_4.button_2"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    },
+    {
       "type": "title",
       "value": "Example from production:",
       "_translations": {
         "value": {}
       },
-      "name": "title_4",
-      "_nested_name": "title_4"
+      "name": "title_6",
+      "_nested_name": "title_6"
     },
     {
       "type": "display_group",
@@ -66,7 +97,7 @@
             "variant": "no-background"
           },
           "name": "round_button_1",
-          "_nested_name": "display_group_5.round_button_1"
+          "_nested_name": "display_group_7.round_button_1"
         },
         {
           "type": "button",
@@ -82,7 +113,7 @@
             "flex: 1"
           ],
           "name": "button_2",
-          "_nested_name": "display_group_5.button_2",
+          "_nested_name": "display_group_7.button_2",
           "_dynamicFields": {
             "parameter_list": {
               "disabled": [
@@ -112,11 +143,11 @@
             "style": "no-background"
           },
           "name": "button_3",
-          "_nested_name": "display_group_5.button_3"
+          "_nested_name": "display_group_7.button_3"
         }
       ],
-      "name": "display_group_5",
-      "_nested_name": "display_group_5"
+      "name": "display_group_7",
+      "_nested_name": "display_group_7"
     }
   ],
   "_source": {
