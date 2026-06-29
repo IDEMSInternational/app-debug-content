@@ -1482,6 +1482,192 @@
       }
     },
     {
+      "type": "title",
+      "value": "Long Text",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_73",
+      "_nested_name": "title_73"
+    },
+    {
+      "type": "text",
+      "value": "wrap: false (default)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_74",
+      "_nested_name": "text_74"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1"
+      },
+      "name": "combo_box_75",
+      "_nested_name": "combo_box_75",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "variant": "dropdown",
+        "answer_list": "@local.answer_list_1"
+      },
+      "name": "combo_box_76",
+      "_nested_name": "combo_box_76",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "variant": "dropdown",
+        "answer_list": "@local.answer_list_1",
+        "placeholder": "Very long text string that will wrap over more than two lines on narrower screens"
+      },
+      "name": "combo_box_77",
+      "_nested_name": "combo_box_77",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "wrap: true",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_78",
+      "_nested_name": "text_78"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "answer_list": "@local.answer_list_1",
+        "wrap": "true"
+      },
+      "name": "combo_box_79",
+      "_nested_name": "combo_box_79",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "variant": "dropdown",
+        "answer_list": "@local.answer_list_1",
+        "wrap": "true"
+      },
+      "name": "combo_box_80",
+      "_nested_name": "combo_box_80",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": {
+        "variant": "dropdown",
+        "answer_list": "@local.answer_list_1",
+        "wrap": "true",
+        "placeholder": "Very long text string that will wrap over more than two lines on narrower screens"
+      },
+      "name": "combo_box_81",
+      "_nested_name": "combo_box_81",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.answer_list_1",
+              "matchedExpression": "@local.answer_list_1",
+              "type": "local",
+              "fieldName": "answer_list_1"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.answer_list_1": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
       "type": "text",
       "name": "sheet_link",
       "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1uIkaMlDjoDN7uTpHkSeEQ6Yp-4ehX9IrBQMrolpfjQc",

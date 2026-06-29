@@ -2084,6 +2084,16 @@
   {
     "flow_type": "template",
     "flow_subtype": "debug",
+    "flow_name": "debug_asset_packs",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_remote_assets.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1QPtxcCZEgUpXA26niqoXD0OQni2WAa3kgTPExonkCKU"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
     "flow_name": "debug_audio_1",
     "_source": {
       "name": "Debug Sheets",

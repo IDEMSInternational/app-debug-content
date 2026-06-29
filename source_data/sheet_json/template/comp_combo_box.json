@@ -356,6 +356,42 @@
       "parameter_list": "variant: dropdown;\nanswer_list: @local.answer_list_2;\noptions_meta_badge_text: badge;\noptions_meta_badge_color: badge_color;"
     },
     {
+      "type": "title",
+      "value": "Long Text"
+    },
+    {
+      "type": "text",
+      "value": "wrap: false (default)"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @local.answer_list_1;"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "variant: dropdown;\nanswer_list: @local.answer_list_1;"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "variant: dropdown;\nanswer_list: @local.answer_list_1;\nplaceholder: Very long text string that will wrap over more than two lines on narrower screens;"
+    },
+    {
+      "type": "text",
+      "value": "wrap: true"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "answer_list: @local.answer_list_1;\nwrap: true;"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "variant: dropdown;\nanswer_list: @local.answer_list_1;\nwrap: true;"
+    },
+    {
+      "type": "combo_box",
+      "parameter_list": "variant: dropdown;\nanswer_list: @local.answer_list_1;\nwrap: true;\nplaceholder: Very long text string that will wrap over more than two lines on narrower screens;"
+    },
+    {
       "type": "text",
       "name": "sheet_link",
       "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1uIkaMlDjoDN7uTpHkSeEQ6Yp-4ehX9IrBQMrolpfjQc"

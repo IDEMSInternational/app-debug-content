@@ -1,0 +1,124 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_asset_packs",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "asset_pack_list",
+      "value": [
+        "debug_asset_pack_1",
+        "pack_2"
+      ],
+      "_nested_name": "asset_pack_list"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Asset pack ensure download action",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title"
+    },
+    {
+      "type": "button",
+      "value": "Ensure download of single asset pack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "ensure_downloaded"
+          ],
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1",
+          "params": {
+            "asset_pack": "debug_asset_pack_1"
+          }
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "button",
+      "value": "Ensure download of multiple asset packs",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "ensure_downloaded"
+          ],
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack_list: @field.asset_pack_list",
+          "params": {
+            "asset_pack_list": "@field.asset_pack_list"
+          }
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "click | asset_pack: ensure_downloaded | asset_pack_list: @field.asset_pack_list",
+                "matchedExpression": "@field.asset_pack_list",
+                "type": "field",
+                "fieldName": "asset_pack_list"
+              }
+            ],
+            "params": {
+              "asset_pack_list": [
+                {
+                  "fullExpression": "@field.asset_pack_list",
+                  "matchedExpression": "@field.asset_pack_list",
+                  "type": "field",
+                  "fieldName": "asset_pack_list"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@field.asset_pack_list": [
+          "action_list.0._raw",
+          "action_list.0.params.asset_pack_list"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Reset remote assets (return to core asset pack before any downloads)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "reset"
+          ],
+          "_raw": "click | asset_pack: reset"
+        }
+      ],
+      "name": "button_6",
+      "_nested_name": "button_6"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_remote_assets.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1QPtxcCZEgUpXA26niqoXD0OQni2WAa3kgTPExonkCKU"
+  }
+}
