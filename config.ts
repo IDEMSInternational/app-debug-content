@@ -3,6 +3,11 @@ import { SKINS } from "./skins";
 
 const config = generateDeploymentConfig("debug");
 
+config.git = {
+  content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
+  content_tag_latest: "1.10.11",
+};
+
 config.api.db_name = "debug"
 
 config.google_drive = {
@@ -11,6 +16,12 @@ config.google_drive = {
   { id: "19Kbwidpb_nOKpJAuRCkVLpAzWbKPzNm1", name: "debug_asset_pack_1", remote: true }
   ],
 };
+
+config.canto = {
+  url: "https://parentingforlifelonghealth.canto.com",
+  sourceFolders: [{ id: "V0DQB", name: "Debug Canto Assets" }],
+  ...loadEncryptedConfig("canto.json"),
+}
 
 config.web.favicon_asset = "images/icons/favicon.svg";
 
