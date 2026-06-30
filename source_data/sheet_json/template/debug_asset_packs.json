@@ -1,0 +1,33 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_asset_packs",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "set_field",
+      "name": "asset_pack_list",
+      "value": "debug_asset_pack_1; pack_2;"
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Asset pack ensure download action"
+    },
+    {
+      "type": "button",
+      "value": "Ensure download of single asset pack",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1;"
+    },
+    {
+      "type": "button",
+      "value": "Ensure download of multiple asset packs",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack_list: @field.asset_pack_list;"
+    },
+    {
+      "type": "button",
+      "value": "Reset remote assets (return to core asset pack before any downloads)",
+      "action_list": "click | asset_pack: reset;"
+    }
+  ]
+}

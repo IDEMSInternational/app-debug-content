@@ -13,19 +13,19 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
 | audio | 14 |
-| button | 473 |
+| button | 480 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 85 |
+| combo_box | 91 |
 | dashed_box | 19 |
-| data_items | 119 |
+| data_items | 120 |
 | data_query | 8 |
 | date_time_picker | 10 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 283 |
+| display_group | 284 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
@@ -52,6 +52,7 @@
 | plh_lesson_cta | 2 |
 | plh_module_details_header | 4 |
 | plh_module_list_item | 21 |
+| plh_progress_bar | 6 |
 | plh_progress_path | 4 |
 | progress_bar | 1 |
 | progress_path | 11 |
@@ -63,10 +64,10 @@
 | round_button | 30 |
 | select_text | 7 |
 | set_default | 1 |
-| set_field | 31 |
+| set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 950 |
+| set_variable | 955 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -77,13 +78,13 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1412 |
+| text | 1413 |
 | text_area | 13 |
 | text_box | 84 |
 | text_bubble | 13 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 685 |
+| title | 687 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
@@ -98,7 +99,7 @@
 | --- | --- |
 | add_data | 2 |
 | app_update | 3 |
-| asset_pack | 3 |
+| asset_pack | 6 |
 | auth | 8 |
 | auth_failure | 1 |
 | auth_success | 1 |
@@ -137,7 +138,7 @@
 | set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 77 |
+| set_local | 79 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -296,7 +297,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 51 |
+| data_list |  | 52 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 14 |
@@ -318,8 +319,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 119 |
-| template | component_demo | 75 |
-| template | debug | 305 |
+| template | component_demo | 76 |
+| template | debug | 306 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

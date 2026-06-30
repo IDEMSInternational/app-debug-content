@@ -23,6 +23,22 @@
       "type": "end_display_group"
     },
     {
+      "type": "begin_display_group",
+      "parameter_list": "wrap: true;",
+      "style_list": "justify-content: center;"
+    },
+    {
+      "type": "button",
+      "value": "Centred"
+    },
+    {
+      "type": "button",
+      "value": "Centred"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
       "type": "title",
       "value": "Example from production:"
     },

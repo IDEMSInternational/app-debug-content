@@ -1,0 +1,25 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_plh_progress_bar_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "completed_count": 3,
+      "total_count": 10
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_progress_bar.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
+  },
+  "_metadata": {
+    "completed_count": {
+      "type": "number"
+    },
+    "total_count": {
+      "type": "number"
+    }
+  }
+}

@@ -25,6 +25,11 @@ config.canto = {
 
 config.web.favicon_asset = "images/icons/favicon.svg";
 
+config.git = {
+  content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
+  content_tag_latest: "1.10.13",
+};
+
 // set supabase config if decrypted values available
 // TODO - should supabase match general config and additional settings
 const supabaseConfig = loadEncryptedConfig("supabaseConfig.json");
