@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
 | audio | 14 |
-| button | 480 |
+| button | 479 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -67,7 +67,7 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 955 |
+| set_variable | 956 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -78,7 +78,7 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1413 |
+| text | 1414 |
 | text_area | 13 |
 | text_box | 84 |
 | text_bubble | 13 |
@@ -138,7 +138,7 @@
 | set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 79 |
+| set_local | 78 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -156,7 +156,7 @@
 | assets | KB | MB |
 | --- | --- | --- |
 | total | 2499 KB | 2.5 MB |
-| unused | 1155 KB | 1.2 MB |
+| unused | 1185 KB | 1.2 MB |
 </details>
 
 <details open>
@@ -175,6 +175,9 @@ Assets that appear in app-data but do not have references within sheets
 | images/icons/close.png | 2.5 |
 | images/icons/favicon.svg | 2.1 |
 | images/icons/red_cross_grey.png | 0.2 |
+| images/image_1.png | 8.8 |
+| images/image_3.png | 9.6 |
+| images/image_4.png | 11.9 |
 | images/progress_path_bg_plh_kids_kw.jpg | 129.5 |
 | images/progress_path_bg_plh_kids_tz.jpg | 85.1 |
 | ios/icon-background.png | 3.9 |

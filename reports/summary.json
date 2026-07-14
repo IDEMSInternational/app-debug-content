@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 480
+        "count": 479
       },
       {
         "type": "calendar",
@@ -259,7 +259,7 @@
       },
       {
         "type": "set_variable",
-        "count": 955
+        "count": 956
       },
       {
         "type": "simple_checkbox",
@@ -303,7 +303,7 @@
       },
       {
         "type": "text",
-        "count": 1413
+        "count": 1414
       },
       {
         "type": "text_area",
@@ -519,7 +519,7 @@
       },
       {
         "type": "set_local",
-        "count": 79
+        "count": 78
       },
       {
         "type": "share",
@@ -568,7 +568,7 @@
       },
       {
         "assets": "unused",
-        "KB": "1155 KB",
+        "KB": "1185 KB",
         "MB": "1.2 MB"
       }
     ]
@@ -610,6 +610,18 @@
       {
         "path": "images/icons/red_cross_grey.png",
         "size_kb": 0.2
+      },
+      {
+        "path": "images/image_1.png",
+        "size_kb": 8.8
+      },
+      {
+        "path": "images/image_3.png",
+        "size_kb": 9.6
+      },
+      {
+        "path": "images/image_4.png",
+        "size_kb": 11.9
       },
       {
         "path": "images/progress_path_bg_plh_kids_kw.jpg",
