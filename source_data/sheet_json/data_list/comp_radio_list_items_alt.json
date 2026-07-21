@@ -1,0 +1,53 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_radio_list_items_alt",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "id": "option_1",
+      "label": "Text with square image",
+      "image": "images/test_image.png"
+    },
+    {
+      "id": "option_2",
+      "label": "Short text only"
+    },
+    {
+      "id": "option_3",
+      "label": "Text with 6:9 image",
+      "image": "https://placecats.com/neo_banana/120/180 "
+    },
+    {
+      "id": "option_4",
+      "label": "Text with 9:6 image",
+      "image": "https://placecats.com/millie/200/200"
+    },
+    {
+      "id": "option_5",
+      "label": "Short text only"
+    },
+    {
+      "id": "option_6",
+      "label": "longer text entry for text 2. longer text entry for text 2. longer text entry for text 2."
+    },
+    {
+      "id": "option_7",
+      "label": "text_7"
+    },
+    {
+      "id": "option_8",
+      "label": "text_8"
+    },
+    {
+      "id": "option_9",
+      "label": "text_9"
+    },
+    {
+      "id": "option_10",
+      "label": "Something else",
+      "input_allowed": true,
+      "input_placeholder": "Type your own"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_radio_list",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Radio list"
+    },
+    {
+      "type": "begin_radio_list",
+      "name": "radio_list",
+      "parameter_list": "value_as_object: true;\nvariant: card;\noptions_key: id;\noptions_value: label;"
+    },
+    {
+      "type": "data_items",
+      "value": "example_radio_list_items_alt"
+    },
+    {
+      "type": "end_radio_list"
+    },
+    {
+      "type": "text",
+      "value": "selected key: @local.radio_list.key"
+    },
+    {
+      "type": "text",
+      "value": "selected value: @local.radio_list.value"
+    },
+    {
+      "type": "title",
+      "value": "Radio button group"
+    },
+    {
+      "type": "begin_radio_button_grid",
+      "name": "radio_button_grid",
+      "parameter_list": "item_width: 140px;\ngrid_gap: 12px;\noptions_key: id;\noptions_value: label;\nvariant: card;\nstyle: secondary;"
+    },
+    {
+      "type": "data_items",
+      "value": "example_radio_list_items"
+    },
+    {
+      "type": "end_radio_button_grid"
+    },
+    {
+      "type": "text",
+      "value": "selected: @local.radio_button_grid"
+    }
+  ]
+}

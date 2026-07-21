@@ -1,0 +1,29 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "example_radio_list_items_alt",
+  "status": "released",
+  "rows": [
+    {
+      "id": "option_1",
+      "label": "Option 1"
+    },
+    {
+      "id": "option_2",
+      "label": "Option 2 With some longer text over multiple lines"
+    },
+    {
+      "id": "option_3",
+      "label": "Option 3"
+    },
+    {
+      "id": "option_4",
+      "label": "Option 4"
+    },
+    {
+      "id": "option_5",
+      "label": "Other...",
+      "input_allowed": true,
+      "input_placeholder": "Type your own"
+    }
+  ]
+}

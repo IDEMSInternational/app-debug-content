@@ -508,6 +508,21 @@
         "url": "https://docs.google.com/spreadsheets/d/1yHLQHxZQuxs34gBU-ny95ZWs9e8-HybC4IAeFxwpcVw"
       }
     },
+    "comp_radio_button_grid_data_alt": {
+      "flow_type": "data_list",
+      "flow_name": "comp_radio_button_grid_data_alt",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_radio_button_grid.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1yHLQHxZQuxs34gBU-ny95ZWs9e8-HybC4IAeFxwpcVw"
+      },
+      "_metadata": {
+        "input_allowed": {
+          "type": "boolean"
+        }
+      }
+    },
     "comp_radio_button_grid_params": {
       "flow_type": "data_list",
       "flow_name": "comp_radio_button_grid_params",
@@ -531,6 +546,21 @@
         "name": "Debug Sheets",
         "path": "component_sheets/component_radio_list.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY"
+      }
+    },
+    "comp_radio_list_items_alt": {
+      "flow_type": "data_list",
+      "flow_name": "comp_radio_list_items_alt",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_radio_list.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY"
+      },
+      "_metadata": {
+        "input_allowed": {
+          "type": "boolean"
+        }
       }
     },
     "comp_table_data": {
@@ -1261,6 +1291,29 @@
         "name": "Debug Sheets",
         "path": "example_sheets/example_data_pipes_join.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1imxKEBQ31qpdu7NeXuH3UyK88G_G1jitLdw9CRZ9ZIY"
+      }
+    },
+    "example_radio_list_items": {
+      "flow_type": "data_list",
+      "flow_name": "example_radio_list_items",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_radio_list.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1m_c_RbdoDh9liZZlK9m321Q2BGiH2qv6NdqFZBsSM5o"
+      }
+    },
+    "example_radio_list_items_alt": {
+      "flow_type": "data_list",
+      "flow_name": "example_radio_list_items_alt",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_radio_list.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1m_c_RbdoDh9liZZlK9m321Q2BGiH2qv6NdqFZBsSM5o"
+      },
+      "_metadata": {
+        "input_allowed": {
+          "type": "boolean"
+        }
       }
     },
     "example_sheet_defaults_list": {
@@ -6736,6 +6789,15 @@
         "name": "Debug Sheets",
         "path": "example_sheets/example_plh_certificate.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1AdD0d8XqbtGSaZaS-SSONDZrcI7rWks3ScUfmZPY7jc"
+      }
+    },
+    "example_radio_list": {
+      "flow_type": "template",
+      "flow_name": "example_radio_list",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "example_sheets/example_radio_list.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1m_c_RbdoDh9liZZlK9m321Q2BGiH2qv6NdqFZBsSM5o"
       }
     },
     "example_sheet_defaults": {

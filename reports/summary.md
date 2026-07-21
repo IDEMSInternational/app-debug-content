@@ -13,19 +13,19 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 2 |
 | audio | 14 |
-| button | 479 |
+| button | 480 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 91 |
 | dashed_box | 19 |
-| data_items | 120 |
+| data_items | 126 |
 | data_query | 8 |
-| date_time_picker | 10 |
+| date_time_picker | 11 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 284 |
+| display_group | 287 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
@@ -57,17 +57,17 @@
 | progress_bar | 1 |
 | progress_path | 11 |
 | qr_code | 2 |
-| radio_button_grid | 17 |
+| radio_button_grid | 20 |
 | radio_group | 61 |
 | radio_group_grid | 5 |
-| radio_list | 5 |
+| radio_list | 10 |
 | round_button | 30 |
 | select_text | 7 |
 | set_default | 1 |
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 956 |
+| set_variable | 958 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -78,13 +78,13 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1414 |
+| text | 1434 |
 | text_area | 13 |
-| text_box | 84 |
+| text_box | 87 |
 | text_bubble | 13 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 687 |
+| title | 693 |
 | toggle_bar | 83 |
 | update_action_list | 2 |
 | video | 4 |
@@ -108,7 +108,7 @@
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 34 |
 | emit: force_reload | 35 |
-| emit: force_reprocess | 63 |
+| emit: force_reprocess | 66 |
 | emit: force_restart | 4 |
 | emit: server_sync | 9 |
 | emit: set_language | 6 |
@@ -138,7 +138,7 @@
 | set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 78 |
+| set_local | 79 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -239,7 +239,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/example/408-536x354.jpg | 23.2 | 1 |
 | images/example/423-536x354.jpg | 30.3 | 1 |
 | images/example/circular.png | 15.7 | 7 |
-| images/example/jasper_1.jpg | 527.3 | 64 |
+| images/example/jasper_1.jpg | 527.3 | 67 |
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
@@ -288,7 +288,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/square_2.svg | 1 | 4 |
 | images/square_3.svg | 1 | 3 |
 | images/square_4.svg | 1 | 3 |
-| images/test_image.png | 2 | 5 |
+| images/test_image.png | 2 | 7 |
 | images/test_image_no_translations.png | 2.8 | 1 |
 | lottie/blob_play_ball.json | 69.4 | 16 |
 | lottie/cascading_stars.json | 140.5 | 1 |
@@ -300,10 +300,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 52 |
+| data_list |  | 54 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
-| data_list | component_demo | 14 |
+| data_list | component_demo | 16 |
 | data_list | debug | 28 |
 | data_list | example_generator | 3 |
 | data_list | example_list_override | 2 |
@@ -321,7 +321,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 119 |
+| template |  | 120 |
 | template | component_demo | 76 |
 | template | debug | 306 |
 | template | example | 1 |

@@ -5,16 +5,6 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "title",
-      "name": "title_1",
-      "value": "Radio Button Grid",
-      "_translations": {
-        "value": {}
-      },
-      "exclude_from_translation": true,
-      "_nested_name": "title_1"
-    },
-    {
       "type": "subtitle",
       "name": "parameters",
       "value": "Parameters",
@@ -25,8 +15,46 @@
       "_nested_name": "parameters"
     },
     {
+      "name": "concat_name",
+      "value": "_name",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "concat_name"
+    },
+    {
+      "name": "concat_input",
+      "value": "_input",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "concat_input"
+    },
+    {
+      "name": "concat_description",
+      "value": "_description",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "concat_description"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Radio Button Grid",
+      "_translations": {
+        "value": {}
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "title_1"
+    },
+    {
       "type": "items",
       "value": "@data.comp_radio_button_grid_params",
+      "condition": false,
       "rows": [
         {
           "type": "display_group",
@@ -34,7 +62,7 @@
           "rows": [
             {
               "type": "text",
-              "name": "{@item.id}_name",
+              "name": "@item.id@local.concat_name",
               "value": "@item.id",
               "_translations": {
                 "value": {}
@@ -42,14 +70,20 @@
               "style_list": [
                 "width: 150px"
               ],
-              "_nested_name": "items_4.@item.id.{@item.id}_name",
+              "_nested_name": "items_7.@item.id.@item.id@local.concat_name",
               "_dynamicFields": {
                 "name": [
                   {
-                    "fullExpression": "{@item.id}_name",
+                    "fullExpression": "@item.id@local.concat_name",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "@item.id@local.concat_name",
+                    "matchedExpression": "@local.concat_name",
+                    "type": "local",
+                    "fieldName": "concat_name"
                   }
                 ],
                 "value": [
@@ -62,16 +96,22 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_name",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_name",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
                   },
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_name",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_name",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_name",
+                    "matchedExpression": "@local.concat_name",
+                    "type": "local",
+                    "fieldName": "concat_name"
                   }
                 ]
               },
@@ -81,12 +121,16 @@
                   "value",
                   "_nested_name",
                   "_nested_name"
+                ],
+                "@local.concat_name": [
+                  "name",
+                  "_nested_name"
                 ]
               }
             },
             {
               "type": "text_box",
-              "name": "{@item.id}_input",
+              "name": "@item.id@local.concat_input",
               "value": "@item.default_value",
               "_translations": {
                 "value": {}
@@ -106,14 +150,20 @@
                 }
               ],
               "exclude_from_translation": true,
-              "_nested_name": "items_4.@item.id.{@item.id}_input",
+              "_nested_name": "items_7.@item.id.@item.id@local.concat_input",
               "_dynamicFields": {
                 "name": [
                   {
-                    "fullExpression": "{@item.id}_input",
+                    "fullExpression": "@item.id@local.concat_input",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "@item.id@local.concat_input",
+                    "matchedExpression": "@local.concat_input",
+                    "type": "local",
+                    "fieldName": "concat_input"
                   }
                 ],
                 "value": [
@@ -134,16 +184,22 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_input",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_input",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
                   },
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_input",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_input",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_input",
+                    "matchedExpression": "@local.concat_input",
+                    "type": "local",
+                    "fieldName": "concat_input"
                   }
                 ]
               },
@@ -151,6 +207,10 @@
                 "@item.id": [
                   "name",
                   "_nested_name",
+                  "_nested_name"
+                ],
+                "@local.concat_input": [
+                  "name",
                   "_nested_name"
                 ],
                 "@item.default_value": [
@@ -161,19 +221,25 @@
             },
             {
               "type": "text",
-              "name": "{@item.id}_input",
+              "name": "@item.id@local.concat_input",
               "condition": "!@item.default_value",
               "style_list": [
                 "width: 100px"
               ],
-              "_nested_name": "items_4.@item.id.{@item.id}_input",
+              "_nested_name": "items_7.@item.id.@item.id@local.concat_input",
               "_dynamicFields": {
                 "name": [
                   {
-                    "fullExpression": "{@item.id}_input",
+                    "fullExpression": "@item.id@local.concat_input",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "@item.id@local.concat_input",
+                    "matchedExpression": "@local.concat_input",
+                    "type": "local",
+                    "fieldName": "concat_input"
                   }
                 ],
                 "condition": [
@@ -186,16 +252,22 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_input",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_input",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
                   },
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_input",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_input",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_input",
+                    "matchedExpression": "@local.concat_input",
+                    "type": "local",
+                    "fieldName": "concat_input"
                   }
                 ]
               },
@@ -205,6 +277,10 @@
                   "_nested_name",
                   "_nested_name"
                 ],
+                "@local.concat_input": [
+                  "name",
+                  "_nested_name"
+                ],
                 "!@item.default_value": [
                   "condition"
                 ]
@@ -212,7 +288,7 @@
             },
             {
               "type": "text",
-              "name": "{@item.id}_description",
+              "name": "@item.id@local.concat_description",
               "value": "@item.description",
               "_translations": {
                 "value": {}
@@ -220,14 +296,20 @@
               "style_list": [
                 "flex: 1"
               ],
-              "_nested_name": "items_4.@item.id.{@item.id}_description",
+              "_nested_name": "items_7.@item.id.@item.id@local.concat_description",
               "_dynamicFields": {
                 "name": [
                   {
-                    "fullExpression": "{@item.id}_description",
+                    "fullExpression": "@item.id@local.concat_description",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "@item.id@local.concat_description",
+                    "matchedExpression": "@local.concat_description",
+                    "type": "local",
+                    "fieldName": "concat_description"
                   }
                 ],
                 "value": [
@@ -240,16 +322,22 @@
                 ],
                 "_nested_name": [
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_description",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_description",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
                   },
                   {
-                    "fullExpression": "items_4.@item.id.{@item.id}_description",
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_description",
                     "matchedExpression": "@item.id",
                     "type": "item",
                     "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "items_7.@item.id.@item.id@local.concat_description",
+                    "matchedExpression": "@local.concat_description",
+                    "type": "local",
+                    "fieldName": "concat_description"
                   }
                 ]
               },
@@ -259,13 +347,17 @@
                   "_nested_name",
                   "_nested_name"
                 ],
+                "@local.concat_description": [
+                  "name",
+                  "_nested_name"
+                ],
                 "@item.description": [
                   "value"
                 ]
               }
             }
           ],
-          "_nested_name": "items_4.@item.id",
+          "_nested_name": "items_7.@item.id",
           "_dynamicFields": {
             "name": [
               {
@@ -277,7 +369,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "items_4.@item.id",
+                "fullExpression": "items_7.@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -292,8 +384,8 @@
           }
         }
       ],
-      "name": "items_4",
-      "_nested_name": "items_4",
+      "name": "items_7",
+      "_nested_name": "items_7",
       "_dynamicFields": {
         "value": [
           {
@@ -309,6 +401,168 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "item_width",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 150px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_9.text_1"
+        },
+        {
+          "type": "text_box",
+          "name": "item_width_input",
+          "value": "200px",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 100px"
+          ],
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "emit",
+              "args": [
+                "force_reprocess"
+              ],
+              "_raw": "changed | emit:force_reprocess"
+            }
+          ],
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_9.item_width_input"
+        },
+        {
+          "type": "text",
+          "value": "Minimum item width, will increase to fit grid;",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex: 1"
+          ],
+          "name": "text_3",
+          "_nested_name": "display_group_9.text_3"
+        }
+      ],
+      "name": "display_group_9",
+      "_nested_name": "display_group_9"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "grid_width",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 150px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_11.text_1"
+        },
+        {
+          "type": "text_box",
+          "name": "grid_width_input",
+          "value": "100%",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 100px"
+          ],
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "emit",
+              "args": [
+                "force_reprocess"
+              ],
+              "_raw": "changed | emit:force_reprocess"
+            }
+          ],
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_11.grid_width_input"
+        },
+        {
+          "type": "text",
+          "value": "Maximum grid width, if specified will center items in available space.\nUse fixed or relative units, such as '75%' or '500px'",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex: 1"
+          ],
+          "name": "text_3",
+          "_nested_name": "display_group_11.text_3"
+        }
+      ],
+      "name": "display_group_11",
+      "_nested_name": "display_group_11"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "grid_gap",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 150px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_13.text_1"
+        },
+        {
+          "type": "text_box",
+          "name": "grid_gap_input",
+          "value": "16px",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width: 100px"
+          ],
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "emit",
+              "args": [
+                "force_reprocess"
+              ],
+              "_raw": "changed | emit:force_reprocess"
+            }
+          ],
+          "exclude_from_translation": true,
+          "_nested_name": "display_group_13.grid_gap_input"
+        },
+        {
+          "type": "text",
+          "value": "Spacing between grid items",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "flex: 1"
+          ],
+          "name": "text_3",
+          "_nested_name": "display_group_13.text_3"
+        }
+      ],
+      "name": "display_group_13",
+      "_nested_name": "display_group_13"
     },
     {
       "type": "subtitle",
@@ -421,8 +675,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_9",
-      "_nested_name": "title_9"
+      "name": "title_18",
+      "_nested_name": "title_18"
     },
     {
       "type": "radio_button_grid",
@@ -503,8 +757,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_11",
-      "_nested_name": "title_11"
+      "name": "title_20",
+      "_nested_name": "title_20"
     },
     {
       "type": "radio_button_grid",
@@ -525,8 +779,8 @@
         "grid_gap": "@local.grid_gap_input"
       },
       "exclude_from_translation": true,
-      "name": "radio_button_grid_12",
-      "_nested_name": "radio_button_grid_12",
+      "name": "radio_button_grid_21",
+      "_nested_name": "radio_button_grid_21",
       "_dynamicFields": {
         "parameter_list": {
           "answer_list": [
@@ -573,8 +827,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_13",
-      "_nested_name": "text_13"
+      "name": "text_22",
+      "_nested_name": "text_22"
     },
     {
       "type": "radio_button_grid",
@@ -596,8 +850,8 @@
         "grid_gap": "8px"
       },
       "exclude_from_translation": true,
-      "name": "radio_button_grid_14",
-      "_nested_name": "radio_button_grid_14",
+      "name": "radio_button_grid_23",
+      "_nested_name": "radio_button_grid_23",
       "_dynamicFields": {
         "parameter_list": {
           "answer_list": [
@@ -622,8 +876,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_15",
-      "_nested_name": "text_15"
+      "name": "text_24",
+      "_nested_name": "text_24"
     },
     {
       "type": "radio_button_grid",
@@ -635,8 +889,8 @@
         "grid_gap": "8px"
       },
       "exclude_from_translation": true,
-      "name": "radio_button_grid_16",
-      "_nested_name": "radio_button_grid_16",
+      "name": "radio_button_grid_25",
+      "_nested_name": "radio_button_grid_25",
       "_dynamicFields": {
         "parameter_list": {
           "answer_list": [
@@ -652,6 +906,145 @@
       "_dynamicDependencies": {
         "@data.comp_radio_button_flex_img_data": [
           "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Card variant",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_26",
+      "_nested_name": "title_26"
+    },
+    {
+      "type": "radio_button_grid",
+      "parameter_list": {
+        "answer_list": "@data.comp_radio_button_grid_data_alt",
+        "item_width": "@local.item_width_input",
+        "grid_width": "@local.grid_width_input",
+        "grid_gap": "@local.grid_gap_input",
+        "options_key": "id",
+        "options_value": "label",
+        "variant": "card",
+        "style": "secondary"
+      },
+      "exclude_from_translation": true,
+      "name": "radio_button_grid_27",
+      "_nested_name": "radio_button_grid_27",
+      "_dynamicFields": {
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@data.comp_radio_button_grid_data_alt",
+              "matchedExpression": "@data.comp_radio_button_grid_data_alt",
+              "type": "data",
+              "fieldName": "comp_radio_button_grid_data_alt"
+            }
+          ],
+          "item_width": [
+            {
+              "fullExpression": "@local.item_width_input",
+              "matchedExpression": "@local.item_width_input",
+              "type": "local",
+              "fieldName": "item_width_input"
+            }
+          ],
+          "grid_width": [
+            {
+              "fullExpression": "@local.grid_width_input",
+              "matchedExpression": "@local.grid_width_input",
+              "type": "local",
+              "fieldName": "grid_width_input"
+            }
+          ],
+          "grid_gap": [
+            {
+              "fullExpression": "@local.grid_gap_input",
+              "matchedExpression": "@local.grid_gap_input",
+              "type": "local",
+              "fieldName": "grid_gap_input"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@data.comp_radio_button_grid_data_alt": [
+          "parameter_list.answer_list"
+        ],
+        "@local.item_width_input": [
+          "parameter_list.item_width"
+        ],
+        "@local.grid_width_input": [
+          "parameter_list.grid_width"
+        ],
+        "@local.grid_gap_input": [
+          "parameter_list.grid_gap"
+        ]
+      }
+    },
+    {
+      "type": "radio_button_grid",
+      "parameter_list": {
+        "item_width": "@local.item_width_input",
+        "grid_width": "@local.grid_width_input",
+        "grid_gap": "@local.grid_gap_input",
+        "options_key": "id",
+        "options_value": "label",
+        "variant": "card"
+      },
+      "exclude_from_translation": true,
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_radio_button_grid_data_alt",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_button_grid_28.data_items_1"
+        }
+      ],
+      "name": "radio_button_grid_28",
+      "_nested_name": "radio_button_grid_28",
+      "_dynamicFields": {
+        "parameter_list": {
+          "item_width": [
+            {
+              "fullExpression": "@local.item_width_input",
+              "matchedExpression": "@local.item_width_input",
+              "type": "local",
+              "fieldName": "item_width_input"
+            }
+          ],
+          "grid_width": [
+            {
+              "fullExpression": "@local.grid_width_input",
+              "matchedExpression": "@local.grid_width_input",
+              "type": "local",
+              "fieldName": "grid_width_input"
+            }
+          ],
+          "grid_gap": [
+            {
+              "fullExpression": "@local.grid_gap_input",
+              "matchedExpression": "@local.grid_gap_input",
+              "type": "local",
+              "fieldName": "grid_gap_input"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.item_width_input": [
+          "parameter_list.item_width"
+        ],
+        "@local.grid_width_input": [
+          "parameter_list.grid_width"
+        ],
+        "@local.grid_gap_input": [
+          "parameter_list.grid_gap"
         ]
       }
     },

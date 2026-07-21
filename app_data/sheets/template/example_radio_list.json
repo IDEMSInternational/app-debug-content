@@ -1,0 +1,148 @@
+{
+  "flow_type": "template",
+  "flow_name": "example_radio_list",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Radio list",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list",
+      "parameter_list": {
+        "value_as_object": "true",
+        "variant": "card",
+        "options_key": "id",
+        "options_value": "label"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "example_radio_list_items_alt",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_list.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_list"
+    },
+    {
+      "type": "text",
+      "value": "selected key: @local.radio_list.key",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "selected key: @local.radio_list.key",
+            "matchedExpression": "@local.radio_list.key",
+            "type": "local",
+            "fieldName": "radio_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list.key": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "selected value: @local.radio_list.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "selected value: @local.radio_list.value",
+            "matchedExpression": "@local.radio_list.value",
+            "type": "local",
+            "fieldName": "radio_list"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Radio button group",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_7",
+      "_nested_name": "title_7"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "radio_button_grid",
+      "parameter_list": {
+        "item_width": "140px",
+        "grid_gap": "12px",
+        "options_key": "id",
+        "options_value": "label",
+        "variant": "card",
+        "style": "secondary"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "example_radio_list_items",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_button_grid.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_button_grid"
+    },
+    {
+      "type": "text",
+      "value": "selected: @local.radio_button_grid",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "selected: @local.radio_button_grid",
+            "matchedExpression": "@local.radio_button_grid",
+            "type": "local",
+            "fieldName": "radio_button_grid"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_button_grid": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_radio_list.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1m_c_RbdoDh9liZZlK9m321Q2BGiH2qv6NdqFZBsSM5o"
+  }
+}

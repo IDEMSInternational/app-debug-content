@@ -288,7 +288,7 @@
     },
     {
       "type": "title",
-      "value": "Variant: boxed",
+      "value": "Variant: card",
       "_translations": {
         "value": {}
       },
@@ -300,7 +300,7 @@
       "name": "radio_list_5",
       "parameter_list": {
         "answer_list": "@local.answer_list_1",
-        "variant": "boxed"
+        "variant": "card"
       },
       "_nested_name": "radio_list_5",
       "_dynamicFields": {
@@ -341,6 +341,329 @@
       },
       "_dynamicDependencies": {
         "@local.radio_list_5": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Value as object",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_21",
+      "_nested_name": "title_21"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_6",
+      "parameter_list": {
+        "value_as_object": "true"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_radio_list_items",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_list_6.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_list_6"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_6))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_24",
+      "_nested_name": "text_24",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_6))",
+            "matchedExpression": "@local.radio_list_6",
+            "type": "local",
+            "fieldName": "radio_list_6"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_6))",
+            "matchedExpression": "@calc(JSON.stringify(@local.radio_list_6))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.radio_list_6)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_6": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.radio_list_6))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_6.key",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_25",
+      "_nested_name": "text_25",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected key: @local.radio_list_6.key",
+            "matchedExpression": "@local.radio_list_6.key",
+            "type": "local",
+            "fieldName": "radio_list_6"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_6.key": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_6.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_26",
+      "_nested_name": "text_26",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected value: @local.radio_list_6.value",
+            "matchedExpression": "@local.radio_list_6.value",
+            "type": "local",
+            "fieldName": "radio_list_6"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_6.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "User input option",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_27",
+      "_nested_name": "title_27"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_7",
+      "parameter_list": {
+        "value_as_object": "true",
+        "options_key": "id",
+        "options_value": "label"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_radio_list_items_alt",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_list_7.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_list_7"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_7))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_30",
+      "_nested_name": "text_30",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_7))",
+            "matchedExpression": "@local.radio_list_7",
+            "type": "local",
+            "fieldName": "radio_list_7"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_7))",
+            "matchedExpression": "@calc(JSON.stringify(@local.radio_list_7))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.radio_list_7)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_7": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.radio_list_7))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_7.key",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_31",
+      "_nested_name": "text_31",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected key: @local.radio_list_7.key",
+            "matchedExpression": "@local.radio_list_7.key",
+            "type": "local",
+            "fieldName": "radio_list_7"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_7.key": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_7.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_32",
+      "_nested_name": "text_32",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected value: @local.radio_list_7.value",
+            "matchedExpression": "@local.radio_list_7.value",
+            "type": "local",
+            "fieldName": "radio_list_7"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_7.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_8",
+      "parameter_list": {
+        "value_as_object": "true",
+        "variant": "card",
+        "options_key": "id",
+        "options_value": "label"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_radio_list_items_alt",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_list_8.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_list_8"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_8))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_35",
+      "_nested_name": "text_35",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_8))",
+            "matchedExpression": "@local.radio_list_8",
+            "type": "local",
+            "fieldName": "radio_list_8"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_8))",
+            "matchedExpression": "@calc(JSON.stringify(@local.radio_list_8))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.radio_list_8)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_8": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.radio_list_8))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_8.key",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_36",
+      "_nested_name": "text_36",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected key: @local.radio_list_8.key",
+            "matchedExpression": "@local.radio_list_8.key",
+            "type": "local",
+            "fieldName": "radio_list_8"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_8.key": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_8.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_37",
+      "_nested_name": "text_37",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected value: @local.radio_list_8.value",
+            "matchedExpression": "@local.radio_list_8.value",
+            "type": "local",
+            "fieldName": "radio_list_8"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_8.value": [
           "value"
         ]
       }
