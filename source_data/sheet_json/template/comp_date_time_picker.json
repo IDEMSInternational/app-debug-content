@@ -155,6 +155,19 @@
     {
       "type": "text",
       "value": "value: @local.date_time_picker_8"
+    },
+    {
+      "type": "text",
+      "value": "Year only:"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_9",
+      "parameter_list": "type: year;"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.date_time_picker_9"
     }
   ]
 }

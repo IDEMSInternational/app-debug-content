@@ -1,4 +1,15 @@
 {
+  "canto subfolder/debug album 2/test.png": {
+    "overrides": {
+      "theme_default": {
+        "fr_fr": {
+          "filePath": "fr_fr/canto subfolder/debug album 2/test.png",
+          "md5Checksum": "1d07abac2fc228093711159e4de23c98",
+          "size_kb": 4.7
+        }
+      }
+    }
+  },
   "images/test_image_untracked.png": {
     "overrides": {
       "theme_default": {

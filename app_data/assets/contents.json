@@ -305,6 +305,27 @@
     "md5Checksum": "41f21e68727d9367ab32bd05f3aa30e3",
     "size_kb": 0.5
   },
+  "images/image_1.png": {
+    "md5Checksum": "c26f0932f501f5b0e55322c0ad30fddf",
+    "size_kb": 8.8
+  },
+  "images/image_3.png": {
+    "md5Checksum": "5de98f5bb24410b7e088a6b36dd87b8e",
+    "size_kb": 9.6
+  },
+  "images/image_4.png": {
+    "md5Checksum": "085692002e23e08fa7134e6b01007ce4",
+    "overrides": {
+      "theme_default": {
+        "es_sp": {
+          "filePath": "es_sp/images/image_4.png",
+          "md5Checksum": "085692002e23e08fa7134e6b01007ce4",
+          "size_kb": 11.9
+        }
+      }
+    },
+    "size_kb": 11.9
+  },
   "images/lesson-cta-bg.svg": {
     "md5Checksum": "5a285f950ba5c41b79774114cc423cf5",
     "size_kb": 4

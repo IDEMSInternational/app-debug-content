@@ -543,6 +543,47 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "text",
+      "value": "Year only:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_36",
+      "_nested_name": "text_36"
+    },
+    {
+      "type": "date_time_picker",
+      "name": "date_time_picker_9",
+      "parameter_list": {
+        "type": "year"
+      },
+      "_nested_name": "date_time_picker_9"
+    },
+    {
+      "type": "text",
+      "value": "value: @local.date_time_picker_9",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_38",
+      "_nested_name": "text_38",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "value: @local.date_time_picker_9",
+            "matchedExpression": "@local.date_time_picker_9",
+            "type": "local",
+            "fieldName": "date_time_picker_9"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.date_time_picker_9": [
+          "value"
+        ]
+      }
     }
   ],
   "_source": {
