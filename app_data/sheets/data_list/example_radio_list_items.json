@@ -1,0 +1,42 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "example_radio_list_items",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id_1",
+      "label": "First",
+      "image": "https://placecats.com/millie/200/200"
+    },
+    {
+      "id": "id_2",
+      "label": "Second",
+      "image": "images/example/jasper_1.jpg"
+    },
+    {
+      "id": "id_3",
+      "label": "Third",
+      "image": "https://placecats.com/millie/200/200"
+    },
+    {
+      "id": "id_4",
+      "label": "Fourth",
+      "image": "images/example/jasper_1.jpg"
+    },
+    {
+      "id": "id_5",
+      "label": "Fifth",
+      "image": "https://placecats.com/millie/200/200"
+    },
+    {
+      "id": "id_6",
+      "label": "Sixth",
+      "image": "images/example/jasper_1.jpg"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "example_sheets/example_radio_list.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1m_c_RbdoDh9liZZlK9m321Q2BGiH2qv6NdqFZBsSM5o"
+  }
+}

@@ -5,20 +5,33 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "title",
-      "name": "title_1",
-      "value": "Radio Button Grid",
-      "exclude_from_translation": true
-    },
-    {
       "type": "subtitle",
       "name": "parameters",
       "value": "Parameters",
       "exclude_from_translation": true
     },
     {
+      "name": "concat_name",
+      "value": "_name"
+    },
+    {
+      "name": "concat_input",
+      "value": "_input"
+    },
+    {
+      "name": "concat_description",
+      "value": "_description"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Radio Button Grid",
+      "exclude_from_translation": true
+    },
+    {
       "type": "begin_items",
-      "value": "@data.comp_radio_button_grid_params"
+      "value": "@data.comp_radio_button_grid_params",
+      "condition": false
     },
     {
       "type": "begin_display_group",
@@ -26,13 +39,13 @@
     },
     {
       "type": "text",
-      "name": "{@item.id}_name",
+      "name": "@item.id@local.concat_name",
       "value": "@item.id",
       "style_list": "width: 150px"
     },
     {
       "type": "text_box",
-      "name": "{@item.id}_input",
+      "name": "@item.id@local.concat_input",
       "value": "@item.default_value",
       "condition": "@item.default_value",
       "style_list": "width: 100px",
@@ -41,13 +54,13 @@
     },
     {
       "type": "text",
-      "name": "{@item.id}_input",
+      "name": "@item.id@local.concat_input",
       "condition": "!@item.default_value",
       "style_list": "width: 100px"
     },
     {
       "type": "text",
-      "name": "{@item.id}_description",
+      "name": "@item.id@local.concat_description",
       "value": "@item.description",
       "style_list": "flex: 1"
     },
@@ -56,6 +69,78 @@
     },
     {
       "type": "end_items"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "item_width",
+      "style_list": "width: 150px"
+    },
+    {
+      "type": "text_box",
+      "name": "item_width_input",
+      "value": "200px",
+      "style_list": "width: 100px",
+      "action_list": "changed | emit:force_reprocess;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Minimum item width, will increase to fit grid;",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "grid_width",
+      "style_list": "width: 150px"
+    },
+    {
+      "type": "text_box",
+      "name": "grid_width_input",
+      "value": "100%",
+      "style_list": "width: 100px",
+      "action_list": "changed | emit:force_reprocess;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Maximum grid width, if specified will center items in available space.\nUse fixed or relative units, such as '75%' or '500px'",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "text",
+      "value": "grid_gap",
+      "style_list": "width: 150px"
+    },
+    {
+      "type": "text_box",
+      "name": "grid_gap_input",
+      "value": "16px",
+      "style_list": "width: 100px",
+      "action_list": "changed | emit:force_reprocess;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Spacing between grid items",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "end_display_group"
     },
     {
       "type": "subtitle",
@@ -113,6 +198,27 @@
       "type": "radio_button_grid",
       "parameter_list": "answer_list: @data.comp_radio_button_flex_img_data; \nvariant: flex;\nstyle: secondary;\nitem_width: 60px;\ngrid_gap: 8px;",
       "exclude_from_translation": true
+    },
+    {
+      "type": "title",
+      "value": "Card variant"
+    },
+    {
+      "type": "radio_button_grid",
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data_alt; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;\nstyle: secondary;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "begin_radio_button_grid",
+      "parameter_list": "item_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;",
+      "exclude_from_translation": true
+    },
+    {
+      "type": "data_items",
+      "value": "comp_radio_button_grid_data_alt"
+    },
+    {
+      "type": "end_radio_button_grid"
     },
     {
       "type": "text",

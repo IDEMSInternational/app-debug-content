@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 479
+        "count": 480
       },
       {
         "type": "calendar",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 120
+        "count": 126
       },
       {
         "type": "data_query",
@@ -75,7 +75,7 @@
       },
       {
         "type": "date_time_picker",
-        "count": 10
+        "count": 11
       },
       {
         "type": "debug_toggle",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 284
+        "count": 287
       },
       {
         "type": "drawer",
@@ -219,7 +219,7 @@
       },
       {
         "type": "radio_button_grid",
-        "count": 17
+        "count": 20
       },
       {
         "type": "radio_group",
@@ -231,7 +231,7 @@
       },
       {
         "type": "radio_list",
-        "count": 5
+        "count": 10
       },
       {
         "type": "round_button",
@@ -259,7 +259,7 @@
       },
       {
         "type": "set_variable",
-        "count": 956
+        "count": 958
       },
       {
         "type": "simple_checkbox",
@@ -303,7 +303,7 @@
       },
       {
         "type": "text",
-        "count": 1414
+        "count": 1434
       },
       {
         "type": "text_area",
@@ -311,7 +311,7 @@
       },
       {
         "type": "text_box",
-        "count": 84
+        "count": 87
       },
       {
         "type": "text_bubble",
@@ -327,7 +327,7 @@
       },
       {
         "type": "title",
-        "count": 687
+        "count": 693
       },
       {
         "type": "toggle_bar",
@@ -399,7 +399,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 63
+        "count": 66
       },
       {
         "type": "emit: force_restart",
@@ -519,7 +519,7 @@
       },
       {
         "type": "set_local",
-        "count": 78
+        "count": 79
       },
       {
         "type": "share",
@@ -841,7 +841,7 @@
       },
       {
         "path": "images/example/jasper_1.jpg",
-        "count": 64,
+        "count": 67,
         "size_kb": 527.3
       },
       {
@@ -1086,7 +1086,7 @@
       },
       {
         "path": "images/test_image.png",
-        "count": 5,
+        "count": 7,
         "size_kb": 2
       },
       {
@@ -1116,7 +1116,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 52
+        "total": 54
       },
       {
         "type": "data_list",
@@ -1131,7 +1131,7 @@
       {
         "type": "data_list",
         "subtype": "component_demo",
-        "total": 14
+        "total": 16
       },
       {
         "type": "data_list",
@@ -1221,7 +1221,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 119
+        "total": 120
       },
       {
         "type": "template",

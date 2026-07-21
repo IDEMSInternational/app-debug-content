@@ -80,16 +80,96 @@
     },
     {
       "type": "title",
-      "value": "Variant: boxed"
+      "value": "Variant: card"
     },
     {
       "type": "radio_list",
       "name": "radio_list_5",
-      "parameter_list": "answer_list: @local.answer_list_1;\nvariant: boxed;"
+      "parameter_list": "answer_list: @local.answer_list_1;\nvariant: card;"
     },
     {
       "type": "text",
       "value": "Selected: @local.radio_list_5"
+    },
+    {
+      "type": "title",
+      "value": "Value as object"
+    },
+    {
+      "type": "begin_radio_list",
+      "name": "radio_list_6",
+      "parameter_list": "value_as_object: true;"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_radio_list_items"
+    },
+    {
+      "type": "end_radio_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_6))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_6.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_6.value"
+    },
+    {
+      "type": "title",
+      "value": "User input option"
+    },
+    {
+      "type": "begin_radio_list",
+      "name": "radio_list_7",
+      "parameter_list": "value_as_object: true;\noptions_key: id;\noptions_value: label;"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_radio_list_items_alt"
+    },
+    {
+      "type": "end_radio_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_7))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_7.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_7.value"
+    },
+    {
+      "type": "begin_radio_list",
+      "name": "radio_list_8",
+      "parameter_list": "value_as_object: true;\nvariant: card;\noptions_key: id;\noptions_value: label;"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_radio_list_items_alt"
+    },
+    {
+      "type": "end_radio_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_8))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_8.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_8.value"
     },
     {
       "type": "text",
