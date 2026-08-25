@@ -1,0 +1,30 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_bar_pop_up",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Pop Up",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Pop up triggered by progress bar percentage",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_progress_bar.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
+  }
+}

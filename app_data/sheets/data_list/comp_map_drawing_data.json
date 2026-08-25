@@ -1,0 +1,15 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_map_drawing_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id1"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_map_drawing.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+  }
+}

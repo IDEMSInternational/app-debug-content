@@ -10,18 +10,12 @@
       "value": "Remote assets"
     },
     {
-      "type": "button",
-      "value": "Download asset pack (action)",
-      "action_list": "click | asset_pack: download: debug_asset_pack_1;"
+      "type": "text",
+      "value": "Watch the metadata panel while pressing buttons. It is empty until a pack has been downloaded."
     },
     {
-      "type": "asset_pack_download_button",
-      "parameter_list": "asset_pack: debug_asset_pack_1;\ndefault_text: Download asset pack (component);\nprogress_text: Downloading...;\nsuccess_text: ✅ Success;\nerror_text: ❌ Failure;"
-    },
-    {
-      "type": "button",
-      "value": "Cancel in-progress downloads",
-      "action_list": "click | asset_pack: cancel_download;"
+      "type": "title",
+      "value": "Asset pack metadata (_asset_packs)"
     },
     {
       "type": "begin_data_items",
@@ -29,24 +23,102 @@
     },
     {
       "type": "text",
-      "value": "id: @item.id,\ndownload_status: @item.download_status"
+      "value": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at"
     },
     {
       "type": "end_data_items"
+    },
+    {
+      "type": "text",
+      "value": "download_in_progress: @fields._asset_pack_download_in_progress"
+    },
+    {
+      "type": "title",
+      "value": "Asset pack 1"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: ensure_downloaded",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1;"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: download, 3s per file",
+      "action_list": "click | asset_pack: download: debug_asset_pack_1 | debug_download_delay_ms: 3000;"
+    },
+    {
+      "type": "title",
+      "value": "Asset pack 2"
+    },
+    {
+      "type": "text",
+      "value": "debug_asset_pack_2 contains one file that has a reference but is missing; one very large file (400MB); and one normal file"
+    },
+    {
+      "type": "button",
+      "value": "Pack 2: ensure_downloaded",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_2;"
+    },
+    {
+      "type": "button",
+      "value": "Pack 2: download",
+      "action_list": "click | asset_pack: download: debug_asset_pack_2"
+    },
+    {
+      "type": "title",
+      "value": "Both packs / global"
+    },
+    {
+      "name": "asset_pack_list",
+      "value": "debug_asset_pack_1; debug_asset_pack_2"
+    },
+    {
+      "type": "button",
+      "value": "Download both (ensure_downloaded)",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack_list: @local.asset_pack_list;"
+    },
+    {
+      "type": "button",
+      "value": "Cancel in-progress downloads",
+      "action_list": "click | asset_pack: cancel_download;"
+    },
+    {
+      "type": "button",
+      "value": "Reset (delete all files, clear both lists)",
+      "action_list": "click | asset_pack: reset;"
+    },
+    {
+      "type": "title",
+      "value": "Select language:"
+    },
+    {
+      "type": "set_variable",
+      "name": "language_list",
+      "value": "[{\"name\":\"gb_en\",\"text\":\"English\"},{\"name\":\"es_sp\",\"text\":\"Español\"}]"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "action_list": "changed | emit: set_language: @local.language_select;",
+      "parameter_list": "answer_list: @local.language_list"
+    },
+    {
+      "type": "title",
+      "value": "Asset cases (pack 1)"
     },
     {
       "type": "begin_display_group"
     },
     {
       "type": "text",
-      "value": "Remote asset replaces core equivalent:",
+      "value": "Replaces core equivalent:",
       "style_list": "width:140px"
     },
     {
       "type": "image",
       "value": "asset_pack_debugging/image_1.png",
-      "style_list": "max-width:140px",
-      "comments": "Assets are nested inside `asset_pack_debugging` folder for clearer separation in core asset folders, but nesting is not necessary"
+      "style_list": "max-width:140px"
     },
     {
       "type": "end_display_group"
@@ -56,7 +128,7 @@
     },
     {
       "type": "text",
-      "value": "Remote asset has no core equivalent:",
+      "value": "No core equivalent:",
       "style_list": "width:140px"
     },
     {
@@ -72,7 +144,7 @@
     },
     {
       "type": "text",
-      "value": "Remote asset adds an override:",
+      "value": "Adds an override:",
       "style_list": "width:140px"
     },
     {
@@ -88,7 +160,7 @@
     },
     {
       "type": "text",
-      "value": "Remote asset replaces core and override:",
+      "value": "Replaces core and override:",
       "style_list": "width:140px"
     },
     {
@@ -104,7 +176,7 @@
     },
     {
       "type": "text",
-      "value": "No core version, remote asset pack contains override only",
+      "value": "No core version, override only:",
       "style_list": "width:140px"
     },
     {
@@ -116,39 +188,8 @@
       "type": "end_display_group"
     },
     {
-      "type": "title",
-      "value": "Select language:"
-    },
-    {
-      "name": "language_list",
-      "value": "name: gb_en | text: English; name: es_sp | text: Español;"
-    },
-    {
-      "type": "radio_group",
-      "name": "language_select",
-      "value": "@fields._app_language",
-      "action_list": "changed | emit: set_language: @local.language_select;",
-      "parameter_list": "answer_list: @local.language_list"
-    },
-    {
-      "type": "button",
-      "value": "Reset remote assets (return to core asset pack before any downloads)",
-      "action_list": "click | asset_pack: reset;"
-    },
-    {
-      "type": "title",
-      "value": "Asset pack metadata"
-    },
-    {
-      "type": "begin_data_items",
-      "value": "_asset_packs"
-    },
-    {
       "type": "text",
-      "value": "id: @item.id,\nname: @item.name,\ndownload_status: @item.download_status"
-    },
-    {
-      "type": "end_data_items"
+      "value": "After deleting pack 1: images 1, 3, 4 revert to their core versions. Images 2 and 5 have no core version, so a missing image here is CORRECT, not a bug."
     }
   ]
 }

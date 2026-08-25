@@ -1,0 +1,15 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_bar_pop_up",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Pop Up"
+    },
+    {
+      "type": "text",
+      "value": "Pop up triggered by progress bar percentage"
+    }
+  ]
+}
