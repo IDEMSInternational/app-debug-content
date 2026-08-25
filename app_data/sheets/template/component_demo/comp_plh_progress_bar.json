@@ -5,6 +5,22 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "update_action_list",
+      "action_list": [
+        {
+          "trigger": "nav_resume",
+          "action_id": "set_local",
+          "args": [
+            "start",
+            true
+          ],
+          "_raw": "nav_resume | set_local: start: true"
+        }
+      ],
+      "name": "update_action_list_2",
+      "_nested_name": "update_action_list_2"
+    },
+    {
       "name": "title_1",
       "value": "Getting everything ready for you",
       "_translations": {
@@ -72,8 +88,60 @@
           "_raw": "click | set_local: start: true"
         }
       ],
-      "name": "button_8",
-      "_nested_name": "button_8"
+      "condition": "!@local.start",
+      "name": "button_9",
+      "_nested_name": "button_9",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.start",
+            "matchedExpression": "!@local.start",
+            "type": "local",
+            "fieldName": "start"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.start": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Stop",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "start",
+            false
+          ],
+          "_raw": "click | set_local: start: false"
+        }
+      ],
+      "condition": "!!@local.start",
+      "name": "button_10",
+      "_nested_name": "button_10",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!!@local.start",
+            "matchedExpression": "!@local.start",
+            "type": "local",
+            "fieldName": "start"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.start": [
+          "condition"
+        ]
+      }
     },
     {
       "type": "plh_progress_bar",
@@ -120,9 +188,34 @@
       "parameter_list": {
         "title": "@local.title_2",
         "duration": "2000",
-        "auto_play": "@local.bar_1 == 100",
+        "auto_play": "@local.bar_1 == 100 && @local.start",
         "color": "var(--ion-color-secondary-300)"
       },
+      "action_list": [
+        {
+          "trigger": "on_progress",
+          "action_id": "pop_up",
+          "args": [
+            "comp_plh_progress_bar_pop_up"
+          ],
+          "_raw": "on_progress: 50 | pop_up: comp_plh_progress_bar_pop_up",
+          "trigger_args": [
+            "50"
+          ]
+        },
+        {
+          "trigger": "on_progress",
+          "action_id": "set_local",
+          "args": [
+            "start",
+            false
+          ],
+          "_raw": "on_progress: 50 | set_local: start: false",
+          "trigger_args": [
+            "50"
+          ]
+        }
+      ],
       "_nested_name": "bar_2",
       "_dynamicFields": {
         "parameter_list": {
@@ -136,10 +229,16 @@
           ],
           "auto_play": [
             {
-              "fullExpression": "@local.bar_1 == 100",
+              "fullExpression": "@local.bar_1 == 100 && @local.start",
               "matchedExpression": "@local.bar_1",
               "type": "local",
               "fieldName": "bar_1"
+            },
+            {
+              "fullExpression": "@local.bar_1 == 100 && @local.start",
+              "matchedExpression": "@local.start",
+              "type": "local",
+              "fieldName": "start"
             }
           ]
         }
@@ -150,6 +249,9 @@
         ],
         "@local.bar_1": [
           "parameter_list.auto_play"
+        ],
+        "@local.start": [
+          "parameter_list.auto_play"
         ]
       }
     },
@@ -159,9 +261,28 @@
       "parameter_list": {
         "title": "@local.title_3",
         "duration": "1000",
-        "auto_play": "@local.bar_2 == 100",
+        "auto_play": "@local.bar_2 == 100 && @local.start",
         "color": "var(--ion-color-primary-700)"
       },
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "pop_up",
+          "args": [
+            "comp_plh_progress_bar_pop_up"
+          ],
+          "_raw": "completed | pop_up: comp_plh_progress_bar_pop_up"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "start",
+            false
+          ],
+          "_raw": "completed | set_local: start: false"
+        }
+      ],
       "_nested_name": "bar_3",
       "_dynamicFields": {
         "parameter_list": {
@@ -175,10 +296,16 @@
           ],
           "auto_play": [
             {
-              "fullExpression": "@local.bar_2 == 100",
+              "fullExpression": "@local.bar_2 == 100 && @local.start",
               "matchedExpression": "@local.bar_2",
               "type": "local",
               "fieldName": "bar_2"
+            },
+            {
+              "fullExpression": "@local.bar_2 == 100 && @local.start",
+              "matchedExpression": "@local.start",
+              "type": "local",
+              "fieldName": "start"
             }
           ]
         }
@@ -189,6 +316,9 @@
         ],
         "@local.bar_2": [
           "parameter_list.auto_play"
+        ],
+        "@local.start": [
+          "parameter_list.auto_play"
         ]
       }
     },
@@ -198,7 +328,7 @@
       "parameter_list": {
         "title": "@local.title_4",
         "duration": "1000",
-        "auto_play": "@local.bar_3 == 100",
+        "auto_play": "@local.bar_3 == 100 && @local.start",
         "color": "red"
       },
       "_nested_name": "bar_4",
@@ -214,10 +344,16 @@
           ],
           "auto_play": [
             {
-              "fullExpression": "@local.bar_3 == 100",
+              "fullExpression": "@local.bar_3 == 100 && @local.start",
               "matchedExpression": "@local.bar_3",
               "type": "local",
               "fieldName": "bar_3"
+            },
+            {
+              "fullExpression": "@local.bar_3 == 100 && @local.start",
+              "matchedExpression": "@local.start",
+              "type": "local",
+              "fieldName": "start"
             }
           ]
         }
@@ -228,6 +364,9 @@
         ],
         "@local.bar_3": [
           "parameter_list.auto_play"
+        ],
+        "@local.start": [
+          "parameter_list.auto_play"
         ]
       }
     },
@@ -237,7 +376,7 @@
       "parameter_list": {
         "title": "@local.title_5",
         "duration": "1000",
-        "auto_play": "@local.bar_4 == 100",
+        "auto_play": "@local.bar_4 == 100 && @local.start",
         "color": "#a241bf"
       },
       "_nested_name": "bar_5",
@@ -253,10 +392,16 @@
           ],
           "auto_play": [
             {
-              "fullExpression": "@local.bar_4 == 100",
+              "fullExpression": "@local.bar_4 == 100 && @local.start",
               "matchedExpression": "@local.bar_4",
               "type": "local",
               "fieldName": "bar_4"
+            },
+            {
+              "fullExpression": "@local.bar_4 == 100 && @local.start",
+              "matchedExpression": "@local.start",
+              "type": "local",
+              "fieldName": "start"
             }
           ]
         }
@@ -266,6 +411,9 @@
           "parameter_list.title"
         ],
         "@local.bar_4": [
+          "parameter_list.auto_play"
+        ],
+        "@local.start": [
           "parameter_list.auto_play"
         ]
       }
@@ -287,7 +435,7 @@
           "parameter_list": {
             "title": "Progress set dynamically"
           },
-          "_nested_name": "data_items_14.bar_6",
+          "_nested_name": "data_items_16.bar_6",
           "_dynamicFields": {
             "value": [
               {
@@ -323,8 +471,8 @@
           }
         }
       ],
-      "name": "data_items_14",
-      "_nested_name": "data_items_14",
+      "name": "data_items_16",
+      "_nested_name": "data_items_16",
       "_dynamicFields": {
         "parameter_list": {
           "filter": [

@@ -669,6 +669,229 @@
       }
     },
     {
+      "type": "title",
+      "value": "Default selection with value_as_object:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_38",
+      "_nested_name": "title_38"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_9",
+      "parameter_list": {
+        "value_as_object": "true",
+        "initial_selected_option_key": "option_3"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_radio_list_items",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_list_9.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_list_9"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_9))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_41",
+      "_nested_name": "text_41",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_9))",
+            "matchedExpression": "@local.radio_list_9",
+            "type": "local",
+            "fieldName": "radio_list_9"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_9))",
+            "matchedExpression": "@calc(JSON.stringify(@local.radio_list_9))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.radio_list_9)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_9": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.radio_list_9))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_9.key",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_42",
+      "_nested_name": "text_42",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected key: @local.radio_list_9.key",
+            "matchedExpression": "@local.radio_list_9.key",
+            "type": "local",
+            "fieldName": "radio_list_9"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_9.key": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_9.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_43",
+      "_nested_name": "text_43",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected value: @local.radio_list_9.value",
+            "matchedExpression": "@local.radio_list_9.value",
+            "type": "local",
+            "fieldName": "radio_list_9"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_9.value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Default selection of an input_allowed option:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_44",
+      "_nested_name": "title_44"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_10",
+      "parameter_list": {
+        "value_as_object": "true",
+        "variant": "card",
+        "options_key": "id",
+        "options_value": "label",
+        "initial_selected_option_key": "option_10"
+      },
+      "rows": [
+        {
+          "type": "data_items",
+          "value": "comp_radio_list_items_alt",
+          "_translations": {
+            "value": {}
+          },
+          "name": "data_items_1",
+          "_nested_name": "radio_list_10.data_items_1"
+        }
+      ],
+      "_nested_name": "radio_list_10"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_10))",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_47",
+      "_nested_name": "text_47",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_10))",
+            "matchedExpression": "@local.radio_list_10",
+            "type": "local",
+            "fieldName": "radio_list_10"
+          },
+          {
+            "fullExpression": "@calc(JSON.stringify(@local.radio_list_10))",
+            "matchedExpression": "@calc(JSON.stringify(@local.radio_list_10))",
+            "type": "calc",
+            "fieldName": "JSON.stringify(@local.radio_list_10)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_10": [
+          "value"
+        ],
+        "@calc(JSON.stringify(@local.radio_list_10))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_10.key",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_48",
+      "_nested_name": "text_48",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected key: @local.radio_list_10.key",
+            "matchedExpression": "@local.radio_list_10.key",
+            "type": "local",
+            "fieldName": "radio_list_10"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_10.key": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_10.value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_49",
+      "_nested_name": "text_49",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Selected value: @local.radio_list_10.value",
+            "matchedExpression": "@local.radio_list_10.value",
+            "type": "local",
+            "fieldName": "radio_list_10"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.radio_list_10.value": [
+          "value"
+        ]
+      }
+    },
+    {
       "type": "text",
       "name": "sheet_link",
       "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY/edit?usp=sharing",

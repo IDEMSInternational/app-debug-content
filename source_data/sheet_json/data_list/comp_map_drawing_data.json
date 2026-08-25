@@ -1,0 +1,10 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_map_drawing_data",
+  "status": "released",
+  "rows": [
+    {
+      "id": "id1"
+    }
+  ]
+}

@@ -159,6 +159,15 @@
         "url": "https://docs.google.com/spreadsheets/d/1RNwHYFtA4KEPGmoyVBWMYI9GtSpH7tNtoth6Jn0Npnc"
       }
     },
+    "comp_map_drawing_data": {
+      "flow_type": "data_list",
+      "flow_name": "comp_map_drawing_data",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_map_drawing.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+      }
+    },
     "comp_map_layer_data": {
       "flow_type": "data_list",
       "flow_name": "comp_map_layer_data",
@@ -2340,6 +2349,15 @@
         "url": "https://docs.google.com/spreadsheets/d/1GRYYgIf4529Mx8NPn1ynKfAluGDLhdcgNKyex1IOsQ8"
       }
     },
+    "comp_plh_progress_bar_pop_up": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_progress_bar_pop_up",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_progress_bar.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1F5_69ZGcqDtisPhE5KDHVbfqlSX20E7-yTlktBPNEwc"
+      }
+    },
     "comp_toggle_bar_legacy": {
       "flow_type": "template",
       "flow_name": "comp_toggle_bar_legacy",
@@ -2584,6 +2602,16 @@
         "name": "Debug Sheets",
         "path": "component_sheets/component_map.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
+      }
+    },
+    "comp_map_drawing": {
+      "flow_type": "template",
+      "flow_name": "comp_map_drawing",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_map_drawing.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
       }
     },
     "comp_navigation_bar": {

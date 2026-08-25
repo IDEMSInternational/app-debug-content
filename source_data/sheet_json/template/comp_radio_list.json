@@ -172,6 +172,62 @@
       "value": "Selected value: @local.radio_list_8.value"
     },
     {
+      "type": "title",
+      "value": "Default selection with value_as_object:"
+    },
+    {
+      "type": "begin_radio_list",
+      "name": "radio_list_9",
+      "parameter_list": "value_as_object: true;\ninitial_selected_option_key: option_3;"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_radio_list_items"
+    },
+    {
+      "type": "end_radio_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_9))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_9.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_9.value"
+    },
+    {
+      "type": "title",
+      "value": "Default selection of an input_allowed option:"
+    },
+    {
+      "type": "begin_radio_list",
+      "name": "radio_list_10",
+      "parameter_list": "value_as_object: true;\nvariant: card;\noptions_key: id;\noptions_value: label;\ninitial_selected_option_key: option_10;"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_radio_list_items_alt"
+    },
+    {
+      "type": "end_radio_list"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.radio_list_10))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.radio_list_10.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.radio_list_10.value"
+    },
+    {
       "type": "text",
       "name": "sheet_link",
       "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1ykG_OU7bZJhNyoVKzOGjjGJ2F0OHbdJC0sh_7d67fTY/edit?usp=sharing"

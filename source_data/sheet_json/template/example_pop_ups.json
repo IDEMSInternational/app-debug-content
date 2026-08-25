@@ -108,9 +108,6 @@
       "name": "button_pop_up_7",
       "value": "Complete",
       "action_list": "click | pop_up: example_completion | variant:plh_completion;"
-    },
-    {
-      "action_list": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg;"
     }
   ]
 }

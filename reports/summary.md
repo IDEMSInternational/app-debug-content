@@ -11,15 +11,15 @@
 | animated_section | 9 |
 | animated_slides | 1 |
 | apple_sign_in_button | 12 |
-| asset_pack_download_button | 2 |
+| asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 480 |
+| button | 485 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 91 |
 | dashed_box | 19 |
-| data_items | 126 |
+| data_items | 127 |
 | data_query | 8 |
 | date_time_picker | 11 |
 | debug_toggle | 1 |
@@ -35,6 +35,7 @@
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 2 |
+| map_drawing | 1 |
 | markdown | 10 |
 | nav_group | 6 |
 | navigation_bar | 8 |
@@ -60,7 +61,7 @@
 | radio_button_grid | 20 |
 | radio_group | 61 |
 | radio_group_grid | 5 |
-| radio_list | 10 |
+| radio_list | 12 |
 | round_button | 30 |
 | select_text | 7 |
 | set_default | 1 |
@@ -78,15 +79,15 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1434 |
+| text | 1444 |
 | text_area | 13 |
 | text_box | 87 |
 | text_bubble | 13 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 693 |
+| title | 700 |
 | toggle_bar | 83 |
-| update_action_list | 2 |
+| update_action_list | 3 |
 | video | 4 |
 | workshops_accordion | 2 |
 | youtube | 4 |
@@ -99,7 +100,7 @@
 | --- | --- |
 | add_data | 2 |
 | app_update | 3 |
-| asset_pack | 6 |
+| asset_pack | 10 |
 | auth | 8 |
 | auth_failure | 1 |
 | auth_success | 1 |
@@ -126,7 +127,7 @@
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 62 |
+| pop_up | 63 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -138,7 +139,7 @@
 | set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 79 |
+| set_local | 83 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -196,8 +197,6 @@ Assets that have references within sheets but do not appear in app-data
 | --- | --- |
 | asset_pack_debugging/image_2.png | 1 |
 | asset_pack_debugging/image_5.png | 1 |
-| click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg | 1 |
-| confetti.svg | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
 | images/map_view_bg.jpg | 1 |
 | map_data/KRCS_branches.json | 2 |
@@ -300,7 +299,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 54 |
+| data_list |  | 55 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 16 |
@@ -321,8 +320,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 120 |
-| template | component_demo | 76 |
+| template |  | 121 |
+| template | component_demo | 77 |
 | template | debug | 306 |
 | template | example | 1 |
 | template | example_generator | 2 |

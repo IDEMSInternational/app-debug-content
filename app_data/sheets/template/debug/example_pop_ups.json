@@ -249,25 +249,6 @@
         }
       ],
       "_nested_name": "button_pop_up_7"
-    },
-    {
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "pop_up",
-          "args": [
-            "example_text"
-          ],
-          "_raw": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
-          "params": {
-            "variant": "plh_completion",
-            "background_image": "confetti.svg"
-          }
-        }
-      ],
-      "type": "set_variable",
-      "name": "set_variable_18",
-      "_nested_name": "set_variable_18"
     }
   ],
   "_source": {

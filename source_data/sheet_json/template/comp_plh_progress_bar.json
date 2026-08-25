@@ -5,6 +5,10 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
+      "type": "update_action_list",
+      "action_list": "nav_resume | set_local: start: true;"
+    },
+    {
       "name": "title_1",
       "value": "Getting everything ready for you"
     },
@@ -31,7 +35,14 @@
     {
       "type": "button",
       "value": "Start",
-      "action_list": "click | set_local: start: true;"
+      "action_list": "click | set_local: start: true;",
+      "condition": "!@local.start"
+    },
+    {
+      "type": "button",
+      "value": "Stop",
+      "action_list": "click | set_local: start: false;",
+      "condition": "!!@local.start"
     },
     {
       "type": "plh_progress_bar",
@@ -41,22 +52,25 @@
     {
       "type": "plh_progress_bar",
       "name": "bar_2",
-      "parameter_list": "title: @local.title_2;\nduration: 2000;\nauto_play: @local.bar_1 == 100;\ncolor: var(--ion-color-secondary-300)"
+      "parameter_list": "title: @local.title_2;\nduration: 2000;\nauto_play: @local.bar_1 == 100 && @local.start;\ncolor: var(--ion-color-secondary-300)",
+      "action_list": "on_progress: 50 | pop_up: comp_plh_progress_bar_pop_up;\non_progress: 50 | set_local: start: false;"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_3",
-      "parameter_list": "title: @local.title_3;\nduration: 1000;\nauto_play: @local.bar_2 == 100;\ncolor: var(--ion-color-primary-700)"
+      "parameter_list": "title: @local.title_3;\nduration: 1000;\nauto_play: @local.bar_2 == 100 && @local.start;\ncolor: var(--ion-color-primary-700)",
+      "action_list": "completed | pop_up: comp_plh_progress_bar_pop_up;\ncompleted | set_local: start: false;",
+      "comments": "`completed` and `on_progress: 100` are equivalent triggers"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_4",
-      "parameter_list": "title: @local.title_4;\nduration: 1000;\nauto_play: @local.bar_3 == 100;\ncolor: red;"
+      "parameter_list": "title: @local.title_4;\nduration: 1000;\nauto_play: @local.bar_3 == 100 && @local.start;\ncolor: red;"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_5",
-      "parameter_list": "title: @local.title_5;\nduration: 1000;\nauto_play: @local.bar_4 == 100;\ncolor: #a241bf;"
+      "parameter_list": "title: @local.title_5;\nduration: 1000;\nauto_play: @local.bar_4 == 100 && @local.start;\ncolor: #a241bf;"
     },
     {
       "type": "begin_data_items",

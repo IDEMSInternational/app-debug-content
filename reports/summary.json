@@ -35,7 +35,7 @@
       },
       {
         "type": "asset_pack_download_button",
-        "count": 2
+        "count": 1
       },
       {
         "type": "audio",
@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 480
+        "count": 485
       },
       {
         "type": "calendar",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 126
+        "count": 127
       },
       {
         "type": "data_query",
@@ -128,6 +128,10 @@
       {
         "type": "map",
         "count": 2
+      },
+      {
+        "type": "map_drawing",
+        "count": 1
       },
       {
         "type": "markdown",
@@ -231,7 +235,7 @@
       },
       {
         "type": "radio_list",
-        "count": 10
+        "count": 12
       },
       {
         "type": "round_button",
@@ -303,7 +307,7 @@
       },
       {
         "type": "text",
-        "count": 1434
+        "count": 1444
       },
       {
         "type": "text_area",
@@ -327,7 +331,7 @@
       },
       {
         "type": "title",
-        "count": 693
+        "count": 700
       },
       {
         "type": "toggle_bar",
@@ -335,7 +339,7 @@
       },
       {
         "type": "update_action_list",
-        "count": 2
+        "count": 3
       },
       {
         "type": "video",
@@ -363,7 +367,7 @@
       },
       {
         "type": "asset_pack",
-        "count": 6
+        "count": 10
       },
       {
         "type": "auth",
@@ -471,7 +475,7 @@
       },
       {
         "type": "pop_up",
-        "count": 62
+        "count": 63
       },
       {
         "type": "process_template",
@@ -519,7 +523,7 @@
       },
       {
         "type": "set_local",
-        "count": 79
+        "count": 83
       },
       {
         "type": "share",
@@ -662,16 +666,6 @@
       },
       {
         "path": "asset_pack_debugging/image_5.png",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "click | pop_up: example_text | variant: plh_completion, background_image: confetti.svg",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "confetti.svg",
         "count": 1,
         "missing": true
       },
@@ -1116,7 +1110,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 54
+        "total": 55
       },
       {
         "type": "data_list",
@@ -1221,12 +1215,12 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 120
+        "total": 121
       },
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 76
+        "total": 77
       },
       {
         "type": "template",

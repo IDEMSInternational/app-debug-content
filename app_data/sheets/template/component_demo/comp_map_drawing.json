@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_map_drawing",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "map_drawing",
+      "name": "main_map",
+      "parameter_list": {
+        "data_list": "comp_map_drawing_data",
+        "center_lon": "6.056",
+        "center_lat": "46.233",
+        "zoom": "5"
+      },
+      "_nested_name": "main_map"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_map_drawing.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+  }
+}
