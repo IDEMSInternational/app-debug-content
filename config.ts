@@ -5,7 +5,7 @@ const config = generateDeploymentConfig("debug");
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.11.1",
+  content_tag_latest: "1.11.2",
 };
 
 config.api.db_name = "debug"
