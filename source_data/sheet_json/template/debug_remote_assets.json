@@ -66,15 +66,48 @@
     },
     {
       "type": "title",
-      "value": "Both packs / global"
+      "value": "Asset pack 3"
     },
     {
-      "name": "asset_pack_list",
-      "value": "debug_asset_pack_1; debug_asset_pack_2"
+      "type": "text",
+      "value": "debug_asset_pack_3 contains 100 files of about 1MB each (about 100MB total), all in asset_pack_debugging_bulk/. Tests many small files rather than a few large ones: per-file progress writes, resume part-way through a long pack, and whether the UI stays responsive."
+    },
+    {
+      "type": "text",
+      "value": "Interrupt test: start the download, force-quit the app part-way, relaunch. The pack should resume automatically and the downloaded count should carry on from where it stopped rather than restarting at 0."
     },
     {
       "type": "button",
-      "value": "Download both (ensure_downloaded)",
+      "value": "Pack 3: ensure_downloaded",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_3;"
+    },
+    {
+      "type": "button",
+      "value": "Pack 3: download",
+      "action_list": "click | asset_pack: download: debug_asset_pack_3"
+    },
+    {
+      "type": "button",
+      "value": "Pack 3: download in background (does not block action queue)",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_3 | await: false;"
+    },
+    {
+      "type": "button",
+      "value": "Pack 3: download, 200ms per file",
+      "action_list": "click | asset_pack: download: debug_asset_pack_3 | debug_download_delay_ms: 200;"
+    },
+    {
+      "type": "title",
+      "value": "All packs / global"
+    },
+    {
+      "type": "set_variable",
+      "name": "asset_pack_list",
+      "value": "debug_asset_pack_1; debug_asset_pack_2; debug_asset_pack_3"
+    },
+    {
+      "type": "button",
+      "value": "Download all (ensure_downloaded)",
       "action_list": "click | asset_pack: ensure_downloaded | asset_pack_list: @local.asset_pack_list;"
     },
     {
@@ -84,7 +117,7 @@
     },
     {
       "type": "button",
-      "value": "Reset (delete all files, clear both lists)",
+      "value": "Reset (delete all files, clear all lists)",
       "action_list": "click | asset_pack: reset;"
     },
     {
@@ -190,6 +223,30 @@
     {
       "type": "text",
       "value": "After deleting pack 1: images 1, 3, 4 revert to their core versions. Images 2 and 5 have no core version, so a missing image here is CORRECT, not a bug."
+    },
+    {
+      "type": "title",
+      "value": "Asset cases (pack 3)"
+    },
+    {
+      "type": "text",
+      "value": "First and last file of the bulk pack, to confirm the whole pack integrated and not just the start of it. Neither has a core version, so both are correctly missing until pack 3 has downloaded."
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "image",
+      "value": "asset_pack_debugging_bulk/bulk_001.png",
+      "style_list": "max-width:140px"
+    },
+    {
+      "type": "image",
+      "value": "asset_pack_debugging_bulk/bulk_100.png",
+      "style_list": "max-width:140px"
+    },
+    {
+      "type": "end_display_group"
     }
   ]
 }
