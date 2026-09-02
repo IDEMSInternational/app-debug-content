@@ -13,7 +13,12 @@ config.api.db_name = "debug"
 config.google_drive = {
   sheets_folders: [{ id: "1YcG0GDJME1Ds1UzwXcEmo97Ckb5tnUWc", name: "Debug Sheets" }],
   assets_folders: [{ id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs", name: "Debug Assets" },
-  { id: "19Kbwidpb_nOKpJAuRCkVLpAzWbKPzNm1", name: "debug_asset_pack_1", remote: true }
+  { id: "19Kbwidpb_nOKpJAuRCkVLpAzWbKPzNm1", name: "debug_asset_pack_1", remote: true },
+  // Asset pack 2 intentionally contains very large assets, exclude by default
+  // { id: "1PzkkcEFLcYBBGnY4l33POXVaRr8tpSYI", name: "debug_asset_pack_2", remote: true },
+  // Asset pack 3 intentionally contains a very large number of small assets, exclude by default
+  // { id: "1cJy4shN2zZCglhgz_OJ8pEZNKqJYcTbU", name: "debug_asset_pack_3", remote: true },
+
   ],
 };
 
