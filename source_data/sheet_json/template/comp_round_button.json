@@ -17,6 +17,15 @@
     },
     {
       "type": "title",
+      "value": "Disabled"
+    },
+    {
+      "type": "round_button",
+      "action_list": "click | go_to: example_text",
+      "parameter_list": "disabled: true;"
+    },
+    {
+      "type": "title",
       "name": "title_2",
       "value": "Round button with icon"
     },

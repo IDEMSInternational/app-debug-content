@@ -193,27 +193,26 @@
       },
       "action_list": [
         {
-          "trigger": "on_progress",
-          "action_id": "pop_up",
+          "trigger": "click",
+          "action_id": "on_progress",
           "args": [
-            "comp_plh_progress_bar_pop_up"
+            "50"
           ],
           "_raw": "on_progress: 50 | pop_up: comp_plh_progress_bar_pop_up",
-          "trigger_args": [
-            "50"
-          ]
+          "params": {
+            "pop_up": "comp_plh_progress_bar_pop_up"
+          }
         },
         {
-          "trigger": "on_progress",
-          "action_id": "set_local",
+          "trigger": "click",
+          "action_id": "on_progress",
           "args": [
-            "start",
-            false
+            "50"
           ],
           "_raw": "on_progress: 50 | set_local: start: false",
-          "trigger_args": [
-            "50"
-          ]
+          "params": {
+            "set_local": "start"
+          }
         }
       ],
       "_nested_name": "bar_2",

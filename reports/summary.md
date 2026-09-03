@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 485 |
+| button | 487 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -25,17 +25,16 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 287 |
+| display_group | 288 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
 | html | 6 |
-| image | 87 |
+| image | 89 |
 | items | 51 |
 | latex | 1 |
 | lottie_animation | 6 |
-| map | 2 |
-| map_drawing | 1 |
+| map | 1 |
 | markdown | 10 |
 | nav_group | 6 |
 | navigation_bar | 8 |
@@ -62,13 +61,13 @@
 | radio_group | 61 |
 | radio_group_grid | 5 |
 | radio_list | 12 |
-| round_button | 30 |
+| round_button | 31 |
 | select_text | 7 |
 | set_default | 1 |
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 958 |
+| set_variable | 957 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -79,13 +78,13 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1444 |
+| text | 1448 |
 | text_area | 13 |
 | text_box | 87 |
-| text_bubble | 13 |
+| text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 700 |
+| title | 703 |
 | toggle_bar | 83 |
 | update_action_list | 3 |
 | video | 4 |
@@ -100,7 +99,7 @@
 | --- | --- |
 | add_data | 2 |
 | app_update | 3 |
-| asset_pack | 10 |
+| asset_pack | 14 |
 | auth | 8 |
 | auth_failure | 1 |
 | auth_success | 1 |
@@ -118,16 +117,17 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 85 |
+| go_to | 86 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |
 | nav_stack | 11 |
 | notification | 8 |
+| on_progress | 2 |
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 63 |
+| pop_up | 62 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -139,7 +139,7 @@
 | set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 83 |
+| set_local | 80 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -156,8 +156,8 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 2499 KB | 2.5 MB |
-| unused | 1185 KB | 1.2 MB |
+| total | 2495 KB | 2.5 MB |
+| unused | 1189 KB | 1.2 MB |
 </details>
 
 <details open>
@@ -172,9 +172,12 @@ Assets that appear in app-data but do not have references within sheets
 | android/icon-only.png | 128.1 |
 | android/icon.png | 128.1 |
 | android/splash.png | 147.4 |
+| images/icons/airplane_blue.png | 2.1 |
 | images/icons/airplane_blue.svg | 1.5 |
+| images/icons/airplane_grey.png | 2.1 |
 | images/icons/close.png | 2.5 |
 | images/icons/favicon.svg | 2.1 |
+| images/icons/red_cross.png | 0.2 |
 | images/icons/red_cross_grey.png | 0.2 |
 | images/image_1.png | 8.8 |
 | images/image_3.png | 9.6 |
@@ -197,15 +200,10 @@ Assets that have references within sheets but do not appear in app-data
 | --- | --- |
 | asset_pack_debugging/image_2.png | 1 |
 | asset_pack_debugging/image_5.png | 1 |
+| asset_pack_debugging_bulk/bulk_001.png | 1 |
+| asset_pack_debugging_bulk/bulk_100.png | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
 | images/map_view_bg.jpg | 1 |
-| map_data/KRCS_branches.json | 2 |
-| map_data/airports.json | 1 |
-| map_data/centroids.json | 2 |
-| map_data/forecast_data_geojson.json | 4 |
-| map_data/forecast_riots.json | 2 |
-| map_data/ke.json | 2 |
-| map_data/population_and_boundaries.json | 4 |
 </details>
 
 <details >
@@ -229,7 +227,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/Faisal.png | 3.5 | 2 |
 | images/Noura.png | 4.2 | 8 |
 | images/activity_bg.svg | 13.8 | 7 |
-| images/avatar_1.png | 67.7 | 19 |
+| images/avatar_1.png | 67.7 | 20 |
 | images/bg_illustration.png | 255.4 | 4 |
 | images/bottom_image.svg | 6.8 | 6 |
 | images/diamond.png | 4.3 | 1 |
@@ -242,8 +240,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/faces/happy.svg | 0.6 | 7 |
 | images/faces/neutral.svg | 0.5 | 2 |
 | images/faces/sad.svg | 1.1 | 2 |
-| images/icons/airplane_blue.png | 2.1 | 1 |
-| images/icons/airplane_grey.png | 2.1 | 1 |
 | images/icons/ask_question_white.svg | 1.4 | 3 |
 | images/icons/audio/pause-sharp.svg | 0.1 | 1 |
 | images/icons/audio/play-back-sharp.svg | 0.1 | 2 |
@@ -268,7 +264,6 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/notification_bell.png | 0.9 | 1 |
 | images/icons/question_mark.svg | 0.8 | 2 |
 | images/icons/reader_blue.svg | 1.4 | 8 |
-| images/icons/red_cross.png | 0.2 | 1 |
 | images/icons/school_blue.svg | 1.6 | 10 |
 | images/icons/settings.svg | 2.4 | 2 |
 | images/icons/settings_active.svg | 2.4 | 2 |
@@ -299,7 +294,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 55 |
+| data_list |  | 50 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 16 |
@@ -321,7 +316,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 121 |
-| template | component_demo | 77 |
+| template | component_demo | 76 |
 | template | debug | 306 |
 | template | example | 1 |
 | template | example_generator | 2 |

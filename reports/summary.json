@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 485
+        "count": 487
       },
       {
         "type": "calendar",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 287
+        "count": 288
       },
       {
         "type": "drawer",
@@ -111,7 +111,7 @@
       },
       {
         "type": "image",
-        "count": 87
+        "count": 89
       },
       {
         "type": "items",
@@ -127,10 +127,6 @@
       },
       {
         "type": "map",
-        "count": 2
-      },
-      {
-        "type": "map_drawing",
         "count": 1
       },
       {
@@ -239,7 +235,7 @@
       },
       {
         "type": "round_button",
-        "count": 30
+        "count": 31
       },
       {
         "type": "select_text",
@@ -263,7 +259,7 @@
       },
       {
         "type": "set_variable",
-        "count": 958
+        "count": 957
       },
       {
         "type": "simple_checkbox",
@@ -307,7 +303,7 @@
       },
       {
         "type": "text",
-        "count": 1444
+        "count": 1448
       },
       {
         "type": "text_area",
@@ -319,7 +315,7 @@
       },
       {
         "type": "text_bubble",
-        "count": 13
+        "count": 15
       },
       {
         "type": "tile_component",
@@ -331,7 +327,7 @@
       },
       {
         "type": "title",
-        "count": 700
+        "count": 703
       },
       {
         "type": "toggle_bar",
@@ -367,7 +363,7 @@
       },
       {
         "type": "asset_pack",
-        "count": 10
+        "count": 14
       },
       {
         "type": "auth",
@@ -439,7 +435,7 @@
       },
       {
         "type": "go_to",
-        "count": 85
+        "count": 86
       },
       {
         "type": "go_to_url",
@@ -462,6 +458,10 @@
         "count": 8
       },
       {
+        "type": "on_progress",
+        "count": 2
+      },
+      {
         "type": "open_external",
         "count": 3
       },
@@ -475,7 +475,7 @@
       },
       {
         "type": "pop_up",
-        "count": 63
+        "count": 62
       },
       {
         "type": "process_template",
@@ -523,7 +523,7 @@
       },
       {
         "type": "set_local",
-        "count": 83
+        "count": 80
       },
       {
         "type": "share",
@@ -567,12 +567,12 @@
     "data": [
       {
         "assets": "total",
-        "KB": "2499 KB",
+        "KB": "2495 KB",
         "MB": "2.5 MB"
       },
       {
         "assets": "unused",
-        "KB": "1185 KB",
+        "KB": "1189 KB",
         "MB": "1.2 MB"
       }
     ]
@@ -600,8 +600,16 @@
         "size_kb": 147.4
       },
       {
+        "path": "images/icons/airplane_blue.png",
+        "size_kb": 2.1
+      },
+      {
         "path": "images/icons/airplane_blue.svg",
         "size_kb": 1.5
+      },
+      {
+        "path": "images/icons/airplane_grey.png",
+        "size_kb": 2.1
       },
       {
         "path": "images/icons/close.png",
@@ -610,6 +618,10 @@
       {
         "path": "images/icons/favicon.svg",
         "size_kb": 2.1
+      },
+      {
+        "path": "images/icons/red_cross.png",
+        "size_kb": 0.2
       },
       {
         "path": "images/icons/red_cross_grey.png",
@@ -670,6 +682,16 @@
         "missing": true
       },
       {
+        "path": "asset_pack_debugging_bulk/bulk_001.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "asset_pack_debugging_bulk/bulk_100.png",
+        "count": 1,
+        "missing": true
+      },
+      {
         "path": "https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg",
         "count": 2,
         "missing": true
@@ -677,41 +699,6 @@
       {
         "path": "images/map_view_bg.jpg",
         "count": 1,
-        "missing": true
-      },
-      {
-        "path": "map_data/KRCS_branches.json",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "map_data/airports.json",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "map_data/centroids.json",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "map_data/forecast_data_geojson.json",
-        "count": 4,
-        "missing": true
-      },
-      {
-        "path": "map_data/forecast_riots.json",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "map_data/ke.json",
-        "count": 2,
-        "missing": true
-      },
-      {
-        "path": "map_data/population_and_boundaries.json",
-        "count": 4,
         "missing": true
       }
     ]
@@ -790,7 +777,7 @@
       },
       {
         "path": "images/avatar_1.png",
-        "count": 19,
+        "count": 20,
         "size_kb": 67.7
       },
       {
@@ -852,16 +839,6 @@
         "path": "images/faces/sad.svg",
         "count": 2,
         "size_kb": 1.1
-      },
-      {
-        "path": "images/icons/airplane_blue.png",
-        "count": 1,
-        "size_kb": 2.1
-      },
-      {
-        "path": "images/icons/airplane_grey.png",
-        "count": 1,
-        "size_kb": 2.1
       },
       {
         "path": "images/icons/ask_question_white.svg",
@@ -982,11 +959,6 @@
         "path": "images/icons/reader_blue.svg",
         "count": 8,
         "size_kb": 1.4
-      },
-      {
-        "path": "images/icons/red_cross.png",
-        "count": 1,
-        "size_kb": 0.2
       },
       {
         "path": "images/icons/school_blue.svg",
@@ -1110,7 +1082,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 55
+        "total": 50
       },
       {
         "type": "data_list",
@@ -1220,7 +1192,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 77
+        "total": 76
       },
       {
         "type": "template",

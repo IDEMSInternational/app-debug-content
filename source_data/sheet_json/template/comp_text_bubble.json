@@ -39,6 +39,11 @@
     },
     {
       "type": "text_bubble",
+      "value": "Text bubble with\n\nMultiple paragraphs with\n\nIntentional line breaks",
+      "parameter_list": "speaker_image_asset: images/avatar_1.png;"
+    },
+    {
+      "type": "text_bubble",
       "value": "variant: secondary;",
       "parameter_list": "speaker_image_asset: images/avatar_1.png;\nvariant: secondary;"
     },

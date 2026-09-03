@@ -18,8 +18,8 @@
     },
     {
       "id": "asset_pack_debugging/image_1.png",
-      "md5Checksum": "ffcd780c1f2741241aa739c83f057fd6",
-      "size_kb": 8.8
+      "md5Checksum": "4a007063a4a9a0e3bf0041c2e3d68c7a",
+      "size_kb": 9.8
     },
     {
       "id": "asset_pack_debugging/image_2.png",
@@ -56,5 +56,6 @@
         }
       }
     }
-  ]
+  ],
+  "version": "28beeb94cbf377b89a5614dd6562487c"
 }

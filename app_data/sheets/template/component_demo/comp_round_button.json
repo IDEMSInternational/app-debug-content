@@ -30,6 +30,33 @@
     },
     {
       "type": "title",
+      "value": "Disabled",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "round_button",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | go_to: example_text"
+        }
+      ],
+      "parameter_list": {
+        "disabled": "true"
+      },
+      "name": "round_button_5",
+      "_nested_name": "round_button_5"
+    },
+    {
+      "type": "title",
       "name": "title_2",
       "value": "Round button with icon",
       "_translations": {
