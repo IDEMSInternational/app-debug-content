@@ -5,7 +5,7 @@ const config = generateDeploymentConfig("debug");
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.11.4",
+  content_tag_latest: "1.11.5",
 };
 
 config.api.db_name = "debug"
@@ -15,9 +15,9 @@ config.google_drive = {
   assets_folders: [{ id: "1bnGPB70wPp9hzVOpT4LkPX9h3FwIrqfs", name: "Debug Assets" },
   { id: "19Kbwidpb_nOKpJAuRCkVLpAzWbKPzNm1", name: "debug_asset_pack_1", remote: true },
   // Asset pack 2 intentionally contains very large assets, exclude by default
-  { id: "1PzkkcEFLcYBBGnY4l33POXVaRr8tpSYI", name: "debug_asset_pack_2", remote: true },
+ // { id: "1PzkkcEFLcYBBGnY4l33POXVaRr8tpSYI", name: "debug_asset_pack_2", remote: true },
   // Asset pack 3 intentionally contains a very large number of small assets, exclude by default
-  { id: "1cJy4shN2zZCglhgz_OJ8pEZNKqJYcTbU", name: "debug_asset_pack_3", remote: true },
+ // { id: "1cJy4shN2zZCglhgz_OJ8pEZNKqJYcTbU", name: "debug_asset_pack_3", remote: true },
 
   ],
 };

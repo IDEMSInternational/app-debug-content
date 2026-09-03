@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 487 |
+| button | 488 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -67,7 +67,7 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 957 |
+| set_variable | 956 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -78,7 +78,7 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 157 |
-| text | 1448 |
+| text | 1447 |
 | text_area | 13 |
 | text_box | 87 |
 | text_bubble | 15 |
@@ -139,7 +139,7 @@
 | set_field | 124 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 80 |
+| set_local | 81 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |

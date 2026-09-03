@@ -5,93 +5,38 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "type": "text",
+      "value": "1. Input text into box\n2. Click on page to trigger change\n3. Click set to undefined\n4. Repeat",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
       "type": "text_box",
-      "name": "first_name",
-      "parameter_list": {
-        "placeholder": "placeholder"
-      },
-      "_nested_name": "first_name"
+      "name": "text_box_1",
+      "_nested_name": "text_box_1"
     },
     {
-      "name": "first_name_valid",
-      "value": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
+      "type": "button",
+      "value": "set to undefined",
       "_translations": {
         "value": {}
       },
-      "type": "set_variable",
-      "_nested_name": "first_name_valid",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
-            "matchedExpression": "@local.first_name",
-            "type": "local",
-            "fieldName": "first_name"
-          },
-          {
-            "fullExpression": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
-            "matchedExpression": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
-            "type": "calc",
-            "fieldName": "/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name)"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.first_name": [
-          "value"
-        ],
-        "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))": [
-          "value"
-        ]
-      }
-    },
-    {
-      "type": "text",
-      "value": "first_name: @local.first_name",
-      "_translations": {
-        "value": {}
-      },
-      "name": "text_4",
-      "_nested_name": "text_4",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "first_name: @local.first_name",
-            "matchedExpression": "@local.first_name",
-            "type": "local",
-            "fieldName": "first_name"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.first_name": [
-          "value"
-        ]
-      }
-    },
-    {
-      "type": "text",
-      "value": "first_name_valid: @local.first_name_valid",
-      "_translations": {
-        "value": {}
-      },
-      "name": "text_5",
-      "_nested_name": "text_5",
-      "_dynamicFields": {
-        "value": [
-          {
-            "fullExpression": "first_name_valid: @local.first_name_valid",
-            "matchedExpression": "@local.first_name_valid",
-            "type": "local",
-            "fieldName": "first_name_valid"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@local.first_name_valid": [
-          "value"
-        ]
-      }
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "text_box_1",
+            ""
+          ],
+          "_raw": "click | set_local: text_box_1:"
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
     }
   ],
   "_source": {
