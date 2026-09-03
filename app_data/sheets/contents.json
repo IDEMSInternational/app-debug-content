@@ -164,165 +164,8 @@
       "flow_name": "comp_map_drawing_data",
       "_source": {
         "name": "Debug Sheets",
-        "path": "component_sheets/component_map_drawing.xlsx",
+        "path": "component_sheets/component_map.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
-      }
-    },
-    "comp_map_layer_data": {
-      "flow_type": "data_list",
-      "flow_name": "comp_map_layer_data",
-      "_source": {
-        "name": "Debug Sheets",
-        "path": "component_sheets/component_map.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
-      },
-      "_metadata": {
-        "scale_max": {
-          "type": "number"
-        },
-        "scale_min": {
-          "type": "number"
-        },
-        "opacity": {
-          "type": "number"
-        },
-        "visible_default": {
-          "type": "boolean"
-        },
-        "point_radius_max": {
-          "type": "number"
-        },
-        "point_radius_property_max": {
-          "type": "number"
-        },
-        "blur": {
-          "type": "number"
-        },
-        "scale_slider": {
-          "type": "boolean"
-        }
-      }
-    },
-    "comp_map_layer_group_1": {
-      "flow_type": "data_list",
-      "flow_name": "comp_map_layer_group_1",
-      "_source": {
-        "name": "Debug Sheets",
-        "path": "component_sheets/component_map.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
-      },
-      "_metadata": {
-        "point_radius_max": {
-          "type": "number"
-        },
-        "blur": {
-          "type": "number"
-        },
-        "scale_max": {
-          "type": "number"
-        },
-        "scale_min": {
-          "type": "number"
-        },
-        "opacity": {
-          "type": "number"
-        },
-        "visible_default": {
-          "type": "boolean"
-        },
-        "scale_increment": {
-          "type": "number"
-        },
-        "scale_slider": {
-          "type": "boolean"
-        },
-        "scale_slider_snap": {
-          "type": "boolean"
-        },
-        "point_radius_property_max": {
-          "type": "number"
-        }
-      }
-    },
-    "comp_map_layer_group_2": {
-      "flow_type": "data_list",
-      "flow_name": "comp_map_layer_group_2",
-      "_source": {
-        "name": "Debug Sheets",
-        "path": "component_sheets/component_map.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
-      },
-      "_metadata": {
-        "opacity": {
-          "type": "number"
-        },
-        "visible_default": {
-          "type": "boolean"
-        },
-        "point_radius_max": {
-          "type": "number"
-        },
-        "point_radius_property_max": {
-          "type": "number"
-        },
-        "scale_max": {
-          "type": "number"
-        },
-        "scale_min": {
-          "type": "number"
-        },
-        "scale_increment": {
-          "type": "number"
-        },
-        "scale_slider": {
-          "type": "boolean"
-        },
-        "scale_slider_snap": {
-          "type": "boolean"
-        }
-      }
-    },
-    "comp_map_layer_group_3": {
-      "flow_type": "data_list",
-      "flow_name": "comp_map_layer_group_3",
-      "_source": {
-        "name": "Debug Sheets",
-        "path": "component_sheets/component_map.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
-      },
-      "_metadata": {
-        "scale_max": {
-          "type": "number"
-        },
-        "scale_min": {
-          "type": "number"
-        },
-        "opacity": {
-          "type": "number"
-        },
-        "visible_default": {
-          "type": "boolean"
-        },
-        "scale_slider": {
-          "type": "boolean"
-        }
-      }
-    },
-    "comp_map_layer_groups": {
-      "flow_type": "data_list",
-      "flow_name": "comp_map_layer_groups",
-      "_source": {
-        "name": "Debug Sheets",
-        "path": "component_sheets/component_map.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
-      },
-      "_metadata": {
-        "single_selection": {
-          "type": "boolean"
-        },
-        "display_order": {
-          "type": "number"
-        }
       }
     },
     "comp_pdf_params": {
@@ -2590,27 +2433,10 @@
     "comp_map": {
       "flow_type": "template",
       "flow_name": "comp_map",
-      "parameter_list": {
-        "app_config": {
-          "APP_FOOTER_DEFAULTS": {
-            "templateName": false
-          }
-        }
-      },
       "flow_subtype": "component_demo",
       "_source": {
         "name": "Debug Sheets",
         "path": "component_sheets/component_map.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
-      }
-    },
-    "comp_map_drawing": {
-      "flow_type": "template",
-      "flow_name": "comp_map_drawing",
-      "flow_subtype": "component_demo",
-      "_source": {
-        "name": "Debug Sheets",
-        "path": "component_sheets/component_map_drawing.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
       }
     },

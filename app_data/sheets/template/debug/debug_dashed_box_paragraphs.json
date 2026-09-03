@@ -60,6 +60,30 @@
           "value"
         ]
       }
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble_1",
+      "value": "@local.text_paragraphs",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_bubble_1",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.text_paragraphs",
+            "matchedExpression": "@local.text_paragraphs",
+            "type": "local",
+            "fieldName": "text_paragraphs"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text_paragraphs": [
+          "value"
+        ]
+      }
     }
   ],
   "_source": {

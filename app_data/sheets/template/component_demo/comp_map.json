@@ -2,182 +2,23 @@
   "flow_type": "template",
   "flow_name": "comp_map",
   "status": "released",
-  "parameter_list": {
-    "app_config": {
-      "APP_FOOTER_DEFAULTS": {
-        "templateName": false
-      }
-    }
-  },
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "name": "extent_kenya",
-      "value": "3773864.3, -520876.1, 4661891.1, 636925.3",
-      "_translations": {
-        "value": {}
-      },
-      "type": "set_variable",
-      "_nested_name": "extent_kenya"
-    },
-    {
-      "name": "show_map_1",
-      "value": true,
-      "type": "set_variable",
-      "_nested_name": "show_map_1"
-    },
-    {
       "type": "map",
-      "name": "map_1",
+      "name": "main_map",
       "parameter_list": {
-        "layer_groups": "@data.comp_map_layer_groups",
-        "extent": "@local.extent_kenya"
+        "data_list": "comp_map_drawing_data",
+        "center_lon": "6.056",
+        "center_lat": "46.233",
+        "zoom": "5"
       },
-      "condition": "@local.show_map_1",
-      "_nested_name": "map_1",
-      "_dynamicFields": {
-        "parameter_list": {
-          "layer_groups": [
-            {
-              "fullExpression": "@data.comp_map_layer_groups",
-              "matchedExpression": "@data.comp_map_layer_groups",
-              "type": "data",
-              "fieldName": "comp_map_layer_groups"
-            }
-          ],
-          "extent": [
-            {
-              "fullExpression": "@local.extent_kenya",
-              "matchedExpression": "@local.extent_kenya",
-              "type": "local",
-              "fieldName": "extent_kenya"
-            }
-          ]
-        },
-        "condition": [
-          {
-            "fullExpression": "@local.show_map_1",
-            "matchedExpression": "@local.show_map_1",
-            "type": "local",
-            "fieldName": "show_map_1"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@data.comp_map_layer_groups": [
-          "parameter_list.layer_groups"
-        ],
-        "@local.extent_kenya": [
-          "parameter_list.extent"
-        ],
-        "@local.show_map_1": [
-          "condition"
-        ]
-      }
-    },
-    {
-      "type": "map",
-      "name": "map_2",
-      "parameter_list": {
-        "layers": "@data.comp_map_layer_data",
-        "extent": "@local.extent_kenya"
-      },
-      "condition": "!@local.show_map_1",
-      "_nested_name": "map_2",
-      "_dynamicFields": {
-        "parameter_list": {
-          "layers": [
-            {
-              "fullExpression": "@data.comp_map_layer_data",
-              "matchedExpression": "@data.comp_map_layer_data",
-              "type": "data",
-              "fieldName": "comp_map_layer_data"
-            }
-          ],
-          "extent": [
-            {
-              "fullExpression": "@local.extent_kenya",
-              "matchedExpression": "@local.extent_kenya",
-              "type": "local",
-              "fieldName": "extent_kenya"
-            }
-          ]
-        },
-        "condition": [
-          {
-            "fullExpression": "!@local.show_map_1",
-            "matchedExpression": "!@local.show_map_1",
-            "type": "local",
-            "fieldName": "show_map_1"
-          }
-        ]
-      },
-      "_dynamicDependencies": {
-        "@data.comp_map_layer_data": [
-          "parameter_list.layers"
-        ],
-        "@local.extent_kenya": [
-          "parameter_list.extent"
-        ],
-        "!@local.show_map_1": [
-          "condition"
-        ]
-      }
-    },
-    {
-      "type": "button",
-      "value": "Toggle visible map",
-      "_translations": {
-        "value": {}
-      },
-      "action_list": [
-        {
-          "trigger": "click",
-          "action_id": "set_local",
-          "args": [
-            "show_map_1",
-            "!@local.show_map_1"
-          ],
-          "_raw": "click | set_local: show_map_1: !@local.show_map_1"
-        }
-      ],
-      "name": "button_6",
-      "_nested_name": "button_6",
-      "_dynamicFields": {
-        "action_list": {
-          "0": {
-            "args": {
-              "1": [
-                {
-                  "fullExpression": "!@local.show_map_1",
-                  "matchedExpression": "!@local.show_map_1",
-                  "type": "local",
-                  "fieldName": "show_map_1"
-                }
-              ]
-            },
-            "_raw": [
-              {
-                "fullExpression": "click | set_local: show_map_1: !@local.show_map_1",
-                "matchedExpression": "!@local.show_map_1",
-                "type": "local",
-                "fieldName": "show_map_1"
-              }
-            ]
-          }
-        }
-      },
-      "_dynamicDependencies": {
-        "!@local.show_map_1": [
-          "action_list.0.args.1",
-          "action_list.0._raw"
-        ]
-      }
+      "_nested_name": "main_map"
     }
   ],
   "_source": {
     "name": "Debug Sheets",
     "path": "component_sheets/component_map.xlsx",
-    "url": "https://docs.google.com/spreadsheets/d/1KgLTrFhqZdGhcSk6Zt0KQoy2mYf7NCqhCJz_zS0KEYw"
+    "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
   }
 }

@@ -17,6 +17,11 @@
       "type": "text",
       "name": "text_1",
       "value": "@local.text_paragraphs"
+    },
+    {
+      "type": "text_bubble",
+      "name": "text_bubble_1",
+      "value": "@local.text_paragraphs"
     }
   ]
 }
