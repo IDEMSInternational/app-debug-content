@@ -117,6 +117,7 @@ config.app_config.APP_THEMES.available = [
   "plh_facilitator_my",
   "plh_facilitator_ph",
   "plh_kids_kw",
+  "plh_kids_teens_mx",
   "plh_kids_teens_my",
   "plh_kids_teens_pa",
   "plh_kids_teens_za",
