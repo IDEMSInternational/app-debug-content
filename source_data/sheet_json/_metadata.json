@@ -4116,6 +4116,24 @@
   },
   {
     "flow_type": "template",
+    "flow_name": "debug_text_area",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_text_area.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/11lyl6bwOMJRoVX7l_cp7gQwdclx8mKGjccg43AyP0eQ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_text_area_nested_btn",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_text_area.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/11lyl6bwOMJRoVX7l_cp7gQwdclx8mKGjccg43AyP0eQ"
+    }
+  },
+  {
+    "flow_type": "template",
     "flow_subtype": "debug",
     "flow_name": "debug_text_box",
     "_source": {

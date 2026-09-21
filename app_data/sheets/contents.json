@@ -6484,6 +6484,24 @@
         "url": "https://docs.google.com/spreadsheets/d/101V7tJ999fTApourOHJrtcDTlS99V09jW26vQq-X6cU"
       }
     },
+    "debug_text_area": {
+      "flow_type": "template",
+      "flow_name": "debug_text_area",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_text_area.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/11lyl6bwOMJRoVX7l_cp7gQwdclx8mKGjccg43AyP0eQ"
+      }
+    },
+    "debug_text_area_nested_btn": {
+      "flow_type": "template",
+      "flow_name": "debug_text_area_nested_btn",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_text_area.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/11lyl6bwOMJRoVX7l_cp7gQwdclx8mKGjccg43AyP0eQ"
+      }
+    },
     "debug_translate_nested_rows": {
       "flow_type": "template",
       "flow_name": "debug_translate_nested_rows",

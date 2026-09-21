@@ -14,15 +14,15 @@
     },
     {
       "name": "title_2",
-      "value": "Looking at what your child needs"
+      "value": "A longer message that will wrap onto multiple lines to demonstrate"
     },
     {
       "name": "title_3",
-      "value": "Understanding your goal"
+      "value": "Show percentage: false (default)"
     },
     {
       "name": "title_4",
-      "value": "Making this just for your family"
+      "value": "Making adjustments"
     },
     {
       "name": "title_5",
@@ -47,12 +47,12 @@
     {
       "type": "plh_progress_bar",
       "name": "bar_1",
-      "parameter_list": "title: @local.title_1;\nduration: 3000;\nauto_play: @local.start;\ncolor: var(--ion-color-primary-300)"
+      "parameter_list": "title: @local.title_1;\nduration: 3000;\nauto_play: @local.start;\ncolor: var(--ion-color-primary-300);\nshow_percentage: true;"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_2",
-      "parameter_list": "title: @local.title_2;\nduration: 2000;\nauto_play: @local.bar_1 == 100 && @local.start;\ncolor: var(--ion-color-secondary-300)",
+      "parameter_list": "title: @local.title_2;\nduration: 2000;\nauto_play: @local.bar_1 == 100 && @local.start;\ncolor: var(--ion-color-secondary-300);\nshow_percentage: true;",
       "action_list": "on_progress: 50 | pop_up: comp_plh_progress_bar_pop_up;\non_progress: 50 | set_local: start: false;"
     },
     {
@@ -65,12 +65,12 @@
     {
       "type": "plh_progress_bar",
       "name": "bar_4",
-      "parameter_list": "title: @local.title_4;\nduration: 1000;\nauto_play: @local.bar_3 == 100 && @local.start;\ncolor: red;"
+      "parameter_list": "title: @local.title_4;\nduration: 1000;\nauto_play: @local.bar_3 == 100 && @local.start;\ncolor: red;\nshow_percentage: true;"
     },
     {
       "type": "plh_progress_bar",
       "name": "bar_5",
-      "parameter_list": "title: @local.title_5;\nduration: 1000;\nauto_play: @local.bar_4 == 100 && @local.start;\ncolor: #a241bf;"
+      "parameter_list": "title: @local.title_5;\nduration: 1000;\nauto_play: @local.bar_4 == 100 && @local.start;\ncolor: #a241bf;\nshow_percentage: true;"
     },
     {
       "type": "begin_data_items",

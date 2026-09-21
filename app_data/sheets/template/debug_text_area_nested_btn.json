@@ -1,0 +1,139 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_area_nested_btn",
+  "status": "released",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "count",
+      "value": 0,
+      "_nested_name": "count"
+    },
+    {
+      "type": "set_variable",
+      "name": "parent_text",
+      "_nested_name": "parent_text"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Increase count",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "count",
+            "@local.count + 1"
+          ],
+          "_raw": "click | set_local: count: @local.count + 1"
+        },
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "completed"
+          ],
+          "_raw": "click | emit: completed"
+        }
+      ],
+      "_nested_name": "button_3",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.count + 1",
+                  "matchedExpression": "@local.count",
+                  "type": "local",
+                  "fieldName": "count"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: count: @local.count + 1",
+                "matchedExpression": "@local.count",
+                "type": "local",
+                "fieldName": "count"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.count": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Counter: @local.count",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Counter: @local.count",
+            "matchedExpression": "@local.count",
+            "type": "local",
+            "fieldName": "count"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.count": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Value passed from parent: @local.parent_text",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.parent_text",
+      "name": "text_6",
+      "_nested_name": "text_6",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value passed from parent: @local.parent_text",
+            "matchedExpression": "@local.parent_text",
+            "type": "local",
+            "fieldName": "parent_text"
+          }
+        ],
+        "condition": [
+          {
+            "fullExpression": "@local.parent_text",
+            "matchedExpression": "@local.parent_text",
+            "type": "local",
+            "fieldName": "parent_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.parent_text": [
+          "value",
+          "condition"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_text_area.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/11lyl6bwOMJRoVX7l_cp7gQwdclx8mKGjccg43AyP0eQ"
+  }
+}

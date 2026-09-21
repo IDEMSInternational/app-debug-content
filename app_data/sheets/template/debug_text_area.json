@@ -1,0 +1,417 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_area",
+  "status": "released",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Debug text-area blur with nested template",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "For each test, type a new value, then click the button straight from the text area (don't click elsewhere first).",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text_area",
+      "name": "text_area_1",
+      "_nested_name": "text_area_1"
+    },
+    {
+      "type": "text",
+      "value": "Text area value: @local.text_area_1",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Text area value: @local.text_area_1",
+            "matchedExpression": "@local.text_area_1",
+            "type": "local",
+            "fieldName": "text_area_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text_area_1": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "set_variable",
+      "name": "local_set_from_child",
+      "_nested_name": "local_set_from_child"
+    },
+    {
+      "type": "set_variable",
+      "name": "emit_count",
+      "value": 0,
+      "_nested_name": "emit_count"
+    },
+    {
+      "type": "set_variable",
+      "name": "override_emit_count",
+      "value": 0,
+      "_nested_name": "override_emit_count"
+    },
+    {
+      "type": "title",
+      "value": "1. Actions update without rebuilding",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_9",
+      "_nested_name": "title_9"
+    },
+    {
+      "type": "text",
+      "value": "Value received from child emit: @local.local_set_from_child",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value received from child emit: @local.local_set_from_child",
+            "matchedExpression": "@local.local_set_from_child",
+            "type": "local",
+            "fieldName": "local_set_from_child"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.local_set_from_child": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Section 1 emits: @local.emit_count",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Section 1 emits: @local.emit_count",
+            "matchedExpression": "@local.emit_count",
+            "type": "local",
+            "fieldName": "emit_count"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.emit_count": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "✅ Emit carried the latest text area value",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.emit_count > 0 && @local.local_set_from_child == @local.text_area_1",
+      "name": "text_12",
+      "_nested_name": "text_12",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.emit_count > 0 && @local.local_set_from_child == @local.text_area_1",
+            "matchedExpression": "@local.emit_count",
+            "type": "local",
+            "fieldName": "emit_count"
+          },
+          {
+            "fullExpression": "@local.emit_count > 0 && @local.local_set_from_child == @local.text_area_1",
+            "matchedExpression": "@local.local_set_from_child",
+            "type": "local",
+            "fieldName": "local_set_from_child"
+          },
+          {
+            "fullExpression": "@local.emit_count > 0 && @local.local_set_from_child == @local.text_area_1",
+            "matchedExpression": "@local.text_area_1",
+            "type": "local",
+            "fieldName": "text_area_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.emit_count": [
+          "condition"
+        ],
+        "@local.local_set_from_child": [
+          "condition"
+        ],
+        "@local.text_area_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "❌ Emit value differs from the text area value",
+      "_translations": {
+        "value": {}
+      },
+      "condition": "@local.emit_count > 0 && @local.local_set_from_child != @local.text_area_1",
+      "name": "text_13",
+      "_nested_name": "text_13",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.emit_count > 0 && @local.local_set_from_child != @local.text_area_1",
+            "matchedExpression": "@local.emit_count",
+            "type": "local",
+            "fieldName": "emit_count"
+          },
+          {
+            "fullExpression": "@local.emit_count > 0 && @local.local_set_from_child != @local.text_area_1",
+            "matchedExpression": "@local.local_set_from_child",
+            "type": "local",
+            "fieldName": "local_set_from_child"
+          },
+          {
+            "fullExpression": "@local.emit_count > 0 && @local.local_set_from_child != @local.text_area_1",
+            "matchedExpression": "@local.text_area_1",
+            "type": "local",
+            "fieldName": "text_area_1"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.emit_count": [
+          "condition"
+        ],
+        "@local.local_set_from_child": [
+          "condition"
+        ],
+        "@local.text_area_1": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "debug_text_area_nested_btn",
+      "value": "debug_text_area_nested_btn",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "local_set_from_child",
+            "@local.text_area_1"
+          ],
+          "_raw": "completed | set_local: local_set_from_child: @local.text_area_1"
+        },
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "emit_count",
+            "@local.emit_count + 1"
+          ],
+          "_raw": "completed | set_local: emit_count: @local.emit_count + 1"
+        }
+      ],
+      "_nested_name": "debug_text_area_nested_btn",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.text_area_1",
+                  "matchedExpression": "@local.text_area_1",
+                  "type": "local",
+                  "fieldName": "text_area_1"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "completed | set_local: local_set_from_child: @local.text_area_1",
+                "matchedExpression": "@local.text_area_1",
+                "type": "local",
+                "fieldName": "text_area_1"
+              }
+            ]
+          },
+          "1": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.emit_count + 1",
+                  "matchedExpression": "@local.emit_count",
+                  "type": "local",
+                  "fieldName": "emit_count"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "completed | set_local: emit_count: @local.emit_count + 1",
+                "matchedExpression": "@local.emit_count",
+                "type": "local",
+                "fieldName": "emit_count"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.text_area_1": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ],
+        "@local.emit_count": [
+          "action_list.1.args.1",
+          "action_list.1._raw"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "2. Passed-in values still rebuild",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_15",
+      "_nested_name": "title_15"
+    },
+    {
+      "type": "text",
+      "value": "In this case, the value is actually passed in to the nested template, therefore the nested template does need to rebuild on changes to the input value, and so the first click after typing in the text box is still \"lost\". That is currently the expected behaviour in this case: the first click to deselect the text input component does not trigger the button's actions, subsequent clicks do.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "text",
+      "value": "Section 2 emits: @local.override_emit_count",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_17",
+      "_nested_name": "text_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Section 2 emits: @local.override_emit_count",
+            "matchedExpression": "@local.override_emit_count",
+            "type": "local",
+            "fieldName": "override_emit_count"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.override_emit_count": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "template",
+      "name": "nested_btn_with_override",
+      "value": "debug_text_area_nested_btn",
+      "action_list": [
+        {
+          "trigger": "completed",
+          "action_id": "set_local",
+          "args": [
+            "override_emit_count",
+            "@local.override_emit_count + 1"
+          ],
+          "_raw": "completed | set_local: override_emit_count: @local.override_emit_count + 1"
+        }
+      ],
+      "rows": [
+        {
+          "type": "set_variable",
+          "name": "parent_text",
+          "value": "@local.text_area_1",
+          "_translations": {
+            "value": {}
+          },
+          "_nested_name": "nested_btn_with_override.parent_text",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@local.text_area_1",
+                "matchedExpression": "@local.text_area_1",
+                "type": "local",
+                "fieldName": "text_area_1"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.text_area_1": [
+              "value"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "nested_btn_with_override",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.override_emit_count + 1",
+                  "matchedExpression": "@local.override_emit_count",
+                  "type": "local",
+                  "fieldName": "override_emit_count"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "completed | set_local: override_emit_count: @local.override_emit_count + 1",
+                "matchedExpression": "@local.override_emit_count",
+                "type": "local",
+                "fieldName": "override_emit_count"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.override_emit_count": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_text_area.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/11lyl6bwOMJRoVX7l_cp7gQwdclx8mKGjccg43AyP0eQ"
+  }
+}

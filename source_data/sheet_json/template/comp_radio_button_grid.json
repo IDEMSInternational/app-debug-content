@@ -5,70 +5,9 @@
   "flow_subtype": "component_demo",
   "rows": [
     {
-      "type": "subtitle",
-      "name": "parameters",
-      "value": "Parameters",
-      "exclude_from_translation": true
-    },
-    {
-      "name": "concat_name",
-      "value": "_name"
-    },
-    {
-      "name": "concat_input",
-      "value": "_input"
-    },
-    {
-      "name": "concat_description",
-      "value": "_description"
-    },
-    {
       "type": "title",
       "name": "title_1",
-      "value": "Radio Button Grid",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "begin_items",
-      "value": "@data.comp_radio_button_grid_params",
-      "condition": false
-    },
-    {
-      "type": "begin_display_group",
-      "name": "@item.id"
-    },
-    {
-      "type": "text",
-      "name": "@item.id@local.concat_name",
-      "value": "@item.id",
-      "style_list": "width: 150px"
-    },
-    {
-      "type": "text_box",
-      "name": "@item.id@local.concat_input",
-      "value": "@item.default_value",
-      "condition": "@item.default_value",
-      "style_list": "width: 100px",
-      "action_list": "changed | emit:force_reprocess;",
-      "exclude_from_translation": true
-    },
-    {
-      "type": "text",
-      "name": "@item.id@local.concat_input",
-      "condition": "!@item.default_value",
-      "style_list": "width: 100px"
-    },
-    {
-      "type": "text",
-      "name": "@item.id@local.concat_description",
-      "value": "@item.description",
-      "style_list": "flex: 1"
-    },
-    {
-      "type": "end_display_group"
-    },
-    {
-      "type": "end_items"
+      "value": "Radio Button Grid"
     },
     {
       "type": "begin_display_group"
@@ -83,8 +22,7 @@
       "name": "item_width_input",
       "value": "200px",
       "style_list": "width: 100px",
-      "action_list": "changed | emit:force_reprocess;",
-      "exclude_from_translation": true
+      "action_list": "changed | emit:force_reprocess;"
     },
     {
       "type": "text",
@@ -107,8 +45,7 @@
       "name": "grid_width_input",
       "value": "100%",
       "style_list": "width: 100px",
-      "action_list": "changed | emit:force_reprocess;",
-      "exclude_from_translation": true
+      "action_list": "changed | emit:force_reprocess;"
     },
     {
       "type": "text",
@@ -131,8 +68,7 @@
       "name": "grid_gap_input",
       "value": "16px",
       "style_list": "width: 100px",
-      "action_list": "changed | emit:force_reprocess;",
-      "exclude_from_translation": true
+      "action_list": "changed | emit:force_reprocess;"
     },
     {
       "type": "text",
@@ -156,8 +92,7 @@
       "type": "radio_button_grid",
       "name": "grid_1",
       "action_list": "changed | emit:force_reprocess;",
-      "parameter_list": "answer_list: @data.comp_radio_button_grid_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input",
-      "exclude_from_translation": true
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;"
     },
     {
       "type": "title",
@@ -167,8 +102,7 @@
       "type": "radio_button_grid",
       "name": "grid_2",
       "action_list": "changed | emit:force_reprocess;",
-      "parameter_list": "answer_list: @data.comp_radio_button_category_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\nvariant: circle-icon;",
-      "exclude_from_translation": true
+      "parameter_list": "answer_list: @data.comp_radio_button_category_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\nvariant: circle-icon;"
     },
     {
       "type": "title",
@@ -177,8 +111,7 @@
     {
       "type": "radio_button_grid",
       "action_list": "changed | emit:force_reprocess;",
-      "parameter_list": "answer_list: @data.comp_radio_button_flex_data; \nvariant: flex;\nitem_width: @local.item_width_input;\ngrid_gap: @local.grid_gap_input;",
-      "exclude_from_translation": true
+      "parameter_list": "answer_list: @data.comp_radio_button_flex_data; \nvariant: flex;\nitem_width: @local.item_width_input;\ngrid_gap: @local.grid_gap_input;"
     },
     {
       "type": "text",
@@ -187,8 +120,7 @@
     {
       "type": "radio_button_grid",
       "action_list": "changed | emit:force_reprocess;",
-      "parameter_list": "answer_list: @data.comp_radio_button_flex_data; \nvariant: flex;\nstyle: secondary;\nitem_width: 60px;\ngrid_gap: 8px;",
-      "exclude_from_translation": true
+      "parameter_list": "answer_list: @data.comp_radio_button_flex_data; \nvariant: flex;\nstyle: secondary;\nitem_width: 60px;\ngrid_gap: 8px;"
     },
     {
       "type": "text",
@@ -196,8 +128,7 @@
     },
     {
       "type": "radio_button_grid",
-      "parameter_list": "answer_list: @data.comp_radio_button_flex_img_data; \nvariant: flex;\nstyle: secondary;\nitem_width: 60px;\ngrid_gap: 8px;",
-      "exclude_from_translation": true
+      "parameter_list": "answer_list: @data.comp_radio_button_flex_img_data; \nvariant: flex;\nstyle: secondary;\nitem_width: 60px;\ngrid_gap: 8px;"
     },
     {
       "type": "title",
@@ -205,13 +136,11 @@
     },
     {
       "type": "radio_button_grid",
-      "parameter_list": "answer_list: @data.comp_radio_button_grid_data_alt; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;\nstyle: secondary;",
-      "exclude_from_translation": true
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data_alt; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;\nstyle: secondary;"
     },
     {
       "type": "begin_radio_button_grid",
-      "parameter_list": "item_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;",
-      "exclude_from_translation": true
+      "parameter_list": "item_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;"
     },
     {
       "type": "data_items",
@@ -219,6 +148,103 @@
     },
     {
       "type": "end_radio_button_grid"
+    },
+    {
+      "type": "title",
+      "value": "Value as object"
+    },
+    {
+      "type": "text",
+      "value": "By default the row value is the selected option's key. Set value_as_object to store an object instead, with key taken from options_key and value from options_value",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "grid_3",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\nvalue_as_object: true;"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.grid_3))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.grid_3.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.grid_3.value"
+    },
+    {
+      "type": "text",
+      "value": "Card variant, with options_key and options_value overridden"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "grid_4",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data_alt; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;\nvalue_as_object: true;"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.grid_4))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.grid_4.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.grid_4.value"
+    },
+    {
+      "type": "title",
+      "value": "Default selection"
+    },
+    {
+      "type": "text",
+      "value": "Set initial_selected_option_key to preselect an option by its options_key value. Applied only when the row has no value of its own, so should not be combined with an authored value",
+      "style_list": "flex: 1"
+    },
+    {
+      "type": "radio_button_grid",
+      "name": "grid_5",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "answer_list: @data.comp_radio_button_grid_data; \nitem_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\ninitial_selected_option_key: option_3;"
+    },
+    {
+      "type": "text",
+      "value": "Selected: @local.grid_5"
+    },
+    {
+      "type": "text",
+      "value": "Default selection with value_as_object, from a data_items list"
+    },
+    {
+      "type": "begin_radio_button_grid",
+      "name": "grid_6",
+      "action_list": "changed | emit:force_reprocess;",
+      "parameter_list": "item_width: @local.item_width_input;\ngrid_width: @local.grid_width_input;\ngrid_gap: @local.grid_gap_input;\noptions_key: id;\noptions_value: label;\nvariant: card;\nvalue_as_object: true;\ninitial_selected_option_key: option_7;"
+    },
+    {
+      "type": "data_items",
+      "value": "comp_radio_button_grid_data_alt"
+    },
+    {
+      "type": "end_radio_button_grid"
+    },
+    {
+      "type": "text",
+      "value": "@calc(JSON.stringify(@local.grid_6))"
+    },
+    {
+      "type": "text",
+      "value": "Selected key: @local.grid_6.key"
+    },
+    {
+      "type": "text",
+      "value": "Selected value: @local.grid_6.value"
     },
     {
       "type": "text",
