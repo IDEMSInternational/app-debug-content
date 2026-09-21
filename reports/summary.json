@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 488
+        "count": 492
       },
       {
         "type": "calendar",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 127
+        "count": 128
       },
       {
         "type": "data_query",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 288
+        "count": 287
       },
       {
         "type": "drawer",
@@ -115,7 +115,7 @@
       },
       {
         "type": "items",
-        "count": 51
+        "count": 50
       },
       {
         "type": "latex",
@@ -219,7 +219,7 @@
       },
       {
         "type": "radio_button_grid",
-        "count": 20
+        "count": 24
       },
       {
         "type": "radio_group",
@@ -259,7 +259,7 @@
       },
       {
         "type": "set_variable",
-        "count": 956
+        "count": 961
       },
       {
         "type": "simple_checkbox",
@@ -275,7 +275,7 @@
       },
       {
         "type": "subtitle",
-        "count": 52
+        "count": 51
       },
       {
         "type": "tab",
@@ -299,19 +299,19 @@
       },
       {
         "type": "template",
-        "count": 157
+        "count": 159
       },
       {
         "type": "text",
-        "count": 1447
+        "count": 1478
       },
       {
         "type": "text_area",
-        "count": 13
+        "count": 15
       },
       {
         "type": "text_box",
-        "count": 87
+        "count": 86
       },
       {
         "type": "text_bubble",
@@ -327,7 +327,7 @@
       },
       {
         "type": "title",
-        "count": 703
+        "count": 710
       },
       {
         "type": "toggle_bar",
@@ -363,7 +363,7 @@
       },
       {
         "type": "asset_pack",
-        "count": 14
+        "count": 16
       },
       {
         "type": "auth",
@@ -391,7 +391,7 @@
       },
       {
         "type": "emit: completed",
-        "count": 34
+        "count": 35
       },
       {
         "type": "emit: force_reload",
@@ -399,7 +399,7 @@
       },
       {
         "type": "emit: force_reprocess",
-        "count": 66
+        "count": 69
       },
       {
         "type": "emit: force_restart",
@@ -458,10 +458,6 @@
         "count": 8
       },
       {
-        "type": "on_progress",
-        "count": 2
-      },
-      {
         "type": "open_external",
         "count": 3
       },
@@ -475,7 +471,7 @@
       },
       {
         "type": "pop_up",
-        "count": 62
+        "count": 63
       },
       {
         "type": "process_template",
@@ -511,7 +507,7 @@
       },
       {
         "type": "set_field",
-        "count": 124
+        "count": 125
       },
       {
         "type": "set_item",
@@ -523,7 +519,7 @@
       },
       {
         "type": "set_local",
-        "count": 81
+        "count": 86
       },
       {
         "type": "share",
@@ -567,7 +563,7 @@
     "data": [
       {
         "assets": "total",
-        "KB": "2495 KB",
+        "KB": "2517 KB",
         "MB": "2.5 MB"
       },
       {
@@ -672,16 +668,6 @@
   "assets_missing": {
     "data": [
       {
-        "path": "asset_pack_debugging/image_2.png",
-        "count": 1,
-        "missing": true
-      },
-      {
-        "path": "asset_pack_debugging/image_5.png",
-        "count": 1,
-        "missing": true
-      },
-      {
         "path": "asset_pack_debugging_bulk/bulk_001.png",
         "count": 1,
         "missing": true
@@ -708,17 +694,27 @@
       {
         "path": "asset_pack_debugging/image_1.png",
         "count": 1,
-        "size_kb": 8.8
+        "size_kb": 9.8
+      },
+      {
+        "path": "asset_pack_debugging/image_2.png",
+        "count": 1,
+        "size_kb": 8.6
       },
       {
         "path": "asset_pack_debugging/image_3.png",
         "count": 1,
-        "size_kb": 9.6
+        "size_kb": 10.5
       },
       {
         "path": "asset_pack_debugging/image_4.png",
         "count": 1,
-        "size_kb": 11.9
+        "size_kb": 11.8
+      },
+      {
+        "path": "asset_pack_debugging/image_5.png",
+        "count": 1,
+        "size_kb": 11.6
       },
       {
         "path": "audio/baby_elephant_walk.wav",
@@ -1187,7 +1183,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 121
+        "total": 123
       },
       {
         "type": "template",

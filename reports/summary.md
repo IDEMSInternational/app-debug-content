@@ -13,25 +13,25 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 488 |
+| button | 492 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
 | combo_box | 91 |
 | dashed_box | 19 |
-| data_items | 127 |
+| data_items | 128 |
 | data_query | 8 |
 | date_time_picker | 11 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 288 |
+| display_group | 287 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
 | html | 6 |
 | image | 89 |
-| items | 51 |
+| items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
 | map | 1 |
@@ -57,7 +57,7 @@
 | progress_bar | 1 |
 | progress_path | 11 |
 | qr_code | 2 |
-| radio_button_grid | 20 |
+| radio_button_grid | 24 |
 | radio_group | 61 |
 | radio_group_grid | 5 |
 | radio_list | 12 |
@@ -67,24 +67,24 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 956 |
+| set_variable | 961 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 52 |
+| subtitle | 51 |
 | tab | 4 |
 | table | 9 |
 | tabs | 2 |
 | task_card | 32 |
 | task_progress_bar | 11 |
-| template | 157 |
-| text | 1447 |
-| text_area | 13 |
-| text_box | 87 |
+| template | 159 |
+| text | 1478 |
+| text_area | 15 |
+| text_box | 86 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 703 |
+| title | 710 |
 | toggle_bar | 83 |
 | update_action_list | 3 |
 | video | 4 |
@@ -99,16 +99,16 @@
 | --- | --- |
 | add_data | 2 |
 | app_update | 3 |
-| asset_pack | 14 |
+| asset_pack | 16 |
 | auth | 8 |
 | auth_failure | 1 |
 | auth_success | 1 |
 | copy | 5 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
-| emit: completed | 34 |
+| emit: completed | 35 |
 | emit: force_reload | 35 |
-| emit: force_reprocess | 66 |
+| emit: force_reprocess | 69 |
 | emit: force_restart | 4 |
 | emit: server_sync | 9 |
 | emit: set_language | 6 |
@@ -123,11 +123,10 @@
 | nav | 6 |
 | nav_stack | 11 |
 | notification | 8 |
-| on_progress | 2 |
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 62 |
+| pop_up | 63 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -136,10 +135,10 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 23 |
-| set_field | 124 |
+| set_field | 125 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 81 |
+| set_local | 86 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -156,7 +155,7 @@
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 2495 KB | 2.5 MB |
+| total | 2517 KB | 2.5 MB |
 | unused | 1189 KB | 1.2 MB |
 </details>
 
@@ -198,8 +197,6 @@ Assets that have references within sheets but do not appear in app-data
 
 | path | count |
 | --- | --- |
-| asset_pack_debugging/image_2.png | 1 |
-| asset_pack_debugging/image_5.png | 1 |
 | asset_pack_debugging_bulk/bulk_001.png | 1 |
 | asset_pack_debugging_bulk/bulk_100.png | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
@@ -213,9 +210,11 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | path | size_kb | count |
 | --- | --- | --- |
-| asset_pack_debugging/image_1.png | 8.8 | 1 |
-| asset_pack_debugging/image_3.png | 9.6 | 1 |
-| asset_pack_debugging/image_4.png | 11.9 | 1 |
+| asset_pack_debugging/image_1.png | 9.8 | 1 |
+| asset_pack_debugging/image_2.png | 8.6 | 1 |
+| asset_pack_debugging/image_3.png | 10.5 | 1 |
+| asset_pack_debugging/image_4.png | 11.8 | 1 |
+| asset_pack_debugging/image_5.png | 11.6 | 1 |
 | audio/baby_elephant_walk.wav | 430.7 | 4 |
 | audio/test_audio.mp3 | 43.4 | 8 |
 | audio/timer/bell_1.mp3 | 121.6 | 1 |
@@ -315,7 +314,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 121 |
+| template |  | 123 |
 | template | component_demo | 76 |
 | template | debug | 306 |
 | template | example | 1 |

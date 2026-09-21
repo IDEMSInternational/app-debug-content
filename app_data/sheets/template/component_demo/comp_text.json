@@ -14,6 +14,15 @@
       "_nested_name": "text_default"
     },
     {
+      "type": "text",
+      "value": "Multiple paragraphs of text within a single text component instance.\nSoft returned newline.\n\nDouble returned newline.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
       "type": "title",
       "name": "title_1",
       "value": "Text alignment",
@@ -73,8 +82,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_8",
-      "_nested_name": "text_8"
+      "name": "text_9",
+      "_nested_name": "text_9"
     },
     {
       "type": "text",
@@ -166,8 +175,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_16",
-      "_nested_name": "title_16"
+      "name": "title_17",
+      "_nested_name": "title_17"
     },
     {
       "type": "text",
@@ -175,8 +184,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_17",
-      "_nested_name": "text_17"
+      "name": "text_18",
+      "_nested_name": "text_18"
     },
     {
       "type": "text",
@@ -187,8 +196,8 @@
       "style_list": [
         "font-size:14px"
       ],
-      "name": "text_18",
-      "_nested_name": "text_18"
+      "name": "text_19",
+      "_nested_name": "text_19"
     },
     {
       "type": "text",
@@ -196,8 +205,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_19",
-      "_nested_name": "text_19"
+      "name": "text_20",
+      "_nested_name": "text_20"
     }
   ],
   "_source": {

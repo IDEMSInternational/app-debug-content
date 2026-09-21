@@ -14,6 +14,10 @@
       "value": "Watch the metadata panel while pressing buttons. It is empty until a pack has been downloaded."
     },
     {
+      "type": "text",
+      "value": "NB ensure_downloaded only checks for a new version once an hour per pack. If you are testing a republished pack, read 'Version checks and updates' below."
+    },
+    {
       "type": "title",
       "value": "Asset pack metadata (_asset_packs)"
     },
@@ -23,7 +27,17 @@
     },
     {
       "type": "text",
-      "value": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at"
+      "value": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at"
+    },
+    {
+      "type": "text",
+      "value": "version: @item.version\navailable_version: @item.available_version\nupdate_available: @item.update_available\nhas_completed_download: @item.has_completed_download",
+      "comments": "update_available and has_completed_download are stored as real booleans, not strings. Check false renders as 'false' and not as blank on device."
+    },
+    {
+      "type": "text",
+      "value": "check_status: @item.version_check_status\nchecked_at: @item.version_checked_at\ncheck_attempted_at: @item.version_check_attempted_at",
+      "comments": "check_attempted_at drives the throttle. checked_at is the last SUCCESSFUL check."
     },
     {
       "type": "end_data_items"
@@ -43,7 +57,7 @@
     },
     {
       "type": "button",
-      "value": "Pack 1: download, 3s per file",
+      "value": "Pack 1: download, 3s per file (also forces update check)",
       "action_list": "click | asset_pack: download: debug_asset_pack_1 | debug_download_delay_ms: 3000;"
     },
     {
@@ -61,7 +75,7 @@
     },
     {
       "type": "button",
-      "value": "Pack 2: download",
+      "value": "Pack 2: download (also forces update check)",
       "action_list": "click | asset_pack: download: debug_asset_pack_2"
     },
     {
@@ -83,12 +97,12 @@
     },
     {
       "type": "button",
-      "value": "Pack 3: download",
+      "value": "Pack 3: download (also forces update check)",
       "action_list": "click | asset_pack: download: debug_asset_pack_3"
     },
     {
       "type": "button",
-      "value": "Pack 3: download in background (does not block action queue)",
+      "value": "Pack 3: download without awaiting (does not block action queue)",
       "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_3 | await: false;"
     },
     {
@@ -122,12 +136,38 @@
     },
     {
       "type": "title",
+      "value": "Version checks and updates"
+    },
+    {
+      "type": "text",
+      "value": "ensure_downloaded checks for a new version at most once an hour per pack, or 15 minutes after a check that reached the server and failed. A SUCCESSFUL DOWNLOAD sets that clock too, so straight after downloading a pack, ensure_downloaded will not check again for an hour. This is by design, not a bug."
+    },
+    {
+      "type": "text",
+      "value": "To test publishing an update: download a pack, republish it with one file changed, then press 'force update check' below. Upload the assets and the archive FIRST and the manifest LAST - a manifest landing first describes a version whose files 404."
+    },
+    {
+      "type": "text",
+      "value": "Then watch version vs available_version in the panel at the top. version only advances once every file has downloaded successfully, so a partly-applied update stays at the old version and retries on the next check. update_available means a check found a difference that has not been applied yet."
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: force update check (bypasses throttle)",
+      "action_list": "click | asset_pack: download: debug_asset_pack_1;"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: ensure_downloaded, no update check",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1 | check_for_updates: false;"
+    },
+    {
+      "type": "title",
       "value": "Select language:"
     },
     {
       "type": "set_variable",
       "name": "language_list",
-      "value": "[{\"name\":\"gb_en\",\"text\":\"English\"},{\"name\":\"es_sp\",\"text\":\"Español\"}]"
+      "value": "name: gb_en, text: English;\nname: es_sp, text: Español;"
     },
     {
       "type": "radio_group",

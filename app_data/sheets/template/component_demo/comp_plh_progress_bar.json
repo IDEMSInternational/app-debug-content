@@ -31,7 +31,7 @@
     },
     {
       "name": "title_2",
-      "value": "Looking at what your child needs",
+      "value": "A longer message that will wrap onto multiple lines to demonstrate",
       "_translations": {
         "value": {}
       },
@@ -40,7 +40,7 @@
     },
     {
       "name": "title_3",
-      "value": "Understanding your goal",
+      "value": "Show percentage: false (default)",
       "_translations": {
         "value": {}
       },
@@ -49,7 +49,7 @@
     },
     {
       "name": "title_4",
-      "value": "Making this just for your family",
+      "value": "Making adjustments",
       "_translations": {
         "value": {}
       },
@@ -150,7 +150,8 @@
         "title": "@local.title_1",
         "duration": "3000",
         "auto_play": "@local.start",
-        "color": "var(--ion-color-primary-300)"
+        "color": "var(--ion-color-primary-300)",
+        "show_percentage": "true"
       },
       "_nested_name": "bar_1",
       "_dynamicFields": {
@@ -189,30 +190,32 @@
         "title": "@local.title_2",
         "duration": "2000",
         "auto_play": "@local.bar_1 == 100 && @local.start",
-        "color": "var(--ion-color-secondary-300)"
+        "color": "var(--ion-color-secondary-300)",
+        "show_percentage": "true"
       },
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "on_progress",
+          "trigger": "on_progress",
+          "action_id": "pop_up",
           "args": [
-            "50"
+            "comp_plh_progress_bar_pop_up"
           ],
           "_raw": "on_progress: 50 | pop_up: comp_plh_progress_bar_pop_up",
-          "params": {
-            "pop_up": "comp_plh_progress_bar_pop_up"
-          }
+          "trigger_args": [
+            "50"
+          ]
         },
         {
-          "trigger": "click",
-          "action_id": "on_progress",
+          "trigger": "on_progress",
+          "action_id": "set_local",
           "args": [
-            "50"
+            "start",
+            false
           ],
           "_raw": "on_progress: 50 | set_local: start: false",
-          "params": {
-            "set_local": "start"
-          }
+          "trigger_args": [
+            "50"
+          ]
         }
       ],
       "_nested_name": "bar_2",
@@ -328,7 +331,8 @@
         "title": "@local.title_4",
         "duration": "1000",
         "auto_play": "@local.bar_3 == 100 && @local.start",
-        "color": "red"
+        "color": "red",
+        "show_percentage": "true"
       },
       "_nested_name": "bar_4",
       "_dynamicFields": {
@@ -376,7 +380,8 @@
         "title": "@local.title_5",
         "duration": "1000",
         "auto_play": "@local.bar_4 == 100 && @local.start",
-        "color": "#a241bf"
+        "color": "#a241bf",
+        "show_percentage": "true"
       },
       "_nested_name": "bar_5",
       "_dynamicFields": {

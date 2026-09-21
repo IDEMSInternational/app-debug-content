@@ -23,13 +23,22 @@
       "_nested_name": "text_3"
     },
     {
+      "type": "text",
+      "value": "NB ensure_downloaded only checks for a new version once an hour per pack. If you are testing a republished pack, read 'Version checks and updates' below.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
       "type": "title",
       "value": "Asset pack metadata (_asset_packs)",
       "_translations": {
         "value": {}
       },
-      "name": "title_4",
-      "_nested_name": "title_4"
+      "name": "title_5",
+      "_nested_name": "title_5"
     },
     {
       "type": "data_items",
@@ -37,49 +46,61 @@
       "rows": [
         {
           "type": "text",
-          "value": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at",
+          "value": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
           "_translations": {
             "value": {}
           },
           "name": "text_1_@item.id",
-          "_nested_name": "data_items_5.text_1_@item.id",
+          "_nested_name": "data_items_6.text_1_@item.id",
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_status",
                 "type": "item",
                 "fieldName": "download_status"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.assets_downloaded_count",
                 "type": "item",
                 "fieldName": "assets_downloaded_count"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.assets_total_count",
                 "type": "item",
                 "fieldName": "assets_total_count"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "matchedExpression": "@item.download_progress_percent",
+                "type": "item",
+                "fieldName": "download_progress_percent"
+              },
+              {
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_started_at",
                 "type": "item",
                 "fieldName": "download_started_at"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\ndownloaded: @item.assets_downloaded_count / @item.assets_total_count\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_completed_at",
                 "type": "item",
                 "fieldName": "download_completed_at"
+              },
+              {
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "matchedExpression": "@item.download_status_updated_at",
+                "type": "item",
+                "fieldName": "download_status_updated_at"
               }
             ],
             "name": [
@@ -92,7 +113,7 @@
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items_5.text_1_@item.id",
+                "fullExpression": "data_items_6.text_1_@item.id",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
@@ -114,17 +135,156 @@
             "@item.assets_total_count": [
               "value"
             ],
+            "@item.download_progress_percent": [
+              "value"
+            ],
             "@item.download_started_at": [
               "value"
             ],
             "@item.download_completed_at": [
               "value"
+            ],
+            "@item.download_status_updated_at": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "version: @item.version\navailable_version: @item.available_version\nupdate_available: @item.update_available\nhas_completed_download: @item.has_completed_download",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2_@item.id",
+          "_nested_name": "data_items_6.text_2_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "version: @item.version\navailable_version: @item.available_version\nupdate_available: @item.update_available\nhas_completed_download: @item.has_completed_download",
+                "matchedExpression": "@item.version",
+                "type": "item",
+                "fieldName": "version"
+              },
+              {
+                "fullExpression": "version: @item.version\navailable_version: @item.available_version\nupdate_available: @item.update_available\nhas_completed_download: @item.has_completed_download",
+                "matchedExpression": "@item.available_version",
+                "type": "item",
+                "fieldName": "available_version"
+              },
+              {
+                "fullExpression": "version: @item.version\navailable_version: @item.available_version\nupdate_available: @item.update_available\nhas_completed_download: @item.has_completed_download",
+                "matchedExpression": "@item.update_available",
+                "type": "item",
+                "fieldName": "update_available"
+              },
+              {
+                "fullExpression": "version: @item.version\navailable_version: @item.available_version\nupdate_available: @item.update_available\nhas_completed_download: @item.has_completed_download",
+                "matchedExpression": "@item.has_completed_download",
+                "type": "item",
+                "fieldName": "has_completed_download"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_6.text_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.version": [
+              "value"
+            ],
+            "@item.available_version": [
+              "value"
+            ],
+            "@item.update_available": [
+              "value"
+            ],
+            "@item.has_completed_download": [
+              "value"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "check_status: @item.version_check_status\nchecked_at: @item.version_checked_at\ncheck_attempted_at: @item.version_check_attempted_at",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_3_@item.id",
+          "_nested_name": "data_items_6.text_3_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "check_status: @item.version_check_status\nchecked_at: @item.version_checked_at\ncheck_attempted_at: @item.version_check_attempted_at",
+                "matchedExpression": "@item.version_check_status",
+                "type": "item",
+                "fieldName": "version_check_status"
+              },
+              {
+                "fullExpression": "check_status: @item.version_check_status\nchecked_at: @item.version_checked_at\ncheck_attempted_at: @item.version_check_attempted_at",
+                "matchedExpression": "@item.version_checked_at",
+                "type": "item",
+                "fieldName": "version_checked_at"
+              },
+              {
+                "fullExpression": "check_status: @item.version_check_status\nchecked_at: @item.version_checked_at\ncheck_attempted_at: @item.version_check_attempted_at",
+                "matchedExpression": "@item.version_check_attempted_at",
+                "type": "item",
+                "fieldName": "version_check_attempted_at"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_3_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_6.text_3_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.version_check_status": [
+              "value"
+            ],
+            "@item.version_checked_at": [
+              "value"
+            ],
+            "@item.version_check_attempted_at": [
+              "value"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
             ]
           }
         }
       ],
-      "name": "data_items_5",
-      "_nested_name": "data_items_5"
+      "name": "data_items_6",
+      "_nested_name": "data_items_6"
     },
     {
       "type": "text",
@@ -132,8 +292,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_7",
-      "_nested_name": "text_7",
+      "name": "text_8",
+      "_nested_name": "text_8",
       "_dynamicFields": {
         "value": [
           {
@@ -156,8 +316,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_8",
-      "_nested_name": "title_8"
+      "name": "title_9",
+      "_nested_name": "title_9"
     },
     {
       "type": "button",
@@ -178,12 +338,12 @@
           }
         }
       ],
-      "name": "button_9",
-      "_nested_name": "button_9"
+      "name": "button_10",
+      "_nested_name": "button_10"
     },
     {
       "type": "button",
-      "value": "Pack 1: download, 3s per file",
+      "value": "Pack 1: download, 3s per file (also forces update check)",
       "_translations": {
         "value": {}
       },
@@ -201,8 +361,8 @@
           }
         }
       ],
-      "name": "button_10",
-      "_nested_name": "button_10"
+      "name": "button_11",
+      "_nested_name": "button_11"
     },
     {
       "type": "title",
@@ -210,8 +370,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_11",
-      "_nested_name": "title_11"
+      "name": "title_12",
+      "_nested_name": "title_12"
     },
     {
       "type": "text",
@@ -219,8 +379,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_12",
-      "_nested_name": "text_12"
+      "name": "text_13",
+      "_nested_name": "text_13"
     },
     {
       "type": "button",
@@ -241,12 +401,12 @@
           }
         }
       ],
-      "name": "button_13",
-      "_nested_name": "button_13"
+      "name": "button_14",
+      "_nested_name": "button_14"
     },
     {
       "type": "button",
-      "value": "Pack 2: download",
+      "value": "Pack 2: download (also forces update check)",
       "_translations": {
         "value": {}
       },
@@ -261,8 +421,8 @@
           "_raw": "click | asset_pack: download: debug_asset_pack_2"
         }
       ],
-      "name": "button_14",
-      "_nested_name": "button_14"
+      "name": "button_15",
+      "_nested_name": "button_15"
     },
     {
       "type": "title",
@@ -270,8 +430,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_15",
-      "_nested_name": "title_15"
+      "name": "title_16",
+      "_nested_name": "title_16"
     },
     {
       "type": "text",
@@ -279,8 +439,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_16",
-      "_nested_name": "text_16"
+      "name": "text_17",
+      "_nested_name": "text_17"
     },
     {
       "type": "text",
@@ -288,8 +448,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_17",
-      "_nested_name": "text_17"
+      "name": "text_18",
+      "_nested_name": "text_18"
     },
     {
       "type": "button",
@@ -310,12 +470,12 @@
           }
         }
       ],
-      "name": "button_18",
-      "_nested_name": "button_18"
+      "name": "button_19",
+      "_nested_name": "button_19"
     },
     {
       "type": "button",
-      "value": "Pack 3: download",
+      "value": "Pack 3: download (also forces update check)",
       "_translations": {
         "value": {}
       },
@@ -330,12 +490,12 @@
           "_raw": "click | asset_pack: download: debug_asset_pack_3"
         }
       ],
-      "name": "button_19",
-      "_nested_name": "button_19"
+      "name": "button_20",
+      "_nested_name": "button_20"
     },
     {
       "type": "button",
-      "value": "Pack 3: download in background (does not block action queue)",
+      "value": "Pack 3: download without awaiting (does not block action queue)",
       "_translations": {
         "value": {}
       },
@@ -352,8 +512,8 @@
           }
         }
       ],
-      "name": "button_20",
-      "_nested_name": "button_20"
+      "name": "button_21",
+      "_nested_name": "button_21"
     },
     {
       "type": "button",
@@ -375,8 +535,8 @@
           }
         }
       ],
-      "name": "button_21",
-      "_nested_name": "button_21"
+      "name": "button_22",
+      "_nested_name": "button_22"
     },
     {
       "type": "title",
@@ -384,8 +544,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_22",
-      "_nested_name": "title_22"
+      "name": "title_23",
+      "_nested_name": "title_23"
     },
     {
       "type": "set_variable",
@@ -416,8 +576,8 @@
           }
         }
       ],
-      "name": "button_24",
-      "_nested_name": "button_24",
+      "name": "button_25",
+      "_nested_name": "button_25",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -465,8 +625,8 @@
           "_raw": "click | asset_pack: cancel_download"
         }
       ],
-      "name": "button_25",
-      "_nested_name": "button_25"
+      "name": "button_26",
+      "_nested_name": "button_26"
     },
     {
       "type": "button",
@@ -484,8 +644,86 @@
           "_raw": "click | asset_pack: reset"
         }
       ],
-      "name": "button_26",
-      "_nested_name": "button_26"
+      "name": "button_27",
+      "_nested_name": "button_27"
+    },
+    {
+      "type": "title",
+      "value": "Version checks and updates",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_28",
+      "_nested_name": "title_28"
+    },
+    {
+      "type": "text",
+      "value": "ensure_downloaded checks for a new version at most once an hour per pack, or 15 minutes after a check that reached the server and failed. A SUCCESSFUL DOWNLOAD sets that clock too, so straight after downloading a pack, ensure_downloaded will not check again for an hour. This is by design, not a bug.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_29",
+      "_nested_name": "text_29"
+    },
+    {
+      "type": "text",
+      "value": "To test publishing an update: download a pack, republish it with one file changed, then press 'force update check' below. Upload the assets and the archive FIRST and the manifest LAST - a manifest landing first describes a version whose files 404.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_30",
+      "_nested_name": "text_30"
+    },
+    {
+      "type": "text",
+      "value": "Then watch version vs available_version in the panel at the top. version only advances once every file has downloaded successfully, so a partly-applied update stays at the old version and retries on the next check. update_available means a check found a difference that has not been applied yet.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_31",
+      "_nested_name": "text_31"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: force update check (bypasses throttle)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "download",
+            "debug_asset_pack_1"
+          ],
+          "_raw": "click | asset_pack: download: debug_asset_pack_1"
+        }
+      ],
+      "name": "button_32",
+      "_nested_name": "button_32"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: ensure_downloaded, no update check",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "ensure_downloaded"
+          ],
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1 | check_for_updates: false",
+          "params": {
+            "asset_pack": "debug_asset_pack_1"
+          }
+        }
+      ],
+      "name": "button_33",
+      "_nested_name": "button_33"
     },
     {
       "type": "title",
@@ -493,16 +731,16 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_27",
-      "_nested_name": "title_27"
+      "name": "title_34",
+      "_nested_name": "title_34"
     },
     {
       "type": "set_variable",
       "name": "language_list",
-      "value": "[{\"name\":\"gb_en\",\"text\":\"English\"},{\"name\":\"es_sp\",\"text\":\"Español\"}]",
-      "_translations": {
-        "value": {}
-      },
+      "value": [
+        "name: gb_en, text: English",
+        "name: es_sp, text: Español"
+      ],
       "_nested_name": "language_list"
     },
     {
@@ -577,8 +815,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_30",
-      "_nested_name": "title_30"
+      "name": "title_37",
+      "_nested_name": "title_37"
     },
     {
       "type": "display_group",
@@ -593,7 +831,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_31.text_1"
+          "_nested_name": "display_group_38.text_1"
         },
         {
           "type": "image",
@@ -605,11 +843,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_31.image_2"
+          "_nested_name": "display_group_38.image_2"
         }
       ],
-      "name": "display_group_31",
-      "_nested_name": "display_group_31"
+      "name": "display_group_38",
+      "_nested_name": "display_group_38"
     },
     {
       "type": "display_group",
@@ -624,7 +862,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_33.text_1"
+          "_nested_name": "display_group_40.text_1"
         },
         {
           "type": "image",
@@ -636,11 +874,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_33.image_2"
+          "_nested_name": "display_group_40.image_2"
         }
       ],
-      "name": "display_group_33",
-      "_nested_name": "display_group_33"
+      "name": "display_group_40",
+      "_nested_name": "display_group_40"
     },
     {
       "type": "display_group",
@@ -655,7 +893,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_35.text_1"
+          "_nested_name": "display_group_42.text_1"
         },
         {
           "type": "image",
@@ -667,11 +905,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_35.image_2"
+          "_nested_name": "display_group_42.image_2"
         }
       ],
-      "name": "display_group_35",
-      "_nested_name": "display_group_35"
+      "name": "display_group_42",
+      "_nested_name": "display_group_42"
     },
     {
       "type": "display_group",
@@ -686,7 +924,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_37.text_1"
+          "_nested_name": "display_group_44.text_1"
         },
         {
           "type": "image",
@@ -698,11 +936,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_37.image_2"
+          "_nested_name": "display_group_44.image_2"
         }
       ],
-      "name": "display_group_37",
-      "_nested_name": "display_group_37"
+      "name": "display_group_44",
+      "_nested_name": "display_group_44"
     },
     {
       "type": "display_group",
@@ -717,7 +955,7 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_39.text_1"
+          "_nested_name": "display_group_46.text_1"
         },
         {
           "type": "image",
@@ -729,11 +967,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_39.image_2"
+          "_nested_name": "display_group_46.image_2"
         }
       ],
-      "name": "display_group_39",
-      "_nested_name": "display_group_39"
+      "name": "display_group_46",
+      "_nested_name": "display_group_46"
     },
     {
       "type": "text",
@@ -741,8 +979,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_41",
-      "_nested_name": "text_41"
+      "name": "text_48",
+      "_nested_name": "text_48"
     },
     {
       "type": "title",
@@ -750,8 +988,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_42",
-      "_nested_name": "title_42"
+      "name": "title_49",
+      "_nested_name": "title_49"
     },
     {
       "type": "text",
@@ -759,8 +997,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_43",
-      "_nested_name": "text_43"
+      "name": "text_50",
+      "_nested_name": "text_50"
     },
     {
       "type": "display_group",
@@ -775,7 +1013,7 @@
             "max-width:140px"
           ],
           "name": "image_1",
-          "_nested_name": "display_group_44.image_1"
+          "_nested_name": "display_group_51.image_1"
         },
         {
           "type": "image",
@@ -787,11 +1025,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_44.image_2"
+          "_nested_name": "display_group_51.image_2"
         }
       ],
-      "name": "display_group_44",
-      "_nested_name": "display_group_44"
+      "name": "display_group_51",
+      "_nested_name": "display_group_51"
     }
   ],
   "_source": {

@@ -20,6 +20,37 @@
       "name": "text_area_par_1_2",
       "parameter_list": "placeholder: string",
       "comments": "Any string as a placeholder"
+    },
+    {
+      "type": "title",
+      "value": "Pre-populated value"
+    },
+    {
+      "type": "text_area",
+      "name": "text_area_with_default_value",
+      "value": "@field.text_area_default"
+    },
+    {
+      "type": "text",
+      "value": "Value: @local.text_area_with_default_value"
+    },
+    {
+      "type": "button",
+      "value": "Save to field",
+      "action_list": "click | set_field: text_area_default: @local.text_area_with_default_value;"
+    },
+    {
+      "name": "count",
+      "value": 0
+    },
+    {
+      "type": "button",
+      "value": "Increase count",
+      "action_list": "click | set_local: count: @local.count + 1;"
+    },
+    {
+      "type": "text",
+      "value": "Counter: @local.count"
     }
   ]
 }

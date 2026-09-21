@@ -28,6 +28,193 @@
         "placeholder": "string"
       },
       "_nested_name": "text_area_par_1_2"
+    },
+    {
+      "type": "title",
+      "value": "Pre-populated value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_5",
+      "_nested_name": "title_5"
+    },
+    {
+      "type": "text_area",
+      "name": "text_area_with_default_value",
+      "value": "@field.text_area_default",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_area_with_default_value",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@field.text_area_default",
+            "matchedExpression": "@field.text_area_default",
+            "type": "field",
+            "fieldName": "text_area_default"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@field.text_area_default": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Value: @local.text_area_with_default_value",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value: @local.text_area_with_default_value",
+            "matchedExpression": "@local.text_area_with_default_value",
+            "type": "local",
+            "fieldName": "text_area_with_default_value"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.text_area_with_default_value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Save to field",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "text_area_default",
+            "@local.text_area_with_default_value"
+          ],
+          "_raw": "click | set_field: text_area_default: @local.text_area_with_default_value"
+        }
+      ],
+      "name": "button_8",
+      "_nested_name": "button_8",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.text_area_with_default_value",
+                  "matchedExpression": "@local.text_area_with_default_value",
+                  "type": "local",
+                  "fieldName": "text_area_with_default_value"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_field: text_area_default: @local.text_area_with_default_value",
+                "matchedExpression": "@local.text_area_with_default_value",
+                "type": "local",
+                "fieldName": "text_area_with_default_value"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.text_area_with_default_value": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ]
+      }
+    },
+    {
+      "name": "count",
+      "value": 0,
+      "type": "set_variable",
+      "_nested_name": "count"
+    },
+    {
+      "type": "button",
+      "value": "Increase count",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "count",
+            "@local.count + 1"
+          ],
+          "_raw": "click | set_local: count: @local.count + 1"
+        }
+      ],
+      "name": "button_10",
+      "_nested_name": "button_10",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "args": {
+              "1": [
+                {
+                  "fullExpression": "@local.count + 1",
+                  "matchedExpression": "@local.count",
+                  "type": "local",
+                  "fieldName": "count"
+                }
+              ]
+            },
+            "_raw": [
+              {
+                "fullExpression": "click | set_local: count: @local.count + 1",
+                "matchedExpression": "@local.count",
+                "type": "local",
+                "fieldName": "count"
+              }
+            ]
+          }
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.count": [
+          "action_list.0.args.1",
+          "action_list.0._raw"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Counter: @local.count",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Counter: @local.count",
+            "matchedExpression": "@local.count",
+            "type": "local",
+            "fieldName": "count"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.count": [
+          "value"
+        ]
+      }
     }
   ],
   "_source": {

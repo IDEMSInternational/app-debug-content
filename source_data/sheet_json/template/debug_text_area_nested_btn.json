@@ -1,0 +1,32 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_text_area_nested_btn",
+  "status": "released",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "count",
+      "value": 0
+    },
+    {
+      "type": "set_variable",
+      "name": "parent_text"
+    },
+    {
+      "type": "button",
+      "name": "button_3",
+      "value": "Increase count",
+      "action_list": "click | set_local: count: @local.count + 1; click | emit: completed"
+    },
+    {
+      "type": "text",
+      "name": "text_4",
+      "value": "Counter: @local.count"
+    },
+    {
+      "type": "text",
+      "value": "Value passed from parent: @local.parent_text",
+      "condition": "@local.parent_text"
+    }
+  ]
+}
