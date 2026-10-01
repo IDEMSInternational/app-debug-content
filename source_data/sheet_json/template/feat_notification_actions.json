@@ -29,8 +29,8 @@
     },
     {
       "name": "should_show_request",
-      "value": "@fields._notification_permission_status !== 'granted' && @fields._notification_permission_status !== 'denied'",
-      "comments": "This is rarely required as the app requests permission on first load, but might still be useful if a user has reject permission without fully denying (can ask again)"
+      "value": "@fields._notification_permission_status !== 'granted'",
+      "comments": "This is rarely required as the app requests permission on first load, but might still be useful if a user has reject permission without fully denying (can ask again)\n\nMight want to re-ask when permission was initially denied, so changing condition from '@fields._notification_permission_status !== 'granted' && @fields._notification_permission_status !== 'denied' to '@fields._notification_permission_status !== 'granted'"
     },
     {
       "type": "button",

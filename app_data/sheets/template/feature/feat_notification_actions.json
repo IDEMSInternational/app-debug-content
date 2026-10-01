@@ -69,7 +69,7 @@
     },
     {
       "name": "should_show_request",
-      "value": "@fields._notification_permission_status !== 'granted' && @fields._notification_permission_status !== 'denied'",
+      "value": "@fields._notification_permission_status !== 'granted'",
       "_translations": {
         "value": {}
       },
@@ -78,13 +78,7 @@
       "_dynamicFields": {
         "value": [
           {
-            "fullExpression": "@fields._notification_permission_status !== 'granted' && @fields._notification_permission_status !== 'denied'",
-            "matchedExpression": "@fields._notification_permission_status",
-            "type": "fields",
-            "fieldName": "_notification_permission_status"
-          },
-          {
-            "fullExpression": "@fields._notification_permission_status !== 'granted' && @fields._notification_permission_status !== 'denied'",
+            "fullExpression": "@fields._notification_permission_status !== 'granted'",
             "matchedExpression": "@fields._notification_permission_status",
             "type": "fields",
             "fieldName": "_notification_permission_status"
@@ -93,7 +87,6 @@
       },
       "_dynamicDependencies": {
         "@fields._notification_permission_status": [
-          "value",
           "value"
         ]
       }

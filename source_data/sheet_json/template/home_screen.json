@@ -40,6 +40,18 @@
       "name": "button_components",
       "value": "Components",
       "action_list": "click | go_to:/component"
+    },
+    {
+      "type": "data_items",
+      "value": "input_data_list",
+      "parameter_list": "filter: @item.id == user_id;"
+    },
+    {
+      "type": "map",
+      "parameter_list": "data: @items;"
+    },
+    {
+      "type": "end_items"
     }
   ]
 }

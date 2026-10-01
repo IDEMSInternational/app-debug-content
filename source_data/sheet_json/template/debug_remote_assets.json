@@ -27,7 +27,8 @@
     },
     {
       "type": "text",
-      "value": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at"
+      "value": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+      "comments": "size_needed_mb is only non-zero while status is insufficient_storage. It is what must be FREE (pack size plus a safety margin), not the pack size, so freeing that much is guaranteed to get past the check."
     },
     {
       "type": "text",
@@ -103,7 +104,8 @@
     {
       "type": "button",
       "value": "Pack 3: download without awaiting (does not block action queue)",
-      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_3 | await: false;"
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_3, await: false;",
+      "comments": "FIXED: await was previously after a second '|' and so was silently dropped. Params after the first go in ONE segment, comma-separated."
     },
     {
       "type": "button",
@@ -158,7 +160,60 @@
     {
       "type": "button",
       "value": "Pack 1: ensure_downloaded, no update check",
-      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1 | check_for_updates: false;"
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1, check_for_updates: false;"
+    },
+    {
+      "type": "title",
+      "value": "Storage check",
+      "comments": "Before downloading, the app checks the device has room for what is still missing. If it has not, NOTHING is downloaded: the pack goes to insufficient_storage and size_needed_mb is set. Watch both in the metadata panel at the top.\n\nPRESS RESET FIRST. A pack that has downloaded before is left at 'completed' when an attempt is refused, because the files already on the device still work - so the refusal is only visible on a pack that has never completed.\n\nA refused pack is NOT picked up automatically on the next app launch, unlike one interrupted mid-download. It waits for an explicit ensure_downloaded or download.\n\nOn web there is no check at all: packs are served from cloud storage and nothing is saved to the device, so these buttons download as normal."
+    },
+    {
+      "type": "button",
+      "value": "Reset (delete all files, clear all lists)",
+      "action_list": "click | asset_pack: reset;"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: simulate 1MB free",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1, debug_free_space_mb: 1;",
+      "comments": "Same refusal from a non-zero reading, confirming it is a comparison and not a zero check."
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: retry, simulating plenty of space",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1, debug_free_space_mb: 100000;",
+      "comments": "The retry path: a refused pack is picked up again by any later ensure_downloaded. Should download normally and reset size_needed_mb to 0."
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: refuse an already-downloaded pack",
+      "action_list": "click | asset_pack: download: debug_asset_pack_1 | debug_free_space_mb: 0;",
+      "comments": "Run once pack 1 is completed. Status should STAY 'completed' and size_needed_mb stay 0 - an update that will not fit leaves the working version in place. NB the pack is named as an arg here, so the param goes after its own '|'."
+    },
+    {
+      "type": "button",
+      "value": "Pack 2: real free space (400MB pack)",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_2;",
+      "comments": "No simulation - the only pack big enough to be refused by a real device. Needs roughly 440MB free to proceed."
+    },
+    {
+      "type": "begin_data_items",
+      "value": "_asset_packs"
+    },
+    {
+      "type": "text",
+      "value": "@item.name needs @item.download_size_mb MB. Please free up space, then try again.",
+      "condition": "@item.download_status == \"insufficient_storage\""
+    },
+    {
+      "type": "button",
+      "value": "Retry download",
+      "action_list": "click | asset_pack: ensure_downloaded | asset_pack: @item.id;",
+      "condition": "@item.download_status == \"insufficient_storage\"",
+      "comments": "Retries that row's own pack. Runs the check again, so the warning stays put if there is still not enough room."
+    },
+    {
+      "type": "end_data_items"
     },
     {
       "type": "title",
