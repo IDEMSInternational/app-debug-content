@@ -46,7 +46,7 @@
       "rows": [
         {
           "type": "text",
-          "value": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+          "value": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
           "_translations": {
             "value": {}
           },
@@ -55,49 +55,55 @@
           "_dynamicFields": {
             "value": [
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.id",
                 "type": "item",
                 "fieldName": "id"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_status",
                 "type": "item",
                 "fieldName": "download_status"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.assets_downloaded_count",
                 "type": "item",
                 "fieldName": "assets_downloaded_count"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.assets_total_count",
                 "type": "item",
                 "fieldName": "assets_total_count"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_progress_percent",
                 "type": "item",
                 "fieldName": "download_progress_percent"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "matchedExpression": "@item.download_size_mb",
+                "type": "item",
+                "fieldName": "download_size_mb"
+              },
+              {
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_started_at",
                 "type": "item",
                 "fieldName": "download_started_at"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_completed_at",
                 "type": "item",
                 "fieldName": "download_completed_at"
               },
               {
-                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
+                "fullExpression": "id: @item.id\nstatus: @item.download_status\nfiles: @item.assets_downloaded_count / @item.assets_total_count\npercent: @item.download_progress_percent\nsize_needed_mb: @item.download_size_mb\nstarted_at: @item.download_started_at\ncompleted_at: @item.download_completed_at\nstatus_updated_at: @item.download_status_updated_at",
                 "matchedExpression": "@item.download_status_updated_at",
                 "type": "item",
                 "fieldName": "download_status_updated_at"
@@ -136,6 +142,9 @@
               "value"
             ],
             "@item.download_progress_percent": [
+              "value"
+            ],
+            "@item.download_size_mb": [
               "value"
             ],
             "@item.download_started_at": [
@@ -506,9 +515,10 @@
           "args": [
             "ensure_downloaded"
           ],
-          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_3 | await: false",
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_3, await: false",
           "params": {
-            "asset_pack": "debug_asset_pack_3"
+            "asset_pack": "debug_asset_pack_3",
+            "await": false
           }
         }
       ],
@@ -716,9 +726,10 @@
           "args": [
             "ensure_downloaded"
           ],
-          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1 | check_for_updates: false",
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1, check_for_updates: false",
           "params": {
-            "asset_pack": "debug_asset_pack_1"
+            "asset_pack": "debug_asset_pack_1",
+            "check_for_updates": false
           }
         }
       ],
@@ -727,12 +738,286 @@
     },
     {
       "type": "title",
-      "value": "Select language:",
+      "value": "Storage check",
       "_translations": {
         "value": {}
       },
       "name": "title_34",
       "_nested_name": "title_34"
+    },
+    {
+      "type": "button",
+      "value": "Reset (delete all files, clear all lists)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "reset"
+          ],
+          "_raw": "click | asset_pack: reset"
+        }
+      ],
+      "name": "button_35",
+      "_nested_name": "button_35"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: simulate 1MB free",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "ensure_downloaded"
+          ],
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1, debug_free_space_mb: 1",
+          "params": {
+            "asset_pack": "debug_asset_pack_1",
+            "debug_free_space_mb": 1
+          }
+        }
+      ],
+      "name": "button_36",
+      "_nested_name": "button_36"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: retry, simulating plenty of space",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "ensure_downloaded"
+          ],
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_1, debug_free_space_mb: 100000",
+          "params": {
+            "asset_pack": "debug_asset_pack_1",
+            "debug_free_space_mb": 100000
+          }
+        }
+      ],
+      "name": "button_37",
+      "_nested_name": "button_37"
+    },
+    {
+      "type": "button",
+      "value": "Pack 1: refuse an already-downloaded pack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "download",
+            "debug_asset_pack_1"
+          ],
+          "_raw": "click | asset_pack: download: debug_asset_pack_1 | debug_free_space_mb: 0",
+          "params": {
+            "debug_free_space_mb": 0
+          }
+        }
+      ],
+      "name": "button_38",
+      "_nested_name": "button_38"
+    },
+    {
+      "type": "button",
+      "value": "Pack 2: real free space (400MB pack)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "asset_pack",
+          "args": [
+            "ensure_downloaded"
+          ],
+          "_raw": "click | asset_pack: ensure_downloaded | asset_pack: debug_asset_pack_2",
+          "params": {
+            "asset_pack": "debug_asset_pack_2"
+          }
+        }
+      ],
+      "name": "button_39",
+      "_nested_name": "button_39"
+    },
+    {
+      "type": "data_items",
+      "value": "_asset_packs",
+      "rows": [
+        {
+          "type": "text",
+          "value": "@item.name needs @item.download_size_mb MB. Please free up space, then try again.",
+          "_translations": {
+            "value": {}
+          },
+          "condition": "@item.download_status == \"insufficient_storage\"",
+          "name": "text_1_@item.id",
+          "_nested_name": "data_items_40.text_1_@item.id",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.name needs @item.download_size_mb MB. Please free up space, then try again.",
+                "matchedExpression": "@item.name",
+                "type": "item",
+                "fieldName": "name"
+              },
+              {
+                "fullExpression": "@item.name needs @item.download_size_mb MB. Please free up space, then try again.",
+                "matchedExpression": "@item.download_size_mb",
+                "type": "item",
+                "fieldName": "download_size_mb"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "@item.download_status == \"insufficient_storage\"",
+                "matchedExpression": "@item.download_status",
+                "type": "item",
+                "fieldName": "download_status"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_40.text_1_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.name": [
+              "value"
+            ],
+            "@item.download_size_mb": [
+              "value"
+            ],
+            "@item.download_status": [
+              "condition"
+            ],
+            "@item.id": [
+              "name",
+              "_nested_name"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "value": "Retry download",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "asset_pack",
+              "args": [
+                "ensure_downloaded"
+              ],
+              "_raw": "click | asset_pack: ensure_downloaded | asset_pack: @item.id",
+              "params": {
+                "asset_pack": "@item.id"
+              }
+            }
+          ],
+          "condition": "@item.download_status == \"insufficient_storage\"",
+          "name": "button_2_@item.id",
+          "_nested_name": "data_items_40.button_2_@item.id",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "click | asset_pack: ensure_downloaded | asset_pack: @item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "params": {
+                  "asset_pack": [
+                    {
+                      "fullExpression": "@item.id",
+                      "matchedExpression": "@item.id",
+                      "type": "item",
+                      "fieldName": "id"
+                    }
+                  ]
+                }
+              }
+            },
+            "condition": [
+              {
+                "fullExpression": "@item.download_status == \"insufficient_storage\"",
+                "matchedExpression": "@item.download_status",
+                "type": "item",
+                "fieldName": "download_status"
+              }
+            ],
+            "name": [
+              {
+                "fullExpression": "button_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
+            "_nested_name": [
+              {
+                "fullExpression": "data_items_40.button_2_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "action_list.0._raw",
+              "action_list.0.params.asset_pack",
+              "name",
+              "_nested_name"
+            ],
+            "@item.download_status": [
+              "condition"
+            ]
+          }
+        }
+      ],
+      "name": "data_items_40",
+      "_nested_name": "data_items_40"
+    },
+    {
+      "type": "title",
+      "value": "Select language:",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_42",
+      "_nested_name": "title_42"
     },
     {
       "type": "set_variable",
@@ -815,8 +1100,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_37",
-      "_nested_name": "title_37"
+      "name": "title_45",
+      "_nested_name": "title_45"
     },
     {
       "type": "display_group",
@@ -831,135 +1116,11 @@
             "width:140px"
           ],
           "name": "text_1",
-          "_nested_name": "display_group_38.text_1"
-        },
-        {
-          "type": "image",
-          "value": "asset_pack_debugging/image_1.png",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "max-width:140px"
-          ],
-          "name": "image_2",
-          "_nested_name": "display_group_38.image_2"
-        }
-      ],
-      "name": "display_group_38",
-      "_nested_name": "display_group_38"
-    },
-    {
-      "type": "display_group",
-      "rows": [
-        {
-          "type": "text",
-          "value": "No core equivalent:",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "width:140px"
-          ],
-          "name": "text_1",
-          "_nested_name": "display_group_40.text_1"
-        },
-        {
-          "type": "image",
-          "value": "asset_pack_debugging/image_2.png",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "max-width:140px"
-          ],
-          "name": "image_2",
-          "_nested_name": "display_group_40.image_2"
-        }
-      ],
-      "name": "display_group_40",
-      "_nested_name": "display_group_40"
-    },
-    {
-      "type": "display_group",
-      "rows": [
-        {
-          "type": "text",
-          "value": "Adds an override:",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "width:140px"
-          ],
-          "name": "text_1",
-          "_nested_name": "display_group_42.text_1"
-        },
-        {
-          "type": "image",
-          "value": "asset_pack_debugging/image_3.png",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "max-width:140px"
-          ],
-          "name": "image_2",
-          "_nested_name": "display_group_42.image_2"
-        }
-      ],
-      "name": "display_group_42",
-      "_nested_name": "display_group_42"
-    },
-    {
-      "type": "display_group",
-      "rows": [
-        {
-          "type": "text",
-          "value": "Replaces core and override:",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "width:140px"
-          ],
-          "name": "text_1",
-          "_nested_name": "display_group_44.text_1"
-        },
-        {
-          "type": "image",
-          "value": "asset_pack_debugging/image_4.png",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "max-width:140px"
-          ],
-          "name": "image_2",
-          "_nested_name": "display_group_44.image_2"
-        }
-      ],
-      "name": "display_group_44",
-      "_nested_name": "display_group_44"
-    },
-    {
-      "type": "display_group",
-      "rows": [
-        {
-          "type": "text",
-          "value": "No core version, override only:",
-          "_translations": {
-            "value": {}
-          },
-          "style_list": [
-            "width:140px"
-          ],
-          "name": "text_1",
           "_nested_name": "display_group_46.text_1"
         },
         {
           "type": "image",
-          "value": "asset_pack_debugging/image_5.png",
+          "value": "asset_pack_debugging/image_1.png",
           "_translations": {
             "value": {}
           },
@@ -974,13 +1135,137 @@
       "_nested_name": "display_group_46"
     },
     {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "No core equivalent:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_48.text_1"
+        },
+        {
+          "type": "image",
+          "value": "asset_pack_debugging/image_2.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_48.image_2"
+        }
+      ],
+      "name": "display_group_48",
+      "_nested_name": "display_group_48"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Adds an override:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_50.text_1"
+        },
+        {
+          "type": "image",
+          "value": "asset_pack_debugging/image_3.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_50.image_2"
+        }
+      ],
+      "name": "display_group_50",
+      "_nested_name": "display_group_50"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "Replaces core and override:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_52.text_1"
+        },
+        {
+          "type": "image",
+          "value": "asset_pack_debugging/image_4.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_52.image_2"
+        }
+      ],
+      "name": "display_group_52",
+      "_nested_name": "display_group_52"
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "text",
+          "value": "No core version, override only:",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "width:140px"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_54.text_1"
+        },
+        {
+          "type": "image",
+          "value": "asset_pack_debugging/image_5.png",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "max-width:140px"
+          ],
+          "name": "image_2",
+          "_nested_name": "display_group_54.image_2"
+        }
+      ],
+      "name": "display_group_54",
+      "_nested_name": "display_group_54"
+    },
+    {
       "type": "text",
       "value": "After deleting pack 1: images 1, 3, 4 revert to their core versions. Images 2 and 5 have no core version, so a missing image here is CORRECT, not a bug.",
       "_translations": {
         "value": {}
       },
-      "name": "text_48",
-      "_nested_name": "text_48"
+      "name": "text_56",
+      "_nested_name": "text_56"
     },
     {
       "type": "title",
@@ -988,8 +1273,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_49",
-      "_nested_name": "title_49"
+      "name": "title_57",
+      "_nested_name": "title_57"
     },
     {
       "type": "text",
@@ -997,8 +1282,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_50",
-      "_nested_name": "text_50"
+      "name": "text_58",
+      "_nested_name": "text_58"
     },
     {
       "type": "display_group",
@@ -1013,7 +1298,7 @@
             "max-width:140px"
           ],
           "name": "image_1",
-          "_nested_name": "display_group_51.image_1"
+          "_nested_name": "display_group_59.image_1"
         },
         {
           "type": "image",
@@ -1025,11 +1310,11 @@
             "max-width:140px"
           ],
           "name": "image_2",
-          "_nested_name": "display_group_51.image_2"
+          "_nested_name": "display_group_59.image_2"
         }
       ],
-      "name": "display_group_51",
-      "_nested_name": "display_group_51"
+      "name": "display_group_59",
+      "_nested_name": "display_group_59"
     }
   ],
   "_source": {

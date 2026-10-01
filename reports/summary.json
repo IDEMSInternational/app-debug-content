@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 492
+        "count": 498
       },
       {
         "type": "calendar",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 128
+        "count": 130
       },
       {
         "type": "data_query",
@@ -127,7 +127,7 @@
       },
       {
         "type": "map",
-        "count": 1
+        "count": 2
       },
       {
         "type": "markdown",
@@ -303,7 +303,7 @@
       },
       {
         "type": "text",
-        "count": 1478
+        "count": 1479
       },
       {
         "type": "text_area",
@@ -327,7 +327,7 @@
       },
       {
         "type": "title",
-        "count": 710
+        "count": 711
       },
       {
         "type": "toggle_bar",
@@ -363,7 +363,7 @@
       },
       {
         "type": "asset_pack",
-        "count": 16
+        "count": 22
       },
       {
         "type": "auth",
