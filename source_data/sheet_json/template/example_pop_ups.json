@@ -13,16 +13,16 @@
     {
       "type": "text",
       "name": "text_2",
-      "value": "Button 1 is a simple text pop-up:",
+      "value": "Button 1 is a simple pop-up:",
       "exclude_from_translation": true
     },
     {
       "type": "button",
       "name": "button_pop_up_1",
       "value": "Button 1",
-      "action_list": "click | pop_up:example_text",
+      "action_list": "click | pop_up:example_emit",
       "exclude_from_translation": true,
-      "comments": "This launches a simple pop-up (without buttons)"
+      "comments": "This launches a simple pop-up"
     },
     {
       "type": "text",

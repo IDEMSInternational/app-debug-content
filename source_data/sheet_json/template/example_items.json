@@ -66,8 +66,8 @@
     {
       "type": "title",
       "name": "workshop_example",
-      "value": "@global.workshop_capital Example",
-      "comments": "Populating info from @global.workshop data list:\nhttps://docs.google.com/spreadsheets/d/1PNPiy9SiVMcwWTXGn2of5cvBYfCAPyyjtooczyTBKk0/edit#gid=559635134"
+      "value": "Workshop Example",
+      "comments": "Workshop Example"
     },
     {
       "type": "begin_items",

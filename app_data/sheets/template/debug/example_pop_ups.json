@@ -17,7 +17,7 @@
     {
       "type": "text",
       "name": "text_2",
-      "value": "Button 1 is a simple text pop-up:",
+      "value": "Button 1 is a simple pop-up:",
       "_translations": {
         "value": {}
       },
@@ -36,9 +36,9 @@
           "trigger": "click",
           "action_id": "pop_up",
           "args": [
-            "example_text"
+            "example_emit"
           ],
-          "_raw": "click | pop_up:example_text"
+          "_raw": "click | pop_up:example_emit"
         }
       ],
       "exclude_from_translation": true,
