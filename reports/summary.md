@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 498 |
+| button | 501 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -67,7 +67,7 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 961 |
+| set_variable | 960 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -86,7 +86,7 @@
 | timer | 21 |
 | title | 711 |
 | toggle_bar | 83 |
-| update_action_list | 3 |
+| update_action_list | 4 |
 | video | 4 |
 | workshops_accordion | 2 |
 | youtube | 4 |
@@ -117,7 +117,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 86 |
+| go_to | 87 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |
@@ -126,7 +126,7 @@
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 63 |
+| pop_up | 64 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -135,10 +135,10 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 23 |
-| set_field | 125 |
+| set_field | 127 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 86 |
+| set_local | 87 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -316,7 +316,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 123 |
 | template | component_demo | 76 |
-| template | debug | 306 |
+| template | debug | 307 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

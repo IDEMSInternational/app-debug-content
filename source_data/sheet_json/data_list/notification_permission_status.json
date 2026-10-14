@@ -7,27 +7,27 @@
     {
       "id": "granted",
       "status": "granted",
-      "description": "User has granted permission to receive notifications"
+      "description": "User has allowed notifications. Nothing more to request."
     },
     {
-      "id": "unsupported",
-      "status": "unsupported",
-      "description": "Running on a web platform that does not support notification api (e.g. chrome for android)"
+      "id": "denied",
+      "status": "denied",
+      "description": "User has declined notifications and the device will not show the prompt again: on iOS after one decline, on Android 13+ after declining twice, or on Android 12 and below if notifications were turned off in Settings. \"notification: request_permission\" does nothing, so point the user to their device settings instead. On Android 13+ this can also appear if the dialog was dismissed without choosing, and then the prompt can usually still be shown."
     },
     {
-      "id": "schedule_at",
+      "id": "prompt",
       "status": "prompt",
-      "description": "User has not yet been prompted to allow permission. Can prompt"
+      "description": "User has not been asked yet, or (on web) closed the browser prompt without choosing. \"notification: request_permission\" will show the prompt."
     },
     {
-      "id": "title",
+      "id": "prompt-with-rationale",
       "status": "prompt-with-rationale",
-      "description": "User has been prompted but dismissed prompt without fully denying, e.g. via \"do not ask again\". Can re-prompt"
+      "description": "Android 13+ only. User has declined once and can be asked one more time. Show a pre-prompt explaining why notifications are useful before using \"notification: request_permission\"."
     },
     {
-      "id": "text",
+      "id": "undefined",
       "status": "undefined",
-      "description": "Status check has not been completed before template loaded. This may happen if using field on initial landing screen such as home page"
+      "description": "Permission status has not been checked yet. This can happen on the first launch if the first screen (e.g. home page) loads before the check finishes. It is also what web browsers without notification support currently show (e.g. Chrome for Android)."
     }
   ]
 }

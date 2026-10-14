@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_update_action_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_info",
+      "value": "Go to the other template and come back. The pop-up should show once, and not again on later returns."
+    },
+    {
+      "type": "update_action_list",
+      "name": "show_once",
+      "action_list": "nav_resume | pop_up: example_text;\nnav_resume | set_field: debug_pop_up_shown: yes;",
+      "condition": "@fields.debug_pop_up_shown != 'yes'"
+    },
+    {
+      "type": "button",
+      "name": "button_go",
+      "value": "Go to other template",
+      "action_list": "click | go_to: example_text"
+    },
+    {
+      "type": "button",
+      "name": "button_reset",
+      "value": "Reset",
+      "action_list": "click | set_field: debug_pop_up_shown: no"
+    }
+  ]
+}

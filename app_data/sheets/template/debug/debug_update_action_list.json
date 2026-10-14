@@ -1,0 +1,101 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_update_action_list",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "name": "text_info",
+      "value": "Go to the other template and come back. The pop-up should show once, and not again on later returns.",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_info"
+    },
+    {
+      "type": "update_action_list",
+      "name": "show_once",
+      "action_list": [
+        {
+          "trigger": "nav_resume",
+          "action_id": "pop_up",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "nav_resume | pop_up: example_text"
+        },
+        {
+          "trigger": "nav_resume",
+          "action_id": "set_field",
+          "args": [
+            "debug_pop_up_shown",
+            "yes"
+          ],
+          "_raw": "nav_resume | set_field: debug_pop_up_shown: yes"
+        }
+      ],
+      "condition": "@fields.debug_pop_up_shown != 'yes'",
+      "_nested_name": "show_once",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.debug_pop_up_shown != 'yes'",
+            "matchedExpression": "@fields.debug_pop_up_shown",
+            "type": "fields",
+            "fieldName": "debug_pop_up_shown"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.debug_pop_up_shown": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "button_go",
+      "value": "Go to other template",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "example_text"
+          ],
+          "_raw": "click | go_to: example_text"
+        }
+      ],
+      "_nested_name": "button_go"
+    },
+    {
+      "type": "button",
+      "name": "button_reset",
+      "value": "Reset",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "debug_pop_up_shown",
+            "no"
+          ],
+          "_raw": "click | set_field: debug_pop_up_shown: no"
+        }
+      ],
+      "_nested_name": "button_reset"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_update_action_list.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1ELM_o0G3_AqOUOsc3VrcpymnhD76uQO09MpqRhlLdRU"
+  }
+}

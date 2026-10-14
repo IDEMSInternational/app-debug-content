@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 498
+        "count": 501
       },
       {
         "type": "calendar",
@@ -259,7 +259,7 @@
       },
       {
         "type": "set_variable",
-        "count": 961
+        "count": 960
       },
       {
         "type": "simple_checkbox",
@@ -335,7 +335,7 @@
       },
       {
         "type": "update_action_list",
-        "count": 3
+        "count": 4
       },
       {
         "type": "video",
@@ -435,7 +435,7 @@
       },
       {
         "type": "go_to",
-        "count": 86
+        "count": 87
       },
       {
         "type": "go_to_url",
@@ -471,7 +471,7 @@
       },
       {
         "type": "pop_up",
-        "count": 63
+        "count": 64
       },
       {
         "type": "process_template",
@@ -507,7 +507,7 @@
       },
       {
         "type": "set_field",
-        "count": 125
+        "count": 127
       },
       {
         "type": "set_item",
@@ -519,7 +519,7 @@
       },
       {
         "type": "set_local",
-        "count": 86
+        "count": 87
       },
       {
         "type": "share",
@@ -1193,7 +1193,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 306
+        "total": 307
       },
       {
         "type": "template",
