@@ -5,21 +5,22 @@
   "flow_subtype": "debug",
   "rows": [
     {
+      "type": "text",
+      "value": "1. Input text into box\n2. Click on page to trigger change\n3. Click set to undefined\n4. Repeat",
+      "comments": "On first try undefined correctly clears but after multiple does not"
+    },
+    {
       "type": "text_box",
-      "name": "first_name",
-      "parameter_list": "placeholder: placeholder;"
+      "name": "text_box_1",
+      "comments": "test issue: https://github.com/IDEMSInternational/open-app-builder/issues/2759 \n\nrelated to sheet: profile"
     },
     {
-      "name": "first_name_valid",
-      "value": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))"
+      "type": "end_display_group"
     },
     {
-      "type": "text",
-      "value": "first_name: @local.first_name"
-    },
-    {
-      "type": "text",
-      "value": "first_name_valid: @local.first_name_valid"
+      "type": "button",
+      "value": "set to undefined",
+      "action_list": "click | set_local: text_box_1: ;"
     }
   ]
 }
