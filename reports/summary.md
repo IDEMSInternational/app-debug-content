@@ -78,7 +78,7 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 159 |
-| text | 1479 |
+| text | 1480 |
 | text_area | 15 |
 | text_box | 86 |
 | text_bubble | 15 |

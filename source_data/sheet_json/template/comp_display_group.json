@@ -53,12 +53,16 @@
     {
       "type": "begin_display_group",
       "exclude_from_translation": true,
-      "parameter_list": "variant: box_primary;"
+      "parameter_list": "variant: box_primary;\nstyle: column;"
     },
     {
       "type": "title",
       "value": "Variant: box_primary",
       "exclude_from_translation": true
+    },
+    {
+      "type": "text",
+      "value": "Body text within the display group wrapping onto multiple lines"
     },
     {
       "type": "end_display_group",
