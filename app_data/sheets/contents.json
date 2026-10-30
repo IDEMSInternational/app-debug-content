@@ -119,6 +119,9 @@
         },
         "time": {
           "type": "object"
+        },
+        "delay": {
+          "type": "object"
         }
       }
     },
@@ -3183,6 +3186,17 @@
         "url": "https://docs.google.com/spreadsheets/d/19bOZpBK-spjWaU3gE-EbJoqghmuvYqi7uGaSEZvh0YM"
       }
     },
+    "debug_campaign_repeats": {
+      "flow_type": "template",
+      "flow_subtype": "debug",
+      "flow_name": "debug_campaign_repeats",
+      "comments": "Test repeating campaign schedules, re-checks on field changes and campaign: recalculate",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_campaigns.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1Jf38D4pkoBO0QIUcw1IFAqlEokrUzhOESi3hNlW0vZM"
+      }
+    },
     "debug_campaign_tester": {
       "flow_type": "template",
       "flow_subtype": "debug",
@@ -3742,6 +3756,16 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/debug_filter_inc_field.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1C30JqDqwdkU90_ZTajACg5_I8gqhr8An-Ir-ie2wpKA"
+      }
+    },
+    "debug_first_name": {
+      "flow_type": "template",
+      "flow_name": "debug_first_name",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_first_name.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1eHmPLXWWpjzLUeuTs-LsqAPixLA3HEpTBaM4a6fDaGM"
       }
     },
     "debug_force_reprocess": {
@@ -4801,7 +4825,7 @@
       "_source": {
         "name": "Debug Sheets",
         "path": "debug_sheets/debug_text_box.xlsx",
-        "url": "https://docs.google.com/spreadsheets/d/1eHmPLXWWpjzLUeuTs-LsqAPixLA3HEpTBaM4a6fDaGM"
+        "url": "https://docs.google.com/spreadsheets/d/1B9X6lvSaLUHh7XmuNkJbK2Pup1H__jGf_DfvPQvLL7w"
       }
     },
     "debug_text_box_value": {

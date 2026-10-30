@@ -282,6 +282,137 @@
           "condition"
         ]
       }
+    },
+    {
+      "type": "display_group",
+      "rows": [
+        {
+          "type": "toggle_bar",
+          "name": "toggle_bar",
+          "value": "@fields.debug_campaigns_enabled",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "changed",
+              "action_id": "set_field",
+              "args": [
+                "debug_campaigns_enabled",
+                "this.value"
+              ],
+              "_raw": "changed | set_field: debug_campaigns_enabled: @local.toggle_bar"
+            }
+          ],
+          "_nested_name": "display_group_10.toggle_bar",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@fields.debug_campaigns_enabled",
+                "matchedExpression": "@fields.debug_campaigns_enabled",
+                "type": "fields",
+                "fieldName": "debug_campaigns_enabled"
+              }
+            ],
+            "action_list": {
+              "0": {
+                "_raw": [
+                  {
+                    "fullExpression": "changed | set_field: debug_campaigns_enabled: @local.toggle_bar",
+                    "matchedExpression": "@local.toggle_bar",
+                    "type": "local",
+                    "fieldName": "toggle_bar"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@fields.debug_campaigns_enabled": [
+              "value"
+            ],
+            "@local.toggle_bar": [
+              "action_list.0._raw"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "@item.id",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_10.text_2",
+          "_dynamicFields": {
+            "value": [
+              {
+                "fullExpression": "@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@item.id": [
+              "value"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "Debug campaigns enabled",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": "@local.toggle_bar",
+          "name": "text_3",
+          "_nested_name": "display_group_10.text_3",
+          "_dynamicFields": {
+            "exclude_from_translation": [
+              {
+                "fullExpression": "@local.toggle_bar",
+                "matchedExpression": "@local.toggle_bar",
+                "type": "local",
+                "fieldName": "toggle_bar"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "@local.toggle_bar": [
+              "exclude_from_translation"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "value": "Debug campaigns disabled",
+          "_translations": {
+            "value": {}
+          },
+          "exclude_from_translation": "!@local.toggle_bar",
+          "name": "text_4",
+          "_nested_name": "display_group_10.text_4",
+          "_dynamicFields": {
+            "exclude_from_translation": [
+              {
+                "fullExpression": "!@local.toggle_bar",
+                "matchedExpression": "!@local.toggle_bar",
+                "type": "local",
+                "fieldName": "toggle_bar"
+              }
+            ]
+          },
+          "_dynamicDependencies": {
+            "!@local.toggle_bar": [
+              "exclude_from_translation"
+            ]
+          }
+        }
+      ],
+      "name": "display_group_10",
+      "_nested_name": "display_group_10"
     }
   ],
   "_source": {

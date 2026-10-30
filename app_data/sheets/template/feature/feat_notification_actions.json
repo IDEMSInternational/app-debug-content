@@ -1105,9 +1105,10 @@
         {
           "trigger": "click",
           "action_id": "go_to",
-          "args": [],
-          "_raw": "click | go_to | debug_campaigns",
-          "params": {}
+          "args": [
+            "debug_campaign_tester"
+          ],
+          "_raw": "click | go_to : debug_campaign_tester"
         }
       ],
       "name": "button_38",

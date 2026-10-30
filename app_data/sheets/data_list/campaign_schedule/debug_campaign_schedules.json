@@ -6,6 +6,88 @@
   "comments": "This contains schedules for notifications",
   "rows": [
     {
+      "id": "debug_repeat",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.debug_repeat_from"
+          },
+          "_raw": "@fields.debug_repeat_from"
+        }
+      ],
+      "schedule": {
+        "start_date": "@fields.debug_repeat_from",
+        "repeat_every_days": 1,
+        "repeat_count": 3
+      },
+      "time": {
+        "hour": "@fields.debug_repeat_hour",
+        "minute": "@fields.debug_repeat_minute"
+      }
+    },
+    {
+      "id": "debug_repeat_end",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.debug_repeat_from"
+          },
+          "_raw": "@fields.debug_repeat_from"
+        }
+      ],
+      "schedule": {
+        "start_date": "@fields.debug_repeat_from",
+        "end_date": "@fields.debug_repeat_until",
+        "repeat_every_days": 1,
+        "repeat_count": 3
+      },
+      "delay": {
+        "minutes": 1
+      },
+      "time": {
+        "hour": "@fields.debug_repeat_hour",
+        "minute": "@fields.debug_repeat_minute"
+      }
+    },
+    {
+      "id": "debug_repeat_reminder",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@fields.debug_repeat_from"
+          },
+          "_raw": "@fields.debug_repeat_from"
+        }
+      ],
+      "schedule": {
+        "start_date": "@fields.debug_repeat_from",
+        "repeat_every_days": 1,
+        "repeat_count": 3
+      },
+      "delay": {
+        "minutes": 2
+      },
+      "time": {
+        "hour": "@fields.debug_repeat_hour",
+        "minute": "@fields.debug_repeat_minute"
+      }
+    },
+    {
+      "id": "debug_recalculate",
+      "activation_condition_list": [
+        {
+          "condition_type": "calc",
+          "condition_args": {
+            "calc": "@calc(new Date() >= new Date(@fields.debug_recalculate_from))"
+          },
+          "_raw": "@calc(new Date() >= new Date(@fields.debug_recalculate_from))"
+        }
+      ]
+    },
+    {
       "id": "debug_daily",
       "activation_condition_list": [
         {
@@ -295,6 +377,9 @@
       "type": "object"
     },
     "time": {
+      "type": "object"
+    },
+    "delay": {
       "type": "object"
     }
   }

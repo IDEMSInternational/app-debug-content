@@ -1,0 +1,102 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_first_name",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text_box",
+      "name": "first_name",
+      "parameter_list": {
+        "placeholder": "placeholder"
+      },
+      "_nested_name": "first_name"
+    },
+    {
+      "name": "first_name_valid",
+      "value": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "first_name_valid",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
+            "matchedExpression": "@local.first_name",
+            "type": "local",
+            "fieldName": "first_name"
+          },
+          {
+            "fullExpression": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
+            "matchedExpression": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))",
+            "type": "calc",
+            "fieldName": "/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name)"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.first_name": [
+          "value"
+        ],
+        "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "first_name: @local.first_name",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "first_name: @local.first_name",
+            "matchedExpression": "@local.first_name",
+            "type": "local",
+            "fieldName": "first_name"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.first_name": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "first_name_valid: @local.first_name_valid",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "first_name_valid: @local.first_name_valid",
+            "matchedExpression": "@local.first_name_valid",
+            "type": "local",
+            "fieldName": "first_name_valid"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.first_name_valid": [
+          "value"
+        ]
+      }
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_first_name.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1eHmPLXWWpjzLUeuTs-LsqAPixLA3HEpTBaM4a6fDaGM"
+  }
+}

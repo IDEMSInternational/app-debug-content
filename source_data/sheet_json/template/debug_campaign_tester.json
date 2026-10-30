@@ -56,6 +56,32 @@
     {
       "type": "end_display_group",
       "exclude_from_translation": true
+    },
+    {
+      "type": "begin_display_group"
+    },
+    {
+      "type": "toggle_bar",
+      "name": "toggle_bar",
+      "value": "@fields.debug_campaigns_enabled",
+      "action_list": "changed | set_field: debug_campaigns_enabled: @local.toggle_bar"
+    },
+    {
+      "type": "text",
+      "value": "@item.id"
+    },
+    {
+      "type": "text",
+      "value": "Debug campaigns enabled",
+      "exclude_from_translation": "@local.toggle_bar"
+    },
+    {
+      "type": "text",
+      "value": "Debug campaigns disabled",
+      "exclude_from_translation": "!@local.toggle_bar"
+    },
+    {
+      "type": "end_display_group"
     }
   ]
 }

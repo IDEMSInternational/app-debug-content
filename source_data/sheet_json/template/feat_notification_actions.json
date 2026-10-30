@@ -201,7 +201,7 @@
     {
       "type": "button",
       "value": "Go to Debug Campaigns",
-      "action_list": "click | go_to | debug_campaigns",
+      "action_list": "click | go_to : debug_campaign_tester",
       "comments": "debug_campaigns"
     },
     {

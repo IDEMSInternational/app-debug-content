@@ -6,6 +6,44 @@
   "comments": "This contains schedules for notifications",
   "rows": [
     {
+      "id": "debug_repeat",
+      "activation_condition_list": "@fields.debug_repeat_from",
+      "schedule.start_date": "@fields.debug_repeat_from",
+      "schedule.repeat_every_days": 1,
+      "schedule.repeat_count": 3,
+      "time.hour": "@fields.debug_repeat_hour",
+      "time.minute": "@fields.debug_repeat_minute",
+      "comment": "3 notifications a day apart, the first 2 min after pressing Start series (debug_campaign_repeats)"
+    },
+    {
+      "id": "debug_repeat_end",
+      "activation_condition_list": "@fields.debug_repeat_from",
+      "schedule.start_date": "@fields.debug_repeat_from",
+      "schedule.end_date": "@fields.debug_repeat_until",
+      "schedule.repeat_every_days": 1,
+      "schedule.repeat_count": 3,
+      "delay.minutes": 1,
+      "time.hour": "@fields.debug_repeat_hour",
+      "time.minute": "@fields.debug_repeat_minute",
+      "comment": "As debug_repeat but 1 min later, and ends tomorrow: only the first 2 of 3 are scheduled"
+    },
+    {
+      "id": "debug_repeat_reminder",
+      "activation_condition_list": "@fields.debug_repeat_from",
+      "schedule.start_date": "@fields.debug_repeat_from",
+      "schedule.repeat_every_days": 1,
+      "schedule.repeat_count": 3,
+      "delay.minutes": 2,
+      "time.hour": "@fields.debug_repeat_hour",
+      "time.minute": "@fields.debug_repeat_minute",
+      "comment": "Reminder 2 min after each debug_repeat notification (same dates, own row)"
+    },
+    {
+      "id": "debug_recalculate",
+      "activation_condition_list": "@calc(new Date() >= new Date(@fields.debug_recalculate_from))",
+      "comment": "Active once debug_recalculate_from has passed. Time passing isn't a field change, so only Recalculate (or a restart) picks it up"
+    },
+    {
       "id": "debug_daily",
       "activation_condition_list": "@fields.debug_campaigns_enabled",
       "schedule.batch_size": 5,
