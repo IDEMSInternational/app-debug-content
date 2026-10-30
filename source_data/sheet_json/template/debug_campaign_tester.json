@@ -68,17 +68,13 @@
     },
     {
       "type": "text",
-      "value": "@item.id"
-    },
-    {
-      "type": "text",
       "value": "Debug campaigns enabled",
-      "exclude_from_translation": "@local.toggle_bar"
+      "condition": "@local.toggle_bar"
     },
     {
       "type": "text",
       "value": "Debug campaigns disabled",
-      "exclude_from_translation": "!@local.toggle_bar"
+      "condition": "!@local.toggle_bar"
     },
     {
       "type": "end_display_group"
