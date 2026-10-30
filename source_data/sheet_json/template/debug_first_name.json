@@ -1,0 +1,25 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_first_name",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text_box",
+      "name": "first_name",
+      "parameter_list": "placeholder: placeholder;"
+    },
+    {
+      "name": "first_name_valid",
+      "value": "@calc(/^[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ' -]*$/.test(@local.first_name))"
+    },
+    {
+      "type": "text",
+      "value": "first_name: @local.first_name"
+    },
+    {
+      "type": "text",
+      "value": "first_name_valid: @local.first_name_valid"
+    }
+  ]
+}

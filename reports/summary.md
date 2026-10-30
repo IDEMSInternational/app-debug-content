@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 501 |
+| button | 507 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -25,7 +25,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 287 |
+| display_group | 288 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
@@ -67,7 +67,7 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 960 |
+| set_variable | 961 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -78,14 +78,14 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 159 |
-| text | 1480 |
+| text | 1488 |
 | text_area | 15 |
-| text_box | 86 |
+| text_box | 87 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 711 |
-| toggle_bar | 83 |
+| title | 712 |
+| toggle_bar | 84 |
 | update_action_list | 4 |
 | video | 4 |
 | workshops_accordion | 2 |
@@ -103,6 +103,7 @@
 | auth | 8 |
 | auth_failure | 1 |
 | auth_success | 1 |
+| campaign | 1 |
 | copy | 5 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
@@ -117,7 +118,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 13 |
-| go_to | 87 |
+| go_to | 88 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |
@@ -135,7 +136,7 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 23 |
-| set_field | 127 |
+| set_field | 135 |
 | set_item | 35 |
 | set_items | 2 |
 | set_local | 87 |
@@ -316,7 +317,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 123 |
 | template | component_demo | 76 |
-| template | debug | 307 |
+| template | debug | 309 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

@@ -1,0 +1,64 @@
+{
+  "flow_type": "template",
+  "flow_subtype": "debug",
+  "flow_name": "debug_campaign_repeats",
+  "status": "released",
+  "comments": "Test repeating campaign schedules, re-checks on field changes and campaign: recalculate",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Repeating campaigns"
+    },
+    {
+      "type": "button",
+      "value": "Go to Notifications page",
+      "action_list": "click | go_to:/notifications"
+    },
+    {
+      "type": "text",
+      "name": "text_intro",
+      "value": "Press **Start series** to schedule three series of notifications, each sending one notification a day:\n\n- **Debug Repeat**: 3 notifications, the first 2 min from now.\n- **Debug Repeat End**: starts 3 min from now. Its end date is tomorrow, so it stops after 2 notifications. This shows an end date cutting a series short.\n- **Debug Repeat Reminder**: 3 notifications, each 2 min after a Debug Repeat one. This shows reminders using a delay.\n\nThat's 8 notifications in total. Check them on the /notifications page.\n"
+    },
+    {
+      "type": "text",
+      "name": "text_from",
+      "value": "Series from: @fields.debug_repeat_from"
+    },
+    {
+      "type": "button",
+      "name": "button_start",
+      "value": "Start series",
+      "action_list": "click | set_field: debug_repeat_hour: @calc(new Date().getHours()); click | set_field: debug_repeat_minute: @calc(new Date().getMinutes() + 2); click | set_field: debug_repeat_until: @calc(timestamp(new Date(Date.now() + 86400000))); click | set_field: debug_repeat_from: @calc(timestamp())"
+    },
+    {
+      "type": "button",
+      "name": "button_stop",
+      "value": "Stop series",
+      "action_list": "click | set_field: debug_repeat_from: false"
+    },
+    {
+      "type": "text",
+      "name": "text_recalculate",
+      "value": "Tests **Recalculate** (the `campaign: recalculate` action), for when a campaign's conditions change but no field does.\n\n1. Press **Activate in 1 min**. The Debug Recalculate campaign becomes active 1 min later.\n2. Campaigns are re-checked when the app starts, when a field they use changes, or after a notification's actions run, but not as time passes.\n3. Press **Recalculate** and check again. Debug Recalculate is now scheduled, at the next 12:00 (the default time, as the schedule doesn't set one).\n\n**Reset** deactivates it and removes the notification.\n\nActive from: @fields.debug_recalculate_from\n"
+    },
+    {
+      "type": "button",
+      "name": "button_recalculate_activate",
+      "value": "Activate in 1 min",
+      "action_list": "click | set_field: debug_recalculate_from: @calc(timestamp(new Date(Date.now() + 60000)))"
+    },
+    {
+      "type": "button",
+      "name": "button_recalculate",
+      "value": "Recalculate",
+      "action_list": "click | campaign: recalculate"
+    },
+    {
+      "type": "button",
+      "name": "button_recalculate_reset",
+      "value": "Reset",
+      "action_list": "click | set_field: debug_recalculate_from: false"
+    }
+  ]
+}

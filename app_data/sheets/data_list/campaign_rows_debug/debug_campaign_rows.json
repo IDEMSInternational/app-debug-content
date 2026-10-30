@@ -434,6 +434,86 @@
         }
       },
       "title": "debug_2058_9"
+    },
+    {
+      "id": "debug_repeat_1",
+      "campaign_list": [
+        "debug_repeat"
+      ],
+      "text": "Series from @fields.debug_repeat_from, 1 day apart",
+      "_translations": {
+        "text": {},
+        "title": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Series from @fields.debug_repeat_from, 1 day apart"
+        },
+        "title": {
+          "eng": "Debug Repeat"
+        }
+      },
+      "title": "Debug Repeat"
+    },
+    {
+      "id": "debug_repeat_end_1",
+      "campaign_list": [
+        "debug_repeat_end"
+      ],
+      "text": "Series ends @fields.debug_repeat_until",
+      "_translations": {
+        "text": {},
+        "title": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Series ends @fields.debug_repeat_until"
+        },
+        "title": {
+          "eng": "Debug Repeat End"
+        }
+      },
+      "title": "Debug Repeat End"
+    },
+    {
+      "id": "debug_repeat_reminder_1",
+      "campaign_list": [
+        "debug_repeat_reminder"
+      ],
+      "text": "Reminder, 2 min after each Debug Repeat",
+      "_translations": {
+        "text": {},
+        "title": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Reminder, 2 min after each Debug Repeat"
+        },
+        "title": {
+          "eng": "Debug Repeat Reminder"
+        }
+      },
+      "title": "Debug Repeat Reminder"
+    },
+    {
+      "id": "debug_recalculate_1",
+      "campaign_list": [
+        "debug_recalculate"
+      ],
+      "text": "Scheduled by Recalculate in an even minute",
+      "_translations": {
+        "text": {},
+        "title": {}
+      },
+      "_translatedFields": {
+        "text": {
+          "eng": "Scheduled by Recalculate in an even minute"
+        },
+        "title": {
+          "eng": "Debug Recalculate"
+        }
+      },
+      "title": "Debug Recalculate"
     }
   ],
   "_source": {

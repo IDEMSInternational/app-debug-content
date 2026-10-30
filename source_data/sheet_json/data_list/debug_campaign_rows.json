@@ -107,6 +107,30 @@
       "campaign_list": "debug_2058_9",
       "text::eng": "3.17pm",
       "title::eng": "debug_2058_9"
+    },
+    {
+      "id": "debug_repeat_1",
+      "campaign_list": "debug_repeat",
+      "text::eng": "Series from @fields.debug_repeat_from, 1 day apart",
+      "title::eng": "Debug Repeat"
+    },
+    {
+      "id": "debug_repeat_end_1",
+      "campaign_list": "debug_repeat_end",
+      "text::eng": "Series ends @fields.debug_repeat_until",
+      "title::eng": "Debug Repeat End"
+    },
+    {
+      "id": "debug_repeat_reminder_1",
+      "campaign_list": "debug_repeat_reminder",
+      "text::eng": "Reminder, 2 min after each Debug Repeat",
+      "title::eng": "Debug Repeat Reminder"
+    },
+    {
+      "id": "debug_recalculate_1",
+      "campaign_list": "debug_recalculate",
+      "text::eng": "Scheduled by Recalculate in an even minute",
+      "title::eng": "Debug Recalculate"
     }
   ]
 }

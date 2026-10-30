@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 501
+        "count": 507
       },
       {
         "type": "calendar",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 287
+        "count": 288
       },
       {
         "type": "drawer",
@@ -259,7 +259,7 @@
       },
       {
         "type": "set_variable",
-        "count": 960
+        "count": 961
       },
       {
         "type": "simple_checkbox",
@@ -303,7 +303,7 @@
       },
       {
         "type": "text",
-        "count": 1480
+        "count": 1488
       },
       {
         "type": "text_area",
@@ -311,7 +311,7 @@
       },
       {
         "type": "text_box",
-        "count": 86
+        "count": 87
       },
       {
         "type": "text_bubble",
@@ -327,11 +327,11 @@
       },
       {
         "type": "title",
-        "count": 711
+        "count": 712
       },
       {
         "type": "toggle_bar",
-        "count": 83
+        "count": 84
       },
       {
         "type": "update_action_list",
@@ -375,6 +375,10 @@
       },
       {
         "type": "auth_success",
+        "count": 1
+      },
+      {
+        "type": "campaign",
         "count": 1
       },
       {
@@ -435,7 +439,7 @@
       },
       {
         "type": "go_to",
-        "count": 87
+        "count": 88
       },
       {
         "type": "go_to_url",
@@ -507,7 +511,7 @@
       },
       {
         "type": "set_field",
-        "count": 127
+        "count": 135
       },
       {
         "type": "set_item",
@@ -1193,7 +1197,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 307
+        "total": 309
       },
       {
         "type": "template",
