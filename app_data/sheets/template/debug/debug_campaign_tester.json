@@ -338,39 +338,15 @@
         },
         {
           "type": "text",
-          "value": "@item.id",
-          "_translations": {
-            "value": {}
-          },
-          "name": "text_2",
-          "_nested_name": "display_group_10.text_2",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item.id": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
           "value": "Debug campaigns enabled",
           "_translations": {
             "value": {}
           },
-          "exclude_from_translation": "@local.toggle_bar",
-          "name": "text_3",
-          "_nested_name": "display_group_10.text_3",
+          "condition": "@local.toggle_bar",
+          "name": "text_2",
+          "_nested_name": "display_group_10.text_2",
           "_dynamicFields": {
-            "exclude_from_translation": [
+            "condition": [
               {
                 "fullExpression": "@local.toggle_bar",
                 "matchedExpression": "@local.toggle_bar",
@@ -381,7 +357,7 @@
           },
           "_dynamicDependencies": {
             "@local.toggle_bar": [
-              "exclude_from_translation"
+              "condition"
             ]
           }
         },
@@ -391,11 +367,11 @@
           "_translations": {
             "value": {}
           },
-          "exclude_from_translation": "!@local.toggle_bar",
-          "name": "text_4",
-          "_nested_name": "display_group_10.text_4",
+          "condition": "!@local.toggle_bar",
+          "name": "text_3",
+          "_nested_name": "display_group_10.text_3",
           "_dynamicFields": {
-            "exclude_from_translation": [
+            "condition": [
               {
                 "fullExpression": "!@local.toggle_bar",
                 "matchedExpression": "!@local.toggle_bar",
@@ -406,7 +382,7 @@
           },
           "_dynamicDependencies": {
             "!@local.toggle_bar": [
-              "exclude_from_translation"
+              "condition"
             ]
           }
         }
