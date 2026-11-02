@@ -38,6 +38,17 @@
       "comments": "See full list of available parameters at:\nhttps://developers.google.com/youtube/player_parameters#Parameters"
     },
     {
+      "type": "text",
+      "name": "text_portrait",
+      "value": "`orientation: portrait`"
+    },
+    {
+      "type": "youtube",
+      "name": "youtube_portrait",
+      "value": "https://www.youtube.com/watch?v=y6oMutwJQCw",
+      "parameter_list": "orientation: portrait;"
+    },
+    {
       "type": "youtube",
       "name": "youtube_3",
       "value": "0oOAGrStVGI",
