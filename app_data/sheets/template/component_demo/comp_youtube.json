@@ -71,6 +71,27 @@
       "_nested_name": "youtube_8"
     },
     {
+      "type": "text",
+      "name": "text_portrait",
+      "value": "`orientation: portrait`",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "text_portrait"
+    },
+    {
+      "type": "youtube",
+      "name": "youtube_portrait",
+      "value": "https://www.youtube.com/watch?v=y6oMutwJQCw",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "orientation": "portrait"
+      },
+      "_nested_name": "youtube_portrait"
+    },
+    {
       "type": "youtube",
       "name": "youtube_3",
       "value": "0oOAGrStVGI",

@@ -78,7 +78,7 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 159 |
-| text | 1487 |
+| text | 1488 |
 | text_area | 15 |
 | text_box | 87 |
 | text_bubble | 15 |
@@ -89,7 +89,7 @@
 | update_action_list | 4 |
 | video | 4 |
 | workshops_accordion | 2 |
-| youtube | 4 |
+| youtube | 5 |
 </details>
 
 <details >
