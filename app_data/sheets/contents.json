@@ -2608,6 +2608,16 @@
         "url": "https://docs.google.com/spreadsheets/d/130xy0FbCqgVMg8astiR5FBzuUMfVBHtg9k6wmweE1BA"
       }
     },
+    "comp_plh_progress_summary": {
+      "flow_type": "template",
+      "flow_name": "comp_plh_progress_summary",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_plh_progress_summary.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1SekXBLWGXOww-dgol3YppH5H_jMl_5HVhkKnto0LZEU"
+      }
+    },
     "comp_progress_path": {
       "flow_type": "template",
       "flow_name": "comp_progress_path",

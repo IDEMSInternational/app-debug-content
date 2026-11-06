@@ -40,7 +40,7 @@
     },
     {
       "id": "debug_recalculate",
-      "activation_condition_list": "@calc(new Date() >= new Date(@fields.debug_recalculate_from))",
+      "activation_condition_list": "@fields.debug_recalculate_from; @calc(new Date() >= new Date(@fields.debug_recalculate_from))",
       "comment": "Active once debug_recalculate_from has passed. Time passing isn't a field change, so only Recalculate (or a restart) picks it up"
     },
     {

@@ -1,0 +1,450 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_summary",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Progress Summary Component",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "name": "count",
+      "value": 2,
+      "type": "set_variable",
+      "_nested_name": "count"
+    },
+    {
+      "name": "summary_text",
+      "value": "Your care and attention make a lasting impact on Aaliyah.",
+      "_translations": {
+        "value": {}
+      },
+      "type": "set_variable",
+      "_nested_name": "summary_text"
+    },
+    {
+      "type": "subtitle",
+      "value": "Interactive",
+      "_translations": {
+        "value": {}
+      },
+      "name": "subtitle_5",
+      "_nested_name": "subtitle_5"
+    },
+    {
+      "type": "display_group",
+      "name": "buttons",
+      "parameter_list": {
+        "style": "row"
+      },
+      "rows": [
+        {
+          "type": "button",
+          "name": "button_remove",
+          "value": "Remove 1",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "count",
+                "@calc(Math.max(0, @local.count - 1))"
+              ],
+              "_raw": "click | set_local: count: @calc(Math.max(0, @local.count - 1))"
+            }
+          ],
+          "_nested_name": "buttons.button_remove",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@calc(Math.max(0, @local.count - 1))",
+                      "matchedExpression": "@local.count",
+                      "type": "local",
+                      "fieldName": "count"
+                    },
+                    {
+                      "fullExpression": "@calc(Math.max(0, @local.count - 1))",
+                      "matchedExpression": "@calc(Math.max(0, @local.count - 1))",
+                      "type": "calc",
+                      "fieldName": "Math.max(0, @local.count - 1)"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_local: count: @calc(Math.max(0, @local.count - 1))",
+                    "matchedExpression": "@local.count",
+                    "type": "local",
+                    "fieldName": "count"
+                  },
+                  {
+                    "fullExpression": "click | set_local: count: @calc(Math.max(0, @local.count - 1))",
+                    "matchedExpression": "@calc(Math.max(0, @local.count - 1))",
+                    "type": "calc",
+                    "fieldName": "Math.max(0, @local.count - 1)"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.count": [
+              "action_list.0.args.1",
+              "action_list.0._raw"
+            ],
+            "@calc(Math.max(0, @local.count - 1))": [
+              "action_list.0.args.1",
+              "action_list.0._raw"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_add",
+          "value": "Add 1",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "count",
+                "@calc(@local.count + 1)"
+              ],
+              "_raw": "click | set_local: count: @calc(@local.count + 1)"
+            }
+          ],
+          "_nested_name": "buttons.button_add",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@calc(@local.count + 1)",
+                      "matchedExpression": "@local.count",
+                      "type": "local",
+                      "fieldName": "count"
+                    },
+                    {
+                      "fullExpression": "@calc(@local.count + 1)",
+                      "matchedExpression": "@calc(@local.count + 1)",
+                      "type": "calc",
+                      "fieldName": "@local.count + 1"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_local: count: @calc(@local.count + 1)",
+                    "matchedExpression": "@local.count",
+                    "type": "local",
+                    "fieldName": "count"
+                  },
+                  {
+                    "fullExpression": "click | set_local: count: @calc(@local.count + 1)",
+                    "matchedExpression": "@calc(@local.count + 1)",
+                    "type": "calc",
+                    "fieldName": "@local.count + 1"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.count": [
+              "action_list.0.args.1",
+              "action_list.0._raw"
+            ],
+            "@calc(@local.count + 1)": [
+              "action_list.0.args.1",
+              "action_list.0._raw"
+            ]
+          }
+        },
+        {
+          "type": "button",
+          "name": "button_add_5",
+          "value": "Add 5",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "set_local",
+              "args": [
+                "count",
+                "@calc(@local.count + 5)"
+              ],
+              "_raw": "click | set_local: count: @calc(@local.count + 5)"
+            }
+          ],
+          "_nested_name": "buttons.button_add_5",
+          "_dynamicFields": {
+            "action_list": {
+              "0": {
+                "args": {
+                  "1": [
+                    {
+                      "fullExpression": "@calc(@local.count + 5)",
+                      "matchedExpression": "@local.count",
+                      "type": "local",
+                      "fieldName": "count"
+                    },
+                    {
+                      "fullExpression": "@calc(@local.count + 5)",
+                      "matchedExpression": "@calc(@local.count + 5)",
+                      "type": "calc",
+                      "fieldName": "@local.count + 5"
+                    }
+                  ]
+                },
+                "_raw": [
+                  {
+                    "fullExpression": "click | set_local: count: @calc(@local.count + 5)",
+                    "matchedExpression": "@local.count",
+                    "type": "local",
+                    "fieldName": "count"
+                  },
+                  {
+                    "fullExpression": "click | set_local: count: @calc(@local.count + 5)",
+                    "matchedExpression": "@calc(@local.count + 5)",
+                    "type": "calc",
+                    "fieldName": "@local.count + 5"
+                  }
+                ]
+              }
+            }
+          },
+          "_dynamicDependencies": {
+            "@local.count": [
+              "action_list.0.args.1",
+              "action_list.0._raw"
+            ],
+            "@calc(@local.count + 5)": [
+              "action_list.0.args.1",
+              "action_list.0._raw"
+            ]
+          }
+        }
+      ],
+      "_nested_name": "buttons"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_interactive",
+      "value": "@local.count",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "title": "That is @local.count check-ins!",
+        "text": "@local.summary_text",
+        "image_asset": "images/icons/star_yellow.svg"
+      },
+      "_nested_name": "progress_summary_interactive",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@local.count",
+            "matchedExpression": "@local.count",
+            "type": "local",
+            "fieldName": "count"
+          }
+        ],
+        "parameter_list": {
+          "title": [
+            {
+              "fullExpression": "That is @local.count check-ins!",
+              "matchedExpression": "@local.count",
+              "type": "local",
+              "fieldName": "count"
+            }
+          ],
+          "text": [
+            {
+              "fullExpression": "@local.summary_text",
+              "matchedExpression": "@local.summary_text",
+              "type": "local",
+              "fieldName": "summary_text"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.count": [
+          "value",
+          "parameter_list.title"
+        ],
+        "@local.summary_text": [
+          "parameter_list.text"
+        ]
+      }
+    },
+    {
+      "type": "subtitle",
+      "value": "Examples",
+      "_translations": {
+        "value": {}
+      },
+      "name": "subtitle_9",
+      "_nested_name": "subtitle_9"
+    },
+    {
+      "type": "text",
+      "value": "**0 completed**, with no title, text or image: one row of empty steps, nothing highlighted",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_0",
+      "value": 0,
+      "_nested_name": "progress_summary_0"
+    },
+    {
+      "type": "text",
+      "value": "**4 completed**: still one row",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_12",
+      "_nested_name": "text_12"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_4",
+      "value": 4,
+      "parameter_list": {
+        "title": "That is 4 check-ins!"
+      },
+      "_nested_name": "progress_summary_4"
+    },
+    {
+      "type": "text",
+      "value": "**5 completed**: the first row is full, so an empty row is added",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_14",
+      "_nested_name": "text_14"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_5",
+      "value": 5,
+      "parameter_list": {
+        "title": "That is 5 check-ins!",
+        "text": "@local.summary_text"
+      },
+      "_nested_name": "progress_summary_5",
+      "_dynamicFields": {
+        "parameter_list": {
+          "text": [
+            {
+              "fullExpression": "@local.summary_text",
+              "matchedExpression": "@local.summary_text",
+              "type": "local",
+              "fieldName": "summary_text"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.summary_text": [
+          "parameter_list.text"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "**12 completed**, with title, text and image",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_12",
+      "value": 12,
+      "parameter_list": {
+        "title": "That is 12 check-ins!",
+        "text": "@local.summary_text",
+        "image_asset": "images/icons/star_yellow.svg"
+      },
+      "_nested_name": "progress_summary_12",
+      "_dynamicFields": {
+        "parameter_list": {
+          "text": [
+            {
+              "fullExpression": "@local.summary_text",
+              "matchedExpression": "@local.summary_text",
+              "type": "local",
+              "fieldName": "summary_text"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@local.summary_text": [
+          "parameter_list.text"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "**Invalid value** (text): treated as 0",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_18",
+      "_nested_name": "text_18"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_invalid",
+      "value": "not a number",
+      "_translations": {
+        "value": {}
+      },
+      "parameter_list": {
+        "title": "No check-ins yet"
+      },
+      "_nested_name": "progress_summary_invalid"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1SekXBLWGXOww-dgol3YppH5H_jMl_5HVhkKnto0LZEU/",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "sheet_link"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_plh_progress_summary.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1SekXBLWGXOww-dgol3YppH5H_jMl_5HVhkKnto0LZEU"
+  }
+}

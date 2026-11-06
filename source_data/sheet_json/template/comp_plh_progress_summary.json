@@ -1,0 +1,114 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_plh_progress_summary",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "PLH Progress Summary Component"
+    },
+    {
+      "name": "count",
+      "value": 2
+    },
+    {
+      "name": "summary_text",
+      "value": "Your care and attention make a lasting impact on Aaliyah."
+    },
+    {
+      "type": "subtitle",
+      "value": "Interactive"
+    },
+    {
+      "type": "begin_display_group",
+      "name": "buttons",
+      "parameter_list": "style: row"
+    },
+    {
+      "type": "button",
+      "name": "button_remove",
+      "value": "Remove 1",
+      "action_list": "click | set_local: count: @calc(Math.max(0, @local.count - 1))"
+    },
+    {
+      "type": "button",
+      "name": "button_add",
+      "value": "Add 1",
+      "action_list": "click | set_local: count: @calc(@local.count + 1)"
+    },
+    {
+      "type": "button",
+      "name": "button_add_5",
+      "value": "Add 5",
+      "action_list": "click | set_local: count: @calc(@local.count + 5)"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_interactive",
+      "value": "@local.count",
+      "parameter_list": "title: That is @local.count check-ins!; text: @local.summary_text; image_asset: images/icons/star_yellow.svg;"
+    },
+    {
+      "type": "subtitle",
+      "value": "Examples"
+    },
+    {
+      "type": "text",
+      "value": "**0 completed**, with no title, text or image: one row of empty steps, nothing highlighted"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_0",
+      "value": 0
+    },
+    {
+      "type": "text",
+      "value": "**4 completed**: still one row"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_4",
+      "value": 4,
+      "parameter_list": "title: That is 4 check-ins!;"
+    },
+    {
+      "type": "text",
+      "value": "**5 completed**: the first row is full, so an empty row is added"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_5",
+      "value": 5,
+      "parameter_list": "title: That is 5 check-ins!; text: @local.summary_text;"
+    },
+    {
+      "type": "text",
+      "value": "**12 completed**, with title, text and image"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_12",
+      "value": 12,
+      "parameter_list": "title: That is 12 check-ins!; text: @local.summary_text; image_asset: images/icons/star_yellow.svg;"
+    },
+    {
+      "type": "text",
+      "value": "**Invalid value** (text): treated as 0"
+    },
+    {
+      "type": "plh_progress_summary",
+      "name": "progress_summary_invalid",
+      "value": "not a number",
+      "parameter_list": "title: No check-ins yet;"
+    },
+    {
+      "type": "text",
+      "name": "sheet_link",
+      "value": "Debug Sheet https://docs.google.com/spreadsheets/d/1SekXBLWGXOww-dgol3YppH5H_jMl_5HVhkKnto0LZEU/"
+    }
+  ]
+}

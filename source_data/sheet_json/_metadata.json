@@ -1739,6 +1739,16 @@
   {
     "flow_type": "template",
     "flow_subtype": "component_demo",
+    "flow_name": "comp_plh_progress_summary",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_plh_progress_summary.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1SekXBLWGXOww-dgol3YppH5H_jMl_5HVhkKnto0LZEU"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "component_demo",
     "flow_name": "comp_progress_path",
     "_source": {
       "name": "Debug Sheets",

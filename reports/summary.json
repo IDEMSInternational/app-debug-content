@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 507
+        "count": 510
       },
       {
         "type": "calendar",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 288
+        "count": 289
       },
       {
         "type": "drawer",
@@ -206,6 +206,10 @@
         "count": 4
       },
       {
+        "type": "plh_progress_summary",
+        "count": 6
+      },
+      {
         "type": "progress_bar",
         "count": 1
       },
@@ -259,7 +263,7 @@
       },
       {
         "type": "set_variable",
-        "count": 961
+        "count": 963
       },
       {
         "type": "simple_checkbox",
@@ -275,7 +279,7 @@
       },
       {
         "type": "subtitle",
-        "count": 51
+        "count": 53
       },
       {
         "type": "tab",
@@ -303,7 +307,7 @@
       },
       {
         "type": "text",
-        "count": 1488
+        "count": 1494
       },
       {
         "type": "text_area",
@@ -327,7 +331,7 @@
       },
       {
         "type": "title",
-        "count": 712
+        "count": 713
       },
       {
         "type": "toggle_bar",
@@ -523,7 +527,7 @@
       },
       {
         "type": "set_local",
-        "count": 87
+        "count": 90
       },
       {
         "type": "share",
@@ -987,7 +991,7 @@
       },
       {
         "path": "images/icons/star_yellow.svg",
-        "count": 1,
+        "count": 3,
         "size_kb": 0.6
       },
       {
@@ -1192,7 +1196,7 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 76
+        "total": 77
       },
       {
         "type": "template",
