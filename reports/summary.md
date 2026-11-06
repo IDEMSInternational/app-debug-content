@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 507 |
+| button | 510 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -25,7 +25,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 288 |
+| display_group | 289 |
 | drawer | 1 |
 | form | 9 |
 | google_sign_in_button | 14 |
@@ -54,6 +54,7 @@
 | plh_module_list_item | 21 |
 | plh_progress_bar | 6 |
 | plh_progress_path | 4 |
+| plh_progress_summary | 6 |
 | progress_bar | 1 |
 | progress_path | 11 |
 | qr_code | 2 |
@@ -67,24 +68,24 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 961 |
+| set_variable | 963 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
-| subtitle | 51 |
+| subtitle | 53 |
 | tab | 4 |
 | table | 9 |
 | tabs | 2 |
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 159 |
-| text | 1488 |
+| text | 1494 |
 | text_area | 15 |
 | text_box | 87 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 712 |
+| title | 713 |
 | toggle_bar | 84 |
 | update_action_list | 4 |
 | video | 4 |
@@ -139,7 +140,7 @@
 | set_field | 135 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 87 |
+| set_local | 90 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -269,7 +270,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/settings_active.svg | 2.4 | 2 |
 | images/icons/star_blue.svg | 1.3 | 2 |
 | images/icons/star_white.svg | 1 | 22 |
-| images/icons/star_yellow.svg | 0.6 | 1 |
+| images/icons/star_yellow.svg | 0.6 | 3 |
 | images/icons/tick.svg | 0.3 | 13 |
 | images/icons/tick_white.svg | 0.3 | 23 |
 | images/icons/verified.svg | 0.5 | 2 |
@@ -316,7 +317,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 123 |
-| template | component_demo | 76 |
+| template | component_demo | 77 |
 | template | debug | 309 |
 | template | example | 1 |
 | template | example_generator | 2 |

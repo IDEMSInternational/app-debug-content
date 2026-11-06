@@ -81,6 +81,13 @@
         {
           "condition_type": "calc",
           "condition_args": {
+            "calc": "@fields.debug_recalculate_from"
+          },
+          "_raw": "@fields.debug_recalculate_from"
+        },
+        {
+          "condition_type": "calc",
+          "condition_args": {
             "calc": "@calc(new Date() >= new Date(@fields.debug_recalculate_from))"
           },
           "_raw": "@calc(new Date() >= new Date(@fields.debug_recalculate_from))"
