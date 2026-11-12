@@ -1,0 +1,42 @@
+# Fresh launch, then opens the edge-to-edge index page (debug_edge_to_edge) through the template list.
+appId: ${APP_ID || "international.idems.debug_app"}
+---
+- launchApp:
+    clearState: true
+    permissions:
+      all: allow
+- extendedWaitUntil:
+    visible: "RTL language support"
+    timeout: 60000
+# iOS shows web view content behind the native splash screen, so wait for it to go
+- extendedWaitUntil:
+    notVisible:
+      id: "Splash"
+    timeout: 30000
+# iOS simulator "Apple Account Verification" system alert
+- tapOn:
+    text: "Not Now"
+    optional: true
+- takeScreenshot: 00-launch-popup
+- tapOn: "Close popup"
+- extendedWaitUntil:
+    visible: "Welcome to Debug"
+    timeout: 10000
+- waitForAnimationToEnd
+- takeScreenshot: 01-home
+- tapOn: "Templates"
+- extendedWaitUntil:
+    visible: "Select a Template"
+    timeout: 10000
+# The search box: its placeholder is not exposed on every WebView version, so find it by position
+- tapOn:
+    below: "Select a Template"
+- inputText: "debug_edge_to_edge"
+- takeScreenshot: 02-template-search-keyboard
+# The search box holds the same text, so take the second match (the list item)
+- tapOn:
+    text: "debug_edge_to_edge"
+    index: 1
+- extendedWaitUntil:
+    visible: "Edge-to-edge test cases"
+    timeout: 10000

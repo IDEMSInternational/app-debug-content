@@ -1,0 +1,34 @@
+# Opens one case from the edge-to-edge index, screenshots its top and bottom, and returns to the index.
+# env: BUTTON (index button label), NAME (screenshot prefix)
+appId: ${APP_ID || "international.idems.debug_app"}
+---
+- scrollUntilVisible:
+    element: ${BUTTON}
+    direction: DOWN
+    centerElement: true
+- tapOn: ${BUTTON}
+- extendedWaitUntil:
+    visible: "TOP EDGE.*"
+    timeout: 10000
+- waitForAnimationToEnd
+- takeScreenshot: ${NAME + "-top"}
+- scrollUntilVisible:
+    element: "BOTTOM EDGE.*"
+    direction: DOWN
+    timeout: 40000
+- swipe:
+    direction: UP
+- waitForAnimationToEnd
+- takeScreenshot: ${NAME + "-bottom"}
+- scrollUntilVisible:
+    element: "Back to edge-to-edge index"
+    direction: UP
+    timeout: 40000
+    centerElement: true
+- tapOn: "Back to edge-to-edge index"
+- waitForAnimationToEnd
+# The index keeps its scroll position on iOS, so scroll back to its title
+- scrollUntilVisible:
+    element: "Edge-to-edge test cases"
+    direction: UP
+    timeout: 20000

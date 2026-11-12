@@ -1,0 +1,55 @@
+# Edge-to-edge (safe area) checks in landscape for the `debug` deployment, open-app-builder issue #3607.
+# Content must be clear of the display cutout and navigation bar at the sides; the header and footer
+# backgrounds still reach the screen edges. Run as `edge_to_edge.yaml`.
+appId: ${APP_ID || "international.idems.debug_app"}
+tags:
+  - edge-to-edge
+---
+- runFlow: subflows/e2e_open_index.yaml
+# Landscape: content clear of the display cutout and navigation bar at the sides
+- setOrientation: LANDSCAPE_LEFT
+- waitForAnimationToEnd
+- takeScreenshot: 50-landscape-index
+- scrollUntilVisible:
+    element: "No header, no footer"
+    direction: DOWN
+    centerElement: true
+- tapOn: "No header, no footer"
+- extendedWaitUntil:
+    visible: "TOP EDGE.*"
+    timeout: 10000
+- takeScreenshot: 51-landscape-no-shell
+- scrollUntilVisible:
+    element: "Back to edge-to-edge index"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Back to edge-to-edge index"
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element: "Overlays"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Overlays"
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element: "Fullscreen pop-up"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Fullscreen pop-up"
+- extendedWaitUntil:
+    visible: "TOP EDGE.*"
+    timeout: 10000
+- takeScreenshot: 52-landscape-pop-up-fullscreen
+- tapOn: "Close popup"
+- scrollUntilVisible:
+    element: "Nav-stack"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Nav-stack"
+- extendedWaitUntil:
+    visible: "TOP EDGE.*"
+    timeout: 10000
+- takeScreenshot: 53-landscape-nav-stack
+- setOrientation: PORTRAIT
+- waitForAnimationToEnd
+- takeScreenshot: 54-portrait-restored
