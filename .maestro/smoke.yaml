@@ -1,0 +1,41 @@
+# Smoke test for the `debug` deployment: fresh launch, launch pop-up, taps inside the web view,
+# closing a pop-up and page navigation, with a screenshot at each stage.
+# Build and setup: `.claude/skills/maestro/SKILL.md` in open-app-builder. From the open-app-builder root:
+#   Android: maestro test .idems_app/deployments/debug/.maestro/smoke.yaml
+#   iOS:     maestro test -e APP_ID=international.idems.debug-app .idems_app/deployments/debug/.maestro/smoke.yaml
+appId: ${APP_ID || "international.idems.debug_app"}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+    permissions:
+      all: allow
+- extendedWaitUntil:
+    visible: "RTL language support"
+    timeout: 30000
+# iOS shows web view content behind the native splash screen, so wait for it to go
+- extendedWaitUntil:
+    notVisible:
+      id: "Splash"
+    timeout: 30000
+# iOS simulator "Apple Account Verification" system alert
+- tapOn:
+    text: "Not Now"
+    optional: true
+- takeScreenshot: 01-launch-popup
+- tapOn: "2. English RTL"
+- assertVisible: "Language Direction: rtl"
+- takeScreenshot: 02-rtl
+- tapOn: "1. English"
+- assertVisible: "Language Direction: ltr"
+- tapOn: "Close popup"
+- extendedWaitUntil:
+    visible: "Welcome to Debug"
+    timeout: 10000
+- takeScreenshot: 03-home
+- tapOn: "Templates"
+- extendedWaitUntil:
+    visible: "Select a Template"
+    timeout: 10000
+- takeScreenshot: 04-templates
