@@ -1,0 +1,106 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_overlays_no_close",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Content for the fullscreen pop-up without a close button",
+  "rows": [
+    {
+      "type": "text",
+      "name": "marker_top",
+      "value": "TOP EDGE: this bar must be fully visible",
+      "style_list": "background: #c2185b; color: white; padding: 4px 8px; border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "button",
+      "value": "Close",
+      "action_list": "click | emit: completed"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 1. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 2. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 3. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 4. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 5. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 6. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 7. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 8. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 9. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 10. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 11. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 12. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 13. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 14. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 15. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 16. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "name": "marker_bottom",
+      "value": "BOTTOM EDGE: this bar must be fully visible",
+      "style_list": "background: #2e7d32; color: white; padding: 4px 8px; border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    }
+  ]
+}

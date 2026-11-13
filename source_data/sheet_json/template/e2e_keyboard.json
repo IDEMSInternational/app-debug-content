@@ -1,0 +1,17 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_keyboard",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Keyboard with the default header and footer",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "e2e_keyboard_content",
+      "value": "e2e_keyboard_content"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_sticky_page",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      },
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      }
+    }
+  },
+  "comments": "Sticky top and bottom display groups on a page with no header or footer",
+  "rows": [
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top; style: background_solid;"
+    },
+    {
+      "type": "title",
+      "value": "Sticky top: fully visible",
+      "parameter_list": "variant: header;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_template",
+      "name": "e2e_markers",
+      "value": "e2e_markers"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom; style: background_solid;"
+    },
+    {
+      "type": "button",
+      "value": "Sticky bottom: fully visible",
+      "action_list": "click | go_to: debug_edge_to_edge"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

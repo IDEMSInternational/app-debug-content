@@ -1,0 +1,131 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_long_scroll",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "collapse": true
+      },
+      "LAYOUT": {
+        "page_padding": "0px"
+      }
+    }
+  },
+  "comments": "Header collapses on scroll (Android only): content must not show behind the status bar",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Scroll down: the header slides away. Nothing should be readable behind the status bar. Scroll up: the header returns."
+    },
+    {
+      "type": "begin_template",
+      "name": "e2e_markers",
+      "value": "e2e_markers"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 18. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 19. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 20. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 21. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 22. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 23. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 24. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 25. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 26. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 27. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 28. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 29. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 30. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 31. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 32. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 33. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 34. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 35. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 36. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 37. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    }
+  ]
+}

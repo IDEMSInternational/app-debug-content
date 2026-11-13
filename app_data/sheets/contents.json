@@ -165,6 +165,17 @@
     "comp_map_drawing_data": {
       "flow_type": "data_list",
       "flow_name": "comp_map_drawing_data",
+      "comments": "Target of the editable demo; drawn features are saved here",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_map.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+      }
+    },
+    "comp_map_drawing_shapes": {
+      "flow_type": "data_list",
+      "flow_name": "comp_map_drawing_shapes",
+      "comments": "Example geometries shown by the view-only demos",
       "_source": {
         "name": "Debug Sheets",
         "path": "component_sheets/component_map.xlsx",
@@ -2443,6 +2454,16 @@
         "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
       }
     },
+    "comp_map_drawing": {
+      "flow_type": "template",
+      "flow_name": "comp_map_drawing",
+      "flow_subtype": "component_demo",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "component_sheets/component_map.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+      }
+    },
     "comp_navigation_bar": {
       "flow_type": "template",
       "flow_name": "comp_navigation_bar",
@@ -3696,6 +3717,17 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/to_be_sorted/debug_radio_group.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/1pSFFOv9B9x0oUSuSJDp6RNePJ1XSP6yVSjXA8jzBclQ"
+      }
+    },
+    "debug_edge_to_edge": {
+      "flow_type": "template",
+      "flow_name": "debug_edge_to_edge",
+      "flow_subtype": "debug",
+      "comments": "Index of edge-to-edge (safe area) test cases, issue #3607",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
       }
     },
     "debug_emit_force": {
@@ -5176,6 +5208,227 @@
         "name": "Debug Sheets",
         "path": "debug_sheets/to_be_sorted/debug_nesting_variables.xlsx",
         "url": "https://docs.google.com/spreadsheets/d/16fNOe2W8inFxSIkZSKDa_lvQv68xFEKy5_LtNSjZyDY"
+      }
+    },
+    "e2e_drawer": {
+      "flow_type": "template",
+      "flow_name": "e2e_drawer",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "template": false
+          }
+        }
+      },
+      "comments": "Drawer on a page with no footer: the handle must be clear of the navigation bar",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_footer_transparent": {
+      "flow_type": "template",
+      "flow_name": "e2e_footer_transparent",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "template": "feat_custom_footer",
+            "background": "none"
+          },
+          "LAYOUT": {
+            "page_padding": "0px"
+          }
+        }
+      },
+      "comments": "Footer with no background, so the page shows behind the navigation bar",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_keyboard": {
+      "flow_type": "template",
+      "flow_name": "e2e_keyboard",
+      "flow_subtype": "debug",
+      "comments": "Keyboard with the default header and footer",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_keyboard_content": {
+      "flow_type": "template",
+      "flow_name": "e2e_keyboard_content",
+      "flow_subtype": "debug",
+      "comments": "Shared content: text boxes at the top and bottom of a scrolling page",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_keyboard_no_footer": {
+      "flow_type": "template",
+      "flow_name": "e2e_keyboard_no_footer",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "template": false
+          }
+        }
+      },
+      "comments": "Keyboard with no footer and a sticky bottom group",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_long_scroll": {
+      "flow_type": "template",
+      "flow_name": "e2e_long_scroll",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "collapse": true
+          },
+          "LAYOUT": {
+            "page_padding": "0px"
+          }
+        }
+      },
+      "comments": "Header collapses on scroll (Android only): content must not show behind the status bar",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_markers": {
+      "flow_type": "template",
+      "flow_name": "e2e_markers",
+      "flow_subtype": "debug",
+      "comments": "Shared content: edge marker bars with filler rows between them",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_no_footer": {
+      "flow_type": "template",
+      "flow_name": "e2e_no_footer",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_FOOTER_DEFAULTS": {
+            "template": false
+          },
+          "LAYOUT": {
+            "page_padding": "0px"
+          }
+        }
+      },
+      "comments": "Default header, no footer",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_no_header": {
+      "flow_type": "template",
+      "flow_name": "e2e_no_header",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "hidden": true
+          },
+          "LAYOUT": {
+            "page_padding": "0px"
+          }
+        }
+      },
+      "comments": "Header hidden, default footer",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_no_shell": {
+      "flow_type": "template",
+      "flow_name": "e2e_no_shell",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "hidden": true
+          },
+          "APP_FOOTER_DEFAULTS": {
+            "template": false
+          },
+          "LAYOUT": {
+            "page_padding": "0px"
+          }
+        }
+      },
+      "comments": "Header hidden and no footer",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_overlays": {
+      "flow_type": "template",
+      "flow_name": "e2e_overlays",
+      "flow_subtype": "debug",
+      "comments": "Opens every overlay type. Open this page inside an overlay to test stacked overlays",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_overlays_no_close": {
+      "flow_type": "template",
+      "flow_name": "e2e_overlays_no_close",
+      "flow_subtype": "debug",
+      "comments": "Content for the fullscreen pop-up without a close button",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_sticky_page": {
+      "flow_type": "template",
+      "flow_name": "e2e_sticky_page",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "hidden": true
+          },
+          "APP_FOOTER_DEFAULTS": {
+            "template": false
+          }
+        }
+      },
+      "comments": "Sticky top and bottom display groups on a page with no header or footer",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
       }
     },
     "example_accordion": {

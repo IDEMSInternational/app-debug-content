@@ -1,0 +1,527 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_map_drawing",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Map",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "text",
+      "value": "Displays polygons from a data list, and can let the user draw new ones and save them back to that data list.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "title",
+      "value": "Parameters",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_4",
+      "_nested_name": "title_4"
+    },
+    {
+      "type": "text",
+      "value": "data_list - name of the data list holding the geometries. Required.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "text",
+      "value": "geometry_field_name - column holding each geometry. Default: geometry",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "text",
+      "value": "properties_field_name - column holding each feature's properties. Default: properties",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "text",
+      "value": "center_lon, center_lat, zoom - where the map opens when it has no shapes to frame.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "text",
+      "value": "max_fit_zoom - closest zoom used when framing loaded shapes. Default: 18. Set 0 to always keep center_lon, center_lat and zoom.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "text",
+      "value": "editable - false displays the shapes without any drawing tools. Default: true",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "text",
+      "value": "filter - limits which data list rows the map uses, written like a data_items filter.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "text",
+      "value": "save_values - columns stamped on every saved row. Editable maps only.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_12",
+      "_nested_name": "text_12"
+    },
+    {
+      "type": "title",
+      "value": "1. View only",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_13",
+      "_nested_name": "title_13"
+    },
+    {
+      "type": "text",
+      "value": "editable: false displays the geometries without the drawing tools, so recorded data (e.g. a GPS trace with ids from a server) is shown as it is, rather than having to satisfy the drawing library's rules.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_14",
+      "_nested_name": "text_14"
+    },
+    {
+      "type": "map",
+      "name": "view_only_map",
+      "parameter_list": {
+        "data_list": "comp_map_drawing_shapes",
+        "geometry_field_name": "geometry",
+        "editable": "false",
+        "center_lon": "6.056",
+        "center_lat": "46.233",
+        "zoom": "13"
+      },
+      "style_list": [
+        "height: 400px"
+      ],
+      "_nested_name": "view_only_map"
+    },
+    {
+      "type": "title",
+      "value": "2. Filtering rows",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_16",
+      "_nested_name": "title_16"
+    },
+    {
+      "type": "text",
+      "value": "filter limits the map to some of the data list, using the same syntax as data_items: @item.column refers to the row, and anything else (@local, @field, @data) is evaluated before the filter runs.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_17",
+      "_nested_name": "text_17",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "filter limits the map to some of the data list, using the same syntax as data_items: @item.column refers to the row, and anything else (@local, @field, @data) is evaluated before the filter runs.",
+            "matchedExpression": "@item.column",
+            "type": "item",
+            "fieldName": "column"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@item.column": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "A view-only map reloads whenever the filter changes, so changing a local variable it depends on updates the map in place. An editable map does not reload, as that would discard anything drawn but not yet saved.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_18",
+      "_nested_name": "text_18"
+    },
+    {
+      "type": "set_variable",
+      "name": "selected_group",
+      "value": "a",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "selected_group"
+    },
+    {
+      "type": "button",
+      "value": "Show group a",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "selected_group",
+            "a"
+          ],
+          "_raw": "click | set_local: selected_group: a"
+        }
+      ],
+      "name": "button_20",
+      "_nested_name": "button_20"
+    },
+    {
+      "type": "button",
+      "value": "Show group b",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "selected_group",
+            "b"
+          ],
+          "_raw": "click | set_local: selected_group: b"
+        }
+      ],
+      "name": "button_21",
+      "_nested_name": "button_21"
+    },
+    {
+      "type": "button",
+      "value": "Show a group with no shapes",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "selected_group",
+            "c"
+          ],
+          "_raw": "click | set_local: selected_group: c"
+        }
+      ],
+      "name": "button_22",
+      "_nested_name": "button_22"
+    },
+    {
+      "type": "text",
+      "value": "selected_group: @local.selected_group",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_23",
+      "_nested_name": "text_23",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "selected_group: @local.selected_group",
+            "matchedExpression": "@local.selected_group",
+            "type": "local",
+            "fieldName": "selected_group"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.selected_group": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "name": "filtered_map",
+      "parameter_list": {
+        "data_list": "comp_map_drawing_shapes",
+        "geometry_field_name": "geometry",
+        "editable": "false",
+        "filter": "@item.group == @local.selected_group",
+        "center_lon": "6.056",
+        "center_lat": "46.233",
+        "zoom": "13"
+      },
+      "style_list": [
+        "height: 400px"
+      ],
+      "_nested_name": "filtered_map",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.group == @local.selected_group",
+              "matchedExpression": "@item.group",
+              "type": "item",
+              "fieldName": "group"
+            },
+            {
+              "fullExpression": "@item.group == @local.selected_group",
+              "matchedExpression": "@local.selected_group",
+              "type": "local",
+              "fieldName": "selected_group"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.group": [
+          "parameter_list.filter"
+        ],
+        "@local.selected_group": [
+          "parameter_list.filter"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Note: a parameter value is cut at its second colon, so a filter cannot contain a colon. Use == and && as above.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_25",
+      "_nested_name": "text_25"
+    },
+    {
+      "type": "title",
+      "value": "3. Framing the shapes",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_26",
+      "_nested_name": "title_26"
+    },
+    {
+      "type": "text",
+      "value": "By default the map zooms to fit the shapes it loads, no closer than max_fit_zoom. This matters when the authored centre is nowhere near the data: without it the map opens on empty ground and the shapes have to be hunted for.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_27",
+      "_nested_name": "text_27"
+    },
+    {
+      "type": "text",
+      "value": "max_fit_zoom: 0 turns framing off, so the map stays where center_lon, center_lat and zoom put it. The map below opens on the Gulf of Guinea, several thousand km from the shapes it has loaded.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_28",
+      "_nested_name": "text_28"
+    },
+    {
+      "type": "map",
+      "name": "unframed_map",
+      "parameter_list": {
+        "data_list": "comp_map_drawing_shapes",
+        "geometry_field_name": "geometry",
+        "editable": "false",
+        "max_fit_zoom": "0",
+        "center_lon": "0",
+        "center_lat": "0",
+        "zoom": "4"
+      },
+      "style_list": [
+        "height: 400px"
+      ],
+      "_nested_name": "unframed_map"
+    },
+    {
+      "type": "title",
+      "value": "4. Drawing and saving",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_30",
+      "_nested_name": "title_30"
+    },
+    {
+      "type": "text",
+      "value": "With editable left unset, the drawing tools are shown. The save button writes every drawn feature to data_list, and removes rows the map loaded that are no longer drawn.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_31",
+      "_nested_name": "text_31"
+    },
+    {
+      "type": "text",
+      "value": "save_values stamps extra columns onto each saved row, so a feature drawn under a filter still matches that filter when the map is next opened. It uses = rather than : because a parameter value is cut at its second colon.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_32",
+      "_nested_name": "text_32"
+    },
+    {
+      "type": "text",
+      "value": "The columns listed in save_values must already exist in the data list sheet. A data list's schema comes from its first row, and any field not in it is silently dropped when saving.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_33",
+      "_nested_name": "text_33"
+    },
+    {
+      "type": "text",
+      "value": "Draw a polygon, save, then switch group above and reload the page: the shape is kept with the group that was selected when it was drawn.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_34",
+      "_nested_name": "text_34"
+    },
+    {
+      "type": "map",
+      "name": "editable_map",
+      "parameter_list": {
+        "data_list": "comp_map_drawing_data",
+        "filter": "@item.group == @local.selected_group",
+        "save_values": "group=@local.selected_group",
+        "center_lon": "6.056",
+        "center_lat": "46.233",
+        "zoom": "13"
+      },
+      "style_list": [
+        "height: 400px"
+      ],
+      "_nested_name": "editable_map",
+      "_dynamicFields": {
+        "parameter_list": {
+          "filter": [
+            {
+              "fullExpression": "@item.group == @local.selected_group",
+              "matchedExpression": "@item.group",
+              "type": "item",
+              "fieldName": "group"
+            },
+            {
+              "fullExpression": "@item.group == @local.selected_group",
+              "matchedExpression": "@local.selected_group",
+              "type": "local",
+              "fieldName": "selected_group"
+            }
+          ],
+          "save_values": [
+            {
+              "fullExpression": "group=@local.selected_group",
+              "matchedExpression": "@local.selected_group",
+              "type": "local",
+              "fieldName": "selected_group"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@item.group": [
+          "parameter_list.filter"
+        ],
+        "@local.selected_group": [
+          "parameter_list.filter",
+          "parameter_list.save_values"
+        ]
+      }
+    },
+    {
+      "type": "title",
+      "value": "Notes",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_36",
+      "_nested_name": "title_36"
+    },
+    {
+      "type": "text",
+      "value": "The id column of the data list must be formatted as plain text in the sheet. Numeric ids fail to load with the error about the ID column needing to be formatted as a string.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_37",
+      "_nested_name": "text_37"
+    },
+    {
+      "type": "text",
+      "value": "A map has no height of its own unless it is the only row in its container, so give it a style_list such as height: 400px. Without one the map container is 0 pixels high and nothing is drawn.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_38",
+      "_nested_name": "text_38"
+    },
+    {
+      "type": "text",
+      "value": "A geometry cell accepts a GeoJSON Polygon, a GeoJSON Feature, or a plain list of [lon, lat] points. A third value per point (altitude) is ignored, and the ring is closed automatically if the sheet does not close it.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_39",
+      "_nested_name": "text_39"
+    },
+    {
+      "type": "text",
+      "value": "Drawing requires geometries the drawing library accepts; recorded data usually does not qualify, which is what editable: false is for.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_40",
+      "_nested_name": "text_40"
+    },
+    {
+      "type": "text",
+      "value": "Sheet: [https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4/edit?gid=1519608665#gid=1519608665](https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4/edit?gid=1519608665#gid=1519608665)",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_41",
+      "_nested_name": "text_41"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_map.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+  }
+}

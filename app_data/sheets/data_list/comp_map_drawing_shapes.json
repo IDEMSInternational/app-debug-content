@@ -1,0 +1,38 @@
+{
+  "flow_type": "data_list",
+  "flow_name": "comp_map_drawing_shapes",
+  "status": "released",
+  "comments": "Example geometries shown by the view-only demos",
+  "rows": [
+    {
+      "id": "shape_a1",
+      "group": "a",
+      "geometry": "[[6.05,46.23],[6.054,46.23],[6.054,46.233],[6.05,46.233]]"
+    },
+    {
+      "id": "shape_a2",
+      "group": "a",
+      "geometry": "[[6.057,46.23],[6.061,46.23],[6.061,46.233],[6.057,46.233]]"
+    },
+    {
+      "id": "shape_a3",
+      "group": "a",
+      "geometry": "[[6.05,46.236],[6.054,46.236],[6.054,46.239],[6.05,46.239]]"
+    },
+    {
+      "id": "shape_b1",
+      "group": "b",
+      "geometry": "[[6.057,46.236],[6.061,46.236],[6.061,46.239],[6.057,46.239]]"
+    },
+    {
+      "id": "shape_b2",
+      "group": "b",
+      "geometry": "[[6.064,46.233],[6.068,46.233],[6.068,46.236],[6.064,46.236]]"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "component_sheets/component_map.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+  }
+}

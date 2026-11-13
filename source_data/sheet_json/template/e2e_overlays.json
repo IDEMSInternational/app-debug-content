@@ -1,0 +1,107 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_overlays",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Opens every overlay type. Open this page inside an overlay to test stacked overlays",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Overlays"
+    },
+    {
+      "type": "text",
+      "value": "In each overlay the TOP EDGE and BOTTOM EDGE bars and the close button must be fully visible. Repeat on a tablet, where pop-ups are wider than 768px."
+    },
+    {
+      "type": "title",
+      "value": "Pop-ups"
+    },
+    {
+      "type": "button",
+      "value": "Pop-up",
+      "action_list": "click | pop_up: e2e_markers;"
+    },
+    {
+      "type": "button",
+      "value": "Fullscreen pop-up",
+      "action_list": "click | pop_up: e2e_markers | fullscreen: true;"
+    },
+    {
+      "type": "button",
+      "value": "Fullscreen pop-up, no close button",
+      "action_list": "click | pop_up: e2e_overlays_no_close | fullscreen: true, showCloseButton: false;"
+    },
+    {
+      "type": "button",
+      "value": "Fullscreen pop-up with sticky groups",
+      "action_list": "click | pop_up: e2e_sticky_page | fullscreen: true;"
+    },
+    {
+      "type": "title",
+      "value": "Nav-stacks"
+    },
+    {
+      "type": "button",
+      "value": "Nav-stack",
+      "action_list": "click | nav_stack: open | template: e2e_markers, title: Stack title;"
+    },
+    {
+      "type": "button",
+      "value": "Nav-stack, no header, sticky groups",
+      "action_list": "click | nav_stack: open | template: e2e_sticky_page, header: false;"
+    },
+    {
+      "type": "title",
+      "value": "Stacked overlays"
+    },
+    {
+      "type": "button",
+      "value": "This page as a fullscreen pop-up",
+      "action_list": "click | pop_up: e2e_overlays | fullscreen: true;"
+    },
+    {
+      "type": "button",
+      "value": "This page as a nav-stack",
+      "action_list": "click | nav_stack: open | template: e2e_overlays, title: Overlays;"
+    },
+    {
+      "type": "title",
+      "value": "Other"
+    },
+    {
+      "name": "answer_list",
+      "value": "name: name_1 | text: Option 1; name: name_2 | text: Option 2; name: name_3 | text: Option 3;"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_modal",
+      "parameter_list": "answer_list: @local.answer_list; placeholder: Combo box (modal);"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown",
+      "parameter_list": "answer_list: @local.answer_list; variant: dropdown; placeholder: Combo box (dropdown);"
+    },
+    {
+      "type": "button",
+      "value": "Toast",
+      "action_list": "click | toast | message: Toast must be clear of the navigation bar;"
+    },
+    {
+      "type": "button",
+      "value": "Feedback sidebar",
+      "action_list": "click | feedback: open"
+    },
+    {
+      "type": "button",
+      "value": "Animated slides as launch splash",
+      "action_list": "click | pop_up: feat_animated_slides | fullscreen: true, showCloseButton: false;"
+    },
+    {
+      "type": "button",
+      "value": "Back to edge-to-edge index",
+      "action_list": "click | go_to: debug_edge_to_edge"
+    }
+  ]
+}

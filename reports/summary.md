@@ -13,20 +13,20 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 510 |
+| button | 552 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 91 |
+| combo_box | 93 |
 | dashed_box | 19 |
-| data_items | 130 |
+| data_items | 129 |
 | data_query | 8 |
 | date_time_picker | 11 |
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 289 |
-| drawer | 1 |
+| display_group | 293 |
+| drawer | 2 |
 | form | 9 |
 | google_sign_in_button | 14 |
 | html | 6 |
@@ -34,7 +34,7 @@
 | items | 50 |
 | latex | 1 |
 | lottie_animation | 6 |
-| map | 2 |
+| map | 5 |
 | markdown | 10 |
 | nav_group | 6 |
 | navigation_bar | 8 |
@@ -68,7 +68,7 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 963 |
+| set_variable | 965 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -78,14 +78,14 @@
 | tabs | 2 |
 | task_card | 32 |
 | task_progress_bar | 11 |
-| template | 159 |
-| text | 1494 |
-| text_area | 15 |
-| text_box | 87 |
+| template | 168 |
+| text | 1593 |
+| text_area | 16 |
+| text_box | 89 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 713 |
+| title | 732 |
 | toggle_bar | 84 |
 | update_action_list | 4 |
 | video | 4 |
@@ -108,7 +108,7 @@
 | copy | 5 |
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
-| emit: completed | 35 |
+| emit: completed | 36 |
 | emit: force_reload | 35 |
 | emit: force_reprocess | 69 |
 | emit: force_restart | 4 |
@@ -118,17 +118,17 @@
 | emit: set_theme | 2 |
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
-| feedback | 13 |
-| go_to | 88 |
+| feedback | 14 |
+| go_to | 110 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |
-| nav_stack | 11 |
+| nav_stack | 15 |
 | notification | 8 |
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 64 |
+| pop_up | 73 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -140,11 +140,11 @@
 | set_field | 135 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 90 |
+| set_local | 93 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
-| toast | 8 |
+| toast | 9 |
 | toggle_field | 4 |
 | track_event | 2 |
 | trigger_actions | 1 |
@@ -201,6 +201,9 @@ Assets that have references within sheets but do not appear in app-data
 | --- | --- |
 | asset_pack_debugging_bulk/bulk_001.png | 1 |
 | asset_pack_debugging_bulk/bulk_100.png | 1 |
+| click | pop_up: example_completion | background_image_asset: images/modal_bg.svg | 1 |
+| click | pop_up: example_completion | fullscreen: true, background_image_asset: images/modal_bg.svg | 1 |
+| click | pop_up: example_completion | variant: plh_completion, background_image_asset: images/modal_bg.svg | 1 |
 | https://img.youtube.com/vi/noyAxN4YG3g/hqdefault.jpg | 2 |
 | images/map_view_bg.jpg | 1 |
 </details>
@@ -275,7 +278,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick_white.svg | 0.3 | 23 |
 | images/icons/verified.svg | 0.5 | 2 |
 | images/lesson-cta-bg.svg | 4 | 2 |
-| images/modal_bg.svg | 37.3 | 1 |
+| images/modal_bg.svg | 37.3 | 4 |
 | images/module-1.png | 28.2 | 12 |
 | images/sa_kids_app_pattern_blue.svg | 157 | 3 |
 | images/shining_diamond.png | 17.7 | 1 |
@@ -295,7 +298,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 
 | type | subtype | total |
 | --- | --- | --- |
-| data_list |  | 50 |
+| data_list |  | 51 |
 | data_list | campaign_rows_debug | 6 |
 | data_list | campaign_schedule | 1 |
 | data_list | component_demo | 16 |
@@ -317,8 +320,8 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global |  | 2 |
 | global | debug | 10 |
 | template |  | 123 |
-| template | component_demo | 77 |
-| template | debug | 309 |
+| template | component_demo | 78 |
+| template | debug | 323 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

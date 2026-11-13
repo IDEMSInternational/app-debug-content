@@ -1,0 +1,286 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_markers",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Shared content: edge marker bars with filler rows between them",
+  "rows": [
+    {
+      "type": "text",
+      "name": "marker_top",
+      "value": "TOP EDGE: this bar must be fully visible",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "background: #c2185b",
+        "color: white",
+        "padding: 4px 8px",
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "_nested_name": "marker_top"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 1. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_3",
+      "_nested_name": "text_3"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 2. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 3. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "button",
+      "value": "Back to edge-to-edge index",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "debug_edge_to_edge"
+          ],
+          "_raw": "click | go_to: debug_edge_to_edge"
+        }
+      ],
+      "name": "button_6",
+      "_nested_name": "button_6"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 4. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 5. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 6. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 7. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 8. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 9. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_12",
+      "_nested_name": "text_12"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 10. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_13",
+      "_nested_name": "text_13"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 11. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_14",
+      "_nested_name": "text_14"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 12. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_15",
+      "_nested_name": "text_15"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 13. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 14. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_17",
+      "_nested_name": "text_17"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 15. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_18",
+      "_nested_name": "text_18"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 16. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_19",
+      "_nested_name": "text_19"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 17. Blue (left) and orange (right) borders must both be fully visible.",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "name": "text_20",
+      "_nested_name": "text_20"
+    },
+    {
+      "type": "text",
+      "name": "marker_bottom",
+      "value": "BOTTOM EDGE: this bar must be fully visible",
+      "_translations": {
+        "value": {}
+      },
+      "style_list": [
+        "background: #2e7d32",
+        "color: white",
+        "padding: 4px 8px",
+        "border-left: 6px solid #0077cc",
+        "border-right: 6px solid #e67e00"
+      ],
+      "_nested_name": "marker_bottom"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}
