@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 552
+        "count": 553
       },
       {
         "type": "calendar",
@@ -479,7 +479,7 @@
       },
       {
         "type": "pop_up",
-        "count": 73
+        "count": 74
       },
       {
         "type": "process_template",
@@ -1031,7 +1031,7 @@
       },
       {
         "path": "images/modal_bg.svg",
-        "count": 4,
+        "count": 5,
         "size_kb": 37.3
       },
       {
