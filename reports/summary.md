@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 552 |
+| button | 553 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -128,7 +128,7 @@
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 73 |
+| pop_up | 74 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -278,7 +278,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/icons/tick_white.svg | 0.3 | 23 |
 | images/icons/verified.svg | 0.5 | 2 |
 | images/lesson-cta-bg.svg | 4 | 2 |
-| images/modal_bg.svg | 37.3 | 4 |
+| images/modal_bg.svg | 37.3 | 5 |
 | images/module-1.png | 28.2 | 12 |
 | images/sa_kids_app_pattern_blue.svg | 157 | 3 |
 | images/shining_diamond.png | 17.7 | 1 |

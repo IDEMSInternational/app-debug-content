@@ -18,8 +18,13 @@
     },
     {
       "type": "button",
-      "value": "Launch with background image",
+      "value": "Launch with background image (centred)",
       "action_list": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg;"
+    },
+    {
+      "type": "button",
+      "value": "Launch with background image at the top",
+      "action_list": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg, background_image_position: top;"
     },
     {
       "type": "button",

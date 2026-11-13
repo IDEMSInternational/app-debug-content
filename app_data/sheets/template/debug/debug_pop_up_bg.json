@@ -28,7 +28,7 @@
     },
     {
       "type": "button",
-      "value": "Launch with background image",
+      "value": "Launch with background image (centred)",
       "_translations": {
         "value": {}
       },
@@ -50,6 +50,29 @@
     },
     {
       "type": "button",
+      "value": "Launch with background image at the top",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_completion"
+          ],
+          "_raw": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg, background_image_position: top",
+          "params": {
+            "background_image_asset": "images/modal_bg.svg",
+            "background_image_position": "top"
+          }
+        }
+      ],
+      "name": "button_5",
+      "_nested_name": "button_5"
+    },
+    {
+      "type": "button",
       "value": "Launch as fullscreen pop-up with background image",
       "_translations": {
         "value": {}
@@ -68,8 +91,8 @@
           }
         }
       ],
-      "name": "button_5",
-      "_nested_name": "button_5"
+      "name": "button_6",
+      "_nested_name": "button_6"
     },
     {
       "type": "button",
@@ -91,8 +114,8 @@
           }
         }
       ],
-      "name": "button_6",
-      "_nested_name": "button_6"
+      "name": "button_7",
+      "_nested_name": "button_7"
     }
   ],
   "_source": {
