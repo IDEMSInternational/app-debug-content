@@ -1,0 +1,27 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_no_header",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      },
+      "LAYOUT": {
+        "page_padding": "0px"
+      }
+    }
+  },
+  "comments": "Header hidden, default footer",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "e2e_markers",
+      "value": "e2e_markers"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_keyboard_no_footer",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      }
+    }
+  },
+  "comments": "Keyboard with no footer and a sticky bottom group",
+  "rows": [
+    {
+      "type": "template",
+      "name": "e2e_keyboard_content",
+      "value": "e2e_keyboard_content",
+      "rows": [],
+      "_nested_name": "e2e_keyboard_content"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "style": "background_solid"
+      },
+      "rows": [
+        {
+          "type": "button",
+          "value": "Sticky bottom: fully visible",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "debug_edge_to_edge"
+              ],
+              "_raw": "click | go_to: debug_edge_to_edge"
+            }
+          ],
+          "name": "button_1",
+          "_nested_name": "display_group_4.button_1"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}

@@ -2,6 +2,7 @@
   "flow_type": "data_list",
   "flow_name": "comp_map_drawing_data",
   "status": "released",
+  "comments": "Target of the editable demo; drawn features are saved here",
   "rows": [
     {
       "id": "id1"

@@ -18,13 +18,18 @@
     },
     {
       "type": "button",
-      "value": "Launch as pop-up",
-      "action_list": "click | pop_up: debug_pop_up_bg;"
+      "value": "Launch with background image",
+      "action_list": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg;"
     },
     {
       "type": "button",
-      "value": "Launch as fullscreen pop-up",
-      "action_list": "click | pop_up: debug_pop_up_bg | fullscreen: true;"
+      "value": "Launch as fullscreen pop-up with background image",
+      "action_list": "click | pop_up: example_completion | fullscreen: true, background_image_asset: images/modal_bg.svg;"
+    },
+    {
+      "type": "button",
+      "value": "Launch completion pop-up with background image",
+      "action_list": "click | pop_up: example_completion | variant: plh_completion, background_image_asset: images/modal_bg.svg;"
     }
   ]
 }

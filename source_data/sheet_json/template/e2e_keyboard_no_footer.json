@@ -1,0 +1,36 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_keyboard_no_footer",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      }
+    }
+  },
+  "comments": "Keyboard with no footer and a sticky bottom group",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "e2e_keyboard_content",
+      "value": "e2e_keyboard_content"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom; style: background_solid;"
+    },
+    {
+      "type": "button",
+      "value": "Sticky bottom: fully visible",
+      "action_list": "click | go_to: debug_edge_to_edge"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

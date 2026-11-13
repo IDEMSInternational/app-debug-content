@@ -1,0 +1,110 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_keyboard_content",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Shared content: text boxes at the top and bottom of a scrolling page",
+  "rows": [
+    {
+      "type": "text",
+      "name": "marker_top",
+      "value": "TOP EDGE: this bar must be fully visible",
+      "style_list": "background: #c2185b; color: white; padding: 4px 8px; border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Tap each text box. The focused box must stay visible above the keyboard, and the layout must return to normal when the keyboard closes."
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_top",
+      "parameter_list": "placeholder: Text box at the top"
+    },
+    {
+      "type": "button",
+      "value": "Back to edge-to-edge index",
+      "action_list": "click | go_to: debug_edge_to_edge"
+    },
+    {
+      "type": "button",
+      "value": "Open as fullscreen pop-up",
+      "action_list": "click | pop_up: e2e_keyboard_content | fullscreen: true;"
+    },
+    {
+      "type": "button",
+      "value": "Open as pop-up",
+      "action_list": "click | pop_up: e2e_keyboard_content;"
+    },
+    {
+      "type": "button",
+      "value": "Open as nav-stack",
+      "action_list": "click | nav_stack: open | template: e2e_keyboard_content, title: Keyboard;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 1. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 2. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 3. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 4. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 5. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 6. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 7. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 8. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 9. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 10. Blue (left) and orange (right) borders must both be fully visible.",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "text_area",
+      "name": "text_area_bottom",
+      "parameter_list": "placeholder: Text area near the bottom"
+    },
+    {
+      "type": "text_box",
+      "name": "text_box_bottom",
+      "parameter_list": "placeholder: Text box at the bottom"
+    },
+    {
+      "type": "text",
+      "name": "marker_bottom",
+      "value": "BOTTOM EDGE: this bar must be fully visible",
+      "style_list": "background: #2e7d32; color: white; padding: 4px 8px; border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    }
+  ]
+}

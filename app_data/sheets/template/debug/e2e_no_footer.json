@@ -1,0 +1,31 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_no_footer",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      },
+      "LAYOUT": {
+        "page_padding": "0px"
+      }
+    }
+  },
+  "comments": "Default header, no footer",
+  "rows": [
+    {
+      "type": "template",
+      "name": "e2e_markers",
+      "value": "e2e_markers",
+      "rows": [],
+      "_nested_name": "e2e_markers"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}

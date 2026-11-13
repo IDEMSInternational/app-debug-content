@@ -1,0 +1,49 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_drawer",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      }
+    }
+  },
+  "comments": "Drawer on a page with no footer: the handle must be clear of the navigation bar",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "e2e_markers",
+      "value": "e2e_markers"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_drawer",
+      "value": "Drawer handle: fully visible",
+      "parameter_list": "style: secondary"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: column"
+    },
+    {
+      "type": "button",
+      "value": "Button in drawer"
+    },
+    {
+      "type": "text",
+      "name": "marker_drawer_bottom",
+      "value": "DRAWER BOTTOM: this bar must be fully visible",
+      "style_list": "background: #2e7d32; color: white; padding: 4px 8px; border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "end_drawer"
+    }
+  ]
+}

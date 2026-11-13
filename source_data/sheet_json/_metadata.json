@@ -115,6 +115,15 @@
   },
   {
     "flow_type": "data_list",
+    "flow_name": "comp_map_drawing_shapes",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_map.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+    }
+  },
+  {
+    "flow_type": "data_list",
     "flow_name": "comp_pdf_params",
     "_source": {
       "name": "Debug Sheets",
@@ -1571,6 +1580,16 @@
   {
     "flow_type": "template",
     "flow_subtype": "component_demo",
+    "flow_name": "comp_map_drawing",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "component_sheets/component_map.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "component_demo",
     "flow_name": "comp_navigation_bar",
     "_source": {
       "name": "Debug Sheets",
@@ -2796,6 +2815,16 @@
       "name": "Debug Sheets",
       "path": "debug_sheets/to_be_sorted/debug_radio_group.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1pSFFOv9B9x0oUSuSJDp6RNePJ1XSP6yVSjXA8jzBclQ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_edge_to_edge",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
     }
   },
   {
@@ -4602,6 +4631,136 @@
       "name": "Debug Sheets",
       "path": "doc_sheets/doc_override.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1TeFES0eqJAHAm6l4wegRg0GsXmqGSQCay-fii7TRhJc"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_drawer",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_footer_transparent",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_keyboard",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_keyboard_content",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_keyboard_no_footer",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_long_scroll",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_markers",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_no_footer",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_no_header",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_no_shell",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_overlays",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_overlays_no_close",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_sticky_page",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
     }
   },
   {

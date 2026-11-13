@@ -28,7 +28,7 @@
     },
     {
       "type": "button",
-      "value": "Launch as pop-up",
+      "value": "Launch with background image",
       "_translations": {
         "value": {}
       },
@@ -37,9 +37,12 @@
           "trigger": "click",
           "action_id": "pop_up",
           "args": [
-            "debug_pop_up_bg"
+            "example_completion"
           ],
-          "_raw": "click | pop_up: debug_pop_up_bg"
+          "_raw": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg",
+          "params": {
+            "background_image_asset": "images/modal_bg.svg"
+          }
         }
       ],
       "name": "button_4",
@@ -47,7 +50,7 @@
     },
     {
       "type": "button",
-      "value": "Launch as fullscreen pop-up",
+      "value": "Launch as fullscreen pop-up with background image",
       "_translations": {
         "value": {}
       },
@@ -56,16 +59,40 @@
           "trigger": "click",
           "action_id": "pop_up",
           "args": [
-            "debug_pop_up_bg"
+            "example_completion"
           ],
-          "_raw": "click | pop_up: debug_pop_up_bg | fullscreen: true",
+          "_raw": "click | pop_up: example_completion | fullscreen: true, background_image_asset: images/modal_bg.svg",
           "params": {
-            "fullscreen": true
+            "fullscreen": true,
+            "background_image_asset": "images/modal_bg.svg"
           }
         }
       ],
       "name": "button_5",
       "_nested_name": "button_5"
+    },
+    {
+      "type": "button",
+      "value": "Launch completion pop-up with background image",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "example_completion"
+          ],
+          "_raw": "click | pop_up: example_completion | variant: plh_completion, background_image_asset: images/modal_bg.svg",
+          "params": {
+            "variant": "plh_completion",
+            "background_image_asset": "images/modal_bg.svg"
+          }
+        }
+      ],
+      "name": "button_6",
+      "_nested_name": "button_6"
     }
   ],
   "_source": {

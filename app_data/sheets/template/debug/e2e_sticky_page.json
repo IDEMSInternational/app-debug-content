@@ -1,0 +1,84 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_sticky_page",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      },
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      }
+    }
+  },
+  "comments": "Sticky top and bottom display groups on a page with no header or footer",
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "style": "background_solid"
+      },
+      "rows": [
+        {
+          "type": "title",
+          "value": "Sticky top: fully visible",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "variant": "header"
+          },
+          "name": "title_1",
+          "_nested_name": "display_group_2.title_1"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "template",
+      "name": "e2e_markers",
+      "value": "e2e_markers",
+      "rows": [],
+      "_nested_name": "e2e_markers"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "style": "background_solid"
+      },
+      "rows": [
+        {
+          "type": "button",
+          "value": "Sticky bottom: fully visible",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "debug_edge_to_edge"
+              ],
+              "_raw": "click | go_to: debug_edge_to_edge"
+            }
+          ],
+          "name": "button_1",
+          "_nested_name": "display_group_6.button_1"
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}

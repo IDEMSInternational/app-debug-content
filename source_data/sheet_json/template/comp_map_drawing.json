@@ -1,0 +1,182 @@
+{
+  "flow_type": "template",
+  "flow_name": "comp_map_drawing",
+  "status": "released",
+  "flow_subtype": "component_demo",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Map"
+    },
+    {
+      "type": "text",
+      "value": "Displays polygons from a data list, and can let the user draw new ones and save them back to that data list."
+    },
+    {
+      "type": "title",
+      "value": "Parameters"
+    },
+    {
+      "type": "text",
+      "value": "data_list - name of the data list holding the geometries. Required."
+    },
+    {
+      "type": "text",
+      "value": "geometry_field_name - column holding each geometry. Default: geometry"
+    },
+    {
+      "type": "text",
+      "value": "properties_field_name - column holding each feature's properties. Default: properties"
+    },
+    {
+      "type": "text",
+      "value": "center_lon, center_lat, zoom - where the map opens when it has no shapes to frame."
+    },
+    {
+      "type": "text",
+      "value": "max_fit_zoom - closest zoom used when framing loaded shapes. Default: 18. Set 0 to always keep center_lon, center_lat and zoom."
+    },
+    {
+      "type": "text",
+      "value": "editable - false displays the shapes without any drawing tools. Default: true"
+    },
+    {
+      "type": "text",
+      "value": "filter - limits which data list rows the map uses, written like a data_items filter."
+    },
+    {
+      "type": "text",
+      "value": "save_values - columns stamped on every saved row. Editable maps only."
+    },
+    {
+      "type": "title",
+      "value": "1. View only"
+    },
+    {
+      "type": "text",
+      "value": "editable: false displays the geometries without the drawing tools, so recorded data (e.g. a GPS trace with ids from a server) is shown as it is, rather than having to satisfy the drawing library's rules."
+    },
+    {
+      "type": "map",
+      "name": "view_only_map",
+      "parameter_list": "data_list: comp_map_drawing_shapes; geometry_field_name: geometry; editable: false; center_lon: 6.056; center_lat: 46.233; zoom: 13",
+      "comments": "The view opens on the shapes, not on center_lon/center_lat, because framing is on by default",
+      "style_list": "height: 400px"
+    },
+    {
+      "type": "title",
+      "value": "2. Filtering rows"
+    },
+    {
+      "type": "text",
+      "value": "filter limits the map to some of the data list, using the same syntax as data_items: @item.column refers to the row, and anything else (@local, @field, @data) is evaluated before the filter runs."
+    },
+    {
+      "type": "text",
+      "value": "A view-only map reloads whenever the filter changes, so changing a local variable it depends on updates the map in place. An editable map does not reload, as that would discard anything drawn but not yet saved."
+    },
+    {
+      "type": "set_variable",
+      "name": "selected_group",
+      "value": "a"
+    },
+    {
+      "type": "button",
+      "value": "Show group a",
+      "action_list": "click | set_local: selected_group: a"
+    },
+    {
+      "type": "button",
+      "value": "Show group b",
+      "action_list": "click | set_local: selected_group: b"
+    },
+    {
+      "type": "button",
+      "value": "Show a group with no shapes",
+      "action_list": "click | set_local: selected_group: c"
+    },
+    {
+      "type": "text",
+      "value": "selected_group: @local.selected_group"
+    },
+    {
+      "type": "map",
+      "name": "filtered_map",
+      "parameter_list": "data_list: comp_map_drawing_shapes; geometry_field_name: geometry; editable: false; filter: @item.group == @local.selected_group; center_lon: 6.056; center_lat: 46.233; zoom: 13",
+      "comments": "Group c matches nothing, which clears the map rather than leaving the previous shapes on it",
+      "style_list": "height: 400px"
+    },
+    {
+      "type": "text",
+      "value": "Note: a parameter value is cut at its second colon, so a filter cannot contain a colon. Use == and && as above."
+    },
+    {
+      "type": "title",
+      "value": "3. Framing the shapes"
+    },
+    {
+      "type": "text",
+      "value": "By default the map zooms to fit the shapes it loads, no closer than max_fit_zoom. This matters when the authored centre is nowhere near the data: without it the map opens on empty ground and the shapes have to be hunted for."
+    },
+    {
+      "type": "text",
+      "value": "max_fit_zoom: 0 turns framing off, so the map stays where center_lon, center_lat and zoom put it. The map below opens on the Gulf of Guinea, several thousand km from the shapes it has loaded."
+    },
+    {
+      "type": "map",
+      "name": "unframed_map",
+      "parameter_list": "data_list: comp_map_drawing_shapes; geometry_field_name: geometry; editable: false; max_fit_zoom: 0; center_lon: 0; center_lat: 0; zoom: 4",
+      "style_list": "height: 400px"
+    },
+    {
+      "type": "title",
+      "value": "4. Drawing and saving"
+    },
+    {
+      "type": "text",
+      "value": "With editable left unset, the drawing tools are shown. The save button writes every drawn feature to data_list, and removes rows the map loaded that are no longer drawn."
+    },
+    {
+      "type": "text",
+      "value": "save_values stamps extra columns onto each saved row, so a feature drawn under a filter still matches that filter when the map is next opened. It uses = rather than : because a parameter value is cut at its second colon."
+    },
+    {
+      "type": "text",
+      "value": "The columns listed in save_values must already exist in the data list sheet. A data list's schema comes from its first row, and any field not in it is silently dropped when saving."
+    },
+    {
+      "type": "text",
+      "value": "Draw a polygon, save, then switch group above and reload the page: the shape is kept with the group that was selected when it was drawn."
+    },
+    {
+      "type": "map",
+      "name": "editable_map",
+      "parameter_list": "data_list: comp_map_drawing_data; filter: @item.group == @local.selected_group; save_values: group=@local.selected_group; center_lon: 6.056; center_lat: 46.233; zoom: 13",
+      "style_list": "height: 400px"
+    },
+    {
+      "type": "title",
+      "value": "Notes"
+    },
+    {
+      "type": "text",
+      "value": "The id column of the data list must be formatted as plain text in the sheet. Numeric ids fail to load with the error about the ID column needing to be formatted as a string."
+    },
+    {
+      "type": "text",
+      "value": "A map has no height of its own unless it is the only row in its container, so give it a style_list such as height: 400px. Without one the map container is 0 pixels high and nothing is drawn."
+    },
+    {
+      "type": "text",
+      "value": "A geometry cell accepts a GeoJSON Polygon, a GeoJSON Feature, or a plain list of [lon, lat] points. A third value per point (altitude) is ignored, and the ring is closed automatically if the sheet does not close it."
+    },
+    {
+      "type": "text",
+      "value": "Drawing requires geometries the drawing library accepts; recorded data usually does not qualify, which is what editable: false is for."
+    },
+    {
+      "type": "text",
+      "value": "Sheet: [https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4/edit?gid=1519608665#gid=1519608665](https://docs.google.com/spreadsheets/d/1acN1oplBj41blkEeuZI8nOGH2Lgtkkk91BiscWFrUp4/edit?gid=1519608665#gid=1519608665)"
+    }
+  ]
+}

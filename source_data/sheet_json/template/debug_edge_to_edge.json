@@ -1,0 +1,122 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_edge_to_edge",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Index of edge-to-edge (safe area) test cases, issue #3607",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Edge-to-edge test cases"
+    },
+    {
+      "type": "text",
+      "value": "Each page has a pink TOP EDGE bar and a green BOTTOM EDGE bar. Both must be fully visible, clear of the status bar, navigation bar, notch and home indicator, without extra gaps. Test in portrait and landscape."
+    },
+    {
+      "type": "title",
+      "value": "App shell"
+    },
+    {
+      "type": "button",
+      "value": "No header, no footer",
+      "action_list": "click | go_to: e2e_no_shell"
+    },
+    {
+      "type": "button",
+      "value": "No header, with footer",
+      "action_list": "click | go_to: e2e_no_header"
+    },
+    {
+      "type": "button",
+      "value": "Header, no footer",
+      "action_list": "click | go_to: e2e_no_footer"
+    },
+    {
+      "type": "button",
+      "value": "Header, transparent footer",
+      "action_list": "click | go_to: e2e_footer_transparent"
+    },
+    {
+      "type": "button",
+      "value": "Header collapse on scroll",
+      "action_list": "click | go_to: e2e_long_scroll"
+    },
+    {
+      "type": "title",
+      "value": "Sticky groups and drawer"
+    },
+    {
+      "type": "button",
+      "value": "Sticky top and bottom, no header or footer",
+      "action_list": "click | go_to: e2e_sticky_page"
+    },
+    {
+      "type": "button",
+      "value": "Drawer, no footer",
+      "action_list": "click | go_to: e2e_drawer"
+    },
+    {
+      "type": "title",
+      "value": "Keyboard"
+    },
+    {
+      "type": "button",
+      "value": "Text boxes with footer",
+      "action_list": "click | go_to: e2e_keyboard"
+    },
+    {
+      "type": "button",
+      "value": "Text boxes, no footer, sticky bottom",
+      "action_list": "click | go_to: e2e_keyboard_no_footer"
+    },
+    {
+      "type": "title",
+      "value": "Pop-ups, nav-stacks and other overlays"
+    },
+    {
+      "type": "button",
+      "value": "Overlays",
+      "action_list": "click | go_to: e2e_overlays"
+    },
+    {
+      "type": "title",
+      "value": "Related debug pages"
+    },
+    {
+      "type": "button",
+      "value": "App layout options",
+      "action_list": "click | go_to: feat_app_layout_no_header"
+    },
+    {
+      "type": "button",
+      "value": "Sticky display groups",
+      "action_list": "click | go_to: feat_display_group_sticky"
+    },
+    {
+      "type": "button",
+      "value": "Nav stack",
+      "action_list": "click | go_to: feat_nav_stack"
+    },
+    {
+      "type": "button",
+      "value": "Pop-ups",
+      "action_list": "click | go_to: example_pop_ups"
+    },
+    {
+      "type": "button",
+      "value": "Screen orientation",
+      "action_list": "click | go_to: feature_screen_orientation"
+    },
+    {
+      "type": "button",
+      "value": "Set theme",
+      "action_list": "click | go_to: feature_set_theme"
+    },
+    {
+      "type": "button",
+      "value": "RTL language",
+      "action_list": "click | go_to: feature_rtl_language"
+    }
+  ]
+}

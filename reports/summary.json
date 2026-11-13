@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 510
+        "count": 552
       },
       {
         "type": "calendar",
@@ -59,7 +59,7 @@
       },
       {
         "type": "combo_box",
-        "count": 91
+        "count": 93
       },
       {
         "type": "dashed_box",
@@ -67,7 +67,7 @@
       },
       {
         "type": "data_items",
-        "count": 130
+        "count": 129
       },
       {
         "type": "data_query",
@@ -91,11 +91,11 @@
       },
       {
         "type": "display_group",
-        "count": 289
+        "count": 293
       },
       {
         "type": "drawer",
-        "count": 1
+        "count": 2
       },
       {
         "type": "form",
@@ -127,7 +127,7 @@
       },
       {
         "type": "map",
-        "count": 2
+        "count": 5
       },
       {
         "type": "markdown",
@@ -263,7 +263,7 @@
       },
       {
         "type": "set_variable",
-        "count": 963
+        "count": 965
       },
       {
         "type": "simple_checkbox",
@@ -303,19 +303,19 @@
       },
       {
         "type": "template",
-        "count": 159
+        "count": 168
       },
       {
         "type": "text",
-        "count": 1494
+        "count": 1593
       },
       {
         "type": "text_area",
-        "count": 15
+        "count": 16
       },
       {
         "type": "text_box",
-        "count": 87
+        "count": 89
       },
       {
         "type": "text_bubble",
@@ -331,7 +331,7 @@
       },
       {
         "type": "title",
-        "count": 713
+        "count": 732
       },
       {
         "type": "toggle_bar",
@@ -399,7 +399,7 @@
       },
       {
         "type": "emit: completed",
-        "count": 35
+        "count": 36
       },
       {
         "type": "emit: force_reload",
@@ -439,11 +439,11 @@
       },
       {
         "type": "feedback",
-        "count": 13
+        "count": 14
       },
       {
         "type": "go_to",
-        "count": 88
+        "count": 110
       },
       {
         "type": "go_to_url",
@@ -459,7 +459,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 11
+        "count": 15
       },
       {
         "type": "notification",
@@ -479,7 +479,7 @@
       },
       {
         "type": "pop_up",
-        "count": 64
+        "count": 73
       },
       {
         "type": "process_template",
@@ -527,7 +527,7 @@
       },
       {
         "type": "set_local",
-        "count": 90
+        "count": 93
       },
       {
         "type": "share",
@@ -543,7 +543,7 @@
       },
       {
         "type": "toast",
-        "count": 8
+        "count": 9
       },
       {
         "type": "toggle_field",
@@ -682,6 +682,21 @@
       },
       {
         "path": "asset_pack_debugging_bulk/bulk_100.png",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "click | pop_up: example_completion | fullscreen: true, background_image_asset: images/modal_bg.svg",
+        "count": 1,
+        "missing": true
+      },
+      {
+        "path": "click | pop_up: example_completion | variant: plh_completion, background_image_asset: images/modal_bg.svg",
         "count": 1,
         "missing": true
       },
@@ -1016,7 +1031,7 @@
       },
       {
         "path": "images/modal_bg.svg",
-        "count": 1,
+        "count": 4,
         "size_kb": 37.3
       },
       {
@@ -1086,7 +1101,7 @@
       {
         "type": "data_list",
         "subtype": null,
-        "total": 50
+        "total": 51
       },
       {
         "type": "data_list",
@@ -1196,12 +1211,12 @@
       {
         "type": "template",
         "subtype": "component_demo",
-        "total": 77
+        "total": 78
       },
       {
         "type": "template",
         "subtype": "debug",
-        "total": 309
+        "total": 323
       },
       {
         "type": "template",
