@@ -1,0 +1,48 @@
+# Edge-to-edge (safe area) walk-through for the `debug` deployment, open-app-builder issue #3607.
+# Opens every shell variant on the `debug_edge_to_edge` index and screenshots the top and bottom of each,
+# so system bar, notch and home indicator overlap can be compared between devices and builds.
+# Every page has a pink "TOP EDGE" bar and a green "BOTTOM EDGE" bar that must be fully visible.
+# From the open-app-builder root:
+#   Android: maestro test --test-output-dir <dir> .idems_app/deployments/debug/.maestro/edge_to_edge.yaml
+#   iOS:     maestro test -e APP_ID=international.idems.debug-app --test-output-dir <dir> .idems_app/deployments/debug/.maestro/edge_to_edge.yaml
+appId: ${APP_ID || "international.idems.debug_app"}
+tags:
+  - edge-to-edge
+---
+- runFlow: subflows/e2e_open_index.yaml
+- takeScreenshot: 03-index
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "No header, no footer"
+      NAME: "10-no-shell"
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "No header, with footer"
+      NAME: "11-no-header"
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "Header, no footer"
+      NAME: "12-no-footer"
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "Header, transparent footer"
+      NAME: "13-footer-transparent"
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "Header collapse on scroll"
+      NAME: "14-header-collapse"
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "Sticky top and bottom, no header or footer"
+      NAME: "15-sticky-page"
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "Drawer, no footer"
+      NAME: "16-drawer"

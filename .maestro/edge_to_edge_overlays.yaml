@@ -1,0 +1,60 @@
+# Edge-to-edge (safe area) walk-through of pop-ups, nav-stacks and other overlays for the `debug`
+# deployment, open-app-builder issue #3607. Screenshots each overlay opened from `e2e_overlays`.
+# In every overlay the "TOP EDGE" and "BOTTOM EDGE" bars and the close button must be fully visible.
+# Run as `edge_to_edge.yaml`; repeat on a tablet, where Ionic treats modals differently (>= 768x600).
+appId: ${APP_ID || "international.idems.debug_app"}
+tags:
+  - edge-to-edge
+---
+- runFlow: subflows/e2e_open_index.yaml
+- scrollUntilVisible:
+    element: "Overlays"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Overlays"
+- extendedWaitUntil:
+    visible: "Pop-ups"
+    timeout: 10000
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Pop-up"
+      NAME: "20-pop-up"
+      WAIT: "TOP EDGE.*"
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Fullscreen pop-up"
+      NAME: "21-pop-up-fullscreen"
+      WAIT: "TOP EDGE.*"
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Fullscreen pop-up with sticky groups"
+      NAME: "22-pop-up-fullscreen-sticky"
+      WAIT: "Sticky top.*"
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Nav-stack"
+      NAME: "23-nav-stack"
+      WAIT: "TOP EDGE.*"
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Combo box \\(modal\\)"
+      NAME: "25-combo-box-modal"
+      WAIT: "Option 1"
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Animated slides as launch splash"
+      NAME: "26-animated-slides"
+      WAIT: "Click here to skip!"
+# Last, as a nav-stack without a header has no close button (closed with the back action on Android only)
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Nav-stack, no header, sticky groups"
+      NAME: "27-nav-stack-sticky"
+      WAIT: "Sticky top.*"

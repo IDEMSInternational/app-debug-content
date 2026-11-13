@@ -1,0 +1,66 @@
+# Edge-to-edge (safe area) checks that need interaction, for the `debug` deployment, open-app-builder
+# issue #3607: header collapse on scroll and the keyboard.
+# Run as `edge_to_edge.yaml`.
+appId: ${APP_ID || "international.idems.debug_app"}
+tags:
+  - edge-to-edge
+---
+- runFlow: subflows/e2e_open_index.yaml
+# Header collapse (Android only): nothing should be readable behind the status bar
+- tapOn: "Header collapse on scroll"
+- extendedWaitUntil:
+    visible: "TOP EDGE.*"
+    timeout: 10000
+- swipe:
+    start: 50%, 70%
+    end: 50%, 30%
+- swipe:
+    start: 50%, 70%
+    end: 50%, 30%
+- waitForAnimationToEnd
+- takeScreenshot: 30-header-collapsed
+- scrollUntilVisible:
+    element: "Back to edge-to-edge index"
+    direction: UP
+    timeout: 40000
+    centerElement: true
+- takeScreenshot: 31-header-restored
+- tapOn: "Back to edge-to-edge index"
+- waitForAnimationToEnd
+# Keyboard: the focused text box stays visible, and the layout returns to normal afterwards
+- scrollUntilVisible:
+    element: "Text boxes, no footer, sticky bottom"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Text boxes, no footer, sticky bottom"
+- extendedWaitUntil:
+    visible: "TOP EDGE.*"
+    timeout: 10000
+# Text box placeholders are not exposed on every WebView version, so find the boxes by position
+- tapOn:
+    below: "Tap each text box.*"
+- waitForAnimationToEnd
+- takeScreenshot: 40-keyboard-top
+- hideKeyboard
+- scrollUntilVisible:
+    element: "BOTTOM EDGE.*"
+    direction: DOWN
+    timeout: 40000
+- tapOn:
+    above: "BOTTOM EDGE.*"
+- waitForAnimationToEnd
+- takeScreenshot: 41-keyboard-bottom
+- hideKeyboard
+- waitForAnimationToEnd
+- takeScreenshot: 42-keyboard-closed
+- scrollUntilVisible:
+    element: "Back to edge-to-edge index"
+    direction: UP
+    timeout: 40000
+    centerElement: true
+- tapOn: "Back to edge-to-edge index"
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element: "Edge-to-edge test cases"
+    direction: UP
+    timeout: 20000
