@@ -1,0 +1,54 @@
+# Status bar and navigation bar icon style for the `debug` deployment, open-app-builder issue #3607.
+# Icons must be dark on light backgrounds and light on dark ones. Covers a light header with a dark
+# footer, overlays over the light header (the backdrop darkens it), and a theme with a light footer.
+# Check the icons in each screenshot. Run as `edge_to_edge.yaml`.
+appId: ${APP_ID || "international.idems.debug_app"}
+tags:
+  - edge-to-edge
+---
+- runFlow: subflows/e2e_open_index.yaml
+# Light header (dark status bar icons), dark footer (light navigation bar icons)
+- scrollUntilVisible:
+    element: "Light header, dark footer"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Light header, dark footer"
+- extendedWaitUntil:
+    visible: "TOP EDGE.*"
+    timeout: 10000
+- waitForAnimationToEnd
+- takeScreenshot: 60-light-header
+# A nav-stack's backdrop (50% black) over the light header: status bar icons stay dark
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Open nav-stack.*"
+      NAME: "61-light-header-nav-stack"
+      WAIT: "Stack title"
+- runFlow:
+    file: subflows/e2e_overlay.yaml
+    env:
+      BUTTON: "Open pop-up"
+      NAME: "62-light-header-pop-up"
+      WAIT: "TOP EDGE.*"
+- scrollUntilVisible:
+    element: "Back to edge-to-edge index"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Back to edge-to-edge index"
+- waitForAnimationToEnd
+# Theme with a light footer: dark navigation bar icons
+- scrollUntilVisible:
+    element: "Theme: plh_kids_teens_mx.*"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Theme: plh_kids_teens_mx.*"
+- waitForAnimationToEnd
+- takeScreenshot: 63-theme-light-footer
+- scrollUntilVisible:
+    element: "Theme: default"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Theme: default"
+- waitForAnimationToEnd
+- takeScreenshot: 64-theme-default

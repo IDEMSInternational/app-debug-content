@@ -1,6 +1,8 @@
 # Fresh launch, then opens the edge-to-edge index page (debug_edge_to_edge) through the template list.
 appId: ${APP_ID || "international.idems.debug_app"}
 ---
+# A failed landscape run leaves the device rotated
+- setOrientation: PORTRAIT
 - launchApp:
     clearState: true
     permissions:

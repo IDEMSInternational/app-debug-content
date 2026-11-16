@@ -1,6 +1,8 @@
 # Edge-to-edge (safe area) checks in landscape for the `debug` deployment, open-app-builder issue #3607.
 # Content must be clear of the display cutout and navigation bar at the sides; the header and footer
 # backgrounds still reach the screen edges. Run as `edge_to_edge.yaml`.
+# Android only: on iOS, scrolling in landscape fails (Maestro 2.12.1), so rotate there by hand or in a
+# flow that does not scroll after rotating.
 appId: ${APP_ID || "international.idems.debug_app"}
 tags:
   - edge-to-edge
@@ -25,6 +27,29 @@ tags:
     centerElement: true
 - tapOn: "Back to edge-to-edge index"
 - waitForAnimationToEnd
+# Ionic items (accordion, radio list, combo box) must line up with the bordered rows, with no extra side inset
+- scrollUntilVisible:
+    element: "Accordion and lists.*"
+    direction: DOWN
+    timeout: 40000
+    visibilityPercentage: 100
+    centerElement: true
+- tapOn: "Accordion and lists.*"
+- extendedWaitUntil:
+    visible: "Accordion section 1"
+    timeout: 10000
+- waitForAnimationToEnd
+- takeScreenshot: 55-landscape-ion-items
+- scrollUntilVisible:
+    element: "Back to edge-to-edge index"
+    direction: DOWN
+    centerElement: true
+- tapOn: "Back to edge-to-edge index"
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element: "Edge-to-edge test cases"
+    direction: UP
+    timeout: 20000
 - scrollUntilVisible:
     element: "Overlays"
     direction: DOWN

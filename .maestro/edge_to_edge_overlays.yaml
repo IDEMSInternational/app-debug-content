@@ -51,8 +51,11 @@ tags:
       BUTTON: "Animated slides as launch splash"
       NAME: "26-animated-slides"
       WAIT: "Click here to skip!"
-# Last, as a nav-stack without a header has no close button (closed with the back action on Android only)
+# Last, as a nav-stack without a header has no close button (closed with the back action on Android only).
+# Android only: on iOS, skipping the animated slides above leaves the Overlays page
 - runFlow:
+    when:
+      platform: Android
     file: subflows/e2e_overlay.yaml
     env:
       BUTTON: "Nav-stack, no header, sticky groups"

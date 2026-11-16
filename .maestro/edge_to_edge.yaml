@@ -46,3 +46,9 @@ tags:
     env:
       BUTTON: "Drawer, no footer"
       NAME: "16-drawer"
+# The sticky bottom group must sit directly on the footer, with no gap for the navigation bar
+- runFlow:
+    file: subflows/e2e_page.yaml
+    env:
+      BUTTON: "Sticky bottom group with footer"
+      NAME: "17-footer-sticky"
