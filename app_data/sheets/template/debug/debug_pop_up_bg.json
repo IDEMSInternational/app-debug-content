@@ -28,7 +28,7 @@
     },
     {
       "type": "button",
-      "value": "Launch with background image (centred)",
+      "value": "Launch with background image (top position)",
       "_translations": {
         "value": {}
       },
@@ -50,7 +50,7 @@
     },
     {
       "type": "button",
-      "value": "Launch with background image at the top",
+      "value": "Launch with centred background image",
       "_translations": {
         "value": {}
       },
@@ -61,10 +61,10 @@
           "args": [
             "example_completion"
           ],
-          "_raw": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg, background_image_position: top",
+          "_raw": "click | pop_up: example_completion | background_image_asset: images/modal_bg.svg, background_image_position: center",
           "params": {
             "background_image_asset": "images/modal_bg.svg",
-            "background_image_position": "top"
+            "background_image_position": "center"
           }
         }
       ],
