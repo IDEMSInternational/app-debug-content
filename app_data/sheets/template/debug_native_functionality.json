@@ -5,7 +5,7 @@
   "rows": [
     {
       "type": "title",
-      "value": "Upgrading Checklist",
+      "value": "Upgrading Checklist (see sheet comment)",
       "_translations": {
         "value": {}
       },
@@ -13,22 +13,13 @@
       "_nested_name": "title_2"
     },
     {
-      "type": "text",
-      "value": "0. Consider delaying a little bit following latest Capacitor version launch (e.g. v7.1, 8.1 etc.). It is likely that 3rd party plugins will take time to align with latest capacitor version\n\n1. Follow the Upgrade Guides in [Capacitor Docs](https://capacitorjs.com/docs/) to peform initial upgrade\n\n2. Check for any variables that will not have automatically been upgraded by capacitor because they sit in `.template` files, e.g. `ios/App/App.xcodeproj/project.template.pbxproj` and `android/app/build.template.gradle`\n\n3. Ensure IOS pods correct\n```sh\nyarn workflow ios configure # This is to generate a valid App.xcodeproj/project.pbxproj file, which is required for `pod install`\ncd ios/App\nrm podfile.lock\npod install --repo-update\n```\n\n4. Review any breaking plugin changes mentioned in capacitor docs\n\n5. Check for updates to any community or 3rd party capacitor plugins, using repo docs to identify breaking changes\n\n6. Use examples in this sheet to test native functionality on web, ios and native. Ensure this sheet is updated to include any recent additions\n\n---",
-      "_translations": {
-        "value": {}
-      },
-      "name": "text_3",
-      "_nested_name": "text_3"
-    },
-    {
       "type": "title",
       "value": "@capacitor-community/file-opener",
       "_translations": {
         "value": {}
       },
-      "name": "title_4",
-      "_nested_name": "title_4"
+      "name": "title_3",
+      "_nested_name": "title_3"
     },
     {
       "type": "text",
@@ -36,8 +27,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_5",
-      "_nested_name": "text_5"
+      "name": "text_4",
+      "_nested_name": "text_4"
     },
     {
       "name": "image_path",
@@ -64,8 +55,8 @@
           "_raw": "click | save_to_device: @local.image_path"
         }
       ],
-      "name": "button_7",
-      "_nested_name": "button_7",
+      "name": "button_6",
+      "_nested_name": "button_6",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -103,8 +94,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_8",
-      "_nested_name": "title_8"
+      "name": "title_7",
+      "_nested_name": "title_7"
     },
     {
       "type": "text",
@@ -112,8 +103,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_9",
-      "_nested_name": "text_9"
+      "name": "text_8",
+      "_nested_name": "text_8"
     },
     {
       "type": "title",
@@ -121,8 +112,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_10",
-      "_nested_name": "title_10"
+      "name": "title_9",
+      "_nested_name": "title_9"
     },
     {
       "type": "button",
@@ -140,8 +131,8 @@
           "_raw": "click | go_to : /shared-data"
         }
       ],
-      "name": "button_11",
-      "_nested_name": "button_11"
+      "name": "button_10",
+      "_nested_name": "button_10"
     },
     {
       "type": "title",
@@ -149,8 +140,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_12",
-      "_nested_name": "title_12"
+      "name": "title_11",
+      "_nested_name": "title_11"
     },
     {
       "type": "button",
@@ -168,8 +159,8 @@
           "_raw": "click | go_to :  example_auth"
         }
       ],
-      "name": "button_13",
-      "_nested_name": "button_13"
+      "name": "button_12",
+      "_nested_name": "button_12"
     },
     {
       "type": "title",
@@ -177,8 +168,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_14",
-      "_nested_name": "title_14"
+      "name": "title_13",
+      "_nested_name": "title_13"
     },
     {
       "type": "text",
@@ -186,8 +177,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_15",
-      "_nested_name": "text_15"
+      "name": "text_14",
+      "_nested_name": "text_14"
     },
     {
       "type": "title",
@@ -195,8 +186,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_16",
-      "_nested_name": "title_16"
+      "name": "title_15",
+      "_nested_name": "title_15"
     },
     {
       "type": "text_box",
@@ -264,8 +255,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_19",
-      "_nested_name": "title_19"
+      "name": "title_18",
+      "_nested_name": "title_18"
     },
     {
       "type": "text",
@@ -273,8 +264,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_20",
-      "_nested_name": "text_20",
+      "name": "text_19",
+      "_nested_name": "text_19",
       "_dynamicFields": {
         "value": [
           {
@@ -297,8 +288,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_21",
-      "_nested_name": "title_21"
+      "name": "title_20",
+      "_nested_name": "title_20"
     },
     {
       "type": "text",
@@ -306,8 +297,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_22",
-      "_nested_name": "text_22"
+      "name": "text_21",
+      "_nested_name": "text_21"
     },
     {
       "type": "text",
@@ -315,8 +306,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_23",
-      "_nested_name": "text_23"
+      "name": "text_22",
+      "_nested_name": "text_22"
     },
     {
       "type": "title",
@@ -324,8 +315,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_24",
-      "_nested_name": "title_24"
+      "name": "title_23",
+      "_nested_name": "title_23"
     },
     {
       "type": "button",
@@ -343,8 +334,8 @@
           "_raw": "click | open_external: @local.image_path"
         }
       ],
-      "name": "button_25",
-      "_nested_name": "button_25",
+      "name": "button_24",
+      "_nested_name": "button_24",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -382,8 +373,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_26",
-      "_nested_name": "title_26"
+      "name": "title_25",
+      "_nested_name": "title_25"
     },
     {
       "type": "date_time_picker",
@@ -415,8 +406,8 @@
       "parameter_list": {
         "disabled": "!@local.input_datetime"
       },
-      "name": "button_28",
-      "_nested_name": "button_28",
+      "name": "button_27",
+      "_nested_name": "button_27",
       "_dynamicFields": {
         "value": [
           {
@@ -476,8 +467,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_29",
-      "_nested_name": "title_29"
+      "name": "title_28",
+      "_nested_name": "title_28"
     },
     {
       "type": "text",
@@ -485,8 +476,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_30",
-      "_nested_name": "text_30"
+      "name": "text_29",
+      "_nested_name": "text_29"
     },
     {
       "type": "title",
@@ -494,8 +485,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_31",
-      "_nested_name": "title_31"
+      "name": "title_30",
+      "_nested_name": "title_30"
     },
     {
       "type": "button",
@@ -513,8 +504,8 @@
           "_raw": "click | screen_orientation : landscape"
         }
       ],
-      "name": "button_32",
-      "_nested_name": "button_32"
+      "name": "button_31",
+      "_nested_name": "button_31"
     },
     {
       "type": "button",
@@ -532,8 +523,8 @@
           "_raw": "click | screen_orientation : unlock"
         }
       ],
-      "name": "button_33",
-      "_nested_name": "button_33"
+      "name": "button_32",
+      "_nested_name": "button_32"
     },
     {
       "type": "title",
@@ -541,8 +532,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_34",
-      "_nested_name": "title_34"
+      "name": "title_33",
+      "_nested_name": "title_33"
     },
     {
       "type": "button",
@@ -561,8 +552,8 @@
           "_raw": "click | share : file: @local.image_path"
         }
       ],
-      "name": "button_35",
-      "_nested_name": "button_35",
+      "name": "button_34",
+      "_nested_name": "button_34",
       "_dynamicFields": {
         "action_list": {
           "0": {
@@ -600,8 +591,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_36",
-      "_nested_name": "title_36"
+      "name": "title_35",
+      "_nested_name": "title_35"
     },
     {
       "type": "text",
@@ -609,8 +600,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_37",
-      "_nested_name": "text_37"
+      "name": "text_36",
+      "_nested_name": "text_36"
     },
     {
       "type": "title",
@@ -618,8 +609,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_38",
-      "_nested_name": "title_38"
+      "name": "title_37",
+      "_nested_name": "title_37"
     },
     {
       "type": "text",
@@ -627,8 +618,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_39",
-      "_nested_name": "text_39"
+      "name": "text_38",
+      "_nested_name": "text_38"
     },
     {
       "type": "title",
@@ -636,8 +627,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_40",
-      "_nested_name": "title_40"
+      "name": "title_39",
+      "_nested_name": "title_39"
     },
     {
       "type": "text",
@@ -645,8 +636,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_41",
-      "_nested_name": "text_41"
+      "name": "text_40",
+      "_nested_name": "text_40"
     },
     {
       "type": "title",
@@ -654,8 +645,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_42",
-      "_nested_name": "title_42"
+      "name": "title_41",
+      "_nested_name": "title_41"
     },
     {
       "type": "text",
@@ -663,8 +654,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "text_43",
-      "_nested_name": "text_43"
+      "name": "text_42",
+      "_nested_name": "text_42"
     },
     {
       "type": "title",
@@ -672,8 +663,8 @@
       "_translations": {
         "value": {}
       },
-      "name": "title_44",
-      "_nested_name": "title_44"
+      "name": "title_43",
+      "_nested_name": "title_43"
     }
   ],
   "_source": {

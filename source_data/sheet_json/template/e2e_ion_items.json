@@ -1,0 +1,77 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_ion_items",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "LAYOUT": {
+        "page_padding": "0px"
+      }
+    }
+  },
+  "comments": "Accordion, radio list and combo box (Ionic items add their own side insets): check in landscape",
+  "rows": [
+    {
+      "type": "text",
+      "value": "In landscape, the accordion headers, radio options and combo box must start at the same left and right edges as the blue and orange borders below, with no extra gap on the camera side."
+    },
+    {
+      "type": "set_variable",
+      "name": "answer_list",
+      "value": "name: name_1 | text: Option 1; name: name_2 | text: Option 2; name: name_3 | text: Option 3;"
+    },
+    {
+      "type": "begin_accordion",
+      "name": "accordion"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "section_1",
+      "value": "Accordion section 1",
+      "parameter_list": "state: open;"
+    },
+    {
+      "type": "text",
+      "value": "Accordion content",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "begin_accordion_section",
+      "name": "section_2",
+      "value": "Accordion section 2"
+    },
+    {
+      "type": "text",
+      "value": "Accordion content",
+      "style_list": "border-left: 6px solid #0077cc; border-right: 6px solid #e67e00;"
+    },
+    {
+      "type": "end_accordion_section"
+    },
+    {
+      "type": "end_accordion"
+    },
+    {
+      "type": "radio_list",
+      "name": "radio_list_1",
+      "parameter_list": "answer_list: @local.answer_list;"
+    },
+    {
+      "type": "combo_box",
+      "name": "combo_box_dropdown",
+      "parameter_list": "answer_list: @local.answer_list; variant: dropdown; placeholder: Combo box (dropdown);"
+    },
+    {
+      "type": "begin_template",
+      "name": "e2e_markers",
+      "value": "e2e_markers"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}

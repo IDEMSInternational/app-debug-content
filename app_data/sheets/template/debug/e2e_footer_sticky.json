@@ -1,0 +1,51 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_footer_sticky",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Sticky bottom group on a page with the default header and footer: it must sit directly on the footer with no gap",
+  "rows": [
+    {
+      "type": "template",
+      "name": "e2e_markers",
+      "value": "e2e_markers",
+      "rows": [],
+      "_nested_name": "e2e_markers"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "style": "background_solid"
+      },
+      "rows": [
+        {
+          "type": "button",
+          "value": "Sticky bottom: directly on the footer, no gap",
+          "_translations": {
+            "value": {}
+          },
+          "action_list": [
+            {
+              "trigger": "click",
+              "action_id": "go_to",
+              "args": [
+                "debug_edge_to_edge"
+              ],
+              "_raw": "click | go_to: debug_edge_to_edge"
+            }
+          ],
+          "name": "button_1",
+          "_nested_name": "display_group_4.button_1"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}

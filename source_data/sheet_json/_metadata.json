@@ -4646,7 +4646,27 @@
   {
     "flow_type": "template",
     "flow_subtype": "debug",
+    "flow_name": "e2e_footer_sticky",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
     "flow_name": "e2e_footer_transparent",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_ion_items",
     "_source": {
       "name": "Debug Sheets",
       "path": "debug_sheets/debug_edge_to_edge.xlsx",
@@ -4677,6 +4697,16 @@
     "flow_type": "template",
     "flow_subtype": "debug",
     "flow_name": "e2e_keyboard_no_footer",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_edge_to_edge.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "e2e_light_header",
     "_source": {
       "name": "Debug Sheets",
       "path": "debug_sheets/debug_edge_to_edge.xlsx",

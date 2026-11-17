@@ -5228,6 +5228,17 @@
         "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
       }
     },
+    "e2e_footer_sticky": {
+      "flow_type": "template",
+      "flow_name": "e2e_footer_sticky",
+      "flow_subtype": "debug",
+      "comments": "Sticky bottom group on a page with the default header and footer: it must sit directly on the footer with no gap",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
     "e2e_footer_transparent": {
       "flow_type": "template",
       "flow_name": "e2e_footer_transparent",
@@ -5244,6 +5255,24 @@
         }
       },
       "comments": "Footer with no background, so the page shows behind the navigation bar",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_ion_items": {
+      "flow_type": "template",
+      "flow_name": "e2e_ion_items",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "LAYOUT": {
+            "page_padding": "0px"
+          }
+        }
+      },
+      "comments": "Accordion, radio list and combo box (Ionic items add their own side insets): check in landscape",
       "_source": {
         "name": "Debug Sheets",
         "path": "debug_sheets/debug_edge_to_edge.xlsx",
@@ -5284,6 +5313,27 @@
         }
       },
       "comments": "Keyboard with no footer and a sticky bottom group",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_light_header": {
+      "flow_type": "template",
+      "flow_name": "e2e_light_header",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "background": "none"
+          },
+          "LAYOUT": {
+            "page_padding": "0px"
+          }
+        }
+      },
+      "comments": "Header with no background (light) and the default dark footer: status bar icons dark, navigation bar icons light. Also tests the nav-stack backdrop over a light header",
       "_source": {
         "name": "Debug Sheets",
         "path": "debug_sheets/debug_edge_to_edge.xlsx",

@@ -5,11 +5,8 @@
   "rows": [
     {
       "type": "title",
-      "value": "Upgrading Checklist"
-    },
-    {
-      "type": "text",
-      "value": "0. Consider delaying a little bit following latest Capacitor version launch (e.g. v7.1, 8.1 etc.). It is likely that 3rd party plugins will take time to align with latest capacitor version\n\n1. Follow the Upgrade Guides in [Capacitor Docs](https://capacitorjs.com/docs/) to peform initial upgrade\n\n2. Check for any variables that will not have automatically been upgraded by capacitor because they sit in `.template` files, e.g. `ios/App/App.xcodeproj/project.template.pbxproj` and `android/app/build.template.gradle`\n\n3. Ensure IOS pods correct\n```sh\nyarn workflow ios configure # This is to generate a valid App.xcodeproj/project.pbxproj file, which is required for `pod install`\ncd ios/App\nrm podfile.lock\npod install --repo-update\n```\n\n4. Review any breaking plugin changes mentioned in capacitor docs\n\n5. Check for updates to any community or 3rd party capacitor plugins, using repo docs to identify breaking changes\n\n6. Use examples in this sheet to test native functionality on web, ios and native. Ensure this sheet is updated to include any recent additions\n\n---"
+      "value": "Upgrading Checklist (see sheet comment)",
+      "comments": "0. Consider delaying a little bit following latest Capacitor version launch (e.g. v7.1, 8.1 etc.). It is likely that 3rd party plugins will take time to align with latest capacitor version\n\n1. Follow the Upgrade Guides in [Capacitor Docs](https://capacitorjs.com/docs/) to peform initial upgrade\n\n2. Check for any variables that will not have automatically been upgraded by capacitor because they sit in `.template` files, e.g. `ios/App/App.xcodeproj/project.template.pbxproj` and `android/app/build.template.gradle`\n\n3. Ensure IOS pods correct\n```sh\nyarn workflow ios configure # This is to generate a valid App.xcodeproj/project.pbxproj file, which is required for `pod install`\ncd ios/App\nrm podfile.lock\npod install --repo-update\n```\n\n4. Review any breaking plugin changes mentioned in capacitor docs\n\n5. Check for updates to any community or 3rd party capacitor plugins, using repo docs to identify breaking changes\n\n6. Use examples in this sheet to test native functionality on web, ios and native. Ensure this sheet is updated to include any recent additions\n\n---"
     },
     {
       "type": "title",

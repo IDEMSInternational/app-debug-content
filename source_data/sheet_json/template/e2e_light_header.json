@@ -1,0 +1,41 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_light_header",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "background": "none"
+      },
+      "LAYOUT": {
+        "page_padding": "0px"
+      }
+    }
+  },
+  "comments": "Header with no background (light) and the default dark footer: status bar icons dark, navigation bar icons light. Also tests the nav-stack backdrop over a light header",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Status bar icons must be dark (light header). Navigation bar icons must be light (dark footer)."
+    },
+    {
+      "type": "button",
+      "value": "Open nav-stack: status bar icons must stay dark",
+      "action_list": "click | nav_stack: open | template: e2e_markers, title: Stack title;"
+    },
+    {
+      "type": "button",
+      "value": "Open pop-up",
+      "action_list": "click | pop_up: e2e_markers;"
+    },
+    {
+      "type": "begin_template",
+      "name": "e2e_markers",
+      "value": "e2e_markers"
+    },
+    {
+      "type": "end_template"
+    }
+  ]
+}
