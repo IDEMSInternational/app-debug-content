@@ -54,6 +54,32 @@
     },
     {
       "type": "title",
+      "value": "@capacitor-firebase/app-check, @capacitor-firebase/functions"
+    },
+    {
+      "type": "text",
+      "value": "Call the function `rapidproUserData` with the parameter key `rapidpro_uuid` and value `700c4bd4-c7e5-4414-9ff2-2b1ff2571947` (RapidPro test contact). The call only succeeds if App Check accepts the app. Production builds attest with App Attest (iOS) or Play Integrity (Android), which can reject a locally signed build. Non-production builds use the debug provider, whose token must first be registered in the Firebase console (see src/app/feature/remote-function/README.md)."
+    },
+    {
+      "type": "button",
+      "value": "Go to remote functions debug page",
+      "action_list": "click | go_to: /remote-functions"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/storage"
+    },
+    {
+      "type": "text",
+      "value": "Used to download asset packs. Download pack 1 and check the metadata panel shows it downloaded, with all its files."
+    },
+    {
+      "type": "button",
+      "value": "Go to remote assets debug page",
+      "action_list": "click | go_to: debug_remote_assets"
+    },
+    {
+      "type": "title",
       "value": "@capacitor-firebase/performance"
     },
     {

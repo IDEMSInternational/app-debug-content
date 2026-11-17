@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 561 |
+| button | 563 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -79,13 +79,13 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 171 |
-| text | 1597 |
+| text | 1599 |
 | text_area | 16 |
 | text_box | 89 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 733 |
+| title | 735 |
 | toggle_bar | 84 |
 | update_action_list | 4 |
 | video | 4 |
@@ -119,7 +119,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 14 |
-| go_to | 114 |
+| go_to | 116 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |

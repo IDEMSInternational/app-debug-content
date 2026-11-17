@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 561
+        "count": 563
       },
       {
         "type": "calendar",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text",
-        "count": 1597
+        "count": 1599
       },
       {
         "type": "text_area",
@@ -331,7 +331,7 @@
       },
       {
         "type": "title",
-        "count": 733
+        "count": 735
       },
       {
         "type": "toggle_bar",
@@ -443,7 +443,7 @@
       },
       {
         "type": "go_to",
-        "count": 114
+        "count": 116
       },
       {
         "type": "go_to_url",
