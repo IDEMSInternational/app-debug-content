@@ -1,0 +1,82 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_light_header",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "background": "none"
+      },
+      "LAYOUT": {
+        "page_padding": "0px"
+      }
+    }
+  },
+  "comments": "Header with no background (light) and the default dark footer: status bar icons dark, navigation bar icons light. Also tests the nav-stack backdrop over a light header",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Status bar icons must be dark (light header). Navigation bar icons must be light (dark footer).",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "button",
+      "value": "Open nav-stack: status bar icons must stay dark",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: e2e_markers, title: Stack title",
+          "params": {
+            "template": "e2e_markers",
+            "title": "Stack title"
+          }
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "button",
+      "value": "Open pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "e2e_markers"
+          ],
+          "_raw": "click | pop_up: e2e_markers"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    },
+    {
+      "type": "template",
+      "name": "e2e_markers",
+      "value": "e2e_markers",
+      "rows": [],
+      "_nested_name": "e2e_markers"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}

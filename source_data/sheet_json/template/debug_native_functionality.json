@@ -5,11 +5,8 @@
   "rows": [
     {
       "type": "title",
-      "value": "Upgrading Checklist"
-    },
-    {
-      "type": "text",
-      "value": "0. Consider delaying a little bit following latest Capacitor version launch (e.g. v7.1, 8.1 etc.). It is likely that 3rd party plugins will take time to align with latest capacitor version\n\n1. Follow the Upgrade Guides in [Capacitor Docs](https://capacitorjs.com/docs/) to peform initial upgrade\n\n2. Check for any variables that will not have automatically been upgraded by capacitor because they sit in `.template` files, e.g. `ios/App/App.xcodeproj/project.template.pbxproj` and `android/app/build.template.gradle`\n\n3. Ensure IOS pods correct\n```sh\nyarn workflow ios configure # This is to generate a valid App.xcodeproj/project.pbxproj file, which is required for `pod install`\ncd ios/App\nrm podfile.lock\npod install --repo-update\n```\n\n4. Review any breaking plugin changes mentioned in capacitor docs\n\n5. Check for updates to any community or 3rd party capacitor plugins, using repo docs to identify breaking changes\n\n6. Use examples in this sheet to test native functionality on web, ios and native. Ensure this sheet is updated to include any recent additions\n\n---"
+      "value": "Upgrading Checklist (see sheet comment)",
+      "comments": "0. Consider delaying a little bit following latest Capacitor version launch (e.g. v7.1, 8.1 etc.). It is likely that 3rd party plugins will take time to align with latest capacitor version\n\n1. Follow the Upgrade Guides in [Capacitor Docs](https://capacitorjs.com/docs/) to peform initial upgrade\n\n2. Check for any variables that will not have automatically been upgraded by capacitor because they sit in `.template` files, e.g. `ios/App/App.xcodeproj/project.template.pbxproj` and `android/app/build.template.gradle`\n\n3. Ensure IOS pods correct\n```sh\nyarn workflow ios configure # This is to generate a valid App.xcodeproj/project.pbxproj file, which is required for `pod install`\ncd ios/App\nrm podfile.lock\npod install --repo-update\n```\n\n4. Review any breaking plugin changes mentioned in capacitor docs\n\n5. Check for updates to any community or 3rd party capacitor plugins, using repo docs to identify breaking changes\n\n6. Use examples in this sheet to test native functionality on web, ios and native. Ensure this sheet is updated to include any recent additions\n\n---"
     },
     {
       "type": "title",
@@ -54,6 +51,32 @@
       "type": "button",
       "value": "Go to example_auth",
       "action_list": "click | go_to :  example_auth"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/app-check, @capacitor-firebase/functions"
+    },
+    {
+      "type": "text",
+      "value": "Call the function `rapidproUserData` with the parameter key `rapidpro_uuid` and value `700c4bd4-c7e5-4414-9ff2-2b1ff2571947` (RapidPro test contact). The call only succeeds if App Check accepts the app. Production builds attest with App Attest (iOS) or Play Integrity (Android), which can reject a locally signed build. Non-production builds use the debug provider, whose token must first be registered in the Firebase console (see src/app/feature/remote-function/README.md)."
+    },
+    {
+      "type": "button",
+      "value": "Go to remote functions debug page",
+      "action_list": "click | go_to: /remote-functions"
+    },
+    {
+      "type": "title",
+      "value": "@capacitor-firebase/storage"
+    },
+    {
+      "type": "text",
+      "value": "Used to download asset packs. Download pack 1 and check the metadata panel shows it downloaded, with all its files."
+    },
+    {
+      "type": "button",
+      "value": "Go to remote assets debug page",
+      "action_list": "click | go_to: debug_remote_assets"
     },
     {
       "type": "title",

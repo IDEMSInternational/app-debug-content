@@ -81,6 +81,39 @@
     },
     {
       "type": "title",
+      "value": "System bar icons and themes"
+    },
+    {
+      "type": "text",
+      "value": "Status bar and navigation bar icons must be dark on light backgrounds and light on dark backgrounds. Check them on each page below, and again after switching theme."
+    },
+    {
+      "type": "button",
+      "value": "Light header, dark footer",
+      "action_list": "click | go_to: e2e_light_header"
+    },
+    {
+      "type": "button",
+      "value": "Sticky bottom group with footer",
+      "action_list": "click | go_to: e2e_footer_sticky"
+    },
+    {
+      "type": "button",
+      "value": "Accordion and lists (rotate to landscape)",
+      "action_list": "click | go_to: e2e_ion_items"
+    },
+    {
+      "type": "button",
+      "value": "Theme: plh_kids_teens_mx (light footer)",
+      "action_list": "click | emit: set_theme: plh_kids_teens_mx"
+    },
+    {
+      "type": "button",
+      "value": "Theme: default",
+      "action_list": "click | emit: set_theme: default"
+    },
+    {
+      "type": "title",
       "value": "Related debug pages"
     },
     {

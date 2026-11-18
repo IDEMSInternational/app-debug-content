@@ -251,12 +251,127 @@
     },
     {
       "type": "title",
-      "value": "Related debug pages",
+      "value": "System bar icons and themes",
       "_translations": {
         "value": {}
       },
       "name": "title_18",
       "_nested_name": "title_18"
+    },
+    {
+      "type": "text",
+      "value": "Status bar and navigation bar icons must be dark on light backgrounds and light on dark backgrounds. Check them on each page below, and again after switching theme.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_19",
+      "_nested_name": "text_19"
+    },
+    {
+      "type": "button",
+      "value": "Light header, dark footer",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "e2e_light_header"
+          ],
+          "_raw": "click | go_to: e2e_light_header"
+        }
+      ],
+      "name": "button_20",
+      "_nested_name": "button_20"
+    },
+    {
+      "type": "button",
+      "value": "Sticky bottom group with footer",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "e2e_footer_sticky"
+          ],
+          "_raw": "click | go_to: e2e_footer_sticky"
+        }
+      ],
+      "name": "button_21",
+      "_nested_name": "button_21"
+    },
+    {
+      "type": "button",
+      "value": "Accordion and lists (rotate to landscape)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "e2e_ion_items"
+          ],
+          "_raw": "click | go_to: e2e_ion_items"
+        }
+      ],
+      "name": "button_22",
+      "_nested_name": "button_22"
+    },
+    {
+      "type": "button",
+      "value": "Theme: plh_kids_teens_mx (light footer)",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "set_theme",
+            "plh_kids_teens_mx"
+          ],
+          "_raw": "click | emit: set_theme: plh_kids_teens_mx"
+        }
+      ],
+      "name": "button_23",
+      "_nested_name": "button_23"
+    },
+    {
+      "type": "button",
+      "value": "Theme: default",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "set_theme",
+            "default"
+          ],
+          "_raw": "click | emit: set_theme: default"
+        }
+      ],
+      "name": "button_24",
+      "_nested_name": "button_24"
+    },
+    {
+      "type": "title",
+      "value": "Related debug pages",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_25",
+      "_nested_name": "title_25"
     },
     {
       "type": "button",
@@ -274,8 +389,8 @@
           "_raw": "click | go_to: feat_app_layout_no_header"
         }
       ],
-      "name": "button_19",
-      "_nested_name": "button_19"
+      "name": "button_26",
+      "_nested_name": "button_26"
     },
     {
       "type": "button",
@@ -293,8 +408,8 @@
           "_raw": "click | go_to: feat_display_group_sticky"
         }
       ],
-      "name": "button_20",
-      "_nested_name": "button_20"
+      "name": "button_27",
+      "_nested_name": "button_27"
     },
     {
       "type": "button",
@@ -312,8 +427,8 @@
           "_raw": "click | go_to: feat_nav_stack"
         }
       ],
-      "name": "button_21",
-      "_nested_name": "button_21"
+      "name": "button_28",
+      "_nested_name": "button_28"
     },
     {
       "type": "button",
@@ -331,8 +446,8 @@
           "_raw": "click | go_to: example_pop_ups"
         }
       ],
-      "name": "button_22",
-      "_nested_name": "button_22"
+      "name": "button_29",
+      "_nested_name": "button_29"
     },
     {
       "type": "button",
@@ -350,8 +465,8 @@
           "_raw": "click | go_to: feature_screen_orientation"
         }
       ],
-      "name": "button_23",
-      "_nested_name": "button_23"
+      "name": "button_30",
+      "_nested_name": "button_30"
     },
     {
       "type": "button",
@@ -369,8 +484,8 @@
           "_raw": "click | go_to: feature_set_theme"
         }
       ],
-      "name": "button_24",
-      "_nested_name": "button_24"
+      "name": "button_31",
+      "_nested_name": "button_31"
     },
     {
       "type": "button",
@@ -388,8 +503,8 @@
           "_raw": "click | go_to: feature_rtl_language"
         }
       ],
-      "name": "button_25",
-      "_nested_name": "button_25"
+      "name": "button_32",
+      "_nested_name": "button_32"
     }
   ],
   "_source": {

@@ -5,19 +5,19 @@
 | --- | --- |
 | @events | 1 |
 | @item.input_type | 1 |
-| accordion | 8 |
-| accordion_section | 20 |
+| accordion | 9 |
+| accordion_section | 22 |
 | advanced_dashed_box | 4 |
 | animated_section | 9 |
 | animated_slides | 1 |
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 553 |
+| button | 563 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
-| combo_box | 93 |
+| combo_box | 94 |
 | dashed_box | 19 |
 | data_items | 129 |
 | data_query | 8 |
@@ -25,7 +25,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 293 |
+| display_group | 294 |
 | drawer | 2 |
 | form | 9 |
 | google_sign_in_button | 14 |
@@ -61,14 +61,14 @@
 | radio_button_grid | 24 |
 | radio_group | 61 |
 | radio_group_grid | 5 |
-| radio_list | 12 |
+| radio_list | 13 |
 | round_button | 31 |
 | select_text | 7 |
 | set_default | 1 |
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 965 |
+| set_variable | 966 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -78,14 +78,14 @@
 | tabs | 2 |
 | task_card | 32 |
 | task_progress_bar | 11 |
-| template | 168 |
-| text | 1593 |
+| template | 171 |
+| text | 1599 |
 | text_area | 16 |
 | text_box | 89 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 732 |
+| title | 735 |
 | toggle_bar | 84 |
 | update_action_list | 4 |
 | video | 4 |
@@ -115,20 +115,20 @@
 | emit: server_sync | 9 |
 | emit: set_language | 6 |
 | emit: set_skin | 1 |
-| emit: set_theme | 2 |
+| emit: set_theme | 4 |
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 14 |
-| go_to | 110 |
+| go_to | 116 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |
-| nav_stack | 15 |
+| nav_stack | 16 |
 | notification | 8 |
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 74 |
+| pop_up | 75 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -321,7 +321,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 123 |
 | template | component_demo | 78 |
-| template | debug | 323 |
+| template | debug | 326 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

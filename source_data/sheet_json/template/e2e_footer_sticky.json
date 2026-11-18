@@ -1,0 +1,29 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_footer_sticky",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Sticky bottom group on a page with the default header and footer: it must sit directly on the footer with no gap",
+  "rows": [
+    {
+      "type": "begin_template",
+      "name": "e2e_markers",
+      "value": "e2e_markers"
+    },
+    {
+      "type": "end_template"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom; style: background_solid;"
+    },
+    {
+      "type": "button",
+      "value": "Sticky bottom: directly on the footer, no gap",
+      "action_list": "click | go_to: debug_edge_to_edge"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}
