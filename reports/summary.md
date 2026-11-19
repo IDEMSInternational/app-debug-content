@@ -153,9 +153,9 @@
 </details>
 
 <details open>
-<summary><h2>Estimated App Storage</h2></summary>
+<summary><h2>Estimated App Size on Device</h2></summary>
 
-Estimated space the app takes up on an Android or iOS device. Asset packs are unzipped once downloaded and the zip is not kept, so each pack takes up its unzipped size. Users only have the packs the app has downloaded for them, so actual storage falls between the two totals.
+Estimated space the app takes up on an Android or iOS device. Asset packs are unzipped once downloaded and the zip is not kept, so each pack takes up its unzipped size. Users only have the packs the app has downloaded for them, so the actual size on a device falls between the two totals.
 
 | item | download | on_device |
 | --- | --- | --- |
