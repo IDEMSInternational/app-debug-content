@@ -1,0 +1,226 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_sticky_img_overlay",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Content for the fullscreen pop-up and nav-stack cases",
+  "rows": [
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "variant": "inline_padding",
+        "background_image_asset": "images/activity_bg.svg",
+        "background_image_position": "right top"
+      },
+      "style_list": [
+        "min-height: 118px",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "value": "TOP LEFT",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_2.text_1"
+        },
+        {
+          "type": "text",
+          "value": "TOP RIGHT",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "right"
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_2.text_2"
+        }
+      ],
+      "name": "display_group_2",
+      "_nested_name": "display_group_2"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 1. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_4",
+      "_nested_name": "text_4"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 2. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_5",
+      "_nested_name": "text_5"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 3. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_6",
+      "_nested_name": "text_6"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 4. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 5. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_8",
+      "_nested_name": "text_8"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 6. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_9",
+      "_nested_name": "text_9"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 7. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_10",
+      "_nested_name": "text_10"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 8. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_11",
+      "_nested_name": "text_11"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 9. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_12",
+      "_nested_name": "text_12"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 10. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_13",
+      "_nested_name": "text_13"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 11. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_14",
+      "_nested_name": "text_14"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 12. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_15",
+      "_nested_name": "text_15"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 13. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_16",
+      "_nested_name": "text_16"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 14. The page scrolls behind the sticky groups.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_17",
+      "_nested_name": "text_17"
+    },
+    {
+      "type": "text",
+      "value": "END OF PAGE: this row must be fully visible above the sticky group",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_18",
+      "_nested_name": "text_18"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "variant": "inline_padding",
+        "background_image_asset": "images/bottom_image.svg",
+        "background_image_position": "left bottom"
+      },
+      "style_list": [
+        "min-height: 88px",
+        "width: 100%",
+        "justify-content: space-between"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "value": "BOTTOM LEFT",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_19.text_1"
+        },
+        {
+          "type": "text",
+          "value": "BOTTOM RIGHT",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "right"
+          },
+          "name": "text_2",
+          "_nested_name": "display_group_19.text_2"
+        }
+      ],
+      "name": "display_group_19",
+      "_nested_name": "display_group_19"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}

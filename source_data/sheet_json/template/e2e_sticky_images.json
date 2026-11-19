@@ -1,0 +1,37 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_sticky_images",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Index of sticky display groups with image backgrounds, issue #3607",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Sticky image test cases"
+    },
+    {
+      "type": "text",
+      "value": "Images must reach the edge of the screen behind the system bars wherever a sticky group touches that edge. The LEFT and RIGHT labels must stay fully visible and clear of the system bars. Test in portrait and in both landscape directions."
+    },
+    {
+      "type": "button",
+      "value": "Images, no header or footer",
+      "action_list": "click | go_to: e2e_sticky_img_no_shell"
+    },
+    {
+      "type": "button",
+      "value": "Image above a footer",
+      "action_list": "click | go_to: e2e_sticky_img_footer"
+    },
+    {
+      "type": "button",
+      "value": "Images in a fullscreen pop-up",
+      "action_list": "click | pop_up: e2e_sticky_img_overlay | fullscreen: true;"
+    },
+    {
+      "type": "button",
+      "value": "Images in a nav-stack",
+      "action_list": "click | nav_stack: open | template: e2e_sticky_img_overlay, header: false;"
+    }
+  ]
+}

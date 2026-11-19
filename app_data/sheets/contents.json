@@ -5460,6 +5460,60 @@
         "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
       }
     },
+    "e2e_sticky_images": {
+      "flow_type": "template",
+      "flow_name": "e2e_sticky_images",
+      "flow_subtype": "debug",
+      "comments": "Index of sticky display groups with image backgrounds, issue #3607",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_sticky_img_footer": {
+      "flow_type": "template",
+      "flow_name": "e2e_sticky_img_footer",
+      "flow_subtype": "debug",
+      "comments": "Sticky bottom image directly above the default footer",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_sticky_img_no_shell": {
+      "flow_type": "template",
+      "flow_name": "e2e_sticky_img_no_shell",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "hidden": true
+          },
+          "APP_FOOTER_DEFAULTS": {
+            "template": false
+          }
+        }
+      },
+      "comments": "Sticky images on a page with no header or footer",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
+    "e2e_sticky_img_overlay": {
+      "flow_type": "template",
+      "flow_name": "e2e_sticky_img_overlay",
+      "flow_subtype": "debug",
+      "comments": "Content for the fullscreen pop-up and nav-stack cases",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
     "e2e_sticky_page": {
       "flow_type": "template",
       "flow_name": "e2e_sticky_page",
