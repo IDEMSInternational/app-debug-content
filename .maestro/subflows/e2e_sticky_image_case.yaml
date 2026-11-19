@@ -1,0 +1,17 @@
+# Screenshots a page with sticky image groups in portrait and both landscape directions.
+# env: NAME (screenshot prefix), WAIT (text shown on the page)
+appId: ${APP_ID || "international.idems.debug_app"}
+---
+- extendedWaitUntil:
+    visible: ${WAIT}
+    timeout: 10000
+- waitForAnimationToEnd
+- takeScreenshot: ${NAME + "-portrait"}
+- setOrientation: LANDSCAPE_LEFT
+- waitForAnimationToEnd
+- takeScreenshot: ${NAME + "-landscape-left"}
+- setOrientation: LANDSCAPE_RIGHT
+- waitForAnimationToEnd
+- takeScreenshot: ${NAME + "-landscape-right"}
+- setOrientation: PORTRAIT
+- waitForAnimationToEnd

@@ -1,0 +1,45 @@
+# Fresh launch, then opens an index page through the template list.
+# env (optional): TEMPLATE (template name), TITLE (text shown on that page). Default: the edge-to-edge index.
+appId: ${APP_ID || "international.idems.debug_app"}
+---
+# A failed landscape run leaves the device rotated
+- setOrientation: PORTRAIT
+- launchApp:
+    clearState: true
+    permissions:
+      all: allow
+- extendedWaitUntil:
+    visible: "RTL language support"
+    timeout: 60000
+# iOS shows web view content behind the native splash screen, so wait for it to go
+- extendedWaitUntil:
+    notVisible:
+      id: "Splash"
+    timeout: 30000
+# iOS simulator "Apple Account Verification" system alert
+- tapOn:
+    text: "Not Now"
+    optional: true
+- takeScreenshot: 00-launch-popup
+- tapOn: "Close popup"
+- extendedWaitUntil:
+    visible: "Welcome to Debug"
+    timeout: 10000
+- waitForAnimationToEnd
+- takeScreenshot: 01-home
+- tapOn: "Templates"
+- extendedWaitUntil:
+    visible: "Select a Template"
+    timeout: 10000
+# The search box: its placeholder is not exposed on every WebView version, so find it by position
+- tapOn:
+    below: "Select a Template"
+- inputText: ${TEMPLATE || "debug_edge_to_edge"}
+- takeScreenshot: 02-template-search-keyboard
+# The search box holds the same text, so take the second match (the list item)
+- tapOn:
+    text: ${TEMPLATE || "debug_edge_to_edge"}
+    index: 1
+- extendedWaitUntil:
+    visible: ${TITLE || "Edge-to-edge test cases"}
+    timeout: 10000
