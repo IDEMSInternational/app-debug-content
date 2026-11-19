@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 563 |
+| button | 570 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -25,7 +25,7 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 294 |
+| display_group | 299 |
 | drawer | 2 |
 | form | 9 |
 | google_sign_in_button | 14 |
@@ -79,13 +79,13 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 171 |
-| text | 1599 |
+| text | 1655 |
 | text_area | 16 |
 | text_box | 89 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 735 |
+| title | 736 |
 | toggle_bar | 84 |
 | update_action_list | 4 |
 | video | 4 |
@@ -119,16 +119,16 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 14 |
-| go_to | 116 |
+| go_to | 121 |
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 6 |
-| nav_stack | 16 |
+| nav_stack | 17 |
 | notification | 8 |
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 75 |
+| pop_up | 76 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -230,10 +230,10 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | i18n/flags/tz.svg | 0.5 | 2 |
 | images/Faisal.png | 3.5 | 2 |
 | images/Noura.png | 4.2 | 8 |
-| images/activity_bg.svg | 13.8 | 7 |
+| images/activity_bg.svg | 13.8 | 9 |
 | images/avatar_1.png | 67.7 | 20 |
 | images/bg_illustration.png | 255.4 | 4 |
-| images/bottom_image.svg | 6.8 | 6 |
+| images/bottom_image.svg | 6.8 | 9 |
 | images/diamond.png | 4.3 | 1 |
 | images/example/110-536x354.jpg | 39.1 | 1 |
 | images/example/344-536x354.jpg | 13.9 | 1 |
@@ -321,7 +321,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 123 |
 | template | component_demo | 78 |
-| template | debug | 326 |
+| template | debug | 330 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

@@ -1,0 +1,61 @@
+# Sticky display groups with image backgrounds for the `debug` deployment, open-app-builder issue #3607.
+# Images must reach the screen edge behind the system bars wherever a sticky group touches that edge,
+# and the LEFT and RIGHT labels must stay fully visible. Check each screenshot.
+appId: ${APP_ID || "international.idems.debug_app"}
+tags:
+  - edge-to-edge
+---
+- runFlow:
+    file: subflows/e2e_open_index.yaml
+    env:
+      TEMPLATE: "e2e_sticky_images"
+      TITLE: "Sticky image test cases"
+# Page with no header or footer
+- tapOn: "Images, no header or footer"
+- runFlow:
+    file: subflows/e2e_sticky_image_case.yaml
+    env:
+      NAME: "70-no-shell"
+      WAIT: "TOP LEFT"
+# The last row must not be hidden by the sticky group
+- scrollUntilVisible:
+    element: "END OF PAGE.*"
+    direction: DOWN
+    timeout: 40000
+    visibilityPercentage: 100
+- swipe:
+    direction: UP
+- waitForAnimationToEnd
+- takeScreenshot: 71-no-shell-end-of-page
+- scrollUntilVisible:
+    element: "Back to sticky image cases"
+    direction: UP
+    timeout: 40000
+    centerElement: true
+- tapOn: "Back to sticky image cases"
+- waitForAnimationToEnd
+# Directly above the default footer
+- tapOn: "Image above a footer"
+- runFlow:
+    file: subflows/e2e_sticky_image_case.yaml
+    env:
+      NAME: "72-footer"
+      WAIT: "BOTTOM LEFT"
+- tapOn: "Back to sticky image cases"
+- waitForAnimationToEnd
+# Fullscreen pop-up
+- tapOn: "Images in a fullscreen pop-up"
+- runFlow:
+    file: subflows/e2e_sticky_image_case.yaml
+    env:
+      NAME: "73-pop-up"
+      WAIT: "TOP LEFT"
+- tapOn: "Close popup"
+- waitForAnimationToEnd
+# Nav-stack
+- tapOn: "Images in a nav-stack"
+- runFlow:
+    file: subflows/e2e_sticky_image_case.yaml
+    env:
+      NAME: "74-nav-stack"
+      WAIT: "TOP LEFT"

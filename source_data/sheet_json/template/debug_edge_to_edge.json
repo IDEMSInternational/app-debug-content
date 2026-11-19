@@ -150,6 +150,11 @@
       "type": "button",
       "value": "RTL language",
       "action_list": "click | go_to: feature_rtl_language"
+    },
+    {
+      "type": "button",
+      "value": "Sticky groups with image backgrounds",
+      "action_list": "click | go_to: e2e_sticky_images"
     }
   ]
 }

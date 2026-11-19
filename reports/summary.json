@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 563
+        "count": 570
       },
       {
         "type": "calendar",
@@ -91,7 +91,7 @@
       },
       {
         "type": "display_group",
-        "count": 294
+        "count": 299
       },
       {
         "type": "drawer",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text",
-        "count": 1599
+        "count": 1655
       },
       {
         "type": "text_area",
@@ -331,7 +331,7 @@
       },
       {
         "type": "title",
-        "count": 735
+        "count": 736
       },
       {
         "type": "toggle_bar",
@@ -443,7 +443,7 @@
       },
       {
         "type": "go_to",
-        "count": 116
+        "count": 121
       },
       {
         "type": "go_to_url",
@@ -459,7 +459,7 @@
       },
       {
         "type": "nav_stack",
-        "count": 16
+        "count": 17
       },
       {
         "type": "notification",
@@ -479,7 +479,7 @@
       },
       {
         "type": "pop_up",
-        "count": 75
+        "count": 76
       },
       {
         "type": "process_template",
@@ -791,7 +791,7 @@
       },
       {
         "path": "images/activity_bg.svg",
-        "count": 7,
+        "count": 9,
         "size_kb": 13.8
       },
       {
@@ -806,7 +806,7 @@
       },
       {
         "path": "images/bottom_image.svg",
-        "count": 6,
+        "count": 9,
         "size_kb": 6.8
       },
       {
@@ -1216,7 +1216,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 326
+        "total": 330
       },
       {
         "type": "template",

@@ -505,6 +505,25 @@
       ],
       "name": "button_32",
       "_nested_name": "button_32"
+    },
+    {
+      "type": "button",
+      "value": "Sticky groups with image backgrounds",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "e2e_sticky_images"
+          ],
+          "_raw": "click | go_to: e2e_sticky_images"
+        }
+      ],
+      "name": "button_33",
+      "_nested_name": "button_33"
     }
   ],
   "_source": {

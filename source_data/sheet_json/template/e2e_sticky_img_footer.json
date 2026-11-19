@@ -1,0 +1,91 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_sticky_img_footer",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Sticky bottom image directly above the default footer",
+  "rows": [
+    {
+      "type": "button",
+      "value": "Back to sticky image cases",
+      "action_list": "click | go_to: e2e_sticky_images"
+    },
+    {
+      "type": "text",
+      "value": "Filler row 1. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 2. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 3. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 4. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 5. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 6. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 7. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 8. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 9. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 10. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 11. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 12. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 13. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "Filler row 14. The page scrolls behind the sticky groups."
+    },
+    {
+      "type": "text",
+      "value": "END OF PAGE: this row must be fully visible above the sticky group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom; variant: inline_padding; background_image_asset: images/bottom_image.svg; background_image_position: left bottom;",
+      "style_list": "min-height: 88px; width: 100%; justify-content: space-between;"
+    },
+    {
+      "type": "text",
+      "value": "BOTTOM LEFT"
+    },
+    {
+      "type": "text",
+      "value": "BOTTOM RIGHT",
+      "parameter_list": "text_align: right;"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}
