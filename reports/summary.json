@@ -567,6 +567,55 @@
       }
     ]
   },
+  "app_size_on_device": {
+    "data": [
+      {
+        "item": "App code (estimate)",
+        "download": "-",
+        "on_device": "16.2 MB"
+      },
+      {
+        "item": "App content (sheets and translations)",
+        "download": "-",
+        "on_device": "4.5 MB"
+      },
+      {
+        "item": "Bundled assets",
+        "download": "-",
+        "on_device": "3.8 MB"
+      },
+      {
+        "item": "Bundled assets: base",
+        "download": "-",
+        "on_device": "3.7 MB"
+      },
+      {
+        "item": "Bundled assets: theme_default / es_sp",
+        "download": "-",
+        "on_device": "0.1 MB"
+      },
+      {
+        "item": "Bundled assets: theme_default / tz_sw",
+        "download": "-",
+        "on_device": "0 MB"
+      },
+      {
+        "item": "Total without asset packs",
+        "download": "-",
+        "on_device": "24.4 MB"
+      },
+      {
+        "item": "Asset pack: debug_asset_pack_1",
+        "download": "0.1 MB",
+        "on_device": "0.1 MB"
+      },
+      {
+        "item": "Total with all asset packs",
+        "download": "0.1 MB",
+        "on_device": "24.5 MB"
+      }
+    ]
+  },
   "assets_size": {
     "data": [
       {
