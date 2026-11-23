@@ -1,0 +1,172 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | set_field: debug_nav_enter_last: page",
+          "params": {
+            "set_field": "debug_nav_enter_last"
+          }
+        }
+      ],
+      "_nested_name": "on_enter"
+    },
+    {
+      "type": "text",
+      "name": "value_text",
+      "value": "Value set in stack: @fields.debug_nav_enter_value",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "value_text",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "Value set in stack: @fields.debug_nav_enter_value",
+            "matchedExpression": "@fields.debug_nav_enter_value",
+            "type": "fields",
+            "fieldName": "debug_nav_enter_value"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.debug_nav_enter_value": [
+          "value"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "open_stack",
+      "value": "Open nav stack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: debug_nav_enter_stack",
+          "params": {
+            "template": "debug_nav_enter_stack"
+          }
+        }
+      ],
+      "_nested_name": "open_stack"
+    },
+    {
+      "type": "button",
+      "name": "open_popup",
+      "value": "Open pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_nav_enter_popup"
+          ],
+          "_raw": "click | pop_up: debug_nav_enter_popup"
+        }
+      ],
+      "_nested_name": "open_popup"
+    },
+    {
+      "type": "button",
+      "name": "open_fullscreen",
+      "value": "Open fullscreen pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_nav_enter_popup"
+          ],
+          "_raw": "click | pop_up: debug_nav_enter_popup | fullscreen: true",
+          "params": {
+            "fullscreen": true
+          }
+        }
+      ],
+      "_nested_name": "open_fullscreen"
+    },
+    {
+      "type": "button",
+      "name": "go_page_2",
+      "value": "Go to page 2",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "debug_nav_enter_page_2"
+          ],
+          "_raw": "click | go_to: debug_nav_enter_page_2"
+        }
+      ],
+      "_nested_name": "go_page_2"
+    },
+    {
+      "type": "button",
+      "name": "go_same",
+      "value": "Go to this page",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "debug_nav_enter"
+          ],
+          "_raw": "click | go_to: debug_nav_enter"
+        }
+      ],
+      "_nested_name": "go_same"
+    },
+    {
+      "type": "button",
+      "name": "reload",
+      "value": "Force reload",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "click | emit: force_reload"
+        }
+      ],
+      "_nested_name": "reload"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_enter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+  }
+}

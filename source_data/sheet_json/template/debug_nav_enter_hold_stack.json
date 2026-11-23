@@ -1,0 +1,13 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_hold_stack",
+  "status": "released",
+  "rows": [
+    {
+      "type": "button",
+      "name": "finish",
+      "value": "Finish hold lesson",
+      "action_list": "click | set_field: debug_hold: true;\nclick | nav_stack: close_top;\nclick | pop_up: debug_nav_enter_reward"
+    }
+  ]
+}

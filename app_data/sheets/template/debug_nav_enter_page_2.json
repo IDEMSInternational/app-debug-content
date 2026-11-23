@@ -1,0 +1,47 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_page_2",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | set_field: debug_nav_enter_last: page_2",
+          "params": {
+            "set_field": "debug_nav_enter_last"
+          }
+        }
+      ],
+      "_nested_name": "on_enter"
+    },
+    {
+      "type": "button",
+      "name": "back",
+      "value": "Back",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav",
+          "args": [
+            "back"
+          ],
+          "_raw": "click | nav: back"
+        }
+      ],
+      "_nested_name": "back"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_enter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+  }
+}

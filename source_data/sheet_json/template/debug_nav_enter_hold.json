@@ -1,0 +1,25 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_hold",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "ask",
+      "action_list": "nav_enter | pop_up: debug_nav_enter_ask;\nnav_enter | set_field: debug_ask_shown: true",
+      "condition": "!@fields.debug_hold && !@fields.debug_ask_shown"
+    },
+    {
+      "type": "update_action_list",
+      "name": "clear_hold",
+      "action_list": "nav_enter | set_field: debug_hold: false",
+      "condition": "@fields.debug_hold"
+    },
+    {
+      "type": "button",
+      "name": "open_lesson",
+      "value": "Open hold lesson",
+      "action_list": "click | nav_stack: open | template: debug_nav_enter_hold_stack"
+    }
+  ]
+}

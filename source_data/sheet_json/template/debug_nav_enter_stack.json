@@ -1,0 +1,54 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_stack",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": "nav_enter | set_field: debug_nav_enter_last: stack"
+    },
+    {
+      "type": "button",
+      "name": "set_value",
+      "value": "Set value",
+      "action_list": "click | set_field: debug_nav_enter_value: @calc(Date.now())"
+    },
+    {
+      "type": "button",
+      "name": "open_stack_2",
+      "value": "Open second nav stack",
+      "action_list": "click | nav_stack: open | template: debug_nav_enter_stack_2"
+    },
+    {
+      "type": "button",
+      "name": "open_popup",
+      "value": "Open pop-up in stack",
+      "action_list": "click | pop_up: debug_nav_enter_popup"
+    },
+    {
+      "type": "button",
+      "name": "close",
+      "value": "Close",
+      "action_list": "click | nav_stack: close_top"
+    },
+    {
+      "type": "button",
+      "name": "close_all",
+      "value": "Close all",
+      "action_list": "click | nav_stack: close_all"
+    },
+    {
+      "type": "button",
+      "name": "close_then_popup",
+      "value": "Close, then pop-up",
+      "action_list": "click | nav_stack: close_top;\nclick | pop_up: debug_nav_enter_popup"
+    },
+    {
+      "type": "button",
+      "name": "close_then_go_to",
+      "value": "Close, then go to page 2",
+      "action_list": "click | nav_stack: close_top;\nclick | go_to: debug_nav_enter_page_2"
+    }
+  ]
+}

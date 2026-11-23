@@ -1,0 +1,53 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": "nav_enter | set_field: debug_nav_enter_last: page"
+    },
+    {
+      "type": "text",
+      "name": "value_text",
+      "value": "Value set in stack: @fields.debug_nav_enter_value"
+    },
+    {
+      "type": "button",
+      "name": "open_stack",
+      "value": "Open nav stack",
+      "action_list": "click | nav_stack: open | template: debug_nav_enter_stack"
+    },
+    {
+      "type": "button",
+      "name": "open_popup",
+      "value": "Open pop-up",
+      "action_list": "click | pop_up: debug_nav_enter_popup"
+    },
+    {
+      "type": "button",
+      "name": "open_fullscreen",
+      "value": "Open fullscreen pop-up",
+      "action_list": "click | pop_up: debug_nav_enter_popup | fullscreen: true"
+    },
+    {
+      "type": "button",
+      "name": "go_page_2",
+      "value": "Go to page 2",
+      "action_list": "click | go_to: debug_nav_enter_page_2"
+    },
+    {
+      "type": "button",
+      "name": "go_same",
+      "value": "Go to this page",
+      "action_list": "click | go_to: debug_nav_enter"
+    },
+    {
+      "type": "button",
+      "name": "reload",
+      "value": "Force reload",
+      "action_list": "click | emit: force_reload"
+    }
+  ]
+}

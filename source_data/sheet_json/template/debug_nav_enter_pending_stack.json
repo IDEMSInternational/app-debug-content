@@ -1,0 +1,13 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_pending_stack",
+  "status": "released",
+  "rows": [
+    {
+      "type": "button",
+      "name": "finish",
+      "value": "Finish pending lesson",
+      "action_list": "click | set_field: debug_pending: debug_nav_enter_reward;\nclick | nav_stack: close_top"
+    }
+  ]
+}

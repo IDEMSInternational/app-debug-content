@@ -1,0 +1,99 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_pending",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "show_pending",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | pop_up: @fields.debug_pending",
+          "params": {
+            "pop_up": "@fields.debug_pending"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | set_field: debug_pending: false",
+          "params": {
+            "set_field": "debug_pending"
+          }
+        }
+      ],
+      "condition": "@fields.debug_pending",
+      "_nested_name": "show_pending",
+      "_dynamicFields": {
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "nav_enter | pop_up: @fields.debug_pending",
+                "matchedExpression": "@fields.debug_pending",
+                "type": "fields",
+                "fieldName": "debug_pending"
+              }
+            ],
+            "params": {
+              "pop_up": [
+                {
+                  "fullExpression": "@fields.debug_pending",
+                  "matchedExpression": "@fields.debug_pending",
+                  "type": "fields",
+                  "fieldName": "debug_pending"
+                }
+              ]
+            }
+          }
+        },
+        "condition": [
+          {
+            "fullExpression": "@fields.debug_pending",
+            "matchedExpression": "@fields.debug_pending",
+            "type": "fields",
+            "fieldName": "debug_pending"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.debug_pending": [
+          "action_list.0._raw",
+          "action_list.0.params.pop_up",
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "open_lesson",
+      "value": "Open pending lesson",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: debug_nav_enter_pending_stack",
+          "params": {
+            "template": "debug_nav_enter_pending_stack"
+          }
+        }
+      ],
+      "_nested_name": "open_lesson"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_enter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+  }
+}

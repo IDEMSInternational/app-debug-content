@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 570 |
+| button | 593 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -79,15 +79,15 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 171 |
-| text | 1655 |
+| text | 1661 |
 | text_area | 16 |
 | text_box | 89 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 736 |
+| title | 737 |
 | toggle_bar | 84 |
-| update_action_list | 4 |
+| update_action_list | 12 |
 | video | 4 |
 | workshops_accordion | 2 |
 | youtube | 5 |
@@ -109,7 +109,7 @@
 | download_assets | 1 |
 | emit: @local.child_local_variable | 1 |
 | emit: completed | 36 |
-| emit: force_reload | 35 |
+| emit: force_reload | 36 |
 | emit: force_reprocess | 69 |
 | emit: force_restart | 4 |
 | emit: server_sync | 9 |
@@ -119,16 +119,17 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 14 |
-| go_to | 121 |
+| go_to | 124 |
 | go_to_url | 5 |
 | invalid_action | 1 |
-| nav | 6 |
-| nav_stack | 17 |
+| nav | 7 |
+| nav_enter | 10 |
+| nav_stack | 31 |
 | notification | 8 |
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 76 |
+| pop_up | 82 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -137,7 +138,7 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 23 |
-| set_field | 135 |
+| set_field | 138 |
 | set_item | 35 |
 | set_items | 2 |
 | set_local | 93 |
@@ -150,26 +151,6 @@
 | trigger_actions | 1 |
 | undefined | 64 |
 | user | 2 |
-</details>
-
-<details open>
-<summary><h2>Estimated App Size on Device</h2></summary>
-
-Estimated space the app takes up on an Android or iOS device. Asset packs are unzipped once downloaded and the zip is not kept, so each pack takes up its unzipped size. Users only have the packs the app has downloaded for them, so the actual size on a device falls between the two totals.
-
-| item | download | on_device |
-| --- | --- | --- |
-| App code (estimate) | - | 16.2 MB |
-| App content (sheets and translations) | - | 4.5 MB |
-| Bundled assets | - | 3.8 MB |
-| Bundled assets: base | - | 3.7 MB |
-| Bundled assets: theme_default / es_sp | - | 0.1 MB |
-| Bundled assets: theme_default / tz_sw | - | 0 MB |
-| Total without asset packs | - | 24.4 MB |
-| Asset pack: debug_asset_pack_1 | 0.1 MB | 0.1 MB |
-| Total with all asset packs | 0.1 MB | 24.5 MB |
-
-App code is a fixed estimate and excludes native Android and iOS code. Files that appear in more than one asset pack are stored once and counted once.
 </details>
 
 <details open>
@@ -339,9 +320,9 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | generator | example_generator | 2 |
 | global |  | 2 |
 | global | debug | 10 |
-| template |  | 123 |
+| template |  | 134 |
 | template | component_demo | 78 |
-| template | debug | 330 |
+| template | debug | 333 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

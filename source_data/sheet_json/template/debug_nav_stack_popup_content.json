@@ -1,0 +1,12 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_stack_popup_content",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Pop-up content. Close it with the close button: no copy of this pop-up should be left behind."
+    }
+  ]
+}

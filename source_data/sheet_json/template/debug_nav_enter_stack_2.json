@@ -1,0 +1,24 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_stack_2",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": "nav_enter | set_field: debug_nav_enter_last: stack_2"
+    },
+    {
+      "type": "button",
+      "name": "close",
+      "value": "Close second",
+      "action_list": "click | nav_stack: close_top"
+    },
+    {
+      "type": "button",
+      "name": "close_all",
+      "value": "Close all from second",
+      "action_list": "click | nav_stack: close_all"
+    }
+  ]
+}

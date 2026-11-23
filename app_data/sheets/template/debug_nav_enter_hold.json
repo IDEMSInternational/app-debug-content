@@ -1,0 +1,116 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_hold",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "ask",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | pop_up: debug_nav_enter_ask",
+          "params": {
+            "pop_up": "debug_nav_enter_ask"
+          }
+        },
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | set_field: debug_ask_shown: true",
+          "params": {
+            "set_field": "debug_ask_shown"
+          }
+        }
+      ],
+      "condition": "!@fields.debug_hold && !@fields.debug_ask_shown",
+      "_nested_name": "ask",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@fields.debug_hold && !@fields.debug_ask_shown",
+            "matchedExpression": "!@fields.debug_hold",
+            "type": "fields",
+            "fieldName": "debug_hold"
+          },
+          {
+            "fullExpression": "!@fields.debug_hold && !@fields.debug_ask_shown",
+            "matchedExpression": "!@fields.debug_ask_shown",
+            "type": "fields",
+            "fieldName": "debug_ask_shown"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@fields.debug_hold": [
+          "condition"
+        ],
+        "!@fields.debug_ask_shown": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "update_action_list",
+      "name": "clear_hold",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | set_field: debug_hold: false",
+          "params": {
+            "set_field": "debug_hold"
+          }
+        }
+      ],
+      "condition": "@fields.debug_hold",
+      "_nested_name": "clear_hold",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@fields.debug_hold",
+            "matchedExpression": "@fields.debug_hold",
+            "type": "fields",
+            "fieldName": "debug_hold"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@fields.debug_hold": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "name": "open_lesson",
+      "value": "Open hold lesson",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: debug_nav_enter_hold_stack",
+          "params": {
+            "template": "debug_nav_enter_hold_stack"
+          }
+        }
+      ],
+      "_nested_name": "open_lesson"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_enter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+  }
+}

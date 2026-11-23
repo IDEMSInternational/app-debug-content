@@ -1,0 +1,19 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_pending",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "show_pending",
+      "action_list": "nav_enter | pop_up: @fields.debug_pending;\nnav_enter | set_field: debug_pending: false",
+      "condition": "@fields.debug_pending"
+    },
+    {
+      "type": "button",
+      "name": "open_lesson",
+      "value": "Open pending lesson",
+      "action_list": "click | nav_stack: open | template: debug_nav_enter_pending_stack"
+    }
+  ]
+}
