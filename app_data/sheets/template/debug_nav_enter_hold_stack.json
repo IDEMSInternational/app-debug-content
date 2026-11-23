@@ -1,0 +1,48 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_hold_stack",
+  "status": "released",
+  "rows": [
+    {
+      "type": "button",
+      "name": "finish",
+      "value": "Finish hold lesson",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "debug_hold",
+            true
+          ],
+          "_raw": "click | set_field: debug_hold: true"
+        },
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "click | nav_stack: close_top"
+        },
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_nav_enter_reward"
+          ],
+          "_raw": "click | pop_up: debug_nav_enter_reward"
+        }
+      ],
+      "_nested_name": "finish"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_enter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+  }
+}

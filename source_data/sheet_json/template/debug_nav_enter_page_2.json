@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_page_2",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": "nav_enter | set_field: debug_nav_enter_last: page_2"
+    },
+    {
+      "type": "button",
+      "name": "back",
+      "value": "Back",
+      "action_list": "click | nav: back"
+    }
+  ]
+}

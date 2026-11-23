@@ -1,0 +1,37 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_popup",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_enter",
+          "args": [],
+          "_raw": "nav_enter | set_field: debug_nav_enter_last: popup",
+          "params": {
+            "set_field": "debug_nav_enter_last"
+          }
+        }
+      ],
+      "_nested_name": "on_enter"
+    },
+    {
+      "type": "text",
+      "value": "Pop-up content",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_3",
+      "_nested_name": "text_3"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_enter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_reward",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Reward pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_enter.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+  }
+}

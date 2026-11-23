@@ -3366,11 +3366,140 @@
   },
   {
     "flow_type": "template",
+    "flow_name": "debug_nav_enter",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_ask",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_hold",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_hold_stack",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_page_2",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_pending",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_pending_stack",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_popup",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_reward",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_stack",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_name": "debug_nav_enter_stack_2",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_enter.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/1oa1PQTHsu7X82k99VEf8b2Rx-rsHiBDZ"
+    }
+  },
+  {
+    "flow_type": "template",
     "flow_name": "debug_nav_stack_header",
     "_source": {
       "name": "Debug Sheets",
       "path": "debug_sheets/debug_nav_stack_header.xlsx",
       "url": "https://docs.google.com/spreadsheets/d/1oYFIMFUJKC5-DObNl52B9dsEJOJmn2zrbmxO6cRFxGA"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_nav_stack_popup",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_stack_popup.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/14iEToZYzykw1HGy4ZdjcKeI4b3M95wYY"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_nav_stack_popup_content",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_stack_popup.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/14iEToZYzykw1HGy4ZdjcKeI4b3M95wYY"
+    }
+  },
+  {
+    "flow_type": "template",
+    "flow_subtype": "debug",
+    "flow_name": "debug_nav_stack_popup_stack",
+    "_source": {
+      "name": "Debug Sheets",
+      "path": "debug_sheets/debug_nav_stack_popup.xlsx",
+      "url": "https://docs.google.com/spreadsheets/d/14iEToZYzykw1HGy4ZdjcKeI4b3M95wYY"
     }
   },
   {

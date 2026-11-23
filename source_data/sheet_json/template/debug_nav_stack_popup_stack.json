@@ -1,0 +1,22 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_stack_popup_stack",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "This template is open in a nav stack. Tap \"Pop-up\": one pop-up should open over the stack."
+    },
+    {
+      "type": "button",
+      "value": "Pop-up",
+      "action_list": "click | pop_up: debug_nav_stack_popup_content;"
+    },
+    {
+      "type": "button",
+      "value": "Close nav stack",
+      "action_list": "click | nav_stack: close_top;"
+    }
+  ]
+}

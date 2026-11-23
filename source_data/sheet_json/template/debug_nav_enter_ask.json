@@ -1,0 +1,11 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_ask",
+  "status": "released",
+  "rows": [
+    {
+      "type": "text",
+      "value": "Ask pop-up"
+    }
+  ]
+}

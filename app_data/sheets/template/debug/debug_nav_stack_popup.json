@@ -1,0 +1,46 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_stack_popup",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Index: pop-ups opened from a nav stack, issue #3810",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Pop-up from inside a nav stack",
+      "_translations": {
+        "value": {}
+      },
+      "name": "title_2",
+      "_nested_name": "title_2"
+    },
+    {
+      "type": "button",
+      "value": "Open nav stack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "open"
+          ],
+          "_raw": "click | nav_stack: open | template: debug_nav_stack_popup_stack, title: Nav stack",
+          "params": {
+            "template": "debug_nav_stack_popup_stack",
+            "title": "Nav stack"
+          }
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_stack_popup.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/14iEToZYzykw1HGy4ZdjcKeI4b3M95wYY"
+  }
+}

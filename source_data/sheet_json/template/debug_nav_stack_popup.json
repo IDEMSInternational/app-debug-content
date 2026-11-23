@@ -1,0 +1,18 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_stack_popup",
+  "status": "released",
+  "flow_subtype": "debug",
+  "comments": "Index: pop-ups opened from a nav stack, issue #3810",
+  "rows": [
+    {
+      "type": "title",
+      "value": "Pop-up from inside a nav stack"
+    },
+    {
+      "type": "button",
+      "value": "Open nav stack",
+      "action_list": "click | nav_stack: open | template: debug_nav_stack_popup_stack, title: Nav stack;"
+    }
+  ]
+}

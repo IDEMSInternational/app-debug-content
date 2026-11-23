@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 570
+        "count": 593
       },
       {
         "type": "calendar",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text",
-        "count": 1655
+        "count": 1661
       },
       {
         "type": "text_area",
@@ -331,7 +331,7 @@
       },
       {
         "type": "title",
-        "count": 736
+        "count": 737
       },
       {
         "type": "toggle_bar",
@@ -339,7 +339,7 @@
       },
       {
         "type": "update_action_list",
-        "count": 4
+        "count": 12
       },
       {
         "type": "video",
@@ -403,7 +403,7 @@
       },
       {
         "type": "emit: force_reload",
-        "count": 35
+        "count": 36
       },
       {
         "type": "emit: force_reprocess",
@@ -443,7 +443,7 @@
       },
       {
         "type": "go_to",
-        "count": 121
+        "count": 124
       },
       {
         "type": "go_to_url",
@@ -455,11 +455,15 @@
       },
       {
         "type": "nav",
-        "count": 6
+        "count": 7
+      },
+      {
+        "type": "nav_enter",
+        "count": 10
       },
       {
         "type": "nav_stack",
-        "count": 17
+        "count": 31
       },
       {
         "type": "notification",
@@ -479,7 +483,7 @@
       },
       {
         "type": "pop_up",
-        "count": 76
+        "count": 82
       },
       {
         "type": "process_template",
@@ -515,7 +519,7 @@
       },
       {
         "type": "set_field",
-        "count": 135
+        "count": 138
       },
       {
         "type": "set_item",
@@ -564,55 +568,6 @@
       {
         "type": "user",
         "count": 2
-      }
-    ]
-  },
-  "app_size_on_device": {
-    "data": [
-      {
-        "item": "App code (estimate)",
-        "download": "-",
-        "on_device": "16.2 MB"
-      },
-      {
-        "item": "App content (sheets and translations)",
-        "download": "-",
-        "on_device": "4.5 MB"
-      },
-      {
-        "item": "Bundled assets",
-        "download": "-",
-        "on_device": "3.8 MB"
-      },
-      {
-        "item": "Bundled assets: base",
-        "download": "-",
-        "on_device": "3.7 MB"
-      },
-      {
-        "item": "Bundled assets: theme_default / es_sp",
-        "download": "-",
-        "on_device": "0.1 MB"
-      },
-      {
-        "item": "Bundled assets: theme_default / tz_sw",
-        "download": "-",
-        "on_device": "0 MB"
-      },
-      {
-        "item": "Total without asset packs",
-        "download": "-",
-        "on_device": "24.4 MB"
-      },
-      {
-        "item": "Asset pack: debug_asset_pack_1",
-        "download": "0.1 MB",
-        "on_device": "0.1 MB"
-      },
-      {
-        "item": "Total with all asset packs",
-        "download": "0.1 MB",
-        "on_device": "24.5 MB"
       }
     ]
   },
@@ -1255,7 +1210,7 @@
       {
         "type": "template",
         "subtype": null,
-        "total": 123
+        "total": 134
       },
       {
         "type": "template",
@@ -1265,7 +1220,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 330
+        "total": 333
       },
       {
         "type": "template",

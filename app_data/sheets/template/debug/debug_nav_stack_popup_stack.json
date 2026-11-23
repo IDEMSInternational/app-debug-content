@@ -1,0 +1,60 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_stack_popup_stack",
+  "status": "released",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "text",
+      "value": "This template is open in a nav stack. Tap \"Pop-up\": one pop-up should open over the stack.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_2",
+      "_nested_name": "text_2"
+    },
+    {
+      "type": "button",
+      "value": "Pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "debug_nav_stack_popup_content"
+          ],
+          "_raw": "click | pop_up: debug_nav_stack_popup_content"
+        }
+      ],
+      "name": "button_3",
+      "_nested_name": "button_3"
+    },
+    {
+      "type": "button",
+      "value": "Close nav stack",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "nav_stack",
+          "args": [
+            "close_top"
+          ],
+          "_raw": "click | nav_stack: close_top"
+        }
+      ],
+      "name": "button_4",
+      "_nested_name": "button_4"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_nav_stack_popup.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/14iEToZYzykw1HGy4ZdjcKeI4b3M95wYY"
+  }
+}

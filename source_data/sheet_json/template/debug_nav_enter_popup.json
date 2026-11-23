@@ -1,0 +1,16 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_nav_enter_popup",
+  "status": "released",
+  "rows": [
+    {
+      "type": "update_action_list",
+      "name": "on_enter",
+      "action_list": "nav_enter | set_field: debug_nav_enter_last: popup"
+    },
+    {
+      "type": "text",
+      "value": "Pop-up content"
+    }
+  ]
+}
