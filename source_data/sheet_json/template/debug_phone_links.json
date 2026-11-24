@@ -1,0 +1,118 @@
+{
+  "flow_type": "template",
+  "flow_name": "debug_phone_links",
+  "status": "released",
+  "comments": "Tap-to-call / sms / WhatsApp links; see plh-kids-teens-app-mx-content#132",
+  "flow_subtype": "debug",
+  "rows": [
+    {
+      "type": "title",
+      "name": "title",
+      "value": "Debug phone links (tel, sms, WhatsApp)"
+    },
+    {
+      "type": "text",
+      "name": "intro",
+      "value": "Tap each link and note what happens. **Do not press call or send**: only check which app opens and what it shows. All numbers are fake.",
+      "comments": "Context: plh-kids-teens-app-mx-content#132 (tap to call for support contacts)"
+    },
+    {
+      "type": "title",
+      "name": "title_markdown",
+      "value": "A. Markdown links in text",
+      "comments": "How authors could add tap-to-call to the current support pages"
+    },
+    {
+      "type": "text",
+      "name": "tel_basic",
+      "value": "A1. [📞 0000000000](tel:0000000000)\nExpect: dialer opens with 0000000000",
+      "comments": "Expected: dialer opens with the number filled in"
+    },
+    {
+      "type": "text",
+      "name": "tel_international",
+      "value": "A2. [📞 +52 55 0000 0000](tel:+525500000000)\nExpect: dialer opens with +525500000000",
+      "comments": "Expected: dialer, international format kept"
+    },
+    {
+      "type": "text",
+      "name": "tel_hyphens",
+      "value": "A3. [📞 800-000-0000](tel:800-000-0000)\nExpect: dialer opens with 800-000-0000 (or 8000000000)",
+      "comments": "Expected: dialer; hyphens allowed in tel: links"
+    },
+    {
+      "type": "text",
+      "name": "tel_spaces",
+      "value": "A4. [📞 55 0000 0000](tel:55 0000 0000)\nExpect: NOT a link (spaces are not allowed in the address part)",
+      "comments": "Authoring mistake case: shows what happens if authors keep spaces in the number"
+    },
+    {
+      "type": "text",
+      "name": "tel_ussd_encoded",
+      "value": "A5. [📞 \\*120\\*0000#](tel:*120*0000%23)\nExpect: dialer opens with *120*0000# (USSD, # written as %23)",
+      "comments": "ZA 'please call me' style code"
+    },
+    {
+      "type": "text",
+      "name": "tel_ussd_raw",
+      "value": "A6. [📞 \\*120\\*0000# (raw #)](tel:*120*0000#)\nExpect: dialer may drop the # and show *120*0000",
+      "comments": "Same as A5 but with a raw #, to see if the encoding is needed"
+    },
+    {
+      "type": "text",
+      "name": "sms_basic",
+      "value": "A7. [💬 SMS 0000000000](sms:0000000000)\nExpect: messaging app opens with the number",
+      "comments": "Expected: SMS app"
+    },
+    {
+      "type": "text",
+      "name": "sms_body",
+      "value": "A8. [💬 SMS with text](sms:0000000000?body=Hola)\nExpect: messaging app with the number and the text Hola",
+      "comments": "Android supports ?body=, iOS uses &body="
+    },
+    {
+      "type": "text",
+      "name": "whatsapp",
+      "value": "A9. [💬 WhatsApp](https://wa.me/5215500000000)\nExpect: WhatsApp (or the wa.me page) opens; it may say the number isn't on WhatsApp",
+      "comments": "Works like any web link"
+    },
+    {
+      "type": "text",
+      "name": "mailto",
+      "value": "A10. [✉️ Email](mailto:test@example.com)\nExpect: email app opens to test@example.com"
+    },
+    {
+      "type": "text",
+      "name": "plain_number",
+      "value": "A11. Plain number, no link: 📞 0000000000\nExpect: not tappable (control)",
+      "comments": "How numbers are written on the support pages today"
+    },
+    {
+      "type": "title",
+      "name": "title_buttons",
+      "value": "B. Buttons with go_to_url",
+      "comments": "Would allow a 'Llamar' button"
+    },
+    {
+      "type": "button",
+      "name": "button_tel",
+      "value": "B1. go_to_url: tel:0000000000",
+      "action_list": "click | go_to_url: tel:0000000000",
+      "comments": "Expected to FAIL: go_to_url splits on ':' and opens only '0000000000' (template-nav.service.ts go_to_url)"
+    },
+    {
+      "type": "button",
+      "name": "button_whatsapp",
+      "value": "B2. go_to_url: https://wa.me/5215500000000",
+      "action_list": "click | go_to_url: https://wa.me/5215500000000",
+      "comments": "Expected: WhatsApp / wa.me page opens"
+    },
+    {
+      "type": "button",
+      "name": "button_sms",
+      "value": "B3. go_to_url: sms:0000000000",
+      "action_list": "click | go_to_url: sms:0000000000",
+      "comments": "Expected to FAIL, same reason as B1"
+    }
+  ]
+}

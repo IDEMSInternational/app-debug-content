@@ -4431,6 +4431,17 @@
         "url": "https://docs.google.com/spreadsheets/d/1fSMNZSWxBRoH6WQCrT-xdd5kOJjpM-wW5RQM59uSGgQ"
       }
     },
+    "debug_phone_links": {
+      "flow_type": "template",
+      "flow_name": "debug_phone_links",
+      "comments": "Tap-to-call / sms / WhatsApp links; see plh-kids-teens-app-mx-content#132",
+      "flow_subtype": "debug",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_phone_links.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15cPrjvBqIY00qJwbnFZUTlVs7dBbGiLE"
+      }
+    },
     "debug_pop_up_bg": {
       "flow_type": "template",
       "flow_name": "debug_pop_up_bg",
