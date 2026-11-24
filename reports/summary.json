@@ -458,10 +458,6 @@
         "count": 7
       },
       {
-        "type": "nav_enter",
-        "count": 10
-      },
-      {
         "type": "nav_stack",
         "count": 31
       },
@@ -483,7 +479,7 @@
       },
       {
         "type": "pop_up",
-        "count": 82
+        "count": 84
       },
       {
         "type": "process_template",
@@ -519,7 +515,7 @@
       },
       {
         "type": "set_field",
-        "count": 138
+        "count": 146
       },
       {
         "type": "set_item",

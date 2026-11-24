@@ -8,22 +8,21 @@
       "name": "show_pending",
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "nav_enter",
-          "args": [],
-          "_raw": "nav_enter | pop_up: @fields.debug_pending",
-          "params": {
-            "pop_up": "@fields.debug_pending"
-          }
+          "trigger": "nav_enter",
+          "action_id": "pop_up",
+          "args": [
+            "@fields.debug_pending"
+          ],
+          "_raw": "nav_enter | pop_up: @fields.debug_pending"
         },
         {
-          "trigger": "click",
-          "action_id": "nav_enter",
-          "args": [],
-          "_raw": "nav_enter | set_field: debug_pending: false",
-          "params": {
-            "set_field": "debug_pending"
-          }
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "debug_pending",
+            false
+          ],
+          "_raw": "nav_enter | set_field: debug_pending: false"
         }
       ],
       "condition": "@fields.debug_pending",
@@ -31,16 +30,8 @@
       "_dynamicFields": {
         "action_list": {
           "0": {
-            "_raw": [
-              {
-                "fullExpression": "nav_enter | pop_up: @fields.debug_pending",
-                "matchedExpression": "@fields.debug_pending",
-                "type": "fields",
-                "fieldName": "debug_pending"
-              }
-            ],
-            "params": {
-              "pop_up": [
+            "args": {
+              "0": [
                 {
                   "fullExpression": "@fields.debug_pending",
                   "matchedExpression": "@fields.debug_pending",
@@ -48,7 +39,15 @@
                   "fieldName": "debug_pending"
                 }
               ]
-            }
+            },
+            "_raw": [
+              {
+                "fullExpression": "nav_enter | pop_up: @fields.debug_pending",
+                "matchedExpression": "@fields.debug_pending",
+                "type": "fields",
+                "fieldName": "debug_pending"
+              }
+            ]
           }
         },
         "condition": [
@@ -62,8 +61,8 @@
       },
       "_dynamicDependencies": {
         "@fields.debug_pending": [
+          "action_list.0.args.0",
           "action_list.0._raw",
-          "action_list.0.params.pop_up",
           "condition"
         ]
       }

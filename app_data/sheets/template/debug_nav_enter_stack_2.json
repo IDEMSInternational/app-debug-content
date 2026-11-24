@@ -8,13 +8,13 @@
       "name": "on_enter",
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "nav_enter",
-          "args": [],
-          "_raw": "nav_enter | set_field: debug_nav_enter_last: stack_2",
-          "params": {
-            "set_field": "debug_nav_enter_last"
-          }
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "debug_nav_enter_last",
+            "stack_2"
+          ],
+          "_raw": "nav_enter | set_field: debug_nav_enter_last: stack_2"
         }
       ],
       "_nested_name": "on_enter"

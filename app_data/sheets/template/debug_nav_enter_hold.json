@@ -8,22 +8,21 @@
       "name": "ask",
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "nav_enter",
-          "args": [],
-          "_raw": "nav_enter | pop_up: debug_nav_enter_ask",
-          "params": {
-            "pop_up": "debug_nav_enter_ask"
-          }
+          "trigger": "nav_enter",
+          "action_id": "pop_up",
+          "args": [
+            "debug_nav_enter_ask"
+          ],
+          "_raw": "nav_enter | pop_up: debug_nav_enter_ask"
         },
         {
-          "trigger": "click",
-          "action_id": "nav_enter",
-          "args": [],
-          "_raw": "nav_enter | set_field: debug_ask_shown: true",
-          "params": {
-            "set_field": "debug_ask_shown"
-          }
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "debug_ask_shown",
+            true
+          ],
+          "_raw": "nav_enter | set_field: debug_ask_shown: true"
         }
       ],
       "condition": "!@fields.debug_hold && !@fields.debug_ask_shown",
@@ -58,13 +57,13 @@
       "name": "clear_hold",
       "action_list": [
         {
-          "trigger": "click",
-          "action_id": "nav_enter",
-          "args": [],
-          "_raw": "nav_enter | set_field: debug_hold: false",
-          "params": {
-            "set_field": "debug_hold"
-          }
+          "trigger": "nav_enter",
+          "action_id": "set_field",
+          "args": [
+            "debug_hold",
+            false
+          ],
+          "_raw": "nav_enter | set_field: debug_hold: false"
         }
       ],
       "condition": "@fields.debug_hold",
