@@ -154,6 +154,26 @@
 </details>
 
 <details open>
+<summary><h2>Estimated App Size on Device</h2></summary>
+
+Estimated space the app takes up on an Android or iOS device. Asset packs are unzipped once downloaded and the zip is not kept, so each pack takes up its unzipped size. Users only have the packs the app has downloaded for them, so the actual size on a device falls between the two totals.
+
+| item | download | on_device |
+| --- | --- | --- |
+| App code (estimate) | - | 16.2 MB |
+| App content (sheets and translations) | - | 4.5 MB |
+| Bundled assets | - | 3.8 MB |
+| Bundled assets: base | - | 3.7 MB |
+| Bundled assets: theme_default / es_sp | - | 0.1 MB |
+| Bundled assets: theme_default / tz_sw | - | 0 MB |
+| Total without asset packs | - | 24.5 MB |
+| Asset pack: debug_asset_pack_1 | 0.1 MB | 0.1 MB |
+| Total with all asset packs | 0.1 MB | 24.5 MB |
+
+App code is a fixed estimate and excludes native Android and iOS code. Files that appear in more than one asset pack are stored once and counted once.
+</details>
+
+<details open>
 <summary><h2>Asset Size</h2></summary>
 
 | assets | KB | MB |
