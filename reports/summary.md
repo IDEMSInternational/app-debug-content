@@ -123,13 +123,12 @@
 | go_to_url | 5 |
 | invalid_action | 1 |
 | nav | 7 |
-| nav_enter | 10 |
 | nav_stack | 31 |
 | notification | 8 |
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 82 |
+| pop_up | 84 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -138,7 +137,7 @@
 | screen_orientation | 5 |
 | scroll | 2 |
 | set_data | 23 |
-| set_field | 138 |
+| set_field | 146 |
 | set_item | 35 |
 | set_items | 2 |
 | set_local | 93 |
