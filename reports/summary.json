@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 593
+        "count": 596
       },
       {
         "type": "calendar",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text",
-        "count": 1661
+        "count": 1673
       },
       {
         "type": "text_area",
@@ -331,7 +331,7 @@
       },
       {
         "type": "title",
-        "count": 737
+        "count": 740
       },
       {
         "type": "toggle_bar",
@@ -447,7 +447,7 @@
       },
       {
         "type": "go_to_url",
-        "count": 5
+        "count": 8
       },
       {
         "type": "invalid_action",
@@ -577,7 +577,7 @@
       {
         "item": "App content (sheets and translations)",
         "download": "-",
-        "on_device": "4.5 MB"
+        "on_device": "4.6 MB"
       },
       {
         "item": "Bundled assets",
@@ -1265,7 +1265,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 333
+        "total": 334
       },
       {
         "type": "template",

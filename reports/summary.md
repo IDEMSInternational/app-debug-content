@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 593 |
+| button | 596 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -79,13 +79,13 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 171 |
-| text | 1661 |
+| text | 1673 |
 | text_area | 16 |
 | text_box | 89 |
 | text_bubble | 15 |
 | tile_component | 57 |
 | timer | 21 |
-| title | 737 |
+| title | 740 |
 | toggle_bar | 84 |
 | update_action_list | 12 |
 | video | 4 |
@@ -120,7 +120,7 @@
 | emit: uncompleted | 18 |
 | feedback | 14 |
 | go_to | 124 |
-| go_to_url | 5 |
+| go_to_url | 8 |
 | invalid_action | 1 |
 | nav | 7 |
 | nav_stack | 31 |
@@ -160,7 +160,7 @@ Estimated space the app takes up on an Android or iOS device. Asset packs are un
 | item | download | on_device |
 | --- | --- | --- |
 | App code (estimate) | - | 16.2 MB |
-| App content (sheets and translations) | - | 4.5 MB |
+| App content (sheets and translations) | - | 4.6 MB |
 | Bundled assets | - | 3.8 MB |
 | Bundled assets: base | - | 3.7 MB |
 | Bundled assets: theme_default / es_sp | - | 0.1 MB |
@@ -341,7 +341,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 134 |
 | template | component_demo | 78 |
-| template | debug | 333 |
+| template | debug | 334 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |
