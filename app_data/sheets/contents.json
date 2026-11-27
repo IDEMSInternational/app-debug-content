@@ -5260,6 +5260,9 @@
         "app_config": {
           "APP_FOOTER_DEFAULTS": {
             "template": false
+          },
+          "LAYOUT": {
+            "page_padding": "0 0"
           }
         }
       },
@@ -5513,6 +5516,27 @@
         "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
       }
     },
+    "e2e_sticky_img_dark": {
+      "flow_type": "template",
+      "flow_name": "e2e_sticky_img_dark",
+      "flow_subtype": "debug",
+      "parameter_list": {
+        "app_config": {
+          "APP_HEADER_DEFAULTS": {
+            "hidden": true
+          },
+          "APP_FOOTER_DEFAULTS": {
+            "template": false
+          }
+        }
+      },
+      "comments": "Dark sticky images that set the system bar text colour with system_bar_text",
+      "_source": {
+        "name": "Debug Sheets",
+        "path": "debug_sheets/debug_edge_to_edge.xlsx",
+        "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+      }
+    },
     "e2e_sticky_img_footer": {
       "flow_type": "template",
       "flow_name": "e2e_sticky_img_footer",
@@ -5567,6 +5591,9 @@
           },
           "APP_FOOTER_DEFAULTS": {
             "template": false
+          },
+          "LAYOUT": {
+            "page_padding": "0px"
           }
         }
       },

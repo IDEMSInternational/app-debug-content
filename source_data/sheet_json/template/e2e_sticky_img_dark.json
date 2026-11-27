@@ -1,0 +1,108 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_sticky_img_dark",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      },
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      }
+    }
+  },
+  "comments": "Dark sticky images that set the system bar text colour with system_bar_text",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "without_text",
+      "value": false,
+      "comments": "Shows the top group without system_bar_text when true"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top; variant: inline_padding; background_image_asset: images/progress_path_bg_plh_kids_tz.jpg; background_image_position: center; system_bar_text: light;",
+      "style_list": "min-height: 118px; justify-content: space-between; background-size: cover;",
+      "condition": "!@local.without_text",
+      "comments": "Dark image with system_bar_text: light: the status bar text must be white"
+    },
+    {
+      "type": "text",
+      "value": "TOP LEFT",
+      "style_list": "color: #FFFFFF;"
+    },
+    {
+      "type": "text",
+      "value": "TOP RIGHT",
+      "parameter_list": "text_align: right;",
+      "style_list": "color: #FFFFFF;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top; variant: inline_padding; background_image_asset: images/progress_path_bg_plh_kids_tz.jpg; background_image_position: center;",
+      "style_list": "min-height: 118px; justify-content: space-between; background-size: cover;",
+      "condition": "@local.without_text",
+      "comments": "The same group without system_bar_text: the status bar follows the page background (dark text)"
+    },
+    {
+      "type": "text",
+      "value": "NO SYSTEM_BAR_TEXT",
+      "style_list": "color: #FFFFFF;"
+    },
+    {
+      "type": "text",
+      "value": "TOP RIGHT",
+      "parameter_list": "text_align: right;",
+      "style_list": "color: #FFFFFF;"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "text",
+      "value": "The status bar text and icons must be white over the dark image. Removing system_bar_text turns them dark, as images are not detected. On Android, the navigation bar buttons must be light over the bottom image."
+    },
+    {
+      "type": "button",
+      "value": "Remove system_bar_text",
+      "action_list": "click | set_local: without_text: true",
+      "condition": "!@local.without_text"
+    },
+    {
+      "type": "button",
+      "value": "Restore system_bar_text: light",
+      "action_list": "click | set_local: without_text: false",
+      "condition": "@local.without_text"
+    },
+    {
+      "type": "button",
+      "value": "Back to sticky image cases",
+      "action_list": "click | go_to: e2e_sticky_images"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom; variant: inline_padding; background_image_asset: images/progress_path_bg_plh_kids_tz.jpg; background_image_position: center; system_bar_text: light;",
+      "style_list": "min-height: 88px; width: 100%; justify-content: space-between; background-size: cover;",
+      "comments": "Dark image with system_bar_text: light: the Android navigation bar buttons must be light"
+    },
+    {
+      "type": "text",
+      "value": "BOTTOM LEFT",
+      "style_list": "color: #FFFFFF;"
+    },
+    {
+      "type": "text",
+      "value": "BOTTOM RIGHT",
+      "parameter_list": "text_align: right;",
+      "style_list": "color: #FFFFFF;"
+    },
+    {
+      "type": "end_display_group"
+    }
+  ]
+}

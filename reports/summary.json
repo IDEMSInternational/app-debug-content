@@ -43,7 +43,7 @@
       },
       {
         "type": "button",
-        "count": 596
+        "count": 601
       },
       {
         "type": "calendar",
@@ -91,11 +91,11 @@
       },
       {
         "type": "display_group",
-        "count": 299
+        "count": 306
       },
       {
         "type": "drawer",
-        "count": 2
+        "count": 3
       },
       {
         "type": "form",
@@ -263,7 +263,7 @@
       },
       {
         "type": "set_variable",
-        "count": 966
+        "count": 967
       },
       {
         "type": "simple_checkbox",
@@ -307,7 +307,7 @@
       },
       {
         "type": "text",
-        "count": 1673
+        "count": 1685
       },
       {
         "type": "text_area",
@@ -443,7 +443,7 @@
       },
       {
         "type": "go_to",
-        "count": 124
+        "count": 126
       },
       {
         "type": "go_to_url",
@@ -479,7 +479,7 @@
       },
       {
         "type": "pop_up",
-        "count": 84
+        "count": 85
       },
       {
         "type": "process_template",
@@ -527,7 +527,7 @@
       },
       {
         "type": "set_local",
-        "count": 93
+        "count": 95
       },
       {
         "type": "share",
@@ -612,7 +612,7 @@
       {
         "item": "Total with all asset packs",
         "download": "0.1 MB",
-        "on_device": "24.5 MB"
+        "on_device": "24.6 MB"
       }
     ]
   },
@@ -620,13 +620,13 @@
     "data": [
       {
         "assets": "total",
-        "KB": "2517 KB",
-        "MB": "2.5 MB"
+        "KB": "2602 KB",
+        "MB": "2.6 MB"
       },
       {
         "assets": "unused",
-        "KB": "1189 KB",
-        "MB": "1.2 MB"
+        "KB": "1104 KB",
+        "MB": "1.1 MB"
       }
     ]
   },
@@ -695,10 +695,6 @@
       {
         "path": "images/progress_path_bg_plh_kids_kw.jpg",
         "size_kb": 129.5
-      },
-      {
-        "path": "images/progress_path_bg_plh_kids_tz.jpg",
-        "size_kb": 85.1
       },
       {
         "path": "ios/icon-background.png",
@@ -1089,6 +1085,11 @@
         "size_kb": 28.2
       },
       {
+        "path": "images/progress_path_bg_plh_kids_tz.jpg",
+        "count": 3,
+        "size_kb": 85.1
+      },
+      {
         "path": "images/sa_kids_app_pattern_blue.svg",
         "count": 3,
         "size_kb": 157
@@ -1265,7 +1266,7 @@
       {
         "type": "template",
         "subtype": "debug",
-        "total": 334
+        "total": 335
       },
       {
         "type": "template",

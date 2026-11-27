@@ -10,6 +10,9 @@
       },
       "APP_FOOTER_DEFAULTS": {
         "template": false
+      },
+      "LAYOUT": {
+        "page_padding": "0px"
       }
     }
   },
@@ -33,6 +36,25 @@
           },
           "name": "title_1",
           "_nested_name": "display_group_2.title_1"
+        },
+        {
+          "type": "display_group",
+          "parameter_list": {
+            "style": "row"
+          },
+          "rows": [
+            {
+              "type": "text",
+              "value": "NESTED: no gap above",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_1",
+              "_nested_name": "display_group_2.display_group_2.text_1"
+            }
+          ],
+          "name": "display_group_2",
+          "_nested_name": "display_group_2.display_group_2"
         }
       ],
       "name": "display_group_2",
@@ -70,6 +92,25 @@
           ],
           "name": "button_1",
           "_nested_name": "display_group_6.button_1"
+        },
+        {
+          "type": "display_group",
+          "parameter_list": {
+            "style": "row"
+          },
+          "rows": [
+            {
+              "type": "text",
+              "value": "NESTED: no gap below",
+              "_translations": {
+                "value": {}
+              },
+              "name": "text_1",
+              "_nested_name": "display_group_6.display_group_2.text_1"
+            }
+          ],
+          "name": "display_group_2",
+          "_nested_name": "display_group_6.display_group_2"
         }
       ],
       "name": "display_group_6",

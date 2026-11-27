@@ -24,6 +24,69 @@
       "value": "e2e_markers",
       "rows": [],
       "_nested_name": "e2e_markers"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "style": "background_solid"
+      },
+      "hidden": true,
+      "rows": [
+        {
+          "type": "text",
+          "value": "HIDDEN STICKY TOP: must not show",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_4.text_1"
+        }
+      ],
+      "name": "display_group_4",
+      "_nested_name": "display_group_4"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "style": "background_solid"
+      },
+      "hidden": true,
+      "rows": [
+        {
+          "type": "text",
+          "value": "HIDDEN STICKY BOTTOM: must not show",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "display_group_6.text_1"
+        }
+      ],
+      "name": "display_group_6",
+      "_nested_name": "display_group_6"
+    },
+    {
+      "type": "drawer",
+      "value": "HIDDEN DRAWER: must not show",
+      "parameter_list": {
+        "style": "secondary"
+      },
+      "hidden": true,
+      "rows": [
+        {
+          "type": "text",
+          "value": "Hidden drawer content",
+          "_translations": {
+            "value": {}
+          },
+          "name": "text_1",
+          "_nested_name": "drawer_8.text_1"
+        }
+      ],
+      "name": "drawer_8",
+      "_nested_name": "drawer_8"
     }
   ],
   "_source": {

@@ -25,6 +25,46 @@
     },
     {
       "type": "end_template"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: top; style: background_solid;",
+      "comments": "Hidden sticky top: TOP EDGE must stay below the status bar",
+      "hidden": true
+    },
+    {
+      "type": "text",
+      "value": "HIDDEN STICKY TOP: must not show"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "sticky: bottom; style: background_solid;",
+      "comments": "Hidden sticky bottom: BOTTOM EDGE must stay above the navigation bar",
+      "hidden": true
+    },
+    {
+      "type": "text",
+      "value": "HIDDEN STICKY BOTTOM: must not show"
+    },
+    {
+      "type": "end_display_group"
+    },
+    {
+      "type": "begin_drawer",
+      "value": "HIDDEN DRAWER: must not show",
+      "parameter_list": "style: secondary",
+      "comments": "Hidden drawer: must not change the page",
+      "hidden": true
+    },
+    {
+      "type": "text",
+      "value": "Hidden drawer content"
+    },
+    {
+      "type": "end_drawer"
     }
   ]
 }
