@@ -22,7 +22,7 @@
       "type": "display_group",
       "parameter_list": {
         "sticky": "top",
-        "style": "background_solid"
+        "style": "column background_solid"
       },
       "rows": [
         {
@@ -71,7 +71,7 @@
       "type": "display_group",
       "parameter_list": {
         "sticky": "bottom",
-        "style": "background_solid"
+        "style": "column background_solid"
       },
       "rows": [
         {
