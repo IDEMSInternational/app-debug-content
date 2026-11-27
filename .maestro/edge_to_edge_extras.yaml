@@ -7,6 +7,11 @@ tags:
 ---
 - runFlow: subflows/e2e_open_index.yaml
 # Header collapse (Android only): nothing should be readable behind the status bar
+# On shorter screens the button starts behind the footer, so bring it into view first
+- scrollUntilVisible:
+    element: "Header collapse on scroll"
+    direction: DOWN
+    centerElement: true
 - tapOn: "Header collapse on scroll"
 - extendedWaitUntil:
     visible: "TOP EDGE.*"
