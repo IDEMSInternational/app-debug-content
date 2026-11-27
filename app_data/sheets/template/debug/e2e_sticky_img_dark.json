@@ -1,0 +1,300 @@
+{
+  "flow_type": "template",
+  "flow_name": "e2e_sticky_img_dark",
+  "status": "released",
+  "flow_subtype": "debug",
+  "parameter_list": {
+    "app_config": {
+      "APP_HEADER_DEFAULTS": {
+        "hidden": true
+      },
+      "APP_FOOTER_DEFAULTS": {
+        "template": false
+      }
+    }
+  },
+  "comments": "Dark sticky images that set the system bar text colour with system_bar_text",
+  "rows": [
+    {
+      "type": "set_variable",
+      "name": "without_text",
+      "value": false,
+      "_nested_name": "without_text"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "variant": "inline_padding",
+        "background_image_asset": "images/progress_path_bg_plh_kids_tz.jpg",
+        "background_image_position": "center",
+        "system_bar_text": "light"
+      },
+      "style_list": [
+        "min-height: 118px",
+        "justify-content: space-between",
+        "background-size: cover"
+      ],
+      "condition": "!@local.without_text",
+      "rows": [
+        {
+          "type": "text",
+          "value": "TOP LEFT",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "color: #FFFFFF"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_3.text_1"
+        },
+        {
+          "type": "text",
+          "value": "TOP RIGHT",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "right"
+          },
+          "style_list": [
+            "color: #FFFFFF"
+          ],
+          "name": "text_2",
+          "_nested_name": "display_group_3.text_2"
+        }
+      ],
+      "name": "display_group_3",
+      "_nested_name": "display_group_3",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.without_text",
+            "matchedExpression": "!@local.without_text",
+            "type": "local",
+            "fieldName": "without_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.without_text": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "top",
+        "variant": "inline_padding",
+        "background_image_asset": "images/progress_path_bg_plh_kids_tz.jpg",
+        "background_image_position": "center"
+      },
+      "style_list": [
+        "min-height: 118px",
+        "justify-content: space-between",
+        "background-size: cover"
+      ],
+      "condition": "@local.without_text",
+      "rows": [
+        {
+          "type": "text",
+          "value": "NO SYSTEM_BAR_TEXT",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "color: #FFFFFF"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_5.text_1"
+        },
+        {
+          "type": "text",
+          "value": "TOP RIGHT",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "right"
+          },
+          "style_list": [
+            "color: #FFFFFF"
+          ],
+          "name": "text_2",
+          "_nested_name": "display_group_5.text_2"
+        }
+      ],
+      "name": "display_group_5",
+      "_nested_name": "display_group_5",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.without_text",
+            "matchedExpression": "@local.without_text",
+            "type": "local",
+            "fieldName": "without_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.without_text": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "The status bar text and icons must be white over the dark image. Removing system_bar_text turns them dark, as images are not detected. On Android, the navigation bar buttons must be light over the bottom image.",
+      "_translations": {
+        "value": {}
+      },
+      "name": "text_7",
+      "_nested_name": "text_7"
+    },
+    {
+      "type": "button",
+      "value": "Remove system_bar_text",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "without_text",
+            true
+          ],
+          "_raw": "click | set_local: without_text: true"
+        }
+      ],
+      "condition": "!@local.without_text",
+      "name": "button_8",
+      "_nested_name": "button_8",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "!@local.without_text",
+            "matchedExpression": "!@local.without_text",
+            "type": "local",
+            "fieldName": "without_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "!@local.without_text": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Restore system_bar_text: light",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "set_local",
+          "args": [
+            "without_text",
+            false
+          ],
+          "_raw": "click | set_local: without_text: false"
+        }
+      ],
+      "condition": "@local.without_text",
+      "name": "button_9",
+      "_nested_name": "button_9",
+      "_dynamicFields": {
+        "condition": [
+          {
+            "fullExpression": "@local.without_text",
+            "matchedExpression": "@local.without_text",
+            "type": "local",
+            "fieldName": "without_text"
+          }
+        ]
+      },
+      "_dynamicDependencies": {
+        "@local.without_text": [
+          "condition"
+        ]
+      }
+    },
+    {
+      "type": "button",
+      "value": "Back to sticky image cases",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "e2e_sticky_images"
+          ],
+          "_raw": "click | go_to: e2e_sticky_images"
+        }
+      ],
+      "name": "button_10",
+      "_nested_name": "button_10"
+    },
+    {
+      "type": "display_group",
+      "parameter_list": {
+        "sticky": "bottom",
+        "variant": "inline_padding",
+        "background_image_asset": "images/progress_path_bg_plh_kids_tz.jpg",
+        "background_image_position": "center",
+        "system_bar_text": "light"
+      },
+      "style_list": [
+        "min-height: 88px",
+        "width: 100%",
+        "justify-content: space-between",
+        "background-size: cover"
+      ],
+      "rows": [
+        {
+          "type": "text",
+          "value": "BOTTOM LEFT",
+          "_translations": {
+            "value": {}
+          },
+          "style_list": [
+            "color: #FFFFFF"
+          ],
+          "name": "text_1",
+          "_nested_name": "display_group_11.text_1"
+        },
+        {
+          "type": "text",
+          "value": "BOTTOM RIGHT",
+          "_translations": {
+            "value": {}
+          },
+          "parameter_list": {
+            "text_align": "right"
+          },
+          "style_list": [
+            "color: #FFFFFF"
+          ],
+          "name": "text_2",
+          "_nested_name": "display_group_11.text_2"
+        }
+      ],
+      "name": "display_group_11",
+      "_nested_name": "display_group_11"
+    }
+  ],
+  "_source": {
+    "name": "Debug Sheets",
+    "path": "debug_sheets/debug_edge_to_edge.xlsx",
+    "url": "https://docs.google.com/spreadsheets/d/15fQtMS8ZuUTmNUBsXHybs2BIWjPfiIHH"
+  }
+}

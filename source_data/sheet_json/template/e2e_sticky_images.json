@@ -32,6 +32,16 @@
       "type": "button",
       "value": "Images in a nav-stack",
       "action_list": "click | nav_stack: open | template: e2e_sticky_img_overlay, header: false;"
+    },
+    {
+      "type": "button",
+      "value": "Dark images, system_bar_text",
+      "action_list": "click | go_to: e2e_sticky_img_dark"
+    },
+    {
+      "type": "button",
+      "value": "Dark images in a fullscreen pop-up",
+      "action_list": "click | pop_up: e2e_sticky_img_dark | fullscreen: true;"
     }
   ]
 }

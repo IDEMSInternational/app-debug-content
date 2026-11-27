@@ -105,6 +105,47 @@
       ],
       "name": "button_7",
       "_nested_name": "button_7"
+    },
+    {
+      "type": "button",
+      "value": "Dark images, system_bar_text",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "e2e_sticky_img_dark"
+          ],
+          "_raw": "click | go_to: e2e_sticky_img_dark"
+        }
+      ],
+      "name": "button_8",
+      "_nested_name": "button_8"
+    },
+    {
+      "type": "button",
+      "value": "Dark images in a fullscreen pop-up",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "pop_up",
+          "args": [
+            "e2e_sticky_img_dark"
+          ],
+          "_raw": "click | pop_up: e2e_sticky_img_dark | fullscreen: true",
+          "params": {
+            "fullscreen": true
+          }
+        }
+      ],
+      "name": "button_9",
+      "_nested_name": "button_9"
     }
   ],
   "_source": {

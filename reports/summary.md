@@ -13,7 +13,7 @@
 | apple_sign_in_button | 12 |
 | asset_pack_download_button | 1 |
 | audio | 14 |
-| button | 596 |
+| button | 601 |
 | calendar | 1 |
 | carousel | 9 |
 | colour_palette | 1 |
@@ -25,8 +25,8 @@
 | debug_toggle | 1 |
 | demo_basic | 3 |
 | display_grid | 4 |
-| display_group | 299 |
-| drawer | 2 |
+| display_group | 306 |
+| drawer | 3 |
 | form | 9 |
 | google_sign_in_button | 14 |
 | html | 6 |
@@ -68,7 +68,7 @@
 | set_field | 32 |
 | set_local | 8 |
 | set_parameter | 1 |
-| set_variable | 966 |
+| set_variable | 967 |
 | simple_checkbox | 42 |
 | slider | 32 |
 | square_button | 8 |
@@ -79,7 +79,7 @@
 | task_card | 32 |
 | task_progress_bar | 11 |
 | template | 171 |
-| text | 1673 |
+| text | 1685 |
 | text_area | 16 |
 | text_box | 89 |
 | text_bubble | 15 |
@@ -119,7 +119,7 @@
 | emit: translator_mode_toggle | 1 |
 | emit: uncompleted | 18 |
 | feedback | 14 |
-| go_to | 124 |
+| go_to | 126 |
 | go_to_url | 8 |
 | invalid_action | 1 |
 | nav | 7 |
@@ -128,7 +128,7 @@
 | open_external | 3 |
 | plh_certificate | 1 |
 | plh_parent_group | 10 |
-| pop_up | 84 |
+| pop_up | 85 |
 | process_template | 2 |
 | remove_item | 1 |
 | reset_app | 2 |
@@ -140,7 +140,7 @@
 | set_field | 146 |
 | set_item | 35 |
 | set_items | 2 |
-| set_local | 93 |
+| set_local | 95 |
 | share | 15 |
 | start_tour | 2 |
 | task | 2 |
@@ -167,7 +167,7 @@ Estimated space the app takes up on an Android or iOS device. Asset packs are un
 | Bundled assets: theme_default / tz_sw | - | 0 MB |
 | Total without asset packs | - | 24.5 MB |
 | Asset pack: debug_asset_pack_1 | 0.1 MB | 0.1 MB |
-| Total with all asset packs | 0.1 MB | 24.5 MB |
+| Total with all asset packs | 0.1 MB | 24.6 MB |
 
 App code is a fixed estimate and excludes native Android and iOS code. Files that appear in more than one asset pack are stored once and counted once.
 </details>
@@ -177,8 +177,8 @@ App code is a fixed estimate and excludes native Android and iOS code. Files tha
 
 | assets | KB | MB |
 | --- | --- | --- |
-| total | 2517 KB | 2.5 MB |
-| unused | 1189 KB | 1.2 MB |
+| total | 2602 KB | 2.6 MB |
+| unused | 1104 KB | 1.1 MB |
 </details>
 
 <details open>
@@ -204,7 +204,6 @@ Assets that appear in app-data but do not have references within sheets
 | images/image_3.png | 9.6 |
 | images/image_4.png | 11.9 |
 | images/progress_path_bg_plh_kids_kw.jpg | 129.5 |
-| images/progress_path_bg_plh_kids_tz.jpg | 85.1 |
 | ios/icon-background.png | 3.9 |
 | ios/icon-foreground.png | 59.4 |
 | ios/icon-only.png | 128.1 |
@@ -300,6 +299,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | images/lesson-cta-bg.svg | 4 | 2 |
 | images/modal_bg.svg | 37.3 | 5 |
 | images/module-1.png | 28.2 | 12 |
+| images/progress_path_bg_plh_kids_tz.jpg | 85.1 | 3 |
 | images/sa_kids_app_pattern_blue.svg | 157 | 3 |
 | images/shining_diamond.png | 17.7 | 1 |
 | images/square_1.svg | 0.7 | 4 |
@@ -341,7 +341,7 @@ Assets that are used within sheets and also can be found in the synced asset dat
 | global | debug | 10 |
 | template |  | 134 |
 | template | component_demo | 78 |
-| template | debug | 334 |
+| template | debug | 335 |
 | template | example | 1 |
 | template | example_generator | 2 |
 | template | example_hardcoded | 1 |

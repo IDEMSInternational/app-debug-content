@@ -10,6 +10,9 @@
       },
       "APP_FOOTER_DEFAULTS": {
         "template": false
+      },
+      "LAYOUT": {
+        "page_padding": "0px"
       }
     }
   },
@@ -23,6 +26,18 @@
       "type": "title",
       "value": "Sticky top: fully visible",
       "parameter_list": "variant: header;"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: row;",
+      "comments": "Nested display group: no extra space above it"
+    },
+    {
+      "type": "text",
+      "value": "NESTED: no gap above"
+    },
+    {
+      "type": "end_display_group"
     },
     {
       "type": "end_display_group"
@@ -43,6 +58,18 @@
       "type": "button",
       "value": "Sticky bottom: fully visible",
       "action_list": "click | go_to: debug_edge_to_edge"
+    },
+    {
+      "type": "begin_display_group",
+      "parameter_list": "style: row;",
+      "comments": "Nested display group: no extra space below it"
+    },
+    {
+      "type": "text",
+      "value": "NESTED: no gap below"
+    },
+    {
+      "type": "end_display_group"
     },
     {
       "type": "end_display_group"

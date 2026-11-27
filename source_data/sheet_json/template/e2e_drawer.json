@@ -7,6 +7,9 @@
     "app_config": {
       "APP_FOOTER_DEFAULTS": {
         "template": false
+      },
+      "LAYOUT": {
+        "page_padding": "0 0"
       }
     }
   },
