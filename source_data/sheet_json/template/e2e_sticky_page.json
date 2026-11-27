@@ -20,7 +20,7 @@
   "rows": [
     {
       "type": "begin_display_group",
-      "parameter_list": "sticky: top; style: background_solid;"
+      "parameter_list": "sticky: top; style: column background_solid;"
     },
     {
       "type": "title",
@@ -52,7 +52,7 @@
     },
     {
       "type": "begin_display_group",
-      "parameter_list": "sticky: bottom; style: background_solid;"
+      "parameter_list": "sticky: bottom; style: column background_solid;"
     },
     {
       "type": "button",
